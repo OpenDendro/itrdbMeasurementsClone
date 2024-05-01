@@ -6,6 +6,10 @@
 
 rm(list=ls())
 require(dplR)
+library(feather)
+path <- "my_data.feather"
+write_feather(df, path)
+df <- read_feather(path)
 load("RdataFiles/cleaned_itrdb.Rdata")
 head(itrdb_meta)
 # get sites with RWL files
