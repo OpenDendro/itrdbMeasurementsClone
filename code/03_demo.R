@@ -5,7 +5,8 @@
 
 rm(list=ls())
 library(dplR)
-load("Rdatafiles/rwls.Rdata")
+rwls <- readRDS("Rdatafiles/rwls.rds")
+rwls_meta <- readRDS("Rdatafiles/rwls_meta.rds")
 
 nrow(rwls_meta)
 length(rwls)

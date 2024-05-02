@@ -2,12 +2,12 @@
 A repo to keep a copy of the measurement data from the ITRDB in a R-friendly format
 
 ```
-# Here is an example of grabbing a rwl from the rwls.Rdata file. 
+# Here is an example of grabbing a rwl from two rds files. 
 # It shows how we can extract a rwl object and its meta info
 
-rm(list=ls())
 library(dplR)
-load("Rdatafiles/rwls.Rdata")
+rwls <- readRDS("Rdatafiles/rwls.rds")
+rwls_meta <- readRDS("Rdatafiles/rwls_meta.rds")
 
 nrow(rwls_meta)
 length(rwls)

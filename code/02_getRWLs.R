@@ -7,9 +7,6 @@
 rm(list=ls())
 require(dplR)
 library(feather)
-path <- "my_data.feather"
-write_feather(df, path)
-df <- read_feather(path)
 load("RdataFiles/cleaned_itrdb.Rdata")
 head(itrdb_meta)
 # get sites with RWL files
@@ -64,5 +61,11 @@ class(rwls[[1]])
 rwls_bad <- sapply(rwls, function(x) { class(x)[[1]] %in% "try-error" }, simplify = T)
 summary(rwls_bad)
 
-save(rwls,rwls_meta,rwls_bad,
-     file = "RdataFiles/rwls.Rdata")
+# write output
+
+# sadly, the rwls are >100 MB with gzip. which means github balks. So try bzip2.
+saveRDS(rwls,file = "Rdatafiles/rwls.rds",compress = "bzip2")
+saveRDS(rwls_meta,file = "Rdatafiles/rwls_meta.rds",compress = "bzip2")
+saveRDS(rwls_bad,file = "Rdatafiles/rwls_bad.rds",compress = "bzip2")
+# save(rwls,rwls_meta,rwls_bad,
+#      file = "RdataFiles/rwls.Rdata")
