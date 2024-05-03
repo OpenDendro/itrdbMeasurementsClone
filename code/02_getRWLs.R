@@ -6,7 +6,7 @@
 
 rm(list=ls())
 require(dplR)
-library(feather)
+source("code/read_tucson2.R")
 load("RdataFiles/cleaned_itrdb.Rdata")
 head(itrdb_meta)
 # get sites with RWL files
@@ -14,7 +14,6 @@ sites2get <- itrdb_meta$RWL_Count > 0
 summary(sites2get)
 sites_gt_one <- itrdb_meta$RWL_Count > 1
 summary(sites_gt_one) # hmmm
-
 
 rwls_meta <- itrdb_meta[sites2get,]
 rwls_meta <- droplevels(rwls_meta)
@@ -41,18 +40,20 @@ for(i in 1:nsites){
  }
 
  fname <- paste("./data_files/",fname,sep="")
- res <- try(read.tucson(fname,encoding = "UTF-8"),silent = T)
- if(any(class(res)=="try-error")){
-   res <- try(read.tucson(fname,encoding = "ASCII"),silent = T)
- }
- if(any(class(res)=="try-error")){
-   res <- try(read.tucson(fname,encoding = "latin1"),silent = T)
- }
- if(any(class(res)=="try-error")){
-   res <- try(read.tucson(fname,long=T),silent = T)
- }
+ #res <- try(read.tucson(fname,encoding = "UTF-8"),silent = T)
+ res <- try(read.tucson2(fname,verbose =FALSE),silent = T)
+ # if(any(class(res)=="try-error")){
+ #   res <- try(read.tucson(fname,encoding = "ASCII"),silent = T)
+ # }
+ # if(any(class(res)=="try-error")){
+ #   res <- try(read.tucson(fname,encoding = "latin1"),silent = T)
+ # }
+ # if(any(class(res)=="try-error")){
+ #   res <- try(read.tucson(fname,long=T),silent = T)
+ # }
+ if(any(class(res)=="try-error")){print(i)}
  rwls[[i]] <- res
- print(i)
+
 }
 
 rwls_bad_long <- sapply(rwls, class)
