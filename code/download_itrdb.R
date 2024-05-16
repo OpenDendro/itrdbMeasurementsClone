@@ -8,6 +8,8 @@ dif_url <-
 base_dir <- getwd()
 k_max_tries <- 3
 
+#https://www1.ncdc.noaa.gov/pub/data/metadata/published/paleo/dif/xml/noaa-tree-1003992.xml
+
 if (!dir.exists(base_dir)) {
     dir.create(base_dir)
 }
@@ -35,15 +37,37 @@ dif_names <- sub("^[hH][rR][eE][fF]\\s*=\\s*\"", "", dif_names, perl = TRUE)
 
 n_dif <- length(dif_names)
 
+# The curl() and curl_download() functions provide highly configurable drop-in replacements for base url() and download.file()
+#options(timeout = max(1000, getOption("timeout")))
 ## Download DIF metadata files. Only if file does not exist.
 cat("Downloading / checking presence of DIF files...\n")
+# #pb <- txtProgressBar(0, n_dif, style = 3)
+# for (k in seq_len(n_dif)) {
+#     local_path <- file.path(dif_dir, dif_names[k])
+#     if (!file.exists(local_path)) {
+#         download.file(url = paste0(dif_url, dif_names[k]),
+#                       destfile = local_path, #method = "curl",
+#                       quiet = TRUE)
+#       # curl_download(url = paste0(dif_url, dif_names[k]),
+#       #               destfile = local_path,mode = "w",
+#       #               quiet = FALSE)
+#
+#     }
+#     #setTxtProgressBar(pb, k)
+# }
+# close(pb)
+
 pb <- txtProgressBar(0, n_dif, style = 3)
-for (k in seq_len(n_dif)) {
-    local_path <- file.path(dif_dir, dif_names[k])
-    if (!file.exists(local_path)) {
-        download.file(paste0(dif_url, dif_names[k]), local_path, quiet = TRUE)
-    }
-    setTxtProgressBar(pb, k)
+k <- 1
+while(k <= n_dif){
+  local_path <- file.path(dif_dir, dif_names[k])
+  if (file.exists(local_path)) {k <- k + 1}
+  else {
+    try(download.file(url = paste0(dif_url, dif_names[k]),
+                  destfile = local_path, #method = "curl",
+                  quiet = TRUE),silent = TRUE)
+  }
+  setTxtProgressBar(pb, k)
 }
 close(pb)
 
@@ -170,7 +194,7 @@ while (counter < n_data) {
     }
     if (all(n_tries %in% c(0, k_max_tries))) {
         for (k in which(n_tries == k_max_tries)) {
-            warning(sprintf("could not download '%s'", files_combined[k]))
+            warning(sprintf("k_max_tries reached, could not download '%s'", files_combined[k]))
         }
         break
     }
@@ -180,10 +204,3 @@ while (counter < n_data) {
     }
 }
 close(pb)
-
-# How to filter and keep only measurements using workflow above?
-# Tricky because of the way the dif files are central
-# Easiest thing is to post process and remove.
-# Lame but direct.
-
-

@@ -21,40 +21,6 @@ itrdb_rwl <- itrdb_rwl[-badID]
 
 # fix a few names? There are a few without full tax. But I'm not sure that this is worth it. Unless you want to get into the plot tax this might not matter but worth asking Ed about?
 levels(itrdb_meta$Species)
-itrdb_meta$Species <- as.character(itrdb_meta$Species)
-
-# this is a goof in the rwl file (or reader) which has a spp while the species is not in the xml somwhow?
-itrdb_meta$Species[which(itrdb_meta$Species == "astern white pine")] <- "Pinus strobus L."
-#https://www.ncei.noaa.gov/access/paleo-search/study/37723
-# https://www1.ncdc.noaa.gov/pub/data/metadata/published/paleo/dif/xml/noaa-tree-37723.xml
-# same idea
-#https://www.ncei.noaa.gov/access/paleo-search/study/37722
-itrdb_meta[which(itrdb_meta$Species == "orthern red oak"),]
-itrdb_meta$Species[which(itrdb_meta$Species == "orthern red oak")] <- "Quercus rubra L."
-
-#https://www.ncei.noaa.gov/access/paleo-search/study/37724
-itrdb_meta[which(itrdb_meta$Species == "ellow birch"),]
-itrdb_meta$Species[which(itrdb_meta$Species == "ellow birch")] <- "Betula alleghaniensis"
-
-itrdb_meta$Species[which(itrdb_meta$Species == "CEDRELA FISSILIS")] <- "Cedrela fissilis"
-
-
-itrdb_meta[which(itrdb_meta$Species == "Previa maxima"),]
-itrdb_meta$Species[itrdb_meta$Species == "Previa maxima"] <- "Premna maxima T.C.E. Fr."
-
-itrdb_meta[which(itrdb_meta$Species == "Erythrophloeum ivorense A.Chev."),]
-itrdb_meta$Species[itrdb_meta$Species == "Erythrophloeum ivorense A.Chev."] <- "Erythrophleum ivorense A.Chev."
-
-itrdb_meta[which(itrdb_meta$Species == "Lagarostrobus colensoi (Hook.) C.J. Quinn = Dacrydium colensoi Hook."),]
-itrdb_meta$Species[itrdb_meta$Species == "Lagarostrobus colensoi (Hook.) C.J. Quinn = Dacrydium colensoi Hook."] <- "Lagarostrobos colensoi (Hook.) C.J. Quinn = Dacrydium colensoi Hook."
-
-itrdb_meta[which(itrdb_meta$Species == "Lagarostrobus franklinii (Hook. f.) Quinn"),]
-itrdb_meta$Species[itrdb_meta$Species == "Lagarostrobus franklinii (Hook. f.) Quinn"] <- "Lagarostrobos franklinii (Hook. f.) Quinn"
-
-
-
-
-itrdb_meta$Species <- as.factor(itrdb_meta$Species)
 
 # Make more useful species handles
 names(itrdb_meta)[1] <- "SpeciesLong"
