@@ -28,12 +28,12 @@ without each researcher rebuilding the same pipeline.
 | `Rdatafiles/rwls.rds` | A list of `rwl` objects, one per study. Each is a data frame of ring widths with years as row names and one column per series. |
 | `Rdatafiles/rwls_meta.rds` | A data frame with one row per study: location, elevation, taxonomy, and file counts. |
 
-The two line up by position: `rwls[[i]]` is the data for `rwls_meta[i, ]`. `rwls_meta` is
-row-named by ITRDB study code, so to pull one study by name:
+The two line up by position: `rwls[[i]]` is the data for `rwls_meta[i, ]`. Both are keyed by
+ITRDB study code as well, so you can pull a study by name:
 
 ```r
-i <- match("CA671", rownames(rwls_meta))
-rwls[[i]]
+rwls[["CA671"]]
+rwls_meta["CA671", ]
 ```
 
 `rwls_meta` columns: `XML_FileName`, `Lat`, `Long`, `Altitude`, `RWL_Count`, `CRN_Count`,
@@ -60,20 +60,21 @@ Everything after that is ordinary [dplR](https://github.com/OpenDendro/dplR). To
 study of a given species:
 
 ```r
-piba <- rwls[rwls_meta$GenusSpp == "Picea abies"]
-length(piba)
+piab <- rwls[rwls_meta$GenusSpp == "Picea abies"]
+length(piab)
 ```
 
 ## Current build
 
-Built May 2024 from the ITRDB as it stood then.
+Built August 2026 from the ITRDB as it stood then.
 
-- **6,150** studies
-- **248,029** individual series
-- **293** species
-- Years spanned: 6000 BCE to the present
+- **6,846** studies
+- **277,746** individual series
+- **368** species
+- Years spanned: 6000 BCE to 2024
 
-A refresh is in progress as of August 2026. These numbers will change when it lands.
+One study is missing: WY081, whose files NOAA has temporarily withdrawn at the
+contributor's request. Every other study the archive links to is here and parses.
 
 ## How it is built
 
