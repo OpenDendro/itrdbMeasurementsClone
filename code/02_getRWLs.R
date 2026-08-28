@@ -1,4 +1,4 @@
-# AGB -- Nov 2017, April 2024
+# AGB -- Nov 2017, April 2024, Aug 2026
 # Take the cleaned data and loop through each study to
 # read in the rwl file for each one.
 # if there is >1 rwl file, get the one with the shortest
@@ -53,8 +53,10 @@ for(i in 1:nstudies){ #nstudies){
   if(any(class(res)=="try-error")){
     res <- try(read.tucson(fname,encoding = "ASCII",verbose = FALSE),silent = T)
     if(any(class(res)=="rwl")) {
+      ## AGB Aug 2026: there was a bare stop() here, left over from debugging.
+      ## It would have killed the whole loop the first time a file parsed as
+      ## ASCII after failing UTF-8. It never fired, but it was waiting to.
       fileEncoding[i] <- "ASCII"
-      stop()
     }
   }
   if(any(class(res)=="try-error")){
@@ -87,12 +89,18 @@ table(studies2check$fileEncoding)
 
 studies2checkLong <- studies2check %>% filter(fileEncoding == "long UTF-8")
 
-studies2checkLong[20,]
-foo <- read.tucson(studies2checkLong$rwlfilename[20],long = TRUE)
+## AGB Aug 2026: this block used to hard-index row 20 of studies2checkLong and
+## call read.tucson() on it. With fewer than 20 long-format studies that is
+## read.tucson(NA), which stops the script with "invalid 'description' argument"
+## AFTER the read loop has finished -- so the rwls are built but never saved.
 dif_url <-
   "http://www1.ncdc.noaa.gov/pub/data/metadata/published/paleo/dif/xml/"
-
-paste0(dif_url,studies2checkLong$XML_FileName[1])
+cat("studies needing long = TRUE:", nrow(studies2checkLong), "\n")
+if (nrow(studies2checkLong) > 0) {
+  print(studies2checkLong)
+  cat("DIF pages for these:\n")
+  print(paste0(dif_url, studies2checkLong$XML_FileName))
+}
 table(fileEncoding)
 
 # let's look at the errors (can sapply this later if feeling frisky)
@@ -135,6 +143,12 @@ studies2check <- data.frame(XML_FileName = rwls_meta$XML_FileName[badIdx],
 
 
 # write output
+
+## AGB Aug 2026: name the list by study code. rwls is built with rwls[[i]] <- ...
+## in the loop above, which loses the names process_itrdb.R put on itrdb_rwl, so
+## every earlier build shipped an unnamed list and users had to index by position.
+stopifnot(length(rwls) == nrow(rwls_meta))
+names(rwls) <- rownames(rwls_meta)
 
 # sadly, the rwls are >100 MB with gzip. which means github balks. So try bzip2.
 saveRDS(rwls,file = "Rdatafiles/rwls.rds",compress = "bzip2")

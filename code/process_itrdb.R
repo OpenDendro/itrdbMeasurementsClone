@@ -1,3 +1,7 @@
+# Parse the downloaded DIF metadata into itrdb_meta, itrdb_rwl, itrdb_crn.
+# Sourced by 00_goGetITRDB.R after download_itrdb.R.
+# Header added Aug 2026. Original authorship predates it -- see git history.
+
 library(httr)
 library(XML)
 library(utils)
@@ -144,13 +148,21 @@ pb <- txtProgressBar(0, n_dif, style = 3)
 
 for (k in seq_len(n_dif)) {
   setTxtProgressBar(pb, k)
-  ## Require that either raw measurements or (original) chronologies
-  ## are present.
+  ## Require that either raw measurements (.rwl) or (original)
+  ## chronologies (.crn) are present.
+  ## AGB Aug 2026: this test used to accept any URL under measurements/,
+  ## regardless of extension. That let in contributed datasets whose
+  ## measurements are .txt files (e.g. miramont2025, vothrurup2026). Those
+  ## studies get RWL_Count == 0 and are dropped in 02_getRWLs.R anyway, but
+  ## their titles carry no ITRDB site code, so StudyID collapsed to things
+  ## like "PISY" and "River" and broke row.names() below.
   file_list <- dif_other_norm[[k]]
-  if (!any(grepl("\\bmeasurements\\b", file_list, perl = TRUE) &
-           !grepl("\\bmeasurements/correlation\\b",
-                  file_list, perl = TRUE)) &&
-      !any(grepl("\\bchronologies\\b.*\\.crn", file_list, perl = TRUE))) {
+  has_rwl <- any(grepl("\\bmeasurements\\b", file_list, perl = TRUE) &
+                 !grepl("\\bmeasurements/correlation\\b",
+                        file_list, perl = TRUE) &
+                 grepl("\\.rwl$", file_list, ignore.case = TRUE))
+  has_crn <- any(grepl("\\bchronologies\\b.*\\.crn", file_list, perl = TRUE))
+  if (!has_rwl && !has_crn) {
     not_rwl_crn <- c(not_rwl_crn, k)
     next
   }
@@ -301,17 +313,34 @@ itrdb_meta <- data.frame(Species = factor(Species),
                          XML_FileName = dif_names,
                          stringsAsFactors = FALSE)
 
+## AGB Aug 2026: same empty-index guard as in 01a. x[-integer(0), ] is zero rows.
 idx_drop <- c(not_ring_width, not_rwl_crn)
-itrdb_meta <- itrdb_meta[-idx_drop, ]
-itrdb_rwl <- itrdb_rwl[-idx_drop]
-itrdb_crn <- itrdb_crn[-idx_drop]
-tmp <- StudyID[-idx_drop]
+if (length(idx_drop) > 0) {
+  itrdb_meta <- itrdb_meta[-idx_drop, ]
+  itrdb_rwl <- itrdb_rwl[-idx_drop]
+  itrdb_crn <- itrdb_crn[-idx_drop]
+  tmp <- StudyID[-idx_drop]
+} else {
+  tmp <- StudyID
+}
 
 # are there dups?
 any(duplicated(tmp))
 #tmp[which(duplicated(tmp))]
 #itrdb_meta[which(duplicated(tmp)),]
 
+
+## AGB Aug 2026: StudyID is scraped off the end of Entry_Title, which assumes
+## the title ends in an ITRDB site code. Not every study follows that, so warn
+## and fall back to the DIF file name rather than dying on duplicate row names.
+dup_id <- unique(tmp[duplicated(tmp)])
+if (length(dup_id) > 0) {
+  warning(sprintf("non-unique study IDs, using DIF name instead for: %s",
+                  paste(dup_id, collapse = ", ")))
+  needs_fallback <- tmp %in% dup_id
+  tmp[needs_fallback] <- sub("\\.xml$", "",
+                             itrdb_meta$XML_FileName[needs_fallback])
+}
 
 row.names(itrdb_meta) <- tmp
 names(itrdb_rwl) <- tmp

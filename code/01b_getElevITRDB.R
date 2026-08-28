@@ -1,4 +1,4 @@
-# AGB -- Nov 2017 -- redone in 2023 and 2024
+# AGB -- Nov 2017 -- redone in 2023, 2024 and Aug 2026
 # In order to fill in missing gaps in the ITRDB elev data,
 # go and get elevs from elevatr
 # this takes a bit to run (minutes)
@@ -6,6 +6,7 @@
 rm(list=ls())
 load("RdataFiles/cleaned_itrdb.Rdata")
 library(elevatr)
+library(ggplot2)
 
 sites <- data.frame(x=itrdb_meta$Long,y=itrdb_meta$Lat)
 sites_aws <- get_elev_point(sites, prj = 4326, src = "aws")

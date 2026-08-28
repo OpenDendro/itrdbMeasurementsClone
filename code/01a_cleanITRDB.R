@@ -1,4 +1,4 @@
-# AGB -- Nov 2017, April 2024
+# AGB -- Nov 2017, April 2024, Aug 2026
 # Clean up the ITRDB data by improving the taxonomy
 # filling in missing names, adding family, etc.
 # Remove any studies with bad spp data
@@ -6,18 +6,26 @@ rm(list=ls())
 load("RdataFiles/process_itrdb_has_run.Rdata")
 library(tidyverse)
 library(devtools)
-#install_github("ropenscilabs/datastorr")
-#install_github("wcornwell/taxonlookup")
+#pak::pak("ropenscilabs/datastorr")
+#pak::pak("wcornwell/taxonlookup")
 library(taxonlookup)
 
 # ironic that this one bums out itrdb_meta because it's about the ITRDB writ large
 #https://www.ncei.noaa.gov/access/paleo-search/study/25570
 
+## AGB Aug 2026: guard the empty case. x[-integer(0), ] returns ZERO rows, so
+## if every study has a species this block used to wipe the whole data set
+## silently. Study 25570 was the usual occupant of badID and is now filtered
+## out earlier, in process_itrdb.R.
 badID <- which(is.na(itrdb_meta$Species))
-itrdb_meta[badID,]
-itrdb_crn <- itrdb_crn[-badID]
-itrdb_meta <- itrdb_meta[-badID,]
-itrdb_rwl <- itrdb_rwl[-badID]
+if (length(badID) > 0) {
+  print(itrdb_meta[badID, ])
+  itrdb_crn <- itrdb_crn[-badID]
+  itrdb_meta <- itrdb_meta[-badID, ]
+  itrdb_rwl <- itrdb_rwl[-badID]
+} else {
+  message("No studies with missing species. Nothing dropped.")
+}
 
 # fix a few names? There are a few without full tax. But I'm not sure that this is worth it. Unless you want to get into the plot tax this might not matter but worth asking Ed about?
 levels(itrdb_meta$Species)
