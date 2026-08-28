@@ -92,9 +92,11 @@ coordinates, and a comparison of two Tucson-format readers.
 
 ## What is left out, and why
 
-- **Studies with no `.rwl` file.** Chronology-only studies and recently contributed datasets
-  published as NOAA template `.txt` files are not included. They are in the archive; they are
-  just not in a format this repo reads yet.
+- **Studies with no `.rwl` file.** Chronology-only studies are not included, nor are
+  contributed datasets published as NOAA template `.txt` files. The latter is deliberate on
+  NOAA's part: that is how they archive tree-ring contributions that do not meet ITRDB
+  standards, such as subfossil material with no calendar dating, or collections mixing
+  several species. If you want ITRDB data, these are the ones to skip.
 - **Only one measurement file per study.** Where a study offers several, the shortest filename
   is used. That is usually the whole-ring file rather than the earlywood/latewood splits.
 - **Files that will not parse.** A small number defeat the reader, usually through character

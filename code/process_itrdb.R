@@ -156,6 +156,11 @@ for (k in seq_len(n_dif)) {
   ## studies get RWL_Count == 0 and are dropped in 02_getRWLs.R anyway, but
   ## their titles carry no ITRDB site code, so StudyID collapsed to things
   ## like "PISY" and "River" and broke row.names() below.
+  ##
+  ## Ed at NOAA confirmed this is the right filter: studies with no ITRDB code
+  ## and no rwl file are how they archive tree contributions that don't meet
+  ## ITRDB standards -- subfossil with no calendar dating, several species in
+  ## one collection, and so on. If you want ITRDB data, skip them.
   file_list <- dif_other_norm[[k]]
   has_rwl <- any(grepl("\\bmeasurements\\b", file_list, perl = TRUE) &
                  !grepl("\\bmeasurements/correlation\\b",
