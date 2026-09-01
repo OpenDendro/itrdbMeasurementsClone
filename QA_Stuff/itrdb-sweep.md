@@ -1,6 +1,6 @@
-# What's actually wrong with the ITRDB .rwl files
+# ITRDB deep dive
 
-Working notes, August 2026. Andy Bunn, openDendro.
+Working notes, August 2026. Andy Bunn.
 
 This started as a way to put the new dplR reader through its paces. The Tucson format
 has no real standard — what there is dates to the 1970s and never quite worked — so

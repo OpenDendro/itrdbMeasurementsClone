@@ -11,7 +11,7 @@
 
 
 
-<title>itrdb-memo-noaa</title>
+<title>itrdb-sweep</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -352,101 +352,90 @@ display: none;
 </div>
 
 
-<div id="measurement-files-that-need-a-look" class="section level1">
-<h1>Measurement files that need a look</h1>
-<p>I read every <code>.rwl</code> file in the archive with two
-independent parsers and compared both against the NOAA Template files.
-Most of the archive is fine: <strong>7,762 files raised nothing at
-all</strong>. This memo covers the 444 that did, ranked so you can start
-at the top and stop whenever it stops being worth your time. I say at
-the end which things I chose <em>not</em> to report and why.</p>
+<div id="itrdb-deep-dive" class="section level1">
+<h1>ITRDB deep dive</h1>
+<p>Working notes, August 2026. Andy Bunn.</p>
+<p>This started as a way to put the new dplR reader through its paces.
+The Tucson format has no real standard — what there is dates to the
+1970s and never quite worked — so the only honest test of a parser is
+the whole archive, warts and all. That was the exercise. Getting a look
+at the state of the ITRDB was the other half, and the two turned out to
+be the same job: the reader’s disagreements <em>are</em> the archive’s
+problems. Couldn’t tell you about one without the other.</p>
+<p>So: every <code>.rwl</code> file in
+<code>treering/measurements</code>, read twice by two independent
+parsers, both compared against the NOAA Template files NCEI publishes
+alongside them. Here’s what came out. I’ve written it to stand on its
+own, since I’ll probably hand some of it to Ed and Chris.</p>
+<p>One thing to keep straight, and I kept getting it wrong while doing
+this: <strong>most of what looks broken in this archive isn’t.</strong>
+It’s convention. Plenty of it is convention I don’t care for, but my
+taste isn’t a bug report. Those two things live in separate sections
+below, deliberately.</p>
 <hr />
-<div id="how-the-files-are-graded" class="section level2">
-<h2>How the files are graded</h2>
-<p>The grade is the single worst thing found in a file, not a count of
-findings. A file with forty cosmetic oddities is still a good file; one
-with a single unreadable line is not.</p>
+<div id="what-came-out" class="section level2">
+<h2>What came out</h2>
 <table>
-<colgroup>
-<col width="30%" />
-<col width="30%" />
-<col width="40%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th>Grade</th>
-<th>Meaning</th>
+<th></th>
 <th align="right">Files</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>F</strong></td>
-<td>Unreadable, or self-contradictory. No parser can produce usable
-data.</td>
-<td align="right">9</td>
+<td>Nothing found</td>
+<td align="right">7,762</td>
 </tr>
 <tr class="even">
-<td><strong>D</strong></td>
-<td>Parsers disagree. The file reads, but different tools produce
-different numbers, so a currently published value is wrong.</td>
-<td align="right">103</td>
+<td>Normal practice I’d do differently</td>
+<td align="right">1,956</td>
 </tr>
 <tr class="odd">
-<td><strong>C</strong></td>
-<td>Reads cleanly, but looks odd. Nothing is ambiguous; the data itself
-invites a second look.</td>
+<td>Worth a second look</td>
 <td align="right">332</td>
 </tr>
 <tr class="even">
-<td><strong>B</strong></td>
-<td>Unusual but correct. Not reported here; listed for completeness
-only.</td>
-<td align="right">1,956</td>
+<td>Readers disagree</td>
+<td align="right">103</td>
+</tr>
+<tr class="odd">
+<td>Can’t be read at all</td>
+<td align="right">9</td>
 </tr>
 </tbody>
 </table>
-<p>Grades C, D and F are the 444 files in the attached list. Grade B
-files are excluded on purpose — see “What we did not report”.</p>
+<p>A file’s category is the worst single thing in it, not a tally. Forty
+cosmetic oddities still make a fine file. One unreadable line
+doesn’t.</p>
 <hr />
 </div>
-<div id="start-here-the-nine-f-files" class="section level2">
-<h2>Start here: the nine F files</h2>
-<div id="eight-noaa-template-files-carry-a-.rwl-extension" class="section level3">
-<h3>Eight NOAA Template files carry a <code>.rwl</code> extension</h3>
-<p>These are correctly formed Template v4.0 text files. The only thing
-wrong is the filename: any software that collects <code>*.rwl</code>
-will pick them up and try to read them as Tucson decadal data. A rename
+<div id="cant-be-read-at-all-9-files" class="section level2">
+<h2>Can’t be read at all — 9 files</h2>
+<p><strong>Eight NOAA Template files are wearing a <code>.rwl</code>
+extension.</strong> They’re perfectly good Template v4.0 text files. The
+only thing wrong is the name — anything globbing <code>*.rwl</code>
+grabs them and tries to parse them as Tucson decadal data. A rename
 fixes all eight.</p>
-<ul>
-<li><code>europe/brit048i-noaa.rwl</code></li>
-<li><code>europe/brit048t-noaa.rwl</code></li>
-<li><code>europe/brit049i-noaa.rwl</code></li>
-<li><code>europe/brit049t-noaa.rwl</code></li>
-<li><code>europe/bulg002i-noaa.rwl</code></li>
-<li><code>europe/bulg002t-noaa.rwl</code></li>
-<li><code>europe/roma004i-noaa.rwl</code></li>
-<li><code>europe/roma004t-noaa.rwl</code></li>
-</ul>
-</div>
-<div id="one-file-contradicts-itself" class="section level3">
-<h3>One file contradicts itself</h3>
-<p><code>asia/kyrg014.rwl</code>, core <code>kok3a</code>. The series
-stops with <code>-9999</code> in 1898, then starts again and stops with
-<code>999</code> in 2005. Those two markers mean different units — 0.001
-mm and 0.01 mm — so one core is claiming both scales. No parser can
-resolve that. One reader stops with an error; the other keeps the
-interior marker as data and reports a ring width of <strong>−99.99
-mm</strong>.</p>
+<pre><code>europe/brit048i-noaa.rwl    europe/bulg002i-noaa.rwl
+europe/brit048t-noaa.rwl    europe/bulg002t-noaa.rwl
+europe/brit049i-noaa.rwl    europe/roma004i-noaa.rwl
+europe/brit049t-noaa.rwl    europe/roma004t-noaa.rwl</code></pre>
+<p><strong>One file argues with itself.</strong>
+<code>asia/kyrg014.rwl</code>, core <code>kok3a</code> stops with
+<code>-9999</code> in 1898, starts up again, and stops with
+<code>999</code> in 2005. Those mean 0.001 mm and 0.01 mm. One core, two
+scales, and nothing in the file to say which. One reader errors out. The
+other keeps the interior marker as data and cheerfully reports a ring
+width of −99.99 mm.</p>
 <hr />
 </div>
-</div>
-<div id="the-103-d-files-broken-columns" class="section level2">
-<h2>The 103 D files: broken columns</h2>
-<p>These are the ones where a published number is currently wrong. All
-of them are fixable by editing characters in the file. The attached CSV
-gives the file, series, year, line number and the offending text for
-each.</p>
+<div id="readers-disagree-103-files" class="section level2">
+<h2>Readers disagree — 103 files</h2>
+<p>These are the ones I’d actually send along. Two parsers, same file,
+different numbers. Somebody’s published value is wrong and no tool can
+tell you whose. All of them are fixable by editing characters in the
+file.</p>
 <table>
 <colgroup>
 <col width="30%" />
@@ -469,22 +458,22 @@ each.</p>
 <tr class="even">
 <td>One ID starts a second block</td>
 <td align="right">31</td>
-<td>Two pieces of wood share an identifier</td>
+<td>Two pieces of wood sharing an identifier</td>
 </tr>
 <tr class="odd">
 <td>Parsers return different values</td>
 <td align="right">24</td>
-<td>Ambiguous columns; tools disagree on the number</td>
+<td>Ambiguous columns; tools disagree</td>
 </tr>
 <tr class="even">
 <td>Value shifted out of its column</td>
 <td align="right">17</td>
-<td>Digits straddle the 6-character field boundary</td>
+<td>Digits straddle the 6-character boundary</td>
 </tr>
 <tr class="odd">
 <td>Embedded tab character</td>
 <td align="right">13</td>
-<td>Shifts a decade and drops its last value</td>
+<td>Shifts a decade, drops its last value</td>
 </tr>
 <tr class="even">
 <td>Only one parser can open it</td>
@@ -494,38 +483,30 @@ each.</p>
 <tr class="odd">
 <td>Two records run together</td>
 <td align="right">4</td>
-<td>A missing line break; a whole decade is lost</td>
+<td>Missing line break; a whole decade vanishes</td>
 </tr>
 </tbody>
 </table>
 <p>By region: North America 51, Australia 16, Europe 13, Asia 12, South
 America 10, Africa 1.</p>
+<p><code>itrdb-file-findings.csv</code> has file, series, year, line
+number and the offending characters for every one of them.</p>
 <hr />
 </div>
 <div id="three-worked-examples" class="section level2">
 <h2>Three worked examples</h2>
-<div id="a-shifted-digit-and-three-tools-that-disagree-d" class="section level3">
-<h3>1. A shifted digit, and three tools that disagree (D)</h3>
+<div id="one-shifted-digit-three-tools-three-answers" class="section level3">
+<h3>1. One shifted digit, three tools, three answers</h3>
 <p><code>southamerica/arge041.rwl</code>, core <code>RH17B</code>. A
-four-digit value has its leading digit parked at the start of the field
-instead of right-aligned, so the digits cross a column boundary. This
-happens in about a dozen places in the file.</p>
-<p>Raw line 261 — the year field is columns 9–12, then ten 6-character
-values:</p>
+four-digit value has its leading digit parked at the front of the field
+instead of right-aligned, so the digits straddle a column boundary.
+Happens a dozen or so times in this file.</p>
+<p>Line 261 — year in columns 9–12, then ten 6-character values:</p>
 <pre><code>RH17B   19331  185   9101  299   9721  0921  005   442</code></pre>
-<p>Nothing in the line says whether <code>1  185</code> means 1185 or
-means 1 followed by 185. The three tools each choose differently, and
-none of them warns:</p>
+<p>Nothing in that line tells you whether <code>1  185</code> is 1185,
+or 1 followed by 185. Three tools, three answers, and not one of them
+says a word about it:</p>
 <table>
-<colgroup>
-<col width="11%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Reading 1933–1938</th>
@@ -557,7 +538,7 @@ none of them warns:</p>
 <td align="right">9.21</td>
 </tr>
 <tr class="odd">
-<td>Your published Template file</td>
+<td>NOAA Template</td>
 <td align="right">1.85</td>
 <td align="right">9.10</td>
 <td align="right">2.99</td>
@@ -567,103 +548,217 @@ none of them warns:</p>
 </tr>
 </tbody>
 </table>
-<p>Only the first reading is internally coherent — a young tree with
-8–13 mm juvenile rings, tapering as it ages. The published values put a
-0.05 mm ring next to a 9.72 mm ring in the same core. Shifting those
-digits one column to the right in the <code>.rwl</code> file resolves it
-for every tool at once.</p>
+<p>Only the first row is a tree — young, 8–13 mm juvenile rings,
+tapering. The Template reading puts a 0.05 mm ring next to a 9.72 mm
+ring in the same core. Nudge those digits one column right in the
+<code>.rwl</code> and every tool agrees at once.</p>
 </div>
-<div id="a-missing-line-break-already-carried-into-the-template-d" class="section level3">
-<h3>2. A missing line break, already carried into the Template (D)</h3>
-<p><code>northamerica/usa/az621.rwl</code>, line 45. Two records share a
-line because a newline is missing: <code>FR-001</code>’s last decade
-runs straight into <code>FR-002</code>’s first.</p>
-<p>Raw line 45 — 144 characters where 72 are expected:</p>
+<div id="a-missing-line-break-thats-already-in-the-template" class="section level3">
+<h3>2. A missing line break that’s already in the Template</h3>
+<p><code>northamerica/usa/az621.rwl</code>, line 45. Two records sharing
+a line because somebody lost a newline — <code>FR-001</code>’s last
+decade runs straight into <code>FR-002</code>’s first.</p>
+<p>144 characters where 72 are expected:</p>
 <pre><code>FR-001  2010    28    19    30    26    21    25    19    32    23   999FR-002  1660    63    93    70    74   142   119   131    42    53    76</code></pre>
-<p>Every tool we tested silently loses <code>FR-002</code>’s 1660–1669
-decade — ten measurements. That series now begins at 1670 everywhere,
-and <code>az621-rwl-noaa.txt</code> shows <code>NA</code> for those ten
-years too, so the Template file inherited the same loss. Inserting one
-line break fixes both.</p>
+<p>Every tool I tested quietly drops <code>FR-002</code>’s 1660–1669
+decade. Ten measurements, gone. The series starts at 1670 everywhere you
+look, and <code>az621-rwl-noaa.txt</code> has <code>NA</code> for those
+ten years too, so the Template inherited it. One line break fixes
+both.</p>
 </div>
-<div id="a-file-that-measures-density-not-width-c" class="section level3">
-<h3>3. A file that measures density, not width (C)</h3>
-<p>Worth flagging as a caution rather than a defect. The Tucson
-container holds density series as well as ring widths, and a latewood
-density of 0.83 g/cm³ comes back looking like an 83 mm ring. We excluded
-1,947 non-width files from our range checks for this reason. If you run
-similar checks, the <code>Parameter_Keywords</code> field in the
-Template file is the reliable way to tell them apart — the filename
-suffix is not.</p>
+<div id="density-files-are-not-ring-widths" class="section level3">
+<h3>3. Density files are not ring widths</h3>
+<p>Not a defect. A trap, and I walked straight into it. The Tucson
+container holds density series as well as widths, and a latewood density
+of 0.83 g/cm³ comes back looking like an 83 mm ring. My first pass
+confidently flagged 217 density files as having impossible ring widths —
+which, had I sent it, would have been a genuinely embarrassing thing to
+put in front of Ed. <code>Parameter_Keywords</code> in the Template file
+tells you what a file actually measures. The filename suffix does not. I
+ended up excluding 1,947 non-width files from the range checks.</p>
 <hr />
 </div>
 </div>
-<div id="what-we-did-not-report" class="section level2">
-<h2>What we did not report</h2>
-<p>Three large categories were left out on purpose. We would rather send
-you 444 files worth looking at than 2,400 with the real cases buried
-inside.</p>
-<div id="interior-gaps-and-split-segments-1748-files-b" class="section level3">
-<h3>Interior gaps and split segments — 1,748 files (B)</h3>
-<p>Many series have gaps in the middle, and many single identifiers
-carry two segments separated by years. These are normal. A gap usually
-means a stretch of the core could not be measured — rot, a branch scar,
-a crumbled section — and filling that stretch with zeros is a convention
-going back to the original DPL programs and carried forward in dplR.
-Leading and trailing zeros are used the same way.</p>
-<p>We would rather see split segments stored as two series, and we would
-rather a gap stayed a gap than became a row of zeros, because a zero
-ring width means an absent ring and a gap means nobody could measure.
-But that is a preference about practice, not a defect in your files, and
-it is not NOAA’s to settle. We are making our own reader more explicit
-about it. Nothing here needs action from you.</p>
-</div>
-<div id="formatting-that-reads-correctly-anyway-1777-files-b" class="section level3">
-<h3>Formatting that reads correctly anyway — 1,777 files (B)</h3>
-<p>Mostly series IDs that fill all eight columns, leaving no space
-before the year. Any parser that counts columns handles these perfectly.
-They only trouble tools that split on whitespace, which is our problem
-to solve, not yours.</p>
-</div>
-<div id="mixed-precision-across-series-99-files-c" class="section level3">
-<h3>Mixed precision across series — 99 files (C)</h3>
-<p>These are in the list but marked as a glance, not an error. A file
-whose series end in a mix of <code>999</code> and <code>-9999</code> is
-unusual, but precision is a property of the series rather than the file,
-and both parsers scale it correctly. It may well be intentional.</p>
+<div id="worth-a-second-look-332-files" class="section level2">
+<h2>Worth a second look — 332 files</h2>
+<p>Nothing ambiguous about how these parse. The numbers are just odd
+enough that somebody who knows the site should have a look.</p>
+<table>
+<colgroup>
+<col width="42%" />
+<col width="57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th align="right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Very short series (≤10 yr, and doesn’t crossdate with its own
+collection)</td>
+<td align="right">117</td>
+</tr>
+<tr class="even">
+<td>File median an order of magnitude off its genus</td>
+<td align="right">111</td>
+</tr>
+<tr class="odd">
+<td>File mixes precision flags across series</td>
+<td align="right">99</td>
+</tr>
+<tr class="even">
+<td>Stop marker mid-series, series carries on immediately</td>
+<td align="right">99</td>
+</tr>
+<tr class="odd">
+<td>Series median far from the rest of its file</td>
+<td align="right">48</td>
+</tr>
+<tr class="even">
+<td>File has only 1–2 series</td>
+<td align="right">37</td>
+</tr>
+<tr class="odd">
+<td>Single value out of range</td>
+<td align="right">11</td>
+</tr>
+</tbody>
+</table>
+<p>The precision-mix group is the weakest of these and I nearly binned
+it. Precision belongs to the series, not the file, and both parsers
+handle a mixed file correctly. It’s just unusual inside one collection.
+Take it as a nudge, not a finding.</p>
 <hr />
 </div>
+<div id="normal-practice-id-do-differently-1956-files" class="section level2">
+<h2>Normal practice I’d do differently — 1,956 files</h2>
+<p>These are standard practices that I wish people wouldn’t do.</p>
+<p>That’s the whole claim. Not defects, not errors, nothing anybody
+needs to fix. I’m writing them down because I looked at them, felt the
+familiar twitch, and want a record that I decided to leave them
+alone.</p>
+<p><strong>Interior gaps filled with zeros.</strong> A gap usually means
+a stretch of core nobody could measure — rot, a branch scar, a section
+that crumbled. Filling it with zeros goes back to the original DPL
+programs and dplR has carried it forward ever since. Leading and
+trailing zeros get used the same way.</p>
+<p>I hate it. A zero ring width is a real observation — the tree grew
+nothing that year — and a gap means nobody could read the wood. Writing
+the first where the second is true throws away information you can’t get
+back, and nothing downstream flags it because 0.00 is a perfectly legal
+value.</p>
+<p>I’ve been making this argument for years and the archive is entirely
+unmoved. It’s been standard for five decades, it’s what everyone’s
+software expects, and it is absolutely not NOAA’s job to relitigate it
+because I don’t like it. Worth remembering that dplR is one of the
+programs doing it, so I’ve been part of the problem for most of that
+time.</p>
+<p>What I <em>can</em> fix is my own reader making the choice silently.
+<code>read.tucson2</code> now leaves interior gaps as <code>NA</code>,
+says loudly how many it found, and tells you to pass
+<code>fill.internal.NA = 0</code> if you want the old behaviour
+back.</p>
+<p><strong>One ID carrying two separate segments.</strong> Same
+hobbyhorse. I’d store them as two series, because every parser has to
+guess what to do with the join and they don’t all guess alike. Plenty of
+people I respect disagree, and they aren’t wrong.</p>
+<p><strong>Formatting that reads fine anyway</strong> — 1,786 findings,
+mostly series IDs filling all eight columns so there’s no space before
+the year. Any parser that counts columns handles them without blinking.
+They only break tools that split on whitespace, which is my problem, not
+the archive’s.</p>
+<hr />
 </div>
-<div id="how-we-did-this-and-what-it-does-not-cover" class="section level2">
-<h2>How we did this, and what it does not cover</h2>
+<div id="how-i-did-this-and-what-i-dont-trust" class="section level2">
+<h2>How I did this, and what I don’t trust</h2>
 <ul>
-<li>Every file was read twice, by <code>dplR::read.tucson</code> and by
-an independent parser, and compared cell by cell. Where they disagreed
-we treated the file as ambiguous rather than picking a winner.</li>
-<li>Structural checks run on the raw text at fixed Tucson positions, so
-each finding cites a line number and the exact characters.</li>
-<li>Range checks are relative, not absolute. We set no fixed ceiling on
-a ring width. A value is only flagged when it is extreme both within its
-own series and against all archive measurements for the same genus.</li>
-<li>Short series were crossdated against the rest of their own
-collection before being reported. That took 452 candidates down to
-117.</li>
-<li>We did not review site metadata — coordinates, elevations, species
-assignments — in this pass. That is a separate list.</li>
-<li>The archive is its own reference distribution, so it contains the
-errors we are looking for. We used robust statistics throughout, but a
-systematic error affecting many files at once would be harder for us to
-see.</li>
+<li>Every file read twice, <code>dplR::read.tucson</code> and an
+independent parser, compared cell by cell. Where they disagreed I called
+the file ambiguous rather than picking a winner.</li>
+<li>Structural checks run on raw text at fixed Tucson positions, so
+every finding cites a line number and the exact characters.</li>
+<li>Range checks are relative. No fixed ceiling on a ring width
+anywhere. A value only gets flagged if it’s extreme within its own
+series <em>and</em> against every archive measurement for the same
+genus.</li>
+<li>Short series got crossdated against the rest of their own collection
+before being reported. That took 452 candidates down to 117.</li>
 </ul>
-<p>Happy to supply the code, the intermediate data, or a different cut
-of the list. If any of these flags is a convention we have misread,
-please tell us — we would rather correct our checks than send you
-noise.</p>
+<p>Now the part I’d want someone to poke at:</p>
+<p><strong>Nearly every category shrank when I audited it.</strong> Not
+by a little. 60,866 → 4,903 structural findings. 3,259 → 24 reader
+disagreements. 452 → 117 short series. 339 → 111 genus outliers. 131 → 9
+unreadable. Every single time the cause was one systematic effect
+wearing the costume of a thousand separate findings, and every single
+time I believed the first number until I went and looked. No reason to
+think I’ve found the last one.</p>
+<p><strong>The precision check was wrong twice before it was
+right.</strong> First it flagged any file containing both markers —
+wrong 122 times out of 123, because precision is a property of the
+series. Then it flagged any series containing both — wrong all 53 times,
+because a series measured in 0.001 mm can perfectly well contain a 0.999
+mm ring. Third attempt found the one file that’s genuinely broken.</p>
+<p><strong>The archive is its own reference distribution</strong>, which
+means it contains the errors I’m hunting for. Robust statistics cope
+with a small contaminated fraction. A systematic error spread across
+many files at once would be invisible to this whole approach.</p>
+<p><strong>No metadata in this pass</strong> — coordinates, elevations,
+species. That’s a separate list and a separate argument.</p>
 <hr />
-<p>Attached: <code>itrdb-file-grades.csv</code> (one row per file, worst
-grade first) and <code>itrdb-file-findings.csv</code> (every finding,
-with file, series, year, line number and evidence). Prepared by
-openDendro, August 2026.</p>
+</div>
+<div id="where-things-are" class="section level2">
+<h2>Where things are</h2>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>itrdb-file-grades.csv</code></td>
+<td>One row per file, worst category first</td>
+</tr>
+<tr class="even">
+<td><code>itrdb-file-findings.csv</code></td>
+<td>Every finding: file, series, year, line, evidence</td>
+</tr>
+<tr class="odd">
+<td><code>short-series-adjudicated.csv</code></td>
+<td>All 452 short-series candidates with crossdating</td>
+</tr>
+<tr class="even">
+<td><code>rwl-format-problems.csv</code></td>
+<td>Raw structural layer</td>
+</tr>
+<tr class="odd">
+<td><code>rwl_format_checks.R</code></td>
+<td>Structural checks</td>
+</tr>
+<tr class="even">
+<td><code>qa10_read_all_rwl.R</code></td>
+<td>Both readers across the archive</td>
+</tr>
+<tr class="odd">
+<td><code>qa20_grade_rwl.R</code></td>
+<td>Plausibility checks and categories</td>
+</tr>
+<tr class="even">
+<td><code>qa30_adjudicate_short.R</code></td>
+<td>Short-series crossdating</td>
+</tr>
+</tbody>
+</table>
+<p>If any of these flags turns out to be a convention I’ve misread —
+entirely possible on today’s evidence — I’d rather fix the check than
+pass the noise along.</p>
 </div>
 </div>
 
