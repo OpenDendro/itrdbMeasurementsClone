@@ -20,7 +20,26 @@
 ##  - edge.zeros added; read.tucson() has it and this reader had the TRUE
 ##    branch hardcoded, so callers could not ask for the other behaviour
 ##  - fill.internal.NA added, replacing the unconditional gap filling that used
-##    to happen in fill_middle_NAs(), which is gone; see the note just below
+##    to happen in fill_middle_NAs(), which is gone; see the note just below.
+##    AGB Sep 2026: the default is NULL, so interior gaps come back as NA and
+##    nothing is invented. This went NULL -> 0 -> NULL in the space of a month;
+##    the reasoning is worth keeping so it does not get re-argued.
+##      * NULL first, on the argument that writing a zero ring width where the
+##        file records nothing is a claim the reader should not make by itself.
+##      * Then 0, because filling is the long-standing DPL convention, dplR has
+##        always done it, and a reader that returns different numbers from
+##        read.tucson() on a third of the archive is not a drop-in replacement.
+##      * Now NULL again, and this time it is not a default being tuned. Andy
+##        and Kevin have changed the standard practice: a negative value that is
+##        not a terminator is missing data, and missing data is NA. A zero ring
+##        width means a locally absent ring, which is a real observation about a
+##        tree. The two are different measurements of the world and the reader
+##        must not turn one into the other. That the archive has been storing
+##        the second where it meant the first is the thing being fixed, not a
+##        convention to preserve.
+##    fill.internal.NA = 0 still reproduces read.tucson() exactly, and "Mean",
+##    "Spline" and "Linear" are available for anyone who wants to interpolate.
+##    Either way verbose names every gap and what the file held there.
 ##  - columns now come back in file order rather than sorted alphabetically
 ##  - header dropped. It was accepted and then ignored, and there is nothing
 ##    sensible for it to do here. In read.tucson() it only sets
@@ -87,6 +106,19 @@ read.tucson2 <- function(fname,
     warning(msg, call. = FALSE)
   }
 
+  ## AGB Sep 2026: one refusal, used by every path that ends up with nothing to
+  ## return. There are three: an empty file, a file that is all header, and a
+  ## file whose lines parse but yield no measurement (the *-noaa.rwl tables).
+  ## They used to fail in three different places with three different errors,
+  ## none of which named the file or said what was wrong -- "argument is of
+  ## length zero" from inside the head parser, and data.table's "Object 'V1' not
+  ## found amongst []". Both are about R, not about the user's file.
+  no_measurements <- function()
+    stop('In ', fname, ', no measurements could be read: nothing in this file ',
+         'parses as a Tucson decadal record. If it is empty, header-only, a NOAA ',
+         'template table or another tabular export, it needs a different reader.',
+         call. = FALSE)
+
   ## AGB Aug 2026: fill_middle_NAs() used to live here. It filled every interior
   ## gap in a series with zero, on the reasoning that dplR does the same. dplR
   ## does -- inside the C readloop, undocumented -- but that is the behaviour we
@@ -114,15 +146,40 @@ read.tucson2 <- function(fname,
   }
 
   count_letters <- function(char.vector) sapply(gregexpr("[[:alpha:]]", substr(char.vector, 9, 72)), length)
-  
+
+  ## AGB Sep 2026: year ranges are printed in a few places and a hyphen is the
+  ## obvious separator until a BC year turns up, when "-2649-2002" reads as a
+  ## subtraction. Fall back to "to" whenever either end is negative.
+  yr_range <- function(a, b) {
+    if (a == b) as.character(a)
+    else if (a < 0 || b < 0) paste(a, 'to', b)
+    else paste0(a, '-', b)
+  }
+
+  ## AGB Sep 2026: a tab is a jump to the next 8-column stop, not one character.
+  ## Used on the raw lines before anything measures a column position.
+  expand_tabs <- function(s, stop = 8L) {
+    while (any(i <- grepl('\t', s, fixed = TRUE))) {
+      p <- regexpr('\t', s[i], fixed = TRUE)
+      n <- stop - ((p - 1L) %% stop)
+      s[i] <- paste0(substr(s[i], 1L, p - 1L), strrep(' ', n), substring(s[i], p + 1L))
+    }
+    s
+  }
+
   # First, read the whole file into a data.table, one row per row.
   # This data.table has a single column with name V1 by default.
   # strip.white = FALSE because sometimes core IDs have spaces in front.
-  raw <- data.table::fread(fname, header = FALSE, sep = '\n', 
+  raw <- data.table::fread(fname, header = FALSE, sep = '\n',
                blank.lines.skip = TRUE, strip.white = FALSE)
-  
+
+  ## An empty file makes fread return a NULL data.table with no columns at all,
+  ## so every reference to V1 below would fail on the column rather than on the
+  ## file. Refuse it here instead.
+  if (is.null(raw) || nrow(raw) == 0L || !('V1' %in% names(raw))) no_measurements()
+
   # Clean up ----------------------------------------------------------------------
-  # Sometimes the file has mixed EOL chars, esp. between the headers and the body, and fread can fail. 
+  # Sometimes the file has mixed EOL chars, esp. between the headers and the body, and fread can fail.
   # This will result in one or four rows only in the read result.
   # Special case: pak042 has a wrong EOL in PSL0, likely edited in a Mac to a file from Windows
   # This caused two lines to merge
@@ -140,31 +197,87 @@ read.tucson2 <- function(fname,
   #     raw  <- rbind(raw[1:3], raw2)
   #   }
   # }
-  
-  rIdx <- which(regexpr('\r', raw$V1) > 0)
-  if (length(rIdx) > 0) {
-    reRead <- data.table::rbindlist(lapply(rIdx, \(k) {
-      raw2 <- gsub('\r', '\n', raw$V1[k])
-      data.table::fread(text = raw2, sep = '\n', header = FALSE)
-    }))
-    raw <- rbind(raw[-rIdx], reRead)  
+
+  ## AGB Sep 2026: a bare carriage return joins two records into one row, because
+  ## fread splits on \n only. fread strips the trailing \r of a normal CRLF line,
+  ## so anything left here is a real mid-record CR. pak042 has four of them.
+  ##
+  ## This used to repair the row and then write it back with
+  ##   raw <- rbind(raw[-rIdx], reRead)
+  ## which appends the repaired lines to the END of the table. The values were
+  ## right, but the file order was not, and the reader leans on file order in two
+  ## places: the block pass, which decides what is one series and what is a
+  ## repeated ID, and coreOrder, which sets the column order of the result.
+  ## pak042's PSL10 is the case. Its 1655 and 1660 lines share row 114 of 649;
+  ## repaired and appended, they landed at the bottom, so the block pass saw
+  ## PSL10 twice -- once at 1670-2017 and once at 1655-1669 -- and reported a
+  ## series entered in two parts. The file is contiguous and perfectly ordinary;
+  ## the split was entirely the reader's own doing.
+  ##
+  ## Splitting in place fixes it. strsplit rather than a second fread(text=):
+  ## the inner fread did not carry strip.white = FALSE, so it would have trimmed
+  ## the leading spaces the head parser depends on.
+  if (any(grepl('\r', raw$V1, fixed = TRUE))) {
+    parts <- strsplit(raw$V1, '\r', fixed = TRUE)
+    parts <- lapply(parts, function(p) p[nzchar(p)])
+    raw <- data.table::data.table(V1 = unlist(parts, use.names = FALSE))
   }
-  
-  raw <- raw[regexpr(comment.char, V1) < 0] # Remove lines with comments    
-  raw <- raw[substr(V1, 1, 1) != '\032']    # Strange EOF 
-  
+
+  raw <- raw[regexpr(comment.char, V1) < 0] # Remove lines with comments
+  raw <- raw[substr(V1, 1, 1) != '\032']    # Strange EOF
+
+  ## AGB Sep 2026: tabs, resolved here and reported in their own right.
+  ##
+  ## The Tucson format is fixed-width, so a tab has no defined width and nothing
+  ## downstream can place a column until it is resolved. Expanding to the
+  ## standard 8-column stops is what the person who wrote the file saw on
+  ## screen, and on the tabbed files in this archive it puts the measurements
+  ## back on the format's 6-character columns exactly. grc034 core XEP23b is the
+  ## worked example and shows both shapes: a tab standing in for the two pad
+  ## spaces after a 6-character ID (line "XEP23b<tab>1850"), and a tab standing
+  ## in for the run of spaces before the first measurement ("XEP23b  1890<tab>-8").
+  ##
+  ## This must run before the column-72 split below, because expanding changes
+  ## which character sits at column 72.
+  ##
+  ## It must also run before the conformance check further down, and that is the
+  ## real reason it exists. The check assumes columns 13-72 are ten 6-character
+  ## fields. An unexpanded tab breaks that assumption before the check runs, so
+  ## the check finds a conflict that exists only because of the tab, and then
+  ## discards a line it had in fact read correctly. grc034 and va024 were losing
+  ## 25 cells that way, and the warning the user got talked about column layout
+  ## rather than about the tab that caused it.
+  ##
+  ## Expanding is an assumption, not a certainty -- 8 is the universal default
+  ## tab stop but the file does not say so. Hence a warning rather than silence,
+  ## and hence strict = TRUE refuses the file. A tab in the trailing whitespace
+  ## moves no column and is not worth a word.
+  if (any(grepl('\t', raw$V1, fixed = TRUE))) {
+    interiorTab <- grepl('\t.*[^[:space:]]', raw$V1)
+    firstTabbed <- if (any(interiorTab)) raw$V1[which(interiorTab)[1]] else NA_character_
+    raw[, V1 := expand_tabs(V1)]
+    if (any(interiorTab))
+      report('In ', fname, ', ', sum(interiorTab), ' data line(s) contain a tab ',
+             'character. The Tucson format is fixed-width, so a tab has no ',
+             'defined width. These lines were expanded to the standard 8-column ',
+             'tab stops, which puts the measurements back onto the format\'s ',
+             '6-character columns; if the file was written against different tab ',
+             'stops, the columns will be wrong. First one: ',
+             gsub('\t', '<tab>', trimws(firstTabbed), fixed = TRUE))
+  }
+
   ## AGB Aug 2026: the overflow past column 72 is reported further down, once
   ## header lines have been dropped. Doing it here fired on every file whose
   ## header carries an end year past column 72, e.g. brit046.
   raw[, ovf := substr(V1, 73, nchar(V1))]
   raw[, V1 := substr(V1, 1, 72)]
 
-  # Trim trailing white 
+  # Trim trailing white
   # Leave leading white spaces because we can safely handles a lot of cases
   # with 8-char IDs that has spaces in front.
-  raw[, V1 := trimws(V1, 'right')]          
+  raw[, V1 := trimws(V1, 'right')]
   raw <- raw[nchar(V1) > 12]                # Remove rows that are too short
-  
+
   # Remove headers
   # In principal a data line should not have any non-numeric character after the 13th position
   # so we can use grepl("[[:alpha:]]", substr(line, 9, 72)) to detect header lines
@@ -172,7 +285,7 @@ read.tucson2 <- function(fname,
   # Some files use NaN to mark missing rings
   # So we say a data line should not have "too many" letters
   # How many is too many? Let's keep it at 3 (as it is now with the problematic files).
-  raw <- raw[count_letters(V1) <= 3]                     
+  raw <- raw[count_letters(V1) <= 3]
 
   ## AGB Aug 2026: report what truncating at column 72 threw away, but only when
   ## it cost us something. Most overflow is a trailing note or a per-line count
@@ -204,27 +317,68 @@ read.tucson2 <- function(fname,
   ## AGB Aug 2026: dropped a stray "# Check for header" comment that sat here.
   ## Header removal happens above, by letter count; nothing is checked here.
   # Remove duplicated rows due to copy-paste
-  dups <- duplicated(raw)
-  if (any(dups) > 0) {
-    report(paste('Identical rows detected and removed in', fname, '\n'),
-            paste0(capture.output(raw[dups][order(V1)]), collapse = '\n'))
+  ## AGB Sep 2026: this message used to be built with
+  ##   capture.output(raw[dups][order(V1)])
+  ## which printed the internal data.table -- a "V1" column heading, a "<char>"
+  ## type row and data.table's row numbers. All three are the reader's plumbing
+  ## and mean nothing to someone looking at their own file. Print the lines
+  ## themselves instead, one per line, as they appear in the file.
+  ## AGB Sep 2026: a line carrying nothing but a stop marker is exempt from this
+  ## check. Two records of one ID that end in the same decade produce two
+  ## byte-identical terminator lines, and removing one as a "copy-paste
+  ## duplicate" takes away the second record's stop marker. That marker is now
+  ## load-bearing: it is what separates a merged repeated ID that is two complete
+  ## records (warned, with the gap) from one that is a continuation (a quiet
+  ## verbose line). QA_Stuff/synthetic/remeasure.rwl is the case, and it is the
+  ## normal shape when someone re-measures a core -- two sessions on one core
+  ## usually end in the same year.
+  ##
+  ## Keeping both copies costs nothing. A terminator-only line contributes no
+  ## rows downstream: the value equals the flag, so it becomes NA and the melt
+  ## drops it. And in the rarer reading where a lone 999 is a real 0.999 mm
+  ## measurement in a 0.001 mm file, keeping both copies produces a duplicate
+  ## year, which the repeated-ID pass below now reports properly instead of the
+  ## line being deleted here without a word.
+  tokens <- strsplit(trimws(substr(raw$V1, 13, 72)), '[[:space:]]+')
+  markerOnly <- vapply(tokens, function(tk) {
+    tk <- tk[nzchar(tk)]
+    length(tk) == 1L && tk %in% c('999', '-9999')
+  }, TRUE)
+  dups <- duplicated(raw) & !markerOnly
+  if (any(dups)) {
+    ## One entry per distinct line, with a count. A line pasted in fourteen times
+    ## should say so once, not fill the console with fourteen copies of itself.
+    tab  <- sort(table(trimws(raw$V1[dups])), decreasing = TRUE)
+    show <- utils::head(tab, 10L)
+    report('In ', fname, ', ', sum(tab), ' line(s) are exact copies of a line ',
+           'earlier in the file and were removed:\n',
+           paste0('  ', names(show),
+                  ifelse(show > 1L, paste0('   (', show + 1L, ' copies in all)'), ''),
+                  collapse = '\n'),
+           if (length(tab) > 10L)
+             paste0('\n  ... and ', length(tab) - 10L, ' other line(s).'))
     raw <- raw[!dups]
   }
-  
-  # Parsing 
+
+  # Parsing
   # A row has two parts: head and tail
-  # Head is ID + year (which can be bunched). 
+  # Head is ID + year (which can be bunched).
   #    This should be 12 chars ending with a digit
   #    Cana209 is an exception
   # Tail should be a bunch of numbers
   #    Max 3 characters allowed
   #    Those with characters will be converted to NA
-  
+
   # Split head ----------------------------------------------------------
-  
+
+  ## Nothing survived the header and length filters. data.table evaluates the j
+  ## expression below once on an empty table to infer column types, so without
+  ## this the head parser runs on a zero-length string and dies inside an if().
+  if (nrow(raw) == 0L) no_measurements()
+
   startDigits <- c(as.character(1:9), '-')
   raw[, c('core', 'startYear') := {
-    
+
     headString <- substr(V1, 1, 12)
     if (substr(headString, 12, 12) != ' ') {
       if (substr(headString, 8, 8) == '-') {
@@ -234,7 +388,7 @@ read.tucson2 <- function(fname,
         startYear <- substr(headString, 9, 12)
         core      <- substr(headString, 1, 8)
       }
-    } else { 
+    } else {
       # cana209, nj001, nj002: year shifted left, not bunch
       # japa018: year shifted left, bunched
       if (substr(headString, 7, 7) == '-') {
@@ -252,10 +406,33 @@ read.tucson2 <- function(fname,
     }
     list(core = core, startYear = startYear)
   }, by = seq_len(nrow(raw))]
-  
-  raw[, ':='(startYear = as.integer(startYear),
-             core = trimws(core))]  
-  raw <- raw[!is.na(startYear)]
+
+  ## AGB Sep 2026: this as.integer() used to run bare, so a line whose year field
+  ## is not a number raised R's own "NAs introduced by coercion". That warning
+  ## does not go through report(), which meant strict = TRUE could not refuse the
+  ## file: 9 archive files warned but were accepted, and the message said nothing
+  ## about which file or which line. The line was then dropped by the filter
+  ## below without a word.
+  ##
+  ## Now the coercion is silenced and the dropped lines are reported properly, so
+  ## strict covers them and the user is told what was discarded. Archive-wide
+  ## this is 3 lines in 2 files -- swe347's third header line, which the letter
+  ## count lets through, and two in va024. Small, but a silently discarded data
+  ## line is exactly the thing this reader is meant not to do.
+  raw[, ':='(startYear = suppressWarnings(as.integer(startYear)),
+             core = trimws(core))]
+  badYear <- is.na(raw$startYear)
+  if (any(badYear)) {
+    show <- utils::head(trimws(raw$V1[badYear]), 10L)
+    report('In ', fname, ', ', sum(badYear), ' line(s) were discarded because the ',
+           'year field does not read as a number. A line that reaches this point ',
+           'has already passed the header and length filters, so check whether it ',
+           'is a stray header or a data line whose columns are shifted:\n',
+           paste0('  ', show, collapse = '\n'),
+           if (sum(badYear) > 10L) paste0('\n  ... and ', sum(badYear) - 10L, ' more.'))
+  }
+  raw <- raw[!badYear]
+  if (nrow(raw) == 0L) no_measurements()
 
   ## AGB Aug 2026: resolve repeated series IDs here, before anything else touches
   ## the core names. This used to happen much further down, row by row on the long
@@ -280,6 +457,7 @@ read.tucson2 <- function(fname,
   ## Note the rename is order dependent: if a real series is called <core>X and an
   ## earlier <core> is duplicated, the later real one is what gets suffixed. No
   ## data is lost either way, and both are reported.
+  blockInfo <- NULL
   if (nrow(raw) > 0L) {
     nr  <- nrow(raw)
     brk <- if (nr == 1L) TRUE else
@@ -306,8 +484,32 @@ read.tucson2 <- function(fname,
                                       id, min(dec), max(dec) + 9L, cand))
     }
 
+    ## AGB Sep 2026: does each block end with a stop marker? Computed here, in
+    ## file order, while segId is still contiguous and V1 still exists. This is
+    ## the fact that tells a merge worth making from one worth questioning, and
+    ## it is structural rather than a heuristic: a block with no stop marker is
+    ## a record that has not ended, so a later block under the same ID is its
+    ## continuation. Measured over the archive the split is clean -- all 5
+    ## merges whose blocks abut exactly have an unterminated block, and all 122
+    ## whose blocks each terminate leave a real hole, up to 351 years.
+    blockTerm <- raw[, {
+      v <- V1[.N]
+      tk <- strsplit(trimws(substr(v, 13, 72)), '[[:space:]]+')[[1]]
+      tk <- tk[nzchar(tk)]
+      .(term = length(tk) > 0L && tk[length(tk)] %in% c('999', '-9999'))
+    }, by = segId]
+
     raw[, core := newName[segId]]
-    raw[, segId := NULL]
+    ## segId is kept, not dropped. The merged-block report needs the years each
+    ## block actually covers, and those are not known until the tail is parsed:
+    ## a decade line can hold fewer than ten measurements, so startYear + 9 is a
+    ## guess. newz016's OKA724 line for 1784 holds six values and ends at 1789,
+    ## which is exactly the difference between "abuts the next block" and
+    ## "overlaps it". The report is therefore made further down, off parsed.
+    blockInfo <- data.table::data.table(
+      segId   = blocks$segId,
+      newName = newName,
+      term    = blockTerm$term[match(blocks$segId, blockTerm$segId)])
 
     ## Tell the user. Duplicated IDs are a perennial problem in this archive and
     ## silence about them is worse than the duplication.
@@ -316,15 +518,6 @@ read.tucson2 <- function(fname,
                      ' repeated series ID(s) had overlapping years and were ',
                      'renamed so that no measurements are lost:\n'),
               paste(renamed, collapse = '\n'))
-
-    if (verbose) {
-      for (m in names(which(table(newName) > 1L))) {
-        d <- sort(unlist(claimed[[m]]))
-        cat('Series ', m, ' was entered in ', sum(newName == m),
-            ' separate blocks with no shared decade, read as one series (decades ',
-            min(d), '-', max(d) + 9L, ').\n', sep = '')
-      }
-    }
   }
 
   ## AGB Aug 2026: remember the order in which series first appear in the file,
@@ -335,13 +528,13 @@ read.tucson2 <- function(fname,
   ## silently reorder the data of anyone who swapped one reader for the other.
   coreOrder <- unique(raw$core)
   raw <- raw[order(core, startYear)]
-  
+
   # Looking for the precision flag at the last row of each core ----
   raw[, flag := {
     V1 <- .SD[.N, V1]
     tailStrings <- strsplit(substr(V1, 13, nchar(V1)), ' ')[[1]]
     tailStrings <- tailStrings[nzchar(tailStrings)]
-    
+
     # Handling dash, -9999 can be bunched (mexi077)
     M <- length(tailStrings)
     dashLoc <- gregexpr("-", tailStrings)
@@ -357,26 +550,43 @@ read.tucson2 <- function(fname,
                          substr(tmp, dashLoc[[hasDash]], nchar(tmp)),
                          tailStrings[(hasDash + 1) : M])
       }
-    } 
+    }
     tailNums <- suppressWarnings(as.numeric(tailStrings))
-    if (tailNums[length(tailNums)] == -9999) -9999 else 999
+    ## AGB Sep 2026: isTRUE(), because the last token on a series' last line is
+    ## not always a number. bulg002i-noaa.rwl ends a "series" on NaN, the
+    ## comparison returned NA, and the if() died with "missing value where
+    ## TRUE/FALSE needed" -- an error about R, from deep inside the reader,
+    ## telling the user nothing about their file. NA now falls through to 999,
+    ## which is what the else branch already means: no -9999 terminator, so
+    ## assume 0.01 mm. On a file whose terminator is a number this changes
+    ## nothing, because the comparison is TRUE or FALSE either way.
+    if (isTRUE(tailNums[length(tailNums)] == -9999)) -9999 else 999
   }, by = core]
   raw <- raw[!is.na(flag)]
   # Split tail ----
-    
+
   ## AGB Aug 2026: dropped a live "V1 <- raw$V1[546]" that sat here uncommented
   ## under a "# Uncomment to debug problematic lines" note. It was inert only
   ## because the data.table j-expressions below rebind V1 to the column.
 
   cols <- paste0('Y', 0:9)                # Year 0 to year 9 for each row
-  
-  raw[, c(cols) := {
-    
+
+  ## AGB Sep 2026: 'zap' rides along with the ten year columns. It records, for
+  ## this line, which positions held a value that the reader then removed, and
+  ## what that value was, as "position:value" pairs. Nothing else in the reader
+  ## keeps that: by the time interior gaps are counted, the offending cells are
+  ## NA and the line is gone, so a report written from there could only guess at
+  ## what had been there, or re-parse the line and risk disagreeing with the
+  ## parse that actually produced the data. Capturing it at the point of removal
+  ## costs one character column and is exact.
+  raw[, c(cols, 'zap') := {
+
+    zap <- ''
     tailStrings <- substr(V1, 13, nchar(V1))
-    
+
     # Check if empty spaces are used for missing rings.
     # In this case we have 6 empty spaces in a row
-    # Read fix-width 
+    # Read fix-width
     if (grepl('      ', tailStrings)) {
       pos <- seq(from = 13, by = 6, length.out = 10)
       tailStrings <- sapply(pos, \(x) substr(V1, x, x + 5))
@@ -385,11 +595,11 @@ read.tucson2 <- function(fname,
       tailStrings <- strsplit(tailStrings, ' ')[[1]]
       tailStrings <- tailStrings[nzchar(tailStrings)]
     }
-    
+
     tailNums <- suppressWarnings(as.integer(tailStrings))
-    
+
     # String to numbers ----
-    
+
     # Handling dash ----
     # Sometimes measurements look like this 1234-50623, e.g. ak165
     # Need to detect "-" and split it.
@@ -408,12 +618,12 @@ read.tucson2 <- function(fname,
                          substr(tmp, dashLoc[[hasDash]], nchar(tmp)),
                          tailStrings[(hasDash + 1) : M])
       }
-    } 
+    }
     #   ----
-    
+
     tailNums <- suppressWarnings(as.numeric(tailStrings))
     N <- length(tailNums)
-    
+
     # Special cases -----------------------------------------------
     if (N == 0) {
       ## AGB Aug 2026: was message(); now goes through report() so strict can
@@ -422,7 +632,7 @@ read.tucson2 <- function(fname,
       report('In ', fname, ', a line holds no measurement and was skipped: ', trimws(V1))
       tailNums <- rep(NA, 10)
     } else {
-      # Check for non-numeric in measurements  
+      # Check for non-numeric in measurements
       hasNA <- is.na(tailNums)
       if (any(hasNA)) {
         ## AGB Aug 2026: this said "converted to zeros" and nothing in the
@@ -432,7 +642,7 @@ read.tucson2 <- function(fname,
         report('In ', fname, ', core ', core, ', decade starting ', startYear, ': ',
                sum(hasNA), ' measurement(s) are not numeric and are left as NA.')
       }
-      
+
       # Check for very large numbers
       # Numbers > 999999 will be bunched up. In this case, read by fixed width
       if (length(which(tailNums > 999999)) > 0) {
@@ -477,50 +687,128 @@ read.tucson2 <- function(fname,
         tailNums <- rep(NA_real_, 10)
         N <- 10L
       }
-      
+
+      ## AGB Sep 2026: note what is about to be removed, before removing it.
+      ## Position k here is year startYear + k - 1, which is how the gap report
+      ## further down puts a value back next to the year it came from.
+      killed <- which((tailNums < 0 & tailNums != -9999) | tailNums == flag)
+      if (length(killed) > 0L)
+        zap <- paste(paste0(killed, ':', format(tailNums[killed], trim = TRUE)),
+                     collapse = ',')
+
       tailNums[tailNums < 0 & tailNums != -9999] <- NA # some files use negative numbers for missing rings
       ## AGB Aug 2026: the line above is read.tucson()'s edge.zeros = TRUE branch,
       ## which used to be all this reader did. The zeros themselves are trimmed
       ## later, per series, by trim_edge_zeros(); they cannot be trimmed here
       ## because at this point we are still inside one decade of one line.
-      tailNums[tailNums == flag] <- NA      
-      # Convert to measurements  
+      tailNums[tailNums == flag] <- NA
+      # Convert to measurements
       if (N < 10) tailNums <- c(tailNums, rep(NA, 10 - N)) # pad NA to have length 10
     }
-    split(tailNums, cols)
+    c(split(tailNums, cols), list(zap = zap))
   }, by = seq_len(nrow(raw))]
-  
+
   raw[, V1 := NULL]
-  
+
   # Convert to long format
+  ## AGB Sep 2026: measure.vars named explicitly. It used to rely on "everything
+  ## that is not an id.var", which silently swept in the new zap column and
+  ## turned a character note into an eleventh year.
   parsed <- data.table::melt(
     raw,
-    id.vars = c('core', 'startYear', 'flag'),
+    id.vars = c('core', 'startYear', 'flag', 'segId'),
+    measure.vars = cols,
     variable.name = 'yearOrder',
     variable.factor = FALSE,
     value.name = 'rw')[order(core, startYear)][!is.na(rw)]
-  
+
+  ## AGB Sep 2026: a file that yields no measurement at all is not a Tucson
+  ## file, and an empty rwl is a worse answer than an error, because it passes
+  ## downstream without anyone noticing. The eight europe/*-noaa.rwl files are
+  ## the case: they are tab-separated NOAA template tables -- a header row of
+  ## column names, then one row per year -- not decadal Tucson records. Before
+  ## tab expansion they failed with "subscript out of bounds", which was at
+  ## least a failure. Expanding the tabs let them parse into nothing at all, so
+  ## refuse them here on the general ground rather than letting an empty object
+  ## out. This is not a recoverable problem, so it does not go through report().
+  if (nrow(parsed) == 0L) no_measurements()
+
   # At this point, if there is still a -9999 value in rw
   # That means the flag is different from -9999 -> two flags
   twoFlags <- parsed[rw < 0]
   if (nrow(twoFlags) > 0) {
     stop('In ', fname, ', core(s) ', paste(twoFlags$core, collapse = ' '), ' have different precision flags.')
   }
-  
+
   parsed[, precision := data.table::fifelse(flag == 999, 0.01, 0.001)]
   parsed[, rw := rw * precision]
-  
+
   # Finally we calculate the year from the startYear and the yearOrder
   parsed[, year := startYear + as.integer(substr(yearOrder, 2, 2))]
-  
+
   parsed[, c('startYear', 'yearOrder', 'flag') := NULL]
 
-  ## AGB Aug 2026: the row-level duplicate fix that used to sit here has moved up
-  ## to just after the head is parsed, and now works on blocks of decade lines.
-  ## See the note there for what it was getting wrong. By this point (core, year)
-  ## is unique by construction, so the check below is an assertion about our own
-  ## logic rather than a check on the file. If it ever fires it is a bug in the
-  ## block code above, not a problem with fname.
+  ## AGB Sep 2026: repeated series IDs are resolved HERE, on the years the file
+  ## actually records, and no longer up at the block pass on decade labels.
+  ##
+  ## The block pass compared startYear values, i.e. decade labels. Two records of
+  ## one ID that are offset by less than ten years share no decade label while
+  ## overlapping in years, so the labels said "no overlap", the blocks were
+  ## merged, and the duplicate check below then discarded half the rows -- while
+  ## reporting that the file's columns were bunched or shifted, which was the
+  ## wrong diagnosis. What came back was one series woven out of two records:
+  ##
+  ##   SYN01A  1.0 1.1 .. 1.9  5.5 5.6 5.7 5.8 5.9  2.5 2.6 2.7 2.8 2.9  6.5 ..
+  ##           |_ record 1 _|  |____ record 2 ____|  |____ record 1 ____|  |_ 2 _
+  ##
+  ## QA_Stuff/synthetic/offset-duplicate.rwl is that case. No file in the archive
+  ## triggers it, which is why it survived so long, but the shape arrives from
+  ## users constantly: a core measured in one session and re-measured in another,
+  ## with the second copy pasted at the end of the file.
+  ##
+  ## Deciding here costs nothing that matters. The years are exact by this point,
+  ## whereas at the block pass they cannot be known -- a decade line may hold
+  ## fewer than ten measurements, so startYear + 9 is a guess.
+  ##
+  ## Blocks are walked in file order, which is what segId already encodes. A
+  ## block whose years collide with what the name has already claimed takes a
+  ## suffix, repeatedly, so three copies and a pre-existing <core>X both resolve.
+  ## A candidate name that belongs to some other real series is skipped too.
+  ## Nothing is dropped: every measurement in the file comes back under some name.
+  if (!is.null(blockInfo) && nrow(parsed) > 0L) {
+    shared <- parsed[, .(nseg = data.table::uniqueN(segId)), by = .(core, year)][nseg > 1L]
+    if (nrow(shared) > 0L) {
+      taken   <- unique(parsed$core)
+      renamed <- character(0)
+      for (cc in unique(shared$core)) {
+        segs   <- sort(unique(parsed[core == cc, segId]))
+        owned  <- list()
+        for (sid in segs) {
+          yrs  <- parsed[core == cc & segId == sid, year]
+          cand <- cc
+          while ((!is.null(owned[[cand]]) && any(yrs %in% owned[[cand]])) ||
+                 (!identical(cand, cc) && is.null(owned[[cand]]) && cand %in% taken))
+            cand <- paste0(cand, fix.dup.char)
+          owned[[cand]] <- c(owned[[cand]], yrs)
+          if (!identical(cand, cc)) {
+            renamed <- c(renamed, sprintf('  %s  %s  ->  %s', cc,
+                                          yr_range(min(yrs), max(yrs)), cand))
+            taken <- c(taken, cand)
+            parsed[core == cc & segId == sid, core := cand]
+            blockInfo[segId == sid, newName := cand]
+          }
+        }
+      }
+      if (length(renamed) > 0L)
+        report(paste0('In ', fname, ', ', length(renamed), ' repeated series ID(s) ',
+                      'cover years already measured under the same name, so the ',
+                      'file holds more than one record for them. Each extra record ',
+                      'was renamed rather than merged, so no measurement is lost. ',
+                      'Check which one you meant to keep:\n'),
+               paste(renamed, collapse = '\n'))
+    }
+  }
+
   ## AGB Aug 2026: anything still duplicated here is a different problem from a
   ## repeated series ID, and must not be handled the same way. It means two lines
   ## of one block claim the same year, which happens when a line's columns are
@@ -549,13 +837,69 @@ read.tucson2 <- function(fname,
     parsed <- parsed[!dupIdx]
   }
 
+  ## AGB Sep 2026: report series that were assembled from more than one block.
+  ##
+  ## Made here rather than up at the block pass, because the years each block
+  ## covers are only known once the tail is parsed -- a decade line may hold
+  ## fewer than ten measurements, so startYear + 9 is a guess, and the guess is
+  ## wrong in exactly the cases that matter.
+  ##
+  ## Two shapes, told apart by whether every block ends with its own stop
+  ## marker, and treated differently because the format distinguishes them:
+  ##
+  ##   * A block with no stop marker is a record that has not ended, so the next
+  ##     block under the same ID is its continuation. newz016's OKA724 is the
+  ##     shape: a first partial decade written 40 lines away from the rest of
+  ##     the record, ending at 1789 where the main block starts at 1790. So is
+  ##     nm604's 101401, whose 1150 line is simply written before its 1140 line.
+  ##     Merging is right and unremarkable, so this is a verbose line, not a
+  ##     warning. 9 series in 8 files.
+  ##
+  ##   * Blocks that each end with a stop marker are each a complete record, and
+  ##     one ID carrying two complete records is a question the file cannot
+  ##     answer: one core measured in two pieces, or two cores that collided on
+  ##     a name. 122 series in 50 files. They are still merged -- splitting them
+  ##     would invent a series name that is not in the file, and the caller is
+  ##     better placed to decide -- but the merge is now warned, and the warning
+  ##     quotes the gap, because a 3-year hole and bt006's 40-year hole and
+  ##     nm603's 351-year hole are not the same claim.
+  if (!is.null(blockInfo) && nrow(parsed) > 0L) {
+    multi <- blockInfo[, .N, by = newName][N > 1L]$newName
+    if (length(multi) > 0L) {
+      rng <- parsed[core %in% multi, .(from = min(year), to = max(year)),
+                    by = .(core, segId)]
+      rng <- merge(rng, blockInfo[, .(segId, term)], by = 'segId')
+      data.table::setorder(rng, core, from)
+      for (m in multi) {
+        r <- rng[core == m]
+        if (nrow(r) < 2L) next
+        gaps  <- r$from[-1L] - r$to[-nrow(r)] - 1L
+        parts <- paste(mapply(yr_range, r$from, r$to), collapse = ', ')
+        if (all(r$term)) {
+          report('In ', fname, ', series ', m, ' is entered as ', nrow(r),
+                 ' separately terminated records that share no year: ', parts,
+                 '. They have been read as one series with ',
+                 if (length(gaps) == 1L)
+                   paste0('a ', gaps, '-year gap')
+                 else paste0('gaps of ', paste(gaps, collapse = ' and '), ' years'),
+                 ' where the file records nothing. If these are two different ',
+                 'cores that share an ID, that reading is wrong -- check the file.')
+        } else if (verbose) {
+          cat('Series ', m, ' is entered in ', nrow(r), ' parts (', parts,
+              '); at least one does not end with a stop marker, so they are ',
+              'read as one continuous record.\n', sep = '')
+        }
+      }
+    }
+  }
+
   # Now cast to wide to fill middle NA
   out <- data.table::dcast(parsed[, .(year, core, rw)], year ~ core, value.var = 'rw')
   out <- as.data.frame(out)
   rownames(out) <- out$year
   out$year <- NULL
-  
-  # In rare cases the longest core has a missing segment before the next longest core begins 
+
+  # In rare cases the longest core has a missing segment before the next longest core begins
   # and this won't be filled by dcast
   # So fill manually here
   repeat {
@@ -571,9 +915,9 @@ read.tucson2 <- function(fname,
     out <- rbind(
       out[1:gapIdx[1], ],
       filler,
-      out[(gapIdx[1]+1):N, ])  
+      out[(gapIdx[1]+1):N, ])
   }
-  
+
   ## AGB Aug 2026: this line used to be
   ##   out <- as.data.frame(apply(out, 2, fill_middle_NAs))
   ## i.e. every interior gap was filled with zero, always, with no way to opt out.
@@ -589,61 +933,122 @@ read.tucson2 <- function(fname,
   ## data rather than as absent rings, so the series is shortened.
   if (!isTRUE(edge.zeros)) out[] <- lapply(out, trim_edge_zeros)
 
-  ## Interior gaps stay NA unless the caller names a fill. The value is passed
+  ## Interior gaps. The default, NULL, leaves them as NA: where the file records
+  ## no measurement, the reader returns no measurement. Anything else is passed
   ## straight through to dplR::fill.internal.NA(), so fill.internal.NA = 0
-  ## reproduces what dplR::read.tucson() does today, and "Mean" / "Spline" /
-  ## "Linear" are available too. NULL, the default, fills nothing.
+  ## reproduces dplR::read.tucson() exactly, and "Mean" / "Spline" / "Linear"
+  ## interpolate.
   ##
-  ## AGB Aug 2026: say so, loudly, either way. Filling interior gaps with zero
-  ## is a long-standing convention -- dplR does it, and the DPL programs before
-  ## it did too. It is normally applied where a stretch of a core cannot be
-  ## measured: rot, a branch scar, a crumbled section. So it is legal and
-  ## common, and this reader must not pretend otherwise.
+  ## AGB Sep 2026: filling with zero is the long-standing DPL convention and
+  ## dplR has always done it, inside the C readloop and undocumented. It is
+  ## normally applied where a stretch of a core could not be measured: rot, a
+  ## branch scar, a crumbled section. Andy and Kevin have changed that practice.
+  ## A negative value that is not a terminator marks missing data, and missing
+  ## data is NA. A zero ring width means a locally absent ring, which is a real
+  ## observation about a tree in a year. Those are two different statements and
+  ## the reader must not silently substitute one for the other -- so it no
+  ## longer does, and a caller who wants the old numbers asks for them by name.
   ##
-  ## What it must not do is make the choice silently. A zero ring width means a
-  ## locally absent ring, which is a real biological observation; a gap means
-  ## nobody could measure. Writing the first where the second is true, without
-  ## telling anyone, is how 250,000 measurements across the ITRDB came to say
-  ## "this tree grew nothing" when the file only ever said "unknown". The
-  ## default here leaves NA, and either way the user is told what happened and
-  ## how to get the other behaviour.
-  gapRuns <- vapply(out, function(v) {
+  ## AGB Sep 2026: this block used to warn, and it was the single noisiest thing
+  ## in the reader -- 3,252 of the 3,265 files that raise any warning at all
+  ## raised this one (qa40). A message on a third of the archive teaches people
+  ## to ignore messages, and it was warning about the default behaviour, which
+  ## is not a defect. So it is no longer a warning and no longer goes through
+  ## report(): strict = TRUE does not turn a normal file into an error.
+  ##
+  ## What replaces it is detail. Under the default the gaps stay NA and are
+  ## therefore visible in the returned object, but "visible" only tells you that
+  ## something is missing, not what the file said. So verbose names every gap:
+  ## which series, which years, and what the file actually held there -- a
+  ## sentinel such as -999, a stop marker, or nothing at all. That is the
+  ## difference between telling someone their data has holes and showing them
+  ## where the holes came from. It matters more, not less, now that the reader
+  ## no longer fills: a user moving off read.tucson() will see cells change from
+  ## 0 to NA and needs to be able to see why without opening the file.
+  gapCells <- data.table::rbindlist(lapply(names(out), function(s) {
+    v <- out[[s]]
     k <- which(!is.na(v))
-    if (length(k) < 2L) return(0L)
-    inner <- v[k[1]:k[length(k)]]
-    r <- rle(is.na(inner))
-    sum(r$values)
-  }, integer(1))
-  nGapSeries <- sum(gapRuns > 0L)
-  nGapCells  <- sum(vapply(out, function(v) {
-    k <- which(!is.na(v))
-    if (length(k) < 2L) return(0L)
-    sum(is.na(v[k[1]:k[length(k)]]))
-  }, integer(1)))
+    if (length(k) < 2L) return(NULL)
+    g <- k[1]:k[length(k)]
+    g <- g[is.na(v[g])]
+    if (length(g) == 0L) return(NULL)
+    data.table::data.table(core = s, year = as.integer(rownames(out))[g])
+  }))
+  nGapCells  <- nrow(gapCells)
+  nGapSeries <- if (nGapCells) data.table::uniqueN(gapCells$core) else 0L
 
   if (nGapSeries > 0L) {
-    if (is.null(fill.internal.NA)) {
-      report('In ', fname, ', ', nGapSeries, ' series contain interior gaps ',
-             '(', nGapCells, ' year(s) in total) where the file records no ',
-             'measurement. They are returned as NA. dplR::read.tucson() fills ',
-             'these with zero, which is the long-standing DPL convention and is ',
-             'not an error -- but a zero ring width means an absent ring, not a ',
-             'missing one. Pass fill.internal.NA = 0 to reproduce the old ',
-             'behaviour, or "Mean", "Spline" or "Linear" to interpolate.')
-    } else {
-      report('In ', fname, ', ', nGapCells, ' interior gap year(s) across ',
-             nGapSeries, ' series were filled with "', fill.internal.NA,
-             '" at your request. These values are not measurements.')
+    if (verbose) {
+      ## Expand the per-line zap notes into one row per discarded cell, then put
+      ## them beside the gaps they caused. A gap with no matching note is one the
+      ## file never had a field for at all: a short line, or a decade the series
+      ## simply skips.
+      raw[, rid := .I]
+      z <- raw[nzchar(zap)]
+      held <- if (nrow(z) == 0L) NULL else z[, {
+        p <- strsplit(zap, ',', fixed = TRUE)[[1]]
+        list(year = startYear + as.integer(sub(':.*$', '', p)) - 1L,
+             held = sub('^[^:]*:', '', p))
+      }, by = .(rid, core)][, .(core, year, held)]
+
+      g <- if (is.null(held)) data.table::copy(gapCells) else
+           merge(gapCells, held, by = c('core', 'year'), all.x = TRUE)
+      if (!'held' %in% names(g)) g[, held := NA_character_]
+      g[is.na(held), held := 'no value in the file']
+
+      ## Adjacent years that were lost the same way are one event, so report them
+      ## as one line rather than one line each.
+      data.table::setorder(g, core, year)
+      ng <- nrow(g)
+      g[, brk := c(TRUE, g$core[-1L] != g$core[-ng] |
+                         g$year[-1L] != g$year[-ng] + 1L)]
+      g[, grp := cumsum(brk)]
+      runs <- g[, .(from = min(year), to = max(year), n = .N,
+                    held = paste(unique(held), collapse = ' / ')), by = .(grp, core)]
+
+      cat('Interior gaps: ', nGapCells, ' year(s) with no measurement, in ',
+          nGapSeries, ' of ', ncol(out), ' series.\n', sep = '')
+      ## AGB Sep 2026: not truncated. A cap of 20 was tried and it silently hid
+      ## part of the answer on 403 files; the worst, russ221, has 637 separate
+      ## gaps. verbose is opt-in and the series summary below it is not capped
+      ## either, so a long list here is consistent rather than surprising.
+      for (i in seq_len(nrow(runs)))
+        cat('  ', runs$core[i], '  ', yr_range(runs$from[i], runs$to[i]),
+            '  (', runs$n[i], if (runs$n[i] == 1L) ' year, file holds ' else ' years, file holds ',
+            runs$held[i], ')\n', sep = '')
+      cat(if (is.null(fill.internal.NA))
+            paste0('  Returned as NA. The file records no measurement for these years,\n',
+                   '  which is not the same as a ring width of zero.\n',
+                   '  Pass fill.internal.NA = 0 to fill them with zero, as dplR::read.tucson() does.\n',
+                   '  See help for details.\n')
+          else paste0('  Interior gaps filled with "', fill.internal.NA,
+                      '". These are not measurements.\n',
+                      '  Pass fill.internal.NA = NULL to set them as NA.\n',
+                      '  See help for details.\n'))
     }
-    out <- if (is.null(fill.internal.NA)) out else
-           dplR::fill.internal.NA(out, fill = fill.internal.NA)
+    if (!is.null(fill.internal.NA))
+      out <- dplR::fill.internal.NA(out, fill = fill.internal.NA)
   }
 
 
+  ## AGB Sep 2026: this used to print a per-series table of core, start, end and
+  ## precision. It is gone. On a large file it was hundreds of rows -- nv520 has
+  ## 210 series, chin067 far more -- and it printed last, so it pushed every
+  ## message the reader had just produced off the top of the screen. A user
+  ## looking for the interior-gap list would scroll past it or miss it. The
+  ## detail is not lost: it is in the returned object, and dplR::rwl.report()
+  ## and rwl.stats() present it properly.
+  ##
+  ## What is worth saying here is what the caller cannot see at a glance, in one
+  ## line: how many series, the span, and the precision -- flagging the case
+  ## where a file mixes precisions, which is rare, legal, and easy to miss.
   if (verbose) {
-    summary <- parsed[, .(start = year[1], end = year[.N], precision = precision[1]), by = core]
-    cat('There are ', nrow(summary), ' series.\n')
-    print(summary)
+    prec <- sort(unique(parsed$precision))
+    cat(data.table::uniqueN(parsed$core), ' series, ',
+        yr_range(min(parsed$year), max(parsed$year)), ', ',
+        if (length(prec) == 1L) paste0(prec, ' mm')
+        else paste0('mixed precision (', paste(prec, collapse = ' and '), ' mm)'),
+        '.\n', sep = '')
   }
   ## AGB Aug 2026: dplR::read.tucson() stores row names as character, this reader
   ## was storing them as numeric. The years matched, but all.equal() then reported
