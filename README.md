@@ -66,15 +66,17 @@ length(piab)
 
 ## Current build
 
-Built August 2026 from the ITRDB as it stood then.
+Built September 2026 from the ITRDB as it stood then.
 
-- **6,846** studies
-- **277,746** individual series
+- **6,846** studies, of which **6,844** parse
+- **277,699** individual series
+- **53.7 million** individual ring measurements
 - **368** species
 - Years spanned: 6000 BCE to 2024
 
-One study is missing: WY081, whose files NOAA has temporarily withdrawn at the
-contributor's request. Every other study the archive links to is here and parses.
+Two studies are not in the data. WY081's files NOAA has temporarily withdrawn at the
+contributor's request. KYRG014 will not parse: one of its series carries two different
+precision flags, so there is no single reading of it to hand back.
 
 ## How it is built
 
@@ -88,8 +90,15 @@ Scripts in `code/`, run in order:
    elevations from a terrain model.
 4. **`02_getRWLs.R`** reads each study's `.rwl` file into an `rwl` object.
 
-`QA_Stuff/` holds the checks: which files fail to parse, which sites have implausible
-coordinates, and a comparison of two Tucson-format readers.
+Reading is done by `dplR::read.tucson()`, which records what it found in each file and
+returns that alongside the data. `02_getRWLs.R` writes the per-study summary to
+`QA_Stuff/rwl-read-report.csv`: series and measurement counts, year span, measurement
+precision, interior gaps, and any warning the reader raised.
+
+`QA_Stuff/` also holds three checks on the metadata rather than the measurements. They
+look for sites whose coordinates fall in open water, elevations that are impossible or
+recorded in the wrong unit, and years that cannot be right. We send what they find to
+NOAA.
 
 ## What is left out, and why
 
@@ -100,8 +109,9 @@ coordinates, and a comparison of two Tucson-format readers.
   several species. If you want ITRDB data, these are the ones to skip.
 - **Only one measurement file per study.** Where a study offers several, the shortest filename
   is used. That is usually the whole-ring file rather than the earlywood/latewood splits.
-- **Files that will not parse.** A small number defeat the reader, usually through character
-  encoding or conflicting precision flags. They are listed in `QA_Stuff/`.
+- **Files that will not parse.** Currently one, KYRG014. `Rdatafiles/rwls_bad.rds` holds
+  every study that did not read, with the reason, and `QA_Stuff/rwl-read-report.csv` gives
+  the full picture for all 6,846.
 
 Two things to know about the metadata:
 
