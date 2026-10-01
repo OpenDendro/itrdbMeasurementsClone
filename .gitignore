@@ -54,21 +54,14 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# Exclude all the data but measurements
 itrdbMeasurementsClone.Rproj
-data_files/reconstructions/
-data_files/treering/beier2008/
-data_files/treering/chronologies/
-data_files/treering/edwards2021/
-data_files/treering/edwards2022/
-data_files/treering/isotope/
-data_files/treering/measurements/correlation-stats/
-data_files/treering/measurements/supplemental/
-data_files/treering/measurements/zhao2018/
-data_files/treering/northern-archives/
-data_files/treering/reconstructions/
-data_files/treering/supplemental/
-data_files/treering/zhao2018/
-dif_files/
-study_files/
 
+# data_files/ holds only the ITRDB .rwl files, managed by code/02_syncFiles.R.
+# Anything else that lands there is not part of the clone.
+data_files/**
+!data_files/**/
+!data_files/treering/measurements/**/*.rwl
+
+
+# NOAA API response, ~240 MB. Rebuilt by code/01_indexITRDB.R
+api_cache/
