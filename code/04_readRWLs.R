@@ -19,8 +19,8 @@
 ##     before. A file the index lists but the sync could not fetch has status
 ##     "missing".
 ##
-## Needs dplR 1.8.0 (dev): strict, fill.internal.NA = NULL and the
-## dplR.provenance attribute are not in 1.7.x.
+## Needs dplR 1.8.0 or later (on CRAN since Oct 2026): strict,
+## fill.internal.NA = NULL and the dplR.provenance attribute are not in 1.7.x.
 ##
 ## Reads in parallel with mclapply (forks, so macOS/Linux only). About 20
 ## minutes on 10 cores, then a few minutes to compress rwls.rds (79 MB with
