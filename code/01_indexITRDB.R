@@ -194,6 +194,16 @@ stopifnot(!anyDuplicated(itrdb_files$file))
 stopifnot(all(grepl("^data_files/treering/measurements/", itrdb_files$localPath)))
 
 ## These are NOAA metadata problems. Keep the study, report the problem.
+## AGB Oct 2026: twelve old studies end "ITRDB TN", "ITRDB BRIT" and so on, with
+## the number missing, and their files are named to match (tn.rwl). The codes
+## are unique, so they work as keys here, but they are not ITRDB codes. Five
+## of these files also carry a variable (min density, cell wall thickness)
+## whose values look like ring widths in mm. Reported, not changed.
+for (i in which(!grepl("[0-9]", itrdb_studies$code))) {
+  f <- itrdb_files$code == itrdb_studies$code[i]
+  flag(itrdb_studies$code[i], itrdb_studies$NOAAStudyId[i], "ITRDB code has no number",
+       paste0(itrdb_files$file[f], ".rwl: ", itrdb_files$variableShort[f], collapse = "; "))
+}
 for (i in which(is.na(itrdb_studies$scientificName))) {
   flag(itrdb_studies$code[i], itrdb_studies$NOAAStudyId[i], "no species")
 }
