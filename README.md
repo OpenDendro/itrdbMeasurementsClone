@@ -107,7 +107,7 @@ Scripts in `code/`, run in order:
    missing elevations from a terrain model.
 4. **`04_readRWLs.R`** reads every file into an `rwl` object.
 
-Reading is done by `dplR::read.tucson()` (dplR 1.8.0), which records what it found in each
+Reading is done by `dplR::read.tucson()` (dplR 1.8.0 or later, on CRAN), which records what it found in each
 file and returns that alongside the data. Each run writes three reports to `reports/`:
 
 - `index-flags.csv`: problems in NOAA's metadata, such as a study with no species recorded.
