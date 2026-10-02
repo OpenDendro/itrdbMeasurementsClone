@@ -1,0 +1,179 @@
+
+ COFECHA-style crossdating report: swe352
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swe352.rwl
+      MD5 of measurement file: c301428cb78f66e5a7b25094724f7f4e
+      Date checked           : 01OCT26
+      Beginning year         : 1927
+      Ending year            : 2012
+      Principal investigators: Esper, J.
+      Site name              : Are ESA5
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 63.4642 N
+      Longitude              : 13.1314 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.573
+      Avg mean sensitivity   : 0.257
+      Avg standard deviation : 0.373
+      Avg autocorrelation    : 0.673
+      Number dated series    : 48
+      Segment length tested  : 42
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 6.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swe352
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1971 
+                        1991 2012 
+ --- -------- ---------  ---- ---- 
+   1 ESA5501a 1947 2012  .53  .77 
+   3 ESA5502a 1966 2012       .81 
+   4 ESA5502b 1966 2012       .52 
+   5 ESA5503a 1955 2012       .73 
+   6 ESA5503b 1955 2012       .44B
+   7 ESA5504a 1956 2012       .64 
+   8 ESA5504b 1956 2012       .54 
+   9 ESA5505a 1950 2012       .81 
+  10 ESA5505b 1950 2012       .77 
+  11 ESA5506a 1957 2012       .66 
+  12 ESA5506b 1957 2012       .76 
+  13 ESA5507z 1927 2012  .53  .44 
+  14 ESA5508a 1940 2012  .42B .49 
+  15 ESA5508b 1940 2012  .41  .53 
+  18 ESA5510a 1960 2012       .74 
+  19 ESA5510b 1960 2012       .78 
+  20 ESA5511a 1940 2012  .39  .74 
+  21 ESA5511b 1940 2012  .55  .74 
+  22 ESA5512a 1954 2012       .80 
+  23 ESA5512b 1954 2012       .63 
+  24 ESA5513a 1941 2012  .75  .82 
+  25 ESA5513b 1941 2012  .46  .58 
+  26 ESA5514a 1944 2012  .71  .79 
+  27 ESA5514b 1944 2012  .64  .80 
+  28 ESA5515a 1959 2012       .75 
+  29 ESA5515b 1959 2012       .70 
+  30 ESA5516a 1958 2012       .82 
+  31 ESA5516b 1958 2012       .62 
+  32 ESA5517a 1961 2012       .44 
+  33 ESA5517b 1961 2012       .53 
+  34 ESA5518a 1941 2012  .58  .50 
+  35 ESA5518b 1941 2012  .57  .62 
+  40 ESA5530a 1952 2012       .53 
+  41 ESA5530b 1952 2012       .43 
+  44 ESA5533a 1959 2012       .52 
+  45 ESA5533b 1959 2012       .55 
+  47 ESA5534b 1971 2012       .34A
+  48 ESA5535b 1953 2012       .36 
+ Av segment correlation  .55  .63 
+
+ FLAGGED SEGMENTS: swe352
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 ESA5503b 1971 2012     B     .440        -2      .517   .077
+  14 ESA5508a 1950 1991     B     .420         2      .429   .009
+  47 ESA5534b 1971 2012     A     .341         0
+
+ DESCRIPTIVE STATISTICS: swe352
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ESA5501a 1947 2012     66      2      0    .562   1.42   3.00   .492   .773   .177   1.44   .171   .152   0
+   2 ESA5501b 1973 2012     40      0      0    .645   2.30   4.09   .521   .570   .164   1.43   .157  -.124   3
+   3 ESA5502a 1966 2012     47      1      0    .803   1.14   1.92   .402   .549   .301   1.69   .280   .162   0
+   4 ESA5502b 1966 2012     47      1      0    .506   1.29   3.18   .491   .372   .316   2.32   .322   .130   0
+   5 ESA5503a 1955 2012     58      1      0    .559    .96   1.69   .306   .491   .227   2.36   .287  -.026   1
+   6 ESA5503b 1955 2012     58      1      1    .426    .84   1.50   .268   .539   .243   1.49   .237  -.019   1
+   7 ESA5504a 1956 2012     57      1      0    .608    .64   1.61   .273   .709   .243   1.50   .233   .071   2
+   8 ESA5504b 1956 2012     57      1      0    .524    .81   1.70   .339   .748   .236   1.71   .258   .042   1
+   9 ESA5505a 1950 2012     63      1      0    .788   1.49   2.50   .403   .463   .217   1.47   .218  -.043   1
+  10 ESA5505b 1950 2012     63      1      0    .692   1.41   2.54   .437   .543   .228   1.86   .241   .006   1
+  11 ESA5506a 1957 2012     56      1      0    .624    .84   1.54   .252   .493   .255   1.53   .224  -.016   0
+  12 ESA5506b 1957 2012     56      1      0    .731    .91   1.99   .408   .765   .249   1.55   .233   .063   3
+  13 ESA5507z 1927 2012     86      2      0    .444    .96   2.50   .508   .720   .293   2.42   .330   .053   1
+  14 ESA5508a 1940 2012     73      2      1    .490   1.20   4.14   .756   .836   .217   2.29   .257  -.054   3
+  15 ESA5508b 1940 2012     73      2      0    .497   1.00   3.20   .552   .834   .215   1.63   .243   .028   3
+  16 ESA5509a 1982 2012     31      0      0    .688   2.82   4.47   .840   .348   .284   1.51   .235  -.038   0
+  17 ESA5509b 1982 2012     31      0      0    .814   2.43   3.50   .716   .646   .216   1.42   .214   .028   1
+  18 ESA5510a 1960 2012     53      1      0    .697   1.19   1.89   .309   .471   .217   1.51   .198  -.084   3
+  19 ESA5510b 1960 2012     53      1      0    .695    .98   1.73   .326   .501   .264   1.60   .254   .202   0
+  20 ESA5511a 1940 2012     73      2      0    .554    .78   1.65   .293   .760   .201   1.62   .211   .007   1
+  21 ESA5511b 1940 2012     73      2      0    .669   1.03   2.03   .335   .579   .248   1.76   .241   .005   1
+  22 ESA5512a 1954 2012     59      1      0    .726    .83   1.77   .307   .655   .240   1.57   .240   .033   1
+  23 ESA5512b 1954 2012     59      1      0    .608    .88   2.06   .366   .773   .218   1.67   .231   .060   1
+  24 ESA5513a 1941 2012     72      2      0    .743    .75   1.53   .275   .745   .214   1.49   .210  -.035   1
+  25 ESA5513b 1941 2012     72      2      0    .584    .81   1.73   .483   .892   .247   1.57   .247   .030   2
+  26 ESA5514a 1944 2012     69      2      0    .747    .94   1.56   .332   .707   .234   1.52   .222  -.018   2
+  27 ESA5514b 1944 2012     69      2      0    .730   1.03   2.68   .488   .749   .239   1.84   .248  -.010   1
+  28 ESA5515a 1959 2012     54      1      0    .720   1.40   2.36   .457   .567   .242   1.55   .235  -.023   1
+  29 ESA5515b 1959 2012     54      1      0    .669    .97   1.84   .324   .759   .182   1.47   .186  -.079   3
+  30 ESA5516a 1958 2012     55      1      0    .683   2.14   4.35   .826   .822   .190   1.45   .189  -.026   3
+  31 ESA5516b 1958 2012     55      1      0    .540   1.30   2.11   .424   .806   .166   1.39   .159  -.019   3
+  32 ESA5517a 1961 2012     52      1      0    .450    .45   1.12   .243   .772   .216   2.79   .319   .157   1
+  33 ESA5517b 1961 2012     52      1      0    .473    .54   1.13   .192   .582   .225   2.20   .302   .171   0
+  34 ESA5518a 1941 2012     72      2      0    .460    .41    .94   .206   .731   .223   1.61   .237  -.014   1
+  35 ESA5518b 1941 2012     72      2      0    .595    .38   1.02   .184   .756   .239   1.70   .232  -.013   1
+  36 ESA5519a 1999 2012     14      0      0    .413   1.41   2.05   .536   .457   .370   1.82   .350   .169   0
+  37 ESA5519b 1999 2012     14      0      0    .409   1.27   1.80   .444   .462   .327   1.52   .339   .322   0
+  38 ESA5520a 1980 2012     33      0      0    .307    .85   3.63   .605   .398   .331   3.18   .503   .022   1
+  39 ESA5520b 1980 2012     33      0      0    .110    .64   2.08   .384   .656   .348   1.74   .341   .025   1
+  40 ESA5530a 1952 2012     61      1      0    .475    .24    .81   .176   .810   .373   2.40   .384   .084   1
+  41 ESA5530b 1952 2012     61      1      0    .445    .32    .90   .234   .769   .446   2.06   .400   .156   3
+  42 ESA5531a 1980 2012     33      0      0    .597    .42   1.39   .401   .878   .542   1.79   .431   .124   0
+  43 ESA5531b 1980 2012     33      0      0    .576    .40   1.57   .347   .714   .582   1.60   .412  -.029   0
+  44 ESA5533a 1959 2012     54      1      0    .369    .38   1.13   .274   .874   .305   1.87   .295   .085   1
+  45 ESA5533b 1959 2012     54      1      0    .481    .33    .92   .164   .513   .311   2.13   .366   .012   3
+  46 ESA5534a 1971 2012     42      0      0    .418    .40   1.02   .200   .613   .335   1.85   .344   .050   1
+  47 ESA5534b 1971 2012     42      1      1    .341    .40    .86   .185   .822   .188   1.46   .157  -.030   0
+  48 ESA5535b 1953 2012     60      1      0    .360    .27    .47   .093   .457   .308   1.87   .299   .072   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2614     50      3    .573    .93   4.47   .373   .673   .257   3.18   .262   .030
+
+ DATA CHECKS (rwl.check): swe352
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swe352.rwl
+ 48 series, 2614 measurements, 1927-2012, 0.01 mm precision
+ 0 error(s), 0 warning(s), 14 note(s)
+ -------------
+ Nothing to report at this severity.
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file swe352.rwl, MD5 c301428cb78f66e5a7b25094724f7f4e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 42 years: the record is only 86 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

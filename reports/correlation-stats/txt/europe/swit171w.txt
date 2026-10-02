@@ -1,0 +1,170 @@
+
+ COFECHA-style crossdating report: swit171w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit171w.rwl
+      MD5 of measurement file: 5f72afc1be3bc32f1cd2dcb1c60387a9
+      Date checked           : 01OCT26
+      Beginning year         : 1695
+      Ending year            : 1988
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Suaiza, TI
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.4300 N
+      Longitude              : 8.8700 E
+      Elevation              : 1520 m
+
+      Series intercorrelation: 0.443
+      Avg mean sensitivity   : 0.161
+      Avg standard deviation : 0.483
+      Avg autocorrelation    : 0.867
+      Number dated series    : 23
+      Series crossdated      : 20
+      Segment length tested  : 50
+
+      Number problem segments: 25  (A 7, B 18; 10 of the B weak at every lag)
+      Pct problem segments   : 22.94
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit171w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 780011   1749 1988  .66  .48  .49  .60  .48  .46 
+   2 780012   1739 1988  .54  .31A .41  .46  .35B .42 
+   3 780021   1839 1988            .52  .71  .60  .60 
+   4 780022   1842 1987            .61  .74  .60  .67 
+   5 780032   1764 1988  .48  .43  .38  .55  .55  .62 
+   6 780041   1755 1987  .50  .56  .47  .39  .42  .55 
+   7 780042   1751 1988  .09B .15B-.08B .06B .34  .25B
+   9 780052   1798 1988  .23B .03B .38  .49  .44  .55 
+  10 780061   1726 1987  .17B .24B .31A .42  .27A .53 
+  11 780062   1796 1988  .16B .04B .03B .10B .20B .74 
+  12 780071   1750 1987  .62  .64  .57  .48  .36  .62 
+  13 780072   1751 1988  .61  .65  .61  .50  .30A .52 
+  14 780091   1756 1988  .62  .61  .56  .48  .36  .39 
+  15 780092   1755 1988  .61  .61  .54  .40  .33  .45 
+  16 780102   1735 1987  .37  .34  .28A .41  .50  .51 
+  17 780121   1826 1988            .21A .36  .47  .64 
+  18 780122   1836 1988            .24B .41  .54  .54 
+  21 780151   1751 1987  .56  .19B .02B .40  .50  .30A
+  22 780152   1720 1964  .69  .55  .51  .62  .56      
+  23 780181   1827 1988            .54  .58  .50  .60 
+ Av segment correlation  .46  .39  .38  .46  .43  .52 
+
+ FLAGGED SEGMENTS: swit171w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 780012   1825 1874     A     .311         0
+   2 780012   1900 1949     B     .348        -6      .356   .009
+   7 780042   1800 1849     B     .090        -5      .158   .068  weak at every lag
+   7 780042   1825 1874     B     .150        -2      .205   .055  weak at every lag
+   7 780042   1850 1899     B    -.081         7      .289   .370  weak at every lag
+   7 780042   1875 1924     B     .063         7      .404   .341
+   7 780042   1925 1974     B     .249        -1      .266   .017  weak at every lag
+   9 780052   1800 1849     B     .232        -1      .288   .056  weak at every lag
+   9 780052   1825 1874     B     .029        10      .203   .174  weak at every lag
+  10 780061   1800 1849     B     .173        -2      .288   .115  weak at every lag
+  10 780061   1825 1874     B     .242        -2      .387   .145
+  10 780061   1850 1899     A     .306         0
+  10 780061   1900 1949     A     .266         0
+  11 780062   1800 1849     B     .160       -10      .571   .410
+  11 780062   1825 1874     B     .042       -10      .739   .698
+  11 780062   1850 1899     B     .030       -10      .683   .653
+  11 780062   1875 1924     B     .099       -10      .652   .553
+  11 780062   1900 1949     B     .205       -10      .482   .277
+  13 780072   1900 1949     A     .297         0
+  16 780102   1850 1899     A     .284         0
+  17 780121   1850 1899     A     .206         0
+  18 780122   1850 1899     B     .236        -7      .327   .091  weak at every lag
+  21 780151   1825 1874     B     .186        -6      .211   .025  weak at every lag
+  21 780151   1850 1899     B     .017         7      .258   .241  weak at every lag
+  21 780151   1925 1974     A     .296         0
+
+ DESCRIPTIVE STATISTICS: swit171w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 780011   1749 1988    240      6      0    .553    .88   2.44   .397   .839   .175   1.72   .188  -.005   1
+   2 780012   1739 1988    250      6      2    .469    .91   2.85   .431   .842   .191   1.67   .209  -.013   3
+   3 780021   1839 1988    150      4      0    .514   1.28   3.20   .456   .793   .164   1.60   .175  -.005   1
+   4 780022   1842 1987    146      4      0    .628   1.42   3.31   .507   .839   .161   1.50   .157   .015   1
+   5 780032   1764 1988    225      6      0    .481    .99   6.29   .779   .840   .176   2.41   .209   .109   1
+   6 780041   1755 1987    233      6      0    .512    .94   3.31   .557   .911   .198   1.83   .214  -.018   1
+   7 780042   1751 1988    238      6      5    .123    .81   3.12   .537   .924   .204   1.61   .192  -.016   3
+   8 780051   1695 1988    293                          .83   2.38   .432   .915   .153                         
+   9 780052   1798 1988    191      6      2    .362   1.30   3.67   .634   .862   .167   1.50   .182  -.007   1
+  10 780061   1726 1987    262      6      4    .144    .55   1.65   .256   .864   .185   1.72   .198  -.007   3
+  11 780062   1796 1988    193      6      5    .292   1.09   1.65   .203   .639   .123   1.42   .127  -.017   3
+  12 780071   1750 1987    238      6      0    .546   1.09   3.24   .574   .935   .137   1.65   .144  -.024   1
+  13 780072   1751 1988    238      6      1    .467   1.05   2.06   .311   .801   .143   1.54   .152  -.002   1
+  14 780091   1756 1988    233      6      0    .566   1.29   2.82   .507   .919   .128   1.37   .134   .011   1
+  15 780092   1755 1988    234      6      0    .548   1.11   2.71   .423   .923   .122   1.37   .128   .008   1
+  16 780102   1735 1987    253      6      1    .478    .69   2.07   .373   .908   .172   1.52   .176   .043   1
+  17 780121   1826 1988    163      4      1    .453   1.23   2.81   .502   .843   .172   1.82   .200  -.018   3
+  18 780122   1836 1988    153      4      1    .468   1.21   2.51   .397   .772   .155   1.67   .172   .006   1
+  19 780141   1793 1988    195                         1.01   2.67   .382   .873   .123                         
+  20 780142   1749 1988    239                         1.09   2.40   .331   .854   .116                         
+  21 780151   1751 1987    237      6      3    .398    .82   4.52   .755   .956   .191   1.67   .190   .004   1
+  22 780152   1720 1964    245      5      0    .479   1.11   5.46   .879   .931   .180   1.54   .187   .022   1
+  23 780181   1827 1988    162      4      0    .491   1.47   3.13   .469   .792   .154   1.58   .173  -.003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5011    109     25    .443   1.02   6.29   .483   .867   .161   2.41   .176   .005
+
+ DATA CHECKS (rwl.check): swit171w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit171w.rwl
+ 23 series, 5011 measurements, 1695-1988, 0.01 mm precision
+ 0 error(s), 3 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (3)
+     780051: no measurement for 1807, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     780141: no measurement for 1837, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     780142: no measurement for 1882, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file swit171w.rwl, MD5 5f72afc1be3bc32f1cd2dcb1c60387a9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 780051 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 780141 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 780142 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

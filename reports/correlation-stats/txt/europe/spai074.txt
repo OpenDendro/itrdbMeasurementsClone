@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: spai074
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai074.rwl
+      MD5 of measurement file: d9ec8c2c99b01acea2d2807ab17606d5
+      Date checked           : 01OCT26
+      Beginning year         : 1785
+      Ending year            : 1998
+      Principal investigators: Génova, M.
+      Site name              : Sierra del Pinar
+      Species information    : ABPN Abies pinsapo Boiss.
+      Latitude               : 36.7680 N
+      Longitude              : 5.4158 W
+      Elevation              : 1200 m
+
+      Series intercorrelation: 0.448
+      Avg mean sensitivity   : 0.308
+      Avg standard deviation : 1.331
+      Avg autocorrelation    : 0.768
+      Number dated series    : 32
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 1, B 10; 6 of the B weak at every lag)
+      Pct problem segments   : 22.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai074
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GRA01N   1915 1998                           .35 
+   3 GRA02S   1917 1998                           .66 
+   6 GRA05N   1798 1989  .23B .20B .37  .64  .65  .52 
+   7 GRA05S   1839 1998            .26B .70  .62  .57 
+   8 GRA06N   1785 1998  .21B .16B .29B .56  .64  .34 
+   9 GRA06S   1861 1998                 .60  .74  .65 
+  10 GRA07S   1878 1998                      .69  .71 
+  11 GRA08E   1910 1998                           .52 
+  12 GRA08S   1879 1998                      .30A .38 
+  13 GRA09E   1919 1998                           .45B
+  14 GRA09S   1904 1998                           .56 
+  15 GRA10N   1910 1998                           .37 
+  16 GRA10S   1860 1998                 .40  .56  .41 
+  17 GRA11S   1869 1998                 .54  .75  .76 
+  18 GRA12N   1895 1995                      .67  .65 
+  19 GRA12S   1884 1995                      .64  .64 
+  22 GRA14N   1895 1998                      .38  .39 
+  24 GRA15S   1909 1997                           .42 
+  26 GRA16S   1896 1996                      .32B .20B
+  27 GRA17E   1914 1997                           .39B
+  29 GRA18W   1910 1998                           .36 
+  30 GRA19N   1897 1987                      .57  .33 
+  31 GRA19S   1913 1988                           .49 
+  32 GRA22S   1921 1998                           .39 
+ Av segment correlation  .22  .18  .31  .57  .58  .48 
+
+ FLAGGED SEGMENTS: spai074
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 GRA05N   1800 1849     B     .227        -8      .275   .049  weak at every lag
+   6 GRA05N   1825 1874     B     .203        -8      .256   .053  weak at every lag
+   7 GRA05S   1850 1899     B     .263        -5      .271   .008  weak at every lag
+   8 GRA06N   1800 1849     B     .209         5      .283   .074  weak at every lag
+   8 GRA06N   1825 1874     B     .157         5      .215   .057  weak at every lag
+   8 GRA06N   1850 1899     B     .289         5      .428   .139
+  12 GRA08S   1900 1949     A     .300         0
+  13 GRA09E   1925 1974     B     .448        -9      .518   .071
+  26 GRA16S   1900 1949     B     .325        -9      .401   .076
+  26 GRA16S   1925 1974     B     .196        -9      .309   .114  weak at every lag
+  27 GRA17E   1925 1974     B     .393        -4      .455   .063
+
+ DESCRIPTIVE STATISTICS: spai074
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GRA01N   1915 1998     84      1      0    .413   3.22   9.05  1.910   .838   .257   1.74   .240   .018   1
+   2 GRA01S   1927 1998     72      0      0    .572   2.14   5.69  1.095   .836   .238   1.57   .221   .154   0
+   3 GRA02S   1917 1998     82      1      0    .689   3.38  14.82  3.408   .935   .288   1.77   .299   .003   1
+   4 GRA02W   1959 1998     40      0      0    .523   1.62   5.56  1.063   .799   .295   2.56   .353   .053   1
+   5 GRA04S   1942 1998     57      0      0    .301   1.56   6.43  1.034   .789   .267   2.18   .311  -.027   1
+   6 GRA05N   1798 1989    192      6      2    .362    .55   3.99   .755   .860   .408   2.69   .401   .014   2
+   7 GRA05S   1839 1998    160      4      1    .502   1.55   4.68   .972   .776   .290   2.23   .298  -.017   3
+   8 GRA06N   1785 1998    214      6      3    .288   1.50   7.23  1.135   .881   .289   2.12   .300   .003   3
+   9 GRA06S   1861 1998    138      3      0    .552   1.09   4.68   .757   .475   .416   3.08   .488   .004   1
+  10 GRA07S   1878 1998    121      2      0    .619   1.91   4.99   .776   .631   .241   1.85   .244  -.026   3
+  11 GRA08E   1910 1998     89      1      0    .604   3.39   8.77  1.767   .710   .297   1.93   .295   .059   1
+  12 GRA08S   1879 1998    120      2      1    .421   1.49   4.11   .992   .771   .316   2.98   .425   .017   1
+  13 GRA09E   1919 1998     80      1      1    .525   1.70   7.36  1.205   .564   .328   2.43   .380   .014   1
+  14 GRA09S   1904 1998     95      1      0    .627   1.87   5.49   .900   .628   .315   2.24   .331   .040   1
+  15 GRA10N   1910 1998     89      1      0    .522   2.03   5.19  1.131   .649   .340   2.26   .331   .024   1
+  16 GRA10S   1860 1998    139      3      0    .375   1.89   7.33  1.596   .901   .302   2.14   .304   .007   2
+  17 GRA11S   1869 1998    130      3      0    .241   1.45   5.67  1.308   .902   .296   6.85   .595   .131   0
+  18 GRA12N   1895 1995    101      2      0    .677   1.83   5.33  1.328   .796   .313   1.81   .302   .013   2
+  19 GRA12S   1884 1995    112      2      0    .497   1.59   4.20   .938   .717   .318   2.12   .351   .019   1
+  20 GRA13N   1939 1998     60      0      0    .452   3.63   8.96  1.798   .838   .200   1.32   .185   .095   0
+  21 GRA13S   1951 1998     48      0      0    .517   6.13   9.24  1.625   .857   .125   1.37   .130   .042   1
+  22 GRA14N   1895 1998    104      2      0    .453   2.83   7.14  1.696   .822   .266   1.62   .257  -.080   3
+  23 GRA15N   1926 1985     60      0      0    .420   4.01  11.90  2.647   .892   .286   1.73   .282   .014   1
+  24 GRA15S   1909 1997     89      1      0    .495   2.71   9.35  2.267   .870   .314   2.00   .317   .026   1
+  25 GRA16N   1945 1998     54      0      0    .615   4.32   8.42  1.766   .517   .333   1.91   .319  -.000   3
+  26 GRA16S   1896 1996    101      2      2    .328   2.13   7.01  1.534   .719   .398   2.02   .406   .008   2
+  27 GRA17E   1914 1997     84      1      1    .252   1.79   8.18  1.395   .720   .332   3.18   .460   .034   1
+  28 GRA17W   1927 1998     72      0      0    .450   3.90   8.61  1.797   .740   .245   1.73   .238  -.058   3
+  29 GRA18W   1910 1998     89      1      0    .370   3.01   9.00  1.929   .774   .303   2.10   .335  -.027   3
+  30 GRA19N   1897 1987     91      2      0    .387    .95   2.49   .603   .810   .306   1.57   .279   .035   2
+  31 GRA19S   1913 1988     76      1      0    .340    .57   1.23   .272   .621   .353   1.70   .291  -.010   0
+  32 GRA22S   1921 1998     78      1      0    .315   2.27   7.63  1.746   .780   .320   2.20   .364  -.004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3121     50     11    .448   2.06  14.82  1.331   .768   .308   6.85   .335   .016
+
+ DATA CHECKS (rwl.check): spai074
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai074.rwl
+ 32 series, 3121 measurements, 1785-1998, 0.01 mm precision
+ 0 error(s), 2 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_REPEATED_VALUE (1)
+     GRA05N: 0.06 repeated in 6 consecutive rings, 1867-1872; a constant stretch is a placeholder, not a measurement
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file spai074.rwl, MD5 d9ec8c2c99b01acea2d2807ab17606d5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: che601
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che601.rwl
+      MD5 of measurement file: caa717dd33b33bbb7d16e5c3219ead1b
+      Date checked           : 01OCT26
+      Beginning year         : 1917
+      Ending year            : 2022
+      Principal investigators: Jourdain, L.; von Arx, G.; Piermattei, A.; Crivellaro, A.; Peters, R.L.; Klesse, S.
+      Site name              : Hünenberg
+      Species information    : FREX Fraxinus excelsior L.
+      Latitude               : 47.1659 N
+      Longitude              : 8.4163 E
+      Elevation              : 427 m
+
+      Series intercorrelation: 0.576
+      Avg mean sensitivity   : 0.185
+      Avg standard deviation : 0.698
+      Avg autocorrelation    : 0.713
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che601
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 HUN10    1947 2022  .66 
+   2 HUN11    1945 2022  .40 
+   4 HUN13    1932 2022  .66 
+   5 HUN14    1917 2022  .27A
+   6 HUN15    1930 2022  .47 
+   7 HUN16    1932 2022  .56 
+   8 HUN17    1927 2019  .74 
+   9 HUN18    1923 2022  .73 
+  10 HUN19    1937 2022  .71 
+  11 HUN01    1932 2022  .51 
+  12 HUN20    1945 2022  .65 
+  13 HUN21    1932 2022  .74 
+  15 HUN03    1943 2022  .43 
+  16 HUN04    1940 2022  .71 
+  17 HUN05    1923 2022  .71 
+  18 HUN06    1941 2022  .21A
+  19 HUN07    1925 2022  .49 
+  20 HUN08    1926 2019  .71 
+ Av segment correlation  .58 
+
+ FLAGGED SEGMENTS: che601
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 HUN14    1950 1999     A     .268         0
+  18 HUN06    1950 1999     A     .212         0
+
+ DESCRIPTIVE STATISTICS: che601
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HUN10    1947 2022     76      1      0    .599   2.03   4.77   .952   .829   .202   1.39   .188   .017   2
+   2 HUN11    1945 2022     78      1      0    .502   2.30   3.89   .625   .652   .186   1.53   .185  -.012   1
+   3 HUN12    1951 2022     72      0      0    .514   2.34   5.40   .763   .841   .144   1.42   .152  -.064   3
+   4 HUN13    1932 2022     91      1      0    .505   2.30   5.10   .566   .391   .174   2.02   .187   .011   0
+   5 HUN14    1917 2022    106      1      1    .487   1.96   4.16   .834   .815   .230   1.70   .222   .051   1
+   6 HUN15    1930 2022     93      1      0    .518   1.96   3.44   .727   .811   .164   1.47   .184   .089   1
+   7 HUN16    1932 2022     91      1      0    .610   2.59   4.84   .796   .732   .168   1.44   .176   .055   1
+   8 HUN17    1927 2019     93      1      0    .679   1.96   3.92   .580   .645   .194   1.72   .204   .055   1
+   9 HUN18    1923 2022    100      1      0    .720   1.75   3.57   .572   .774   .165   1.43   .176  -.036   1
+  10 HUN19    1937 2022     86      1      0    .619   2.37   4.56   .745   .781   .154   1.54   .159   .045   1
+  11 HUN01    1932 2022     91      1      0    .583   1.79   3.81   .714   .734   .194   1.66   .232   .011   2
+  12 HUN20    1945 2022     78      1      0    .612   2.06   3.84   .691   .682   .211   1.51   .212   .049   1
+  13 HUN21    1932 2022     91      1      0    .677   2.59   5.17  1.016   .815   .197   1.59   .204   .013   1
+  14 HUN02    1961 2022     62      0      0    .494   2.57   4.00   .703   .741   .159   1.36   .155   .131   1
+  15 HUN03    1943 2022     80      1      0    .469   2.01   4.23   .745   .713   .234   1.52   .207   .063   2
+  16 HUN04    1940 2022     83      1      0    .655   2.44   3.89   .542   .618   .144   1.46   .148  -.026   1
+  17 HUN05    1923 2022    100      1      0    .728   1.76   3.51   .568   .755   .166   1.34   .175  -.051   1
+  18 HUN06    1941 2022     82      1      1    .334   1.62   4.55   .767   .598   .236   2.04   .298   .075   1
+  19 HUN07    1925 2022     98      1      0    .545   1.39   3.02   .507   .662   .186   1.74   .208   .213   1
+  20 HUN08    1926 2019     94      1      0    .748   1.96   4.07   .628   .580   .208   1.62   .218   .189   1
+  21 HUN09    1954 2022     69      0      0    .355   1.90   3.77   .677   .842   .162   1.48   .171   .029   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1814     18      2    .576   2.06   5.40   .698   .713   .185   2.04   .195   .044
+
+ DATA CHECKS (rwl.check): che601
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che601.rwl
+ 21 series, 1814 measurements, 1917-2022, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file che601.rwl, MD5 caa717dd33b33bbb7d16e5c3219ead1b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

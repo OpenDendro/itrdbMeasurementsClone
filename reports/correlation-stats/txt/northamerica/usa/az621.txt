@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: az621
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az621.rwl
+      MD5 of measurement file: a67f933064db78fa1a3435c433dceb3b
+      Date checked           : 01OCT26
+      Beginning year         : 1601
+      Ending year            : 2018
+      Principal investigators: O'Neill, L.; Fulé, P.Z.
+      Site name              : Fracas Canyon
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.6840 N
+      Longitude              : 112.2850 W
+      Elevation              : 2300 m
+
+      Series intercorrelation: 0.571
+      Avg mean sensitivity   : 0.326
+      Avg standard deviation : 0.683
+      Avg autocorrelation    : 0.770
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 4.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az621
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 FR-001   1601 2018  .53  .55  .43  .25B .05B .12B .19B .24B .49  .34  .33 
+   2 FR-002   1660 2018  .65  .72  .72  .66  .64  .71  .71  .71  .61  .64  .60 
+   3 FR-003   1618 1969  .63  .69  .71  .66  .64  .65  .70  .75  .78           
+   4 FR-004   1702 2018       .78  .65  .57  .59  .55  .61  .61  .62  .38  .44 
+   5 FR-005   1620 1980  .60  .58  .58  .62  .42  .46  .56  .59  .59  .24A     
+   6 FR-006   1724 2018       .53  .74  .63  .55  .69  .77  .76  .69  .58  .59 
+   7 FR-007   1773 2018                      .65  .64  .66  .66  .64  .52  .51 
+   8 FR-008   1833 2018                                .70  .71  .64  .54  .72 
+   9 FR-009   1799 2018                      .68  .68  .73  .79  .70  .58  .60 
+  10 FR-010   1809 2018                           .39  .58  .64  .48  .47  .58 
+  11 FR-011   1724 2018       .62  .63  .78  .67  .72  .75  .68  .67  .58  .60 
+  12 FR-012   1847 2018                                .84  .87  .80  .58  .49 
+  13 FR-013   1743 2018            .37  .51  .51  .55  .67  .69  .47  .43  .72 
+  14 FR-014   1760 2018                 .82  .78  .76  .86  .85  .68  .64  .63 
+  15 FR-015   1741 2018            .33B .53  .67  .43  .61  .80  .71  .40  .62 
+  16 FR-016   1779 2018                      .64  .65  .71  .68  .62  .63  .56 
+  17 FR-018   1845 2018                                .49  .40  .56  .54  .52 
+  18 FR-019   1762 2018                 .86  .77  .75  .75  .68  .64  .66  .68 
+  19 FR-020   1753 2018                 .73  .71  .78  .73  .65  .62  .53  .48 
+ Av segment correlation  .60  .64  .57  .63  .60  .59  .66  .67  .63  .52  .57 
+
+ FLAGGED SEGMENTS: az621
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 FR-001   1775 1824     B     .246        -7      .367   .121
+   1 FR-001   1800 1849     B     .050        -7      .333   .284
+   1 FR-001   1825 1874     B     .118         7      .208   .090  weak at every lag
+   1 FR-001   1850 1899     B     .189        -3      .292   .103  weak at every lag
+   1 FR-001   1875 1924     B     .242       -10      .297   .055  weak at every lag
+   5 FR-005   1925 1974     A     .243         0
+  15 FR-015   1750 1799     B     .326        -9      .361   .034
+
+ DESCRIPTIVE STATISTICS: az621
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FR-001   1601 2018    418     11      5    .313    .96   3.81   .574   .742   .291   2.09   .272   .002   1
+   2 FR-002   1660 2018    359     11      0    .588    .81   2.73   .480   .688   .378   1.94   .347   .001   1
+   3 FR-003   1618 1969    352      9      0    .480    .67   2.89   .464   .689   .488   3.44   .418  -.005   1
+   4 FR-004   1702 2018    317     10      0    .538   1.00   3.23   .625   .824   .350   1.95   .312   .003   1
+   5 FR-005   1620 1980    361     10      1    .424   1.11   2.50   .460   .632   .297   1.82   .299  -.006   1
+   6 FR-006   1724 2018    295     10      0    .635   1.01   3.08   .602   .718   .420   1.86   .359  -.015   1
+   7 FR-007   1773 2018    246      7      0    .646    .99   3.33   .588   .817   .308   1.84   .290  -.017   3
+   8 FR-008   1833 2018    186      5      0    .688   1.44   2.77   .615   .786   .252   1.80   .238  -.028   3
+   9 FR-009   1799 2018    220      7      0    .624   1.34   3.20   .774   .846   .328   1.67   .291   .013   1
+  10 FR-010   1809 2018    210      6      0    .497   1.54   4.95  1.115   .892   .278   1.85   .263   .001   2
+  11 FR-011   1724 2018    295     10      0    .668   1.21   4.85   .665   .678   .329   2.16   .304   .001   1
+  12 FR-012   1847 2018    172      5      0    .718    .96   3.73   .685   .814   .397   1.87   .337  -.017   1
+  13 FR-013   1743 2018    276      9      0    .583   1.32   7.81  1.126   .804   .281   1.66   .239   .015   3
+  14 FR-014   1760 2018    259      8      0    .742   1.28   3.32   .713   .745   .372   1.95   .325  -.014   1
+  15 FR-015   1741 2018    278      9      1    .518   1.27   4.61   .655   .779   .271   1.70   .256   .023   1
+  16 FR-016   1779 2018    240      7      0    .646   1.77   5.33  1.070   .858   .279   1.62   .264  -.007   1
+  17 FR-018   1845 2018    174      5      0    .494   1.75   5.99  1.010   .826   .226   1.59   .229  -.036   1
+  18 FR-019   1762 2018    257      8      0    .689   1.07   2.79   .559   .810   .268   1.73   .259  -.002   2
+  19 FR-020   1753 2018    266      8      0    .651    .95   3.12   .710   .906   .278   1.81   .271   .007   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5181    155      7    .571   1.14   7.81   .683   .770   .326   3.44   .298  -.003
+
+ DATA CHECKS (rwl.check): az621
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az621.rwl
+ 19 series, 5181 measurements, 1601-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file az621.rwl, MD5 a67f933064db78fa1a3435c433dceb3b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

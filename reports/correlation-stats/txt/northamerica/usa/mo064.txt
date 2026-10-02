@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: mo064
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mo064.rwl
+      MD5 of measurement file: 61b7b03cbdc7a7149334ac3140371bd6
+      Date checked           : 01OCT26
+      Beginning year         : 1877
+      Ending year            : 2002
+      Principal investigators: Voelker, S.L.; Muzika, R.; Guyette, R.P.
+      Site name              : MOFEP Site 4
+      Species information    : QUVE Quercus velutina Lam.
+      Latitude               : 37.1400 N
+      Longitude              : 91.0800 W
+      Elevation              : 240 m
+
+      Series intercorrelation: 0.569
+      Avg mean sensitivity   : 0.215
+      Avg standard deviation : 0.754
+      Avg autocorrelation    : 0.653
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mo064
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 417003   1944 2002            .65 
+   2 417008   1941 2002            .55 
+   3 417011   1944 2002            .54 
+   4 417027   1879 2002  .82  .74  .51 
+   6 417049   1943 2002            .65 
+   9 444035   1877 2002  .83  .74  .39 
+  11 444056   1945 2002            .61 
+  12 444079   1946 2002            .49 
+  13 444085   1941 2002            .54 
+ Av segment correlation  .83  .74  .55 
+
+ FLAGGED SEGMENTS: mo064
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: mo064
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 417003   1944 2002     59      1      0    .589   2.33   3.55   .643   .657   .200   1.59   .185   .061   0
+   2 417008   1941 2002     62      1      0    .571   2.13   3.73   .811   .706   .240   1.68   .240   .163   0
+   3 417011   1944 2002     59      1      0    .503   1.34   2.47   .443   .602   .239   1.68   .260   .012   1
+   4 417027   1879 2002    124      3      0    .688   2.49   6.08  1.002   .805   .196   1.57   .204  -.028   1
+   5 417033   1962 2002     41      0      0    .465   2.40   5.13   .938   .703   .228   1.67   .235  -.002   1
+   6 417049   1943 2002     60      1      0    .658   2.15   3.28   .468   .480   .185   1.52   .182  -.019   1
+   7 417054   1950 2002     53      0      0    .417   1.92   5.31   .923   .705   .237   1.96   .285   .039   1
+   8 417094   1950 2002     53      0      0    .629   2.10   3.43   .645   .645   .199   1.38   .211  -.177   1
+   9 444035   1877 2002    126      3      0    .660   2.00   4.81   .828   .747   .215   1.87   .239   .019   3
+  10 444053   1950 2002     53      0      0    .209   2.15   8.57  1.189   .668   .255   2.45   .311   .048   1
+  11 444056   1945 2002     58      1      0    .620   1.42   2.69   .463   .519   .237   1.63   .224   .066   0
+  12 444079   1946 2002     57      1      0    .491   2.28   4.07   .677   .530   .202   1.59   .220   .038   1
+  13 444085   1941 2002     62      1      0    .577   2.15   3.52   .529   .479   .192   1.36   .191  -.040   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            867     13      0    .569   2.09   8.57   .754   .653   .215   2.45   .227   .012
+
+ DATA CHECKS (rwl.check): mo064
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mo064.rwl
+ 13 series, 867 measurements, 1877-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file mo064.rwl, MD5 61b7b03cbdc7a7149334ac3140371bd6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

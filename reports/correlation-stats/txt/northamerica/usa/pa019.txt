@@ -1,0 +1,167 @@
+
+ COFECHA-style crossdating report: pa019
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pa019.rwl
+      MD5 of measurement file: 499cb936ed145d5d8a5326415b7e5054
+      Date checked           : 01OCT26
+      Beginning year         : 1893
+      Ending year            : 2006
+      Principal investigators: Copenheaver, C.A.
+      Site name              : Entriken
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 40.4000 N
+      Longitude              : 78.1000 W
+      Elevation              : 243 m
+
+      Series intercorrelation: 0.566
+      Avg mean sensitivity   : 0.383
+      Avg standard deviation : 1.156
+      Avg autocorrelation    : 0.678
+      Number dated series    : 38
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 0, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pa019
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   2 PAR02B   1910 2006       .49  .60 
+   3 PAR03A   1900 2006       .51  .60 
+   5 PAR05A   1934 2006            .37 
+   6 PAR05B   1918 2006       .53  .62 
+   7 PAR07A   1920 2003       .57B .57 
+   8 PAR09A   1898 2006  .41  .48  .46 
+   9 PAR09B   1899 2006  .63  .60  .57 
+  10 PAR10A   1932 2006            .54 
+  12 PAR11A   1938 2006            .56 
+  13 PAR12A   1939 2006            .38 
+  14 PAR12B   1926 2006            .41B
+  15 PAR13A   1902 2006       .67  .70 
+  16 PAR13B   1893 1993  .39  .48      
+  17 PAR15B   1903 2006       .33  .47 
+  18 PAR17A   1928 2006            .57 
+  19 PAR17B   1938 2006            .55 
+  20 PAR18A   1908 2004       .62  .34B
+  21 PAR18B   1909 1988       .49      
+  22 PAR19A   1931 2003            .70 
+  23 PAR19B   1918 2005       .68  .67 
+  24 PAR20A   1929 2006            .60 
+  25 PAR20B   1904 2006       .66  .65 
+  26 PAR21A   1938 2006            .52 
+  27 PAR21B   1917 2006       .33B .28B
+  28 PAR22A   1926 2006            .67 
+  29 PAR22B   1935 2006            .53 
+  30 PAR23A   1935 2006            .58 
+  31 PAR23B   1910 2006       .59  .60 
+  32 PAR24A   1912 2006       .59  .55 
+  33 PAR24B   1933 2005            .53 
+  34 PAR25B   1910 2006       .48  .27B
+  35 PAR27A   1926 2003            .59 
+  36 PAR27B   1940 2005            .58 
+  37 PAR30A   1930 2006            .72 
+  38 PAR30B   1914 2006       .73  .69 
+ Av segment correlation  .48  .55  .55 
+
+ FLAGGED SEGMENTS: pa019
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 PAR07A   1925 1974     B     .574         7      .616   .041
+  14 PAR12B   1950 1999     B     .411        -7      .438   .027
+  20 PAR18A   1950 1999     B     .339         1      .408   .069
+  27 PAR21B   1925 1974     B     .328        -7      .378   .050
+  27 PAR21B   1950 1999     B     .280         1      .382   .102
+  34 PAR25B   1950 1999     B     .267        -2      .270   .003  weak at every lag
+
+ DESCRIPTIVE STATISTICS: pa019
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PAR01B   1960 2006     47      0      0    .647   2.24   4.89   .940   .527   .362   1.62   .319   .045   1
+   2 PAR02B   1910 2006     97      2      0    .558   2.26   5.71  1.239   .624   .376   1.98   .384   .007   3
+   3 PAR03A   1900 2006    107      2      0    .477   1.19   5.35  1.122   .828   .390   2.12   .411   .009   1
+   4 PAR03B   1952 2006     55      0      0    .448   2.25   5.13  1.498   .728   .453   2.31   .458  -.002   1
+   5 PAR05A   1934 2006     73      1      0    .512   2.47   7.59  1.371   .673   .390   2.09   .353  -.036   2
+   6 PAR05B   1918 2006     89      2      0    .660   3.04   7.89  1.804   .743   .401   2.12   .371   .003   3
+   7 PAR07A   1920 2003     84      2      1    .625   1.95   4.21   .874   .715   .294   1.63   .294   .010   2
+   8 PAR09A   1898 2006    109      3      0    .487   1.95   6.27  1.240   .624   .410   2.21   .412   .022   1
+   9 PAR09B   1899 2006    108      3      0    .614   1.68   5.33  1.022   .548   .459   1.94   .411  -.013   1
+  10 PAR10A   1932 2006     75      1      0    .376   1.34   3.25   .714   .594   .381   2.29   .429   .051   1
+  11 PAR10B   1960 2006     47      0      0    .677   2.12   5.22  1.082   .722   .343   1.82   .328   .196   1
+  12 PAR11A   1938 2006     69      1      0    .591   1.62   4.81  1.114   .798   .395   1.92   .380   .046   1
+  13 PAR12A   1939 2006     68      1      0    .476   2.01   6.73  1.615   .773   .411   2.30   .397   .048   1
+  14 PAR12B   1926 2006     81      1      1    .355   1.86   5.97  1.266   .691   .360   2.23   .377   .024   1
+  15 PAR13A   1902 2006    105      2      0    .529   1.17   3.45   .686   .648   .398   2.09   .415   .070   1
+  16 PAR13B   1893 1993    101      2      0    .403   1.13   3.23   .582   .606   .385   1.86   .360   .007   1
+  17 PAR15B   1903 2006    104      2      0    .483   1.79   4.17   .719   .508   .291   2.33   .299   .014   1
+  18 PAR17A   1928 2006     79      1      0    .628   1.44   4.66   .984   .696   .445   2.13   .453   .001   1
+  19 PAR17B   1938 2006     69      1      0    .571   1.50   4.59  1.132   .641   .458   2.35   .520   .049   1
+  20 PAR18A   1908 2004     97      2      1    .598   1.43   4.31   .811   .577   .403   2.23   .388  -.010   3
+  21 PAR18B   1909 1988     80      1      0    .478   1.23   3.20   .562   .435   .360   2.21   .367   .003   1
+  22 PAR19A   1931 2003     73      1      0    .714   2.13   5.10  1.197   .750   .334   1.80   .325   .149   1
+  23 PAR19B   1918 2005     88      2      0    .721   1.95   5.50  1.202   .711   .391   2.05   .389   .012   1
+  24 PAR20A   1929 2006     78      1      0    .685   2.08   5.82  1.159   .642   .392   1.97   .366   .059   1
+  25 PAR20B   1904 2006    103      2      0    .678   1.81   5.91  1.149   .722   .340   2.17   .339  -.016   1
+  26 PAR21A   1938 2006     69      1      0    .491   2.79   5.43   .932   .544   .283   1.66   .256   .004   1
+  27 PAR21B   1917 2006     90      2      2    .444   1.89   5.52  1.166   .739   .333   2.06   .323  -.019   3
+  28 PAR22A   1926 2006     81      1      0    .606   1.62   3.64   .794   .571   .362   2.52   .391   .012   1
+  29 PAR22B   1935 2006     72      1      0    .595   1.86   3.66   .765   .426   .403   1.83   .356   .023   1
+  30 PAR23A   1935 2006     72      1      0    .555   2.15   6.57  1.309   .652   .381   1.80   .375  -.017   2
+  31 PAR23B   1910 2006     97      2      0    .477   2.34   6.13  1.532   .766   .414   2.01   .379   .054   1
+  32 PAR24A   1912 2006     95      2      0    .661   2.25   6.82  1.547   .736   .404   2.81   .439   .012   1
+  33 PAR24B   1933 2005     73      1      0    .508   2.57   8.02  1.765   .785   .395   2.59   .427   .004   1
+  34 PAR25B   1910 2006     97      2      1    .488   1.79   6.15  1.381   .789   .370   2.32   .414  -.002   1
+  35 PAR27A   1926 2003     78      1      0    .690   1.89   5.85  1.458   .752   .418   2.55   .403   .038   1
+  36 PAR27B   1940 2005     66      1      0    .610   2.08   8.66  1.997   .864   .413   2.08   .361   .019   2
+  37 PAR30A   1930 2006     77      1      0    .774   2.05   6.26  1.515   .849   .344   2.07   .348   .072   1
+  38 PAR30B   1914 2006     93      2      0    .714   1.46   5.03  1.155   .778   .411   2.28   .399   .026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3146     54      6    .566   1.87   8.66  1.156   .678   .383   2.81   .380   .022
+
+ DATA CHECKS (rwl.check): pa019
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/pa019.rwl
+ 38 series, 3146 measurements, 1893-2006, 0.002 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file pa019.rwl, MD5 499cb936ed145d5d8a5326415b7e5054.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

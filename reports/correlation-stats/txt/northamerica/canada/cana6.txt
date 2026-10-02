@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: cana6
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana6.rwl
+      MD5 of measurement file: ef29a50f4ab854773394075971472afc
+      Date checked           : 01OCT26
+      Beginning year         : 1705
+      Ending year            : 1986
+      Principal investigators: Kaiser, K.F.
+      Site name              : Christmas Creek
+      Species information    : PCMA Picea mariana (Mill.) Britton, Sterns, & Poggenb.
+      Latitude               : 60.9200 N
+      Longitude              : 137.7200 W
+      Elevation              : 950 m
+
+      Series intercorrelation: 0.532
+      Avg mean sensitivity   : 0.163
+      Avg standard deviation : 0.254
+      Avg autocorrelation    : 0.902
+      Number dated series    : 17
+      Series crossdated      : 15
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 3, B 7; 6 of the B weak at every lag)
+      Pct problem segments   : 15.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 CHRI0010 1900 1986                           .29A
+   2 CHRI0020 1786 1986  .59  .47  .36  .59  .67  .55 
+   3 CHRI0030 1768 1986  .67  .61  .69  .74  .70  .69 
+   4 CHRI0040 1762 1916  .37  .27B .20B               
+   5 CHRI0050 1779 1946  .58  .38  .49  .68           
+   6 CHRI0060 1716 1936  .55  .53  .52  .70           
+   7 CHRI0070 1705 1943  .50  .32A .07B .19B          
+   8 CHRI0080 1763 1968  .65  .58  .63  .72  .70      
+   9 CHRI0090 1736 1945  .36  .22B .27A .37           
+  10 CHRI0100 1775 1986  .69  .67  .45  .68  .76  .67 
+  11 CHRI0110 1760 1940  .56  .63  .68  .66           
+  12 CHRI0120 1750 1946  .44  .43  .57  .62           
+  13 CHRI0130 1720 1930  .18B .21B .58  .68           
+  16 CHRI0160 1819 1986       .45  .40  .43  .47  .44 
+  17 CHRICH00 1705 1986  .97  .97  .89  .93  .88  .75 
+ Av segment correlation  .55  .48  .49  .61  .70  .56 
+
+ FLAGGED SEGMENTS: cana6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CHRI0010 1925 1974     A     .291         0
+   4 CHRI0040 1825 1874     B     .265         3      .284   .019  weak at every lag
+   4 CHRI0040 1850 1899     B     .204         3      .249   .045  weak at every lag
+   7 CHRI0070 1825 1874     A     .316         0
+   7 CHRI0070 1850 1899     B     .072        -5      .257   .185  weak at every lag
+   7 CHRI0070 1875 1924     B     .193         2      .340   .148
+   9 CHRI0090 1825 1874     B     .216        -8      .230   .014  weak at every lag
+   9 CHRI0090 1850 1899     A     .267         0
+  13 CHRI0130 1800 1849     B     .183        10      .298   .115  weak at every lag
+  13 CHRI0130 1825 1874     B     .208       -10      .260   .052  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana6
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CHRI0010 1900 1986     87      1      1    .436    .67    .98   .140   .783   .111   1.26   .101   .010   3
+   2 CHRI0020 1786 1986    201      6      0    .552    .55   2.12   .390   .952   .139   1.55   .149  -.038   1
+   3 CHRI0030 1768 1986    219      6      0    .685    .35    .97   .203   .885   .189   1.71   .183  -.001   1
+   4 CHRI0040 1762 1916    155      3      2    .267    .61   1.61   .419   .977   .148   1.73   .170   .007   1
+   5 CHRI0050 1779 1946    168      4      0    .553    .35    .98   .148   .865   .156   1.52   .166   .059   2
+   6 CHRI0060 1716 1936    221      4      0    .531    .52   1.21   .207   .862   .158   1.46   .164   .007   1
+   7 CHRI0070 1705 1943    239      4      3    .332    .26    .65   .144   .890   .192   1.58   .201  -.003   3
+   8 CHRI0080 1763 1968    206      5      0    .635    .41   1.12   .171   .817   .179   1.54   .182   .014   1
+   9 CHRI0090 1736 1945    210      4      2    .467    .28   1.40   .229   .950   .177   1.77   .192   .021   3
+  10 CHRI0100 1775 1986    212      6      0    .580    .72   2.66   .510   .958   .155   1.65   .163  -.018   1
+  11 CHRI0110 1760 1940    181      4      0    .534    .45   1.61   .343   .958   .158   1.44   .164  -.005   1
+  12 CHRI0120 1750 1946    197      4      0    .431    .34   1.16   .231   .908   .168   1.82   .184   .038   1
+  13 CHRI0130 1720 1930    211      4      2    .473    .36    .87   .177   .886   .181   1.84   .194   .009   3
+  14 CHRI0140 1766 1971    206                          .34   1.35   .230   .901   .173                         
+  15 CHRI0150 1776 1959    184                          .48   1.78   .378   .950   .178                         
+  16 CHRI0160 1819 1986    168      5      0    .433    .71   1.52   .275   .840   .158   1.68   .179   .015   1
+  17 CHRICH00 1705 1986    282      6      0    .845    .44    .99   .158   .905   .123   1.52   .128   .004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3347     66     10    .532    .45   2.66   .254   .902   .163   1.84   .170   .007
+
+ DATA CHECKS (rwl.check): cana6
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana6.rwl
+ 17 series, 3347 measurements, 1705-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cana6.rwl, MD5 ef29a50f4ab854773394075971472afc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series CHRI0140 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series CHRI0150 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: ausl008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ausl008.rwl
+      MD5 of measurement file: 67f177ffdeffdc73ee4a2125df87d2f1
+      Date checked           : 01OCT26
+      Beginning year         : 1912
+      Ending year            : 1975
+      Principal investigators: Lamarche, V.C.
+      Site name              : Woodman's Point
+      Species information    : CARO Callitris robusta (A. Cunn. ex Parl.) F.M. Bailey  = Callitris preissii Miq.
+      Latitude               : 32.1200 S
+      Longitude              : 115.7500 E
+      Elevation              : 13 m
+
+      Series intercorrelation: 0.528
+      Avg mean sensitivity   : 0.306
+      Avg standard deviation : 0.838
+      Avg autocorrelation    : 0.699
+      Number dated series    : 14
+      Segment length tested  : 32
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 20.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ausl008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1920 1936 
+                        1951 1967 
+ --- -------- ---------  ---- ---- 
+   1 WPT221   1920 1968       .21B
+   3 WPT242   1913 1960  .80      
+   4 WPT254   1923 1975       .56 
+   5 WPT282   1926 1975       .57 
+   7 WPT241   1912 1975  .58  .66 
+   8 WPT243   1914 1975  .79  .84 
+   9 WPT251   1923 1975       .71 
+  10 WPT253   1928 1975       .75 
+  11 WPT261   1916 1975  .54  .62 
+  12 WPT262   1921 1975       .52 
+  13 WPT271   1926 1975       .37A
+  14 WPT272   1926 1975       .20B
+ Av segment correlation  .68  .55 
+
+ FLAGGED SEGMENTS: ausl008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 WPT221   1936 1967     B     .213         6      .654   .441
+  13 WPT271   1936 1967     A     .365         0
+  14 WPT272   1936 1967     B     .205        -4      .343   .138  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ausl008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WPT221   1920 1968     49      1      1    .236   1.85   4.52   .935   .826   .273   1.48   .238  -.016   3
+   2 WPT222   1925 1957     33      0      0    .280   1.53   2.52   .438   .421   .250   1.54   .201  -.024   2
+   3 WPT242   1913 1960     48      1      0    .776   1.53   5.25   .986   .664   .344   1.81   .345  -.057   1
+   4 WPT254   1923 1975     53      1      0    .563   1.97   3.25   .720   .578   .284   1.58   .271  -.005   1
+   5 WPT282   1926 1975     50      1      0    .388   1.06   1.93   .482   .688   .291   1.92   .291   .055   3
+   6 WPT283   1943 1975     33      0      0    .485   1.26   2.75   .591   .204   .464   2.05   .378  -.139   0
+   7 WPT241   1912 1975     64      2      0    .635   1.07   3.85   .679   .701   .338   1.64   .293   .003   0
+   8 WPT243   1914 1975     62      2      0    .770   1.27   5.55   .922   .678   .383   1.84   .367  -.038   1
+   9 WPT251   1923 1975     53      1      0    .520   1.44   3.78   .901   .797   .306   2.31   .367   .053   1
+  10 WPT253   1928 1975     48      1      0    .709   1.84   3.42   .606   .521   .264   1.60   .252   .038   1
+  11 WPT261   1916 1975     60      2      0    .618   1.63   6.61  1.360   .904   .273   1.55   .250   .019   1
+  12 WPT262   1921 1975     55      1      0    .493    .88   1.95   .425   .734   .274   1.90   .301   .018   1
+  13 WPT271   1926 1975     50      1      1    .408   2.04   5.29  1.504   .892   .284   1.71   .276   .136   0
+  14 WPT272   1926 1975     50      1      1    .321   1.53   3.61   .933   .876   .274   1.62   .271  -.038   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            708     15      3    .528   1.48   6.61   .838   .699   .306   2.31   .294   .004
+
+ DATA CHECKS (rwl.check): ausl008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/ausl008.rwl
+ 14 series, 708 measurements, 1912-1975, 0.01 mm precision
+ 1 error(s), 0 warning(s), 5 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     WPT272: correlates best with the master at lag -3 (r = 0.392 against r = 0.217 as dated); the series may be misdated by 3 year(s), most likely a missing ring
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file ausl008.rwl, MD5 67f177ffdeffdc73ee4a2125df87d2f1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 64 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

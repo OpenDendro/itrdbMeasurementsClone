@@ -1,0 +1,203 @@
+
+ COFECHA-style crossdating report: bra005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra005.rwl
+      MD5 of measurement file: 6999e294fea1ed10d2f678ccc69af90c
+      Date checked           : 01OCT26
+      Beginning year         : 1889
+      Ending year            : 2013
+      Principal investigators: Granato, D.; Adenesky-Filho, E.
+      Site name              : Brusque
+      Species information    : ALTR Alchornea triplinervia (Spreng.) Müll.Arg.
+      Latitude               : 26.8441 S
+      Longitude              : 49.0419 W
+      Elevation              : 79 m
+
+      Series intercorrelation: 0.446
+      Avg mean sensitivity   : 0.382
+      Avg standard deviation : 0.583
+      Avg autocorrelation    : 0.249
+      Number dated series    : 61
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 8, B 5; 5 of the B weak at every lag)
+      Pct problem segments   : 26.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 X12A     1942 2013            .29A
+   2 X12B     1948 2013            .36 
+   3 X12C     1922 2013       .29A .58 
+   4 X13A     1926 2013            .27A
+   5 X13B     1923 2013            .37 
+   7 X14B     1947 2013            .34 
+   9 X15B     1941 2013            .52 
+  11 X16A     1936 2013            .32A
+  12 X16B     1917 2013       .27B .33A
+  13 X17A     1944 2013            .28B
+  14 X17C     1928 2013            .36 
+  15 X17D     1928 2013            .52 
+  16 X18A     1917 2013       .50  .49 
+  17 X18B     1921 2013       .45  .34 
+  18 X18C     1921 2013       .40  .30A
+  19 X19A     1927 2013            .30A
+  20 X19B     1937 2013            .42 
+  21 X19C     1937 2013            .29B
+  22 X19E     1927 2013            .58 
+  23 X20A     1924 2013       .50  .45 
+  24 X20B     1924 2013       .17B .29B
+  25 X20C     1922 2013       .48  .58 
+  26 X21A     1904 2013       .33  .39 
+  27 X21B     1904 2013       .38  .61 
+  28 X21C     1889 2013       .45  .65 
+  30 X22B     1944 2013            .31A
+  31 X22C     1944 2013            .37 
+  35 X24A     1937 2013            .48 
+  36 X24B     1944 2013            .38 
+  37 X24C     1944 2013            .42 
+  40 X25C     1950 2013            .54 
+  41 X25D     1950 2013            .46 
+  42 X26A     1950 2013            .58 
+  44 X26C     1944 2013            .37 
+  45 X27A     1943 2013            .46 
+  48 X28B     1932 2013            .56 
+  54 X30C     1950 2013            .46 
+  57 X32A     1950 2013            .51 
+  58 X32B     1950 2013            .62 
+ Av segment correlation       .38  .43 
+
+ FLAGGED SEGMENTS: bra005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 X12A     1950 1999     A     .285         0
+   3 X12C     1925 1974     A     .290         0
+   4 X13A     1950 1999     A     .273         0
+  11 X16A     1950 1999     A     .324         0
+  12 X16B     1925 1974     B     .272         6      .297   .025  weak at every lag
+  12 X16B     1950 1999     A     .325         0
+  13 X17A     1950 1999     B     .285         4      .285   .000  weak at every lag
+  18 X18C     1950 1999     A     .298         0
+  19 X19A     1950 1999     A     .304         0
+  21 X19C     1950 1999     B     .293        -8      .302   .009  weak at every lag
+  24 X20B     1925 1974     B     .167         6      .268   .101  weak at every lag
+  24 X20B     1950 1999     B     .292         6      .294   .002  weak at every lag
+  30 X22B     1950 1999     A     .311         0
+
+ DESCRIPTIVE STATISTICS: bra005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 X12A     1942 2013     72      1      1    .285   2.02   4.73   .974   .181   .453   2.53   .399  -.016   3
+   2 X12B     1948 2013     66      1      0    .365   2.23   7.19  1.362   .342   .450   2.44   .426  -.043   0
+   3 X12C     1922 2013     92      2      1    .432   1.92   5.85  1.027   .263   .456   2.06   .381  -.002   3
+   4 X13A     1926 2013     88      1      1    .300   1.61   5.01   .856   .111   .392   2.46   .388  -.146   0
+   5 X13B     1923 2013     91      1      0    .400   1.76   4.93   .822   .150   .430   2.05   .381  -.002   3
+   6 X14A     1952 2013     62      0      0    .398   1.17   4.18   .566  -.006   .427   3.01   .434  -.118   0
+   7 X14B     1947 2013     67      1      0    .390   1.25   3.11   .634   .532   .342   1.74   .302  -.059   0
+   8 X14C     1970 2013     44      0      0    .345   1.14   2.46   .499   .373   .299   1.95   .306  -.083   0
+   9 X15B     1941 2013     73      1      0    .428   1.37   3.51   .629   .419   .331   2.07   .346   .017   1
+  10 X15C     1958 2013     56      0      0    .438   1.06   2.03   .431   .361   .378   1.96   .338   .085   0
+  11 X16A     1936 2013     78      1      1    .287   1.30   3.04   .585   .309   .429   2.20   .387   .104   0
+  12 X16B     1917 2013     97      2      2    .306   1.22   3.43   .576   .353   .388   2.14   .377   .090   0
+  13 X17A     1944 2013     70      1      1    .411   1.15   2.64   .473   .368   .340   1.67   .324  -.028   2
+  14 X17C     1928 2013     86      1      0    .383   1.15   2.61   .458   .187   .415   2.03   .365   .031   0
+  15 X17D     1928 2013     86      1      0    .355   1.11   2.54   .496   .281   .403   1.77   .366   .089   0
+  16 X18A     1917 2013     97      2      0    .481   1.29   2.72   .456   .036   .363   1.89   .316  -.103   0
+  17 X18B     1921 2013     93      2      0    .404   1.17   3.21   .495   .296   .400   2.09   .358   .036   0
+  18 X18C     1921 2013     93      2      1    .382   1.08   2.70   .391   .266   .330   2.12   .296  -.037   2
+  19 X19A     1927 2013     87      1      1    .453   1.45   3.92   .732   .245   .441   1.96   .380  -.033   2
+  20 X19B     1937 2013     77      1      0    .464   1.55   3.36   .655   .319   .382   2.14   .370   .131   0
+  21 X19C     1937 2013     77      1      1    .340   1.76   4.86   .949   .403   .427   1.83   .371   .081   0
+  22 X19E     1927 2013     87      1      0    .497   1.38   3.27   .591   .106   .430   1.93   .348  -.065   3
+  23 X20A     1924 2013     90      2      0    .480   1.54   4.23   .898   .531   .400   2.67   .399   .002   1
+  24 X20B     1924 2013     90      2      2    .318   1.03   3.80   .597   .382   .360   2.63   .366  -.032   0
+  25 X20C     1922 2013     92      2      0    .497   1.31   2.53   .492   .276   .348   1.73   .305  -.054   0
+  26 X21A     1904 2013    110      2      0    .339   1.09   2.97   .549   .347   .379   2.09   .333  -.014   1
+  27 X21B     1904 2013    110      2      0    .470    .98   2.09   .417   .446   .323   1.57   .238  -.027   2
+  28 X21C     1889 2013    125      2      0    .550   1.05   3.39   .437   .317   .347   2.51   .314  -.052   0
+  29 X22A     1969 2013     45      0      0    .602   1.49   2.97   .528   .320   .326   1.86   .296  -.061   0
+  30 X22B     1944 2013     70      1      1    .398   1.41   3.63   .603   .361   .383   1.84   .327  -.073   0
+  31 X22C     1944 2013     70      1      0    .412   1.13   2.35   .441  -.057   .410   1.94   .336   .006   1
+  32 X23A     1968 2013     46      0      0    .546   2.11   6.29  1.371   .394   .484   2.20   .444   .039   0
+  33 X23B     1968 2013     46      0      0    .578   1.31   2.53   .502   .149   .392   1.88   .370   .094   0
+  34 X23C     1966 2013     48      0      0    .383   1.16   2.34   .453   .275   .375   2.00   .352   .165   0
+  35 X24A     1937 2013     77      1      0    .387   1.06   2.82   .434   .080   .386   2.29   .361  -.050   0
+  36 X24B     1944 2013     70      1      0    .379   1.23   3.86   .583   .122   .439   2.29   .376  -.120   0
+  37 X24C     1944 2013     70      1      0    .412    .88   1.95   .346   .388   .311   1.77   .284  -.010   0
+  38 X25A     1993 2013     21      0      0    .353   1.31   2.62   .514   .230   .354   2.10   .378   .177   0
+  39 X25B     1962 2013     52      0      0    .708   1.35   2.84   .570   .040   .445   1.92   .378  -.083   0
+  40 X25C     1950 2013     64      1      0    .563   1.36   3.21   .552   .058   .388   2.10   .361  -.061   0
+  41 X25D     1950 2013     64      1      0    .498   1.21   3.24   .619   .456   .372   2.34   .381   .124   0
+  42 X26A     1950 2013     64      1      0    .598   1.43   5.62   .714   .133   .392   3.21   .418   .010   0
+  43 X26B     1995 2013     19      0      0    .643   1.47   2.32   .415  -.310   .358   1.51   .277  -.350   0
+  44 X26C     1944 2013     70      1      0    .413   1.24   3.62   .582   .407   .380   2.17   .371   .110   0
+  45 X27A     1943 2013     71      1      0    .450   1.26   3.77   .561   .197   .391   2.43   .355  -.018   2
+  46 X27D     1965 2013     49      0      0    .427   1.01   1.75   .323   .087   .320   1.68   .288  -.044   0
+  47 X28A     1958 2013     56      0      0    .472   1.45   3.92   .566   .090   .377   2.65   .381  -.001   0
+  48 X28B     1932 2013     82      1      0    .534   1.17   2.36   .451   .208   .361   1.90   .349   .073   0
+  49 X29A     1972 2013     42      0      0    .589    .98   2.09   .345   .139   .363   1.73   .306   .040   0
+  50 X29B     1976 2013     38      0      0    .603   1.10   2.65   .442   .493   .313   1.48   .249  -.115   0
+  51 X29C     1959 2013     55      0      0    .644    .90   1.88   .309   .073   .315   1.85   .294   .004   2
+  52 X30A     1957 2013     57      0      0    .523    .83   2.66   .396  -.004   .414   2.63   .382  -.013   3
+  53 X30B     1957 2013     57      0      0    .493    .77   1.90   .318   .113   .388   2.21   .366  -.020   2
+  54 X30C     1950 2013     64      1      0    .521    .97   1.82   .292   .291   .266   1.92   .258   .006   0
+  55 X31A     1982 2013     32      0      0    .665   1.36   2.86   .537  -.047   .461   1.84   .349  -.221   0
+  56 X31B     1982 2013     32      0      0    .606    .95   1.58   .308  -.008   .362   1.47   .287  -.254   0
+  57 X32A     1950 2013     64      1      0    .499   1.12   2.59   .475   .033   .372   2.36   .399  -.066   0
+  58 X32B     1950 2013     64      1      0    .598   1.12   3.21   .644   .578   .309   1.75   .315   .075   0
+  59 X33A     1970 2013     44      0      0    .464   1.51   3.31   .618   .035   .387   1.87   .346  -.109   0
+  60 X33B     1970 2013     44      0      0    .419   1.39   3.72   .764   .457   .388   1.97   .380   .116   0
+  61 X34      1983 2013     31      0      0    .389    .91   1.57   .296   .055   .370   1.55   .275  -.047   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4134     50     13    .446   1.28   7.19   .583   .249   .382   3.21   .349  -.010
+
+ DATA CHECKS (rwl.check): bra005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra005.rwl
+ 61 series, 4134 measurements, 1889-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 17 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 955 carriage return(s) against 479 line feed(s); mixed endings can defeat a reader
+ 17 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file bra005.rwl, MD5 6999e294fea1ed10d2f678ccc69af90c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

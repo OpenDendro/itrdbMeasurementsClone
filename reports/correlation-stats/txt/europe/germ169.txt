@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: germ169
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ169.rwl
+      MD5 of measurement file: c7bb75eed53dfc1504a5d0015c240bf4
+      Date checked           : 01OCT26
+      Beginning year         : 1836
+      Ending year            : 2005
+      Principal investigators: Fischer, S.
+      Site name              : Nordrhein-Westfalen/Kottenforst-Ville drb13
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 50.6667 N
+      Longitude              : 7.0333 E
+      Elevation              : 185 m
+
+      Series intercorrelation: 0.701
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 0.705
+      Avg autocorrelation    : 0.672
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ169
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 drb1301m 1879 2005  .14B .39  .51 
+   2 drb1302m 1868 2005  .81  .74  .74 
+   3 drb1303m 1856 2005  .65  .66  .78 
+   4 drb1304m 1854 2005  .71  .74  .68 
+   5 drb1305m 1847 2005  .85  .84  .84 
+   6 drb1306m 1877 2005  .79  .84  .86 
+   7 drb1307m 1856 2005  .56  .72  .65 
+   8 drb1308m 1836 2005  .65  .76  .89 
+   9 drb1309m 1850 2005  .84  .74  .73 
+  10 drb1310m 1860 2005  .79  .77  .77 
+  11 drb1311m 1858 2005  .70  .67  .71 
+  12 drb1312m 1851 2005  .79  .79  .79 
+ Av segment correlation  .69  .72  .74 
+
+ FLAGGED SEGMENTS: germ169
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 drb1301m 1900 1949     B     .135        -3      .307   .172  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ169
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 drb1301m 1879 2005    127      3      1    .279   1.82   4.86   .984   .846   .199   1.70   .222   .056   1
+   2 drb1302m 1868 2005    138      3      0    .735   1.58   3.18   .589   .647   .260   1.68   .262   .004   2
+   3 drb1303m 1856 2005    150      3      0    .745   2.18   4.14   .635   .546   .221   1.57   .224   .005   2
+   4 drb1304m 1854 2005    152      3      0    .683   1.90   3.87   .583   .816   .146   1.33   .139   .031   3
+   5 drb1305m 1847 2005    159      3      0    .802   2.06   4.32   .702   .542   .273   1.92   .267   .009   3
+   6 drb1306m 1877 2005    129      3      0    .774   2.41   5.13   .910   .567   .265   1.74   .267   .070   3
+   7 drb1307m 1856 2005    150      3      0    .672   1.58   3.56   .561   .649   .221   1.63   .229   .008   2
+   8 drb1308m 1836 2005    170      3      0    .664   1.88   3.94   .645   .784   .186   1.51   .194   .046   1
+   9 drb1309m 1850 2005    156      3      0    .780   1.95   5.48   .901   .794   .209   1.74   .223  -.009   3
+  10 drb1310m 1860 2005    146      3      0    .783   2.14   4.14   .611   .551   .217   1.71   .223   .035   1
+  11 drb1311m 1858 2005    148      3      0    .665   1.91   4.34   .755   .763   .217   1.55   .214   .043   3
+  12 drb1312m 1851 2005    155      3      0    .779   2.06   4.12   .644   .558   .236   1.68   .236   .032   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1780     36      1    .701   1.95   5.48   .705   .672   .220   1.92   .224   .027
+
+ DATA CHECKS (rwl.check): germ169
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ169.rwl
+ 12 series, 1780 measurements, 1836-2005, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     drb1301m: correlates with the rest of the collection at r = 0.246 where the collection median is 0.746 (6.3 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file germ169.rwl, MD5 c7bb75eed53dfc1504a5d0015c240bf4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

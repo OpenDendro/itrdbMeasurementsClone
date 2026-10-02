@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: or068
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or068.rwl
+      MD5 of measurement file: c478cae6cde25e58d11be472bef01a9b
+      Date checked           : 01OCT26
+      Beginning year         : 1708
+      Ending year            : 1993
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Mount Jefferson Medium
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 44.6700 N
+      Longitude              : 121.8300 W
+      Elevation              : 1785 m
+
+      Series intercorrelation: 0.719
+      Avg mean sensitivity   : 0.364
+      Avg standard deviation : 0.409
+      Avg autocorrelation    : 0.543
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or068
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 HMMJ01B  1724 1993  .84  .30A .50  .70  .83  .76 
+   2 HMMJ02A  1722 1993  .81  .70  .77  .59  .54  .90 
+   3 HMMJ03A  1750 1993  .64  .30A .66  .87  .80  .77 
+   4 HMMJ04A  1816 1993       .53  .68  .80  .69  .69 
+   5 HMMJ05B  1770 1993  .65  .63  .85  .77  .65  .75 
+   6 HMMJ06B  1766 1993  .79  .52  .70  .84  .84  .72 
+   7 HMMJ07A  1789 1993  .78  .66  .80  .76  .74  .80 
+   8 HMMJ08B  1820 1993       .72  .83  .84  .75  .67 
+   9 HMMJ10B  1758 1993  .76  .70  .68  .70  .79  .86 
+  10 HMMJ11B  1708 1993  .70  .58  .73  .82  .80  .79 
+  11 HMMJ12B  1725 1993  .86  .74  .71  .77  .81  .83 
+  12 HMMJ13A  1721 1993  .73  .72  .75  .75  .75  .87 
+  13 HMMJ14A  1740 1993  .78  .63  .73  .77  .83  .80 
+  14 HMMJ15B  1747 1993  .73  .72  .87  .88  .84  .85 
+  15 HMMJ16B  1757 1993  .78  .68  .81  .86  .80  .81 
+  16 HMMJ17A  1793 1993  .57  .56  .81  .75  .64  .61 
+  17 HMMJ18B  1740 1993  .63  .73  .70  .73  .63  .68 
+  18 HMMJ19B  1768 1993  .55  .52  .19B .25A .42  .61 
+  19 HMMJ20A  1858 1993                 .84  .73  .49 
+ Av segment correlation  .72  .61  .71  .75  .73  .75 
+
+ FLAGGED SEGMENTS: or068
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 HMMJ01B  1825 1874     A     .300         0
+   3 HMMJ03A  1825 1874     A     .300         0
+  18 HMMJ19B  1850 1899     B     .188         6      .260   .072  weak at every lag
+  18 HMMJ19B  1875 1924     A     .246         0
+
+ DESCRIPTIVE STATISTICS: or068
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HMMJ01B  1724 1993    270      6      1    .722    .66   1.63   .280   .547   .347   2.14   .325   .011   1
+   2 HMMJ02A  1722 1993    272      6      0    .746   1.09   2.74   .598   .739   .323   1.84   .278  -.003   3
+   3 HMMJ03A  1750 1993    244      6      1    .671    .98   3.46   .679   .758   .375   2.44   .340  -.002   2
+   4 HMMJ04A  1816 1993    178      5      0    .656    .98   2.03   .426   .537   .373   2.20   .345  -.010   1
+   5 HMMJ05B  1770 1993    224      6      0    .719    .68   1.53   .326   .050   .582   2.00   .434   .012   3
+   6 HMMJ06B  1766 1993    228      6      0    .752    .75   1.82   .344   .495   .371   1.94   .314  -.067   0
+   7 HMMJ07A  1789 1993    205      6      0    .766   1.43   3.19   .568   .260   .388   1.93   .334  -.016   2
+   8 HMMJ08B  1820 1993    174      5      0    .751    .43    .86   .171   .320   .387   2.53   .359  -.011   0
+   9 HMMJ10B  1758 1993    236      6      0    .769    .81   2.60   .423   .386   .477   2.30   .401   .010   3
+  10 HMMJ11B  1708 1993    286      6      0    .727    .70   1.80   .304   .622   .326   2.07   .306  -.007   3
+  11 HMMJ12B  1725 1993    269      6      0    .781    .60   1.55   .238   .488   .337   1.74   .292   .047   0
+  12 HMMJ13A  1721 1993    273      6      0    .759    .82   3.28   .551   .656   .483   3.02   .430  -.010   3
+  13 HMMJ14A  1740 1993    254      6      0    .772    .76   2.62   .562   .824   .375   2.26   .337  -.016   3
+  14 HMMJ15B  1747 1993    247      6      0    .826   1.10   3.04   .458   .549   .311   1.79   .268  -.003   3
+  15 HMMJ16B  1757 1993    237      6      0    .801    .67   1.54   .284   .310   .409   2.01   .329  -.011   3
+  16 HMMJ17A  1793 1993    201      6      0    .650    .90   2.56   .366   .591   .244   1.74   .223   .024   0
+  17 HMMJ18B  1740 1993    254      6      0    .611    .73   2.16   .332   .664   .281   1.80   .252  -.005   3
+  18 HMMJ19B  1768 1993    226      6      2    .465    .56   2.59   .385   .853   .241   2.29   .255   .007   1
+  19 HMMJ20A  1858 1993    136      3      0    .637   1.44   2.88   .430   .408   .241   1.88   .241   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4414    109      4    .719    .83   3.46   .409   .543   .364   3.02   .320  -.002
+
+ DATA CHECKS (rwl.check): or068
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or068.rwl
+ 19 series, 4414 measurements, 1708-1993, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file or068.rwl, MD5 c478cae6cde25e58d11be472bef01a9b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

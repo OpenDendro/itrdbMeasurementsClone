@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: deu321
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu321.rwl
+      MD5 of measurement file: c0ee087cec2dec33bb888a392547e5ff
+      Date checked           : 01OCT26
+      Beginning year         : 1754
+      Ending year            : 2010
+      Principal investigators: Hartl, C.; Dittmar, C.; Rothe, A.
+      Site name              : Berchtesgaden, Aschau oben
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.6340 N
+      Longitude              : 12.7820 E
+      Elevation              : 1420 m
+
+      Series intercorrelation: 0.598
+      Avg mean sensitivity   : 0.157
+      Avg standard deviation : 0.470
+      Avg autocorrelation    : 0.846
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 4, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.35
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu321
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BGAC103E 1893 2010                      .62  .68  .73 
+   2 BGAC103I 1873 2010                 .31A .45  .60  .68 
+   3 BGAC104E 1829 2010            .48  .51  .72  .80  .71 
+   4 BGAC104I 1829 2010            .39  .40  .51  .51  .57 
+   5 BGAC105E 1850 2010                 .64  .68  .82  .80 
+   6 BGAC105I 1865 2010                 .57  .53  .77  .78 
+   7 BGAC106E 1758 2010  .48  .56  .63  .80  .78  .69  .68 
+   8 BGAC106I 1754 2010  .52  .31A .24A .69  .80  .75  .78 
+   9 BGAC107E 1821 2010       .17B .50  .65  .73  .67  .52 
+  10 BGAC107I 1847 2010            .46  .65  .75  .72  .47 
+  11 BGAC108E 1791 2010  .65  .45  .65  .56  .64  .82  .70 
+  12 BGAC108I 1797 2010  .64  .43  .67  .50  .48  .67  .62 
+  13 BGAC109E 1769 2010  .67  .64  .65  .59  .71  .80  .75 
+  14 BGAC109I 1781 2010  .72  .63  .63  .59  .68  .75  .74 
+  15 BGAC111E 1799 2010  .57  .54  .75  .74  .78  .80  .76 
+  16 BGAC111I 1798 2010       .32A .59  .59  .68  .81  .68 
+  17 BGAC112E 1820 2010       .59  .61  .58  .63  .65  .55 
+  18 BGAC112I 1851 2010                 .51  .55  .55  .58 
+  19 BGAC113E 1763 2010  .70  .57  .61  .69  .75  .68  .69 
+  20 BGAC113I 1785 2010  .81  .60  .63  .67  .67  .69  .64 
+ Av segment correlation  .64  .49  .57  .59  .66  .71  .67 
+
+ FLAGGED SEGMENTS: deu321
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 BGAC103I 1875 1924     A     .312         0
+   8 BGAC106I 1825 1874     A     .314         0
+   8 BGAC106I 1850 1899     A     .244         0
+   9 BGAC107E 1825 1874     B     .168        -1      .310   .142  weak at every lag
+  16 BGAC111I 1825 1874     A     .322         0
+
+ DESCRIPTIVE STATISTICS: deu321
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BGAC103E 1893 2010    118      3      0    .665   1.88   4.42  1.012   .900   .157   1.55   .168   .009   1
+   2 BGAC103I 1873 2010    138      4      1    .471   1.46   4.85   .714   .836   .175   1.55   .194  -.008   2
+   3 BGAC104E 1829 2010    182      5      0    .513   1.15   2.50   .553   .887   .169   2.06   .191  -.009   3
+   4 BGAC104I 1829 2010    182      5      0    .423   1.00   1.91   .340   .807   .168   1.72   .173  -.001   3
+   5 BGAC105E 1850 2010    161      4      0    .669   1.63   2.97   .482   .781   .151   1.38   .149  -.013   2
+   6 BGAC105I 1865 2010    146      4      0    .655   1.50   2.75   .449   .746   .168   1.56   .167   .027   1
+   7 BGAC106E 1758 2010    253      7      0    .602   1.22   2.69   .474   .853   .164   1.47   .172   .037   1
+   8 BGAC106I 1754 2010    257      7      2    .554   1.07   2.78   .451   .859   .153   1.77   .176   .034   1
+   9 BGAC107E 1821 2010    190      6      1    .478   1.08   2.25   .540   .911   .169   1.52   .177  -.000   2
+  10 BGAC107I 1847 2010    164      5      0    .579   1.20   2.94   .592   .881   .161   1.43   .169   .016   2
+  11 BGAC108E 1791 2010    220      7      0    .642   1.20   3.32   .572   .913   .147   1.64   .156   .038   1
+  12 BGAC108I 1797 2010    214      7      0    .589    .71   1.38   .245   .881   .135   1.37   .141   .045   1
+  13 BGAC109E 1769 2010    242      7      0    .697   1.16   2.40   .432   .868   .148   1.35   .146  -.006   3
+  14 BGAC109I 1781 2010    230      7      0    .661   1.06   2.68   .437   .893   .155   1.38   .155   .013   1
+  15 BGAC111E 1799 2010    212      7      0    .690   1.27   2.92   .553   .916   .137   1.48   .144   .014   1
+  16 BGAC111I 1798 2010    213      6      1    .532   1.23   3.09   .583   .904   .150   1.60   .158   .002   3
+  17 BGAC112E 1820 2010    191      6      0    .571   1.45   3.38   .447   .700   .168   1.89   .186   .002   2
+  18 BGAC112I 1851 2010    160      4      0    .525    .84   1.39   .198   .661   .154   1.34   .151   .011   1
+  19 BGAC113E 1763 2010    248      7      0    .674   1.04   2.43   .371   .839   .151   1.39   .158  -.005   2
+  20 BGAC113I 1785 2010    226      7      0    .680    .75   1.59   .268   .811   .171   1.51   .175   .012   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3947    115      5    .598   1.16   4.85   .470   .846   .157   2.06   .165   .012
+
+ DATA CHECKS (rwl.check): deu321
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu321.rwl
+ 20 series, 3947 measurements, 1754-2010, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu321.rwl, MD5 c0ee087cec2dec33bb888a392547e5ff.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

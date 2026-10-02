@@ -1,0 +1,94 @@
+
+ COFECHA-style crossdating report: swit326
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit326.rwl
+      MD5 of measurement file: 149b65bbbaa15b7a5436e6bd7d28bdb5
+      Date checked           : 01OCT26
+      Beginning year         : 1867
+      Ending year            : 1995
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Rauchgrat
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.8394 N
+      Longitude              : 7.7631 E
+      Elevation              : 1060 m
+
+      Series intercorrelation: 0.579
+      Avg mean sensitivity   : 0.165
+      Avg standard deviation : 0.926
+      Avg autocorrelation    : 0.785
+      Number dated series    : 4
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit326
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 RB52059G 1867 1995  .64  .66 
+   2 RB52059P 1867 1995  .39  .44 
+   3 RB64559G 1886 1995  .57  .66 
+   4 RB64559P 1886 1995  .67  .56 
+ Av segment correlation  .56  .58 
+
+ FLAGGED SEGMENTS: swit326
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swit326
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RB52059G 1867 1995    129      2      0    .663   2.01   6.20  1.181   .909   .153   1.53   .153   .051   1
+   2 RB52059P 1867 1995    129      2      0    .472   2.01   8.23  1.167   .809   .158   1.97   .172   .141   1
+   3 RB64559G 1886 1995    110      2      0    .595   2.18   3.86   .530   .620   .173   1.38   .168  -.002   1
+   4 RB64559P 1886 1995    110      2      0    .590   2.29   4.05   .739   .778   .181   1.47   .183  -.014   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            478      8      0    .579   2.11   8.23   .926   .785   .165   1.97   .169   .048
+
+ DATA CHECKS (rwl.check): swit326
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit326.rwl
+ 4 series, 478 measurements, 1867-1995, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit326.rwl, MD5 149b65bbbaa15b7a5436e6bd7d28bdb5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

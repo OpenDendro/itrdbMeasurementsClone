@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: az527
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az527.rwl
+      MD5 of measurement file: eeac330d07c043dcaf790f87bd07df1c
+      Date checked           : 01OCT26
+      Beginning year         : 1627
+      Ending year            : 1986
+      Principal investigators: Graybill, D.A.
+      Site name              : Muletank
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 34.3200 N
+      Longitude              : 110.7700 W
+      Elevation              : 2362 m
+
+      Series intercorrelation: 0.601
+      Avg mean sensitivity   : 0.295
+      Avg standard deviation : 0.730
+      Avg autocorrelation    : 0.770
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 1.75
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az527
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 MTP011   1798 1986                      .38  .58  .64  .76  .67  .30A
+   2 MTP012   1760 1986                 .41  .43  .56  .58  .71  .62  .29A
+   3 MTP021   1654 1986  .61  .72  .80  .61  .73  .72  .53  .56  .52  .34 
+   4 MTP022   1657 1924  .67  .76  .80  .61  .72  .79  .67  .73           
+   5 MTP031   1700 1925       .73  .77  .65  .66  .63  .50  .57           
+   6 MTP032   1627 1925  .65  .58  .59  .59  .61  .64  .56  .49           
+   7 MTP041   1700 1899       .70  .68  .65  .68  .59  .51                
+   8 MTP042   1639 1924  .63  .50  .37  .59  .52  .60  .61  .54           
+   9 MTP051   1756 1986                 .46  .67  .80  .69  .44  .43  .52 
+  10 MTP052   1732 1986            .45  .53  .73  .81  .57  .44  .43  .50 
+  11 MTP062   1799 1986                           .54  .62  .68  .76  .53 
+  12 MTP071   1804 1978                           .79  .72  .70  .64  .55 
+  13 MTP072   1787 1986                      .75  .84  .75  .79  .74  .51 
+  14 MTP081   1803 1986                           .80  .74  .69  .67  .49 
+  15 MTP082   1801 1925                           .74  .64  .67           
+  16 MTP091   1812 1986                           .74  .65  .70  .69  .54 
+  17 MTP092   1819 1986                           .61  .67  .64  .67  .59 
+  18 MTP102   1809 1986                           .70  .61  .62  .64  .56 
+ Av segment correlation  .64  .67  .64  .57  .63  .69  .63  .63  .62  .48 
+
+ FLAGGED SEGMENTS: az527
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 MTP011   1925 1974     A     .304         0
+   2 MTP012   1925 1974     A     .291         0
+
+ DESCRIPTIVE STATISTICS: az527
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MTP011   1798 1986    189      6      1    .512   2.18   4.90   .956   .644   .308   1.79   .302   .034   1
+   2 MTP012   1760 1986    227      7      1    .533   1.94   4.11   .918   .718   .301   1.76   .296   .017   1
+   3 MTP021   1654 1986    333     10      0    .660   1.31   3.42   .500   .566   .304   1.62   .270  -.002   1
+   4 MTP022   1657 1924    268      8      0    .717   1.31   2.71   .542   .644   .336   1.63   .288  -.022   1
+   5 MTP031   1700 1925    226      7      0    .658    .93   2.12   .399   .697   .315   1.74   .279  -.007   1
+   6 MTP032   1627 1925    299      8      0    .536   1.02   5.86  1.041   .937   .426   2.99   .379  -.004   2
+   7 MTP041   1700 1899    200      6      0    .620   1.28   3.04   .615   .755   .254   1.53   .221   .016   3
+   8 MTP042   1639 1924    286      8      0    .528   1.16   3.35   .537   .728   .291   1.73   .252   .022   3
+   9 MTP051   1756 1986    231      7      0    .588   1.67   3.79   .540   .644   .225   1.79   .194  -.011   3
+  10 MTP052   1732 1986    255      8      0    .540   1.08   3.32   .681   .849   .280   2.32   .243  -.022   0
+  11 MTP062   1799 1986    188      5      0    .509   1.35   4.96   .714   .747   .321   1.85   .303   .017   2
+  12 MTP071   1804 1978    175      5      0    .635   1.50   7.90  1.177   .897   .252   1.91   .242   .019   2
+  13 MTP072   1787 1986    200      6      0    .640   1.45   3.58   .929   .900   .243   1.56   .232  -.003   1
+  14 MTP081   1803 1986    184      5      0    .657   1.16   3.65   .806   .861   .275   1.62   .264  -.012   1
+  15 MTP082   1801 1925    125      3      0    .681   1.58   4.90   .930   .828   .296   1.73   .258  -.008   0
+  16 MTP091   1812 1986    175      5      0    .643    .83   3.16   .538   .869   .256   1.59   .244  -.011   3
+  17 MTP092   1819 1986    168      5      0    .610    .93   2.62   .511   .863   .237   1.52   .224   .006   3
+  18 MTP102   1809 1986    178      5      0    .596   1.06   5.03  1.144   .929   .294   1.96   .285  -.010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3907    114      2    .601   1.31   7.90   .730   .770   .295   2.99   .268   .001
+
+ DATA CHECKS (rwl.check): az527
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az527.rwl
+ 18 series, 3907 measurements, 1627-1986, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1630-1986 but the measurements cover 1627-1986
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file az527.rwl, MD5 eeac330d07c043dcaf790f87bd07df1c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

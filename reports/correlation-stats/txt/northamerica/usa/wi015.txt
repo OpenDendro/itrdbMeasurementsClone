@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: wi015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi015.rwl
+      MD5 of measurement file: 6d8714c6d753e83ba579c3d851b65094
+      Date checked           : 01OCT26
+      Beginning year         : 1713
+      Ending year            : 1848
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Aslek Olson Lie House
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 42.9690 N
+      Longitude              : 90.0210 W
+      Elevation              : 357 m
+
+      Series intercorrelation: 0.454
+      Avg mean sensitivity   : 0.181
+      Avg standard deviation : 0.297
+      Avg autocorrelation    : 0.686
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 8.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1750 1775 
+                        1799 1824 
+ --- -------- ---------  ---- ---- 
+   1 AOL001A  1722 1840  .52  .59 
+   2 AOL002A  1761 1848       .64 
+   3 AOL002B  1728 1841  .59  .75 
+   4 AOL003A  1728 1846  .62  .46 
+   5 AOL003B  1713 1833  .38B .43 
+   6 AOL004A  1750 1845       .58 
+   7 AOL004B  1735 1848  .52  .53 
+ Av segment correlation  .53  .57 
+
+ FLAGGED SEGMENTS: wi015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 AOL003B  1750 1799     B     .384       -10      .419   .036
+
+ DESCRIPTIVE STATISTICS: wi015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AOL001A  1722 1840    119      2      0    .505   1.35   3.54   .556   .751   .193   1.63   .171   .010   3
+   2 AOL002A  1761 1848     88      1      0    .502    .94   1.63   .291   .690   .190   1.43   .186   .005   1
+   3 AOL002B  1728 1841    114      2      0    .523    .89   1.68   .251   .580   .188   1.51   .180   .002   1
+   4 AOL003A  1728 1846    119      2      0    .486    .75   1.37   .207   .741   .153   1.39   .140   .079   0
+   5 AOL003B  1713 1833    121      2      1    .436    .78   1.26   .194   .572   .170   1.50   .168  -.047   3
+   6 AOL004A  1750 1845     96      1      0    .336    .92   2.37   .326   .727   .191   1.41   .193   .029   1
+   7 AOL004B  1735 1848    114      2      0    .416    .80   1.54   .273   .768   .189   1.86   .203   .074   1
+   8 AOL005A  1786 1835     50      0      0    .369    .85   1.50   .250   .642   .174   1.50   .202  -.035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            821     12      1    .454    .92   3.54   .297   .686   .181   1.86   .178   .018
+
+ DATA CHECKS (rwl.check): wi015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi015.rwl
+ 8 series, 821 measurements, 1713-1848, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wi015.rwl, MD5 6d8714c6d753e83ba579c3d851b65094.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

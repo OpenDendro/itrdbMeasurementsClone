@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: arge027
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge027.rwl
+      MD5 of measurement file: a72f8ce480588a3955dd99935d9fcac5
+      Date checked           : 01OCT26
+      Beginning year         : 1626
+      Ending year            : 1982
+      Principal investigators: Keegan, J.
+      Site name              : Castano Overo Maduro
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 41.2500 S
+      Longitude              : 71.7500 W
+      Elevation              : 1100 m
+
+      Series intercorrelation: 0.484
+      Avg mean sensitivity   : 0.271
+      Avg standard deviation : 0.667
+      Avg autocorrelation    : 0.731
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 5, B 9; 3 of the B weak at every lag)
+      Pct problem segments   : 10.94
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CM800A   1742 1982            .61  .76  .60  .51  .57  .60  .63  .64 
+   2 CM800B   1776 1981                      .64  .39  .56  .46  .20B .29B
+   3 CM804B   1770 1982                 .48  .60  .40  .45  .61  .52  .50 
+   4 CM806A   1763 1919                 .65  .60  .59  .74                
+   5 CM806B   1803 1982                           .49  .60  .54  .31A .38 
+   6 CM816B   1739 1929            .37B .48  .44  .35  .45  .44           
+   7 CM825A   1788 1982                      .46  .35B .51  .65  .37  .33A
+   8 CM826A   1699 1982  .55  .59  .62  .61  .53  .43  .51  .58  .54  .38 
+   9 CM826B   1626 1982  .68  .67  .54  .58  .54  .39  .49  .50  .50  .65 
+  10 CM829K   1707 1982       .34B .43  .56  .49  .12B .11B .39  .41  .36 
+  11 CM831B   1870 1982                                     .49  .43  .34 
+  12 CM834B   1809 1982                           .51  .60  .61  .53  .56 
+  13 CM841B   1793 1982                      .47  .52  .69  .69  .45  .42 
+  14 CM842B   1760 1982                 .44  .54  .41  .43  .21A .10B .39 
+  15 CM845A   1801 1982                           .48  .59  .50  .47  .58 
+  16 CM845B   1800 1982                           .56  .67  .46  .39  .63 
+  17 CM849B   1826 1982                                .72  .67  .57  .57 
+  18 CM859A   1793 1982                      .44  .53  .55  .47  .42  .45 
+  19 CM859P   1828 1982                                .59  .74  .60  .51 
+  20 CM885A   1760 1929                 .57  .43  .23A .37  .38           
+  21 CM885B   1769 1981                 .53  .51  .32A .42  .60  .48  .09B
+ Av segment correlation  .61  .53  .51  .56  .52  .42  .53  .53  .44  .45 
+
+ FLAGGED SEGMENTS: arge027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 CM800B   1900 1949     B     .205        -8      .346   .141
+   2 CM800B   1925 1974     B     .292        -3      .403   .112
+   5 CM806B   1900 1949     A     .312         0
+   6 CM816B   1750 1799     B     .367        -1      .386   .019
+   7 CM825A   1825 1874     B     .350        -6      .351   .000
+   7 CM825A   1925 1974     A     .326         0
+  10 CM829K   1725 1774     B     .338        -2      .347   .009
+  10 CM829K   1825 1874     B     .122        -1      .365   .242
+  10 CM829K   1850 1899     B     .112        -1      .174   .062  weak at every lag
+  14 CM842B   1875 1924     A     .205         0
+  14 CM842B   1900 1949     B     .103        -1      .284   .180  weak at every lag
+  20 CM885A   1825 1874     A     .228         0
+  21 CM885B   1825 1874     A     .320         0
+  21 CM885B   1925 1974     B     .093         1      .270   .177  weak at every lag
+
+ DESCRIPTIVE STATISTICS: arge027
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CM800A   1742 1982    241      8      0    .581   1.75   4.76   .941   .819   .262   1.89   .267  -.004   1
+   2 CM800B   1776 1981    206      6      2    .478   1.91   4.29   .788   .736   .235   1.84   .241   .041   1
+   3 CM804B   1770 1982    213      7      0    .478   1.20   3.01   .502   .653   .256   1.91   .265   .019   2
+   4 CM806A   1763 1919    157      4      0    .574   1.70   4.41   .811   .747   .278   2.13   .270   .024   1
+   5 CM806B   1803 1982    180      5      1    .492   1.24   3.59   .639   .738   .297   2.10   .301  -.006   1
+   6 CM816B   1739 1929    191      6      1    .436   1.82   4.78   .752   .735   .248   2.02   .267   .026   1
+   7 CM825A   1788 1982    195      6      2    .419   1.33   2.68   .458   .630   .255   2.00   .245   .027   1
+   8 CM826A   1699 1982    284     10      0    .522   1.47   4.08   .722   .825   .242   1.76   .239   .012   1
+   9 CM826B   1626 1982    357     10      0    .570   1.05   3.23   .564   .764   .288   2.03   .299   .031   1
+  10 CM829K   1707 1982    276      9      3    .331   1.01   3.60   .632   .743   .338   2.61   .362   .015   1
+  11 CM831B   1870 1982    113      3      0    .397   1.31   3.86   .711   .587   .410   2.25   .380  -.010   1
+  12 CM834B   1809 1982    174      5      0    .589   1.22   2.89   .667   .779   .291   1.80   .282   .046   1
+  13 CM841B   1793 1982    190      6      0    .549   1.62   4.86   .748   .726   .279   1.79   .271  -.028   1
+  14 CM842B   1760 1982    223      7      2    .307   1.06   3.18   .727   .833   .263   3.71   .316  -.005   1
+  15 CM845A   1801 1982    182      5      0    .496   1.61   4.33   .803   .632   .351   1.93   .350   .021   1
+  16 CM845B   1800 1982    183      5      0    .505   1.67   3.94   .672   .562   .299   1.72   .293  -.006   2
+  17 CM849B   1826 1982    157      4      0    .593    .64   1.30   .201   .565   .225   1.61   .216  -.006   2
+  18 CM859A   1793 1982    190      6      0    .471   1.32   2.89   .577   .834   .215   1.64   .210  -.008   2
+  19 CM859P   1828 1982    155      4      0    .552   1.24   3.22   .661   .829   .235   1.77   .260  -.055   1
+  20 CM885A   1760 1929    170      5      1    .414   1.92   4.18   .746   .719   .230   1.90   .247   .000   1
+  21 CM885B   1769 1981    213      7      2    .409   1.86   3.45   .674   .716   .229   1.61   .232   .010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4250    128     14    .484   1.41   4.86   .667   .731   .271   3.71   .277   .009
+
+ DATA CHECKS (rwl.check): arge027
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge027.rwl
+ 21 series, 4250 measurements, 1626-1982, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file arge027.rwl, MD5 a72f8ce480588a3955dd99935d9fcac5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

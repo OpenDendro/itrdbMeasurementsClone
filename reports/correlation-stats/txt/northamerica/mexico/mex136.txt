@@ -1,0 +1,183 @@
+
+ COFECHA-style crossdating report: mex136
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex136.rwl
+      MD5 of measurement file: a2f450d4987a2b11540d41f951e05f9d
+      Date checked           : 01OCT26
+      Beginning year         : 1835
+      Ending year            : 2020
+      Principal investigators: Díaz-Carrillo, O.; Villanueva-Díaz, J.
+      Site name              : La Encantada, Nuevo León (LEN)
+      Species information    : PIMT Picea martinezii T.F.Patt.
+      Latitude               : 23.8900 N
+      Longitude              : 99.7910 W
+      Elevation              : 2515 m
+
+      Series intercorrelation: 0.614
+      Avg mean sensitivity   : 0.331
+      Avg standard deviation : 0.965
+      Avg autocorrelation    : 0.697
+      Number dated series    : 59
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 0, B 7; 4 of the B weak at every lag)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex136
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 LEN01A   1920 2020       .74  .69 
+   2 LEN01B   1835 2020  .37  .40  .61 
+   5 LEN03A   1946 2020            .56 
+   7 LEN04A   1940 2020            .69 
+   8 LEN04B   1935 2020            .73 
+  12 LEN06A   1940 2020            .79 
+  13 LEN06B   1940 2020            .85 
+  14 LEN07A   1869 2020  .20B .55  .64 
+  15 LEN07B   1883 2020  .04B .09B .45 
+  16 LEN07C   1890 2020  .34B .41  .76 
+  17 LEN08A   1946 2020            .71 
+  19 LEN09A   1892 2020  .30B .52  .71 
+  20 LEN09B   1871 2020  .25B .71  .78 
+  24 LEN12A   1895 2020  .41  .75  .57 
+  25 LEN12B   1925 2019            .46 
+  26 LEN13A   1911 2020       .41  .52 
+  30 LEN15B   1903 2020       .54  .62 
+  31 LEN16A   1926 2019            .77 
+  32 LEN16B   1926 2018            .79 
+  33 LEN17A   1924 2020       .79  .78 
+  34 LEN17B   1905 2020       .85  .82 
+  41 LEN21B   1949 2020            .38 
+  50 LEN26    1850 2019  .27B .73  .77 
+  51 LEN27    1900 2019       .84  .81 
+  52 LEN28    1941 2019            .79 
+  57 LEN33    1927 2019            .77 
+  58 LEN34    1946 2019            .76 
+ Av segment correlation  .27  .59  .69 
+
+ FLAGGED SEGMENTS: mex136
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  14 LEN07A   1900 1949     B     .203        -7      .356   .153
+  15 LEN07B   1900 1949     B     .041        -1      .451   .410
+  15 LEN07B   1925 1974     B     .091        -7      .314   .223  weak at every lag
+  16 LEN07C   1900 1949     B     .344         3      .359   .015
+  19 LEN09A   1900 1949     B     .299        -3      .308   .009  weak at every lag
+  20 LEN09B   1900 1949     B     .255         1      .271   .016  weak at every lag
+  50 LEN26    1900 1949     B     .268        -1      .280   .012  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mex136
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LEN01A   1920 2020    101      2      0    .652   2.05   5.90  1.016   .787   .250   1.79   .265   .015   1
+   2 LEN01B   1835 2020    186      3      0    .358   1.33   6.20   .817   .801   .280   2.70   .308   .000   3
+   3 LEN02A   1977 2020     44      0      0    .667   2.91   6.10  1.227   .565   .326   1.79   .307   .139   0
+   4 LEN02B   1977 2020     44      0      0    .695   2.83   4.50   .897   .166   .325   1.91   .296  -.068   0
+   5 LEN03A   1946 2020     75      1      0    .423   2.11   5.20  1.342   .898   .239   1.76   .234   .064   3
+   6 LEN03B   1950 2020     71      0      0    .535   2.21   5.00  1.302   .907   .211   1.53   .203   .005   3
+   7 LEN04A   1940 2020     81      1      0    .672   2.46   5.30  1.353   .884   .243   1.69   .237   .034   2
+   8 LEN04B   1935 2020     86      1      0    .678   2.26   5.60  1.295   .843   .257   1.78   .252  -.031   1
+   9 LEN05A   1953 2020     68      0      0    .603   1.34   4.00   .835   .851   .289   1.71   .279  -.007   2
+  10 LEN05B   1949 2020     72      0      0    .601   1.44   4.00   .925   .821   .297   1.86   .307   .006   2
+  11 LEN05C   1955 2020     66      0      0    .477   1.63   4.30   .947   .876   .265   1.64   .248  -.028   1
+  12 LEN06A   1940 2020     81      1      0    .779   2.43   7.60  1.289   .750   .289   1.77   .293  -.066   3
+  13 LEN06B   1940 2020     81      1      0    .821   2.69   7.00  1.463   .629   .321   2.00   .337  -.030   3
+  14 LEN07A   1869 2020    152      3      1    .482   1.10   4.50   .761   .831   .312   1.93   .319  -.005   1
+  15 LEN07B   1883 2020    138      3      2    .305    .87   3.20   .658   .853   .399   2.50   .381  -.028   1
+  16 LEN07C   1890 2020    131      3      1    .592   1.45   6.10  1.182   .838   .299   1.76   .286   .003   2
+  17 LEN08A   1946 2020     75      1      0    .635   1.17   3.80   .706   .776   .351   1.95   .344   .045   1
+  18 LEN08B   1948 2020     73      0      0    .670   1.21   3.20   .649   .757   .283   1.73   .306  -.059   3
+  19 LEN09A   1892 2020    129      3      1    .557   1.22   3.90   .735   .797   .330   1.90   .315   .029   1
+  20 LEN09B   1871 2020    150      3      1    .514   1.32   4.20   .878   .834   .355   2.28   .346  -.001   1
+  21 LEN10A   1977 2020     44      0      0    .590   2.05   4.20   .867   .369   .377   1.73   .364   .203   0
+  22 LEN10B   1967 2020     54      0      0    .585   1.42   4.40   .706   .519   .323   2.03   .344   .026   1
+  23 LEN11B   1976 2014     39      0      0    .570   2.71   5.20   .997   .586   .263   1.62   .255   .182   0
+  24 LEN12A   1895 2020    126      3      0    .529    .98   4.50   .824   .728   .476   2.50   .490  -.015   1
+  25 LEN12B   1925 2019     95      1      0    .509   1.25   3.70   .805   .672   .449   2.78   .435  -.025   3
+  26 LEN13A   1911 2020    110      2      0    .395   1.08   3.70   .851   .789   .404   3.28   .471  -.070   1
+  27 LEN14A   1979 2000     22      0      0    .754   2.10   3.90   .849   .256   .421   1.67   .358  -.068   0
+  28 LEN14B   1980 2020     41      0      0    .693   1.77   5.60   .943   .561   .367   1.68   .344   .046   0
+  29 LEN15A   1990 2020     31      0      0    .711   3.19   5.50   .965   .361   .285   1.65   .263   .029   0
+  30 LEN15B   1903 2020    118      2      0    .617   1.59   6.80  1.350   .795   .430   2.05   .373   .006   3
+  31 LEN16A   1926 2019     94      1      0    .796   1.52   4.20   .838   .643   .436   1.86   .382  -.021   3
+  32 LEN16B   1926 2018     93      1      0    .812   1.66   4.70  1.075   .679   .506   2.34   .411  -.018   3
+  33 LEN17A   1924 2020     97      2      0    .759   1.57   4.20   .790   .705   .304   1.78   .304  -.001   1
+  34 LEN17B   1905 2020    116      2      0    .725   1.30   6.20   .911   .662   .348   2.42   .360  -.009   1
+  35 LEN18B   1963 2020     58      0      0    .694   1.73   4.00   .804   .642   .331   1.53   .261  -.056   2
+  36 LEN19A   1988 2020     33      0      0    .790   2.65   5.80  1.137   .455   .343   1.56   .301   .057   0
+  37 LEN19B   1983 2020     38      0      0    .704   2.64   5.00  1.028   .328   .359   1.57   .328   .062   0
+  38 LEN20A   1967 2020     54      0      0    .847   2.31   5.90  1.488   .739   .317   1.69   .333  -.145   1
+  39 LEN20B   1962 2020     59      0      0    .835   2.36   6.10  1.298   .637   .305   1.72   .302  -.006   1
+  40 LEN21A   1965 2020     56      0      0    .690   2.27   5.30  1.071   .610   .385   1.62   .295   .014   2
+  41 LEN21B   1949 2020     72      1      0    .517   1.81   5.30  1.153   .634   .364   2.18   .361   .113   0
+  42 LEN22B   1972 2020     49      0      0    .501   1.84   3.60   .826   .775   .252   2.02   .290   .167   0
+  43 LEN22A   1981 2020     40      0      0    .605   2.21   4.90  1.070   .825   .231   1.58   .241  -.025   1
+  44 LEN23A   1984 2020     37      0      0    .768   1.72   3.40   .765   .485   .307   1.70   .332   .231   0
+  45 LEN23B   1985 2020     36      0      0    .781   1.57   4.20   .961   .797   .334   1.66   .306  -.088   0
+  46 LEN24A   1980 2020     41      0      0    .759   1.89   3.20   .572   .012   .339   1.55   .268  -.148   0
+  47 LEN24B   1967 2020     54      0      0    .637   1.78   3.70   .664   .483   .307   1.59   .288   .001   1
+  48 LEN25A   1968 2020     53      0      0    .785   2.74   4.80  1.077   .515   .323   1.67   .323   .064   1
+  49 LEN25B   1957 2019     63      0      0    .652   2.27   4.60   .806   .475   .314   1.76   .279   .083   0
+  50 LEN26    1850 2019    170      3      1    .339   1.61   4.50   .998   .834   .281   1.88   .306   .007   2
+  51 LEN27    1900 2019    120      2      0    .722   1.49   5.20   .998   .711   .388   2.12   .361  -.015   3
+  52 LEN28    1941 2019     79      1      0    .803   2.41   6.30   .968   .604   .293   1.91   .273   .026   1
+  53 LEN29    1954 2019     66      0      0    .596   2.00   5.30  1.026   .763   .259   1.54   .262  -.094   3
+  54 LEN30    1966 2019     54      0      0    .752   2.69   5.00  1.131   .466   .327   1.99   .351   .001   1
+  55 LEN31    1954 2019     66      0      0    .570   1.70   3.80   .655   .591   .268   1.76   .277  -.017   2
+  56 LEN32    1955 2019     65      0      0    .766   1.82   4.00   .698   .390   .327   1.79   .303   .063   0
+  57 LEN33    1927 2019     93      1      0    .775   1.88   6.00  1.166   .653   .335   2.21   .349   .004   1
+  58 LEN34    1946 2019     74      1      0    .774   2.04   7.40  1.095   .452   .365   2.48   .390   .037   1
+  59 LEN35    1970 2019     50      0      0    .681   2.31   3.90   .761   .406   .294   1.47   .257   .028   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4564     49      7    .614   1.74   7.60   .965   .697   .331   3.28   .324   .005
+
+ DATA CHECKS (rwl.check): mex136
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex136.rwl
+ 59 series, 4564 measurements, 1835-2020, 0.1 mm precision
+ 0 error(s), 1 warning(s), 30 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     6 byte(s) outside printable ASCII
+ 30 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file mex136.rwl, MD5 a2f450d4987a2b11540d41f951e05f9d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

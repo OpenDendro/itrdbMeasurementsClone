@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: fl012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fl012.rwl
+      MD5 of measurement file: 780be36fb83c96d3bb84dabe82c9443c
+      Date checked           : 01OCT26
+      Beginning year         : 1934
+      Ending year            : 1997
+      Principal investigators: Harley, G.L.
+      Site name              : Tampa Flatwoods
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 28.0758 N
+      Longitude              : 82.3887 W
+      Elevation              : 14 m
+
+      Series intercorrelation: 0.500
+      Avg mean sensitivity   : 0.324
+      Avg standard deviation : 1.522
+      Avg autocorrelation    : 0.610
+      Number dated series    : 21
+      Segment length tested  : 32
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 25.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fl012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1966 
+                        1981 1997 
+ --- -------- ---------  ---- ---- 
+   1 ppipa1   1962 1997       .52 
+   3 ppipa3   1945 1997  .60  .59 
+   5 ppipa6   1965 1997       .32A
+   6 ppipa7   1947 1996  .15B     
+  10 C3       1945 1996  .67      
+  13 C8       1941 1996  .47      
+  14 C9       1934 1995  .38A     
+  15 C10      1948 1995  .46      
+  16 C11      1944 1996  .68      
+  17 C14      1949 1995  .56      
+  21 C18      1949 1995  .60      
+ Av segment correlation  .51  .48 
+
+ FLAGGED SEGMENTS: fl012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 ppipa6   1966 1997     A     .319         0
+   6 ppipa7   1950 1981     B     .153         6      .194   .041  weak at every lag
+  14 C9       1950 1981     A     .376         0
+
+ DESCRIPTIVE STATISTICS: fl012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ppipa1   1962 1997     36      1      0    .523   3.77   7.13  1.810   .709   .336   1.55   .289   .100   1
+   2 ppipa2   1965 1997     33      0      0    .530   4.00   8.22  1.955   .782   .264   1.49   .216  -.038   2
+   3 ppipa3   1945 1997     53      2      0    .596   2.25   4.92  1.290   .692   .395   1.77   .327   .084   0
+   4 ppipa4   1970 1997     28      0      0    .479   3.35   6.35  1.352   .320   .343   1.71   .285  -.077   1
+   5 ppipa6   1965 1997     33      1      1    .319   4.19   8.48  2.072   .895   .214   1.35   .210   .133   1
+   6 ppipa7   1947 1996     50      1      1    .264   3.11   9.43  2.299   .924   .225   1.54   .229   .011   1
+   7 ppipa8   1951 1996     46      0      0    .521   2.96   9.28  1.843   .525   .371   2.08   .370   .134   0
+   8 ppipa9   1963 1996     34      0      0    .310   3.64   7.82  1.796   .705   .284   1.38   .253   .022   1
+   9 C1       1953 1996     44      0      0    .631   3.14   7.59  1.858   .790   .325   1.68   .325   .076   1
+  10 C3       1945 1996     52      1      0    .645   3.31   7.23  1.757   .651   .295   1.73   .284  -.014   1
+  11 C5       1957 1996     40      0      0    .524   2.76   7.63  1.705   .665   .333   1.83   .327   .213   0
+  12 C6       1954 1996     43      0      0    .601   2.73   5.25  1.190   .403   .383   1.83   .328   .062   0
+  13 C8       1941 1996     56      1      0    .563   2.41   5.55  1.094   .119   .443   2.20   .405  -.103   0
+  14 C9       1934 1995     62      1      1    .508   1.78   3.70   .841   .646   .364   1.88   .333  -.065   0
+  15 C10      1948 1995     48      1      0    .458   3.28   6.08  1.534   .721   .298   1.67   .294   .034   1
+  16 C11      1944 1996     53      1      0    .498   2.65   6.98  1.558   .706   .328   1.88   .315  -.016   1
+  17 C14      1949 1995     47      1      0    .701   2.58   4.49  1.042   .573   .273   1.69   .257   .051   0
+  18 C15      1960 1996     37      0      0    .503   4.18   9.06  1.946   .515   .366   1.67   .271   .040   1
+  19 C16      1951 1996     46      0      0    .330   3.23   5.72  1.122   .470   .274   1.53   .240  -.098   3
+  20 C17      1961 1996     36      0      0    .271   1.99   3.89   .713   .334   .310   1.80   .253  -.104   0
+  21 C18      1949 1995     47      1      0    .561   3.19   7.12  1.729   .673   .306   1.49   .268   .180   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            924     12      3    .500   2.99   9.43  1.522   .610   .324   2.20   .294   .027
+
+ DATA CHECKS (rwl.check): fl012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/fl012.rwl
+ 21 series, 924 measurements, 1934-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 15 note(s)
+ -------------
+ Nothing to report at this severity.
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file fl012.rwl, MD5 780be36fb83c96d3bb84dabe82c9443c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 64 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

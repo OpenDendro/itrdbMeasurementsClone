@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: brit030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit030.rwl
+      MD5 of measurement file: 885836bdf7ca8500a46bd538c287a804
+      Date checked           : 01OCT26
+      Beginning year         : 1424
+      Ending year            : 1543
+      Principal investigators: Hillam, J.
+      Site name              : Aydon Castle
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 55.0000 N
+      Longitude              : 2.0000 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.605
+      Avg mean sensitivity   : 0.195
+      Avg standard deviation : 0.494
+      Avg autocorrelation    : 0.696
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1450 1475 
+                        1499 1524 
+ --- -------- ---------  ---- ---- 
+   1 AC01.D   1459 1543       .71 
+   2 AC02.D   1458 1543       .59 
+   4 AC04.D   1429 1543  .52  .43 
+   5 AC07.D   1462 1543       .38 
+   6 AC08.D   1426 1516  .47      
+   7 AC09.D   1438 1543  .70  .62 
+   8 AC10.D   1445 1542  .64  .73 
+   9 AC56.D   1424 1529  .64  .68 
+ Av segment correlation  .60  .59 
+
+ FLAGGED SEGMENTS: brit030
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: brit030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AC01.D   1459 1543     85      1      0    .695   1.68   4.90   .708   .678   .217   2.01   .234  -.023   2
+   2 AC02.D   1458 1543     86      1      0    .625   1.47   3.52   .508   .662   .205   1.69   .211  -.008   2
+   3 AC03.D   1486 1541     56      0      0    .549   1.82   3.13   .515   .588   .212   1.45   .206   .007   2
+   4 AC04.D   1429 1543    115      2      0    .505    .98   3.95   .691   .947   .168   1.39   .162  -.036   3
+   5 AC07.D   1462 1543     82      1      0    .521   1.62   2.87   .391   .601   .157   1.54   .171  -.055   3
+   6 AC08.D   1426 1516     91      1      0    .530   1.03   1.58   .269   .584   .215   1.38   .188  -.019   2
+   7 AC09.D   1438 1543    106      2      0    .676   1.01   1.77   .325   .716   .190   1.34   .176   .011   3
+   8 AC10.D   1445 1542     98      2      0    .675   1.46   2.69   .437   .633   .203   1.66   .199   .009   1
+   9 AC56.D   1424 1529    106      2      0    .645   1.67   3.24   .580   .734   .196   1.58   .201  -.015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            825     12      0    .605   1.38   4.90   .494   .696   .195   2.01   .193  -.015
+
+ DATA CHECKS (rwl.check): brit030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit030.rwl
+ 9 series, 825 measurements, 1424-1543, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file brit030.rwl, MD5 885836bdf7ca8500a46bd538c287a804.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

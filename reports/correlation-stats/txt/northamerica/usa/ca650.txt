@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: ca650
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca650.rwl
+      MD5 of measurement file: fec4cf9c96a019048e6b7998468dd0c7
+      Date checked           : 01OCT26
+      Beginning year         : 1649
+      Ending year            : 2004
+      Principal investigators: Stahle, D.W.; Griffin, R.D.; Edmondson, J.R.
+      Site name              : South Fork Cottonwood Creek
+      Species information    : QUDG Quercus douglasii Hook. and Arn.
+      Latitude               : 40.2800 N
+      Longitude              : 122.4500 W
+      Elevation              : 421 m
+
+      Series intercorrelation: 0.619
+      Avg mean sensitivity   : 0.258
+      Avg standard deviation : 0.258
+      Avg autocorrelation    : 0.636
+      Number dated series    : 17
+      Series crossdated      : 16
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 5.97
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca650
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 COT01A   1853 2004                                     .72  .58  .63  .76 
+   2 COT02A   1800 1901                      .66  .67  .67                     
+   3 COT03A   1860 1991                                     .59  .55  .76      
+   4 COT03B   1910 2004                                               .69  .73 
+   5 COT05A   1700 2004       .71  .70  .45  .49  .69  .68  .75  .66  .65  .78 
+   6 COT05B   1712 2004       .67  .72  .70  .83  .77  .64  .67  .71  .81  .85 
+   7 COT07A   1913 2004                                               .71  .76 
+   8 COT09A   1948 2004                                                    .77 
+   9 COT10A   1910 2004                                               .59  .72 
+  10 COT11A   1947 2004                                                    .76 
+  11 COT12A   1750 2004                 .59  .60  .59  .57  .66  .83  .78  .69 
+  12 COT12B   1900 2004                                          .53  .67  .62 
+  13 COT13A   1674 1850       .42  .38B .33  .62                               
+  14 COT14A   1860 2004                                     .75  .62  .51  .45 
+  16 COT17A   1879 2004                                          .44  .28B .52 
+  17 COT19A   1780 2004                      .45  .23B .41  .61  .48  .24B .41 
+ Av segment correlation       .60  .60  .52  .61  .59  .59  .68  .60  .61  .68 
+
+ FLAGGED SEGMENTS: ca650
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 COT13A   1750 1799     B     .377        -9      .379   .002
+  16 COT17A   1925 1974     B     .284        -7      .374   .090
+  17 COT19A   1825 1874     B     .227       -10      .296   .069  weak at every lag
+  17 COT19A   1925 1974     B     .245         1      .294   .049  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ca650
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 COT01A   1853 2004    152      4      0    .690    .43   1.22   .190   .550   .309   1.96   .276   .021   0
+   2 COT02A   1800 1901    102      3      0    .662    .65   1.33   .305   .778   .271   1.72   .251   .046   0
+   3 COT03A   1860 1991    132      3      0    .676    .52   1.31   .211   .407   .310   1.94   .301   .011   3
+   4 COT03B   1910 2004     95      2      0    .697    .45   1.24   .177   .246   .351   2.29   .318  -.051   0
+   5 COT05A   1700 2004    305     10      0    .642    .57   1.38   .183   .557   .229   2.07   .224  -.006   3
+   6 COT05B   1712 2004    293     10      0    .728    .69   2.86   .271   .621   .222   2.47   .234   .010   1
+   7 COT07A   1913 2004     92      2      0    .756    .81   1.71   .318   .584   .293   1.60   .261   .106   0
+   8 COT09A   1948 2004     57      1      0    .723    .54   1.74   .348   .834   .246   1.74   .266  -.007   1
+   9 COT10A   1910 2004     95      2      0    .642    .57   1.40   .292   .707   .274   1.82   .265   .137   0
+  10 COT11A   1947 2004     58      1      0    .728    .87   2.01   .355   .501   .270   1.69   .300   .058   1
+  11 COT12A   1750 2004    255      8      0    .629    .64   2.14   .389   .825   .258   2.18   .236   .004   3
+  12 COT12B   1900 2004    105      3      0    .567    .44    .77   .115   .346   .253   1.56   .217   .072   0
+  13 COT13A   1674 1850    177      4      1    .412    .65   2.49   .406   .841   .245   1.75   .250  -.032   1
+  14 COT14A   1860 2004    145      4      0    .604    .42   1.16   .197   .645   .280   1.63   .244  -.071   0
+  15 COT15A   1649 1832    183                          .69   1.70   .355   .751   .278                         
+  16 COT17A   1879 2004    126      3      1    .508    .40   1.47   .211   .777   .241   1.76   .232   .010   1
+  17 COT19A   1780 2004    225      7      2    .444    .40   1.08   .127   .617   .206   1.67   .196   .094   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2597     67      4    .619    .57   2.86   .258   .636   .258   2.47   .245   .019
+
+ DATA CHECKS (rwl.check): ca650
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca650.rwl
+ 17 series, 2597 measurements, 1649-2004, 0.001 mm precision
+ 0 error(s), 2 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_ALL_NA_YEAR (1)
+     no series is measured in 1660; years with no data at all break several dplR functions
+   RWL_INTERNAL_NA (1)
+     COT15A: no measurement for 1660, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file ca650.rwl, MD5 fec4cf9c96a019048e6b7998468dd0c7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series COT15A has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

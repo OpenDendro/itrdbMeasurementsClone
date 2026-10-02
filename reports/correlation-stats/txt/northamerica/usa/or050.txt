@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: or050
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or050.rwl
+      MD5 of measurement file: 3445b6095b20cdd6eb61c5f1da76d2ab
+      Date checked           : 01OCT26
+      Beginning year         : 1747
+      Ending year            : 1995
+      Principal investigators: Speer, J.H.; Swetnam, T.W.
+      Site name              : Surveyor Flow
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 43.6200 N
+      Longitude              : 121.3000 W
+      Elevation              : 1550 m
+
+      Series intercorrelation: 0.570
+      Avg mean sensitivity   : 0.217
+      Avg standard deviation : 0.858
+      Avg autocorrelation    : 0.828
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3)
+      Pct problem segments   : 9.43
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 SVF01A   1805 1995       .70  .76  .38  .49  .48 
+   2 SVF01B   1747 1995  .58  .80  .82  .55  .61  .56 
+   3 SVF02A   1863 1995                 .35  .37  .51 
+   4 SVF02B   1790 1995  .51  .78  .73  .45  .47  .46 
+   5 SVF03A   1812 1995       .76  .73  .48  .52  .64 
+   6 SVF03B   1788 1995  .54  .71  .70  .40  .60  .65 
+   7 SVF04A   1808 1995       .71  .72  .49  .74  .69 
+   8 SVF04B   1766 1995  .67  .85  .80  .45  .53  .61 
+   9 SVF05A   1809 1995       .65  .62  .45  .30A .36 
+  10 SVF05B   1800 1995  .26A .48  .45  .18B .25B .32B
+ Av segment correlation  .51  .72  .70  .42  .49  .53 
+
+ FLAGGED SEGMENTS: or050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 SVF05A   1900 1949     A     .301         0
+  10 SVF05B   1800 1849     A     .258         0
+  10 SVF05B   1875 1924     B     .184         5      .454   .271
+  10 SVF05B   1900 1949     B     .247        -1      .342   .096
+  10 SVF05B   1925 1974     B     .323        -1      .354   .031
+
+ DESCRIPTIVE STATISTICS: or050
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SVF01A   1805 1995    191      5      0    .516   1.53   4.11   .665   .829   .188   1.52   .189   .021   1
+   2 SVF01B   1747 1995    249      6      0    .595   1.53   3.62   .687   .859   .178   1.41   .179   .001   2
+   3 SVF02A   1863 1995    133      3      0    .592   2.44   5.11   .888   .799   .211   1.56   .200   .014   2
+   4 SVF02B   1790 1995    206      6      0    .563   1.46   4.85   .691   .803   .260   1.89   .269   .002   1
+   5 SVF03A   1812 1995    184      5      0    .597   2.00   4.85   .996   .795   .245   1.86   .267   .048   1
+   6 SVF03B   1788 1995    208      6      0    .576   1.83   3.85   .753   .759   .231   1.71   .237   .042   1
+   7 SVF04A   1808 1995    188      5      0    .675   1.57   4.13   .697   .777   .240   1.68   .248  -.032   1
+   8 SVF04B   1766 1995    230      6      0    .663   1.80   4.41   .822   .812   .222   1.59   .220  -.010   1
+   9 SVF05A   1809 1995    187      5      1    .539   1.50   5.85  1.170   .931   .189   1.43   .185   .025   2
+  10 SVF05B   1800 1995    196      6      4    .372   1.83   5.95  1.301   .906   .211   1.55   .193   .099   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1972     53      5    .570   1.72   5.95   .858   .828   .217   1.89   .218   .020
+
+ DATA CHECKS (rwl.check): or050
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or050.rwl
+ 10 series, 1972 measurements, 1747-1995, 0.01 mm precision
+ 0 error(s), 2 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 418 carriage return(s) against 209 line feed(s); mixed endings can defeat a reader
+   RWL_SERIES_OUTLIER (1)
+     SVF05B: correlates with the rest of the collection at r = 0.356 where the collection median is 0.687 (4.7 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file or050.rwl, MD5 3445b6095b20cdd6eb61c5f1da76d2ab.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: ak010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak010.rwl
+      MD5 of measurement file: 2ff9f039faab91c70a14d566f1a1dac3
+      Date checked           : 01OCT26
+      Beginning year         : 1654
+      Ending year            : 1983
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Eureka Summit
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 61.8300 N
+      Longitude              : 147.3300 W
+      Elevation              : 960 m
+
+      Series intercorrelation: 0.678
+      Avg mean sensitivity   : 0.172
+      Avg standard deviation : 0.276
+      Avg autocorrelation    : 0.854
+      Number dated series    : 22
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1)
+      Pct problem segments   : 2.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 737011   1654 1983  .68  .64  .58  .62  .69  .73  .76  .76  .79  .83 
+   2 737012   1696 1961  .70  .76  .56  .42  .58  .73  .59  .61  .65      
+   3 737021   1745 1983            .73  .75  .78  .81  .81  .85  .84  .73 
+   4 737022   1759 1983                 .61  .78  .80  .77  .77  .70  .64 
+   5 737030   1863 1983                                     .82  .80  .85 
+   6 737041   1684 1983  .25A .31A .43  .45  .64  .66  .61  .61  .64  .57 
+   8 737051   1801 1983                           .65  .63  .74  .76  .72 
+   9 737052   1801 1983                           .74  .73  .77  .71  .76 
+  10 737060   1876 1983                                          .78  .78 
+  11 737071   1859 1983                                     .51  .52  .70 
+  12 737072   1835 1983                                .70  .75  .74  .68 
+  13 737081   1735 1983            .30A .71  .80  .78  .71  .73  .79  .67 
+  14 737082   1725 1983            .32B .67  .74  .74  .74  .71  .71  .65 
+  15 737091   1750 1983                 .67  .76  .79  .79  .82  .75  .67 
+  16 737092   1762 1983                 .68  .79  .87  .84  .74  .67  .70 
+  17 737101   1851 1983                                     .78  .75  .68 
+  18 737102   1788 1983                      .74  .72  .55  .67  .77  .72 
+  19 737111   1792 1983                      .85  .84  .81  .82  .80  .80 
+  20 737112   1775 1983                      .81  .84  .82  .87  .84  .86 
+  21 737121   1713 1983       .70  .68  .70  .69  .69  .74  .78  .60  .57 
+  22 737122   1725 1983       .72  .63  .66  .60  .61  .71  .60  .56  .73 
+ Av segment correlation  .54  .63  .53  .63  .73  .75  .72  .74  .72  .72 
+
+ FLAGGED SEGMENTS: ak010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 737041   1700 1749     A     .253         0
+   6 737041   1725 1774     A     .313         0
+  13 737081   1750 1799     A     .298         0
+  14 737082   1750 1799     B     .323       -10      .350   .027
+
+ DESCRIPTIVE STATISTICS: ak010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 737011   1654 1983    330     10      0    .722    .38   1.04   .240   .922   .200   1.84   .191   .004   2
+   2 737012   1696 1961    266      9      0    .606    .54   1.35   .272   .830   .234   2.25   .237  -.008   3
+   3 737021   1745 1983    239      8      0    .758    .57   1.19   .230   .871   .164   1.55   .159  -.008   1
+   4 737022   1759 1983    225      7      0    .672    .48   1.01   .185   .746   .207   1.60   .191   .004   1
+   5 737030   1863 1983    121      3      0    .843    .66   1.47   .204   .798   .150   1.34   .133   .087   0
+   6 737041   1684 1983    300     10      2    .513    .57   1.12   .257   .941   .122   1.32   .117  -.006   3
+   7 737042   1654 1983    326                          .61   1.33   .270   .936   .134                         
+   8 737051   1801 1983    183      5      0    .623    .61   1.30   .213   .783   .178   1.77   .177   .007   1
+   9 737052   1801 1983    183      5      0    .613    .68   1.34   .276   .864   .182   1.42   .167   .004   1
+  10 737060   1876 1983    108      2      0    .748   1.38   2.69   .446   .440   .266   1.61   .244   .059   0
+  11 737071   1859 1983    125      3      0    .597    .70   1.62   .272   .862   .156   1.57   .151  -.012   2
+  12 737072   1835 1983    149      4      0    .664    .50   1.52   .288   .921   .175   1.60   .162  -.062   2
+  13 737081   1735 1983    249      8      1    .627    .64   1.98   .346   .920   .148   1.40   .138  -.015   1
+  14 737082   1725 1983    259      8      1    .568    .65   1.76   .360   .918   .156   1.61   .157  -.011   1
+  15 737091   1750 1983    234      7      0    .733    .85   1.70   .266   .826   .150   1.55   .148   .012   1
+  16 737092   1762 1983    222      7      0    .730    .67   1.40   .201   .790   .156   1.39   .145   .004   1
+  17 737101   1851 1983    133      3      0    .715    .37    .78   .165   .831   .219   1.51   .191   .026   0
+  18 737102   1788 1983    196      6      0    .705    .37    .92   .170   .897   .175   1.43   .172  -.008   1
+  19 737111   1792 1983    192      6      0    .809   1.22   2.55   .456   .802   .192   1.46   .183  -.021   1
+  20 737112   1775 1983    209      6      0    .829   1.31   3.11   .480   .789   .189   1.52   .184  -.019   1
+  21 737121   1713 1983    271      9      0    .673    .67   1.27   .205   .828   .148   1.42   .138  -.008   2
+  22 737122   1725 1983    259      9      0    .656    .66   1.34   .315   .915   .161   1.49   .145   .040   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4779    135      4    .678    .66   3.11   .276   .854   .172   2.25   .166   .001
+
+ DATA CHECKS (rwl.check): ak010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak010.rwl
+ 22 series, 4779 measurements, 1654-1983, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     737042: no measurement for 1699-1702, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file ak010.rwl, MD5 2ff9f039faab91c70a14d566f1a1dac3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 737042 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

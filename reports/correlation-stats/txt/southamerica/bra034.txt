@@ -1,0 +1,151 @@
+
+ COFECHA-style crossdating report: bra034
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra034.rwl
+      MD5 of measurement file: b927b76d5516b68870f44c24d23c789c
+      Date checked           : 01OCT26
+      Beginning year         : 1899
+      Ending year            : 2015
+      Principal investigators: Marcon, A.; Botosso, P.; Longhi-Santos, T.; Galvão, F.
+      Site name              : UHE Foz do Areia, Bituruna-PR
+      Species information    : CEFI Cedrela fissilis Vell.
+      Latitude               : 26.0097 S
+      Longitude              : 51.6414 W
+      Elevation              : 806 m
+
+      Series intercorrelation: 0.300
+      Avg mean sensitivity   : 0.510
+      Avg standard deviation : 1.979
+      Avg autocorrelation    : 0.391
+      Number dated series    : 35
+      Series crossdated      : 33
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 2, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 61.54
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra034
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   2 A12R2    1922 2014       .23B .07B
+   3 A14R1    1946 2014            .14B
+   4 A18R1    1940 1999            .31B
+   6 A117R1   1901 1999       .18B .34 
+   7 A119R1   1925 2014            .33 
+   8 A120R1   1900 1999       .35  .35 
+   9 A121R3   1934 1999            .31A
+  29 A13R2    1899 2014       .37  .33B
+  33 A133R1   1942 2015            .30A
+ Av segment correlation       .28  .28 
+
+ FLAGGED SEGMENTS: bra034
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 A12R2    1925 1974     B     .228         6      .241   .013  weak at every lag
+   2 A12R2    1950 1999     B     .066        10      .414   .348
+   3 A14R1    1950 1999     B     .142        -8      .253   .111  weak at every lag
+   4 A18R1    1950 1999     B     .306        -3      .333   .027
+   6 A117R1   1925 1974     B     .178        -8      .212   .035  weak at every lag
+   9 A121R3   1950 1999     A     .315         0
+  29 A13R2    1950 1999     B     .332        -2      .335   .003
+  33 A133R1   1950 1999     A     .298         0
+
+ DESCRIPTIVE STATISTICS: bra034
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 A12R1    1960 2014     55      0      0    .211   2.77   7.97  1.432   .171   .478   2.56   .462   .016   0
+   2 A12R2    1922 2014     93      2      2    .191   2.18   5.99  1.271   .309   .519   2.74   .507   .024   1
+   3 A14R1    1946 2014     69      1      1    .166   2.10  13.01  1.832   .401   .481   4.30   .597   .026   1
+   4 A18R1    1940 1999     60      1      1    .267   2.77   6.22  1.499   .359   .532   1.85   .407   .050   3
+   5 A18R2    1954 1999     46      0      0    .179   3.02   7.70  1.815   .476   .450   2.09   .437   .119   0
+   6 A117R1   1901 1999     99      2      1    .232   1.73   6.65  1.229   .099   .644   3.48   .657  -.046   0
+   7 A119R1   1925 2014     90      1      0    .290   2.06   5.85  1.318   .437   .555   2.38   .519   .010   1
+   8 A120R1   1900 1999    100      2      0    .284   2.32   7.94  1.576   .347   .507   2.51   .500   .012   2
+   9 A121R3   1934 1999     66      1      1    .339   2.22   5.62  1.109  -.070   .612   1.82   .434  -.018   1
+  10 A147R1   1965 2015     51                         2.79   7.85  2.137   .780   .344                         
+  11 A147R2   1969 2015     47                         3.85   9.76  2.761   .761   .325                         
+  12 A147R3   1980 2015     36      0      0    .640   3.98   9.42  2.158   .591   .377   2.12   .389   .016   3
+  13 A147R4   1983 2015     33      0      0    .475   4.16   8.60  1.784   .347   .376   1.77   .363   .143   0
+  14 A153R2   1990 2015     26      0      0    .440   8.72  13.39  2.563   .067   .365   1.60   .276  -.156   0
+  15 A153R3   1967 2015     49      0      0    .367   4.45  13.11  2.987   .534   .425   2.60   .449   .056   1
+  16 A155R1   1969 2015     47      0      0    .468   5.65  10.39  2.445   .607   .368   1.57   .307  -.036   2
+  17 A155R2   1975 2015     41      0      0    .297   4.47   9.05  1.842   .313   .398   1.88   .357  -.013   2
+  18 A155R3   1975 2012     38      0      0    .475   4.41   9.48  1.931   .356   .446   1.86   .357   .033   2
+  19 A137R1   1973 2015     43      0      0    .281   3.79  10.66  2.585   .446   .623   2.32   .519  -.134   0
+  20 A132R1   1957 2015     59      0      0    .234   3.10   9.49  2.285   .360   .635   2.41   .619   .034   1
+  21 A162R1   1964 2015     52      0      0    .341   3.34   8.48  1.544   .359   .420   1.96   .376   .005   3
+  22 A162R2   1968 2015     48      0      0    .321   3.82   7.96  1.800   .484   .389   1.68   .343  -.050   3
+  23 A142R2   1987 2015     29      0      0    .272   1.35   4.61  1.109   .094   .682   3.18   .623  -.094   0
+  24 A144R1   1960 2015     56      0      0    .315   3.10  12.73  2.599   .557   .593   2.50   .530   .085   0
+  25 A157R2   1975 2015     41      0      0    .301   2.93   9.05  1.821   .204   .580   2.36   .515  -.051   0
+  26 A148R1   1983 2015     33      0      0    .216   7.94  21.11  5.025   .444   .544   2.42   .484  -.079   0
+  27 A143R1   1962 2015     54      0      0    .365   4.66  15.02  3.234   .722   .388   2.30   .396  -.051   0
+  28 A13R1    1917 1969     53      0      0    .274   1.85   6.04  1.237   .368   .579   2.46   .548   .041   1
+  29 A13R2    1899 2014    116      2      1    .236   1.59   6.55  1.165   .444   .552   2.69   .547   .022   3
+  30 A158R2   1973 2015     43      0      0    .124   6.18  13.69  3.723   .658   .482   1.94   .411  -.003   3
+  31 A137R2   1969 1999     31      0      0    .478   4.93  11.70  2.931   .275   .616   2.17   .495   .097   0
+  32 A160R1   1970 2009     40      0      0    .311   2.99   9.81  2.191   .308   .587   2.30   .540  -.059   2
+  33 A133R1   1942 2015     74      1      1    .359   2.48  10.00  2.056   .378   .589   2.51   .604   .123   0
+  34 A127R2   1970 2015     46      0      0    .498   3.53   8.64  2.006   .331   .521   2.07   .461   .100   0
+  35 A159R2   1957 2009     53      0      0    .239   4.71  13.67  3.469   .542   .519   3.35   .568   .128   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1917     13      8    .300   3.22  21.11  1.979   .391   .510   4.30   .490   .015
+
+ DATA CHECKS (rwl.check): bra034
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra034.rwl
+ 35 series, 1917 measurements, 1899-2015, 0.01 mm precision
+ 0 error(s), 2 warning(s), 27 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 455 carriage return(s) against 229 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 27 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file bra034.rwl, MD5 b927b76d5516b68870f44c24d23c789c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series A147R1 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series A147R2 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

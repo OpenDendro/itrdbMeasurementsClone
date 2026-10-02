@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: fran040
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fran040.rwl
+      MD5 of measurement file: 8ba1c2f9076aa7f1be908e310d6174e3
+      Date checked           : 01OCT26
+      Beginning year         : 1803
+      Ending year            : 1910
+      Principal investigators: Ratcliff, P.
+      Site name              : Barnabetti French Violin
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.7500 N
+      Longitude              : 6.0000 E
+      Elevation              : 728 m
+
+      Avg mean sensitivity   : 0.223
+      Avg standard deviation : 0.289
+      Avg autocorrelation    : 0.604
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: fran040
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BSS      1803 1910    108                          .90   1.77   .286   .612   .220                        1
+   2 TR       1806 1910    105                          .92   1.76   .292   .597   .226                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            213                          .91   1.77   .289   .604   .223                     
+
+ DATA CHECKS (rwl.check): fran040
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fran040.rwl
+ 2 series, 213 measurements, 1803-1910, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file fran040.rwl, MD5 8ba1c2f9076aa7f1be908e310d6174e3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

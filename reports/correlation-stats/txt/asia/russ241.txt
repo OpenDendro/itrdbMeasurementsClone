@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: russ241
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ241.rwl
+      MD5 of measurement file: ec0b9ff2184ce25d1554f2a13fd8a7c6
+      Date checked           : 01OCT26
+      Beginning year         : 1523
+      Ending year            : 2013
+      Principal investigators: Voronin, V.I.; Oskolkov, V.A.; Buyantuyev, V.; Moritz, R.S.
+      Site name              : Tissa River
+      Species information    : LASI Larix sibirica Ledeb. = Larix russica (Endl.) Sabine ex Trautv.
+      Latitude               : 52.3988 N
+      Longitude              : 98.6849 E
+      Elevation              : 2020 m
+
+      Series intercorrelation: 0.504
+      Avg mean sensitivity   : 0.332
+      Avg standard deviation : 0.289
+      Avg autocorrelation    : 0.692
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 0, B 7; 1 of the B weak at every lag)
+      Pct problem segments   : 13.46
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ241
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 tis-s1   1523 1742  .52  .71  .69  .48                                                        
+   2 tis-s2   1566 1746  .67  .74  .69  .60                                                        
+   3 tis-s3   1534 1766  .66  .81  .69  .53  .52                                                   
+   4 tis-s4   1665 1801                 .34B-.26B-.28B .41                                         
+   6 tis-z2   1943 2013                                                                       -.20B
+   7 tis-z3   1946 2013                                                                       -.28B
+   8 tis-z4   1903 2013                                                                  -.00B-.14B
+   9 tis1     1939 2013                                                                        .58 
+  11 tis5     1925 2013                                                                        .55 
+  12 tis6     1920 2013                                                                   .51  .74 
+  13 tis10    1921 2013                                                                   .70  .74 
+  14 tis11    1917 2013                                                                   .70  .75 
+  15 tis12    1941 2013                                                                        .73 
+  17 tis14    1744 2013                                .64  .83  .82  .79  .88  .80  .76  .46  .56 
+  18 tis15    1884 2013                                                              .65  .67  .69 
+  19 tis16    1706 2013                           .53  .72  .87  .82  .79  .86  .78  .79  .57  .66 
+ Av segment correlation  .62  .75  .69  .49  .13  .12  .59  .85  .82  .79  .87  .79  .73  .52  .45 
+
+ FLAGGED SEGMENTS: russ241
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 tis-s4   1675 1724     B     .340         1      .454   .114
+   4 tis-s4   1700 1749     B    -.265         1      .702   .967
+   4 tis-s4   1725 1774     B    -.282         1      .752  1.035
+   6 tis-z2   1950 1999     B    -.200        -5      .327   .527  weak at every lag
+   7 tis-z3   1950 1999     B    -.280        -2      .428   .707
+   8 tis-z4   1925 1974     B    -.001        -1      .329   .330
+   8 tis-z4   1950 1999     B    -.136        -8      .330   .466
+
+ DESCRIPTIVE STATISTICS: russ241
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 tis-s1   1523 1742    220      4      0    .297    .26    .72   .144   .718   .357   1.94   .322   .012   1
+   2 tis-s2   1566 1746    181      4      0    .532    .62   1.45   .256   .606   .286   2.00   .283   .019   1
+   3 tis-s3   1534 1766    233      5      0    .431    .33   1.10   .216   .766   .342   1.81   .319  -.012   1
+   4 tis-s4   1665 1801    137      4      3    .169    .61   1.61   .305   .805   .269   1.59   .265   .054   1
+   5 tis-z1   1964 2013     50      0      0    .141    .70   1.16   .249   .670   .234   1.50   .247  -.027   2
+   6 tis-z2   1943 2013     71      1      1   -.038    .47   1.73   .464   .850   .485   2.06   .439  -.058   1
+   7 tis-z3   1946 2013     68      1      1   -.060    .59   2.01   .557   .873   .420   1.78   .390   .108   1
+   8 tis-z4   1903 2013    111      2      2    .017    .35   2.11   .314   .745   .463   2.42   .449   .017   1
+   9 tis1     1939 2013     75      1      0    .598   1.99   3.72   .633   .584   .249   1.40   .237   .020   1
+  10 tis2     1955 2013     59      0      0    .464    .98   2.16   .398   .540   .332   1.66   .300   .083   3
+  11 tis5     1925 2013     89      1      0    .588    .48   1.30   .275   .558   .485   1.94   .422   .057   1
+  12 tis6     1920 2013     94      2      0    .693   1.39   2.67   .462   .495   .290   1.60   .257  -.008   3
+  13 tis10    1921 2013     93      2      0    .764   1.17   1.88   .357   .446   .283   1.65   .238   .001   3
+  14 tis11    1917 2013     97      2      0    .739    .72   1.88   .283   .565   .296   1.59   .284   .006   3
+  15 tis12    1941 2013     73      1      0    .700    .92   1.69   .344   .626   .284   1.88   .261   .119   3
+  16 tis13    1960 2013     54      0      0    .548    .92   2.31   .409   .392   .407   2.35   .389   .036   1
+  17 tis14    1744 2013    270      9      0    .751    .35   1.20   .201   .774   .308   2.18   .306   .003   1
+  18 tis15    1884 2013    130      3      0    .645    .53   1.18   .241   .584   .324   2.09   .310  -.043   3
+  19 tis16    1706 2013    308     10      0    .743    .39   1.38   .250   .838   .313   1.87   .290  -.017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2413     52      7    .504    .59   3.72   .289   .692   .332   2.42   .311   .011
+
+ DATA CHECKS (rwl.check): russ241
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ241.rwl
+ 19 series, 2413 measurements, 1523-2013, 0.01 mm precision
+ 2 error(s), 0 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     tis-s4: correlates best with the master at lag 1 (r = 0.572 against r = 0.388 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+     tis-z1: correlates best with the master at lag -2 (r = 0.501 against r = 0.144 as dated); the series may be misdated by 2 year(s), most likely a missing ring
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file russ241.rwl, MD5 ec0b9ff2184ce25d1554f2a13fd8a7c6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

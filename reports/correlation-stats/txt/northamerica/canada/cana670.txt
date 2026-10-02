@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: cana670
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana670.rwl
+      MD5 of measurement file: 4a34f3b49c116da0d65783d026e7820e
+      Date checked           : 01OCT26
+      Beginning year         : 1933
+      Ending year            : 2018
+      Principal investigators: Bonney, M.T.; He, Y.
+      Site name              : Wilcox CA (Site 15)
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 43.8767 N
+      Longitude              : 80.1378 W
+      Elevation              : 450 m
+
+      Series intercorrelation: 0.499
+      Avg mean sensitivity   : 0.204
+      Avg standard deviation : 1.013
+      Avg autocorrelation    : 0.908
+      Number dated series    : 15
+      Series crossdated      : 14
+      Segment length tested  : 42
+
+      Number problem segments: 4  (A 0, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 16.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana670
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1971 
+                        1991 2012 
+ --- -------- ---------  ---- ---- 
+   1 1510a    1945 2018  .59  .49 
+   2 1510b    1956 2018       .47 
+   3 1511a    1933 2018  .47  .41 
+   4 1512a    1937 2018  .72  .18B
+   5 1522a    1949 2018       .47 
+   6 1522b    1942 2018  .59  .61 
+   7 1525a    1940 2018  .48  .53 
+   8 1525b    1942 2018  .65  .27B
+   9 1502a    1937 2018  .59  .16B
+  10 1502b    1945 2018  .61  .26B
+  11 1504a    1963 2018       .53 
+  12 1504b    1963 2018       .62 
+  13 1506a    1937 2018  .60  .52 
+  14 1506b    1937 2018  .71  .45 
+ Av segment correlation  .60  .43 
+
+ FLAGGED SEGMENTS: cana670
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 1512a    1971 2012     B     .177         3      .242   .065  weak at every lag
+   8 1525b    1971 2012     B     .274         6      .411   .137
+   9 1502a    1971 2012     B     .162         5      .249   .087  weak at every lag
+  10 1502b    1971 2012     B     .259        -1      .294   .035  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana670
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 1510a    1945 2018     74      2      0    .535   1.70   4.11   .771   .896   .158   1.51   .175   .157   1
+   2 1510b    1956 2018     63      1      0    .470   1.90   3.50   .755   .890   .160   1.44   .173   .047   1
+   3 1511a    1933 2018     86      2      0    .445   1.32   3.66   .898   .869   .243   1.92   .285   .114   1
+   4 1512a    1937 2018     82      2      1    .442   1.48   2.76   .835   .921   .221   1.98   .264   .056   1
+   5 1522a    1949 2018     70      1      0    .410   1.44   4.14   .828   .924   .171   1.42   .168   .026   3
+   6 1522b    1942 2018     77      2      0    .514   2.00   4.03   .995   .919   .177   1.66   .193  -.012   1
+   7 1525a    1940 2018     79      2      0    .612   2.15   5.77  1.352   .873   .210   2.13   .257   .009   1
+   8 1525b    1942 2018     77      2      1    .633   1.76   3.83  1.133   .939   .176   1.49   .184   .132   1
+   9 1502a    1937 2018     82      2      1    .277   2.18   5.06  1.393   .906   .276   2.35   .370   .010   1
+  10 1502b    1945 2018     74      2      1    .472   1.75   4.00  1.088   .895   .304   3.22   .365   .201   1
+  11 1504a    1963 2018     56      1      0    .334   1.67   2.94   .774   .904   .162   1.43   .162  -.011   1
+  12 1504b    1963 2018     56      1      0    .525   1.74   3.62   .926   .911   .173   1.61   .193  -.043   2
+  13 1506a    1937 2018     82      2      0    .662   1.62   3.56   .924   .924   .187   1.76   .207   .055   2
+  14 1506b    1937 2018     82      2      0    .612   1.93   3.92  1.103   .934   .178   1.62   .182   .048   1
+  15 1507b    1948 2018     71                         1.80   4.60  1.279   .916   .226                         
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1111     24      4    .499   1.76   5.77  1.013   .908   .204   3.22   .231   .059
+
+ DATA CHECKS (rwl.check): cana670
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana670.rwl
+ 15 series, 1111 measurements, 1933-2018, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file cana670.rwl, MD5 4a34f3b49c116da0d65783d026e7820e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 1507b is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 42 years: the record is only 86 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

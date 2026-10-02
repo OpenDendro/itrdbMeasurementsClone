@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: rus329
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus329.rwl
+      MD5 of measurement file: 3431188cfaca2a076f0b45a1cb048e5b
+      Date checked           : 01OCT26
+      Beginning year         : 1895
+      Ending year            : 2014
+      Principal investigators: Solomina, O.
+      Site name              : Ugra - F04S
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 54.6611 N
+      Longitude              : 34.1367 E
+      Elevation              : 195 m
+
+      Series intercorrelation: 0.573
+      Avg mean sensitivity   : 0.224
+      Avg standard deviation : 1.555
+      Avg autocorrelation    : 0.857
+      Number dated series    : 19
+      Series crossdated      : 18
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 5.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus329
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 F04S1a   1904 2014       .68  .54 
+   2 F04S1b   1912 2014       .57  .33B
+   3 F04S2a   1908 2014       .81  .52 
+   4 F04S3a   1899 2014       .55  .56 
+   5 F04S3b   1895 2014  .49  .49  .42 
+   6 F03S4a   1904 2013       .69  .52 
+   7 F04S4b   1906 2013       .68  .44 
+   8 F04S5a   1902 2014       .80  .61 
+   9 F04S5b   1899 2014       .76  .58 
+  10 F04S6a   1901 2013       .64  .30B
+  11 F04S6b   1900 2014       .71  .43 
+  12 F04S7a   1908 2014       .71  .48 
+  13 F04S7b   1920 2014       .58  .45 
+  14 F04S8a   1912 2014       .76  .61 
+  15 F04S8b   1907 2014       .48  .38 
+  16 F04S9a   1907 2014       .50  .50 
+  17 F04S9b   1898 2014  .33  .54  .47 
+  19 F04S10b  1900 2014       .43  .42 
+ Av segment correlation  .41  .63  .48 
+
+ FLAGGED SEGMENTS: rus329
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 F04S1b   1950 1999     B     .333       -10      .355   .021
+  10 F04S6a   1950 1999     B     .303         4      .401   .099
+
+ DESCRIPTIVE STATISTICS: rus329
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 F04S1a   1904 2014    111      2      0    .646   3.31  11.85  2.052   .883   .228   1.57   .228   .060   1
+   2 F04S1b   1912 2014    103      2      1    .598   2.65   8.33  1.401   .691   .245   2.11   .265   .049   1
+   3 F04S2a   1908 2014    107      2      0    .738   2.94   7.38  1.291   .820   .183   1.81   .207   .076   1
+   4 F04S3a   1899 2014    116      2      0    .420   2.14   6.93  1.587   .903   .265   1.68   .272   .016   2
+   5 F04S3b   1895 2014    120      3      0    .522   1.79   7.66  1.610   .938   .255   1.83   .275   .052   1
+   6 F03S4a   1904 2013    110      2      0    .557   2.62   7.04  1.440   .854   .198   1.79   .239   .035   1
+   7 F04S4b   1906 2013    108      2      0    .555   3.08   9.63  1.425   .771   .187   1.86   .226  -.023   2
+   8 F04S5a   1902 2014    113      2      0    .685   2.40  10.96  1.873   .915   .241   2.06   .259   .042   1
+   9 F04S5b   1899 2014    116      2      0    .725   2.11   8.05  1.575   .875   .258   2.19   .266   .031   3
+  10 F04S6a   1901 2013    113      2      1    .558   3.02  10.02  2.256   .925   .190   1.84   .223   .045   1
+  11 F04S6b   1900 2014    115      2      0    .674   2.38   8.01  1.273   .792   .219   1.60   .226   .044   1
+  12 F04S7a   1908 2014    107      2      0    .603   2.19   6.06  1.406   .886   .257   1.62   .253  -.007   1
+  13 F04S7b   1920 2014     95      2      0    .511   2.55   7.29  1.641   .886   .221   1.66   .230   .058   1
+  14 F04S8a   1912 2014    103      2      0    .681   2.73   6.69  1.490   .837   .236   1.55   .227   .071   2
+  15 F04S8b   1907 2014    108      2      0    .459   2.51   6.01  1.244   .820   .232   1.58   .215   .046   3
+  16 F04S9a   1907 2014    108      2      0    .484   2.93   5.55   .978   .780   .183   1.47   .183   .053   1
+  17 F04S9b   1898 2014    117      3      0    .452   3.13   6.63  1.433   .878   .172   1.37   .177   .039   1
+  18 F04S10a  1906 2011    102                         2.18  12.06  2.074   .904   .247                         
+  19 F04S10b  1900 2014    115      2      0    .458   2.12   7.10  1.487   .897   .243   1.66   .215   .032   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2087     38      2    .573   2.56  12.06  1.555   .857   .224   2.19   .233   .040
+
+ DATA CHECKS (rwl.check): rus329
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus329.rwl
+ 19 series, 2087 measurements, 1895-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     F04S10a: no measurement for 1922-1925, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file rus329.rwl, MD5 3431188cfaca2a076f0b45a1cb048e5b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series F04S10a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

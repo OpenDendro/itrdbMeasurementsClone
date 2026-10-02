@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: az623
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az623.rwl
+      MD5 of measurement file: 55d140742c463ab092fb624b1ae3480b
+      Date checked           : 01OCT26
+      Beginning year         : 1695
+      Ending year            : 2018
+      Principal investigators: O'Neill, L.; Fulé, P.Z.
+      Site name              : Telephone Hill
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.6030 N
+      Longitude              : 112.1560 W
+      Elevation              : 2500 m
+
+      Series intercorrelation: 0.606
+      Avg mean sensitivity   : 0.256
+      Avg standard deviation : 0.793
+      Avg autocorrelation    : 0.847
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 3.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az623
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 TH-001   1802 2018                           .66  .74  .68  .52  .28B .42 
+   2 TH-002   1820 2016                           .69  .68  .62  .68  .65  .64 
+   3 TH-003   1776 1970                      .61  .70  .63  .53  .63           
+   4 TH-004   1830 2000                                .63  .69  .67  .75  .73 
+   5 TH-005   1841 2018                                .72  .70  .61  .60  .72 
+   6 TH-006   1826 1971                                .77  .72  .61           
+   7 TH-007   1863 1994                                     .69  .67  .65      
+   8 TH-008   1845 2018                                .73  .69  .58  .67  .71 
+   9 TH-009   1822 2018                           .57  .66  .70  .71  .66  .78 
+  10 TH-010   1701 2018       .67  .54  .66  .71  .79  .75  .72  .73  .76  .81 
+  11 TH-011   1784 2005                      .72  .56  .65  .71  .59  .59  .63 
+  12 TH-012   1761 2018                 .35  .44  .58  .72  .67  .64  .70  .60 
+  13 TH_016   1832 2018                                .64  .64  .56  .63  .66 
+  14 TH-018   1777 2018                      .57  .31A .30B .44  .46  .48  .64 
+  15 TH-019   1727 2001            .48  .63  .46  .46  .59  .59  .64  .51  .50 
+  16 TH-020   1695 2018       .62  .48  .60  .60  .53  .64  .69  .73  .57  .48 
+ Av segment correlation       .64  .50  .56  .59  .58  .66  .66  .63  .61  .64 
+
+ FLAGGED SEGMENTS: az623
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 TH-001   1925 1974     B     .277        -1      .423   .145
+  14 TH-018   1825 1874     A     .310         0
+  14 TH-018   1850 1899     B     .304        -3      .378   .075
+
+ DESCRIPTIVE STATISTICS: az623
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TH-001   1802 2018    217      6      1    .549   1.21   3.91   .631   .707   .348   1.75   .301  -.004   1
+   2 TH-002   1820 2016    197      6      0    .635   1.02   2.20   .494   .692   .307   1.76   .277  -.005   1
+   3 TH-003   1776 1970    195      5      0    .581   1.54   5.39   .805   .813   .236   1.72   .223   .003   3
+   4 TH-004   1830 2000    171      5      0    .623   1.79   5.53  1.364   .907   .270   1.49   .244  -.010   1
+   5 TH-005   1841 2018    178      5      0    .705   2.07   7.47  1.627   .951   .211   1.62   .216   .007   1
+   6 TH-006   1826 1971    146      3      0    .633   1.69   3.96   .924   .864   .221   1.70   .205   .018   2
+   7 TH-007   1863 1994    132      3      0    .616   1.80   6.52  1.326   .891   .275   1.58   .255  -.035   1
+   8 TH-008   1845 2018    174      5      0    .691   1.66   3.62   .753   .735   .291   1.68   .273  -.010   1
+   9 TH-009   1822 2018    197      6      0    .711   1.60   4.22   .873   .898   .212   1.45   .207   .005   1
+  10 TH-010   1701 2018    318     10      0    .665    .89   3.20   .497   .855   .237   1.73   .230  -.001   1
+  11 TH-011   1784 2005    222      7      0    .611   1.11   3.10   .608   .876   .207   1.61   .210   .017   1
+  12 TH-012   1761 2018    258      8      0    .604   1.19   3.76   .912   .953   .206   1.67   .203   .016   1
+  13 TH_016   1832 2018    187      5      0    .567   1.56   3.07   .597   .706   .253   1.78   .238  -.008   1
+  14 TH-018   1777 2018    242      7      2    .482    .67   2.65   .461   .889   .287   1.89   .283  -.015   1
+  15 TH-019   1727 2001    275      9      0    .531   1.11   4.24   .808   .880   .314   1.84   .295  -.014   3
+  16 TH-020   1695 2018    324     10      0    .568   1.17   3.73   .680   .879   .226   1.91   .242  -.010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3433    100      3    .606   1.31   7.47   .793   .847   .256   1.91   .245  -.003
+
+ DATA CHECKS (rwl.check): az623
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az623.rwl
+ 16 series, 3433 measurements, 1695-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file az623.rwl, MD5 55d140742c463ab092fb624b1ae3480b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

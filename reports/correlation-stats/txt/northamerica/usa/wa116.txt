@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: wa116
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa116.rwl
+      MD5 of measurement file: 280145992dcdcde09d7bf12402a5572f
+      Date checked           : 01OCT26
+      Beginning year         : 1850
+      Ending year            : 1990
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Dodger Point Low
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 47.8300 N
+      Longitude              : 123.5200 W
+      Elevation              : 1395 m
+
+      Series intercorrelation: 0.548
+      Avg mean sensitivity   : 0.231
+      Avg standard deviation : 0.409
+      Avg autocorrelation    : 0.652
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa116
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 DT0301B  1850 1990  .56  .64 
+   2 DT0302B  1872 1990  .64  .58 
+   3 DT0303B  1862 1990  .40  .50 
+   4 DT0304B  1850 1990  .70  .51 
+   5 DT0305B  1850 1990  .47  .65 
+   6 DT0306A  1860 1990  .20A .42 
+   7 DT0307A  1867 1990  .50  .61 
+   8 DT0308B  1883 1990  .48  .22B
+   9 DT0309B  1879 1990  .74  .72 
+  10 DT0310A  1896 1990  .72  .73 
+  11 DT0311B  1894 1990  .58  .73 
+  12 DT0312B  1882 1990  .65  .68 
+  13 DT0313B  1902 1990       .40 
+  14 DT0314A  1866 1990  .50  .63 
+  15 DT0315A  1885 1990  .59  .66 
+  16 DT0316A  1894 1990  .18B .34 
+  17 DT0317B  1864 1990  .46  .58 
+  18 DT0318B  1887 1990  .54  .73 
+  19 DT0319B  1889 1990  .54  .46 
+  20 DT0320B  1869 1990  .59  .76 
+  21 DT0321A  1890 1990  .59  .54 
+  22 DT0322B  1865 1990  .53  .67 
+  23 DT0323A  1886 1990  .69  .67 
+  24 DT0324B  1879 1990  .75  .81 
+  25 DT0325A  1889 1990  .56  .47 
+ Av segment correlation  .55  .59 
+
+ FLAGGED SEGMENTS: wa116
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 DT0306A  1900 1949     A     .203         0
+   8 DT0308B  1925 1974     B     .219         5      .452   .233
+  16 DT0316A  1900 1949     B     .178         1      .295   .117  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wa116
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DT0301B  1850 1990    141      2      0    .556    .84   2.11   .329   .743   .195   1.61   .205  -.008   1
+   2 DT0302B  1872 1990    119      2      0    .622   1.43   2.57   .463   .618   .239   1.58   .215   .058   0
+   3 DT0303B  1862 1990    129      2      0    .450    .83   1.48   .290   .679   .234   1.58   .210  -.007   2
+   4 DT0304B  1850 1990    141      2      0    .434   1.03   1.86   .350   .621   .246   1.59   .231  -.041   1
+   5 DT0305B  1850 1990    141      2      0    .556    .85   1.63   .252   .491   .245   1.58   .229   .111   0
+   6 DT0306A  1860 1990    131      2      1    .369    .86   2.64   .424   .832   .208   1.76   .236   .009   3
+   7 DT0307A  1867 1990    124      2      0    .368   1.17   3.04   .495   .825   .186   1.91   .199   .007   1
+   8 DT0308B  1883 1990    108      2      1    .490   1.22   2.35   .426   .539   .289   1.67   .257   .024   0
+   9 DT0309B  1879 1990    112      2      0    .732   1.23   2.14   .421   .735   .212   1.46   .186  -.052   3
+  10 DT0310A  1896 1990     95      2      0    .681   1.29   2.99   .344   .275   .247   1.51   .208  -.045   0
+  11 DT0311B  1894 1990     97      2      0    .644   1.43   2.12   .327   .552   .179   1.59   .182  -.041   1
+  12 DT0312B  1882 1990    109      2      0    .669   1.05   2.05   .309   .611   .204   1.52   .195  -.013   1
+  13 DT0313B  1902 1990     89      1      0    .467   1.26   2.42   .496   .682   .271   1.73   .247  -.003   1
+  14 DT0314A  1866 1990    125      2      0    .492   1.02   2.79   .578   .729   .342   1.69   .300   .116   0
+  15 DT0315A  1885 1990    106      2      0    .572   1.05   2.30   .318   .544   .226   1.65   .228  -.006   1
+  16 DT0316A  1894 1990     97      2      1    .365   2.18   4.27   .881   .695   .266   1.63   .260   .021   1
+  17 DT0317B  1864 1990    127      2      0    .425    .94   2.06   .400   .759   .245   1.94   .233   .133   0
+  18 DT0318B  1887 1990    104      2      0    .674   1.30   2.00   .306   .643   .168   1.44   .163   .031   1
+  19 DT0319B  1889 1990    102      2      0    .546   1.57   3.22   .510   .749   .183   1.63   .190   .015   1
+  20 DT0320B  1869 1990    122      2      0    .697   1.01   1.95   .276   .437   .240   1.44   .203   .026   3
+  21 DT0321A  1890 1990    101      2      0    .629   1.11   3.11   .601   .817   .284   1.56   .229  -.010   1
+  22 DT0322B  1865 1990    126      2      0    .508    .94   1.56   .281   .588   .221   1.75   .216   .053   1
+  23 DT0323A  1886 1990    105      2      0    .625   1.43   2.55   .398   .569   .212   1.50   .180  -.006   0
+  24 DT0324B  1879 1990    112      2      0    .757   1.10   1.88   .363   .699   .223   1.44   .215   .018   1
+  25 DT0325A  1889 1990    102      2      0    .489   1.36   2.52   .573   .820   .206   1.76   .206   .008   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2865     49      3    .548   1.15   4.27   .409   .652   .231   1.94   .217   .018
+
+ DATA CHECKS (rwl.check): wa116
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa116.rwl
+ 25 series, 2865 measurements, 1850-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wa116.rwl, MD5 280145992dcdcde09d7bf12402a5572f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

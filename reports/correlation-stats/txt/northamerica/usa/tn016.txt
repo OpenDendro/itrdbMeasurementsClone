@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: tn016
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tn016.rwl
+      MD5 of measurement file: cde136b4b1604f92ed7a0d97f43df2f3
+      Date checked           : 01OCT26
+      Beginning year         : 1736
+      Ending year            : 1995
+      Principal investigators: Young, P.J.; Keeland, R.; Alford, J.
+      Site name              : Boogerman Trail Tennessee
+      Species information    : LITU Liriodendron tulipifera L.
+      Latitude               : 35.6000 N
+      Longitude              : 83.0800 W
+      Elevation              : 1065 m
+
+      Series intercorrelation: 0.597
+      Avg mean sensitivity   : 0.303
+      Avg standard deviation : 0.741
+      Avg autocorrelation    : 0.640
+      Number dated series    : 22
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 2.94
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tn016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BGR01A   1745 1994  .71  .58  .66  .74  .72  .71 
+   2 BGR01B   1736 1994  .64  .35  .51  .70  .70  .80 
+   3 BGR02A   1773 1994  .66  .55  .49  .57  .62  .55 
+   4 BGR02B   1768 1994  .53  .50  .52  .61  .66  .63 
+   5 BGR03A   1794 1994  .63  .50  .61  .81  .81  .70 
+   6 BGR03B   1783 1994  .43  .50  .68  .76  .78  .81 
+   7 BGR04A   1815 1889       .23B                    
+   8 BGR04C   1900 1994                           .61 
+   9 BGR04B   1819 1994       .45  .51  .62  .70  .65 
+  10 BGR05A   1845 1994            .40  .45  .46  .56 
+  11 BGR05B   1840 1994            .66  .76  .75  .68 
+  12 BGR06A   1747 1994  .54  .67  .73  .82  .67  .52 
+  14 BGR11B   1795 1995  .66  .41  .43  .81  .74  .56 
+  15 BGR13A   1785 1995  .59  .63  .65  .72  .76  .69 
+  16 BGR13B   1793 1995  .29A .31A .61  .73  .66  .70 
+  17 BGR14A   1921 1995                           .74 
+  18 BGR14B   1842 1995            .57  .66  .71  .68 
+  19 BGR15A   1797 1995  .58  .57  .66  .82  .81  .78 
+  20 BGR15B   1827 1995            .62  .78  .65  .37 
+  21 BGR16A   1770 1995  .77  .81  .78  .69  .50  .67 
+  22 BGR16B   1765 1995  .58  .54  .47  .59  .72  .75 
+ Av segment correlation  .59  .51  .59  .70  .69  .66 
+
+ FLAGGED SEGMENTS: tn016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 BGR04A   1825 1874     B     .228       -10      .352   .123
+  16 BGR13B   1800 1849     A     .289         0
+  16 BGR13B   1825 1874     A     .306         0
+
+ DESCRIPTIVE STATISTICS: tn016
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BGR01A   1745 1994    250      6      0    .570   1.20   3.86   .646   .629   .319   2.17   .305  -.013   2
+   2 BGR01B   1736 1994    259      6      0    .541   1.10   3.11   .560   .661   .285   1.84   .288  -.008   2
+   3 BGR02A   1773 1994    222      6      0    .599   1.61   4.15   .659   .460   .317   1.99   .273   .031   3
+   4 BGR02B   1768 1994    227      6      0    .555   1.18   3.43   .521   .513   .353   2.07   .305   .010   3
+   5 BGR03A   1794 1994    201      6      0    .647   1.61   4.19   .831   .694   .315   2.15   .330  -.032   1
+   6 BGR03B   1783 1994    212      6      0    .636   1.54   4.30   .824   .762   .325   1.87   .308   .018   2
+   7 BGR04A   1815 1889     75      1      1    .294    .98   2.96   .589   .731   .310   2.30   .367  -.050   2
+   8 BGR04C   1900 1994     95      1      0    .638   1.95   6.84   .999   .660   .299   2.00   .316   .034   1
+   9 BGR04B   1819 1994    176      5      0    .564   1.49   5.85   .839   .840   .237   1.89   .245   .058   1
+  10 BGR05A   1845 1994    150      4      0    .497   1.82   4.81   .897   .486   .373   2.11   .360   .018   1
+  11 BGR05B   1840 1994    155      4      0    .691   1.78   4.35   .835   .584   .347   1.95   .329   .025   1
+  12 BGR06A   1747 1994    248      6      0    .542   1.64   4.79   .833   .663   .328   2.37   .336  -.002   3
+  13 BGR06B   1751 1994    244                         1.49   5.58   .776   .689   .285                         
+  14 BGR11B   1795 1995    201      6      0    .585   1.53   4.97   .758   .668   .279   2.84   .298   .004   1
+  15 BGR13A   1785 1995    211      6      0    .650   1.67   4.77   .848   .739   .309   1.96   .293  -.004   2
+  16 BGR13B   1793 1995    203      6      2    .574   1.46   4.10   .733   .680   .316   2.12   .318   .019   2
+  17 BGR14A   1921 1995     75      1      0    .700   1.54   2.61   .402   .649   .168   1.41   .165   .016   1
+  18 BGR14B   1842 1995    154      4      0    .620   1.88   4.48   .686   .711   .208   1.60   .194  -.010   2
+  19 BGR15A   1797 1995    199      6      0    .670   1.71   3.63   .682   .564   .288   2.18   .295  -.009   1
+  20 BGR15B   1827 1995    169      4      0    .550   1.89   6.09   .890   .588   .293   2.34   .317  -.023   1
+  21 BGR16A   1770 1995    226      6      0    .707   1.58   3.92   .730   .530   .321   2.51   .339  -.016   1
+  22 BGR16B   1765 1995    231      6      0    .613   1.61   4.11   .747   .656   .300   1.83   .288   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4183    102      3    .597   1.54   6.84   .741   .640   .303   2.84   .301   .004
+
+ DATA CHECKS (rwl.check): tn016
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/tn016.rwl
+ 22 series, 4183 measurements, 1736-1995, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     BGR04A: correlates with the rest of the collection at r = 0.056 where the collection median is 0.575 (5.8 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file tn016.rwl, MD5 cde136b4b1604f92ed7a0d97f43df2f3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series BGR06B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

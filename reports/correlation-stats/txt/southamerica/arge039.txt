@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: arge039
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge039.rwl
+      MD5 of measurement file: cca7dd49b6114f6f295569a5bf27468e
+      Date checked           : 01OCT26
+      Beginning year         : 1595
+      Ending year            : 1985
+      Principal investigators: Villalba, R.
+      Site name              : Glaciar Frías
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 41.1700 S
+      Longitude              : 71.9300 W
+      Elevation              : 1200 m
+
+      Series intercorrelation: 0.559
+      Avg mean sensitivity   : 0.325
+      Avg standard deviation : 0.690
+      Avg autocorrelation    : 0.677
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 4, B 1)
+      Pct problem segments   : 4.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 FR101A   1839 1985                                                    .47  .69  .54  .47 
+   2 FR101B   1836 1985                                                    .26A .35  .45  .53 
+   3 FR102A   1777 1985                                          .70  .58  .50  .52  .49  .34 
+   4 FR102B   1735 1937                                .46  .60  .62  .49  .41  .39           
+   5 FR103A   1800 1985                                               .61  .43  .37  .28A .56 
+   6 FR103B   1805 1936                                               .70  .66  .61           
+   7 FR104A   1815 1985                                               .58  .32A .48  .51  .47 
+   8 FR104B   1723 1985                                .44  .61  .60  .47  .55  .64  .65  .54 
+   9 FR105A   1827 1938                                                    .58  .62           
+  10 FR105B   1856 1985                                                         .58  .44  .51 
+  11 FR106A   1795 1985                                          .72  .54  .59  .73  .70  .74 
+  12 FR106B   1784 1985                                          .68  .49  .57  .67  .71  .67 
+  13 FR107A   1808 1985                                               .71  .62  .65  .60  .56 
+  14 FR107B   1763 1985                                     .53  .69  .70  .61  .64  .67  .63 
+  15 FR108A   1714 1977                           .77  .58  .47  .61  .68  .65  .64  .68  .37 
+  16 FR108B   1810 1985                                               .57  .66  .62  .65  .74 
+  17 FR108C   1705 1845                           .72  .42  .54                               
+  18 FR109A   1595 1985            .70  .43  .46  .62  .67  .77  .69  .56  .61  .61  .61  .56 
+  19 FR109B   1635 1801            .65  .43  .65  .75  .46                                    
+  20 FR109C   1807 1985                                               .62  .59  .65  .71  .68 
+  21 FR110A   1659 1985                 .29A .32B .52  .45  .65  .75  .60  .59  .65  .60  .52 
+ Av segment correlation            .68  .39  .48  .67  .50  .60  .67  .59  .54  .58  .58  .55 
+
+ FLAGGED SEGMENTS: arge039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 FR101B   1850 1899     A     .257         0
+   5 FR103A   1900 1949     A     .283         0
+   7 FR104A   1850 1899     A     .320         0
+  21 FR110A   1675 1724     A     .295         0
+  21 FR110A   1700 1749     B     .323         7      .370   .047
+
+ DESCRIPTIVE STATISTICS: arge039
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FR101A   1839 1985    147      4      0    .528   1.26   3.09   .637   .707   .296   2.24   .325  -.010   2
+   2 FR101B   1836 1985    150      4      1    .400   2.01   3.89   .723   .699   .220   1.92   .227  -.040   1
+   3 FR102A   1777 1985    209      6      0    .514    .92   2.47   .575   .768   .348   2.00   .336   .003   1
+   4 FR102B   1735 1937    203      6      0    .479   1.61   6.29   .958   .705   .350   2.60   .364   .004   3
+   5 FR103A   1800 1985    186      5      1    .563   1.49   3.50   .602   .628   .275   2.04   .280  -.008   1
+   6 FR103B   1805 1936    132      3      0    .640   1.60   3.62   .654   .612   .297   2.10   .310  -.017   3
+   7 FR104A   1815 1985    171      5      1    .527   2.18   5.74   .929   .537   .336   2.20   .344   .018   1
+   8 FR104B   1723 1985    263      8      0    .478   1.29   4.22   .692   .760   .315   2.43   .318   .003   3
+   9 FR105A   1827 1938    112      2      0    .556   1.45   7.46   .943   .732   .260   2.31   .295   .008   1
+  10 FR105B   1856 1985    130      3      0    .538   1.79   4.63   .907   .734   .303   1.75   .309   .017   2
+  11 FR106A   1795 1985    191      6      0    .678   1.61   4.27   .728   .554   .339   2.08   .345   .022   1
+  12 FR106B   1784 1985    202      6      0    .627   1.95   5.13   .853   .497   .338   2.16   .333   .002   1
+  13 FR107A   1808 1985    178      5      0    .644   2.12   5.40   .907   .628   .287   1.93   .296  -.010   1
+  14 FR107B   1763 1985    223      7      0    .584   1.58   6.14  1.201   .788   .381   3.30   .417   .027   1
+  15 FR108A   1714 1977    264      9      0    .548   1.06   3.12   .577   .691   .349   2.40   .347  -.001   1
+  16 FR108B   1810 1985    176      5      0    .604   1.19   4.63   .945   .864   .341   3.23   .396  -.000   1
+  17 FR108C   1705 1845    141      3      0    .555   1.07   4.45   .624   .593   .371   2.40   .374  -.028   1
+  18 FR109A   1595 1985    391     12      0    .597    .76   2.27   .381   .719   .307   2.08   .303   .020   1
+  19 FR109B   1635 1801    167      5      0    .583    .87   2.27   .334   .479   .310   1.93   .302   .039   1
+  20 FR109C   1807 1985    179      5      0    .580    .53   1.45   .242   .639   .321   2.03   .313   .024   3
+  21 FR110A   1659 1985    327     11      2    .525    .84   3.23   .561   .724   .383   2.52   .367   .021   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4142    120      5    .559   1.32   7.46   .690   .677   .325   3.30   .331   .006
+
+ DATA CHECKS (rwl.check): arge039
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge039.rwl
+ 21 series, 4142 measurements, 1595-1985, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file arge039.rwl, MD5 cca7dd49b6114f6f295569a5bf27468e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

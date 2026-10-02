@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: zmb011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : zmb011.rwl
+      MD5 of measurement file: fa6d956899a703b68ba10ba1ea008d2c
+      Date checked           : 01OCT26
+      Beginning year         : 1968
+      Ending year            : 2000
+      Principal investigators: Trouet, V.
+      Site name              : Mongu
+      Species information    : BRSP Brachystegia spiciformis Benth.
+      Latitude               : 15.4300 S
+      Longitude              : 23.2300 E
+      Elevation              : 1067 m
+
+      Series intercorrelation: 0.232
+      Avg mean sensitivity   : 0.421
+      Avg standard deviation : 1.582
+      Avg autocorrelation    : 0.467
+      Number dated series    : 13
+      Segment length tested  : 16
+
+      Number problem segments: 11  (A 2, B 9; 6 of the B weak at every lag)
+      Pct problem segments   : 91.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: zmb011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  16-year dated segments, lagged   8 years
+ Flags:  A = correlation under   .5742 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1978 
+                        1985 1993 
+ --- -------- ---------  ---- ---- 
+   1 MN352a   1974 2000       .45B
+   2 MN353a   1975 1999       .39A
+   3 MN354b   1974 1999       .04B
+   4 MN355a   1975 2000      -.09B
+   5 MN356d   1976 2000       .57B
+   6 MN357a   1974 1999       .47B
+   7 MN359a   1977 2000       .57A
+   8 MN360a   1977 1999       .67 
+   9 MN361a   1976 2000       .44B
+  10 MN362a   1976 1999       .19B
+  11 MN364a   1973 1999       .04B
+  13 MN366m   1968 1999       .47B
+ Av segment correlation       .35 
+
+ FLAGGED SEGMENTS: zmb011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 MN352a   1978 1993     B     .452         1      .517   .065  weak at every lag
+   2 MN353a   1978 1993     A     .394         0
+   3 MN354b   1978 1993     B     .041        -2      .570   .528  weak at every lag
+   4 MN355a   1978 1993     B    -.089         6      .358   .447  weak at every lag
+   5 MN356d   1978 1993     B     .574        -1      .699   .125
+   6 MN357a   1978 1993     B     .472         1      .494   .022  weak at every lag
+   7 MN359a   1978 1993     A     .569         0
+   9 MN361a   1978 1993     B     .442         7      .727   .286
+  10 MN362a   1978 1993     B     .192         1      .555   .363  weak at every lag
+  11 MN364a   1978 1993     B     .042         7      .356   .314  weak at every lag
+  13 MN366m   1978 1993     B     .467         1      .582   .115
+
+ DESCRIPTIVE STATISTICS: zmb011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MN352a   1974 2000     27      1      1    .221   2.72   6.62  1.740   .659   .451   1.91   .448   .107   1
+   2 MN353a   1975 1999     25      1      1    .270   3.16   6.18  1.595   .720   .388   2.14   .351   .016   0
+   3 MN354b   1974 1999     26      1      1    .204   2.42   5.39  1.111   .421   .402   1.87   .362   .155   0
+   4 MN355a   1975 2000     26      1      1   -.064   3.12   6.28  1.741   .648   .461   1.68   .396  -.005   0
+   5 MN356d   1976 2000     25      1      1    .269   3.03   7.38  1.574   .428   .539   1.73   .385  -.106   0
+   6 MN357a   1974 1999     26      1      1    .425   3.04   5.50  1.441   .575   .418   1.62   .345  -.042   0
+   7 MN359a   1977 2000     24      1      1    .266   4.30   8.10  1.682   .623   .305   1.40   .235  -.106   0
+   8 MN360a   1977 1999     23      1      0    .221   2.93   9.29  1.985   .125   .475   4.15   .751  -.097   0
+   9 MN361a   1976 2000     25      1      1    .210   2.80   7.90  1.604   .498   .415   2.11   .390   .125   0
+  10 MN362a   1976 1999     24      1      1    .252   3.17   6.71  1.419   .521   .440   1.71   .332  -.194   0
+  11 MN364a   1973 1999     27      1      1    .108   3.59   7.24  1.437   .246   .430   1.73   .336  -.039   0
+  12 MN365a   1983 1999     17      0      0    .031   4.49   6.49  1.604  -.406   .531   1.66   .301  -.207   1
+  13 MN366m   1968 1999     32      1      1    .486   3.82   6.70  1.661   .650   .290   2.09   .364   .255   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            327     12     11    .232   3.25   9.29  1.582   .467   .421   4.15   .384   .002
+
+ DATA CHECKS (rwl.check): zmb011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/zmb011.rwl
+ 13 series, 327 measurements, 1968-2000, 0.01 mm precision
+ 0 error(s), 0 warning(s), 13 note(s)
+ -------------
+ Nothing to report at this severity.
+ 13 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file zmb011.rwl, MD5 fa6d956899a703b68ba10ba1ea008d2c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5742 for 16-year segments.
+ Segments: 16 years, lagged 8, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 16 years: the record is only 33 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: bra033
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra033.rwl
+      MD5 of measurement file: 81b85dd65337021723bd08caf218bb57
+      Date checked           : 01OCT26
+      Beginning year         : 1800
+      Ending year            : 2016
+      Principal investigators: Marcon, A.; Botosso, P.; Longhi-Santos, T.; Galvão, F.
+      Site name              : UHE Foz do Areia, Bituruna-PR
+      Species information    : ARAN Araucaria angustifolia (Bertol.) Kuntze
+      Latitude               : 26.0097 S
+      Longitude              : 51.6414 W
+      Elevation              : 806 m
+
+      Series intercorrelation: 0.318
+      Avg mean sensitivity   : 0.368
+      Avg standard deviation : 2.208
+      Avg autocorrelation    : 0.602
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 6, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 77.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+  22 A118R2   1916 2014                           .23B .39 
+  23 A118R3   1920 2014                           .45  .47 
+  24 A125R2   1900 2014                           .15B .29A
+  25 A125R1   1916 2014                           .14B .17B
+  26 A123R2   1874 1989                 .42  .27A .11B     
+  27 A124R2   1940 2014                                .26A
+  29 A17R1    1871 2013                 .24B .23A .18B .29B
+  30 A16R1    1928 2009                                .31A
+  31 A113R1   1945 2009                                .29A
+ Av segment correlation                 .33  .25  .21  .31 
+
+ FLAGGED SEGMENTS: bra033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  22 A118R2   1925 1974     B     .228        -3      .369   .141
+  24 A125R2   1925 1974     B     .153         4      .204   .051  weak at every lag
+  24 A125R2   1950 1999     A     .292         0
+  25 A125R1   1925 1974     B     .135         4      .345   .210
+  25 A125R1   1950 1999     B     .174         6      .271   .096  weak at every lag
+  26 A123R2   1900 1949     A     .273         0
+  26 A123R2   1925 1974     B     .115         2      .300   .186  weak at every lag
+  27 A124R2   1950 1999     A     .261         0
+  29 A17R1    1875 1924     B     .235         7      .366   .130
+  29 A17R1    1900 1949     A     .232         0
+  29 A17R1    1925 1974     B     .181        -5      .280   .099  weak at every lag
+  29 A17R1    1950 1999     B     .290        -4      .383   .093
+  30 A16R1    1950 1999     A     .311         0
+  31 A113R1   1950 1999     A     .288         0
+
+ DESCRIPTIVE STATISTICS: bra033
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 A115R2   1974 2014     41      0      0    .539   3.69   9.05  2.002   .250   .516   1.99   .408   .080   3
+   2 A115R1   1985 2014     30      0      0    .400   3.75  11.46  2.126   .400   .345   2.90   .474   .134   0
+   3 A11R2    1974 2014     41      0      0    .249   7.30  17.88  4.180   .800   .326   1.60   .279   .020   2
+   4 A126R1   1964 2015     52      0      0    .216   5.57  24.04  6.104   .907   .436   4.31   .634   .279   1
+   5 A129R1   1975 2015     41      0      0    .176   4.29  10.87  1.945   .551   .324   2.02   .293  -.144   0
+   6 A129R2   1980 2009     30      0      0    .354   6.86  15.82  2.217   .226   .208   2.01   .267   .011   0
+   7 A135R1   1975 2015     41      0      0    .431   6.52  22.22  4.105   .759   .292   1.76   .308   .049   2
+   8 A135R2   1976 2015     40      0      0    .204   5.61  18.16  3.186   .588   .273   2.02   .314  -.044   2
+   9 A136R1   1961 2015     55      0      0    .431   5.33  12.56  3.311   .873   .304   2.54   .366   .178   0
+  10 A138R1   1967 2015     49      0      0    .427   5.83  18.38  3.362   .543   .307   2.76   .418  -.049   1
+  11 A138R2   1963 2015     53      0      0    .323   4.43   9.28  2.339   .926   .225   1.48   .230  -.150   2
+  12 A141R1   1968 2015     48      0      0    .311   5.94  20.37  4.707   .751   .377   2.78   .439   .041   1
+  13 A141R2   1977 2015     39      0      0    .472   7.90  31.12  7.302   .742   .444   2.08   .466   .014   1
+  14 A151R1   1967 2009     43      0      0    .519   4.08  10.45  1.637   .787   .198   1.31   .179   .108   3
+  15 A151R2   1972 2009     38      0      0    .153   4.01  12.63  2.029   .493   .281   2.31   .334  -.061   1
+  16 A152R1   1979 2016     38      0      0    .262   3.55   7.78  1.660   .714   .267   1.91   .284   .069   2
+  17 A154R1   1973 2009     37      0      0    .345   6.30  33.39  5.227   .628   .338   2.14   .358   .066   0
+  18 A154R2   1973 2016     44      0      0    .422   3.78  23.81  3.794   .685   .437   1.81   .405   .123   1
+  19 A154R3   1968 2016     49      0      0    .436   3.88  13.48  2.547   .853   .327   1.64   .311   .132   0
+  20 A161R1   1953 2016     64      0      0    .426   5.70  12.64  2.510   .831   .192   1.59   .207   .219   1
+  21 A161R2   1960 2016     57      0      0    .444   4.43   7.68  1.515   .635   .234   1.56   .240   .061   1
+  22 A118R2   1916 2014     99      2      1    .238   2.78  10.41  2.164   .772   .347   3.03   .441   .021   1
+  23 A118R3   1920 2014     95      2      0    .420   2.54   9.36  1.865   .569   .451   2.67   .510   .064   1
+  24 A125R2   1900 2014    115      2      2    .203   1.83   9.07  1.399   .702   .373   3.12   .462  -.008   2
+  25 A125R1   1916 2014     99      2      2    .196   2.04   5.23  1.009   .661   .333   1.80   .341   .038   1
+  26 A123R2   1874 1989    116      3      2    .249   1.32   4.62   .863   .132   .511   3.17   .569   .080   0
+  27 A124R2   1940 2014     75      1      1    .320   1.70   6.52  1.466   .609   .514   2.77   .556   .007   1
+  28 A15R3    1800 1904    105      0      0    .438   1.35   3.75   .711   .532   .382   2.30   .398  -.064   3
+  29 A17R1    1871 2013    143      4      4    .208   2.03   6.95  1.179   .540   .408   3.07   .438  -.002   3
+  30 A16R1    1928 2009     82      1      1    .277   1.77   6.72   .966   .380   .444   2.52   .438   .079   0
+  31 A113R1   1945 2009     65      1      1    .260   1.24   6.88   .962   .277   .459   4.72   .671   .086   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1924     18     14    .318   3.47  33.39  2.208   .602   .368   4.72   .409   .043
+
+ DATA CHECKS (rwl.check): bra033
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra033.rwl
+ 31 series, 1924 measurements, 1800-2016, 0.01 mm precision
+ 0 error(s), 2 warning(s), 23 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 447 carriage return(s) against 225 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 23 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file bra033.rwl, MD5 81b85dd65337021723bd08caf218bb57.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

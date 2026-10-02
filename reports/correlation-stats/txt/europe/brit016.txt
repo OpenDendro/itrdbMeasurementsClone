@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: brit016
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit016.rwl
+      MD5 of measurement file: b86460a95aba3043bfe2411863aebf84
+      Date checked           : 01OCT26
+      Beginning year         : 1847
+      Ending year            : 1978
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Shieldaig
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 57.5000 N
+      Longitude              : 5.6200 W
+      Elevation              : 12 m
+
+      Series intercorrelation: 0.496
+      Avg mean sensitivity   : 0.195
+      Avg standard deviation : 0.796
+      Avg autocorrelation    : 0.831
+      Number dated series    : 21
+      Series crossdated      : 18
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 6.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 571011   1909 1978       .52 
+   2 571012   1899 1978       .39 
+   3 571021   1868 1978  .62  .54 
+   4 571022   1860 1978  .59  .51 
+   6 571032   1847 1978  .52  .50 
+   8 571042   1864 1966  .62      
+   9 571051   1859 1978  .51  .40 
+  10 571052   1899 1978       .60 
+  11 571061   1891 1978  .39  .56 
+  12 571062   1883 1978  .57  .40B
+  13 571071   1873 1967  .52      
+  14 571072   1876 1965  .60      
+  15 571081   1874 1978  .33  .21A
+  16 571082   1853 1978  .50  .50 
+  17 571091   1866 1978  .53  .38 
+  19 571101   1877 1976  .70  .47 
+  20 571102   1877 1960  .68      
+  21 571111   1856 1978  .67  .54 
+ Av segment correlation  .56  .47 
+
+ FLAGGED SEGMENTS: brit016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 571062   1925 1974     B     .405        -1      .470   .065
+  15 571081   1925 1974     A     .210         0
+
+ DESCRIPTIVE STATISTICS: brit016
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 571011   1909 1978     70      1      0    .479   2.81   4.92   .978   .805   .183   1.41   .189  -.009   2
+   2 571012   1899 1978     80      1      0    .335   2.93   4.85   .858   .734   .182   1.48   .180  -.083   3
+   3 571021   1868 1978    111      2      0    .628   2.02   4.46   .662   .736   .184   1.43   .181   .028   1
+   4 571022   1860 1978    119      2      0    .577   1.63   5.07   .871   .833   .208   1.56   .219  -.005   1
+   5 571031   1873 1978    105                         1.56   3.98   .690   .847   .187                         
+   6 571032   1847 1978    132      2      0    .472   1.41   5.57  1.152   .934   .230   1.71   .245   .024   1
+   7 571041   1866 1978    112                         1.77   4.33   .873   .858   .196                         
+   8 571042   1864 1966    103      1      0    .549   1.61   5.08   .954   .900   .198   1.53   .206   .028   3
+   9 571051   1859 1978    120      2      0    .418   1.84   4.23   .732   .832   .166   1.64   .187   .015   1
+  10 571052   1899 1978     80      1      0    .600   1.45   3.44   .630   .854   .202   1.56   .214  -.033   3
+  11 571061   1891 1978     88      2      0    .337   1.97   3.61   .739   .818   .196   1.51   .207   .217   1
+  12 571062   1883 1978     96      2      1    .454   1.34   3.15   .763   .929   .186   1.75   .205   .045   3
+  13 571071   1873 1967     95      1      0    .514   1.70   3.34   .583   .848   .149   1.34   .150  -.014   2
+  14 571072   1876 1965     90      1      0    .567   2.01   3.91   .778   .877   .158   1.41   .161  -.034   1
+  15 571081   1874 1978    105      2      1    .385   1.25   2.08   .379   .755   .189   1.50   .183  -.018   3
+  16 571082   1853 1978    126      2      0    .459   1.50   3.48   .638   .828   .190   1.51   .207  -.007   3
+  17 571091   1866 1978    113      2      0    .389   1.90   3.39   .597   .808   .174   1.34   .170  -.015   2
+  18 571092   1868 1978    110                         1.53   2.72   .530   .762   .187                         
+  19 571101   1877 1976    100      2      0    .620   2.06   4.37   .894   .746   .269   1.68   .258  -.003   2
+  20 571102   1877 1960     84      1      0    .586   2.74   5.95  1.122   .822   .189   1.52   .191  -.037   3
+  21 571111   1856 1978    123      2      0    .546   2.19   5.71  1.251   .884   .238   1.53   .224  -.012   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2162     29      2    .496   1.83   5.95   .796   .831   .195   1.75   .200   .006
+
+ DATA CHECKS (rwl.check): brit016
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit016.rwl
+ 21 series, 2162 measurements, 1847-1978, 0.01 mm precision
+ 0 error(s), 3 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (3)
+     571031: no measurement for 1924, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     571041: no measurement for 1959, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     571092: no measurement for 1889, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file brit016.rwl, MD5 b86460a95aba3043bfe2411863aebf84.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 571031 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 571041 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 571092 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

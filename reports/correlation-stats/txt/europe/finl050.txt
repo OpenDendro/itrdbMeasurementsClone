@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: finl050
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : finl050.rwl
+      MD5 of measurement file: 6bc943012b7d0e4aac90b2f6dc754196
+      Date checked           : 01OCT26
+      Beginning year         : 1551
+      Ending year            : 1832
+      Principal investigators: Meriläinen, J.; Lindholm, M.; Timonen, M.
+      Site name              : Kosula Larinsaari Juuka
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 63.1800 N
+      Longitude              : 29.5200 E
+      Elevation              : 131 m
+
+      Series intercorrelation: 0.498
+      Avg mean sensitivity   : 0.165
+      Avg standard deviation : 0.390
+      Avg autocorrelation    : 0.881
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: finl050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 
+                        1649 1674 1699 1724 1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 OKC0101A 1698 1829                      .48  .57  .49  .47 
+   2 OKC0101B 1709 1829                           .43  .48  .43 
+   3 OKC0104A 1565 1823  .67  .55  .57  .62  .59  .44  .42      
+   4 OKC0104B 1559 1678  .61  .65                               
+   5 OKC0105A 1656 1826                 .33  .21B .52  .56  .44 
+   6 OKC0105B 1650 1813                 .53  .63  .64  .58      
+   7 OKC0107A 1608 1826       .41  .52  .49  .58  .61  .47  .35 
+   8 OKC0108A 1580 1823  .64  .60  .50  .59  .65  .57  .45      
+   9 OKC0108B 1563 1802  .52  .50  .66  .76  .67  .55  .50      
+  10 OKC0109B 1551 1795  .42  .41  .62  .58  .30A .31A          
+  11 OKC0111A 1631 1831            .64  .62  .59  .64  .66  .57 
+  12 OKC0111B 1672 1829                 .52  .45  .52  .61  .56 
+  13 OKC0114A 1639 1794            .40  .48  .50  .58           
+  14 OKC0116A 1579 1832  .41  .43  .57  .64  .56  .46  .40  .43 
+ Av segment correlation  .55  .51  .56  .56  .52  .53  .51  .46 
+
+ FLAGGED SEGMENTS: finl050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 OKC0105A 1700 1749     B     .211         1      .283   .072  weak at every lag
+  10 OKC0109B 1700 1749     A     .303         0
+  10 OKC0109B 1725 1774     A     .313         0
+
+ DESCRIPTIVE STATISTICS: finl050
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OKC0101A 1698 1829    132      4      0    .490   1.54   4.06   .707   .907   .169   1.56   .175   .005   2
+   2 OKC0101B 1709 1829    121      3      0    .404   1.46   3.32   .607   .873   .183   1.44   .185   .013   2
+   3 OKC0104A 1565 1823    259      7      0    .510    .62   3.75   .500   .955   .140   1.52   .149   .028   1
+   4 OKC0104B 1559 1678    120      2      0    .589   1.05   3.58   .765   .970   .126   1.43   .121   .011   1
+   5 OKC0105A 1656 1826    171      5      1    .408    .63   1.32   .193   .712   .189   1.62   .191  -.004   2
+   6 OKC0105B 1650 1813    164      4      0    .518    .56    .99   .147   .697   .156   1.58   .170  -.001   2
+   7 OKC0107A 1608 1826    219      7      0    .455    .79   1.63   .219   .788   .149   1.42   .151   .005   3
+   8 OKC0108A 1580 1823    244      7      0    .577    .52   2.16   .361   .943   .155   1.53   .167  -.014   1
+   9 OKC0108B 1563 1802    240      7      0    .554    .71   3.36   .620   .971   .141   1.51   .150  -.009   1
+  10 OKC0109B 1551 1795    245      6      2    .415    .49   1.74   .371   .954   .184   1.82   .197   .003   1
+  11 OKC0111A 1631 1831    201      6      0    .574    .64   2.05   .364   .905   .187   1.43   .197   .011   1
+  12 OKC0111B 1672 1829    158      5      0    .530    .52    .95   .169   .777   .182   1.54   .189  -.027   1
+  13 OKC0114A 1639 1794    156      4      0    .456    .56   1.51   .227   .853   .167   1.53   .175   .048   1
+  14 OKC0116A 1579 1832    254      8      0    .473    .56   1.75   .355   .912   .191   1.62   .183  -.007   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2684     75      3    .498    .71   4.06   .390   .881   .165   1.82   .172   .004
+
+ DATA CHECKS (rwl.check): finl050
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/finl050.rwl
+ 14 series, 2684 measurements, 1551-1832, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file finl050.rwl, MD5 6bc943012b7d0e4aac90b2f6dc754196.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

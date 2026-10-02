@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: pola014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pola014.rwl
+      MD5 of measurement file: 9f766383485416b2de35d485907828a1
+      Date checked           : 01OCT26
+      Beginning year         : 1713
+      Ending year            : 1986
+      Principal investigators: Wazny, T.
+      Site name              : Torun
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 53.0800 N
+      Longitude              : 18.5500 E
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.594
+      Avg mean sensitivity   : 0.191
+      Avg standard deviation : 0.472
+      Avg autocorrelation    : 0.671
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 3.74
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pola014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 0699001A 1801 1986       .68  .52  .56  .68  .57 
+   2 0699002A 1766 1957  .79  .70  .71  .75  .70      
+   4 0699003A 1794 1986  .49  .47  .41  .53  .63  .56 
+   5 0699004A 1827 1986            .50  .54  .41  .36 
+   6 0699005A 1722 1986  .77  .67  .61  .57  .51  .41 
+   7 0699006A 1770 1966  .74  .81  .70  .56  .66      
+   8 0699007A 1713 1964  .71  .63  .67  .66  .62      
+  10 0699008F 1784 1986  .64  .65  .63  .69  .71  .67 
+  11 0699009A 1741 1986  .57  .57  .57  .69  .59  .55 
+  12 0699010A 1800 1986       .56  .66  .69  .77  .72 
+  13 0699011A 1793 1986  .64  .63  .65  .50  .51  .56 
+  14 0699012A 1779 1986  .61  .60  .62  .61  .65  .66 
+  15 0699013A 1770 1986  .65  .55  .48B .47  .31A .27B
+  16 0699014A 1798 1986  .78  .75  .56  .58  .70  .74 
+  17 0699015A 1742 1986  .69  .62  .66  .48  .45  .49 
+  18 0699017A 1796 1986  .62  .64  .64  .60  .62  .60 
+  19 0699018A 1729 1986  .68  .45  .23B .48  .52  .44 
+  20 0699019A 1770 1986  .70  .72  .49  .48  .66  .57 
+  21 0699020A 1732 1986  .81  .70  .69  .62  .55  .49 
+ Av segment correlation  .68  .63  .58  .58  .59  .54 
+
+ FLAGGED SEGMENTS: pola014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 0699013A 1850 1899     B     .479        -6      .493   .013
+  15 0699013A 1900 1949     A     .313         0
+  15 0699013A 1925 1974     B     .268         4      .287   .019  weak at every lag
+  19 0699018A 1850 1899     B     .231         7      .287   .057  weak at every lag
+
+ DESCRIPTIVE STATISTICS: pola014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 0699001A 1801 1986    186      5      0    .616   1.81   3.14   .436   .515   .181   1.49   .178   .004   1
+   2 0699002A 1766 1957    192      5      0    .701   1.49   3.77   .601   .760   .204   1.81   .219  -.026   1
+   3 0699002B 1972 1986     15      0      0    .792   1.14   1.50   .277   .190   .276   1.33   .227   .082   0
+   4 0699003A 1794 1986    193      6      0    .517   1.63   3.45   .494   .624   .196   1.93   .209   .035   1
+   5 0699004A 1827 1986    160      4      0    .474   1.93   3.41   .542   .620   .189   1.47   .161  -.038   0
+   6 0699005A 1722 1986    265      6      0    .483   1.24   4.18   .590   .794   .212   2.02   .221  -.007   3
+   7 0699006A 1770 1966    197      5      0    .687   1.48   4.24   .549   .716   .197   1.67   .196  -.001   1
+   8 0699007A 1713 1964    252      5      0    .626   1.07   2.89   .390   .783   .190   1.64   .196  -.039   1
+   9 0699008B 1723 1781     59      0      0    .636   1.75   3.02   .528   .763   .172   1.35   .171   .021   1
+  10 0699008F 1784 1986    203      6      0    .636    .97   2.24   .221   .569   .140   1.62   .144  -.017   3
+  11 0699009A 1741 1986    246      6      0    .610   1.32   3.21   .416   .797   .152   1.53   .153  -.005   2
+  12 0699010A 1800 1986    187      5      0    .682   1.61   3.31   .571   .725   .205   1.77   .217   .013   1
+  13 0699011A 1793 1986    194      6      0    .602   1.73   3.20   .446   .608   .187   1.57   .184  -.000   3
+  14 0699012A 1779 1986    208      6      0    .562   1.33   2.88   .356   .504   .196   1.57   .178   .025   0
+  15 0699013A 1770 1986    217      6      3    .461   1.40   3.18   .392   .648   .182   1.63   .173   .004   1
+  16 0699014A 1798 1986    189      6      0    .711   1.77   3.81   .621   .648   .236   1.77   .236  -.035   1
+  17 0699015A 1742 1986    245      6      0    .560   1.41   6.61   .689   .756   .197   2.01   .203  -.004   1
+  18 0699017A 1796 1986    191      6      0    .634   1.52   3.11   .492   .704   .180   1.72   .182  -.034   3
+  19 0699018A 1729 1986    258      6      1    .551   1.01   3.13   .369   .729   .195   1.84   .197   .000   1
+  20 0699019A 1770 1986    217      6      0    .641   1.12   2.48   .294   .558   .187   1.93   .193   .013   2
+  21 0699020A 1732 1986    255      6      0    .568   1.31   6.12   .526   .589   .204   2.91   .232   .011   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4129    107      4    .594   1.41   6.61   .472   .671   .191   2.91   .194  -.004
+
+ DATA CHECKS (rwl.check): pola014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/pola014.rwl
+ 21 series, 4129 measurements, 1713-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file pola014.rwl, MD5 9f766383485416b2de35d485907828a1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

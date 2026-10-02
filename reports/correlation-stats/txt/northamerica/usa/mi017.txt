@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: mi017
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mi017.rwl
+      MD5 of measurement file: 39b4d1fd81b0dba864f8964c6c1af62f
+      Date checked           : 01OCT26
+      Beginning year         : 1862
+      Ending year            : 2002
+      Principal investigators: Wyse, T.C.; Goebel, P.C.
+      Site name              : Platte Plains
+      Species information    : PIRE Pinus resinosa Aiton
+      Latitude               : 44.7200 N
+      Longitude              : 86.0800 W
+      Elevation              : 188 m
+
+      Series intercorrelation: 0.463
+      Avg mean sensitivity   : 0.234
+      Avg standard deviation : 0.896
+      Avg autocorrelation    : 0.771
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 11.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mi017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 13-4     1891 2002  .10B .29A .42 
+   2 27-4     1930 2002            .51 
+   3 2-4      1916 2002       .43  .53 
+   4 50-3     1920 2002       .46  .42 
+   5 40-2     1921 2002       .57  .68 
+   6 39-3     1927 2002            .56 
+   7 47-2     1925 2002            .63 
+   8 42-3     1931 2002            .61 
+   9 48-1     1925 2002            .54 
+  10 34-1     1923 2002       .58  .54 
+  11 16-3     1926 2002            .45 
+  12 41-1     1931 2002            .55 
+  13 48-3     1924 2002       .40  .62 
+  14 54-2     1928 2002            .37 
+  15 41-3     1862 2002  .25B .41  .64 
+  16 18-3     1923 2002       .49  .50 
+  17 15-3     1867 2002  .40  .48  .53 
+  18 40-1     1921 2002       .36  .59 
+  19 32-1     1898 2002  .17B .50  .55 
+ Av segment correlation  .23  .45  .54 
+
+ FLAGGED SEGMENTS: mi017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 13-4     1900 1949     B     .101        -8      .256   .155  weak at every lag
+   1 13-4     1925 1974     A     .293         0
+  15 41-3     1900 1949     B     .253        -3      .341   .088
+  19 32-1     1900 1949     B     .174        -6      .366   .192
+
+ DESCRIPTIVE STATISTICS: mi017
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 13-4     1891 2002    112      3      2    .314    .98   3.47   .803   .930   .222   1.75   .239  -.015   1
+   2 27-4     1930 2002     73      1      0    .506   1.09   2.75   .432   .639   .220   1.90   .252   .023   1
+   3 2-4      1916 2002     87      2      0    .560   2.07   5.71  1.108   .875   .203   1.60   .219   .024   1
+   4 50-3     1920 2002     83      2      0    .496   1.31   2.98   .659   .847   .225   1.49   .209  -.018   1
+   5 40-2     1921 2002     82      2      0    .583   1.97   4.61  1.107   .878   .234   1.50   .242   .091   2
+   6 39-3     1927 2002     76      1      0    .600   2.33   4.36   .938   .735   .212   1.47   .207  -.005   2
+   7 47-2     1925 2002     78      1      0    .403   1.51   3.16   .544   .614   .223   2.26   .276   .003   1
+   8 42-3     1931 2002     72      1      0    .644   1.84   3.76   .755   .729   .237   1.61   .232   .071   1
+   9 48-1     1925 2002     78      1      0    .539   2.17   5.24  1.117   .777   .250   1.75   .227   .000   1
+  10 34-1     1923 2002     80      2      0    .562   1.57   3.88   .567   .585   .223   1.93   .241  -.002   1
+  11 16-3     1926 2002     77      1      0    .486   1.84   4.02   .750   .697   .250   1.85   .258   .007   1
+  12 41-1     1931 2002     72      1      0    .557   2.28   3.92   .721   .538   .258   1.46   .233   .073   0
+  13 48-3     1924 2002     79      2      0    .527   2.61   6.36  1.650   .908   .211   1.51   .205  -.025   1
+  14 54-2     1928 2002     75      1      0    .391   2.47   5.33  1.046   .795   .217   1.67   .227   .067   1
+  15 41-3     1862 2002    141      3      1    .327   1.53   5.29   .992   .826   .279   1.80   .281   .008   3
+  16 18-3     1923 2002     80      2      0    .532   2.22   5.59  1.071   .743   .244   1.64   .253  -.016   2
+  17 15-3     1867 2002    136      3      0    .305   1.38   3.54   .839   .818   .269   1.93   .300   .036   1
+  18 40-1     1921 2002     82      2      0    .435   2.47   6.18  1.467   .868   .216   1.55   .227   .039   1
+  19 32-1     1898 2002    105      3      1    .366   1.47   2.58   .493   .683   .216   1.72   .223   .078   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1668     34      4    .463   1.80   6.36   .896   .771   .234   2.26   .243   .023
+
+ DATA CHECKS (rwl.check): mi017
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mi017.rwl
+ 19 series, 1668 measurements, 1862-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mi017.rwl, MD5 39b4d1fd81b0dba864f8964c6c1af62f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

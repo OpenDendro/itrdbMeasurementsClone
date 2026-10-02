@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: ak20
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak20.rwl
+      MD5 of measurement file: 3868b535de7ecf75ab3a48f76b013598
+      Date checked           : 01OCT26
+      Beginning year         : 1616
+      Ending year            : 1986
+      Principal investigators: Kaiser, K.F.
+      Site name              : Chitina (peat Bog)
+      Species information    : PCMA Picea mariana (Mill.) Britton, Sterns, & Poggenb.
+      Latitude               : 61.6700 N
+      Longitude              : 144.6700 W
+      Elevation              : 150 m
+
+      Series intercorrelation: 0.561
+      Avg mean sensitivity   : 0.157
+      Avg standard deviation : 0.146
+      Avg autocorrelation    : 0.873
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 4, B 8; 3 of the B weak at every lag)
+      Pct problem segments   : 12.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak20
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CHIT0010 1620 1986  .48  .43  .46  .33B .11B .39  .62  .38  .25A .31A
+   2 CHIT0020 1787 1986                      .41  .56  .72  .64  .58  .51 
+   3 CHIT0040 1801 1986                           .50  .56  .48  .49  .60 
+   4 CHIT0050 1805 1985                           .49  .60  .62  .47  .35 
+   5 CHIT0060 1719 1986       .72  .56  .20B .16B .39  .49  .51  .43  .38B
+   6 CHIT0070 1801 1986                           .26A .44  .61  .62  .61 
+   7 CHIT0090 1813 1986                           .49  .57  .59  .39  .50 
+   8 CHIT0100 1827 1986                                .49  .53  .57  .68 
+   9 CHIT0110 1793 1986                      .12B .55  .73  .66  .57  .60 
+  10 CHIT0120 1844 1986                                .82  .77  .59  .67 
+  11 CHIT0130 1819 1986                           .35B .71  .65  .30A .50 
+  12 CHIT0140 1848 1986                                .68  .44  .33  .40 
+  13 CHIT0150 1803 1986                           .38  .49  .38  .48  .60 
+  14 CHIT0160 1796 1986                      .30B .61  .66  .69  .57  .65 
+  15 CHIT0170 1813 1986                           .65  .70  .70  .57  .67 
+  16 CHITCH00 1616 1986  .95  .98  .93  .83  .90  .96  .98  .98  .97  .98 
+ Av segment correlation  .72  .71  .65  .45  .33  .51  .64  .60  .51  .56 
+
+ FLAGGED SEGMENTS: ak20
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CHIT0010 1775 1824     B     .326         5      .345   .019
+   1 CHIT0010 1800 1849     B     .110        -4      .361   .251
+   1 CHIT0010 1900 1949     A     .247         0
+   1 CHIT0010 1925 1974     A     .310         0
+   5 CHIT0060 1775 1824     B     .204         2      .235   .031  weak at every lag
+   5 CHIT0060 1800 1849     B     .157        -4      .185   .028  weak at every lag
+   5 CHIT0060 1925 1974     B     .383         5      .421   .038
+   6 CHIT0070 1825 1874     A     .263         0
+   9 CHIT0110 1800 1849     B     .120        -5      .250   .129  weak at every lag
+  11 CHIT0130 1825 1874     B     .350        -9      .360   .010
+  11 CHIT0130 1900 1949     A     .304         0
+  14 CHIT0160 1800 1849     B     .298        -3      .374   .076
+
+ DESCRIPTIVE STATISTICS: ak20
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CHIT0010 1620 1986    367     10      4    .520    .20   1.40   .150   .902   .153   2.06   .165  -.016   3
+   2 CHIT0020 1787 1986    200      6      0    .510    .31    .57   .110   .835   .157   1.58   .159   .000   1
+   3 CHIT0040 1801 1986    186      5      0    .485    .22    .55   .106   .892   .175   2.10   .194  -.029   1
+   4 CHIT0050 1805 1985    181      5      0    .368    .26    .60   .112   .872   .149   1.80   .166   .000   2
+   5 CHIT0060 1719 1986    268      9      3    .497    .19    .74   .129   .925   .159   2.73   .213   .037   1
+   6 CHIT0070 1801 1986    186      5      1    .452    .25    .48   .074   .785   .157   1.58   .167   .024   1
+   7 CHIT0090 1813 1986    174      5      0    .511    .28    .56   .114   .855   .160   1.63   .171   .027   1
+   8 CHIT0100 1827 1986    160      4      0    .502    .39    .78   .162   .883   .162   1.76   .186   .130   1
+   9 CHIT0110 1793 1986    194      6      1    .490    .41    .89   .197   .879   .190   1.89   .200   .016   1
+  10 CHIT0120 1844 1986    143      4      0    .723    .40    .72   .118   .666   .178   1.46   .177   .011   1
+  11 CHIT0130 1819 1986    168      5      2    .476    .29    .64   .107   .872   .138   1.46   .139   .026   1
+  12 CHIT0140 1848 1986    139      4      0    .445    .45   1.00   .194   .890   .141   1.44   .158   .056   1
+  13 CHIT0150 1803 1986    184      5      0    .463    .32   1.00   .207   .930   .165   1.59   .180  -.008   2
+  14 CHIT0160 1796 1986    191      6      1    .568    .37    .82   .146   .820   .187   1.79   .193  -.015   1
+  15 CHIT0170 1813 1986    174      5      0    .666    .47   1.19   .239   .925   .151   1.55   .156   .014   3
+  16 CHITCH00 1616 1986    371     10      0    .960    .27   1.40   .167   .915   .126   2.03   .146  -.001   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3286     94     12    .561    .30   1.40   .146   .873   .157   2.73   .173   .013
+
+ DATA CHECKS (rwl.check): ak20
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak20.rwl
+ 16 series, 3286 measurements, 1616-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ak20.rwl, MD5 3868b535de7ecf75ab3a48f76b013598.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

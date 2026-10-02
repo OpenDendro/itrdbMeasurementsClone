@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: swit386
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit386.rwl
+      MD5 of measurement file: 91e9e7814e9f372e1e29943a78fc7d59
+      Date checked           : 01OCT26
+      Beginning year         : 1816
+      Ending year            : 2009
+      Principal investigators: Grundmann, N.; Bigler, C.; Rigling, A.
+      Site name              : Felsberg Brennten
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 46.8575 N
+      Longitude              : 9.4714 E
+      Elevation              : 1400 m
+
+      Series intercorrelation: 0.535
+      Avg mean sensitivity   : 0.217
+      Avg standard deviation : 0.683
+      Avg autocorrelation    : 0.863
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 5, B 5; 5 of the B weak at every lag)
+      Pct problem segments   : 17.54
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit386
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 FB.W01   1891 2009  .30A .53  .42 
+   2 FB.W05   1842 2009  .56  .53  .69 
+   3 FB.W06B  1842 2009  .37  .48  .45 
+   4 FB.W07   1841 2009  .59  .53  .59 
+   5 FB.W08   1840 2009  .58  .66  .60 
+   6 FB.W09   1845 2009  .57  .52  .55 
+   7 FB.W10   1834 2009  .58  .47  .46 
+   8 FB.W11   1847 2009  .49  .59  .70 
+   9 FB.W12   1855 2009  .32A .40  .63 
+  10 FB.W13   1870 2009  .45  .32A .50 
+  11 FB.W14   1847 2009  .48  .53  .61 
+  12 FB.W15   1848 2009  .53  .68  .75 
+  13 FB.W17   1839 2009  .54  .36  .52 
+  14 FB.W21   1876 2009  .32A .39  .57 
+  15 FB.W22   1863 2009  .49  .44  .49 
+  16 FB.W23   1851 2009  .53  .51  .57 
+  17 FB.W24   1856 2009  .59  .21B .17B
+  18 FB.W25   1816 2009  .29A .25B .36 
+  19 FB.W26   1855 2009  .27B .25B .43 
+ Av segment correlation  .46  .46  .53 
+
+ FLAGGED SEGMENTS: swit386
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 FB.W01   1900 1949     A     .300         0
+   9 FB.W12   1900 1949     A     .317         0
+  10 FB.W13   1925 1974     A     .321         0
+  14 FB.W21   1900 1949     A     .315         0
+  17 FB.W24   1925 1974     B     .209         8      .261   .051  weak at every lag
+  17 FB.W24   1950 1999     B     .166        -4      .213   .048  weak at every lag
+  18 FB.W25   1900 1949     A     .289         0
+  18 FB.W25   1925 1974     B     .253         1      .279   .027  weak at every lag
+  19 FB.W26   1900 1949     B     .266         2      .323   .057  weak at every lag
+  19 FB.W26   1925 1974     B     .248         7      .289   .042  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit386
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FB.W01   1891 2009    119      3      1    .412   1.25   2.90   .585   .781   .259   1.56   .228   .026   2
+   2 FB.W05   1842 2009    168      3      0    .627   1.09   4.16   .606   .853   .208   1.59   .205   .014   1
+   3 FB.W06B  1842 2009    168      3      0    .504   1.55   4.63   .681   .834   .201   1.64   .215  -.014   2
+   4 FB.W07   1841 2009    169      3      0    .586   1.23   3.10   .716   .928   .188   1.71   .190   .001   2
+   5 FB.W08   1840 2009    170      3      0    .599   1.14   5.33   .950   .946   .203   1.54   .200   .014   1
+   6 FB.W09   1845 2009    165      3      0    .604   1.14   2.66   .454   .741   .209   1.48   .196   .016   1
+   7 FB.W10   1834 2009    176      3      0    .500    .94   4.92   .984   .930   .262   1.97   .275   .009   1
+   8 FB.W11   1847 2009    163      3      0    .615   1.25   3.58   .762   .921   .168   1.55   .176   .013   2
+   9 FB.W12   1855 2009    155      3      1    .550    .94   4.14   .936   .947   .254   1.70   .256   .011   1
+  10 FB.W13   1870 2009    140      3      1    .474   1.57   3.44   .552   .764   .192   1.54   .204   .052   1
+  11 FB.W14   1847 2009    163      3      0    .601    .69   3.17   .695   .926   .279   2.17   .287  -.010   1
+  12 FB.W15   1848 2009    162      3      0    .653   1.12   4.05   .707   .913   .196   1.51   .196  -.012   3
+  13 FB.W17   1839 2009    171      3      0    .527    .93   3.43   .714   .930   .205   1.60   .216  -.008   2
+  14 FB.W21   1876 2009    134      3      1    .460   1.40   2.70   .562   .856   .175   1.61   .191   .045   1
+  15 FB.W22   1863 2009    147      3      0    .471    .58   2.35   .381   .815   .299   2.28   .321  -.003   3
+  16 FB.W23   1851 2009    159      3      0    .606    .94   2.59   .495   .836   .208   1.58   .199   .015   1
+  17 FB.W24   1856 2009    154      3      2    .433    .74   1.42   .238   .632   .229   1.61   .233  -.011   3
+  18 FB.W25   1816 2009    194      3      2    .454   1.08   3.73   .671   .841   .236   2.09   .258   .006   2
+  19 FB.W26   1855 2009    155      3      2    .438   1.43   4.68  1.173   .955   .162   1.48   .165   .045   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3032     57     10    .535   1.10   5.33   .683   .863   .217   2.28   .222   .010
+
+ DATA CHECKS (rwl.check): swit386
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit386.rwl
+ 19 series, 3032 measurements, 1816-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file swit386.rwl, MD5 91e9e7814e9f372e1e29943a78fc7d59.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

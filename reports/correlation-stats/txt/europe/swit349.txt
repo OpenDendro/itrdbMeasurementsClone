@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: swit349
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit349.rwl
+      MD5 of measurement file: be72bad8304568ceb83614ad20733213
+      Date checked           : 01OCT26
+      Beginning year         : 1895
+      Ending year            : 1992
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Stockmatthubel
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 47.2631 N
+      Longitude              : 7.8864 E
+      Elevation              : 460 m
+
+      Series intercorrelation: 0.297
+      Avg mean sensitivity   : 0.320
+      Avg standard deviation : 1.559
+      Avg autocorrelation    : 0.807
+      Number dated series    : 6
+      Series crossdated      : 4
+      Segment length tested  : 48
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 60.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit349
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  48-year dated segments, lagged  24 years
+ Flags:  A = correlation under   .3348 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1924 
+                        1947 1971 
+ --- -------- ---------  ---- ---- 
+   3 VW271003 1895 1992  .31A .55 
+   4 VW305004 1916 1984       .14B
+   5 VW675008 1895 1992  .29A .48 
+ Av segment correlation  .30  .39 
+
+ FLAGGED SEGMENTS: swit349
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 VW271003 1900 1947     A     .306         0
+   4 VW305004 1924 1971     B     .144         4      .222   .078  weak at every lag
+   5 VW675008 1900 1947     A     .286         0
+
+ DESCRIPTIVE STATISTICS: swit349
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 VW234008 1899 1992     94                         1.33   4.57  1.158   .864   .374                         
+   2 VW234504 1928 1992     65      0      0    .449   1.48   3.11   .763   .698   .290   1.51   .263  -.016   1
+   3 VW271003 1895 1992     98      2      1    .312   2.82   8.45  1.828   .837   .347   1.79   .321   .086   1
+   4 VW305004 1916 1984     69      1      1    .160   3.10   7.38  1.902   .828   .323   3.14   .473   .482   1
+   5 VW675008 1895 1992     98      2      1    .278   3.07   7.38  1.440   .780   .235   1.95   .248   .060   1
+   6 VW767004 1903 1991     89                         3.21  10.79  2.132   .809   .347                         
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            513      5      3    .297   2.53  10.79  1.559   .807   .320   3.14   .320   .141
+
+ DATA CHECKS (rwl.check): swit349
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit349.rwl
+ 6 series, 513 measurements, 1895-1992, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit349.rwl, MD5 be72bad8304568ceb83614ad20733213.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3348 for 48-year segments.
+ Segments: 48 years, lagged 24, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series VW234008 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series VW767004 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 48 years: the record is only 98 years long.

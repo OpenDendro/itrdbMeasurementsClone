@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: neth005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : neth005.rwl
+      MD5 of measurement file: 9ea6f161244cfcd148c34253affb4fee
+      Date checked           : 01OCT26
+      Beginning year         : 1834
+      Ending year            : 2006
+      Principal investigators: Jansma, E.; Van Rijn, P.
+      Site name              : Empel Village
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 51.7200 N
+      Longitude              : 5.3300 E
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.773
+      Avg autocorrelation    : 0.679
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: neth005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 EMP041   1881 1977  .40  .36      
+   2 EMP051   1845 1975  .53  .53      
+   3 EMP061   1844 1974  .48  .57      
+   6 EMP111   1902 2000       .59  .47 
+   7 EMP121   1901 2006       .62  .53 
+ Av segment correlation  .47  .53  .50 
+
+ FLAGGED SEGMENTS: neth005
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: neth005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EMP041   1881 1977     97      2      0    .428   1.24   2.75   .578   .763   .255   1.55   .257   .022   1
+   2 EMP051   1845 1975    131      2      0    .514   2.15   5.12   .928   .801   .208   1.69   .236   .027   1
+   3 EMP061   1844 1974    131      2      0    .528   2.07   4.12   .795   .735   .225   1.69   .238   .038   1
+   4 EMP071   1834 1913     80      0      0    .626   1.71   4.43   .698   .638   .279   2.08   .298   .022   1
+   5 EMP101   1930 1984     55      0      0    .538   2.86   4.98   .696   .451   .200   1.47   .196  -.016   2
+   6 EMP111   1902 2000     99      2      0    .474   2.58   6.07   .970   .696   .208   2.01   .225  -.013   2
+   7 EMP121   1901 2006    106      2      0    .530   2.39   5.08   .755   .663   .184   1.78   .196   .032   1
+   8 EMP151   1849 1915     67      0      0    .686   2.37   4.96   .845   .715   .223   1.50   .226  -.010   3
+   9 EMP161   1849 1931     83      0      0    .611   1.82   3.26   .575   .463   .273   1.68   .264  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            849     10      0    .539   2.10   6.07   .773   .679   .227   2.08   .238   .015
+
+ DATA CHECKS (rwl.check): neth005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/neth005.rwl
+ 9 series, 849 measurements, 1834-2006, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file neth005.rwl, MD5 9ea6f161244cfcd148c34253affb4fee.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

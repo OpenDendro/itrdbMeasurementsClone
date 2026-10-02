@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: germ090
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ090.rwl
+      MD5 of measurement file: 6cdbd49cea366af72af5f464b1e5f691
+      Date checked           : 01OCT26
+      Beginning year         : 1649
+      Ending year            : 1838
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Am Olberg Str. 3+5 1 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.543
+      Avg mean sensitivity   : 0.228
+      Avg standard deviation : 0.765
+      Avg autocorrelation    : 0.736
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 6.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ090
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 OBF02A   1672 1816  .61  .55  .76      
+   2 OBF03A   1675 1816  .69  .56  .75      
+   3 OBF05A   1649 1806  .40  .47  .78      
+   4 OBF08A   1759 1826                 .51 
+   6 OBF10A   1772 1829                 .40 
+   8 OBF17A   1755 1837                 .76 
+   9 OBF17B   1755 1834                 .65 
+  10 OBF18A   1742 1820            .68      
+  11 OBF18B   1742 1817            .69      
+  12 OBF19A   1726 1820            .69      
+  13 OBF19B   1726 1817            .56      
+  14 OBF21A   1753 1838                 .58 
+  15 OBF21B   1753 1831                 .49 
+  16 OBB03A   1722 1819       .32A .50      
+  17 OBB03B   1722 1832       .12B .47  .66 
+  18 OBB03C   1722 1828       .55  .53  .62 
+  27 OBB11A   1765 1838                 .43 
+  28 OBB11B   1765 1833                 .49 
+ Av segment correlation  .57  .43  .64  .56 
+
+ FLAGGED SEGMENTS: germ090
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 OBB03A   1725 1774     A     .322         0
+  17 OBB03B   1725 1774     B     .124         1      .276   .152  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ090
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OBF02A   1672 1816    145      3      0    .707    .96   2.56   .444   .593   .305   2.22   .305   .001   1
+   2 OBF03A   1675 1816    142      3      0    .725   1.02   2.40   .406   .565   .290   1.88   .270  -.019   3
+   3 OBF05A   1649 1806    158      3      0    .626    .83   2.56   .441   .800   .270   1.96   .264   .007   2
+   4 OBF08A   1759 1826     68      1      0    .564   2.56   5.11   .974   .779   .201   1.36   .185  -.007   1
+   5 OBF08B   1759 1819     61      0      0    .595   2.67   5.21  1.221   .846   .216   1.40   .189   .165   0
+   6 OBF10A   1772 1829     58      1      0    .391   3.07   6.25  1.421   .895   .172   1.44   .169   .011   1
+   7 OBF10B   1772 1820     49      0      0    .440   2.59   5.26  1.061   .868   .170   1.28   .162  -.052   1
+   8 OBF17A   1755 1837     83      1      0    .340   2.44   3.79   .757   .695   .231   1.64   .233  -.015   1
+   9 OBF17B   1755 1834     80      1      0    .299   2.28   4.02   .730   .776   .199   1.55   .217  -.027   1
+  10 OBF18A   1742 1820     79      1      0    .661   2.51   5.20  1.175   .814   .237   1.65   .235  -.032   1
+  11 OBF18B   1742 1817     76      1      0    .685   2.45   5.52  1.052   .710   .272   1.64   .241   .026   3
+  12 OBF19A   1726 1820     95      1      0    .603   2.14   5.22   .936   .754   .236   1.59   .225  -.001   3
+  13 OBF19B   1726 1817     92      1      0    .576   2.37   5.02   .858   .709   .219   1.56   .203   .005   2
+  14 OBF21A   1753 1838     86      1      0    .610   1.43   2.86   .453   .603   .222   1.41   .208   .001   1
+  15 OBF21B   1753 1831     79      1      0    .568   1.31   3.30   .566   .750   .218   1.49   .205   .098   0
+  16 OBB03A   1722 1819     98      2      1    .342   1.43   3.46   .810   .822   .248   1.96   .288  -.007   3
+  17 OBB03B   1722 1832    111      3      1    .315   1.64   3.35   .821   .802   .261   2.44   .320  -.040   2
+  18 OBB03C   1722 1828    107      3      0    .560   1.54   3.68   .637   .762   .253   1.63   .256  -.052   3
+  19 OBB04A   1777 1826     50      0      0    .399   2.81   4.11   .647   .565   .179   1.29   .161   .125   1
+  20 OBB04B   1777 1837     61      0      0    .464   2.54   4.04   .855   .790   .172   1.47   .158   .024   2
+  21 OBB04C   1777 1825     49      0      0    .580   3.13   4.63   .578   .411   .159   1.41   .152   .084   1
+  22 OBB05A   1778 1821     44      0      0    .517   2.46   4.35   .802   .757   .183   1.31   .178  -.017   1
+  23 OBB05B   1778 1834     57      0      0    .588   2.40   4.37   .923   .834   .196   1.33   .185  -.027   1
+  24 OBB05C   1778 1823     46      0      0    .642   2.85   4.16   .809   .727   .177   1.30   .157  -.052   2
+  25 OBB07A   1776 1838     63      0      0    .524   2.93   6.01  1.112   .805   .204   1.39   .188   .015   2
+  26 OBB07B   1776 1838     63      0      0    .600   2.49   4.33   .939   .801   .211   1.44   .200   .061   1
+  27 OBB11A   1765 1838     74      1      0    .436   2.07   4.51   .713   .764   .181   1.53   .176   .058   1
+  28 OBB11B   1765 1833     69      1      0    .521   1.96   3.84   .644   .764   .166   1.31   .160   .011   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2243     29      2    .543   1.97   6.25   .765   .736   .228   2.44   .225   .008
+
+ DATA CHECKS (rwl.check): germ090
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ090.rwl
+ 28 series, 2243 measurements, 1649-1838, 0.001 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file germ090.rwl, MD5 6cdbd49cea366af72af5f464b1e5f691.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

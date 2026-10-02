@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: arg148
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg148.rwl
+      MD5 of measurement file: 6621e9909a3747d8f22465ad19928963
+      Date checked           : 01OCT26
+      Beginning year         : 1752
+      Ending year            : 1994
+      Principal investigators: Villalba, R.; Ferrero, M.E.
+      Site name              : Los Toldos - TOC
+      Species information    : CEAN Cedrela angustifolia Sesse & Mocino ex DC.= Cedrela balansae C. DC.
+      Latitude               : 22.3167 S
+      Longitude              : 64.6833 W
+      Elevation              : 2025 m
+
+      Series intercorrelation: 0.554
+      Avg mean sensitivity   : 0.471
+      Avg standard deviation : 1.222
+      Avg autocorrelation    : 0.517
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg148
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 TOC01A   1874 1994                 .32A .58  .71 
+   2 TOC05A   1914 1994                           .70 
+   4 TOC06A   1867 1994                 .44  .64  .72 
+   5 TOC06B   1868 1994                 .39  .56  .67 
+   6 TOC07A   1904 1994                           .60 
+   7 TOC08A   1835 1994            .54  .57  .67  .73 
+   8 TOC08B   1905 1994                           .67 
+   9 TOC09B   1796 1919  .47  .74  .65                
+  10 TOC09C   1806 1994       .69  .63  .48  .64  .56 
+  11 TOC13A   1774 1989  .54  .76  .60  .50  .47  .56 
+  12 TOC13D   1752 1990  .48  .73  .51  .57  .65  .70 
+  13 TOC15A   1882 1994                      .72  .77 
+  14 TOC15B   1899 1994                      .79  .80 
+  15 TOC17A   1862 1994                 .43  .62  .57 
+  16 TOC17B   1855 1994                 .65  .53  .52 
+  17 TOC18B   1911 1994                           .55 
+  18 TOC18C   1795 1994  .20B .40  .37  .54  .51  .43 
+  19 TOC18T   1811 1909       .49  .45                
+  20 TOC19B   1859 1994                 .49  .61  .68 
+  21 TOC19C   1813 1994       .45  .53  .57  .55  .57 
+  22 TOC20B   1911 1994                           .64 
+  23 TOC22A   1863 1994                 .63  .64  .58 
+  24 TOC22B   1808 1964       .54  .39  .49  .62      
+ Av segment correlation  .42  .60  .52  .50  .61  .64 
+
+ FLAGGED SEGMENTS: arg148
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 TOC01A   1875 1924     A     .319         0
+  18 TOC18C   1800 1849     B     .202        -5      .232   .030  weak at every lag
+
+ DESCRIPTIVE STATISTICS: arg148
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TOC01A   1874 1994    121      3      1    .539   2.06   5.28  1.169   .476   .486   2.39   .454   .004   1
+   2 TOC05A   1914 1994     81      1      0    .707   2.66   7.45  1.495   .701   .373   1.84   .366   .043   2
+   3 TOC05B   1934 1994     61      0      0    .723   3.41   7.46  1.619   .533   .387   2.00   .390  -.024   1
+   4 TOC06A   1867 1994    128      3      0    .552   2.15   7.63  1.315   .527   .412   3.24   .464  -.030   1
+   5 TOC06B   1868 1994    127      3      0    .538   2.69   8.01  1.626   .506   .507   2.33   .462   .006   1
+   6 TOC07A   1904 1994     91      1      0    .576   2.52   8.00  1.640   .459   .534   2.43   .522  -.007   2
+   7 TOC08A   1835 1994    160      4      0    .579   1.78   4.96  1.099   .488   .516   3.20   .487   .005   1
+   8 TOC08B   1905 1994     90      1      0    .631   2.70   9.53  1.656   .580   .413   2.31   .421   .040   3
+   9 TOC09B   1796 1919    124      3      0    .567   1.99   6.35  1.497   .693   .431   2.28   .411   .022   1
+  10 TOC09C   1806 1994    189      5      0    .415   1.47   6.79  1.186   .694   .421   2.14   .400   .104   1
+  11 TOC13A   1774 1989    216      6      0    .600   1.46   5.61  1.062   .551   .443   4.77   .554  -.004   2
+  12 TOC13D   1752 1990    239      6      0    .621   1.45   5.13  1.154   .534   .572   4.21   .598  -.002   1
+  13 TOC15A   1882 1994    113      2      0    .679   2.55   6.04  1.495   .581   .447   1.95   .433  -.019   2
+  14 TOC15B   1899 1994     96      2      0    .718   2.95   7.78  1.516   .512   .401   2.22   .408  -.029   1
+  15 TOC17A   1862 1994    133      3      0    .395   1.23   3.98   .737   .441   .467   2.35   .438   .018   1
+  16 TOC17B   1855 1994    140      3      0    .578   1.24   3.08   .637   .237   .493   2.44   .436  -.026   0
+  17 TOC18B   1911 1994     84      1      0    .470    .83   3.16   .522   .488   .383   2.56   .410  -.014   1
+  18 TOC18C   1795 1994    200      6      1    .384   1.39   6.84  1.215   .555   .575   3.51   .562   .005   1
+  19 TOC18T   1811 1909     99      2      0    .521   1.69   5.04  1.050   .509   .483   2.31   .443  -.036   0
+  20 TOC19B   1859 1994    136      3      0    .571   2.36   7.23  1.441   .481   .510   1.86   .388  -.106   0
+  21 TOC19C   1813 1994    182      5      0    .528   1.68   7.12  1.140   .547   .432   2.22   .391  -.012   1
+  22 TOC20B   1911 1994     84      1      0    .654   2.27   6.72  1.176   .022   .563   2.26   .477  -.042   0
+  23 TOC22A   1863 1994    132      3      0    .544   2.80   7.01  1.631   .571   .443   2.08   .429  -.010   1
+  24 TOC22B   1808 1964    157      4      0    .526   1.81   6.21   .977   .517   .423   2.76   .401   .013   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3183     71      2    .554   1.93   9.53  1.222   .517   .471   4.77   .459  -.002
+
+ DATA CHECKS (rwl.check): arg148
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg148.rwl
+ 24 series, 3183 measurements, 1752-1994, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file arg148.rwl, MD5 6621e9909a3747d8f22465ad19928963.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

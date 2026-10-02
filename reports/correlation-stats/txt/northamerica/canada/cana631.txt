@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: cana631
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana631.rwl
+      MD5 of measurement file: 87f212f4c9f97929b03a3bcc130da1fe
+      Date checked           : 01OCT26
+      Beginning year         : 1886
+      Ending year            : 2017
+      Principal investigators: Stefanuk, M.A.; Danby, R.
+      Site name              : Frontenac Arch FR08
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 44.5507 N
+      Longitude              : 76.3796 W
+      Elevation              : 165 m
+
+      Series intercorrelation: 0.594
+      Avg mean sensitivity   : 0.376
+      Avg standard deviation : 0.813
+      Avg autocorrelation    : 0.730
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 3.85
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana631
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 098FR08A 1905 2017       .77  .72 
+   2 098FR08B 1900 2017       .78  .82 
+   3 099FR08A 1894 2017  .69  .74  .67 
+   4 099FR08B 1892 2017  .49  .70  .63 
+   5 100FR08A 1902 2017       .68  .73 
+   6 100FR08B 1890 2017  .53  .63  .71 
+   7 102FR08A 1886 2017  .29A .60  .69 
+   8 102FR08B 1888 2017  .37  .48  .55 
+   9 103FR08A 1904 2017       .75  .77 
+  10 103FR08B 1900 2017  .41  .68  .80 
+ Av segment correlation  .46  .68  .71 
+
+ FLAGGED SEGMENTS: cana631
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 102FR08A 1900 1949     A     .290         0
+
+ DESCRIPTIVE STATISTICS: cana631
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 098FR08A 1905 2017    113      2      0    .612   1.34   3.40   .696   .626   .358   1.87   .320   .001   3
+   2 098FR08B 1900 2017    118      2      0    .645   1.22   3.21   .716   .704   .375   1.77   .327  -.009   2
+   3 099FR08A 1894 2017    124      3      0    .678   1.68   4.03   .939   .779   .318   1.82   .305   .032   3
+   4 099FR08B 1892 2017    126      3      0    .502   1.13   3.14   .624   .702   .377   2.36   .367   .020   3
+   5 100FR08A 1902 2017    116      2      0    .683   1.30   5.78  1.027   .808   .320   1.97   .315   .001   1
+   6 100FR08B 1890 2017    128      3      0    .606   1.18   4.66   .846   .782   .370   1.82   .332  -.019   3
+   7 102FR08A 1886 2017    132      3      1    .539   1.07   2.74   .605   .682   .371   1.90   .332  -.009   1
+   8 102FR08B 1888 2017    130      3      0    .521   1.11   3.19   .621   .660   .392   2.02   .335   .037   1
+   9 103FR08A 1904 2017    114      2      0    .604   1.49   5.63  1.282   .849   .411   2.18   .361   .029   2
+  10 103FR08B 1900 2017    118      3      0    .569   1.25   4.26   .835   .717   .469   2.15   .410   .091   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1219     26      1    .594   1.27   5.78   .813   .730   .376   2.36   .340   .017
+
+ DATA CHECKS (rwl.check): cana631
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana631.rwl
+ 10 series, 1219 measurements, 1886-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file cana631.rwl, MD5 87f212f4c9f97929b03a3bcc130da1fe.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

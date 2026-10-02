@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: mexi042
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi042.rwl
+      MD5 of measurement file: 1793efef8886048b6c531b77109f0970
+      Date checked           : 01OCT26
+      Beginning year         : 1865
+      Ending year            : 2006
+      Principal investigators: Acuña Soto, R.; Stahle, D.W.; Therrell, M.D.; Villanueva-Díaz, J.
+      Site name              : Rancho Nuevo
+      Species information    : PIMZ Pinus montezumae Lamb.
+      Latitude               : 16.4000 N
+      Longitude              : 92.0500 W
+      Elevation              : 2187 m
+
+      Series intercorrelation: 0.439
+      Avg mean sensitivity   : 0.290
+      Avg standard deviation : 1.416
+      Avg autocorrelation    : 0.759
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 6, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 30.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi042
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 RAN01A   1942 2006            .18B
+   2 RAN01B   1929 2006            .27A
+   4 RAN02B   1933 2006            .33 
+   5 RAN03A   1929 2006            .20A
+   6 RAN03B   1942 2006            .48 
+   7 RAN04A   1921 2006       .54  .56 
+   8 RAN05A   1925 2006            .56 
+   9 RAN05B   1934 2006            .47 
+  10 RAN06A   1925 2006            .32A
+  11 RAN07A   1924 2006            .51 
+  12 RAN07B   1918 2006       .50  .57 
+  13 RAN08A   1913 2006       .40  .54 
+  14 RAN08B   1913 2006       .37  .53 
+  15 RAN09A   1913 2006       .51  .54 
+  16 RAN09B   1913 2006       .51  .62 
+  17 RAN10A   1865 2006       .15B .47 
+  18 RAN11B   1946 2006            .25A
+  19 RAN12A   1936 2006            .31A
+  20 RAN12B   1936 2006            .31A
+ Av segment correlation       .42  .42 
+
+ FLAGGED SEGMENTS: mexi042
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 RAN01A   1950 1999     B     .180        -9      .233   .054  weak at every lag
+   2 RAN01B   1950 1999     A     .267         0
+   5 RAN03A   1950 1999     A     .203         0
+  10 RAN06A   1950 1999     A     .318         0
+  17 RAN10A   1925 1974     B     .147         8      .330   .183
+  18 RAN11B   1950 1999     A     .247         0
+  19 RAN12A   1950 1999     A     .313         0
+  20 RAN12B   1950 1999     A     .311         0
+
+ DESCRIPTIVE STATISTICS: mexi042
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RAN01A   1942 2006     65      1      1    .350   4.02   9.22  1.962   .815   .276   1.86   .252   .044   3
+   2 RAN01B   1929 2006     78      1      1    .375   3.77   7.95  1.557   .713   .278   1.51   .282   .045   1
+   3 RAN02A   1957 2006     50      0      0    .395   2.86   6.82  1.072   .589   .277   1.92   .281  -.055   3
+   4 RAN02B   1933 2006     74      1      0    .387   2.51   4.33   .900   .660   .246   1.39   .232  -.016   3
+   5 RAN03A   1929 2006     78      1      1    .341   3.35   7.35  1.562   .767   .269   1.82   .292   .019   1
+   6 RAN03B   1942 2006     65      1      0    .499   3.48  10.68  2.122   .855   .242   1.64   .254   .032   1
+   7 RAN04A   1921 2006     86      2      0    .593   3.49   7.63  1.648   .747   .298   1.63   .286  -.014   3
+   8 RAN05A   1925 2006     82      1      0    .376   2.94   5.59  1.340   .830   .274   1.56   .250  -.049   2
+   9 RAN05B   1934 2006     73      1      0    .509   2.78   5.22  1.452   .836   .287   1.85   .276   .046   1
+  10 RAN06A   1925 2006     82      1      1    .473   3.05   6.93  1.695   .806   .323   1.78   .312   .010   1
+  11 RAN07A   1924 2006     83      1      0    .435   2.56   7.04  1.407   .631   .350   1.87   .324   .021   2
+  12 RAN07B   1918 2006     89      2      0    .532   3.63   9.48  2.073   .656   .360   1.91   .349   .004   1
+  13 RAN08A   1913 2006     94      2      0    .551   2.29   4.38   .977   .784   .240   1.58   .247   .047   1
+  14 RAN08B   1913 2006     94      2      0    .580   2.02   4.51   .925   .770   .246   1.53   .249   .091   1
+  15 RAN09A   1913 2006     94      2      0    .584   2.63   5.74  1.451   .738   .367   1.90   .320   .039   0
+  16 RAN09B   1913 2006     94      2      0    .572   2.60   6.43  1.505   .746   .348   1.65   .311   .149   0
+  17 RAN10A   1865 2006    142      2      1    .166   1.61   5.32  1.136   .866   .304   1.83   .281   .017   2
+  18 RAN11B   1946 2006     61      1      1    .344   3.89   6.52  1.145   .648   .225   1.43   .214   .153   0
+  19 RAN12A   1936 2006     71      1      1    .394   2.54   4.83  1.034   .751   .258   1.66   .258  -.001   3
+  20 RAN12B   1936 2006     71      1      1    .359   3.42   7.08  1.617   .854   .260   1.64   .246  -.159   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1626     26      8    .439   2.88  10.68  1.416   .759   .290   1.92   .278   .023
+
+ DATA CHECKS (rwl.check): mexi042
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi042.rwl
+ 20 series, 1626 measurements, 1865-2006, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file mexi042.rwl, MD5 1793efef8886048b6c531b77109f0970.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

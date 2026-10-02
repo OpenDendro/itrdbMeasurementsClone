@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: bra022
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra022.rwl
+      MD5 of measurement file: 0974142d61e75ec166911d71ada45bde
+      Date checked           : 01OCT26
+      Beginning year         : 1966
+      Ending year            : 2012
+      Principal investigators: Fontana, C.; Pérez-de-Lis, G.
+      Site name              : Reserva Natural da Vale
+      Species information    : COLU Copaifera lucens Dwyer
+      Latitude               : 19.1493 S
+      Longitude              : 40.0069 W
+      Elevation              : 23 m
+
+      Series intercorrelation: 0.511
+      Avg mean sensitivity   : 0.472
+      Avg standard deviation : 1.080
+      Avg autocorrelation    : 0.241
+      Number dated series    : 14
+      Segment length tested  : 22
+
+      Number problem segments: 4  (A 2, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 36.36
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  22-year dated segments, lagged  11 years
+ Flags:  A = correlation under   .4921 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1981 
+                        1991 2002 
+ --- -------- ---------  ---- ---- 
+   1 34a      1966 1999  .65      
+   2 42bwR    1975 2012       .59 
+   3 44b      1975 2012       .42A
+   5 442b     1975 2012       .77 
+   6 769ar2   1966 2010  .51  .63 
+   7 16ar6    1966 2012  .31B .55 
+   9 11cr2    1970 2012       .32B
+  11 37b12    1980 2012       .68 
+  12 446lo    1980 2012       .47A
+ Av segment correlation  .49  .55 
+
+ FLAGGED SEGMENTS: bra022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 44b      1981 2002     A     .420         0
+   7 16ar6    1970 1991     B     .313         5      .444   .132  weak at every lag
+   9 11cr2    1981 2002     B     .316         1      .412   .096  weak at every lag
+  12 446lo    1981 2002     A     .470         0
+
+ DESCRIPTIVE STATISTICS: bra022
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 34a      1966 1999     34      1      0    .538   2.13   4.08   .876   .231   .443   1.69   .385   .063   0
+   2 42bwR    1975 2012     38      1      0    .537   1.53   4.73   .889   .211   .550   2.79   .533   .146   0
+   3 44b      1975 2012     38      1      1    .392   2.72   5.86  1.350   .111   .512   1.95   .467   .034   0
+   4 45c      1980 2012     33      0      0    .261   3.44   8.60  1.676   .185   .531   2.00   .364   .081   3
+   5 442b     1975 2012     38      1      0    .706   2.45   6.42  1.383   .261   .587   2.52   .515   .059   0
+   6 769ar2   1966 2010     45      2      0    .657   1.63   5.11  1.034   .284   .531   2.58   .563   .025   1
+   7 16ar6    1966 2012     47      2      1    .479   2.63   5.01  1.229  -.013   .570   2.05   .460  -.060   0
+   8 27ar4    1980 2012     33      0      0    .578   2.09   6.00  1.082   .449   .412   2.16   .420  -.050   2
+   9 11cr2    1970 2012     43      1      1    .464   2.66   5.70   .995   .394   .302   1.91   .338   .016   1
+  10 48cR     1990 2012     23      0      0    .586   2.08   4.46  1.010   .056   .555   2.11   .470   .030   0
+  11 37b12    1980 2012     33      1      0    .621   2.30   5.41   .873   .300   .340   2.23   .347   .211   0
+  12 446lo    1980 2012     33      1      1    .597   1.92   3.96  1.004   .269   .546   2.28   .493   .155   0
+  13 19wr4    1985 2012     28      0      0    .302   1.87   3.68   .739   .301   .355   1.50   .318  -.127   3
+  14 12brW    1990 2012     23      0      0    .336   2.10   3.82   .722   .411   .281   1.90   .308   .282   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            489     11      4    .511   2.27   8.60  1.080   .241   .472   2.79   .435   .055
+
+ DATA CHECKS (rwl.check): bra022
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra022.rwl
+ 14 series, 489 measurements, 1966-2012, 0.01 mm precision
+ 0 error(s), 2 warning(s), 14 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 129 carriage return(s) against 66 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file bra022.rwl, MD5 0974142d61e75ec166911d71ada45bde.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4921 for 22-year segments.
+ Segments: 22 years, lagged 11, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 22 years: the record is only 47 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,93 @@
+
+ COFECHA-style crossdating report: germ081
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ081.rwl
+      MD5 of measurement file: 9fc28598c44421e1314c1711b192d7ca
+      Date checked           : 01OCT26
+      Beginning year         : 1703
+      Ending year            : 1807
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Grassgasse 10 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.706
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 1.221
+      Avg autocorrelation    : 0.868
+      Number dated series    : 3
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ081
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1750 
+                        1799 
+ --- -------- ---------  ---- 
+   1 GRA01A   1749 1807  .82 
+   2 GRA01B   1747 1807  .79 
+ Av segment correlation  .80 
+
+ FLAGGED SEGMENTS: germ081
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ081
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GRA01A   1749 1807     59      1      0    .819   2.34   6.01  1.435   .850   .263   1.52   .232  -.017   0
+   2 GRA01B   1747 1807     61      1      0    .788   1.94   4.98  1.270   .843   .310   1.78   .292   .033   0
+   3 GRA13A   1703 1792     90      0      0    .576   1.60   4.43  1.048   .896   .213   1.67   .231   .024   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            210      2      0    .706   1.90   6.01  1.221   .868   .255   1.78   .249   .015
+
+ DATA CHECKS (rwl.check): germ081
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ081.rwl
+ 3 series, 210 measurements, 1703-1807, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file germ081.rwl, MD5 9fc28598c44421e1314c1711b192d7ca.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

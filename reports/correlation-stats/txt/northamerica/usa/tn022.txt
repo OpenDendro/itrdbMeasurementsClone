@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: tn022
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tn022.rwl
+      MD5 of measurement file: 44126839dfc399d076b02f334f7503d5
+      Date checked           : 01OCT26
+      Beginning year         : 1683
+      Ending year            : 1996
+      Principal investigators: Stahle, D.W.; Therrell, M.D.; Blozan, W.
+      Site name              : Lynn Hollow and Look Rock Trail
+      Species information    : PIEC Pinus echinata Mill.
+      Latitude               : 35.6200 N
+      Longitude              : 83.9300 W
+      Elevation              : 610 m
+
+      Series intercorrelation: 0.578
+      Avg mean sensitivity   : 0.252
+      Avg standard deviation : 0.682
+      Avg autocorrelation    : 0.809
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1)
+      Pct problem segments   : 2.47
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tn022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 LRT01A   1794 1979                      .30A .50  .73  .76  .58  .52 
+   2 LRT03A   1763 1979                 .38  .43  .55  .74  .77  .72  .76 
+   3 LRT03B   1805 1979                           .51  .76  .67  .52  .57 
+   4 LRT04A   1784 1891                      .38  .45                     
+   5 LRT04B   1795 1979                      .53  .55  .60  .55  .64  .68 
+   6 LRT05A   1818 1979                           .58  .65  .58  .51  .60 
+   7 LRT05B   1792 1979                      .39  .64  .70  .64  .58  .59 
+   8 LRT06A   1789 1979                      .58  .72  .79  .81  .82  .72 
+   9 LRT06B   1788 1979                      .64  .77  .70  .61  .71  .70 
+  10 LRT07B   1812 1979                           .54  .55  .45  .55  .57 
+  11 LRT08A   1863 1979                                     .84  .66  .44 
+  12 LRT09A   1788 1979                      .61  .65  .68  .64  .58  .60 
+  13 LRT13A   1800 1979                           .53  .66  .67  .65  .62 
+  14 LRT16B   1850 1979                                     .57  .55  .69 
+  15 LRT17A   1858 1979                                     .71  .58  .42 
+  16 LRT17B   1844 1979                                .64  .65  .64  .53 
+  17 LRT19A   1817 1979                           .51  .65  .55  .54  .70 
+  18 LRT19B   1806 1979                           .65  .63  .60  .44  .54 
+  19 LRT20B   1875 1979                                          .36  .47 
+  20 LYN01A   1740 1996            .25A .36  .49  .54  .64  .64  .55  .48 
+  21 LYN02A   1683 1996  .67  .45  .51  .55  .61  .62  .73  .73  .63  .43 
+  22 LYN03A   1830 1996                                .76  .72  .71  .73 
+  23 LYN05A   1746 1996            .66  .34  .28A .45  .70  .62  .63  .70 
+  24 LYN06A   1797 1996                      .54  .55  .56  .64  .65  .44 
+  25 LYN07A   1773 1996                      .34  .53  .67  .66  .55  .26B
+  26 LYN08A   1789 1968                      .42  .57  .74  .81  .71      
+  27 LYN09A   1792 1996                      .34  .58  .65  .61  .57  .46 
+  28 LYN10A   1696 1996  .64  .42  .62  .51  .38  .48  .65  .58  .51  .55 
+  29 LYN21A   1779 1996                      .54  .54  .59  .61  .67  .56 
+  30 LYN22A   1850 1996                                     .74  .65  .59 
+ Av segment correlation  .66  .43  .51  .43  .46  .57  .67  .66  .60  .57 
+
+ FLAGGED SEGMENTS: tn022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 LRT01A   1800 1849     A     .296         0
+  20 LYN01A   1750 1799     A     .249         0
+  23 LYN05A   1800 1849     A     .282         0
+  25 LYN07A   1925 1974     B     .262         8      .403   .141
+
+ DESCRIPTIVE STATISTICS: tn022
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LRT01A   1794 1979    186      6      1    .587   1.30   4.95   .706   .777   .256   2.06   .279  -.017   3
+   2 LRT03A   1763 1979    217      7      0    .647    .62   1.54   .263   .692   .266   2.01   .274  -.000   2
+   3 LRT03B   1805 1979    175      5      0    .575    .74   1.60   .302   .777   .216   1.68   .231  -.001   3
+   4 LRT04A   1784 1891    108      2      0    .465   1.53   4.75  1.263   .859   .240   1.44   .238   .089   1
+   5 LRT04B   1795 1979    185      6      0    .624   1.22   5.94  1.034   .911   .275   1.97   .284   .004   2
+   6 LRT05A   1818 1979    162      5      0    .585   1.12   2.51   .480   .688   .256   1.79   .253  -.002   3
+   7 LRT05B   1792 1979    188      6      0    .585   1.21   3.56   .574   .778   .237   1.66   .241   .004   1
+   8 LRT06A   1789 1979    191      6      0    .695   1.23   6.30   .934   .827   .231   1.84   .220  -.001   1
+   9 LRT06B   1788 1979    192      6      0    .649   1.06   3.91   .698   .853   .260   1.57   .241   .011   2
+  10 LRT07B   1812 1979    168      5      0    .503    .74   2.04   .401   .911   .185   1.58   .190  -.006   1
+  11 LRT08A   1863 1979    117      3      0    .636   1.72   3.25   .660   .694   .231   1.62   .224  -.009   3
+  12 LRT09A   1788 1979    192      6      0    .603   1.18   3.22   .643   .854   .229   1.55   .217   .025   1
+  13 LRT13A   1800 1979    180      5      0    .570   1.32   4.06   .920   .885   .236   1.83   .245   .028   1
+  14 LRT16B   1850 1979    130      3      0    .597   1.51   3.14   .617   .502   .284   1.79   .302   .007   2
+  15 LRT17A   1858 1979    122      3      0    .604   2.02   3.97   .619   .573   .220   1.57   .212   .028   3
+  16 LRT17B   1844 1979    136      4      0    .646   1.53   3.30   .600   .683   .241   1.64   .247   .029   1
+  17 LRT19A   1817 1979    163      5      0    .571    .98   3.27   .526   .766   .226   1.90   .237  -.000   3
+  18 LRT19B   1806 1979    174      5      0    .608    .99   5.37   .978   .917   .218   1.99   .226  -.021   1
+  19 LRT20B   1875 1979    105      2      0    .385    .86   2.78   .586   .829   .308   2.14   .317   .021   1
+  20 LYN01A   1740 1996    257      8      1    .524   1.03   3.26   .693   .867   .246   2.14   .252   .008   3
+  21 LYN02A   1683 1996    314     10      0    .558    .81   4.02   .577   .790   .304   2.08   .295   .045   3
+  22 LYN03A   1830 1996    167      4      0    .697   1.24   5.67  1.118   .872   .273   1.71   .268   .005   2
+  23 LYN05A   1746 1996    251      8      1    .571   1.15   3.25   .663   .831   .262   2.22   .267  -.007   3
+  24 LYN06A   1797 1996    200      6      0    .495   1.02   5.15   .832   .793   .348   2.39   .355   .017   1
+  25 LYN07A   1773 1996    224      6      1    .453   1.10   3.82   .624   .830   .225   2.09   .230  -.002   3
+  26 LYN08A   1789 1968    180      5      0    .652   1.32   3.93   .810   .851   .239   1.77   .248   .020   1
+  27 LYN09A   1792 1996    205      6      0    .480   1.03   3.29   .647   .838   .253   1.63   .241  -.017   3
+  28 LYN10A   1696 1996    301     10      0    .596    .84   3.29   .586   .870   .251   2.85   .263  -.026   3
+  29 LYN21A   1779 1996    218      6      0    .539   1.19   3.99   .803   .864   .256   1.93   .256  -.005   2
+  30 LYN22A   1850 1996    147      3      0    .651    .98   3.27   .578   .829   .231   1.73   .225  -.037   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5555    162      4    .578   1.11   6.30   .682   .809   .252   2.85   .254   .005
+
+ DATA CHECKS (rwl.check): tn022
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/tn022.rwl
+ 30 series, 5555 measurements, 1683-1996, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1683-1997 but the measurements cover 1683-1996
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file tn022.rwl, MD5 44126839dfc399d076b02f334f7503d5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

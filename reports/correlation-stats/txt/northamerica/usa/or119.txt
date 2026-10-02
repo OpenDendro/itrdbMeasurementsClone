@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: or119
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or119.rwl
+      MD5 of measurement file: 035d7b5b7e863c989d7c36e3a4c5a9ac
+      Date checked           : 01OCT26
+      Beginning year         : 1711
+      Ending year            : 1889
+      Principal investigators: Black, B.A.; Struble, W.T.; Wetherell, L.; Roering, J.J.
+      Site name              : Burchard
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 43.6680 N
+      Longitude              : 123.7650 W
+      Elevation              : 55 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.180
+      Avg standard deviation : 0.954
+      Avg autocorrelation    : 0.866
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or119
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 
+                        1849 1874 
+ --- -------- ---------  ---- ---- 
+   1 BUR02A   1711 1888  .55  .69 
+   2 BUR02B   1723 1887  .59  .72 
+   3 BUR01A   1746 1883  .61  .72 
+   4 BUR01B   1746 1886  .39  .41 
+   5 BUR03A   1735 1889  .51  .56 
+   6 BUR03B   1734 1888  .59  .65 
+ Av segment correlation  .54  .62 
+
+ FLAGGED SEGMENTS: or119
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: or119
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BUR02A   1711 1888    178      2      0    .547   2.72   5.57  1.340   .907   .158   1.48   .177   .004   3
+   2 BUR02B   1723 1887    165      2      0    .617   2.56   5.55  1.244   .883   .161   1.51   .185  -.009   3
+   3 BUR01A   1746 1883    138      2      0    .604   1.48   3.88   .819   .915   .230   1.53   .217   .006   3
+   4 BUR01B   1746 1886    141      2      0    .422   1.50   3.80   .773   .890   .184   1.79   .202  -.004   1
+   5 BUR03A   1735 1889    155      2      0    .493   2.07   3.98   .715   .787   .176   1.58   .181  -.018   3
+   6 BUR03B   1734 1888    155      2      0    .541   2.05   4.13   .724   .814   .180   1.45   .174   .002   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            932     12      0    .539   2.10   5.57   .954   .866   .180   1.79   .188  -.003
+
+ DATA CHECKS (rwl.check): or119
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or119.rwl
+ 6 series, 932 measurements, 1711-1889, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file or119.rwl, MD5 035d7b5b7e863c989d7c36e3a4c5a9ac.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

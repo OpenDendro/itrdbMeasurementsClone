@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: swed307
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swed307.rwl
+      MD5 of measurement file: 189d725f2705a885b97976df192b38c3
+      Date checked           : 01OCT26
+      Beginning year         : 1778
+      Ending year            : 2004
+      Principal investigators: Axelson, T.
+      Site name              : Lerbäck, Askersund
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 58.9500 N
+      Longitude              : 15.0300 E
+      Elevation              : 130 m
+
+      Series intercorrelation: 0.624
+      Avg mean sensitivity   : 0.228
+      Avg standard deviation : 0.488
+      Avg autocorrelation    : 0.831
+      Number dated series    : 24
+      Series crossdated      : 22
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 3.85
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swed307
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 Lerb11a  1825 2004            .68  .74  .74  .74  .66 
+   2 Lerb11b  1820 2003       .23B .56  .78  .63  .63  .70 
+   3 Lerb12a  1827 2004            .78  .77  .61  .63  .65 
+   4 Lerb12b  1839 2004            .81  .80  .73  .67  .65 
+   5 Lerb13a  1819 2004       .75  .79  .72  .73  .70  .64 
+   6 Lerb13b  1816 2004       .75  .75  .75  .82  .78  .64 
+   7 Lerb14a  1822 2004       .73  .78  .78  .78  .77  .68 
+   9 Lerb21a  1838 2004            .66  .69  .62  .71  .74 
+  10 Lerb21b  1833 2004            .59  .58  .51  .74  .74 
+  11 Lerb22a  1821 2004       .52  .58  .67  .60  .49  .49 
+  12 Lerb22b  1821 1891       .67                          
+  13 Lerb23a  1816 2004       .45  .55  .60  .70  .76  .63 
+  14 Lerb24a  1812 2004       .60  .69  .69  .70  .70  .56 
+  15 Lerb25a  1821 2004       .54  .35  .46  .62  .56  .61 
+  16 Lerb26a  1824 2004            .60  .44  .50  .66  .46 
+  17 Lerb31a  1811 2004       .50  .58  .61  .61  .69  .59 
+  19 Lerb32a  1829 2004            .65  .64  .68  .68  .67 
+  20 Lerb33a  1813 2004       .67  .71  .52  .54  .67  .65 
+  22 Lerb34b  1778 2004  .30A .23B .43  .28B .41  .62  .51 
+  23 Lerb34c  1778 1855  .37                               
+ Av segment correlation  .34  .55  .64  .64  .64  .68  .63 
+
+ FLAGGED SEGMENTS: swed307
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 Lerb11b  1825 1874     B     .232       -10      .274   .042  weak at every lag
+  22 Lerb34b  1800 1849     A     .304         0
+  22 Lerb34b  1825 1874     B     .230         3      .249   .019  weak at every lag
+  22 Lerb34b  1875 1924     B     .277        -2      .355   .078
+
+ DESCRIPTIVE STATISTICS: swed307
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Lerb11a  1825 2004    180      5      0    .682    .93   2.36   .448   .792   .226   1.84   .280  -.003   2
+   2 Lerb11b  1820 2003    184      6      1    .619    .85   3.23   .501   .887   .233   1.79   .243   .020   1
+   3 Lerb12a  1827 2004    178      5      0    .680   1.14   3.46   .570   .856   .208   1.58   .222   .030   1
+   4 Lerb12b  1839 2004    166      5      0    .714   1.01   2.41   .408   .754   .226   1.76   .237   .004   1
+   5 Lerb13a  1819 2004    186      6      0    .689   1.16   2.88   .488   .806   .182   1.60   .198   .026   1
+   6 Lerb13b  1816 2004    189      6      0    .720   1.18   2.55   .456   .754   .220   1.75   .229   .002   1
+   7 Lerb14a  1822 2004    183      6      0    .740    .94   2.41   .414   .770   .228   1.84   .239   .034   1
+   8 Lerb14b  1824 2004    165                          .96   2.40   .423   .790   .222                         
+   9 Lerb21a  1838 2004    167      5      0    .659   1.31   3.34   .586   .802   .233   2.11   .246   .027   1
+  10 Lerb21b  1833 2004    172      5      0    .619   1.27   2.75   .483   .790   .195   1.72   .206   .039   1
+  11 Lerb22a  1821 2004    184      6      0    .570    .80   2.78   .459   .863   .235   1.72   .247  -.014   3
+  12 Lerb22b  1821 1891     71      1      0    .617   1.03   2.47   .407   .778   .175   1.62   .186   .036   1
+  13 Lerb23a  1816 2004    189      6      0    .615   1.04   2.57   .436   .813   .202   1.71   .205  -.001   2
+  14 Lerb24a  1812 2004    193      6      0    .596    .84   3.01   .511   .894   .218   1.71   .210  -.004   2
+  15 Lerb25a  1821 2004    184      6      0    .547    .89   4.36   .644   .919   .193   1.52   .200   .046   1
+  16 Lerb26a  1824 2004    181      5      0    .512   1.05   3.39   .543   .897   .187   1.75   .197  -.008   2
+  17 Lerb31a  1811 2004    194      6      0    .565    .74   3.33   .424   .869   .238   2.18   .272   .014   2
+  18 Lerb31b  1812 1835     24      0      0    .467   1.54   2.88   .407   .581   .185   1.33   .165   .022   1
+  19 Lerb32a  1829 2004    176      5      0    .665    .76   2.06   .367   .785   .259   2.19   .282   .010   2
+  20 Lerb33a  1813 2004    192      6      0    .614    .72   2.40   .525   .912   .243   1.72   .248   .022   1
+  21 Lerb34a  1778 2004    226                          .59   2.95   .509   .860   .268                         
+  22 Lerb34b  1778 2004    227      7      3    .492    .68   2.88   .480   .840   .287   2.12   .311  -.004   1
+  23 Lerb34c  1778 1855     78      1      0    .657    .81   2.79   .700   .856   .313   1.72   .323   .040   1
+  24 Lerb34d  1778 1814     37      0      0    .625   1.18   2.31   .588   .738   .380   1.64   .329  -.094   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3926    104      4    .624    .94   4.36   .488   .831   .228   2.19   .239   .013
+
+ DATA CHECKS (rwl.check): swed307
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swed307.rwl
+ 24 series, 3926 measurements, 1778-2004, 0.01 mm precision
+ 0 error(s), 2 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     Lerb14b: no measurement for 1862-1877, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     Lerb34a: no measurement for 1790, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file swed307.rwl, MD5 189d725f2705a885b97976df192b38c3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series Lerb14b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series Lerb34a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

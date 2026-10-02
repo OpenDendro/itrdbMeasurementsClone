@@ -1,0 +1,103 @@
+
+ COFECHA-style crossdating report: sd007
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sd007.rwl
+      MD5 of measurement file: 49c3f3b982d496c99d548606349c4795
+      Date checked           : 01OCT26
+      Beginning year         : 1775
+      Ending year            : 1990
+      Principal investigators: Meko, D.M.; Sieg, C.H.
+      Site name              : Custer State Park
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.7500 N
+      Longitude              : 103.3800 W
+      Elevation              : 1340 m
+
+      Series intercorrelation: 0.556
+      Avg mean sensitivity   : 0.211
+      Avg standard deviation : 0.444
+      Avg autocorrelation    : 0.772
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sd007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   2 CSP01B   1795 1990  .45  .49  .64  .64  .67  .52 
+   6 CSP02A   1912 1990                           .56 
+   7 CSP03A   1794 1989  .63  .60  .63  .64  .54  .46 
+   8 CSP04A   1899 1990                           .44 
+   9 CSP05A   1782 1990  .59  .55  .54  .66  .69  .37 
+  10 CSP06A   1775 1990  .48  .48  .50  .58  .69  .67 
+ Av segment correlation  .54  .53  .58  .63  .64  .50 
+
+ FLAGGED SEGMENTS: sd007
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: sd007
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CSP01A   1846 1877     32      0      0    .499    .82   2.00   .378   .659   .245   1.68   .298  -.012   3
+   2 CSP01B   1795 1990    196      6      0    .542    .80   2.73   .457   .795   .260   1.94   .277  -.015   1
+   3 CSP01E   1877 1943     67      0      0    .338    .74   1.42   .249   .718   .206   1.61   .229   .063   1
+   4 CSP01F   1908 1961     54      0      0    .611    .82   1.71   .338   .740   .199   1.58   .201   .001   1
+   5 CSP01G   1963 1990     28      0      0    .656    .53    .99   .153   .440   .224   1.40   .194  -.162   0
+   6 CSP02A   1912 1990     79      1      0    .567   2.49   3.85   .703   .448   .244   1.64   .247   .049   1
+   7 CSP03A   1794 1989    196      6      0    .596    .87   2.05   .370   .761   .217   1.69   .226   .031   1
+   8 CSP04A   1899 1990     92      1      0    .473   1.43   3.28   .709   .857   .184   1.39   .179   .021   3
+   9 CSP05A   1782 1990    209      6      0    .596    .77   2.87   .409   .853   .188   1.85   .188  -.013   1
+  10 CSP06A   1775 1990    216      6      0    .577    .93   2.67   .460   .852   .179   1.52   .181   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1169     26      0    .556    .98   3.85   .444   .772   .211   1.94   .217   .009
+
+ DATA CHECKS (rwl.check): sd007
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sd007.rwl
+ 10 series, 1169 measurements, 1775-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file sd007.rwl, MD5 49c3f3b982d496c99d548606349c4795.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

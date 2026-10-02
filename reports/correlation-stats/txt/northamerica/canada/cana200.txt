@@ -1,0 +1,166 @@
+
+ COFECHA-style crossdating report: cana200
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana200.rwl
+      MD5 of measurement file: 514755702242e63046f166f1cd79f2a2
+      Date checked           : 01OCT26
+      Beginning year         : 1766
+      Ending year            : 2002
+      Principal investigators: Beriault, A.; Sauchyn, D.J.; Stroich, J.
+      Site name              : Fleming Island, Cree Lake
+      Species information    : PIBN Pinus banksiana Lamb.
+      Latitude               : 57.5500 N
+      Longitude              : 106.8800 W
+      Elevation              : 510 m
+
+      Series intercorrelation: 0.468
+      Avg mean sensitivity   : 0.226
+      Avg standard deviation : 0.464
+      Avg autocorrelation    : 0.839
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 5, B 9; 6 of the B weak at every lag)
+      Pct problem segments   : 14.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana200
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 FI01A    1888 2002                      .49  .65  .59 
+   2 FI01B    1887 2002                      .20B .42  .45 
+   3 FI03A    1883 2002                      .43  .53  .58 
+   4 FI03B    1881 2002                      .50  .43  .50 
+   5 FI05A    1892 2002                      .50  .56  .47 
+   6 FI05B    1892 2002                      .44  .52  .69 
+   7 FI06A    1895 2002                      .47  .62  .61 
+   8 FI07B    1923 2002                                .56 
+   9 FI08A    1883 2002                      .59  .51  .46 
+  10 FI08B    1883 2001                      .58  .50  .43 
+  11 FI09A    1888 2002                      .62  .69  .69 
+  12 FI09B    1892 2002                      .19B .34  .36 
+  13 FI10A    1920 2002                           .44  .27B
+  14 FI10B    1920 2002                           .58  .41 
+  15 FI11A    1766 2001  .45  .33  .27A .15B .13B .49  .52 
+  16 FI11B    1768 2002  .47  .37  .32A .19A .16B .42  .50 
+  17 FI12A    1884 2002                      .28B .60  .61 
+  18 FI12B    1884 2002                      .62  .74  .61 
+  19 FI13A    1892 2002                      .36  .61  .53 
+  20 FI13B    1901 2002                           .72  .68 
+  21 FI15A    1877 2002                      .35  .43  .57 
+  22 FI15B    1882 2002                      .42  .46  .53 
+  23 FI17B    1875 2002                      .41  .50  .60 
+  24 FI18A    1878 2000                      .52  .63  .47 
+  25 FI18B    1878 2002                      .68  .50  .49 
+  26 FI19B    1884 2002                      .54  .52  .48 
+  27 FI20A    1808 2002       .07B .35  .36  .47  .63  .42 
+  28 FI20B    1807 2002       .35  .48  .54  .52  .47  .54 
+  29 FI19A    1884 2001                      .64  .38  .25A
+  30 DFI02A   1855 2000                 .24A .36  .52  .22B
+ Av segment correlation  .46  .28  .35  .30  .44  .53  .50 
+
+ FLAGGED SEGMENTS: cana200
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 FI01B    1900 1949     B     .200         6      .293   .094  weak at every lag
+  12 FI09B    1900 1949     B     .192         9      .223   .030  weak at every lag
+  13 FI10A    1950 1999     B     .266        -6      .320   .054  weak at every lag
+  15 FI11A    1850 1899     A     .267         0
+  15 FI11A    1875 1924     B     .153       -10      .238   .085  weak at every lag
+  15 FI11A    1900 1949     B     .129         5      .230   .101  weak at every lag
+  16 FI11B    1850 1899     A     .316         0
+  16 FI11B    1875 1924     A     .193         0
+  16 FI11B    1900 1949     B     .156         6      .342   .186
+  17 FI12A    1900 1949     B     .278         8      .417   .139
+  27 FI20A    1825 1874     B     .072        -8      .378   .306
+  29 FI19A    1950 1999     A     .252         0
+  30 DFI02A   1875 1924     A     .239         0
+  30 DFI02A   1950 1999     B     .222        -7      .296   .074  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana200
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FI01A    1888 2002    115      3      0    .525    .61   2.29   .466   .876   .213   1.52   .223   .055   1
+   2 FI01B    1887 2002    116      3      1    .354    .99   2.89   .668   .917   .209   1.60   .230   .009   2
+   3 FI03A    1883 2002    120      3      0    .492    .82   3.03   .527   .876   .220   1.85   .235   .021   2
+   4 FI03B    1881 2002    122      3      0    .496    .69   2.37   .532   .941   .220   1.59   .208   .000   3
+   5 FI05A    1892 2002    111      3      0    .466    .93   2.50   .415   .674   .273   1.89   .295  -.008   2
+   6 FI05B    1892 2002    111      3      0    .531    .92   2.68   .516   .727   .320   2.29   .345   .030   1
+   7 FI06A    1895 2002    108      3      0    .548    .67   1.34   .191   .689   .177   1.54   .181  -.012   3
+   8 FI07B    1923 2002     80      1      0    .592    .69   1.33   .239   .593   .237   1.48   .217  -.087   3
+   9 FI08A    1883 2002    120      3      0    .483    .62   2.44   .445   .893   .249   2.35   .288  -.022   2
+  10 FI08B    1883 2001    119      3      0    .482    .51   1.96   .412   .915   .255   1.81   .262  -.009   2
+  11 FI09A    1888 2002    115      3      0    .646    .73   4.17   .834   .954   .224   1.58   .228   .001   2
+  12 FI09B    1892 2002    111      3      1    .280    .63   3.03   .553   .954   .194   1.62   .203  -.004   3
+  13 FI10A    1920 2002     83      2      1    .361   1.02   2.44   .510   .792   .260   1.72   .256  -.010   1
+  14 FI10B    1920 2002     83      2      0    .499    .93   2.40   .500   .898   .218   1.51   .217   .083   1
+  15 FI11A    1766 2001    236      7      3    .404    .57   3.56   .576   .951   .209   1.95   .204   .002   1
+  16 FI11B    1768 2002    235      7      3    .405    .59   3.80   .687   .958   .215   1.55   .202   .011   1
+  17 FI12A    1884 2002    119      3      1    .429    .75   1.58   .257   .767   .195   1.49   .187  -.023   3
+  18 FI12B    1884 2002    119      3      0    .606    .90   1.85   .364   .845   .183   1.45   .192   .023   1
+  19 FI13A    1892 2002    111      3      0    .439    .58   1.28   .299   .832   .256   1.61   .249   .001   1
+  20 FI13B    1901 2002    102      2      0    .689    .68   1.92   .412   .887   .245   1.72   .244  -.010   3
+  21 FI15A    1877 2002    126      3      0    .478    .71   1.23   .178   .557   .184   1.61   .194   .035   1
+  22 FI15B    1882 2002    121      3      0    .492    .90   1.80   .300   .664   .219   1.54   .230   .049   1
+  23 FI17B    1875 2002    128      3      0    .517   1.05   4.25   .825   .870   .238   2.03   .264  -.012   2
+  24 FI18A    1878 2000    123      3      0    .498    .91   2.56   .610   .918   .219   1.40   .202  -.009   3
+  25 FI18B    1878 2002    125      3      0    .550    .63   2.30   .416   .887   .247   1.61   .230  -.021   2
+  26 FI19B    1884 2002    119      3      0    .491    .62   1.98   .515   .934   .229   1.53   .233  -.025   1
+  27 FI20A    1808 2002    195      6      1    .361    .45   1.10   .177   .619   .257   1.96   .266   .006   1
+  28 FI20B    1807 2002    196      6      0    .484    .54   1.43   .250   .756   .234   1.70   .248  -.003   2
+  29 FI19A    1884 2001    118      3      1    .420    .74   3.37   .729   .943   .225   1.56   .213  -.008   3
+  30 DFI02A   1855 2000    146      4      2    .273    .53   1.95   .448   .944   .190   1.63   .200  -.003   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3833    100     14    .468    .71   4.25   .464   .839   .226   2.35   .230   .003
+
+ DATA CHECKS (rwl.check): cana200
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana200.rwl
+ 30 series, 3833 measurements, 1766-2002, 0.001 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1767-2002 but the measurements cover 1766-2002
+   RWL_SITE_CODE (1)
+     DFI02A: site code differs from the fi used by 29 of 30 series
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file cana200.rwl, MD5 514755702242e63046f166f1cd79f2a2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: che566
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che566.rwl
+      MD5 of measurement file: 8b8e00ec77ab53800468dd0460224e71
+      Date checked           : 01OCT26
+      Beginning year         : 1891
+      Ending year            : 2009
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : Bat
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.3907 N
+      Longitude              : 7.4529 E
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.478
+      Avg mean sensitivity   : 0.207
+      Avg standard deviation : 0.649
+      Avg autocorrelation    : 0.688
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 8.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che566
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BAT Bu08 1916 2009       .40B .53 
+   2 BAT Bu03 1914 2009       .63  .52 
+   3 BAT Bu07 1904 2009       .41  .53 
+   4 BAT Bu06 1899 2009       .53  .42 
+   5 BAT Bu11 1898 2009  .50  .64  .63 
+   6 BAT Bu01 1896 2009  .63  .65  .64 
+   7 BAT Bu02 1895 2009  .39  .43  .55 
+   8 BAT Bu05 1895 2009  .24B .55  .66 
+   9 BAT Bu04 1891 2009  .41  .40  .44 
+ Av segment correlation  .43  .52  .55 
+
+ FLAGGED SEGMENTS: che566
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BAT Bu08 1925 1974     B     .397        -2      .426   .029
+   8 BAT Bu05 1900 1949     B     .236         5      .344   .109
+
+ DESCRIPTIVE STATISTICS: che566
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BAT Bu08 1916 2009     94      2      1    .458   1.86   3.46   .583   .608   .221   1.74   .233  -.012   1
+   2 BAT Bu03 1914 2009     96      2      0    .521   1.75   3.60   .705   .711   .249   1.56   .246  -.028   1
+   3 BAT Bu07 1904 2009    106      2      0    .378   2.13   6.16   .864   .831   .166   1.55   .177   .018   2
+   4 BAT Bu06 1899 2009    111      2      0    .414   2.37   4.47   .873   .710   .209   1.73   .216   .015   3
+   5 BAT Bu11 1898 2009    112      3      0    .551   1.87   3.42   .503   .730   .153   1.47   .158  -.000   1
+   6 BAT Bu01 1896 2009    114      3      0    .571   1.71   2.97   .450   .502   .194   1.65   .217  -.013   1
+   7 BAT Bu02 1895 2009    115      3      0    .492   1.90   4.57   .848   .775   .251   2.17   .281   .019   1
+   8 BAT Bu05 1895 2009    115      3      1    .515   1.47   3.88   .556   .601   .234   2.01   .252   .012   2
+   9 BAT Bu04 1891 2009    119      3      0    .403   1.39   2.96   .483   .724   .195   2.02   .196  -.036   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            982     23      2    .478   1.82   6.16   .649   .688   .207   2.17   .219  -.003
+
+ DATA CHECKS (rwl.check): che566
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che566.rwl
+ 9 series, 982 measurements, 1891-2009, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che566.rwl, MD5 8b8e00ec77ab53800468dd0460224e71.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

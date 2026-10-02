@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: cana473
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana473.rwl
+      MD5 of measurement file: c76e5bc5f1d2660024838761f62482c0
+      Date checked           : 01OCT26
+      Beginning year         : 1699
+      Ending year            : 1996
+      Principal investigators: Smith, D.J.; Coulthard, B.L.; Laroque, C.
+      Site name              : TAD Ridge
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 48.6900 N
+      Longitude              : 124.2900 W
+      Elevation              : 980 m
+
+      Series intercorrelation: 0.505
+      Avg mean sensitivity   : 0.224
+      Avg standard deviation : 0.389
+      Avg autocorrelation    : 0.747
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 2.68
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana473
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 96B201a  1807 1996                           .51  .47  .23B .65  .64 
+   2 96B201b  1815 1996                           .61  .62  .38  .61  .62 
+   3 96B202a  1715 1996       .67  .58  .62  .56  .48  .52  .69  .68  .57 
+   4 96B202b  1702 1995       .64  .47  .39  .50  .54  .54  .57  .68  .64 
+   5 96B203b  1858 1996                                     .46  .60  .48 
+   6 96B204a  1801 1992                           .47  .39  .43  .54  .44 
+   7 96B204b  1862 1989                                     .50  .45  .50 
+   8 96B205a  1888 1996                                          .43  .45 
+   9 96B205b  1866 1996                                     .33  .47  .45 
+  10 96B206a  1814 1996                           .41  .70  .64  .70  .62 
+  11 96B206b  1800 1996                           .54  .79  .57  .60  .54 
+  12 96B207a  1811 1995                           .64  .41  .31A .55  .46 
+  13 96B211a  1727 1996            .64  .63  .52  .37  .37  .46  .64  .57 
+  14 96B211b  1699 1996       .57  .54  .70  .71  .54  .53  .53  .50  .61 
+  15 96B212b  1744 1996            .57  .76  .82  .71  .56  .45  .50  .44 
+  16 96B213b  1715 1994       .35  .41  .75  .79  .77  .73  .62  .66  .52 
+  17 96B214b  1804 1996                           .57  .51  .41  .42  .48 
+  18 96B215a  1766 1996                 .51  .50  .64  .57  .48  .49  .32A
+  19 96B215b  1733 1996            .65  .71  .63  .61  .55  .53  .54  .49 
+  20 96B216a  1706 1996       .62  .53  .61  .50  .38  .35B .42  .54  .67 
+  21 96B218a  1781 1996                      .38  .51  .46  .44  .67  .52 
+  22 96B218b  1827 1996                                .51  .53  .61  .62 
+  23 96B219a  1724 1996            .78  .71  .61  .41  .43  .52  .47  .56 
+  24 96B219b  1699 1996       .62  .57  .62  .49  .52  .62  .51  .39  .50 
+ Av segment correlation       .58  .57  .64  .58  .54  .53  .48  .56  .53 
+
+ FLAGGED SEGMENTS: cana473
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 96B201a  1875 1924     B     .232         2      .242   .011  weak at every lag
+  12 96B207a  1875 1924     A     .313         0
+  18 96B215a  1925 1974     A     .324         0
+  20 96B216a  1850 1899     B     .348         1      .378   .029
+
+ DESCRIPTIVE STATISTICS: cana473
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 96B201a  1807 1996    190      5      1    .448    .81   1.93   .356   .726   .241   1.79   .248  -.012   2
+   2 96B201b  1815 1996    182      5      0    .519    .72   2.79   .421   .811   .223   1.66   .234   .063   3
+   3 96B202a  1715 1996    282      9      0    .523    .98   2.91   .372   .697   .215   2.12   .222   .009   3
+   4 96B202b  1702 1995    294      9      0    .570    .95   2.67   .432   .724   .226   2.13   .244  -.000   1
+   5 96B203b  1858 1996    139      3      0    .444    .50   1.18   .178   .612   .245   1.89   .258   .040   1
+   6 96B204a  1801 1992    192      5      0    .380    .65   3.22   .424   .814   .248   1.75   .260  -.004   3
+   7 96B204b  1862 1989    128      3      0    .467    .37    .77   .150   .694   .239   1.81   .247  -.017   1
+   8 96B205a  1888 1996    109      2      0    .442   1.09   2.20   .404   .673   .254   1.56   .239  -.002   2
+   9 96B205b  1866 1996    131      3      0    .393    .95   1.85   .329   .642   .257   1.57   .240   .030   1
+  10 96B206a  1814 1996    183      5      0    .554   1.21   3.23   .449   .686   .205   2.03   .226  -.009   2
+  11 96B206b  1800 1996    197      5      0    .514   1.09   4.30   .524   .578   .266   1.91   .275   .011   1
+  12 96B207a  1811 1995    185      5      1    .431    .91   2.80   .480   .834   .233   1.82   .248   .040   1
+  13 96B211a  1727 1996    270      8      0    .490    .80   2.85   .366   .813   .201   1.69   .206   .027   1
+  14 96B211b  1699 1996    298      9      0    .492    .65   2.11   .331   .841   .223   1.82   .224  -.016   1
+  15 96B212b  1744 1996    253      8      0    .554    .64   1.55   .272   .709   .240   1.91   .253  -.029   3
+  16 96B213b  1715 1994    280      9      0    .543    .71   3.78   .501   .829   .230   1.85   .247  -.005   3
+  17 96B214b  1804 1996    193      5      0    .478    .58   1.28   .215   .590   .235   1.81   .264   .006   1
+  18 96B215a  1766 1996    231      7      1    .471    .84   5.23   .514   .755   .215   2.74   .238   .002   3
+  19 96B215b  1733 1996    264      8      0    .565    .96   2.72   .380   .751   .206   1.78   .205  -.009   3
+  20 96B216a  1706 1996    291      9      1    .550    .71   2.48   .280   .609   .233   1.83   .253  -.035   3
+  21 96B218a  1781 1996    216      6      0    .425    .96   3.02   .393   .799   .168   1.79   .176   .012   1
+  22 96B218b  1827 1996    170      4      0    .531    .94   1.91   .321   .756   .190   1.78   .201  -.025   3
+  23 96B219a  1724 1996    273      8      0    .546    .83   3.08   .513   .881   .211   1.88   .237  -.013   3
+  24 96B219b  1699 1996    298      9      0    .556    .87   2.94   .509   .867   .216   1.99   .233  -.016   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5249    149      4    .505    .82   5.23   .389   .747   .224   2.74   .235  -.000
+
+ DATA CHECKS (rwl.check): cana473
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana473.rwl
+ 24 series, 5249 measurements, 1699-1996, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_REPEATED_VALUE (1)
+     96B204a: 0.11 repeated in 6 consecutive rings, 1967-1972; a constant stretch is a placeholder, not a measurement
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file cana473.rwl, MD5 c76e5bc5f1d2660024838761f62482c0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

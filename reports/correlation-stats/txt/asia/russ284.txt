@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: russ284
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ284.rwl
+      MD5 of measurement file: 3ade87da77e0e2539a1263656b56c3c7
+      Date checked           : 01OCT26
+      Beginning year         : 1074
+      Ending year            : 1306
+      Principal investigators: Karpukhin, A.A.; Khasanov, B.; Solovyeva, L.N.
+      Site name              : Vyazma
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 55.2121 N
+      Longitude              : 34.2870 E
+      Elevation              : 160 m
+
+      Series intercorrelation: 0.580
+      Avg mean sensitivity   : 0.229
+      Avg standard deviation : 0.559
+      Avg autocorrelation    : 0.714
+      Number dated series    : 23
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 1, B 9; 2 of the B weak at every lag)
+      Pct problem segments   : 10.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ284
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1100 1125 1150 1175 1200 1225 1250 
+                        1149 1174 1199 1224 1249 1274 1299 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 vz1738A  1074 1303  .59  .59  .65  .68  .72  .61  .65 
+   2 vz1738B  1074 1304  .61  .55  .54  .61  .67  .43B .32A
+   3 vz1740A  1080 1237  .54  .60  .59  .49                
+   4 vz1740B  1074 1241  .64  .68  .72  .67                
+   5 vz1752A  1078 1300  .52  .49  .57  .64  .72  .81  .73 
+   6 vz1752B  1079 1298  .62  .46  .58  .69  .71  .83      
+   7 vz1751A  1100 1277       .47  .70  .77  .73  .58      
+   8 vz1751B  1100 1293       .60  .66  .71  .66  .72      
+   9 vz1750B  1103 1292       .16B .59  .58  .58  .44      
+  10 vz1710A  1124 1290       .31B .51  .63  .64  .59      
+  11 vz1710B  1124 1289       .28B .43  .59  .63  .60      
+  13 vz1737B  1140 1279            .56  .58  .63  .68      
+  14 vz1716A  1162 1306                 .62  .62  .76  .71 
+  15 vz1716B  1162 1304                 .26B .25B .66  .60 
+  16 vz1711A  1146 1274            .73  .68  .64  .61      
+  17 vz1711B  1146 1287            .76  .72  .71  .68      
+  18 vz1741A  1167 1299                 .41  .13B .45  .47B
+  19 vz1741B  1175 1294                      .67  .71      
+  20 vz1741C  1175 1295                      .71  .71      
+  21 vz1741D  1167 1293                 .69  .61  .69      
+  22 vz1723A  1189 1283                      .39  .78      
+  23 vz1723B  1189 1295                      .35B .75      
+ Av segment correlation  .59  .47  .61  .61  .59  .65  .58 
+
+ FLAGGED SEGMENTS: russ284
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 vz1738B  1225 1274     B     .425        -1      .426   .000
+   2 vz1738B  1250 1299     A     .316         0
+   9 vz1750B  1125 1174     B     .163         2      .400   .237
+  10 vz1710A  1125 1174     B     .306        -1      .507   .201
+  11 vz1710B  1125 1174     B     .285        -1      .588   .303
+  15 vz1716B  1175 1224     B     .260        -3      .296   .036  weak at every lag
+  15 vz1716B  1200 1249     B     .250         1      .277   .026  weak at every lag
+  18 vz1741A  1200 1249     B     .133        -1      .568   .435
+  18 vz1741A  1250 1299     B     .474        -1      .514   .040
+  23 vz1723B  1200 1249     B     .350        -1      .370   .020
+
+ DESCRIPTIVE STATISTICS: russ284
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 vz1738A  1074 1303    230      7      0    .660   1.35   5.13   .690   .758   .223   2.05   .257  -.007   2
+   2 vz1738B  1074 1304    231      7      2    .571   1.10   3.08   .511   .745   .248   2.01   .266  -.001   2
+   3 vz1740A  1080 1237    158      4      0    .536   1.43   3.14   .530   .712   .222   1.60   .218   .006   3
+   4 vz1740B  1074 1241    168      4      0    .661   1.47   3.19   .549   .780   .181   1.67   .188   .044   1
+   5 vz1752A  1078 1300    223      7      0    .630   1.05   2.43   .399   .744   .230   1.60   .232   .034   1
+   6 vz1752B  1079 1298    220      6      0    .622   1.10   2.65   .443   .735   .225   1.84   .234   .054   1
+   7 vz1751A  1100 1277    178      5      0    .615   1.32   2.84   .480   .663   .233   1.77   .235   .005   1
+   8 vz1751B  1100 1293    194      5      0    .592   1.25   2.93   .517   .591   .275   1.59   .264   .018   1
+   9 vz1750B  1103 1292    190      5      1    .362   1.56   6.08   .962   .884   .232   1.56   .230  -.012   1
+  10 vz1710A  1124 1290    167      5      1    .523   1.07   2.06   .283   .671   .173   1.41   .174   .033   1
+  11 vz1710B  1124 1289    166      5      1    .521   1.19   2.07   .327   .670   .179   1.49   .183   .028   1
+  12 vz1737A  1140 1180     41      0      0    .531   2.30   3.67   .700   .643   .207   1.50   .212  -.075   1
+  13 vz1737B  1140 1279    140      4      0    .548   1.57   3.38   .626   .749   .223   1.52   .214   .010   2
+  14 vz1716A  1162 1306    145      4      0    .662   1.48   3.58   .560   .744   .203   1.69   .210   .029   1
+  15 vz1716B  1162 1304    143      4      2    .428   1.40   4.01   .524   .705   .213   1.69   .226   .033   1
+  16 vz1711A  1146 1274    129      4      0    .657   1.44   3.81   .640   .655   .294   1.67   .286   .027   1
+  17 vz1711B  1146 1287    142      4      0    .711   1.64   3.89   .728   .646   .309   2.05   .309   .040   1
+  18 vz1741A  1167 1299    133      4      2    .389   1.60   3.01   .606   .680   .270   1.58   .258   .002   2
+  19 vz1741B  1175 1294    120      2      0    .722   1.49   2.83   .530   .748   .194   1.65   .212   .005   1
+  20 vz1741C  1175 1295    121      2      0    .617   1.48   2.93   .550   .718   .213   1.63   .228   .016   1
+  21 vz1741D  1167 1293    127      3      0    .678   1.62   3.15   .601   .702   .234   1.61   .239   .028   1
+  22 vz1723A  1189 1283     95      2      0    .534   1.76   3.77   .713   .695   .265   1.57   .256  -.021   1
+  23 vz1723B  1189 1295    107      2      1    .513   2.00   4.30   .675   .618   .238   1.46   .229  -.016   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3568     95     10    .580   1.39   6.08   .559   .714   .229   2.05   .234   .016
+
+ DATA CHECKS (rwl.check): russ284
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ284.rwl
+ 23 series, 3568 measurements, 1074-1306, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     vz1750B: correlates with the rest of the collection at r = 0.333 where the collection median is 0.638 (4.1 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file russ284.rwl, MD5 3ade87da77e0e2539a1263656b56c3c7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

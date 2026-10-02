@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: che482
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che482.rwl
+      MD5 of measurement file: 3da5c016a952952f9a2b941661a04008
+      Date checked           : 01OCT26
+      Beginning year         : 1752
+      Ending year            : 2023
+      Principal investigators: Scherrer, J.; Nötzli, M.; Bigler, C.
+      Site name              : Tschlin, Engiadina Bassa
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.8764 N
+      Longitude              : 10.4215 E
+      Elevation              : 1664 m
+
+      Series intercorrelation: 0.449
+      Avg mean sensitivity   : 0.149
+      Avg standard deviation : 0.543
+      Avg autocorrelation    : 0.880
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 4, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 20.51
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che482
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 TS01F_01 1924 2023                                .57 
+   2 TS02F_01 1855 2023                 .76  .70  .54  .56 
+   3 TS05F_01 1842 2023            .25B .31A .38  .38  .52 
+   4 TS08F_01 1833 2023            .35  .50  .40  .32A .36 
+   5 TS09F_01 1943 2023                                .39 
+   6 TS10F_02 1752 2023       .24A .46  .51  .60  .55  .50 
+   7 TS11F_01 1863 2023                 .21B .32A .36  .44 
+   8 TS13F_01 1878 2023                      .54  .36  .35 
+   9 TS14F_01 1848 2023                 .47  .70  .58  .50 
+  10 TS15F_01 1813 2023       .19B .44  .67  .65  .41  .14B
+ Av segment correlation       .21  .38  .49  .53  .44  .43 
+
+ FLAGGED SEGMENTS: che482
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 TS05F_01 1850 1899     B     .251         7      .264   .014  weak at every lag
+   3 TS05F_01 1875 1924     A     .306         0
+   4 TS08F_01 1925 1974     A     .318         0
+   6 TS10F_02 1825 1874     A     .240         0
+   7 TS11F_01 1875 1924     B     .207        10      .220   .012  weak at every lag
+   7 TS11F_01 1900 1949     A     .321         0
+  10 TS15F_01 1825 1874     B     .186         6      .259   .073  weak at every lag
+  10 TS15F_01 1950 1999     B     .138        -5      .249   .111  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che482
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TS01F_01 1924 2023    100      1      0    .617   1.08   1.55   .200   .662   .122   1.40   .124   .022   3
+   2 TS02F_01 1855 2023    169      4      0    .624   1.42   3.30   .604   .916   .141   1.33   .143   .008   2
+   3 TS05F_01 1842 2023    182      5      2    .347   1.23   2.95   .591   .911   .160   1.85   .179   .038   3
+   4 TS08F_01 1833 2023    191      5      1    .405   1.16   3.26   .595   .919   .169   1.45   .176   .005   1
+   5 TS09F_01 1943 2023     81      1      0    .522   2.14   4.17   .803   .871   .154   1.38   .153  -.005   1
+   6 TS10F_02 1752 2023    272      6      1    .434   1.17   2.79   .621   .901   .191   1.73   .198   .003   3
+   7 TS11F_01 1863 2023    161      4      2    .384   1.96   4.28   .690   .852   .137   1.34   .145   .017   1
+   8 TS13F_01 1878 2023    146      3      0    .442   1.19   3.08   .465   .884   .126   1.32   .139  -.023   1
+   9 TS14F_01 1848 2023    176      4      0    .528   1.01   3.11   .468   .911   .147   1.48   .157   .008   3
+  10 TS15F_01 1813 2023    211      6      2    .336   1.33   2.55   .374   .859   .114   1.38   .113  -.014   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1689     39      8    .449   1.32   4.28   .543   .880   .149   1.85   .156   .006
+
+ DATA CHECKS (rwl.check): che482
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che482.rwl
+ 10 series, 1689 measurements, 1752-2023, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file che482.rwl, MD5 3da5c016a952952f9a2b941661a04008.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

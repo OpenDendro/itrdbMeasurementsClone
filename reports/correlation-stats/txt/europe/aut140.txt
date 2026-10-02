@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: aut140
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aut140.rwl
+      MD5 of measurement file: e7f050878ccc4df5141f6581bf13114c
+      Date checked           : 01OCT26
+      Beginning year         : 1781
+      Ending year            : 2009
+      Principal investigators: Hartl, C.; Rothe, A.
+      Site name              : Nationalpark Kalkalpen, Schwarzkogel
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.7540 N
+      Longitude              : 14.4380 E
+      Elevation              : 1150 m
+
+      Series intercorrelation: 0.561
+      Avg mean sensitivity   : 0.209
+      Avg standard deviation : 0.584
+      Avg autocorrelation    : 0.863
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.61
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aut140
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 NKSK101C 1842 2009            .33  .52  .64  .42  .40 
+   2 NKSK101O 1845 2009            .32A .36  .64  .44  .38 
+   3 NKSK102C 1857 2009                 .43  .66  .61  .67 
+   4 NKSK102O 1855 2009                 .42  .66  .54  .62 
+   5 NKSK103C 1856 2009                 .60  .81  .78  .71 
+   6 NKSK103O 1853 2009                 .54  .78  .76  .67 
+   7 NKSK105C 1891 2009                      .54  .53  .61 
+   8 NKSK105O 1872 2009                 .29B .53  .59  .65 
+   9 NKSK106C 1790 2009  .60  .58  .45  .49  .60  .55  .59 
+  10 NKSK106O 1795 2009  .69  .63  .46  .55  .64  .59  .59 
+  11 NKSK107C 1789 2009  .70  .68  .66  .67  .75  .58  .51 
+  12 NKSK107O 1781 2009  .72  .56  .40  .42  .58  .57  .49 
+  13 NKSK108C 1790 2009  .61  .65  .49  .41  .44  .42  .63 
+  14 NKSK108O 1792 2009  .73  .58  .45  .48  .59  .39  .38 
+  15 NKSK109C 1797 2009  .72  .73  .61  .54  .69  .64  .70 
+  16 NKSK109O 1792 2009  .60  .67  .69  .50  .74  .65  .52 
+  17 NKSK113C 1807 2009       .70  .45  .52  .62  .66  .71 
+  18 NKSK113O 1807 2009       .68  .54  .62  .69  .63  .73 
+  19 NKSK114C 1794 2009  .50  .46  .46  .56  .70  .60  .63 
+  20 NKSK114O 1792 2009  .73  .56  .30A .44  .59  .53  .53 
+ Av segment correlation  .66  .62  .47  .49  .64  .57  .59 
+
+ FLAGGED SEGMENTS: aut140
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 NKSK101O 1850 1899     A     .321         0
+   8 NKSK105O 1875 1924     B     .290         2      .324   .034  weak at every lag
+  20 NKSK114O 1850 1899     A     .297         0
+
+ DESCRIPTIVE STATISTICS: aut140
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NKSK101C 1842 2009    168      5      0    .414    .95   2.33   .453   .836   .209   1.59   .212   .014   3
+   2 NKSK101O 1845 2009    165      5      1    .338    .78   2.50   .327   .710   .193   1.50   .199   .043   1
+   3 NKSK102C 1857 2009    153      4      0    .477   1.28   2.51   .504   .748   .238   2.40   .254   .008   3
+   4 NKSK102O 1855 2009    155      4      0    .538   1.27   3.73   .508   .736   .229   1.73   .229  -.024   3
+   5 NKSK103C 1856 2009    154      4      0    .669   1.00   2.66   .475   .680   .293   1.83   .290  -.017   1
+   6 NKSK103O 1853 2009    157      4      0    .616   1.00   2.46   .432   .706   .263   1.99   .275   .033   1
+   7 NKSK105C 1891 2009    119      3      0    .549   1.13   3.41   .723   .899   .228   1.76   .230   .019   2
+   8 NKSK105O 1872 2009    138      4      1    .503    .98   2.22   .447   .871   .185   1.43   .178   .013   2
+   9 NKSK106C 1790 2009    220      7      0    .555   1.16   3.70   .773   .923   .192   1.53   .186   .017   3
+  10 NKSK106O 1795 2009    215      7      0    .586   1.08   4.36   .759   .957   .178   1.49   .182  -.001   2
+  11 NKSK107C 1789 2009    221      7      0    .640    .98   3.22   .620   .889   .223   1.66   .214  -.021   1
+  12 NKSK107O 1781 2009    229      7      0    .557    .95   3.62   .648   .916   .211   1.72   .191   .009   3
+  13 NKSK108C 1790 2009    220      7      0    .530   1.28   3.97   .641   .830   .192   1.77   .193  -.014   3
+  14 NKSK108O 1792 2009    218      7      0    .517    .96   3.61   .569   .891   .175   1.67   .186   .017   1
+  15 NKSK109C 1797 2009    213      7      0    .661   1.01   3.16   .613   .905   .206   1.74   .212   .010   1
+  16 NKSK109O 1792 2009    218      7      0    .622    .85   3.13   .614   .919   .193   1.46   .179  -.001   1
+  17 NKSK113C 1807 2009    203      6      0    .620    .62   2.31   .465   .929   .197   1.66   .191  -.001   1
+  18 NKSK113O 1807 2009    203      6      0    .642    .81   2.75   .432   .890   .186   1.56   .188   .021   1
+  19 NKSK114C 1794 2009    216      7      0    .545    .90   4.35   .740   .913   .218   1.76   .224   .034   1
+  20 NKSK114O 1792 2009    218      7      1    .554    .90   3.98   .717   .921   .214   1.48   .194   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3803    115      3    .561    .99   4.36   .584   .863   .209   2.40   .207   .008
+
+ DATA CHECKS (rwl.check): aut140
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/aut140.rwl
+ 20 series, 3803 measurements, 1781-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file aut140.rwl, MD5 e7f050878ccc4df5141f6581bf13114c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: cana475
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana475.rwl
+      MD5 of measurement file: 187a82fb43ab61f9d5c0eac83fc96472
+      Date checked           : 01OCT26
+      Beginning year         : 1633
+      Ending year            : 2004
+      Principal investigators: Smith, D.J.; Coulthard, B.L.; Jackson, S.
+      Site name              : Surprise Glacier
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 56.2000 N
+      Longitude              : 129.5900 W
+      Elevation              : 963 m
+
+      Series intercorrelation: 0.571
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 0.306
+      Avg autocorrelation    : 0.747
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 2.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana475
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 03B      1666 2004  .46  .47  .36  .48  .68  .69  .60  .52  .45  .48  .48 
+   2 04A      1633 2004  .73  .62  .65  .72  .61  .44  .48  .61  .52  .50  .50 
+   3 06A      1633 2004  .71  .74  .70  .69  .50  .51  .67  .68  .72  .78  .70 
+   4 06B      1637 2004  .59  .60  .66  .62  .32A .42  .65  .68  .54  .52  .68 
+   5 01A      1755 2003                 .64  .46  .34  .48  .61  .62  .68  .68 
+   6 01B      1814 2003                           .68  .79  .73  .68  .77  .72 
+   7 02A      1746 2002            .49  .63  .59  .60  .65  .55  .49  .76  .63 
+   8 04B      1650 2003  .53  .51  .68  .62  .57  .64  .60  .70  .73  .81  .84 
+   9 05A      1915 2003                                               .62  .58 
+  10 05B      1910 2003                                               .61  .57 
+  11 07A      1894 2003                                          .43  .39  .51 
+  12 07B      1913 2003                                               .36  .37 
+  13 08A      1831 2003                                .49  .59  .51  .52  .56 
+  14 09A      1704 2003       .68  .63  .68  .45  .27B .37B .53  .59  .71  .70 
+  15 09B      1715 2003       .57  .50  .57  .67  .71  .47  .45  .73  .76  .58 
+  16 10A      1705 2003       .48  .47  .66  .79  .72  .55  .60  .51  .58  .67 
+  17 11A      1726 2003            .64  .42  .45  .78  .78  .73  .43  .30B .39 
+  18 12B      1883 2001                                          .65  .49  .39 
+  19 13A      1781 2003                      .50  .48  .58  .74  .64  .58  .56 
+  20 13b      1778 2003                      .58  .62  .80  .82  .74  .46  .41 
+  21 08B      1700 2004       .54  .72  .72  .66  .35  .37  .53  .51  .60  .56 
+  22 02B      1760 2003                 .53  .68  .69  .66  .58  .47  .61  .42 
+ Av segment correlation  .60  .58  .59  .61  .57  .56  .59  .63  .58  .59  .57 
+
+ FLAGGED SEGMENTS: cana475
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 06B      1800 1849     A     .318         0
+  14 09A      1825 1874     B     .268        -1      .397   .129
+  14 09A      1850 1899     B     .370        -1      .379   .009
+  17 11A      1925 1974     B     .304        -3      .311   .007  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana475
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 03B      1666 2004    339     11      0    .504    .42    .94   .144   .665   .223   1.80   .212   .006   1
+   2 04A      1633 2004    372     11      0    .599    .42    .80   .122   .672   .196   1.52   .189   .001   3
+   3 06A      1633 2004    372     11      0    .656    .43    .93   .150   .787   .194   1.50   .191  -.006   1
+   4 06B      1637 2004    368     11      1    .572    .44    .85   .131   .678   .193   1.69   .190   .003   3
+   5 01A      1755 2003    249      8      0    .591   1.19   2.85   .476   .821   .194   1.60   .202  -.008   1
+   6 01B      1814 2003    190      6      0    .720   1.41   2.76   .516   .799   .161   1.47   .163   .003   1
+   7 02A      1746 2002    257      9      0    .548    .93   2.09   .495   .872   .246   1.95   .235   .078   0
+   8 04B      1650 2003    354     11      0    .632    .42   1.00   .180   .719   .263   1.81   .264  -.015   1
+   9 05A      1915 2003     89      2      0    .636   2.25   3.36   .380   .300   .146   1.33   .135  -.003   0
+  10 05B      1910 2003     94      2      0    .638   1.55   3.96   .760   .875   .168   1.44   .149  -.079   0
+  11 07A      1894 2003    110      3      0    .429   1.72   3.89   .547   .660   .174   1.64   .200  -.017   2
+  12 07B      1913 2003     91      2      0    .422   1.64   3.71   .729   .796   .169   1.54   .188   .151   3
+  13 08A      1831 2003    173      5      0    .527   1.21   2.36   .416   .721   .212   1.63   .204  -.007   1
+  14 09A      1704 2003    300     10      2    .569    .85   2.04   .373   .808   .229   1.72   .218  -.003   2
+  15 09B      1715 2003    289     10      0    .578   1.00   3.65   .506   .835   .236   1.76   .232  -.003   1
+  16 10A      1705 2003    299     10      0    .576    .62   1.31   .241   .742   .228   1.82   .226   .012   1
+  17 11A      1726 2003    278      9      1    .540    .76   1.55   .280   .721   .222   1.73   .216   .003   1
+  18 12B      1883 2001    119      3      0    .453   1.55   2.83   .522   .842   .139   1.43   .146   .012   1
+  19 13A      1781 2003    223      7      0    .546    .92   1.80   .302   .681   .199   1.73   .215   .002   1
+  20 13b      1778 2003    226      7      0    .609    .77   1.51   .247   .708   .202   1.72   .215   .028   1
+  21 08B      1700 2004    305     10      0    .522    .27    .68   .123   .748   .237   2.01   .244   .062   1
+  22 02B      1760 2003    244      8      0    .519    .60   1.67   .377   .860   .293   1.86   .268   .004   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5341    166      4    .571    .79   3.96   .306   .747   .214   2.01   .212   .009
+
+ DATA CHECKS (rwl.check): cana475
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana475.rwl
+ 22 series, 5341 measurements, 1633-2004, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana475.rwl, MD5 187a82fb43ab61f9d5c0eac83fc96472.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,152 @@
+
+ COFECHA-style crossdating report: mn036
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mn036.rwl
+      MD5 of measurement file: 14e1bbbc6ee0a3337b4544b37fc9ece6
+      Date checked           : 01OCT26
+      Beginning year         : 1948
+      Ending year            : 2020
+      Principal investigators: McPartland, M.
+      Site name              : Marcell Experimental Forest Pine upland
+      Species information    : PIRE Pinus resinosa Aiton
+      Latitude               : 47.5110 N
+      Longitude              : 93.4579 W
+      Elevation              : 420 m
+
+      Series intercorrelation: 0.621
+      Avg mean sensitivity   : 0.213
+      Avg standard deviation : 2.304
+      Avg autocorrelation    : 0.918
+      Number dated series    : 30
+      Segment length tested  : 36
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mn036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  36-year dated segments, lagged  18 years
+ Flags:  A = correlation under   .3862 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1968 
+                        1985 2003 
+ --- -------- ---------  ---- ---- 
+   1 01A      1951 2020       .73 
+   2 MPR01B   1958 2020       .54 
+   3 MPR02A   1952 2020       .75 
+   4 MPR02B   1954 2020       .80 
+   5 MPR03A   1959 2020       .53 
+   6 MPR03B   1955 2020       .72 
+   7 MPR04A   1953 2020       .38B
+   8 MPR04B   1958 2020       .57 
+   9 MPR05A   1952 2020       .62 
+  10 MPR05B   1955 2020       .70 
+  11 MPR06A   1954 2020       .88 
+  12 MPR06B   1957 2020       .46 
+  13 MPR07A   1953 2020       .70 
+  14 MPR07B   1956 2020       .76 
+  15 MPR08A   1951 2020       .59 
+  16 MPR08B   1957 2020       .54 
+  17 MPR09A   1956 2020       .70 
+  18 MPR09B   1951 2020       .59 
+  19 MPR10A   1958 2020       .67 
+  20 MPR10B   1963 2020       .70 
+  21 MPR11A   1956 2020       .59 
+  22 MPR11B   1956 2020       .66 
+  23 MPR12A   1954 2020       .82 
+  24 MPR12B   1956 2020       .65 
+  25 MPR13A   1957 2020       .25B
+  26 MPR13B   1952 2020       .67 
+  27 MPR14A   1954 2020       .74 
+  28 MPR14B   1949 2020       .72 
+  29 MPR15A   1956 2020       .73 
+  30 MPR15B   1948 2020       .73 
+ Av segment correlation       .65 
+
+ FLAGGED SEGMENTS: mn036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 MPR04A   1968 2003     B     .381         1      .511   .130
+  25 MPR13A   1968 2003     B     .245        -1      .369   .124  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mn036
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01A      1951 2020     70      1      0    .626   3.40  10.58  2.768   .934   .191   1.53   .198   .009   1
+   2 MPR01B   1958 2020     63      1      0    .539   3.05  11.39  2.458   .902   .235   1.62   .236  -.013   2
+   3 MPR02A   1952 2020     69      1      0    .666   3.18   8.82  2.191   .930   .194   1.43   .188   .070   1
+   4 MPR02B   1954 2020     67      1      0    .739   3.43  10.89  2.468   .934   .186   1.46   .185   .093   1
+   5 MPR03A   1959 2020     62      1      0    .566   3.38  12.04  2.504   .905   .242   1.55   .242   .075   1
+   6 MPR03B   1955 2020     66      1      0    .646   2.89  12.94  2.733   .921   .233   1.53   .222   .024   1
+   7 MPR04A   1953 2020     68      1      1    .484   2.61   8.52  1.975   .936   .185   1.53   .199   .088   1
+   8 MPR04B   1958 2020     63      1      0    .639   2.55  14.05  2.916   .942   .242   1.71   .265   .079   1
+   9 MPR05A   1952 2020     69      1      0    .577   2.90  14.31  2.660   .942   .216   1.43   .199  -.061   3
+  10 MPR05B   1955 2020     66      1      0    .609   2.96  11.27  2.374   .931   .193   1.53   .186   .069   2
+  11 MPR06A   1954 2020     67      1      0    .784   3.45   9.90  2.319   .902   .212   1.49   .213   .033   2
+  12 MPR06B   1957 2020     64      1      0    .528   3.49  15.66  2.773   .904   .212   1.61   .203   .096   0
+  13 MPR07A   1953 2020     68      1      0    .652   3.22   8.84  2.409   .917   .201   1.53   .225   .136   1
+  14 MPR07B   1956 2020     65      1      0    .624   3.60   9.88  2.630   .926   .203   1.59   .214   .067   3
+  15 MPR08A   1951 2020     70      1      0    .571   3.60   8.35  2.325   .893   .248   1.66   .247   .093   1
+  16 MPR08B   1957 2020     64      1      0    .599   3.53  12.26  3.024   .925   .221   1.61   .245   .135   1
+  17 MPR09A   1956 2020     65      1      0    .680   2.49  12.12  2.472   .936   .246   2.04   .267   .057   3
+  18 MPR09B   1951 2020     70      1      0    .630   2.26   8.98  2.311   .954   .221   1.92   .250   .077   3
+  19 MPR10A   1958 2020     63      1      0    .646   3.23   8.33  1.759   .880   .203   1.48   .184   .014   3
+  20 MPR10B   1963 2020     58      1      0    .699   2.82   6.86  1.790   .889   .212   1.61   .234   .088   1
+  21 MPR11A   1956 2020     65      1      0    .509   2.45   6.72  1.362   .907   .184   1.53   .191   .004   1
+  22 MPR11B   1956 2020     65      1      0    .645   2.19   6.47  1.425   .911   .224   1.71   .226   .038   1
+  23 MPR12A   1954 2020     67      1      0    .671   2.71  10.32  1.941   .860   .181   1.65   .215   .204   1
+  24 MPR12B   1956 2020     65      1      0    .663   2.54   8.16  1.604   .885   .218   1.64   .230   .037   1
+  25 MPR13A   1957 2020     64      1      1    .333   2.79   9.24  2.224   .928   .201   1.47   .203   .005   2
+  26 MPR13B   1952 2020     69      1      0    .636   2.99   7.35  2.014   .923   .196   1.55   .180  -.010   2
+  27 MPR14A   1954 2020     67      1      0    .764   3.09  11.26  2.894   .926   .229   1.70   .253   .043   3
+  28 MPR14B   1949 2020     72      1      0    .645   2.76   9.81  2.412   .937   .225   1.72   .237   .012   1
+  29 MPR15A   1956 2020     65      1      0    .536   3.31  10.46  2.270   .922   .195   1.51   .211   .084   1
+  30 MPR15B   1948 2020     73      1      0    .700   2.65   7.67  2.069   .913   .239   1.56   .240  -.022   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1989     30      2    .621   2.98  15.66  2.304   .918   .213   2.04   .220   .054
+
+ DATA CHECKS (rwl.check): mn036
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mn036.rwl
+ 30 series, 1989 measurements, 1948-2020, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file mn036.rwl, MD5 14e1bbbc6ee0a3337b4544b37fc9ece6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3862 for 36-year segments.
+ Segments: 36 years, lagged 18, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 36 years: the record is only 73 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

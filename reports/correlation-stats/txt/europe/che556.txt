@@ -1,0 +1,158 @@
+
+ COFECHA-style crossdating report: che556
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che556.rwl
+      MD5 of measurement file: 694f5db1dec707e2113dbbe958542339
+      Date checked           : 01OCT26
+      Beginning year         : 1787
+      Ending year            : 2018
+      Principal investigators: Gillerot, L.; Forrester, D.I.; Bottero, A.; Rigling, A.; Lévesque, M.
+      Site name              : CreteRond
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.8833 N
+      Longitude              : 6.5594 E
+      Elevation              : 970 m
+
+      Series intercorrelation: 0.516
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.904
+      Avg autocorrelation    : 0.859
+      Number dated series    : 29
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 3, B 7; 1 of the B weak at every lag)
+      Pct problem segments   : 15.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che556
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 RB9903   1917 2018                           .62  .69 
+   2 RB20     1939 2018                                .48 
+   3 RB220    1920 2018                           .63  .77 
+   4 RB340    1910 2018                           .77  .69 
+   5 RB472    1913 2018                           .58  .49 
+   6 RB565    1787 2018  .55  .47  .61  .48  .20B .19B .38 
+   7 RB1100   1909 2018                           .25B .42 
+   8 RB1135   1945 2018                                .50 
+   9 RB1213   1915 2018                           .58  .69 
+  10 RB1286   1930 2018                                .62 
+  11 RB1515   1949 2018                                .65 
+  12 RB1635   1906 2018                           .70  .78 
+  15 RB1858   1920 2018                           .59  .63 
+  16 RB1866   1946 2018                                .64 
+  17 RB1884   1788 2018  .57  .43  .38  .35  .42  .48  .50 
+  18 RB2090   1912 2018                           .48  .55 
+  19 RB2158   1936 2018                                .71 
+  20 RB2676   1915 2018                           .29A .32A
+  21 RB2830   1908 2018                           .69  .69 
+  22 RB2860   1912 2018                           .58  .62 
+  23 RB2987   1795 2018  .41B .28B .18B .21A .36  .43  .43 
+  24 RB3021   1936 2018                                .41 
+  25 RB3135   1917 2018                           .60  .72 
+  26 RB9900   1787 2018  .61  .45  .50  .43  .30B .38  .57 
+  27 RB9901   1914 2018                           .68  .70 
+  28 RB9904   1918 2018                           .60  .63 
+  29 RB9902   1932 2018                                .60 
+ Av segment correlation  .54  .41  .42  .37  .32  .53  .59 
+
+ FLAGGED SEGMENTS: che556
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 RB565    1900 1949     B     .204        -1      .336   .132
+   6 RB565    1925 1974     B     .190         4      .337   .146
+   7 RB1100   1925 1974     B     .254         6      .345   .091
+  20 RB2676   1925 1974     A     .287         0
+  20 RB2676   1950 1999     A     .325         0
+  23 RB2987   1800 1849     B     .414         4      .514   .100
+  23 RB2987   1825 1874     B     .280         4      .407   .127
+  23 RB2987   1850 1899     B     .181        -8      .317   .136  weak at every lag
+  23 RB2987   1875 1924     A     .212         0
+  26 RB9900   1900 1949     B     .301        -1      .360   .060
+
+ DESCRIPTIVE STATISTICS: che556
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RB9903   1917 2018    102      2      0    .566   1.61   3.57   .875   .877   .258   1.59   .252   .095   1
+   2 RB20     1939 2018     80      1      0    .515   2.37   5.47  1.365   .914   .188   1.61   .202  -.009   1
+   3 RB220    1920 2018     99      2      0    .618   1.62   3.70   .856   .873   .207   1.49   .206   .025   1
+   4 RB340    1910 2018    109      2      0    .738   2.38   5.95  1.500   .919   .215   1.52   .215   .042   1
+   5 RB472    1913 2018    106      2      0    .549   1.63   4.80   .957   .888   .207   1.72   .222   .057   1
+   6 RB565    1787 2018    232      7      2    .465   1.23   3.11   .604   .786   .246   1.72   .230  -.005   3
+   7 RB1100   1909 2018    110      2      1    .319   1.36   2.65   .583   .822   .222   1.52   .222  -.062   1
+   8 RB1135   1945 2018     74      1      0    .508   2.18   4.15   .676   .732   .188   1.55   .190   .126   1
+   9 RB1213   1915 2018    104      2      0    .558   1.53   3.89   .867   .858   .223   1.63   .235   .051   1
+  10 RB1286   1930 2018     89      1      0    .481   1.40   3.35   .628   .863   .196   1.42   .196  -.042   1
+  11 RB1515   1949 2018     70      1      0    .617   3.00   5.41   .883   .683   .197   1.42   .190   .073   1
+  12 RB1635   1906 2018    113      2      0    .677   1.71   4.03   .973   .882   .217   1.80   .215  -.011   1
+  13 RB1705   1949 2018     70      0      0    .472   2.62   5.09   .773   .773   .158   1.40   .156   .053   2
+  14 RB1836   1955 2018     64      0      0    .635   2.87   5.90  1.082   .787   .193   1.46   .199  -.002   3
+  15 RB1858   1920 2018     99      2      0    .528   1.93   6.56  1.221   .885   .213   1.53   .214   .022   3
+  16 RB1866   1946 2018     73      1      0    .597   2.94   8.55  1.738   .934   .188   1.51   .189  -.006   1
+  17 RB1884   1788 2018    231      7      0    .508   1.47   4.19   .780   .821   .267   1.77   .266   .020   1
+  18 RB2090   1912 2018    107      2      0    .442   1.80   5.49  1.023   .887   .246   1.55   .239   .021   3
+  19 RB2158   1936 2018     83      1      0    .565   2.20   5.63  1.218   .912   .177   1.46   .188   .056   1
+  20 RB2676   1915 2018    104      2      2    .232   1.40   4.77  1.052   .948   .187   1.55   .203   .053   1
+  21 RB2830   1908 2018    111      2      0    .593   1.50   3.77   .886   .920   .195   1.45   .190  -.034   1
+  22 RB2860   1912 2018    107      2      0    .413   1.36   3.64   .799   .867   .243   1.94   .262   .035   1
+  23 RB2987   1795 2018    224      7      4    .317   1.23   3.89   .926   .892   .228   1.78   .254   .041   1
+  24 RB3021   1936 2018     83      1      0    .513   1.89   3.41   .810   .857   .185   1.52   .199  -.003   2
+  25 RB3135   1917 2018    102      2      0    .650   1.90   5.19  1.298   .928   .168   1.47   .187   .055   1
+  26 RB9900   1787 2018    232      7      1    .490    .96   2.79   .609   .864   .256   1.86   .252   .001   3
+  27 RB9901   1914 2018    105      2      0    .681   1.52   3.29   .689   .856   .185   1.44   .186  -.015   1
+  28 RB9904   1918 2018    101      2      0    .637   1.62   3.27   .751   .778   .252   1.73   .245   .042   3
+  29 RB9902   1932 2018     87      1      0    .499   1.79   4.37   .972   .903   .185   1.76   .193  -.024   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3271     66     10    .516   1.68   8.55   .904   .859   .218   1.94   .221   .020
+
+ DATA CHECKS (rwl.check): che556
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che556.rwl
+ 29 series, 3271 measurements, 1787-2018, 0.01 mm precision
+ 0 error(s), 2 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_REPEATED_VALUE (1)
+     RB2987: 0.1 repeated in 16 consecutive rings, 1889-1904; a constant stretch is a placeholder, not a measurement
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file che556.rwl, MD5 694f5db1dec707e2113dbbe958542339.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

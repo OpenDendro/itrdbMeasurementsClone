@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: in044
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in044.rwl
+      MD5 of measurement file: c817058670e0e1b4928730c92f02f099
+      Date checked           : 01OCT26
+      Beginning year         : 1758
+      Ending year            : 2016
+      Principal investigators: Maxwell, J.T.; Strange, B.M.
+      Site name              : Saunders Woods
+      Species information    : CYOV Carya ovata (Mill.) K. Koch
+      Latitude               : 38.3707 N
+      Longitude              : 87.7173 W
+      Elevation              : 119 m
+
+      Series intercorrelation: 0.501
+      Avg mean sensitivity   : 0.291
+      Avg standard deviation : 0.920
+      Avg autocorrelation    : 0.652
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3)
+      Pct problem segments   : 8.89
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SWL01A   1827 2016            .64  .68  .69  .68  .41 
+   2 SWL01B   1854 2016                 .68  .67  .51  .45 
+   3 SWL02A   1869 2016                 .40  .37  .73  .61 
+   4 SWL02B   1904 2016                           .62  .60 
+   5 SWL03A   1758 2016  .60  .63  .65  .34  .31A .51  .49 
+   6 SWL03B   1781 2016  .42  .37B .46  .36  .36  .55  .65 
+   7 SWL04A   1940 2016                                .38 
+   8 SWL04B   1946 2016                                .28B
+   9 SWL05B   1908 2016                           .39B .50 
+  10 SWL07A   1928 2016                                .53 
+  11 SWL07B   1911 2016                           .34  .44 
+  12 SWL08B   1929 2016                                .51 
+  13 SWL09A   1903 2016                           .46  .61 
+  14 SWL09B   1904 2016                           .49  .64 
+  15 SWL10A   1915 2016                           .69  .70 
+  16 SWL10B   1909 2016                           .67  .49 
+ Av segment correlation  .51  .50  .58  .49  .48  .55  .52 
+
+ FLAGGED SEGMENTS: in044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 SWL03A   1900 1949     A     .314         0
+   6 SWL03B   1825 1874     B     .366         1      .480   .114
+   8 SWL04B   1950 1999     B     .285         1      .422   .137
+   9 SWL05B   1925 1974     B     .387        -4      .423   .035
+
+ DESCRIPTIVE STATISTICS: in044
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SWL01A   1827 2016    190      5      0    .494   1.22   4.06   .763   .795   .275   2.80   .322  -.021   3
+   2 SWL01B   1854 2016    163      4      0    .553   1.74   5.45  1.074   .784   .277   1.78   .253   .001   3
+   3 SWL02A   1869 2016    148      4      0    .512   1.68   4.67   .831   .662   .258   1.95   .267   .017   2
+   4 SWL02B   1904 2016    113      2      0    .586   1.73   6.26   .915   .731   .217   2.08   .235   .007   1
+   5 SWL03A   1758 2016    259      7      1    .524    .97   8.74   .834   .622   .312   3.87   .372  -.010   1
+   6 SWL03B   1781 2016    236      7      1    .467   1.00   5.17   .842   .668   .339   3.64   .418  -.017   3
+   7 SWL04A   1940 2016     77      1      0    .416   1.34   4.86   .718   .443   .344   1.83   .324  -.011   0
+   8 SWL04B   1946 2016     71      1      1    .196   1.59   4.92   .759   .169   .390   2.19   .373   .010   2
+   9 SWL05B   1908 2016    109      2      1    .373   1.67   9.37  1.630   .760   .269   2.35   .313  -.028   1
+  10 SWL07A   1928 2016     89      1      0    .481   1.95   5.46  1.030   .506   .289   1.91   .295   .027   2
+  11 SWL07B   1911 2016    106      2      0    .441   1.93   4.38   .856   .514   .312   2.24   .365  -.019   1
+  12 SWL08B   1929 2016     88      1      0    .487   2.26   4.28   .810   .652   .249   1.78   .245   .149   0
+  13 SWL09A   1903 2016    114      2      0    .578   1.93   4.69   .837   .648   .278   1.66   .271  -.032   1
+  14 SWL09B   1904 2016    113      2      0    .550   2.19   4.68   .911   .695   .263   1.53   .255   .005   1
+  15 SWL10A   1915 2016    102      2      0    .658   1.68   5.11  1.028   .777   .283   1.96   .269  -.030   1
+  16 SWL10B   1909 2016    108      2      0    .548   1.84   6.49  1.058   .594   .292   1.99   .293   .101   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2086     45      4    .501   1.56   9.37   .920   .652   .291   3.87   .314   .004
+
+ DATA CHECKS (rwl.check): in044
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in044.rwl
+ 16 series, 2086 measurements, 1758-2016, 0.001 mm precision
+ 1 error(s), 2 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     SWL04B: correlates best with the master at lag 1 (r = 0.391 against r = 0.152 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     SWL04B: correlates with the rest of the collection at r = 0.152 where the collection median is 0.523 (10.4 MAD below it); it does not fit the collection it is in
+     SWL05B: correlates with the rest of the collection at r = 0.213 where the collection median is 0.523 (8.7 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file in044.rwl, MD5 c817058670e0e1b4928730c92f02f099.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

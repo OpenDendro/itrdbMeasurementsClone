@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: cana615
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana615.rwl
+      MD5 of measurement file: 85d498a10255cf7fc27378df2878ec97
+      Date checked           : 01OCT26
+      Beginning year         : 1885
+      Ending year            : 2017
+      Principal investigators: Stefanuk, M.A.; Danby, R.
+      Site name              : Algonquin Highlands AL01
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 45.4707 N
+      Longitude              : 78.7045 W
+      Elevation              : 447 m
+
+      Series intercorrelation: 0.423
+      Avg mean sensitivity   : 0.307
+      Avg standard deviation : 0.738
+      Avg autocorrelation    : 0.650
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 28.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana615
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 013AL01A 1885 2017  .20B .56  .68 
+   2 013AL01B 1907 2017       .62  .70 
+   3 014AL01A 1895 2017  .28A .58  .49 
+   4 014AL01B 1890 2017  .37  .31B .20B
+   5 015AL01A 1922 2017       .44  .52 
+   6 015AL01B 1925 2017            .46 
+ Av segment correlation  .28  .50  .51 
+
+ FLAGGED SEGMENTS: cana615
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 013AL01A 1900 1949     B     .198         8      .202   .004  weak at every lag
+   3 014AL01A 1900 1949     A     .283         0
+   4 014AL01B 1925 1974     B     .311         2      .421   .111
+   4 014AL01B 1950 1999     B     .204         2      .526   .322
+
+ DESCRIPTIVE STATISTICS: cana615
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 013AL01A 1885 2017    133      3      1    .369   1.76   3.69   .696   .495   .332   1.97   .294   .006   1
+   2 013AL01B 1907 2017    111      2      0    .565   2.03   3.70   .683   .657   .230   1.51   .228   .009   1
+   3 014AL01A 1895 2017    123      3      1    .381   1.71   3.21   .594   .588   .289   1.60   .256   .026   1
+   4 014AL01B 1890 2017    128      3      2    .274   1.80   3.79   .647   .700   .248   1.68   .240  -.006   3
+   5 015AL01A 1922 2017     96      2      0    .507   1.80   5.10  1.125   .756   .373   1.70   .322   .014   3
+   6 015AL01B 1925 2017     93      1      0    .508   1.23   3.83   .784   .767   .398   1.70   .362  -.009   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            684     14      4    .423   1.74   5.10   .738   .650   .307   1.97   .280   .007
+
+ DATA CHECKS (rwl.check): cana615
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana615.rwl
+ 6 series, 684 measurements, 1885-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file cana615.rwl, MD5 85d498a10255cf7fc27378df2878ec97.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

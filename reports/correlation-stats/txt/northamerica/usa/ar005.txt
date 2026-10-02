@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: ar005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ar005.rwl
+      MD5 of measurement file: 6d2b20e5c953f093ad4c9311cf2691e4
+      Date checked           : 01OCT26
+      Beginning year         : 1673
+      Ending year            : 1838
+      Principal investigators: Stahle, D.W.
+      Site name              : Ridge House
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 36.0500 N
+      Longitude              : 94.1700 W
+      Elevation              : 424 m
+
+      Series intercorrelation: 0.574
+      Avg mean sensitivity   : 0.230
+      Avg standard deviation : 0.270
+      Avg autocorrelation    : 0.683
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 5.49
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ar005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 655011   1690 1833  .70  .68  .52  .48 
+   2 655021   1750 1833                 .19B
+   3 655041   1691 1832  .49  .47  .61  .53 
+   4 655051   1748 1816            .24B     
+   5 655061   1678 1832  .63  .68  .78  .71 
+   6 655071   1705 1829       .69  .57  .29B
+   7 655081   1679 1833  .44  .37  .46  .54 
+   8 655091   1685 1833  .65  .61  .60  .62 
+   9 655101   1708 1833       .76  .62  .63 
+  10 655111   1691 1833  .66  .78  .64  .64 
+  11 655121   1690 1833  .51  .50  .58  .56 
+  12 655131   1674 1833  .69  .71  .62  .60 
+  13 655141   1673 1833  .69  .63  .54  .52 
+  14 655151   1674 1833  .62  .70  .61  .30A
+  15 655161   1691 1833  .69  .74  .58  .57 
+  16 655171   1696 1833  .80  .70  .58  .52 
+  17 655181   1678 1833  .49  .60  .52  .42 
+  18 655191   1694 1833  .46  .72  .66  .66 
+  19 655201   1693 1833  .62  .55  .48  .48 
+  20 655211   1686 1838  .60  .54  .36  .45B
+  21 655221   1719 1838       .60  .55  .55 
+  22 655231   1700 1838  .50  .53  .59  .36 
+  23 655241   1679 1833  .63  .72  .58  .57 
+  24 655251   1683 1833  .58  .71  .67  .56 
+  25 655261   1687 1833  .46  .46  .48  .57 
+ Av segment correlation  .60  .63  .56  .51 
+
+ FLAGGED SEGMENTS: ar005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 655021   1775 1824     B     .191        -5      .269   .077  weak at every lag
+   4 655051   1750 1799     B     .239         8      .395   .156
+   6 655071   1775 1824     B     .287        -4      .419   .132
+  14 655151   1775 1824     A     .303         0
+  20 655211   1775 1824     B     .454        -3      .514   .060
+
+ DESCRIPTIVE STATISTICS: ar005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 655011   1690 1833    144      4      0    .578    .42    .98   .138   .331   .279   2.34   .281   .092   0
+   2 655021   1750 1833     84      1      1    .284   1.04   3.69   .686   .812   .262   1.69   .255  -.001   2
+   3 655041   1691 1832    142      4      0    .539    .48   1.24   .191   .742   .207   1.56   .197  -.024   1
+   4 655051   1748 1816     69      1      1    .295   1.32   3.71   .567   .623   .249   1.80   .277   .133   1
+   5 655061   1678 1832    155      4      0    .660    .71   1.88   .254   .569   .249   1.85   .241   .013   1
+   6 655071   1705 1829    125      3      1    .512    .56   1.46   .280   .829   .220   1.78   .206   .041   3
+   7 655081   1679 1833    155      4      0    .535    .46   1.70   .322   .788   .271   1.88   .258   .014   1
+   8 655091   1685 1833    149      4      0    .640    .48    .98   .136   .579   .195   1.59   .191  -.053   3
+   9 655101   1708 1833    126      3      0    .694    .72   1.81   .284   .643   .242   1.73   .253  -.008   1
+  10 655111   1691 1833    143      4      0    .681    .70   2.29   .334   .812   .166   1.73   .178  -.016   3
+  11 655121   1690 1833    144      4      0    .540    .52   1.31   .194   .506   .301   1.77   .277   .003   1
+  12 655131   1674 1833    160      4      0    .608    .54   2.11   .276   .552   .348   2.07   .339   .006   1
+  13 655141   1673 1833    161      4      0    .622    .68   4.38   .418   .679   .248   1.68   .227   .046   1
+  14 655151   1674 1833    160      4      1    .572    .54   2.06   .282   .741   .239   1.88   .236  -.004   1
+  15 655161   1691 1833    143      4      0    .608    .55   2.93   .388   .900   .218   1.70   .215   .005   1
+  16 655171   1696 1833    138      4      0    .677    .58   1.40   .248   .787   .189   1.81   .194  -.008   1
+  17 655181   1678 1833    156      4      0    .499    .48   1.88   .252   .696   .304   2.05   .285  -.006   1
+  18 655191   1694 1833    140      4      0    .549    .48   1.38   .207   .772   .214   1.58   .205   .030   1
+  19 655201   1693 1833    141      4      0    .595    .73   2.29   .315   .700   .200   1.69   .199   .041   1
+  20 655211   1686 1838    153      4      1    .536    .59   1.63   .202   .667   .168   1.96   .171   .070   0
+  21 655221   1719 1838    120      3      0    .606    .62   1.00   .162   .669   .170   1.65   .145  -.019   3
+  22 655231   1700 1838    139      4      0    .519    .60   1.24   .160   .628   .162   1.58   .162   .115   0
+  23 655241   1679 1833    155      4      0    .594    .61   2.22   .255   .702   .210   1.55   .197  -.014   1
+  24 655251   1683 1833    151      4      0    .607    .60   1.54   .208   .567   .228   1.96   .227   .020   1
+  25 655261   1687 1833    147      4      0    .526    .47   1.99   .285   .847   .198   1.69   .189  -.008   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3500     91      5    .574    .60   4.38   .270   .683   .230   2.34   .224   .017
+
+ DATA CHECKS (rwl.check): ar005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ar005.rwl
+ 25 series, 3500 measurements, 1673-1838, 0.01 mm precision
+ 0 error(s), 2 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     655021: correlates with the rest of the collection at r = 0.282 where the collection median is 0.578 (5.3 MAD below it); it does not fit the collection it is in
+     655051: correlates with the rest of the collection at r = 0.108 where the collection median is 0.578 (8.4 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file ar005.rwl, MD5 6d2b20e5c953f093ad4c9311cf2691e4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

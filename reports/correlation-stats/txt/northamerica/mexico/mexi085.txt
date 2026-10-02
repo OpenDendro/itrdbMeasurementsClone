@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: mexi085
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi085.rwl
+      MD5 of measurement file: 32fa79b9603f8739857694d65a50d5bb
+      Date checked           : 01OCT26
+      Beginning year         : 1875
+      Ending year            : 2012
+      Principal investigators: Villanueva-Díaz, J.
+      Site name              : Sierra del Nayar
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 23.5410 N
+      Longitude              : 105.0410 W
+      Elevation              : 2408 m
+
+      Series intercorrelation: 0.605
+      Avg mean sensitivity   : 0.284
+      Avg standard deviation : 0.741
+      Avg autocorrelation    : 0.624
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.35
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi085
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SNA01A   1910 2011       .57  .72 
+   2 SNA01B   1902 2012       .58  .70 
+   3 SNA01C   1900 1990       .46      
+   5 SNA01E   1910 2012       .63  .61 
+   6 SNA04A   1900 2012  .67  .65  .65 
+   8 SNA07C   1925 1999            .38 
+   9 SNA07D   1949 2012            .33B
+  10 SNA10A   1890 2012  .45  .53  .61 
+  11 SNA10B   1880 2012  .84  .67  .65 
+  12 SNA10C   1900 2012       .40  .15B
+  14 SNA11B   1920 2010       .60  .43 
+  15 SNA14A   1933 2010            .36 
+  16 sna15A   1900 2010       .75  .68 
+  17 SNA15B   1900 1999       .76  .46 
+  18 SNA16A   1900 2011       .65  .73 
+  19 SNA16B   1920 1990       .77      
+  21 SNA17B   1940 2010            .73 
+  22 SNA19A   1880 2010  .71  .69  .73 
+  23 SNA20A   1900 2000  .70  .74  .77 
+  24 SNA21A   1875 2010  .63  .70  .83 
+  25 SNA25A   1940 2011            .74 
+  26 SNA25B   1920 2010       .78  .80 
+  27 SNA26B   1930 1999            .63 
+  28 SNA31A   1920 2010       .65  .67 
+ Av segment correlation  .67  .64  .61 
+
+ FLAGGED SEGMENTS: mexi085
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 SNA07D   1950 1999     B     .334        -3      .335   .000
+  12 SNA10C   1950 1999     B     .150         6      .308   .158  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mexi085
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SNA01A   1910 2011    102      2      0    .655   2.50   6.82  1.373   .872   .269   1.85   .278  -.016   1
+   2 SNA01B   1902 2012    111      2      0    .656   2.56   7.16  1.418   .856   .270   1.91   .278  -.018   1
+   3 SNA01C   1900 1990     91      1      0    .463   2.38   5.24  1.002   .760   .259   1.64   .248  -.021   1
+   4 SNA01D   1910 1970     61      0      0    .330   3.15   5.18   .955   .726   .195   1.39   .186  -.018   3
+   5 SNA01E   1910 2012    103      2      0    .626   2.25   5.99  1.311   .848   .298   1.68   .282   .088   0
+   6 SNA04A   1900 2012    113      3      0    .688    .86   1.61   .275   .455   .267   1.79   .251   .064   0
+   7 SNA07B   1963 2012     50      0      0    .549   1.28   3.08   .618   .450   .375   1.95   .354   .021   0
+   8 SNA07C   1925 1999     75      1      0    .369   1.91   4.10   .807   .755   .245   1.95   .262  -.034   1
+   9 SNA07D   1949 2012     64      1      1    .358   1.43   3.69   .877   .751   .276   3.54   .403   .022   1
+  10 SNA10A   1890 2012    123      3      0    .540   2.23   4.87   .749   .616   .194   1.92   .200   .022   0
+  11 SNA10B   1880 2012    133      3      0    .727   2.41   4.26   .610   .669   .157   1.64   .162   .022   1
+  12 SNA10C   1900 2012    113      2      1    .292   2.53  13.97  1.521   .628   .196   2.93   .301  -.009   3
+  13 SNA11A   1900 1930     31      0      0    .811   1.41   2.77   .704   .742   .313   1.59   .294   .048   1
+  14 SNA11B   1920 2010     91      2      0    .560   1.63   3.09   .352   .336   .204   1.63   .183   .006   2
+  15 SNA14A   1933 2010     78      1      0    .345   1.39   2.89   .561   .813   .215   1.42   .189  -.081   2
+  16 sna15A   1900 2010    111      2      0    .540   1.49   3.97   .676   .623   .326   2.20   .322   .034   1
+  17 SNA15B   1900 1999    100      2      0    .397   1.57   5.89   .922   .658   .383   2.12   .359   .012   1
+  18 SNA16A   1900 2011    112      2      0    .728   1.41   2.90   .554   .556   .307   1.75   .301  -.009   1
+  19 SNA16B   1920 1990     71      1      0    .753   1.17   2.28   .426   .643   .282   1.66   .274   .153   0
+  20 SNA17A   1950 2011     62      0      0    .834   2.35   3.40   .634   .108   .328   1.52   .248  -.018   1
+  21 SNA17B   1940 2010     71      1      0    .661   2.10   4.24   .700   .360   .285   2.27   .305   .017   1
+  22 SNA19A   1880 2010    131      3      0    .713    .47   1.12   .238   .618   .391   1.77   .347   .110   0
+  23 SNA20A   1900 2000    101      3      0    .738    .63   1.62   .268   .064   .423   2.43   .399  -.001   0
+  24 SNA21A   1875 2010    136      3      0    .717    .51   1.29   .295   .777   .338   1.75   .290  -.038   0
+  25 SNA25A   1940 2011     72      1      0    .732   1.64   4.22   .950   .882   .260   1.65   .261  -.006   1
+  26 SNA25B   1920 2010     91      2      0    .767   1.81   4.82  1.035   .845   .264   2.13   .292   .010   1
+  27 SNA26B   1930 1999     70      1      0    .646   1.16   2.35   .489   .356   .349   2.45   .360   .054   0
+  28 SNA31A   1920 2010     91      2      0    .665   1.06   3.50   .529   .518   .332   3.16   .368   .020   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2558     46      2    .605   1.67  13.97   .741   .624   .284   3.54   .284   .016
+
+ DATA CHECKS (rwl.check): mexi085
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi085.rwl
+ 28 series, 2558 measurements, 1875-2012, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file mexi085.rwl, MD5 32fa79b9603f8739857694d65a50d5bb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

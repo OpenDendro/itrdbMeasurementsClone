@@ -1,0 +1,181 @@
+
+ COFECHA-style crossdating report: norw023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : norw023.rwl
+      MD5 of measurement file: 7b86eda2a81ced0b86f8334fcabb985e
+      Date checked           : 01OCT26
+      Beginning year         : 1834
+      Ending year            : 2014
+      Principal investigators: Esper, J.; Konter, O.; Kirchhefer, A.J.
+      Site name              : Nikkavatnet
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 69.3600 N
+      Longitude              : 18.7300 E
+      Elevation              : 90 m
+
+      Series intercorrelation: 0.538
+      Avg mean sensitivity   : 0.258
+      Avg standard deviation : 0.432
+      Avg autocorrelation    : 0.783
+      Number dated series    : 63
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 4.84
+
+
+ CORRELATION OF SERIES BY SEGMENTS: norw023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   9 ENI0107z 1915 2014       .59  .70 
+  10 ENI0108z 1889 2006  .60  .54  .49 
+  11 ENI0109z 1896 2014  .68  .67  .60 
+  12 ENI0110z 1869 2008  .57  .75  .69 
+  13 ENI0111z 1933 2014            .59 
+  14 ENI0112z 1834 2004  .42  .49  .56 
+  15 ENI0113z 1841 2014  .56  .82  .55 
+  16 ENI0115z 1890 2014  .60  .70  .68 
+  17 ENI0116z 1932 2014            .29B
+  18 ENI0117z 1923 2014       .44  .50 
+  19 ENI0118z 1891 2014  .55  .63  .68 
+  20 ENI0119z 1892 2014  .56  .77  .72 
+  25 ENI0122z 1878 2014  .63  .66  .59 
+  30 ENI0125z 1910 2014       .59  .72 
+  35 ENI0129z 1941 2014            .53 
+  38 ENI0132z 1901 2014       .71  .61 
+  39 ENI0133z 1907 2014       .67  .59 
+  40 ENI0134z 1922 2014       .41  .59 
+  41 ENI0135z 1915 2011       .76  .73 
+  46 ENI0138z 1853 2014  .69  .64  .55 
+  51 ENI0141z 1909 2014       .78  .62 
+  55 ENI0144z 1899 2014       .65  .62 
+  56 ENI0145a 1895 2014  .59  .63  .57 
+  57 ENI0145b 1895 2014  .39  .43  .44B
+  58 ENI0146z 1902 2014       .47  .46 
+  59 ENI0147z 1926 2014            .44 
+  60 ENI0148z 1915 2014       .48  .29B
+ Av segment correlation  .57  .62  .57 
+
+ FLAGGED SEGMENTS: norw023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 ENI0116z 1950 1999     B     .289        -8      .301   .013  weak at every lag
+  57 ENI0145b 1950 1999     B     .444         3      .478   .034
+  60 ENI0148z 1950 1999     B     .286        -3      .312   .026  weak at every lag
+
+ DESCRIPTIVE STATISTICS: norw023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ENI0101a 1988 2014     27      0      0    .202   1.06   2.42   .586   .697   .357   1.84   .304   .011   2
+   2 ENI0101b 1988 2014     27      0      0    .538   1.02   2.20   .687   .893   .359  21.16  3.902   .622   0
+   3 ENI0102z 1959 2014     56      0      0    .418    .91   2.19   .584   .783   .389   1.75   .376  -.012   1
+   4 ENI0103z 1951 2014     64      0      0    .524   1.20   2.76   .888   .870   .423   3.57   .597   .164   1
+   5 ENI0104a 1961 2014     54      0      0    .638    .58   1.33   .337   .803   .316   4.07   .546   .336   1
+   6 ENI0104b 1961 2014     54      0      0    .512    .55   1.38   .418   .875   .373   3.83   .562   .136   0
+   7 ENI0105a 1964 2014     51      0      0    .626    .79   1.71   .375   .795   .289   1.68   .316   .099   1
+   8 ENI0105b 1964 2014     51      0      0    .679    .74   1.74   .414   .845   .297   2.26   .354   .158   3
+   9 ENI0107z 1915 2014    100      2      0    .420    .85   2.77   .704   .931   .322  12.26  1.192   .512   1
+  10 ENI0108z 1889 2006    118      3      0    .497    .54   1.92   .411   .911   .264   1.75   .267  -.033   1
+  11 ENI0109z 1896 2014    119      3      0    .622    .46   1.21   .248   .784   .253   1.92   .259   .067   1
+  12 ENI0110z 1869 2008    140      3      0    .601    .62   1.89   .355   .873   .236   1.87   .243   .019   2
+  13 ENI0111z 1933 2014     82      1      0    .446    .80   1.83   .497   .861   .287   3.79   .449   .231   2
+  14 ENI0112z 1834 2004    171      3      0    .387    .53   1.27   .294   .852   .294   1.70   .267   .001   3
+  15 ENI0113z 1841 2014    174      3      0    .345    .80   2.06   .306   .740   .198   1.71   .211   .016   2
+  16 ENI0115z 1890 2014    125      3      0    .616   1.06   2.55   .507   .833   .210   1.41   .204  -.009   2
+  17 ENI0116z 1932 2014     83      1      1    .392    .61   1.31   .355   .863   .271   3.57   .434   .191   1
+  18 ENI0117z 1923 2014     92      2      0    .450    .62   1.64   .367   .823   .308   1.78   .303   .020   1
+  19 ENI0118z 1891 2014    124      3      0    .356    .80   2.33   .490   .857   .320  31.68  2.779  -.110   0
+  20 ENI0119z 1892 2014    123      3      0    .475    .76   1.86   .374   .796   .291   1.73   .275   .023   1
+  21 ENI0120a 1972 2014     43      0      0    .537    .61   2.02   .355   .838   .233   1.54   .241   .161   1
+  22 ENI0120b 1972 2014     43      0      0    .699    .59   2.10   .440   .898   .317   1.53   .290  -.009   1
+  23 ENI0121a 1966 2014     49      0      0    .493    .60   1.69   .453   .822   .292   1.79   .303   .070   1
+  24 ENI0121b 1966 2014     49      0      0    .528    .44   1.58   .334   .736   .394   2.02   .367   .025   1
+  25 ENI0122z 1878 2014    137      3      0    .526   1.12   2.68   .474   .721   .221   1.75   .220   .045   3
+  26 ENI0123a 1963 2014     52      0      0    .474    .58   1.24   .267   .695   .258   2.20   .325   .127   2
+  27 ENI0123b 1963 2014     52      0      0    .431    .65   1.65   .400   .838   .384  23.83  3.210   .820   0
+  28 ENI0124a 1987 2014     28      0      0    .708    .84   1.53   .300   .702   .217   1.38   .184   .067   2
+  29 ENI0124b 1987 2014     28      0      0    .664   1.09   2.14   .364   .574   .202   1.59   .227   .264   0
+  30 ENI0125z 1910 2014    105      2      0    .626    .94   2.76   .598   .828   .285   2.00   .318   .022   1
+  31 ENI0126z 1954 2014     61      0      0    .763   1.09   2.37   .562   .806   .251   1.92   .276   .150   1
+  32 ENI0127a 1980 2014     35      0      0    .629   1.27   2.32   .465   .328   .320   1.64   .265   .131   2
+  33 ENI0127b 1980 2013     34      0      0    .638    .84   2.08   .360   .489   .322   1.72   .254   .085   3
+  34 ENI0128z 1955 2014     60      0      0    .728   2.09   4.04   .718   .731   .187   1.55   .207   .069   1
+  35 ENI0129z 1941 2014     74      1      0    .588   1.23   3.06   .680   .927   .165   1.64   .188   .119   1
+  36 ENI0131a 1957 2014     58      0      0    .714    .88   2.54   .452   .702   .285   1.92   .306   .045   1
+  37 ENI0131b 1957 2011     55      0      0    .775    .73   1.76   .402   .717   .328   1.78   .325   .004   1
+  38 ENI0132z 1901 2014    114      2      0    .619   1.93   4.44   .925   .888   .195   3.28   .294   .211   1
+  39 ENI0133z 1907 2014    108      2      0    .616    .94   1.70   .291   .668   .201   1.43   .202   .011   2
+  40 ENI0134z 1922 2014     93      2      0    .607    .78   2.01   .424   .831   .266   2.02   .291   .101   1
+  41 ENI0135z 1915 2011     97      2      0    .672   1.44   2.86   .497   .694   .222   1.72   .231   .037   2
+  42 ENI0136a 1973 2014     42      0      0    .399    .47    .74   .150   .414   .321   1.75   .264  -.009   2
+  43 ENI0136b 1973 2014     42      0      0    .540    .66   1.12   .209   .480   .279   1.71   .252   .003   2
+  44 ENI0137a 1957 2014     58      0      0    .482    .72   1.54   .256   .676   .187   1.55   .214   .038   2
+  45 ENI0137b 1957 2014     58      0      0    .535    .91   1.47   .240   .494   .202   1.40   .207  -.005   2
+  46 ENI0138z 1853 2014    162      3      0    .529    .75   2.04   .300   .842   .170   1.52   .175   .035   2
+  47 ENI0139a 1986 2014     29      0      0    .766    .98   1.66   .391   .831   .155   1.57   .192   .380   1
+  48 ENI0139b 1986 2014     29      0      0    .651   1.03   1.82   .383   .691   .237   1.55   .248   .214   1
+  49 ENI0140a 1986 2014     29      0      0    .555    .37   1.20   .268   .757   .268   3.32   .570   .680   1
+  50 ENI0140b 1986 2014     29      0      0    .530    .33   1.01   .240   .755   .326   5.94  1.021   .759   1
+  51 ENI0141z 1909 2014    106      2      0    .680   1.25   3.04   .564   .815   .217   1.57   .219   .051   2
+  52 ENI0142a 1994 2014     21      0      0    .462    .38    .72   .160   .278   .389   1.55   .373   .180   0
+  53 ENI0142b 1994 2014     21      0      0    .523    .39    .85   .167   .068   .436   1.86   .366  -.027   0
+  54 ENI0143z 1949 2014     66      0      0    .629   1.25   3.23   .648   .812   .251   1.66   .253   .069   2
+  55 ENI0144z 1899 2014    116      2      0    .719   1.06   2.60   .544   .865   .194   1.70   .199   .045   3
+  56 ENI0145a 1895 2014    120      3      0    .565    .51   1.44   .269   .812   .243   1.75   .249   .055   1
+  57 ENI0145b 1895 2014    120      3      1    .461    .40   1.28   .209   .796   .265   1.56   .249   .015   1
+  58 ENI0146z 1902 2014    113      2      0    .485   1.13   2.95   .554   .781   .245   1.89   .265  -.007   1
+  59 ENI0147z 1926 2014     89      1      0    .493   1.74   2.97   .461   .631   .178   1.61   .194   .053   1
+  60 ENI0148z 1915 2014    100      2      1    .333   1.18   2.76   .541   .877   .192   1.81   .200   .033   2
+  61 ENI0149a 1974 2014     41      0      0    .680    .56    .97   .241   .794   .244   1.52   .249   .130   0
+  62 ENI0149b 1974 2014     41      0      0    .511    .58   1.36   .352   .876   .286   2.05   .379   .132   1
+  63 ENI0150z 1973 2014     42      0      0    .386   1.65   2.57   .423   .533   .196   1.46   .184   .042   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4684     62      3    .538    .88   4.44   .432   .783   .258  31.68   .418   .088
+
+ DATA CHECKS (rwl.check): norw023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/norw023.rwl
+ 63 series, 4684 measurements, 1834-2014, 0.01 mm precision
+ 0 error(s), 0 warning(s), 21 note(s)
+ -------------
+ Nothing to report at this severity.
+ 21 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file norw023.rwl, MD5 7b86eda2a81ced0b86f8334fcabb985e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

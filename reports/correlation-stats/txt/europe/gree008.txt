@@ -1,0 +1,176 @@
+
+ COFECHA-style crossdating report: gree008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : gree008.rwl
+      MD5 of measurement file: 0b8af111bb9fe1ee7b9f36d705c73c00
+      Date checked           : 01OCT26
+      Beginning year         : 1751
+      Ending year            : 2003
+      Principal investigators: Kuniholm, P.I.
+      Site name              : Scotida Forest  Kastoria
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 40.3000 N
+      Longitude              : 20.9000 E
+      Elevation              : 1500 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.908
+      Avg autocorrelation    : 0.794
+      Number dated series    : 42
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 4.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: gree008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 622011   1850 1978                 .56  .54  .67      
+   2 622012   1862 1978                 .49  .42  .48      
+   3 622031   1751 1978  .64  .62  .36  .21A .49  .51      
+   4 622041   1893 1978                      .58  .63      
+   5 622051   1856 1977                 .59  .61  .41      
+   6 622061   1878 1978                      .61  .59      
+   7 622071   1895 1978                      .59  .59      
+   8 622091   1761 1978  .64  .61  .47  .37  .57  .75      
+   9 622101   1896 1978                      .49  .60      
+  10 622111   1913 1978                           .51      
+  11 622121   1890 1978                      .65  .60      
+  12 622231   1920 2002                           .59  .60 
+  13 622232   1920 2003                           .58  .65 
+  14 622241   1907 2002                           .52  .44 
+  15 622242   1907 2002                           .63  .42 
+  16 622251   1905 2002                           .67  .59 
+  17 622252   1905 2002                           .47  .54 
+  18 622261   1893 2002                      .68  .48  .53 
+  19 622262   1893 2002                      .76  .52  .50 
+  20 622271   1922 2003                           .48  .63 
+  21 622272   1922 2003                           .51  .54 
+  22 622281   1919 2003                           .61  .64 
+  23 622282   1919 2003                           .53  .62 
+  24 622291   1922 2000                           .63  .67 
+  25 622292   1922 2002                           .66  .77 
+  26 622301   1927 2003                                .56 
+  27 622302   1927 2003                                .56 
+  28 622311   1912 2003                           .52  .30A
+  29 622312   1912 2003                           .46  .48 
+  30 622321   1918 2003                           .47  .51 
+  31 622322   1918 2003                           .51  .53 
+  32 633331   1901 2002                           .52  .43 
+  33 622332   1901 2002                           .58  .46 
+  34 622341   1889 2002                      .65  .49  .40 
+  35 622342   1889 2002                      .55  .56  .52 
+  36 622351   1893 2003                      .55  .50  .38 
+  37 622352   1893 2003                      .43  .33  .23B
+  38 622361   1920 2003                           .72  .59 
+  39 622362   1920 2003                           .47  .58 
+  40 622371   1913 2003                           .50  .46 
+  41 622372   1913 2003                           .24B .35 
+  42 622381   1903 2003                           .70  .64 
+ Av segment correlation  .64  .61  .42  .44  .57  .54  .52 
+
+ FLAGGED SEGMENTS: gree008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 622031   1875 1924     A     .214         0
+  28 622311   1950 1999     A     .303         0
+  37 622352   1950 1999     B     .233         1      .311   .077  weak at every lag
+  41 622372   1925 1974     B     .242        -2      .267   .025  weak at every lag
+
+ DESCRIPTIVE STATISTICS: gree008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 622011   1850 1978    129      3      0    .525   1.94   4.88  1.014   .788   .237   1.73   .242  -.007   2
+   2 622012   1862 1978    117      3      0    .476   2.35   6.95  1.462   .880   .222   1.61   .221   .007   2
+   3 622031   1751 1978    228      6      1    .452    .91   4.18   .691   .923   .215   1.66   .232   .001   1
+   4 622041   1893 1978     86      2      0    .628   1.94   4.62   .976   .578   .337   2.07   .346  -.005   1
+   5 622051   1856 1977    122      3      0    .456   1.52   5.22  1.155   .832   .303   2.06   .318   .019   1
+   6 622061   1878 1978    101      2      0    .594   1.52   4.05   .816   .781   .234   1.69   .229   .041   2
+   7 622071   1895 1978     84      2      0    .619   1.56   5.16  1.053   .792   .271   1.61   .259  -.031   1
+   8 622091   1761 1978    218      6      0    .561    .89   4.31   .511   .670   .273   2.14   .278   .041   1
+   9 622101   1896 1978     83      2      0    .487   2.03   4.29   .708   .741   .186   1.60   .186   .041   1
+  10 622111   1913 1978     66      1      0    .549   1.95   4.67   .880   .715   .270   1.75   .273   .020   1
+  11 622121   1890 1978     89      2      0    .671   1.14   2.75   .614   .836   .216   1.61   .222  -.022   2
+  12 622231   1920 2002     83      2      0    .527   2.43   6.03  1.006   .781   .208   1.44   .195   .038   1
+  13 622232   1920 2003     84      2      0    .588   1.72   4.94  1.158   .936   .176   1.53   .176  -.015   2
+  14 622241   1907 2002     96      2      0    .480   1.40   3.70   .724   .820   .198   1.56   .202  -.015   3
+  15 622242   1907 2002     96      2      0    .508   1.22   2.29   .388   .605   .200   1.53   .203  -.022   1
+  16 622251   1905 2002     98      2      0    .630   1.87   6.30   .989   .721   .230   1.71   .206   .086   3
+  17 622252   1905 2002     98      2      0    .502   1.39   4.94  1.174   .882   .241   1.42   .207   .168   3
+  18 622261   1893 2002    110      3      0    .472   1.68   4.04   .793   .721   .256   1.79   .242   .088   3
+  19 622262   1893 2002    110      3      0    .541   1.58   3.95   .698   .733   .236   1.73   .223   .015   3
+  20 622271   1922 2003     82      2      0    .540   1.71   3.80   .686   .878   .152   1.41   .157   .002   2
+  21 622272   1922 2003     82      2      0    .455   1.57   4.00   .793   .920   .171   1.42   .172   .057   1
+  22 622281   1919 2003     85      2      0    .609   1.91   6.45  1.103   .927   .177   1.73   .180   .004   2
+  23 622282   1919 2003     85      2      0    .502   1.97   6.26  1.129   .922   .180   1.43   .171  -.013   2
+  24 622291   1922 2000     79      2      0    .640   2.08   4.90   .791   .779   .175   1.54   .189   .015   1
+  25 622292   1922 2002     81      2      0    .667   2.13   4.65   .695   .729   .176   1.42   .159   .025   2
+  26 622301   1927 2003     77      1      0    .379   1.99   4.38   .653   .592   .225   1.48   .198  -.009   2
+  27 622302   1927 2003     77      1      0    .453   1.66   4.63   .713   .726   .214   1.47   .214   .074   2
+  28 622311   1912 2003     92      2      1    .441   1.45   3.52   .572   .707   .238   1.71   .253  -.045   1
+  29 622312   1912 2003     92      2      0    .525   1.89   3.76   .617   .729   .207   1.58   .207  -.008   2
+  30 622321   1918 2003     86      2      0    .467   1.95   4.77   .882   .864   .167   1.57   .168   .062   1
+  31 622322   1918 2003     86      2      0    .490   2.01   5.64   .995   .852   .186   1.57   .174   .063   1
+  32 633331   1901 2002    102      2      0    .528   1.40   6.56  1.268   .825   .231   1.53   .220  -.067   3
+  33 622332   1901 2002    102      2      0    .616   1.73   6.26  1.231   .803   .272   1.61   .263  -.020   1
+  34 622341   1889 2002    114      3      0    .349   1.58   4.88   .810   .824   .209   1.59   .225   .037   1
+  35 622342   1889 2002    114      3      0    .285   1.49   3.93   .697   .711   .234   1.58   .234  -.006   2
+  36 622351   1893 2003    111      3      0    .508   1.56   4.74   .968   .884   .247   1.60   .250  -.040   1
+  37 622352   1893 2003    111      3      1    .407   1.53   4.23   .776   .838   .184   1.68   .200   .037   1
+  38 622361   1920 2003     84      2      0    .657   2.31   6.46  1.282   .697   .275   1.84   .275  -.013   2
+  39 622362   1920 2003     84      2      0    .511   1.98   5.44  1.137   .753   .271   1.61   .257  -.004   2
+  40 622371   1913 2003     91      2      0    .514   1.94   6.57  1.188   .870   .239   1.68   .258  -.002   3
+  41 622372   1913 2003     91      2      1    .435   1.83   6.66  1.093   .845   .241   1.55   .242   .039   1
+  42 622381   1903 2003    101      2      0    .530   2.40  13.05  1.806   .847   .266   1.48   .249   .048   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4207     98      4    .514   1.68  13.05   .908   .794   .227   2.14   .227   .016
+
+ DATA CHECKS (rwl.check): gree008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/gree008.rwl
+ 42 series, 4207 measurements, 1751-2003, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file gree008.rwl, MD5 0b8af111bb9fe1ee7b9f36d705c73c00.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

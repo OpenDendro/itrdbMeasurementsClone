@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: ca641
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca641.rwl
+      MD5 of measurement file: 046d33856bf3149d4e6b5474f17100fb
+      Date checked           : 01OCT26
+      Beginning year         : 1700
+      Ending year            : 2005
+      Principal investigators: King, J.C.
+      Site name              : Fourth of July Hill
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 37.8700 N
+      Longitude              : 119.3700 W
+      Elevation              : 2630 m
+
+      Series intercorrelation: 0.614
+      Avg mean sensitivity   : 0.185
+      Avg standard deviation : 0.413
+      Avg autocorrelation    : 0.797
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3)
+      Pct problem segments   : 2.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca641
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 tfj101   1815 2005                           .45  .54  .77  .63  .57  .52 
+   2 tfj102   1794 2005                      .52  .59  .71  .67  .59  .67  .73 
+   3 tfj103   1800 2005                           .55  .58  .67  .69  .69  .75 
+   4 tfj104   1740 1910            .35  .48  .54  .46  .66                     
+   5 tfj105   1700 1910       .35  .63  .65  .55  .52  .70                     
+   6 tfj106   1700 2005       .53  .47  .60  .58  .58  .58  .60  .68  .75  .78 
+   7 tfj107   1850 2005                                     .59  .57  .73  .80 
+   8 tfj108   1750 2005                 .64  .57  .72  .75  .71  .60  .73  .79 
+   9 tfj109   1800 2005                           .44  .45  .57  .62  .78  .79 
+  10 tfj110   1700 2005       .49  .53  .54  .56  .45  .42  .68  .67  .76  .79 
+  11 tfj111   1700 1830       .39  .37B .51                                    
+  12 tfj112   1770 2005                 .40  .51  .48  .51  .76  .71  .73  .78 
+  13 tfj113   1771 1910                 .64  .79  .65  .63                     
+  14 tfj114   1700 2005       .47  .42B .60  .53  .41  .68  .69  .59  .64  .75 
+  15 tfj115   1770 1915                 .49  .56  .69  .81                     
+  16 tfj117   1829 2005                                .75  .79  .76  .58  .69 
+  17 tfj118   1798 2005                      .33  .50  .59  .61  .63  .69  .75 
+  18 tfj119   1750 2005                 .69  .72  .62  .71  .67  .54  .67  .74 
+  19 tfj120   1736 1950            .64  .72  .58  .56  .70  .76  .69           
+  20 tfj121   1782 2005                      .53  .70  .72  .61  .65  .81  .80 
+  21 tfj122   1812 2005                           .51  .70  .72  .69  .77  .77 
+  22 tfj125   1740 1915            .48  .58  .38B .38  .61                     
+ Av segment correlation       .45  .49  .58  .55  .54  .64  .68  .64  .70  .75 
+
+ FLAGGED SEGMENTS: ca641
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 tfj111   1750 1799     B     .372         5      .462   .090
+  14 tfj114   1750 1799     B     .423         5      .519   .096
+  22 tfj125   1800 1849     B     .382         9      .438   .056
+
+ DESCRIPTIVE STATISTICS: ca641
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 tfj101   1815 2005    191      6      0    .529   1.16   2.30   .402   .625   .215   1.47   .207   .015   3
+   2 tfj102   1794 2005    212      7      0    .645   1.30   2.91   .649   .920   .179   1.66   .174  -.048   1
+   3 tfj103   1800 2005    206      6      0    .636    .72   2.05   .274   .811   .195   1.48   .198  -.025   1
+   4 tfj104   1740 1910    171      5      0    .482    .80   1.32   .209   .588   .198   1.53   .195   .014   1
+   5 tfj105   1700 1910    211      6      0    .562   1.29   2.89   .471   .920   .107   1.37   .109   .002   1
+   6 tfj106   1700 2005    306     10      0    .613    .85   2.16   .290   .799   .179   1.95   .172  -.014   3
+   7 tfj107   1850 2005    156      4      0    .671   1.35   2.84   .504   .854   .180   1.45   .176   .039   1
+   8 tfj108   1750 2005    256      8      0    .687    .97   2.00   .352   .829   .186   1.54   .187   .004   2
+   9 tfj109   1800 2005    206      6      0    .570    .90   1.90   .308   .719   .187   1.74   .197  -.007   3
+  10 tfj110   1700 2005    306     10      0    .598    .77   1.53   .253   .761   .184   1.74   .184  -.013   3
+  11 tfj111   1700 1830    131      3      1    .417    .96   1.98   .337   .763   .212   1.52   .215   .003   1
+  12 tfj112   1770 2005    236      8      0    .618   1.24   2.24   .381   .725   .178   1.58   .178  -.001   2
+  13 tfj113   1771 1910    140      4      0    .664   1.14   2.27   .329   .807   .150   1.31   .142   .010   1
+  14 tfj114   1700 2005    306     10      1    .575   1.01   1.81   .319   .761   .177   1.52   .178  -.022   1
+  15 tfj115   1770 1915    146      4      0    .660   1.35   2.78   .497   .748   .218   1.60   .208   .001   1
+  16 tfj117   1829 2005    177      5      0    .703   1.17   2.65   .503   .745   .237   1.61   .226  -.023   3
+  17 tfj118   1798 2005    208      7      0    .599   1.04   3.13   .518   .875   .220   1.93   .225  -.001   2
+  18 tfj119   1750 2005    256      8      0    .660    .96   2.25   .297   .778   .163   1.68   .163  -.000   2
+  19 tfj120   1736 1950    215      7      0    .645   1.45   5.04   .834   .931   .158   1.49   .163   .002   1
+  20 tfj121   1782 2005    224      7      0    .675   1.20   3.02   .502   .824   .218   1.46   .203  -.002   3
+  21 tfj122   1812 2005    194      6      0    .693   1.47   2.92   .502   .803   .181   1.47   .178  -.016   3
+  22 tfj125   1740 1915    176      5      1    .534   1.03   2.66   .532   .920   .174   1.59   .169  -.005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4630    142      3    .614   1.08   5.04   .413   .797   .185   1.95   .183  -.006
+
+ DATA CHECKS (rwl.check): ca641
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca641.rwl
+ 22 series, 4630 measurements, 1700-2005, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ca641.rwl, MD5 046d33856bf3149d4e6b5474f17100fb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

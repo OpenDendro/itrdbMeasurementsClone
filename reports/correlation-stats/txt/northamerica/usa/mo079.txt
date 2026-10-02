@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: mo079
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mo079.rwl
+      MD5 of measurement file: 79e886f131b1b02aa25ad02ce8c5f822
+      Date checked           : 01OCT26
+      Beginning year         : 1894
+      Ending year            : 2015
+      Principal investigators: Maxwell, J.T.; Kannenberg, S.A.; Mandra, T.E.; Novick, K.A.
+      Site name              : Missouri Ozark Site Flux Tower
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 38.7441 N
+      Longitude              : 92.2000 W
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.474
+      Avg mean sensitivity   : 0.398
+      Avg standard deviation : 0.656
+      Avg autocorrelation    : 0.440
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mo079
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 MOACS02A 1920 2012       .22A .20B
+   2 MOACS02B 1925 2015       .00B .49 
+   3 MOACS03A 1916 2015       .72  .71 
+   4 MOACS03B 1906 2015       .76  .68 
+   5 MOACS04A 1909 2015       .66  .62 
+   6 MOACS04B 1932 2013            .43 
+   7 MOACS05A 1901 2006       .66  .48 
+   8 MOACS05B 1894 2012       .35  .28A
+   9 MOACS07A 1903 2014       .53  .49 
+  10 MOACS07B 1923 2012       .57  .58 
+  11 MOACS08A 1910 2015       .61  .45 
+  12 MOACS08B 1937 2015            .56 
+  13 MOACS09A 1902 2013       .74  .61 
+  14 MOACS09B 1907 2013       .80  .68 
+  15 MOACS10A 1904 2014       .71  .75 
+ Av segment correlation       .56  .53 
+
+ FLAGGED SEGMENTS: mo079
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 MOACS02A 1925 1974     A     .218         0
+   1 MOACS02A 1950 1999     B     .204        10      .233   .028  weak at every lag
+   2 MOACS02B 1925 1974     B     .002        -4      .291   .289  weak at every lag
+   8 MOACS05B 1950 1999     A     .281         0
+
+ DESCRIPTIVE STATISTICS: mo079
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MOACS02A 1920 2012     93      2      2    .152   1.12   3.12   .672   .363   .470   2.88   .485   .023   0
+   2 MOACS02B 1925 2015     91      2      1    .240   1.91   4.64   .914   .221   .451   2.31   .426   .088   0
+   3 MOACS03A 1916 2015    100      2      0    .722   1.31   3.12   .541   .325   .384   1.95   .357   .006   1
+   4 MOACS03B 1906 2015    110      2      0    .560   1.21   3.33   .647   .332   .452   2.77   .449   .051   0
+   5 MOACS04A 1909 2015    107      2      0    .529   1.11   4.53   .634   .546   .328   2.01   .316   .112   0
+   6 MOACS04B 1932 2013     82      1      0    .532   1.22   4.02   .732   .727   .344   1.80   .350   .023   1
+   7 MOACS05A 1901 2006    106      2      0    .371   1.01   3.22   .678   .701   .349   2.06   .352  -.010   1
+   8 MOACS05B 1894 2012    119      2      1    .244   1.20   6.90   .840   .481   .383   3.15   .423  -.007   2
+   9 MOACS07A 1903 2014    112      2      0    .419    .99   3.57   .641   .507   .440   3.19   .479   .026   1
+  10 MOACS07B 1923 2012     90      2      0    .546   1.07   3.47   .595   .374   .451   2.53   .465   .074   0
+  11 MOACS08A 1910 2015    106      2      0    .460   1.29   4.45   .689   .341   .450   2.46   .422   .110   0
+  12 MOACS08B 1937 2015     79      1      0    .633   1.66   3.54   .724   .351   .386   2.31   .393   .015   1
+  13 MOACS09A 1902 2013    112      2      0    .488   1.27   3.75   .560   .424   .363   2.77   .364   .093   0
+  14 MOACS09B 1907 2013    107      2      0    .643   1.48   3.28   .636   .492   .330   1.93   .343   .051   1
+  15 MOACS10A 1904 2014    111      2      0    .600    .84   2.20   .393   .390   .403   2.43   .385   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1525     28      4    .474   1.23   6.90   .656   .440   .398   3.19   .400   .046
+
+ DATA CHECKS (rwl.check): mo079
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mo079.rwl
+ 15 series, 1525 measurements, 1894-2015, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file mo079.rwl, MD5 79e886f131b1b02aa25ad02ce8c5f822.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: swit370
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit370.rwl
+      MD5 of measurement file: 3676e1e851444869fbcc4ed43df34202
+      Date checked           : 01OCT26
+      Beginning year         : 1875
+      Ending year            : 2016
+      Principal investigators: Gut, U.
+      Site name              : Eschenbach-Eggwald
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.2539 N
+      Longitude              : 8.9385 E
+      Elevation              : 618 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.210
+      Avg standard deviation : 0.988
+      Avg autocorrelation    : 0.694
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 11.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit370
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   2 383      1915 2016       .09B .11B
+   3 384      1946 2016            .30B
+   4 385      1881 2016  .41  .57  .66 
+   5 386      1892 2016  .49  .59  .50 
+   6 387      1900 2016       .69  .63 
+   7 388      1901 2016       .49  .63 
+   8 390      1903 2016       .57  .63 
+   9 392      1886 2016  .53  .74  .57 
+  10 393      1911 2016       .49  .47 
+  11 394      1915 2016       .59  .54 
+  12 396      1890 2016  .63  .54  .42 
+  13 399      1889 2016  .58  .71  .64 
+  14 400      1911 2016       .44  .53 
+  15 401      1910 2016       .23B .36 
+  16 402      1875 2016  .48  .60  .59 
+  17 403      1896 2016  .49  .52  .61 
+  18 404      1888 2016  .55  .69  .50 
+  19 405      1897 2016  .49  .54  .46 
+  20 406      1934 2016            .48 
+  21 407      1926 2016            .61 
+  22 408      1928 2016            .24A
+  23 409      1920 2016       .31A .52 
+  24 410      1944 2016            .45 
+  25 411      1938 2016            .40 
+  26 412      1924 2016       .42  .45 
+ Av segment correlation  .52  .52  .49 
+
+ FLAGGED SEGMENTS: swit370
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 383      1925 1974     B     .087         2      .248   .161  weak at every lag
+   2 383      1950 1999     B     .112         6      .305   .192  weak at every lag
+   3 384      1950 1999     B     .301        -9      .317   .016  weak at every lag
+  15 401      1925 1974     B     .227         7      .275   .047  weak at every lag
+  22 408      1950 1999     A     .244         0
+  23 409      1925 1974     A     .312         0
+
+ DESCRIPTIVE STATISTICS: swit370
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 382      1970 2016     47      0      0    .708   4.03   6.02  1.174   .607   .223   1.52   .215   .063   0
+   2 383      1915 2016    102      2      2    .334   2.90   5.76  1.186   .863   .171   1.52   .178   .126   1
+   3 384      1946 2016     71      1      1    .449   3.41   7.50  1.469   .749   .234   1.72   .240  -.035   1
+   4 385      1881 2016    136      3      0    .485   2.07   5.15  1.067   .822   .218   1.62   .230   .020   2
+   5 386      1892 2016    125      3      0    .525   1.93   6.57   .744   .648   .214   2.13   .236   .015   1
+   6 387      1900 2016    117      2      0    .653   3.04   5.04   .733   .506   .194   1.50   .176  -.007   2
+   7 388      1901 2016    116      2      0    .569   3.01   5.51  1.034   .734   .205   1.42   .205   .011   1
+   8 390      1903 2016    114      2      0    .632   1.64   5.00   .938   .765   .314   1.98   .299  -.031   1
+   9 392      1886 2016    131      3      0    .600   2.30   6.38   .770   .634   .186   1.83   .208  -.004   3
+  10 393      1911 2016    106      2      0    .415   2.72   5.16   .864   .571   .213   2.04   .238  -.019   3
+  11 394      1915 2016    102      2      0    .583   2.24   4.06   .657   .618   .179   1.69   .213   .029   1
+  12 396      1890 2016    127      3      0    .519   2.44   4.62   .604   .512   .194   1.72   .202   .006   1
+  13 399      1889 2016    128      3      0    .607   2.47   4.70   .909   .700   .237   1.54   .213  -.001   1
+  14 400      1911 2016    106      2      0    .673   3.35   8.21  1.816   .839   .180   1.52   .175   .119   0
+  15 401      1910 2016    107      2      1    .493   2.11   4.59   .684   .603   .214   1.66   .215  -.023   1
+  16 402      1875 2016    142      3      0    .484   2.01   4.68   .560   .710   .164   1.38   .164   .003   1
+  17 403      1896 2016    121      3      0    .600   1.87   3.90   .494   .483   .207   1.57   .186  -.011   0
+  18 404      1888 2016    129      3      0    .512   2.07   4.54   .925   .711   .246   1.53   .215  -.005   0
+  19 405      1897 2016    120      3      0    .529   2.61   7.98  1.637   .821   .293   1.98   .290   .037   2
+  20 406      1934 2016     83      1      0    .529   3.36   6.12   .780   .417   .192   1.69   .200   .024   1
+  21 407      1926 2016     91      1      0    .750   2.34   5.96  1.229   .916   .181   1.64   .204   .021   1
+  22 408      1928 2016     89      1      1    .460   3.12   9.07  1.429   .792   .201   1.66   .228   .067   1
+  23 409      1920 2016     97      2      1    .522   3.04   7.09  1.359   .905   .171   1.58   .187   .029   1
+  24 410      1944 2016     73      1      0    .626   4.17   6.28  1.000   .516   .205   1.49   .183  -.004   0
+  25 411      1938 2016     79      1      0    .536   2.50   4.34   .717   .700   .194   1.39   .180   .108   0
+  26 412      1924 2016     93      2      0    .560   3.43   6.36  1.599   .889   .206   1.63   .211   .067   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2752     53      6    .549   2.60   9.07   .988   .694   .210   2.13   .212   .020
+
+ DATA CHECKS (rwl.check): swit370
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit370.rwl
+ 26 series, 2752 measurements, 1875-2016, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file swit370.rwl, MD5 3676e1e851444869fbcc4ed43df34202.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

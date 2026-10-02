@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: che564
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che564.rwl
+      MD5 of measurement file: 66bfa4ca5830f573e58fed02deaeaf27
+      Date checked           : 01OCT26
+      Beginning year         : 1891
+      Ending year            : 2019
+      Principal investigators: Neycken, A.; Scheggia, M.; Bigler, C.; Lévesque, M.
+      Site name              : Grosszinggibrunn
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.5089 N
+      Longitude              : 7.6697 E
+      Elevation              : 450 m
+
+      Series intercorrelation: 0.653
+      Avg mean sensitivity   : 0.271
+      Avg standard deviation : 1.007
+      Avg autocorrelation    : 0.592
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 9.21
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che564
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 GZ01     1902 2019       .83  .70 
+   2 GZ02     1898 2019  .34  .33A .58 
+   3 GZ06     1897 2019  .68  .63  .47 
+   4 GZ07     1905 2019       .79  .75 
+   5 GZ08     1912 2019       .62  .82 
+   6 GZ09     1894 2019  .53  .59  .58 
+   7 GZ11     1899 2019  .57  .66  .67 
+   8 GZ12     1931 2019            .66 
+   9 GZ13     1907 2019       .57  .73 
+  10 GZ14     1948 2019            .80 
+  11 GZ15     1930 2019            .85 
+  12 GZ16     1898 2019  .49  .58  .75 
+  13 GZ19     1893 2019  .49  .66  .82 
+  14 GZ20     1899 2019  .42  .52  .60 
+  15 GZ21     1915 2019       .81  .79 
+  16 GZ23     1899 2018  .37  .76  .82 
+  17 GZ24     1916 2019       .80  .81 
+  18 GZ25     1901 2019       .82  .74 
+  19 GZ26     1902 2019       .86  .88 
+  20 GZ27     1907 2019       .80  .83 
+  21 GZ28     1894 2019  .18B .36  .81 
+  22 GZ29     1906 2019       .31B .07B
+  23 GZ30     1903 2019       .75  .78 
+  24 GZ32     1924 2019            .57 
+  25 GZ33     1891 2019  .54  .68  .71 
+  26 GZ34     1914 2019       .19A .27A
+  27 GZ35     1909 2019       .59  .62 
+  28 GZ39     1927 2019            .68 
+  30 GZ45     1894 2019  .68  .79  .76 
+  31 GZ47     1907 2019       .57  .71 
+  32 GZ48     1900 2019       .77  .86 
+  33 GZ49     1898 2019  .69  .68  .67 
+  34 GZ51     1905 2019       .71  .82 
+  35 GZ56     1895 2019  .48  .42  .25B
+ Av segment correlation  .50  .64  .68 
+
+ FLAGGED SEGMENTS: che564
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 GZ02     1925 1974     A     .328         0
+  21 GZ28     1900 1949     B     .180         2      .239   .059  weak at every lag
+  22 GZ29     1925 1974     B     .306        -4      .435   .129
+  22 GZ29     1950 1999     B     .069        -4      .429   .360
+  26 GZ34     1925 1974     A     .187         0
+  26 GZ34     1950 1999     A     .273         0
+  35 GZ56     1950 1999     B     .251         1      .362   .111
+
+ DESCRIPTIVE STATISTICS: che564
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GZ01     1902 2019    118      2      0    .703   2.89   6.16  1.064   .644   .278   1.65   .250  -.049   3
+   2 GZ02     1898 2019    122      3      1    .535   2.04   6.07  1.386   .790   .296   1.69   .295  -.034   1
+   3 GZ06     1897 2019    123      3      0    .621   2.11   4.56   .816   .678   .276   1.87   .271   .019   1
+   4 GZ07     1905 2019    115      2      0    .746   2.06   3.90   .653   .460   .266   1.87   .261  -.006   1
+   5 GZ08     1912 2019    108      2      0    .606   2.87   5.30   .901   .502   .251   1.68   .229   .092   0
+   6 GZ09     1894 2019    126      3      0    .650   2.28   5.11   .999   .738   .292   2.50   .304   .005   1
+   7 GZ11     1899 2019    121      3      0    .615   2.99   6.52  1.056   .483   .313   1.76   .280   .074   0
+   8 GZ12     1931 2019     89      1      0    .768   3.17   5.19  1.193   .551   .326   1.96   .291  -.006   0
+   9 GZ13     1907 2019    113      2      0    .684   3.26   5.88  1.253   .654   .290   1.76   .265  -.007   0
+  10 GZ14     1948 2019     72      1      0    .697   3.89   5.90  1.240   .486   .278   1.87   .227  -.126   0
+  11 GZ15     1930 2019     90      1      0    .822   3.50   5.59   .992   .358   .243   1.73   .215  -.101   0
+  12 GZ16     1898 2019    122      3      0    .715   2.24   5.00   .957   .612   .258   2.34   .275   .042   1
+  13 GZ19     1893 2019    127      3      0    .644   1.95   3.90   .618   .402   .275   1.70   .262   .035   1
+  14 GZ20     1899 2019    121      3      0    .571   2.35   4.40   .732   .534   .243   1.60   .227   .077   0
+  15 GZ21     1915 2019    105      2      0    .791   3.28   6.22  1.160   .435   .316   1.81   .287   .082   0
+  16 GZ23     1899 2018    120      3      0    .453   2.43   5.70  1.321   .735   .273   3.25   .345   .138   0
+  17 GZ24     1916 2019    104      2      0    .824   2.90   6.42  1.254   .667   .296   1.92   .278   .020   1
+  18 GZ25     1901 2019    119      2      0    .727   1.74   5.90   .843   .693   .279   2.00   .301   .022   1
+  19 GZ26     1902 2019    118      2      0    .734   2.37   4.90   .892   .515   .305   1.67   .266  -.016   0
+  20 GZ27     1907 2019    113      2      0    .808   3.01   6.30  1.122   .326   .369   1.96   .303  -.029   2
+  21 GZ28     1894 2019    126      3      1    .499   2.39   5.44  1.362   .809   .312   1.88   .306  -.004   1
+  22 GZ29     1906 2019    114      2      2    .211   2.12   4.26   .975   .861   .213   1.65   .212   .007   1
+  23 GZ30     1903 2019    117      2      0    .797   2.71   6.00  1.173   .766   .267   1.97   .258  -.018   2
+  24 GZ32     1924 2019     96      1      0    .661   3.64   5.64  1.081   .757   .168   1.56   .160  -.058   3
+  25 GZ33     1891 2019    129      3      0    .641   2.35   4.70   .882   .713   .205   1.68   .219  -.016   1
+  26 GZ34     1914 2019    106      2      2    .328   3.00   5.65   .961   .671   .199   1.49   .185   .032   0
+  27 GZ35     1909 2019    111      2      0    .666   2.69   4.61   .756   .513   .224   1.76   .223  -.006   1
+  28 GZ39     1927 2019     93      1      0    .705   3.44   6.84  1.592   .628   .355   1.98   .327   .107   0
+  29 GZ44     1964 2019     56      0      0    .771   2.44   6.91  1.352   .469   .373   2.36   .384  -.027   2
+  30 GZ45     1894 2019    126      3      0    .751   2.75   5.84   .869   .358   .277   2.00   .270   .020   1
+  31 GZ47     1907 2019    113      2      0    .705   3.06   5.61  1.128   .641   .272   1.67   .253   .009   1
+  32 GZ48     1900 2019    120      2      0    .772   2.25   4.16   .757   .519   .295   1.74   .281   .018   2
+  33 GZ49     1898 2019    122      3      0    .687   2.82   6.08   .928   .447   .275   1.87   .265  -.020   2
+  34 GZ51     1905 2019    115      2      0    .659   2.80   4.41   .665   .423   .192   1.43   .190   .109   0
+  35 GZ56     1895 2019    125      3      1    .462   2.71   4.69   .821   .711   .195   1.72   .203  -.005   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3915     76      7    .653   2.66   6.91  1.007   .592   .271   3.25   .261   .013
+
+ DATA CHECKS (rwl.check): che564
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che564.rwl
+ 35 series, 3915 measurements, 1891-2019, 0.01 mm precision
+ 0 error(s), 3 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_SERIES_OUTLIER (2)
+     GZ29: correlates with the rest of the collection at r = 0.169 where the collection median is 0.679 (5.6 MAD below it); it does not fit the collection it is in
+     GZ34: correlates with the rest of the collection at r = 0.305 where the collection median is 0.679 (4.1 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file che564.rwl, MD5 66bfa4ca5830f573e58fed02deaeaf27.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

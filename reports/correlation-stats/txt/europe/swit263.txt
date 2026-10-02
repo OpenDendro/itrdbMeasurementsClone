@@ -1,0 +1,106 @@
+
+ COFECHA-style crossdating report: swit263
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit263.rwl
+      MD5 of measurement file: 52ace00794237d0f219ee1f87310f5c3
+      Date checked           : 01OCT26
+      Beginning year         : 1938
+      Ending year            : 1998
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Jussy JU
+      Species information    : PPTM Populus tremula L.
+      Latitude               : 46.2358 N
+      Longitude              : 6.2669 E
+      Elevation              : 480 m
+
+      Series intercorrelation: 0.562
+      Avg mean sensitivity   : 0.337
+      Avg standard deviation : 1.021
+      Avg autocorrelation    : 0.676
+      Number dated series    : 6
+      Segment length tested  : 30
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 20.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit263
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  30-year dated segments, lagged  15 years
+ Flags:  A = correlation under   .4226 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1965 
+                        1979 1994 
+ --- -------- ---------  ---- ---- 
+   1 juppt01a 1938 1998  .05B .03B
+   2 juppt01b 1954 1996       .63 
+   3 juppt02a 1956 1998       .77 
+   4 juppt02b 1944 1998  .65  .74 
+   5 juppt03a 1947 1998  .70  .73 
+   6 juppt03b 1945 1998  .69  .70 
+ Av segment correlation  .52  .60 
+
+ FLAGGED SEGMENTS: swit263
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 juppt01a 1950 1979     B     .050         7      .356   .306  weak at every lag
+   1 juppt01a 1965 1994     B     .035        -3      .237   .202  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit263
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 juppt01a 1938 1998     61      2      2    .042   1.64   3.86   .707   .469   .322   1.73   .315   .002   2
+   2 juppt01b 1954 1996     43      1      0    .692   2.61   4.93  1.090   .610   .337   1.75   .317  -.036   1
+   3 juppt02a 1956 1998     43      1      0    .702   1.99   5.49  1.381   .847   .373   2.44   .426  -.007   2
+   4 juppt02b 1944 1998     55      2      0    .681   1.91   4.07  1.019   .734   .327   1.72   .326  -.021   2
+   5 juppt03a 1947 1998     52      2      0    .699   1.99   3.80   .913   .700   .307   1.81   .329  -.027   2
+   6 juppt03b 1945 1998     54      2      0    .681   2.15   4.39  1.139   .743   .365   2.04   .315  -.025   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            308     10      2    .562   2.02   5.49  1.021   .676   .337   2.44   .335  -.018
+
+ DATA CHECKS (rwl.check): swit263
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit263.rwl
+ 6 series, 308 measurements, 1938-1998, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     juppt01a: correlates with the rest of the collection at r = 0.024 where the collection median is 0.707 (5.5 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit263.rwl, MD5 52ace00794237d0f219ee1f87310f5c3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4226 for 30-year segments.
+ Segments: 30 years, lagged 15, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 30 years: the record is only 61 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

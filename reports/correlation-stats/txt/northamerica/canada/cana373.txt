@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: cana373
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana373.rwl
+      MD5 of measurement file: 109578bca39afa79ee6d339b11adf0fa
+      Date checked           : 01OCT26
+      Beginning year         : 1725
+      Ending year            : 1986
+      Principal investigators: Colenutt, M.; Luckman, B.H.
+      Site name              : Larch Valley
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 51.3500 N
+      Longitude              : 116.2167 W
+      Elevation              : 2200 m
+
+      Series intercorrelation: 0.703
+      Avg mean sensitivity   : 0.230
+      Avg standard deviation : 0.239
+      Avg autocorrelation    : 0.716
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 1.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana373
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 LF710E   1765 1986  .82  .86  .84  .62  .41  .77 
+   2 LF710S   1744 1986  .81  .85  .72  .66  .60  .78 
+   3 LF711N   1763 1986  .85  .85  .79  .77  .57  .76 
+   4 LF711S   1763 1986  .88  .90  .88  .58  .26A .64 
+   5 LF712S   1727 1986  .34  .44  .83  .74  .67  .80 
+   6 LF712W   1725 1986  .70  .84  .83  .74  .72  .85 
+   7 LF715S   1749 1986  .93  .96  .88  .78  .71  .85 
+   8 LF715W   1735 1986  .82  .93  .87  .75  .66  .78 
+   9 LF750N   1770 1986  .78  .80  .71  .70  .72  .84 
+  10 LF750W   1817 1986       .91  .82  .45  .47  .82 
+  11 LF754N   1759 1986  .84  .79  .71  .75  .69  .77 
+  12 LF754S   1759 1986  .75  .71  .49  .47  .60  .72 
+  13 LF755N   1741 1986  .83  .84  .76  .47  .48B .62 
+  14 LF755S   1757 1986  .78  .83  .71  .56  .43  .64 
+  15 LF757N   1738 1986  .69  .76  .79  .70  .47  .68 
+  16 LF757S   1739 1986  .77  .64  .65  .66  .59  .84 
+  17 LF759N   1770 1986  .89  .86  .79  .77  .57  .65 
+  18 LF759S   1770 1986  .79  .81  .78  .77  .68  .77 
+  19 LF760E   1769 1986  .71  .85  .82  .70  .53  .77 
+  20 LF760W   1769 1986  .82  .87  .68  .51  .50  .75 
+  21 LF767E   1750 1986  .76  .80  .75  .77  .83  .83 
+  22 LF767W   1758 1986  .88  .86  .78  .78  .80  .81 
+ Av segment correlation  .78  .82  .77  .67  .59  .76 
+
+ FLAGGED SEGMENTS: cana373
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 LF711S   1900 1949     A     .261         0
+  13 LF755N   1900 1949     B     .480       -10      .519   .039
+
+ DESCRIPTIVE STATISTICS: cana373
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LF710E   1765 1986    222      6      0    .710    .64   1.60   .296   .812   .239   2.02   .237  -.006   1
+   2 LF710S   1744 1986    243      6      0    .622    .62   1.80   .379   .884   .242   1.76   .241   .022   1
+   3 LF711N   1763 1986    224      6      0    .797    .47   1.24   .215   .786   .254   1.74   .232   .058   0
+   4 LF711S   1763 1986    224      6      1    .737    .47   1.31   .225   .792   .253   1.90   .241  -.005   1
+   5 LF712S   1727 1986    260      6      0    .590    .68   1.41   .233   .738   .206   1.90   .204   .020   1
+   6 LF712W   1725 1986    262      6      0    .687    .62   1.28   .214   .713   .214   1.65   .200   .004   1
+   7 LF715S   1749 1986    238      6      0    .827    .62   1.46   .230   .701   .230   1.57   .211   .002   1
+   8 LF715W   1735 1986    252      6      0    .621    .61   1.36   .255   .793   .231   1.59   .206   .077   0
+   9 LF750N   1770 1986    217      6      0    .748    .54   1.18   .193   .751   .185   1.92   .186   .009   1
+  10 LF750W   1817 1986    170      5      0    .757    .73   1.38   .305   .836   .206   1.50   .203   .028   1
+  11 LF754N   1759 1986    228      6      0    .759    .60   1.11   .184   .498   .256   1.83   .225   .036   0
+  12 LF754S   1759 1986    228      6      0    .620    .57   1.56   .252   .802   .235   1.70   .226  -.019   1
+  13 LF755N   1741 1986    246      6      1    .605    .60   1.50   .199   .681   .209   1.97   .210   .011   1
+  14 LF755S   1757 1986    230      6      0    .687    .72   1.89   .218   .538   .201   1.92   .203   .014   1
+  15 LF757N   1738 1986    249      6      0    .636    .47   1.18   .221   .731   .277   1.79   .250  -.020   3
+  16 LF757S   1739 1986    248      6      0    .609    .48   1.76   .261   .732   .273   2.99   .275  -.017   3
+  17 LF759N   1770 1986    217      6      0    .755    .68   1.46   .210   .689   .201   1.50   .182   .090   0
+  18 LF759S   1770 1986    217      6      0    .760    .69   1.78   .272   .832   .183   1.48   .178   .002   1
+  19 LF760E   1769 1986    218      6      0    .713    .84   1.76   .294   .691   .219   1.47   .198   .009   1
+  20 LF760W   1769 1986    218      6      0    .694    .66   1.68   .219   .554   .230   1.78   .210   .043   0
+  21 LF767E   1750 1986    237      6      0    .771    .56   1.21   .181   .596   .237   1.53   .217   .038   0
+  22 LF767W   1758 1986    229      6      0    .821    .64   1.40   .225   .633   .258   1.71   .226   .020   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5077    131      2    .703    .61   1.89   .239   .716   .230   2.99   .217   .018
+
+ DATA CHECKS (rwl.check): cana373
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana373.rwl
+ 22 series, 5077 measurements, 1725-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cana373.rwl, MD5 109578bca39afa79ee6d339b11adf0fa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: cze073
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze073.rwl
+      MD5 of measurement file: 933fd09e05cc28401a7100d084ebe2da
+      Date checked           : 01OCT26
+      Beginning year         : 1947
+      Ending year            : 2021
+      Principal investigators: Mašek, J.; Tumajer, J.
+      Site name              : 40VA Šumava
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 49.2160 N
+      Longitude              : 13.2833 E
+      Elevation              : 801 m
+
+      Series intercorrelation: 0.562
+      Avg mean sensitivity   : 0.173
+      Avg standard deviation : 1.094
+      Avg autocorrelation    : 0.820
+      Number dated series    : 26
+      Segment length tested  : 36
+
+      Number problem segments: 10  (A 3, B 7; 6 of the B weak at every lag)
+      Pct problem segments   : 18.87
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze073
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  36-year dated segments, lagged  18 years
+ Flags:  A = correlation under   .3862 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1968 1986 
+                        1985 2003 2021 
+ --- -------- ---------  ---- ---- ---- 
+   1 40UD26   1980 2021            .70 
+   2 40UD14   1952 2021       .66  .74 
+   3 40UD12   1954 2021       .66  .81 
+   4 40UD22   1955 2021       .41  .33A
+   5 40UD06   1956 2021       .79  .78 
+   6 40UD09   1955 2021       .62  .63 
+   7 40UD21   1952 2021       .68  .83 
+   8 40UD24   1958 2021       .52  .73 
+   9 40UD23   1953 2021       .71  .75 
+  10 40UD05   1954 2021       .67  .61 
+  11 40UD10   1953 2021       .56  .56 
+  12 40UD11   1953 2021       .67  .47 
+  13 40UD04   1951 2021       .73  .84 
+  14 40UD16   1954 2021       .55  .53 
+  15 40UD19   1959 2021       .23B .75 
+  16 40UD18   1960 2021       .22B .49 
+  17 40UD20   1954 2021       .19B .15B
+  18 40UD15   1950 2021       .61  .68 
+  19 40UD17   1964 2021       .30A .37A
+  20 40UD07   1947 2021  .39  .63  .69 
+  21 40UD01   1954 2021       .67  .76 
+  22 40UD08   1948 2021  .07B .41  .87 
+  23 40UD02   1951 2021       .52  .67 
+  24 40UD13   1955 2021       .67  .72 
+  25 40UD03   1957 2021       .61  .60 
+  26 40UD25   1954 2021       .18B .22B
+ Av segment correlation  .23  .54  .63 
+
+ FLAGGED SEGMENTS: cze073
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 40UD22   1986 2021     A     .334         0
+  15 40UD19   1968 2003     B     .235        -1      .469   .234
+  16 40UD18   1968 2003     B     .217         9      .293   .076  weak at every lag
+  17 40UD20   1968 2003     B     .194        10      .267   .074  weak at every lag
+  17 40UD20   1986 2021     B     .148        -5      .232   .084  weak at every lag
+  19 40UD17   1968 2003     A     .302         0
+  19 40UD17   1986 2021     A     .368         0
+  22 40UD08   1950 1985     B     .069         1      .268   .198  weak at every lag
+  26 40UD25   1968 2003     B     .180         9      .279   .100  weak at every lag
+  26 40UD25   1986 2021     B     .217       -10      .277   .060  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cze073
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 40UD26   1980 2021     42      1      0    .685   3.35   5.82   .994   .680   .188   1.48   .216   .099   1
+   2 40UD14   1952 2021     70      2      0    .637   3.28   7.67  1.407   .855   .170   1.50   .192   .026   1
+   3 40UD12   1954 2021     68      2      0    .743   3.51   7.29  1.522   .833   .190   1.61   .203   .104   1
+   4 40UD22   1955 2021     67      2      1    .417   1.96   4.77   .745   .772   .170   1.50   .178  -.012   1
+   5 40UD06   1956 2021     66      2      0    .745   2.58   6.34  1.013   .864   .144   1.43   .163   .117   1
+   6 40UD09   1955 2021     67      2      0    .562   2.84   6.04   .968   .824   .152   1.58   .149   .003   2
+   7 40UD21   1952 2021     70      2      0    .744   3.36   5.56   .964   .799   .161   1.42   .174   .050   1
+   8 40UD24   1958 2021     64      2      0    .642   2.99   4.65   .784   .735   .158   1.33   .161   .083   1
+   9 40UD23   1953 2021     69      2      0    .740   2.12   6.08  1.123   .884   .204   1.51   .222   .086   2
+  10 40UD05   1954 2021     68      2      0    .560   2.67   6.50  1.426   .914   .162   1.34   .181   .040   1
+  11 40UD10   1953 2021     69      2      0    .468   2.76   4.46   .674   .673   .149   1.36   .158   .014   1
+  12 40UD11   1953 2021     69      2      0    .455   2.20   4.67  1.085   .904   .170   1.59   .196   .071   2
+  13 40UD04   1951 2021     71      2      0    .749   2.53   6.58  1.285   .942   .159   1.37   .164   .021   1
+  14 40UD16   1954 2021     68      2      0    .479   3.12   5.54   .973   .777   .161   1.40   .187   .031   1
+  15 40UD19   1959 2021     63      2      1    .326   2.22   5.51   .844   .754   .177   1.86   .209  -.021   1
+  16 40UD18   1960 2021     62      2      1    .355   2.80   5.36  1.064   .880   .147   1.33   .150   .096   1
+  17 40UD20   1954 2021     68      2      2    .260   2.36   5.18  1.301   .905   .203   1.65   .220  -.013   1
+  18 40UD15   1950 2021     72      2      0    .670   2.78   5.55   .783   .702   .169   1.39   .165   .021   1
+  19 40UD17   1964 2021     58      2      2    .382   2.86   5.79  1.481   .905   .205   1.72   .203   .103   1
+  20 40UD07   1947 2021     75      3      0    .558   1.77   7.18  1.416   .954   .177   1.43   .181   .047   1
+  21 40UD01   1954 2021     68      2      0    .696   2.74   5.05  1.305   .906   .165   1.48   .180   .038   1
+  22 40UD08   1948 2021     74      3      1    .541   1.92   6.56   .972   .839   .221   1.51   .223  -.024   2
+  23 40UD02   1951 2021     71      2      0    .636   2.30   6.56  1.085   .924   .148   1.51   .160   .054   1
+  24 40UD13   1955 2021     67      2      0    .645   3.33   5.99  1.227   .815   .182   1.63   .206   .136   1
+  25 40UD03   1957 2021     65      2      0    .584   4.10   7.80  1.322   .727   .192   1.49   .200   .083   1
+  26 40UD25   1954 2021     68      2      2    .298   2.52   4.67   .641   .482   .188   1.55   .181   .019   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1739     53     10    .562   2.71   7.80  1.094   .820   .173   1.86   .185   .047
+
+ DATA CHECKS (rwl.check): cze073
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze073.rwl
+ 26 series, 1739 measurements, 1947-2021, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     8 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file cze073.rwl, MD5 933fd09e05cc28401a7100d084ebe2da.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3862 for 36-year segments.
+ Segments: 36 years, lagged 18, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 36 years: the record is only 75 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

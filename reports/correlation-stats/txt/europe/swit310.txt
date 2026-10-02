@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: swit310
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit310.rwl
+      MD5 of measurement file: c215ab6b11052b2a032f47c3015458a4
+      Date checked           : 01OCT26
+      Beginning year         : 1821
+      Ending year            : 2005
+      Principal investigators: Büntgen, U.; Esper, J.; Frank, D.C.; Nievergelt, D.; Affolter, P.
+      Site name              : Ovronnaz
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.2000 N
+      Longitude              : 7.1500 E
+      Elevation              : 1500 m
+
+      Series intercorrelation: 0.615
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 0.837
+      Avg autocorrelation    : 0.763
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit310
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 11O01A   1887 2005  .50  .56  .48 
+   2 11O01B   1925 2005            .56 
+   3 11O02A   1895 2005  .72  .67  .66 
+   4 11O02B   1913 2005       .63  .64 
+   5 11O03A   1908 2005       .62  .53 
+   6 11O03B   1912 2005       .59  .59 
+   7 11O20A   1821 2005  .26B .30A .45 
+   8 11O20B   1916 2005       .18B .40 
+  10 11O25A   1906 2005       .76  .65 
+  11 11O25B   1932 2005            .68 
+ Av segment correlation  .49  .54  .57 
+
+ FLAGGED SEGMENTS: swit310
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 11O20A   1900 1949     B     .260        -4      .362   .102
+   7 11O20A   1925 1974     A     .301         0
+   8 11O20B   1925 1974     B     .178        -9      .380   .202
+
+ DESCRIPTIVE STATISTICS: swit310
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 11O01A   1887 2005    119      3      0    .520   1.69   3.81   .676   .598   .261   1.74   .280   .014   3
+   2 11O01B   1925 2005     81      1      0    .633   1.58   6.92  1.115   .903   .234   1.44   .224   .013   3
+   3 11O02A   1895 2005    111      3      0    .694   1.61   4.73  1.112   .919   .187   1.50   .183  -.040   3
+   4 11O02B   1913 2005     93      2      0    .668   2.22   5.25   .783   .776   .188   1.45   .192  -.007   1
+   5 11O03A   1908 2005     98      2      0    .536   1.63   6.06   .857   .818   .260   1.53   .245  -.003   3
+   6 11O03B   1912 2005     94      2      0    .675   1.20   2.56   .457   .738   .251   1.50   .238   .001   3
+   7 11O20A   1821 2005    185      3      2    .617   1.16   3.17   .689   .764   .306   1.96   .306   .034   1
+   8 11O20B   1916 2005     90      2      1    .301    .67   1.74   .310   .654   .259   1.93   .307  -.003   1
+   9 11O20C   1829 1889     61      0      0    .879   2.08   4.10   .809   .566   .319   1.55   .296   .057   1
+  10 11O25A   1906 2005    100      2      0    .659   2.14   5.60  1.169   .775   .272   1.89   .278  -.042   2
+  11 11O25B   1932 2005     74      1      0    .694   2.64   6.75  1.493   .854   .251   1.65   .253   .035   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1106     21      3    .615   1.63   6.92   .837   .763   .255   1.96   .257   .005
+
+ DATA CHECKS (rwl.check): swit310
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit310.rwl
+ 11 series, 1106 measurements, 1821-2005, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit310.rwl, MD5 c215ab6b11052b2a032f47c3015458a4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

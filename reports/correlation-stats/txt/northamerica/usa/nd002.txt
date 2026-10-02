@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: nd002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nd002.rwl
+      MD5 of measurement file: 9d26d869db85e9ee2c23d12a4e8b26e0
+      Date checked           : 01OCT26
+      Beginning year         : 1788
+      Ending year            : 1991
+      Principal investigators: Meko, D.M.; Sieg, C.H.
+      Site name              : Cross Ranch Sanger Unit
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 47.1500 N
+      Longitude              : 101.0200 W
+      Elevation              : 442 m
+
+      Series intercorrelation: 0.545
+      Avg mean sensitivity   : 0.198
+      Avg standard deviation : 0.610
+      Avg autocorrelation    : 0.700
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 0, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 8.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 CRS01B   1845 1990            .13B .43  .76  .69 
+   2 CRS01Q   1891 1991                      .66  .73 
+   5 CRS03A   1896 1985                      .03B .10B
+   6 CRS04A   1900 1990                           .71 
+   7 CRS04B   1914 1990                           .71 
+   8 CRS05B   1910 1990                           .62 
+   9 CRS06A   1915 1990                           .62 
+  10 CRS06B   1921 1990                           .51 
+  11 CRS07B   1831 1990            .66  .64  .59  .67 
+  12 CRS07C   1788 1979  .60  .57  .47  .56  .62  .67 
+  13 CRS08A   1845 1990            .73  .64  .61  .67 
+  14 CRS08B   1830 1990            .63  .63  .59  .60 
+  15 CRS12A   1805 1990       .42  .61  .53  .63  .58 
+  16 CRS12B   1798 1990       .42  .50  .50  .67  .65 
+  17 CRS13A   1907 1990                           .48 
+  19 CRS14A   1906 1990                           .75 
+  20 CRS14B   1903 1990                           .68 
+  21 CRS15A   1793 1990  .78  .74  .53  .48  .55  .51 
+  22 CRS15B   1793 1990  .78  .74  .53  .48  .55  .51 
+  23 CRS16A   1825 1990            .36  .50  .46  .46 
+  24 CRS16B   1827 1990            .47  .71  .74  .73 
+  25 CRS95A   1794 1989  .84  .81  .39  .20B .08B .11B
+ Av segment correlation  .75  .62  .50  .53  .54  .58 
+
+ FLAGGED SEGMENTS: nd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CRS01B   1850 1899     B     .130        -2      .303   .173  weak at every lag
+   5 CRS03A   1900 1949     B     .031        -1      .798   .767
+   5 CRS03A   1925 1974     B     .097        -1      .514   .417
+  25 CRS95A   1875 1924     B     .201         1      .421   .220
+  25 CRS95A   1900 1949     B     .084         1      .574   .491
+  25 CRS95A   1925 1974     B     .111         1      .546   .435
+
+ DESCRIPTIVE STATISTICS: nd002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CRS01B   1845 1990    146      4      1    .348   2.17   4.23   .944   .796   .220   2.55   .233  -.002   1
+   2 CRS01Q   1891 1991    101      2      0    .559   1.29   2.24   .405   .641   .209   1.39   .207  -.040   1
+   3 CRS02A   1937 1990     54      0      0    .420   3.85   7.32  1.237   .424   .249   1.66   .253   .151   0
+   4 CRS02B   1938 1990     53      0      0    .406   3.83   7.00  1.249   .434   .270   1.69   .256   .031   0
+   5 CRS03A   1896 1985     90      2      2    .156   1.38   2.33   .409   .608   .210   1.48   .200   .144   0
+   6 CRS04A   1900 1990     91      1      0    .638   2.59   4.09   .736   .566   .216   1.61   .211  -.014   1
+   7 CRS04B   1914 1990     77      1      0    .677   2.38   4.41   .635   .484   .230   1.48   .214  -.001   1
+   8 CRS05B   1910 1990     81      1      0    .421   3.85   6.53   .832   .455   .173   1.51   .181   .018   1
+   9 CRS06A   1915 1990     76      1      0    .662   2.62   4.32   .705   .534   .215   1.46   .197   .070   1
+  10 CRS06B   1921 1990     70      1      0    .575   2.90   5.08   .915   .603   .226   1.60   .217   .094   0
+  11 CRS07B   1831 1990    160      4      0    .620   1.01   2.39   .317   .677   .178   1.60   .182  -.002   1
+  12 CRS07C   1788 1979    192      6      0    .537   1.11   2.38   .425   .777   .188   1.53   .193  -.000   1
+  13 CRS08A   1845 1990    146      4      0    .672   1.29   2.28   .405   .786   .163   1.40   .162   .047   1
+  14 CRS08B   1830 1990    161      4      0    .611   1.13   2.13   .403   .773   .184   1.53   .180   .004   1
+  15 CRS12A   1805 1990    186      5      0    .534   1.28   3.45   .435   .644   .205   1.56   .204  -.007   1
+  16 CRS12B   1798 1990    193      5      0    .498   1.11   1.93   .366   .594   .224   1.75   .228  -.081   3
+  17 CRS13A   1907 1990     84      1      0    .498   2.52   5.36   .820   .705   .190   1.44   .170  -.022   3
+  18 CRS13B   1928 1990     63      0      0    .644   2.43   4.14   .690   .642   .203   1.41   .187   .056   1
+  19 CRS14A   1906 1990     85      1      0    .656   3.13   4.50   .597   .425   .170   1.57   .161   .135   0
+  20 CRS14B   1903 1990     88      1      0    .698   2.78   4.06   .527   .223   .191   1.50   .166  -.021   3
+  21 CRS15A   1793 1990    198      6      0    .635   1.20   3.08   .703   .914   .188   2.13   .222   .015   3
+  22 CRS15B   1793 1990    198      6      0    .635   1.20   3.08   .703   .914   .188   2.13   .222   .015   3
+  23 CRS16A   1825 1990    166      4      0    .404   1.53   4.56   .692   .802   .203   1.89   .224  -.015   3
+  24 CRS16B   1827 1990    164      4      0    .558   1.66   3.38   .627   .806   .191   1.79   .203  -.014   1
+  25 CRS95A   1794 1989    196      6      3    .496   1.21   3.18   .710   .922   .187   2.57   .230   .040   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3119     70      6    .545   1.74   7.32   .610   .700   .198   2.57   .205   .013
+
+ DATA CHECKS (rwl.check): nd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nd002.rwl
+ 25 series, 3119 measurements, 1788-1991, 0.01 mm precision
+ 2 error(s), 0 warning(s), 2 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     CRS03A: correlates best with the master at lag -1 (r = 0.596 against r = 0.323 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+   RWL_DUP_SERIES (1)
+     CRS15A: identical measurements in CRS15A, CRS15B; one core may be archived twice
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file nd002.rwl, MD5 9d26d869db85e9ee2c23d12a4e8b26e0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

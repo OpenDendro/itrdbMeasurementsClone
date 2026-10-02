@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: russ289
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ289.rwl
+      MD5 of measurement file: a9eecc30cbf09fbff791f1ea410bca76
+      Date checked           : 01OCT26
+      Beginning year         : 1877
+      Ending year            : 2004
+      Principal investigators: Oskolkov, V.A.; Voronin, V.I.
+      Site name              : Olkhon HAR
+      Species information    : LASI Larix sibirica Ledeb. = Larix russica (Endl.) Sabine ex Trautv.
+      Latitude               : 52.8000 N
+      Longitude              : 106.4333 E
+      Elevation              : 569 m
+
+      Series intercorrelation: 0.603
+      Avg mean sensitivity   : 0.370
+      Avg standard deviation : 1.190
+      Avg autocorrelation    : 0.665
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 12.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ289
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 har3     1902 2004       .56  .67 
+   2 har4     1900 2004       .75  .61 
+   3 har5     1905 2004       .62  .79 
+   4 har7     1895 2004  .20B .49  .54 
+   5 har8     1899 2004       .61  .75 
+   6 har9s    1882 1984  .07B .26A     
+   7 har11    1877 2004  .55  .46  .63 
+   8 har121   1920 2004       .68  .77 
+   9 har122   1916 2004       .61  .77 
+  10 har13    1904 2004       .63  .74 
+  11 har15    1914 2004       .76  .83 
+ Av segment correlation  .27  .58  .71 
+
+ FLAGGED SEGMENTS: russ289
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 har7     1900 1949     B     .201         7      .249   .048  weak at every lag
+   6 har9s    1900 1949     B     .068        -6      .298   .230  weak at every lag
+   6 har9s    1925 1974     A     .263         0
+
+ DESCRIPTIVE STATISTICS: russ289
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 har3     1902 2004    103      2      0    .659   1.96   3.55   .635   .462   .285   1.65   .257  -.013   2
+   2 har4     1900 2004    105      2      0    .660   2.53   5.41  1.388   .727   .389   2.09   .375  -.010   2
+   3 har5     1905 2004    100      2      0    .732   1.87   4.59  1.097   .777   .325   1.84   .277   .052   0
+   4 har7     1895 2004    110      3      1    .425   2.56   5.56  1.078   .803   .236   1.63   .229  -.001   2
+   5 har8     1899 2004    106      2      0    .654   1.96   5.05  1.199   .423   .562   2.15   .463   .001   2
+   6 har9s    1882 1984    103      2      2    .053   1.57   3.46   .855   .415   .527   2.08   .454  -.049   3
+   7 har11    1877 2004    128      3      0    .491   2.04   4.79  1.177   .763   .311   1.91   .285  -.007   1
+   8 har121   1920 2004     85      2      0    .797   2.55   6.44  1.540   .786   .371   1.97   .359   .007   1
+   9 har122   1916 2004     89      2      0    .808   3.00   6.89  1.512   .740   .346   2.08   .342   .030   1
+  10 har13    1904 2004    101      2      0    .652   2.42   5.58  1.378   .729   .377   1.69   .333   .092   0
+  11 har15    1914 2004     91      2      0    .827   2.71   5.50  1.357   .700   .352   2.12   .335   .015   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1121     24      3    .603   2.27   6.89  1.190   .665   .370   2.15   .336   .010
+
+ DATA CHECKS (rwl.check): russ289
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ289.rwl
+ 11 series, 1121 measurements, 1877-2004, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     har9s: correlates with the rest of the collection at r = 0.055 where the collection median is 0.662 (6.6 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file russ289.rwl, MD5 a9eecc30cbf09fbff791f1ea410bca76.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

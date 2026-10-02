@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: ita075
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ita075.rwl
+      MD5 of measurement file: 45c8b51f1f1db4cbaeec376ddc6e3474
+      Date checked           : 01OCT26
+      Beginning year         : 1911
+      Ending year            : 2023
+      Principal investigators: Jourdain, L.; von Arx, G.; Piermattei, A.; Crivellaro, A.; Peters, R.L.; Klesse, S.
+      Site name              : Trino
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 45.2283 N
+      Longitude              : 8.2604 E
+      Elevation              : 170 m
+
+      Series intercorrelation: 0.482
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 1.191
+      Avg autocorrelation    : 0.735
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 22.22
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ita075
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 TRI01    1925 2023  .38 
+   2 TRI02    1946 2023  .56 
+   3 TRI03    1933 2023  .52 
+   4 TRI04    1911 2023  .58 
+  12 TRI12    1934 2015  .22B
+  13 TRI13    1939 2023  .51 
+  18 TRI18    1934 2023  .58 
+  20 TRI20    1949 2022  .73 
+  21 TRI21    1942 2023  .32A
+ Av segment correlation  .49 
+
+ FLAGGED SEGMENTS: ita075
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 TRI12    1950 1999     B     .225         7      .277   .052  weak at every lag
+  21 TRI21    1950 1999     A     .319         0
+
+ DESCRIPTIVE STATISTICS: ita075
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TRI01    1925 2023     99      1      0    .429   1.83   6.12  1.040   .659   .298   2.08   .303  -.055   3
+   2 TRI02    1946 2023     78      1      0    .559   2.85   7.63  1.463   .743   .275   1.79   .275   .056   1
+   3 TRI03    1933 2023     91      1      0    .332   1.96   5.15   .878   .783   .213   1.71   .203  -.041   3
+   4 TRI04    1911 2023    113      1      0    .389   1.90   3.94   .609   .576   .235   1.54   .217   .027   2
+   5 TRI05    1969 2023     55      0      0    .370   3.18   7.72  1.790   .894   .181   1.48   .191  -.022   3
+   6 TRI06    1958 2023     66      0      0    .409   2.93   6.24  1.577   .838   .220   1.92   .222   .076   3
+   7 TRI07    1965 2023     59      0      0    .465   2.67   4.68   .948   .568   .253   1.61   .271  -.037   2
+   8 TRI08    1955 2021     67      0      0    .266   2.54   4.04   .727   .596   .225   1.48   .213   .013   1
+   9 TRI09    1951 2023     73      0      0    .616   2.83   5.44  1.067   .752   .220   1.80   .212   .008   2
+  10 TRI10    1959 2022     64      0      0    .473   3.07   5.28   .794   .664   .165   1.39   .169   .069   1
+  11 TRI11    1963 2023     61      0      0    .628   3.57   6.30  1.260   .584   .291   1.49   .272   .088   1
+  12 TRI12    1934 2015     82      1      1    .231   2.38   5.70  1.236   .814   .273   1.67   .249   .163   3
+  13 TRI13    1939 2023     85      1      0    .586   2.21   5.27  1.078   .835   .206   1.74   .210  -.017   2
+  14 TRI14    1952 2023     72      0      0    .477   2.02   5.30   .949   .621   .251   2.09   .293   .017   1
+  15 TRI15    1954 2023     70      0      0    .598   2.34   5.28   .985   .851   .168   1.52   .181   .067   1
+  16 TRI16    1952 2023     72      0      0    .521   2.76   6.64  1.541   .847   .281   1.39   .241   .112   0
+  17 TRI17    1964 2023     60      0      0    .728   3.67   7.43  1.379   .558   .305   1.78   .292   .098   1
+  18 TRI18    1934 2023     90      1      0    .552   2.39  11.07  1.570   .680   .221   2.53   .251  -.014   1
+  19 TRI19    1954 2023     70      0      0    .567   2.43   5.21   .963   .833   .160   1.57   .172   .067   1
+  20 TRI20    1949 2022     74      1      0    .714   2.71   7.72  1.720   .868   .251   1.68   .246   .066   1
+  21 TRI21    1942 2023     82      1      1    .335   2.14   8.24  1.796   .878   .214   1.60   .208   .109   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1583      9      2    .482   2.52  11.07  1.191   .735   .235   2.53   .233   .038
+
+ DATA CHECKS (rwl.check): ita075
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ita075.rwl
+ 21 series, 1583 measurements, 1911-2023, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ita075.rwl, MD5 45c8b51f1f1db4cbaeec376ddc6e3474.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

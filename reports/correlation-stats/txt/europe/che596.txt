@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: che596
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che596.rwl
+      MD5 of measurement file: 24d1c943cd408597d51a911fe05a3f06
+      Date checked           : 01OCT26
+      Beginning year         : 1850
+      Ending year            : 2008
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : MEL
+      Species information    : QUPE Quercus petraea (Matt.) Liebl. = Quercus sessiliflora Salisb.
+      Latitude               : 47.0652 N
+      Longitude              : 9.3911 E
+      Elevation              : 500 m
+
+      Series intercorrelation: 0.630
+      Avg mean sensitivity   : 0.251
+      Avg standard deviation : 0.508
+      Avg autocorrelation    : 0.769
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che596
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 mel01a   1866 2008  .51  .56  .68 
+   2 mel02a   1868 2008  .72  .85  .81 
+   3 mel03a   1873 2008  .61  .58  .58 
+   4 mel13a   1862 2008  .76  .83  .79 
+   5 mel14a   1861 2008  .49  .59  .67 
+   6 mel15a   1870 2008  .58  .77  .78 
+   7 mel16a   1859 2008  .71  .68  .72 
+   8 mel17a   1855 2008  .50  .60  .74 
+   9 mel18b   1850 2008  .63  .60  .66 
+  10 mel20b   1870 2008  .62  .70  .76 
+ Av segment correlation  .61  .67  .72 
+
+ FLAGGED SEGMENTS: che596
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che596
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 mel01a   1866 2008    143      3      0    .614    .77   2.68   .513   .639   .365   1.97   .337   .030   3
+   2 mel02a   1868 2008    141      3      0    .701    .79   1.92   .362   .742   .221   1.76   .216   .016   1
+   3 mel03a   1873 2008    136      3      0    .552    .90   2.17   .386   .811   .211   1.95   .229   .042   3
+   4 mel13a   1862 2008    147      3      0    .725    .73   1.60   .305   .704   .265   1.78   .261   .092   3
+   5 mel14a   1861 2008    148      3      0    .549    .66   3.19   .548   .862   .245   1.81   .262   .019   1
+   6 mel15a   1870 2008    139      3      0    .633    .86   1.74   .339   .612   .281   1.67   .266   .038   3
+   7 mel16a   1859 2008    150      3      0    .659   1.05   3.19   .511   .713   .268   2.21   .256   .004   1
+   8 mel17a   1855 2008    154      3      0    .589    .81   3.05   .513   .829   .210   1.49   .195   .059   3
+   9 mel18b   1850 2008    159      3      0    .608   1.06   4.77  1.052   .917   .202   1.55   .205   .046   1
+  10 mel20b   1870 2008    139      3      0    .670    .80   2.74   .475   .845   .248   1.77   .230   .053   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1456     30      0    .630    .84   4.77   .508   .769   .251   2.21   .245   .040
+
+ DATA CHECKS (rwl.check): che596
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che596.rwl
+ 10 series, 1456 measurements, 1850-2008, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che596.rwl, MD5 24d1c943cd408597d51a911fe05a3f06.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

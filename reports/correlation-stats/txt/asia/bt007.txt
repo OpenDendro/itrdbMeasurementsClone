@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: bt007
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bt007.rwl
+      MD5 of measurement file: 100681fce1f8b8db19029df23de0d000
+      Date checked           : 01OCT26
+      Beginning year         : 1611
+      Ending year            : 2005
+      Principal investigators: Cook, E.R.; Krusic, P.J.; Dukpa, D.
+      Site name              : Damra
+      Species information    : PCSN Picea spinulosa (Griff.) Beissn.
+      Latitude               : 27.4667 N
+      Longitude              : 89.5167 E
+      Elevation              : 3114 m
+
+      Series intercorrelation: 0.526
+      Avg mean sensitivity   : 0.188
+      Avg standard deviation : 0.516
+      Avg autocorrelation    : 0.854
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 0, B 10; 2 of the B weak at every lag)
+      Pct problem segments   : 7.25
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bt007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 DAMPS15B 1766 2005                 .50  .51  .56  .53  .47  .50  .54  .45 
+   2 DAMPS05B 1663 2005  .70  .76  .48  .48  .45  .42  .58  .60  .52  .51  .63 
+   3 DAMPS14A 1750 2005                 .37B .49  .57  .47  .37  .49  .44  .35 
+   4 DAMPS12A 1785 2005                      .66  .74  .52  .58  .78  .58  .41 
+   5 DAMPS05D 1689 2005  .75  .70  .40  .50  .50  .52  .69  .60  .73  .79  .55 
+   6 DAMPS16A 1720 2005       .50  .64  .66  .63  .66  .69  .67  .51  .54  .70 
+   7 DAMPS09A 1712 2005       .62  .56  .44  .51  .62  .66  .76  .75  .69  .52 
+   8 DAMPS17A 1720 2005       .54  .59  .67  .54  .55  .72  .71  .80  .72  .40 
+   9 DAMPS17B 1767 2005                 .38  .44  .68  .68  .67  .79  .73  .43 
+  10 DAMPS16B 1745 2005            .58  .72  .70  .55  .63  .62  .44  .50  .53 
+  11 DAMPS10A 1751 2005                 .43  .58  .64  .65  .57  .63  .68  .63 
+  12 DAMPS05A 1647 2005  .70  .61  .38  .43  .39B .41  .57  .59  .65  .45  .21B
+  13 DAMPS02A 1611 2005  .48  .44  .33 -.12B .24B .53  .33B .24B .38  .43  .54 
+  14 DAMPS15A 1765 2005                 .32B .59  .76  .70  .56  .53  .49  .49 
+  15 DAMPS03A 1753 2005                 .52  .27B .34B .64  .51  .50  .53  .49 
+ Av segment correlation  .66  .59  .50  .45  .50  .57  .60  .57  .60  .57  .49 
+
+ FLAGGED SEGMENTS: bt007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 DAMPS14A 1775 1824     B     .369        -7      .427   .058
+  12 DAMPS05A 1800 1849     B     .390        -7      .456   .066
+  12 DAMPS05A 1950 1999     B     .211        -9      .247   .036  weak at every lag
+  13 DAMPS02A 1775 1824     B    -.118         1      .398   .516
+  13 DAMPS02A 1800 1849     B     .240        -2      .278   .038  weak at every lag
+  13 DAMPS02A 1850 1899     B     .328       -10      .332   .004
+  13 DAMPS02A 1875 1924     B     .238         2      .330   .093
+  14 DAMPS15A 1775 1824     B     .323         1      .385   .062
+  15 DAMPS03A 1800 1849     B     .269         7      .428   .159
+  15 DAMPS03A 1825 1874     B     .338         7      .381   .044
+
+ DESCRIPTIVE STATISTICS: bt007
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DAMPS15B 1766 2005    240      8      0    .474   1.46   3.05   .453   .679   .175   1.75   .190  -.023   2
+   2 DAMPS05B 1663 2005    343     11      0    .558   1.20   3.15   .541   .857   .182   1.72   .186   .000   3
+   3 DAMPS14A 1750 2005    256      8      1    .455    .99   4.78   .676   .940   .146   1.62   .161   .013   3
+   4 DAMPS12A 1785 2005    221      7      0    .595    .71   1.55   .258   .784   .168   1.66   .186   .003   3
+   5 DAMPS05D 1689 2005    317     11      0    .624    .72   1.79   .351   .873   .184   1.65   .189   .001   3
+   6 DAMPS16A 1720 2005    286     10      0    .594   1.71   5.91  1.045   .838   .215   2.09   .238  -.002   3
+   7 DAMPS09A 1712 2005    294     10      0    .606   1.22   3.42   .497   .794   .200   1.93   .216   .001   3
+   8 DAMPS17A 1720 2005    286     10      0    .601   1.07   5.16   .655   .913   .171   1.65   .180  -.011   2
+   9 DAMPS17B 1767 2005    239      8      0    .550   1.24   3.17   .585   .784   .198   2.79   .249  -.005   3
+  10 DAMPS16B 1745 2005    261      9      0    .582    .79   3.25   .438   .900   .176   1.80   .188   .025   3
+  11 DAMPS10A 1751 2005    255      8      0    .585    .91   3.24   .460   .838   .181   1.60   .205   .007   2
+  12 DAMPS05A 1647 2005    359     11      2    .426    .77   3.15   .445   .917   .184   1.65   .191  -.005   2
+  13 DAMPS02A 1611 2005    395     11      4    .353    .79   3.72   .463   .879   .212   1.90   .227  -.001   3
+  14 DAMPS15A 1765 2005    241      8      1    .496   1.01   4.99   .577   .905   .179   1.54   .188  -.004   3
+  15 DAMPS03A 1753 2005    253      8      2    .464    .61   1.57   .276   .844   .231   1.56   .221  -.012   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4246    138     10    .526   1.01   5.91   .516   .854   .188   2.79   .202  -.001
+
+ DATA CHECKS (rwl.check): bt007
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/bt007.rwl
+ 15 series, 4246 measurements, 1611-2005, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file bt007.rwl, MD5 100681fce1f8b8db19029df23de0d000.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

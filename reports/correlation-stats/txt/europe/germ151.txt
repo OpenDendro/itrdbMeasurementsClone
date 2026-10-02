@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: germ151
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ151.rwl
+      MD5 of measurement file: 4284e7b71135a345aed81dd7236f8c58
+      Date checked           : 01OCT26
+      Beginning year         : 1764
+      Ending year            : 2005
+      Principal investigators: Neuwirth, B.
+      Site name              : Hessen/Kellerwald dhk04
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 51.1833 N
+      Longitude              : 9.0000 E
+      Elevation              : 280 m
+
+      Series intercorrelation: 0.696
+      Avg mean sensitivity   : 0.340
+      Avg standard deviation : 0.895
+      Avg autocorrelation    : 0.770
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.45
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 dhk0401m 1803 2005       .71  .86  .86  .86  .84  .81 
+   2 dhk0402m 1868 2005                 .65  .82  .78  .74 
+   3 dhk0403m 1811 2005       .50  .57  .84  .88  .86  .88 
+   4 dhk0404m 1812 2005       .59  .68  .83  .86  .74  .75 
+   5 dhk0405m 1764 2005  .43  .66  .68  .75  .80  .76  .83 
+   6 dhk0406m 1943 2005                                .76 
+   7 dhk0407m 1772 2005  .39  .67  .74  .88  .86  .65  .72 
+   8 dhk0408m 1813 2005       .51  .66  .87  .85  .75  .80 
+   9 dhk0409m 1797 2005  .26B .71  .71  .85  .86  .83  .87 
+  10 dhk0410m 1837 2005            .64  .77  .85  .83  .80 
+  11 dhk0411m 1896 2005                      .49  .64  .73 
+  12 dhk0412m 1869 2005                 .81  .80  .81  .78 
+  13 dhk0413m 1774 2005  .43  .70  .74  .68  .73  .79  .84 
+ Av segment correlation  .38  .63  .70  .80  .80  .77  .79 
+
+ FLAGGED SEGMENTS: germ151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 dhk0409m 1800 1849     B     .259         2      .384   .125
+
+ DESCRIPTIVE STATISTICS: germ151
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 dhk0401m 1803 2005    203      6      0    .779   1.47   4.86   .878   .803   .283   2.05   .288   .009   2
+   2 dhk0402m 1868 2005    138      4      0    .667   1.65   4.63   .848   .713   .336   1.70   .311   .030   1
+   3 dhk0403m 1811 2005    195      6      0    .760   1.28   3.12   .609   .681   .315   2.13   .295  -.000   2
+   4 dhk0404m 1812 2005    194      6      0    .738   1.06   4.41   .684   .754   .361   1.98   .333   .010   1
+   5 dhk0405m 1764 2005    242      7      0    .630   1.15   4.00   .591   .708   .335   2.12   .322   .029   1
+   6 dhk0406m 1943 2005     63      1      0    .725   1.39   2.48   .467   .562   .287   1.51   .244   .081   1
+   7 dhk0407m 1772 2005    234      7      0    .603   1.33   6.54  1.052   .779   .447   2.19   .397   .008   1
+   8 dhk0408m 1813 2005    193      6      0    .733   1.66   5.75  1.124   .763   .377   1.99   .363  -.007   2
+   9 dhk0409m 1797 2005    209      7      1    .687   1.27   5.01   .946   .867   .352   1.67   .318   .038   1
+  10 dhk0410m 1837 2005    169      5      0    .789   1.29   3.91   .798   .792   .350   1.73   .327   .066   1
+  11 dhk0411m 1896 2005    110      3      0    .623   3.00   7.84  1.637   .813   .308   1.98   .269  -.027   3
+  12 dhk0412m 1869 2005    137      4      0    .776   2.45   6.46  1.330   .756   .314   1.67   .302   .051   1
+  13 dhk0413m 1774 2005    232      7      0    .602   1.19   5.26   .859   .869   .286   1.80   .285  -.067   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2319     69      1    .696   1.47   7.84   .895   .770   .340   2.19   .319   .012
+
+ DATA CHECKS (rwl.check): germ151
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ151.rwl
+ 13 series, 2319 measurements, 1764-2005, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file germ151.rwl, MD5 4284e7b71135a345aed81dd7236f8c58.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

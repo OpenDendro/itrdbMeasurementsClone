@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: arg153
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg153.rwl
+      MD5 of measurement file: 2034ef45a87ad1d5fbc34706bc056596
+      Date checked           : 01OCT26
+      Beginning year         : 1814
+      Ending year            : 1994
+      Principal investigators: Villalba, R.; Ferrero, M.E.
+      Site name              : Los Toldos - TOJ
+      Species information    : JGAU Juglans australis Griseb.
+      Latitude               : 22.3167 S
+      Longitude              : 64.6667 W
+      Elevation              : 1875 m
+
+      Series intercorrelation: 0.519
+      Avg mean sensitivity   : 0.336
+      Avg standard deviation : 1.710
+      Avg autocorrelation    : 0.790
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 15.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg153
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 TOL21A   1896 1994  .54  .45 
+   2 TOL21B   1919 1994       .38 
+   4 TOL23A   1871 1994  .58  .56 
+   5 TOL27A   1883 1994  .46  .27B
+   6 TOL27B   1850 1994  .64  .42 
+   7 TOL28B   1910 1994       .65 
+   8 TOL29A   1842 1994  .43  .45 
+   9 TOL30B   1814 1994  .60  .37 
+  10 TOL33A   1831 1991  .48  .49 
+  11 TOL33B   1838 1994  .24B .15B
+  12 TOL34A   1830 1994  .56  .44 
+  13 TOL34B   1819 1994  .51  .47 
+  14 TOL50A   1825 1994  .52  .49 
+  15 TOL51A   1884 1994  .39  .23B
+  16 TOL52A   1826 1994  .59  .45 
+  17 TOL53A   1910 1994       .44B
+  18 TOL54A   1822 1994  .65  .61 
+  19 TOL55A   1825 1994  .63  .56 
+ Av segment correlation  .52  .44 
+
+ FLAGGED SEGMENTS: arg153
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 TOL27A   1925 1974     B     .269         3      .420   .151
+  11 TOL33B   1900 1949     B     .238         9      .406   .168
+  11 TOL33B   1925 1974     B     .154        -8      .236   .082  weak at every lag
+  15 TOL51A   1925 1974     B     .235        -9      .318   .083  weak at every lag
+  17 TOL53A   1925 1974     B     .442        -8      .443   .001
+
+ DESCRIPTIVE STATISTICS: arg153
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TOL21A   1896 1994     99      2      0    .501   1.16   4.27   .664   .604   .428   1.89   .377   .011   1
+   2 TOL21B   1919 1994     76      1      0    .440   4.27   9.26  1.906   .582   .364   1.75   .322   .013   1
+   3 TOL21X   1822 1883     62      0      0    .543   2.47   5.68  1.018   .390   .401   1.77   .349  -.002   1
+   4 TOL23A   1871 1994    124      2      0    .414   2.45   9.14  1.981   .703   .457   2.21   .397  -.030   2
+   5 TOL27A   1883 1994    112      2      1    .509   2.45  13.41  2.361   .911   .299   1.89   .292  -.004   2
+   6 TOL27B   1850 1994    145      2      0    .579   2.38   8.19  1.561   .781   .298   1.86   .286   .032   1
+   7 TOL28B   1910 1994     85      1      0    .500   3.98  10.74  1.802   .672   .284   2.15   .311  -.010   2
+   8 TOL29A   1842 1994    153      2      0    .365   2.33  13.13  1.845   .867   .351   2.04   .327   .026   1
+   9 TOL30B   1814 1994    181      2      0    .575   1.97   8.74  1.728   .755   .455   2.03   .391   .001   1
+  10 TOL33A   1831 1991    161      2      0    .501   1.90   6.32  1.380   .853   .260   1.89   .275   .035   1
+  11 TOL33B   1838 1994    157      2      2    .434   1.94   7.75  1.501   .870   .259   1.91   .272  -.019   2
+  12 TOL34A   1830 1994    165      2      0    .398   1.44   7.14  1.305   .830   .356   1.97   .334  -.012   2
+  13 TOL34B   1819 1994    176      2      0    .499   1.63   7.13  1.489   .843   .316   1.87   .323   .039   1
+  14 TOL50A   1825 1994    170      2      0    .576   1.63   8.25  1.498   .823   .354   1.92   .329   .017   1
+  15 TOL51A   1884 1994    111      2      1    .461   3.57  16.45  3.688   .820   .392   2.09   .380   .048   1
+  16 TOL52A   1826 1994    169      2      0    .647   1.98   8.29  1.756   .836   .297   1.74   .270  -.005   2
+  17 TOL53A   1910 1994     85      1      1    .491   3.73  12.55  2.645   .848   .323   1.71   .326   .002   2
+  18 TOL54A   1822 1994    173      2      0    .645   1.97   8.74  1.586   .799   .290   1.67   .277   .002   2
+  19 TOL55A   1825 1994    170      2      0    .655   1.97   8.36  1.456   .794   .283   1.73   .279  -.011   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2574     33      5    .519   2.22  16.45  1.710   .790   .336   2.21   .318   .007
+
+ DATA CHECKS (rwl.check): arg153
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg153.rwl
+ 19 series, 2574 measurements, 1814-1994, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file arg153.rwl, MD5 2034ef45a87ad1d5fbc34706bc056596.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

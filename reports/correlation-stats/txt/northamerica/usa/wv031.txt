@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: wv031
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv031.rwl
+      MD5 of measurement file: 0267c7def07cc54cf2e19718c5f52f55
+      Date checked           : 01OCT26
+      Beginning year         : 1675
+      Ending year            : 1874
+      Principal investigators: de Graauw, K.K.; Hessl, A.E.
+      Site name              : Zigafuss House
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 37.9100 N
+      Longitude              : 80.6200 W
+      Elevation              : 745 m
+
+      Series intercorrelation: 0.664
+      Avg mean sensitivity   : 0.224
+      Avg standard deviation : 0.344
+      Avg autocorrelation    : 0.659
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 1.23
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 
+                        1749 1774 1799 1824 1849 1874 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ZHE103A  1706 1868       .68  .82  .67  .71      
+   2 ZHW105A  1744 1861            .75  .69  .78      
+   3 ZHN104A  1727 1855            .84  .80  .70      
+   4 ZHN209A  1697 1863  .58  .75  .71  .52  .50      
+   5 ZHS104A  1707 1874       .56  .59  .62  .54  .31A
+   6 ZHN207A  1710 1847       .74  .78  .59           
+   7 ZHE105A  1708 1874       .70  .80  .77  .72  .58 
+   8 ZHN208A  1694 1844  .67  .81  .77  .59           
+   9 ZHW207A  1721 1874       .73  .78  .67  .60  .46 
+  10 ZHS106A  1733 1874            .64  .74  .67  .72 
+  11 ZHS207A  1712 1873       .77  .78  .67  .66      
+  12 ZHN103A  1770 1860                 .71  .79      
+  13 ZHW209A  1739 1870            .71  .64  .45      
+  14 ZHW104A  1721 1874       .74  .80  .74  .73  .61 
+  15 ZHS105A  1717 1874       .47  .50  .71  .46  .57 
+  16 ZHW103A  1696 1874  .62  .66  .77  .75  .58  .68 
+  17 ZHN105A  1749 1874                 .66  .47  .61 
+  18 ZHE106A  1675 1874  .70  .81  .80  .60  .34  .36 
+  19 ZHS208A  1686 1874  .67  .77  .82  .74  .54  .55 
+ Av segment correlation  .65  .71  .75  .68  .60  .54 
+
+ FLAGGED SEGMENTS: wv031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 ZHS104A  1825 1874     A     .308         0
+
+ DESCRIPTIVE STATISTICS: wv031
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ZHE103A  1706 1868    163      4      0    .648    .73   2.44   .394   .777   .244   2.11   .249   .003   1
+   2 ZHW105A  1744 1861    118      3      0    .723    .89   1.78   .340   .798   .205   1.56   .203   .019   2
+   3 ZHN104A  1727 1855    129      3      0    .791    .81   1.49   .222   .486   .230   1.58   .204  -.004   0
+   4 ZHN209A  1697 1863    167      5      0    .628    .75   1.64   .276   .719   .212   1.64   .211  -.014   1
+   5 ZHS104A  1707 1874    168      5      1    .526    .83   2.43   .408   .797   .243   1.70   .225   .038   1
+   6 ZHN207A  1710 1847    138      3      0    .645    .79   2.29   .379   .618   .254   1.85   .257  -.010   1
+   7 ZHE105A  1708 1874    167      5      0    .702    .99   2.03   .262   .255   .237   1.74   .219   .025   0
+   8 ZHN208A  1694 1844    151      4      0    .683    .85   2.79   .505   .864   .177   1.75   .189  -.019   1
+   9 ZHW207A  1721 1874    154      5      0    .649    .73   1.77   .336   .790   .219   1.63   .210  -.010   1
+  10 ZHS106A  1733 1874    142      4      0    .693    .89   1.91   .306   .721   .205   1.91   .208  -.005   1
+  11 ZHS207A  1712 1873    162      4      0    .686    .80   2.11   .296   .711   .199   1.42   .171  -.052   0
+  12 ZHN103A  1770 1860     91      2      0    .755   1.15   1.88   .224   .354   .173   1.36   .162   .076   0
+  13 ZHW209A  1739 1870    132      3      0    .643    .87   1.90   .264   .710   .192   1.51   .182   .013   2
+  14 ZHW104A  1721 1874    154      5      0    .716    .90   2.11   .348   .563   .261   1.84   .233  -.038   0
+  15 ZHS105A  1717 1874    158      5      0    .532    .85   6.07   .756   .754   .249   3.77   .330  -.009   1
+  16 ZHW103A  1696 1874    179      6      0    .674    .90   2.30   .310   .708   .209   1.53   .190  -.021   3
+  17 ZHN105A  1749 1874    126      3      0    .715    .80   1.86   .259   .744   .190   1.45   .172  -.029   3
+  18 ZHE106A  1675 1874    200      6      0    .616    .81   2.46   .354   .746   .221   1.72   .222  -.007   1
+  19 ZHS208A  1686 1874    189      6      0    .683    .72   1.34   .222   .347   .282   1.72   .249  -.038   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2888     81      1    .664    .84   6.07   .344   .659   .224   3.77   .218  -.007
+
+ DATA CHECKS (rwl.check): wv031
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv031.rwl
+ 19 series, 2888 measurements, 1675-1874, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file wv031.rwl, MD5 0267c7def07cc54cf2e19718c5f52f55.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

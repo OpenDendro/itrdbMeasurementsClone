@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: germ088
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ088.rwl
+      MD5 of measurement file: cd50baef14790a74928c26098c8f80fb
+      Date checked           : 01OCT26
+      Beginning year         : 1712
+      Ending year            : 1861
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Obermunster Str. 6 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.630
+      Avg mean sensitivity   : 0.233
+      Avg standard deviation : 0.682
+      Avg autocorrelation    : 0.835
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ088
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 
+                        1849 
+ --- -------- ---------  ---- 
+   1 MUN01A   1784 1861  .77 
+   2 MUN01B   1799 1861  .77 
+   4 MUN02B   1763 1861  .77 
+   5 MUN03A   1778 1860  .64 
+   6 MUN03B   1775 1860  .64 
+   7 MUN05A   1779 1860  .74 
+   8 MUN11A   1780 1855  .30A
+   9 MUN13A   1727 1854  .53 
+  10 MUN13B   1712 1852  .46 
+ Av segment correlation  .63 
+
+ FLAGGED SEGMENTS: germ088
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 MUN11A   1800 1849     A     .302         0
+
+ DESCRIPTIVE STATISTICS: germ088
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MUN01A   1784 1861     78      1      0    .701   1.53   3.85   .892   .899   .194   1.67   .204   .031   1
+   2 MUN01B   1799 1861     63      1      0    .676   1.25   2.67   .594   .870   .200   1.56   .211   .033   1
+   3 MUN02A   1769 1837     69      0      0    .486   1.59   3.63   .697   .843   .184   1.57   .202   .017   1
+   4 MUN02B   1763 1861     99      1      0    .581   1.36   3.42   .773   .901   .189   1.63   .196   .039   1
+   5 MUN03A   1778 1860     83      1      0    .620   1.21   3.54   .796   .858   .222   1.76   .240  -.004   1
+   6 MUN03B   1775 1860     86      1      0    .605   1.34   4.74   .961   .900   .224   1.57   .233   .052   1
+   7 MUN05A   1779 1860     82      1      0    .768   1.55   4.23   .819   .874   .214   1.52   .217  -.033   1
+   8 MUN11A   1780 1855     76      1      1    .428   1.61   3.62   .640   .712   .234   1.47   .218   .023   1
+   9 MUN13A   1727 1854    128      1      0    .657    .67   2.05   .382   .795   .283   1.70   .262   .040   1
+  10 MUN13B   1712 1852    141      1      0    .702    .72   3.27   .513   .757   .299   2.56   .292  -.018   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            905      9      1    .630   1.21   4.74   .682   .835   .233   2.56   .234   .017
+
+ DATA CHECKS (rwl.check): germ088
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ088.rwl
+ 10 series, 905 measurements, 1712-1861, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file germ088.rwl, MD5 cd50baef14790a74928c26098c8f80fb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

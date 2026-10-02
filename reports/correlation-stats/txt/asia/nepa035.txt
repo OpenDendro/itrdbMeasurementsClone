@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: nepa035
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa035.rwl
+      MD5 of measurement file: 10d2c66b22a402d88dec71dda82a4c45
+      Date checked           : 01OCT26
+      Beginning year         : 1872
+      Ending year            : 1993
+      Principal investigators: Krusic, P.J.
+      Site name              : Pun Hill
+      Species information    : ABSB Abies spectabilis (D. Don) Spach
+      Latitude               : 28.4300 N
+      Longitude              : 83.1000 E
+      Elevation              : 2950 m
+
+      Series intercorrelation: 0.578
+      Avg mean sensitivity   : 0.298
+      Avg standard deviation : 1.314
+      Avg autocorrelation    : 0.782
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 PHA1A    1874 1993  .65  .69 
+   2 PHA5A    1872 1993  .61  .50 
+   3 PHA5B    1897 1993  .55  .39 
+   6 PHA5C    1888 1993  .66  .72 
+   7 PHA6B    1879 1993  .67  .71 
+   8 PHA6A    1873 1993  .62  .65 
+ Av segment correlation  .63  .61 
+
+ FLAGGED SEGMENTS: nepa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: nepa035
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PHA1A    1874 1993    120      2      0    .535   1.75   5.74  1.066   .721   .287   2.37   .320   .053   1
+   2 PHA5A    1872 1993    122      2      0    .487   1.78   4.31  1.032   .844   .249   1.65   .237   .116   0
+   3 PHA5B    1897 1993     97      2      0    .515   1.72   6.73   .922   .733   .231   2.29   .257  -.001   2
+   4 PHA2A    1942 1993     52      0      0    .667   3.66   7.58  1.633   .782   .232   1.57   .226   .022   2
+   5 PHA2B    1944 1993     50      0      0    .587   3.65   7.91  1.897   .858   .208   1.52   .221   .100   1
+   6 PHA5C    1888 1993    106      2      0    .675   1.49   4.76   .975   .794   .317   1.62   .290  -.006   1
+   7 PHA6B    1879 1993    115      2      0    .645   1.95   7.10  1.407   .770   .371   2.45   .343   .041   1
+   8 PHA6A    1873 1993    121      2      0    .573   2.62   7.84  1.987   .790   .390   1.89   .368   .066   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            783     12      0    .578   2.13   7.91  1.314   .782   .298   2.45   .293   .050
+
+ DATA CHECKS (rwl.check): nepa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa035.rwl
+ 8 series, 783 measurements, 1872-1993, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file nepa035.rwl, MD5 10d2c66b22a402d88dec71dda82a4c45.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

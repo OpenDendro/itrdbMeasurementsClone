@@ -1,0 +1,152 @@
+
+ COFECHA-style crossdating report: ny038
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ny038.rwl
+      MD5 of measurement file: 50ade476cceecde23f220e18a97a63c1
+      Date checked           : 01OCT26
+      Beginning year         : 1704
+      Ending year            : 2001
+      Principal investigators: Pederson, N.; Krusic, P.J.; Cook, E.R.
+      Site name              : Dark Hollow Trail
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 41.4200 N
+      Longitude              : 74.0800 W
+      Elevation              : 200 m
+
+      Series intercorrelation: 0.571
+      Avg mean sensitivity   : 0.216
+      Avg standard deviation : 0.358
+      Avg autocorrelation    : 0.679
+      Number dated series    : 24
+      Series crossdated      : 22
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 1, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 7.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ny038
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 DHTU01a  1823 2001            .62  .62  .58  .48  .62 
+   2 DHTU02a  1875 2001                      .36  .63  .77 
+   3 DHTU03a  1708 2001  .74  .70  .65  .55  .61  .60  .34 
+   4 DHTU03b  1731 2001  .82  .77  .54  .25B .34  .54  .68 
+   6 DHTU04b  1826 2001            .67  .50  .47  .67  .75 
+   7 DHTU05b  1760 2001  .43  .64  .59  .26B .34  .34  .45 
+   8 DHTU06a  1725 2001  .72  .58  .46  .62  .68  .66  .75 
+   9 DHTU06b  1747 2001  .74  .78  .69  .59  .64  .65  .58 
+  10 DHTU07a  1786 2001  .46  .70  .77  .76  .81  .69  .66 
+  11 DHTU07b  1769 2001  .49  .72  .69  .59  .63  .74  .71 
+  12 DHTU08b  1711 2001  .61  .68  .62  .61  .54  .50  .50 
+  14 DHTU09c  1784 1946  .55  .61  .46  .33                
+  15 DHTU10a  1900 2001                           .59  .70 
+  16 DHTU11a  1906 2001                           .51  .63 
+  18 DHTU12b  1855 2001                 .68  .73  .76  .79 
+  19 DHTU14a  1829 2001            .74  .60  .53  .67  .79 
+  20 DHTU14b  1838 2001            .70  .65  .53  .64  .74 
+  21 DHTU15a  1728 2001  .64  .46  .27B .21B .33B .40  .45 
+  22 DHTU16a  1859 2001                 .68  .64  .51  .66 
+  23 DHTU16b  1859 2001                 .58  .59  .51  .72 
+  24 DHTU17a  1755 2001  .34  .15B .20B .27A .36B .38  .46 
+ Av segment correlation  .60  .62  .58  .52  .54  .57  .64 
+
+ FLAGGED SEGMENTS: ny038
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 DHTU03b  1875 1924     B     .245         1      .353   .108
+   7 DHTU05b  1875 1924     B     .261        -5      .267   .006  weak at every lag
+  21 DHTU15a  1850 1899     B     .267         3      .365   .098
+  21 DHTU15a  1875 1924     B     .211         7      .295   .084  weak at every lag
+  21 DHTU15a  1900 1949     B     .327        -7      .421   .094
+  24 DHTU17a  1825 1874     B     .151         7      .229   .078  weak at every lag
+  24 DHTU17a  1850 1899     B     .203        -9      .276   .072  weak at every lag
+  24 DHTU17a  1875 1924     A     .265         0
+  24 DHTU17a  1900 1949     B     .362        -4      .492   .130
+
+ DESCRIPTIVE STATISTICS: ny038
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DHTU01a  1823 2001    179      5      0    .567    .95   2.46   .439   .662   .286   1.97   .295  -.019   3
+   2 DHTU02a  1875 2001    127      3      0    .553    .88   2.20   .388   .727   .252   1.76   .248   .005   2
+   3 DHTU03a  1708 2001    294      7      0    .588    .77   2.06   .312   .772   .207   1.82   .215   .007   1
+   4 DHTU03b  1731 2001    271      7      1    .628    .88   1.81   .268   .682   .212   1.80   .203  -.010   3
+   5 DHTU03c  1708 1846    139      0      0    .575    .68   1.49   .285   .807   .222   1.77   .234   .038   1
+   6 DHTU04b  1826 2001    176      5      0    .644    .97   2.77   .321   .504   .216   1.84   .213   .014   2
+   7 DHTU05b  1760 2001    242      7      1    .488    .92   1.79   .326   .771   .179   1.51   .178  -.011   1
+   8 DHTU06a  1725 2001    277      7      0    .581    .69   1.96   .268   .758   .204   1.80   .204  -.011   1
+   9 DHTU06b  1747 2001    255      7      0    .692    .88   1.71   .263   .630   .214   1.60   .204  -.012   1
+  10 DHTU07a  1786 2001    216      7      0    .639   1.17   2.29   .322   .495   .211   1.67   .191  -.039   3
+  11 DHTU07b  1769 2001    233      7      0    .581   1.21   3.70   .430   .543   .205   2.18   .215   .006   1
+  12 DHTU08b  1711 2001    291      7      0    .458    .97   2.25   .290   .752   .161   1.53   .155  -.003   1
+  13 DHTU09a  1704 1969    246                          .50   1.65   .262   .712   .245                         
+  14 DHTU09c  1784 1946    163      4      0    .407    .95   1.79   .240   .787   .130   1.37   .135  -.005   1
+  15 DHTU10a  1900 2001    102      2      0    .568    .87   1.50   .226   .738   .142   1.30   .142   .018   3
+  16 DHTU11a  1906 2001     96      2      0    .554   1.25   4.02   .624   .759   .233   1.81   .258   .020   1
+  17 DHTU12a  1854 2001    143                         1.14   2.80   .543   .721   .298                         
+  18 DHTU12b  1855 2001    147      4      0    .751   1.57   3.72   .689   .595   .321   1.78   .307  -.026   1
+  19 DHTU14a  1829 2001    173      5      0    .690   1.40   3.08   .435   .485   .230   1.47   .210   .030   0
+  20 DHTU14b  1838 2001    164      5      0    .657   1.18   2.63   .470   .617   .231   1.81   .229   .098   0
+  21 DHTU15a  1728 2001    274      7      3    .488    .77   2.42   .477   .844   .224   1.90   .223   .001   1
+  22 DHTU16a  1859 2001    143      4      0    .610   1.27   2.87   .411   .378   .271   1.94   .257   .117   0
+  23 DHTU16b  1859 2001    143      4      0    .608   1.15   2.80   .405   .455   .257   2.12   .268   .010   1
+  24 DHTU17a  1755 2001    247      7      4    .378    .88   2.30   .277   .835   .141   1.39   .144   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4741    113      9    .571    .96   4.02   .358   .679   .216   2.18   .210   .006
+
+ DATA CHECKS (rwl.check): ny038
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ny038.rwl
+ 24 series, 4741 measurements, 1704-2001, 0.001 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     DHTU09a: no measurement for 1800-1819, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     DHTU12a: no measurement for 1914-1918, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ny038.rwl, MD5 50ade476cceecde23f220e18a97a63c1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series DHTU09a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series DHTU12a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

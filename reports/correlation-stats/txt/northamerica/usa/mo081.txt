@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: mo081
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mo081.rwl
+      MD5 of measurement file: f3bbeb4adbcbaa1efe1bcdab0ecf6af0
+      Date checked           : 01OCT26
+      Beginning year         : 1855
+      Ending year            : 2015
+      Principal investigators: Maxwell, J.T.; Au, T.F.; Strange, B.M.
+      Site name              : Babler State Park
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 38.6200 N
+      Longitude              : 90.6947 W
+      Elevation              : 210 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.374
+      Avg standard deviation : 0.952
+      Avg autocorrelation    : 0.569
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 8.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mo081
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SBS01A   1916 2015       .39  .51 
+   2 SBS01B   1934 2015            .60 
+   4 SBS04A   1919 2011       .53  .36 
+   5 SBS05A   1902 2015       .54  .69 
+   6 SBS05B   1914 2015       .73  .71 
+   7 SBS06A   1912 2015       .83  .77 
+   8 SBS06B   1913 2015       .81  .66 
+   9 SBS07A   1933 2014            .81 
+  10 SBS07B   1924 2013       .73  .83 
+  11 SBS08A   1907 2014       .65  .30A
+  12 SBS09A   1855 2015  .15B .17B .42 
+  13 SBS09B   1863 2015  .47  .44  .43 
+  14 SBS10A   1910 2015       .63  .50 
+  15 SBS10B   1939 2013            .48 
+  16 SBS11A   1856 1965  .38           
+  17 SBS12A   1928 2015            .81 
+  18 SBS12B   1925 2015            .55 
+  19 SBS13A   1912 2015       .64  .44 
+  20 SBS13B   1915 2015       .55  .39 
+  21 SBS14B   1941 2015            .44 
+ Av segment correlation  .33  .59  .56 
+
+ FLAGGED SEGMENTS: mo081
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 SBS08A   1950 1999     A     .301         0
+  12 SBS09A   1900 1949     B     .152        -1      .287   .134  weak at every lag
+  12 SBS09A   1925 1974     B     .172        -1      .306   .134  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mo081
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SBS01A   1916 2015    100      2      0    .406   1.25   5.05   .803   .605   .350   2.85   .415   .037   1
+   2 SBS01B   1934 2015     82      1      0    .429   1.55   4.13   .841   .505   .379   2.76   .421   .051   1
+   3 SBS03A   1963 2015     53      0      0    .461   2.25   4.68   .721   .436   .261   1.57   .252   .169   0
+   4 SBS04A   1919 2011     93      2      0    .430   1.49   3.70   .837   .400   .450   2.26   .440   .037   0
+   5 SBS05A   1902 2015    114      2      0    .495   1.54   3.87   .733   .545   .342   2.10   .320  -.028   0
+   6 SBS05B   1914 2015    102      2      0    .617   1.77   4.03   .796   .405   .375   2.10   .360   .047   1
+   7 SBS06A   1912 2015    104      2      0    .733   1.94   4.75   .998   .598   .390   1.77   .364   .018   1
+   8 SBS06B   1913 2015    103      2      0    .734   1.55   6.24   .847   .425   .392   2.81   .396   .009   3
+   9 SBS07A   1933 2014     82      1      0    .682   2.02   5.08  1.040   .421   .437   2.16   .408   .089   0
+  10 SBS07B   1924 2013     90      2      0    .559   1.87   4.90  1.033   .497   .419   3.07   .456  -.016   1
+  11 SBS08A   1907 2014    108      2      1    .318   1.62   7.57  1.171   .639   .421   3.13   .446  -.010   3
+  12 SBS09A   1855 2015    161      3      2    .331   1.47   5.20   .842   .634   .335   2.69   .369   .011   1
+  13 SBS09B   1863 2015    153      3      0    .513   1.42   5.35   .821   .615   .341   1.95   .337   .020   1
+  14 SBS10A   1910 2015    106      2      0    .572   2.13   5.01  1.057   .599   .362   2.07   .334  -.020   3
+  15 SBS10B   1939 2013     75      1      0    .483   2.62   5.44   .922   .372   .321   2.03   .308  -.045   2
+  16 SBS11A   1856 1965    110      1      0    .370   2.35   6.23  1.412   .773   .314   2.02   .323   .016   1
+  17 SBS12A   1928 2015     88      1      0    .781   1.91   4.63   .909   .554   .354   2.03   .348  -.025   1
+  18 SBS12B   1925 2015     91      1      0    .427   1.37   4.83   .988   .683   .426   2.59   .463  -.004   1
+  19 SBS13A   1912 2015    104      2      0    .515   1.67   4.60  1.101   .714   .400   2.37   .399   .030   3
+  20 SBS13B   1915 2015    101      2      0    .520   1.46   4.51   .998   .687   .422   2.57   .423   .026   3
+  21 SBS14B   1941 2015     75      1      0    .547   2.22   5.79  1.156   .601   .375   2.19   .371   .029   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2095     35      3    .514   1.74   7.57   .952   .569   .374   3.13   .379   .017
+
+ DATA CHECKS (rwl.check): mo081
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mo081.rwl
+ 21 series, 2095 measurements, 1855-2015, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file mo081.rwl, MD5 f3bbeb4adbcbaa1efe1bcdab0ecf6af0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

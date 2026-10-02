@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: che489
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che489.rwl
+      MD5 of measurement file: 1735d1da12ab963fda175c25a9687dea
+      Date checked           : 01OCT26
+      Beginning year         : 1884
+      Ending year            : 2010
+      Principal investigators: Lévesque, M.; Rigling, A.; Bugmann, H.; Weber, P.; Brang, P.; Saurer, M.; Siegwolf, R.W.T.; Eilmann, B.
+      Site name              : Balgach
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.4125 N
+      Longitude              : 9.6069 E
+      Elevation              : 600 m
+
+      Series intercorrelation: 0.531
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 1.274
+      Avg autocorrelation    : 0.773
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 7.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che489
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BAP01    1925 2010            .52 
+   2 BAP02    1912 2010       .28A .36 
+   3 BAP03    1893 2010  .58  .76  .76 
+   4 BAP04    1893 2010  .57  .64  .71 
+   5 BAP05    1930 2010            .58 
+   6 BAP06    1895 2010  .48  .59  .58 
+   7 BAP07    1918 2010       .37  .29B
+   8 BAP08    1906 2010       .63  .60 
+   9 BAP10    1884 2010  .51  .58  .56 
+  10 BAP11    1890 2010  .66  .79  .66 
+  11 BAP13    1911 2010       .43  .33 
+  12 BAP14    1907 2010       .51  .54 
+  13 BAP15    1930 2010            .36 
+ Av segment correlation  .56  .56  .53 
+
+ FLAGGED SEGMENTS: che489
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 BAP02    1925 1974     A     .279         0
+   7 BAP07    1950 1999     B     .285         1      .312   .026  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che489
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BAP01    1925 2010     86      1      0    .581   2.98   5.99  1.149   .514   .312   1.72   .293  -.006   2
+   2 BAP02    1912 2010     99      2      1    .327   2.41   4.93   .817   .572   .219   1.85   .233   .056   1
+   3 BAP03    1893 2010    118      3      0    .695   2.34   5.57  1.369   .886   .199   1.75   .225   .012   1
+   4 BAP04    1893 2010    118      3      0    .622   2.81   6.37  1.161   .820   .188   1.62   .202  -.007   3
+   5 BAP05    1930 2010     81      1      0    .547   3.66   8.11  1.722   .676   .295   2.27   .349   .103   1
+   6 BAP06    1895 2010    116      3      0    .582   2.25   4.31   .789   .798   .177   1.46   .178  -.023   3
+   7 BAP07    1918 2010     93      2      1    .371   2.77   6.62  1.499   .836   .236   1.87   .258   .005   2
+   8 BAP08    1906 2010    105      2      0    .581   2.43   5.96  1.689   .909   .247   2.20   .263   .025   1
+   9 BAP10    1884 2010    127      3      0    .550   2.55   5.04  1.039   .835   .198   1.58   .198  -.012   3
+  10 BAP11    1890 2010    121      3      0    .670   2.61   6.52  1.319   .903   .184   1.51   .194  -.014   1
+  11 BAP13    1911 2010    100      2      0    .391   3.50   8.98  2.113   .837   .251   1.79   .241   .055   1
+  12 BAP14    1907 2010    104      2      0    .458   2.13   4.42   .579   .668   .179   1.47   .175  -.018   1
+  13 BAP15    1930 2010     81      1      0    .410   3.37   9.94  1.596   .634   .243   1.93   .259   .034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1349     28      2    .531   2.71   9.94  1.274   .773   .220   2.27   .230   .013
+
+ DATA CHECKS (rwl.check): che489
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che489.rwl
+ 13 series, 1349 measurements, 1884-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che489.rwl, MD5 1735d1da12ab963fda175c25a9687dea.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

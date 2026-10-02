@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: arg157
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg157.rwl
+      MD5 of measurement file: 13db75880c066dbcc86016c6dafbfa0b
+      Date checked           : 01OCT26
+      Beginning year         : 1930
+      Ending year            : 2003
+      Principal investigators: Ferrero, M.E.; Villalba, R.
+      Site name              : El Piquete - PIQ
+      Species information    : JGAU Juglans australis Griseb.
+      Latitude               : 24.1833 S
+      Longitude              : 64.5333 W
+      Elevation              : 1900 m
+
+      Series intercorrelation: 0.593
+      Avg mean sensitivity   : 0.528
+      Avg standard deviation : 0.878
+      Avg autocorrelation    : 0.483
+      Number dated series    : 22
+      Segment length tested  : 36
+
+      Number problem segments: 9  (A 4, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 20.45
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg157
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  36-year dated segments, lagged  18 years
+ Flags:  A = correlation under   .3862 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1968 
+                        1985 2003 
+ --- -------- ---------  ---- ---- 
+   1 pij01a   1930 2003  .51  .60 
+   2 pij01b   1930 2003  .48  .61 
+   3 pij02n   1930 2003  .59  .55 
+   4 pij03    1930 2003  .32A .61 
+   5 pij04a   1930 2003  .54  .71 
+   6 pij04b   1930 2003  .74  .79 
+   7 pij05c   1930 2003  .51  .56 
+   8 pij06    1930 2003  .46  .26A
+   9 pij07a   1930 2003  .48  .45 
+  10 pij08a   1930 2003  .47  .48 
+  11 pij11a   1930 2003  .59  .53 
+  12 pij11b   1930 2003  .70  .67 
+  13 pij12a   1930 2003  .53  .43 
+  14 pij15    1930 2003  .11B .22A
+  15 pij19a   1930 2003  .45B .44 
+  16 pij21a   1930 2003  .65  .72 
+  17 pij21b   1930 2003  .50  .75 
+  18 pij22b   1930 2003  .55  .38B
+  19 pij23a   1930 2003  .69  .70 
+  20 pij23b   1930 2003  .64  .65 
+  21 pij25a   1930 2003  .59  .24A
+  22 pij25d   1930 2003  .36B .22B
+ Av segment correlation  .52  .53 
+
+ FLAGGED SEGMENTS: arg157
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 pij03    1950 1985     A     .319         0
+   8 pij06    1968 2003     A     .261         0
+  14 pij15    1950 1985     B     .108         5      .336   .228  weak at every lag
+  14 pij15    1968 2003     A     .223         0
+  15 pij19a   1950 1985     B     .448         7      .450   .003
+  18 pij22b   1968 2003     B     .378       -10      .394   .016
+  21 pij25a   1968 2003     A     .241         0
+  22 pij25d   1950 1985     B     .356        -8      .359   .003  weak at every lag
+  22 pij25d   1968 2003     B     .223        -6      .316   .093  weak at every lag
+
+ DESCRIPTIVE STATISTICS: arg157
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 pij01a   1930 2003     74      2      0    .524   1.19   3.20   .642   .353   .469   1.99   .434   .145   0
+   2 pij01b   1930 2003     74      2      0    .511   1.00   2.70   .564   .417   .477   2.23   .440  -.012   1
+   3 pij02n   1930 2003     74      2      0    .710    .73   2.83   .615   .645   .479   2.14   .431  -.026   1
+   4 pij03    1930 2003     74      2      1    .601    .52   2.92   .484   .477   .539   3.49   .603   .001   1
+   5 pij04a   1930 2003     74      2      0    .534    .87   2.75   .700   .494   .588   2.37   .540   .037   1
+   6 pij04b   1930 2003     74      2      0    .797    .83   3.00   .635   .486   .557   2.35   .515   .024   1
+   7 pij05c   1930 2003     74      2      0    .654   1.86   6.16  1.415   .536   .518   1.96   .507  -.050   1
+   8 pij06    1930 2003     74      2      1    .516    .29    .88   .153   .468   .446   2.53   .416  -.039   1
+   9 pij07a   1930 2003     74      2      0    .536    .50   1.83   .355   .582   .490   2.37   .454   .158   0
+  10 pij08a   1930 2003     74      2      0    .660   1.08   3.35   .803   .344   .634   2.31   .611   .124   0
+  11 pij11a   1930 2003     74      2      0    .666   1.86   7.77  1.511   .602   .621   2.20   .462  -.078   3
+  12 pij11b   1930 2003     74      2      0    .616   1.55   7.39  1.479   .633   .554   2.73   .571  -.048   3
+  13 pij12a   1930 2003     74      2      0    .531    .52   1.75   .338   .132   .552   3.23   .567   .022   0
+  14 pij15    1930 2003     74      2      2    .358   2.51  10.61  2.012   .628   .470   2.53   .489   .012   2
+  15 pij19a   1930 2003     74      2      1    .605   1.05   2.87   .674   .354   .571   2.51   .538   .119   0
+  16 pij21a   1930 2003     74      2      0    .703   1.53   4.67  1.105   .741   .474   1.94   .404  -.063   1
+  17 pij21b   1930 2003     74      2      0    .706   1.37   3.44   .696   .393   .460   1.99   .412   .096   0
+  18 pij22b   1930 2003     74      2      1    .352   1.83   5.28  1.153   .422   .518   2.64   .550  -.008   1
+  19 pij23a   1930 2003     74      2      0    .756   1.29   4.59  1.083   .522   .593   2.31   .539  -.028   1
+  20 pij23b   1930 2003     74      2      0    .697    .93   3.25   .892   .538   .660   2.62   .568   .127   0
+  21 pij25a   1930 2003     74      2      1    .540   1.68   4.34   .844   .422   .420   1.90   .380   .098   0
+  22 pij25d   1930 2003     74      2      2    .462   1.98   5.33  1.173   .432   .519   2.11   .462   .019   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1628     44      9    .593   1.23  10.61   .878   .483   .528   3.49   .495   .029
+
+ DATA CHECKS (rwl.check): arg157
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg157.rwl
+ 22 series, 1628 measurements, 1930-2003, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 355 carriage return(s) against 179 line feed(s); mixed endings can defeat a reader
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file arg157.rwl, MD5 13db75880c066dbcc86016c6dafbfa0b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3862 for 36-year segments.
+ Segments: 36 years, lagged 18, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 36 years: the record is only 74 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

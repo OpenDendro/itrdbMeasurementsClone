@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: swit354
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit354.rwl
+      MD5 of measurement file: 632cf2b4e642f9c88b69ce1ca9aeb323
+      Date checked           : 01OCT26
+      Beginning year         : 1899
+      Ending year            : 1998
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Vorhegi
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.6575 N
+      Longitude              : 8.7550 E
+      Elevation              : 445 m
+
+      Series intercorrelation: 0.524
+      Avg mean sensitivity   : 0.346
+      Avg standard deviation : 1.246
+      Avg autocorrelation    : 0.627
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit354
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   4 BS00970A 1899 1998       .56 
+   5 BS03287G 1923 1998       .76 
+   6 BS03287P 1923 1998       .75 
+   7 BS06200A 1901 1998       .26A
+   8 BS06205G 1923 1998       .73 
+   9 BS06205P 1923 1998       .57 
+  10 BS06290X 1900 1998       .58 
+ Av segment correlation       .60 
+
+ FLAGGED SEGMENTS: swit354
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 BS06200A 1925 1974     A     .259         0
+
+ DESCRIPTIVE STATISTICS: swit354
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BS00720A 1940 1998     59      0      0    .415   2.23   4.39   .912   .575   .304   1.82   .308   .086   1
+   2 BS00740G 1940 1998     59      0      0    .258   2.57   5.54  1.441   .844   .307   1.84   .291   .136   1
+   3 BS00740P 1940 1998     59      0      0    .388   2.89   6.10  1.601   .805   .351   1.74   .309  -.085   3
+   4 BS00970A 1899 1998    100      1      0    .465   2.39   5.08  1.208   .340   .514   2.02   .412   .023   2
+   5 BS03287G 1923 1998     76      1      0    .754   2.73   5.45  1.344   .806   .313   1.73   .300  -.040   1
+   6 BS03287P 1923 1998     76      1      0    .754   2.99   6.60  1.593   .778   .373   1.68   .322   .146   0
+   7 BS06200A 1901 1998     98      1      1    .305   2.95  10.77  2.219   .823   .337   2.02   .339   .011   1
+   8 BS06205G 1923 1998     76      1      0    .702   2.66   6.14  1.281   .709   .298   1.64   .279   .069   0
+   9 BS06205P 1923 1998     76      1      0    .605   2.34   4.18   .920   .627   .296   2.00   .302   .148   0
+  10 BS06290X 1900 1998     99      1      0    .227   1.74   3.63   .781   .421   .376   1.87   .362  -.005   1
+  11 BS09066G 1925 1998     74      0      0    .737   2.10   5.34   .875   .550   .291   2.15   .319   .007   1
+  12 BS09066P 1925 1996     72      0      0    .749   1.82   3.29   .648   .410   .309   1.68   .276   .109   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            924      7      1    .524   2.44  10.77  1.246   .627   .346   2.15   .323   .048
+
+ DATA CHECKS (rwl.check): swit354
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit354.rwl
+ 12 series, 924 measurements, 1899-1998, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit354.rwl, MD5 632cf2b4e642f9c88b69ce1ca9aeb323.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

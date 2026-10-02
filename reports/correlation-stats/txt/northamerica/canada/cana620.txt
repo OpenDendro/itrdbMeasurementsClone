@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: cana620
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana620.rwl
+      MD5 of measurement file: 517f8b2c427bf4b5351bb4a89377d5d5
+      Date checked           : 01OCT26
+      Beginning year         : 1760
+      Ending year            : 2017
+      Principal investigators: Stefanuk, M.A.; Danby, R.
+      Site name              : Algonquin Highlands AL06
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 45.6239 N
+      Longitude              : 78.6651 W
+      Elevation              : 461 m
+
+      Series intercorrelation: 0.461
+      Avg mean sensitivity   : 0.256
+      Avg standard deviation : 0.640
+      Avg autocorrelation    : 0.787
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana620
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 046AL06A 1851 2017                 .55  .49  .65  .80 
+   2 046AL06B 1875 2017                      .55  .62  .56 
+   3 047AL06A 1879 2017                      .51  .59  .57 
+   4 047AL06B 1885 2017                      .56  .57  .51 
+   5 048AL06A 1910 2017                           .48  .59 
+   6 048AL06B 1900 2017                           .46  .58 
+   7 049AL06A 1898 2017                      .30A .52  .53 
+   8 049AL06B 1873 2017                      .56  .53  .45 
+   9 050AL06A 1867 2017                 .42  .33  .59  .69 
+  10 050AL06B 1860 2017                 .46  .52  .64  .70 
+  11 051AL06A 1770 2017  .73  .43  .26B .38  .48  .39  .53 
+  12 051AL06B 1760 2017  .73  .36  .19B .27B .33B .36  .60 
+ Av segment correlation  .73  .39  .22  .42  .46  .53  .59 
+
+ FLAGGED SEGMENTS: cana620
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 049AL06A 1900 1949     A     .299         0
+  11 051AL06A 1850 1899     B     .256         9      .274   .017  weak at every lag
+  12 051AL06B 1850 1899     B     .189         2      .290   .101  weak at every lag
+  12 051AL06B 1875 1924     B     .272        -5      .280   .008  weak at every lag
+  12 051AL06B 1900 1949     B     .327        -4      .368   .041
+
+ DESCRIPTIVE STATISTICS: cana620
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 046AL06A 1851 2017    167      4      0    .452   1.32   3.03   .644   .676   .283   1.97   .295   .002   1
+   2 046AL06B 1875 2017    143      3      0    .433   1.39   3.17   .657   .805   .247   1.65   .249   .041   1
+   3 047AL06A 1879 2017    139      3      0    .517   1.72   3.83   .717   .730   .263   2.01   .261   .049   2
+   4 047AL06B 1885 2017    133      3      0    .482   1.57   3.33   .678   .798   .246   1.68   .248  -.006   1
+   5 048AL06A 1910 2017    108      2      0    .571   1.09   2.90   .440   .689   .227   1.63   .226  -.032   2
+   6 048AL06B 1900 2017    118      2      0    .571   1.30   2.93   .546   .834   .199   1.53   .192   .021   1
+   7 049AL06A 1898 2017    120      3      1    .398   1.51   3.64   .959   .854   .299   2.51   .357  -.047   1
+   8 049AL06B 1873 2017    145      3      0    .418   1.27   3.85   .841   .872   .258   1.92   .299   .013   3
+   9 050AL06A 1867 2017    151      4      0    .461   1.50   4.95   .925   .894   .263   1.91   .272   .002   2
+  10 050AL06B 1860 2017    158      4      0    .394   1.57   3.68   .876   .904   .212   1.90   .237   .068   1
+  11 051AL06A 1770 2017    248      7      1    .451    .79   2.01   .375   .758   .265   1.88   .276   .016   1
+  12 051AL06B 1760 2017    258      7      3    .452    .82   2.25   .379   .708   .277   1.79   .279  -.024   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1888     45      5    .461   1.26   4.95   .640   .787   .256   2.51   .268   .009
+
+ DATA CHECKS (rwl.check): cana620
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana620.rwl
+ 12 series, 1888 measurements, 1760-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file cana620.rwl, MD5 517f8b2c427bf4b5351bb4a89377d5d5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

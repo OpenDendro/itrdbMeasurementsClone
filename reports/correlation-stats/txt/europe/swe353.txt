@@ -1,0 +1,175 @@
+
+ COFECHA-style crossdating report: swe353
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swe353.rwl
+      MD5 of measurement file: 860fcb32cef3e7aa03186b9cd1332bbf
+      Date checked           : 01OCT26
+      Beginning year         : 1791
+      Ending year            : 2009
+      Principal investigators: Esper, J.
+      Site name              : Stockholm ESK02
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 67.9500 N
+      Longitude              : 20.0300 E
+      Elevation              : 453 m
+
+      Series intercorrelation: 0.595
+      Avg mean sensitivity   : 0.204
+      Avg standard deviation : 0.361
+      Avg autocorrelation    : 0.817
+      Number dated series    : 67
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 3.75
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swe353
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 ESK0201a 1818 2009       .65  .68  .77  .73  .63  .72 
+   2 ESK0201b 1819 2009       .57  .68  .74  .80  .76  .32A
+   7 ESK0204a 1816 2009       .74  .63  .69  .72  .58  .51 
+   8 ESK0204b 1815 2009       .77  .78  .75  .67  .61  .49 
+  13 ESK0209z 1799 2009       .82  .76  .71  .70  .64  .50 
+  14 ESK0211a 1830 2009            .35  .23B .30B .44  .48 
+  15 ESK0211b 1830 2009            .66  .68  .61  .64  .52 
+  16 ESK0212a 1791 2009  .76  .76  .69  .65  .59  .53  .35 
+  17 ESK0212b 1791 2009  .69  .73  .70  .78  .73  .54  .59 
+  32 ESK0221a 1935 2009                                .68 
+  33 ESK0221b 1935 2009                                .68 
+  34 ESK0222a 1824 2009       .72  .68  .78  .84  .65  .49 
+  35 ESK0222b 1824 2002       .75  .75  .85  .85  .74  .63 
+  56 ESK0235a 1948 2009                                .64 
+  57 ESK0235b 1948 2009                                .56 
+  66 ESK0240A 1832 2009            .76  .74  .68  .55  .47 
+  67 ESK0240B 1832 2009            .73  .71  .66  .63  .61 
+ Av segment correlation  .72  .72  .68  .70  .68  .61  .54 
+
+ FLAGGED SEGMENTS: swe353
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 ESK0201b 1950 1999     A     .325         0
+  14 ESK0211a 1875 1924     B     .234         1      .482   .248
+  14 ESK0211a 1900 1949     B     .300         1      .471   .170
+
+ DESCRIPTIVE STATISTICS: swe353
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ESK0201a 1818 2009    192      6      0    .689    .67   1.84   .347   .826   .223   2.14   .246   .007   1
+   2 ESK0201b 1819 2009    191      6      1    .637    .68   2.35   .443   .890   .217   1.66   .230   .005   1
+   3 ESK0202a 1971 2009     39      0      0    .474    .65    .97   .185   .627   .211   1.45   .198   .023   1
+   4 ESK0202b 1971 2009     39      0      0    .644    .71   1.26   .252   .861   .153   1.27   .153   .137   1
+   5 ESK0203a 1972 2009     38      0      0    .595    .98   1.55   .240   .594   .179   1.52   .194   .117   1
+   6 ESK0203b 1972 2009     38      0      0    .508    .95   1.54   .201   .566   .160   1.50   .167   .029   1
+   7 ESK0204a 1816 2009    194      6      0    .671    .67   2.53   .418   .903   .203   1.83   .227   .021   3
+   8 ESK0204b 1815 2009    195      6      0    .650    .87   2.42   .513   .872   .230   1.89   .241   .007   1
+   9 ESK0205a 1963 2009     47      0      0    .595    .58    .96   .198   .801   .190   1.31   .187   .091   1
+  10 ESK0205b 1964 2007     44      0      0    .603    .58   1.05   .230   .746   .205   1.51   .219   .038   1
+  11 ESK0208a 1961 2009     49      0      0    .513    .63   1.50   .295   .854   .204   1.42   .205   .059   1
+  12 ESK0208b 1962 2009     48      0      0    .679    .71   1.30   .251   .804   .175   1.32   .180   .005   1
+  13 ESK0209z 1799 2009    211      6      0    .673    .63   2.25   .359   .847   .236   1.90   .252   .003   3
+  14 ESK0211a 1830 2009    180      5      2    .408    .57   1.74   .357   .908   .200   1.90   .215  -.019   3
+  15 ESK0211b 1830 2009    180      5      0    .635    .48   1.40   .230   .833   .203   1.72   .216  -.018   3
+  16 ESK0212a 1791 2009    219      7      0    .607    .41   1.63   .362   .926   .237   1.74   .244   .034   1
+  17 ESK0212b 1791 2009    219      7      0    .688    .68   1.98   .469   .884   .243   1.70   .244   .007   1
+  18 ESK0213a 1961 2009     49      0      0    .440    .53   1.22   .331   .930   .188   1.37   .184   .025   1
+  19 ESK0213b 1962 2009     48      0      0    .549    .52   1.13   .332   .909   .190   1.46   .207  -.048   1
+  20 ESK0214a 1960 2009     50      0      0    .437    .57   1.12   .271   .908   .184   1.29   .171  -.010   1
+  21 ESK0214b 1960 2009     50      0      0    .501    .52   1.04   .279   .915   .212   1.45   .219   .080   1
+  22 ESK0215a 1956 2009     54      0      0    .705    .80   1.91   .337   .811   .182   1.41   .199   .030   1
+  23 ESK0215b 1956 2009     54      0      0    .752    .69   1.54   .267   .712   .201   1.52   .195   .079   1
+  24 ESK0216a 1955 2009     55      0      0    .337    .46   1.56   .226   .758   .181   1.37   .174   .084   3
+  25 ESK0216b 1955 2002     48      0      0    .310    .37   1.13   .269   .876   .241   1.54   .251   .018   1
+  26 ESK0217a 1951 2009     59      0      0    .476    .74   1.45   .333   .884   .201   1.35   .182   .005   2
+  27 ESK0217b 1950 2009     60      0      0    .349    .65   1.52   .349   .944   .161   1.30   .168   .004   2
+  28 ESK0218a 1954 2009     56      0      0    .427    .49   1.38   .278   .913   .176   1.47   .191   .032   1
+  29 ESK0218b 1955 2007     53      0      0    .601    .44   1.16   .247   .887   .172   1.41   .185   .003   1
+  30 ESK0220a 1961 2009     49      0      0    .555    .57    .94   .246   .862   .185   1.43   .198  -.004   1
+  31 ESK0220b 1961 2009     49      0      0    .736    .65   1.29   .314   .869   .204   1.41   .220   .001   1
+  32 ESK0221a 1935 2009     75      1      0    .429    .99   2.78   .426   .752   .177   1.58   .192  -.099   3
+  33 ESK0221b 1935 2009     75      1      0    .558    .91   2.44   .392   .778   .196   1.62   .214  -.027   2
+  34 ESK0222a 1824 2009    186      6      0    .718    .95   2.56   .407   .800   .226   1.93   .239  -.040   1
+  35 ESK0222b 1824 2002    179      6      0    .772   1.02   2.40   .371   .769   .201   1.58   .200  -.023   1
+  36 ESK0223a 1970 2009     40      0      0    .644   1.35   2.12   .349   .623   .173   1.40   .190   .096   1
+  37 ESK0223b 1970 2009     40      0      0    .306   1.24   2.75   .504   .606   .222   1.84   .293   .055   1
+  38 ESK0225a 1970 2009     40      0      0    .422    .72   1.20   .178   .625   .150   1.27   .158   .009   2
+  39 ESK0225b 1970 2008     39      0      0    .392    .70   1.13   .180   .695   .159   1.48   .155   .031   3
+  40 ESK0227a 1964 2009     46      0      0    .543    .84   1.61   .302   .829   .143   1.31   .136   .172   0
+  41 ESK0227b 1965 2009     45      0      0    .675    .94   1.61   .270   .772   .151   1.23   .145   .035   2
+  42 ESK0228a 1955 2009     55      0      0    .602   1.18   2.39   .393   .671   .178   1.84   .199  -.184   3
+  43 ESK0228b 1955 2009     55      0      0    .607   1.30   2.19   .471   .818   .175   1.42   .167  -.115   2
+  44 ESK0229a 1959 2009     51      0      0    .591    .66   1.43   .244   .738   .184   1.64   .208   .117   1
+  45 ESK0229b 1959 2007     49      0      0    .739    .72   1.40   .261   .654   .219   1.35   .198   .029   2
+  46 ESK0230a 1953 2009     57      0      0    .577   1.17   1.89   .309   .656   .176   1.36   .173   .063   1
+  47 ESK0230b 1954 2009     56      0      0    .476   1.29   2.20   .464   .845   .150   1.50   .172   .098   1
+  48 ESK0231a 1958 2009     52      0      0    .531    .70   1.52   .382   .907   .142   1.36   .146   .058   1
+  49 ESK0231b 1958 2008     51      0      0    .386    .68   1.77   .324   .851   .154   1.47   .170  -.008   1
+  50 ESK0232a 1960 2007     48      0      0    .516   1.20   2.56   .560   .913   .149   1.31   .158   .083   1
+  51 ESK0232b 1960 2009     50      0      0    .283    .87   2.15   .504   .946   .164   1.38   .166  -.023   1
+  52 ESK0233a 1958 2009     52      0      0    .524   1.28   2.38   .460   .813   .156   1.36   .169   .038   1
+  53 ESK0233b 1958 2009     52      0      0    .582   1.12   3.20   .727   .841   .219   1.48   .205   .091   1
+  54 ESK0234a 1951 2009     59      0      0    .654    .98   1.88   .425   .882   .154   1.40   .166   .126   1
+  55 ESK0234b 1951 2009     59      0      0    .611   1.08   2.20   .409   .827   .149   1.70   .171   .040   1
+  56 ESK0235a 1948 2009     62      1      0    .652   1.15   2.18   .441   .860   .164   1.57   .164   .030   1
+  57 ESK0235b 1948 2009     62      1      0    .581   1.06   1.99   .512   .908   .159   1.34   .157   .042   1
+  58 ESK0236a 1962 2009     48      0      0    .394    .97   1.55   .261   .543   .183   1.43   .190   .041   1
+  59 ESK0236b 1962 2009     48      0      0    .404    .90   1.71   .242   .450   .203   1.66   .199   .016   2
+  60 ESK0237a 1950 2009     60      0      0    .638   1.38   2.28   .336   .603   .149   1.46   .161   .030   2
+  61 ESK0237b 1950 2009     60      0      0    .652   1.41   2.27   .375   .644   .167   1.38   .174  -.021   1
+  62 ESK0238a 1971 2009     39      0      0    .751    .95   1.53   .275   .557   .206   1.29   .182   .094   2
+  63 ESK0238b 1971 2009     39      0      0    .721    .82   1.40   .239   .500   .219   1.42   .206   .155   1
+  64 ESK0239a 1957 2009     53      0      0    .584    .96   1.98   .346   .764   .189   1.56   .222   .063   1
+  65 ESK0239b 1958 2009     52      0      0    .549   1.23   2.38   .401   .737   .179   1.60   .211   .072   1
+  66 ESK0240A 1832 2009    178      5      0    .649    .69   1.83   .373   .845   .276   2.54   .305   .058   3
+  67 ESK0240B 1832 2009    178      5      0    .651    .54   1.98   .325   .833   .310   2.26   .330   .024   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5247     80      3    .595    .78   3.20   .361   .817   .204   2.54   .214   .020
+
+ DATA CHECKS (rwl.check): swe353
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swe353.rwl
+ 67 series, 5247 measurements, 1791-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 25 note(s)
+ -------------
+ Nothing to report at this severity.
+ 25 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swe353.rwl, MD5 860fcb32cef3e7aa03186b9cd1332bbf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

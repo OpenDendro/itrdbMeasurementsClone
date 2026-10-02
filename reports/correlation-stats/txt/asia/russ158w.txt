@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: russ158w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ158w.rwl
+      MD5 of measurement file: e973677da07f99c488bdcc4c53772323
+      Date checked           : 01OCT26
+      Beginning year         : 1934
+      Ending year            : 1996
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Taksimo dry, junge Bäume
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 56.3300 N
+      Longitude              : 114.6700 E
+      Elevation              : 510 m
+
+      Series intercorrelation: 0.506
+      Avg mean sensitivity   : 0.211
+      Avg standard deviation : 0.392
+      Avg autocorrelation    : 0.659
+      Number dated series    : 24
+      Series crossdated      : 23
+      Segment length tested  : 30
+
+      Number problem segments: 12  (A 5, B 7; 3 of the B weak at every lag)
+      Pct problem segments   : 48.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ158w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  30-year dated segments, lagged  15 years
+ Flags:  A = correlation under   .4226 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1965 
+                        1979 1994 
+ --- -------- ---------  ---- ---- 
+   1 086211   1963 1996       .34B
+   2 086212   1963 1996       .53B
+   3 086221   1939 1996  .29B .49 
+   5 086231   1934 1996  .42A .71 
+   6 086232   1937 1996  .36B .65 
+   7 086241   1950 1996       .76 
+   8 086242   1950 1996       .60 
+   9 086251   1955 1996       .51 
+  10 086252   1953 1996       .44 
+  11 086261   1962 1996       .47B
+  12 086262   1956 1996       .47 
+  13 086271   1949 1996  .32A .34A
+  14 086272   1949 1996  .23B .36A
+  15 086281   1954 1996       .57 
+  16 086282   1954 1996       .51 
+  18 086292   1963 1996       .73 
+  19 086301   1964 1996       .60 
+  21 086311   1962 1996       .35A
+  23 086321   1960 1996       .50B
+  24 086322   1960 1996       .48 
+ Av segment correlation  .32  .52 
+
+ FLAGGED SEGMENTS: russ158w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 086211   1965 1994     B     .335         2      .361   .026  weak at every lag
+   2 086212   1965 1994     B     .532         2      .542   .010
+   3 086221   1950 1979     B     .285         5      .348   .063  weak at every lag
+   5 086231   1950 1979     A     .422         0
+   6 086232   1950 1979     B     .357        -6      .472   .115
+  11 086261   1965 1994     B     .472        -1      .582   .110
+  13 086271   1950 1979     A     .323         0
+  13 086271   1965 1994     A     .335         0
+  14 086272   1950 1979     B     .230        -3      .412   .182  weak at every lag
+  14 086272   1965 1994     A     .360         0
+  21 086311   1965 1994     A     .349         0
+  23 086321   1965 1994     B     .498         1      .507   .009
+
+ DESCRIPTIVE STATISTICS: russ158w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 086211   1963 1996     34      1      1    .349   1.93   2.85   .542   .536   .245   1.52   .206   .040   2
+   2 086212   1963 1996     34      1      1    .466   1.96   2.98   .576   .807   .158   1.43   .159  -.005   1
+   3 086221   1939 1996     58      2      1    .376   1.95   4.01  1.046   .941   .147   1.45   .155   .061   1
+   4 086222   1934 1996     62                         1.74   3.36   .758   .920   .148                         
+   5 086231   1934 1996     63      2      1    .692   1.63   3.06   .482   .581   .211   1.52   .214  -.014   1
+   6 086232   1937 1996     60      2      1    .635   1.78   3.56   .536   .633   .176   1.35   .186   .010   1
+   7 086241   1950 1996     47      1      0    .603   1.29   2.09   .316   .669   .149   1.48   .168   .097   1
+   8 086242   1950 1996     47      1      0    .578   1.44   2.40   .399   .682   .192   1.36   .172  -.022   2
+   9 086251   1955 1996     42      1      0    .468   1.24   1.77   .220   .311   .172   1.40   .164  -.005   1
+  10 086252   1953 1996     44      1      0    .463   1.49   2.56   .374   .474   .184   1.53   .185   .145   0
+  11 086261   1962 1996     35      1      1    .530   1.48   2.35   .338   .370   .180   1.38   .182   .154   0
+  12 086262   1956 1996     41      1      0    .316   1.00   1.89   .370   .757   .181   1.50   .183  -.059   1
+  13 086271   1949 1996     48      2      2    .339   1.29   2.27   .569   .841   .221   1.46   .210  -.037   1
+  14 086272   1949 1996     48      2      2    .293   1.01   1.99   .426   .721   .241   1.62   .247   .101   1
+  15 086281   1954 1996     43      1      0    .599    .42    .69   .129   .566   .220   1.46   .226   .035   1
+  16 086282   1954 1996     43      1      0    .517    .25    .48   .096   .615   .261   1.71   .265   .000   2
+  17 086291   1964 1996     33      0      0    .787    .25    .42   .088   .707   .236   1.39   .196   .045   3
+  18 086292   1963 1996     34      1      0    .706    .23    .47   .091   .634   .321   1.52   .288   .054   1
+  19 086301   1964 1996     33      1      0    .625    .21    .36   .070   .420   .322   1.77   .308   .234   0
+  20 086302   1964 1996     33      0      0    .676    .28    .55   .110   .447   .378   1.72   .326  -.005   2
+  21 086311   1962 1996     35      1      1    .414    .69   1.15   .176   .513   .199   1.37   .177   .035   3
+  22 086312   1965 1996     32      0      0    .358    .66   1.42   .311   .837   .233   1.47   .219  -.032   1
+  23 086321   1960 1996     37      1      1    .369    .56   1.10   .291   .914   .201   1.46   .210   .033   1
+  24 086322   1960 1996     37      1      0    .458    .72   1.54   .285   .629   .241   1.45   .241  -.085   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1023     25     12    .506   1.14   4.01   .392   .659   .211   1.77   .209   .032
+
+ DATA CHECKS (rwl.check): russ158w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ158w.rwl
+ 24 series, 1023 measurements, 1934-1996, 0.01 mm precision
+ 0 error(s), 2 warning(s), 21 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     086222: no measurement for 1938, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+   RWL_SERIES_OUTLIER (1)
+     086221: correlates with the rest of the collection at r = 0.392 where the collection median is 0.625 (5.4 MAD below it); it does not fit the collection it is in
+ 21 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file russ158w.rwl, MD5 e973677da07f99c488bdcc4c53772323.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4226 for 30-year segments.
+ Segments: 30 years, lagged 15, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 086222 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Segment length reduced from 50 to 30 years: the record is only 63 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: swit301
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit301.rwl
+      MD5 of measurement file: 5abbd342ee135afdc32234ed7f831baf
+      Date checked           : 01OCT26
+      Beginning year         : 1764
+      Ending year            : 1990
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Lauperswil Dürsrüti LZ
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.9608 N
+      Longitude              : 7.7744 E
+      Elevation              : 910 m
+
+      Series intercorrelation: 0.431
+      Avg mean sensitivity   : 0.203
+      Avg standard deviation : 0.825
+      Avg autocorrelation    : 0.805
+      Number dated series    : 5
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit301
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 DURU2451 1782 1990  .08B .28B .47  .46  .53  .62 
+   3 DURU8701 1764 1989  .08B .28B .47  .46  .50  .69 
+ Av segment correlation  .08  .28  .47  .46  .51  .65 
+
+ FLAGGED SEGMENTS: swit301
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 DURU2451 1800 1849     B     .077        -6      .318   .242  weak at every lag
+   1 DURU2451 1825 1874     B     .279        -5      .391   .112
+   3 DURU8701 1800 1849     B     .077         6      .321   .244  weak at every lag
+   3 DURU8701 1825 1874     B     .279         5      .358   .079
+
+ DESCRIPTIVE STATISTICS: swit301
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DURU2451 1782 1990    209      6      2    .353   1.74   3.64   .674   .766   .213   1.78   .228  -.014   3
+   2 DURU2452 1942 1990     49      0      0    .643   1.58   2.66   .538   .591   .268   1.47   .236   .020   1
+   3 DURU8701 1764 1989    226      6      2    .372   2.26   5.29  1.220   .920   .165   1.40   .160   .039   1
+   4 DURU8702 1944 1986     43      0      0    .764    .68   1.40   .293   .574   .250   1.54   .225  -.007   0
+   5 DURU8703 1954 1988     35      0      0    .578    .47    .99   .231   .875   .238   1.45   .184   .048   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            562     12      4    .431   1.77   5.29   .825   .805   .203   1.78   .199   .015
+
+ DATA CHECKS (rwl.check): swit301
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit301.rwl
+ 5 series, 562 measurements, 1764-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit301.rwl, MD5 5abbd342ee135afdc32234ed7f831baf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

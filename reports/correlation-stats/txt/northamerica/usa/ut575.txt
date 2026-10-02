@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: ut575
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ut575.rwl
+      MD5 of measurement file: 1a01246d78f928c0fc96b9b997247ae1
+      Date checked           : 01OCT26
+      Beginning year         : 1873
+      Ending year            : 1998
+      Principal investigators: Wager, D.J.; DeRose, R.J.; Jess, R.
+      Site name              : Mill D South
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 40.6800 N
+      Longitude              : 111.6500 W
+      Elevation              : 2300 m
+
+      Series intercorrelation: 0.753
+      Avg mean sensitivity   : 0.196
+      Avg standard deviation : 0.737
+      Avg autocorrelation    : 0.780
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ut575
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 MDS-02A  1905 1998       .49 
+   2 MDS-02B  1920 1998       .63 
+   3 MCS-03A  1886 1998  .74  .74 
+   4 MDS-03B  1877 1998  .67  .76 
+   5 MDS-04A  1877 1998  .63  .72 
+   6 MDS-04B  1882 1996  .61  .61 
+   7 MDS-06A  1876 1998  .58  .72 
+   8 MDS-06B  1904 1998       .80 
+   9 MDS-07A  1895 1996  .74  .74 
+  10 MDS-07B  1873 1998  .81  .83 
+ Av segment correlation  .68  .70 
+
+ FLAGGED SEGMENTS: ut575
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: ut575
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MDS-02A  1905 1998     94      1      0    .622   1.87   3.19   .418   .568   .171   1.56   .172   .043   3
+   2 MDS-02B  1920 1998     79      1      0    .596   2.85   4.09   .542   .533   .151   1.40   .150   .021   2
+   3 MCS-03A  1886 1998    113      2      0    .806   2.07   5.53   .984   .829   .220   1.88   .246   .079   1
+   4 MDS-03B  1877 1998    122      2      0    .791   1.84   5.47   .886   .807   .226   1.86   .249   .041   1
+   5 MDS-04A  1877 1998    122      2      0    .778   1.89   3.64   .636   .751   .196   1.69   .194   .023   1
+   6 MDS-04B  1882 1996    115      2      0    .710   1.80   3.46   .564   .749   .173   1.57   .175   .011   1
+   7 MDS-06A  1876 1998    123      2      0    .740   1.61   4.08   .764   .886   .197   1.77   .204   .009   3
+   8 MDS-06B  1904 1998     95      1      0    .819   1.89   4.44   .821   .875   .198   1.54   .204   .038   1
+   9 MDS-07A  1895 1996    102      2      0    .790   1.81   3.90   .800   .863   .187   1.86   .202   .041   3
+  10 MDS-07B  1873 1998    126      2      0    .809   1.50   3.90   .847   .835   .216   1.82   .238   .057   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1091     17      0    .753   1.88   5.53   .737   .780   .196   1.88   .206   .037
+
+ DATA CHECKS (rwl.check): ut575
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ut575.rwl
+ 10 series, 1091 measurements, 1873-1998, 0.001 mm precision
+ 0 error(s), 2 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     MDS-02B: correlates with the rest of the collection at r = 0.553 where the collection median is 0.777 (4.1 MAD below it); it does not fit the collection it is in
+   RWL_SITE_CODE (1)
+     MCS-03A: site code differs from the mds used by 9 of 10 series
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ut575.rwl, MD5 1a01246d78f928c0fc96b9b997247ae1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

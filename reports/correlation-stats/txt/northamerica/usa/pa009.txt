@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: pa009
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pa009.rwl
+      MD5 of measurement file: cc8ba095c9f8f3164561f06fabc726ed
+      Date checked           : 01OCT26
+      Beginning year         : 1631
+      Ending year            : 1981
+      Principal investigators: Cook, E.R.
+      Site name              : Otter Creek Natural Area
+      Species information    : QUPR Quercus prinus L.
+      Latitude               : 39.8800 N
+      Longitude              : 76.4000 W
+      Elevation              : 150 m
+
+      Series intercorrelation: 0.515
+      Avg mean sensitivity   : 0.169
+      Avg standard deviation : 0.300
+      Avg autocorrelation    : 0.716
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 7, B 12; 6 of the B weak at every lag)
+      Pct problem segments   : 12.58
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pa009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 060041   1738 1911            .61  .42  .56  .65  .71                
+   2 060051   1640 1981  .07B .16B .29B .18A .25A .32A .55  .61  .55  .44 
+   3 060052   1631 1981  .28B .32B .49  .30A .05B .10B .56  .67  .68  .52 
+   4 060071   1780 1981                      .54  .61  .48  .55  .71  .62 
+   5 060081   1743 1981            .55  .58  .54  .53  .72  .76  .68  .58 
+   6 060082   1761 1981                 .46  .47  .57  .63  .40  .30A .35 
+   7 060091   1720 1981       .63  .74  .61  .60  .66  .73  .66  .55  .47 
+   8 060092   1699 1981  .33B .58  .68  .79  .77  .58  .50  .63  .52  .37 
+   9 060101   1705 1981       .43  .49  .20B .14B .23B .59  .63  .68  .60 
+  10 060111   1731 1981            .43  .57  .84  .70  .56  .62  .57  .54 
+  11 060112   1734 1981            .71  .59  .52  .48  .72  .81  .73  .62 
+  12 060121   1740 1981            .71  .63  .68  .67  .75  .72  .68  .62 
+  13 060122   1722 1981       .71  .71  .65  .70  .67  .39  .39  .56  .53 
+  14 060131   1760 1981                 .47  .39B .41  .50  .57  .49  .27A
+  15 060151   1692 1981  .48  .47  .42  .57  .74  .68  .62  .70  .60  .52 
+  16 060152   1669 1981  .56  .56  .45  .57  .75  .73  .67  .65  .52  .53 
+  17 060161   1764 1981                 .60  .61  .67  .66  .69  .69  .49 
+  18 060171   1693 1981  .28A .49  .53  .53  .57  .48  .48  .49  .48  .40 
+ Av segment correlation  .33  .48  .56  .51  .54  .54  .60  .62  .59  .50 
+
+ FLAGGED SEGMENTS: pa009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 060051   1700 1749     B     .071        -9      .348   .277
+   2 060051   1725 1774     B     .155        -9      .362   .207
+   2 060051   1750 1799     B     .290        -9      .396   .106
+   2 060051   1775 1824     A     .175         0
+   2 060051   1800 1849     A     .249         0
+   2 060051   1825 1874     A     .320         0
+   3 060052   1700 1749     B     .276        -5      .301   .025  weak at every lag
+   3 060052   1725 1774     B     .315        -5      .376   .061
+   3 060052   1775 1824     A     .302         0
+   3 060052   1800 1849     B     .055        -5      .296   .241  weak at every lag
+   3 060052   1825 1874     B     .103        -5      .327   .224  weak at every lag
+   6 060082   1900 1949     A     .297         0
+   8 060092   1700 1749     B     .332         5      .419   .088
+   9 060101   1775 1824     B     .197        -2      .255   .059  weak at every lag
+   9 060101   1800 1849     B     .137        -2      .229   .093  weak at every lag
+   9 060101   1825 1874     B     .227        -8      .255   .028  weak at every lag
+  14 060131   1800 1849     B     .386        -2      .395   .009
+  14 060131   1925 1974     A     .275         0
+  18 060171   1700 1749     A     .279         0
+
+ DESCRIPTIVE STATISTICS: pa009
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 060041   1738 1911    174      5      0    .553   1.29   2.24   .331   .719   .161   1.50   .157   .004   2
+   2 060051   1640 1981    342     10      6    .399    .66   1.74   .219   .739   .156   1.63   .162  -.002   3
+   3 060052   1631 1981    351     10      5    .320    .84   2.84   .274   .681   .152   3.36   .198   .006   1
+   4 060071   1780 1981    202      6      0    .563    .94   2.18   .336   .708   .206   1.78   .206   .013   1
+   5 060081   1743 1981    239      8      0    .590   1.03   2.59   .385   .763   .186   1.96   .192  -.007   1
+   6 060082   1761 1981    221      7      1    .433    .90   4.28   .390   .712   .166   3.02   .215   .006   3
+   7 060091   1720 1981    262      9      0    .591    .85   2.26   .320   .820   .180   1.51   .166   .010   1
+   8 060092   1699 1981    283     10      1    .547    .87   2.45   .337   .754   .179   1.84   .174   .002   1
+   9 060101   1705 1981    277      9      3    .316    .86   4.21   .415   .610   .185   3.83   .292   .003   1
+  10 060111   1731 1981    251      8      0    .615   1.24   2.10   .341   .739   .154   1.43   .161  -.003   3
+  11 060112   1734 1981    248      8      0    .643    .87   1.91   .246   .694   .169   1.73   .171   .003   3
+  12 060121   1740 1981    242      8      0    .685    .99   1.76   .268   .707   .156   1.43   .156  -.002   1
+  13 060122   1722 1981    260      9      0    .528    .85   3.35   .269   .541   .180   3.04   .212  -.003   3
+  14 060131   1760 1981    222      7      2    .460    .82   1.73   .257   .778   .156   1.71   .156  -.010   1
+  15 060151   1692 1981    290     10      0    .564    .79   1.79   .230   .708   .168   1.74   .168  -.011   1
+  16 060152   1669 1981    313     10      0    .566    .82   1.55   .235   .745   .162   1.63   .172   .001   1
+  17 060161   1764 1981    218      7      0    .604   1.33   3.05   .390   .674   .180   1.58   .182   .021   1
+  18 060171   1693 1981    289     10      1    .447    .74   2.06   .244   .787   .162   1.75   .166   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4684    151     19    .515    .91   4.28   .300   .716   .169   3.83   .184   .002
+
+ DATA CHECKS (rwl.check): pa009
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/pa009.rwl
+ 18 series, 4684 measurements, 1631-1981, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file pa009.rwl, MD5 cc8ba095c9f8f3164561f06fabc726ed.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

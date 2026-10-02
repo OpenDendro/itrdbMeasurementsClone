@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: wa099
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa099.rwl
+      MD5 of measurement file: 5fad5f93c934126f0d70b88662a00d9e
+      Date checked           : 01OCT26
+      Beginning year         : 1713
+      Ending year            : 1992
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Lake Minotaur Medium
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 47.8300 N
+      Longitude              : 121.0000 W
+      Elevation              : 1465 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.221
+      Avg standard deviation : 0.377
+      Avg autocorrelation    : 0.749
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 2, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 10.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa099
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 HMLM01B  1830 1992            .69  .59  .49  .51 
+   2 HMLM02B  1789 1992  .66  .67  .51  .61  .62  .52 
+   3 HMLM05B  1713 1992  .65  .70  .46  .61  .65  .62 
+   4 HMLM06B  1771 1992  .59  .77  .78  .75  .67  .70 
+   5 HMLM07A  1805 1992       .60  .80  .76  .44  .57 
+   6 HMLM08B  1727 1992  .39  .37  .39B .27A .45  .67 
+   7 HMLM09B  1759 1992  .64  .59  .55  .35  .17B .26B
+   8 HMLM10B  1788 1992  .62  .62  .68  .62  .47  .55 
+   9 HMLM11A  1775 1992  .62  .74  .75  .67  .34  .53 
+  10 HMLM14B  1887 1992                      .63  .66 
+  11 HMLM15A  1729 1992  .41  .37  .33  .27B .28A .46 
+  12 HMLM16B  1736 1992  .44  .46  .16B .01B .41  .67 
+  13 HMLM18B  1799 1992       .62  .48  .56  .60  .66 
+  14 HMLM19B  1756 1992  .71  .72  .61  .46  .35  .52 
+ Av segment correlation  .57  .60  .55  .50  .47  .57 
+
+ FLAGGED SEGMENTS: wa099
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 HMLM08B  1850 1899     B     .392        -2      .398   .007
+   6 HMLM08B  1875 1924     A     .272         0
+   7 HMLM09B  1900 1949     B     .169         9      .317   .147  weak at every lag
+   7 HMLM09B  1925 1974     B     .260         8      .372   .112
+  11 HMLM15A  1875 1924     B     .270         1      .299   .029  weak at every lag
+  11 HMLM15A  1900 1949     A     .279         0
+  12 HMLM16B  1850 1899     B     .161        -6      .399   .238
+  12 HMLM16B  1875 1924     B     .007        -7      .265   .258  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wa099
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HMLM01B  1830 1992    163      4      0    .546    .61   1.47   .331   .832   .249   1.68   .259   .016   1
+   2 HMLM02B  1789 1992    204      6      0    .601   1.15   2.49   .470   .738   .222   1.76   .240   .004   1
+   3 HMLM05B  1713 1992    280      6      0    .513    .85   2.09   .290   .556   .229   2.16   .260  -.003   3
+   4 HMLM06B  1771 1992    222      6      0    .650    .98   2.24   .324   .690   .193   1.70   .202  -.011   2
+   5 HMLM07A  1805 1992    188      5      0    .581    .75   1.61   .300   .694   .254   1.90   .253   .035   2
+   6 HMLM08B  1727 1992    266      6      2    .490    .71   2.60   .353   .807   .188   1.86   .209   .022   3
+   7 HMLM09B  1759 1992    234      6      2    .483    .83   2.41   .460   .873   .212   1.99   .228   .023   1
+   8 HMLM10B  1788 1992    205      6      0    .580    .82   1.69   .297   .760   .198   1.88   .215   .013   1
+   9 HMLM11A  1775 1992    218      6      0    .526    .81   2.01   .266   .644   .216   1.86   .229   .003   1
+  10 HMLM14B  1887 1992    106      2      0    .639    .70   2.24   .397   .558   .354   2.51   .367  -.002   2
+  11 HMLM15A  1729 1992    264      6      2    .434    .92   2.84   .607   .907   .214   2.06   .224   .003   3
+  12 HMLM16B  1736 1992    257      6      2    .459    .66   3.17   .527   .939   .203   1.72   .218  -.020   1
+  13 HMLM18B  1799 1992    194      5      0    .602    .92   1.86   .280   .641   .200   1.47   .201  -.002   2
+  14 HMLM19B  1756 1992    237      6      0    .568    .76   2.09   .305   .726   .247   1.74   .240   .026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3038     76      8    .539    .82   3.17   .377   .749   .221   2.51   .233   .007
+
+ DATA CHECKS (rwl.check): wa099
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa099.rwl
+ 14 series, 3038 measurements, 1713-1992, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wa099.rwl, MD5 5fad5f93c934126f0d70b88662a00d9e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

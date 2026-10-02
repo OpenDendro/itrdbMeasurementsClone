@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: wa080
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa080.rwl
+      MD5 of measurement file: d52f50c867249257d12250e2103bdaf4
+      Date checked           : 01OCT26
+      Beginning year         : 1756
+      Ending year            : 1992
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Hart's Pass S1
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 48.7200 N
+      Longitude              : 120.6500 W
+      Elevation              : 1825 m
+
+      Series intercorrelation: 0.529
+      Avg mean sensitivity   : 0.209
+      Avg standard deviation : 0.417
+      Avg autocorrelation    : 0.713
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 3, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 16.42
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa080
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 FHAB001A 1889 1992                      .43  .67 
+   2 FHAB002B 1895 1992                      .63  .73 
+   3 FHAB003B 1897 1992                      .30B .49 
+   4 FHAB004B 1922 1992                           .56 
+   5 FHAB005A 1865 1992                 .61  .68  .82 
+   6 FHAB006B 1814 1992       .40  .48  .47  .56  .66 
+   7 FHAB007B 1812 1992       .29A .54  .54  .68  .80 
+   8 FHAB008A 1772 1992  .51  .33  .30A .35  .52  .44 
+   9 FHAB009A 1881 1992                      .21B .41 
+  10 FHAB010A 1861 1992                 .38  .43  .61 
+  11 FHAB011A 1891 1992                      .47  .46 
+  12 FHAB012B 1830 1992            .46  .41  .44  .66 
+  13 FHAB013A 1887 1992                      .46  .71 
+  14 FHAB014A 1795 1992 -.03B .04B .16B .33  .47  .66 
+  15 FHAB015A 1756 1992  .19B .39  .67  .54  .55  .78 
+  16 FHAB016B 1879 1992                      .48  .55 
+  17 FHAB017B 1851 1992                 .13B .33A .60 
+  18 FHAB018B 1790 1992  .43  .36B .64  .46  .41  .63 
+  19 FHAB019B 1870 1992                 .42  .33  .62 
+  20 FHAB020A 1896 1992                      .49  .73 
+ Av segment correlation  .28  .30  .46  .42  .47  .63 
+
+ FLAGGED SEGMENTS: wa080
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 FHAB003B 1900 1949     B     .296        -2      .303   .007  weak at every lag
+   7 FHAB007B 1825 1874     A     .294         0
+   8 FHAB008A 1850 1899     A     .304         0
+   9 FHAB009A 1900 1949     B     .211        -3      .278   .067  weak at every lag
+  14 FHAB014A 1800 1849     B    -.025        -4      .488   .514
+  14 FHAB014A 1825 1874     B     .039        -4      .574   .535
+  14 FHAB014A 1850 1899     B     .157        -4      .470   .312
+  15 FHAB015A 1800 1849     B     .194         9      .216   .022  weak at every lag
+  17 FHAB017B 1875 1924     B     .127         8      .322   .195  weak at every lag
+  17 FHAB017B 1900 1949     A     .326         0
+  18 FHAB018B 1825 1874     B     .357         8      .363   .006
+
+ DESCRIPTIVE STATISTICS: wa080
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FHAB001A 1889 1992    104      2      0    .532   1.53   2.15   .328   .452   .177   1.60   .175   .107   0
+   2 FHAB002B 1895 1992     98      2      0    .614   1.17   1.94   .366   .769   .171   1.56   .182   .015   1
+   3 FHAB003B 1897 1992     96      2      1    .579   1.35   2.24   .333   .646   .169   1.38   .171   .012   1
+   4 FHAB004B 1922 1992     71      1      0    .528   2.08   3.33   .457   .444   .193   1.41   .165  -.097   3
+   5 FHAB005A 1865 1992    128      3      0    .734   1.23   1.89   .318   .490   .217   1.70   .216  -.005   1
+   6 FHAB006B 1814 1992    179      5      0    .535    .92   1.88   .330   .589   .280   2.10   .275   .019   1
+   7 FHAB007B 1812 1992    181      5      1    .603   1.19   2.25   .456   .721   .250   1.91   .252  -.013   1
+   8 FHAB008A 1772 1992    221      6      1    .472    .93   2.28   .485   .876   .214   1.98   .227  -.003   1
+   9 FHAB009A 1881 1992    112      2      1    .474    .98   1.72   .196   .380   .173   1.58   .169   .022   1
+  10 FHAB010A 1861 1992    132      3      0    .565   1.03   2.10   .416   .878   .172   1.51   .176   .006   1
+  11 FHAB011A 1891 1992    102      2      0    .550   1.38   2.31   .563   .855   .187   1.51   .172   .008   0
+  12 FHAB012B 1830 1992    163      4      0    .595    .67   1.37   .250   .719   .227   1.55   .189  -.010   2
+  13 FHAB013A 1887 1992    106      2      0    .606   2.00   3.17   .593   .655   .209   1.54   .190   .035   0
+  14 FHAB014A 1795 1992    198      6      3    .277    .99   2.15   .332   .718   .200   1.58   .190  -.006   1
+  15 FHAB015A 1756 1992    237      6      1    .507    .94   2.06   .452   .884   .210   1.55   .190   .027   0
+  16 FHAB016B 1879 1992    114      2      0    .502   1.63   4.32  1.077   .904   .247   1.99   .243  -.016   1
+  17 FHAB017B 1851 1992    142      3      2    .399   1.05   2.03   .397   .762   .214   1.80   .233  -.014   1
+  18 FHAB018B 1790 1992    203      6      1    .536    .88   1.77   .325   .780   .210   1.75   .198   .044   0
+  19 FHAB019B 1870 1992    123      3      0    .545   1.64   2.80   .496   .634   .204   1.94   .211   .005   1
+  20 FHAB020A 1896 1992     97      2      0    .657   1.43   2.07   .308   .651   .144   1.31   .130  -.028   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2807     67     11    .529   1.17   4.32   .417   .713   .209   2.10   .203   .008
+
+ DATA CHECKS (rwl.check): wa080
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa080.rwl
+ 20 series, 2807 measurements, 1756-1992, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file wa080.rwl, MD5 d52f50c867249257d12250e2103bdaf4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

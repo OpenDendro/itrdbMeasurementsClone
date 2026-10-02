@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: or035
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or035.rwl
+      MD5 of measurement file: 7e7ac197f649835e8006f72d3bc4692f
+      Date checked           : 01OCT26
+      Beginning year         : 1665
+      Ending year            : 1990
+      Principal investigators: Wickman, B.E.; Swetnam, T.W.; Baisan, C.H.
+      Site name              : Lookout Mountain
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 45.8300 N
+      Longitude              : 117.8000 W
+      Elevation              : 1372 m
+
+      Series intercorrelation: 0.633
+      Avg mean sensitivity   : 0.219
+      Avg standard deviation : 0.590
+      Avg autocorrelation    : 0.834
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2)
+      Pct problem segments   : 3.59
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 LO201A3  1691 1990  .49  .73  .75  .74  .67  .65  .72  .74  .68  .66 
+   2 LO201B3  1688 1990  .58  .73  .70  .63  .69  .69  .71  .61  .52  .46 
+   3 LO202A3  1870 1990                                     .30A .53  .56 
+   4 LO203A3  1717 1990       .70  .76  .73  .73  .72  .80  .74  .67  .64 
+   5 LO203B3  1692 1990  .57  .52  .48  .54  .65  .61  .60  .67  .76  .71 
+   6 LO204A3  1665 1990  .50  .66  .75  .68  .60  .63  .71  .72  .31A .33B
+   7 LO204B3  1683 1990  .63  .72  .69  .63  .67  .60  .73  .82  .75  .71 
+   8 LO205A3  1698 1964       .69  .76  .75  .65  .73  .82  .78  .76      
+   9 LO205B3  1698 1926  .56  .70  .74  .75  .64  .64  .80  .65           
+  10 LO206A3  1674 1990  .58  .76  .78  .70  .65  .69  .36  .29A .77  .75 
+  11 LO206B3  1685 1990  .63  .78  .74  .56  .56  .59  .69  .62  .63  .63 
+  12 LO207A3  1745 1990            .57  .59  .50  .47  .71  .84  .75  .70 
+  13 LO207B3  1765 1990                 .72  .75  .71  .74  .72  .61  .60 
+  14 LO208A1  1718 1990       .70  .74  .69  .72  .72  .73  .72  .74  .72 
+  15 LO208B3  1728 1990            .77  .63  .59  .74  .81  .76  .65  .70 
+  16 LO209A3  1671 1990  .54  .64  .74  .75  .62  .63  .63  .62  .65  .63 
+  17 LO209B3  1770 1990                 .68  .52  .53  .70  .73  .77  .78 
+  18 LO210A3  1668 1990  .56  .71  .64  .36  .28A .37  .61  .50  .55  .62 
+  19 LO210B3  1680 1990  .70  .76  .64  .51  .37B .58  .76  .67  .53  .61 
+ Av segment correlation  .58  .70  .70  .65  .60  .63  .70  .66  .65  .64 
+
+ FLAGGED SEGMENTS: or035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 LO202A3  1875 1924     A     .300         0
+   6 LO204A3  1900 1949     A     .308         0
+   6 LO204A3  1925 1974     B     .331        -1      .449   .118
+  10 LO206A3  1875 1924     A     .289         0
+  18 LO210A3  1800 1849     A     .281         0
+  19 LO210B3  1800 1849     B     .375        -6      .381   .006
+
+ DESCRIPTIVE STATISTICS: or035
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LO201A3  1691 1990    300     10      0    .645   1.00   5.58   .945   .945   .239   1.91   .245   .005   2
+   2 LO201B3  1688 1990    303     10      0    .613    .71   3.29   .526   .885   .255   1.96   .248   .001   2
+   3 LO202A3  1870 1990    121      3      1    .444   2.20   5.08   .656   .507   .221   1.55   .222   .029   2
+   4 LO203A3  1717 1990    274      9      0    .700   1.16   2.56   .363   .671   .205   1.75   .205   .028   2
+   5 LO203B3  1692 1990    299     10      0    .598    .94   2.38   .290   .647   .214   1.60   .211   .011   2
+   6 LO204A3  1665 1990    326     10      2    .581    .70   6.14   .791   .935   .215   1.86   .223   .042   1
+   7 LO204B3  1683 1990    308     10      0    .708    .84   3.86   .594   .901   .236   1.97   .242   .022   1
+   8 LO205A3  1698 1964    267      8      0    .710   1.25   3.27   .665   .859   .235   1.75   .235   .045   3
+   9 LO205B3  1698 1926    229      8      0    .662   1.33   4.10   .750   .849   .219   1.71   .221   .015   2
+  10 LO206A3  1674 1990    317     10      1    .570    .98   4.94   .907   .942   .251   1.80   .260  -.017   3
+  11 LO206B3  1685 1990    306     10      0    .622    .84   4.29   .718   .907   .266   1.83   .281   .028   1
+  12 LO207A3  1745 1990    246      8      0    .633   1.34   3.07   .498   .768   .204   1.87   .220   .030   1
+  13 LO207B3  1765 1990    226      7      0    .674   1.34   2.40   .425   .716   .202   1.60   .191   .029   3
+  14 LO208A1  1718 1990    273      9      0    .694   1.14   3.01   .526   .845   .210   1.68   .205   .023   2
+  15 LO208B3  1728 1990    263      8      0    .701   1.09   3.59   .647   .890   .191   1.61   .187   .002   2
+  16 LO209A3  1671 1990    320     10      0    .629    .91   4.33   .584   .916   .194   1.84   .194   .013   2
+  17 LO209B3  1770 1990    221      7      0    .682   1.31   2.68   .383   .625   .192   1.78   .197   .019   2
+  18 LO210A3  1668 1990    323     10      1    .496    .73   3.02   .394   .885   .186   1.70   .188   .007   1
+  19 LO210B3  1680 1990    311     10      1    .628   1.09   2.91   .486   .838   .219   1.98   .231   .034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5233    167      6    .633   1.04   6.14   .590   .834   .219   1.98   .223   .019
+
+ DATA CHECKS (rwl.check): or035
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or035.rwl
+ 19 series, 5233 measurements, 1665-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file or035.rwl, MD5 7e7ac197f649835e8006f72d3bc4692f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

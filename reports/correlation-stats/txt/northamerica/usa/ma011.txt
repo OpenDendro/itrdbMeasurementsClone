@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: ma011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ma011.rwl
+      MD5 of measurement file: b2cd56508140858e2e08986960639864
+      Date checked           : 01OCT26
+      Beginning year         : 1495
+      Ending year            : 1671
+      Principal investigators: Miles, D.W.H.
+      Site name              : Tuttle House, Ipswich
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 42.6800 N
+      Longitude              : 70.8500 W
+      Elevation              : 15 m
+
+      Series intercorrelation: 0.367
+      Avg mean sensitivity   : 0.151
+      Avg standard deviation : 0.374
+      Avg autocorrelation    : 0.743
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ma011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 
+                        1549 1574 1599 1624 1649 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 ith10b   1495 1670       .45  .36  .42  .35 
+   2 ith13a2  1575 1670                      .53 
+   3 ith14    1542 1638            .45  .38      
+   4 ith15    1515 1640       .48  .41  .40      
+   5 ith16    1515 1643       .51  .42  .28A     
+   6 ith18    1598 1671                      .24B
+ Av segment correlation       .48  .41  .37  .37 
+
+ FLAGGED SEGMENTS: ma011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 ith16    1575 1624     A     .279         0
+   6 ith18    1600 1649     B     .243        -9      .383   .140
+
+ DESCRIPTIVE STATISTICS: ma011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ith10b   1495 1670    176      4      0    .386   1.36   2.89   .367   .679   .142   1.47   .155   .079   1
+   2 ith13a2  1575 1670     96      1      0    .340   1.17   3.39   .582   .930   .136   1.56   .145   .071   1
+   3 ith14    1542 1638     97      2      0    .407   1.34   2.45   .371   .659   .187   1.59   .194   .041   1
+   4 ith15    1515 1640    126      3      0    .341   1.02   2.17   .279   .755   .123   1.81   .138   .045   1
+   5 ith16    1515 1643    129      3      1    .401   1.08   2.04   .326   .682   .180   1.44   .188   .002   3
+   6 ith18    1598 1671     74      1      1    .286   1.06   1.80   .372   .849   .137   1.29   .136  -.026   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            698     14      2    .367   1.19   3.39   .374   .743   .151   1.81   .160   .041
+
+ DATA CHECKS (rwl.check): ma011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ma011.rwl
+ 6 series, 698 measurements, 1495-1671, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file ma011.rwl, MD5 b2cd56508140858e2e08986960639864.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

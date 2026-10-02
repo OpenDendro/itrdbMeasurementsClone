@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: wa2
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa2.rwl
+      MD5 of measurement file: 4875e87ec0d0f327b8d405871cfe0619
+      Date checked           : 01OCT26
+      Beginning year         : 1791
+      Ending year            : 1986
+      Principal investigators: Kaiser, K.F.
+      Site name              : White Pass B
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 46.6300 N
+      Longitude              : 121.4800 W
+      Elevation              : 1120 m
+
+      Series intercorrelation: 0.483
+      Avg mean sensitivity   : 0.162
+      Avg standard deviation : 0.277
+      Avg autocorrelation    : 0.826
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 4, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 22.73
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 WHIT0010 1850 1986                 .74  .70  .65 
+   2 WHIT0030 1880 1976                      .64  .45 
+   3 WHIT0040 1890 1986                      .52  .45 
+   4 WHIT0050 1864 1986                 .23A .35  .33 
+   5 WHIT0060 1791 1986  .48  .61  .52  .34B .39  .28B
+   6 WHIT0070 1859 1986                 .65  .60  .52 
+   7 WHIT0080 1868 1986                 .44  .45  .42 
+   8 WHIT0120 1873 1986                 .37  .44  .50 
+   9 WHIT0130 1828 1986           -.13B .02B .30A .08B
+  10 WHIT0140 1819 1986       .25A .20B .34  .49  .29A
+  11 WHIT0150 1826 1986            .59  .69  .52  .41 
+  12 WHITCH00 1791 1986  .71  .68  .79  .89  .92  .89 
+ Av segment correlation  .60  .51  .39  .47  .53  .44 
+
+ FLAGGED SEGMENTS: wa2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 WHIT0050 1875 1924     A     .234         0
+   5 WHIT0060 1875 1924     B     .340        -9      .423   .083
+   5 WHIT0060 1925 1974     B     .284        -8      .453   .168
+   9 WHIT0130 1850 1899     B    -.128         2      .293   .421  weak at every lag
+   9 WHIT0130 1875 1924     B     .017        -7      .239   .222  weak at every lag
+   9 WHIT0130 1900 1949     A     .299         0
+   9 WHIT0130 1925 1974     B     .078        -3      .314   .236  weak at every lag
+  10 WHIT0140 1825 1874     A     .254         0
+  10 WHIT0140 1850 1899     B     .196        -3      .225   .029  weak at every lag
+  10 WHIT0140 1925 1974     A     .287         0
+
+ DESCRIPTIVE STATISTICS: wa2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WHIT0010 1850 1986    137      3      0    .616    .58   1.16   .206   .795   .162   1.59   .173  -.005   2
+   2 WHIT0030 1880 1976     97      2      0    .486    .63   1.44   .297   .886   .180   1.72   .193   .094   1
+   3 WHIT0040 1890 1986     97      2      0    .510    .83   1.43   .216   .742   .144   1.36   .135  -.012   3
+   4 WHIT0050 1864 1986    123      3      1    .348    .85   1.57   .310   .794   .185   1.51   .191  -.030   1
+   5 WHIT0060 1791 1986    196      6      2    .448    .48   1.47   .213   .842   .193   1.59   .193   .004   1
+   6 WHIT0070 1859 1986    128      3      0    .608    .72   1.36   .166   .749   .121   1.31   .118   .076   2
+   7 WHIT0080 1868 1986    119      3      0    .455    .66   1.61   .247   .738   .192   1.96   .209  -.005   2
+   8 WHIT0120 1873 1986    114      3      0    .481    .82   1.31   .189   .601   .160   1.44   .154   .129   0
+   9 WHIT0130 1828 1986    159      4      4    .115    .62   2.40   .634   .975   .178   1.76   .184  -.028   3
+  10 WHIT0140 1819 1986    168      5      3    .340    .57   1.70   .354   .940   .166   1.61   .183   .046   1
+  11 WHIT0150 1826 1986    161      4      0    .552    .66   1.56   .261   .869   .145   1.46   .151   .053   1
+  12 WHITCH00 1791 1986    196      6      0    .797    .65   1.26   .187   .847   .127   1.55   .139  -.022   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1695     44     10    .483    .66   2.40   .277   .826   .162   1.96   .169   .021
+
+ DATA CHECKS (rwl.check): wa2
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa2.rwl
+ 12 series, 1695 measurements, 1791-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wa2.rwl, MD5 4875e87ec0d0f327b8d405871cfe0619.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

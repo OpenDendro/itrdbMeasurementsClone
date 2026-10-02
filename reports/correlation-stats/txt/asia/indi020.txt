@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: indi020
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indi020.rwl
+      MD5 of measurement file: c014ee31d1bd48e88fcfede5e8e0a109
+      Date checked           : 01OCT26
+      Beginning year         : 1796
+      Ending year            : 1990
+      Principal investigators: Borgaonkar, H.P.; Pant, G.B.; Rupa Kumar, K.
+      Site name              : Ghansali
+      Species information    : PIRO Pinus roxburghii Sarg. = Pinus longifolia Roxb.
+      Latitude               : 30.6200 N
+      Longitude              : 78.7500 E
+      Elevation              : 2100 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.311
+      Avg standard deviation : 1.303
+      Avg autocorrelation    : 0.734
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 15  (A 9, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 18.75
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indi020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   2 ghapr19b 1922 1990                           .60 
+   3 ghapr20a 1847 1988            .41  .51  .47  .45 
+   4 ghapr21a 1797 1989  .29A .32A .12B .34  .39  .29A
+   5 ghapr21b 1842 1990            .31B .61  .85  .84 
+   6 ghapr22a 1912 1990                           .65 
+   7 ghapr22b 1811 1990       .08B .18A .50  .71  .87 
+   8 ghapr23a 1848 1987            .18B .38  .58  .88 
+   9 ghapr23b 1841 1990            .06B .52  .85  .90 
+  10 ghapr24a 1848 1990            .27A .51  .71  .86 
+  11 ghapr24b 1840 1990            .58  .68  .77  .81 
+  12 ghapr25a 1796 1990  .64  .60  .69  .78  .84  .88 
+  13 ghapr25b 1797 1982  .75  .65  .60  .55  .55  .69 
+  14 ghapr28a 1913 1990                           .58 
+  15 ghapr29a 1857 1988                 .64  .73  .83 
+  16 ghapr30a 1902 1988                           .40 
+  17 ghapr30b 1900 1990                           .70 
+  18 ghapr32a 1808 1987       .53  .47  .49  .49  .39 
+  19 ghapr34a 1824 1990       .24A .44  .60  .69  .60 
+  20 ghapr34b 1820 1990       .26B .21A .55  .56  .55 
+  21 ghapr36a 1913 1990                           .52 
+  22 ghapr37a 1881 1990                      .31A .32A
+  23 ghapr40a 1860 1989                 .54  .65  .78 
+  24 ghapr40b 1856 1986                 .46  .54  .54 
+  25 ghapr41a 1912 1988                           .58 
+ Av segment correlation  .56  .38  .35  .54  .63  .65 
+
+ FLAGGED SEGMENTS: indi020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 ghapr21a 1800 1849     A     .285         0
+   4 ghapr21a 1825 1874     A     .320         0
+   4 ghapr21a 1850 1899     B     .123         4      .280   .157  weak at every lag
+   4 ghapr21a 1925 1974     A     .293         0
+   5 ghapr21b 1850 1899     B     .308        -8      .360   .052
+   7 ghapr22b 1825 1874     B     .083        -5      .347   .264
+   7 ghapr22b 1850 1899     A     .180         0
+   8 ghapr23a 1850 1899     B     .176         9      .198   .023  weak at every lag
+   9 ghapr23b 1850 1899     B     .058       -10      .201   .143  weak at every lag
+  10 ghapr24a 1850 1899     A     .265         0
+  19 ghapr34a 1825 1874     A     .237         0
+  20 ghapr34b 1825 1874     B     .257         6      .317   .060  weak at every lag
+  20 ghapr34b 1850 1899     A     .214         0
+  22 ghapr37a 1900 1949     A     .307         0
+  22 ghapr37a 1925 1974     A     .322         0
+
+ DESCRIPTIVE STATISTICS: indi020
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ghapr19a 1926 1986     61      0      0    .629   4.71   9.73  2.292   .744   .249   1.87   .284  -.061   1
+   2 ghapr19b 1922 1990     69      1      0    .548   4.23   9.78  2.342   .712   .320   2.00   .331  -.005   1
+   3 ghapr20a 1847 1988    142      4      0    .385   1.51   9.92  1.545   .717   .429   2.33   .376   .092   0
+   4 ghapr21a 1797 1989    193      6      4    .318   1.95   8.94  1.558   .800   .308   1.85   .290   .016   2
+   5 ghapr21b 1842 1990    149      4      1    .651   1.92   6.32  1.155   .674   .309   2.00   .310  -.002   1
+   6 ghapr22a 1912 1990     79      1      0    .612   2.80   5.79  1.307   .816   .201   2.00   .236   .064   1
+   7 ghapr22b 1811 1990    180      5      2    .411   1.92   7.57   .909   .711   .214   1.83   .221   .003   1
+   8 ghapr23a 1848 1987    140      4      1    .544   1.58   4.84   .865   .590   .329   1.99   .325   .013   1
+   9 ghapr23b 1841 1990    150      4      1    .638   1.19   3.31   .585   .662   .338   1.80   .312   .015   1
+  10 ghapr24a 1848 1990    143      4      1    .592   1.68   5.25   .855   .854   .213   1.49   .207  -.014   2
+  11 ghapr24b 1840 1990    151      4      0    .672   1.67   3.82   .646   .767   .222   1.66   .208  -.001   1
+  12 ghapr25a 1796 1990    195      6      0    .768   2.00   7.45  1.424   .861   .284   2.16   .287   .022   1
+  13 ghapr25b 1797 1982    186      6      0    .570   1.89   7.82  1.540   .873   .254   3.10   .306  -.009   2
+  14 ghapr28a 1913 1990     78      1      0    .686   2.02   3.92   .742   .350   .358   1.91   .322   .126   0
+  15 ghapr29a 1857 1988    132      3      0    .681   1.60   4.26   .775   .670   .293   1.95   .286  -.003   2
+  16 ghapr30a 1902 1988     87      1      0    .474   2.47   6.96  1.410   .760   .291   1.90   .286  -.013   2
+  17 ghapr30b 1900 1990     91      1      0    .647   2.50   5.86  1.221   .742   .260   1.74   .248  -.042   3
+  18 ghapr32a 1808 1987    180      5      0    .364   1.15   3.31   .675   .644   .366   1.94   .336   .009   2
+  19 ghapr34a 1824 1990    167      5      1    .518   2.61   9.76  2.237   .945   .246   1.59   .252  -.007   1
+  20 ghapr34b 1820 1990    171      5      2    .442   2.19   9.94  2.302   .940   .281   1.76   .288  -.005   3
+  21 ghapr36a 1913 1990     78      1      0    .243   2.77   6.96  1.503   .479   .508   2.35   .454   .020   0
+  22 ghapr37a 1881 1990    110      2      2    .340   1.72   6.58   .985   .435   .420   2.64   .405  -.017   3
+  23 ghapr40a 1860 1989    130      3      0    .678   1.59   6.89  1.271   .670   .434   2.66   .410   .009   1
+  24 ghapr40b 1856 1986    131      3      0    .545   1.49   8.86  1.778   .716   .435   2.57   .428   .072   0
+  25 ghapr41a 1912 1988     77      1      0    .658   2.48   6.39  1.300   .728   .313   2.66   .346   .005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3270     80     15    .539   1.98   9.94  1.303   .734   .311   3.10   .305   .011
+
+ DATA CHECKS (rwl.check): indi020
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indi020.rwl
+ 25 series, 3270 measurements, 1796-1990, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1796-1989 but the measurements cover 1796-1990
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file indi020.rwl, MD5 c014ee31d1bd48e88fcfede5e8e0a109.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

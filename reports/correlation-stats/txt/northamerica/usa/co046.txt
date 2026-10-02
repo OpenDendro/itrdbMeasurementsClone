@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: co046
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co046.rwl
+      MD5 of measurement file: 9e3f1e00a963fb4922e177b11119a180
+      Date checked           : 01OCT26
+      Beginning year         : 1684
+      Ending year            : 1964
+      Principal investigators: Stokes, M.A.; Harlan, T.P.
+      Site name              : Antonito Site A
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 37.0700 N
+      Longitude              : 106.1800 W
+      Elevation              : 2637 m
+
+      Series intercorrelation: 0.744
+      Avg mean sensitivity   : 0.461
+      Avg standard deviation : 0.907
+      Avg autocorrelation    : 0.683
+      Number dated series    : 11
+      Series crossdated      : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co046
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 142011   1820 1964                           .61  .79  .88  .88 
+   2 142021   1762 1964                 .73  .76  .75  .75  .74  .77 
+   3 142031   1684 1964            .57  .55  .79  .77  .76  .81  .79 
+   4 142041   1836 1964                                .63  .83  .78 
+   5 142051   1747 1964            .75  .72  .73  .79  .79  .79  .77 
+   6 142061   1800 1964                           .79  .84  .82  .77 
+   7 142071   1780 1964                      .53  .81  .84  .90  .89 
+   8 142081   1862 1964                                     .66  .68 
+   9 142091   1864 1964                                     .44  .60 
+  11 142111   1870 1964                                     .71  .72 
+ Av segment correlation            .66  .67  .70  .75  .77  .76  .77 
+
+ FLAGGED SEGMENTS: co046
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: co046
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 142011   1820 1964    145      4      0    .799   1.60   3.68   .857   .658   .401   2.15   .383   .021   1
+   2 142021   1762 1964    203      6      0    .760   1.05   3.91   .673   .566   .553   2.53   .491   .005   1
+   3 142031   1684 1964    281      7      0    .729    .91   4.16   .813   .675   .594   2.66   .505  -.011   1
+   4 142041   1836 1964    129      3      0    .775   1.76   5.56  1.289   .811   .426   1.96   .395   .025   2
+   5 142051   1747 1964    218      7      0    .775   1.10   4.31   .712   .676   .382   2.28   .378   .032   1
+   6 142061   1800 1964    165      4      0    .769   1.58   4.58   .870   .566   .414   2.39   .369   .002   2
+   7 142071   1780 1964    185      5      0    .715   1.30   4.15   .820   .756   .411   3.41   .414   .043   0
+   8 142081   1862 1964    103      2      0    .679   2.15   5.44  1.352   .792   .347   2.13   .336   .016   1
+   9 142091   1864 1964    101      2      0    .637   2.50   5.36  1.280   .813   .292   1.57   .233  -.024   3
+  10 142101   1820 1964    144                         1.12   3.97   .877   .628   .645                         
+  11 142111   1870 1964     95      2      0    .750   2.07   4.44  1.087   .724   .393   2.79   .376   .056   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1769     42      0    .744   1.41   5.56   .907   .683   .461   3.41   .407   .015
+
+ DATA CHECKS (rwl.check): co046
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co046.rwl
+ 11 series, 1769 measurements, 1684-1964, 0.01 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     142101: no measurement for 1959, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file co046.rwl, MD5 9e3f1e00a963fb4922e177b11119a180.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 142101 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

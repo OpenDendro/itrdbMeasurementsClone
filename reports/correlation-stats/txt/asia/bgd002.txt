@@ -1,0 +1,161 @@
+
+ COFECHA-style crossdating report: bgd002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bgd002.rwl
+      MD5 of measurement file: 63136976894bfad3ad2b2a7a502a8486
+      Date checked           : 01OCT26
+      Beginning year         : 1912
+      Ending year            : 2016
+      Principal investigators: Rahman, M.; Islam, M.; Bräuning, A.
+      Site name              : Rema-Kalenga Wildlife Sanctuary
+      Species information    : LGSP Lagerstroemia speciosa (L.) Pers.
+      Latitude               : 24.1000 N
+      Longitude              : 91.3700 E
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.380
+      Avg mean sensitivity   : 0.532
+      Avg standard deviation : 2.015
+      Avg autocorrelation    : 0.475
+      Number dated series    : 38
+      Series crossdated      : 37
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 0, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 30.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bgd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   2 BLS2002  1912 2016  .67 
+   3 BLS2101  1924 2016  .68 
+   4 BLS2102  1941 2016  .39 
+   5 BLS0801  1924 2016  .41 
+   6 BLS0802  1929 2016  .50 
+   7 BLS1001  1939 2016  .36 
+   8 BLS1002  1939 2016  .49 
+   9 BLS1702  1947 2016  .54 
+  10 BLS1901  1938 2016  .24B
+  11 BLS2502  1943 2016  .37 
+  12 BLS2701  1941 2016  .17B
+  13 BLS2702  1946 2016  .27B
+  14 BLS2802  1935 2016  .39 
+  15 BLS2901  1933 2016  .39 
+  16 BLS0101  1944 2016  .36 
+  17 BLS0102  1946 2016  .38B
+  20 BLS0301  1948 2016  .36 
+  21 BLS0302  1947 2016  .38 
+  26 BLS0602  1947 2016  .27B
+  27 BLS0701  1938 2016  .25B
+ Av segment correlation  .39 
+
+ FLAGGED SEGMENTS: bgd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 BLS1901  1950 1999     B     .244        -4      .285   .041  weak at every lag
+  12 BLS2701  1950 1999     B     .169        10      .266   .097  weak at every lag
+  13 BLS2702  1950 1999     B     .266        -6      .297   .031  weak at every lag
+  17 BLS0102  1950 1999     B     .379         2      .453   .074
+  26 BLS0602  1950 1999     B     .266        10      .338   .072
+  27 BLS0701  1950 1999     B     .252         8      .265   .013  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bgd002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BLS2001  1945 2016     71                         2.44  11.49  2.501   .843   .460                         
+   2 BLS2002  1912 2016    105      1      0    .610   2.86   8.67  1.823   .353   .567   2.86   .506   .021   2
+   3 BLS2101  1924 2016     93      1      0    .621   3.05   9.11  2.003   .213   .698   2.52   .539   .019   2
+   4 BLS2102  1941 2016     76      1      0    .380   2.42   7.22  1.435   .387   .512   2.56   .503   .018   1
+   5 BLS0801  1924 2016     93      1      0    .452   3.27  14.10  2.718   .656   .522   2.28   .486  -.002   3
+   6 BLS0802  1929 2016     88      1      0    .512   3.19  13.33  2.854   .596   .614   2.45   .561   .092   0
+   7 BLS1001  1939 2016     78      1      0    .445   2.39   9.05  1.662   .272   .576   2.60   .526   .071   3
+   8 BLS1002  1939 2016     78      1      0    .471   3.20   8.30  2.029   .540   .551   1.91   .431  -.051   3
+   9 BLS1702  1947 2016     70      1      0    .502   3.05   8.76  1.610   .304   .452   2.53   .448  -.037   3
+  10 BLS1901  1938 2016     79      1      1    .291   2.33   7.29  1.558   .476   .452   2.89   .477  -.050   0
+  11 BLS2502  1943 2016     74      1      0    .299   2.14   7.43  1.761   .775   .422   1.87   .389  -.015   2
+  12 BLS2701  1941 2016     76      1      1    .199   2.72   6.83  1.691   .468   .561   1.89   .376   .089   3
+  13 BLS2702  1946 2016     71      1      1    .229   3.19  10.76  2.645   .727   .524   2.40   .416   .039   3
+  14 BLS2802  1935 2016     82      1      0    .449   3.21  11.41  2.409   .549   .528   2.38   .464   .107   0
+  15 BLS2901  1933 2016     84      1      0    .454   2.12  13.29  2.519   .685   .609   3.57   .573   .024   1
+  16 BLS0101  1944 2016     73      1      0    .301   2.07   9.11  1.605   .083   .608   3.39   .618  -.035   0
+  17 BLS0102  1946 2016     71      1      1    .338   1.93   5.21   .889   .116   .460   2.02   .420   .018   0
+  18 BLS0201  1966 2016     51      0      0    .119   2.14   8.96  1.619   .582   .529   1.80   .395   .033   1
+  19 BLS0202  1969 2016     48      0      0    .334   2.96   8.29  1.995   .628   .575   3.01   .499   .042   0
+  20 BLS0301  1948 2016     69      1      0    .299   2.32   7.97  1.393   .258   .506   2.74   .484  -.013   2
+  21 BLS0302  1947 2016     70      1      0    .366   2.53   9.11  1.904   .306   .557   2.91   .595   .067   0
+  22 BLS0401  1955 2016     62      0      0    .389   2.13  11.27  1.980   .522   .574   3.37   .638  -.014   1
+  23 BLS0402  1957 2016     60      0      0    .397   2.44   8.56  1.988   .521   .540   2.06   .439  -.035   3
+  24 BLS0501  1961 2016     56      0      0    .372   1.87   5.33  1.281   .338   .616   2.67   .597   .123   0
+  25 BLS0502  1965 2016     52      0      0    .479   2.12   7.57  1.507   .385   .607   2.31   .526   .037   0
+  26 BLS0602  1947 2016     70      1      1    .179   2.02   7.57  1.421   .274   .544   3.42   .594  -.016   1
+  27 BLS0701  1938 2016     79      1      1    .347   4.14  14.73  3.080   .504   .635   2.02   .459   .048   3
+  28 BLS0702  1965 2016     52      0      0    .263   5.42  16.29  3.213   .390   .493   2.01   .394   .021   0
+  29 BLS1301  1978 2016     39      0      0    .365   2.96   7.87  2.037   .812   .328   2.46   .382   .091   0
+  30 BLS1302  1965 2016     52      0      0    .471   3.24  10.76  2.219   .805   .349   1.79   .357  -.020   2
+  31 BLS1402  1964 2016     53      0      0    .152   4.13  13.59  2.609   .296   .434   2.87   .498   .087   0
+  32 BLS1801  1953 2016     64      0      0    .345   3.35   6.73  1.555   .444   .381   2.34   .393   .076   0
+  33 BLS1902  1953 2016     64      0      0    .480   2.47   8.91  2.224   .738   .448   2.57   .489   .023   1
+  34 BLS2301  1959 2016     58      0      0    .181   1.99   7.23  1.882   .729   .556   2.52   .507  -.022   3
+  35 BLS2501  1964 2016     53      0      0    .338   3.18   9.97  2.898   .820   .547   3.01   .526   .025   0
+  36 BLS3001  1970 2016     47      0      0    .524   2.34   8.26  1.980   .403   .573   2.81   .560  -.022   0
+  37 BLS3101  1971 2016     46      0      0    .278   1.58   5.29  1.007   .062   .557   2.16   .492  -.120   0
+  38 BLS3102  1970 2016     47      0      0    .430   3.09  14.46  2.786   .365   .556   3.05   .611  -.026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2554     20      6    .380   2.74  16.29  2.015   .475   .532   3.57   .493   .020
+
+ DATA CHECKS (rwl.check): bgd002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/bgd002.rwl
+ 38 series, 2554 measurements, 1912-2016, 0.01 mm precision
+ 0 error(s), 2 warning(s), 7 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     BLS2001: no measurement for 1952, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file bgd002.rwl, MD5 63136976894bfad3ad2b2a7a502a8486.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series BLS2001 has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

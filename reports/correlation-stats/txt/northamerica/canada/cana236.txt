@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: cana236
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana236.rwl
+      MD5 of measurement file: 125509b48625c1d69dc764a3d89ad73b
+      Date checked           : 01OCT26
+      Beginning year         : 1789
+      Ending year            : 1997
+      Principal investigators: Wilson, R.J.S.; Luckman, B.H.
+      Site name              : Grey Creek
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 49.6200 N
+      Longitude              : 116.6500 W
+      Elevation              : 2000 m
+
+      Series intercorrelation: 0.642
+      Avg mean sensitivity   : 0.204
+      Avg standard deviation : 0.455
+      Avg autocorrelation    : 0.702
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 6.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana236
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 G9801N   1879 1997                      .78  .52 
+   2 G9801S   1875 1997                      .68  .73 
+   3 G9803N   1872 1997                 .49  .68  .68 
+   4 G9803W   1863 1997                 .70  .71  .78 
+   5 G9804E   1879 1997                      .66  .75 
+   6 G9804W   1879 1997                      .59  .70 
+   7 G9811S   1913 1997                           .79 
+   8 G9811W   1892 1997                      .55  .78 
+   9 G9812S   1860 1997                 .44  .65  .68 
+  10 G9812E   1858 1994                 .47  .68  .74 
+  11 G9821NW  1835 1970            .46  .29B .32A     
+  12 G9822N   1789 1997       .76  .47  .60  .79  .70 
+  13 G9822S   1823 1997       .58  .43  .62  .73  .66 
+  14 G9823N   1847 1997            .49  .36B .72  .86 
+  15 G9823NW  1809 1997       .54  .37  .19B .50  .77 
+  16 G9823SE  1809 1997       .70  .52  .43  .41  .58 
+  17 G9825W   1871 1997                 .59  .47  .73 
+  18 G9825S   1873 1997                 .58  .63  .83 
+  19 G9826S   1894 1997                      .65  .85 
+  20 G9826W   1901 1997                           .85 
+ Av segment correlation       .64  .46  .48  .62  .74 
+
+ FLAGGED SEGMENTS: cana236
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 G9821NW  1875 1924     B     .287         8      .376   .089
+  11 G9821NW  1900 1949     A     .323         0
+  14 G9823N   1875 1924     B     .357         6      .393   .036
+  15 G9823NW  1875 1924     B     .191         9      .272   .081  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana236
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 G9801N   1879 1997    119      2      0    .481   1.76   4.17   .477   .636   .171   1.95   .185   .045   1
+   2 G9801S   1875 1997    123      2      0    .595   1.38   2.32   .343   .634   .165   1.48   .163   .012   1
+   3 G9803N   1872 1997    126      3      0    .640   1.54   3.17   .578   .822   .200   1.40   .181   .061   0
+   4 G9803W   1863 1997    135      3      0    .685   1.89   3.71   .753   .820   .216   1.62   .199  -.038   2
+   5 G9804E   1879 1997    119      2      0    .660   1.28   2.21   .417   .822   .170   1.62   .171  -.018   1
+   6 G9804W   1879 1997    119      2      0    .641   1.20   2.02   .411   .832   .162   1.45   .157  -.022   1
+   7 G9811S   1913 1997     85      1      0    .772   2.15   3.23   .502   .676   .160   1.37   .153   .018   1
+   8 G9811W   1892 1997    106      2      0    .603   2.26   3.47   .591   .699   .166   1.46   .166   .011   1
+   9 G9812S   1860 1997    138      3      0    .647   1.14   2.09   .377   .765   .181   1.52   .189   .042   1
+  10 G9812E   1858 1994    137      3      0    .630   1.37   2.41   .437   .809   .164   1.40   .170   .027   1
+  11 G9821NW  1835 1970    136      3      2    .486    .76   1.46   .305   .779   .219   2.21   .223   .015   0
+  12 G9822N   1789 1997    209      5      0    .703   1.31   2.90   .449   .651   .221   1.62   .212  -.007   1
+  13 G9822S   1823 1997    175      5      0    .622   1.39   2.48   .509   .617   .254   1.69   .225   .025   0
+  14 G9823N   1847 1997    151      4      1    .668   1.37   3.22   .641   .889   .192   1.57   .191   .010   1
+  15 G9823NW  1809 1997    189      5      1    .560   1.07   2.34   .461   .847   .214   2.04   .228  -.012   1
+  16 G9823SE  1809 1997    189      5      0    .613    .50   1.24   .194   .693   .233   1.80   .245   .013   2
+  17 G9825W   1871 1997    127      3      0    .683   1.39   2.42   .371   .391   .244   1.48   .221   .012   1
+  18 G9825S   1873 1997    125      3      0    .726   1.46   2.42   .419   .471   .249   1.54   .224   .102   0
+  19 G9826S   1894 1997    104      2      0    .752   1.50   2.63   .427   .537   .203   1.63   .204   .016   1
+  20 G9826W   1901 1997     97      1      0    .788   1.98   3.48   .575   .495   .224   1.72   .220   .019   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2709     59      4    .642   1.37   4.17   .455   .702   .204   2.21   .200   .015
+
+ DATA CHECKS (rwl.check): cana236
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana236.rwl
+ 20 series, 2709 measurements, 1789-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file cana236.rwl, MD5 125509b48625c1d69dc764a3d89ad73b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

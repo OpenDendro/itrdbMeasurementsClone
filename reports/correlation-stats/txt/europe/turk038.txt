@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: turk038
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : turk038.rwl
+      MD5 of measurement file: 8f8ac8166d79b88142a2c6534c8766d6
+      Date checked           : 01OCT26
+      Beginning year         : 1771
+      Ending year            : 2002
+      Principal investigators: Touchan, R.; Hughes, M.K.
+      Site name              : Aligalani
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 39.2700 N
+      Longitude              : 28.8500 E
+      Elevation              : 1650 m
+
+      Series intercorrelation: 0.597
+      Avg mean sensitivity   : 0.286
+      Avg standard deviation : 0.638
+      Avg autocorrelation    : 0.745
+      Number dated series    : 23
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 0.92
+
+
+ CORRELATION OF SERIES BY SEGMENTS: turk038
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 ALI01A   1790 2001  .52  .61  .75  .72  .68  .76  .71 
+   2 ALI01B   1833 2002            .67  .64  .49  .61  .55 
+   3 ALI02A   1771 2002  .55  .66  .74  .78  .71  .63  .62 
+   4 ALI02B   1776 2002  .59  .70  .76  .63  .44  .53  .61 
+   5 ALI03A   1880 2002                      .56  .51  .57 
+   6 ALI03B   1850 2002                 .33  .50  .45  .46 
+   7 ALI04A   1900 2002                           .63  .55 
+   8 ALI05A   1830 2002            .61  .71  .74  .70  .64 
+   9 ALI05B   1857 2002                 .69  .65  .58  .44 
+  10 ALI06A   1836 2002            .69  .63  .49  .54  .52 
+  11 ALI06B   1837 2002            .75  .77  .62  .67  .71 
+  12 ALI07A   1842 2002            .74  .67  .50  .56  .48 
+  13 ALI07B   1837 2002            .63  .61  .56  .57  .58 
+  14 ALI08A   1796 2002  .60  .70  .75  .68  .45  .51  .57 
+  15 ALI08B   1801 2002       .64  .50  .38  .42  .56  .51 
+  16 ALI09A   1813 2002       .41  .54  .74  .72  .77  .72 
+  17 ALI09B   1794 2002  .56B .43  .47  .71  .72  .76  .68 
+  18 ALI10A   1833 2002            .58  .42  .52  .71  .57 
+  19 ALI10B   1930 2002                                .61 
+  20 ALI11A   1897 2002                      .62  .64  .66 
+  21 ALI11B   1874 2002                 .71  .70  .69  .58 
+  22 ALI12A   1883 2002                      .64  .69  .73 
+  23 ALI12B   1886 2002                      .70  .74  .70 
+ Av segment correlation  .57  .59  .65  .64  .59  .63  .60 
+
+ FLAGGED SEGMENTS: turk038
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 ALI09B   1800 1849     B     .562         1      .635   .072
+
+ DESCRIPTIVE STATISTICS: turk038
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ALI01A   1790 2001    212      7      0    .666    .80   2.98   .412   .747   .315   1.76   .283  -.006   2
+   2 ALI01B   1833 2002    170      5      0    .596   1.12   2.66   .538   .748   .303   1.97   .300  -.021   2
+   3 ALI02A   1771 2002    232      7      0    .637   1.19   9.30  1.159   .912   .289   1.78   .281   .013   2
+   4 ALI02B   1776 2002    227      7      0    .626    .90   5.32   .823   .903   .289   1.70   .279  -.007   2
+   5 ALI03A   1880 2002    123      3      0    .571   1.22   6.53   .985   .689   .324   1.92   .333   .002   1
+   6 ALI03B   1850 2002    153      4      0    .435    .91   2.64   .449   .659   .292   2.06   .298   .011   2
+   7 ALI04A   1900 2002    103      2      0    .539   1.00   3.21   .632   .853   .250   1.90   .256  -.013   2
+   8 ALI05A   1830 2002    173      5      0    .644   1.24   6.11   .792   .610   .367   2.45   .382  -.018   2
+   9 ALI05B   1857 2002    146      4      0    .579    .89   2.44   .475   .623   .307   2.10   .306   .010   2
+  10 ALI06A   1836 2002    167      5      0    .559    .72   2.25   .412   .698   .267   2.03   .316   .059   1
+  11 ALI06B   1837 2002    166      5      0    .630   1.04   2.76   .540   .769   .250   1.67   .242  -.012   2
+  12 ALI07A   1842 2002    161      5      0    .616    .96   2.38   .454   .743   .281   1.63   .266  -.013   1
+  13 ALI07B   1837 2002    166      5      0    .562    .85   2.50   .441   .855   .220   1.71   .225  -.002   2
+  14 ALI08A   1796 2002    207      7      0    .607   1.13   2.85   .623   .738   .308   1.77   .293  -.019   2
+  15 ALI08B   1801 2002    202      6      0    .476   1.24   3.91   .791   .706   .364   2.71   .353   .005   2
+  16 ALI09A   1813 2002    190      6      0    .636    .94   2.76   .497   .766   .281   1.78   .270   .009   2
+  17 ALI09B   1794 2002    209      7      1    .586   1.26   4.39   .651   .761   .272   1.97   .275   .029   1
+  18 ALI10A   1833 2002    170      5      0    .536   1.02   2.95   .537   .814   .237   1.99   .256   .036   2
+  19 ALI10B   1930 2002     73      1      0    .536    .96   1.71   .334   .615   .234   1.83   .244   .039   2
+  20 ALI11A   1897 2002    106      3      0    .646   1.85   6.37  1.052   .775   .263   1.71   .257   .022   1
+  21 ALI11B   1874 2002    129      4      0    .675   1.46   4.29   .681   .802   .220   1.62   .236  -.003   1
+  22 ALI12A   1883 2002    120      3      0    .666   1.58   3.44   .569   .412   .285   1.82   .296   .036   1
+  23 ALI12B   1886 2002    117      3      0    .697   1.55   3.47   .602   .645   .262   1.76   .265   .037   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3722    109      1    .597   1.10   9.30   .638   .745   .286   2.71   .285   .007
+
+ DATA CHECKS (rwl.check): turk038
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/turk038.rwl
+ 23 series, 3722 measurements, 1771-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file turk038.rwl, MD5 8f8ac8166d79b88142a2c6534c8766d6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

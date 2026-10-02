@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: che558
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che558.rwl
+      MD5 of measurement file: 3bbdba0bdc090e1380e9c8d28260cc5f
+      Date checked           : 01OCT26
+      Beginning year         : 1718
+      Ending year            : 2018
+      Principal investigators: Gillerot, L.; Forrester, D.I.; Bottero, A.; Rigling, A.; Lévesque, M.
+      Site name              : Le Chenit
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.5589 N
+      Longitude              : 6.2219 E
+      Elevation              : 1340 m
+
+      Series intercorrelation: 0.311
+      Avg mean sensitivity   : 0.297
+      Avg standard deviation : 0.511
+      Avg autocorrelation    : 0.726
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 20  (A 3, B 17; 6 of the B weak at every lag)
+      Pct problem segments   : 46.51
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che558
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 CB25     1880 2015                      .25B .48  .65 
+   2 CB2057   1851 2018                 .37  .40  .28A .43 
+   3 CB3085   1848 2015            .12B .23B .29B .40  .63 
+   4 CB3218   1942 2018                                .49 
+   5 CB3515   1864 2018                 .57  .38  .23B .48 
+   6 CB3939   1864 2018                 .50  .50  .43  .54 
+  10 CB5602   1905 2018                           .46  .59 
+  12 CB6280   1940 2018                                .45 
+  13 CBout1   1855 2018                 .27A .33  .21B .05B
+  14 CBout2   1874 2018                -.07B .25A .42  .38 
+  15 CBout3   1893 2018                      .34  .62  .23B
+  16 CB1068   1886 2018                      .02B .04B .27B
+  17 CB3050   1718 2018            .05B-.03B .04B .15B .02B
+ Av segment correlation            .08  .26  .28  .34  .40 
+
+ FLAGGED SEGMENTS: che558
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CB25     1900 1949     B     .250         3      .377   .128
+   2 CB2057   1925 1974     A     .283         0
+   3 CB3085   1850 1899     B     .120        -7      .388   .268
+   3 CB3085   1875 1924     B     .227        10      .241   .014  weak at every lag
+   3 CB3085   1900 1949     B     .285        -2      .411   .126
+   5 CB3515   1925 1974     B     .234        -1      .307   .074  weak at every lag
+  13 CBout1   1875 1924     A     .275         0
+  13 CBout1   1925 1974     B     .211       -10      .333   .122
+  13 CBout1   1950 1999     B     .048        -2      .483   .435
+  14 CBout2   1875 1924     B    -.069         3      .239   .308  weak at every lag
+  14 CBout2   1900 1949     A     .249         0
+  15 CBout3   1950 1999     B     .229         1      .292   .063  weak at every lag
+  16 CB1068   1900 1949     B     .023       -10      .381   .357
+  16 CB1068   1925 1974     B     .043        -7      .362   .320
+  16 CB1068   1950 1999     B     .273        10      .340   .067
+  17 CB3050   1850 1899     B     .046         6      .159   .112  weak at every lag
+  17 CB3050   1875 1924     B    -.026        -2      .389   .415
+  17 CB3050   1900 1949     B     .038        -2      .489   .451
+  17 CB3050   1925 1974     B     .149        -8      .287   .139  weak at every lag
+  17 CB3050   1950 1999     B     .023        -8      .336   .313
+
+ DESCRIPTIVE STATISTICS: che558
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CB25     1880 2015    136      3      1    .431   1.11   3.26   .463   .605   .326   1.94   .286   .024   2
+   2 CB2057   1851 2018    168      4      1    .299    .58   2.26   .458   .882   .313   3.15   .370   .036   1
+   3 CB3085   1848 2015    168      5      3    .304   1.18   4.56   .885   .858   .326   2.62   .357   .004   2
+   4 CB3218   1942 2018     77      1      0    .499   1.26   2.28   .435   .518   .268   1.69   .260   .045   0
+   5 CB3515   1864 2018    155      4      1    .438    .61   2.07   .416   .760   .334   1.96   .338  -.008   2
+   6 CB3939   1864 2018    155      4      0    .437    .56   1.84   .358   .776   .299   2.00   .307   .001   3
+   7 CB4466   1986 2018     33      0      0    .606   1.73   3.86   .768   .580   .344   1.72   .288   .117   0
+   8 CB4501   1977 2018     42      0      0    .568   2.20   3.38   .697   .657   .183   1.33   .195   .037   1
+   9 CB4503   1960 2018     59      0      0    .277   1.88   3.73   .869   .809   .248   1.64   .230   .037   0
+  10 CB5602   1905 2018    114      2      0    .459    .78   2.30   .448   .767   .338   1.78   .316  -.025   1
+  11 CB6273   1963 2018     56      0      0    .498    .87   1.85   .456   .716   .356   1.70   .318   .023   2
+  12 CB6280   1940 2018     79      1      0    .389   1.17   2.66   .605   .602   .307   1.97   .323  -.095   1
+  13 CBout1   1855 2018    164      4      3    .216   1.27   2.89   .690   .778   .288   1.67   .279   .014   1
+  14 CBout2   1874 2018    145      4      2    .182    .89   2.20   .425   .678   .269   1.69   .251  -.010   1
+  15 CBout3   1893 2018    126      3      1    .315   1.79   4.08   .651   .569   .266   1.63   .251  -.020   1
+  16 CB1068   1886 2018    133      3      3    .198    .45   1.83   .274   .765   .283   2.18   .297   .049   1
+  17 CB3050   1718 2018    301      5      5    .079    .85   1.95   .377   .702   .276   1.72   .268  -.025   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2111     43     20    .311    .99   4.56   .511   .726   .297   3.15   .296   .004
+
+ DATA CHECKS (rwl.check): che558
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che558.rwl
+ 17 series, 2111 measurements, 1718-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 8 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file che558.rwl, MD5 3bbdba0bdc090e1380e9c8d28260cc5f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: arg149
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg149.rwl
+      MD5 of measurement file: 23da8ad857acaa7a9298f6aa7ff3fb9e
+      Date checked           : 01OCT26
+      Beginning year         : 1729
+      Ending year            : 1982
+      Principal investigators: Villalba, R.; Ferrero, M.E.
+      Site name              : Rio Horqueta - RHC
+      Species information    : CEAN Cedrela angustifolia Sesse & Mocino ex DC.= Cedrela balansae C. DC.
+      Latitude               : 27.1167 S
+      Longitude              : 65.8333 W
+      Elevation              : 1650 m
+
+      Series intercorrelation: 0.455
+      Avg mean sensitivity   : 0.424
+      Avg standard deviation : 1.350
+      Avg autocorrelation    : 0.638
+      Number dated series    : 24
+      Series crossdated      : 23
+      Segment length tested  : 50
+
+      Number problem segments: 20  (A 5, B 15; 2 of the B weak at every lag)
+      Pct problem segments   : 30.30
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg149
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 RHC26B2  1910 1982                           .39 
+   2 RHC27A   1881 1982                      .46  .42 
+   3 RHC27B   1883 1953                      .62      
+   4 RHC28B   1905 1982                           .52 
+   5 RHC29A   1850 1982                 .43  .36B .34 
+   6 RHC29B   1857 1982                 .32B .34B .40 
+   7 RHC30A   1916 1982                           .47 
+   8 RHC31A   1892 1982                      .53  .46 
+   9 RHC31B   1883 1982                      .62  .71 
+  10 RHC32A   1908 1982                           .52 
+  11 RHC33A   1884 1982                      .62  .63 
+  12 RHC35A   1839 1982            .32B .40B .49B .48 
+  13 RHC38A   1846 1982            .33B .36  .46  .43 
+  14 RHC38B   1729 1982  .59  .67  .72  .52  .23B .18B
+  15 RHC38C1  1785 1902  .40  .57  .69                
+  16 RHC38C2  1906 1982                           .55 
+  17 RHC39B   1803 1982       .39  .72  .64  .38B .19B
+  18 RHC40C   1869 1982                 .30B .28B .33A
+  19 RHC41A   1816 1982       .54  .43  .33B .48  .54 
+  20 RHC45B   1882 1982                      .52  .53 
+  21 RHC46B   1787 1982  .32A .45  .65  .70  .65  .53 
+  23 RHC50A   1790 1980  .26A .27B .37  .35  .31A .31A
+  24 RHC51A   1880 1982                      .70  .68 
+ Av segment correlation  .39  .48  .53  .43  .47  .46 
+
+ FLAGGED SEGMENTS: arg149
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 RHC29A   1900 1949     B     .364        -1      .496   .132
+   6 RHC29B   1875 1924     B     .322        -1      .554   .232
+   6 RHC29B   1900 1949     B     .344        -1      .556   .212
+  12 RHC35A   1850 1899     B     .319        -2      .322   .003  weak at every lag
+  12 RHC35A   1875 1924     B     .398        -2      .403   .004
+  12 RHC35A   1900 1949     B     .493        -1      .494   .001
+  13 RHC38A   1850 1899     B     .332        -8      .360   .028
+  14 RHC38B   1900 1949     B     .231         1      .313   .082  weak at every lag
+  14 RHC38B   1925 1974     B     .184         1      .416   .232
+  17 RHC39B   1900 1949     B     .377         1      .527   .149
+  17 RHC39B   1925 1974     B     .188         1      .502   .315
+  18 RHC40C   1875 1924     B     .296        -1      .446   .149
+  18 RHC40C   1900 1949     B     .277        -1      .463   .185
+  18 RHC40C   1925 1974     A     .327         0
+  19 RHC41A   1875 1924     B     .325        -2      .471   .146
+  21 RHC46B   1800 1849     A     .319         0
+  23 RHC50A   1800 1849     A     .265         0
+  23 RHC50A   1825 1874     B     .266         8      .375   .108
+  23 RHC50A   1900 1949     A     .307         0
+  23 RHC50A   1925 1974     A     .306         0
+
+ DESCRIPTIVE STATISTICS: arg149
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RHC26B2  1910 1982     73      1      0    .427   1.17   5.11   .865   .629   .356   2.86   .455   .059   1
+   2 RHC27A   1881 1982    102      2      0    .450   1.95   4.95  1.231   .675   .465   2.03   .409  -.010   3
+   3 RHC27B   1883 1953     71      1      0    .604   1.95   6.66  1.286   .539   .583   2.30   .536  -.007   1
+   4 RHC28B   1905 1982     78      1      0    .483   2.36   7.98  1.678   .760   .353   2.04   .350  -.018   1
+   5 RHC29A   1850 1982    133      3      1    .457   2.64   7.35  1.366   .579   .380   2.36   .389  -.011   1
+   6 RHC29B   1857 1982    126      3      2    .381   2.02   8.44  1.482   .479   .475   3.10   .542  -.021   1
+   7 RHC30A   1916 1982     67      1      0    .500   3.43   7.45  1.896   .725   .379   1.81   .318   .115   3
+   8 RHC31A   1892 1982     91      2      0    .571   2.39   6.43  1.374   .711   .371   2.07   .361  -.005   2
+   9 RHC31B   1883 1982    100      2      0    .576   3.56   9.14  1.750   .592   .379   2.49   .364   .015   1
+  10 RHC32A   1908 1982     75      1      0    .513   3.87   8.48  1.654   .534   .324   1.70   .330   .047   1
+  11 RHC33A   1884 1982     99      2      0    .547   2.09   5.33  1.268   .619   .455   2.61   .432  -.031   1
+  12 RHC35A   1839 1982    144      4      3    .359   1.76   6.14  1.463   .724   .439   2.62   .509   .233   1
+  13 RHC38A   1846 1982    137      4      1    .374   2.03   7.56  1.503   .622   .493   2.47   .515   .020   2
+  14 RHC38B   1729 1982    254      6      2    .504   1.05   5.60   .745   .672   .402   2.33   .419  -.021   3
+  15 RHC38C1  1785 1902    118      3      0    .555   1.18   3.37   .759   .552   .405   2.27   .444  -.067   1
+  16 RHC38C2  1906 1982     77      1      0    .375   1.07   3.61   .674   .698   .328   2.13   .375  -.000   1
+  17 RHC39B   1803 1982    180      5      2    .401   1.44   4.78   .878   .586   .390   2.31   .423  -.007   2
+  18 RHC40C   1869 1982    114      3      3    .321   1.60   5.72  1.188   .521   .510   2.80   .579   .012   1
+  19 RHC41A   1816 1982    167      5      1    .419   2.29   7.79  1.749   .659   .493   2.40   .505  -.000   1
+  20 RHC45B   1882 1982    101      2      0    .449   1.71   9.89  1.657   .739   .402   2.95   .484  -.034   1
+  21 RHC46B   1787 1982    196      6      1    .522   1.91   8.38  1.411   .605   .445   3.02   .474  -.007   3
+  22 RHC49A   1928 1982     55                         3.83   6.89  1.877   .732   .289                         
+  23 RHC50A   1790 1980    191      6      4    .304   2.02   8.00  1.673   .715   .481   2.51   .504  -.037   1
+  24 RHC51A   1880 1982    103      2      0    .588   3.91   8.46  1.896   .687   .365   2.03   .344   .048   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2852     66     20    .455   2.07   9.89  1.350   .638   .424   3.10   .447   .008
+
+ DATA CHECKS (rwl.check): arg149
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg149.rwl
+ 24 series, 2852 measurements, 1729-1982, 0.001 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file arg149.rwl, MD5 23da8ad857acaa7a9298f6aa7ff3fb9e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series RHC49A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

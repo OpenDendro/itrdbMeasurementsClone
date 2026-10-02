@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: gree012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : gree012.rwl
+      MD5 of measurement file: a073f35cfb8de1e47058dbd6110d5ece
+      Date checked           : 01OCT26
+      Beginning year         : 1635
+      Ending year            : 1979
+      Principal investigators: Kuniholm, P.I.; Latini, C.; Ashjian, C.
+      Site name              : Zagradeniye Forest
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 41.6700 N
+      Longitude              : 24.8800 E
+      Elevation              : 1320 m
+
+      Series intercorrelation: 0.477
+      Avg mean sensitivity   : 0.149
+      Avg standard deviation : 0.667
+      Avg autocorrelation    : 0.929
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 7, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 14.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: gree012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 108011   1653 1979  .29B .26A .36  .56  .60  .56  .46  .48  .76  .71 
+   2 108021   1652 1976  .45  .54  .50  .46  .54  .57  .52  .53  .68  .70 
+   3 108031   1635 1977  .36  .42  .44  .51  .54  .63  .56  .42  .55  .29A
+   4 108041   1715 1978       .29A .34  .38  .23B .19B .49  .52  .52  .52 
+   5 108061   1692 1975  .41  .62  .48  .49  .68  .71  .50  .33  .59  .59 
+   6 108071   1711 1978       .59  .28B .32A .44  .55  .40  .24B .63  .62 
+   7 108081   1745 1978            .20A .22A .32A .43  .61  .49  .49  .47 
+   8 108091   1685 1978  .50  .57  .46  .63  .67  .53  .55  .52  .70  .75 
+   9 108101   1717 1978       .59  .47  .44  .50  .53  .63  .58  .75  .78 
+ Av segment correlation  .40  .48  .39  .44  .50  .52  .52  .46  .63  .60 
+
+ FLAGGED SEGMENTS: gree012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 108011   1700 1749     B     .288         7      .397   .110
+   1 108011   1725 1774     A     .262         0
+   3 108031   1925 1974     A     .289         0
+   4 108041   1725 1774     A     .288         0
+   4 108041   1800 1849     B     .233        -7      .318   .085  weak at every lag
+   4 108041   1825 1874     B     .192        -4      .335   .143
+   6 108071   1750 1799     B     .283        -2      .298   .015  weak at every lag
+   6 108071   1775 1824     A     .318         0
+   6 108071   1875 1924     B     .238        -1      .323   .084  weak at every lag
+   7 108081   1750 1799     A     .195         0
+   7 108081   1775 1824     A     .224         0
+   7 108081   1800 1849     A     .317         0
+
+ DESCRIPTIVE STATISTICS: gree012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 108011   1653 1979    327     10      2    .485   1.28   2.98   .547   .925   .138   1.50   .150  -.014   1
+   2 108021   1652 1976    325     10      0    .463   1.24   3.15   .504   .906   .131   1.62   .136   .032   1
+   3 108031   1635 1977    343     10      1    .408   1.30   5.94  1.086   .972   .144   1.52   .152   .001   3
+   4 108041   1715 1978    264      9      3    .370    .90   2.72   .495   .950   .125   1.33   .120  -.002   3
+   5 108061   1692 1975    284     10      0    .495    .95   4.22   .739   .927   .152   1.47   .150  -.009   1
+   6 108071   1711 1978    268      9      3    .475   1.04   4.33   .543   .896   .146   1.42   .143  -.028   3
+   7 108081   1745 1978    234      8      3    .393   1.44   2.70   .518   .877   .144   1.42   .145   .028   1
+   8 108091   1685 1978    294     10      0    .578    .99   3.08   .655   .938   .185   1.73   .196   .012   2
+   9 108101   1717 1978    262      9      0    .625   1.01   5.29   .841   .957   .183   1.48   .170  -.004   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2601     85     12    .477   1.13   5.94   .667   .929   .149   1.73   .151   .002
+
+ DATA CHECKS (rwl.check): gree012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/gree012.rwl
+ 9 series, 2601 measurements, 1635-1979, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file gree012.rwl, MD5 a073f35cfb8de1e47058dbd6110d5ece.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

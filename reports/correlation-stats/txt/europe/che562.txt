@@ -1,0 +1,186 @@
+
+ COFECHA-style crossdating report: che562
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che562.rwl
+      MD5 of measurement file: e8b8a10eb8265628c1ff6c587d49001f
+      Date checked           : 01OCT26
+      Beginning year         : 1859
+      Ending year            : 2020
+      Principal investigators: Neycken, A.; Scheggia, M.; Bigler, C.; Lévesque, M.
+      Site name              : Rootriss
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.6665 N
+      Longitude              : 8.5731 E
+      Elevation              : 520 m
+
+      Series intercorrelation: 0.717
+      Avg mean sensitivity   : 0.309
+      Avg standard deviation : 0.762
+      Avg autocorrelation    : 0.607
+      Number dated series    : 43
+      Series crossdated      : 41
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 2.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che562
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 RB03     1871 2020  .80  .79  .64 
+   2 RB04     1876 2020  .76  .74  .85 
+   3 RB05     1877 2020  .75  .73  .81 
+   4 RB06     1874 2020  .88  .86  .88 
+   5 RB07     1879 2020  .66  .57  .64 
+   6 RB08     1906 2020       .69  .72 
+   7 RB09     1911 2020       .58  .76 
+   8 RB10     1903 2020       .78  .75 
+   9 RB11     1911 2020       .68  .80 
+  10 RB12     1884 2020  .61  .74  .81 
+  11 RB13     1879 2020  .82  .81  .75 
+  12 RB14     1911 2020       .67  .85 
+  14 RB16     1888 2020  .78  .76  .83 
+  15 RB17     1890 2020  .73  .78  .84 
+  16 RB18     1872 2020  .90  .88  .83 
+  17 RB19     1889 2020  .54  .66  .78 
+  18 RB20     1880 2020  .73  .75  .80 
+  19 RB21     1880 2020  .61  .75  .84 
+  20 RB22     1884 2020  .78  .73  .78 
+  21 RB23     1871 2020  .70  .65  .77 
+  22 RB24     1935 2020            .70 
+  23 RB25     1905 2020       .42  .72 
+  24 RB26     1901 2020       .70  .83 
+  25 RB27     1899 2020       .71  .72 
+  26 RB28     1878 2020  .75  .72  .78 
+  28 RB30     1896 2020  .70  .75  .80 
+  29 RB31     1914 2020       .69  .74 
+  30 RB32     1903 2020       .60  .79 
+  31 RB33     1885 2020  .64  .53  .71 
+  32 RB34     1904 2020       .53  .61 
+  33 RB35     1910 2020       .61  .73 
+  34 RB36     1902 2020       .26B .44 
+  35 RB37     1872 2020  .28A .42  .74 
+  36 RB38     1905 2020       .07B .69 
+  37 RB39     1859 2020  .58  .61  .54 
+  38 RB40     1884 2020  .77  .75  .74 
+  39 RB41     1877 2020  .71  .77  .82 
+  40 RB42     1879 2020  .87  .80  .81 
+  41 RBT1     1863 2017  .79  .83  .88 
+  42 RBT2     1890 2018  .84  .84  .83 
+  43 RBT3     1897 2018  .74  .70  .68 
+ Av segment correlation  .72  .67  .76 
+
+ FLAGGED SEGMENTS: che562
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  34 RB36     1925 1974     B     .261         5      .283   .022  weak at every lag
+  35 RB37     1900 1949     A     .284         0
+  36 RB38     1925 1974     B     .068         3      .288   .220  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che562
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RB03     1871 2020    150      3      0    .733   1.85   5.06   .952   .671   .338   1.72   .328   .020   1
+   2 RB04     1876 2020    145      3      0    .716   1.49   3.94   .797   .698   .388   1.91   .372   .059   1
+   3 RB05     1877 2020    144      3      0    .818   1.39   3.12   .524   .374   .347   2.23   .328   .013   3
+   4 RB06     1874 2020    147      3      0    .780   1.45   3.34   .663   .706   .303   2.05   .314   .048   1
+   5 RB07     1879 2020    142      3      0    .695   1.42   3.25   .649   .595   .356   1.84   .309   .021   2
+   6 RB08     1906 2020    115      2      0    .709   2.39   4.86   .967   .755   .251   1.56   .237   .003   1
+   7 RB09     1911 2020    110      2      0    .692   2.14   6.74  1.323   .809   .269   1.74   .249   .009   1
+   8 RB10     1903 2020    118      2      0    .702   2.31   5.32  1.120   .687   .290   1.53   .272   .117   0
+   9 RB11     1911 2020    110      2      0    .694   2.30   5.40   .965   .594   .308   1.70   .282   .015   3
+  10 RB12     1884 2020    137      3      0    .719   1.91   4.28   .901   .666   .326   1.87   .321   .018   2
+  11 RB13     1879 2020    142      3      0    .720   1.65   3.76   .696   .675   .280   1.74   .285   .027   2
+  12 RB14     1911 2020    110      2      0    .677   1.78   6.58   .896   .577   .332   3.19   .366   .045   1
+  13 RB15     1872 2020    149                         1.67   4.08   .780   .547   .376                         
+  14 RB16     1888 2020    133      3      0    .837   1.74   4.17   .788   .575   .365   1.92   .350   .024   2
+  15 RB17     1890 2020    131      3      0    .743   1.72   5.28   .698   .525   .299   2.20   .310   .044   1
+  16 RB18     1872 2020    149      3      0    .840   1.38   3.14   .596   .660   .312   1.89   .295   .018   2
+  17 RB19     1889 2020    132      3      0    .683   2.06   4.48   .896   .699   .293   2.16   .276   .026   2
+  18 RB20     1880 2020    141      3      0    .809   1.60   3.44   .649   .634   .300   1.78   .282   .017   2
+  19 RB21     1880 2020    141      3      0    .767   1.75   5.80   .866   .553   .282   2.06   .267   .044   0
+  20 RB22     1884 2020    137      3      0    .777   1.79   3.94   .672   .305   .344   2.27   .339   .014   1
+  21 RB23     1871 2020    150      3      0    .738   1.42   3.42   .651   .689   .308   2.00   .314   .012   2
+  22 RB24     1935 2020     86      1      0    .687   2.13   5.10  1.156   .743   .306   1.70   .328   .039   1
+  23 RB25     1905 2020    116      2      0    .635   2.11   5.80   .913   .604   .312   1.96   .296  -.020   1
+  24 RB26     1901 2020    120      2      0    .811   1.84   4.02   .801   .549   .356   1.80   .330   .028   2
+  25 RB27     1899 2020    122      2      0    .760   1.52   3.34   .648   .575   .353   1.79   .317   .002   2
+  26 RB28     1878 2020    143      3      0    .780   1.51   3.64   .645   .537   .327   1.86   .330   .026   2
+  27 RB29     1905 2020    116                         1.66   3.36   .734   .473   .377                         
+  28 RB30     1896 2020    125      3      0    .767   1.95   4.37   .705   .611   .258   1.86   .262   .027   1
+  29 RB31     1914 2020    107      2      0    .734   1.66   3.38   .564   .549   .264   1.77   .265   .034   1
+  30 RB32     1903 2020    118      2      0    .718   2.07   4.14   .783   .639   .260   1.62   .252  -.007   1
+  31 RB33     1885 2020    136      3      0    .682   1.67   4.56   .642   .633   .251   2.13   .261   .003   2
+  32 RB34     1904 2020    117      2      0    .641   2.50   4.56   .786   .633   .220   1.92   .221  -.000   1
+  33 RB35     1910 2020    111      2      0    .528   2.90   5.08  1.059   .732   .228   1.67   .216   .115   0
+  34 RB36     1902 2020    119      2      1    .474   2.13   3.62   .637   .493   .239   1.61   .241  -.000   2
+  35 RB37     1872 2020    149      3      1    .512   1.35   2.69   .484   .682   .216   1.51   .209   .033   2
+  36 RB38     1905 2020    116      2      1    .585   2.55   4.96   .970   .613   .269   2.15   .309  -.002   2
+  37 RB39     1859 2020    162      3      0    .593   1.26   3.51   .658   .694   .320   2.04   .334   .025   1
+  38 RB40     1884 2020    137      3      0    .755   1.67   3.86   .733   .610   .331   1.87   .313   .025   1
+  39 RB41     1877 2020    144      3      0    .645   1.24   2.51   .543   .554   .376   1.89   .347   .004   1
+  40 RB42     1879 2020    142      3      0    .813   1.72   3.60   .732   .380   .379   2.14   .360   .009   2
+  41 RBT1     1863 2017    155      3      0    .765   1.68   3.24   .739   .664   .318   1.84   .306   .015   1
+  42 RBT2     1890 2018    129      3      0    .815   1.40   3.58   .594   .606   .315   1.81   .304   .002   2
+  43 RBT3     1897 2018    122      3      0    .728   2.23   4.19   .734   .610   .248   1.57   .237   .022   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5625    107      3    .717   1.78   6.74   .762   .607   .309   3.19   .298   .023
+
+ DATA CHECKS (rwl.check): che562
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che562.rwl
+ 43 series, 5625 measurements, 1859-2020, 0.01 mm precision
+ 0 error(s), 2 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_SERIES_OUTLIER (1)
+     RB36: correlates with the rest of the collection at r = 0.364 where the collection median is 0.711 (4.1 MAD below it); it does not fit the collection it is in
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che562.rwl, MD5 e8b8a10eb8265628c1ff6c587d49001f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series RB15 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series RB29 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

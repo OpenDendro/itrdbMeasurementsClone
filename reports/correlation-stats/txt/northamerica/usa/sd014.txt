@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: sd014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sd014.rwl
+      MD5 of measurement file: 07131310e31d6cd7eb428f374a73bc94
+      Date checked           : 01OCT26
+      Beginning year         : 1740
+      Ending year            : 1991
+      Principal investigators: Meko, D.M.; Sieg, C.H.
+      Site name              : Lake Herman State Park
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.9800 N
+      Longitude              : 97.1700 W
+      Elevation              : 512 m
+
+      Series intercorrelation: 0.548
+      Avg mean sensitivity   : 0.290
+      Avg standard deviation : 0.814
+      Avg autocorrelation    : 0.633
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 8.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sd014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   2 HRM02A   1873 1991                 .64  .74  .80 
+   3 HRM02B   1900 1991                           .75 
+   4 HRM03A   1740 1991       .58  .50  .32B .40  .51 
+   5 HRM03B   1844 1989            .54  .57  .30B-.03B
+   6 HRM5A    1853 1991                 .51  .55  .59 
+   7 HRM5B    1922 1991                           .54 
+   8 HRM6A    1811 1991       .47  .60  .54  .65  .73 
+   9 HRM6B    1829 1991            .43  .53  .73  .73 
+  10 HRM7A    1870 1991                 .46  .55  .72 
+  11 HRM7B    1871 1991                 .63  .68  .74 
+  12 HRM8A    1895 1991                      .78  .82 
+  13 HRM8B    1894 1991                      .67  .68 
+ Av segment correlation       .53  .52  .53  .61  .63 
+
+ FLAGGED SEGMENTS: sd014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 HRM03A   1875 1924     B     .319        -4      .422   .103
+   5 HRM03B   1900 1949     B     .298         1      .324   .026  weak at every lag
+   5 HRM03B   1925 1974     B    -.027         1      .749   .776
+
+ DESCRIPTIVE STATISTICS: sd014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HRM01B   1934 1991     58      0      0    .427   1.50   2.98   .607   .728   .214   1.61   .231   .012   1
+   2 HRM02A   1873 1991    119      3      0    .702   1.86   4.90   .918   .630   .321   2.31   .326   .031   1
+   3 HRM02B   1900 1991     92      1      0    .658   1.58   9.33  1.175   .643   .306   2.55   .328  -.039   2
+   4 HRM03A   1740 1991    252      5      1    .426   1.03   2.92   .527   .610   .313   2.56   .335   .022   1
+   5 HRM03B   1844 1989    146      4      2    .280   1.28   2.86   .553   .675   .246   1.90   .253   .040   1
+   6 HRM5A    1853 1991    139      3      0    .541   1.28   2.59   .476   .733   .223   1.47   .210  -.000   1
+   7 HRM5B    1922 1991     70      1      0    .523   1.32   2.25   .443   .631   .252   1.49   .230  -.009   1
+   8 HRM6A    1811 1991    181      5      0    .467   1.72   4.80   .781   .714   .276   1.90   .285   .040   1
+   9 HRM6B    1829 1991    163      4      0    .576   1.90   3.88   .611   .492   .261   1.72   .254  -.000   2
+  10 HRM7A    1870 1991    122      3      0    .600   2.48   7.94  1.163   .581   .340   2.17   .302   .032   2
+  11 HRM7B    1871 1991    121      3      0    .680   2.08   4.85   .949   .627   .310   1.88   .307   .015   2
+  12 HRM8A    1895 1991     97      2      0    .778   3.08   7.86  1.552   .660   .349   1.68   .287   .007   2
+  13 HRM8B    1894 1991     98      2      0    .719   3.21   7.18  1.407   .565   .334   2.43   .319  -.042   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1658     36      3    .548   1.78   9.33   .814   .633   .290   2.56   .287   .013
+
+ DATA CHECKS (rwl.check): sd014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sd014.rwl
+ 13 series, 1658 measurements, 1740-1991, 0.01 mm precision
+ 2 error(s), 0 warning(s), 6 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     HRM01B: correlates best with the master at lag -5 (r = 0.353 against r = 0.147 as dated); the series may be misdated by 5 year(s), most likely a missing ring
+     HRM03B: correlates best with the master at lag 1 (r = 0.415 against r = 0.353 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file sd014.rwl, MD5 07131310e31d6cd7eb428f374a73bc94.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

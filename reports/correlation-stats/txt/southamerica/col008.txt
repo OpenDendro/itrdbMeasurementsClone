@@ -1,0 +1,149 @@
+
+ COFECHA-style crossdating report: col008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : col008.rwl
+      MD5 of measurement file: 28793ee294695e04c7d92a3964c9b391
+      Date checked           : 01OCT26
+      Beginning year         : 1867
+      Ending year            : 2019
+      Principal investigators: Giraldo, J.; del Valle, J.I.; David, D.
+      Site name              : Bajo Calima (Biogeographical Chocó)
+      Species information    : GOGL Goupia glabra Aubl.
+      Latitude               : 3.9536 N
+      Longitude              : 76.9909 W
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.417
+      Avg mean sensitivity   : 0.302
+      Avg standard deviation : 0.972
+      Avg autocorrelation    : 0.643
+      Number dated series    : 38
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 28.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: col008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   5 GG13A    1946 2019            .36 
+   6 GG13C    1946 2019            .32A
+   7 GG13D    1946 2019            .29B
+  26 GG23A    1946 2019            .31A
+  27 GG23B    1946 2019            .26A
+  28 GG23C    1946 2019            .48 
+  29 GG23D    1946 2019            .46 
+  30 GG25A    1867 2019  .85  .56  .34 
+  31 GG25B    1867 2019  .80  .48  .16B
+  32 GG25C    1867 2019  .75  .50  .37 
+  33 GG25K    1867 2019  .80  .59  .31A
+  37 GG31B    1938 2019            .44 
+  38 GG31C    1938 2019            .34 
+ Av segment correlation  .80  .53  .34 
+
+ FLAGGED SEGMENTS: col008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 GG13C    1950 1999     A     .323         0
+   7 GG13D    1950 1999     B     .294       -10      .368   .075
+  26 GG23A    1950 1999     A     .305         0
+  27 GG23B    1950 1999     A     .261         0
+  31 GG25B    1950 1999     B     .158       -10      .197   .039  weak at every lag
+  33 GG25K    1950 1999     A     .310         0
+
+ DESCRIPTIVE STATISTICS: col008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GG12A    1965 2019     55      0      0    .345   1.10   2.58   .597   .681   .315   1.80   .316   .008   1
+   2 GG12B    1965 2019     55      0      0    .373   1.09   2.76   .582   .676   .297   1.79   .301   .171   0
+   3 GG12C    1965 2019     55      0      0    .427   1.03   2.43   .543   .701   .293   1.67   .308   .062   1
+   4 GG12D    1965 2019     55      0      0    .249    .98   2.68   .548   .549   .340   2.15   .372   .000   1
+   5 GG13A    1946 2019     74      1      0    .374   1.05   3.00   .610   .728   .272   1.89   .275   .108   0
+   6 GG13C    1946 2019     74      1      1    .279    .98   3.10   .546   .676   .305   2.00   .308   .131   0
+   7 GG13D    1946 2019     74      1      1    .284    .98   2.95   .563   .613   .351   1.78   .317   .049   0
+   8 GG14A    1961 2019     59      0      0    .370   1.30   3.74   .865   .777   .322   1.66   .333   .057   1
+   9 GG14E    1961 2019     59      0      0    .441   1.49   3.69   .960   .772   .301   1.87   .327  -.041   1
+  10 GG14F    1961 2019     59      0      0    .454   1.74   5.17  1.155   .717   .299   1.87   .314   .021   1
+  11 GG17A    1963 2019     57      0      0    .355   2.79   7.15  1.784   .670   .380   2.11   .397  -.031   1
+  12 GG17B    1963 2019     57      0      0    .280   3.88   8.31  2.274   .664   .365   2.32   .419   .122   0
+  13 GG17C    1963 2019     57      0      0    .374   2.91   6.02  1.598   .722   .318   1.93   .357   .173   0
+  14 GG19A    1981 2019     39      0      0    .254   2.19   4.86  1.001   .502   .374   2.03   .385  -.004   1
+  15 GG19B    1981 2019     39      0      0    .256   2.00   3.71   .752   .505   .286   1.60   .296   .056   2
+  16 GG20A    1965 2019     55      0      0    .363   3.05   8.29  2.109   .839   .306   2.14   .347  -.014   1
+  17 GG20C    1965 2019     55      0      0    .273   2.32   6.69  1.473   .666   .346   2.32   .368   .008   1
+  18 GG20D    1965 2019     55      0      0    .337   2.89   8.20  2.032   .859   .278   2.29   .341  -.002   1
+  19 GG21A    1965 2019     55      0      0    .520   2.47   8.85  1.900   .879   .224   1.64   .250   .113   1
+  20 GG21B    1965 2019     55      0      0    .404   2.47   7.87  1.842   .859   .246   1.54   .263   .073   1
+  21 GG21C    1965 2019     55      0      0    .366   2.19   5.88  1.392   .801   .256   1.75   .267   .010   1
+  22 GG21D    1965 2019     55      0      0    .469   2.61   8.82  2.218   .834   .323   1.81   .336   .091   1
+  23 GG22A    1969 2019     51      0      0    .571   2.34   5.74  1.223   .428   .377   2.08   .387   .163   0
+  24 GG22B    1969 2019     51      0      0    .466   2.39   5.20  1.140   .517   .356   1.81   .331   .014   3
+  25 GG22E    1969 2019     51      0      0    .486   2.29   4.92  1.091   .530   .378   1.93   .339   .023   3
+  26 GG23A    1946 2019     74      1      1    .253   1.95   6.43  1.165   .652   .321   2.13   .356   .029   2
+  27 GG23B    1946 2019     74      1      1    .227   1.99   5.55  1.119   .701   .307   1.94   .315   .047   2
+  28 GG23C    1946 2019     74      1      0    .448   1.68   4.41   .898   .636   .263   1.94   .309  -.014   1
+  29 GG23D    1946 2019     74      1      0    .495   1.70   3.86   .797   .662   .284   1.72   .278   .016   3
+  30 GG25A    1867 2019    153      3      0    .619   1.29   3.29   .499   .452   .270   2.12   .271   .010   3
+  31 GG25B    1867 2019    153      3      1    .516   1.24   2.86   .529   .542   .266   1.84   .277  -.003   3
+  32 GG25C    1867 2019    153      3      0    .574   1.30   3.05   .484   .534   .242   2.00   .262  -.006   3
+  33 GG25K    1867 2019    153      3      1    .596   1.28   3.02   .506   .499   .279   1.91   .284   .009   3
+  34 GG28A    1954 2019     66      0      0    .473   1.38   3.58   .833   .683   .357   2.03   .379  -.012   1
+  35 GG28B    1954 2019     66      0      0    .459   1.29   2.79   .619   .673   .306   1.80   .317   .035   1
+  36 GG28C    1954 2019     66      0      0    .342   1.35   3.58   .806   .625   .372   2.23   .404   .067   0
+  37 GG31B    1938 2019     82      1      0    .370   1.66   4.32   .833   .686   .286   1.68   .274  -.038   3
+  38 GG31C    1938 2019     82      1      0    .209   1.74   4.29   .889   .644   .297   1.95   .322   .047   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2676     21      6    .417   1.74   8.85   .972   .643   .302   2.32   .315   .035
+
+ DATA CHECKS (rwl.check): col008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/col008.rwl
+ 38 series, 2676 measurements, 1867-2019, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 653 carriage return(s) against 328 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file col008.rwl, MD5 28793ee294695e04c7d92a3964c9b391.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

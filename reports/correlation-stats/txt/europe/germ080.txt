@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: germ080
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ080.rwl
+      MD5 of measurement file: cdaf2a636fc362dc5882e6c6b4e5036a
+      Date checked           : 01OCT26
+      Beginning year         : 1410
+      Ending year            : 1455
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Goldener Turm Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Avg mean sensitivity   : 0.225
+      Avg standard deviation : 0.771
+      Avg autocorrelation    : 0.422
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: germ080
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GFIR2A   1410 1451     42                         2.98   4.84   .847   .485   .219                        1
+   2 GFIR2B   1410 1455     46                         2.69   4.76   .702   .364   .230                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:             88                         2.83   4.84   .771   .422   .225                     
+
+ DATA CHECKS (rwl.check): germ080
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ080.rwl
+ 2 series, 88 measurements, 1410-1455, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file germ080.rwl, MD5 cdaf2a636fc362dc5882e6c6b4e5036a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

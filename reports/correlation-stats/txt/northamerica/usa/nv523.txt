@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: nv523
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nv523.rwl
+      MD5 of measurement file: 030cced01a84ac1b25b25cdbf8c84d24
+      Date checked           : 01OCT26
+      Beginning year         : 1912
+      Ending year            : 2020
+      Principal investigators: Patterson, N.; Dong, X.; Lane, B.; Csank, A.Z.; Rood, S.; Sandoval-Solis, S.
+      Site name              : Lower Truckee River
+      Species information    : PPFR Populus fremontii Wats.
+      Latitude               : 39.6258 N
+      Longitude              : 119.4588 W
+      Elevation              : 1250 m
+
+      Series intercorrelation: 0.335
+      Avg mean sensitivity   : 0.271
+      Avg standard deviation : 2.184
+      Avg autocorrelation    : 0.619
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 50.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nv523
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 BB51     1947 2020  .06B
+   4 BB11A    1944 2020  .61 
+   5 BB11B    1941 2020  .63 
+   7 BB18     1912 2020  .20A
+ Av segment correlation  .37 
+
+ FLAGGED SEGMENTS: nv523
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BB51     1950 1999     B     .057         9      .313   .255  weak at every lag
+   7 BB18     1950 1999     A     .199         0
+
+ DESCRIPTIVE STATISTICS: nv523
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BB51     1947 2020     74      1      1    .193   5.13  12.87  2.676   .872   .194   1.70   .217  -.025   2
+   2 BB52     1978 2020     43      0      0    .565   4.02   6.45  1.337   .816   .152   1.63   .164   .026   1
+   3 BB15     1979 2020     42      0      0    .266   3.72   9.51  1.897   .724   .235   1.68   .271   .029   2
+   4 BB11A    1944 2020     77      1      0    .563   5.06  12.50  2.348   .635   .275   2.28   .328   .045   1
+   5 BB11B    1941 2020     80      1      0    .486   4.98  12.15  2.276   .543   .322   2.50   .354   .021   1
+   6 BB17     1983 2020     38      0      0   -.224   7.77  23.89  3.906   .528   .298   2.32   .358  -.036   1
+   7 BB18     1912 2020    109      1      1    .204   3.32   9.74  1.388   .473   .316   2.11   .308  -.001   3
+   8 BB1      2005 2020     16      0      0    .787   8.60  17.22  3.559   .715   .204   1.48   .202  -.017   0
+   9 BB2      2004 2020     17      0      0   -.013  12.58  24.13  6.274   .666   .346   1.51   .309   .139   1
+  10 BB3      2002 2020     19      0      0    .490   6.27  16.46  3.877   .589   .334   2.24   .398   .100   0
+  11 BB4      1999 2020     22      0      0    .712   4.75  13.95  2.620   .446   .375   2.01   .402   .271   0
+  12 BB14     1973 2020     48      0      0    .159   2.18   4.24   .730   .479   .254   1.64   .218  -.063   0
+  13 BB6      1978 2020     43      0      0    .463   2.86   5.61  1.014   .654   .245   1.67   .232   .049   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            628      4      2    .335   4.71  24.13  2.184   .619   .271   2.50   .287   .021
+
+ DATA CHECKS (rwl.check): nv523
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nv523.rwl
+ 13 series, 628 measurements, 1912-2020, 0.01 mm precision
+ 0 error(s), 0 warning(s), 11 note(s)
+ -------------
+ Nothing to report at this severity.
+ 11 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file nv523.rwl, MD5 030cced01a84ac1b25b25cdbf8c84d24.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

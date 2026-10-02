@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: nepa022
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa022.rwl
+      MD5 of measurement file: 3742275d7bd2e5ad63b58e750adbc261
+      Date checked           : 01OCT26
+      Beginning year         : 1725
+      Ending year            : 1978
+      Principal investigators: Krusic, P.J.; Zuber, R.
+      Site name              : Kalingchok
+      Species information    : ABSB Abies spectabilis (D. Don) Spach
+      Latitude               : 27.4500 N
+      Longitude              : 86.0500 E
+      Elevation              : 3720 m
+
+      Series intercorrelation: 0.517
+      Avg mean sensitivity   : 0.213
+      Avg standard deviation : 0.531
+      Avg autocorrelation    : 0.815
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 6.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 557151   1750 1978  .52  .57  .63  .68  .52  .45 
+   2 557011   1774 1975  .51  .39  .31A .55  .65  .52 
+   3 557012   1759 1978  .58  .63  .53  .55  .61  .56 
+   4 557021   1733 1954  .57  .52  .62  .61  .55      
+   5 557022   1740 1969  .54  .65  .49  .47  .66      
+   6 557051   1890 1976                      .74  .64 
+   7 557052   1780 1978  .20B .32A .51  .76  .48 -.07B
+   8 557061   1780 1976  .36B .44  .59  .48  .46  .67 
+   9 557071   1763 1966  .73  .58  .39  .57  .71      
+  10 557072   1765 1974  .64  .59  .51  .62  .74  .69 
+  11 557081   1754 1978  .53  .48  .62  .68  .66  .63 
+  12 557082   1736 1965  .67  .60  .71  .69  .67      
+  13 557091   1729 1919  .39  .47  .54                
+  14 557092   1725 1919  .44  .51  .46                
+  15 557101   1846 1978            .44  .56  .57  .69 
+  16 557102   1816 1978       .48  .47  .59  .59  .57 
+  17 557112   1790 1978  .53  .56  .69  .70  .68  .72 
+  18 557121   1756 1935  .54  .54  .64  .52           
+  19 557131   1819 1969       .14B .26A .61  .65      
+  20 557132   1836 1977            .50  .58  .66  .58 
+  21 557152   1738 1978  .58  .56  .67  .74  .62  .38 
+ Av segment correlation  .52  .50  .53  .61  .62  .54 
+
+ FLAGGED SEGMENTS: nepa022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 557011   1850 1899     A     .311         0
+   7 557052   1800 1849     B     .199       -10      .257   .058  weak at every lag
+   7 557052   1825 1874     A     .323         0
+   7 557052   1925 1974     B    -.074        -1      .347   .422
+   8 557061   1800 1849     B     .362        -1      .427   .066
+  19 557131   1825 1874     B     .137        10      .354   .217
+  19 557131   1850 1899     A     .257         0
+
+ DESCRIPTIVE STATISTICS: nepa022
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 557151   1750 1978    229      6      0    .521    .97   2.41   .328   .672   .219   1.87   .229   .032   1
+   2 557011   1774 1975    202      6      1    .527   1.08   2.33   .503   .861   .204   1.92   .226   .037   1
+   3 557012   1759 1978    220      6      0    .521    .87   3.32   .637   .945   .209   2.17   .246  -.010   3
+   4 557021   1733 1954    222      5      0    .542   1.02   3.38   .646   .874   .235   2.18   .247   .006   3
+   5 557022   1740 1969    230      5      0    .496    .97   5.12   .837   .894   .280   2.30   .282  -.006   3
+   6 557051   1890 1976     87      2      0    .642   1.29   2.07   .410   .749   .201   1.47   .196  -.021   2
+   7 557052   1780 1978    199      6      3    .313   1.06   2.73   .454   .748   .251   1.91   .254  -.015   3
+   8 557061   1780 1976    197      6      1    .503   1.02   2.75   .467   .741   .241   2.01   .284   .056   3
+   9 557071   1763 1966    204      5      0    .418    .84   3.45   .330   .640   .160   4.08   .277  -.002   3
+  10 557072   1765 1974    210      6      0    .613    .79   1.81   .304   .895   .141   1.47   .147  -.006   3
+  11 557081   1754 1978    225      6      0    .596    .95   2.74   .440   .799   .184   1.83   .220   .007   3
+  12 557082   1736 1965    230      5      0    .595    .90   3.94   .418   .802   .173   1.87   .200   .008   2
+  13 557091   1729 1919    191      3      0    .476    .96   3.38   .655   .920   .217   1.79   .244   .027   1
+  14 557092   1725 1919    195      3      0    .457    .87   4.34   .670   .898   .238   2.50   .275  -.008   2
+  15 557101   1846 1978    133      4      0    .609    .89   1.76   .327   .771   .205   1.77   .210  -.007   3
+  16 557102   1816 1978    163      5      0    .537    .93   1.75   .324   .787   .183   1.44   .190  -.021   3
+  17 557112   1790 1978    189      6      0    .606   1.31   2.89   .654   .846   .244   2.30   .275  -.017   3
+  18 557121   1756 1935    180      4      0    .467   1.28   3.56   .564   .794   .205   2.06   .239   .050   1
+  19 557131   1819 1969    151      4      2    .385   1.43   4.19   .763   .721   .248   2.63   .309   .047   1
+  20 557132   1836 1977    142      4      0    .592   1.24   6.76  1.046   .868   .266   2.11   .288   .091   1
+  21 557152   1738 1978    241      6      0    .510   1.10   3.47   .444   .822   .185   1.78   .198   .017   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4040    103      7    .517   1.02   6.76   .531   .815   .213   4.08   .239   .012
+
+ DATA CHECKS (rwl.check): nepa022
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa022.rwl
+ 21 series, 4040 measurements, 1725-1978, 0.01 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file nepa022.rwl, MD5 3742275d7bd2e5ad63b58e750adbc261.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,162 @@
+
+ COFECHA-style crossdating report: arge125
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge125.rwl
+      MD5 of measurement file: cbc267198e2e0c0c33e164b2f4d4dbff
+      Date checked           : 01OCT26
+      Beginning year         : 1767
+      Ending year            : 2006
+      Principal investigators: Paritsis, J.; Veblen, T.T.
+      Site name              : Cerro Colorado 2
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 40.8833 S
+      Longitude              : 71.7000 W
+      Elevation              : 1450 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.289
+      Avg standard deviation : 0.468
+      Avg autocorrelation    : 0.642
+      Number dated series    : 34
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 4, B 5; 4 of the B weak at every lag)
+      Pct problem segments   : 12.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge125
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 0601a    1910 2006                           .42  .51 
+   2 0601b    1905 2006                           .61  .61 
+   3 0602a    1893 2006                      .55  .52  .39 
+   4 0602b    1894 2006                      .54  .25B .28A
+   5 0603a    1903 2006                           .45  .66 
+   6 0603b    1893 2006                      .57  .59  .67 
+   7 0604a    1905 2006                           .59  .50 
+   8 0604b    1907 2006                           .62  .69 
+   9 0605a    1906 2006                           .59  .73 
+  10 0605b    1895 2006                      .30A .45  .74 
+  11 0607a    1914 2006                           .51  .74 
+  12 0607b    1901 2006                           .41  .55 
+  13 0608a    1904 2006                           .34  .50 
+  15 0609a    1912 2006                           .63  .49 
+  16 0609b    1912 2006                           .77  .69 
+  17 0610a    1930 2006                                .45 
+  19 0611a    1905 2006                           .49  .78 
+  20 0611b    1908 2006                           .32A .72 
+  21 0612a    1908 2006                           .46  .65 
+  22 0612b    1905 2006                           .51  .67 
+  23 0613a    1914 2006                           .69  .69 
+  24 0613b    1905 2006                           .67  .65 
+  25 0614a    1767 2006  .70  .39  .26B .23B .28A .38  .61 
+  26 0614b    1777 2006  .70  .39  .25B .21B .41  .50  .65 
+  27 0615a    1911 2006                           .56  .60 
+  28 0615b    1910 2006                           .57  .58 
+  29 0616a    1910 2006                           .54  .78 
+  30 0616b    1906 2006                           .76  .85 
+  31 0618a    1909 2006                           .67  .69 
+  33 0619a    1915 2006                           .72  .66 
+  34 0619b    1905 2006                           .60  .56 
+ Av segment correlation  .70  .39  .26  .22  .44  .54  .62 
+
+ FLAGGED SEGMENTS: arge125
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 0602b    1925 1974     B     .249        -5      .262   .014  weak at every lag
+   4 0602b    1950 1999     A     .280         0
+  10 0605b    1900 1949     A     .296         0
+  20 0611b    1925 1974     A     .319         0
+  25 0614a    1850 1899     B     .261         8      .320   .059  weak at every lag
+  25 0614a    1875 1924     B     .231         8      .322   .091  weak at every lag
+  25 0614a    1900 1949     A     .278         0
+  26 0614b    1850 1899     B     .255        -8      .317   .063  weak at every lag
+  26 0614b    1875 1924     B     .210        -8      .376   .166
+
+ DESCRIPTIVE STATISTICS: arge125
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 0601a    1910 2006     97      2      0    .491    .82   2.72   .501   .719   .325   2.06   .342   .057   1
+   2 0601b    1905 2006    102      2      0    .592   1.24   2.62   .541   .766   .277   1.53   .243  -.077   3
+   3 0602a    1893 2006    114      3      0    .473   1.21   2.35   .461   .527   .310   2.09   .287   .008   1
+   4 0602b    1894 2006    113      3      2    .386   1.19   2.58   .465   .632   .300   1.70   .269   .020   1
+   5 0603a    1903 2006    104      2      0    .542   1.42   3.62   .577   .662   .267   2.14   .268   .021   2
+   6 0603b    1893 2006    114      3      0    .576   1.19   2.71   .463   .668   .257   2.04   .263  -.037   1
+   7 0604a    1905 2006    102      2      0    .519   1.19   2.48   .418   .490   .294   2.00   .284   .013   1
+   8 0604b    1907 2006    100      2      0    .610   1.25   2.39   .414   .440   .305   1.74   .281   .029   1
+   9 0605a    1906 2006    101      2      0    .636   1.31   2.71   .628   .824   .238   1.50   .224  -.012   1
+  10 0605b    1895 2006    112      3      1    .614   1.06   1.89   .330   .519   .254   1.74   .254   .028   1
+  11 0607a    1914 2006     93      2      0    .611   1.27   2.49   .579   .780   .293   1.74   .265  -.000   2
+  12 0607b    1901 2006    106      2      0    .511   1.32   2.82   .696   .800   .293   1.75   .261  -.058   3
+  13 0608a    1904 2006    103      2      0    .473    .86   2.73   .627   .886   .310   1.84   .303  -.005   1
+  14 0608b    1950 2006     57      0      0    .347    .49   1.66   .341   .789   .371   2.04   .362   .002   1
+  15 0609a    1912 2006     95      2      0    .530    .98   2.26   .333   .376   .294   1.80   .282   .030   3
+  16 0609b    1912 2006     95      2      0    .661   1.08   2.28   .405   .608   .284   1.55   .252   .008   1
+  17 0610a    1930 2006     77      1      0    .438   1.27   2.83   .567   .577   .348   1.75   .294   .013   0
+  18 0610b    1950 2006     57      0      0    .477   1.18   2.61   .580   .722   .355   1.78   .313   .097   1
+  19 0611a    1905 2006    102      2      0    .651   1.54   2.90   .446   .649   .224   1.54   .207   .027   1
+  20 0611b    1908 2006     99      2      1    .590   1.52   2.46   .399   .536   .215   1.52   .201   .013   1
+  21 0612a    1908 2006     99      2      0    .618   1.43   2.53   .467   .669   .234   1.65   .229  -.008   3
+  22 0612b    1905 2006    102      2      0    .612   1.35   2.44   .459   .596   .265   1.79   .255  -.036   1
+  23 0613a    1914 2006     93      2      0    .647   1.01   2.60   .438   .684   .309   2.58   .315   .064   1
+  24 0613b    1905 2006    102      2      0    .642   1.36   2.89   .518   .518   .339   1.96   .309   .013   2
+  25 0614a    1767 2006    240      7      3    .415    .64   1.86   .311   .635   .343   2.02   .326  -.007   3
+  26 0614b    1777 2006    230      7      2    .443    .69   1.89   .321   .627   .345   1.92   .318   .017   2
+  27 0615a    1911 2006     96      2      0    .602   1.18   2.37   .470   .634   .276   1.66   .264   .056   1
+  28 0615b    1910 2006     97      2      0    .586   1.04   2.22   .406   .745   .267   1.74   .246   .009   1
+  29 0616a    1910 2006     97      2      0    .674   1.91   3.70   .715   .790   .219   1.53   .216   .055   1
+  30 0616b    1906 2006    101      2      0    .737   2.08   3.67   .675   .712   .212   1.41   .204  -.008   1
+  31 0618a    1909 2006     98      2      0    .656   1.22   2.24   .396   .579   .260   1.84   .247  -.002   1
+  32 0618b    1950 2006     57      0      0    .635   1.21   1.90   .370   .579   .274   1.59   .242  -.050   3
+  33 0619a    1915 2006     92      2      0    .679   1.17   2.58   .494   .484   .335   2.08   .329   .030   1
+  34 0619b    1905 2006    102      2      0    .588   1.31   2.72   .494   .681   .246   1.62   .239  -.012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3549     75      9    .558   1.17   3.70   .468   .642   .289   2.58   .273   .008
+
+ DATA CHECKS (rwl.check): arge125
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge125.rwl
+ 34 series, 3549 measurements, 1767-2006, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file arge125.rwl, MD5 cbc267198e2e0c0c33e164b2f4d4dbff.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

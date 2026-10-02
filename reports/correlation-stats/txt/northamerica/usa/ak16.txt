@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: ak16
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak16.rwl
+      MD5 of measurement file: bd62f545dbc0867508d1d3d867bc1b1a
+      Date checked           : 01OCT26
+      Beginning year         : 1729
+      Ending year            : 1986
+      Principal investigators: Kaiser, K.F.
+      Site name              : Girdwood  Turnagain Arm
+      Species information    : PCSI Picea sitchensis (Bong.) Carrière
+      Latitude               : 61.9500 N
+      Longitude              : 149.2000 W
+      Elevation              : 3 m
+
+      Series intercorrelation: 0.555
+      Avg mean sensitivity   : 0.203
+      Avg standard deviation : 0.865
+      Avg autocorrelation    : 0.864
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 6.38
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak16
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GIRD0010 1900 1986                           .30A
+   2 GIRD0020 1907 1986                           .55 
+   3 GIRD0030 1852 1986                 .49  .47  .58 
+   4 GIRD0040 1729 1986  .40  .50  .59  .65  .59  .50 
+   5 GIRD0050 1808 1986       .56  .29A .37  .58  .47 
+   6 GIRD0070 1784 1986  .55  .64  .67  .70  .65  .75 
+   7 GIRD0080 1834 1986            .43B .49  .42  .57 
+  10 GIRD0110 1900 1986                           .58 
+  11 GIRD0120 1875 1986                      .65  .72 
+  12 GIRD0130 1876 1986                      .65  .52 
+  13 GIRD0150 1813 1986       .56  .64  .59  .54  .61 
+  14 GIRD0160 1800 1986       .51  .51  .48  .48  .49 
+  15 GIRDCH00 1729 1986  .81  .81  .82  .95  .97  .98 
+ Av segment correlation  .59  .60  .56  .59  .60  .59 
+
+ FLAGGED SEGMENTS: ak16
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 GIRD0010 1925 1974     A     .298         0
+   5 GIRD0050 1850 1899     A     .294         0
+   7 GIRD0080 1850 1899     B     .425        -1      .533   .108
+
+ DESCRIPTIVE STATISTICS: ak16
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GIRD0010 1900 1986     87      1      1    .469   3.27   5.04  1.046   .822   .183   1.38   .178   .024   2
+   2 GIRD0020 1907 1986     80      1      0    .505   3.73   8.41  1.474   .841   .175   1.70   .186   .059   3
+   3 GIRD0030 1852 1986    135      3      0    .328   2.19   5.29  1.060   .842   .200   1.49   .217   .075   1
+   4 GIRD0040 1729 1986    258      6      0    .584   1.04   3.94   .702   .932   .203   1.89   .222   .001   2
+   5 GIRD0050 1808 1986    179      5      1    .489   1.48   3.92   .777   .841   .252   1.82   .268  -.007   3
+   6 GIRD0070 1784 1986    203      6      0    .628   1.69   4.67   .935   .914   .178   1.68   .197  -.002   3
+   7 GIRD0080 1834 1986    153      4      1    .451   1.70   4.28   .978   .822   .300   2.01   .295  -.014   2
+   8 GIRD0090 1937 1986     50      0      0    .563   1.46   4.02   .752   .790   .231   1.71   .242   .101   3
+   9 GIRD0100 1945 1986     42      0      0    .498   1.45   3.05   .580   .709   .233   1.58   .211  -.100   3
+  10 GIRD0110 1900 1986     87      1      0    .550   2.89   5.05   .820   .775   .156   1.37   .166   .022   1
+  11 GIRD0120 1875 1986    112      2      0    .595   3.03   6.02  1.278   .846   .193   1.71   .207   .060   1
+  12 GIRD0130 1876 1986    111      2      0    .455   1.25   2.66   .477   .792   .216   1.41   .206  -.009   2
+  13 GIRD0150 1813 1986    174      5      0    .570   1.77   4.15   .658   .780   .192   1.59   .196  -.025   3
+  14 GIRD0160 1800 1986    187      5      0    .467   1.43   4.02   .943   .925   .204   1.68   .207   .004   3
+  15 GIRDCH00 1729 1986    258      6      0    .827   1.34   3.39   .773   .946   .156   2.36   .189  -.000   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2116     47      3    .555   1.79   8.41   .865   .864   .203   2.36   .214   .009
+
+ DATA CHECKS (rwl.check): ak16
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak16.rwl
+ 15 series, 2116 measurements, 1729-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ak16.rwl, MD5 bd62f545dbc0867508d1d3d867bc1b1a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

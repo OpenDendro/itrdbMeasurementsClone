@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: wa3
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa3.rwl
+      MD5 of measurement file: a2b3a3e122b3abcba55298dea183e5de
+      Date checked           : 01OCT26
+      Beginning year         : 1788
+      Ending year            : 1986
+      Principal investigators: Kaiser, K.F.
+      Site name              : Swauk Pass  N Of Ellensburg
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 47.3700 N
+      Longitude              : 120.3000 W
+      Elevation              : 1250 m
+
+      Series intercorrelation: 0.626
+      Avg mean sensitivity   : 0.183
+      Avg standard deviation : 0.313
+      Avg autocorrelation    : 0.786
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 3, B 8; 1 of the B weak at every lag)
+      Pct problem segments   : 22.45
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa3
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 SWAU0010 1920 1986                           .26A
+   2 SWAU0020 1883 1986                      .64  .40 
+   3 SWAU0030 1919 1986                           .38 
+   4 SWAU0040 1868 1986                 .71  .68  .54 
+   5 SWAU0050 1856 1986                 .65  .68  .50 
+   6 SWAU0060 1840 1986            .24A .26A .31B .35 
+   7 SWAU0070 1876 1986                      .78  .70 
+   8 SWAU0080 1837 1986           -.16B .03B .48  .55 
+   9 SWAU0090 1830 1986           -.04B .17B .45B .37 
+  10 SWAU0100 1877 1986                      .59  .50 
+  11 SWAU0110 1868 1986                 .71  .77  .66 
+  12 SWAU0120 1879 1986                      .76  .76 
+  13 SWAU0130 1906 1986                           .63 
+  14 SWAU0140 1788 1986  .86  .44 -.03B .24B .48  .55 
+  15 SWAU0150 1881 1986                      .78  .71 
+  16 SWAU0160 1860 1986                 .54  .81  .81 
+  17 SWAUCH00 1788 1986  .94  .84  .88  .95  .96  .98 
+ Av segment correlation  .90  .64  .18  .47  .65  .57 
+
+ FLAGGED SEGMENTS: wa3
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 SWAU0010 1925 1974     A     .257         0
+   6 SWAU0060 1850 1899     A     .235         0
+   6 SWAU0060 1875 1924     A     .262         0
+   6 SWAU0060 1900 1949     B     .306       -10      .335   .029
+   8 SWAU0080 1850 1899     B    -.159        -4      .356   .515
+   8 SWAU0080 1875 1924     B     .033         1      .227   .194  weak at every lag
+   9 SWAU0090 1850 1899     B    -.039        -1      .414   .453
+   9 SWAU0090 1875 1924     B     .174        -1      .428   .254
+   9 SWAU0090 1900 1949     B     .448        -1      .464   .016
+  14 SWAU0140 1850 1899     B    -.027        -1      .511   .538
+  14 SWAU0140 1875 1924     B     .245        -1      .476   .232
+
+ DESCRIPTIVE STATISTICS: wa3
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SWAU0010 1920 1986     67      1      1    .579   1.41   2.18   .263   .520   .133   1.51   .139   .025   1
+   2 SWAU0020 1883 1986    104      2      0    .665   1.13   2.32   .402   .647   .197   1.52   .210   .020   1
+   3 SWAU0030 1919 1986     68      1      0    .589   1.29   2.39   .503   .888   .164   1.49   .176   .011   1
+   4 SWAU0040 1868 1986    119      3      0    .681    .88   2.19   .385   .802   .176   1.66   .192  -.001   1
+   5 SWAU0050 1856 1986    131      3      0    .570    .87   1.88   .305   .803   .170   1.50   .186  -.015   1
+   6 SWAU0060 1840 1986    147      4      3    .349    .57   1.97   .371   .899   .207   1.59   .200  -.020   3
+   7 SWAU0070 1876 1986    111      2      0    .775    .74   1.73   .338   .829   .179   1.54   .199   .048   1
+   8 SWAU0080 1837 1986    150      4      2    .326    .66   1.60   .278   .778   .217   1.84   .236   .002   3
+   9 SWAU0090 1830 1986    157      4      3    .318    .64   1.65   .440   .936   .190   3.47   .280   .036   1
+  10 SWAU0100 1877 1986    110      2      0    .673    .96   2.38   .416   .831   .175   1.48   .180   .033   1
+  11 SWAU0110 1868 1986    119      3      0    .764    .64   1.28   .194   .690   .166   1.52   .180   .050   1
+  12 SWAU0120 1879 1986    108      2      0    .810    .68   1.64   .285   .798   .168   1.50   .172  -.023   3
+  13 SWAU0130 1906 1986     81      1      0    .613   1.11   2.05   .317   .682   .149   1.74   .172   .044   1
+  14 SWAU0140 1788 1986    199      6      2    .614    .38    .96   .209   .854   .230   1.65   .233  -.006   3
+  15 SWAU0150 1881 1986    106      2      0    .788    .77   1.32   .199   .535   .190   1.55   .198   .028   1
+  16 SWAU0160 1860 1986    127      3      0    .630    .83   2.14   .377   .810   .211   1.51   .202  -.007   1
+  17 SWAUCH00 1788 1986    199      6      0    .951    .76   1.28   .207   .790   .139   1.43   .152   .005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2103     49     11    .626    .78   2.39   .313   .786   .183   3.47   .199   .011
+
+ DATA CHECKS (rwl.check): wa3
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa3.rwl
+ 17 series, 2103 measurements, 1788-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wa3.rwl, MD5 a2b3a3e122b3abcba55298dea183e5de.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

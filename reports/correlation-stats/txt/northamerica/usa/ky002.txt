@@ -1,0 +1,157 @@
+
+ COFECHA-style crossdating report: ky002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ky002.rwl
+      MD5 of measurement file: d7830d0d4713cb166166108e5fd2828f
+      Date checked           : 01OCT26
+      Beginning year         : 1648
+      Ending year            : 1966
+      Principal investigators: Estes, E.T.
+      Site name              : Mammoth Cave
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 37.1800 N
+      Longitude              : 86.1000 W
+      Elevation              : 213 m
+
+      Series intercorrelation: 0.511
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.136
+      Avg autocorrelation    : 0.709
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 26  (A 4, B 22; 4 of the B weak at every lag)
+      Pct problem segments   : 24.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ky002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 820112   1789 1966                      .47  .55  .59  .73  .65 
+   2 820122   1863 1966                                     .58  .59 
+   3 820212   1829 1966                                .60  .72  .75 
+   4 820222   1825 1966                                .64  .72  .71 
+   5 820312   1759 1966                 .61  .59  .66  .63  .54  .56 
+   6 820322   1750 1966                 .49  .56  .71  .61  .64  .70 
+   7 820412   1730 1966            .68  .49  .21A .34  .50  .42  .38 
+   8 820422   1648 1966 -.08B .02B .07B .05B-.01B-.12B-.33B .20B .59 
+   9 820512   1850 1966                                     .77  .75 
+  10 820522   1829 1966                                .44  .63  .70 
+  11 820612   1748 1966           -.03B-.04B .41  .69  .72  .77  .79 
+  12 820622   1701 1966       .30A .10B .05B .01B-.11B .01B .41  .59 
+  13 820712   1803 1966                           .67  .69  .80  .86 
+  14 820722   1820 1966                           .74  .78  .84  .83 
+  15 820812   1825 1966                                .69  .77  .82 
+  16 820822   1824 1966                                .73  .78  .81 
+  17 820912   1757 1966                 .60  .67  .74  .73  .62  .69 
+  18 820922   1706 1966       .31A .31A .59  .67  .69  .65  .76  .82 
+  19 821012   1715 1965       .15B .23B .28B .32B .17B-.03B .34  .56 
+  20 821022   1689 1966  .29B .57  .58  .48  .52  .52  .63  .71  .72 
+ Av segment correlation  .11  .27  .28  .36  .40  .48  .52  .64  .69 
+
+ FLAGGED SEGMENTS: ky002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 820412   1800 1849     A     .212         0
+   8 820422   1700 1749     B    -.076        -9      .362   .438
+   8 820422   1725 1774     B     .024         1      .429   .405
+   8 820422   1750 1799     B     .070         1      .422   .352
+   8 820422   1775 1824     B     .046         1      .464   .418
+   8 820422   1800 1849     B    -.015         1      .621   .636
+   8 820422   1825 1874     B    -.124         1      .745   .869
+   8 820422   1850 1899     B    -.329         1      .618   .947
+   8 820422   1875 1924     B     .201         1      .316   .115  weak at every lag
+  11 820612   1750 1799     B    -.029       -10      .341   .370
+  11 820612   1775 1824     B    -.041        -8      .272   .313  weak at every lag
+  12 820622   1725 1774     A     .298         0
+  12 820622   1750 1799     B     .100        -2      .207   .107  weak at every lag
+  12 820622   1775 1824     B     .051        -2      .350   .299
+  12 820622   1800 1849     B     .010        -1      .459   .450
+  12 820622   1825 1874     B    -.109        -1      .580   .690
+  12 820622   1850 1899     B     .013        -1      .566   .553
+  18 820922   1725 1774     A     .308         0
+  18 820922   1750 1799     A     .308         0
+  19 821012   1725 1774     B     .153         1      .596   .444
+  19 821012   1750 1799     B     .228         1      .656   .429
+  19 821012   1775 1824     B     .278         1      .531   .252
+  19 821012   1800 1849     B     .320         1      .508   .188
+  19 821012   1825 1874     B     .173         1      .496   .323
+  19 821012   1850 1899     B    -.030        -1      .261   .291  weak at every lag
+  20 821022   1700 1749     B     .291        -1      .482   .191
+
+ DESCRIPTIVE STATISTICS: ky002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 820112   1789 1966    178      5      0    .558    .30    .57   .087   .605   .206   1.88   .192   .077   0
+   2 820122   1863 1966    104      2      0    .579    .26    .63   .084   .577   .215   1.71   .211   .131   0
+   3 820212   1829 1966    138      3      0    .635    .52    .91   .144   .600   .194   1.46   .197  -.010   1
+   4 820222   1825 1966    142      3      0    .631    .56   1.78   .228   .781   .189   1.96   .197  -.010   1
+   5 820312   1759 1966    208      6      0    .580    .38    .71   .144   .795   .193   1.76   .183   .009   1
+   6 820322   1750 1966    217      6      0    .597    .32    .65   .142   .820   .222   1.77   .218  -.000   1
+   7 820412   1730 1966    237      7      1    .526    .48   1.01   .128   .751   .136   1.61   .141  -.002   3
+   8 820422   1648 1966    319      9      8    .048    .38    .63   .092   .673   .155   1.55   .158  -.014   3
+   9 820512   1850 1966    117      2      0    .706    .60   1.11   .211   .678   .232   1.57   .226   .027   1
+  10 820522   1829 1966    138      3      0    .568    .41    .84   .155   .674   .226   1.90   .241   .015   2
+  11 820612   1748 1966    219      7      2    .420    .27    .57   .120   .747   .244   2.06   .260  -.028   1
+  12 820622   1701 1966    266      8      6    .254    .17    .64   .097   .789   .292   2.18   .299  -.011   1
+  13 820712   1803 1966    164      4      0    .667    .51   1.37   .186   .691   .198   1.90   .207   .024   1
+  14 820722   1820 1966    147      4      0    .762    .50   1.45   .206   .746   .210   1.69   .205   .013   1
+  15 820812   1825 1966    142      3      0    .707    .36    .90   .125   .655   .215   1.93   .228   .007   2
+  16 820822   1824 1966    143      3      0    .775    .33    .86   .139   .768   .209   1.63   .219   .019   2
+  17 820912   1757 1966    210      6      0    .685    .46   1.05   .140   .638   .210   1.57   .212   .027   1
+  18 820922   1706 1966    261      8      2    .548    .33    .73   .113   .669   .240   1.78   .229  -.007   3
+  19 821012   1715 1965    251      8      6    .306    .25   1.13   .130   .691   .292   1.98   .268   .003   1
+  20 821022   1689 1966    278      9      1    .495    .32    .87   .147   .714   .255   2.09   .250   .011   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3879    106     26    .511    .37   1.78   .136   .709   .218   2.18   .218   .009
+
+ DATA CHECKS (rwl.check): ky002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ky002.rwl
+ 20 series, 3879 measurements, 1648-1966, 0.01 mm precision
+ 2 error(s), 0 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     820422: correlates best with the master at lag 1 (r = 0.39 against r = 0.193 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+     821012: correlates best with the master at lag 1 (r = 0.384 against r = 0.324 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file ky002.rwl, MD5 d7830d0d4713cb166166108e5fd2828f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: indi004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indi004.rwl
+      MD5 of measurement file: 46412df970afa82c0833eb0e03c6e508
+      Date checked           : 01OCT26
+      Beginning year         : 1643
+      Ending year            : 1981
+      Principal investigators: Hughes, M.K.
+      Site name              : Sarbal
+      Species information    : ABPI Abies pindrow (Royle ex D. Don) Royle
+      Latitude               : 34.5000 N
+      Longitude              : 75.7500 E
+      Elevation              : 3110 m
+
+      Series intercorrelation: 0.431
+      Avg mean sensitivity   : 0.156
+      Avg standard deviation : 0.404
+      Avg autocorrelation    : 0.790
+      Number dated series    : 10
+      Series crossdated      : 8
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 3, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 17.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indi004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 01170    1643 1981       .34  .36  .39  .43  .54  .50  .42  .37  .56 
+   2 01180    1753 1981                 .64  .56  .62  .66  .55  .47  .63 
+   4 01171    1743 1981            .44  .55  .37  .41  .47  .36  .48  .50 
+   5 01173    1825 1981                                .54  .20B .17B .57 
+   6 01182    1800 1981                           .30B .45  .58  .42  .55 
+   7 01172    1800 1981                           .22B .45  .39  .49  .66 
+   9 01177    1734 1901            .31B .23A .24A .32A .43                
+  10 01184    1716 1799       .46  .41                                    
+ Av segment correlation       .40  .38  .45  .40  .40  .50  .42  .40  .58 
+
+ FLAGGED SEGMENTS: indi004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 01173    1875 1924     B     .205         3      .289   .084  weak at every lag
+   5 01173    1900 1949     B     .167         3      .337   .170
+   6 01182    1825 1874     B     .302         1      .317   .016  weak at every lag
+   7 01172    1825 1874     B     .221         8      .301   .080  weak at every lag
+   9 01177    1750 1799     B     .307        -1      .379   .073
+   9 01177    1775 1824     A     .226         0
+   9 01177    1800 1849     A     .238         0
+   9 01177    1825 1874     A     .320         0
+
+ DESCRIPTIVE STATISTICS: indi004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01170    1643 1981    339      9      0    .433   1.10   2.87   .486   .878   .150   1.54   .157  -.025   3
+   2 01180    1753 1981    229      7      0    .556   1.01   2.20   .355   .842   .146   1.55   .154   .021   1
+   3 01179    1677 1981    271                         1.35   3.49   .405   .783   .156                         
+   4 01171    1743 1981    239      8      0    .396   1.44   3.46   .526   .854   .145   1.58   .157  -.012   1
+   5 01173    1825 1981    157      4      2    .441    .66   1.22   .207   .781   .164   1.38   .159  -.016   1
+   6 01182    1800 1981    182      5      1    .467   1.22   3.20   .488   .856   .157   1.55   .166  -.008   3
+   7 01172    1800 1981    182      5      1    .409   1.44   4.79   .522   .651   .181   1.73   .193   .117   1
+   8 01181    1712 1981    263                         1.19   2.40   .399   .832   .149                         
+   9 01177    1734 1901    168      5      4    .310    .61   1.08   .171   .702   .175   1.48   .170  -.004   2
+  10 01184    1716 1799     84      2      0    .368   1.53   2.22   .255   .354   .148   1.42   .139   .084   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2114     45      8    .431   1.16   4.79   .404   .790   .156   1.73   .162   .011
+
+ DATA CHECKS (rwl.check): indi004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indi004.rwl
+ 10 series, 2114 measurements, 1643-1981, 0.01 mm precision
+ 0 error(s), 2 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     01179: no measurement for 1893-1926, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     01181: no measurement for 1836-1842, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file indi004.rwl, MD5 46412df970afa82c0833eb0e03c6e508.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 01179 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 01181 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

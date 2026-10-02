@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: leba002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : leba002.rwl
+      MD5 of measurement file: 6340ab96d62cbe22aba85d168bab047f
+      Date checked           : 01OCT26
+      Beginning year         : 1722
+      Ending year            : 2001
+      Principal investigators: Touchan, R.; Hughes, M.K.
+      Site name              : Wadi Balat
+      Species information    : ABCI Abies cilicica (Ant. et Kotschy) Carr.
+      Latitude               : 34.4700 N
+      Longitude              : 36.2300 E
+      Elevation              : 1175 m
+
+      Series intercorrelation: 0.437
+      Avg mean sensitivity   : 0.253
+      Avg standard deviation : 0.827
+      Avg autocorrelation    : 0.815
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 14, B 5; 1 of the B weak at every lag)
+      Pct problem segments   : 27.54
+
+
+ CORRELATION OF SERIES BY SEGMENTS: leba002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 WABA01   1911 2001                           .31A .31A
+   2 WABA03   1895 2001                      .46  .45  .34 
+   3 WABA05   1878 2001                      .34B .33A .35 
+   4 WABA07   1875 2001                      .29A .46  .58 
+   5 WABA08   1869 2001                 .28A .47  .55  .62 
+   6 WABA09   1902 2001                           .46  .41 
+   7 WABA10   1917 2001                           .60  .42 
+   8 WABA11   1852 2001                 .63  .69  .54  .52 
+   9 WABA12   1860 1936                 .39                
+  10 WABA13A  1909 2001                           .24A .29A
+  11 WABA13B  1909 2001                           .39  .41 
+  12 WABA14A  1823 2001       .43  .49  .50  .55  .55  .65 
+  13 WABA14B  1841 2001            .33A .32A .41  .61  .68 
+  14 WABA15   1909 2001                           .48  .38 
+  15 WABA16   1747 2001  .65  .62  .34  .38  .57  .58  .53 
+  16 WABA17A  1812 2001       .49  .32A .33A .36  .27B .27A
+  17 WABA17B  1722 2001  .61  .63  .45  .33B .31B .29A .35 
+  18 WABA18   1891 2001                      .23B .41  .45 
+  19 WABA20A  1842 2001            .37  .32A .45  .57  .43 
+ Av segment correlation  .63  .54  .38  .39  .43  .45  .44 
+
+ FLAGGED SEGMENTS: leba002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 WABA01   1925 1974     A     .309         0
+   1 WABA01   1950 1999     A     .305         0
+   3 WABA05   1900 1949     B     .344         7      .448   .104
+   3 WABA05   1925 1974     A     .325         0
+   4 WABA07   1900 1949     A     .290         0
+   5 WABA08   1875 1924     A     .285         0
+  10 WABA13A  1925 1974     A     .244         0
+  10 WABA13A  1950 1999     A     .289         0
+  13 WABA14B  1850 1899     A     .326         0
+  13 WABA14B  1875 1924     A     .323         0
+  16 WABA17A  1850 1899     A     .324         0
+  16 WABA17A  1875 1924     A     .328         0
+  16 WABA17A  1925 1974     B     .272        -4      .351   .079
+  16 WABA17A  1950 1999     A     .271         0
+  17 WABA17B  1875 1924     B     .330        -7      .372   .042
+  17 WABA17B  1900 1949     B     .308        -7      .432   .124
+  17 WABA17B  1925 1974     A     .288         0
+  18 WABA18   1900 1949     B     .233        -7      .306   .073  weak at every lag
+  19 WABA20A  1875 1924     A     .321         0
+
+ DESCRIPTIVE STATISTICS: leba002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WABA01   1911 2001     91      2      2    .343   2.69   9.43  1.791   .825   .215   1.79   .240   .203   1
+   2 WABA03   1895 2001    107      3      0    .452   1.43   4.64  1.001   .817   .251   2.09   .289  -.016   2
+   3 WABA05   1878 2001    124      3      2    .366    .90   5.59   .822   .675   .370   3.45   .483  -.029   2
+   4 WABA07   1875 2001    127      3      1    .503   1.80   5.40   .920   .724   .247   2.05   .308   .040   1
+   5 WABA08   1869 2001    133      4      1    .434   1.10   6.45   .999   .824   .258   2.97   .334   .032   1
+   6 WABA09   1902 2001    100      2      0    .509    .97   6.44  1.304   .958   .264   1.69   .252   .000   3
+   7 WABA10   1917 2001     85      2      0    .543   2.59   6.64  1.314   .737   .299   1.94   .314  -.092   1
+   8 WABA11   1852 2001    150      4      0    .511   1.24   4.53   .774   .813   .253   3.12   .298   .045   1
+   9 WABA12   1860 1936     77      1      0    .388   1.68   6.25  1.605   .913   .327   2.17   .357   .028   1
+  10 WABA13A  1909 2001     93      2      2    .316   1.35   4.10   .769   .786   .236   1.90   .276  -.049   1
+  11 WABA13B  1909 2001     93      2      0    .359   1.34   3.75   .777   .829   .222   1.85   .244  -.020   3
+  12 WABA14A  1823 2001    179      6      0    .495    .86   2.12   .399   .752   .262   1.68   .248  -.035   1
+  13 WABA14B  1841 2001    161      5      2    .462   1.20   5.11   .856   .787   .270   2.14   .307  -.008   3
+  14 WABA15   1909 2001     93      2      0    .495   2.43   6.49  1.060   .557   .264   2.29   .310  -.016   1
+  15 WABA16   1747 2001    255      7      0    .467    .99   3.65   .763   .929   .188   1.60   .188   .008   1
+  16 WABA17A  1812 2001    190      6      4    .388    .88   2.72   .452   .772   .235   1.73   .248   .012   1
+  17 WABA17B  1722 2001    280      7      3    .425    .80   3.04   .603   .896   .259   1.86   .246  -.012   3
+  18 WABA18   1891 2001    111      3      1    .353   1.60   5.07  1.015   .851   .262   1.75   .276  -.007   2
+  19 WABA20A  1842 2001    160      5      1    .419    .60   1.18   .260   .850   .221   1.77   .221   .005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2609     69     19    .437   1.25   9.43   .827   .815   .253   3.45   .277   .004
+
+ DATA CHECKS (rwl.check): leba002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/leba002.rwl
+ 19 series, 2609 measurements, 1722-2001, 0.01 mm precision
+ 0 error(s), 0 warning(s), 10 note(s)
+ -------------
+ Nothing to report at this severity.
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file leba002.rwl, MD5 6340ab96d62cbe22aba85d168bab047f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

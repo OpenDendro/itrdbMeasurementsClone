@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: nam001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nam001.rwl
+      MD5 of measurement file: d753ca2c77fbeade7104e6f6151000b4
+      Date checked           : 01OCT26
+      Beginning year         : 1812
+      Ending year            : 1998
+      Principal investigators: Trouet, V.; Fichtler, E.
+      Site name              : Ondangwa
+      Species information    : BUAF Burkea africana Hook.
+      Latitude               : 17.3900 S
+      Longitude              : 15.9800 E
+      Elevation              : 1128 m
+
+      Series intercorrelation: 0.086
+      Avg mean sensitivity   : 0.546
+      Avg standard deviation : 1.155
+      Avg autocorrelation    : 0.268
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 1, B 12; 10 of the B weak at every lag)
+      Pct problem segments   : 100.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nam001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 OBA01    1812 1998 -.04B-.00B
+   3 OBA03    1887 1998 -.20B-.15B
+  10 OBA10    1924 1998      -.11B
+  11 OBA11    1885 1998 -.02B .06B
+  12 OBA12    1873 1998 -.08B-.05B
+  13 OBA13    1894 1998  .30A .14B
+  14 OBA14    1848 1998  .11B .12B
+ Av segment correlation  .01  .00 
+
+ FLAGGED SEGMENTS: nam001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 OBA01    1900 1949     B    -.037        -6      .289   .327  weak at every lag
+   1 OBA01    1925 1974     B    -.003         2      .189   .192  weak at every lag
+   3 OBA03    1900 1949     B    -.197        -2      .282   .478  weak at every lag
+   3 OBA03    1925 1974     B    -.153         1      .180   .334  weak at every lag
+  10 OBA10    1925 1974     B    -.112         6      .196   .308  weak at every lag
+  11 OBA11    1900 1949     B    -.015        -4      .417   .432
+  11 OBA11    1925 1974     B     .061        -4      .296   .234  weak at every lag
+  12 OBA12    1900 1949     B    -.076        10      .236   .312  weak at every lag
+  12 OBA12    1925 1974     B    -.046         3      .412   .458
+  13 OBA13    1900 1949     A     .295         0
+  13 OBA13    1925 1974     B     .143         1      .255   .112  weak at every lag
+  14 OBA14    1900 1949     B     .106        -4      .175   .069  weak at every lag
+  14 OBA14    1925 1974     B     .115         1      .218   .103  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nam001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OBA01    1812 1998    187      2      2   -.003   1.41   4.03   .890   .507   .442   2.16   .418   .076   0
+   2 OBA02    1963 1998     36      0      0   -.108   1.75   4.56  1.121   .183   .598   2.60   .560   .047   0
+   3 OBA03    1887 1998    112      2      2    .045   1.32   4.79   .835   .103   .517   3.12   .561   .032   0
+   4 OBA04    1937 1998     62      0      0    .255   1.56   4.26   .878   .240   .526   2.07   .491   .040   2
+   5 OBA05    1961 1998     38      0      0    .445   1.38   3.48   .824   .252   .508   2.42   .537   .177   0
+   6 OBA06    1939 1998     60      0      0    .153   1.99   5.62  1.146   .372   .480   2.08   .416   .058   2
+   7 OBA07    1972 1998     27      0      0    .442   1.92   4.90  1.069   .049   .578   2.25   .482  -.024   2
+   8 OBA08    1971 1998     28      0      0    .116   2.09   6.25  1.385   .225   .570   3.21   .639   .128   0
+   9 OBA09    1930 1998     69      0      0    .282   2.11   4.81  1.065   .036   .499   2.22   .472  -.054   0
+  10 OBA10    1924 1998     75      1      1   -.070   2.53   8.06  1.571   .107   .544   3.22   .591   .017   0
+  11 OBA11    1885 1998    114      2      2    .132   1.76   7.95  1.613   .247   .752   2.74   .593   .025   3
+  12 OBA12    1873 1998    126      2      2   -.065   1.66   6.44  1.002   .237   .582   2.72   .497  -.014   2
+  13 OBA13    1894 1998    105      2      2    .203   1.84   4.85  1.012   .151   .566   2.37   .475  -.004   2
+  14 OBA14    1848 1998    151      2      2    .090   1.87   8.23  1.636   .488   .578   3.98   .556   .010   3
+  15 OBA15    1949 1998     50      0      0   -.142   2.50   5.03  1.106   .133   .445   2.26   .404   .022   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1240     13     13    .086   1.77   8.23  1.155   .268   .546   3.98   .507   .029
+
+ DATA CHECKS (rwl.check): nam001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/nam001.rwl
+ 15 series, 1240 measurements, 1812-1998, 0.01 mm precision
+ 1 error(s), 0 warning(s), 6 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     OBA09: correlates best with the master at lag -1 (r = 0.365 against r = 0.266 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file nam001.rwl, MD5 d753ca2c77fbeade7104e6f6151000b4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

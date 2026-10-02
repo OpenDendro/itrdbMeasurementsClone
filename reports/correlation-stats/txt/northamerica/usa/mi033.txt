@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: mi033
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mi033.rwl
+      MD5 of measurement file: dc0be44822e2ed945f2c5ed21e067c5b
+      Date checked           : 01OCT26
+      Beginning year         : 1771
+      Ending year            : 2012
+      Principal investigators: Maxwell, J.T.; Matheus, T.J.; Strange, B.M.
+      Site name              : Warren Woods
+      Species information    : FAGR Fagus grandifolia Ehrh.
+      Latitude               : 41.8278 N
+      Longitude              : 86.6233 W
+      Elevation              : 191 m
+
+      Series intercorrelation: 0.552
+      Avg mean sensitivity   : 0.263
+      Avg standard deviation : 0.695
+      Avg autocorrelation    : 0.738
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 5.06
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mi033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 WWB01A   1771 2012  .53  .66  .75  .52  .52  .58  .60 
+   2 WWB01B   1771 2012  .56  .54  .70  .58  .63  .70  .66 
+   3 WWB02A   1873 2010                 .40  .37  .49  .62 
+   4 WWB02B   1868 2010                 .33  .25A .49  .69 
+   5 WWB03A   1841 1975            .26B .71  .75  .45      
+   6 WWB03B   1841 1975            .27B .64  .72  .37      
+   7 WWB04A   1822 2009       .53  .63  .75  .67  .58  .30B
+   8 WWB04B   1822 2012       .53  .64  .77  .72  .51  .41 
+   9 WWB05A   1808 2009       .48  .67  .67  .70  .72  .71 
+  10 WWB05B   1809 2010       .39  .65  .70  .75  .72  .76 
+  11 WWB06A   1892 2012                      .75  .51  .52 
+  12 WWB06B   1890 2012                      .72  .50  .56 
+  13 WWB07A   1802 2000       .70  .69  .60  .67  .65  .70 
+  14 WWB07B   1802 2000       .66  .70  .63  .69  .64  .63 
+  15 WWB08A   1857 1994                 .58  .48  .53      
+  16 WWB08B   1857 2006                 .56  .46  .48  .60 
+ Av segment correlation  .54  .56  .60  .60  .62  .56  .60 
+
+ FLAGGED SEGMENTS: mi033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 WWB02B   1900 1949     A     .250         0
+   5 WWB03A   1850 1899     B     .264         7      .287   .023  weak at every lag
+   6 WWB03B   1850 1899     B     .265         7      .335   .070
+   7 WWB04A   1950 1999     B     .297         1      .360   .063
+
+ DESCRIPTIVE STATISTICS: mi033
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WWB01A   1771 2012    242      7      0    .612    .99   2.70   .485   .670   .332   1.85   .326   .003   1
+   2 WWB01B   1771 2012    242      7      0    .655   1.03   2.69   .509   .671   .333   1.96   .330  -.007   1
+   3 WWB02A   1873 2010    138      4      0    .448   1.86   5.74  1.001   .841   .251   1.75   .253   .035   1
+   4 WWB02B   1868 2010    143      4      1    .435   1.90   7.59   .976   .688   .250   1.84   .268   .018   1
+   5 WWB03A   1841 1975    135      4      1    .493   2.18   5.73   .862   .758   .233   1.80   .238   .018   2
+   6 WWB03B   1841 1975    135      4      1    .445   2.17   5.73   .856   .742   .234   1.72   .248   .030   1
+   7 WWB04A   1822 2009    188      6      1    .440    .95   2.75   .613   .816   .331   2.07   .306  -.002   1
+   8 WWB04B   1822 2012    191      6      0    .453    .93   2.65   .610   .831   .312   2.02   .307   .009   1
+   9 WWB05A   1808 2009    202      6      0    .528   1.35   3.06   .610   .762   .240   1.69   .252   .055   1
+  10 WWB05B   1809 2010    202      6      0    .568   1.35   3.10   .606   .766   .250   2.16   .265   .032   1
+  11 WWB06A   1892 2012    121      3      0    .645   1.71   4.02   .692   .665   .257   2.02   .257   .008   2
+  12 WWB06B   1890 2012    123      3      0    .630   1.71   3.84   .719   .660   .254   1.91   .261  -.002   2
+  13 WWB07A   1802 2000    199      6      0    .631   1.51   6.59   .632   .645   .229   2.29   .238   .025   1
+  14 WWB07B   1802 2000    199      6      0    .623   1.51   3.64   .550   .740   .215   1.62   .210   .009   2
+  15 WWB08A   1857 1994    138      3      0    .569   2.31   5.50   .934   .789   .197   1.55   .218   .026   1
+  16 WWB08B   1857 2006    150      4      0    .569   2.24   5.46   .972   .803   .201   1.55   .227   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2748     79      4    .552   1.52   7.59   .695   .738   .263   2.29   .267   .017
+
+ DATA CHECKS (rwl.check): mi033
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mi033.rwl
+ 16 series, 2748 measurements, 1771-2012, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file mi033.rwl, MD5 dc0be44822e2ed945f2c5ed21e067c5b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

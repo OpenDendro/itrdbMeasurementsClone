@@ -1,0 +1,152 @@
+
+ COFECHA-style crossdating report: swit224
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit224.rwl
+      MD5 of measurement file: d165c4da3c93332a48ab8f01af7528f8
+      Date checked           : 01OCT26
+      Beginning year         : 1964
+      Ending year            : 2000
+      Principal investigators: Conedera, M.; Fonti, P.
+      Site name              : sopra Ca Gilard Copera
+      Species information    : CASA Castanea sativa Mill.
+      Latitude               : 46.1500 N
+      Longitude              : 8.9931 E
+      Elevation              : 570 m
+
+      Series intercorrelation: 0.705
+      Avg mean sensitivity   : 0.316
+      Avg standard deviation : 1.957
+      Avg autocorrelation    : 0.673
+      Number dated series    : 24
+      Segment length tested  : 18
+
+      Number problem segments: 14  (A 8, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 29.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit224
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  18-year dated segments, lagged   9 years
+ Flags:  A = correlation under   .5425 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1979 
+                        1987 1996 
+ --- -------- ---------  ---- ---- 
+   1 cod0057x 1966 2000  .72  .57 
+   2 cod0057y 1966 2000  .56B .21B
+   3 cod01661 1967 2000  .50A .57B
+   4 cod01662 1967 2000  .51A .69 
+   5 cod0232x 1964 2000  .63  .71 
+   6 cod0232y 1964 2000  .39A .59 
+   7 cod0279x 1966 2000  .79  .73 
+   8 cod0279y 1966 2000  .69  .55 
+   9 cod0289x 1966 2000  .75  .80 
+  10 cod0289y 1965 2000  .77  .44A
+  11 cod0294x 1967 2000  .56  .79 
+  12 cod0294y 1967 2000  .32B .53A
+  13 cod0352x 1965 2000  .71  .55 
+  14 cod0352y 1965 2000  .79  .81 
+  15 cod0385x 1964 2000  .76  .76 
+  16 cod0385y 1964 2000  .78  .63 
+  17 cod0396x 1965 2000  .37B .18B
+  18 cod0396y 1965 2000  .75  .64 
+  19 cod0539x 1964 2000  .58  .56 
+  20 cod0539y 1964 2000  .81  .81 
+  21 cod0607x 1964 2000  .65  .87 
+  22 cod0607y 1964 2000  .87  .80 
+  23 cod0731x 1964 2000  .45A .32A
+  24 cod0731y 1965 2000  .46A .58 
+ Av segment correlation  .63  .61 
+
+ FLAGGED SEGMENTS: swit224
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 cod0057y 1970 1987     B     .555         4      .602   .047
+   2 cod0057y 1979 1996     B     .211         2      .520   .309  weak at every lag
+   3 cod01661 1970 1987     A     .503         0
+   3 cod01661 1979 1996     B     .572        -1      .611   .040
+   4 cod01662 1970 1987     A     .506         0
+   6 cod0232y 1970 1987     A     .394         0
+  10 cod0289y 1979 1996     A     .438         0
+  12 cod0294y 1970 1987     B     .318         6      .589   .271
+  12 cod0294y 1979 1996     A     .535         0
+  17 cod0396x 1970 1987     B     .375        -5      .421   .046  weak at every lag
+  17 cod0396x 1979 1996     B     .185         4      .435   .250  weak at every lag
+  23 cod0731x 1970 1987     A     .455         0
+  23 cod0731x 1979 1996     A     .323         0
+  24 cod0731y 1970 1987     A     .460         0
+
+ DESCRIPTIVE STATISTICS: swit224
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 cod0057x 1966 2000     35      2      0    .749   5.01   8.74  2.080   .818   .220   1.33   .230   .193   1
+   2 cod0057y 1966 2000     35      2      2    .556   3.79   8.02  1.600   .688   .246   1.66   .289   .165   1
+   3 cod01661 1967 2000     34      2      2    .558   3.59   7.11  1.384   .654   .235   1.50   .252   .152   1
+   4 cod01662 1967 2000     34      2      1    .591   5.17   9.89  1.826   .580   .256   1.57   .262   .256   0
+   5 cod0232x 1964 2000     37      2      0    .899   3.53   6.80  1.815   .559   .420   3.51   .604   .162   0
+   6 cod0232y 1964 2000     37      2      1    .869   4.02   9.59  2.444   .452   .526   4.47   .741   .039   0
+   7 cod0279x 1966 2000     35      2      0    .855   4.86  10.60  2.367   .748   .292   1.54   .318   .054   1
+   8 cod0279y 1966 2000     35      2      0    .801   3.46   8.59  1.891   .746   .317   1.64   .356   .034   1
+   9 cod0289x 1966 2000     35      2      0    .733   5.14   7.79  1.630   .537   .274   1.36   .282   .202   0
+  10 cod0289y 1965 2000     36      2      1    .440   3.99   6.10  1.423   .632   .283   1.64   .278  -.100   0
+  11 cod0294x 1967 2000     34      2      0    .682   4.50   8.65  2.131   .671   .312   1.59   .311   .114   1
+  12 cod0294y 1967 2000     34      2      2    .659   3.56   6.37  1.310   .466   .294   1.48   .308   .189   0
+  13 cod0352x 1965 2000     36      2      0    .716   3.95   7.93  1.808   .764   .281   1.73   .306   .169   1
+  14 cod0352y 1965 2000     36      2      0    .728   3.78   9.12  2.329   .840   .308   1.62   .362   .043   1
+  15 cod0385x 1964 2000     37      2      0    .793   4.02  12.06  2.905   .683   .407   1.71   .418   .023   1
+  16 cod0385y 1964 2000     37      2      0    .784   3.52   7.14  1.760   .657   .343   1.68   .364   .150   1
+  17 cod0396x 1965 2000     36      2      2   -.005   4.74   8.66  2.339   .829   .253   2.82   .402   .004   0
+  18 cod0396y 1965 2000     36      2      0    .867   4.14   8.06  1.819   .769   .238   1.48   .277   .136   1
+  19 cod0539x 1964 2000     37      2      0    .788   4.03   8.45  2.184   .741   .338   1.52   .374   .323   1
+  20 cod0539y 1964 2000     37      2      0    .840   3.92   7.71  1.809   .718   .309   2.31   .424   .264   0
+  21 cod0607x 1964 2000     37      2      0    .869   4.86   8.79  1.885   .521   .301   1.84   .339   .281   1
+  22 cod0607y 1964 2000     37      2      0    .860   4.25   7.61  1.845   .619   .331   1.64   .353   .292   1
+  23 cod0731x 1964 2000     37      2      2    .837   4.27   9.96  2.363   .713   .391   2.73   .465   .084   0
+  24 cod0731y 1965 2000     36      2      1    .398   3.40   7.20  1.919   .750   .373   1.96   .404   .109   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            860     48     14    .705   4.14  12.06  1.957   .673   .316   4.47   .365   .139
+
+ DATA CHECKS (rwl.check): swit224
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit224.rwl
+ 24 series, 860 measurements, 1964-2000, 0.01 mm precision
+ 0 error(s), 0 warning(s), 26 note(s)
+ -------------
+ Nothing to report at this severity.
+ 26 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit224.rwl, MD5 d165c4da3c93332a48ab8f01af7528f8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5425 for 18-year segments.
+ Segments: 18 years, lagged 9, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 18 years: the record is only 37 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

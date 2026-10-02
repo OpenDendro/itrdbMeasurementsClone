@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: ital043
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ital043.rwl
+      MD5 of measurement file: e7ff6ad01bc295f449a77d61356acbf0
+      Date checked           : 01OCT26
+      Beginning year         : 1645
+      Ending year            : 2004
+      Principal investigators: Coppola, A.; Baroni, C.
+      Site name              : Val Presena
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.2389 N
+      Longitude              : 10.6028 E
+      Elevation              : 2160 m
+
+      Series intercorrelation: 0.574
+      Avg mean sensitivity   : 0.302
+      Avg standard deviation : 0.446
+      Avg autocorrelation    : 0.660
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 0, B 8; 3 of the B weak at every lag)
+      Pct problem segments   : 9.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ital043
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PS01UP   1820 2004                           .06B .46  .65  .73  .69  .63 
+   2 PS01DW   1817 2004                           .42  .47  .60  .67  .65  .61 
+   3 PS12SX   1829 2004                                .34  .54  .69  .67  .66 
+   4 PS12UP   1827 2004                                .04B .17B .59  .69  .70 
+   5 PS13DW   1889 2004                                          .75  .74  .71 
+   6 PS13UP   1889 2004                                          .65  .59  .67 
+   7 PS05SX   1718 2004       .41  .76  .80  .68  .34B .64  .66  .61  .61  .59 
+   8 PS05U2   1760 2004                 .72  .58  .30B .57  .65  .66  .74  .72 
+   9 PS06UP   1672 2004  .55  .62  .78  .59  .29B-.03B .47  .65  .63  .54  .51 
+  10 PS06DX   1645 2004  .71  .79  .80  .72  .49  .03B .48  .70  .76  .72  .71 
+  11 PS07UP   1880 2004                                          .63  .58  .73 
+  12 PS07DW   1880 2004                                          .66  .48  .57 
+  13 PS08DW   1870 2004                                     .68  .78  .75  .66 
+  14 PS08UP   1870 2004                                     .61  .74  .67  .70 
+ Av segment correlation  .63  .61  .78  .71  .51  .19  .44  .59  .68  .65  .65 
+
+ FLAGGED SEGMENTS: ital043
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 PS01UP   1825 1874     B     .056        -1      .351   .294
+   4 PS12UP   1850 1899     B     .040        -1      .400   .360
+   4 PS12UP   1875 1924     B     .169         1      .262   .093  weak at every lag
+   7 PS05SX   1825 1874     B     .340        -1      .441   .101
+   8 PS05U2   1825 1874     B     .295        -1      .380   .085
+   9 PS06UP   1800 1849     B     .294         2      .313   .019  weak at every lag
+   9 PS06UP   1825 1874     B    -.026         1      .425   .450
+  10 PS06DX   1825 1874     B     .032         1      .321   .289  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ital043
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PS01UP   1820 2004    185      6      1    .447    .63   3.21   .403   .756   .270   2.61   .303  -.007   2
+   2 PS01DW   1817 2004    188      6      0    .546    .67   1.57   .297   .734   .274   1.79   .272   .018   2
+   3 PS12SX   1829 2004    176      5      0    .500   1.13   3.61   .595   .710   .268   2.57   .329  -.005   3
+   4 PS12UP   1827 2004    178      5      2    .352   1.20   7.72   .947   .767   .260   2.92   .320   .006   2
+   5 PS13DW   1889 2004    116      3      0    .734   1.47   5.42   .927   .726   .331   1.98   .318   .007   1
+   6 PS13UP   1889 2004    116      3      0    .624   1.02   2.26   .380   .440   .282   2.03   .291   .011   1
+   7 PS05SX   1718 2004    287     10      1    .540    .72   2.96   .555   .836   .307   1.81   .277   .003   2
+   8 PS05U2   1760 2004    245      8      1    .617    .52   2.19   .290   .768   .284   1.70   .249  -.005   0
+   9 PS06UP   1672 2004    333     11      2    .555    .56   1.57   .244   .437   .355   2.08   .314   .061   0
+  10 PS06DX   1645 2004    360     11      1    .643    .52   1.83   .278   .582   .365   2.28   .313   .001   3
+  11 PS07UP   1880 2004    125      3      0    .684   1.27   3.71   .596   .707   .270   1.76   .260   .018   1
+  12 PS07DW   1880 2004    125      3      0    .630    .87   2.35   .394   .693   .265   1.78   .258  -.023   1
+  13 PS08DW   1870 2004    135      4      0    .667   1.15   2.80   .468   .540   .290   1.99   .281  -.000   1
+  14 PS08UP   1870 2004    135      4      0    .608    .84   2.53   .387   .589   .268   1.70   .260   .014   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2704     82      8    .574    .81   7.72   .446   .660   .302   2.92   .292   .010
+
+ DATA CHECKS (rwl.check): ital043
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ital043.rwl
+ 14 series, 2704 measurements, 1645-2004, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file ital043.rwl, MD5 e7ff6ad01bc295f449a77d61356acbf0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

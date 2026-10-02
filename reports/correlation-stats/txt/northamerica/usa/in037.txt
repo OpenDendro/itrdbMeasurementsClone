@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: in037
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in037.rwl
+      MD5 of measurement file: e035b618147714265e6e0de964600ab5
+      Date checked           : 01OCT26
+      Beginning year         : 1917
+      Ending year            : 2016
+      Principal investigators: Maxwell, J.T.; Au, T.F.; Harley, G.L.; Matheus, T.J.; Strange, B.M.; Bregy, J.C.
+      Site name              : Meltzer Woods
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 39.5051 N
+      Longitude              : 85.6691 W
+      Elevation              : 259 m
+
+      Series intercorrelation: 0.462
+      Avg mean sensitivity   : 0.365
+      Avg standard deviation : 1.257
+      Avg autocorrelation    : 0.603
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 13.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 MWS01A   1919 2016  .56 
+   2 MWS01B   1940 2016  .51 
+   3 MWS02A   1917 2016  .45 
+   4 MWS02B   1927 2016  .47 
+   6 MWS03B   1929 2016  .39 
+   7 MWS04A   1936 2016  .28A
+   8 MWS04B   1939 2016  .13B
+   9 MWS06A   1925 2016  .61 
+  10 MWS06B   1949 2011  .38 
+  14 MWS09A   1943 2016  .51 
+  16 MWS10A   1934 2016  .55 
+  17 MWS10B   1940 2016  .64 
+  18 MWS11A   1925 2015  .48 
+  19 MWS11B   1937 2015  .54 
+  20 MWS12A   1940 2015  .51 
+ Av segment correlation  .47 
+
+ FLAGGED SEGMENTS: in037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 MWS04A   1950 1999     A     .280         0
+   8 MWS04B   1950 1999     B     .127        -6      .203   .076  weak at every lag
+
+ DESCRIPTIVE STATISTICS: in037
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MWS01A   1919 2016     98      1      0    .316   2.66   7.58  1.771   .622   .490   1.79   .414   .134   1
+   2 MWS01B   1940 2016     77      1      0    .520   3.01   6.69  1.702   .525   .455   2.02   .382   .079   0
+   3 MWS02A   1917 2016    100      1      0    .356   1.83   5.51  1.188   .739   .399   2.22   .382   .010   1
+   4 MWS02B   1927 2016     90      1      0    .543   2.71   6.41  1.752   .804   .367   2.02   .336  -.001   1
+   5 MWS03A   1956 2016     61      0      0    .425   3.27   6.21  1.475   .699   .237   1.76   .259  -.023   1
+   6 MWS03B   1929 2016     88      1      0    .428   2.87   5.88  1.521   .770   .313   1.91   .306   .013   1
+   7 MWS04A   1936 2016     81      1      1    .452   2.48   4.32   .815   .560   .251   1.57   .244   .026   1
+   8 MWS04B   1939 2016     78      1      1    .246   2.67   6.60  1.194   .662   .260   1.87   .272   .001   1
+   9 MWS06A   1925 2016     92      1      0    .484   2.14   4.28   .929   .478   .400   2.07   .352   .004   2
+  10 MWS06B   1949 2011     63      1      0    .436   1.63   4.72   .803   .230   .467   2.14   .391  -.067   0
+  11 MWS07A   1954 2016     63      0      0    .488   2.52   6.24  1.051   .581   .326   1.80   .312   .020   1
+  12 MWS08A   1959 2016     58      0      0    .745   2.72   4.71   .833   .023   .358   1.68   .299  -.020   0
+  13 MWS08B   1961 2016     56      0      0    .687   2.67   4.66   .749   .101   .313   1.50   .241  -.176   3
+  14 MWS09A   1943 2016     74      1      0    .529   2.58   5.35  1.315   .763   .336   1.73   .297   .023   0
+  15 MWS09B   1954 2016     63      0      0    .529   2.91   7.34  1.400   .710   .332   1.57   .292   .010   2
+  16 MWS10A   1934 2016     83      1      0    .362   1.61   5.68  1.017   .682   .356   2.76   .378   .082   1
+  17 MWS10B   1940 2016     77      1      0    .619   2.18   7.23  1.432   .667   .443   2.04   .405  -.003   1
+  18 MWS11A   1925 2015     91      1      0    .355   2.40   5.90  1.365   .740   .361   1.78   .325   .073   0
+  19 MWS11B   1937 2015     79      1      0    .470   2.58   6.56  1.319   .670   .373   2.30   .381   .157   0
+  20 MWS12A   1940 2015     76      1      0    .481   1.86   5.08  1.058   .608   .378   2.06   .383   .021   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1548     15      2    .462   2.44   7.58  1.257   .603   .365   2.76   .337   .024
+
+ DATA CHECKS (rwl.check): in037
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in037.rwl
+ 20 series, 1548 measurements, 1917-2016, 0.001 mm precision
+ 1 error(s), 0 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     MWS01A: correlates best with the master at lag 5 (r = 0.446 against r = 0.264 as dated); the series may be misdated by 5 year(s), most likely a false ring or a ring measured twice
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file in037.rwl, MD5 e035b618147714265e6e0de964600ab5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

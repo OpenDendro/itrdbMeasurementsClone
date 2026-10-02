@@ -1,0 +1,151 @@
+
+ COFECHA-style crossdating report: wi027
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi027.rwl
+      MD5 of measurement file: f2c02fad88a6480b99fd837b4df72267
+      Date checked           : 01OCT26
+      Beginning year         : 1788
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Dry Dog Ranch
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 43.1560 N
+      Longitude              : 91.3890 W
+      Elevation              : 280 m
+
+      Series intercorrelation: 0.465
+      Avg mean sensitivity   : 0.186
+      Avg standard deviation : 0.538
+      Avg autocorrelation    : 0.740
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 5, B 9; 7 of the B weak at every lag)
+      Pct problem segments   : 14.74
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 DDR001A  1913 2014                           .51  .52 
+   2 DDR001B  1919 2014                           .53  .69 
+   3 DDR002A  1866 2014                 .52  .49  .68  .67 
+   4 DDR002B  1828 2014            .50  .56  .39  .45  .67 
+   5 DDR002C  1911 2014                           .59  .64 
+   6 DDR003A  1847 2014            .23A .53  .67  .63  .58 
+   7 DDR003B  1881 2014                      .56  .73  .68 
+   8 DDR004A  1913 2014                           .61  .38 
+   9 DDR004B  1916 2014                           .42  .50 
+  10 DDR005A  1909 2014                           .62  .72 
+  11 DDR005B  1911 2014                           .51  .54 
+  12 DDR006A  1827 2014            .46  .57  .62  .57  .49 
+  13 DDR006B  1879 2014                      .64  .61  .47 
+  14 DDR008A  1885 2014                      .33B .57  .45 
+  15 DDR008B  1903 2014                           .47  .45 
+  16 DDR009A  1838 2014            .40  .72  .68  .65  .49 
+  17 DDR009B  1856 2014                 .68  .70  .69  .65 
+  18 DDR010A  1917 2014                           .63  .59 
+  19 DDR010B  1897 2014                      .47  .45  .42 
+  20 DDR011A  1791 2000  .25B .25A .43  .27A .20A .54  .23A
+  21 DDR011B  1803 2014       .28B .42  .14B .14B .56  .55 
+  22 DDR012A  1796 2014  .56  .47  .54  .63  .47  .30B .03B
+  23 DDR012B  1788 2014  .58  .47  .51  .04B-.12B .40  .41 
+  24 DDR013A  1840 2014            .65  .63  .67  .72  .69 
+  25 DDR013B  1831 2014            .59  .70  .71  .67  .58 
+ Av segment correlation  .46  .37  .47  .50  .48  .56  .52 
+
+ FLAGGED SEGMENTS: wi027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 DDR003A  1850 1899     A     .228         0
+  14 DDR008A  1900 1949     B     .329        -2      .418   .089
+  20 DDR011A  1800 1849     B     .251         4      .281   .030  weak at every lag
+  20 DDR011A  1825 1874     A     .247         0
+  20 DDR011A  1875 1924     A     .272         0
+  20 DDR011A  1900 1949     A     .198         0
+  20 DDR011A  1950 1999     A     .233         0
+  21 DDR011B  1825 1874     B     .279         1      .300   .021  weak at every lag
+  21 DDR011B  1875 1924     B     .145         5      .370   .225
+  21 DDR011B  1900 1949     B     .137         5      .327   .190  weak at every lag
+  22 DDR012A  1925 1974     B     .304        10      .312   .008  weak at every lag
+  22 DDR012A  1950 1999     B     .031        -3      .236   .205  weak at every lag
+  23 DDR012B  1875 1924     B     .043        -7      .212   .169  weak at every lag
+  23 DDR012B  1900 1949     B    -.120        -9      .199   .319  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wi027
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DDR001A  1913 2014    102      2      0    .491   1.33   2.88   .494   .741   .187   1.62   .179  -.012   2
+   2 DDR001B  1919 2014     96      2      0    .521   1.38   3.25   .547   .752   .175   1.59   .161  -.029   3
+   3 DDR002A  1866 2014    149      4      0    .560   1.38   4.23   .599   .842   .168   1.52   .162   .034   1
+   4 DDR002B  1828 2014    187      5      0    .519    .82   2.17   .384   .817   .203   1.57   .208   .010   1
+   5 DDR002C  1911 2014    104      2      0    .548   1.35   2.44   .460   .752   .187   1.91   .179  -.013   1
+   6 DDR003A  1847 2014    168      5      1    .418   1.48   3.36   .543   .856   .156   1.69   .165   .003   1
+   7 DDR003B  1881 2014    134      3      0    .487   2.11   3.56   .553   .734   .158   1.95   .165  -.009   0
+   8 DDR004A  1913 2014    102      2      0    .420   2.58   7.11  1.578   .842   .212   1.64   .205   .139   0
+   9 DDR004B  1916 2014     99      2      0    .448   2.83   8.52  1.842   .789   .243   2.22   .253  -.021   1
+  10 DDR005A  1909 2014    106      2      0    .671   2.44   6.43   .794   .527   .211   1.46   .202   .042   1
+  11 DDR005B  1911 2014    104      2      0    .571   3.10   7.40  1.285   .760   .214   1.57   .217  -.020   1
+  12 DDR006A  1827 2014    188      5      0    .424   1.21   4.26   .691   .785   .213   2.06   .227   .025   1
+  13 DDR006B  1879 2014    136      3      0    .542    .85   1.85   .344   .844   .173   1.48   .178  -.022   1
+  14 DDR008A  1885 2014    130      3      1    .229   1.34   2.44   .400   .627   .189   2.12   .212  -.012   1
+  15 DDR008B  1903 2014    112      2      0    .316   1.14   2.43   .446   .697   .223   1.60   .223  -.017   2
+  16 DDR009A  1838 2014    177      5      0    .462   1.48   6.07   .569   .572   .191   3.00   .237  -.001   2
+  17 DDR009B  1856 2014    159      4      0    .655   1.15   2.07   .320   .586   .188   1.58   .181   .069   1
+  18 DDR010A  1917 2014     98      2      0    .533   1.16   1.67   .229   .598   .133   1.37   .115  -.111   0
+  19 DDR010B  1897 2014    118      3      0    .394    .99   2.18   .459   .906   .152   1.75   .178   .033   2
+  20 DDR011A  1791 2000    210      7      5    .282    .55   1.49   .170   .728   .176   1.72   .169  -.004   3
+  21 DDR011B  1803 2014    212      6      3    .311    .68   1.71   .197   .730   .156   1.66   .162   .030   1
+  22 DDR012A  1796 2014    219      7      2    .463    .78   1.94   .332   .799   .180   1.82   .193  -.016   3
+  23 DDR012B  1788 2014    227      7      2    .326    .90   2.63   .380   .715   .191   2.24   .241   .012   3
+  24 DDR013A  1840 2014    175      5      0    .663   1.29   2.68   .551   .829   .187   1.50   .170   .028   0
+  25 DDR013B  1831 2014    184      5      0    .581   1.17   4.03   .589   .652   .204   1.80   .186   .055   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3696     95     14    .465   1.30   8.52   .538   .740   .186   3.00   .192   .010
+
+ DATA CHECKS (rwl.check): wi027
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi027.rwl
+ 25 series, 3696 measurements, 1788-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wi027.rwl, MD5 f2c02fad88a6480b99fd837b4df72267.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

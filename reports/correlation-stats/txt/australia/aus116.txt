@@ -1,0 +1,187 @@
+
+ COFECHA-style crossdating report: aus116
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aus116.rwl
+      MD5 of measurement file: 14b3de07d6a4c51f9d333f65547606c8
+      Date checked           : 01OCT26
+      Beginning year         : 1591
+      Ending year            : 2000
+      Principal investigators: Heinrich, I.
+      Site name              : Atherton
+      Species information    : TOCI Toona ciliata
+      Latitude               : 17.2833 S
+      Longitude              : 145.5667 E
+      Elevation              : 720 m
+
+      Series intercorrelation: 0.535
+      Avg mean sensitivity   : 0.597
+      Avg standard deviation : 2.640
+      Avg autocorrelation    : 0.429
+      Number dated series    : 53
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7; 4 of the B weak at every lag)
+      Pct problem segments   : 13.85
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aus116
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 ha200    1591 1901                                               .67  .68                     
+  13 ha48a    1921 1997                                                                   .63      
+  17 ha50a    1919 1997                                                                   .65      
+  18 ha50c    1925 1997                                                                   .75      
+  19 ha51a    1918 1997                                                                   .73      
+  23 ha53a    1921 1997                                                                   .63      
+  24 ha53d    1919 1997                                                                   .51      
+  25 ha61a    1943 2000                                                                        .66 
+  26 ha61b    1943 2000                                                                        .73 
+  27 ha63a    1923 2000                                                                   .65  .58 
+  28 ha64a    1931 2000                                                                        .63 
+  29 ha64b    1938 2000                                                                        .53 
+  30 ha68a    1887 2000                                                              .52  .56  .64 
+  31 ha68c    1883 2000                                                              .48  .48  .55 
+  32 ha69z    1882 2000                                                              .60  .63  .64 
+  33 ha71z    1832 2000                                                    .16B .20B .23B .47  .54 
+  34 ha72z    1811 2000                                               .61  .51  .34  .42  .45  .33 
+  35 ha73z    1859 2000                                                         .43  .43  .48  .41 
+  36 ha74b    1887 2000                                                              .34B .39  .55 
+  37 ha77a    1948 2000                                                                        .39 
+  38 ha77b    1935 2000                                                                        .66 
+  40 ha79z    1947 2000                                                                        .62 
+  41 ha81z    1935 2000                                                                        .55 
+  42 ha82z    1920 2000                                                                   .69  .65 
+  43 ha83z    1932 2000                                                                        .47 
+  44 ha84a    1932 2000                                                                        .45 
+  45 ha84b    1932 2000                                                                        .45 
+  46 ha85z    1933 2000                                                                        .47 
+  47 ha86a    1925 2000                                                                        .30A
+  48 ha112a   1915 2000                                                                   .26B .40 
+  49 ha113a   1888 2000                                                              .54  .63  .52 
+  50 ha125a   1909 2000                                                                   .43  .40 
+  51 ha131a   1948 2000                                                                        .55 
+  52 ha131b   1932 2000                                                                        .19B
+  53 ha142a   1860 2000                                                         .22B .29A .60  .64 
+ Av segment correlation                                               .64  .45  .30  .43  .56  .52 
+
+ FLAGGED SEGMENTS: aus116
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  33 ha71z    1850 1899     B     .160         9      .401   .241
+  33 ha71z    1875 1924     B     .196        -4      .382   .186
+  33 ha71z    1900 1949     B     .228        -4      .229   .000  weak at every lag
+  36 ha74b    1900 1949     B     .342         4      .355   .014
+  47 ha86a    1950 1999     A     .304         0
+  48 ha112a   1925 1974     B     .256         3      .309   .053  weak at every lag
+  52 ha131b   1950 1999     B     .194        -8      .277   .083  weak at every lag
+  53 ha142a   1875 1924     B     .218        -9      .246   .028  weak at every lag
+  53 ha142a   1900 1949     A     .289         0
+
+ DESCRIPTIVE STATISTICS: aus116
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ha200    1591 1901    311      2      0    .605   4.98  13.52  2.591   .729   .323   2.40   .312   .010   1
+   2 ha40a    1920 1953     34      0      0    .802   3.75   9.21  2.524   .061   .693   2.43   .658   .037   0
+   3 ha40c    1920 1953     34      0      0    .679   3.04   8.89  2.073   .120   .792   2.99   .595  -.042   3
+   4 ha42a    1925 1951     27      0      0    .590   5.98  12.18  3.696  -.005   .688   2.02   .589  -.026   0
+   5 ha42c    1924 1951     28      0      0    .606   4.96  10.68  3.103   .045   .661   1.98   .598   .017   0
+   6 ha43a    1978 1997     20      0      0    .592   2.67   6.32  1.713   .167   .617   2.42   .636   .173   0
+   7 ha43c    1942 1997     56      0      0    .719   5.59  12.01  3.080  -.107   .722   1.83   .499  -.036   3
+   8 ha44c    1929 1997     69      0      0    .514   4.72  16.30  3.853   .331   .703   3.09   .688  -.025   2
+   9 ha45a    1920 1972     53      0      0    .736   3.17  10.18  2.326   .105   .689   2.37   .606  -.028   0
+  10 ha46a    1937 1997     61      0      0    .534   4.92  15.18  3.470   .198   .780   2.82   .577  -.102   0
+  11 ha46c    1931 1997     67      0      0    .327   2.86   7.67  1.785   .117   .688   2.68   .606   .080   0
+  12 ha47c    1985 1997     13      0      0    .639   1.94   5.37  1.468   .582   .638   2.67   .712   .185   0
+  13 ha48a    1921 1997     77      1      0    .665   2.82  14.92  2.429   .248   .837   4.52   .774   .117   0
+  14 ha48c    1929 1997     69      0      0    .646   3.09  10.79  2.343   .208   .752   3.28   .704   .004   0
+  15 ha49a    1964 1997     34      0      0    .794   6.58  14.30  4.237   .442   .573   1.79   .473   .036   1
+  16 ha49c    1964 1997     34      0      0    .634   7.86  20.55  5.424   .477   .668   2.13   .596  -.012   1
+  17 ha50a    1919 1997     79      1      0    .620   2.77  10.62  2.492   .549   .740   2.98   .698   .112   0
+  18 ha50c    1925 1997     73      1      0    .754   3.57  12.14  2.841   .524   .673   2.59   .596   .118   0
+  19 ha51a    1918 1997     80      1      0    .708   4.08  14.13  3.270   .300   .656   3.54   .651   .112   0
+  20 ha51c    1968 1997     30      0      0    .535   5.52  13.38  3.346   .536   .540   2.31   .567   .253   0
+  21 ha52a    1929 1997     69      0      0    .546   3.38   9.98  2.067   .288   .539   2.14   .449  -.013   3
+  22 ha52d    1929 1997     69      0      0    .678   3.57  10.39  2.245   .246   .616   2.16   .521   .053   0
+  23 ha53a    1921 1997     77      1      0    .660   3.75  12.15  2.803   .374   .634   3.05   .591  -.044   0
+  24 ha53d    1919 1997     79      1      0    .343   3.55  10.09  2.323   .230   .676   2.54   .547  -.058   3
+  25 ha61a    1943 2000     58      1      0    .617   3.13   8.04  1.805   .244   .654   2.62   .529  -.037   0
+  26 ha61b    1943 2000     58      1      0    .700   3.90  14.30  2.585   .331   .599   2.06   .524   .101   0
+  27 ha63a    1923 2000     78      2      0    .607   3.15  12.85  2.180   .063   .742   2.36   .609  -.114   0
+  28 ha64a    1931 2000     70      1      0    .517   4.04  15.93  3.886   .583   .683   3.66   .739   .013   2
+  29 ha64b    1938 2000     63      1      0    .475   2.75  11.94  2.656   .525   .624   2.71   .597   .086   0
+  30 ha68a    1887 2000    114      3      0    .560   2.58  11.21  2.081   .452   .579   2.88   .552   .090   0
+  31 ha68c    1883 2000    118      3      0    .515   2.60  10.60  2.119   .481   .558   2.56   .529   .015   1
+  32 ha69z    1882 2000    119      3      0    .561   2.70  18.63  2.912   .721   .571   2.57   .524   .050   0
+  33 ha71z    1832 2000    169      5      3    .309   2.03   7.81  1.606   .580   .473   3.10   .499   .060   0
+  34 ha72z    1811 2000    190      6      0    .407   2.52  10.03  2.238   .752   .453   2.82   .466   .002   1
+  35 ha73z    1859 2000    142      4      0    .458   2.65  11.35  2.123   .460   .557   2.97   .577   .007   1
+  36 ha74b    1887 2000    114      3      1    .454   3.64  14.57  3.018   .595   .471   2.45   .464   .027   1
+  37 ha77a    1948 2000     53      1      0    .409   4.91  15.17  4.080   .580   .563   2.42   .536   .140   0
+  38 ha77b    1935 2000     66      1      0    .505   4.70  14.72  3.317   .172   .742   2.51   .598  -.026   0
+  39 ha78z    1957 2000     44      0      0    .703   2.18  10.84  2.503   .560   .767   3.18   .611  -.006   3
+  40 ha79z    1947 2000     54      1      0    .625   2.79  13.90  2.471   .103   .778   4.10   .716  -.096   0
+  41 ha81z    1935 2000     66      1      0    .583   3.07  11.93  2.490   .520   .557   2.78   .534  -.006   3
+  42 ha82z    1920 2000     81      2      0    .706   3.99  11.75  3.131   .303   .708   3.53   .668   .002   0
+  43 ha83z    1932 2000     69      1      0    .579   3.70  11.08  2.826   .418   .699   2.40   .627  -.013   2
+  44 ha84a    1932 2000     69      1      0    .489   3.11  12.67  2.561   .266   .708   3.30   .714   .031   0
+  45 ha84b    1932 2000     69      1      0    .463   3.90  10.74  2.524   .341   .587   2.61   .516  -.105   3
+  46 ha85z    1933 2000     68      1      0    .490   2.95   9.92  2.113   .569   .498   2.25   .465   .059   0
+  47 ha86a    1925 2000     76      1      1    .379   5.17  18.02  3.790   .455   .618   2.24   .500  -.048   2
+  48 ha112a   1915 2000     86      2      1    .415   3.49  10.14  2.583   .379   .726   2.51   .614  -.002   0
+  49 ha113a   1888 2000    113      3      0    .497   3.92  14.37  2.865   .221   .660   2.96   .578   .020   0
+  50 ha125a   1909 2000     92      2      0    .370   3.33  11.11  2.257   .467   .487   2.15   .453   .003   1
+  51 ha131a   1948 2000     53      1      0    .575   3.45   8.27  2.718   .670   .518   1.92   .467   .166   0
+  52 ha131b   1932 2000     69      1      1    .301   4.75  16.12  3.410   .518   .534   2.31   .545   .021   1
+  53 ha142a   1860 2000    141      4      2    .468   3.08  10.65  2.527   .533   .534   3.03   .536   .014   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4105     65      9    .535   3.58  20.55  2.640   .429   .597   4.52   .550   .020
+
+ DATA CHECKS (rwl.check): aus116
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/aus116.rwl
+ 53 series, 4105 measurements, 1591-2000, 0.01 mm precision
+ 0 error(s), 1 warning(s), 18 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 941 carriage return(s) against 472 line feed(s); mixed endings can defeat a reader
+ 18 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file aus116.rwl, MD5 14b3de07d6a4c51f9d333f65547606c8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

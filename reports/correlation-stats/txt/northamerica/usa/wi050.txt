@@ -1,0 +1,148 @@
+
+ COFECHA-style crossdating report: wi050
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi050.rwl
+      MD5 of measurement file: 05adb0549a9097a748492e5bb94951ee
+      Date checked           : 01OCT26
+      Beginning year         : 1767
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Kelly
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.8250 N
+      Longitude              : 90.8300 W
+      Elevation              : 380 m
+
+      Series intercorrelation: 0.425
+      Avg mean sensitivity   : 0.193
+      Avg standard deviation : 0.634
+      Avg autocorrelation    : 0.740
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 25  (A 5, B 20; 13 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 RSK001A  1872 2014                 .40  .61  .57  .61 
+   2 RSK001B  1869 2014                 .61  .63  .64  .65 
+   3 RSK002A  1935 2013                                .72 
+   4 RSK002B  1925 2014                                .62 
+   5 RSK003A  1859 2014                 .56  .55  .55  .67 
+   6 RSK003B  1883 2014                      .62  .61  .69 
+   7 RSK004A  1924 2013                           .44  .27B
+   8 RSK005A  1798 2014       .41  .24A .11B .25B .31B .22B
+   9 RSK005B  1792 2014  .14B .36  .23A .28B .27B .07B .09B
+  10 RSK006A  1893 2014                      .19A .43  .75 
+  11 RSK007A  1776 2014  .07B .32A .49  .60  .61  .57  .61 
+  12 RSK007B  1767 2014  .29A .53  .22B .29B .62  .59  .61 
+  13 RSK008A  1884 2014                      .75  .63  .60 
+  14 RSK008B  1868 2014                 .65  .71  .59  .55 
+  15 RSK009A  1835 2014            .23B .52  .54  .65  .60 
+  16 RSK009B  1862 2014                 .49  .51  .60  .65 
+  17 RSK010A  1874 2014                 .61  .73  .61  .48 
+  18 RSK010B  1801 2014       .08B-.00B-.07B-.17B-.16B .00B
+ Av segment correlation  .17  .34  .24  .42  .49  .48  .52 
+
+ FLAGGED SEGMENTS: wi050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 RSK004A  1950 1999     B     .267         3      .318   .051  weak at every lag
+   8 RSK005A  1850 1899     A     .244         0
+   8 RSK005A  1875 1924     B     .105        -4      .342   .236
+   8 RSK005A  1900 1949     B     .253        -5      .330   .077
+   8 RSK005A  1925 1974     B     .309         9      .320   .012  weak at every lag
+   8 RSK005A  1950 1999     B     .221         9      .280   .059  weak at every lag
+   9 RSK005B  1800 1849     B     .138         1      .205   .067  weak at every lag
+   9 RSK005B  1850 1899     A     .235         0
+   9 RSK005B  1875 1924     B     .276        -3      .303   .027  weak at every lag
+   9 RSK005B  1900 1949     B     .270         9      .368   .097
+   9 RSK005B  1925 1974     B     .067         4      .178   .110  weak at every lag
+   9 RSK005B  1950 1999     B     .091         7      .228   .137  weak at every lag
+  10 RSK006A  1900 1949     A     .189         0
+  11 RSK007A  1800 1849     B     .073        -9      .309   .236  weak at every lag
+  11 RSK007A  1825 1874     A     .318         0
+  12 RSK007B  1800 1849     A     .291         0
+  12 RSK007B  1850 1899     B     .224         9      .293   .070  weak at every lag
+  12 RSK007B  1875 1924     B     .288         9      .295   .007  weak at every lag
+  15 RSK009A  1850 1899     B     .226         1      .292   .066  weak at every lag
+  18 RSK010B  1825 1874     B     .079         2      .270   .191  weak at every lag
+  18 RSK010B  1850 1899     B    -.000         1      .284   .284  weak at every lag
+  18 RSK010B  1875 1924     B    -.065        -7      .352   .418
+  18 RSK010B  1900 1949     B    -.169         1      .440   .609
+  18 RSK010B  1925 1974     B    -.164         1      .585   .749
+  18 RSK010B  1950 1999     B     .003        -9      .368   .365
+
+ DESCRIPTIVE STATISTICS: wi050
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RSK001A  1872 2014    143      4      0    .496   1.27   3.51   .538   .663   .245   1.96   .252  -.004   1
+   2 RSK001B  1869 2014    146      4      0    .610   1.41   3.98   .598   .692   .235   1.59   .231   .005   1
+   3 RSK002A  1935 2013     79      1      0    .674   2.78   5.00   .792   .439   .235   1.61   .213   .077   0
+   4 RSK002B  1925 2014     90      1      0    .627   2.64   5.06   .930   .580   .255   1.78   .253  -.013   1
+   5 RSK003A  1859 2014    156      4      0    .560   1.59   3.92   .734   .678   .253   2.06   .277   .009   1
+   6 RSK003B  1883 2014    132      3      0    .675   1.54   3.90   .771   .809   .205   1.59   .221  -.018   2
+   7 RSK004A  1924 2013     90      2      1    .401   3.83   9.38  1.761   .792   .197   1.52   .191   .005   1
+   8 RSK005A  1798 2014    217      6      5    .237    .93   2.14   .238   .653   .136   2.06   .152   .024   3
+   9 RSK005B  1792 2014    223      7      6    .186    .86   2.20   .214   .536   .156   2.28   .181   .007   1
+  10 RSK006A  1893 2014    122      3      1    .425   1.51   4.49   .703   .712   .252   1.67   .251  -.000   2
+  11 RSK007A  1776 2014    239      7      2    .413   1.17   5.27   .645   .921   .147   1.49   .156  -.008   1
+  12 RSK007B  1767 2014    248      7      3    .400    .98   2.69   .287   .691   .167   2.09   .171   .006   1
+  13 RSK008A  1884 2014    131      3      0    .702   2.20   7.44  1.051   .768   .213   1.81   .220   .001   1
+  14 RSK008B  1868 2014    147      4      0    .526   1.58   4.59   .641   .655   .192   2.16   .218  -.069   2
+  15 RSK009A  1835 2014    180      5      1    .309   1.10   4.87   .768   .873   .210   1.99   .241  -.047   1
+  16 RSK009B  1862 2014    153      4      0    .552   1.13   3.79   .644   .814   .214   1.95   .238   .012   1
+  17 RSK010A  1874 2014    141      4      0    .607   1.57   5.57   .791   .880   .161   1.73   .169  -.032   1
+  18 RSK010B  1801 2014    214      6      6   -.043   1.00   2.88   .620   .937   .164   1.64   .179  -.021   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2851     75     25    .425   1.43   9.38   .634   .740   .193   2.28   .205  -.005
+
+ DATA CHECKS (rwl.check): wi050
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi050.rwl
+ 18 series, 2851 measurements, 1767-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file wi050.rwl, MD5 05adb0549a9097a748492e5bb94951ee.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

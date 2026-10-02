@@ -1,0 +1,161 @@
+
+ COFECHA-style crossdating report: ga023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ga023.rwl
+      MD5 of measurement file: 51ae98a88ee514baf9324a4e62d659de
+      Date checked           : 01OCT26
+      Beginning year         : 1947
+      Ending year            : 2011
+      Principal investigators: Walker, D.M.; Copenheaver, C.A.
+      Site name              : Georgia-HWA
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 34.8833 N
+      Longitude              : 84.6500 W
+      Elevation              : 600 m
+
+      Series intercorrelation: 0.469
+      Avg mean sensitivity   : 0.203
+      Avg standard deviation : 1.026
+      Avg autocorrelation    : 0.683
+      Number dated series    : 40
+      Segment length tested  : 32
+
+      Number problem segments: 6  (A 2, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 21.43
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ga023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1966 
+                        1981 1997 
+ --- -------- ---------  ---- ---- 
+   4 GA02D    1963 2011       .57 
+   5 GA03A    1948 2011  .42  .40B
+   6 GA04A    1949 2011  .37A .18B
+   7 GA04D    1947 2011  .57  .45 
+   8 GA05A    1960 2011       .45 
+  11 GA06B    1965 2011       .50 
+  14 GA09A    1960 2011       .48 
+  15 GA09B    1960 2011       .75 
+  16 GA10A    1962 2011       .59 
+  17 GA10B    1958 2011       .56 
+  18 GA12A    1960 2011       .61 
+  19 GA12B    1960 2011       .58 
+  20 GA13A    1953 2011       .35B
+  21 GA13B    1957 2011       .74 
+  22 GA14A    1959 2011       .58 
+  23 GA14B    1960 2011       .55 
+  24 GA15A    1960 2011       .42 
+  25 GA15B    1960 2011       .55 
+  27 GA16B    1960 2011       .65 
+  29 GA17B    1962 2011       .47 
+  31 GA18B    1963 2011       .59 
+  32 GA19B    1963 2011       .39A
+  33 GA20A    1957 2011       .56 
+  39 GA23A    1961 2011       .45B
+  40 GA23B    1964 2011       .45 
+ Av segment correlation  .46  .52 
+
+ FLAGGED SEGMENTS: ga023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 GA03A    1966 1997     B     .399         8      .402   .003  weak at every lag
+   6 GA04A    1950 1981     A     .374         0
+   6 GA04A    1966 1997     B     .176        10      .258   .082  weak at every lag
+  20 GA13A    1966 1997     B     .353        -8      .512   .159
+  32 GA19B    1966 1997     A     .391         0
+  39 GA23A    1966 1997     B     .448         8      .458   .009
+
+ DESCRIPTIVE STATISTICS: ga023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GA01A    1967 2011     45      0      0    .348   2.48   4.65   .657   .527   .175   1.56   .191   .013   1
+   2 GA01B    1966 2011     46      0      0    .468   2.19   3.88   .651   .665   .176   1.56   .201   .146   1
+   3 GA02B    1980 2011     32      0      0    .523   5.84  10.80  1.795   .676   .192   1.63   .215  -.077   1
+   4 GA02D    1963 2011     49      1      0    .562   5.73   8.29  1.443   .627   .191   1.38   .178  -.064   1
+   5 GA03A    1948 2011     64      2      1    .419   3.82   6.98  1.288   .644   .230   1.60   .229  -.050   2
+   6 GA04A    1949 2011     63      2      2    .346   2.93   6.14  1.090   .605   .246   1.82   .237  -.043   0
+   7 GA04D    1947 2011     65      2      0    .545   2.72   4.16   .637   .401   .203   1.59   .207   .037   1
+   8 GA05A    1960 2011     52      1      0    .351   3.79   7.07  1.581   .785   .214   1.51   .225   .043   1
+   9 GA05B    1968 2011     44      0      0    .297   4.01   7.80  1.416   .770   .186   1.53   .205  -.001   1
+  10 GA06A    1970 2011     42      0      0    .265   2.30   4.63  1.139   .839   .237   1.85   .294   .269   1
+  11 GA06B    1965 2011     47      1      0    .489   3.04   5.07   .821   .656   .170   1.37   .168   .057   1
+  12 GA07A    1969 2011     43      0      0    .536   2.48   4.66   .821   .689   .192   1.68   .213   .055   1
+  13 GA07B    1971 2011     41      0      0    .564   1.97   3.83   .939   .869   .202   1.55   .215  -.042   1
+  14 GA09A    1960 2011     52      1      0    .441   2.13   3.67   .635   .654   .193   1.42   .192  -.029   1
+  15 GA09B    1960 2011     52      1      0    .628   2.25   4.47   .587   .503   .188   1.58   .195   .025   1
+  16 GA10A    1962 2011     50      1      0    .458   3.01   5.14  1.062   .739   .196   1.55   .211   .045   3
+  17 GA10B    1958 2011     54      1      0    .590   2.76   5.53  1.119   .790   .203   1.66   .226   .000   1
+  18 GA12A    1960 2011     52      1      0    .486   1.27   3.31   .539   .481   .260   2.31   .336   .189   0
+  19 GA12B    1960 2011     52      1      0    .541   2.36   4.58   .787   .501   .245   1.65   .247   .092   0
+  20 GA13A    1953 2011     59      1      1    .494   2.47   4.62   .940   .680   .260   1.60   .269   .044   1
+  21 GA13B    1957 2011     55      1      0    .713   2.92   5.62  1.048   .680   .220   1.66   .244   .031   1
+  22 GA14A    1959 2011     53      1      0    .501   3.25   6.45  1.227   .735   .209   1.67   .240  -.008   1
+  23 GA14B    1960 2011     52      1      0    .446   2.06   4.57   .933   .789   .213   2.02   .264   .011   1
+  24 GA15A    1960 2011     52      1      0    .396   2.20   4.44   .647   .735   .158   1.44   .154   .184   0
+  25 GA15B    1960 2011     52      1      0    .577   2.26   3.64   .513   .547   .172   1.39   .171   .023   1
+  26 GA16A    1974 2011     38      0      0    .624   3.39   6.44  1.181   .856   .159   1.35   .166   .030   1
+  27 GA16B    1960 2011     52      1      0    .602   3.42   5.81   .878   .443   .194   1.57   .206   .036   1
+  28 GA17A2   1967 2011     45      0      0    .537   3.13   4.78   .771   .610   .187   1.38   .184   .118   1
+  29 GA17B    1962 2011     50      1      0    .450   2.95   5.53   .919   .744   .168   1.47   .197   .107   1
+  30 GA18A    1967 2011     45      0      0    .492   2.66   3.91   .535   .556   .151   1.35   .147   .054   1
+  31 GA18B    1963 2011     49      1      0    .546   3.18   5.51   .814   .629   .176   1.42   .177   .067   1
+  32 GA19B    1963 2011     49      1      1    .396   3.73   7.39  1.618   .774   .239   1.64   .242   .134   0
+  33 GA20A    1957 2011     55      1      0    .436   2.29   4.68  1.118   .820   .211   1.77   .239   .003   1
+  34 GA20C    1969 2011     43      0      0    .306   2.40   4.18   .924   .848   .195   1.29   .193   .107   1
+  35 GA21A    1966 2011     46      0      0    .101   3.30   7.57  1.450   .857   .210   1.44   .191  -.078   3
+  36 GA21B    1966 2011     46      0      0    .391   3.49   6.24  1.081   .823   .144   1.36   .139  -.038   3
+  37 GA22A    1967 2011     45      0      0    .502   3.93   7.89  2.075   .835   .246   1.96   .317  -.005   1
+  38 GA22B    1967 2011     45      0      0    .339   3.70   7.40  1.636   .848   .225   1.45   .212  -.017   3
+  39 GA23A    1961 2011     51      1      1    .478   3.22   5.85  1.002   .621   .209   1.56   .199  -.032   1
+  40 GA23B    1964 2011     48      1      0    .513   2.94   5.30  1.214   .743   .218   1.85   .247   .023   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1975     28      6    .469   2.97  10.80  1.026   .683   .203   2.31   .216   .036
+
+ DATA CHECKS (rwl.check): ga023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ga023.rwl
+ 40 series, 1975 measurements, 1947-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 21 note(s)
+ -------------
+ Nothing to report at this severity.
+ 21 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ga023.rwl, MD5 51ae98a88ee514baf9324a4e62d659de.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 65 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

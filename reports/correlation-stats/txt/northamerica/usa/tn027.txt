@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: tn027
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tn027.rwl
+      MD5 of measurement file: f6f69714ebccb64313a0fd5ac13f116f
+      Date checked           : 01OCT26
+      Beginning year         : 1698
+      Ending year            : 1997
+      Principal investigators: Stahle, D.W.; Therrell, M.D.
+      Site name              : Porter's Creek
+      Species information    : LITU Liriodendron tulipifera L.
+      Latitude               : 35.6700 N
+      Longitude              : 82.3800 W
+      Elevation              : 1005 m
+
+      Series intercorrelation: 0.630
+      Avg mean sensitivity   : 0.286
+      Avg standard deviation : 0.783
+      Avg autocorrelation    : 0.623
+      Number dated series    : 23
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tn027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 POR21A   1894 1997                                          .62  .56 
+   2 POR21B   1897 1997                                          .65  .55 
+   3 POR22A   1761 1997                 .77  .79  .70  .74  .64  .51  .44 
+   4 POR22B   1725 1997            .39  .49  .49  .33A .39  .45  .39  .48 
+   5 POR23A   1787 1997                      .49  .62  .61  .64  .59  .46 
+   6 POR23B   1806 1997                           .66  .73  .75  .78  .64 
+   7 POR24A   1838 1997                                .71  .81  .76  .70 
+   8 POR24B   1867 1997                                     .74  .79  .71 
+   9 POR25A   1844 1997                                .65  .73  .78  .73 
+  10 POR25B   1873 1997                                          .82  .73 
+  11 POR26B   1838 1997                                .77  .76  .74  .72 
+  12 POR27A   1809 1997                           .50  .49  .65  .69  .55 
+  13 POR27B   1802 1997                           .67  .60  .64  .76  .62 
+  14 POR29B   1850 1997                                     .72  .71  .74 
+  15 POR30A   1835 1997                                .81  .83  .71  .60 
+  16 POR41A   1846 1997                                .66  .70  .61  .51 
+  17 POR41B   1879 1997                                          .78  .73 
+  18 POR44A   1834 1997                                .52  .49  .65  .64 
+  19 POR44B   1868 1997                                     .66  .63  .49 
+  20 POR46A   1879 1997                                          .31B .49 
+  21 POR46B   1899 1997                                               .65 
+  22 POR47A   1778 1997                      .78  .79  .80  .79  .74  .63 
+  23 POR47B   1698 1997            .66  .80  .79  .80  .78  .72  .67  .48 
+ Av segment correlation            .53  .69  .67  .63  .66  .69  .67  .60 
+
+ FLAGGED SEGMENTS: tn027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 POR22B   1825 1874     A     .328         0
+  20 POR46A   1900 1949     B     .310        10      .314   .003  weak at every lag
+
+ DESCRIPTIVE STATISTICS: tn027
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 POR21A   1894 1997    104      2      0    .659   1.04   2.61   .526   .728   .289   1.90   .283   .002   3
+   2 POR21B   1897 1997    101      2      0    .721   1.47   3.14   .674   .608   .299   2.24   .326   .045   1
+   3 POR22A   1761 1997    237      7      0    .648   1.29   3.10   .484   .621   .256   1.70   .252   .005   1
+   4 POR22B   1725 1997    273      8      1    .419   1.14   2.66   .403   .631   .226   1.85   .224  -.005   3
+   5 POR23A   1787 1997    211      6      0    .519   1.35   5.71   .882   .786   .310   2.06   .321  -.019   3
+   6 POR23B   1806 1997    192      5      0    .702   1.06   2.71   .508   .466   .370   2.45   .377   .023   1
+   7 POR24A   1838 1997    160      4      0    .664   2.17   4.14   .739   .477   .257   1.96   .249   .005   1
+   8 POR24B   1867 1997    131      3      0    .732   2.75   4.89   .916   .679   .220   1.69   .217  -.010   2
+   9 POR25A   1844 1997    154      4      0    .671   2.33   5.96   .968   .603   .316   1.61   .251   .012   3
+  10 POR25B   1873 1997    125      2      0    .726   2.88   6.46   .997   .500   .285   1.58   .229  -.011   3
+  11 POR26B   1838 1997    160      4      0    .753   1.21   2.46   .500   .373   .381   2.10   .337   .016   0
+  12 POR27A   1809 1997    189      5      0    .546   1.74   4.20   .737   .579   .288   1.81   .287   .017   2
+  13 POR27B   1802 1997    196      5      0    .632   1.79   5.42   .931   .730   .264   1.78   .292  -.005   3
+  14 POR29B   1850 1997    148      3      0    .693   2.68   6.74  1.217   .682   .288   1.87   .285   .001   3
+  15 POR30A   1835 1997    163      4      0    .718   1.96   4.42   .733   .563   .272   1.70   .255  -.002   3
+  16 POR41A   1846 1997    152      4      0    .611   2.39   8.09  1.335   .636   .329   2.78   .365  -.008   3
+  17 POR41B   1879 1997    119      2      0    .612   2.75   7.44  1.466   .757   .324   2.21   .318   .012   3
+  18 POR44A   1834 1997    164      4      0    .581   1.28   3.47   .595   .631   .306   1.80   .296  -.019   1
+  19 POR44B   1868 1997    130      3      0    .620   1.66   4.48   .805   .693   .287   1.93   .287   .041   1
+  20 POR46A   1879 1997    119      2      1    .404   2.70   6.44  1.018   .612   .242   2.06   .260  -.009   1
+  21 POR46B   1899 1997     99      1      0    .606   3.20   9.68  1.796   .845   .253   1.93   .275  -.022   3
+  22 POR47A   1778 1997    220      6      0    .718   1.18   3.30   .514   .615   .263   2.07   .293  -.014   1
+  23 POR47B   1698 1997    300      8      0    .658   1.24   3.95   .593   .624   .278   2.64   .315  -.007   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3847     94      2    .630   1.76   9.68   .783   .623   .286   2.78   .287   .001
+
+ DATA CHECKS (rwl.check): tn027
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/tn027.rwl
+ 23 series, 3847 measurements, 1698-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file tn027.rwl, MD5 f6f69714ebccb64313a0fd5ac13f116f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

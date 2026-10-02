@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: ia002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ia002.rwl
+      MD5 of measurement file: d8e7b4d9b40c4a04b99724b91180fd19
+      Date checked           : 01OCT26
+      Beginning year         : 1672
+      Ending year            : 1982
+      Principal investigators: Duvick, D.N.
+      Site name              : Nine Eagles State Park
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 40.6200 N
+      Longitude              : 93.7500 W
+      Elevation              : 315 m
+
+      Series intercorrelation: 0.625
+      Avg mean sensitivity   : 0.239
+      Avg standard deviation : 0.882
+      Avg autocorrelation    : 0.757
+      Number dated series    : 27
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 4, B 1)
+      Pct problem segments   : 5.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ia002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 NEG01A   1672 1982  .64  .74  .70  .58  .59  .50  .38  .39  .40  .34 
+   2 NEG01B   1697 1982  .77  .74  .66  .37  .49  .66  .57  .60  .69  .71 
+   3 NEG01C   1688 1982  .68  .76  .76  .62  .64  .54  .27A .36  .58  .67 
+   4 NEG02A   1801 1982                           .33A .39  .56  .67  .85 
+   5 NEG02B   1779 1982                      .62  .40  .31A .52  .61  .78 
+   6 NEG03A   1884 1982                                          .79  .80 
+   7 NEG03B   1899 1982                                          .80  .67 
+   8 NEG04A   1888 1982                                          .68  .77 
+   9 NEG04B   1888 1982                                          .71  .68 
+  10 NEG05A   1831 1982                                .28A .43  .58  .54 
+  11 NEG05B   1886 1982                                          .54  .45 
+  12 NEG06A   1890 1982                                          .64  .71 
+  13 NEG06B   1906 1982                                               .63 
+  14 NEG07A   1910 1982                                               .79 
+  15 NEG07B   1900 1982                                          .81  .87 
+  16 NEG08A   1867 1982                                     .50  .56  .77 
+  17 NEG08B   1859 1982                                     .56  .68  .78 
+  18 NEG09A   1864 1982                                     .42  .51  .61 
+  19 NEG09B   1904 1982                                               .78 
+  20 NEG10A   1870 1982                                     .51  .67  .78 
+  21 NEG10B   1858 1982                                     .59  .64  .76 
+  22 NEG11A   1860 1982                                     .77  .81  .77 
+  23 NEG11B   1867 1982                                     .62  .70  .70 
+  24 NEG12A   1886 1982                                          .68  .73 
+  25 NEG12B   1862 1982                                     .73  .74  .74 
+  26 NEG14A   1881 1982                                          .74  .65 
+  27 NEG14B   1841 1982                                .35B .64  .76  .72 
+ Av segment correlation  .70  .75  .71  .53  .58  .48  .37  .55  .67  .71 
+
+ FLAGGED SEGMENTS: ia002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 NEG01C   1850 1899     A     .273         0
+   4 NEG02A   1825 1874     A     .327         0
+   5 NEG02B   1850 1899     A     .312         0
+  10 NEG05A   1850 1899     A     .284         0
+  27 NEG14B   1850 1899     B     .353        10      .355   .003
+
+ DESCRIPTIVE STATISTICS: ia002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NEG01A   1672 1982    311     10      0    .545    .86   2.78   .548   .889   .235   1.87   .229   .010   3
+   2 NEG01B   1697 1982    286     10      0    .644   1.05   4.39   .645   .850   .224   1.93   .224   .004   2
+   3 NEG01C   1688 1982    295     10      1    .599   1.05   3.65   .565   .844   .229   2.10   .233   .021   2
+   4 NEG02A   1801 1982    182      5      1    .541   1.36   3.41   .964   .936   .206   1.76   .213   .018   1
+   5 NEG02B   1779 1982    204      6      1    .496   1.63   4.88  1.026   .912   .213   1.90   .219  -.015   1
+   6 NEG03A   1884 1982     99      2      0    .714   2.55   7.03  1.286   .722   .272   1.62   .238   .071   0
+   7 NEG03B   1899 1982     84      2      0    .735   2.63   6.84  1.279   .767   .233   1.56   .232   .023   1
+   8 NEG04A   1888 1982     95      2      0    .696   3.36   9.61  1.806   .814   .219   1.48   .193  -.028   3
+   9 NEG04B   1888 1982     95      2      0    .702   3.29   8.54  1.740   .821   .221   1.58   .199  -.030   3
+  10 NEG05A   1831 1982    152      4      1    .434   2.28   8.76  1.671   .862   .204   1.63   .216   .018   1
+  11 NEG05B   1886 1982     97      2      0    .467   3.32  11.40  2.763   .820   .220   1.62   .199  -.035   3
+  12 NEG06A   1890 1982     93      2      0    .687   2.32   6.87  1.189   .711   .262   1.60   .236   .072   0
+  13 NEG06B   1906 1982     77      1      0    .674   1.66   4.15   .794   .747   .204   1.58   .205   .156   0
+  14 NEG07A   1910 1982     73      1      0    .742   2.65   6.26  1.044   .547   .277   1.58   .238   .067   0
+  15 NEG07B   1900 1982     83      2      0    .796   2.73   5.39   .957   .616   .245   1.49   .225   .065   0
+  16 NEG08A   1867 1982    116      3      0    .625   1.39   2.68   .473   .567   .235   1.55   .224   .098   0
+  17 NEG08B   1859 1982    124      3      0    .608   1.49   3.06   .588   .765   .208   1.60   .208  -.025   1
+  18 NEG09A   1864 1982    119      3      0    .539   1.23   3.46   .586   .786   .222   1.61   .221   .023   2
+  19 NEG09B   1904 1982     79      1      0    .748   1.57   2.71   .619   .842   .174   1.41   .172  -.032   1
+  20 NEG10A   1870 1982    113      3      0    .655   1.77   3.19   .617   .621   .264   1.44   .245   .009   3
+  21 NEG10B   1858 1982    125      3      0    .697   1.38   2.87   .488   .591   .264   1.81   .245  -.026   3
+  22 NEG11A   1860 1982    123      3      0    .725   1.18   2.64   .449   .529   .304   1.89   .283   .003   3
+  23 NEG11B   1867 1982    116      3      0    .645   1.21   3.33   .561   .657   .307   1.88   .286   .034   3
+  24 NEG12A   1886 1982     97      2      0    .721   1.40   3.83   .470   .505   .256   1.88   .253   .035   3
+  25 NEG12B   1862 1982    121      3      0    .747   1.52   3.03   .500   .508   .255   1.61   .237   .004   3
+  26 NEG14A   1881 1982    102      2      0    .697   2.20   5.48   .927   .696   .279   1.63   .255  -.034   1
+  27 NEG14B   1841 1982    142      4      1    .565   2.14   5.44  1.065   .704   .296   1.80   .286   .020   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3603     94      5    .625   1.70  11.40   .882   .757   .239   2.10   .231   .015
+
+ DATA CHECKS (rwl.check): ia002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ia002.rwl
+ 27 series, 3603 measurements, 1672-1982, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file ia002.rwl, MD5 d8e7b4d9b40c4a04b99724b91180fd19.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

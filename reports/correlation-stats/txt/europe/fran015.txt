@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: fran015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fran015.rwl
+      MD5 of measurement file: ec1d0801b7a332d53dd4a3e8e32a20ad
+      Date checked           : 01OCT26
+      Beginning year         : 1771
+      Ending year            : 1975
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Col D'Allos
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 44.2700 N
+      Longitude              : 6.5700 E
+      Elevation              : 1900 m
+
+      Series intercorrelation: 0.628
+      Avg mean sensitivity   : 0.155
+      Avg standard deviation : 0.521
+      Avg autocorrelation    : 0.879
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fran015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 256010   1823 1975       .77  .71  .65  .68  .68 
+   2 256020   1772 1975  .52  .74  .63  .51  .69  .76 
+   3 256040   1845 1975            .60  .72  .40  .42 
+   4 256080   1828 1975            .77  .78  .63  .56 
+   5 256130   1819 1975       .69  .62  .49  .55  .52 
+   6 256170   1889 1975                      .40  .58 
+   7 256190   1771 1975  .68  .70  .60  .65  .77  .78 
+   8 256200   1799 1975  .63  .71  .72  .71  .63  .60 
+   9 256240   1831 1975            .55  .71  .74  .71 
+  10 256250   1846 1975            .83  .80  .70  .69 
+  11 256270   1827 1975            .75  .66  .69  .66 
+ Av segment correlation  .61  .72  .68  .67  .63  .63 
+
+ FLAGGED SEGMENTS: fran015
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: fran015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 256010   1823 1975    153      5      0    .697   1.30   2.94   .474   .875   .149   1.42   .154  -.020   2
+   2 256020   1772 1975    204      6      0    .535   1.09   2.58   .318   .775   .155   1.61   .153   .014   2
+   3 256040   1845 1975    131      4      0    .542   1.22   3.01   .773   .955   .156   1.47   .148   .023   2
+   4 256080   1828 1975    148      4      0    .717   1.18   2.46   .649   .935   .157   1.49   .163  -.058   3
+   5 256130   1819 1975    157      5      0    .575   1.13   2.96   .783   .963   .146   1.49   .145   .002   2
+   6 256170   1889 1975     87      2      0    .435   1.21   2.99   .788   .950   .140   1.50   .171   .026   1
+   7 256190   1771 1975    205      6      0    .569   1.02   2.03   .452   .923   .146   1.56   .147   .006   2
+   8 256200   1799 1975    177      6      0    .652    .97   1.95   .386   .918   .135   1.33   .128  -.001   1
+   9 256240   1831 1975    145      4      0    .683   1.26   2.73   .559   .805   .224   1.71   .218  -.002   2
+  10 256250   1846 1975    130      4      0    .777   1.31   2.42   .329   .746   .128   1.42   .135   .064   2
+  11 256270   1827 1975    149      4      0    .714   1.25   2.56   .454   .852   .166   1.50   .166  -.003   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1686     50      0    .628   1.16   3.01   .521   .879   .155   1.71   .156   .003
+
+ DATA CHECKS (rwl.check): fran015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fran015.rwl
+ 11 series, 1686 measurements, 1771-1975, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file fran015.rwl, MD5 ec1d0801b7a332d53dd4a3e8e32a20ad.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

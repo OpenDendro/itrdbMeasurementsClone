@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: rus391
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus391.rwl
+      MD5 of measurement file: aef8029728ac54eedf5262b2fd4440b5
+      Date checked           : 01OCT26
+      Beginning year         : 1432
+      Ending year            : 1617
+      Principal investigators: Kolchin, B.A.; Chernykh, N.B.; Karpukhin, A.A.; Matskovsky, V.V.; Solovyeva, L.N.
+      Site name              : Church of Peter and Paul from the village of Lychny Island
+      Species information    : PISP Pinus spp. L.
+      Latitude               : 62.4929 N
+      Longitude              : 33.9957 E
+      Elevation              : 59 m
+
+      Series intercorrelation: 0.450
+      Avg mean sensitivity   : 0.181
+      Avg standard deviation : 0.488
+      Avg autocorrelation    : 0.911
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 2, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 14.58
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus391
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 
+                        1549 1574 1599 
+ --- -------- ---------  ---- ---- ---- 
+   1 luh01A   1435 1613  .43  .47  .42 
+   2 luh01B   1435 1615  .45  .44  .53 
+   3 luh02A   1439 1617  .32A .40  .40 
+   4 luh02B   1439 1616  .61  .60  .51 
+   5 luh03A   1450 1616  .66  .68  .66 
+   6 luh03B   1450 1614  .73  .69  .57 
+   7 luh04A   1456 1617  .67  .58  .43 
+   8 luh04B   1456 1617  .51  .51  .42 
+   9 luh05A   1432 1616  .64  .68  .43 
+  10 luh05B   1432 1616  .37  .12B .19B
+  11 luh08A   1463 1617  .52  .67  .52 
+  12 luh08B   1463 1614  .43  .21B-.10B
+  13 luh09A   1439 1616  .48  .52  .51 
+  14 luh09B   1439 1615  .64  .69  .71 
+  15 luh11A   1445 1615  .31A .35  .24B
+  16 luh11B   1445 1614  .62  .65  .61 
+ Av segment correlation  .52  .51  .44 
+
+ FLAGGED SEGMENTS: rus391
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 luh02A   1500 1549     A     .316         0
+  10 luh05B   1525 1574     B     .117        10      .291   .174  weak at every lag
+  10 luh05B   1550 1599     B     .186         5      .389   .203
+  12 luh08B   1525 1574     B     .210         1      .565   .356
+  12 luh08B   1550 1599     B    -.103         1      .504   .607
+  15 luh11A   1500 1549     A     .308         0
+  15 luh11A   1550 1599     B     .238         2      .277   .039  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus391
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 luh01A   1435 1613    179      3      0    .406    .66   3.30   .594   .965   .181   1.65   .193  -.010   2
+   2 luh01B   1435 1615    181      3      0    .509    .69   4.30   .717   .969   .190   1.38   .190  -.003   1
+   3 luh02A   1439 1617    179      3      1    .326    .65   1.60   .345   .896   .187   1.57   .187  -.014   3
+   4 luh02B   1439 1616    178      3      0    .462    .80   1.90   .389   .901   .169   1.55   .184  -.028   3
+   5 luh03A   1450 1616    167      3      0    .574    .79   2.90   .455   .887   .194   1.49   .204   .051   1
+   6 luh03B   1450 1614    165      3      0    .563    .94   2.80   .408   .843   .192   1.51   .191   .035   2
+   7 luh04A   1456 1617    162      3      0    .480    .84   3.40   .650   .955   .164   1.44   .168   .028   2
+   8 luh04B   1456 1617    162      3      0    .393    .86   3.20   .644   .943   .177   1.48   .182   .005   3
+   9 luh05A   1432 1616    185      3      0    .483    .77   2.15   .420   .914   .185   1.60   .199   .025   3
+  10 luh05B   1432 1616    185      3      2    .308    .84   2.05   .463   .912   .190   1.76   .213   .005   1
+  11 luh08A   1463 1617    155      3      0    .512    .83   2.30   .549   .956   .150   1.36   .148   .006   2
+  12 luh08B   1463 1614    152      3      2    .183    .80   2.70   .537   .953   .151   1.70   .158   .028   2
+  13 luh09A   1439 1616    178      3      0    .535    .80   1.90   .337   .796   .205   1.62   .217   .029   1
+  14 luh09B   1439 1615    177      3      0    .588    .76   2.05   .326   .802   .214   1.81   .219  -.014   2
+  15 luh11A   1445 1615    171      3      2    .316    .76   2.25   .514   .946   .179   1.48   .188   .020   3
+  16 luh11B   1445 1614    170      3      0    .553    .80   2.30   .495   .949   .157   1.54   .175   .051   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2746     48      7    .450    .78   4.30   .488   .911   .181   1.81   .189   .013
+
+ DATA CHECKS (rwl.check): rus391
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus391.rwl
+ 16 series, 2746 measurements, 1432-1617, 0.05 mm precision
+ 1 error(s), 1 warning(s), 0 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     luh08B: correlates best with the master at lag 1 (r = 0.47 against r = 0.373 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     6 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file rus391.rwl, MD5 aef8029728ac54eedf5262b2fd4440b5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,170 @@
+
+ COFECHA-style crossdating report: nor032
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nor032.rwl
+      MD5 of measurement file: 055427b653106b1d01f99f4a8fb150ae
+      Date checked           : 01OCT26
+      Beginning year         : 1877
+      Ending year            : 2022
+      Principal investigators: Buchwal, A.; Matulewski, P.; Sjöberg, Y.; Piermattei, A.; Crivellaro, A.; Balzano, A.; Merela, M.; Krže, L.; Čufar, K.; Kirdyanov, A.; Bebchuk, T.; Arosio, T.; Büntgen, U.
+      Site name              : Mount Iskoras
+      Species information    : JUCO Juniperus communis L.
+      Latitude               : 69.3000 N
+      Longitude              : 25.2000 E
+      Elevation              : 339 m (terrain model)
+
+      Series intercorrelation: 0.336
+      Avg mean sensitivity   : 0.308
+      Avg standard deviation : 0.042
+      Avg autocorrelation    : 0.691
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 25  (A 7, B 18; 10 of the B weak at every lag)
+      Pct problem segments   : 40.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nor032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 NK05S1   1877 2022  .48  .48  .50 
+   2 NK07     1877 2022  .17B .13B .25B
+   3 NK11     1877 2022  .46  .37  .37 
+   4 NK14     1877 1997  .30A .15B     
+   5 NK18     1877 2022  .49  .48  .51 
+   6 NK19     1877 2022  .13B .34  .69 
+   8 NK24     1947 2022            .20B
+   9 NK25     1877 2022  .29A .34  .41 
+  10 NK27     1877 2022  .31B .33A .51 
+  11 NK28B1   1881 2018  .28A .37  .47 
+  13 NK31     1877 2022  .58  .62  .55 
+  14 NK32     1877 1999  .15B-.01B-.00B
+  15 NK33     1877 1968  .33A          
+  16 NK34     1877 2022  .31A .33  .36 
+  17 NK39     1877 2022  .59  .55  .42 
+  18 NK38     1877 2022  .17B .15B-.05B
+  19 NK40     1877 2014  .44  .46  .44 
+  20 NK41a    1877 2022  .53  .45  .52 
+  21 NK42     1877 2017  .50  .41  .28A
+  22 NK43     1877 1995  .45  .46      
+  23 NK45     1877 2019  .34B .43B .53 
+  24 NK49     1877 2022  .18B-.08B-.17B
+  25 NK54     1877 1988  .43  .51      
+ Av segment correlation  .36  .35  .36 
+
+ FLAGGED SEGMENTS: nor032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 NK07     1900 1949     B     .166        -5      .227   .061  weak at every lag
+   2 NK07     1925 1974     B     .130        -4      .211   .081  weak at every lag
+   2 NK07     1950 1999     B     .248        -7      .275   .027  weak at every lag
+   4 NK14     1900 1949     A     .298         0
+   4 NK14     1925 1974     B     .153        -3      .279   .127  weak at every lag
+   6 NK19     1900 1949     B     .128         6      .337   .210
+   8 NK24     1950 1999     B     .199        -1      .247   .048  weak at every lag
+   9 NK25     1900 1949     A     .288         0
+  10 NK27     1900 1949     B     .310         6      .326   .015  weak at every lag
+  10 NK27     1925 1974     A     .326         0
+  11 NK28B1   1900 1949     A     .281         0
+  14 NK32     1900 1949     B     .149         3      .454   .306
+  14 NK32     1925 1974     B    -.012         8      .164   .176  weak at every lag
+  14 NK32     1950 1999     B    -.005        -5      .190   .195  weak at every lag
+  15 NK33     1900 1949     A     .328         0
+  16 NK34     1900 1949     A     .306         0
+  18 NK38     1900 1949     B     .172        -1      .561   .389
+  18 NK38     1925 1974     B     .150        -1      .520   .370
+  18 NK38     1950 1999     B    -.051        -1      .343   .394
+  21 NK42     1950 1999     A     .279         0
+  23 NK45     1900 1949     B     .343        -5      .365   .021
+  23 NK45     1925 1974     B     .434        -3      .483   .048
+  24 NK49     1900 1949     B     .184        -2      .355   .171
+  24 NK49     1925 1974     B    -.085        -3      .255   .340  weak at every lag
+  24 NK49     1950 1999     B    -.175        -5      .309   .484  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nor032
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NK05S1   1877 2022    146      3      0    .450    .05    .11   .021   .750   .259   1.83   .273  -.012   1
+   2 NK07     1877 2022    146      3      3    .270    .09    .21   .044   .539   .404   2.34   .390  -.016   2
+   3 NK11     1877 2022    146      3      0    .346    .03    .07   .014   .675   .311   2.46   .317  -.017   2
+   4 NK14     1877 1997    121      2      2    .281    .05    .14   .029   .730   .339   2.34   .377   .012   2
+   5 NK18     1877 2022    146      3      0    .412    .08    .28   .057   .850   .314   1.76   .314   .033   2
+   6 NK19     1877 2022    146      3      1    .313    .09    .21   .037   .625   .288   1.67   .267   .011   1
+   7 NK22     1967 2022     56      0      0    .367    .26    .84   .198   .845   .322   2.16   .340   .006   1
+   8 NK24     1947 2022     76      1      1    .310    .22    .52   .108   .658   .282   1.62   .265  -.005   1
+   9 NK25     1877 2022    146      3      1    .362    .09    .29   .070   .927   .268   1.91   .271  -.031   2
+  10 NK27     1877 2022    146      3      2    .261    .11    .34   .068   .852   .269   1.85   .275   .037   1
+  11 NK28B1   1881 2018    138      3      1    .259    .07    .18   .038   .810   .253   1.88   .287   .035   1
+  12 NK30     1956 2022     67      0      0    .289    .14    .27   .052   .561   .242   1.51   .218  -.101   0
+  13 NK31     1877 2022    146      3      0    .509    .06    .24   .040   .793   .325   1.94   .314   .041   1
+  14 NK32     1877 1999    123      3      3    .072    .08    .23   .044   .604   .342   2.27   .374  -.043   1
+  15 NK33     1877 1968     92      1      1    .139    .05    .14   .028   .763   .373   2.25   .383   .057   1
+  16 NK34     1877 2022    146      3      1    .369    .11    .22   .045   .487   .330   1.92   .317  -.002   3
+  17 NK39     1877 2022    146      3      0    .514    .06    .12   .023   .609   .275   1.77   .270   .010   1
+  18 NK38     1877 2022    146      3      3    .149    .08    .17   .036   .595   .346   1.68   .327   .020   1
+  19 NK40     1877 2014    138      3      0    .391    .03    .08   .015   .613   .302   1.60   .278  -.001   1
+  20 NK41a    1877 2022    146      3      0    .500    .04    .09   .016   .498   .317   1.93   .321   .000   1
+  21 NK42     1877 2017    141      3      1    .355    .06    .11   .026   .540   .380   2.10   .366  -.013   2
+  22 NK43     1877 1995    119      2      0    .443    .05    .11   .025   .744   .279   1.78   .280   .024   1
+  23 NK45     1877 2019    143      3      2    .399    .10    .27   .049   .767   .268   1.81   .261   .002   3
+  24 NK49     1877 2022    146      3      3    .100    .07    .29   .040   .782   .308   1.99   .319  -.001   3
+  25 NK54     1877 1988    112      2      0    .451    .11    .23   .047   .681   .274   1.97   .271   .017   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3224     62     25    .336    .08    .84   .042   .691   .308   2.46   .307   .004
+
+ DATA CHECKS (rwl.check): nor032
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/nor032.rwl
+ 25 series, 3224 measurements, 1877-2022, 0.001 mm precision
+ 2 error(s), 2 warning(s), 4 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     NK22: correlates best with the master at lag -2 (r = 0.397 against r = 0.321 as dated); the series may be misdated by 2 year(s), most likely a missing ring
+     NK33: correlates best with the master at lag 1 (r = 0.378 against r = 0.292 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 711 carriage return(s) against 357 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     8 byte(s) outside printable ASCII
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file nor032.rwl, MD5 055427b653106b1d01f99f4a8fb150ae.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

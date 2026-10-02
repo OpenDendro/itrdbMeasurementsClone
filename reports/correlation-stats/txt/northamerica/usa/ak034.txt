@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: ak034
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak034.rwl
+      MD5 of measurement file: 81aa6f3a06d9240fd3317a80d0724734
+      Date checked           : 01OCT26
+      Beginning year         : 1795
+      Ending year            : 1997
+      Principal investigators: Lloyd, A.H.
+      Site name              : Fox River Bank
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 64.8200 N
+      Longitude              : 163.7000 W
+      Elevation              : 61 m
+
+      Series intercorrelation: 0.568
+      Avg mean sensitivity   : 0.231
+      Avg standard deviation : 0.294
+      Avg autocorrelation    : 0.746
+      Number dated series    : 29
+      Series crossdated      : 28
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak034
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 B2       1853 1997                 .46  .67  .68 
+   2 B4       1867 1997                 .60  .74  .77 
+   3 B5B      1885 1997                      .21B .47 
+   4 B9B      1879 1997                      .55  .33 
+   5 B10      1876 1997                      .54  .57 
+   6 B14      1839 1997            .56  .77  .74  .72 
+   7 B15A     1832 1997            .66  .74  .80  .75 
+   8 B18      1812 1997       .50  .73  .71  .74  .71 
+   9 B19      1854 1997                 .56  .72  .66 
+  10 B20      1857 1997                 .80  .76  .69 
+  11 B21      1859 1997                 .70  .69  .70 
+  12 B22A     1845 1997            .58  .73  .68  .43 
+  13 B23      1816 1997       .51  .62  .80  .76  .47 
+  14 B25      1828 1997            .63  .63  .73  .75 
+  15 B26      1850 1997                 .65  .65  .65 
+  16 B29      1809 1997       .37  .61  .62  .65  .62 
+  17 B7       1842 1997            .70  .56  .48  .57 
+  18 B8A      1846 1997            .32A .47  .48  .33B
+  20 B13      1839 1997            .29A .67  .73  .58 
+  21 B16A     1795 1997       .49  .64  .72  .78  .72 
+  22 B17      1816 1997       .39  .83  .72  .64  .63 
+  23 B27      1827 1997            .47  .48  .57  .33 
+  24 B30      1847 1997            .36  .43  .63  .70 
+  25 B31      1846 1997            .27A .50  .61  .63 
+  26 B6RE     1859 1997                 .69  .64  .55 
+  27 B12      1859 1997                 .56  .69  .60 
+  28 B28RE    1813 1997       .50  .66  .74  .70  .61 
+  29 B24ARE   1808 1997       .67  .60  .60  .74  .69 
+ Av segment correlation       .49  .56  .64  .65  .60 
+
+ FLAGGED SEGMENTS: ak034
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 B5B      1900 1949     B     .208        -9      .216   .008  weak at every lag
+  18 B8A      1850 1899     A     .317         0
+  18 B8A      1925 1974     B     .334        -2      .386   .053
+  20 B13      1850 1899     A     .294         0
+  25 B31      1850 1899     A     .266         0
+
+ DESCRIPTIVE STATISTICS: ak034
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 B2       1853 1997    145      3      0    .525    .51   1.29   .247   .800   .272   2.12   .281  -.042   3
+   2 B4       1867 1997    131      3      0    .634    .48    .88   .154   .745   .162   1.47   .170   .035   3
+   3 B5B      1885 1997    113      2      1    .312    .52   1.34   .271   .835   .254   1.74   .289   .038   1
+   4 B9B      1879 1997    119      2      0    .508    .34    .70   .098   .478   .235   1.68   .216  -.015   3
+   5 B10      1876 1997    122      2      0    .535    .67   1.41   .285   .788   .220   1.75   .241   .018   1
+   6 B14      1839 1997    159      4      0    .671    .42   1.01   .196   .806   .228   1.80   .220  -.001   1
+   7 B15A     1832 1997    166      4      0    .720    .40   1.00   .181   .716   .256   1.77   .239   .010   2
+   8 B18      1812 1997    186      5      0    .580    .35   1.08   .223   .878   .232   2.07   .248  -.008   1
+   9 B19      1854 1997    144      3      0    .600    .47   1.52   .290   .909   .190   1.49   .194   .006   1
+  10 B20      1857 1997    141      3      0    .687    .32    .56   .111   .603   .250   1.65   .218  -.020   0
+  11 B21      1859 1997    139      3      0    .594    .45   1.05   .253   .860   .218   1.58   .212  -.106   1
+  12 B22A     1845 1997    153      4      0    .550    .61   1.40   .295   .795   .228   1.70   .220  -.008   1
+  13 B23      1816 1997    182      5      0    .617    .20    .88   .118   .845   .232   1.58   .214   .004   2
+  14 B25      1828 1997    170      4      0    .608    .43   1.03   .267   .878   .244   1.69   .252  -.030   3
+  15 B26      1850 1997    148      3      0    .661    .47    .89   .152   .640   .220   1.61   .209   .008   2
+  16 B29      1809 1997    189      5      0    .531    .31    .81   .154   .831   .197   1.74   .217  -.021   3
+  17 B7       1842 1997    156      4      0    .590    .26    .54   .078   .671   .187   1.41   .180   .003   1
+  18 B8A      1846 1997    152      4      2    .383    .30    .99   .115   .665   .213   1.57   .200   .002   2
+  19 B11      1857 1997    141                          .67  33.28  2.775  -.014   .260                         
+  20 B13      1839 1997    159      4      1    .497    .45    .99   .156   .644   .229   1.63   .220   .005   3
+  21 B16A     1795 1997    203      5      0    .615    .38   1.02   .124   .578   .218   2.06   .220  -.003   1
+  22 B17      1816 1997    182      5      0    .576    .33    .87   .165   .808   .241   1.81   .244   .008   1
+  23 B27      1827 1997    171      4      0    .490    .16    .75   .117   .872   .247   2.09   .247  -.022   3
+  24 B30      1847 1997    151      4      0    .498    .40   1.06   .214   .826   .262   2.25   .285  -.026   1
+  25 B31      1846 1997    152      4      1    .464    .39    .86   .161   .726   .257   1.75   .252  -.004   3
+  26 B6RE     1859 1997    139      3      0    .601    .49   1.22   .233   .850   .214   1.53   .213  -.013   1
+  27 B12      1859 1997    139      3      0    .488   1.17   5.22   .952   .900   .302   2.37   .324  -.026   1
+  28 B28RE    1813 1997    185      5      0    .602    .80   1.87   .310   .812   .177   1.45   .185   .005   1
+  29 B24ARE   1808 1997    190      5      0    .650    .40   1.32   .196   .770   .262   1.75   .240  -.002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4527    105      5    .568    .44  33.28   .294   .746   .231   2.37   .230  -.007
+
+ DATA CHECKS (rwl.check): ak034
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak034.rwl
+ 29 series, 4527 measurements, 1795-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file ak034.rwl, MD5 81aa6f3a06d9240fd3317a80d0724734.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series B11 is not all positive, so dividing
+   by it would give negative or infinite indices. Remove the series, or detrend the data
+   yourself with detrend() and pass the indices with 'nyrs = NULL'

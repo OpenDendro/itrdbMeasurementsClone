@@ -1,0 +1,156 @@
+
+ COFECHA-style crossdating report: swit157w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit157w.rwl
+      MD5 of measurement file: 7a8400461b045d2ac26d5969168f4b95
+      Date checked           : 01OCT26
+      Beginning year         : 1882
+      Ending year            : 1979
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Lindenwald BE,Fi.Vergl.P
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0300 N
+      Longitude              : 7.4000 E
+      Elevation              : 560 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.221
+      Avg standard deviation : 0.991
+      Avg autocorrelation    : 0.777
+      Number dated series    : 28
+      Series crossdated      : 26
+      Segment length tested  : 48
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 10.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit157w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  48-year dated segments, lagged  24 years
+ Flags:  A = correlation under   .3348 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1924 
+                        1947 1971 
+ --- -------- ---------  ---- ---- 
+   1 553311   1906 1979       .67 
+   2 553312   1904 1979       .45 
+   3 553321   1907 1979       .59 
+   4 553322   1908 1979       .58 
+   6 553332   1899 1979       .42 
+   7 553341   1895 1979  .73  .80 
+   8 553342   1894 1979  .76  .72 
+   9 553351   1896 1979  .79  .56 
+  10 553352   1896 1979  .59  .66 
+  11 553361   1904 1979       .59 
+  12 553362   1901 1979       .66 
+  13 553371   1899 1979  .31B .43 
+  14 553372   1895 1979  .75  .72 
+  15 553381   1885 1979  .67  .61 
+  16 553382   1883 1979  .61  .53 
+  17 553391   1882 1979  .68  .65 
+  18 553392   1888 1979  .52  .47 
+  19 553401   1899 1979  .67  .67 
+  21 553411   1904 1979       .52 
+  22 553412   1895 1979  .65  .75 
+  24 553422   1920 1979       .43 
+  25 553431   1894 1979  .63  .63 
+  26 553432   1901 1979       .33A
+  27 553441   1893 1979  .54  .25B
+  28 553442   1890 1979  .44  .20B
+ Av segment correlation  .62  .56 
+
+ FLAGGED SEGMENTS: swit157w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 553371   1900 1947     B     .311         2      .342   .030
+  26 553432   1924 1971     A     .332         0
+  27 553441   1924 1971     B     .246         6      .258   .012  weak at every lag
+  28 553442   1924 1971     B     .205        -3      .258   .053  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit157w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 553311   1906 1979     74      1      0    .663   2.58   8.15  1.192   .699   .237   2.17   .271   .059   1
+   2 553312   1904 1979     76      1      0    .527   2.92   6.51  1.212   .801   .194   1.61   .212   .058   1
+   3 553321   1907 1979     73      1      0    .622   2.09   4.25   .898   .776   .249   1.49   .235   .013   1
+   4 553322   1908 1979     72      1      0    .570   3.11   6.33  1.160   .715   .237   1.48   .230  -.015   2
+   5 553331   1900 1979     79                         2.29   6.20  1.267   .852   .246                         
+   6 553332   1899 1979     81      1      0    .418   2.05   4.55   .930   .652   .318   1.97   .319   .014   2
+   7 553341   1895 1979     85      2      0    .692   2.47   5.91  1.014   .790   .218   1.51   .218  -.014   1
+   8 553342   1894 1979     86      2      0    .689   2.79   5.27  1.036   .763   .215   1.49   .217  -.013   1
+   9 553351   1896 1979     84      2      0    .516   1.95   4.76  1.076   .851   .246   2.10   .277  -.021   1
+  10 553352   1896 1979     84      2      0    .587   1.98   5.41   .885   .766   .219   1.60   .227   .032   1
+  11 553361   1904 1979     76      1      0    .615   2.56   6.05  1.131   .759   .239   1.58   .240   .014   1
+  12 553362   1901 1979     79      1      0    .602   2.98   4.90   .780   .430   .225   1.55   .224   .009   1
+  13 553371   1899 1979     81      2      1    .431   2.04   5.12  1.140   .889   .213   1.57   .220  -.012   1
+  14 553372   1895 1979     85      2      0    .716   1.90   5.86  1.126   .879   .231   1.64   .243  -.003   1
+  15 553381   1885 1979     95      2      0    .562   2.06   5.82  1.048   .837   .239   1.56   .238   .016   1
+  16 553382   1883 1979     97      2      0    .452   2.35   6.33  1.197   .861   .214   1.61   .221   .004   3
+  17 553391   1882 1979     98      2      0    .621   2.33   5.97   .869   .778   .199   1.53   .214   .026   1
+  18 553392   1888 1979     92      2      0    .546   2.35   4.78   .869   .793   .197   1.54   .206   .047   1
+  19 553401   1899 1979     81      2      0    .605   2.78   4.87  1.045   .746   .228   1.63   .244   .070   1
+  20 553402   1900 1979     79                         2.21   5.75  1.277   .907   .233                         
+  21 553411   1904 1979     76      1      0    .541   2.14   5.25   .932   .708   .253   2.15   .284  -.023   1
+  22 553412   1895 1979     85      2      0    .713   1.92   5.14  1.034   .858   .224   1.52   .234   .064   1
+  23 553421   1926 1979     54      0      0    .395   3.10   5.93   .979   .645   .223   1.45   .228   .014   1
+  24 553422   1920 1979     60      1      0    .422   2.59   4.71   .798   .616   .239   1.69   .232   .010   1
+  25 553431   1894 1979     86      2      0    .588   2.58   4.82   .881   .781   .176   1.62   .191   .023   1
+  26 553432   1901 1979     79      1      1    .404   2.33   4.32   .716   .770   .160   1.54   .169   .047   1
+  27 553441   1893 1979     87      2      1    .368   1.63   3.00   .510   .797   .164   1.45   .165   .049   1
+  28 553442   1890 1979     90      2      1    .344   1.59   3.98   .781   .871   .189   1.74   .204   .045   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2274     40      4    .549   2.32   8.15   .991   .777   .221   2.17   .229   .020
+
+ DATA CHECKS (rwl.check): swit157w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit157w.rwl
+ 28 series, 2274 measurements, 1882-1979, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     553331: no measurement for 1935, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     553402: no measurement for 1965, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file swit157w.rwl, MD5 7a8400461b045d2ac26d5969168f4b95.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3348 for 48-year segments.
+ Segments: 48 years, lagged 24, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 553331 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 553402 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Segment length reduced from 50 to 48 years: the record is only 98 years long.

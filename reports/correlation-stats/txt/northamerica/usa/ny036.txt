@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: ny036
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ny036.rwl
+      MD5 of measurement file: 3344048b1934dd73e86f852f0b8530da
+      Date checked           : 01OCT26
+      Beginning year         : 1816
+      Ending year            : 2001
+      Principal investigators: Pederson, N.; Mashig, E.; Frank, D.C.
+      Site name              : Prospect Mountain
+      Species information    : QURU Quercus rubra L.
+      Latitude               : 43.4300 N
+      Longitude              : 73.9200 W
+      Elevation              : 305 m
+
+      Series intercorrelation: 0.629
+      Avg mean sensitivity   : 0.180
+      Avg standard deviation : 0.539
+      Avg autocorrelation    : 0.757
+      Number dated series    : 28
+      Series crossdated      : 24
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.56
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ny036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SO01a    1834 1999  .66  .47  .46 
+   2 SO02a    1829 1999  .74  .65  .53 
+   3 SO03a    1885 1999  .41B .50  .52 
+   4 SO03b    1901 1999       .51  .46 
+   5 SO04a    1847 2000  .72  .67  .71 
+   7 SO06a    1893 2001  .74  .72  .44 
+   8 SO07a    1898 2001  .67  .69  .69 
+   9 SO07b    1899 2001  .74  .69  .72 
+  10 SO08a    1856 2001  .60  .61  .55 
+  11 SO09a    1816 2001  .65  .43  .51 
+  12 SO09b    1849 1959  .64           
+  13 SO10a    1871 2001  .83  .69  .70 
+  14 SO10b    1874 2001  .77  .73  .75 
+  16 SO12a    1850 2001  .66  .61  .44 
+  18 SO14a    1834 2001  .70  .63  .63 
+  19 SO14b    1876 2001  .61  .56  .39 
+  20 SO15b    1854 2001  .84  .79  .76 
+  21 SO19a    1905 2001       .73  .76 
+  23 SO20b    1855 2001  .76  .76  .67 
+  24 SO21a    1908 2001       .72  .67 
+  25 SO21b    1882 2001  .71  .66  .49 
+  26 SO22a    1875 2001  .54  .53  .62 
+  27 SO23a    1909 2001       .59  .54 
+  28 SO23b    1926 2001            .49 
+ Av segment correlation  .68  .63  .59 
+
+ FLAGGED SEGMENTS: ny036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 SO03a    1900 1949     B     .407        -9      .417   .010
+
+ DESCRIPTIVE STATISTICS: ny036
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SO01a    1834 1999    166      3      0    .660   1.19   2.72   .486   .805   .159   1.52   .165  -.006   1
+   2 SO02a    1829 1999    171      3      0    .536   1.37   2.99   .449   .668   .194   1.71   .194  -.023   1
+   3 SO03a    1885 1999    115      3      1    .477   1.78   4.22  1.056   .855   .250   1.73   .286  -.002   3
+   4 SO03b    1901 1999     99      2      0    .513   2.04   5.11  1.026   .811   .226   1.66   .256  -.003   2
+   5 SO04a    1847 2000    154      3      0    .686   1.76   3.30   .450   .664   .158   1.35   .159   .005   1
+   6 SO05a    1831 2001    170                         1.34   2.79   .454   .696   .188                         
+   7 SO06a    1893 2001    109      3      0    .625   1.14   2.33   .520   .866   .166   1.53   .165   .030   3
+   8 SO07a    1898 2001    104      3      0    .657   1.31   3.14   .453   .784   .163   1.49   .168   .043   1
+   9 SO07b    1899 2001    103      3      0    .704   1.14   2.83   .433   .676   .211   2.19   .251   .051   1
+  10 SO08a    1856 2001    146      3      0    .592   1.43   2.31   .301   .690   .133   1.35   .129  -.017   2
+  11 SO09a    1816 2001    186      3      0    .583    .96   2.61   .452   .835   .152   1.74   .170   .006   1
+  12 SO09b    1849 1959    111      1      0    .582    .83   1.60   .213   .685   .145   1.38   .150   .032   1
+  13 SO10a    1871 2001    131      3      0    .784   1.25   2.54   .411   .738   .176   1.54   .182  -.042   3
+  14 SO10b    1874 2001    128      3      0    .771   1.17   2.60   .384   .657   .175   1.72   .206  -.034   3
+  15 SO11a    1852 2001    140                         1.46   3.46   .617   .721   .240                         
+  16 SO12a    1850 2001    152      3      0    .666   1.59   3.05   .500   .812   .135   1.39   .138   .007   1
+  17 SO13a    1844 2001    154                         1.20   2.91   .598   .880   .154                         
+  18 SO14a    1834 2001    168      3      0    .578   1.85   3.43   .556   .711   .199   1.49   .198   .055   1
+  19 SO14b    1876 2001    126      3      0    .531   2.06   3.68   .542   .636   .170   1.52   .178  -.025   2
+  20 SO15b    1854 2001    148      3      0    .804   1.26   2.56   .420   .519   .257   1.69   .259   .024   1
+  21 SO19a    1905 2001     97      2      0    .629   1.47   3.09   .544   .763   .193   1.72   .198   .007   1
+  22 SO20a    1876 2001    125                         1.38   3.55   .573   .817   .184                         
+  23 SO20b    1855 2001    147      3      0    .699   1.51   3.21   .558   .735   .212   1.80   .226   .042   1
+  24 SO21a    1908 2001     94      2      0    .710   1.38   2.66   .443   .845   .142   1.51   .149   .054   1
+  25 SO21b    1882 2001    120      3      0    .657   1.43   3.37   .585   .883   .141   1.52   .158   .016   1
+  26 SO22a    1875 2001    127      3      0    .501   1.80   4.25   .823   .870   .177   1.42   .185  -.018   3
+  27 SO23a    1909 2001     93      2      0    .587   1.80   3.62   .759   .876   .181   1.69   .201   .114   1
+  28 SO23b    1926 2001     76      1      0    .476   2.05   4.12   .935   .910   .160   1.51   .166   .031   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3660     64      1    .629   1.45   5.11   .539   .757   .180   2.19   .188   .012
+
+ DATA CHECKS (rwl.check): ny036
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ny036.rwl
+ 28 series, 3660 measurements, 1816-2001, 0.001 mm precision
+ 0 error(s), 4 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (4)
+     SO05a: no measurement for 1839, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SO11a: no measurement for 1880-1889, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SO13a: no measurement for 1853-1856, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SO20a: no measurement for 1890, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ny036.rwl, MD5 3344048b1934dd73e86f852f0b8530da.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series SO05a has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SO11a has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SO13a has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SO20a has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

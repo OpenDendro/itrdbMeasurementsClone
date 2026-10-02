@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: russ160w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ160w.rwl
+      MD5 of measurement file: 3651d0ec8eee49744ae790ff58da031f
+      Date checked           : 01OCT26
+      Beginning year         : 1881
+      Ending year            : 1990
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Kotuy River B
+      Species information    : PCOB Picea obovata Ledeb. = Picea abies (L.) H. Karst. subsp. obovata (Ledeb.) Hultén
+      Latitude               : 70.2700 N
+      Longitude              : 103.5200 E
+      Elevation              : 130 m
+
+      Series intercorrelation: 0.631
+      Avg mean sensitivity   : 0.238
+      Avg standard deviation : 0.123
+      Avg autocorrelation    : 0.690
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3)
+      Pct problem segments   : 20.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ160w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 088011   1908 1990       .64 
+   2 088012   1908 1990       .71 
+   3 088221   1887 1990  .37  .63 
+   4 088222   1881 1990  .51  .68 
+   6 088232   1924 1990       .59 
+   8 088242   1924 1990       .53 
+   9 088251   1920 1990       .48 
+  10 088252   1919 1990       .35B
+  15 088281   1910 1990       .51 
+  16 088282   1910 1990       .73 
+  17 088291   1898 1990  .10B .26A
+  18 088292   1898 1990  .27B .52 
+  19 088301   1918 1990       .63 
+  20 088302   1919 1990       .62 
+  21 088311   1913 1990       .37 
+  22 088312   1913 1990       .69 
+ Av segment correlation  .31  .56 
+
+ FLAGGED SEGMENTS: russ160w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 088252   1925 1974     B     .350        -2      .355   .005
+  17 088291   1900 1949     B     .098        -6      .360   .262
+  17 088291   1925 1974     A     .262         0
+  18 088292   1900 1949     B     .272        -5      .362   .090
+
+ DESCRIPTIVE STATISTICS: russ160w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 088011   1908 1990     83      1      0    .636    .30    .67   .103   .584   .237   1.83   .258   .026   1
+   2 088012   1908 1990     83      1      0    .613    .32    .55   .096   .513   .235   1.71   .235   .026   1
+   3 088221   1887 1990    104      2      0    .585    .33    .74   .184   .896   .233   1.86   .240   .046   3
+   4 088222   1881 1990    110      2      0    .621    .28    .67   .122   .822   .222   1.64   .224   .087   3
+   5 088231   1924 1990     67      0      0    .683    .37    .89   .171   .877   .182   1.45   .184   .011   3
+   6 088232   1924 1990     67      1      0    .681    .36    .97   .157   .750   .218   1.80   .245   .008   1
+   7 088241   1924 1990     67      0      0    .644    .30    .73   .123   .787   .221   1.59   .216   .025   3
+   8 088242   1924 1990     67      1      0    .632    .33    .73   .168   .837   .247   1.75   .249   .017   1
+   9 088251   1920 1990     71      1      0    .577    .37    .72   .140   .829   .182   1.52   .176   .058   0
+  10 088252   1919 1990     72      1      1    .441    .35    .76   .159   .801   .211   1.75   .208   .129   0
+  11 088261   1936 1990     55      0      0    .729    .38    .70   .129   .664   .200   1.73   .236  -.004   1
+  12 088262   1936 1990     55      0      0    .709    .29    .63   .141   .792   .235   1.64   .251  -.004   3
+  13 088271   1940 1990     51      0      0    .764    .31    .70   .131   .477   .298   2.04   .322   .037   3
+  14 088272   1940 1990     51      0      0    .669    .46    .75   .132   .274   .255   1.71   .280   .189   0
+  15 088281   1910 1990     81      1      0    .667    .30    .59   .091   .531   .239   1.83   .226   .031   3
+  16 088282   1910 1990     81      1      0    .754    .27    .51   .089   .653   .222   1.81   .235  -.007   1
+  17 088291   1898 1990     93      2      2    .499    .17    .50   .093   .776   .286   2.02   .296  -.007   1
+  18 088292   1898 1990     93      2      1    .591    .16    .37   .062   .607   .289   2.21   .274   .038   0
+  19 088301   1918 1990     73      1      0    .673    .24    .63   .117   .695   .269   1.63   .279   .024   3
+  20 088302   1919 1990     72      1      0    .709    .29    .71   .115   .605   .271   1.76   .288   .015   3
+  21 088311   1913 1990     78      1      0    .527    .30    .55   .122   .648   .251   1.86   .295   .042   1
+  22 088312   1913 1990     78      1      0    .635    .29    .71   .103   .549   .218   2.04   .263   .095   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1652     20      4    .631    .30    .97   .123   .690   .238   2.21   .248   .040
+
+ DATA CHECKS (rwl.check): russ160w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ160w.rwl
+ 22 series, 1652 measurements, 1881-1990, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     088291: correlates with the rest of the collection at r = 0.373 where the collection median is 0.623 (4.4 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file russ160w.rwl, MD5 3651d0ec8eee49744ae790ff58da031f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

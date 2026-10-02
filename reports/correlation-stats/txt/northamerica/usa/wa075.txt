@@ -1,0 +1,170 @@
+
+ COFECHA-style crossdating report: wa075
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa075.rwl
+      MD5 of measurement file: 948b76ba481eeacfebf499cc4028e4b4
+      Date checked           : 01OCT26
+      Beginning year         : 1809
+      Ending year            : 1990
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Hart's Pass V1
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 48.6800 N
+      Longitude              : 120.6500 W
+      Elevation              : 1875 m
+
+      Series intercorrelation: 0.573
+      Avg mean sensitivity   : 0.181
+      Avg standard deviation : 0.737
+      Avg autocorrelation    : 0.739
+      Number dated series    : 40
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa075
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 DBPC704A 1902 1990       .67 
+   2 DBPC704B 1894 1990  .45  .57 
+   3 DBPC705A 1911 1990       .64 
+   4 DBPC705B 1908 1990       .52 
+   5 DBPC706A 1893 1990  .46  .53 
+   6 DBPC706B 1893 1990  .58  .74 
+   7 DBPC707A 1883 1990  .06B .37B
+   9 DBPC710A 1903 1990       .67 
+  10 DBPC710B 1879 1990  .44  .31A
+  11 DBPC711A 1814 1990  .47  .66 
+  12 DBPC711B 1809 1990  .44  .62 
+  13 DBPC715A 1870 1990  .64  .81 
+  14 DBPC715B 1878 1990  .66  .58 
+  15 DBPC716A 1862 1990  .73  .67 
+  16 DBPC716B 1879 1990  .69  .66 
+  17 DBPC717A 1890 1990  .76  .80 
+  18 DBPC717B 1865 1990  .56  .62 
+  19 DBPC718A 1890 1990  .52  .61 
+  20 DBPC718B 1881 1990  .43  .43 
+  21 DBPC719A 1906 1990       .67 
+  22 DBPC719B 1896 1990  .39  .53 
+  23 DBPC721A 1882 1990  .63  .65 
+  24 DBPC721B 1887 1990  .47  .69 
+  25 DBPC722A 1886 1990  .62  .54 
+  26 DBPC722B 1879 1990  .74  .70 
+  27 DBPC727A 1890 1990  .44  .68 
+  28 DBPC727B 1871 1990  .68  .77 
+  29 DBPC729A 1901 1990       .70 
+  30 DBPC729B 1902 1990       .78 
+  31 DBPC732A 1907 1990       .71 
+  32 DBPC732B 1896 1990  .56  .72 
+  33 DBPC735A 1904 1990       .57 
+  34 DBPC735B 1891 1990  .59  .79 
+  35 DBPC736A 1901 1990       .72 
+  36 DBPC736B 1913 1990       .72 
+  37 DBPC737A 1908 1990       .73 
+  39 DBPC738A 1874 1990  .64  .72 
+  40 DBPC738B 1913 1990       .64 
+ Av segment correlation  .55  .65 
+
+ FLAGGED SEGMENTS: wa075
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 DBPC707A 1900 1949     B     .057        -3      .223   .166  weak at every lag
+   7 DBPC707A 1925 1974     B     .370        -3      .400   .030
+  10 DBPC710B 1925 1974     A     .305         0
+
+ DESCRIPTIVE STATISTICS: wa075
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DBPC704A 1902 1990     89      1      0    .635   2.39   4.00   .616   .629   .167   1.37   .159  -.039   3
+   2 DBPC704B 1894 1990     97      2      0    .399   2.61   4.64   .631   .673   .154   1.43   .154   .042   1
+   3 DBPC705A 1911 1990     80      1      0    .573   3.26   4.78   .870   .740   .149   1.31   .149  -.014   1
+   4 DBPC705B 1908 1990     83      1      0    .551   3.72   5.57  1.012   .754   .161   1.20   .152   .110   1
+   5 DBPC706A 1893 1990     98      2      0    .524   2.87   5.19   .722   .666   .159   1.38   .153  -.040   3
+   6 DBPC706B 1893 1990     98      2      0    .598   2.54   3.82   .617   .768   .135   1.28   .132   .016   1
+   7 DBPC707A 1883 1990    108      2      2    .237   1.97   4.23  1.059   .889   .185   1.63   .185  -.008   3
+   8 DBPC707B 1931 1990     60      0      0    .557   2.27   3.07   .420   .453   .159   1.38   .155  -.016   2
+   9 DBPC710A 1903 1990     88      1      0    .592   2.97   4.56   .512   .554   .124   1.35   .123   .131   0
+  10 DBPC710B 1879 1990    112      2      1    .333   2.50   4.73   .981   .881   .179   1.57   .179  -.010   2
+  11 DBPC711A 1814 1990    177      2      0    .676   1.18   3.34   .901   .935   .267   2.41   .334   .052   1
+  12 DBPC711B 1809 1990    182      2      0    .600   1.05   3.15   .847   .936   .258   2.78   .320   .005   2
+  13 DBPC715A 1870 1990    121      2      0    .578   2.21   4.97   .862   .754   .218   1.63   .212   .005   2
+  14 DBPC715B 1878 1990    113      2      0    .608   2.12   4.07   .588   .540   .218   1.55   .208   .056   1
+  15 DBPC716A 1862 1990    129      2      0    .560   1.84   3.63   .573   .761   .175   1.63   .179   .059   1
+  16 DBPC716B 1879 1990    112      2      0    .598   2.12   3.66   .630   .797   .159   1.48   .158   .027   1
+  17 DBPC717A 1890 1990    101      2      0    .763   1.99   4.00   .733   .846   .162   1.36   .154   .015   1
+  18 DBPC717B 1865 1990    126      2      0    .524   1.68   3.24   .677   .806   .186   1.47   .176   .022   1
+  19 DBPC718A 1890 1990    101      2      0    .618   1.84   3.17   .640   .783   .192   1.49   .182   .052   1
+  20 DBPC718B 1881 1990    110      2      0    .520   2.13   3.43   .777   .859   .181   1.79   .183   .038   3
+  21 DBPC719A 1906 1990     85      1      0    .675   2.19   2.97   .450   .676   .139   1.24   .112  -.025   2
+  22 DBPC719B 1896 1990     95      2      0    .517   1.81   3.52   .482   .710   .153   1.66   .150  -.041   3
+  23 DBPC721A 1882 1990    109      2      0    .669   2.70   4.31   .673   .470   .204   1.59   .181   .027   0
+  24 DBPC721B 1887 1990    104      2      0    .523   2.48   4.54   .872   .835   .172   1.47   .161  -.061   3
+  25 DBPC722A 1886 1990    105      2      0    .549   2.34   4.20   .664   .735   .155   1.89   .163   .054   3
+  26 DBPC722B 1879 1990    112      2      0    .559   2.29   4.24   .690   .665   .205   1.69   .207   .062   1
+  27 DBPC727A 1890 1990    101      2      0    .511   2.27   3.69   .537   .654   .165   1.50   .157   .131   0
+  28 DBPC727B 1871 1990    120      2      0    .492   1.59   3.04   .638   .839   .199   1.60   .194   .029   1
+  29 DBPC729A 1901 1990     90      1      0    .593   2.32   3.76   .627   .760   .162   1.32   .142   .019   1
+  30 DBPC729B 1902 1990     89      1      0    .561   2.36   3.92   .884   .853   .167   1.40   .160  -.024   1
+  31 DBPC732A 1907 1990     84      1      0    .581   3.37   5.97  1.093   .783   .188   1.33   .152  -.132   0
+  32 DBPC732B 1896 1990     95      2      0    .615   3.02   5.01  1.004   .766   .192   1.44   .168  -.063   0
+  33 DBPC735A 1904 1990     87      1      0    .566   3.26   5.23   .902   .719   .165   1.46   .147   .071   0
+  34 DBPC735B 1891 1990    100      2      0    .653   3.36   5.74  1.257   .882   .155   1.63   .150  -.020   2
+  35 DBPC736A 1901 1990     90      1      0    .701   2.82   4.40   .702   .738   .145   1.29   .138  -.035   2
+  36 DBPC736B 1913 1990     78      1      0    .713   2.89   4.47   .652   .668   .146   1.33   .143   .019   1
+  37 DBPC737A 1908 1990     83      1      0    .740   2.28   3.90   .616   .580   .197   1.42   .185   .042   1
+  38 DBPC737B 1939 1990     52      0      0    .772   2.57   3.74   .657   .792   .137   1.28   .135  -.021   1
+  39 DBPC738A 1874 1990    117      2      0    .439   2.05   3.25   .526   .479   .204   1.50   .188  -.028   0
+  40 DBPC738B 1913 1990     78      1      0    .661   2.52   3.93   .560   .386   .200   1.52   .176   .018   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4059     63      3    .573   2.30   5.97   .737   .739   .181   2.78   .180   .015
+
+ DATA CHECKS (rwl.check): wa075
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa075.rwl
+ 40 series, 4059 measurements, 1809-1990, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     DBPC707A: correlates with the rest of the collection at r = 0.153 where the collection median is 0.551 (4.1 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wa075.rwl, MD5 948b76ba481eeacfebf499cc4028e4b4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

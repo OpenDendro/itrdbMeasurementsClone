@@ -1,0 +1,166 @@
+
+ COFECHA-style crossdating report: che419
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che419.rwl
+      MD5 of measurement file: ee192b31f890590a4d3eeca2e79ad8f2
+      Date checked           : 01OCT26
+      Beginning year         : 1641
+      Ending year            : 2010
+      Principal investigators: Hartl, C.; Kuhl, E.; Esper, J.; Riechelmann, D.F.C.
+      Site name              : Simplon RCS03
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.2080 N
+      Longitude              : 8.0470 E
+      Elevation              : 1713 m
+
+      Avg mean sensitivity   : 0.303
+      Avg standard deviation : 0.433
+      Avg autocorrelation    : 0.783
+      Number dated series    : 26
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: che419
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RCS0302a 1854 2010    103                          .50   1.34   .268   .781   .316                         
+   2 RCS0302b 1854 2010    100                          .82   2.13   .348   .615   .283                         
+   3 RCS0305a 1888 2010    122                         1.00   2.25   .535   .748   .321                         
+   4 RCS0305b 1880 2010    114                          .66   2.02   .373   .820   .310                         
+   5 RCS0306a 1919 2010     91                         1.93   3.86   .807   .853   .208                         
+   6 RCS0306b 1905 2010     99                         1.25   2.61   .537   .800   .266                         
+   7 RCS0310a 1931 2010     77                         1.24   2.50   .608   .897   .216                         
+   8 RCS0310b 1937 2010     74                         2.12   5.35   .889   .724   .258                        3
+   9 RCS0310c 1931 2010     77                         2.15   5.14  1.005   .752   .261                         
+  10 RCS0314a 1641 2010    319                          .54   1.86   .305   .821   .309                         
+  11 RCS0314b 1740 2001    233                          .74   1.69   .402   .748   .360                         
+  12 RCS0314c 1646 2010    326                          .71   1.96   .396   .708   .385                         
+  13 RCS0315a 1686 2010    319                          .56   2.49   .433   .873   .290                         
+  14 RCS0315b 1679 2010    299                          .57   2.71   .474   .835   .296                         
+  15 RCS0317a 1912 2010     97                          .61   1.31   .312   .775   .300                         
+  16 RCS0317b 1903 2010    107                          .57   1.68   .291   .677   .328                         
+  17 RCS0321a 1857 2010    150                          .62   1.38   .277   .783   .272                         
+  18 RCS0321b 1762 2010    138                          .57   1.66   .269   .789   .242                         
+  19 RCS0322a 1707 2010    295                          .75   2.42   .475   .853   .311                         
+  20 RCS0322b 1686 2006    243                          .57   1.99   .296   .746   .267                         
+  21 RCS0323a 1968 2006     39                          .70   1.45   .364   .600   .401                        1
+  22 RCS0323b 1968 2006     34                          .59   1.25   .270   .527   .357                         
+  23 RCS0324a 1918 2010     92                          .86   1.82   .372   .717   .297                         
+  24 RCS0324b 1918 2010     93                         1.17   2.24   .503   .758   .293                        3
+  25 RCS0327a 1860 2010    148                         1.07   2.43   .547   .809   .288                         
+  26 RCS0327b 1895 2009    113                         1.18   2.33   .589   .804   .325                         
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3902                          .81   5.35   .433   .783   .303                     
+
+ DATA CHECKS (rwl.check): che419
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che419.rwl
+ 26 series, 3902 measurements, 1641-2010, 0.01 mm precision
+ 0 error(s), 23 warning(s), 24 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (23)
+     RCS0302a: no measurement for 1865-1894, 1908, 1921, 1935-1949, 1954, 1967-1968, 1973-1975, 1981, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0302b: no measurement for 1886-1887, 1900, 1904-1915, 1933-1934, 1950-1989, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0305a: no measurement for 1919, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0305b: no measurement for 1908, 1926-1930, 1937-1941, 1964-1965, 1995-1997, 2006, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0306a: no measurement for 1947, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0306b: no measurement for 1936, 1949, 1974-1978, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0310a: no measurement for 1960-1962, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0310c: no measurement for 1945, 1952, 2000, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0314a: no measurement for 1657-1658, 1683-1689, 1695-1712, 1720, 1739, 1752-1761, 1776, 1793, 1812-1813, 1819-1821, 1827, 1857, 1912, 1954, 1964, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0314b: no measurement for 1757-1765, 1776-1787, 1812-1813, 1827, 1829, 1857, 1864-1865, 1907, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ... and 13 more; see as.data.frame()
+ 24 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file che419.rwl, MD5 ee192b31f890590a4d3eeca2e79ad8f2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series RCS0302a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0302b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0305a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0305b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0306a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0306b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0310a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0310c has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0314a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0314b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0314c has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0315a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0315b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0317a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0317b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0321a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0321b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0322a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0322b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0323b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0324a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0327a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0327b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ No segment could be tested: 'seg.length' can be at most 1/2 the number of years in 'rwl'.

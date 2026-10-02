@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: neth007
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : neth007.rwl
+      MD5 of measurement file: 74250e43a01a9d21078225b090b6e40c
+      Date checked           : 01OCT26
+      Beginning year         : 1092
+      Ending year            : 1287
+      Principal investigators: Jansma, E.
+      Site name              : Groningen  Wolters Noordhof Complex Timbers
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 53.2200 N
+      Longitude              : 6.5700 E
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.497
+      Avg mean sensitivity   : 0.216
+      Avg standard deviation : 0.653
+      Avg autocorrelation    : 0.628
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 10.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: neth007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1100 1125 1150 1175 1200 1225 
+                        1149 1174 1199 1224 1249 1274 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GWN011   1135 1283            .46  .40  .42  .61 
+   2 GWN012   1136 1282            .44  .40  .43  .59 
+   3 GWN021   1153 1280                 .44  .49  .60 
+   4 GWN031   1092 1281  .71  .54  .60  .45  .29A .28A
+   5 GWN032   1092 1281  .71  .53  .59  .47  .31B .26A
+   6 GWN061   1216 1277                           .42 
+   7 GWN062   1221 1275                           .34 
+   8 GWN063   1216 1277                           .35 
+   9 GWN111   1160 1260                 .41  .39      
+  12 GDH011   1150 1285                 .62  .61  .47 
+  13 GDH012   1150 1287                 .71  .60  .49 
+  14 GDH021   1203 1274                           .61 
+  15 GDH061   1203 1277                           .48 
+  16 GWN231   1162 1233                 .47           
+ Av segment correlation  .71  .54  .52  .49  .44  .46 
+
+ FLAGGED SEGMENTS: neth007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 GWN031   1200 1249     A     .286         0
+   4 GWN031   1225 1274     A     .284         0
+   5 GWN032   1200 1249     B     .307        10      .308   .001  weak at every lag
+   5 GWN032   1225 1274     A     .264         0
+
+ DESCRIPTIVE STATISTICS: neth007
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GWN011   1135 1283    149      4      0    .412   1.63   3.96   .668   .675   .245   1.70   .266   .053   1
+   2 GWN012   1136 1282    147      4      0    .408   1.64   3.91   .666   .689   .243   1.76   .260  -.004   2
+   3 GWN021   1153 1280    128      3      0    .477   1.62   3.03   .501   .731   .180   1.62   .184  -.005   2
+   4 GWN031   1092 1281    190      6      2    .583   1.10   2.56   .420   .717   .207   1.56   .194   .080   0
+   5 GWN032   1092 1281    190      6      2    .584   1.10   2.65   .418   .704   .210   1.60   .194   .062   0
+   6 GWN061   1216 1277     62      1      0    .460   2.82   5.48   .859   .553   .228   1.63   .219  -.038   3
+   7 GWN062   1221 1275     55      1      0    .379   2.82   5.00   .837   .516   .215   1.57   .226   .006   1
+   8 GWN063   1216 1277     62      1      0    .373   3.16  25.21  2.962   .139   .246   3.01   .377   .112   1
+   9 GWN111   1160 1260    101      2      0    .374   1.30   2.04   .280   .210   .211   1.49   .190   .027   0
+  10 GWN121   1201 1267     67      0      0    .525   2.30   4.19   .647   .461   .209   1.79   .230   .007   1
+  11 GWN151   1201 1267     67      0      0    .417   1.93   4.04   .568   .420   .226   1.68   .222   .144   0
+  12 GDH011   1150 1285    136      3      0    .577   1.30   2.93   .501   .717   .221   1.71   .230   .006   1
+  13 GDH012   1150 1287    138      3      0    .631   1.16   2.64   .518   .666   .243   2.06   .277   .002   1
+  14 GDH021   1203 1274     72      1      0    .559   1.95   3.31   .563   .718   .172   1.48   .163  -.031   2
+  15 GDH061   1203 1277     75      1      0    .437   2.89   6.73  1.258   .835   .172   1.44   .180  -.061   2
+  16 GWN231   1162 1233     72      1      0    .467   1.04   3.03   .424   .759   .210   1.52   .205   .043   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1711     37      4    .497   1.65  25.21   .653   .628   .216   3.01   .224   .028
+
+ DATA CHECKS (rwl.check): neth007
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/neth007.rwl
+ 16 series, 1711 measurements, 1092-1287, 0.01 mm precision
+ 0 error(s), 4 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (4)
+     GDH011: site code differs from the gwn used by 12 of 16 series
+     GDH012: site code differs from the gwn used by 12 of 16 series
+     GDH021: site code differs from the gwn used by 12 of 16 series
+     GDH061: site code differs from the gwn used by 12 of 16 series
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file neth007.rwl, MD5 74250e43a01a9d21078225b090b6e40c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

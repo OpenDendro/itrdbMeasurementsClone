@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: aust005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aust005.rwl
+      MD5 of measurement file: f33a6884b8695a880a78365db7a5d485
+      Date checked           : 01OCT26
+      Beginning year         : 1838
+      Ending year            : 1975
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Katscherpass
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0300 N
+      Longitude              : 13.6300 E
+      Elevation              : 1800 m
+
+      Series intercorrelation: 0.583
+      Avg mean sensitivity   : 0.148
+      Avg standard deviation : 0.603
+      Avg autocorrelation    : 0.816
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3)
+      Pct problem segments   : 12.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aust005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 245001   1860 1975  .29B .61 
+   2 245002   1849 1975  .74  .56 
+   3 245003   1882 1975  .67  .65 
+   4 245004   1858 1975  .27B .68 
+   5 245005   1857 1975  .82  .69 
+   6 245006   1870 1975  .77  .72 
+   7 245007   1856 1975  .56  .61 
+   8 245008   1838 1975  .61  .69 
+   9 245009   1866 1975  .68  .58 
+  10 246010   1869 1975  .75  .70 
+  11 246011   1876 1975  .57  .43B
+  12 246012   1881 1975  .67  .68 
+ Av segment correlation  .62  .63 
+
+ FLAGGED SEGMENTS: aust005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 245001   1900 1949     B     .293         4      .354   .061
+   4 245004   1900 1949     B     .271         4      .426   .156
+  11 246011   1925 1974     B     .425        -6      .523   .098
+
+ DESCRIPTIVE STATISTICS: aust005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 245001   1860 1975    116      2      1    .384   2.14   3.71   .510   .650   .137   1.72   .157   .007   1
+   2 245002   1849 1975    127      2      0    .630   2.00   4.65   .803   .841   .164   1.43   .155  -.024   3
+   3 245003   1882 1975     94      2      0    .594   2.58   4.96   .933   .856   .148   1.48   .144  -.046   3
+   4 245004   1858 1975    118      2      1    .368   1.82   5.51   .870   .783   .174   1.95   .189   .012   1
+   5 245005   1857 1975    119      2      0    .675   1.35   3.12   .683   .884   .150   1.60   .170   .061   1
+   6 245006   1870 1975    106      2      0    .691   1.52   3.23   .490   .811   .135   1.54   .148  -.027   1
+   7 245007   1856 1975    120      2      0    .548   1.70   2.95   .596   .895   .131   1.40   .141   .048   1
+   8 245008   1838 1975    138      2      0    .590   1.05   2.52   .408   .809   .154   1.64   .169   .017   1
+   9 245009   1866 1975    110      2      0    .654    .96   2.34   .451   .913   .159   1.57   .167  -.021   1
+  10 246010   1869 1975    107      2      0    .669   1.81   3.38   .612   .866   .136   1.48   .136   .019   1
+  11 246011   1876 1975    100      2      1    .536   1.84   3.68   .594   .764   .152   1.46   .168  -.023   2
+  12 246012   1881 1975     95      2      0    .693   1.41   1.97   .283   .701   .125   1.36   .127   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1350     24      3    .583   1.66   5.51   .603   .816   .148   1.95   .157   .005
+
+ DATA CHECKS (rwl.check): aust005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/aust005.rwl
+ 12 series, 1350 measurements, 1838-1975, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file aust005.rwl, MD5 f33a6884b8695a880a78365db7a5d485.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

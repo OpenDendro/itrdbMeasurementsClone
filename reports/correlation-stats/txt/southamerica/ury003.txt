@@ -1,0 +1,160 @@
+
+ COFECHA-style crossdating report: ury003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ury003.rwl
+      MD5 of measurement file: 3927b9a9fb021916cb0b9f90cdba5f78
+      Date checked           : 01OCT26
+      Beginning year         : 1970
+      Ending year            : 2024
+      Principal investigators: Lucas, C.; Ambite, S.; Aranda, M.; Acosta-Nabune, S.; Profumo, L.; Sosa, B.
+      Site name              : Esteros Farrapos e Islas del Rio Uruguay
+      Species information    : GLTR Gleditsia triacanthos L.
+      Latitude               : 32.7380 S
+      Longitude              : 58.1320 W
+      Elevation              : 5 m
+
+      Series intercorrelation: 0.486
+      Avg mean sensitivity   : 0.372
+      Avg standard deviation : 5.137
+      Avg autocorrelation    : 0.553
+      Number dated series    : 47
+      Segment length tested  : 26
+
+      Number problem segments: 5  (A 1, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 55.56
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ury003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  26-year dated segments, lagged  13 years
+ Flags:  A = correlation under   .4534 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1983 1996 
+                        1995 2008 2021 
+ --- -------- ---------  ---- ---- ---- 
+   1 EFA23A   1970 2024       .57  .49B
+   2 EFA23B   1980 2018       .44B     
+   8 EFA28A   1992 2023            .31A
+   9 EFA28B   1991 2021           -.09B
+  19 EFL06A   1993 2022            .52 
+  20 EFL06B   1993 2022            .63 
+  21 EFL07A   1995 2022            .60 
+  47 EFL12B   1995 2023            .13B
+ Av segment correlation       .50  .37 
+
+ FLAGGED SEGMENTS: ury003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 EFA23A   1996 2021     B     .487        -9      .499   .012
+   2 EFA23B   1983 2008     B     .436        -2      .457   .021
+   8 EFA28A   1996 2021     A     .309         0
+   9 EFA28B   1996 2021     B    -.087        -6      .443   .530  weak at every lag
+  47 EFL12B   1996 2021     B     .128        -2      .510   .382
+
+ DESCRIPTIVE STATISTICS: ury003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EFA23A   1970 2024     55      2      1    .284   4.79  12.35  3.006   .717   .303   2.03   .330   .092   0
+   2 EFA23B   1980 2018     39      1      1    .188   6.53  15.97  4.374   .714   .337   3.24   .534   .177   1
+   3 EFA24A   1999 2018     20      0      0    .732   6.33  11.86  2.298   .337   .319   1.53   .303   .135   0
+   4 EFA25A   2010 2024     15      0      0    .698  11.63  18.76  4.824   .550   .371   1.47   .359   .273   0
+   5 EFA25B   2005 2024     20      0      0    .397   9.57  23.01  6.619   .583   .486   1.83   .480   .006   1
+   6 EFA26A   2008 2024     17      0      0    .583   7.65  16.67  4.921   .842   .296   1.55   .292   .062   2
+   7 EFA27A   2003 2024     22      0      0    .451  10.79  18.07  4.975   .601   .274   1.53   .261  -.083   0
+   8 EFA28A   1992 2023     32      1      1    .228   7.91  17.54  5.114   .802   .279   3.17   .473   .389   0
+   9 EFA28B   1991 2021     31      1      1   -.053   7.23  18.75  4.405   .714   .329   1.86   .329   .154   0
+  10 EFL01A   2018 2021      4      0      0    .525  10.19  13.16  2.680  -.710   .377   1.23   .255  -.600   0
+  11 EFL01B   2018 2021      4      0      0    .521   9.97  11.62  1.561   .070   .195   1.12   .121  -.710   0
+  12 EFL02A   2015 2022      8      0      0    .558  10.11  17.42  4.974   .029   .599   1.27   .226  -.529   2
+  13 EFL02B   2013 2022     10      0      0    .385  11.98  23.54  5.983   .127   .479   1.99   .478   .043   0
+  14 EFL03A   2010 2020     11      0      0    .330   8.31  16.13  3.598   .244   .384   1.92   .424   .230   0
+  15 EFL03B   2009 2019     11      0      0    .285   6.17  11.68  3.133   .102   .579   1.67   .352   .135   2
+  16 EFL04A   2005 2022     18      0      0    .479  11.91  23.65  6.283   .443   .447   1.42   .385   .054   3
+  17 EFL04B   2002 2022     21      0      0    .466  12.41  25.82  7.474   .249   .548   1.79   .423  -.125   3
+  18 EFL05A   2005 2022     18      0      0    .513  11.32  22.73  6.741   .802   .269   1.65   .299   .119   1
+  19 EFL06A   1993 2022     30      1      0    .458   7.09  14.05  3.550   .653   .302   1.54   .310   .194   0
+  20 EFL06B   1993 2022     30      1      0    .579   6.90  16.88  3.670   .518   .307   1.67   .292  -.042   0
+  21 EFL07A   1995 2022     28      1      0    .570   9.12  30.54  6.440   .429   .424   1.94   .353  -.028   1
+  22 EFL07B   1997 2023     27      0      0    .532   9.17  43.05  9.303   .562   .407   1.91   .429   .231   0
+  23 EFL08A   2010 2022     13      0      0    .801  13.10  21.93  4.752   .470   .311   1.50   .287   .048   0
+  24 EFL08B   2008 2022     15      0      0    .716  13.11  19.91  4.449   .100   .362   1.41   .277  -.304   0
+  25 EFL09A   2005 2022     18      0      0    .691   9.24  23.01  6.141   .485   .436   2.12   .499   .305   0
+  26 EFL09B   2001 2022     22      0      0    .504   7.82  22.87  5.028   .472   .401   2.29   .445  -.084   1
+  27 EFL10A   2009 2022     14      0      0    .758  12.29  21.68  5.258   .533   .325   1.60   .333   .284   0
+  28 EFL10B   2004 2022     19      0      0    .293  11.10  21.12  4.694   .608   .254   1.42   .239  -.003   0
+  29 EFL22A   2006 2023     18      0      0    .804   8.37  17.25  5.133   .661   .374   1.78   .424   .125   1
+  30 EFL22B   2004 2022     19      0      0    .718   8.47  15.38  3.786   .678   .327   1.52   .313   .159   1
+  31 EFL21A   1999 2023     25      0      0    .498   6.34  20.95  4.778   .434   .465   2.33   .557   .272   0
+  32 EFL21B   2001 2022     22      0      0    .742   7.42  20.70  4.979   .567   .471   1.92   .418  -.058   2
+  33 EFL20A   2006 2023     18      0      0    .167  11.71  19.67  5.294   .588   .403   1.46   .328   .133   0
+  34 EFL20b   2006 2023     18      0      0    .702  10.56  17.91  3.698   .562   .268   1.57   .258   .251   0
+  35 EFL19A   2008 2023     16      0      0    .716  13.39  27.81  6.923   .568   .425   1.71   .396   .059   1
+  36 EFL19B   2006 2023     18      0      0    .683  13.07  27.14  7.528   .452   .435   1.87   .451   .114   1
+  37 EFL18A   2005 2023     19      0      0    .700   9.78  16.16  4.201   .434   .364   1.44   .306   .059   0
+  38 EFL18B   2008 2023     16      0      0    .904   9.93  19.23  6.192   .782   .323   1.49   .293   .145   1
+  39 EFL17A   2011 2023     13      0      0    .790  12.52  23.73  6.604   .423   .358   1.42   .391   .048   0
+  40 EFL17B   2006 2023     18      0      0    .761  10.09  21.07  6.957   .685   .489   2.20   .471  -.096   1
+  41 EFL16A   2004 2021     18      0      0    .709  13.81  25.54  5.767   .404   .355   1.59   .334   .219   0
+  42 EFL16B   2002 2023     22      0      0    .506  10.38  18.08  5.331   .699   .334   1.46   .288   .053   1
+  43 EFL15B   1999 2021     23      0      0    .652   6.60  11.93  3.234   .355   .416   2.01   .394  -.131   0
+  44 EFL13A   2006 2022     17      0      0    .239  14.16  24.95  7.395   .758   .372   1.55   .334   .196   1
+  45 EFL13B   2004 2018     15      0      0    .693  11.72  22.79  6.445   .584   .362   1.86   .418   .257   0
+  46 EFL12A   1996 2019     24      0      0    .074   9.08  22.39  6.442   .750   .441  12.97  2.482   .660   0
+  47 EFL12B   1995 2023     29      1      1    .087   6.82  18.99  4.898   .589   .417   3.06   .580   .264   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            940      9      5    .486   9.17  43.05  5.137   .553   .372  12.97   .431   .107
+
+ DATA CHECKS (rwl.check): ury003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/ury003.rwl
+ 47 series, 940 measurements, 1970-2024, 0.001 mm precision
+ 0 error(s), 9 warning(s), 48 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (9)
+     EFA23A: site code differs from the efl used by 38 of 47 series
+     EFA23B: site code differs from the efl used by 38 of 47 series
+     EFA24A: site code differs from the efl used by 38 of 47 series
+     EFA25A: site code differs from the efl used by 38 of 47 series
+     EFA25B: site code differs from the efl used by 38 of 47 series
+     EFA26A: site code differs from the efl used by 38 of 47 series
+     EFA27A: site code differs from the efl used by 38 of 47 series
+     EFA28A: site code differs from the efl used by 38 of 47 series
+     EFA28B: site code differs from the efl used by 38 of 47 series
+ 48 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ury003.rwl, MD5 3927b9a9fb021916cb0b9f90cdba5f78.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4534 for 26-year segments.
+ Segments: 26 years, lagged 13, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 26 years: the record is only 55 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

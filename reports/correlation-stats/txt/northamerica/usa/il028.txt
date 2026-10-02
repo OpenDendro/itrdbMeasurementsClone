@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: il028
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : il028.rwl
+      MD5 of measurement file: 9cea6b202e1265d5bb61699fe7ef3ad6
+      Date checked           : 01OCT26
+      Beginning year         : 1792
+      Ending year            : 2014
+      Principal investigators: Maxwell, J.T.; Au, T.F.; Strange, B.M.; Bregy, J.C.; Therrell, M.D.
+      Site name              : Beall Woods
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 38.3550 N
+      Longitude              : 87.8233 W
+      Elevation              : 141 m
+
+      Series intercorrelation: 0.569
+      Avg mean sensitivity   : 0.256
+      Avg standard deviation : 0.920
+      Avg autocorrelation    : 0.745
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 10.64
+
+
+ CORRELATION OF SERIES BY SEGMENTS: il028
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BLW01A   1876 2014                      .44  .32A .38 
+   2 BLW01B   1897 2014                      .58  .71  .47 
+   3 BLW05A   1907 2014                           .58  .53 
+   4 BLW05B   1879 2014                      .63  .61  .52 
+   5 BLW06A   1815 2014       .70  .72  .72  .61  .51  .25B
+   6 BLW06B   1883 2014                      .65  .70  .41 
+   7 BLW07A   1814 2014       .69  .70  .75  .72  .56  .53 
+   8 BLW07B   1792 2014       .65  .71  .76  .76  .66  .56 
+   9 BLW08A   1878 2014                      .72  .57  .55 
+  10 BLW08B   1850 2014                 .71  .75  .57  .62 
+  11 BLW09A   1908 2014                           .56  .62 
+  12 BLW09B   1905 2014                           .73  .61 
+  13 BLW24    1806 1953       .32A .11B .33B .55           
+ Av segment correlation       .59  .56  .65  .64  .59  .50 
+
+ FLAGGED SEGMENTS: il028
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BLW01A   1925 1974     A     .316         0
+   5 BLW06A   1950 1999     B     .248        -3      .395   .147
+  13 BLW24    1825 1874     A     .318         0
+  13 BLW24    1850 1899     B     .108        -7      .280   .172  weak at every lag
+  13 BLW24    1875 1924     B     .329        -7      .348   .019
+
+ DESCRIPTIVE STATISTICS: il028
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BLW01A   1876 2014    139      3      1    .424   1.48   8.79   .866   .573   .320   2.00   .298   .016   0
+   2 BLW01B   1897 2014    118      3      0    .494   2.91   7.78  1.039   .575   .260   1.73   .230   .053   0
+   3 BLW05A   1907 2014    108      2      0    .583   2.38   4.74   .955   .684   .280   1.86   .236  -.111   0
+   4 BLW05B   1879 2014    136      3      0    .575   2.29   5.99  1.319   .854   .264   1.98   .278  -.003   2
+   5 BLW06A   1815 2014    200      6      1    .607    .97   2.65   .577   .835   .258   1.98   .279  -.013   1
+   6 BLW06B   1883 2014    132      3      0    .585   1.44   3.28   .688   .764   .252   1.90   .267   .122   0
+   7 BLW07A   1814 2014    201      6      0    .642   1.78   4.05   .785   .751   .244   1.72   .251   .017   1
+   8 BLW07B   1792 2014    223      6      0    .656   1.52   4.45   .814   .792   .265   1.93   .265  -.005   1
+   9 BLW08A   1878 2014    137      3      0    .651   2.11   3.74   .775   .741   .197   1.78   .199  -.003   1
+  10 BLW08B   1850 2014    165      4      0    .626   1.75   3.81   .838   .815   .220   1.78   .214   .006   1
+  11 BLW09A   1908 2014    107      2      0    .525   2.76   8.15  1.418   .729   .275   1.98   .294  -.025   2
+  12 BLW09B   1905 2014    110      2      0    .588   2.85  12.88  1.663   .765   .289   2.05   .299   .006   1
+  13 BLW24    1806 1953    148      4      3    .336   2.24   4.64   .815   .688   .225   1.71   .221   .012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1924     47      5    .569   1.93  12.88   .920   .745   .256   2.05   .256   .006
+
+ DATA CHECKS (rwl.check): il028
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/il028.rwl
+ 13 series, 1924 measurements, 1792-2014, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_PRECISION (1)
+     the file declares more than one precision (0.001 and 0.01 mm). That is legal and rare, and easy to miss: series measured at different precisions sit in one object
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file il028.rwl, MD5 9cea6b202e1265d5bb61699fe7ef3ad6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

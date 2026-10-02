@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: in013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in013.rwl
+      MD5 of measurement file: 1f180888b35c0bbc583deba737bde345
+      Date checked           : 01OCT26
+      Beginning year         : 1790
+      Ending year            : 2013
+      Principal investigators: Maxwell, J.T.; Harley, G.L.; Van Aken, K.; Matheus, T.J.
+      Site name              : Hoot Woods
+      Species information    : LITU Liriodendron tulipifera L.
+      Latitude               : 39.2500 N
+      Longitude              : 86.8900 W
+      Elevation              : 187 m
+
+      Series intercorrelation: 0.617
+      Avg mean sensitivity   : 0.366
+      Avg standard deviation : 1.595
+      Avg autocorrelation    : 0.601
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 5.56
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 HWT01A   1926 2013                                .69 
+   2 HWT01B   1934 2013                                .75 
+   3 HWT02A   1933 2013                                .50 
+   4 HWT02B   1931 2013                                .73 
+   5 HWT03B   1893 2013                      .55  .78  .83 
+   6 HWT04A   1891 2011                      .61  .52  .66 
+   9 HWT05A2  1943 2013                                .52 
+  10 HWT05B   1915 2011                           .16B .44 
+  11 HWT06A   1929 2013                                .77 
+  12 HWT06B   1932 2011                                .75 
+  13 HWT07A   1938 2011                                .77 
+  14 HWT09A   1878 2012                      .58  .80  .83 
+  15 HWT09B   1883 2012                      .69  .80  .76 
+  16 HWT10A   1790 2013  .64  .64  .53  .43  .62  .50  .53 
+  17 HWT10B   1792 2013  .64  .64  .42  .28A .63  .60  .73 
+ Av segment correlation  .64  .64  .48  .35  .61  .59  .68 
+
+ FLAGGED SEGMENTS: in013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 HWT05B   1925 1974     B     .157       -10      .357   .199
+  17 HWT10B   1875 1924     A     .281         0
+
+ DESCRIPTIVE STATISTICS: in013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HWT01A   1926 2013     88      1      0    .632   4.08  11.56  2.642   .789   .378   2.29   .387  -.021   2
+   2 HWT01B   1934 2013     80      1      0    .729   3.83  10.89  2.926   .795   .380   1.96   .373  -.024   2
+   3 HWT02A   1933 2013     81      1      0    .620   3.98  16.40  3.627   .836   .334   2.18   .340   .055   2
+   4 HWT02B   1931 2013     83      1      0    .690   3.86  17.41  3.404   .748   .371   2.31   .355  -.020   2
+   5 HWT03B   1893 2013    121      3      0    .672   3.18   7.30  1.553   .620   .328   2.42   .390   .056   1
+   6 HWT04A   1891 2011    121      3      0    .611   2.54   6.29  1.130   .523   .355   1.98   .327   .017   2
+   7 HWT04B   1956 2013     58      0      0    .480   3.52  17.14  2.924   .751   .414   1.81   .363   .040   1
+   8 HWT05A   1901 1937     37      0      0    .451   1.18   2.54   .524   .330   .362   1.76   .314  -.053   0
+   9 HWT05A2  1943 2013     71      1      0    .501   1.65   5.12  1.021   .798   .295   1.63   .318  -.010   2
+  10 HWT05B   1915 2011     97      2      1    .381   1.65   4.25   .928   .749   .306   1.94   .333   .004   1
+  11 HWT06A   1929 2013     85      1      0    .790   2.94   8.98  1.900   .673   .404   2.13   .415   .030   1
+  12 HWT06B   1932 2011     80      1      0    .794   2.89   8.51  1.762   .651   .378   1.96   .387  -.025   1
+  13 HWT07A   1938 2011     74      1      0    .745   3.25   7.02  1.237   .494   .322   1.82   .284   .071   0
+  14 HWT09A   1878 2012    135      3      0    .628   2.38   7.26  1.286   .385   .451   2.45   .447   .016   1
+  15 HWT09B   1883 2012    130      3      0    .632   2.49   7.67  1.393   .471   .471   2.71   .467   .022   1
+  16 HWT10A   1790 2013    224      7      0    .547   1.78   4.85   .870   .504   .354   2.42   .384   .004   1
+  17 HWT10B   1792 2013    222      7      1    .600   1.92   5.67   .848   .521   .329   2.23   .342   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1787     36      2    .617   2.64  17.41  1.595   .601   .366   2.71   .372   .014
+
+ DATA CHECKS (rwl.check): in013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in013.rwl
+ 17 series, 1787 measurements, 1790-2013, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file in013.rwl, MD5 1f180888b35c0bbc583deba737bde345.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

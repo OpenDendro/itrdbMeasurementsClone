@@ -1,0 +1,120 @@
+
+ COFECHA-style crossdating report: gree006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : gree006.rwl
+      MD5 of measurement file: cca332c4fc6e3518a8994748edcf254b
+      Date checked           : 01OCT26
+      Beginning year         : 1740
+      Ending year            : 1979
+      Principal investigators: Kuniholm, P.I.
+      Site name              : Chalkidiki  Arnaia  Barbara
+      Species information    : QUFR Quercus frainetto Ten.
+      Latitude               : 40.4800 N
+      Longitude              : 23.5800 E
+      Elevation              : 600 m
+
+      Series intercorrelation: 0.512
+      Avg mean sensitivity   : 0.181
+      Avg standard deviation : 0.490
+      Avg autocorrelation    : 0.819
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 3, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 8.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: gree006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 148010   1740 1979  .32A .15B .27A .65  .59  .58 
+   2 148021   1780 1979  .67  .60  .57  .42  .64  .66 
+   3 148031   1785 1979  .61  .73  .63  .48  .62  .58 
+   4 148041   1790 1979  .65  .64  .58  .37  .57  .54 
+   5 148051   1834 1979            .33  .33B .70  .71 
+   6 148061   1785 1979  .46  .61  .61  .33A .49  .53 
+   7 148071   1795 1979  .48  .63  .59  .37  .62  .62 
+   8 148081   1750 1979  .48  .35  .41  .36  .46  .46 
+   9 148091   1784 1979  .59  .52  .42B .55  .54  .48 
+  10 148101   1758 1979  .55  .39  .39  .71  .64  .51 
+  11 148000   1780 1979  .71  .75  .67  .61  .74  .71 
+  12 148910   1758 1979  .60  .52  .45  .68  .65  .55 
+ Av segment correlation  .56  .54  .49  .49  .60  .58 
+
+ FLAGGED SEGMENTS: gree006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 148010   1800 1849     A     .321         0
+   1 148010   1825 1874     B     .153         1      .197   .045  weak at every lag
+   1 148010   1850 1899     A     .273         0
+   5 148051   1875 1924     B     .332        10      .456   .123
+   6 148061   1875 1924     A     .327         0
+   9 148091   1850 1899     B     .421         1      .431   .010
+
+ DESCRIPTIVE STATISTICS: gree006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 148010   1740 1979    240      6      3    .354    .78   1.78   .287   .721   .190   1.72   .210   .035   1
+   2 148021   1780 1979    200      6      0    .570    .88   4.37   .856   .961   .162   1.65   .176   .020   1
+   3 148031   1785 1979    195      6      0    .583    .77   5.90   .788   .938   .175   1.75   .192   .002   1
+   4 148041   1790 1979    190      6      0    .555    .66   2.70   .394   .806   .208   2.06   .221  -.018   1
+   5 148051   1834 1979    146      4      1    .533   1.05   1.99   .262   .499   .188   1.50   .189  -.003   1
+   6 148061   1785 1979    195      6      1    .487    .83   4.34   .652   .944   .157   1.76   .175   .024   1
+   7 148071   1795 1979    185      6      0    .546    .91   3.89   .469   .744   .186   2.05   .214   .003   2
+   8 148081   1750 1979    230      6      0    .324    .58   1.92   .351   .844   .189   1.79   .204  -.008   1
+   9 148091   1784 1979    196      6      1    .527    .76   2.19   .341   .800   .196   1.63   .207   .005   2
+  10 148101   1758 1979    222      6      0    .516    .80   2.08   .345   .756   .195   1.59   .214   .009   1
+  11 148000   1780 1979    200      6      0    .657    .85   4.55   .849   .959   .149   1.60   .167   .009   1
+  12 148910   1758 1979    222      6      0    .555    .77   2.11   .324   .790   .182   1.52   .200  -.013   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2421     70      6    .512    .80   5.90   .490   .819   .181   2.06   .198   .006
+
+ DATA CHECKS (rwl.check): gree006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/gree006.rwl
+ 12 series, 2421 measurements, 1740-1979, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1740-1988 but the measurements cover 1740-1979
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file gree006.rwl, MD5 cca332c4fc6e3518a8994748edcf254b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,100 @@
+
+ COFECHA-style crossdating report: can719
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : can719.rwl
+      MD5 of measurement file: 54bf3d2eb046222bbb0760dac437ee41
+      Date checked           : 01OCT26
+      Beginning year         : 1958
+      Ending year            : 2022
+      Principal investigators: Mackey, L.
+      Site name              : Capilano Watershed
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 49.3570 N
+      Longitude              : 123.1130 W
+      Elevation              : 66 m
+
+      Series intercorrelation: 0.340
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.884
+      Avg autocorrelation    : 0.661
+      Number dated series    : 4
+      Segment length tested  : 32
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 100.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: can719
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1976 
+                        1991 2007 
+ --- -------- ---------  ---- ---- 
+   2 capt3c2  1958 2022       .18B
+   3 capt4c3  1965 2022       .14B
+ Av segment correlation       .16 
+
+ FLAGGED SEGMENTS: can719
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 capt3c2  1976 2007     B     .182        -2      .318   .136  weak at every lag
+   3 capt4c3  1976 2007     B     .143         6      .370   .226  weak at every lag
+
+ DESCRIPTIVE STATISTICS: can719
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 capt1c2  1982 2022     41      0      0    .528   3.20   5.33  1.127   .813   .182   1.47   .213   .064   1
+   2 capt3c2  1958 2022     65      1      1    .279   2.77   5.33   .906   .329   .264   1.74   .277   .020   1
+   3 capt4c3  1965 2022     58      1      1    .195   2.29   3.98   .779   .864   .158   1.45   .166   .008   1
+   4 capt5c2  1982 2022     41      0      0    .452   2.21   4.59   .755   .750   .171   1.48   .191  -.044   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            205      2      2    .340   2.60   5.33   .884   .661   .199   1.74   .216   .013
+
+ DATA CHECKS (rwl.check): can719
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/can719.rwl
+ 4 series, 205 measurements, 1958-2022, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1981-2021 but the measurements cover 1958-2022
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file can719.rwl, MD5 54bf3d2eb046222bbb0760dac437ee41.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 65 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

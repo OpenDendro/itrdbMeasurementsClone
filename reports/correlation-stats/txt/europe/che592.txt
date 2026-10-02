@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: che592
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che592.rwl
+      MD5 of measurement file: 2a45958b0bfffe837b8f169262dc1870
+      Date checked           : 01OCT26
+      Beginning year         : 1814
+      Ending year            : 2011
+      Principal investigators: Nehrbass-Ahles, C.; Babst, F.; Klesse, S.; Nötzli, M.; Bouriaud, O.; Neukom, R.; Dobbertin, M.; Frank, D.C.
+      Site name              : Vordemwald
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 47.2753 N
+      Longitude              : 7.8878 E
+      Elevation              : 476 m
+
+      Series intercorrelation: 0.555
+      Avg mean sensitivity   : 0.232
+      Avg standard deviation : 0.945
+      Avg autocorrelation    : 0.817
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3)
+      Pct problem segments   : 8.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che592
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 vor12a   1819 2006  .01B .38B .57 
+   2 vor15a   1814 2006  .36  .45  .55 
+   3 vor16a   1843 2006  .44  .63  .71 
+   4 vor21a   1844 2006  .56  .70  .67 
+   5 vor26a   1831 2006  .34B .61  .74 
+   6 VDW0133a 1899 2011       .80  .86 
+   7 VDW0151a 1837 2011  .40  .60  .71 
+   8 VDW0186a 1823 2011  .52  .62  .60 
+   9 VDW0194a 1823 2011  .48  .70  .73 
+  10 VDW1216a 1821 2011  .54  .65  .72 
+  11 VDW1284a 1841 2011  .55  .67  .58 
+  12 VDW1285a 1816 2011  .36  .46  .68 
+  13 VDW1477a 1949 2011            .66 
+ Av segment correlation  .42  .61  .68 
+
+ FLAGGED SEGMENTS: che592
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 vor12a   1900 1949     B     .013         6      .495   .481
+   1 vor12a   1925 1974     B     .382         6      .553   .171
+   5 vor26a   1900 1949     B     .342         7      .355   .013
+
+ DESCRIPTIVE STATISTICS: che592
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 vor12a   1819 2006    188      3      2    .399   1.31   4.90   .835   .818   .259   1.93   .250   .051   3
+   2 vor15a   1814 2006    193      3      0    .503   1.79   6.01   .967   .833   .217   2.37   .259  -.001   1
+   3 vor16a   1843 2006    164      3      0    .636   1.87   4.70   .937   .794   .237   1.67   .247   .042   3
+   4 vor21a   1844 2006    163      3      0    .606   1.32   5.29   .759   .842   .227   1.79   .237  -.010   1
+   5 vor26a   1831 2006    176      3      1    .594   1.90   5.41  1.055   .890   .197   1.49   .194   .003   1
+   6 VDW0133a 1899 2011    113      2      0    .695   2.75   7.14  1.669   .863   .227   1.59   .239  -.007   2
+   7 VDW0151a 1837 2011    175      3      0    .493   1.63   3.94   .885   .860   .190   1.58   .195   .059   1
+   8 VDW0186a 1823 2011    189      3      0    .525   1.23   3.22   .599   .684   .274   1.74   .275   .014   1
+   9 VDW0194a 1823 2011    189      3      0    .575   2.24   5.10  1.053   .813   .210   1.75   .212   .007   2
+  10 VDW1216a 1821 2011    191      3      0    .678   1.90   7.41  1.356   .882   .229   1.71   .234   .005   1
+  11 VDW1284a 1841 2011    171      3      0    .511   1.37   3.08   .633   .858   .185   1.51   .197  -.027   1
+  12 VDW1285a 1816 2011    196      3      0    .492   1.26   3.52   .783   .808   .295   1.99   .275   .080   0
+  13 VDW1477a 1949 2011     63      1      0    .629   2.53   5.87  1.073   .497   .297   1.73   .293   .177   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2171     36      3    .555   1.71   7.41   .945   .817   .232   2.37   .237   .024
+
+ DATA CHECKS (rwl.check): che592
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che592.rwl
+ 13 series, 2171 measurements, 1814-2011, 0.01 mm precision
+ 0 error(s), 1 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file che592.rwl, MD5 2a45958b0bfffe837b8f169262dc1870.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

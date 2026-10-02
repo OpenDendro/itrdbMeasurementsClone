@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: spai021
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai021.rwl
+      MD5 of measurement file: bab6c4d445e9d49a9868f19f46d78ae5
+      Date checked           : 01OCT26
+      Beginning year         : 1715
+      Ending year            : 1988
+      Principal investigators: Génova Fuster, M.; Fernández Cancio, A.
+      Site name              : Pedriza
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 40.8700 N
+      Longitude              : 4.2000 W
+      Elevation              : 1650 m
+
+      Series intercorrelation: 0.550
+      Avg mean sensitivity   : 0.275
+      Avg standard deviation : 0.842
+      Avg autocorrelation    : 0.808
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GU201NPS 1776 1988  .45  .53  .52  .68  .70  .71 
+   2 GU201SPS 1777 1988  .63  .65  .66  .55  .53  .65 
+   3 GU202NPS 1835 1988            .62  .66  .71  .58 
+   4 GU202SPS 1770 1988  .72  .66  .45  .56  .67  .58 
+   5 GU203NPS 1869 1988                 .66  .68  .65 
+   6 GU203SPS 1849 1988                 .72  .70  .57 
+   7 GU204NPS 1740 1988  .45  .48  .43  .51  .59  .60 
+   8 GU204SPS 1740 1988  .62  .45  .43  .52  .53  .55 
+   9 GU205NPS 1732 1988  .56  .50  .62  .75  .75  .66 
+  10 GU205OPS 1715 1988  .58  .45  .38  .64  .62  .47 
+  11 GU207NPS 1826 1988            .52  .75  .72  .60 
+  12 GU207SPS 1896 1988                      .70  .61 
+  13 GU208NPS 1872 1988                 .62  .47  .37 
+  14 GU208SPS 1808 1988       .52  .37  .44  .44  .17B
+ Av segment correlation  .57  .53  .50  .62  .63  .55 
+
+ FLAGGED SEGMENTS: spai021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  14 GU208SPS 1925 1974     B     .165         4      .216   .050  weak at every lag
+
+ DESCRIPTIVE STATISTICS: spai021
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GU201NPS 1776 1988    213      6      0    .593   1.18   6.35  1.393   .931   .241   1.62   .223   .004   2
+   2 GU201SPS 1777 1988    212      6      0    .593   1.45   5.31  1.223   .874   .300   1.78   .267   .004   2
+   3 GU202NPS 1835 1988    154      4      0    .596   1.27   2.87   .507   .649   .309   1.69   .272  -.050   3
+   4 GU202SPS 1770 1988    219      6      0    .557   1.26   5.83  1.081   .900   .329   1.97   .333  -.025   3
+   5 GU203NPS 1869 1988    120      3      0    .634   1.87   7.92  1.157   .791   .302   1.73   .289   .037   1
+   6 GU203SPS 1849 1988    140      3      0    .656   2.22   5.69  1.438   .860   .278   1.85   .256  -.009   3
+   7 GU204NPS 1740 1988    249      6      0    .502   1.16   3.11   .496   .774   .227   1.72   .225   .018   1
+   8 GU204SPS 1740 1988    249      6      0    .525    .82   2.64   .416   .820   .251   1.66   .233   .005   2
+   9 GU205NPS 1732 1988    257      6      0    .578   1.30   6.73   .832   .851   .241   1.69   .235   .005   2
+  10 GU205OPS 1715 1988    274      6      0    .445   1.30   4.91   .896   .839   .283   1.74   .265  -.009   2
+  11 GU207NPS 1826 1988    163      4      0    .628   1.07   2.83   .478   .672   .276   1.73   .272  -.001   2
+  12 GU207SPS 1896 1988     93      2      0    .692    .84   1.83   .400   .581   .350   1.63   .319  -.003   2
+  13 GU208NPS 1872 1988    117      3      0    .515   1.05   2.50   .407   .600   .284   1.40   .237  -.052   3
+  14 GU208SPS 1808 1988    181      5      1    .366   1.45   4.23   .906   .876   .265   1.81   .231  -.007   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2641     66      1    .550   1.28   7.92   .842   .808   .275   1.97   .257  -.004
+
+ DATA CHECKS (rwl.check): spai021
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai021.rwl
+ 14 series, 2641 measurements, 1715-1988, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file spai021.rwl, MD5 bab6c4d445e9d49a9868f19f46d78ae5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

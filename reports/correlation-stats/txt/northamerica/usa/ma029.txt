@@ -1,0 +1,153 @@
+
+ COFECHA-style crossdating report: ma029
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ma029.rwl
+      MD5 of measurement file: e66c3e48a9eabc22f31e5c54b590170b
+      Date checked           : 01OCT26
+      Beginning year         : 1804
+      Ending year            : 2015
+      Principal investigators: Pearl, J.K.; Anchukaitis, K.J.; Pederson, N.; Donnelly, J.P.
+      Site name              : Marine Biological Laboratory #2
+      Species information    : CHTH Chamaecyparis thyoides (L.) B.S.P.
+      Latitude               : 41.5240 N
+      Longitude              : 70.6560 W
+      Elevation              : 3 m
+
+      Series intercorrelation: 0.659
+      Avg mean sensitivity   : 0.368
+      Avg standard deviation : 0.606
+      Avg autocorrelation    : 0.754
+      Number dated series    : 30
+      Series crossdated      : 29
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ma029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 MBL22A   1820 2015  .74  .74  .76 
+   2 MBL22B   1806 2015  .75  .77  .83 
+   3 MBL23A   1872 2015  .84  .80  .48 
+   4 MBL23B   1878 2014  .78  .83  .81 
+   5 MBL24A   1836 2015  .66  .48B .60 
+   6 MBL25B   1875 2015  .51  .61  .78 
+   7 MBL26A   1821 2015  .80  .80  .86 
+   8 MBL26B   1831 2015  .79  .78  .76 
+   9 MBL27A   1895 2015  .75  .76  .57 
+  10 MBL27B   1868 2015  .84  .56  .43 
+  11 MBL28A   1821 2012  .84  .75  .72 
+  12 MBL28B   1827 2012  .83  .85  .84 
+  13 MBL29A   1930 2014            .33 
+  14 MBL29B   1930 2014            .44 
+  15 MBL30A   1837 2014  .82  .79  .74 
+  16 MBL30B   1842 2015  .79  .71  .70 
+  19 MBL32A   1804 2015  .76  .73  .60 
+  23 MBL34B   1945 2015            .45 
+  24 MBL36B   1829 2015  .90  .85  .81 
+  25 MBL36A   1882 2015  .84  .86  .78 
+  26 MBL38A   1828 2015  .77  .69  .65 
+  27 MBL38B   1861 2015  .88  .84  .82 
+  28 MBL40A   1825 2015  .69  .74  .82 
+  29 MBL40B   1839 2015  .80  .83  .89 
+ Av segment correlation  .78  .75  .69 
+
+ FLAGGED SEGMENTS: ma029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 MBL24A   1925 1974     B     .476         1      .479   .003
+
+ DESCRIPTIVE STATISTICS: ma029
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MBL22A   1820 2015    196      3      0    .630   1.04   4.78   .639   .711   .358   3.38   .410   .003   2
+   2 MBL22B   1806 2015    210      3      0    .748    .99   4.33   .664   .813   .317   2.17   .335  -.002   1
+   3 MBL23A   1872 2015    144      3      0    .609    .93   3.00   .691   .864   .378   2.06   .374   .012   1
+   4 MBL23B   1878 2014    137      3      0    .786    .88   3.78   .661   .829   .428   2.09   .400   .037   1
+   5 MBL24A   1836 2015    180      3      1    .664    .67   2.28   .493   .791   .387   2.55   .385   .027   1
+   6 MBL25B   1875 2015    141      3      0    .640    .87   2.36   .430   .704   .295   1.98   .316   .033   1
+   7 MBL26A   1821 2015    195      3      0    .812    .85   3.39   .563   .793   .371   2.20   .363  -.003   1
+   8 MBL26B   1831 2015    185      3      0    .741    .72   2.48   .451   .741   .418   2.07   .356   .088   0
+   9 MBL27A   1895 2015    121      3      0    .648   1.18   2.68   .558   .590   .322   1.91   .345   .002   2
+  10 MBL27B   1868 2015    148      3      0    .559   1.04   2.89   .709   .844   .373   2.54   .391   .007   2
+  11 MBL28A   1821 2012    192      3      0    .744    .76   3.75   .657   .834   .407   2.03   .389   .009   1
+  12 MBL28B   1827 2012    186      3      0    .784    .85   3.25   .615   .781   .439   2.53   .413   .001   1
+  13 MBL29A   1930 2014     85      1      0    .318    .81   2.69   .614   .828   .350   2.32   .416   .053   1
+  14 MBL29B   1930 2014     85      1      0    .345    .92   2.41   .680   .878   .325   1.78   .342   .019   2
+  15 MBL30A   1837 2014    178      3      0    .773    .82   3.00   .554   .811   .360   2.32   .354   .008   3
+  16 MBL30B   1842 2015    174      3      0    .680    .85   3.19   .565   .771   .351   2.38   .388   .009   1
+  17 MBL31A   1951 2014     64      0      0    .282   1.87   5.86  1.663   .923   .326   2.29   .364   .050   1
+  18 MBL31B   1951 2014     64      0      0    .283   1.02   2.40   .699   .863   .357   2.06   .403   .007   1
+  19 MBL32A   1804 2015    212      3      0    .653    .97   2.96   .574   .814   .315   2.45   .339  -.001   3
+  20 MBL32B   1804 1977    172                          .93   2.68   .545   .860   .257                         
+  21 MBL33A   1955 2015     61      0      0    .004   1.45   3.50  1.018   .881   .327   2.35   .400  -.057   1
+  22 MBL33B   1961 2015     55      0      0    .225   1.72   3.90  1.089   .835   .340   1.77   .359   .011   1
+  23 MBL34B   1945 2015     71      1      0    .478    .49   1.35   .333   .564   .456   1.95   .374   .001   0
+  24 MBL36B   1829 2015    187      3      0    .849    .73   2.33   .416   .630   .405   2.16   .372   .013   1
+  25 MBL36A   1882 2015    134      3      0    .798    .56   1.41   .279   .690   .360   1.96   .331   .021   1
+  26 MBL38A   1828 2015    188      3      0    .474    .95   8.18   .847   .285   .440   6.64   .627   .046   0
+  27 MBL38B   1861 2015    155      3      0    .841   1.06   2.98   .590   .579   .449   2.49   .433   .016   1
+  28 MBL40A   1825 2015    191      3      0    .739    .86   2.81   .553   .803   .343   2.52   .397   .009   2
+  29 MBL40B   1839 2015    177      3      0    .813    .87   2.87   .612   .827   .366   2.16   .376   .014   1
+  30 MBL42A   1936 1998     63      0      0    .326    .69   2.15   .421   .723   .379   1.97   .390   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4351     66      1    .659    .90   8.18   .606   .754   .368   6.64   .386   .016
+
+ DATA CHECKS (rwl.check): ma029
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ma029.rwl
+ 30 series, 4351 measurements, 1804-2015, 0.001 mm precision
+ 0 error(s), 3 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     MBL32B: no measurement for 1951-1952, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 6 carriage return(s) against 464 line feed(s); mixed endings can defeat a reader
+   RWL_SERIES_OUTLIER (1)
+     MBL33A: correlates with the rest of the collection at r = -0.108 where the collection median is 0.678 (4.4 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ma029.rwl, MD5 e66c3e48a9eabc22f31e5c54b590170b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series MBL32B has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

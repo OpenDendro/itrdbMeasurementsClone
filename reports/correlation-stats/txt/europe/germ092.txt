@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: germ092
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ092.rwl
+      MD5 of measurement file: 5f17acea1089b4ca44ee0f2ade95ec05
+      Date checked           : 01OCT26
+      Beginning year         : 1560
+      Ending year            : 1672
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Am Olberg Str. 3+5 3 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.661
+      Avg mean sensitivity   : 0.234
+      Avg standard deviation : 0.913
+      Avg autocorrelation    : 0.698
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ092
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 
+                        1649 
+ --- -------- ---------  ---- 
+   1 OBF12A   1560 1672  .86 
+   2 OBF12B   1560 1662  .82 
+   3 OBF14A   1585 1663  .82 
+   5 OBF15A   1597 1663  .69 
+   6 OBF15B   1597 1665  .58 
+   7 OBF16A   1593 1661  .66 
+ Av segment correlation  .74 
+
+ FLAGGED SEGMENTS: germ092
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ092
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OBF12A   1560 1672    113      1      0    .696   2.08   3.78   .720   .699   .219   1.47   .221  -.008   1
+   2 OBF12B   1560 1662    103      1      0    .618   1.88   4.21   .730   .713   .228   1.63   .239  -.001   2
+   3 OBF14A   1585 1663     79      1      0    .724   2.18   4.27   .806   .685   .227   1.56   .232   .064   1
+   4 OBF14B   1585 1643     59      0      0    .732   2.68   6.21  1.103   .645   .272   1.64   .240  -.009   1
+   5 OBF15A   1597 1663     67      1      0    .664   2.47   5.32  1.224   .845   .201   1.28   .183  -.031   3
+   6 OBF15B   1597 1665     69      1      0    .589   2.44   4.04   .857   .574   .258   1.57   .232  -.032   3
+   7 OBF16A   1593 1661     69      1      0    .607   2.95   5.23  1.214   .716   .251   1.69   .225  -.069   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            559      6      0    .661   2.32   6.21   .913   .698   .234   1.69   .225  -.010
+
+ DATA CHECKS (rwl.check): germ092
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ092.rwl
+ 7 series, 559 measurements, 1560-1672, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file germ092.rwl, MD5 5f17acea1089b4ca44ee0f2ade95ec05.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

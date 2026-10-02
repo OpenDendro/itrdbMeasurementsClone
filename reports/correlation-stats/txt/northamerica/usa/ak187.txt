@@ -1,0 +1,181 @@
+
+ COFECHA-style crossdating report: ak187
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak187.rwl
+      MD5 of measurement file: 71babf6be2241746d60aff97f6ccdc02
+      Date checked           : 01OCT26
+      Beginning year         : 1936
+      Ending year            : 2017
+      Principal investigators: Gaglioti, B.V.; Andreu-Hayles, L.
+      Site name              : Noatak Alder Unburned
+      Species information    : ALSP Alnus spp. Mill.
+      Latitude               : 67.9916 N
+      Longitude              : 162.0033 W
+      Elevation              : 117 m
+
+      Series intercorrelation: 0.496
+      Avg mean sensitivity   : 0.417
+      Avg standard deviation : 0.253
+      Avg autocorrelation    : 0.538
+      Number dated series    : 53
+      Segment length tested  : 40
+
+      Number problem segments: 14  (A 2, B 12; 9 of the B weak at every lag)
+      Pct problem segments   : 37.84
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak187
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  40-year dated segments, lagged  20 years
+ Flags:  A = correlation under   .3665 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1970 
+                        1989 2009 
+ --- -------- ---------  ---- ---- 
+   3 NB-02    1939 2017  .60  .78 
+   4 NB-02B   1940 2017  .24B .40 
+   5 NB-03    1940 2017  .60  .60 
+   6 NB-03B   1939 2017  .34B .45 
+   7 NB-04res 1941 2012  .40B .26B
+   8 NB-05    1966 2015       .64 
+   9 NB-05B   1966 2017       .35B
+  18 NB-10    1965 2017       .72 
+  19 NB-10B   1941 2013  .51  .84 
+  20 NB-11B   1936 2017  .57  .62 
+  22 NB-12B   1955 2015       .37 
+  28 NB-15    1939 2017  .25B .48 
+  29 NB-15B   1936 2016  .40  .48 
+  32 NB-17    1943 1998  .26B     
+  33 NB-17B   1944 2017  .29B .59 
+  34 NB-18    1966 2015       .47 
+  35 NB-18B   1967 2015       .27A
+  38 NB-21    1959 2014       .72 
+  39 NB-21B   1959 2017       .74 
+  40 NB-22    1959 2017       .16B
+  41 NB-22B   1956 2014       .39 
+  44 NB-24    1940 2016  .58  .35A
+  45 NB-24B   1938 2017  .26B .45 
+  50 NB-27    1939 2015  .14B .26B
+ Av segment correlation  .39  .49 
+
+ FLAGGED SEGMENTS: ak187
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 NB-02B   1950 1989     B     .241        -1      .261   .020  weak at every lag
+   6 NB-03B   1950 1989     B     .343         3      .352   .009  weak at every lag
+   7 NB-04res 1950 1989     B     .397        -1      .429   .032
+   7 NB-04res 1970 2009     B     .259        -1      .339   .079  weak at every lag
+   9 NB-05B   1970 2009     B     .349        -7      .362   .013  weak at every lag
+  28 NB-15    1950 1989     B     .248         1      .333   .086  weak at every lag
+  32 NB-17    1950 1989     B     .264        -9      .301   .037  weak at every lag
+  33 NB-17B   1950 1989     B     .289         9      .294   .005  weak at every lag
+  35 NB-18B   1970 2009     A     .274         0
+  40 NB-22    1970 2009     B     .156         8      .275   .119  weak at every lag
+  44 NB-24    1970 2009     A     .349         0
+  45 NB-24B   1950 1989     B     .257        -3      .361   .104  weak at every lag
+  50 NB-27    1950 1989     B     .139        -3      .473   .334
+  50 NB-27    1970 2009     B     .257        -3      .367   .110
+
+ DESCRIPTIVE STATISTICS: ak187
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NB-01    1978 2017     40      0      0    .485    .66   1.57   .297   .324   .415   1.72   .297   .048   2
+   2 NB-01B   1978 2017     40      0      0    .701    .71   1.71   .309   .404   .347   1.86   .314   .040   0
+   3 NB-02    1939 2017     79      2      0    .551    .40   1.05   .228   .502   .472   2.08   .403  -.021   1
+   4 NB-02B   1940 2017     78      2      1    .364    .34   1.05   .201   .514   .457   1.97   .416   .010   1
+   5 NB-03    1940 2017     78      2      0    .524    .25    .76   .139   .677   .341   2.02   .351   .023   1
+   6 NB-03B   1939 2017     79      2      1    .429    .26    .73   .162   .675   .407   2.08   .375   .019   1
+   7 NB-04res 1941 2012     72      2      2    .279    .24    .90   .141   .320   .429   3.56   .481   .114   0
+   8 NB-05    1966 2015     50      1      0    .552    .42    .84   .220   .589   .372   1.99   .375   .037   1
+   9 NB-05B   1966 2017     52      1      1    .306    .31    .79   .193   .513   .497   2.28   .488   .013   1
+  10 NB-06    1976 2017     42      0      0    .682    .61   1.87   .410   .641   .416   2.80   .425   .170   0
+  11 NB-06B   1976 2017     42      0      0    .701    .71   1.93   .412   .536   .433   2.25   .411   .157   0
+  12 NB-07    1976 2017     42      0      0    .547    .59   1.19   .246   .383   .423   1.64   .323  -.014   0
+  13 NB-07B   1977 2017     41      0      0    .416    .58    .97   .204   .164   .391   1.56   .265   .038   2
+  14 NB-08    1973 2017     45      0      0    .764    .61   1.33   .257   .504   .349   1.63   .322   .032   1
+  15 NB-08B   1975 2017     43      0      0    .626    .63   1.39   .278   .586   .287   1.55   .279   .174   0
+  16 NB-09    1976 2017     42      0      0    .762    .51   1.40   .304   .659   .351   1.63   .326   .141   0
+  17 NB-09B   1976 2017     42      0      0    .658    .51   1.25   .290   .750   .348   1.73   .321   .187   0
+  18 NB-10    1965 2017     53      1      0    .658    .35    .75   .153   .313   .476   1.96   .386   .100   0
+  19 NB-10B   1941 2013     73      2      0    .540    .47   1.48   .312   .511   .497   1.97   .452   .004   1
+  20 NB-11B   1936 2017     82      2      0    .340    .28    .91   .171   .387   .411   2.68   .428  -.002   1
+  21 NB-12    1955 2004     50      0      0    .699    .46   1.69   .372   .724   .451   2.12   .400   .150   0
+  22 NB-12B   1955 2015     61      1      0    .469    .41   2.05   .369   .701   .509   1.93   .384  -.124   0
+  23 NB-13    1978 2017     40      0      0    .706    .48    .95   .212   .322   .432   1.66   .380   .084   0
+  24 NB-13B   1978 2017     40      0      0    .654    .43    .88   .182   .357   .428   1.77   .354   .061   0
+  25 NB-14    1978 2017     40      0      0    .724    .70   1.82   .333   .585   .402   1.74   .329  -.046   2
+  26 NB-14_2  1978 2017     40      0      0    .701    .70   1.83   .326   .572   .383   1.63   .318  -.038   2
+  27 NB-14B   1975 2015     41      0      0    .277    .61   1.54   .367   .581   .419   1.87   .361  -.057   0
+  28 NB-15    1939 2017     79      2      1    .335    .50   1.49   .295   .520   .411   2.47   .421  -.006   1
+  29 NB-15B   1936 2016     81      2      0    .220    .43   1.30   .251   .514   .418   3.18   .430   .026   1
+  30 NB-16    1972 2014     43      0      0    .657    .56   1.46   .368   .672   .482   2.25   .456   .005   1
+  31 NB-16B   1972 2014     43      0      0    .789    .70   1.65   .403   .541   .492   1.93   .437  -.023   2
+  32 NB-17    1943 1998     56      1      1    .302    .33    .99   .208   .724   .386   1.68   .355  -.003   1
+  33 NB-17B   1944 2017     74      2      1    .377    .25    .80   .172   .592   .453   1.98   .395  -.026   3
+  34 NB-18    1966 2015     50      1      0    .431    .47    .80   .203   .537   .409   1.81   .355  -.022   2
+  35 NB-18B   1967 2015     49      1      1    .201    .36    .78   .207   .728   .386   2.45   .412  -.016   2
+  36 NB-20    1981 2017     37      0      0    .730    .95   2.13   .515   .436   .487   1.85   .404   .056   0
+  37 NB-20B   1980 2017     38      0      0    .784    .59   1.22   .276   .159   .480   1.77   .395  -.071   0
+  38 NB-21    1959 2014     56      1      0    .637    .34    .67   .156   .653   .323   1.61   .279  -.026   2
+  39 NB-21B   1959 2017     59      1      0    .681    .33    .68   .162   .686   .306   1.83   .296   .047   1
+  40 NB-22    1959 2017     59      1      1    .232    .50   1.44   .323   .765   .371   2.23   .349   .052   1
+  41 NB-22B   1956 2014     59      1      0    .311    .30    .96   .224   .683   .480   2.34   .439   .009   1
+  42 NB-23    1972 2017     46      0      0    .676    .37    .81   .189   .343   .452   1.78   .376   .077   0
+  43 NB-23B   1972 2015     44      0      0    .710    .33    .74   .180   .310   .488   2.02   .449   .164   0
+  44 NB-24    1940 2016     77      2      1    .432    .48   1.61   .264   .560   .373   2.06   .362   .077   1
+  45 NB-24B   1938 2017     80      2      1    .350    .39   1.55   .231   .505   .381   1.91   .341   .088   3
+  46 NB-25    1985 2015     31      0      0    .402    .55   1.35   .365   .651   .367   2.63   .421   .046   0
+  47 NB-25B   1981 2016     36      0      0    .193    .48   1.32   .320   .286   .559   1.85   .484  -.058   2
+  48 NB-26    1979 2014     36      0      0    .366    .42   1.02   .287   .787   .330   1.73   .333  -.008   2
+  49 NB-26B   1979 2016     38      0      0    .815    .48   1.13   .319   .739   .430   1.73   .387  -.026   2
+  50 NB-27    1939 2015     77      2      2    .217    .32   1.04   .207   .661   .373   2.44   .368  -.020   1
+  51 NB-27 (2 1978 2017     40      0      0    .729    .59   1.15   .287   .526   .375   2.16   .399   .067   1
+  52 NB-28    1980 2017     38      0      0    .533    .47   1.07   .236   .270   .529   1.94   .434  -.035   0
+  53 NB-28B   1981 2017     37      0      0    .453    .48    .99   .235   .473   .424   1.86   .421  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2790     37     14    .496    .45   2.13   .253   .538   .417   3.56   .383   .029
+
+ DATA CHECKS (rwl.check): ak187
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak187.rwl
+ 53 series, 2790 measurements, 1936-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 29 note(s)
+ -------------
+ Nothing to report at this severity.
+ 29 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file ak187.rwl, MD5 71babf6be2241746d60aff97f6ccdc02.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3665 for 40-year segments.
+ Segments: 40 years, lagged 20, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 40 years: the record is only 82 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

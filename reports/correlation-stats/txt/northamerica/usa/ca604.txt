@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: ca604
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca604.rwl
+      MD5 of measurement file: 035f9099ef837ab60ba1f98f3867c5fd
+      Date checked           : 01OCT26
+      Beginning year         : 1520
+      Ending year            : 1996
+      Principal investigators: King, J.C.
+      Site name              : Granite Lakes Yosemite National Park
+      Species information    : PIAL Pinus albicaulis Engelm.
+      Latitude               : 37.9200 N
+      Longitude              : 119.2800 W
+      Elevation              : 3300 m
+
+      Series intercorrelation: 0.522
+      Avg mean sensitivity   : 0.226
+      Avg standard deviation : 0.238
+      Avg autocorrelation    : 0.761
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 6, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 9.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca604
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 GLZ1     1520 1788  .51  .59  .61  .67  .51  .44                                         
+   2 GLD5     1555 1784  .28A .31A .50  .55  .52  .45                                         
+   3 GL17B    1591 1910  .52  .54  .66  .65  .55  .59  .54  .47  .35  .53  .63                
+   4 GL17A    1606 1850       .36  .56  .56  .52  .62  .55  .54  .44                          
+   5 GL07B    1630 1798            .50  .48  .52  .60                                         
+   6 GL02B    1665 1996                 .47  .67  .73  .68  .59  .69  .58  .58  .71  .57  .47 
+   7 GLD2     1670 1788                 .37  .51  .63                                         
+   8 GLD7     1670 1781                 .56  .59  .61                                         
+   9 GL02A    1695 1996                      .52  .67  .67  .51  .63  .65  .69  .78  .49  .39 
+  10 GL05B    1730 1996                                .45  .34B .36B .48  .49  .46  .35  .28B
+  11 GL09B    1740 1996                                .63  .71  .74  .66  .67  .67  .47  .45 
+  12 GL09A    1770 1996                                     .58  .70  .53  .48  .61  .57  .44 
+  13 GL15B    1820 1996                                               .26A .35  .37  .47  .53 
+  14 GL14B    1840 1996                                                    .49  .65  .64  .63 
+  15 GL08A    1856 1996                                                         .61  .50  .24B
+  16 GL01A    1864 1996                                                         .64  .63  .29A
+  17 GL04B    1866 1996                                                         .65  .50  .27A
+  18 GL04A    1868 1996                                                         .52  .37  .15B
+  19 GL03A    1870 1996                                                         .47  .50  .32A
+  20 GL15A    1877 1996                                                              .60  .47 
+  21 GL14A    1880 1996                                                              .53  .56 
+  22 GL20B    1886 1996                                                              .54  .41 
+  23 GL01B    1894 1996                                                              .61  .39 
+  24 GL20A    1900 1996                                                                   .39 
+ Av segment correlation  .44  .45  .57  .54  .55  .59  .59  .53  .56  .53  .55  .60  .52  .39 
+
+ FLAGGED SEGMENTS: ca604
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 GLD5     1600 1649     A     .279         0
+   2 GLD5     1625 1674     A     .313         0
+  10 GL05B    1775 1824     B     .341         2      .386   .046
+  10 GL05B    1800 1849     B     .359         2      .371   .012
+  10 GL05B    1925 1974     B     .280         7      .301   .021  weak at every lag
+  13 GL15B    1825 1874     A     .260         0
+  15 GL08A    1925 1974     B     .243        -8      .299   .056  weak at every lag
+  16 GL01A    1925 1974     A     .292         0
+  17 GL04B    1925 1974     A     .271         0
+  18 GL04A    1925 1974     B     .145        10      .452   .306
+  19 GL03A    1925 1974     A     .321         0
+
+ DESCRIPTIVE STATISTICS: ca604
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GLZ1     1520 1788    269      6      0    .472    .59   1.33   .222   .777   .203   1.64   .217  -.003   1
+   2 GLD5     1555 1784    230      6      2    .396    .32    .70   .118   .760   .203   2.16   .216  -.012   1
+   3 GL17B    1591 1910    320     11      0    .517    .39    .99   .180   .808   .233   1.71   .222  -.009   3
+   4 GL17A    1606 1850    245      8      0    .484    .38    .80   .132   .719   .209   1.54   .200   .008   3
+   5 GL07B    1630 1798    169      4      0    .530    .43   1.13   .228   .841   .220   1.69   .216  -.014   1
+   6 GL02B    1665 1996    332     11      0    .595    .56   1.72   .320   .861   .252   2.34   .266   .009   3
+   7 GLD2     1670 1788    119      3      0    .463    .68   1.26   .264   .653   .293   1.63   .274  -.009   1
+   8 GLD7     1670 1781    112      3      0    .579    .64   1.47   .261   .712   .250   1.76   .262   .005   2
+   9 GL02A    1695 1996    302     10      0    .612    .58   1.77   .315   .853   .230   2.33   .258   .038   3
+  10 GL05B    1730 1996    267      8      3    .464    .47   1.37   .212   .714   .240   2.15   .268   .020   2
+  11 GL09B    1740 1996    257      8      0    .644    .51   1.74   .237   .771   .238   1.91   .261   .018   3
+  12 GL09A    1770 1996    227      7      0    .576    .44   1.28   .212   .690   .288   2.11   .293   .024   3
+  13 GL15B    1820 1996    177      5      1    .405    .57   1.57   .268   .794   .245   1.52   .238   .001   2
+  14 GL14B    1840 1996    157      4      0    .576    .75   2.65   .383   .792   .207   2.11   .238   .024   1
+  15 GL08A    1856 1996    141      3      1    .507    .42   1.12   .221   .871   .219   1.81   .233   .034   1
+  16 GL01A    1864 1996    133      3      1    .509   1.08   2.07   .412   .794   .206   1.65   .215  -.015   3
+  17 GL04B    1866 1996    131      3      1    .565    .58    .93   .151   .646   .177   1.51   .185   .003   1
+  18 GL04A    1868 1996    129      3      1    .519    .60   1.23   .175   .633   .199   1.68   .213   .011   1
+  19 GL03A    1870 1996    127      3      1    .480    .33    .66   .090   .600   .198   1.48   .188   .030   1
+  20 GL15A    1877 1996    120      2      0    .457    .49   1.07   .163   .566   .230   2.07   .235   .120   0
+  21 GL14A    1880 1996    117      2      0    .631    .72   2.03   .324   .796   .185   1.89   .221   .017   1
+  22 GL20B    1886 1996    111      2      0    .522    .54   1.28   .231   .785   .212   1.84   .237   .132   1
+  23 GL01B    1894 1996    103      2      0    .508    .87   1.68   .323   .805   .183   1.43   .189  -.009   1
+  24 GL20A    1900 1996     97      1      0    .401   1.21   2.08   .379   .702   .202   1.57   .211   .058   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4392    118     11    .522    .55   2.65   .238   .761   .226   2.34   .236   .016
+
+ DATA CHECKS (rwl.check): ca604
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca604.rwl
+ 24 series, 4392 measurements, 1520-1996, 0.002 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file ca604.rwl, MD5 035f9099ef837ab60ba1f98f3867c5fd.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

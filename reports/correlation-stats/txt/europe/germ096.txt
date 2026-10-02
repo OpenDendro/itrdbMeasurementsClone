@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: germ096
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ096.rwl
+      MD5 of measurement file: 52068f1358cf16439c5822b161d26963
+      Date checked           : 01OCT26
+      Beginning year         : 1538
+      Ending year            : 1625
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Schwarze-baeren Str. 6 Regensburg Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.603
+      Avg mean sensitivity   : 0.268
+      Avg standard deviation : 0.722
+      Avg autocorrelation    : 0.545
+      Number dated series    : 5
+      Segment length tested  : 44
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 40.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ096
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  44-year dated segments, lagged  22 years
+ Flags:  A = correlation under   .3496 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1550 1572 
+                        1593 1615 
+ --- -------- ---------  ---- ---- 
+   1 scz01    1538 1622  .26A .24B
+   2 scz02    1545 1625  .55  .69 
+   5 scz5     1564 1625       .75 
+ Av segment correlation  .40  .56 
+
+ FLAGGED SEGMENTS: germ096
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 scz01    1550 1593     A     .262         0
+   1 scz01    1572 1615     B     .241         8      .343   .102  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ096
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 scz01    1538 1622     85      2      2    .370   1.26   4.31  1.174   .926   .269   1.58   .240   .015   3
+   2 scz02    1545 1625     81      2      0    .633   1.22   2.22   .426   .285   .310   2.06   .278  -.020   0
+   3 scz3     1580 1625     46      0      0    .636   2.52   4.05   .783   .459   .244   1.54   .253  -.024   1
+   4 scz4     1584 1622     39      0      0    .725   2.67   5.36   .755   .164   .246   1.55   .240   .071   0
+   5 scz5     1564 1625     62      1      0    .782   1.19   2.38   .422   .664   .241   1.50   .228   .036   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            313      5      2    .603   1.60   5.36   .722   .545   .268   2.06   .250   .011
+
+ DATA CHECKS (rwl.check): germ096
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ096.rwl
+ 5 series, 313 measurements, 1538-1625, 0.01 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     scz01: correlates with the rest of the collection at r = 0.247 where the collection median is 0.616 (43.8 MAD below it); it does not fit the collection it is in
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file germ096.rwl, MD5 52068f1358cf16439c5822b161d26963.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3496 for 44-year segments.
+ Segments: 44 years, lagged 22, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 44 years: the record is only 88 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

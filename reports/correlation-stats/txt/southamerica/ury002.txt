@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: ury002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ury002.rwl
+      MD5 of measurement file: a8448b97960737178a3fc86e42ba8ae9
+      Date checked           : 01OCT26
+      Beginning year         : 1900
+      Ending year            : 2012
+      Principal investigators: Lucas, C.; Puchi, P.; Profumo, L.; Ferreira, A.; Muñoz, A.A.
+      Site name              : Sierras La Blanqueada
+      Species information    : SCBU Scutia buxifolia Reissek
+      Latitude               : 33.9973 S
+      Longitude              : 53.8819 W
+      Elevation              : 115 m
+
+      Series intercorrelation: 0.371
+      Avg mean sensitivity   : 0.382
+      Avg standard deviation : 0.687
+      Avg autocorrelation    : 0.379
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 4, B 5; 5 of the B weak at every lag)
+      Pct problem segments   : 50.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ury002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SLB01B   1940 2012            .23B
+   2 SLB01D   1940 2012            .27A
+   3 SLB02A   1926 1999            .39 
+   4 SCJ03A   1940 2012            .36 
+   5 SLB04B   1900 2012       .19B .15B
+   6 SLB04C   1900 2012       .32A .17B
+   9 SLB05B   1938 2012            .31A
+  10 SLB05D   1938 2012            .39 
+  11 SLB07C   1929 2012            .52 
+  12 SLB07B   1929 2012            .41 
+  13 SLB08B   1940 2000            .33 
+  14 SLB09B   1926 2012            .53 
+  15 SLB09C   1926 1999            .45 
+  16 SLB10C   1933 2012            .22B
+  17 SLB10D   1933 1999            .31A
+  25 SLB15C   1940 1999            .50 
+ Av segment correlation       .26  .35 
+
+ FLAGGED SEGMENTS: ury002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 SLB01B   1950 1999     B     .231        -2      .232   .001  weak at every lag
+   2 SLB01D   1950 1999     A     .271         0
+   5 SLB04B   1925 1974     B     .193         9      .300   .107  weak at every lag
+   5 SLB04B   1950 1999     B     .152        -9      .273   .121  weak at every lag
+   6 SLB04C   1925 1974     A     .318         0
+   6 SLB04C   1950 1999     B     .174         2      .210   .037  weak at every lag
+   9 SLB05B   1950 1999     A     .313         0
+  16 SLB10C   1950 1999     B     .216         4      .233   .016  weak at every lag
+  17 SLB10D   1950 1999     A     .305         0
+
+ DESCRIPTIVE STATISTICS: ury002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SLB01B   1940 2012     73      1      1    .330   1.13   2.21   .408   .325   .336   1.78   .302  -.047   3
+   2 SLB01D   1940 2012     73      1      1    .322    .98   1.94   .390   .374   .357   1.99   .344   .016   1
+   3 SLB02A   1926 1999     74      1      0    .330   1.66   6.62  1.013   .118   .476   3.08   .544   .081   0
+   4 SCJ03A   1940 2012     73      1      0    .384    .77   1.79   .383   .525   .417   1.95   .380  -.002   1
+   5 SLB04B   1900 2012    113      2      2    .290   1.53   4.75   .832   .524   .392   2.30   .404  -.013   2
+   6 SLB04C   1900 2012    113      2      2    .363   1.56   4.54   .820   .525   .356   2.13   .375   .028   1
+   7 SLB06C   1959 2012     54      0      0    .163   1.65   4.77   .744   .107   .380   2.37   .384  -.061   0
+   8 SLB06D   1959 2000     42      0      0    .330   1.46   4.22   .723   .224   .400   2.03   .401   .061   0
+   9 SLB05B   1938 2012     75      1      1    .378   1.54   3.13   .647   .236   .402   2.02   .387   .090   0
+  10 SLB05D   1938 2012     75      1      0    .465   1.35   3.67   .589   .289   .382   2.22   .382   .089   0
+  11 SLB07C   1929 2012     84      1      0    .516   1.03   3.29   .510   .430   .371   2.03   .354   .039   0
+  12 SLB07B   1929 2012     84      1      0    .386   1.17   3.23   .650   .470   .411   2.11   .396  -.018   3
+  13 SLB08B   1940 2000     61      1      0    .304   1.17   2.37   .537   .255   .397   1.78   .352  -.017   0
+  14 SLB09B   1926 2012     87      1      0    .479   1.13   3.53   .605   .443   .386   2.25   .396   .099   0
+  15 SLB09C   1926 1999     74      1      0    .450   1.21   2.41   .454   .281   .357   1.63   .308  -.044   3
+  16 SLB10C   1933 2012     80      1      1    .296    .73   1.83   .361   .340   .375   2.15   .371  -.002   0
+  17 SLB10D   1933 1999     67      1      1    .379    .68   1.63   .301   .285   .416   2.07   .357   .011   2
+  18 SLB11A   1951 2012     62      0      0    .528    .95   2.03   .330   .404   .259   2.06   .297   .026   1
+  19 SLB11D   1951 2012     62      0      0    .501   1.69   3.68   .822   .522   .377   1.78   .354   .008   1
+  20 SJC12A   1955 2005     51      0      0    .510   2.17   6.98  1.223   .361   .341   2.45   .419   .066   0
+  21 SJC12D   1955 2008     54      0      0    .355   1.79   4.12   .997   .590   .400   1.90   .381   .161   0
+  22 SLB13B   1964 2012     49      0      0    .182   2.13   8.48  1.426   .454   .406   2.00   .424   .080   1
+  23 SLB13C   1964 2012     49      0      0    .233   1.94   5.64  1.206   .419   .430   2.53   .492   .048   1
+  24 SLB14C   1964 2012     49      0      0    .214   1.86   5.19   .928   .314   .392   2.65   .438  -.024   3
+  25 SLB15C   1940 1999     60      1      0    .464   1.77   5.41   .925   .426   .355   2.35   .377   .035   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1738     18      9    .371   1.36   8.48   .687   .379   .382   3.08   .383   .027
+
+ DATA CHECKS (rwl.check): ury002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/ury002.rwl
+ 25 series, 1738 measurements, 1900-2012, 0.001 mm precision
+ 0 error(s), 4 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_SITE_CODE (3)
+     SCJ03A: site code differs from the slb used by 22 of 25 series
+     SJC12A: site code differs from the slb used by 22 of 25 series
+     SJC12D: site code differs from the slb used by 22 of 25 series
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file ury002.rwl, MD5 a8448b97960737178a3fc86e42ba8ae9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

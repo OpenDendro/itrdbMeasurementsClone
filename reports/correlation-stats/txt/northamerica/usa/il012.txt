@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: il012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : il012.rwl
+      MD5 of measurement file: 64d197e6935f76636c18aeeba364565e
+      Date checked           : 01OCT26
+      Beginning year         : 1670
+      Ending year            : 1980
+      Principal investigators: Duvick, D.N.
+      Site name              : Kickapoo State Park
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 40.1383 N
+      Longitude              : 87.7457 W
+      Elevation              : 215 m
+
+      Series intercorrelation: 0.693
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 0.657
+      Avg autocorrelation    : 0.663
+      Number dated series    : 21
+      Series crossdated      : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 2.44
+
+
+ CORRELATION OF SERIES BY SEGMENTS: il012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   2 KIK012   1670 1980  .60  .61  .42  .24B .31B .33  .33  .51  .80  .76 
+   3 KIK021   1901 1980                                               .57 
+   4 KIK022   1921 1980                                               .74 
+   5 KIK031   1874 1980                                     .74  .83  .89 
+   6 KIK032   1864 1980                                     .77  .86  .89 
+   7 KIK041   1782 1980                      .35  .60  .77  .80  .77  .77 
+   8 KIK042   1815 1980                           .65  .73  .66  .66  .80 
+   9 KIK051   1878 1980                                          .78  .75 
+  10 KIK052   1840 1980                                .81  .82  .82  .80 
+  11 KIK061   1890 1980                                          .67  .70 
+  12 KIK101   1704 1980       .78  .68  .46  .46  .60  .72  .81  .84  .77 
+  13 KIK102   1675 1980  .78  .85  .82  .66  .71  .77  .68  .71  .76  .59 
+  14 KIK103   1708 1980       .86  .78  .63  .67  .73  .68  .77  .77  .65 
+  15 KIK111   1881 1980                                          .67  .56 
+  16 KIK112   1882 1980                                          .77  .67 
+  17 KIK131   1845 1980                                .58  .68  .85  .80 
+  18 KIK132   1893 1980                                          .79  .79 
+  19 KIK151   1873 1980                                     .77  .78  .76 
+  20 KIK171   1873 1980                                          .75  .63 
+  21 KIK172   1899 1980                                          .65  .70 
+ Av segment correlation  .69  .78  .67  .50  .50  .61  .66  .73  .77  .73 
+
+ FLAGGED SEGMENTS: il012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 KIK012   1775 1824     B     .242        -3      .381   .139
+   2 KIK012   1800 1849     B     .311        -6      .387   .076
+
+ DESCRIPTIVE STATISTICS: il012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KIK011   1743 1980    179                         1.11   3.05   .618   .869   .190                         
+   2 KIK012   1670 1980    311     10      2    .540    .84   2.60   .525   .854   .209   2.37   .226  -.005   1
+   3 KIK021   1901 1980     80      1      0    .564   1.99   4.01   .744   .634   .249   1.58   .246   .006   1
+   4 KIK022   1921 1980     60      1      0    .719   1.84   4.05   .735   .700   .227   1.49   .221  -.012   1
+   5 KIK031   1874 1980    107      3      0    .810   2.16   4.08   .634   .490   .240   1.63   .228  -.004   1
+   6 KIK032   1864 1980    117      3      0    .819   1.93   4.28   .595   .596   .213   1.52   .222   .042   1
+   7 KIK041   1782 1980    199      6      0    .600   1.52   3.37   .520   .587   .225   1.82   .230   .002   2
+   8 KIK042   1815 1980    166      5      0    .660   1.48   3.57   .553   .653   .205   1.92   .205   .003   2
+   9 KIK051   1878 1980    103      2      0    .767   1.69   3.07   .592   .548   .265   1.63   .250   .116   0
+  10 KIK052   1840 1980    141      4      0    .797   2.00   3.95   .695   .579   .260   1.61   .232   .020   1
+  11 KIK061   1890 1980     91      2      0    .689   2.46   5.11   .988   .480   .298   1.79   .301   .017   1
+  12 KIK101   1704 1980    277      9      0    .702    .88   1.99   .326   .714   .207   1.69   .211   .002   1
+  13 KIK102   1675 1980    306     10      0    .723    .82   2.35   .333   .764   .210   1.88   .208   .008   1
+  14 KIK103   1708 1980    273      9      0    .737    .86   2.24   .344   .722   .216   1.91   .214   .009   1
+  15 KIK111   1881 1980    100      2      0    .627   2.21   5.00   .714   .302   .299   1.76   .256   .020   0
+  16 KIK112   1882 1980     99      2      0    .667   2.83   6.63  1.201   .528   .286   1.77   .282  -.005   1
+  17 KIK131   1845 1980    136      4      0    .669   2.22   6.63   .939   .572   .300   2.11   .299  -.014   1
+  18 KIK132   1893 1980     88      2      0    .765   3.01   6.05   .940   .420   .268   1.60   .256  -.003   1
+  19 KIK151   1873 1980    108      3      0    .764   2.89   6.04  1.238   .585   .276   1.89   .264   .077   0
+  20 KIK171   1873 1980    108      2      0    .762   2.87   8.33  1.843   .786   .280   1.66   .246  -.015   3
+  21 KIK172   1899 1980     82      2      0    .687   2.46   6.20   .966   .703   .226   1.79   .224   .032   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3131     82      2    .693   1.61   8.33   .657   .663   .235   2.37   .234   .012
+
+ DATA CHECKS (rwl.check): il012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/il012.rwl
+ 21 series, 3131 measurements, 1670-1980, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     KIK011: no measurement for 1801-1859, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file il012.rwl, MD5 64d197e6935f76636c18aeeba364565e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series KIK011 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

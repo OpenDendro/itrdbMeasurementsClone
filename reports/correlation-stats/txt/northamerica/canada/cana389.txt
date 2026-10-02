@@ -1,0 +1,151 @@
+
+ COFECHA-style crossdating report: cana389
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana389.rwl
+      MD5 of measurement file: 6126eda99bd2d846b01d7dca8ea49be9
+      Date checked           : 01OCT26
+      Beginning year         : 1849
+      Ending year            : 1999
+      Principal investigators: Luckman, B.H.; Watson, E.; Youngblut, D.
+      Site name              : Yukon Crossing
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 60.5667 N
+      Longitude              : 134.6833 W
+      Elevation              : 670 m
+
+      Series intercorrelation: 0.559
+      Avg mean sensitivity   : 0.229
+      Avg standard deviation : 0.667
+      Avg autocorrelation    : 0.867
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 5.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana389
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 J0010E   1915 1999       .61  .60 
+   2 JOO10W   1915 1999       .69  .61 
+   3 J0012E   1912 1999       .66  .54 
+   4 J0012W   1912 1999       .76  .66 
+   6 J0014E   1904 1999       .61  .58 
+   7 J0014W   1904 1999       .65  .61 
+   8 J0015E   1905 1999       .63  .64 
+   9 J0015W   1905 1999       .66  .72 
+  10 J0016E   1904 1999       .69  .67 
+  11 J0016W   1904 1999       .63  .63 
+  12 J0017N   1849 1982  .49  .45      
+  13 J0017S   1849 1998  .34  .47      
+  14 J0017E   1916 1999       .64  .40 
+  15 J0017W   1916 1999       .43  .25A
+  16 J0018E   1912 1998       .68      
+  17 J0018W   1912 1997       .55      
+  18 J0019N   1857 1998  .35  .55      
+  19 J0019S   1857 1998  .20B .28A     
+  20 J0020E   1902 1999       .58  .78 
+  21 J0020W   1902 1999       .49  .58 
+  22 J0021E   1899 1995       .60      
+  23 J0021W   1898 1996  .72  .44      
+  24 J0023N   1899 1999       .67  .49 
+  25 J0023S   1899 1976  .71  .54      
+  26 J0024E   1890 1999  .58  .59  .55 
+  28 J0025N   1915 1999       .77  .53 
+  29 J0025S   1915 1999       .59  .48 
+  30 J0026    1893 1999  .72  .55  .46 
+  31 J0026E   1895 1999  .73  .67  .56 
+ Av segment correlation  .54  .59  .57 
+
+ FLAGGED SEGMENTS: cana389
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 J0017W   1950 1999     A     .250         0
+  19 J0019S   1900 1949     B     .205       -10      .247   .042  weak at every lag
+  19 J0019S   1925 1974     A     .282         0
+
+ DESCRIPTIVE STATISTICS: cana389
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 J0010E   1915 1999     85      2      0    .619    .81   2.10   .438   .700   .390   1.85   .361   .015   1
+   2 JOO10W   1915 1999     85      2      0    .655    .77   1.88   .355   .617   .330   1.86   .319  -.029   1
+   3 J0012E   1912 1999     88      2      0    .620   1.02   2.32   .644   .911   .188   1.57   .199   .043   1
+   4 J0012W   1912 1999     88      2      0    .665   1.17   2.82   .628   .853   .202   1.44   .186   .117   0
+   5 J0013E   1928 1997     70      0      0    .776   1.20   2.54   .513   .784   .230   1.58   .238  -.010   1
+   6 J0014E   1904 1999     96      2      0    .626    .82   2.86   .676   .918   .250   1.85   .258  -.029   1
+   7 J0014W   1904 1999     96      2      0    .653    .87   2.09   .500   .830   .273   2.02   .282   .001   2
+   8 J0015E   1905 1999     95      2      0    .701   1.08   2.07   .463   .847   .200   1.48   .187  -.008   1
+   9 J0015W   1905 1999     95      2      0    .704    .99   2.09   .418   .810   .211   2.22   .238   .035   1
+  10 J0016E   1904 1999     96      2      0    .634    .95   2.95   .615   .915   .205   1.61   .196  -.027   1
+  11 J0016W   1904 1999     96      2      0    .625    .77   2.01   .368   .803   .210   1.79   .230  -.032   1
+  12 J0017N   1849 1982    134      2      0    .389    .79   3.26   .609   .877   .304   1.91   .310   .021   1
+  13 J0017S   1849 1998    150      2      0    .470    .59   2.58   .514   .880   .340   1.98   .328   .015   1
+  14 J0017E   1916 1999     84      2      0    .530   1.20   2.69   .624   .874   .180   1.84   .203  -.021   1
+  15 J0017W   1916 1999     84      2      1    .378    .87   2.77   .545   .915   .178   2.06   .212   .001   1
+  16 J0018E   1912 1998     87      1      0    .656   1.24   3.33   .822   .855   .249   2.61   .298   .043   1
+  17 J0018W   1912 1997     86      1      0    .613   1.09   2.91   .532   .840   .204   1.64   .213   .005   1
+  18 J0019N   1857 1998    142      2      0    .400   1.11   2.37   .507   .846   .199   1.51   .201   .007   1
+  19 J0019S   1857 1998    142      2      2    .350    .84   1.61   .321   .802   .198   1.59   .206  -.022   1
+  20 J0020E   1902 1999     98      2      0    .625   1.11   2.52   .432   .827   .200   1.71   .204  -.004   1
+  21 J0020W   1902 1999     98      2      0    .485    .97   2.98   .555   .886   .208   1.57   .219  -.022   1
+  22 J0021E   1899 1995     97      1      0    .585   1.03   2.94   .955   .960   .235   1.56   .231   .007   2
+  23 J0021W   1898 1996     99      2      0    .459   1.11   3.27   .975   .965   .240   2.14   .265   .000   1
+  24 J0023N   1899 1999    101      2      0    .601   1.53   3.67   .818   .900   .180   1.55   .183   .012   3
+  25 J0023S   1899 1976     78      2      0    .528   1.42   3.90   .964   .934   .212   1.47   .207  -.011   1
+  26 J0024E   1890 1999    110      3      0    .548   1.76   5.76  1.326   .937   .198   1.86   .217   .031   1
+  27 J0024W   1890 1943     54      0      0    .437   2.26   4.88   .781   .716   .216   1.50   .212   .017   1
+  28 J0025N   1915 1999     85      2      0    .609   1.02   3.38   .907   .944   .214   1.96   .231   .020   2
+  29 J0025S   1915 1999     85      2      0    .494   1.03   3.16   .861   .954   .205   1.44   .184   .088   0
+  30 J0026    1893 1999    107      3      0    .577   1.71   5.31  1.117   .943   .191   1.48   .180  -.020   3
+  31 J0026E   1895 1999    105      3      0    .635   1.66   5.08  1.072   .923   .206   1.44   .191  -.011   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3016     58      3    .559   1.10   5.76   .667   .867   .229   2.61   .233   .007
+
+ DATA CHECKS (rwl.check): cana389
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana389.rwl
+ 31 series, 3016 measurements, 1849-1999, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file cana389.rwl, MD5 6126eda99bd2d846b01d7dca8ea49be9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

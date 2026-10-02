@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: me048
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : me048.rwl
+      MD5 of measurement file: 2934a1a74c9960a2436902b92d576f7a
+      Date checked           : 01OCT26
+      Beginning year         : 1824
+      Ending year            : 2009
+      Principal investigators: Larson, E.R.; Allen, S.A.; Flinner, N.L.; Labarge, S.G.; Wilding, T.C.
+      Site name              : Acadia National Park
+      Species information    : PIST Pinus strobus L.
+      Latitude               : 44.3390 N
+      Longitude              : 68.2734 W
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.544
+      Avg mean sensitivity   : 0.217
+      Avg standard deviation : 1.111
+      Avg autocorrelation    : 0.835
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 1.89
+
+
+ CORRELATION OF SERIES BY SEGMENTS: me048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ENO001a  1839 2009  .66  .62  .57 
+   2 ENO001b  1840 2009  .55  .44  .49 
+   3 ENO002a  1839 2009  .70  .67  .60 
+   4 ENO002b  1824 2009  .59  .79  .68 
+   5 ENO003a  1845 2009  .67  .77  .66 
+   6 ENO003b  1825 2004  .73  .75  .72 
+   7 ENO004a  1857 2009  .46  .51  .56 
+   8 ENO004b  1886 2009  .47  .51  .59 
+   9 ENO005a  1862 2009  .67  .75  .71 
+  10 ENO005b  1843 2009  .45  .59  .60 
+  11 ENO006a  1878 2009  .61  .67  .74 
+  12 PIN001a  1886 2009  .31A .49  .61 
+  13 PIN001b  1884 2009  .52  .61  .70 
+  14 PIN002a  1903 2009       .74  .70 
+  15 PIN002B  1906 2009       .60  .61 
+  16 PIN003a  1833 2009  .58  .71  .71 
+  17 PIN003b  1832 2009  .62  .73  .65 
+  18 PIN004a  1899 2009       .38  .35 
+  19 PIN004b  1900 2004       .67  .70 
+ Av segment correlation  .57  .63  .63 
+
+ FLAGGED SEGMENTS: me048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 PIN001a  1900 1949     A     .305         0
+
+ DESCRIPTIVE STATISTICS: me048
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ENO001a  1839 2009    171      3      0    .622   2.00   9.46  1.890   .968   .154   1.41   .151   .007   1
+   2 ENO001b  1840 2009    170      3      0    .495   1.88   9.77  1.919   .905   .221   1.54   .220   .063   1
+   3 ENO002a  1839 2009    171      3      0    .608   1.97   7.57  1.369   .917   .204   1.76   .219  -.020   3
+   4 ENO002b  1824 2009    186      3      0    .585   1.59   7.43  1.229   .882   .198   1.89   .220   .083   1
+   5 ENO003a  1845 2009    165      3      0    .658   2.01   4.15   .745   .801   .192   1.57   .188   .019   3
+   6 ENO003b  1825 2004    180      3      0    .677   1.58   4.91   .932   .878   .215   1.57   .216  -.025   3
+   7 ENO004a  1857 2009    153      3      0    .490   1.42   5.14   .956   .884   .225   1.82   .233  -.000   1
+   8 ENO004b  1886 2009    124      3      0    .424   1.45   4.91   .716   .729   .258   2.51   .270   .109   0
+   9 ENO005a  1862 2009    148      3      0    .672   2.24   8.91  1.475   .861   .198   1.80   .203  -.015   1
+  10 ENO005b  1843 2009    167      3      0    .490   1.57   3.34   .625   .796   .188   1.91   .197   .029   1
+  11 ENO006a  1878 2009    132      3      0    .665   2.36   5.70  1.013   .784   .214   1.66   .218  -.003   3
+  12 PIN001a  1886 2009    124      3      1    .471   2.02   4.38  1.003   .824   .216   1.62   .234  -.007   2
+  13 PIN001b  1884 2009    126      3      0    .579   1.78   5.30  1.011   .851   .237   1.73   .251  -.004   3
+  14 PIN002a  1903 2009    107      2      0    .671   2.48   5.54   .929   .805   .172   1.57   .179   .039   3
+  15 PIN002B  1906 2009    104      2      0    .557   2.86   6.08   .954   .641   .222   1.54   .210  -.015   3
+  16 PIN003a  1833 2009    177      3      0    .419   1.89   6.79  1.244   .847   .278   2.55   .312   .005   3
+  17 PIN003b  1832 2009    178      3      0    .349   1.76   6.24  1.075   .817   .283   2.68   .344  -.013   3
+  18 PIN004a  1899 2009    111      2      0    .340   1.87   4.04   .766   .805   .221   1.70   .230   .001   3
+  19 PIN004b  1900 2004    105      2      0    .550   1.79   4.60   .645   .677   .210   2.08   .226   .020   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2799     53      1    .544   1.89   9.77  1.111   .835   .217   2.68   .229   .014
+
+ DATA CHECKS (rwl.check): me048
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/me048.rwl
+ 19 series, 2799 measurements, 1824-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file me048.rwl, MD5 2934a1a74c9960a2436902b92d576f7a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

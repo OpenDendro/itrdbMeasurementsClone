@@ -1,0 +1,157 @@
+
+ COFECHA-style crossdating report: ausl052
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ausl052.rwl
+      MD5 of measurement file: 08acb137da4e32c4334fbed0c93635e2
+      Date checked           : 01OCT26
+      Beginning year         : 1855
+      Ending year            : 2001
+      Principal investigators: Heinrich, I.
+      Site name              : Lamington National Park
+      Species information    : TOCI Toona ciliata
+      Latitude               : 28.2500 S
+      Longitude              : 153.1333 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.545
+      Avg mean sensitivity   : 0.591
+      Avg standard deviation : 2.106
+      Avg autocorrelation    : 0.303
+      Number dated series    : 38
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 5.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ausl052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 proc1    1855 1999  .65  .65  .64 
+   2 proc2    1911 1999       .66  .64 
+   3 proc3    1941 1999            .61 
+   4 proc4    1912 1999       .75  .65 
+   5 proc5    1916 1999       .63  .65 
+   6 proc6    1897 1999  .66  .55  .62 
+   7 proc7    1949 2001            .53 
+   9 proc9    1892 2001  .62  .66  .73 
+  10 proc10   1856 2001  .64  .56  .55 
+  11 proc11   1910 2001       .50  .44 
+  12 proc12   1855 2001  .44  .48  .30A
+  13 proc13   1855 2001  .39  .34  .41 
+  15 proc15   1886 2001  .66  .71  .67 
+  19 proc19   1932 2001            .56 
+  20 proc20   1926 2001            .58 
+  21 proc21   1907 2001       .43  .45 
+  22 proc22   1924 2001       .44  .30A
+  23 proc23   1898 2001  .48  .49  .54 
+  24 proc24   1908 2001       .48  .58 
+  25 proc25   1895 2001  .52  .53  .52 
+  26 proc26   1921 2001       .64  .64 
+  27 proc27   1910 2001       .57  .73 
+  28 proc28   1915 2001       .50  .63 
+  29 proc29   1912 2001       .57  .52 
+  30 proc30   1947 2001            .71 
+  31 proc31   1936 2001            .70 
+  33 proc33   1927 2001            .37 
+  34 proc34   1855 2001  .43  .47  .19B
+ Av segment correlation  .55  .55  .55 
+
+ FLAGGED SEGMENTS: ausl052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 proc12   1950 1999     A     .301         0
+  22 proc22   1950 1999     A     .297         0
+  34 proc34   1950 1999     B     .193        -4      .216   .023  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ausl052
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 proc1    1855 1999    145      3      0    .543   1.20   4.43   .821   .064   .641   2.78   .566  -.095   0
+   2 proc2    1911 1999     89      2      0    .671   1.95   5.65  1.319   .311   .582   2.77   .520   .043   0
+   3 proc3    1941 1999     59      1      0    .623   3.50  10.00  2.494   .278   .639   3.21   .580   .065   0
+   4 proc4    1912 1999     88      2      0    .692   2.22   6.66  1.590   .313   .682   2.47   .613  -.000   1
+   5 proc5    1916 1999     84      2      0    .640   2.15   6.06  1.465   .267   .671   2.42   .561  -.017   3
+   6 proc6    1897 1999    103      3      0    .633   1.88   7.82  1.668   .447   .640   4.07   .675   .059   0
+   7 proc7    1949 2001     53      1      0    .493   6.71  21.49  4.433   .600   .472   2.02   .441   .012   1
+   8 proc8    1959 2001     43      0      0    .638   2.54   5.99  1.612   .198   .633   3.31   .613  -.118   0
+   9 proc9    1892 2001    110      3      0    .687   1.65   6.09  1.079   .208   .597   2.47   .506  -.094   0
+  10 proc10   1856 2001    146      3      0    .587   1.22   5.83   .820   .040   .627   3.72   .590  -.010   2
+  11 proc11   1910 2001     92      2      0    .504    .80   4.14   .575   .094   .592   3.84   .629   .021   0
+  12 proc12   1855 2001    147      3      1    .391   1.95   7.15  1.282   .322   .509   2.84   .511   .082   0
+  13 proc13   1855 2001    147      3      0    .412   3.67  12.33  2.831   .425   .591   3.29   .581   .009   1
+  14 proc14   1957 2001     45      0      0    .493   3.74  10.65  2.812   .544   .549   2.05   .521   .195   0
+  15 proc15   1886 2001    116      3      0    .637   4.24  12.58  2.883   .261   .651   2.79   .570  -.006   0
+  16 proc16   1954 2001     48      0      0    .498   6.84  14.70  3.933   .450   .540   2.19   .478   .060   2
+  17 proc17   1962 2001     40      0      0    .724   4.88  15.59  3.862   .281   .698   2.50   .619  -.018   3
+  18 proc18   1960 2001     42      0      0    .671   6.57  16.68  3.093   .169   .470   2.04   .417   .078   0
+  19 proc19   1932 2001     70      1      0    .526   4.05  12.90  2.759   .276   .636   2.93   .644   .039   1
+  20 proc20   1926 2001     76      1      0    .508   2.90   8.05  2.029   .329   .638   2.93   .639   .012   1
+  21 proc21   1907 2001     95      2      0    .451   2.99  10.06  1.924   .030   .618   2.78   .553  -.132   0
+  22 proc22   1924 2001     78      2      1    .382   2.79   7.93  1.681   .235   .536   2.91   .514   .043   0
+  23 proc23   1898 2001    104      3      0    .508   2.40   6.82  1.549   .349   .548   2.53   .490   .009   1
+  24 proc24   1908 2001     94      2      0    .552   3.75  12.14  2.246   .230   .532   2.39   .507   .076   0
+  25 proc25   1895 2001    107      3      0    .518   3.02   9.56  1.994   .117   .622   2.91   .544  -.120   0
+  26 proc26   1921 2001     81      2      0    .593   2.82  10.29  2.431   .684   .528   2.31   .504   .121   0
+  27 proc27   1910 2001     92      2      0    .643   3.38  12.32  2.546   .349   .667   2.82   .572   .107   0
+  28 proc28   1915 2001     87      2      0    .540   3.24  17.83  3.153   .703   .514   2.48   .446  -.015   0
+  29 proc29   1912 2001     90      2      0    .522   5.34  16.15  3.911   .550   .470   2.37   .443   .005   0
+  30 proc30   1947 2001     55      1      0    .695   4.09  14.54  2.751  -.117   .806   3.08   .612  -.005   1
+  31 proc31   1936 2001     66      1      0    .687   4.20  10.25  2.508   .337   .597   2.31   .549  -.041   1
+  32 proc32   1966 2001     36      0      0    .828   2.06   5.80  1.377   .427   .564   2.22   .534   .082   0
+  33 proc33   1927 2001     75      1      0    .427   3.39  11.43  2.628   .312   .609   3.62   .676   .039   0
+  34 proc34   1855 2001    147      3      1    .279   2.18   7.28  1.561   .415   .508   2.74   .557   .013   1
+  35 proc35   1957 2001     45      0      0    .492   5.86  11.42  2.977   .435   .503   2.14   .413   .089   2
+  36 proc36   1962 2001     40      0      0    .433   5.51  11.57  3.389   .488   .585   2.37   .530   .020   1
+  37 proc37   1969 2001     33      0      0    .612   5.47  13.64  3.478   .190   .626   2.99   .620   .199   0
+  38 proc38   1969 2001     33      0      0    .683   3.90  12.25  2.927   .377   .584   2.17   .495   .019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3101     59      3    .545   3.06  21.49  2.106   .303   .591   4.07   .552   .012
+
+ DATA CHECKS (rwl.check): ausl052
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/ausl052.rwl
+ 38 series, 3101 measurements, 1855-2001, 0.01 mm precision
+ 0 error(s), 0 warning(s), 19 note(s)
+ -------------
+ Nothing to report at this severity.
+ 19 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file ausl052.rwl, MD5 08acb137da4e32c4334fbed0c93635e2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

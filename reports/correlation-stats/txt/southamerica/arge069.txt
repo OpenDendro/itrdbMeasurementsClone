@@ -1,0 +1,105 @@
+
+ COFECHA-style crossdating report: arge069
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge069.rwl
+      MD5 of measurement file: a63f55bb850d1b2269ccbf8c756ea581
+      Date checked           : 01OCT26
+      Beginning year         : 1823
+      Ending year            : 1989
+      Principal investigators: Villalba, R.
+      Site name              : Piedra Tromphul
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 40.1200 S
+      Longitude              : 71.4300 W
+      Elevation              : 1060 m
+
+      Series intercorrelation: 0.630
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.988
+      Avg autocorrelation    : 0.761
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge069
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 TRC01A   1877 1989  .80  .69 
+   2 TRC01B   1823 1989  .50  .45 
+   3 TRC02B   1919 1989       .61 
+   4 TRC03B   1892 1989  .55  .54 
+   5 TRC05A   1919 1989       .65 
+   6 TRC06A   1850 1989  .71  .59 
+   7 TRC07B   1843 1989  .67  .56 
+   8 TRC08A   1830 1989  .57  .73 
+   9 TRC08B   1846 1989  .66  .74 
+ Av segment correlation  .64  .62 
+
+ FLAGGED SEGMENTS: arge069
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: arge069
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TRC01A   1877 1989    113      2      0    .645   2.24   5.34   .962   .692   .270   1.62   .254   .053   1
+   2 TRC01B   1823 1989    167      2      0    .472   1.93   4.52   .839   .767   .219   2.14   .247   .030   2
+   3 TRC02B   1919 1989     71      1      0    .651   3.58   5.46  1.058   .512   .246   1.52   .236   .036   2
+   4 TRC03B   1892 1989     98      2      0    .564   2.22   6.14  1.053   .755   .213   2.00   .267   .103   1
+   5 TRC05A   1919 1989     71      1      0    .716   3.60   7.09  1.505   .700   .270   1.62   .242   .031   0
+   6 TRC06A   1850 1989    140      2      0    .654   1.53   3.53   .762   .805   .245   1.67   .236   .046   2
+   7 TRC07B   1843 1989    147      2      0    .642   2.42   6.02   .966   .737   .237   1.53   .232   .039   2
+   8 TRC08A   1830 1989    160      2      0    .665   1.87   5.18  1.005   .909   .201   1.49   .211   .081   1
+   9 TRC08B   1846 1989    144      2      0    .717   2.61   6.23  1.224   .829   .206   1.62   .213   .024   3
+  10 TRC07A   1824 1943    120      0      0    .634   2.35   4.63   .809   .701   .196   1.55   .202   .057   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1231     16      0    .630   2.30   7.09   .988   .761   .227   2.14   .232   .050
+
+ DATA CHECKS (rwl.check): arge069
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge069.rwl
+ 10 series, 1231 measurements, 1823-1989, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file arge069.rwl, MD5 a63f55bb850d1b2269ccbf8c756ea581.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

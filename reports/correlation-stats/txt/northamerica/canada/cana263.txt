@@ -1,0 +1,155 @@
+
+ COFECHA-style crossdating report: cana263
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana263.rwl
+      MD5 of measurement file: 1f63b306264e0c34ecfea59cb1943f8f
+      Date checked           : 01OCT26
+      Beginning year         : 1750
+      Ending year            : 2003
+      Principal investigators: St. George, S.
+      Site name              : Teggau Lake
+      Species information    : PIRE Pinus resinosa Aiton
+      Latitude               : 49.6800 N
+      Longitude              : 93.6700 W
+      Elevation              : 392 m
+
+      Series intercorrelation: 0.504
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 0.763
+      Avg autocorrelation    : 0.836
+      Number dated series    : 27
+      Series crossdated      : 25
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2)
+      Pct problem segments   : 7.69
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana263
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 t0401a   1949 2003                                .58 
+   2 t0401b   1902 2003                           .21B .31A
+   3 t0402a   1896 2003                      .54  .63  .53 
+   4 t0402b   1888 2003                      .45  .66  .70 
+   5 t0403a   1895 2003                      .43  .52  .51 
+   6 t0403b   1895 2003                      .52  .58  .62 
+   7 t0404a   1918 2003                           .50  .39 
+   8 t0404b   1918 2003                           .51  .52 
+   9 t0405a   1899 2003                      .49  .55  .59 
+  10 t0405b   1899 2003                           .53  .58 
+  11 t0406a   1894 2003                      .69  .64  .62 
+  12 t0406b   1894 2003                      .59  .41  .39 
+  13 t0407a   1907 2003                           .69  .67 
+  14 t0407b   1907 2003                           .63  .42 
+  15 t0409a   1915 2002                           .53  .64 
+  16 t0409b   1915 2003                           .33B .54 
+  17 t0410a   1914 2003                           .60  .43 
+  18 t0410b   1914 2003                           .63  .51 
+  19 t0411a   1848 2003            .19A .45  .57  .52  .56 
+  21 t0411c   1898 2003                      .70  .62  .38 
+  22 t0412a   1750 2003            .22A .47  .66  .60  .39 
+  24 t0413a   1948 2003                                .64 
+  25 t0413b   1900 2003                           .70  .79 
+  26 t0415a   1872 2003                 .47  .49  .53  .48 
+  27 t0415b   1889 2003                      .54  .42  .43 
+ Av segment correlation            .21  .46  .56  .55  .53 
+
+ FLAGGED SEGMENTS: cana263
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 t0401b   1925 1974     B     .214        10      .369   .155
+   2 t0401b   1950 1999     A     .311         0
+  16 t0409b   1925 1974     B     .327        -7      .408   .081
+  19 t0411a   1850 1899     A     .190         0
+  22 t0412a   1850 1899     A     .223         0
+
+ DESCRIPTIVE STATISTICS: cana263
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 t0401a   1949 2003     55      1      0    .608   1.23   3.40   .653   .778   .281   1.61   .296   .117   1
+   2 t0401b   1902 2003    102      2      2    .263   1.55   3.46   .614   .842   .193   1.44   .175  -.025   3
+   3 t0402a   1896 2003    108      3      0    .538   1.70   3.36   .654   .786   .196   1.52   .191   .012   1
+   4 t0402b   1888 2003    116      3      0    .610   1.79   3.55   .634   .727   .204   1.91   .226  -.036   3
+   5 t0403a   1895 2003    109      3      0    .487   1.74   4.76  1.108   .898   .230   1.71   .229  -.013   2
+   6 t0403b   1895 2003    109      3      0    .583   2.16   5.59  1.176   .909   .191   1.64   .199  -.024   2
+   7 t0404a   1918 2003     86      2      0    .444   1.64   6.94  1.113   .874   .203   1.86   .231   .018   2
+   8 t0404b   1918 2003     86      2      0    .502   1.22   3.84   .730   .839   .232   1.93   .261   .062   1
+   9 t0405a   1899 2003    105      3      0    .554   1.40   3.58   .727   .871   .233   1.48   .238   .079   1
+  10 t0405b   1899 2003    105      2      0    .561   1.70   4.07   .891   .856   .230   1.71   .233  -.004   2
+  11 t0406a   1894 2003    110      3      0    .659   1.42   2.84   .552   .699   .225   1.69   .230   .030   1
+  12 t0406b   1894 2003    110      3      0    .516   1.40   2.72   .518   .765   .201   1.65   .214   .074   1
+  13 t0407a   1907 2003     97      2      0    .644   1.36   3.33   .617   .819   .200   1.51   .217   .060   1
+  14 t0407b   1907 2003     97      2      0    .474   1.32   2.96   .488   .712   .195   1.71   .210   .018   2
+  15 t0409a   1915 2002     88      2      0    .454   1.55   4.03  1.080   .928   .213   1.61   .239  -.040   3
+  16 t0409b   1915 2003     89      2      1    .399   1.58   3.99   .900   .891   .211   1.68   .237   .007   2
+  17 t0410a   1914 2003     90      2      0    .479   1.73   3.87   .858   .877   .201   1.53   .206  -.004   1
+  18 t0410b   1914 2003     90      2      0    .504   1.93   4.17   .724   .721   .229   1.56   .228   .044   1
+  19 t0411a   1848 2003    156      5      1    .450    .56   1.54   .282   .796   .236   1.72   .243   .011   2
+  20 t0411b   1839 2003    163                          .86   2.67   .560   .850   .250                         
+  21 t0411c   1898 2003    106      3      0    .497    .88   2.29   .531   .828   .262   1.69   .262   .040   2
+  22 t0412a   1750 2003    254      5      1    .412   1.31   5.44  1.025   .913   .205   1.81   .209   .027   2
+  23 t0412b   1767 2003    234                         1.01   5.33   .855   .917   .230                         
+  24 t0413a   1948 2003     56      1      0    .662   1.98   5.30  1.040   .736   .278   1.70   .291   .132   1
+  25 t0413b   1900 2003    104      2      0    .641   1.94   5.59  1.314   .809   .280   1.77   .294  -.017   1
+  26 t0415a   1872 2003    132      4      0    .466   1.12   3.17   .632   .875   .184   1.63   .197   .031   1
+  27 t0415b   1889 2003    115      3      0    .438   1.04   2.18   .436   .807   .200   1.51   .210   .062   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3072     65      5    .504   1.39   6.94   .763   .836   .220   1.93   .227   .023
+
+ DATA CHECKS (rwl.check): cana263
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana263.rwl
+ 27 series, 3072 measurements, 1750-2003, 0.001 mm precision
+ 0 error(s), 2 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     t0411b: no measurement for 1900-1901, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     t0412b: no measurement for 1776-1778, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana263.rwl, MD5 1f63b306264e0c34ecfea59cb1943f8f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series t0411b has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series t0412b has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: in001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in001.rwl
+      MD5 of measurement file: 336f397754c84d285358e5bd6927eea6
+      Date checked           : 01OCT26
+      Beginning year         : 1692
+      Ending year            : 1985
+      Principal investigators: Cook, E.R.
+      Site name              : Pulaski Woods
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 41.0500 N
+      Longitude              : 86.7000 W
+      Elevation              : 250 m
+
+      Series intercorrelation: 0.582
+      Avg mean sensitivity   : 0.215
+      Avg standard deviation : 0.545
+      Avg autocorrelation    : 0.589
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 2.07
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PW11     1779 1985                      .39  .59  .68  .77  .72  .57 
+   2 PW12     1720 1985       .66  .59  .49  .50  .71  .80  .86  .84  .70 
+   3 PW21     1812 1985                           .44  .67  .76  .80  .73 
+   4 PW22     1820 1985                           .53  .72  .64  .59  .58 
+   5 PW31     1850 1985                                     .38  .54  .46 
+   6 PW32     1852 1985                                     .55  .66  .58 
+   7 PW51     1805 1985                           .59  .68  .78  .73  .53 
+   8 PW52     1795 1985                      .34  .64  .73  .76  .76  .66 
+   9 PW61     1802 1985                           .67  .55  .63  .72  .51 
+  10 PW62     1760 1985                 .23B .60  .66  .56  .61  .55  .37 
+  11 PW71     1764 1985                 .46  .56  .77  .78  .65  .57  .36 
+  12 PW72     1760 1985                 .75  .77  .75  .63  .56  .70  .74 
+  13 PW81     1806 1985                           .74  .73  .75  .78  .58 
+  14 PW82     1810 1985                           .67  .75  .82  .80  .58 
+  15 PW91     1699 1985      -.03B .55  .54  .66  .71  .69  .65  .55  .53 
+  16 PW92     1692 1985       .62  .70  .67  .67  .69  .71  .73  .76  .62 
+  17 PW101    1753 1985                 .33B .57  .71  .77  .75  .68  .62 
+  18 PW102    1744 1985            .49  .45  .51  .78  .81  .82  .81  .70 
+  19 PW111    1719 1985       .44  .51  .70  .81  .79  .78  .77  .78  .66 
+  20 PW112    1740 1985            .53  .65  .67  .79  .79  .74  .79  .69 
+  21 PW121    1736 1985            .63  .37  .49  .81  .83  .79  .76  .59 
+  22 PW122    1723 1985       .57  .63  .52  .62  .79  .80  .77  .80  .73 
+ Av segment correlation       .45  .58  .51  .58  .69  .72  .71  .71  .59 
+
+ FLAGGED SEGMENTS: in001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 PW62     1775 1824     B     .233        -6      .263   .030  weak at every lag
+  15 PW91     1725 1774     B    -.034        -3      .223   .257  weak at every lag
+  17 PW101    1775 1824     B     .328         1      .349   .021
+
+ DESCRIPTIVE STATISTICS: in001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PW11     1779 1985    207      6      0    .510   1.75   3.19   .446   .340   .220   1.64   .210   .047   0
+   2 PW12     1720 1985    266      9      0    .663   1.60   2.90   .459   .458   .229   1.71   .220   .008   1
+   3 PW21     1812 1985    174      5      0    .603   2.22   6.20  1.090   .764   .222   1.69   .229  -.067   3
+   4 PW22     1820 1985    166      5      0    .588   1.97   5.17   .801   .654   .247   1.72   .235  -.002   2
+   5 PW31     1850 1985    136      3      0    .387   1.96   4.07   .606   .616   .208   1.63   .211  -.017   1
+   6 PW32     1852 1985    134      3      0    .505   2.02   4.46   .617   .433   .232   1.74   .226   .064   0
+   7 PW51     1805 1985    181      5      0    .626   2.27   5.65   .877   .662   .236   1.74   .223  -.003   1
+   8 PW52     1795 1985    191      6      0    .571   2.12   5.23   .791   .673   .229   1.86   .236  -.016   1
+   9 PW61     1802 1985    184      5      0    .603   1.59   3.17   .466   .643   .179   1.54   .179  -.017   1
+  10 PW62     1760 1985    226      7      1    .462   1.52   3.85   .431   .584   .198   1.77   .183  -.008   2
+  11 PW71     1764 1985    222      7      0    .536   1.21   4.14   .433   .589   .219   2.27   .226   .034   1
+  12 PW72     1760 1985    226      7      0    .646   1.73   3.81   .523   .506   .229   1.68   .221  -.012   2
+  13 PW81     1806 1985    180      5      0    .653   1.77   3.12   .442   .620   .175   1.48   .173  -.022   1
+  14 PW82     1810 1985    176      5      0    .704   1.58   2.92   .446   .629   .183   1.58   .175   .027   1
+  15 PW91     1699 1985    287      9      1    .387   1.18   3.99   .433   .623   .203   1.84   .202  -.024   3
+  16 PW92     1692 1985    294      9      0    .651   1.35   4.25   .453   .510   .223   2.39   .229   .023   2
+  17 PW101    1753 1985    233      7      1    .521   1.56   4.38   .573   .609   .227   2.34   .243  -.021   3
+  18 PW102    1744 1985    242      8      0    .648   1.64   3.76   .561   .604   .234   1.65   .220   .014   1
+  19 PW111    1719 1985    267      9      0    .625   1.66   3.85   .514   .660   .193   1.78   .203   .016   1
+  20 PW112    1740 1985    246      8      0    .659   1.30   2.94   .398   .578   .204   1.63   .196  -.039   3
+  21 PW121    1736 1985    250      8      0    .549   1.60   5.22   .612   .666   .207   2.16   .210  -.005   3
+  22 PW122    1723 1985    263      9      0    .651   1.22   3.01   .399   .594   .231   1.68   .214   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4751    145      3    .582   1.63   6.20   .545   .589   .215   2.39   .212  -.001
+
+ DATA CHECKS (rwl.check): in001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in001.rwl
+ 22 series, 4751 measurements, 1692-1985, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file in001.rwl, MD5 336f397754c84d285358e5bd6927eea6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,184 @@
+
+ COFECHA-style crossdating report: ak173
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak173.rwl
+      MD5 of measurement file: 5e1a8243601df726d1ddbe410fd033c0
+      Date checked           : 01OCT26
+      Beginning year         : 1950
+      Ending year            : 2016
+      Principal investigators: Buma, B.; Bisbing, S.M.; Wiles, G.; Bidlack, A.L.
+      Site name              : Glacier Bay National Park and Preserve
+      Species information    : PCSI Picea sitchensis (Bong.) Carrière
+      Latitude               : 58.9667 N
+      Longitude              : 136.8167 W
+      Elevation              : 477 m
+
+      Series intercorrelation: 0.406
+      Avg mean sensitivity   : 0.169
+      Avg standard deviation : 2.104
+      Avg autocorrelation    : 0.688
+      Number dated series    : 38
+      Segment length tested  : 32
+
+      Number problem segments: 20  (A 3, B 17; 10 of the B weak at every lag)
+      Pct problem segments   : 45.45
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak173
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1966 1982 
+                        1981 1997 2013 
+ --- -------- ---------  ---- ---- ---- 
+   1 Q1-01    1978 2016            .46 
+   2 Q1-01A   1967 2016            .58 
+   3 Q1-02    1955 2016       .22B .16B
+   4 Q1-03    1962 2016       .68  .58 
+   5 Q1-03A   1954 2016       .65  .54 
+   6 Q1-07    1968 2016           -.04B
+   7 Q1-07C   1970 2016            .07B
+   8 Q1-08    1962 2016       .44  .51 
+   9 Q1-08A   1963 2016       .37A .53 
+  10 Q1-08B   1962 2016       .59  .48 
+  11 Q1-09    1971 2016            .70 
+  12 Q2-01    1980 2016            .49 
+  13 Q2-01A   1961 2016       .26B .53 
+  14 Q2-01B   1961 2016       .19B .53 
+  15 Q2-01C   1963 2016       .39A .44 
+  16 Q2-07B   1968 2016            .07B
+  17 Q2-08    1970 2016            .07B
+  24 Q3-08A   1962 2016       .09B .04B
+  25 Q4-03A   1975 2016            .23A
+  26 Q4-05A   1971 2016            .20B
+  27 Q6-07    1961 2016       .24B .19B
+  29 Q6-07B   1969 2016            .65 
+  31 Q6-10    1978 2016            .37B
+  33 Q8-04    1960 2016       .50B .61 
+  34 Q8-04A   1958 2016       .62  .68 
+  35 Q8-04B   1950 2016       .62  .59 
+  36 Q8-04C   1963 2016       .62B .64 
+  37 Spruce2  1976 2016            .24B
+  38 Spruce2A 1969 2016            .50 
+ Av segment correlation       .43  .40 
+
+ FLAGGED SEGMENTS: ak173
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 Q1-02    1966 1997     B     .222         3      .374   .152  weak at every lag
+   3 Q1-02    1982 2013     B     .158        -4      .471   .313
+   6 Q1-07    1982 2013     B    -.040        -8      .253   .293  weak at every lag
+   7 Q1-07C   1982 2013     B     .066         3      .216   .150  weak at every lag
+   9 Q1-08A   1966 1997     A     .373         0
+  13 Q2-01A   1966 1997     B     .264        -1      .374   .110  weak at every lag
+  14 Q2-01B   1966 1997     B     .191         5      .445   .255
+  15 Q2-01C   1966 1997     A     .386         0
+  16 Q2-07B   1982 2013     B     .071        -8      .350   .280  weak at every lag
+  17 Q2-08    1982 2013     B     .074        -8      .345   .271  weak at every lag
+  24 Q3-08A   1966 1997     B     .087        -9      .327   .240  weak at every lag
+  24 Q3-08A   1982 2013     B     .043        -8      .347   .304  weak at every lag
+  25 Q4-03A   1982 2013     A     .235         0
+  26 Q4-05A   1982 2013     B     .196         2      .264   .067  weak at every lag
+  27 Q6-07    1966 1997     B     .244         2      .530   .286
+  27 Q6-07    1982 2013     B     .191        -4      .258   .067  weak at every lag
+  31 Q6-10    1982 2013     B     .373         3      .539   .167
+  33 Q8-04    1966 1997     B     .502         3      .635   .133
+  36 Q8-04C   1966 1997     B     .617         3      .623   .007
+  37 Spruce2  1982 2013     B     .245        -5      .492   .248
+
+ DESCRIPTIVE STATISTICS: ak173
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Q1-01    1978 2016     39      1      0    .481   9.02  16.74  2.157   .768   .119   1.19   .110   .097   2
+   2 Q1-01A   1967 2016     50      1      0    .623   7.24  11.41  2.093   .828   .128   1.57   .154   .055   1
+   3 Q1-02    1955 2016     62      2      2    .326   3.25   7.92  1.381   .789   .201   1.68   .216   .090   2
+   4 Q1-03    1962 2016     55      2      0    .513   6.74   9.14  1.310   .558   .137   1.51   .156  -.003   1
+   5 Q1-03A   1954 2016     63      2      0    .533   5.83   9.04  1.197   .617   .139   1.60   .137  -.000   1
+   6 Q1-07    1968 2016     49      1      1    .027   7.32  13.32  3.555   .897   .191   1.54   .232   .015   2
+   7 Q1-07C   1970 2016     47      1      1    .208   6.29  15.79  3.294   .810   .262   1.81   .293   .149   1
+   8 Q1-08    1962 2016     55      2      0    .618   6.07  11.10  1.808   .612   .174   1.66   .209   .022   1
+   9 Q1-08A   1963 2016     54      2      1    .506   6.26  10.34  1.721   .580   .175   1.44   .196  -.044   1
+  10 Q1-08B   1962 2016     55      2      0    .612   6.10  11.14  2.100   .818   .156   1.60   .190   .167   1
+  11 Q1-09    1971 2016     46      1      0    .512   7.24  10.29  1.596   .622   .150   1.52   .168   .184   1
+  12 Q2-01    1980 2016     37      1      0    .535   8.91  14.73  2.150   .479   .182   1.26   .160   .034   0
+  13 Q2-01A   1961 2016     56      2      1    .271   6.49   9.06  1.145   .305   .156   1.29   .149   .009   0
+  14 Q2-01B   1961 2016     56      2      1    .412   6.56  15.77  2.000   .519   .203   1.86   .228  -.100   2
+  15 Q2-01C   1963 2016     54      2      1    .246   6.70   9.30  1.299   .431   .170   1.28   .161   .011   1
+  16 Q2-07B   1968 2016     49      1      1    .108   6.87  13.11  3.372   .862   .200   1.58   .245   .261   1
+  17 Q2-08    1970 2016     47      1      1    .204   3.60   6.86  1.587   .876   .193   1.32   .191   .261   1
+  18 Q3-01    1986 2016     31      0      0    .215   8.04  20.17  5.907   .973   .177   1.30   .138  -.421   2
+  19 Q3-01A   1992 2016     25      0      0    .390   9.48  18.48  4.258   .935   .143   1.34   .138   .163   1
+  20 Q3-01B   1997 2016     20      0      0    .579   9.80  21.13  4.335   .840   .171   1.36   .178   .043   1
+  21 Q3-01C   1992 2016     25      0      0    .583   8.03  15.20  2.958   .907   .155   1.28   .131   .107   0
+  22 Q3-02    1996 2016     21      0      0    .390  15.39  21.95  2.627   .362   .142   1.17   .106   .148   3
+  23 Q3-07    1987 2016     30      0      0    .356   4.60  13.42  3.839   .854   .279   1.75   .302  -.035   1
+  24 Q3-08A   1962 2016     55      2      2    .137   3.13   7.22  1.653   .884   .200   1.37   .206   .043   2
+  25 Q4-03A   1975 2016     42      1      1    .228   7.25  16.19  2.332   .308   .206   2.45   .310   .183   0
+  26 Q4-05A   1971 2016     46      1      1    .194   3.75   7.81  1.841   .771   .250   1.41   .251  -.017   2
+  27 Q6-07    1961 2016     56      2      2    .182   4.43   9.78  2.424   .902   .206   1.97   .243   .074   1
+  28 Q6-07A   1988 2016     29      0      0    .204   7.52  14.23  1.926  -.006   .217   1.79   .240  -.077   0
+  29 Q6-07B   1969 2016     48      1      0    .666   6.91  10.67  1.274   .646   .114   1.37   .137   .061   1
+  30 Q6-08    1984 2016     33      0      0    .412  10.07  13.97  1.965   .728   .119   1.22   .112  -.030   3
+  31 Q6-10    1978 2016     39      1      1   -.007   5.97   9.21  1.579   .563   .185   1.53   .207   .131   1
+  32 Q7-16    1983 2016     34      0      0    .392   8.95  21.65  4.693   .941   .183   1.48   .206   .246   0
+  33 Q8-04    1960 2016     57      2      1    .628   6.72  12.64  1.779   .831   .116   1.31   .124   .150   1
+  34 Q8-04A   1958 2016     59      2      0    .701   6.51  11.61  1.554   .626   .145   1.44   .143   .079   1
+  35 Q8-04B   1950 2016     67      2      0    .712   5.04  10.25  1.732   .874   .137   1.34   .133   .214   2
+  36 Q8-04C   1963 2016     54      2      1    .550   6.76  10.69  1.644   .691   .136   1.39   .155   .080   1
+  37 Spruce2  1976 2016     41      1      1    .296   8.19  10.97  1.272   .493   .126   1.25   .129   .021   1
+  38 Spruce2A 1969 2016     48      1      0    .579   7.57  10.96  1.407   .611   .108   1.41   .121   .298   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1734     44     20    .406   6.58  21.95  2.104   .688   .169   2.45   .182   .074
+
+ DATA CHECKS (rwl.check): ak173
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak173.rwl
+ 38 series, 1734 measurements, 1950-2016, 0.001 mm precision
+ 1 error(s), 2 warning(s), 22 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     Q6-07: correlates best with the master at lag 2 (r = 0.367 against r = 0.16 as dated); the series may be misdated by 2 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_SITE_CODE (2)
+     Spruce2: site code differs from the q used by 36 of 38 series
+     Spruce2A: site code differs from the q used by 36 of 38 series
+ 22 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ak173.rwl, MD5 5e1a8243601df726d1ddbe410fd033c0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 67 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

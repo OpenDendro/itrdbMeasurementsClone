@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: swit191
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit191.rwl
+      MD5 of measurement file: 53c39af041ae813e9d2a7f3e3e5047d2
+      Date checked           : 01OCT26
+      Beginning year         : 1671
+      Ending year            : 2008
+      Principal investigators: Bigler, C.; Pellegrino, R.
+      Site name              : Lucomagno TI Campo Solario
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.5500 N
+      Longitude              : 8.8200 E
+      Elevation              : 1800 m
+
+      Series intercorrelation: 0.475
+      Avg mean sensitivity   : 0.169
+      Avg standard deviation : 0.541
+      Avg autocorrelation    : 0.853
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 5, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 7.69
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit191
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PL.A51   1786 2008                      .47  .61  .59  .44  .45  .56  .56 
+   2 PL.A52   1817 2008                           .58  .59  .62  .41  .34  .50 
+   3 PL.A53   1900 2008                                               .65  .65 
+   4 PL.A54.2 1671 2008            .05B .51  .61  .44  .22B .32A .31A .27A .39 
+   5 PL.A55   1819 2008                           .53  .49  .38  .48  .45  .42 
+   6 PL.A56   1786 1950                      .36  .35  .50  .62  .52           
+   7 PL.A57   1840 2008                                .55  .65  .51  .46  .49 
+   8 PL.A58   1828 2008                                .30A .33  .45  .57  .62 
+   9 PL.A59   1780 1950                      .52  .35  .37  .55  .47           
+  10 PL.A60   1841 2008                                .60  .68  .65  .51  .39 
+  11 PL.A62   1770 2008                 .46  .46  .29A .36  .48  .51  .50  .51 
+  12 PL.A64   1888 2008                                          .53  .54  .60 
+  13 PL.A65   1886 2008                                          .75  .59  .47 
+  14 PL.A66   1761 1950                 .58  .64  .62  .53  .45  .50           
+  15 PL.A67   1876 2008                                          .51  .55  .59 
+  16 PL.A68   1742 2008            .02B .50  .47  .40  .51  .54  .52  .59  .51 
+  17 PL.A69   1784 2008                      .61  .70  .70  .69  .70  .68  .65 
+  18 PL.A70   1862 2008                                     .58  .53  .52  .47 
+  19 PL.A71   1821 2008                           .64  .63  .58  .55  .65  .67 
+ Av segment correlation            .04  .51  .52  .50  .50  .53  .52  .53  .53 
+
+ FLAGGED SEGMENTS: swit191
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 PL.A54.2 1750 1799     B     .054        -2      .395   .341
+   4 PL.A54.2 1850 1899     B     .222         1      .296   .073  weak at every lag
+   4 PL.A54.2 1875 1924     A     .319         0
+   4 PL.A54.2 1900 1949     A     .308         0
+   4 PL.A54.2 1925 1974     A     .272         0
+   8 PL.A58   1850 1899     A     .299         0
+  11 PL.A62   1825 1874     A     .295         0
+  16 PL.A68   1750 1799     B     .017         2      .327   .310  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit191
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PL.A51   1786 2008    223      7      0    .467   1.19   3.24   .446   .834   .162   1.55   .176   .015   1
+   2 PL.A52   1817 2008    192      6      0    .514   1.52   3.32   .459   .798   .124   1.78   .139  -.015   3
+   3 PL.A53   1900 2008    109      2      0    .583   1.62   5.01   .744   .862   .156   1.73   .178  -.051   1
+   4 PL.A54.2 1671 2008    338      9      5    .314    .50   1.92   .310   .882   .210   1.76   .218  -.002   1
+   5 PL.A55   1819 2008    190      6      0    .449   1.17   4.18   .694   .892   .184   1.62   .193   .007   1
+   6 PL.A56   1786 1950    165      5      0    .422    .78   1.84   .329   .817   .200   1.59   .206  -.028   1
+   7 PL.A57   1840 2008    169      5      0    .539   1.57   3.76   .724   .908   .146   1.43   .147  -.011   2
+   8 PL.A58   1828 2008    181      5      1    .437    .82   1.46   .263   .838   .145   1.39   .153  -.015   1
+   9 PL.A59   1780 1950    171      5      0    .413   1.19   3.63   .647   .880   .192   1.48   .196  -.005   1
+  10 PL.A60   1841 2008    168      5      0    .497   1.55   3.64   .689   .920   .137   1.37   .137   .012   1
+  11 PL.A62   1770 2008    239      8      1    .430   1.09   3.64   .708   .891   .207   1.62   .212  -.022   3
+  12 PL.A64   1888 2008    121      3      0    .525   1.96   3.49   .480   .739   .139   1.46   .152   .039   1
+  13 PL.A65   1886 2008    123      3      0    .608   1.40   3.53   .776   .910   .169   1.49   .168   .040   1
+  14 PL.A66   1761 1950    190      6      0    .494   1.24   2.74   .476   .847   .158   1.68   .170   .004   2
+  15 PL.A67   1876 2008    133      3      0    .504   2.14   3.90   .754   .731   .193   1.58   .205   .046   2
+  16 PL.A68   1742 2008    267      9      1    .359    .84   2.73   .459   .923   .160   1.47   .166  -.006   3
+  17 PL.A69   1784 2008    225      7      0    .624   1.52   3.96   .597   .779   .195   1.56   .192  -.030   3
+  18 PL.A70   1862 2008    147      4      0    .504   1.87   3.48   .543   .738   .156   1.53   .170   .046   1
+  19 PL.A71   1821 2008    188      6      0    .627   1.40   3.54   .575   .908   .129   1.35   .122  -.016   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3539    104      8    .475   1.25   5.01   .541   .853   .169   1.78   .176  -.002
+
+ DATA CHECKS (rwl.check): swit191
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit191.rwl
+ 19 series, 3539 measurements, 1671-2008, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit191.rwl, MD5 53c39af041ae813e9d2a7f3e3e5047d2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

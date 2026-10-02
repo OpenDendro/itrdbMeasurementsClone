@@ -1,0 +1,149 @@
+
+ COFECHA-style crossdating report: ar030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ar030.rwl
+      MD5 of measurement file: dcc2b251c1cd06e1fbb0cae7a325fb5b
+      Date checked           : 01OCT26
+      Beginning year         : 1736
+      Ending year            : 1982
+      Principal investigators: Stahle, D.W.; Cook, E.R.; Jacoby, G.C.; Schoenholtz, S.
+      Site name              : Hot Springs
+      Species information    : PIEC Pinus echinata Mill.
+      Latitude               : 34.5200 N
+      Longitude              : 93.5000 W
+      Elevation              : 275 m
+
+      Series intercorrelation: 0.641
+      Avg mean sensitivity   : 0.303
+      Avg standard deviation : 0.635
+      Avg autocorrelation    : 0.714
+      Number dated series    : 29
+      Series crossdated      : 28
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 0.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ar030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 HOT01A   1777 1982  .80  .72  .58  .46  .56  .71 
+   2 HOT01B   1776 1982  .77  .76  .74  .59  .38  .60 
+   3 HOT02A   1804 1982       .76  .67  .45  .33  .59 
+   4 HOT02B   1807 1982       .77  .64  .37  .34  .57 
+   5 HOT03B   1848 1982            .54  .54  .57  .72 
+   6 HOT03C   1859 1982                 .60  .63  .73 
+   7 HOT04A   1769 1982  .78  .65  .55  .48  .52  .62 
+   8 HOT04B   1790 1982  .76  .66  .57  .69  .61  .66 
+  10 HOT05B   1736 1982  .68  .65  .63  .60  .46  .61 
+  11 HOT06A   1769 1982  .79  .74  .62  .55  .63  .77 
+  12 HOT06B   1771 1982  .70  .70  .77  .60  .60  .74 
+  13 HOT07A   1779 1982  .62  .58  .69  .64  .61  .73 
+  14 HOT07B   1776 1982  .61  .62  .60  .60  .69  .66 
+  15 HOT08A   1748 1982  .65  .72  .72  .69  .48  .64 
+  16 HOT09A   1840 1982            .71  .60  .58  .69 
+  17 HOT09B   1839 1982            .66  .52  .56  .62 
+  18 HOT10A   1800 1982       .67  .54  .51  .41  .57 
+  19 HOT11A   1834 1982            .57  .41  .36  .65 
+  20 HOT11B   1854 1982                 .45  .37B .64 
+  21 HOT13A   1776 1982  .59  .57  .65  .56  .68  .69 
+  22 HOT13B   1796 1982  .81  .73  .58  .51  .69  .77 
+  23 HOT13C   1824 1982            .54  .37  .54  .64 
+  25 HOT15A   1764 1982  .71  .64  .56  .49  .41  .52 
+  26 HOT16A   1844 1982            .54  .65  .68  .62 
+  27 HOT16B   1778 1982  .79  .76  .67  .60  .50  .63 
+  28 HOT17A   1775 1982  .75  .75  .74  .77  .78  .77 
+  29 HOT17B   1790 1982  .72  .73  .73  .69  .67  .73 
+ Av segment correlation  .72  .69  .63  .56  .54  .66 
+
+ FLAGGED SEGMENTS: ar030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 HOT11B   1900 1949     B     .369        10      .454   .085
+
+ DESCRIPTIVE STATISTICS: ar030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HOT01A   1777 1982    206      6      0    .653   1.20   2.83   .648   .767   .313   1.86   .309   .017   3
+   2 HOT01B   1776 1982    207      6      0    .625   1.00   2.92   .610   .799   .316   2.35   .320   .008   3
+   3 HOT02A   1804 1982    179      5      0    .618   1.25   4.54   .776   .779   .298   1.74   .289   .017   1
+   4 HOT02B   1807 1982    176      5      0    .634   1.35   3.47   .545   .576   .321   1.64   .288  -.007   3
+   5 HOT03B   1848 1982    135      4      0    .568   1.05   2.19   .377   .581   .249   2.16   .272  -.004   1
+   6 HOT03C   1859 1982    124      3      0    .702   1.01   1.93   .324   .471   .244   1.82   .254   .020   1
+   7 HOT04A   1769 1982    214      6      0    .588    .99   3.70   .555   .727   .264   2.18   .274  -.007   1
+   8 HOT04B   1790 1982    193      6      0    .668    .97   3.23   .607   .830   .283   1.70   .275  -.024   3
+   9 HOT05A   1736 1794     59      0      0    .798   1.75   3.49   .719   .532   .334   2.22   .321  -.034   3
+  10 HOT05B   1736 1982    247      6      0    .693   1.04   3.46   .721   .843   .247   1.74   .240  -.031   3
+  11 HOT06A   1769 1982    214      6      0    .733   1.02   3.59   .817   .865   .259   2.37   .270  -.018   3
+  12 HOT06B   1771 1982    212      6      0    .705    .96   4.31   .825   .872   .274   1.89   .257  -.010   3
+  13 HOT07A   1779 1982    204      6      0    .604   1.26   4.10   .686   .709   .317   2.09   .306   .002   1
+  14 HOT07B   1776 1982    207      6      0    .581   1.32   4.04   .788   .761   .301   2.49   .298   .017   1
+  15 HOT08A   1748 1982    235      6      0    .738   1.13   4.23   .680   .820   .260   2.37   .264  -.006   3
+  16 HOT09A   1840 1982    143      4      0    .635   1.77   4.51   .833   .651   .314   1.88   .289  -.012   3
+  17 HOT09B   1839 1982    144      4      0    .612   1.47   3.27   .636   .661   .292   2.15   .290  -.019   2
+  18 HOT10A   1800 1982    183      5      0    .597   1.11   2.61   .551   .568   .397   1.90   .341  -.015   3
+  19 HOT11A   1834 1982    149      4      0    .515   1.35   5.25   .981   .784   .361   1.88   .380   .239   1
+  20 HOT11B   1854 1982    129      3      1    .560   1.13   2.36   .515   .649   .314   1.75   .286   .047   3
+  21 HOT13A   1776 1982    207      6      0    .647   1.09   3.82   .660   .783   .277   1.98   .269   .021   1
+  22 HOT13B   1796 1982    187      6      0    .722    .91   3.00   .445   .646   .300   1.80   .284   .004   1
+  23 HOT13C   1824 1982    159      4      0    .607    .81   3.11   .416   .705   .295   2.00   .303   .005   3
+  24 HOT14A   1794 1982    189                         1.06   3.16   .593   .794   .321                         
+  25 HOT15A   1764 1982    219      6      0    .569   1.09   2.91   .594   .664   .345   2.04   .339   .012   1
+  26 HOT16A   1844 1982    139      4      0    .444   1.12   2.46   .474   .409   .339   2.00   .352  -.014   1
+  27 HOT16B   1778 1982    205      6      0    .652   1.13   3.80   .616   .657   .335   1.96   .326  -.017   3
+  28 HOT17A   1775 1982    208      6      0    .724   1.06   3.20   .532   .591   .353   1.87   .310   .003   3
+  29 HOT17B   1790 1982    193      6      0    .696   1.33   3.49   .696   .722   .313   2.00   .303   .015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5266    141      1    .641   1.14   5.25   .635   .714   .303   2.49   .295   .006
+
+ DATA CHECKS (rwl.check): ar030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ar030.rwl
+ 29 series, 5266 measurements, 1736-1982, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ar030.rwl, MD5 dcc2b251c1cd06e1fbb0cae7a325fb5b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series HOT14A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

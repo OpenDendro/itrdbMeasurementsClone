@@ -1,0 +1,175 @@
+
+ COFECHA-style crossdating report: che614
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che614.rwl
+      MD5 of measurement file: 554565537e1b63c60e4167d3bf3efc90
+      Date checked           : 01OCT26
+      Beginning year         : 1883
+      Ending year            : 2010
+      Principal investigators: Esper, J.; Riechelmann, D.F.C.
+      Site name              : Brig RCS05
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.2983 N
+      Longitude              : 7.9972 E
+      Elevation              : 1100 m
+
+      Series intercorrelation: 0.654
+      Avg mean sensitivity   : 0.236
+      Avg standard deviation : 0.742
+      Avg autocorrelation    : 0.754
+      Number dated series    : 53
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 5.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che614
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 RCS0501a 1902 2010       .62  .69 
+   2 RCS0501b 1893 2010  .49  .48  .57 
+   5 RCS0505a 1938 2010            .36B
+   6 RCS0505b 1938 2010            .39 
+   7 RCS0506a 1940 2010            .74 
+   8 RCS0506b 1883 2010  .65  .70  .80 
+   9 RCS0507a 1893 2010  .45  .44  .72 
+  10 RCS0507b 1893 2010  .26A .29B .69 
+  11 RCS0509a 1910 2010       .75  .83 
+  12 RCS0509b 1910 2010       .62  .67 
+  13 RCS0510a 1927 2010            .73 
+  14 RCS0510b 1917 2010       .67  .76 
+  15 RCS0510c 1933 2010            .74 
+  16 RCS0511a 1930 2010            .68 
+  17 RCS0511b 1927 2010            .79 
+  18 RCS0512a 1909 2010       .73  .80 
+  19 RCS0512b 1898 2010       .79  .78 
+  20 RCS0512c 1914 2010       .84  .86 
+  21 RCS0513a 1896 2010  .60  .81  .87 
+  22 RCS0513b 1915 2010       .85  .74 
+  23 RCS0514a 1909 2010       .81  .86 
+  24 RCS0514b 1910 2010       .85  .70 
+  25 RCS0514c 1906 2010       .83  .69 
+  43 RCS0525b 1943 2010            .75 
+  44 RCS0526a 1938 2010            .82 
+  45 RCS0526b 1941 2010            .78 
+  46 RCS0527a 1928 2010            .64 
+  48 RCS0528a 1907 2010       .69  .83 
+  49 RCS0528b 1918 2010       .77  .82 
+  50 RCS0529a 1895 2010  .55  .59  .73 
+  51 RCS0529b 1895 2010  .72  .77  .87 
+ Av segment correlation  .53  .70  .73 
+
+ FLAGGED SEGMENTS: che614
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 RCS0505a 1950 1999     B     .360        -2      .390   .029
+  10 RCS0507b 1900 1949     A     .261         0
+  10 RCS0507b 1925 1974     B     .293        -4      .412   .119
+
+ DESCRIPTIVE STATISTICS: che614
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RCS0501a 1902 2010    109      2      0    .649    .96   2.94   .653   .894   .242   1.67   .260   .050   1
+   2 RCS0501b 1893 2010    118      3      0    .533   1.24   3.26   .641   .821   .235   1.79   .246  -.007   3
+   3 RCS0502a 2000 2010     11      0      0    .592   4.42   6.91  1.138   .192   .239   1.33   .195  -.218   0
+   4 RCS0502b 2000 2010     11      0      0    .688   3.71   5.15   .993   .180   .243   1.41   .269   .196   0
+   5 RCS0505a 1938 2010     73      1      1    .413   1.77   3.61   .681   .776   .203   1.53   .206  -.019   3
+   6 RCS0505b 1938 2010     73      1      0    .398   2.39   4.84   .878   .764   .178   1.49   .187  -.039   3
+   7 RCS0506a 1940 2010     71      1      0    .679   1.73   5.07   .796   .679   .262   1.75   .289   .011   1
+   8 RCS0506b 1883 2010    128      3      0    .684   1.57   3.30   .744   .814   .236   2.02   .246  -.043   3
+   9 RCS0507a 1893 2010    118      3      0    .548    .92   2.87   .493   .755   .340   1.54   .274  -.010   3
+  10 RCS0507b 1893 2010    118      3      2    .456   1.04   4.31   .564   .749   .288   1.97   .257   .027   3
+  11 RCS0509a 1910 2010    101      2      0    .771   1.58   4.05   .948   .879   .216   1.64   .237   .010   2
+  12 RCS0509b 1910 2010    101      2      0    .691   1.18   3.50   .907   .917   .243   1.85   .282   .003   1
+  13 RCS0510a 1927 2010     84      1      0    .482   1.25   3.38   .555   .792   .217   2.09   .271   .139   1
+  14 RCS0510b 1917 2010     94      2      0    .663   1.77   5.14   .807   .767   .213   1.93   .255  -.040   3
+  15 RCS0510c 1933 2010     78      1      0    .682   1.27   2.77   .492   .737   .218   1.93   .224  -.054   3
+  16 RCS0511a 1930 2010     81      1      0    .577   1.79   3.90   .595   .665   .205   1.63   .217   .031   1
+  17 RCS0511b 1927 2010     84      1      0    .693   1.76   4.63   .636   .743   .199   1.79   .210   .022   1
+  18 RCS0512a 1909 2010    102      2      0    .719   1.89   4.94  1.190   .925   .211   1.58   .237   .093   1
+  19 RCS0512b 1898 2010    113      2      0    .742   1.43   3.72  1.049   .941   .206   1.66   .234  -.019   3
+  20 RCS0512c 1914 2010     97      2      0    .795   1.64   4.43  1.055   .925   .223   1.60   .232   .020   1
+  21 RCS0513a 1896 2010    115      3      0    .735   1.54   3.79   .797   .778   .238   1.97   .240   .056   3
+  22 RCS0513b 1915 2010     96      2      0    .751   1.40   3.73   .695   .774   .248   1.98   .253  -.044   3
+  23 RCS0514a 1909 2010    102      2      0    .810   1.15   3.21   .641   .797   .241   1.68   .273   .025   3
+  24 RCS0514b 1910 2010    101      2      0    .744   1.61   3.33   .636   .769   .223   1.64   .233   .029   1
+  25 RCS0514c 1906 2010    105      2      0    .739   1.71   3.52   .679   .769   .218   1.75   .223  -.030   3
+  26 RCS0515a 2002 2010      9      0      0    .635   1.68   2.74   .516   .202   .279   1.29   .166  -.214   1
+  27 RCS0515b 2002 2010      9      0      0   -.113   1.30   2.30   .458  -.533   .431   1.23   .163  -.229   1
+  28 RCS0516a 1969 2010     42      0      0    .721   1.87   3.29   .597   .612   .205   1.42   .197   .066   3
+  29 RCS0516b 1970 2010     41      0      0    .662   2.20   5.34   .941   .789   .196   1.38   .203   .012   3
+  30 RCS0517a 1973 2010     38      0      0    .826   2.35   4.91   .880   .713   .186   1.51   .221  -.046   3
+  31 RCS0517b 1973 2010     38      0      0    .529   2.40   4.72   .954   .842   .179   1.40   .192  -.095   3
+  32 RCS0518z 1991 2010     20      0      0    .474   3.69   8.78  2.184   .888   .172   1.52   .212   .425   1
+  33 RCS0520a 1967 2010     44      0      0    .571   1.35   2.55   .495   .559   .284   1.48   .257   .065   1
+  34 RCS0520b 1969 2010     42      0      0    .565   1.31   2.13   .454   .569   .266   1.62   .260   .050   1
+  35 RCS0521a 1970 2010     41      0      0    .592   1.37   2.52   .386   .516   .212   1.56   .228   .027   1
+  36 RCS0521b 1970 2010     41      0      0    .616   1.33   2.30   .381   .577   .212   1.63   .225   .025   1
+  37 RCS0522a 1968 2010     43      0      0    .665   2.23   4.92   .817   .695   .211   1.49   .209  -.021   1
+  38 RCS0522b 1962 2010     49      0      0    .556   2.83   4.48   .883   .652   .209   1.54   .216   .048   1
+  39 RCS0522c 1964 2010     47      0      0    .489   2.61   5.02   .758   .647   .196   1.47   .189   .051   1
+  40 RCS0523a 1964 2010     47      0      0    .533   1.64   3.35   .546   .781   .169   1.47   .157   .069   3
+  41 RCS0523b 1965 2010     46      0      0    .612   1.72   2.98   .635   .762   .223   1.44   .218   .140   1
+  42 RCS0525a 1953 2010     58      0      0    .770   1.14   2.39   .495   .747   .224   1.71   .271   .034   1
+  43 RCS0525b 1943 2010     68      1      0    .697   1.22   2.70   .508   .805   .206   1.53   .243  -.027   3
+  44 RCS0526a 1938 2010     73      1      0    .793   1.07   2.99   .580   .786   .233   1.52   .248  -.063   3
+  45 RCS0526b 1941 2010     70      1      0    .727    .83   3.04   .529   .793   .269   1.81   .254   .043   3
+  46 RCS0527a 1928 2010     83      1      0    .634   1.51   3.53   .492   .436   .246   1.74   .238  -.034   3
+  47 RCS0527b 1954 2010     57      0      0    .624   2.25   7.20  1.498   .755   .276   1.67   .291  -.012   3
+  48 RCS0528a 1907 2010    104      2      0    .731   1.16   3.56   .606   .794   .234   2.01   .263  -.044   3
+  49 RCS0528b 1918 2010     93      2      0    .753   1.67   3.61   .818   .739   .274   1.83   .287  -.027   3
+  50 RCS0529a 1895 2010    116      3      0    .650   1.59   5.14   .905   .624   .308   2.50   .311  -.007   3
+  51 RCS0529b 1895 2010    116      3      0    .797   1.89   5.27   .997   .717   .247   2.47   .280   .039   3
+  52 RCS0530a 1998 2010     13      0      0   -.101   1.17   1.90   .436   .256   .365   1.57   .353   .200   0
+  53 RCS0530b 1998 2010     13      0      0   -.003   1.26   2.21   .578   .509   .379   1.65   .423   .453   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3745     58      3    .654   1.57   8.78   .742   .754   .236   2.50   .246   .012
+
+ DATA CHECKS (rwl.check): che614
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che614.rwl
+ 53 series, 3745 measurements, 1883-2010, 0.01 mm precision
+ 0 error(s), 0 warning(s), 21 note(s)
+ -------------
+ Nothing to report at this severity.
+ 21 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file che614.rwl, MD5 554565537e1b63c60e4167d3bf3efc90.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: cana369
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana369.rwl
+      MD5 of measurement file: f9bde07e62cbfbec988a75d2dca6ffea
+      Date checked           : 01OCT26
+      Beginning year         : 1738
+      Ending year            : 2002
+      Principal investigators: Kenigsberg, M.; Luckman, B.H.
+      Site name              : Jade City
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 59.1875 N
+      Longitude              : 129.6731 W
+      Elevation              : 1316 m
+
+      Series intercorrelation: 0.573
+      Avg mean sensitivity   : 0.198
+      Avg standard deviation : 0.222
+      Avg autocorrelation    : 0.794
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 3.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana369
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 YW301N   1792 1911  .75  .53  .55                     
+   2 YW301S   1791 1957  .57  .54  .66  .78  .69           
+   3 YW304E   1738 1906  .61  .68  .55                     
+   4 YW304W   1738 1876  .68  .59                          
+   5 YW313E   1899 2002                      .43  .60  .53 
+   6 YW313W   1899 2002                           .59  .61 
+   7 YW314W   1838 2002            .35  .48  .60  .73  .81 
+   8 YW323N   1810 1970       .57  .74  .75  .74           
+   9 YW323S   1810 1970       .45  .61  .68  .71           
+  10 YW324N   1793 2002  .33  .60  .72  .70  .57  .73  .63 
+  11 YW324S   1758 2000  .72  .69  .68  .64  .66  .76  .64 
+  12 YW325N   1803 1942       .68  .67  .57                
+  13 YW325S   1803 1882       .63                          
+  14 YW326N   1796 1956  .45  .44  .70  .68  .49           
+  15 YW326S   1796 1899  .73  .66  .58                     
+  16 YW333E   1860 2002                 .57  .70  .75  .68 
+  17 YW333W   1842 2002            .60  .55  .67  .78  .70 
+  18 YW334N   1829 2002            .64  .70  .60  .60  .17A
+  19 YW334S   1745 2002  .76  .64  .48  .64  .26B .32A .68 
+  20 YW335E   1766 2002  .62  .66  .58  .55  .51  .69  .79 
+  21 YW335W   1766 2002  .69  .65  .53  .65  .82  .64  .49 
+ Av segment correlation  .63  .60  .60  .64  .60  .66  .61 
+
+ FLAGGED SEGMENTS: cana369
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  18 YW334N   1950 1999     A     .172         0
+  19 YW334S   1900 1949     B     .257        -8      .349   .091
+  19 YW334S   1925 1974     A     .323         0
+
+ DESCRIPTIVE STATISTICS: cana369
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 YW301N   1792 1911    120      3      0    .675    .49    .93   .179   .620   .244   1.59   .230  -.014   1
+   2 YW301S   1791 1957    167      5      0    .632    .47    .89   .210   .826   .210   1.50   .205   .008   2
+   3 YW304E   1738 1906    169      3      0    .580    .59   1.41   .283   .780   .250   1.92   .232   .013   1
+   4 YW304W   1738 1876    139      2      0    .588    .45    .91   .143   .378   .275   2.19   .272  -.037   3
+   5 YW313E   1899 2002    104      3      0    .483    .88   1.42   .235   .826   .122   1.31   .133   .017   1
+   6 YW313W   1899 2002    104      2      0    .503    .79   1.33   .318   .911   .138   1.53   .145   .005   2
+   7 YW314W   1838 2002    165      5      0    .480    .72   1.24   .225   .595   .208   2.01   .230   .018   2
+   8 YW323N   1810 1970    161      4      0    .626    .60   1.57   .377   .901   .242   2.01   .251   .001   1
+   9 YW323S   1810 1970    161      4      0    .547    .68   1.53   .326   .834   .221   2.31   .255  -.004   1
+  10 YW324N   1793 2002    210      7      0    .485    .30    .73   .177   .915   .200   1.55   .195   .004   1
+  11 YW324S   1758 2000    243      7      0    .592    .35    .76   .172   .851   .219   1.82   .212  -.017   1
+  12 YW325N   1803 1942    140      3      0    .668    .54   1.01   .188   .761   .186   1.39   .179  -.013   1
+  13 YW325S   1803 1882     80      1      0    .652    .68   1.39   .353   .853   .220   1.40   .199   .115   0
+  14 YW326N   1796 1956    161      5      0    .523    .73   1.65   .392   .859   .255   1.97   .252  -.000   1
+  15 YW326S   1796 1899    104      3      0    .670    .77   1.57   .411   .853   .242   1.78   .214   .067   0
+  16 YW333E   1860 2002    143      4      0    .613    .58   1.06   .153   .692   .156   1.37   .157   .026   1
+  17 YW333W   1842 2002    161      5      0    .635    .64   1.52   .226   .848   .167   1.52   .170  -.020   1
+  18 YW334N   1829 2002    174      5      1    .480    .30    .57   .102   .842   .151   1.33   .154  -.014   1
+  19 YW334S   1745 2002    258      7      2    .483    .38    .90   .129   .794   .166   1.80   .167  -.035   3
+  20 YW335E   1766 2002    237      7      0    .633    .45   1.18   .174   .844   .153   1.45   .163  -.019   3
+  21 YW335W   1766 2002    237      7      0    .595    .45   1.14   .168   .795   .172   1.72   .181  -.019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3438     92      3    .573    .53   1.65   .222   .794   .198   2.31   .199  -.002
+
+ DATA CHECKS (rwl.check): cana369
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana369.rwl
+ 21 series, 3438 measurements, 1738-2002, 0.002 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cana369.rwl, MD5 f9bde07e62cbfbec988a75d2dca6ffea.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

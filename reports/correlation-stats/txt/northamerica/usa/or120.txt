@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: or120
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or120.rwl
+      MD5 of measurement file: 039a96ceabeb07059b19ee3b98bd24d0
+      Date checked           : 01OCT26
+      Beginning year         : 1570
+      Ending year            : 1844
+      Principal investigators: Black, B.A.; Struble, W.T.; Wetherell, L.; Roering, J.J.
+      Site name              : Carlton
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 45.3210 N
+      Longitude              : 123.4420 W
+      Elevation              : 540 m
+
+      Series intercorrelation: 0.540
+      Avg mean sensitivity   : 0.191
+      Avg standard deviation : 0.617
+      Avg autocorrelation    : 0.813
+      Number dated series    : 4
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 0, B 12; 7 of the B weak at every lag)
+      Pct problem segments   : 46.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or120
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 
+                        1649 1674 1699 1724 1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CRL05A   1599 1844  .19B .13B .42  .23B .73  .75  .70  .85 
+   2 CRL05B   1599 1841  .09B .00B .39  .21B .74  .74  .70  .85 
+   3 CRL17A   1570 1769  .09B .06B .41  .31B .73                
+   4 CRL17B   1573 1768  .16B .14B .40  .17B .67                
+ Av segment correlation  .13  .08  .40  .23  .72  .75  .70  .85 
+
+ FLAGGED SEGMENTS: or120
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CRL05A   1600 1649     B     .194         6      .258   .064  weak at every lag
+   1 CRL05A   1625 1674     B     .127        -6      .229   .102  weak at every lag
+   1 CRL05A   1675 1724     B     .229        -5      .361   .132
+   2 CRL05B   1600 1649     B     .089         6      .343   .254
+   2 CRL05B   1625 1674     B     .002        -6      .302   .300  weak at every lag
+   2 CRL05B   1675 1724     B     .214        -5      .388   .173
+   3 CRL17A   1600 1649     B     .088        -6      .279   .191  weak at every lag
+   3 CRL17A   1625 1674     B     .057         6      .215   .158  weak at every lag
+   3 CRL17A   1675 1724     B     .310       -10      .357   .047
+   4 CRL17B   1600 1649     B     .161        -6      .260   .099  weak at every lag
+   4 CRL17B   1625 1674     B     .140        -7      .241   .101  weak at every lag
+   4 CRL17B   1675 1724     B     .172       -10      .346   .174
+
+ DESCRIPTIVE STATISTICS: or120
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CRL05A   1599 1844    246      8      3    .602   1.43   4.33   .643   .789   .206   1.98   .234   .024   1
+   2 CRL05B   1599 1841    243      8      3    .570   1.41   4.64   .657   .794   .201   2.05   .227   .016   1
+   3 CRL17A   1570 1769    200      5      3    .491   1.34   3.74   .579   .839   .172   2.28   .212  -.025   1
+   4 CRL17B   1573 1768    196      5      3    .474   1.33   3.69   .571   .841   .180   2.01   .211  -.012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            885     26     12    .540   1.38   4.64   .617   .813   .191   2.28   .222   .003
+
+ DATA CHECKS (rwl.check): or120
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or120.rwl
+ 4 series, 885 measurements, 1570-1844, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file or120.rwl, MD5 039a96ceabeb07059b19ee3b98bd24d0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

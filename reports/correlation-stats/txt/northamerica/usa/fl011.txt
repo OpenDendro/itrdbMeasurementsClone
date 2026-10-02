@@ -1,0 +1,178 @@
+
+ COFECHA-style crossdating report: fl011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fl011.rwl
+      MD5 of measurement file: 137caef4d9de81e41ee7b57d24592d91
+      Date checked           : 01OCT26
+      Beginning year         : 1756
+      Ending year            : 2005
+      Principal investigators: Harley, G.L.
+      Site name              : Kissimmee
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 27.6737 N
+      Longitude              : 81.4286 W
+      Elevation              : 14 m
+
+      Series intercorrelation: 0.502
+      Avg mean sensitivity   : 0.420
+      Avg standard deviation : 0.976
+      Avg autocorrelation    : 0.522
+      Number dated series    : 46
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 3.06
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fl011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 A174     1756 1877       .35                          
+   2 A164     1821 1921       .17B .34                     
+   3 APAR7N   1902 1979                           .51      
+   4 AP2C     1942 2003                                .44 
+   5 AP28L    1940 2003                                .57 
+   6 AP35M    1915 2003                           .58  .53 
+   7 AP36S    1880 2003                      .50  .61  .50 
+   8 AP40J    1880 2003                      .61  .59  .55 
+   9 AP42D    1911 2003                           .46  .56 
+  10 AP441I   1880 2003                      .70  .69  .63 
+  11 AP47N    1880 2003                      .51  .65  .58 
+  12 AP49A    1940 2003                                .62 
+  13 AP64N    1880 2003                      .37  .69  .75 
+  14 AP67P    1900 2003                           .59  .65 
+  15 AP93K    1897 2003                      .75  .73  .60 
+  16 AP96G    1899 1996                      .37  .37      
+  17 AP105K   1921 2003                           .56  .57 
+  18 AP181H   1890 2003                      .47  .51  .52 
+  19 AP189U   1890 2003                      .28A .47  .60 
+  20 AP197W   1890 2003                      .52  .73  .77 
+  21 AP211U   1890 1990                      .53  .66      
+  22 AP215S   1890 2003                      .62  .59  .57 
+  23 AP232H   1903 2003                           .50  .46 
+  24 AP245S   1880 1998                      .59  .60      
+  25 AP272J   1932 2003                                .59 
+  26 AP273AA  1880 2003                      .42B .66  .73 
+  27 EC011K   1891 1974                      .53  .56      
+  29 EC101H   1890 1954                      .49           
+  30 ES2013U  1890 1964                      .34           
+  32 ES2054M  1880 1992                      .62  .54      
+  33 ES3011M  1880 2005                      .50  .63  .64 
+  35 NF092W   1880 1963                      .49           
+  36 11A072G  1906 2003                           .66  .60 
+  37 AP48f    1850 2003                 .50  .47  .60  .81 
+  38 AP118O   1835 2002            .63  .53  .53  .68  .75 
+  39 AP55CC   1804 2003       .53  .53  .45  .43  .64  .56 
+  40 AP46O    1843 2003            .44  .52  .56  .64  .66 
+  42 NF043H   1820 1877       .40                          
+  43 ec123    1860 1935                 .50                
+  44 APAR5J   1910 1999                           .80  .74 
+  46 AP184E   1840 2003            .39  .41  .46  .74  .76 
+ Av segment correlation       .36  .47  .48  .51  .61  .62 
+
+ FLAGGED SEGMENTS: fl011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 A164     1825 1874     B     .174         9      .185   .011  weak at every lag
+  19 AP189U   1900 1949     A     .276         0
+  26 AP273AA  1900 1949     B     .418         4      .437   .020
+
+ DESCRIPTIVE STATISTICS: fl011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 A174     1756 1877    122      1      0    .252   1.70   5.31  1.111   .540   .513   2.78   .499  -.000   1
+   2 A164     1821 1921    101      2      1    .242   2.19   6.44  1.160   .412   .419   2.11   .402  -.048   3
+   3 APAR7N   1902 1979     78      1      0    .534   2.17   8.77  1.424   .399   .510   2.99   .535   .009   2
+   4 AP2C     1942 2003     62      1      0    .434   3.54  10.63  2.245   .246   .556   2.22   .511   .042   0
+   5 AP28L    1940 2003     64      1      0    .542   2.19   5.39  1.062   .529   .416   1.71   .339   .107   0
+   6 AP35M    1915 2003     89      2      0    .522   2.53   7.93  1.678   .819   .372   1.93   .333   .029   1
+   7 AP36S    1880 2003    124      3      0    .430   1.21   3.12   .714   .668   .391   2.12   .384   .000   1
+   8 AP40J    1880 2003    124      3      0    .514   1.31   3.04   .636   .554   .384   2.47   .381   .005   1
+   9 AP42D    1911 2003     93      2      0    .472   1.19   4.54   .839   .550   .446   3.17   .525   .013   1
+  10 AP441I   1880 2003    124      3      0    .642   1.30   3.97   .838   .609   .451   2.88   .450  -.020   3
+  11 AP47N    1880 2003    124      3      0    .467   1.32   7.18  1.006   .618   .446   2.45   .436   .002   1
+  12 AP49A    1940 2003     64      1      0    .575   1.24   4.49   .716   .197   .410   2.56   .440   .058   0
+  13 AP64N    1880 2003    124      3      0    .537   1.15   2.51   .440   .420   .344   2.02   .321   .110   0
+  14 AP67P    1900 2003    104      2      0    .551   2.05   4.84   .903   .451   .362   1.88   .343   .009   2
+  15 AP93K    1897 2003    107      3      0    .638   2.27   6.58  1.454   .507   .456   2.40   .433   .115   0
+  16 AP96G    1899 1996     98      2      0    .424   3.05   8.68  1.679   .469   .427   2.37   .425   .018   1
+  17 AP105K   1921 2003     83      2      0    .512   1.44   3.76   .825   .746   .337   1.68   .327  -.007   2
+  18 AP181H   1890 2003    114      3      0    .492   1.58   5.94  1.122   .336   .606   3.00   .569   .095   0
+  19 AP189U   1890 2003    114      3      1    .382   1.24   4.00   .669   .388   .447   2.38   .460   .022   1
+  20 AP197W   1890 2003    114      3      0    .634   1.53   4.95  1.020   .394   .508   2.70   .488   .052   0
+  21 AP211U   1890 1990    101      2      0    .556   1.37   3.66   .644   .511   .417   2.14   .351   .056   0
+  22 AP215S   1890 2003    114      3      0    .548   1.00   2.35   .387   .296   .376   1.83   .316  -.032   0
+  23 AP232H   1903 2003    101      2      0    .439   2.35   7.21  1.710   .769   .368   2.29   .383   .050   1
+  24 AP245S   1880 1998    119      2      0    .539   1.13   3.59   .698   .499   .423   2.35   .424   .033   2
+  25 AP272J   1932 2003     72      1      0    .560   2.84   7.39  1.453   .215   .467   2.23   .440  -.002   2
+  26 AP273AA  1880 2003    124      3      1    .546   1.35   5.83   .910   .502   .529   2.69   .509  -.006   2
+  27 EC011K   1891 1974     84      2      0    .603   2.49   7.69  1.517   .574   .436   2.42   .446  -.023   2
+  28 EC053E   1890 1940     51      0      0    .301   2.76   4.92  1.106   .480   .351   1.55   .314   .046   1
+  29 EC101H   1890 1954     65      1      0    .478   2.41   5.21  1.071   .578   .326   1.69   .327   .025   1
+  30 ES2013U  1890 1964     75      1      0    .410   1.43   3.60   .696   .352   .450   2.12   .442  -.027   1
+  31 ES3042N  1902 1952     51      0      0    .483   1.92   5.54  1.174   .760   .303   1.94   .334   .067   1
+  32 ES2054M  1880 1992    113      2      0    .451   1.49   4.96   .812   .551   .361   2.82   .381   .021   1
+  33 ES3011M  1880 2005    126      3      0    .542   1.24   7.82  1.393   .848   .329   1.99   .349   .012   3
+  34 ES3022C  1880 1927     48      0      0    .391   2.73   7.28  1.911   .833   .299   1.86   .301   .190   0
+  35 NF092W   1880 1963     84      1      0    .494   1.35   3.64   .700   .468   .392   2.32   .385  -.052   0
+  36 11A072G  1906 2003     98      2      0    .572   2.35   8.57  1.564   .428   .489   2.51   .483   .001   2
+  37 AP48f    1850 2003    154      4      0    .539   1.34   3.55   .765   .509   .499   2.87   .470  -.015   3
+  38 AP118O   1835 2002    168      5      0    .601   1.15   4.95   .782   .572   .426   3.35   .484  -.023   3
+  39 AP55CC   1804 2003    200      6      0    .437    .76   2.91   .580   .681   .421   2.51   .380   .011   2
+  40 AP46O    1843 2003    161      5      0    .578   1.18   3.73   .665   .451   .419   3.11   .475   .031   1
+  41 ap82e    1851 1899     49      0      0    .358   2.60   5.69  1.355   .582   .369   1.60   .316  -.016   3
+  42 NF043H   1820 1877     58      1      0    .448   2.31   5.52  1.129   .493   .330   2.04   .376   .138   0
+  43 ec123    1860 1935     76      1      0    .388   2.11   6.54  1.213   .355   .476   2.61   .485  -.066   3
+  44 APAR5J   1910 1999     90      2      0    .703   1.74   5.44  1.063   .722   .353   2.17   .354   .042   2
+  45 NF012G   1834 1879     46      0      0    .445   1.36   2.50   .447   .309   .307   1.69   .296   .038   1
+  46 AP184E   1840 2003    164      5      0    .524   1.09   2.39   .492   .514   .330   2.22   .333  -.003   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4619     98      3    .502   1.64  10.63   .976   .522   .420   3.35   .414   .019
+
+ DATA CHECKS (rwl.check): fl011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/fl011.rwl
+ 46 series, 4619 measurements, 1756-2005, 0.01 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file fl011.rwl, MD5 137caef4d9de81e41ee7b57d24592d91.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

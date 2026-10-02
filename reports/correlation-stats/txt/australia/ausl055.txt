@@ -1,0 +1,206 @@
+
+ COFECHA-style crossdating report: ausl055
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ausl055.rwl
+      MD5 of measurement file: 95345049305d90d683046200a3170497
+      Date checked           : 01OCT26
+      Beginning year         : 1845
+      Ending year            : 1973
+      Principal investigators: Allen, K.J.; Brookhouse, M.
+      Site name              : Murganella
+      Species information    : CAIN Callitris intratropica R. Baker & H.G. Smith
+      Latitude               : 11.6500 S
+      Longitude              : 132.7600 E
+      Elevation              : 8 m
+
+      Series intercorrelation: 0.430
+      Avg mean sensitivity   : 0.402
+      Avg standard deviation : 0.737
+      Avg autocorrelation    : 0.586
+      Number dated series    : 69
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 4, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 24.24
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ausl055
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 
+                        1949 
+ --- -------- ---------  ---- 
+   1 MUR01a   1882 1972  .64 
+   2 MUR01b   1882 1972  .64 
+   3 MUR02a   1845 1971  .26A
+   4 MUR03a   1858 1969  .17B
+   5 MUR03b   1858 1969  .30A
+   6 MUR04a   1848 1971  .26A
+   7 MUR04b   1849 1971  .57 
+   8 MUR05a   1846 1969  .22B
+   9 MUR05b   1847 1968  .21B
+  12 MUR07a   1878 1962  .39 
+  13 MUR08a   1894 1973  .47 
+  14 MUR08b   1894 1973  .61 
+  15 MUR09a   1863 1959  .25A
+  16 MUR09b   1863 1962  .49 
+  17 MUR11a   1885 1972  .46 
+  22 MUR15a   1884 1972  .50 
+  23 MUR15b   1884 1972  .60 
+  26 MUR17    1860 1970  .11B
+  27 MUR18    1880 1971  .54 
+  30 MUR20a   1882 1966  .53 
+  31 MUR20b   1882 1955  .44 
+  34 MUR22    1869 1952  .49 
+  35 MUR23    1889 1966  .57 
+  36 MUR23a   1889 1965  .59 
+  37 MUR24    1859 1964  .54 
+  38 MUR26    1872 1973  .45 
+  39 MUR27    1888 1973  .34 
+  42 MUR30    1884 1973  .59 
+  43 MUR31    1884 1973  .59 
+  44 MUR33    1895 1966  .48 
+  47 MUR35    1893 1973  .63 
+  50 MUR38    1898 1973  .62 
+  51 MUR39    1883 1972  .44 
+ Av segment correlation  .45 
+
+ FLAGGED SEGMENTS: ausl055
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 MUR02a   1900 1949     A     .259         0
+   4 MUR03a   1900 1949     B     .170         5      .189   .019  weak at every lag
+   5 MUR03b   1900 1949     A     .298         0
+   6 MUR04a   1900 1949     A     .263         0
+   8 MUR05a   1900 1949     B     .223        -6      .323   .099  weak at every lag
+   9 MUR05b   1900 1949     B     .208        -6      .254   .047  weak at every lag
+  15 MUR09a   1900 1949     A     .253         0
+  26 MUR17    1900 1949     B     .113         3      .229   .117  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ausl055
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MUR01a   1882 1972     91      1      0    .549   1.15   3.83   .812   .559   .547   2.20   .455   .049   0
+   2 MUR01b   1882 1972     91      1      0    .556   1.57   5.25   .884   .492   .429   2.08   .370  -.027   2
+   3 MUR02a   1845 1971    127      1      1    .247   1.38   3.53   .712   .725   .386   2.24   .339   .015   2
+   4 MUR03a   1858 1969    112      1      1    .214    .94   3.43   .753   .741   .491   2.75   .441   .014   2
+   5 MUR03b   1858 1969    112      1      1    .306   1.22   3.85   .697   .565   .450   2.23   .422   .030   2
+   6 MUR04a   1848 1971    124      1      1    .286   1.22   2.81   .542   .459   .397   2.56   .379   .016   0
+   7 MUR04b   1849 1971    123      1      0    .433    .73   2.19   .456   .705   .420   2.14   .403   .026   1
+   8 MUR05a   1846 1969    124      1      1    .328   1.05   2.68   .525   .693   .366   2.01   .321   .019   2
+   9 MUR05b   1847 1968    122      1      1    .239    .94   2.96   .607   .749   .390   2.56   .411  -.004   2
+  10 MUR06a   1865 1945     81      0      0    .484   1.72   5.75  1.114   .568   .329   1.89   .298  -.079   0
+  11 MUR06b   1865 1903     39      0      0    .459   2.46   5.11  1.158   .382   .344   1.40   .251  -.100   3
+  12 MUR07a   1878 1962     85      1      0    .400   1.45   4.66  1.089   .190   .608   2.02   .415   .084   3
+  13 MUR08a   1894 1973     80      1      0    .370   1.50   3.21   .558   .662   .226   1.51   .213   .096   0
+  14 MUR08b   1894 1973     80      1      0    .537   1.52   3.48   .615   .701   .234   1.61   .227   .030   1
+  15 MUR09a   1863 1959     97      1      1    .350   1.44   6.13  1.548   .919   .388   1.86   .342   .068   0
+  16 MUR09b   1863 1962    100      1      0    .391   1.16   5.41  1.299   .931   .558   2.01   .407   .003   2
+  17 MUR11a   1885 1972     88      1      0    .536   1.50   4.86  1.048   .762   .364   1.88   .318   .019   1
+  18 MUR12a   1906 1973     68      0      0    .434   1.45   2.91   .562   .526   .336   1.70   .279  -.029   2
+  19 MUR12b   1906 1973     68      0      0    .350   1.37   3.55   .731   .719   .294   1.58   .261   .024   0
+  20 MUR14a   1909 1972     64      0      0    .526   1.23   2.80   .515   .578   .356   1.61   .281   .020   0
+  21 MUR14b   1909 1972     64      0      0    .495   1.26   3.26   .606   .620   .392   1.62   .324   .034   0
+  22 MUR15a   1884 1972     89      1      0    .424   1.56   3.87   .793   .419   .404   1.84   .340   .046   0
+  23 MUR15b   1884 1972     89      1      0    .551   1.32   4.11   .847   .585   .409   1.86   .342  -.017   2
+  24 MUR16a   1850 1944     95      0      0    .465    .83   2.26   .492   .795   .335   1.80   .318   .051   1
+  25 MUR16b   1849 1941     93      0      0    .257    .94   2.30   .564   .705   .460   1.92   .387   .109   0
+  26 MUR17    1860 1970    111      1      1    .264   1.53   4.93  1.161   .822   .420   1.95   .360   .032   0
+  27 MUR18    1880 1971     92      1      0    .478   1.39   5.48  1.113   .638   .478   2.29   .444   .044   0
+  28 MUR19a   1912 1970     59      0      0    .231   1.32   3.86   .888   .733   .407   1.82   .341   .020   1
+  29 MUR19b   1912 1969     58      0      0    .228   1.40   3.79  1.046   .823   .368   1.71   .325   .036   1
+  30 MUR20a   1882 1966     85      1      0    .488    .95   2.74   .531   .557   .367   2.03   .327   .039   0
+  31 MUR20b   1882 1955     74      1      0    .491    .97   2.85   .562   .570   .382   1.94   .349   .039   2
+  32 MUR21a   1910 1972     63      0      0    .478    .95   2.74   .513   .753   .372   1.57   .282  -.053   2
+  33 MUR21b   1904 1972     69      0      0    .410   1.09   3.02   .652   .755   .334   2.05   .326   .008   2
+  34 MUR22    1869 1952     84      1      0    .441   1.59   4.93  1.159   .842   .387   1.84   .331  -.093   0
+  35 MUR23    1889 1966     78      1      0    .553   1.53   6.22  1.064   .474   .578   2.99   .535   .108   0
+  36 MUR23a   1889 1965     77      1      0    .550   1.55   6.22  1.056   .460   .557   2.86   .518   .070   0
+  37 MUR24    1859 1964    106      1      0    .420   1.36   3.58   .766   .716   .357   2.18   .342   .083   0
+  38 MUR26    1872 1973    102      1      0    .377   1.32   3.50   .786   .849   .308   1.80   .283   .000   3
+  39 MUR27    1888 1973     86      1      0    .317   1.48   3.87   .896   .298   .539   2.19   .490   .048   2
+  40 MUR28a   1913 1973     61      0      0    .352   1.22   3.20   .561   .073   .442   2.28   .377  -.047   3
+  41 MUR28b   1913 1966     54      0      0    .587   1.35   3.99   .680   .373   .468   1.92   .385  -.103   2
+  42 MUR30    1884 1973     90      1      0    .561   1.42   4.26   .835   .722   .307   1.69   .246   .003   2
+  43 MUR31    1884 1973     90      1      0    .561   1.42   4.26   .835   .722   .307   1.69   .246   .003   2
+  44 MUR33    1895 1966     72      1      0    .297   1.65   6.60  1.061   .216   .530   2.57   .448  -.072   0
+  45 MUR34a   1903 1957     55      0      0    .593   1.39   2.41   .491   .238   .365   1.56   .306   .062   0
+  46 MUR34b   1903 1973     71      0      0    .328    .88   2.00   .398   .372   .394   2.09   .365   .111   0
+  47 MUR35    1893 1973     81      1      0    .548   1.16   3.42   .671   .444   .485   1.95   .394   .053   0
+  48 MUR36    1904 1973     70      0      0    .480   1.21   3.00   .464   .437   .310   1.79   .297  -.024   2
+  49 MUR37    1908 1969     62      0      0    .371   1.40   5.36  1.073   .746   .419   2.33   .373   .061   2
+  50 MUR38    1898 1973     76      1      0    .382   1.32   4.05   .780   .752   .271   1.96   .252  -.011   0
+  51 MUR39    1883 1972     90      1      0    .412   1.10   4.21   .799   .540   .432   1.81   .363  -.030   0
+  52 C002b    1920 1972     53      0      0    .613    .95   1.97   .458   .316   .502   2.02   .425  -.039   1
+  53 C002a    1920 1972     53      0      0    .623    .98   1.81   .473   .427   .477   2.10   .431  -.013   1
+  54 C003b    1917 1970     54      0      0   -.139   1.08   2.28   .475   .178   .448   1.93   .403   .076   0
+  55 C003a    1918 1972     55      0      0    .528   1.06   2.82   .570   .339   .486   2.10   .423   .098   0
+  56 C004b    1915 1972     58      0      0    .699   1.34   2.35   .508   .429   .356   1.63   .312   .138   0
+  57 C004a    1916 1972     57      0      0    .557   1.48   2.66   .585   .460   .395   2.04   .325  -.054   2
+  58 C005b    1917 1972     56      0      0    .613    .70   1.85   .496   .752   .416   2.20   .393   .006   1
+  59 C005a    1917 1972     56      0      0    .512    .77   1.97   .593   .774   .479   2.60   .442   .070   1
+  60 O001b    1921 1972     52      0      0    .637   1.46   3.45   .610   .376   .367   1.93   .313  -.065   0
+  61 O001a    1921 1972     52      0      0    .487   1.21   2.35   .442   .205   .356   1.63   .299  -.085   0
+  62 O002b    1922 1972     51      0      0    .389    .91   1.88   .419   .599   .387   1.44   .302   .058   2
+  63 O002a    1922 1972     51      0      0    .350    .93   1.79   .347   .487   .308   1.59   .279   .161   0
+  64 O003b    1917 1972     56      0      0    .525   1.44   3.01   .572   .448   .320   1.74   .299   .104   0
+  65 O003a    1917 1971     55      0      0    .475   1.19   2.41   .468   .285   .400   1.97   .320  -.031   2
+  66 O004b    1918 1972     55      0      0    .469   1.51   2.75   .557   .502   .310   1.72   .281   .101   0
+  67 O004a    1918 1972     55      0      0    .585   1.44   2.50   .484   .436   .325   1.44   .279   .030   1
+  68 O005b    1920 1972     53      0      0    .643    .99   1.88   .430   .450   .402   1.75   .344  -.017   2
+  69 O005a    1920 1972     53      0      0    .751   1.18   2.35   .486   .461   .345   1.80   .320   .034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5297     33      8    .430   1.26   6.60   .737   .586   .402   2.99   .352   .022
+
+ DATA CHECKS (rwl.check): ausl055
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/ausl055.rwl
+ 69 series, 5297 measurements, 1845-1973, 0.01 mm precision
+ 2 error(s), 1 warning(s), 3 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     C003b: correlates best with the master at lag 1 (r = 0.505 against r = -0.142 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+   RWL_DUP_SERIES (1)
+     MUR30: identical measurements in MUR30, MUR31; one core may be archived twice
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     C003b: correlates with the rest of the collection at r = -0.142 where the collection median is 0.449 (4.3 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file ausl055.rwl, MD5 95345049305d90d683046200a3170497.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

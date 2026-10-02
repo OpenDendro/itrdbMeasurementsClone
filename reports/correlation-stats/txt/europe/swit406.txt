@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: swit406
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit406.rwl
+      MD5 of measurement file: 8a1ebe911f2ea3fa453db8554d4ddc42
+      Date checked           : 01OCT26
+      Beginning year         : 1771
+      Ending year            : 2011
+      Principal investigators: Vanoni, M.; Frey, H.-U.; Bigler, C.
+      Site name              : Berguen
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.6416 N
+      Longitude              : 9.7248 E
+      Elevation              : 1280 m
+
+      Series intercorrelation: 0.477
+      Avg mean sensitivity   : 0.173
+      Avg standard deviation : 0.596
+      Avg autocorrelation    : 0.839
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit406
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BGF01    1800 2011       .61  .49  .47  .44  .34  .36 
+   2 BGF02    1799 2011       .34  .50  .60  .35  .20A .38 
+   5 BGF05    1944 2011                                .68 
+   7 BGF07    1941 2011                                .52 
+   8 BGF08    1925 2011                                .56 
+   9 BGF09    1936 2011                                .56 
+  11 BGF11    1825 2011            .68  .51  .35  .40  .59 
+  12 BGF12    1771 2011  .57  .70  .68  .70  .60  .24B .26A
+  13 BGF13    1775 2011  .64  .55  .40  .40  .44  .41  .35 
+  14 BGF14    1786 2011  .61  .68  .46  .34  .15B .04B .21B
+ Av segment correlation  .61  .58  .54  .50  .39  .27  .45 
+
+ FLAGGED SEGMENTS: swit406
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 BGF02    1925 1974     A     .204         0
+  12 BGF12    1925 1974     B     .240        -3      .335   .094
+  12 BGF12    1950 1999     A     .258         0
+  14 BGF14    1900 1949     B     .152         7      .280   .128  weak at every lag
+  14 BGF14    1925 1974     B     .036        10      .209   .173  weak at every lag
+  14 BGF14    1950 1999     B     .206        -8      .257   .051  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit406
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BGF01    1800 2011    212      6      0    .453    .71   2.13   .396   .849   .214   1.63   .220  -.005   3
+   2 BGF02    1799 2011    213      6      1    .390    .74   1.96   .376   .900   .188   1.72   .187  -.008   3
+   3 BGF03    1950 2011     62      0      0    .521   2.55   6.92  1.292   .894   .159   1.54   .178  -.000   1
+   4 BGF04    1951 2011     61      0      0    .556   2.82   5.95   .881   .689   .174   1.72   .199  -.030   2
+   5 BGF05    1944 2011     68      1      0    .725   2.56   4.08   .536   .482   .172   1.42   .173   .052   1
+   6 BGF06    1950 2011     62      0      0    .524   3.01   5.70   .882   .390   .240   1.97   .253   .001   2
+   7 BGF07    1941 2011     71      1      0    .619   3.06   6.17   .890   .654   .211   1.69   .207   .054   1
+   8 BGF08    1925 2011     87      1      0    .524   2.18   3.68   .622   .739   .164   1.39   .177   .025   1
+   9 BGF09    1936 2011     76      1      0    .606   2.27   5.29  1.148   .923   .166   1.42   .163   .005   1
+  10 BGF10    1953 2011     59      0      0    .463   3.29   5.27  1.069   .832   .149   1.35   .164   .044   1
+  11 BGF11    1825 2011    187      5      0    .486   1.17   2.99   .567   .926   .123   1.35   .134   .031   1
+  12 BGF12    1771 2011    241      7      2    .490   1.04   2.65   .438   .920   .139   1.40   .133  -.005   1
+  13 BGF13    1775 2011    237      7      0    .457    .90   2.92   .541   .916   .183   1.76   .198  -.011   3
+  14 BGF14    1786 2011    226      7      3    .336    .68   3.94   .462   .896   .176   1.85   .192  -.030   1
+  15 BGF15    1950 2011     62      0      0    .568   2.93   4.80   .748   .696   .151   1.64   .173   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1924     42      6    .477   1.45   6.92   .596   .839   .173   1.97   .181   .002
+
+ DATA CHECKS (rwl.check): swit406
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit406.rwl
+ 15 series, 1924 measurements, 1771-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file swit406.rwl, MD5 8a1ebe911f2ea3fa453db8554d4ddc42.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

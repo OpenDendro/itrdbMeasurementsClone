@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: cana644
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana644.rwl
+      MD5 of measurement file: 8fc29672fa6d47828116b25e06e9aae7
+      Date checked           : 01OCT26
+      Beginning year         : 1773
+      Ending year            : 2019
+      Principal investigators: Coulthard, B.L.; Brice, R.L.; Homfeld, I.K.; Dye, L.A.; Anchukaitis, K.J.
+      Site name              : Spatsum Slope
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 50.5478 N
+      Longitude              : 121.2729 W
+      Elevation              : 438 m
+
+      Series intercorrelation: 0.681
+      Avg mean sensitivity   : 0.432
+      Avg standard deviation : 0.667
+      Avg autocorrelation    : 0.622
+      Number dated series    : 22
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 5.88
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana644
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SPS01A   1900 2018                      .72  .76  .75 
+   2 SPS01B   1902 2018                           .79  .77 
+   4 SPS02B   1869 2019                 .77  .77  .69  .61 
+   5 SPS03A   1894 2018                      .77  .70  .72 
+   6 SPS03B   1904 2018                           .73  .74 
+   7 SPS04A   1822 2018       .67  .67  .70  .72  .71  .66 
+   8 SPS04B   1817 2011       .84  .71  .72  .79  .80  .77 
+   9 SPS05A   1807 2018       .59  .76  .85  .79  .71  .74 
+  10 SPS05B   1846 2018            .75  .86  .86  .79  .64 
+  11 SPS06A   1896 2018                      .63  .73  .83 
+  12 SPS06B   1901 2018                           .69  .76 
+  13 SPS07A   1890 2018                      .70  .60  .74 
+  14 SPS07B   1890 2018                      .79  .69  .69 
+  15 SPS08A   1811 2018       .74  .77  .78  .67  .51  .68 
+  16 SPS08B   1795 2018  .28B .64  .68  .76  .68  .63  .62 
+  17 SPS09A   1829 2018            .26B .63  .83  .77  .73 
+  18 SPS09C   1773 2018 -.10B-.01B .22B .60  .82  .73  .65 
+  19 SPF10A   1890 2018                      .77  .80  .78 
+  20 SPF10B   1890 2018                      .80  .81  .67 
+  21 SPF11A   1890 2018                      .80  .82  .72 
+  22 SPF11B   1890 2018                      .71  .70  .67 
+ Av segment correlation  .09  .58  .60  .74  .76  .72  .71 
+
+ FLAGGED SEGMENTS: cana644
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 SPS08B   1800 1849     B     .280         1      .291   .011  weak at every lag
+  17 SPS09A   1850 1899     B     .263        -2      .454   .191
+  18 SPS09C   1800 1849     B    -.096        -3      .297   .393  weak at every lag
+  18 SPS09C   1825 1874     B    -.013        -3      .438   .451
+  18 SPS09C   1850 1899     B     .216        -1      .426   .210
+
+ DESCRIPTIVE STATISTICS: cana644
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SPS01A   1900 2018    119      3      0    .762   1.60   5.87   .920   .717   .349   1.87   .304   .115   0
+   2 SPS01B   1902 2018    117      2      0    .756   1.73   5.19   .777   .548   .341   1.81   .303   .062   3
+   3 SPS02A   1858 2018    161                         1.21   4.96   .927   .666   .504                         
+   4 SPS02B   1869 2019    151      4      0    .699   1.31   3.26   .703   .591   .435   2.14   .378   .114   0
+   5 SPS03A   1894 2018    125      3      0    .766   1.26   4.62  1.017   .796   .417   1.98   .357   .086   0
+   6 SPS03B   1904 2018    115      2      0    .735   1.18   4.24   .846   .775   .421   1.95   .353  -.062   0
+   7 SPS04A   1822 2018    197      6      0    .675   1.48   7.36   .936   .680   .408   2.12   .330   .035   2
+   8 SPS04B   1817 2011    195      6      0    .759   1.49   4.20   .821   .668   .400   2.07   .335   .023   3
+   9 SPS05A   1807 2018    212      6      0    .688   1.35   3.71   .603   .510   .388   1.98   .349   .016   2
+  10 SPS05B   1846 2018    173      5      0    .730   1.41   5.36   .912   .740   .423   1.95   .360  -.004   1
+  11 SPS06A   1896 2018    123      3      0    .710   1.54   6.34   .893   .530   .414   2.17   .385   .054   0
+  12 SPS06B   1901 2018    118      2      0    .750   1.46   4.50   .717   .345   .473   2.20   .370   .027   3
+  13 SPS07A   1890 2018    129      3      0    .727    .60   1.64   .357   .549   .566   2.16   .423  -.020   1
+  14 SPS07B   1890 2018    129      3      0    .749    .53   1.60   .327   .461   .607   2.44   .451   .010   0
+  15 SPS08A   1811 2018    208      6      0    .686   1.50   4.52   .822   .704   .339   2.01   .315  -.007   2
+  16 SPS08B   1795 2018    224      7      1    .580   1.20   5.01   .860   .842   .372   1.84   .333   .009   2
+  17 SPS09A   1829 2018    190      5      1    .510    .59   2.04   .363   .553   .518   2.68   .444   .035   1
+  18 SPS09C   1773 2018    246      7      3    .385    .55   1.60   .315   .591   .483   2.56   .428   .007   3
+  19 SPF10A   1890 2018    129      3      0    .773   1.08   2.43   .527   .482   .413   2.03   .363   .000   1
+  20 SPF10B   1890 2018    129      3      0    .752   1.17   2.56   .574   .526   .420   1.93   .371  -.005   1
+  21 SPF11A   1890 2018    129      3      0    .765    .36   1.12   .221   .668   .444   1.79   .364   .034   3
+  22 SPF11B   1890 2018    129      3      0    .735    .37   1.03   .200   .567   .416   1.87   .360  -.008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3448     85      5    .681   1.14   7.36   .667   .622   .432   2.68   .366   .023
+
+ DATA CHECKS (rwl.check): cana644
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana644.rwl
+ 22 series, 3448 measurements, 1773-2019, 0.001 mm precision
+ 0 error(s), 5 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     SPS09C: correlates with the rest of the collection at r = 0.406 where the collection median is 0.728 (6.4 MAD below it); it does not fit the collection it is in
+   RWL_SITE_CODE (4)
+     SPF10A: site code differs from the sps used by 18 of 22 series
+     SPF10B: site code differs from the sps used by 18 of 22 series
+     SPF11A: site code differs from the sps used by 18 of 22 series
+     SPF11B: site code differs from the sps used by 18 of 22 series
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cana644.rwl, MD5 8fc29672fa6d47828116b25e06e9aae7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series SPS02A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

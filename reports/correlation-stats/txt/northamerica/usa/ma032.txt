@@ -1,0 +1,175 @@
+
+ COFECHA-style crossdating report: ma032
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ma032.rwl
+      MD5 of measurement file: f0ffb1ebd6d98544eba1c973084ab10d
+      Date checked           : 01OCT26
+      Beginning year         : 1854
+      Ending year            : 2016
+      Principal investigators: Pearl, J.K.; Anchukaitis, K.J.; Pederson, N.; Donnelly, J.P.
+      Site name              : Orleans Swamp
+      Species information    : CHTH Chamaecyparis thyoides (L.) B.S.P.
+      Latitude               : 41.7550 N
+      Longitude              : 69.9770 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.478
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.648
+      Avg autocorrelation    : 0.843
+      Number dated series    : 37
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 6, B 6; 2 of the B weak at every lag)
+      Pct problem segments   : 12.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ma032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ORS01A   1893 2015  .64  .63  .65 
+   2 ORS01B   1888 2015  .70  .68  .56 
+   3 ORS02A   1896 2015  .51  .57  .57 
+   4 ORS02B   1909 2015       .45  .49 
+   5 ORS03A   1900 2015       .58  .57 
+   6 ORS03B   1886 2015  .62  .44  .32B
+   7 ORS04A   1891 2015  .71  .62  .49 
+   8 ORS04B   1887 2015  .65  .67  .64 
+   9 ORS05B   1884 2013  .31A .25A .32A
+  10 ORS06    1878 2015  .50  .45  .42 
+  11 ORS06B   1900 2015       .63  .50 
+  12 ORS07B   1924 2015            .55 
+  13 ORS08A   1880 2015  .40  .39  .38 
+  14 ORS08B   1872 2015  .25A .29A .49 
+  15 ORS09A   1922 2015       .51  .60 
+  16 ORS09B   1924 2015       .63  .64 
+  18 ORS10B   1894 2015  .47  .57  .49 
+  19 ORS11A   1914 2015       .61  .33 
+  20 ORS12A   1892 2015  .20B .12B .27A
+  21 ORS12B   1891 2015  .26B .33  .50 
+  22 ORS13A   1892 2014  .46  .37  .44 
+  23 ORS14A   1886 2015  .49  .58  .55 
+  24 ORS14B   1886 2015  .41  .49  .45 
+  25 ORS15A   1930 2015            .53 
+  26 ORS15B   1913 2015       .66  .66 
+  27 ORS16A   1920 2015       .44  .38 
+  28 ORS16B   1920 2015       .55  .54 
+  29 ORS17A   1911 2016       .52  .59 
+  30 ORS17B   1887 2015  .42  .48  .56 
+  31 ORS18A   1887 2015  .40  .54  .62 
+  32 ORS18B   1877 2015  .38  .45  .56 
+  33 ORS19A   1891 2015  .55  .52  .57 
+  34 ORS19B   1890 2015  .53  .47  .53 
+  35 ORS20A   1884 2015  .41  .50  .77 
+  36 ORS21A   1861 2015  .42  .52  .71 
+  37 ORS21B   1854 2015 -.01B .19B .64 
+ Av segment correlation  .45  .49  .52 
+
+ FLAGGED SEGMENTS: ma032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 ORS03B   1950 1999     B     .322         1      .348   .026
+   9 ORS05B   1900 1949     A     .310         0
+   9 ORS05B   1925 1974     A     .253         0
+   9 ORS05B   1950 1999     A     .322         0
+  14 ORS08B   1900 1949     A     .252         0
+  14 ORS08B   1925 1974     A     .294         0
+  20 ORS12A   1900 1949     B     .200        -9      .204   .004  weak at every lag
+  20 ORS12A   1925 1974     B     .123         4      .271   .148  weak at every lag
+  20 ORS12A   1950 1999     A     .268         0
+  21 ORS12B   1900 1949     B     .255        -8      .335   .080
+  37 ORS21B   1900 1949     B    -.005        -7      .457   .462
+  37 ORS21B   1925 1974     B     .186        -7      .352   .166
+
+ DESCRIPTIVE STATISTICS: ma032
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ORS01A   1893 2015    123      3      0    .629    .89   2.96   .468   .873   .199   2.15   .233   .040   1
+   2 ORS01B   1888 2015    128      3      0    .565    .83   2.67   .602   .948   .234   2.02   .263   .023   1
+   3 ORS02A   1896 2015    120      3      0    .487   1.16   3.74   .660   .842   .209   2.09   .266  -.048   1
+   4 ORS02B   1909 2015    107      2      0    .428   1.44   2.86   .469   .524   .229   1.59   .235  -.012   3
+   5 ORS03A   1900 2015    116      2      0    .517   1.27   2.36   .408   .795   .176   1.57   .183  -.016   1
+   6 ORS03B   1886 2015    130      3      1    .442   1.26   2.68   .521   .879   .154   1.57   .170  -.010   1
+   7 ORS04A   1891 2015    125      3      0    .551   1.74   3.05   .579   .683   .203   1.83   .220   .008   1
+   8 ORS04B   1887 2015    129      3      0    .613   1.70   3.39   .752   .844   .199   1.64   .192  -.011   1
+   9 ORS05B   1884 2013    130      3      3    .297    .86   3.22   .569   .897   .201   1.82   .242   .018   3
+  10 ORS06    1878 2015    138      3      0    .404   1.22   4.67   .640   .873   .201   1.54   .200  -.010   1
+  11 ORS06B   1900 2015    116      2      0    .522   1.22   2.21   .321   .416   .221   1.53   .220   .014   1
+  12 ORS07B   1924 2015     92      1      0    .571   1.14   2.24   .437   .691   .231   1.72   .246  -.028   3
+  13 ORS08A   1880 2015    136      3      0    .389   1.20   3.94   .815   .930   .211   1.49   .213   .017   1
+  14 ORS08B   1872 2015    144      3      2    .358   1.57   5.14   .956   .908   .199   1.70   .211  -.001   1
+  15 ORS09A   1922 2015     94      2      0    .531   1.03   2.07   .396   .614   .251   2.00   .279   .027   1
+  16 ORS09B   1924 2015     92      2      0    .563   1.28   2.51   .453   .709   .191   1.92   .227   .015   1
+  17 ORS10A   1894 1942     49      0      0    .604   1.39   2.52   .635   .904   .184   1.64   .197   .046   1
+  18 ORS10B   1894 2015    122      3      0    .482    .95   2.62   .578   .914   .215   1.40   .202  -.023   1
+  19 ORS11A   1914 2015    102      2      0    .390    .95   1.98   .390   .784   .216   1.64   .235   .056   2
+  20 ORS12A   1892 2015    124      3      3    .316    .98   2.31   .601   .926   .249   2.01   .239  -.030   3
+  21 ORS12B   1891 2015    125      3      1    .334   1.09   3.08   .846   .956   .277   2.68   .328  -.006   3
+  22 ORS13A   1892 2014    123      3      0    .448    .93   2.06   .438   .781   .274   1.50   .268  -.043   3
+  23 ORS14A   1886 2015    130      3      0    .458   1.28   3.19   .747   .902   .204   2.09   .227  -.021   1
+  24 ORS14B   1886 2015    130      3      0    .423   1.10   2.58   .636   .900   .218   1.58   .228  -.009   2
+  25 ORS15A   1930 2015     86      1      0    .435   1.13   3.00   .627   .827   .260   1.72   .271   .072   3
+  26 ORS15B   1913 2015    103      2      0    .579   1.68   3.21   .775   .869   .216   1.49   .209  -.054   1
+  27 ORS16A   1920 2015     96      2      0    .394   1.70   4.26  1.134   .886   .246   1.74   .256   .091   3
+  28 ORS16B   1920 2015     96      2      0    .548   1.58   4.14  1.192   .923   .265   2.02   .301   .051   1
+  29 ORS17A   1911 2016    106      2      0    .506   1.04   3.45   .776   .937   .246   1.96   .271  -.001   2
+  30 ORS17B   1887 2015    129      3      0    .395   1.20   3.13   .870   .934   .323   2.50   .331   .064   1
+  31 ORS18A   1887 2015    129      3      0    .539    .93   2.06   .447   .855   .199   1.52   .200  -.011   1
+  32 ORS18B   1877 2015    139      3      0    .516   1.05   4.07   .753   .894   .244   1.77   .243   .020   2
+  33 ORS19A   1891 2015    125      3      0    .564   1.42   3.78   .789   .935   .202   1.49   .195   .040   3
+  34 ORS19B   1890 2015    126      3      0    .510   1.18   3.55   .940   .971   .204   1.52   .204   .016   1
+  35 ORS20A   1884 2015    132      3      0    .587   1.15   2.24   .487   .834   .203   1.57   .212   .012   3
+  36 ORS21A   1861 2015    155      3      0    .551    .98   3.21   .674   .897   .302   2.06   .305  -.016   2
+  37 ORS21B   1854 2015    162      3      2    .392   1.01   2.65   .527   .758   .314   2.18   .328  -.000   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4409     94     12    .478   1.19   5.14   .648   .843   .227   2.68   .240   .006
+
+ DATA CHECKS (rwl.check): ma032
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ma032.rwl
+ 37 series, 4409 measurements, 1854-2016, 0.001 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 11 carriage return(s) against 472 line feed(s); mixed endings can defeat a reader
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file ma032.rwl, MD5 f0ffb1ebd6d98544eba1c973084ab10d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

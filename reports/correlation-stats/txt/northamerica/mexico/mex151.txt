@@ -1,0 +1,173 @@
+
+ COFECHA-style crossdating report: mex151
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex151.rwl
+      MD5 of measurement file: 41af0b98e5c6160f1e8919de3a903e84
+      Date checked           : 01OCT26
+      Beginning year         : 1942
+      Ending year            : 2015
+      Principal investigators: Cerano Paredes, J.; Cervantes-Martínez, R.
+      Site name              : San Juan Nuevo, Michoacán (SJN)
+      Species information    : PIPS Pinus pseudostrobus Lindl.
+      Latitude               : 19.4398 N
+      Longitude              : 102.1929 W
+      Elevation              : 2151 m
+
+      Series intercorrelation: 0.484
+      Avg mean sensitivity   : 0.323
+      Avg standard deviation : 2.095
+      Avg autocorrelation    : 0.623
+      Number dated series    : 66
+      Segment length tested  : 36
+
+      Number problem segments: 3  (A 0, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 25.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  36-year dated segments, lagged  18 years
+ Flags:  A = correlation under   .3862 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1968 
+                        1985 2003 
+ --- -------- ---------  ---- ---- 
+  12 SJN10A   1959 2015       .51 
+  13 SJN17A   1942 2015  .54  .15B
+  14 SJN17B   1942 2015  .56  .22B
+  15 SJN21A   1963 2015       .70 
+  16 SJN21B   1963 2015       .70 
+  17 SJN22B   1966 2010       .20B
+  18 SJN30A   1962 2015       .44 
+  19 SJN30B   1962 2015       .39 
+  20 SJN32A   1965 2015       .58 
+  21 SJN32B   1965 2015       .48 
+ Av segment correlation  .55  .44 
+
+ FLAGGED SEGMENTS: mex151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 SJN17A   1968 2003     B     .150         8      .298   .148  weak at every lag
+  14 SJN17B   1968 2003     B     .221        -3      .292   .072  weak at every lag
+  17 SJN22B   1968 2003     B     .205        -7      .217   .012  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mex151
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SJN03A   1990 2015     26      0      0    .669   4.06   8.03  1.998   .620   .355   1.65   .360  -.017   1
+   2 SJN03B   1971 2015     45      0      0    .543   4.36   9.07  2.107   .680   .308   1.69   .321   .038   1
+   3 SJN04A   1971 2010     40      0      0    .456   4.23  11.90  2.802   .709   .529   2.24   .472  -.044   2
+   4 SJN04B   1971 2010     40      0      0    .476   3.57  10.91  2.469   .796   .353   2.26   .385   .066   1
+   5 SJN05A   1974 2015     42      0      0    .495   4.57   8.97  1.610   .201   .346   1.59   .313   .094   0
+   6 SJN05B   1974 2015     42      0      0    .506   5.16  12.92  2.174   .354   .327   1.78   .311   .095   3
+   7 SJN06B   1970 2015     46      0      0    .263   3.58   8.11  2.158   .866   .281   1.62   .261  -.009   3
+   8 SJN07A   1986 2015     30      0      0    .667   4.78  12.97  2.599   .643   .314   1.67   .341  -.074   3
+   9 SJN07B   1986 2015     30      0      0    .594   4.61  11.45  2.334   .615   .317   1.91   .346   .033   1
+  10 SJN09A   1998 2015     18      0      0    .593   4.85   6.33  1.135   .530   .185   1.29   .189   .247   0
+  11 SJN09B   1998 2015     18      0      0    .597   4.96   6.36  1.110   .697   .134   1.24   .126   .046   1
+  12 SJN10A   1959 2015     57      1      0    .489   3.41   8.68  2.002   .798   .308   1.76   .323   .053   1
+  13 SJN17A   1942 2015     74      2      1    .370   2.96   8.27  1.889   .516   .437   2.38   .387  -.017   2
+  14 SJN17B   1942 2015     74      2      1    .418   2.90   6.70  1.786   .533   .429   2.29   .387  -.080   0
+  15 SJN21A   1963 2015     53      1      0    .577   4.11   8.15  2.089   .493   .403   1.94   .432  -.019   1
+  16 SJN21B   1963 2015     53      1      0    .564   3.71   8.22  2.050   .522   .471   2.11   .462  -.011   1
+  17 SJN22B   1966 2010     45      1      1    .292   3.21   8.02  2.538   .828   .359   5.98   .850   .197   0
+  18 SJN30A   1962 2015     54      1      0    .407   1.99   8.22  1.757   .826   .408   2.37   .420  -.071   1
+  19 SJN30B   1962 2015     54      1      0    .413   2.07   7.21  1.909   .890   .372   2.33   .369  -.044   3
+  20 SJN32A   1965 2015     51      1      0    .590   3.55  10.04  1.967   .519   .347   2.27   .396  -.033   1
+  21 SJN32B   1965 2015     51      1      0    .553   3.17   7.99  1.724   .526   .350   2.37   .403  -.034   1
+  22 SJN33A   1987 2015     29      0      0    .426   3.23   6.66  1.220   .510   .284   1.75   .290   .011   1
+  23 SJN33B   1987 2015     29      0      0    .351   4.54  12.45  1.950   .232   .341   2.57   .389   .125   0
+  24 SJN35A   1986 2015     30      0      0    .586   7.31  17.03  3.721   .356   .468   1.88   .418   .078   0
+  25 SJN35B   1986 2015     30      0      0    .608   6.56  16.67  3.663   .372   .509   2.01   .439  -.002   0
+  26 SJN36B   1987 2015     29      0      0    .340   3.89   7.64  1.863   .582   .384   1.99   .383   .022   0
+  27 SJN37A   1988 2015     28      0      0    .562   3.35   6.32  1.622   .596   .339   1.60   .293   .046   2
+  28 SJN37B   1988 2015     28      0      0    .234   2.85   7.80  1.700   .385   .447   2.21   .409  -.055   0
+  29 SJN38A   1987 2015     29      0      0    .583   4.62   8.16  1.860   .483   .362   1.53   .312   .098   0
+  30 SJN38B   1987 2015     29      0      0    .686   3.85   8.36  1.904   .663   .318   1.62   .286   .169   0
+  31 SJN39B   1985 2015     31      0      0    .271   3.24   7.46  1.967   .608   .442   1.46   .331   .066   3
+  32 SJN40A   1988 2015     28      0      0    .354   5.12   8.68  2.024   .516   .348   1.38   .283   .095   0
+  33 SJN40B   1988 2015     28      0      0    .534   5.72  10.13  1.988   .089   .385   1.64   .301  -.127   0
+  34 SJN41C   1988 2015     28      0      0    .568   2.62   6.20  1.619   .494   .469   1.85   .421   .029   1
+  35 SJN42A   1981 2015     35      0      0    .621   3.95   9.49  1.826   .771   .267   1.68   .279   .067   1
+  36 SJN42B   1985 2015     31      0      0    .590   3.95   8.46  1.971   .784   .275   1.52   .308   .016   1
+  37 SJN42C   1984 2015     32      0      0    .500   5.37  15.18  3.572   .790   .307   2.16   .397   .102   1
+  38 SJN43A   1984 2015     32      0      0    .301   4.23   7.74  1.777   .770   .266   1.69   .222  -.105   3
+  39 SJN43B   1982 2015     34      0      0    .248   3.78   5.71  1.148   .625   .215   1.54   .207   .065   0
+  40 SJN44B   1981 2015     35      0      0    .313   4.39   9.28  2.072   .730   .278   1.48   .251   .229   0
+  41 SJN45A   1980 2015     36      0      0    .458   5.83  10.53  1.717   .249   .264   1.72   .277   .184   0
+  42 SJN45B   1983 2015     33      0      0    .507   4.57   8.74  1.252   .382   .216   1.61   .232   .013   2
+  43 SJN45C   1985 2015     31      0      0    .633   6.22  11.54  1.835   .513   .223   1.51   .225   .038   1
+  44 SJN46B   1985 2015     31      0      0    .269   3.31   8.99  2.131   .702   .345   1.68   .307   .028   0
+  45 SJN46C   1984 2015     32      0      0    .364   3.17   6.62  1.616   .716   .330   1.92   .309   .062   1
+  46 SJN47B   1986 2015     30      0      0    .409   4.82  10.62  2.478   .837   .190   1.42   .187   .022   3
+  47 SJN47C   1983 2015     33      0      0    .516   3.48  10.18  2.149   .764   .315   1.77   .320   .156   1
+  48 SJN48A   1987 2015     29      0      0    .640   4.24  10.16  2.437   .715   .287   1.60   .300  -.019   1
+  49 SJN48B   1986 2015     30      0      0    .660   5.74  11.79  3.097   .805   .280   1.58   .271   .161   0
+  50 SJN48C   1986 2015     30      0      0    .592   4.35  10.83  2.790   .873   .236   1.67   .250   .077   1
+  51 SJN49A   1980 2015     36      0      0    .429   5.87  10.91  2.479   .742   .295   1.64   .273   .147   2
+  52 SJN49B   1979 2015     37      0      0    .385   5.73  11.55  2.169   .712   .211   1.64   .246   .068   1
+  53 SJN49C   1978 2015     38      0      0    .448   5.54   9.74  2.126   .718   .271   1.55   .257  -.033   2
+  54 SJN50A   1980 2015     36      0      0    .599   5.30  10.32  2.452   .811   .216   1.56   .227   .140   2
+  55 SJN50B   1983 2015     33      0      0    .549   7.34  11.21  2.305   .706   .195   1.28   .189   .168   1
+  56 SJN50C   1983 2015     33      0      0    .456   5.17  13.88  2.609   .687   .263   1.70   .299   .081   1
+  57 SJN52A   1980 2015     36      0      0    .497   4.67  11.50  2.472   .796   .263   1.67   .304   .066   1
+  58 SJN52B   1984 2015     32      0      0    .430   6.32  12.17  3.420   .831   .310   2.90   .441   .281   1
+  59 SJN52C   1984 2015     32      0      0    .665   6.51  11.64  2.709   .771   .242   1.50   .241   .033   1
+  60 SJN53A   1994 2015     22      0      0    .435   5.00   7.78  1.116   .577   .149   1.37   .161   .092   0
+  61 SJN53B   1980 2015     36      0      0    .656   6.77  11.00  1.992   .597   .222   1.46   .217  -.054   1
+  62 SJN53C   1983 2015     33      0      0    .552   5.30   7.88  1.281   .616   .183   1.31   .175  -.056   1
+  63 SJN54A   1987 2015     29      0      0    .460   4.96   9.15  1.650   .243   .320   1.60   .286   .066   0
+  64 SJN54C   1988 2015     28      0      0    .521   5.13  11.82  1.834   .542   .184   2.03   .255  -.024   1
+  65 SJN55A   1984 2015     32      0      0    .491   4.11  11.70  2.365   .640   .303   2.12   .376   .051   1
+  66 SJN55B   1982 2015     34      0      0    .510   3.76   7.94  1.987   .728   .282   1.64   .290   .067   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2360     12      3    .484   4.34  17.03  2.095   .623   .323   5.98   .330   .041
+
+ DATA CHECKS (rwl.check): mex151
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex151.rwl
+ 66 series, 2360 measurements, 1942-2015, 0.01 mm precision
+ 0 error(s), 2 warning(s), 57 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 589 carriage return(s) against 296 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 57 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file mex151.rwl, MD5 41af0b98e5c6160f1e8919de3a903e84.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3862 for 36-year segments.
+ Segments: 36 years, lagged 18, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 36 years: the record is only 74 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

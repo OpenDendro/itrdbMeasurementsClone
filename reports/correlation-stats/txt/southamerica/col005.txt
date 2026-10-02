@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: col005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : col005.rwl
+      MD5 of measurement file: b8cf6d35811db1b8136858e4d1353fdf
+      Date checked           : 01OCT26
+      Beginning year         : 1973
+      Ending year            : 2016
+      Principal investigators: Giraldo, J.; del Valle, J.I.; David, D.
+      Site name              : Bajo Calima (Biogeographical Chocó)
+      Species information    : HUPR Humiriastrum procerum (Little) Cuatrec.
+      Latitude               : 3.9536 N
+      Longitude              : 76.9909 W
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.469
+      Avg mean sensitivity   : 0.361
+      Avg standard deviation : 1.165
+      Avg autocorrelation    : 0.433
+      Number dated series    : 14
+      Segment length tested  : 22
+
+      Number problem segments: 17  (A 9, B 8; 7 of the B weak at every lag)
+      Pct problem segments   : 73.91
+
+
+ CORRELATION OF SERIES BY SEGMENTS: col005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  22-year dated segments, lagged  11 years
+ Flags:  A = correlation under   .4921 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1980 1991 
+                        2001 2012 
+ --- -------- ---------  ---- ---- 
+   1 107b     1980 2016  .27B .46A
+   2 107c     1979 2016  .29B .46A
+   3 108a     1978 2016  .51  .49A
+   4 108c     1978 2016  .35A .38B
+   5 65a2     1980 2016  .76  .44B
+   6 65b2     1980 2016  .53  .31B
+   7 65c2     1980 2016       .46A
+   8 82a      1973 2016  .27B .44A
+   9 82b      1973 2016  .43A .42B
+  10 82c      1973 2016  .42B .49A
+  11 92a      1982 2016       .58 
+  12 92b      1982 2016       .46A
+  13 93b      1987 2016       .52 
+  14 93c      1987 2016       .56 
+ Av segment correlation  .42  .46 
+
+ FLAGGED SEGMENTS: col005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 107b     1980 2001     B     .267         5      .471   .204  weak at every lag
+   1 107b     1991 2012     A     .455         0
+   2 107c     1980 2001     B     .289        -1      .389   .101  weak at every lag
+   2 107c     1991 2012     A     .463         0
+   3 108a     1991 2012     A     .489         0
+   4 108c     1980 2001     A     .345         0
+   4 108c     1991 2012     B     .377        -7      .595   .218
+   5 65a2     1991 2012     B     .441       -10      .491   .050  weak at every lag
+   6 65b2     1991 2012     B     .311         4      .352   .041  weak at every lag
+   7 65c2     1991 2012     A     .457         0
+   8 82a      1980 2001     B     .269         9      .382   .113  weak at every lag
+   8 82a      1991 2012     A     .437         0
+   9 82b      1980 2001     A     .433         0
+   9 82b      1991 2012     B     .423       -10      .440   .017  weak at every lag
+  10 82c      1980 2001     B     .417         9      .464   .046  weak at every lag
+  10 82c      1991 2012     A     .487         0
+  12 92b      1991 2012     A     .462         0
+
+ DESCRIPTIVE STATISTICS: col005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 107b     1980 2016     37      2      2    .409   1.65   3.33   .723   .297   .376   1.78   .351   .018   0
+   2 107c     1979 2016     38      2      2    .386   1.59   2.92   .619   .255   .346   1.70   .350   .023   1
+   3 108a     1978 2016     39      2      1    .574   2.07   6.47  1.322   .650   .390   2.18   .374   .006   1
+   4 108c     1978 2016     39      2      2    .514   1.95   5.75  1.280   .666   .412   1.80   .378   .188   0
+   5 65a2     1980 2016     37      2      1    .565   3.32   6.50  1.270   .254   .340   1.86   .345   .126   0
+   6 65b2     1980 2016     37      2      1    .358   2.79   6.46  1.032   .063   .388   2.30   .344  -.100   0
+   7 65c2     1980 2016     37      1      1    .446   2.43   5.57  1.045   .293   .341   2.13   .400  -.065   1
+   8 82a      1973 2016     44      2      2    .354   2.91   5.80  1.347   .583   .321   1.59   .277   .098   3
+   9 82b      1973 2016     44      2      2    .475   3.02   5.91  1.459   .621   .317   1.71   .275   .025   2
+  10 82c      1973 2016     44      2      2    .475   3.25   6.95  1.747   .724   .289   1.53   .268  -.015   2
+  11 92a      1982 2016     35      1      0    .509   2.19   5.71  1.444   .529   .427   2.57   .452   .110   0
+  12 92b      1982 2016     35      1      1    .528   2.68   6.82  1.295   .090   .435   2.28   .450  -.073   0
+  13 93b      1987 2016     30      1      0    .500   1.41   3.03   .654   .378   .371   1.96   .394  -.015   2
+  14 93c      1987 2016     30      1      0    .512   1.46   2.95   .712   .515   .325   1.74   .371   .081   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            526     23     17    .469   2.38   6.95  1.165   .433   .361   2.57   .355   .030
+
+ DATA CHECKS (rwl.check): col005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/col005.rwl
+ 14 series, 526 measurements, 1973-2016, 0.01 mm precision
+ 0 error(s), 2 warning(s), 14 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 127 carriage return(s) against 65 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file col005.rwl, MD5 b8cf6d35811db1b8136858e4d1353fdf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4921 for 22-year segments.
+ Segments: 22 years, lagged 11, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 22 years: the record is only 44 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

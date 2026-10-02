@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="dplR 1.8.1">
+<title>Crossdating report: germ064</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#222;background:#fff;margin:1.5em;line-height:1.4}
+h1{font-size:1.4em;margin-bottom:.2em}
+h2{font-size:1.15em;margin-top:1.8em;border-bottom:1px solid #ccc;padding-bottom:.2em}
+p.gen{color:#555;margin-top:0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:.85em;margin:.4em 0 1em}
+th,td{border:1px solid #ddd;padding:2px 6px;white-space:nowrap}
+th{background:#f3f3f3;font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.fields th{text-align:left;background:none;border:none;padding-right:1em}
+table.fields td{border:none}
+.flagA{background:#fff1b8}
+.flagB{background:#ffd6d6}
+.weak{background:#ececec;font-style:italic}
+tr.total td{font-weight:600;border-top:2px solid #999}
+span.key{display:inline-block;padding:0 .4em;border:1px solid #ddd}
+@media print{body{margin:0;font-size:9pt}.wrap{overflow:visible}h2{break-after:avoid}}
+</style>
+</head>
+<body>
+<h1>COFECHA-style crossdating report: germ064</h1>
+<p class="gen">Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT. Built with <code>corr.rwl.seg()</code> and <code>rwl.check()</code>, not COFECHA; see the notes at the end.</p>
+<h2>Summary</h2>
+<table class="fields">
+<tr><th>Measurement file name</th><td>germ064.rwl</td></tr>
+<tr><th>MD5 of measurement file</th><td>33d37950e787c32b9c48565471e0420f</td></tr>
+<tr><th>Date checked</th><td>01OCT26</td></tr>
+<tr><th>Beginning year</th><td>1630</td></tr>
+<tr><th>Ending year</th><td>1793</td></tr>
+<tr><th>Principal investigators</th><td>Ratcliff, P.</td></tr>
+<tr><th>Site name</th><td>Mittenwald Johannes Jais Violin</td></tr>
+<tr><th>Species information</th><td>PCAB Picea abies (L.) H. Karst.</td></tr>
+<tr><th>Latitude</th><td>47.4300 N</td></tr>
+<tr><th>Longitude</th><td>11.2500 E</td></tr>
+<tr><th>Elevation</th><td>925 m</td></tr>
+</table>
+<table class="fields">
+<tr><th>Avg mean sensitivity</th><td>0.115</td></tr>
+<tr><th>Avg standard deviation</th><td>0.327</td></tr>
+<tr><th>Avg autocorrelation</th><td>0.884</td></tr>
+<tr><th>Number dated series</th><td>1</td></tr>
+<tr><th>Series crossdated</th><td>0</td></tr>
+</table>
+<h2>Descriptive statistics</h2>
+<p>Unfiltered columns describe the measurements as read; the dplR filtered columns describe the series that was correlated (see the notes).</p>
+<div class="wrap"><table class="stats">
+<thead><tr><th>Seq</th><th>Series</th><th>Interval</th><th>Years</th><th>Segments</th><th>Flags</th><th>Corr with master</th><th>Mean msmt</th><th>Max msmt</th><th>Std dev</th><th>Auto corr</th><th>Mean sens</th><th>dplR filt. max</th><th>dplR filt. std dev</th><th>dplR filt. auto corr</th><th>AR</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td>JJAIS</td><td>1630-1793</td><td class="num">164</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.13</td><td class="num">2.00</td><td class="num">.327</td><td class="num">.884</td><td class="num">.115</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">3</td></tr>
+</tbody>
+<tfoot><tr class="total"><td></td><td>Total or mean</td><td></td><td class="num">164</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.13</td><td class="num">2.00</td><td class="num">.327</td><td class="num">.884</td><td class="num">.115</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr></tfoot>
+</table></div>
+<h2>Data checks (<code>rwl.check()</code>)</h2>
+<p>No errors or warnings.</p>
+<p>2 note(s) not shown; see <code>rwl.check()</code> or the <code>check</code> element of the report.</p>
+<h2>Notes</h2>
+<ul>
+<li>Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.</li>
+<li>Measurement file germ064.rwl, MD5 33d37950e787c32b9c48565471e0420f.</li>
+<li>Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with an AR model (order by AIC, at most 3).</li>
+<li>Master: biweight robust mean of the other series (leave-one-out).</li>
+<li>Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.</li>
+<li>Averages in the summary and the totals are weighted by the number of years in each series, as COFECHA's are.</li>
+<li>Unfiltered block and mean sensitivity: the measurements as read, and sens1().</li>
+<li>dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered series is defined differently, so these three columns are not COFECHA's numbers.</li>
+<li>AR: order of the AR model used to prewhiten.</li>
+<li>Only 1 series could be crossdated, and at least 3 are needed to build a master for each, so there are no segment correlations or flags.</li>
+</ul>
+</body>
+</html>

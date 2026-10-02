@@ -1,0 +1,113 @@
+
+ COFECHA-style crossdating report: eth004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : eth004.rwl
+      MD5 of measurement file: 1890bc0fd8e03685960481c0a2d8c182
+      Date checked           : 01OCT26
+      Beginning year         : 1849
+      Ending year            : 2003
+      Principal investigators: Couralet, C.; Sass-Klaassen, U.
+      Site name              : Adaba-Dodola
+      Species information    : JUPC Juniperus procera Hochst. ex Endl.
+      Latitude               : 6.9167 N
+      Longitude              : 39.2417 E
+      Elevation              : 2750 m
+
+      Series intercorrelation: 0.430
+      Avg mean sensitivity   : 0.568
+      Avg standard deviation : 1.212
+      Avg autocorrelation    : 0.236
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 27.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: eth004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ETdodP1m 1937 2003            .42 
+   2 ETdod1m  1937 2000            .58 
+   3 ETdod2m  1939 2002            .55 
+   4 ETdod3m  1935 2003            .68 
+   5 ETdod5m  1849 2002  .23A .28A .62 
+   6 ETdod7m  1920 2000       .46  .65 
+   7 ETdod8m  1884 2003  .06B .21B .44 
+   8 ETdodP2m 1935 2003            .51 
+   9 ETdod4m  1871 2003  .03B .52  .64 
+  10 ETdod6m  1906 2002       .49  .55 
+ Av segment correlation  .11  .39  .56 
+
+ FLAGGED SEGMENTS: eth004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 ETdod5m  1900 1949     A     .233         0
+   5 ETdod5m  1925 1974     A     .283         0
+   7 ETdod8m  1900 1949     B     .064         3      .233   .169  weak at every lag
+   7 ETdod8m  1925 1974     B     .212        -3      .229   .017  weak at every lag
+   9 ETdod4m  1900 1949     B     .032         7      .301   .270  weak at every lag
+
+ DESCRIPTIVE STATISTICS: eth004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ETdodP1m 1937 2003     67      1      0    .400   2.10   6.68  1.534   .133   .742   1.99   .471   .095   3
+   2 ETdod1m  1937 2000     64      1      0    .553   2.29  10.78  1.720  -.011   .728   3.64   .631  -.024   1
+   3 ETdod2m  1939 2002     64      1      0    .516   2.16   6.41  1.513   .025   .833   2.77   .627  -.076   0
+   4 ETdod3m  1935 2003     69      1      0    .600   1.30   6.81  1.141   .148   .748   3.41   .653  -.123   0
+   5 ETdod5m  1849 2002    154      3      2    .402   1.37   3.93   .694   .497   .332   2.05   .333  -.003   2
+   6 ETdod7m  1920 2000     81      2      0    .545   1.64   4.40   .881   .010   .445   2.55   .453  -.029   1
+   7 ETdod8m  1884 2003    120      3      2    .260   1.08   6.87   .913   .420   .492   3.15   .511   .011   0
+   8 ETdodP2m 1935 2003     69      1      0    .417   2.55  13.13  2.726   .482   .702   4.94   .761   .008   0
+   9 ETdod4m  1871 2003    133      3      1    .403   1.31   4.98   .926  -.008   .555   3.25   .550  -.015   3
+  10 ETdod6m  1906 2002     97      2      0    .399   1.20   7.33  1.295   .374   .535   3.35   .628  -.066   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            918     18      5    .430   1.58  13.13  1.212   .236   .568   4.94   .537  -.020
+
+ DATA CHECKS (rwl.check): eth004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/eth004.rwl
+ 10 series, 918 measurements, 1849-2003, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file eth004.rwl, MD5 1890bc0fd8e03685960481c0a2d8c182.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

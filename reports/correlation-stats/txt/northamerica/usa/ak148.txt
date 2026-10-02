@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: ak148
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak148.rwl
+      MD5 of measurement file: 113fe90512c7867304d9cb1a038f77e5
+      Date checked           : 01OCT26
+      Beginning year         : 1855
+      Ending year            : 2012
+      Principal investigators: Sullivan, P.F.
+      Site name              : Agashashok Treeline
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 67.4833 N
+      Longitude              : 162.2167 W
+      Elevation              : 125 m
+
+      Series intercorrelation: 0.515
+      Avg mean sensitivity   : 0.264
+      Avg standard deviation : 0.197
+      Avg autocorrelation    : 0.710
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 1, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 15.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak148
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 AGGTRL1  1944 2012            .49 
+   2 AGGTRL2  1937 2012            .75 
+   3 AGGTRL3  1864 2012  .61  .57  .64 
+   4 AGGTRL4  1855 2012  .21B .48  .67 
+   5 AGGTRL6  1867 2012  .61  .62  .67 
+   7 AGGTRL8  1939 2012            .13B
+   8 AGGTRL9  1858 2012  .01B .25B .49 
+   9 AGGTRL10 1937 2012            .66 
+  10 AGGTRL11 1942 2012            .62 
+  11 AGGTRL12 1898 2012  .54  .60  .73 
+  12 AGGTRL13 1903 2012       .65  .64 
+  14 AGGTRL15 1900 2012       .67  .62 
+  15 AGGTRL16 1936 2012            .73 
+  18 AGGTRL18 1917 2012       .14B .29A
+  19 AGGTRL19 1877 2012  .67  .66  .69 
+  22 AGGTRL22 1909 2012       .51  .57 
+  23 AGGTRL23 1911 2012       .35  .67 
+  24 AGGTRL24 1912 2012       .58  .52 
+  25 AGGTRL25 1915 2012       .55  .62 
+ Av segment correlation  .44  .51  .59 
+
+ FLAGGED SEGMENTS: ak148
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 AGGTRL4  1900 1949     B     .208        -1      .647   .439
+   7 AGGTRL8  1950 1999     B     .129        -9      .246   .117  weak at every lag
+   8 AGGTRL9  1900 1949     B     .008        -1      .419   .412
+   8 AGGTRL9  1925 1974     B     .249        -1      .320   .071  weak at every lag
+  18 AGGTRL18 1925 1974     B     .135         1      .272   .137  weak at every lag
+  18 AGGTRL18 1950 1999     A     .285         0
+
+ DESCRIPTIVE STATISTICS: ak148
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AGGTRL1  1944 2012     69      1      0    .566    .56   1.34   .234   .694   .252   1.86   .260   .014   1
+   2 AGGTRL2  1937 2012     76      1      0    .723    .42    .87   .157   .625   .263   1.72   .257  -.037   3
+   3 AGGTRL3  1864 2012    149      3      0    .326    .30   1.14   .145   .694   .272   1.87   .268   .011   3
+   4 AGGTRL4  1855 2012    158      3      1    .344    .34   1.03   .169   .662   .293   2.06   .324  -.011   2
+   5 AGGTRL6  1867 2012    146      3      0    .562    .38   1.20   .219   .784   .279   1.72   .296  -.009   1
+   6 AGGTRL7  1953 2012     60      0      0    .391    .56   1.02   .195   .785   .193   1.80   .211   .015   1
+   7 AGGTRL8  1939 2012     74      1      1    .054    .37   1.02   .259   .879   .291   2.27   .330  -.094   1
+   8 AGGTRL9  1858 2012    155      3      2    .237    .18    .48   .106   .758   .291   2.25   .304  -.017   3
+   9 AGGTRL10 1937 2012     76      1      0    .634    .40    .97   .208   .846   .235   1.70   .252  -.020   1
+  10 AGGTRL11 1942 2012     71      1      0    .608    .57    .98   .170   .524   .231   1.64   .228   .024   1
+  11 AGGTRL12 1898 2012    115      3      0    .642    .31    .88   .214   .820   .317   1.76   .296   .031   2
+  12 AGGTRL13 1903 2012    110      2      0    .601    .38    .86   .156   .711   .230   2.45   .275  -.011   2
+  13 AGGTRL14 1955 2012     58      0      0    .589    .85   1.56   .326   .719   .240   1.75   .241   .025   2
+  14 AGGTRL15 1900 2012    113      2      0    .676    .43    .94   .165   .676   .260   1.71   .261   .006   1
+  15 AGGTRL16 1936 2012     77      1      0    .714    .58    .95   .174   .516   .248   1.67   .238   .030   1
+  16 AGGTRL17 1954 2012     59      0      0    .743    .65   1.03   .181   .291   .279   1.47   .244   .044   0
+  17 AGGTRL5  1952 2012     61      0      0    .545    .61   1.63   .396   .849   .273   1.69   .274  -.000   3
+  18 AGGTRL18 1917 2012     96      2      2    .273    .42   1.30   .268   .822   .251   2.65   .347  -.026   3
+  19 AGGTRL19 1877 2012    136      3      0    .607    .28    .97   .189   .843   .252   1.73   .254  -.003   3
+  20 AGGTRL20 1957 2012     56      0      0    .655    .50   1.05   .171   .610   .250   1.75   .236   .163   0
+  21 AGGTRL21 1960 2012     53      0      0    .508    .49   1.15   .218   .671   .267   1.89   .271   .036   1
+  22 AGGTRL22 1909 2012    104      2      0    .596    .40   1.03   .200   .722   .294   1.90   .294  -.007   1
+  23 AGGTRL23 1911 2012    102      2      0    .497    .57   2.36   .324   .627   .275   2.42   .307   .026   1
+  24 AGGTRL24 1912 2012    101      2      0    .582    .42    .98   .179   .758   .210   1.58   .207   .036   1
+  25 AGGTRL25 1915 2012     98      2      0    .619    .40    .75   .132   .597   .250   1.54   .236  -.028   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2373     38      6    .515    .42   2.36   .197   .710   .264   2.65   .274   .004
+
+ DATA CHECKS (rwl.check): ak148
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak148.rwl
+ 25 series, 2373 measurements, 1855-2012, 0.001 mm precision
+ 1 error(s), 0 warning(s), 9 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     AGGTRL9: correlates best with the master at lag -1 (r = 0.355 against r = 0.289 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ak148.rwl, MD5 113fe90512c7867304d9cb1a038f77e5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

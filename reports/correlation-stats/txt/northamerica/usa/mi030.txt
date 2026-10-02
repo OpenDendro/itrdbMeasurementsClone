@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: mi030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mi030.rwl
+      MD5 of measurement file: b8430eb938cdf320e8592957a544b436
+      Date checked           : 01OCT26
+      Beginning year         : 1628
+      Ending year            : 1847
+      Principal investigators: Larson, E.R.; Rawling, J.E.
+      Site name              : Oxbow
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 42.6756 N
+      Longitude              : 86.2119 W
+      Elevation              : 177 m
+
+      Series intercorrelation: 0.557
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 0.314
+      Avg autocorrelation    : 0.596
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 1.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 OXB005   1652 1840  .60  .53  .49  .51 
+   2 OXB006   1690 1830  .48  .46  .68  .79 
+   3 OXB013   1647 1823  .61  .70  .28A     
+   4 OXB014   1638 1753  .48                
+   5 OXB031   1689 1811  .55  .54  .67      
+   6 OXB032   1636 1775  .59  .67           
+   7 OXB037   1644 1787  .59  .61           
+   8 OXB038   1683 1833  .61  .57  .67  .58 
+   9 OXB039   1736 1847            .70  .70 
+  10 OXB040   1689 1829  .54  .74  .76  .65 
+  11 OXB041   1734 1841            .62  .67 
+  12 OXB042   1727 1839            .73  .74 
+  13 OXB043   1655 1827  .63  .59  .66  .60 
+  14 OXB044   1655 1823  .64  .68  .65      
+  15 OXB045   1656 1810  .61  .78  .78      
+  16 OXB046   1682 1842  .49  .50  .74  .67 
+  17 OXB050A  1628 1824  .68  .66  .43  .51 
+ Av segment correlation  .58  .62  .63  .64 
+
+ FLAGGED SEGMENTS: mi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 OXB013   1750 1799     A     .283         0
+
+ DESCRIPTIVE STATISTICS: mi030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OXB005   1652 1840    189      4      0    .529    .82   3.07   .343   .465   .310   2.27   .285   .002   3
+   2 OXB006   1690 1830    141      4      0    .627    .91   1.98   .292   .606   .210   1.75   .218   .031   1
+   3 OXB013   1647 1823    177      3      1    .367    .72   1.50   .252   .692   .219   1.59   .204  -.001   3
+   4 OXB014   1638 1753    116      1      0    .455    .95   1.79   .266   .285   .260   1.76   .238  -.013   2
+   5 OXB031   1689 1811    123      3      0    .586   1.18   2.10   .392   .693   .189   1.54   .190  -.011   3
+   6 OXB032   1636 1775    140      2      0    .621    .79   1.67   .260   .609   .205   1.61   .193  -.003   3
+   7 OXB037   1644 1787    144      2      0    .502    .85   2.00   .306   .691   .218   1.45   .172  -.014   3
+   8 OXB038   1683 1833    151      4      0    .614    .71   1.41   .235   .579   .227   2.00   .236   .003   1
+   9 OXB039   1736 1847    112      2      0    .638   1.43   2.89   .432   .498   .229   1.74   .226  -.036   3
+  10 OXB040   1689 1829    141      4      0    .646    .85   2.28   .277   .526   .222   2.03   .236  -.005   3
+  11 OXB041   1734 1841    108      2      0    .536   1.25   3.18   .484   .730   .206   1.52   .207   .010   1
+  12 OXB042   1727 1839    113      2      0    .574   1.37   3.70   .650   .840   .203   1.43   .169   .012   3
+  13 OXB043   1655 1827    173      4      0    .600    .94   2.22   .297   .517   .217   1.84   .212  -.030   3
+  14 OXB044   1655 1823    169      3      0    .531    .73   1.91   .328   .827   .195   1.60   .215  -.022   3
+  15 OXB045   1656 1810    155      3      0    .553    .81   2.62   .275   .499   .220   2.65   .249   .001   3
+  16 OXB046   1682 1842    161      4      0    .598   1.06   1.68   .237   .415   .203   1.49   .189   .002   3
+  17 OXB050A  1628 1824    197      4      0    .549    .74   1.38   .215   .677   .186   1.61   .182  -.009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2510     51      1    .557    .92   3.70   .314   .596   .220   2.65   .214  -.005
+
+ DATA CHECKS (rwl.check): mi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mi030.rwl
+ 17 series, 2510 measurements, 1628-1847, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file mi030.rwl, MD5 b8430eb938cdf320e8592957a544b436.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

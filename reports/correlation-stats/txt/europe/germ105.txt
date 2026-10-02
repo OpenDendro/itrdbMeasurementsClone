@@ -1,0 +1,103 @@
+
+ COFECHA-style crossdating report: germ105
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ105.rwl
+      MD5 of measurement file: ef0caf4f4069bd931b9202b26f288e18
+      Date checked           : 01OCT26
+      Beginning year         : 1499
+      Ending year            : 1588
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Wahlen Str. 23 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.529
+      Avg mean sensitivity   : 0.262
+      Avg standard deviation : 0.839
+      Avg autocorrelation    : 0.701
+      Number dated series    : 8
+      Segment length tested  : 44
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ105
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  44-year dated segments, lagged  22 years
+ Flags:  A = correlation under   .3496 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1522 1544 
+                        1543 1565 1587 
+ --- -------- ---------  ---- ---- ---- 
+   2 wah2     1517 1583       .54      
+   3 wah3     1503 1569       .48      
+   4 wah4     1541 1588            .49 
+   6 wah6     1521 1588       .56  .47 
+   7 wah7     1508 1566       .55      
+ Av segment correlation       .53  .48 
+
+ FLAGGED SEGMENTS: germ105
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ105
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 wah1     1553 1585     33      0      0    .597   3.11   5.51  1.219   .743   .238   1.46   .207   .123   2
+   2 wah2     1517 1583     67      1      0    .585   1.86   4.25   .860   .761   .215   2.03   .235   .026   1
+   3 wah3     1503 1569     67      1      0    .419   1.39   5.02  1.043   .845   .300   2.08   .313  -.003   2
+   4 wah4     1541 1588     48      1      0    .455   2.32   4.41   .993   .777   .244   1.60   .229  -.081   2
+   5 wah5     1532 1584     53      0      0    .473   1.64   3.52   .603   .636   .252   1.64   .268   .024   1
+   6 wah6     1521 1588     68      2      0    .529   1.41   2.85   .610   .655   .290   1.66   .278   .008   1
+   7 wah7     1508 1566     59      1      0    .557   1.68   3.83   .795   .694   .289   1.75   .297   .019   1
+   8 wah8     1499 1549     51      0      0    .648   2.43   4.40   .752   .469   .246   1.64   .239  -.005   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            446      6      0    .529   1.88   5.51   .839   .701   .262   2.08   .263   .010
+
+ DATA CHECKS (rwl.check): germ105
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ105.rwl
+ 8 series, 446 measurements, 1499-1588, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     wah3: correlates with the rest of the collection at r = 0.183 where the collection median is 0.489 (5 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file germ105.rwl, MD5 ef0caf4f4069bd931b9202b26f288e18.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3496 for 44-year segments.
+ Segments: 44 years, lagged 22, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 44 years: the record is only 90 years long.

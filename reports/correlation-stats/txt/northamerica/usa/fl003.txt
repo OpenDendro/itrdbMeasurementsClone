@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: fl003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fl003.rwl
+      MD5 of measurement file: c1f1e841c9f3bfbdb564f58d8c136a4f
+      Date checked           : 01OCT26
+      Beginning year         : 1852
+      Ending year            : 1993
+      Principal investigators: Stahle, D.W.; Cleaveland, M.K.
+      Site name              : O'Leno State Park
+      Species information    : QUST Quercus stellata Wangenh.
+      Latitude               : 29.9200 N
+      Longitude              : 82.6200 W
+      Elevation              : 15 m
+
+      Series intercorrelation: 0.466
+      Avg mean sensitivity   : 0.266
+      Avg standard deviation : 0.556
+      Avg autocorrelation    : 0.645
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4)
+      Pct problem segments   : 17.95
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fl003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 len01b   1866 1993  .37B .43 
+   2 len01a   1864 1988  .48  .56 
+   3 len02a   1904 1993       .37 
+   4 len02b   1868 1993  .61  .52 
+   5 len03a   1852 1989  .54  .50 
+   6 len03b   1854 1992  .72  .69 
+   7 leno3c   1877 1993  .76  .59 
+   8 len04b   1867 1990  .48  .52 
+   9 len05a   1875 1993  .64  .57 
+  10 len05b   1866 1993  .64  .38 
+  11 len06a   1904 1993       .29A
+  12 len06b   1880 1974  .45  .32A
+  13 len07a   1896 1993  .51  .58 
+  14 len08a   1857 1993  .69  .50 
+  15 len08b   1863 1993  .53  .40 
+  16 len09a   1869 1993  .47  .34 
+  17 len09b   1914 1993       .35 
+  18 len10a   1900 1993       .35 
+  19 len12a   1896 1983  .34B .32A
+  20 len12b   1866 1975  .28B .24B
+  21 len41a   1920 1993       .48 
+  22 len41b   1913 1993       .45 
+  23 len42a   1921 1974       .35 
+ Av segment correlation  .53  .44 
+
+ FLAGGED SEGMENTS: fl003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 len01b   1900 1949     B     .365         6      .418   .053
+  11 len06a   1925 1974     A     .289         0
+  12 len06b   1925 1974     A     .317         0
+  19 len12a   1900 1949     B     .340        -6      .360   .020
+  19 len12a   1925 1974     A     .323         0
+  20 len12b   1900 1949     B     .276        -6      .453   .177
+  20 len12b   1925 1974     B     .237        -6      .491   .254
+
+ DESCRIPTIVE STATISTICS: fl003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 len01b   1866 1993    128      2      1    .504    .79   2.30   .328   .586   .275   2.01   .280  -.007   3
+   2 len01a   1864 1988    125      2      0    .391    .77   2.24   .377   .664   .291   2.30   .311   .026   1
+   3 len02a   1904 1993     90      1      0    .396    .66   1.32   .221   .756   .189   1.66   .194   .041   2
+   4 len02b   1868 1993    126      2      0    .420    .96   2.06   .437   .780   .244   2.35   .268   .123   0
+   5 len03a   1852 1989    138      2      0    .624    .85   2.12   .407   .646   .312   1.97   .310  -.027   3
+   6 len03b   1854 1992    139      2      0    .720   1.11   2.50   .510   .730   .261   2.06   .254   .010   3
+   7 leno3c   1877 1993    117      2      0    .661   1.15   2.35   .487   .756   .223   1.63   .239   .012   3
+   8 len04b   1867 1990    124      2      0    .535   1.19   3.53   .629   .767   .249   2.18   .251   .009   3
+   9 len05a   1875 1993    119      2      0    .528    .93   2.71   .475   .724   .307   2.11   .315  -.041   1
+  10 len05b   1866 1993    128      2      0    .444    .85   2.85   .422   .569   .293   2.29   .317   .128   0
+  11 len06a   1904 1993     90      1      1    .343    .80   1.31   .197   .600   .180   1.64   .171   .148   0
+  12 len06b   1880 1974     95      2      1    .421    .98   2.59   .430   .792   .186   1.55   .179   .009   1
+  13 len07a   1896 1993     98      2      0    .528   1.00   2.75   .504   .794   .254   1.89   .277   .027   1
+  14 len08a   1857 1993    137      2      0    .558    .93   3.02   .367   .585   .253   2.14   .255   .017   1
+  15 len08b   1863 1993    131      2      0    .423   1.00   2.95   .383   .508   .257   2.06   .266   .003   1
+  16 len09a   1869 1993    125      2      0    .410   1.18   2.91   .611   .819   .266   1.62   .269   .052   3
+  17 len09b   1914 1993     80      1      0    .394   1.41   4.27   .831   .730   .285   2.28   .349   .037   1
+  18 len10a   1900 1993     94      1      0    .412   1.13   3.86   .658   .781   .252   2.03   .298   .004   1
+  19 len12a   1896 1983     88      2      2    .175   1.63  12.40  1.297   .195   .253   3.55   .406   .111   0
+  20 len12b   1866 1975    110      2      2    .219   1.30   8.64   .850   .246   .286   4.57   .483   .034   1
+  21 len41a   1920 1993     74      1      0    .478   2.49   4.89   .986   .525   .339   1.78   .316   .030   2
+  22 len41b   1913 1993     81      1      0    .463   2.31   5.26   .912   .493   .328   1.94   .300   .064   2
+  23 len42a   1921 1974     54      1      0    .450   2.28   5.60  1.149   .646   .345   2.00   .355   .062   1
+  24 len42b   1920 1968     49      0      0    .406   2.06   4.60   .924   .692   .316   1.66   .294   .047   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2540     39      7    .466   1.15  12.40   .556   .645   .266   4.57   .287   .035
+
+ DATA CHECKS (rwl.check): fl003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/fl003.rwl
+ 24 series, 2540 measurements, 1852-1993, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file fl003.rwl, MD5 c1f1e841c9f3bfbdb564f58d8c136a4f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

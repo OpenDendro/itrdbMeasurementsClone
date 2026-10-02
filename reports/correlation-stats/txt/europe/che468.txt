@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: che468
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che468.rwl
+      MD5 of measurement file: 9846a7672891a0ab32fc25cb3612d844
+      Date checked           : 01OCT26
+      Beginning year         : 1774
+      Ending year            : 2023
+      Principal investigators: Ferrari, M.; Nötzli, M.; Bigler, C.
+      Site name              : Durbegia, Val Bregaglia
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.3532 N
+      Longitude              : 9.5927 E
+      Elevation              : 1465 m
+
+      Series intercorrelation: 0.503
+      Avg mean sensitivity   : 0.179
+      Avg standard deviation : 0.800
+      Avg autocorrelation    : 0.890
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che468
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 DU01TA   1848 2023            .66  .43  .37  .52  .63 
+   2 DU02TA   1845 2023            .47  .63  .69  .55  .44 
+   3 DU03TA   1825 2023            .52  .56  .55  .62  .57 
+   4 DU04TA   1845 2023            .64  .65  .54  .47  .38 
+   5 DU05TA   1796 2023  .51  .60  .63  .73  .70  .65  .68 
+   6 DU06TA   1839 2023            .66  .66  .61  .73  .75 
+   7 DU09TA   1851 2023                 .71  .69  .48  .43 
+   8 DU10TA   1774 2023  .47  .48  .55  .57  .47  .43  .49 
+   9 DU11TA   1814 2023       .51  .57  .71  .54  .50  .51 
+  10 DU12TA   1781 2023  .33B .53  .59  .48  .49  .57  .68 
+  11 DU13TA   1809 2023       .55  .72  .68  .59  .60  .44 
+  12 DU15TA   1847 2023            .60  .67  .54  .51  .53 
+  13 DU16TA   1868 2023                 .72  .64  .62  .61 
+ Av segment correlation  .44  .53  .60  .63  .57  .56  .55 
+
+ FLAGGED SEGMENTS: che468
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 DU12TA   1800 1849     B     .327         5      .378   .052
+
+ DESCRIPTIVE STATISTICS: che468
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DU01TA   1848 2023    176      5      0    .462   1.55   5.75  1.094   .914   .187   1.74   .199   .016   2
+   2 DU02TA   1845 2023    179      5      0    .535   1.61   3.93   .646   .784   .212   1.86   .233  -.045   1
+   3 DU03TA   1825 2023    199      5      0    .413   1.47   4.29   .724   .890   .184   1.55   .193  -.014   3
+   4 DU04TA   1845 2023    179      5      0    .462   1.38   3.97   .759   .917   .154   1.43   .157   .003   2
+   5 DU05TA   1796 2023    228      7      0    .621   1.79   4.59   .811   .886   .176   1.47   .179  -.027   1
+   6 DU06TA   1839 2023    185      5      0    .550   1.92   7.00  1.396   .925   .177   1.50   .185   .015   1
+   7 DU09TA   1851 2023    173      4      0    .510   1.76   4.36   .803   .892   .182   1.49   .176   .025   1
+   8 DU10TA   1774 2023    250      7      0    .446    .89   2.02   .313   .856   .150   1.47   .152  -.001   3
+   9 DU11TA   1814 2023    210      6      0    .504   1.14   3.74   .731   .940   .150   1.85   .168  -.034   1
+  10 DU12TA   1781 2023    243      7      1    .489    .85   4.34   .575   .888   .212   1.90   .239  -.028   1
+  11 DU13TA   1809 2023    215      6      0    .503   1.45   5.00  1.022   .911   .210   1.73   .228   .033   1
+  12 DU15TA   1847 2023    177      5      0    .472   1.93   4.17   .793   .871   .152   1.62   .168  -.043   1
+  13 DU16TA   1868 2023    156      4      0    .587   2.08   4.79   .985   .900   .173   1.71   .190  -.022   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2570     71      1    .503   1.48   7.00   .800   .890   .179   1.90   .190  -.010
+
+ DATA CHECKS (rwl.check): che468
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che468.rwl
+ 13 series, 2570 measurements, 1774-2023, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file che468.rwl, MD5 9846a7672891a0ab32fc25cb3612d844.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

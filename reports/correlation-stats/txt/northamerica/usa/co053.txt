@@ -1,0 +1,103 @@
+
+ COFECHA-style crossdating report: co053
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co053.rwl
+      MD5 of measurement file: d79615e3ee89616c6da801c1a2905915
+      Date checked           : 01OCT26
+      Beginning year         : 1478
+      Ending year            : 1964
+      Principal investigators: Stokes, M.A.; Harlan, T.P.
+      Site name              : Black Canyon of the Gunnison River
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 38.5700 N
+      Longitude              : 107.7000 W
+      Elevation              : 2426 m
+
+      Series intercorrelation: 0.680
+      Avg mean sensitivity   : 0.363
+      Avg standard deviation : 0.248
+      Avg autocorrelation    : 0.585
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co053
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1549 1574 1599 1624 1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 117021   1505 1964       .72  .53  .53  .72  .77  .82  .72  .75  .74  .67  .58  .57  .52  .51  .59  .61 
+   2 117011   1478 1964       .74  .77  .67  .69  .83  .80  .54  .67  .84  .76  .79  .79  .80  .79  .69  .70 
+   3 117031   1760 1964                                                         .67  .62  .57  .54  .68  .53 
+   4 117041   1570 1960                 .41  .66  .79  .80  .71  .72  .71  .79  .83  .74  .60  .66  .76  .76 
+   5 117051   1634 1964                                .61  .76  .70  .63  .68  .66  .71  .72  .66  .72  .78 
+   6 117061   1634 1964                                .79  .70  .66  .57  .59  .60  .64  .77  .80  .68  .57 
+   7 117071   1727 1964                                                    .70  .77  .72  .79  .77  .72  .82 
+   8 117081   1699 1964                                          .71  .70  .79  .76  .69  .76  .81  .81  .85 
+ Av segment correlation       .73  .65  .54  .69  .80  .76  .68  .70  .70  .71  .71  .69  .69  .69  .71  .70 
+
+ FLAGGED SEGMENTS: co053
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: co053
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 117021   1505 1964    460     16      0    .636    .39   3.00   .361   .744   .423   2.37   .373  -.001   1
+   2 117011   1478 1964    487     16      0    .685    .44   2.03   .271   .733   .345   2.05   .313   .002   1
+   3 117031   1760 1964    205      6      0    .610   1.08   3.05   .539   .508   .368   2.22   .366   .013   2
+   4 117041   1570 1960    391     14      0    .656    .43   1.62   .225   .682   .346   2.44   .321  -.003   2
+   5 117051   1634 1964    331     11      0    .680    .45   1.16   .239   .743   .297   1.92   .279   .012   1
+   6 117061   1634 1964    331     11      0    .691    .25    .53   .077   .228   .321   1.60   .256   .000   1
+   7 117071   1727 1964    238      7      0    .734    .28    .63   .119   .429   .411   2.00   .342   .041   0
+   8 117081   1699 1964    266      9      0    .770    .36    .94   .161   .344   .409   1.93   .349  -.039   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2709     90      0    .680    .43   3.05   .248   .585   .363   2.44   .323   .002
+
+ DATA CHECKS (rwl.check): co053
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co053.rwl
+ 8 series, 2709 measurements, 1478-1964, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file co053.rwl, MD5 d79615e3ee89616c6da801c1a2905915.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

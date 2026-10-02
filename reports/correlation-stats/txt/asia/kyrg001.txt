@@ -1,0 +1,180 @@
+
+ COFECHA-style crossdating report: kyrg001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : kyrg001.rwl
+      MD5 of measurement file: 93918bda5635422c925d237ff4a91397
+      Date checked           : 01OCT26
+      Beginning year         : 1839
+      Ending year            : 1995
+      Principal investigators: Esper, J.; Treydte, K.; Schweingruber, F.H.; Winiger, M.
+      Site name              : Kyrgyzstan Low art
+      Species information    : JUSP Juniperus spp. L.
+      Latitude               : 40.1667 N
+      Longitude              : 72.5833 E
+      Elevation              : 2600 m
+
+      Series intercorrelation: 0.555
+      Avg mean sensitivity   : 0.298
+      Avg standard deviation : 0.457
+      Avg autocorrelation    : 0.649
+      Number dated series    : 51
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 7.69
+
+
+ CORRELATION OF SERIES BY SEGMENTS: kyrg001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 ekk0501a 1906 1995       .56 
+   2 ekk0501b 1893 1995  .62  .63 
+   3 ekk0502a 1894 1995  .73  .70 
+   4 ekk0502b 1894 1983  .76  .73 
+   5 ekk0503a 1880 1960  .66      
+   6 ekk0503b 1870 1995  .77  .56 
+   8 ekk0505a 1887 1995  .61  .48 
+   9 ekk0505b 1886 1995  .51  .34 
+  10 ekk0506a 1906 1995       .54 
+  11 ekk0506b 1907 1995       .68 
+  12 ekk0507a 1909 1986       .55 
+  13 ekk0507b 1917 1995       .57 
+  14 ekk0508a 1891 1995  .88  .76 
+  15 ekk0508b 1888 1995  .91  .65 
+  18 ekk0510a 1870 1995  .75  .54 
+  19 ekk0510b 1870 1995  .61  .59 
+  20 ekk0511z 1900 1995       .08B
+  21 ekk0512a 1888 1995  .74  .59 
+  22 ekk0512b 1889 1995  .79  .62 
+  23 ekk0513a 1910 1995       .56 
+  24 ekk0513b 1910 1995       .49 
+  25 ekk0514a 1906 1995       .33A
+  26 ekk0514b 1906 1995       .69 
+  31 ekk0517a 1905 1995       .68 
+  32 ekk0517b 1902 1995       .64 
+  33 ekk0518a 1902 1995       .65 
+  34 ekk0518b 1905 1995       .72 
+  35 ekk0519a 1854 1995  .36  .40 
+  36 ekk0519b 1854 1995  .19B .35 
+  37 ekk0520z 1839 1995  .54  .13B
+  40 ekk0522a 1880 1995  .79  .67 
+  41 ekk0522b 1880 1995  .60  .56 
+  42 ekk0523z 1904 1992       .53 
+  44 ekk0525a 1903 1995       .41 
+  51 ekk0529z 1899 1995       .42 
+ Av segment correlation  .66  .54 
+
+ FLAGGED SEGMENTS: kyrg001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 ekk0511z 1925 1974     B     .077         8      .542   .465
+  25 ekk0514a 1925 1974     A     .328         0
+  36 ekk0519b 1900 1949     B     .187        -6      .312   .124  weak at every lag
+  37 ekk0520z 1925 1974     B     .133        -7      .196   .063  weak at every lag
+
+ DESCRIPTIVE STATISTICS: kyrg001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ekk0501a 1906 1995     90      1      0    .554   1.78   3.59   .733   .618   .320   2.04   .301  -.045   2
+   2 ekk0501b 1893 1995    103      2      0    .617   2.02   4.24   .760   .603   .281   1.78   .285   .011   1
+   3 ekk0502a 1894 1995    102      2      0    .715   1.11   2.23   .408   .486   .306   2.03   .286   .013   3
+   4 ekk0502b 1894 1983     90      2      0    .730   1.03   2.69   .558   .736   .327   1.85   .303  -.043   1
+   5 ekk0503a 1880 1960     81      1      0    .674    .84   2.36   .589   .771   .404   2.12   .357   .024   1
+   6 ekk0503b 1870 1995    126      2      0    .638    .88   3.17   .721   .844   .393   1.93   .338  -.038   1
+   7 ekk0504z 1938 1995     58      0      0    .504   1.43   2.84   .531   .728   .240   1.64   .237  -.005   2
+   8 ekk0505a 1887 1995    109      2      0    .543    .62   1.28   .280   .620   .361   1.87   .340   .023   1
+   9 ekk0505b 1886 1995    110      2      0    .468    .69   1.48   .323   .752   .291   1.73   .280   .016   1
+  10 ekk0506a 1906 1995     90      1      0    .618    .75   1.34   .229   .203   .299   1.67   .251  -.002   2
+  11 ekk0506b 1907 1995     89      1      0    .740    .76   1.24   .214   .311   .269   1.54   .250   .006   2
+  12 ekk0507a 1909 1986     78      1      0    .570   1.37   2.73   .568   .675   .259   1.47   .238   .006   2
+  13 ekk0507b 1917 1995     79      1      0    .527   1.48   3.24   .543   .697   .203   1.38   .179   .052   1
+  14 ekk0508a 1891 1995    105      2      0    .828   1.39   3.28   .667   .801   .235   1.48   .219   .005   2
+  15 ekk0508b 1888 1995    108      2      0    .801   1.44   3.14   .665   .808   .230   1.37   .209  -.006   1
+  16 ekk0509a 1932 1995     64      0      0    .548    .99   1.87   .338   .575   .246   1.74   .237   .039   2
+  17 ekk0509b 1929 1995     67      0      0    .526   1.21   2.33   .470   .659   .272   1.73   .258  -.008   2
+  18 ekk0510a 1870 1995    126      2      0    .721    .76   2.26   .391   .666   .336   1.58   .290   .044   1
+  19 ekk0510b 1870 1995    126      2      0    .600    .67   2.42   .452   .645   .501   2.03   .402   .028   1
+  20 ekk0511z 1900 1995     96      1      1    .291    .54   1.19   .280   .564   .472   1.96   .399   .034   1
+  21 ekk0512a 1888 1995    108      2      0    .690   1.12   2.16   .396   .570   .247   1.55   .215   .024   0
+  22 ekk0512b 1889 1995    107      2      0    .716   1.14   2.18   .340   .482   .244   1.65   .225   .005   2
+  23 ekk0513a 1910 1995     86      1      0    .249   1.06   2.08   .430   .699   .312   5.59   .595   .208   0
+  24 ekk0513b 1910 1995     86      1      0    .642    .92   2.17   .412   .725   .280   1.70   .261   .062   1
+  25 ekk0514a 1906 1995     90      1      1    .584   1.26   2.72   .594   .754   .317   1.60   .269   .005   2
+  26 ekk0514b 1906 1995     90      1      0    .632   1.33   2.65   .546   .756   .278   1.64   .254  -.043   1
+  27 ekk0515a 1945 1995     51      0      0    .736   1.46   2.54   .498   .372   .327   1.62   .306   .016   1
+  28 ekk0515b 1945 1995     51      0      0    .659   1.13   2.40   .480   .578   .334   1.63   .311   .006   1
+  29 ekk0516a 1943 1995     53      0      0    .226    .75   1.60   .324   .536   .340   1.87   .342   .052   1
+  30 ekk0516b 1942 1995     54      0      0    .445   1.28   2.54   .489   .503   .315   1.55   .290   .187   0
+  31 ekk0517a 1905 1995     91      1      0    .636    .84   2.39   .446   .739   .329   1.69   .284  -.003   1
+  32 ekk0517b 1902 1995     94      1      0    .721    .73   1.90   .336   .706   .268   1.63   .243   .027   2
+  33 ekk0518a 1902 1995     94      1      0    .719    .69   2.80   .472   .854   .316   1.51   .269   .017   2
+  34 ekk0518b 1905 1995     91      1      0    .764    .94   2.67   .472   .768   .291   1.41   .248  -.030   1
+  35 ekk0519a 1854 1995    142      2      0    .382    .89   1.59   .285   .416   .256   1.57   .241   .016   0
+  36 ekk0519b 1854 1995    142      2      1    .329    .71   2.16   .427   .746   .376   2.69   .373   .037   1
+  37 ekk0520z 1839 1995    157      2      1    .429    .93   2.73   .447   .674   .328   1.91   .311   .020   1
+  38 ekk0521a 1950 1995     46      0      0    .429   1.95   3.91   .821   .798   .209   1.71   .214  -.079   2
+  39 ekk0521b 1936 1980     45      0      0    .592   2.21   4.71  1.083   .735   .319   1.59   .294   .066   1
+  40 ekk0522a 1880 1995    116      2      0    .712   1.02   1.97   .335   .728   .195   1.46   .189   .013   2
+  41 ekk0522b 1880 1995    116      2      0    .624   1.08   2.65   .538   .797   .216   1.64   .222   .017   2
+  42 ekk0523z 1904 1992     89      1      0    .545    .99   2.27   .445   .624   .288   2.21   .297   .023   1
+  43 ekk0524z 1929 1995     67      0      0    .217   1.47   2.64   .454   .551   .234   2.08   .241   .019   1
+  44 ekk0525a 1903 1995     93      1      0    .550    .91   2.09   .327   .580   .298   1.52   .251   .017   1
+  45 ekk0526a 1953 1995     43      0      0   -.111    .80   1.27   .218   .321   .253   1.74   .231   .012   0
+  46 ekk0526b 1953 1995     43      0      0   -.067   1.27   3.02   .598   .826   .194   1.53   .201  -.133   1
+  47 ekk0527a 1937 1995     59      0      0    .171   1.62   2.79   .485   .639   .191   1.79   .206   .003   1
+  48 ekk0527b 1937 1995     59      0      0    .308    .67   1.36   .210   .387   .294   1.93   .272  -.034   1
+  49 ekk0228a 1944 1995     52      0      0    .500    .94   1.76   .322   .619   .219   1.57   .233   .030   1
+  50 ekk0228b 1944 1995     52      0      0    .340   1.10   2.70   .586   .821   .238   1.50   .244   .121   1
+  51 ekk0529z 1899 1995     97      1      0    .504    .47   1.25   .247   .690   .338   1.85   .333  -.015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4461     52      4    .555   1.04   4.71   .457   .649   .298   5.59   .281   .016
+
+ DATA CHECKS (rwl.check): kyrg001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/kyrg001.rwl
+ 51 series, 4461 measurements, 1839-1995, 0.01 mm precision
+ 1 error(s), 0 warning(s), 5 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     ekk0516a: correlates best with the master at lag 1 (r = 0.422 against r = 0.306 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file kyrg001.rwl, MD5 93918bda5635422c925d237ff4a91397.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

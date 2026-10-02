@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: ca601
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca601.rwl
+      MD5 of measurement file: e1f1e8c7aabd8f77b4bfed66690ac6ab
+      Date checked           : 01OCT26
+      Beginning year         : 1673
+      Ending year            : 1995
+      Principal investigators: Biondi, F.
+      Site name              : Volcan Mountain Santa Ysabel Reservior
+      Species information    : PSMA Pseudotsuga macrocarpa (Vasey) Mayr
+      Latitude               : 33.1300 N
+      Longitude              : 116.6000 W
+      Elevation              : 1465 m
+
+      Series intercorrelation: 0.679
+      Avg mean sensitivity   : 0.263
+      Avg standard deviation : 0.939
+      Avg autocorrelation    : 0.788
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca601
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 RUT02A   1911 1995                                               .57 
+   4 RUT06B   1900 1995                                               .64 
+   5 RUT07A   1874 1995                                     .33B .46  .66 
+   6 RUT07B   1885 1992                                          .50  .73 
+   7 RUT08A   1676 1994  .71  .87  .89  .78  .63  .52  .58  .63  .62  .65 
+   8 RUT08B   1673 1994  .71  .87  .89  .75  .62  .47  .51  .67  .60  .69 
+   9 RUT09A   1822 1995                           .65  .73  .69  .68  .70 
+  10 RUT09B   1850 1995                                     .78  .76  .84 
+  11 RUT20A   1827 1994                                .74  .67  .57  .76 
+  12 RUT20B   1818 1993                           .69  .73  .65  .62  .74 
+  13 RUT20C   1808 1994                           .65  .66  .51  .51  .66 
+  14 VOM01A   1895 1972                                          .44      
+  15 VOM02A   1918 1994                                               .65 
+  16 VOM03A   1854 1994                                     .56  .57  .73 
+  17 VOM05A   1867 1994                                     .64  .71  .81 
+  18 VOM05B   1851 1994                                     .70  .72  .80 
+ Av segment correlation  .71  .87  .89  .77  .62  .60  .66  .62  .60  .71 
+
+ FLAGGED SEGMENTS: ca601
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 RUT07A   1875 1924     B     .326         7      .435   .109
+
+ DESCRIPTIVE STATISTICS: ca601
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RUT02A   1911 1995     85      1      0    .577   3.77   8.39  1.530   .673   .246   1.69   .262   .012   1
+   2 RUT02B   1931 1995     65      0      0    .704   4.18   8.12  1.662   .617   .275   1.67   .280  -.039   1
+   3 RUT06A   1926 1995     70      0      0    .821   2.00   4.59   .862   .681   .286   1.78   .297  -.025   1
+   4 RUT06B   1900 1995     96      1      0    .678   2.48   5.09   .970   .584   .275   2.01   .281   .049   1
+   5 RUT07A   1874 1995    122      3      1    .631   1.42   2.85   .453   .575   .241   1.75   .243   .039   1
+   6 RUT07B   1885 1992    108      2      0    .722   2.00   4.38   .742   .572   .258   2.00   .244   .122   0
+   7 RUT08A   1676 1994    319     10      0    .603   1.03   2.94   .607   .868   .244   2.40   .271  -.018   1
+   8 RUT08B   1673 1994    322     10      0    .684    .95   3.99   .644   .898   .239   1.78   .247  -.011   1
+   9 RUT09A   1822 1995    174      5      0    .696   1.72   7.22  1.406   .884   .295   2.57   .325  -.004   1
+  10 RUT09B   1850 1995    146      3      0    .784   1.35   6.00   .977   .788   .319   2.27   .352  -.021   1
+  11 RUT20A   1827 1994    168      4      0    .709   1.99   6.92  1.093   .801   .238   1.99   .251  -.006   1
+  12 RUT20B   1818 1993    176      5      0    .655   2.00   6.54  1.258   .865   .226   1.80   .229   .007   1
+  13 RUT20C   1808 1994    187      5      0    .616   1.86   4.54   .954   .830   .236   2.32   .261  -.018   3
+  14 VOM01A   1895 1972     78      1      0    .598   2.61   4.84   .787   .471   .245   1.65   .242  -.036   1
+  15 VOM02A   1918 1994     77      1      0    .711   1.29   3.08   .613   .783   .256   1.90   .277   .004   1
+  16 VOM03A   1854 1994    141      3      0    .690    .97   3.18   .742   .886   .287   2.21   .290  -.009   1
+  17 VOM05A   1867 1994    128      3      0    .714   1.36   5.92  1.175   .860   .291   1.76   .299  -.012   1
+  18 VOM05B   1851 1994    144      3      0    .757   1.48   6.14  1.287   .779   .350   2.38   .346  -.002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2606     60      1    .679   1.67   8.39   .939   .788   .263   2.57   .276  -.001
+
+ DATA CHECKS (rwl.check): ca601
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca601.rwl
+ 18 series, 2606 measurements, 1673-1995, 0.01 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1808-1995 but the measurements cover 1673-1995
+   RWL_SERIES_OUTLIER (1)
+     RUT02A: correlates with the rest of the collection at r = 0.489 where the collection median is 0.692 (4.1 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ca601.rwl, MD5 e1f1e8c7aabd8f77b4bfed66690ac6ab.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: co634
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co634.rwl
+      MD5 of measurement file: 797715920b68df9312a1d4b932d6fa65
+      Date checked           : 01OCT26
+      Beginning year         : 1747
+      Ending year            : 2003
+      Principal investigators: Bigler, C.; Veblen, T.T.
+      Site name              : Cameron Pass
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 40.5500 N
+      Longitude              : 105.8300 W
+      Elevation              : 3100 m
+
+      Series intercorrelation: 0.373
+      Avg mean sensitivity   : 0.163
+      Avg standard deviation : 0.390
+      Avg autocorrelation    : 0.912
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 16  (A 9, B 7; 3 of the B weak at every lag)
+      Pct problem segments   : 28.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co634
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 C043216  1795 2003  .41  .38  .30A .33A .39  .40  .42 
+   2 C043234  1760 2003  .67  .63  .27A .16B .40  .47  .35 
+   3 C043408  1766 2003  .47  .53  .38  .38  .50  .35  .20B
+   4 C044204  1765 2003  .37  .40  .38  .32A .38  .40  .41 
+   5 C044222  1761 2003  .41  .55  .61  .41  .45  .51  .47 
+   6 C044230  1761 2003  .32B .34  .41  .20A .29A .45  .31A
+   7 C044236  1747 2003  .29B .20B .34  .41  .33  .43  .30A
+   8 C044244  1763 2003  .39  .49  .46  .27A .07B .17B .38 
+ Av segment correlation  .41  .44  .39  .31  .35  .40  .36 
+
+ FLAGGED SEGMENTS: co634
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 C043216  1850 1899     A     .299         0
+   1 C043216  1875 1924     A     .327         0
+   2 C043234  1850 1899     A     .265         0
+   2 C043234  1875 1924     B     .158         6      .247   .089  weak at every lag
+   3 C043408  1950 1999     B     .201        -8      .389   .188
+   4 C044204  1875 1924     A     .319         0
+   6 C044230  1800 1849     B     .319        -3      .332   .014
+   6 C044230  1875 1924     A     .201         0
+   6 C044230  1900 1949     A     .287         0
+   6 C044230  1950 1999     A     .306         0
+   7 C044236  1800 1849     B     .288        -8      .333   .045
+   7 C044236  1825 1874     B     .198        -8      .240   .043  weak at every lag
+   7 C044236  1950 1999     A     .296         0
+   8 C044244  1875 1924     A     .266         0
+   8 C044244  1900 1949     B     .072         7      .196   .125  weak at every lag
+   8 C044244  1925 1974     B     .175         1      .366   .191
+
+ DESCRIPTIVE STATISTICS: co634
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 C043216  1795 2003    209      7      2    .384    .46   1.03   .205   .913   .122   1.38   .127   .006   2
+   2 C043234  1760 2003    244      7      2    .388    .77   1.37   .157   .707   .121   1.40   .123  -.006   3
+   3 C043408  1766 2003    238      7      1    .390    .45   1.38   .342   .906   .199   1.63   .199   .008   1
+   4 C044204  1765 2003    239      7      1    .407    .77   2.72   .573   .950   .153   1.60   .154   .024   2
+   5 C044222  1761 2003    243      7      0    .482    .51   1.90   .392   .951   .169   1.58   .162   .001   2
+   6 C044230  1761 2003    243      7      4    .395    .48   2.22   .453   .948   .162   1.42   .158   .011   3
+   7 C044236  1747 2003    257      7      3    .278    .49   2.88   .617   .965   .195   1.58   .202  -.026   1
+   8 C044244  1763 2003    241      7      3    .268    .38   1.73   .341   .958   .173   1.59   .176   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1914     56     16    .373    .54   2.88   .390   .912   .163   1.63   .163   .002
+
+ DATA CHECKS (rwl.check): co634
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co634.rwl
+ 8 series, 1914 measurements, 1747-2003, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 199 carriage return(s) against 202 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file co634.rwl, MD5 797715920b68df9312a1d4b932d6fa65.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

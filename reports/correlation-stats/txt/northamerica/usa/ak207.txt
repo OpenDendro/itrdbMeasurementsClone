@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: ak207
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak207.rwl
+      MD5 of measurement file: 359a4757e38a37f7610ea8dfad8d2b69
+      Date checked           : 01OCT26
+      Beginning year         : 1713
+      Ending year            : 2009
+      Principal investigators: Wiles, G.
+      Site name              : Son of Repeater
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 58.6167 N
+      Longitude              : 135.8667 W
+      Elevation              : 770 m
+
+      Series intercorrelation: 0.616
+      Avg mean sensitivity   : 0.289
+      Avg standard deviation : 0.218
+      Avg autocorrelation    : 0.656
+      Number dated series    : 10
+      Series crossdated      : 9
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 3.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak207
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SR001    1839 2008            .56  .64  .62  .66  .78 
+   2 SR0010   1748 2008  .65  .67  .59  .56  .72  .69  .71 
+   3 SR002    1883 2008                      .54  .63  .78 
+   4 SR003_un 1792 2008  .82  .69  .54  .43  .36B .37B .53 
+   5 SR004    1790 2007  .63  .54  .50  .64  .60  .55  .56 
+   6 SR005    1794 2008  .73  .73  .70  .69  .71  .74  .75 
+   8 SR007    1806 2008       .73  .65  .69  .71  .74  .66 
+   9 SR008    1713 2009  .75  .76  .77  .82  .78  .72  .47 
+  10 SR009    1742 2008  .56  .54  .65  .65  .60  .59  .59 
+ Av segment correlation  .69  .67  .62  .64  .63  .63  .65 
+
+ FLAGGED SEGMENTS: ak207
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 SR003_un 1900 1949     B     .365        -3      .457   .092
+   4 SR003_un 1925 1974     B     .371        -3      .487   .116
+
+ DESCRIPTIVE STATISTICS: ak207
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SR001    1839 2008    170      5      0    .636   1.19   2.93   .362   .633   .202   2.10   .217   .034   2
+   2 SR0010   1748 2008    261      7      0    .588    .33   1.04   .181   .686   .360   2.65   .355   .003   2
+   3 SR002    1883 2008    126      3      0    .639    .44    .95   .176   .570   .316   1.85   .307   .040   1
+   4 SR003_un 1792 2008    217      7      2    .598    .61   1.20   .234   .739   .232   1.73   .241  -.015   3
+   5 SR004    1790 2007    218      7      0    .514    .54   2.09   .293   .754   .315   1.82   .304   .003   2
+   6 SR005    1794 2008    215      7      0    .703    .62   1.65   .254   .526   .357   1.83   .316   .006   1
+   7 SR006    1817 2009    192                          .49   1.19   .225   .755   .303                         
+   8 SR007    1806 2008    203      6      0    .705    .55   1.18   .187   .648   .216   1.67   .218   .044   2
+   9 SR008    1713 2009    297      7      0    .612    .41   1.05   .188   .643   .321   2.14   .306   .016   1
+  10 SR009    1742 2008    267      7      0    .589    .42    .99   .133   .591   .240   1.69   .233   .034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2166     56      2    .616    .54   2.93   .218   .656   .289   2.65   .280   .017
+
+ DATA CHECKS (rwl.check): ak207
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak207.rwl
+ 10 series, 2166 measurements, 1713-2009, 0.001 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     SR006: no measurement for 1944, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file ak207.rwl, MD5 359a4757e38a37f7610ea8dfad8d2b69.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series SR006 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

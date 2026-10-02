@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: or134
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or134.rwl
+      MD5 of measurement file: 550b0d0e4a882c6eca160a6f136d59a1
+      Date checked           : 01OCT26
+      Beginning year         : 1854
+      Ending year            : 2019
+      Principal investigators: King, K.E.; Harley, G.L.
+      Site name              : Little Cultus
+      Species information    : PIEN Pinus engelmannii Carr.
+      Latitude               : 43.8000 N
+      Longitude              : 121.8700 W
+      Elevation              : 1453 m
+
+      Series intercorrelation: 0.501
+      Avg mean sensitivity   : 0.147
+      Avg standard deviation : 0.782
+      Avg autocorrelation    : 0.795
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 5.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or134
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 CUL01A   1915 2019       .49  .58 
+   2 CUL02A   1921 2019       .46  .58 
+   4 CUL03B   1941 2019            .68 
+   6 CUL05A   1905 2019       .35  .40 
+   7 CUL05B   1910 2019       .53  .54 
+   8 CUL07A   1854 2019  .31B .52  .42 
+  10 CUL09B   1947 2019            .35 
+  11 CUL10A   1881 2019  .64  .57  .44 
+  12 CUL11A   1881 2019  .40  .37  .55 
+  13 CUL11B   1905 2019       .46  .30B
+  14 CUL11C   1905 2019       .62  .57 
+  15 CUL12A   1901 2019       .60  .57 
+  16 CUL12B   1910 2019       .42  .54 
+  18 CUL16A   1920 2019       .51  .66 
+  19 CUL16B   1935 2019            .53 
+  20 CUL17A   1928 2019            .34 
+  21 CUL17B   1937 2019            .44 
+  22 CUL19A   1905 2019       .47  .57 
+  23 CUL19B   1913 2019       .51  .62 
+  24 CUL20A   1941 2019            .56 
+  25 CUL20B   1940 2019            .54 
+ Av segment correlation  .45  .49  .51 
+
+ FLAGGED SEGMENTS: or134
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 CUL07A   1900 1949     B     .307        -2      .322   .015  weak at every lag
+  13 CUL11B   1950 1999     B     .301        -4      .306   .005  weak at every lag
+
+ DESCRIPTIVE STATISTICS: or134
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CUL01A   1915 2019    105      2      0    .402   3.07   6.06  1.470   .889   .156   1.34   .161  -.028   1
+   2 CUL02A   1921 2019     99      2      0    .380   2.51   5.49  1.270   .900   .168   1.35   .149  -.035   0
+   3 CUL03A   1961 2019     59      0      0    .701   2.72   4.31   .731   .745   .148   1.27   .148  -.051   1
+   4 CUL03B   1941 2019     79      1      0    .589   3.90   6.99  1.437   .802   .182   1.59   .192   .036   1
+   5 CUL04A   1957 2019     63      0      0    .519   2.52   3.44   .444   .535   .137   1.34   .143  -.088   1
+   6 CUL05A   1905 2019    115      2      0    .421   1.94   3.92   .843   .914   .147   1.56   .158  -.008   1
+   7 CUL05B   1910 2019    110      2      0    .614   2.04   4.38   .797   .880   .139   1.65   .143   .010   1
+   8 CUL07A   1854 2019    166      3      1    .322   1.63   3.70   .832   .932   .156   1.66   .155  -.039   3
+   9 CUL08B   1952 2019     68      0      0    .526   3.26   5.55  1.215   .892   .130   1.25   .125   .134   0
+  10 CUL09B   1947 2019     73      1      0    .365   3.21   6.53  1.198   .790   .156   1.80   .177   .007   1
+  11 CUL10A   1881 2019    139      3      0    .457   2.26   6.12   .891   .808   .166   1.74   .191   .023   1
+  12 CUL11A   1881 2019    139      3      0    .476   2.11   4.37   .768   .824   .170   1.51   .176   .018   1
+  13 CUL11B   1905 2019    115      2      1    .543   2.05   3.84   .711   .859   .154   1.39   .149   .033   1
+  14 CUL11C   1905 2019    115      2      0    .648   2.29   4.41   .890   .855   .159   1.63   .158   .002   1
+  15 CUL12A   1901 2019    119      2      0    .577   1.85   3.75   .675   .840   .156   1.64   .168   .004   1
+  16 CUL12B   1910 2019    110      2      0    .478   2.41   5.37  1.110   .895   .160   1.41   .166   .014   1
+  17 CUL14A   1951 2019     69      0      0    .593   2.17   4.19   .676   .748   .151   1.55   .158   .002   1
+  18 CUL16A   1920 2019    100      2      0    .658   2.34   4.90   .674   .793   .139   1.34   .139  -.021   1
+  19 CUL16B   1935 2019     85      1      0    .622   2.30   3.87   .458   .627   .125   1.30   .113   .017   0
+  20 CUL17A   1928 2019     92      1      0    .414   1.39   2.22   .316   .750   .126   1.43   .131   .022   3
+  21 CUL17B   1937 2019     83      1      0    .533   1.44   2.16   .364   .778   .136   1.28   .131   .006   1
+  22 CUL19A   1905 2019    115      2      0    .482   1.75   2.51   .331   .654   .130   1.36   .126  -.032   3
+  23 CUL19B   1913 2019    107      2      0    .419   1.99   3.04   .389   .701   .116   1.61   .126   .032   1
+  24 CUL20A   1941 2019     79      1      0    .464   3.37   4.79   .461   .519   .110   1.24   .105  -.000   1
+  25 CUL20B   1940 2019     80      1      0    .563   3.34   4.91   .481   .549   .110   1.25   .107  -.013   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2484     38      2    .501   2.31   6.99   .782   .795   .147   1.80   .150   .002
+
+ DATA CHECKS (rwl.check): or134
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or134.rwl
+ 25 series, 2484 measurements, 1854-2019, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file or134.rwl, MD5 550b0d0e4a882c6eca160a6f136d59a1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: arge012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge012.rwl
+      MD5 of measurement file: eb196a6173c9015b6991c17ce0907894
+      Date checked           : 01OCT26
+      Beginning year         : 1717
+      Ending year            : 1974
+      Principal investigators: Holmes, R.L.; Ambrose, J.E.
+      Site name              : Angostura Lago Alumine
+      Species information    : ARAR Araucaria araucana (Molina) K. Koch
+      Latitude               : 38.8800 S
+      Longitude              : 71.1700 W
+      Elevation              : 1160 m
+
+      Series intercorrelation: 0.512
+      Avg mean sensitivity   : 0.184
+      Avg standard deviation : 0.632
+      Avg autocorrelation    : 0.838
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 2, B 11; 7 of the B weak at every lag)
+      Pct problem segments   : 31.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 AA1662   1871 1974                 .32B .20B .27A
+   2 AA1672   1804 1974       .29A .62  .72  .59  .65 
+   3 AA1681   1726 1974  .62  .66  .85  .77  .67  .63 
+   4 AA1682   1717 1974  .74  .76  .70  .64  .73  .82 
+   5 AA1683   1723 1974  .72  .75  .79  .78  .82  .70 
+   6 AA1692   1773 1974  .07B-.06B .42  .45  .23B .24B
+   7 AA1701   1809 1974       .23B .16B .13B .40  .47 
+   8 AA1711   1897 1974                      .23B .38 
+   9 AA1712   1897 1974                      .37B .45 
+ Av segment correlation  .54  .44  .59  .54  .47  .51 
+
+ FLAGGED SEGMENTS: arge012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 AA1662   1875 1924     B     .319         4      .325   .007  weak at every lag
+   1 AA1662   1900 1949     B     .197         4      .245   .048  weak at every lag
+   1 AA1662   1925 1974     A     .273         0
+   2 AA1672   1825 1874     A     .289         0
+   6 AA1692   1800 1849     B     .073         4      .243   .170  weak at every lag
+   6 AA1692   1825 1874     B    -.058         4      .280   .338  weak at every lag
+   6 AA1692   1900 1949     B     .230        -1      .283   .053  weak at every lag
+   6 AA1692   1925 1974     B     .236        -5      .260   .024  weak at every lag
+   7 AA1701   1825 1874     B     .228        -6      .414   .187
+   7 AA1701   1850 1899     B     .159         2      .406   .247
+   7 AA1701   1875 1924     B     .132         6      .253   .121  weak at every lag
+   8 AA1711   1900 1949     B     .227         5      .368   .142
+   9 AA1712   1900 1949     B     .374         5      .398   .024
+
+ DESCRIPTIVE STATISTICS: arge012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AA1662   1871 1974    104      3      3    .297   2.97   6.31   .972   .778   .164   1.43   .166  -.044   1
+   2 AA1672   1804 1974    171      5      1    .521   1.64   4.87   .823   .909   .178   1.56   .179   .001   1
+   3 AA1681   1726 1974    249      6      0    .677    .94   2.27   .394   .811   .205   1.62   .205  -.002   2
+   4 AA1682   1717 1974    258      6      0    .741   1.32   3.44   .562   .851   .180   1.59   .190   .020   2
+   5 AA1683   1723 1974    252      6      0    .715   1.36   3.88   .568   .855   .178   1.69   .190   .003   2
+   6 AA1692   1773 1974    202      6      4    .184   1.75   4.25   .621   .807   .145   1.79   .167   .011   1
+   7 AA1701   1809 1974    166      5      3    .266   1.65   4.09   .720   .835   .217   1.71   .217   .021   1
+   8 AA1711   1897 1974     78      2      1    .306   1.40   3.66   .867   .870   .216   1.62   .229   .038   1
+   9 AA1712   1897 1974     78      2      1    .415   1.23   3.16   .560   .802   .194   1.74   .229   .071   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1558     41     13    .512   1.50   6.31   .632   .838   .184   1.79   .193   .010
+
+ DATA CHECKS (rwl.check): arge012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge012.rwl
+ 9 series, 1558 measurements, 1717-1974, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file arge012.rwl, MD5 eb196a6173c9015b6991c17ce0907894.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

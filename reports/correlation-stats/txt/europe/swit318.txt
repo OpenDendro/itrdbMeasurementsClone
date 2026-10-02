@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: swit318
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit318.rwl
+      MD5 of measurement file: dfc3c0cc9f7030ddb51e0d4dc518bff3
+      Date checked           : 01OCT26
+      Beginning year         : 1938
+      Ending year            : 1991
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Boulex
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 46.7844 N
+      Longitude              : 6.9247 E
+      Elevation              : 475 m
+
+      Series intercorrelation: 0.640
+      Avg mean sensitivity   : 0.226
+      Avg standard deviation : 0.671
+      Avg autocorrelation    : 0.558
+      Number dated series    : 8
+      Segment length tested  : 26
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit318
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  26-year dated segments, lagged  13 years
+ Flags:  A = correlation under   .4534 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1963 
+                        1975 1988 
+ --- -------- ---------  ---- ---- 
+   1 PA00826G 1942 1991  .74  .76 
+   2 PA00826P 1942 1991  .70  .68 
+   3 PA01026G 1942 1991  .76  .72 
+   4 PA01026P 1942 1991  .82  .72 
+   5 PA01246G 1938 1991  .85  .79 
+   6 PA01246P 1938 1991  .84  .83 
+   7 PA02141G 1939 1991  .57  .69 
+   8 PA02141P 1939 1991  .60  .75 
+ Av segment correlation  .74  .74 
+
+ FLAGGED SEGMENTS: swit318
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swit318
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PA00826G 1942 1991     50      2      0    .646   2.12   4.53   .919   .862   .169   1.56   .189   .027   1
+   2 PA00826P 1942 1991     50      2      0    .509   1.80   4.11   .574   .616   .197   1.42   .185   .119   0
+   3 PA01026G 1942 1991     50      2      0    .710   2.05   4.11   .626   .467   .226   1.76   .236   .057   1
+   4 PA01026P 1942 1991     50      2      0    .757   1.90   4.03   .608   .514   .212   1.62   .220   .129   1
+   5 PA01246G 1938 1991     54      2      0    .714   2.16   3.97   .787   .606   .243   1.84   .268   .073   1
+   6 PA01246P 1938 1991     54      2      0    .802   1.66   2.99   .627   .565   .256   2.43   .316  -.001   1
+   7 PA02141G 1939 1991     53      2      0    .360   1.93   3.13   .564   .535   .237   1.77   .221   .011   0
+   8 PA02141P 1939 1991     53      2      0    .619   2.46   4.16   .667   .309   .264   1.53   .237   .164   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            414     16      0    .640   2.01   4.53   .671   .558   .226   2.43   .235   .072
+
+ DATA CHECKS (rwl.check): swit318
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit318.rwl
+ 8 series, 414 measurements, 1938-1991, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit318.rwl, MD5 dfc3c0cc9f7030ddb51e0d4dc518bff3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4534 for 26-year segments.
+ Segments: 26 years, lagged 13, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 26 years: the record is only 54 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

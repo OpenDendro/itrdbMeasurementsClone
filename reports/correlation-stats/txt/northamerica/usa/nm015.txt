@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: nm015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nm015.rwl
+      MD5 of measurement file: ba280ff96bd9de42eed91d306aa7c3a9
+      Date checked           : 01OCT26
+      Beginning year         : 1535
+      Ending year            : 1968
+      Principal investigators: Lamarche, V.C.; Harlan, T.P.
+      Site name              : Red Dome
+      Species information    : PIAR Pinus aristata Engelm.
+      Latitude               : 36.5500 N
+      Longitude              : 105.3800 W
+      Elevation              : 3688 m
+
+      Series intercorrelation: 0.505
+      Avg mean sensitivity   : 0.198
+      Avg standard deviation : 0.296
+      Avg autocorrelation    : 0.855
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 6, B 13; 5 of the B weak at every lag)
+      Pct problem segments   : 13.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nm015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 092011   1640 1968            .28A .49  .52  .34  .44  .62  .68  .66  .37  .36  .47 
+   2 092012   1642 1968            .27B .27A .34  .29A .40  .57  .76  .66  .47  .49  .28A
+   3 092021   1556 1968  .32B .45  .55  .65  .67  .56  .52  .61  .75  .69  .62  .62  .42 
+   4 092022   1591 1968  .45  .64  .67  .71  .73  .55  .53  .64  .75  .73  .69  .60  .28B
+   5 092031   1597 1968  .06B .26B .25B .35B .33  .45  .53  .48  .77  .72  .64  .65  .43 
+   6 092032   1625 1968            .26B .24A .37  .52  .42  .44  .52  .51  .54  .45  .30A
+   7 092041   1680 1968                      .65  .75  .77  .67  .69  .63  .64  .71  .67 
+   8 092042   1734 1968                                .66  .71  .43B .52  .70  .56  .29B
+   9 092043   1680 1968                      .66  .63  .70  .74  .65  .58  .60  .72  .49 
+  10 092051   1680 1968                      .55  .76  .68  .65  .72  .73  .71  .72  .73 
+  11 092052   1685 1968                      .35  .52  .63  .67  .74  .73  .65  .67  .66 
+  12 092053   1680 1968                      .40  .56  .67  .70  .74  .70  .67  .70  .59 
+  13 092061   1794 1968                                          .51  .57  .67  .71  .59 
+  14 092062   1535 1774  .05B .15B .50  .41  .40  .56                                    
+  15 092071   1835 1968                                                    .34  .42  .21B
+ Av segment correlation  .22  .38  .40  .45  .50  .54  .58  .62  .67  .65  .59  .60  .46 
+
+ FLAGGED SEGMENTS: nm015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 092011   1650 1699     A     .282         0
+   2 092012   1650 1699     B     .266        -3      .363   .097
+   2 092012   1675 1724     A     .266         0
+   2 092012   1725 1774     A     .293         0
+   2 092012   1900 1949     A     .278         0
+   3 092021   1600 1649     B     .324        -2      .359   .035
+   4 092022   1900 1949     B     .276        -2      .366   .090
+   5 092031   1600 1649     B     .056        -4      .293   .238  weak at every lag
+   5 092031   1625 1674     B     .261        -4      .308   .048  weak at every lag
+   5 092031   1650 1699     B     .246        -5      .372   .126
+   5 092031   1675 1724     B     .352        -2      .397   .045
+   6 092032   1650 1699     B     .262         2      .305   .043  weak at every lag
+   6 092032   1675 1724     A     .238         0
+   6 092032   1900 1949     A     .303         0
+   8 092042   1800 1849     B     .434         3      .532   .097
+   8 092042   1900 1949     B     .285         8      .325   .040  weak at every lag
+  14 092062   1600 1649     B     .048         4      .365   .317
+  14 092062   1625 1674     B     .149        -1      .347   .197
+  15 092071   1900 1949     B     .209         4      .287   .078  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nm015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 092011   1640 1968    329     11      1    .484    .56   1.72   .339   .891   .199   1.63   .197   .030   1
+   2 092012   1642 1968    327     11      4    .445    .86   2.20   .426   .908   .166   1.69   .187   .046   2
+   3 092021   1556 1968    413     13      1    .447    .63   1.86   .313   .890   .195   1.86   .213   .018   1
+   4 092022   1591 1968    378     13      1    .590    .46   1.58   .290   .885   .199   1.73   .213  -.028   1
+   5 092031   1597 1968    372     13      4    .434    .39   1.01   .158   .835   .194   1.64   .194  -.002   2
+   6 092032   1625 1968    344     11      3    .432    .48   1.45   .314   .940   .168   2.06   .182  -.021   1
+   7 092041   1680 1968    289      9      0    .654    .92   2.37   .366   .864   .164   1.54   .171  -.005   3
+   8 092042   1734 1968    235      7      2    .544    .60   1.43   .269   .884   .252   1.64   .209   .004   2
+   9 092043   1680 1968    289      9      0    .615    .73   1.56   .282   .832   .207   1.49   .201  -.006   2
+  10 092051   1680 1968    289      9      0    .659    .44    .85   .159   .759   .193   1.84   .211   .002   1
+  11 092052   1685 1968    284      9      0    .595    .91   1.91   .319   .730   .217   1.63   .214  -.003   1
+  12 092053   1680 1968    289      9      0    .607    .66   1.62   .237   .783   .185   1.57   .199   .033   1
+  13 092061   1794 1968    175      5      0    .573    .44   1.62   .353   .979   .208   1.56   .193   .015   2
+  14 092062   1535 1774    240      6      2    .188    .69   1.71   .313   .834   .228   1.64   .234   .015   1
+  15 092071   1835 1968    134      3      1    .142    .86   1.98   .372   .747   .257   1.56   .252  -.076   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4387    138     19    .505    .63   2.37   .296   .855   .198   2.06   .203   .004
+
+ DATA CHECKS (rwl.check): nm015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nm015.rwl
+ 15 series, 4387 measurements, 1535-1968, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file nm015.rwl, MD5 ba280ff96bd9de42eed91d306aa7c3a9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

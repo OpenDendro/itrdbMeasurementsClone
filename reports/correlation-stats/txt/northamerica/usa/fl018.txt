@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: fl018
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fl018.rwl
+      MD5 of measurement file: bb9103bf4bc4b5b12278132aecbc5021
+      Date checked           : 01OCT26
+      Beginning year         : 1917
+      Ending year            : 2017
+      Principal investigators: Zampieri, N.; Pau, S.
+      Site name              : Myakka River State Park
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 27.2500 N
+      Longitude              : 82.2500 W
+      Elevation              : 12 m
+
+      Avg mean sensitivity   : 0.408
+      Avg standard deviation : 1.419
+      Avg autocorrelation    : 0.687
+      Number dated series    : 32
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: fl018
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MRSP001A 1954 2017     64                         2.89   9.86  2.280   .880   .347                        1
+   2 MRSP001B 1954 2017     63                         2.41   6.38  1.622   .820   .335                         
+   3 MRSP002B 1920 2015     96                         1.78   7.61  1.400   .631   .398                        2
+   4 MRSP006A 1950 2017     68                         1.97   5.87  1.470   .851   .401                        2
+   5 MRSP012B 1938 2017     80                         2.02   6.22  1.690   .832   .442                        3
+   6 MRSP013B 1941 2017     77                         2.26   7.77  1.630   .764   .340                        2
+   7 MRSP014B 1938 2017     80                         2.22   6.10  1.495   .859   .300                        3
+   8 MRSP016A 1921 2017     97                         2.00   4.64  1.113   .637   .417                        2
+   9 MRSP016B 1929 2017     89                         1.94   6.10  1.323   .744   .412                        0
+  10 MRSP017A 1924 2017     94                         2.00   5.69  1.315   .682   .381                        1
+  11 MRSP018A 1926 2017     92                         2.24   6.60  1.302   .643   .404                        1
+  12 MRSP018B 1933 2017     85                         2.19   6.27  1.323   .705   .388                        1
+  13 MRSP020A 1935 2013     79                         1.58   3.97   .947   .695   .382                        1
+  14 MRSP020B 1917 2016     99                         1.71   5.03  1.093   .666   .434                         
+  15 MRSP021A 1927 2017     91                         1.73   8.15  1.189   .330   .496                        1
+  16 MRSP021B 1923 2017     95                         1.81   5.12  1.123   .546   .448                        2
+  17 MRSP029A 1939 2017     79                         2.14   5.77  1.090   .765   .287                        2
+  18 MRSP029B 1941 2017     77                         2.52   6.38  1.366   .780   .282                        2
+  19 MRSP030A 1951 2017     67                         2.24   6.24  1.439   .629   .405                        3
+  20 MRSP030B 1955 2017     63                         2.31   6.76  1.581   .566   .472                        2
+  21 MRSP032A 1957 2017     61                         3.05   8.02  1.750   .702   .364                        2
+  22 MRSP032B 1960 2017     58                         3.00   7.11  1.534   .560   .421                        1
+  23 MRSP033A 1953 2017     65                         2.69   8.23  1.939   .527   .532                        0
+  24 MRSP033B 1953 2017     65                         2.51  10.59  1.970   .639   .488                        1
+  25 MRSP034A 1943 2017     75                         1.84   6.35  1.199   .714   .413                        1
+  26 MRSP034B 1941 2017     77                         1.58   7.34  1.475   .830   .501                        1
+  27 MRSP038A 1943 2017     75                         2.25   7.01  1.484   .732   .415                        1
+  28 MRSP038B 1940 2017     78                         2.27   6.67  1.533   .719   .477                        1
+  29 MRSP039  1978 2015     38                         2.78   6.87  1.561   .191   .607                        0
+  30 MRSP040A 1944 2017     74                         2.54   6.72  1.452   .790   .314                        2
+  31 MRSP040B 1939 2017     78                         1.78   5.05  1.188   .775   .343                         
+  32 MRSP044A 1946 2017     72                         2.21   6.95  1.454   .618   .503                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2451                         2.15  10.59  1.419   .687   .408                     
+
+ DATA CHECKS (rwl.check): fl018
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/fl018.rwl
+ 32 series, 2451 measurements, 1917-2017, 0.01 mm precision
+ 0 error(s), 3 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (3)
+     MRSP001B: no measurement for 1985, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     MRSP020B: no measurement for 2002, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     MRSP040B: no measurement for 2008, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file fl018.rwl, MD5 bb9103bf4bc4b5b12278132aecbc5021.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series MRSP001B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series MRSP020B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series MRSP040B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ No segment could be tested: 'seg.length' can be at most 1/2 the number of years in 'rwl'.

@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: russ179w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ179w.rwl
+      MD5 of measurement file: f12d18a4e39c350d1c92189ad3979d5a
+      Date checked           : 01OCT26
+      Beginning year         : 1976
+      Ending year            : 1998
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Markovo, junge Bäume
+      Species information    : LAGM Larix gmelinii (Rupr.) Kuzen.=L.kurulensis(Maxim ex Regel)Pilg.=L.dahuricaTurcz.exTratv=Larix cajanderi Mayr
+      Latitude               : 64.8300 N
+      Longitude              : 169.0000 E
+      Elevation              : 324 m
+
+      Series intercorrelation: 0.538
+      Avg mean sensitivity   : 0.188
+      Avg standard deviation : 0.519
+      Avg autocorrelation    : 0.343
+      Number dated series    : 14
+      Segment length tested  : 10
+
+      Number problem segments: 14  (A 6, B 8; 8 of the B weak at every lag)
+      Pct problem segments   : 66.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ179w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  10-year dated segments, lagged   5 years
+ Flags:  A = correlation under   .7155 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1980 1985 
+                        1989 1994 
+ --- -------- ---------  ---- ---- 
+   1 125101   1979 1998  .69A .20B
+   2 125102   1978 1998  .60A .52A
+   3 125111   1979 1998       .33B
+   4 125112   1980 1998       .51A
+   5 125121   1976 1998  .89  .24B
+   6 125122   1977 1998  .84  .33B
+   7 125131   1981 1998       .76 
+   8 125132   1978 1998  .30B .76 
+   9 125141   1982 1998       .67A
+  10 125142   1977 1998  .86  .82 
+  11 125151   1978 1998       .51B
+  12 125152   1978 1998  .29B .37B
+  13 125161   1984 1998       .55A
+  14 125162   1981 1998       .74 
+ Av segment correlation  .64  .52 
+
+ FLAGGED SEGMENTS: russ179w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 125101   1980 1989     A     .685         0
+   1 125101   1985 1994     B     .202         1      .591   .390  weak at every lag
+   2 125102   1980 1989     A     .600         0
+   2 125102   1985 1994     A     .518         0
+   3 125111   1985 1994     B     .334         4      .688   .354  weak at every lag
+   4 125112   1985 1994     A     .509         0
+   5 125121   1985 1994     B     .245         4      .663   .419  weak at every lag
+   6 125122   1985 1994     B     .335         4      .669   .335  weak at every lag
+   8 125132   1980 1989     B     .297         4      .526   .229  weak at every lag
+   9 125141   1985 1994     A     .669         0
+  11 125151   1985 1994     B     .515         2      .692   .177  weak at every lag
+  12 125152   1980 1989     B     .294         4      .480   .187  weak at every lag
+  12 125152   1985 1994     B     .370        -7      .573   .203  weak at every lag
+  13 125161   1985 1994     A     .549         0
+
+ DESCRIPTIVE STATISTICS: russ179w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 125101   1979 1998     20      2      2    .441   2.47   3.49   .741   .786   .141   1.43   .160  -.176   1
+   2 125102   1978 1998     21      2      2    .430   2.84   4.03   .875   .720   .187   1.27   .189  -.166   1
+   3 125111   1979 1998     20      1      1    .372   2.99   3.93   .469   .305   .147   1.18   .103  -.127   3
+   4 125112   1980 1998     19      1      1    .524   3.13   4.18   .584   .421   .142   1.29   .113  -.262   2
+   5 125121   1976 1998     23      2      1    .594   1.88   3.11   .462   .214   .241   1.53   .204  -.105   0
+   6 125122   1977 1998     22      2      1    .609   2.09   3.31   .460   .013   .249   1.20   .154   .011   3
+   7 125131   1981 1998     18      1      0    .724   2.77   3.72   .470  -.003   .193   1.33   .167  -.015   0
+   8 125132   1978 1998     21      2      1    .484   2.13   3.33   .516   .420   .225   1.49   .212   .045   1
+   9 125141   1982 1998     17      1      1    .667   2.42   3.53   .463   .281   .184   1.44   .185   .237   0
+  10 125142   1977 1998     22      2      0    .802   2.62   3.32   .307  -.045   .132   1.17   .105  -.198   0
+  11 125151   1978 1998     21      1      1    .482   1.87   2.47   .301   .213   .174   1.16   .105  -.141   3
+  12 125152   1978 1998     21      2      2    .311   1.81   2.64   .446   .278   .229   1.49   .218   .147   0
+  13 125161   1984 1998     15      1      1    .461   2.13   2.95   .445   .566   .141   1.29   .160   .353   0
+  14 125162   1981 1998     18      1      0    .636   1.94   3.71   .754   .763   .231   1.32   .217   .196   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            278     21     14    .538   2.36   4.18   .519   .343   .188   1.53   .164  -.027
+
+ DATA CHECKS (rwl.check): russ179w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ179w.rwl
+ 14 series, 278 measurements, 1976-1998, 0.01 mm precision
+ 0 error(s), 0 warning(s), 14 note(s)
+ -------------
+ Nothing to report at this severity.
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file russ179w.rwl, MD5 f12d18a4e39c350d1c92189ad3979d5a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.7155 for 10-year segments.
+ Segments: 10 years, lagged 5, first segment floored to 10. Lags searched: +/- 9 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 10 years: the record is only 23 years long.
+ Lags searched reduced from 10 to 9 years to fit the segment length.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

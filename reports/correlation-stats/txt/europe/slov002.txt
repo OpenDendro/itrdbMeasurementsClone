@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: slov002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : slov002.rwl
+      MD5 of measurement file: 80459dcaaf2ddb93a263f2d035f42107
+      Date checked           : 01OCT26
+      Beginning year         : 1859
+      Ending year            : 1994
+      Principal investigators: Levanič, T.; Cufar, K.
+      Site name              : Javornik Postojna
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 45.7700 N
+      Longitude              : 14.2800 E
+      Elevation              : 950 m
+
+      Series intercorrelation: 0.524
+      Avg mean sensitivity   : 0.234
+      Avg standard deviation : 1.144
+      Avg autocorrelation    : 0.815
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 18.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: slov002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 JAV00101 1910 1993       .57 
+   2 JAV00201 1868 1993  .65  .75 
+   3 JAV00301 1877 1993  .51  .60 
+   4 JAV00401 1904 1993       .84 
+   5 JAV00501 1899 1993       .65 
+   6 JAV00601 1892 1993  .75  .71 
+   7 JAV00701 1914 1993       .30A
+   8 JAV00801 1898 1992  .51  .51 
+   9 JAV01201 1859 1992  .12B .24B
+  10 JAV01301 1883 1993  .62  .68 
+  11 JAV01501 1889 1994  .34B .24B
+  12 JAV01101 1894 1993  .75  .79 
+  13 JAV00901 1907 1993       .69 
+  14 JAV01001 1892 1988  .53  .56 
+  15 JAV01401 1893 1993  .75  .71 
+  16 JAV01600 1882 1994  .85  .79 
+ Av segment correlation  .58  .60 
+
+ FLAGGED SEGMENTS: slov002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 JAV00701 1925 1974     A     .296         0
+   9 JAV01201 1900 1949     B     .124        -1      .438   .314
+   9 JAV01201 1925 1974     B     .244         4      .247   .003  weak at every lag
+  11 JAV01501 1900 1949     B     .336        -1      .537   .201
+  11 JAV01501 1925 1974     B     .238        -1      .536   .298
+
+ DESCRIPTIVE STATISTICS: slov002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 JAV00101 1910 1993     84      1      0    .610   2.61   4.51   .811   .502   .232   1.47   .222   .146   0
+   2 JAV00201 1868 1993    126      2      0    .492   1.90   3.94   .813   .750   .240   1.56   .239   .074   3
+   3 JAV00301 1877 1993    117      2      0    .501   2.00   4.85  1.134   .846   .217   1.76   .230   .012   1
+   4 JAV00401 1904 1993     90      1      0    .820   2.43   5.45  1.258   .799   .248   1.65   .246  -.031   3
+   5 JAV00501 1899 1993     95      1      0    .580   2.28   4.95  1.144   .809   .222   1.62   .237  -.043   3
+   6 JAV00601 1892 1993    102      2      0    .713   2.37   6.61  1.300   .829   .241   1.69   .264  -.015   2
+   7 JAV00701 1914 1993     80      1      1    .276   1.58   3.77   .863   .852   .274   1.57   .249   .006   3
+   8 JAV00801 1898 1992     95      2      0    .569   1.95   4.75  1.199   .916   .185   1.48   .178  -.030   1
+   9 JAV01201 1859 1992    134      2      2    .073   1.53   4.00   .837   .854   .247   1.70   .249  -.008   1
+  10 JAV01301 1883 1993    111      2      0    .610   1.66   4.89  1.146   .877   .260   1.70   .273  -.018   3
+  11 JAV01501 1889 1994    106      2      2    .098   2.01   4.42  1.022   .854   .219   1.46   .221  -.042   1
+  12 JAV01101 1894 1993    100      2      0    .723   2.82   6.01  1.331   .867   .196   1.43   .181  -.028   3
+  13 JAV00901 1907 1993     87      1      0    .686   3.61   7.97  1.578   .767   .243   1.60   .249  -.041   3
+  14 JAV01001 1892 1988     97      2      0    .388   2.10   8.23  1.428   .816   .297   1.81   .293   .088   2
+  15 JAV01401 1893 1993    101      2      0    .715   2.51   6.19  1.566   .895   .254   1.65   .259   .050   3
+  16 JAV01600 1882 1994    113      2      0    .701   3.33   5.64  1.042   .759   .180   1.41   .174  -.070   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1638     27      5    .524   2.27   8.23  1.144   .815   .234   1.81   .235   .002
+
+ DATA CHECKS (rwl.check): slov002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/slov002.rwl
+ 16 series, 1638 measurements, 1859-1994, 0.01 mm precision
+ 1 error(s), 1 warning(s), 0 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     JAV01501: correlates best with the master at lag -1 (r = 0.608 against r = 0.354 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1417-1994 but the measurements cover 1859-1994
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file slov002.rwl, MD5 80459dcaaf2ddb93a263f2d035f42107.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

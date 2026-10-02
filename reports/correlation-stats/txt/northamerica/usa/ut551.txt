@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: ut551
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ut551.rwl
+      MD5 of measurement file: bbdb6456cf3838ad98bbd932bfaa7e34
+      Date checked           : 01OCT26
+      Beginning year         : 1840
+      Ending year            : 2019
+      Principal investigators: Birch, J.D.; DeRose, R.J.; Xu, C.; Jess, R.
+      Site name              : Bear Lake Summit
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 41.8990 N
+      Longitude              : 111.4760 W
+      Elevation              : 2420 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.210
+      Avg standard deviation : 0.692
+      Avg autocorrelation    : 0.677
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 4.55
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ut551
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BLS1B    1932 2019            .39 
+   2 BLS1A    1921 2019       .36  .67 
+   3 BLS2     1914 2019       .63  .85 
+   4 BLS3A    1859 2019  .72  .66  .43 
+   5 BLS3B    1840 2019  .60  .75  .79 
+   6 BLS4A    1906 2019       .73  .69 
+   7 BLS4B    1895 2019  .60  .79  .75 
+   8 BLS5A    1940 2019            .66 
+   9 BLS5B    1917 2019       .31A .66 
+  10 BLS7A    1873 2019  .59  .80  .82 
+ Av segment correlation  .63  .63  .67 
+
+ FLAGGED SEGMENTS: ut551
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 BLS5B    1925 1974     A     .305         0
+
+ DESCRIPTIVE STATISTICS: ut551
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BLS1B    1932 2019     88      1      0    .438   2.16   5.21   .934   .789   .207   1.66   .220   .023   1
+   2 BLS1A    1921 2019     99      2      0    .579   2.01   6.13  1.010   .786   .230   1.96   .249   .036   2
+   3 BLS2     1914 2019    106      2      0    .689   1.94   3.29   .630   .686   .210   1.70   .207   .008   1
+   4 BLS3A    1859 2019    161      3      0    .435   2.25   4.60   .669   .591   .197   1.57   .195  -.003   1
+   5 BLS3B    1840 2019    180      3      0    .572   1.80   3.90   .580   .703   .197   1.62   .195   .011   1
+   6 BLS4A    1906 2019    114      2      0    .666   1.85   3.04   .516   .620   .185   1.51   .189  -.009   1
+   7 BLS4B    1895 2019    125      3      0    .719   2.00   3.73   .540   .487   .216   1.53   .216  -.002   1
+   8 BLS5A    1940 2019     80      1      0    .544   1.66   5.53   .777   .512   .219   2.02   .273   .028   2
+   9 BLS5B    1917 2019    103      2      1    .255   1.59   3.75   .877   .862   .239   2.55   .322   .003   1
+  10 BLS7A    1873 2019    147      3      0    .568   1.35   3.34   .632   .757   .213   1.71   .217   .009   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1203     22      1    .549   1.86   6.13   .692   .677   .210   2.55   .223   .009
+
+ DATA CHECKS (rwl.check): ut551
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ut551.rwl
+ 10 series, 1203 measurements, 1840-2019, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     BLS5B: correlates with the rest of the collection at r = 0.189 where the collection median is 0.582 (5 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ut551.rwl, MD5 bbdb6456cf3838ad98bbd932bfaa7e34.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

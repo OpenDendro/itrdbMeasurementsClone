@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: germ146
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ146.rwl
+      MD5 of measurement file: f262bcf63c44f561c1e7dd36637cbbfa
+      Date checked           : 01OCT26
+      Beginning year         : 1613
+      Ending year            : 1731
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Spitalgasse, Hospitalstiftung Bad Windsheim
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 49.8833 N
+      Longitude              : 10.4167 E
+      Elevation              : 339 m
+
+      Series intercorrelation: 0.715
+      Avg mean sensitivity   : 0.287
+      Avg standard deviation : 0.638
+      Avg autocorrelation    : 0.736
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ146
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1650 1675 
+                        1699 1724 
+ --- -------- ---------  ---- ---- 
+   1 FBW04    1613 1717  .53      
+   2 FBW05    1644 1729  .83  .83 
+   4 FBW07    1668 1731       .81 
+   7 FBW10    1650 1730       .87 
+   8 FBW11    1649 1726  .70  .76 
+ Av segment correlation  .69  .82 
+
+ FLAGGED SEGMENTS: germ146
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ146
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FBW04    1613 1717    105      1      0    .590    .80   3.39   .471   .811   .249   1.71   .253   .080   1
+   2 FBW05    1644 1729     86      2      0    .781   1.23   2.82   .584   .777   .248   1.76   .278   .068   1
+   3 FBW06    1685 1730     46      0      0    .651   1.46   3.36   .716   .562   .365   2.16   .389   .011   1
+   4 FBW07    1668 1731     64      1      0    .763   1.09   3.21   .592   .621   .343   1.90   .335   .021   2
+   5 FBW08    1675 1726     52      0      0    .747   1.31   4.15  1.000   .814   .299   1.80   .317  -.055   1
+   6 FBW09    1691 1731     41      0      0    .700   1.91   4.33   .970   .597   .374   1.63   .325   .046   1
+   7 FBW10    1650 1730     81      1      0    .779   1.33   3.29   .687   .820   .258   1.88   .270  -.004   1
+   8 FBW11    1649 1726     78      2      0    .727    .93   2.53   .446   .720   .268   1.83   .280  -.052   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            553      7      0    .715   1.18   4.33   .638   .736   .287   2.16   .295   .019
+
+ DATA CHECKS (rwl.check): germ146
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ146.rwl
+ 8 series, 553 measurements, 1613-1731, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file germ146.rwl, MD5 f262bcf63c44f561c1e7dd36637cbbfa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

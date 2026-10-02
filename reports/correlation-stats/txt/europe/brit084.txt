@@ -1,0 +1,61 @@
+
+ COFECHA-style crossdating report: brit084
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit084.rwl
+      MD5 of measurement file: 455bde692e89d0f1e43c8fff2c4b9206
+      Date checked           : 01OCT26
+      Beginning year         : 1368
+      Ending year            : 1670
+      Principal investigators: Groves, C.; Locatelli, C.
+      Site name              : 107 Jermyn Street
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 51.5086 N
+      Longitude              : 0.1358 W
+      Elevation              : 23 m
+
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.511
+      Avg autocorrelation    : 0.893
+      Number dated series    : 1
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: brit084
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 JM11627  1368 1670    303                          .57   2.66   .511   .893   .199                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            303                          .57   2.66   .511   .893   .199                     
+
+ DATA CHECKS (rwl.check): brit084
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit084.rwl
+ 1 series, 303 measurements, 1368-1670, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file brit084.rwl, MD5 455bde692e89d0f1e43c8fff2c4b9206.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 1 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

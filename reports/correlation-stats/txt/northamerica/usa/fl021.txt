@@ -1,0 +1,213 @@
+
+ COFECHA-style crossdating report: fl021
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fl021.rwl
+      MD5 of measurement file: 6363387a946520dc82e5b3c091032940
+      Date checked           : 01OCT26
+      Beginning year         : 1809
+      Ending year            : 2017
+      Principal investigators: Zampieri, N.; Pau, S.
+      Site name              : Withlacoochee State Forest
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 28.7000 N
+      Longitude              : 82.4100 W
+      Elevation              : 34 m
+
+      Series intercorrelation: 0.462
+      Avg mean sensitivity   : 0.333
+      Avg standard deviation : 1.139
+      Avg autocorrelation    : 0.723
+      Number dated series    : 56
+      Series crossdated      : 50
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7; 4 of the B weak at every lag)
+      Pct problem segments   : 20.93
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fl021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 W112aEAR 1921 2017       .33  .49 
+   2 W112bEAR 1913 2017      -.02B .42 
+  12 WISF034A 1945 2016            .55 
+  13 WISF034B 1946 2017            .48 
+  20 WISF072A 1922 2017       .36  .64 
+  21 WISF072B 1913 2017      -.16B .25B
+  22 WISF073A 1899 2017 -.01B .15B .37 
+  24 WISF074B 1904 2016       .54  .43 
+  25 WISF075A 1913 2017       .39  .31A
+  27 WISF076B 1927 2017            .79 
+  28 WISF099A 1929 2017            .62 
+  29 WISF099B 1932 2017            .55 
+  31 WISF112C 1826 1960  .31A          
+  32 WISF112D 1825 1960  .38           
+  33 WISF113A 1931 2017            .51 
+  34 WISF113B 1938 2017            .48 
+  35 WISF115A 1920 2017       .35  .38 
+  36 WISF115B 1922 2016       .06B .38 
+  37 WISF116A 1929 2017            .58 
+  38 WISF116B 1926 2017            .52 
+  40 WISF117B 1939 2017            .37 
+  43 WISF157A 1920 2017       .50  .51 
+  44 WISF157B 1929 2017            .39 
+  45 WISF158A 1922 2017       .04B .42 
+  47 WISF159A 1914 2017       .48  .53 
+  48 WISF159B 1918 2017       .44  .51 
+  49 WISF160A 1928 2017            .64 
+  51 WISF161A 1925 2017            .48 
+  52 WISF161B 1938 2016            .44 
+ Av segment correlation  .23  .26  .48 
+
+ FLAGGED SEGMENTS: fl021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 W112bEAR 1925 1974     B    -.022         3      .257   .279  weak at every lag
+  21 WISF072B 1925 1974     B    -.164        -4      .321   .485  weak at every lag
+  21 WISF072B 1950 1999     B     .248         2      .341   .093
+  22 WISF073A 1900 1949     B    -.007        -4      .217   .224  weak at every lag
+  22 WISF073A 1925 1974     B     .145         4      .272   .127  weak at every lag
+  25 WISF075A 1950 1999     A     .311         0
+  31 WISF112C 1900 1949     A     .310         0
+  36 WISF115B 1925 1974     B     .063         3      .334   .271
+  45 WISF158A 1925 1974     B     .039        -7      .377   .338
+
+ DESCRIPTIVE STATISTICS: fl021
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 W112aEAR 1921 2017     97      2      0    .493    .96   2.77   .495   .692   .304   1.97   .293   .022   1
+   2 W112bEAR 1913 2017    105      2      1    .288   1.49   3.16   .611   .559   .293   1.89   .303  -.019   2
+   3 WISF001  1965 2017     53      0      0    .504   2.08   4.98  1.339   .707   .407   1.69   .345  -.033   1
+   4 WISF002  1955 2015     61      0      0    .446   1.30   3.89   .845   .606   .466   2.58   .443   .127   0
+   5 WISF003  1967 2016     50      0      0    .399   1.27   2.85   .776   .586   .474   1.64   .408   .006   1
+   6 WISF004  1965 2016     52      0      0    .586   1.72   3.77   .834   .412   .430   1.83   .371   .088   0
+   7 WISF008  1965 2017     53      0      0    .645   2.29   5.33  1.323   .688   .407   2.08   .347  -.052   2
+   8 WISF011  1985 2017     33      0      0    .528   3.00   5.30  1.308   .496   .336   1.52   .233   .048   2
+   9 WISF016  1983 2015     33      0      0    .492   2.88   5.05  1.106   .368   .352   1.62   .311   .003   2
+  10 WISF027A 1949 2017     69      0      0    .265   1.86   5.55  1.224   .630   .401   2.11   .374  -.026   3
+  11 WISF027B 1961 2017     56                         1.91   5.12  1.243   .658   .372                         
+  12 WISF034A 1945 2016     72      1      0    .532   1.87   4.62  1.040   .690   .341   1.66   .300  -.050   2
+  13 WISF034B 1946 2017     72      1      0    .530   1.81   5.02  1.006   .654   .356   1.71   .284  -.058   3
+  14 WISF035A 1971 2017     47      0      0    .467   3.88   7.49  1.685   .489   .350   1.73   .320  -.087   2
+  15 WISF035B 1963 2017     55      0      0    .479   3.80   8.05  1.986   .596   .365   2.59   .398  -.025   1
+  16 WISF036A 1952 2017     66      0      0    .606   1.97   6.05  1.018   .588   .356   2.11   .344   .037   1
+  17 WISF036B 1954 2017     64      0      0    .664   2.01   4.71   .902   .583   .320   1.83   .284   .003   2
+  18 WISF043A 1981 2017     37      0      0    .269   3.91   8.38  1.945   .743   .255   1.46   .253   .030   1
+  19 WISF043B 1981 2017     37      0      0    .473   4.23  10.20  2.443   .717   .292   1.69   .289  -.006   2
+  20 WISF072A 1922 2017     96      2      0    .566   2.33   6.35  1.195   .726   .266   1.97   .279   .063   1
+  21 WISF072B 1913 2017    105      2      2    .297   2.16   5.83  1.063   .712   .299   1.67   .281   .019   1
+  22 WISF073A 1899 2017    119      3      2    .217   1.28   5.42   .996   .867   .258   1.76   .279   .045   1
+  23 WISF073B 1966 2017     52      0      0    .353   1.16   2.96   .614   .674   .329   1.82   .339   .062   3
+  24 WISF074B 1904 2016    113      2      0    .270   1.64  11.36  2.086   .952   .323   2.09   .326   .018   1
+  25 WISF075A 1913 2017    105      2      1    .434   1.44   3.76   .728   .624   .358   2.50   .359   .130   0
+  26 WISF076A 1927 2017     89                         2.11   5.51  1.318   .890   .267                         
+  27 WISF076B 1927 2017     91      1      0    .726   2.26   5.64  1.504   .920   .271   2.11   .294   .033   0
+  28 WISF099A 1929 2017     89      1      0    .581   2.10   5.00  1.331   .866   .321   2.20   .338   .091   0
+  29 WISF099B 1932 2017     86      1      0    .645   2.24   5.83  1.375   .864   .307   1.90   .288  -.035   2
+  30 WISF112A 1809 2017    208                          .73   2.77   .521   .773   .369                         
+  31 WISF112C 1826 1960    135      1      1    .281    .76   2.69   .612   .777   .404   2.47   .428  -.004   1
+  32 WISF112D 1825 1960    136      1      0    .292    .75   2.69   .614   .776   .406   2.45   .440  -.000   1
+  33 WISF113A 1931 2017     87      1      0    .554   1.97   3.97   .743   .550   .286   1.53   .272   .134   0
+  34 WISF113B 1938 2017     80      1      0    .486   2.05   4.31   .899   .705   .256   1.87   .283   .031   1
+  35 WISF115A 1920 2017     98      2      0    .314   1.95   7.37  1.284   .777   .297   2.63   .323  -.025   0
+  36 WISF115B 1922 2016     95      2      1    .363   1.88   5.27  1.234   .875   .257   1.63   .268   .027   1
+  37 WISF116A 1929 2017     89      1      0    .524   1.96   7.44  1.511   .747   .381   1.94   .344   .000   2
+  38 WISF116B 1926 2017     92      1      0    .494   1.90   4.41  1.036   .642   .374   1.96   .327   .019   2
+  39 WISF117A 1936 2017     81                         1.84   3.47   .728   .678   .261                         
+  40 WISF117B 1939 2017     79      1      0    .290   2.12   4.23   .905   .630   .307   2.04   .271  -.047   2
+  41 WISF156A 1964 2017     54      0      0    .551   2.22   4.67  1.205   .574   .417   1.84   .338  -.023   0
+  42 WISF156B 1959 2017     59      0      0    .513   2.17   4.87  1.126   .630   .369   1.78   .314  -.020   3
+  43 WISF157A 1920 2017     98      2      0    .485   1.51   5.54  1.180   .816   .350   1.94   .319   .036   1
+  44 WISF157B 1929 2017     89      1      0    .381   1.69   7.26  1.277   .809   .337   1.79   .302   .024   1
+  45 WISF158A 1922 2017     96      2      1    .532   2.02   8.39  1.456   .862   .311   2.57   .319  -.029   2
+  46 WISF158B 1922 2017     95                         2.26   8.38  1.640   .882   .302                         
+  47 WISF159A 1914 2017    104      2      0    .569   2.10   5.05  1.018   .636   .340   1.60   .273  -.034   0
+  48 WISF159B 1918 2017    100      2      0    .489   2.01   5.32   .844   .499   .294   1.85   .252  -.033   0
+  49 WISF160A 1928 2017     90      1      0    .377   1.89   7.50  1.497   .837   .321   3.12   .375  -.001   1
+  50 WISF160B 1929 2017     88                         1.83   6.13  1.467   .903   .271                         
+  51 WISF161A 1925 2017     93      1      0    .577   2.25   4.48  1.077   .761   .291   2.22   .325   .046   1
+  52 WISF161B 1938 2016     79      1      0    .530   1.94   5.24  1.173   .836   .313   2.20   .314  -.066   0
+  53 WISF163A 1974 2017     44      0      0    .731   3.85  10.80  2.333   .668   .405   2.07   .363   .049   0
+  54 WISF163B 1973 2017     45      0      0    .703   3.94   9.36  2.452   .663   .423   1.64   .339  -.037   0
+  55 WISF177A 1960 2017     58      0      0    .561   2.46   6.65  1.454   .695   .319   1.98   .311  -.064   2
+  56 WISF177B 1964 2017     54      0      0    .621   2.52   5.25  1.293   .601   .331   2.22   .359   .065   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4483     43      9    .462   1.91  11.36  1.139   .723   .333   3.12   .323   .011
+
+ DATA CHECKS (rwl.check): fl021
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/fl021.rwl
+ 56 series, 4483 measurements, 1809-2017, 0.01 mm precision
+ 2 error(s), 6 warning(s), 23 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     WISF112C: correlates best with the master at lag -1 (r = 0.475 against r = 0.402 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+     WISF112D: correlates best with the master at lag 1 (r = 0.471 against r = 0.411 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (6)
+     WISF027B: no measurement for 2014, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     WISF076A: no measurement for 2005, 2009, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     WISF112A: no measurement for 1855, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     WISF117A: no measurement for 2009, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     WISF158B: no measurement for 1986, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     WISF160B: no measurement for 2001, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 23 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file fl021.rwl, MD5 6363387a946520dc82e5b3c091032940.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series WISF027B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series WISF076A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series WISF112A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series WISF117A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series WISF158B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series WISF160B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

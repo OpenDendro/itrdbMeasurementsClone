@@ -1,0 +1,112 @@
+
+ COFECHA-style crossdating report: germ160
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ160.rwl
+      MD5 of measurement file: d6916f5964f24d329d33eeaf28b90eda
+      Date checked           : 01OCT26
+      Beginning year         : 1871
+      Ending year            : 2009
+      Principal investigators: Neuwirth, B.
+      Site name              : Hessen/Kellerwald dhk36
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 51.1500 N
+      Longitude              : 8.9833 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.795
+      Avg mean sensitivity   : 0.339
+      Avg standard deviation : 0.592
+      Avg autocorrelation    : 0.691
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ160
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 dhk3612m 1874 2009  .83  .77  .78 
+   2 dhk3601m 1871 2009  .91  .89  .91 
+   3 dhk3602m 1872 2009  .73  .80  .83 
+   4 dhk3603m 1873 2009  .83  .90  .85 
+   5 dhk3604m 1878 2009  .86  .87  .83 
+   6 dhk3605m 1872 2009  .84  .79  .69 
+   7 dhk3606m 1880 2009  .84  .88  .86 
+   8 dhk3607m 1878 2007  .78  .67  .63 
+   9 dhk3608m 1873 2009  .86  .82  .84 
+  10 dhk3609m 1895 2009  .72  .76  .83 
+  11 dhk3610m 1878 2009  .82  .81  .81 
+  12 dhk3611m 1872 2009  .77  .74  .65 
+ Av segment correlation  .82  .81  .79 
+
+ FLAGGED SEGMENTS: germ160
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ160
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 dhk3612m 1874 2009    136      3      0    .805    .98   4.54   .662   .780   .337   1.77   .310  -.006   1
+   2 dhk3601m 1871 2009    139      3      0    .876   1.06   4.98   .748   .826   .336   1.98   .303  -.003   1
+   3 dhk3602m 1872 2009    138      3      0    .748   1.35   5.03   .891   .791   .317   2.18   .315   .012   2
+   4 dhk3603m 1873 2009    137      3      0    .808   1.04   3.16   .516   .554   .342   2.29   .330  -.003   1
+   5 dhk3604m 1878 2009    132      3      0    .835    .98   1.75   .309   .353   .296   1.78   .260   .050   0
+   6 dhk3605m 1872 2009    138      3      0    .772   1.17   4.24   .654   .630   .378   1.92   .341   .066   0
+   7 dhk3606m 1880 2009    130      3      0    .837    .91   2.11   .417   .632   .302   1.76   .293  -.028   1
+   8 dhk3607m 1878 2007    130      3      0    .717    .82   2.45   .392   .710   .285   1.73   .263   .112   0
+   9 dhk3608m 1873 2009    137      3      0    .835    .75   3.23   .549   .780   .367   1.64   .322   .111   0
+  10 dhk3609m 1895 2009    115      3      0    .752    .89   2.25   .456   .599   .392   1.72   .331   .060   0
+  11 dhk3610m 1878 2009    132      3      0    .817    .93   6.23   .775   .811   .348   1.93   .307   .046   0
+  12 dhk3611m 1872 2009    138      3      0    .733    .82   4.86   .687   .792   .367   1.93   .343  -.014   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1602     36      0    .795    .98   6.23   .592   .691   .339   2.29   .310   .033
+
+ DATA CHECKS (rwl.check): germ160
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ160.rwl
+ 12 series, 1602 measurements, 1871-2009, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1871-2005 but the measurements cover 1871-2009
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file germ160.rwl, MD5 d6916f5964f24d329d33eeaf28b90eda.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: pola300
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pola300.rwl
+      MD5 of measurement file: a1baedad508bbc2606a81b832bd4fda8
+      Date checked           : 01OCT26
+      Beginning year         : 1742
+      Ending year            : 1969
+      Principal investigators: Bednarz, Z.
+      Site name              : Sucha Kasprowa
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 49.2300 N
+      Longitude              : 20.0000 E
+      Elevation              : 1550 m
+
+      Series intercorrelation: 0.608
+      Avg mean sensitivity   : 0.172
+      Avg standard deviation : 0.117
+      Avg autocorrelation    : 0.827
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 5.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pola300
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 
+                        1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 622011   1813 1969       .34  .41  .67  .72 
+   2 622021   1772 1969  .73  .54  .25B .46  .65 
+   3 622041   1786 1969  .67  .70  .65  .65  .73 
+   4 622051   1820 1969       .52  .60  .65  .67 
+   5 622071   1754 1969  .75  .67  .71  .75  .74 
+   6 622081   1806 1969       .30A .30A .59  .73 
+   7 622091   1762 1969  .70  .69  .73  .74  .78 
+   8 622111   1796 1969  .51  .22B .38  .64  .71 
+   9 622121   1742 1969  .61  .56  .59  .68  .80 
+  10 622151   1782 1969  .60  .50  .70  .61  .69 
+  11 622171   1762 1969  .60  .70  .70  .76  .65 
+  12 622181   1760 1969  .58  .42  .38  .63  .76 
+  13 622191   1792 1969  .70  .52  .60  .65  .68 
+  14 622201   1797 1969  .71  .68  .54  .73  .77 
+  15 622221   1765 1969  .61  .59  .54  .57  .62 
+  16 622261   1758 1969  .65  .52  .58  .71  .81 
+  17 622281   1750 1969  .40B .54  .51  .73  .82 
+  18 622291   1747 1969  .62  .60  .55  .62  .72 
+  19 622301   1754 1969  .78  .51  .55  .71  .71 
+  20 622901   1787 1969  .70  .60  .57  .60  .65 
+ Av segment correlation  .64  .54  .54  .66  .72 
+
+ FLAGGED SEGMENTS: pola300
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 622021   1850 1899     B     .255        -7      .303   .048  weak at every lag
+   6 622081   1825 1874     A     .305         0
+   6 622081   1850 1899     A     .296         0
+   8 622111   1825 1874     B     .220        -3      .322   .103  weak at every lag
+  17 622281   1800 1849     B     .405        -1      .539   .134
+
+ DESCRIPTIVE STATISTICS: pola300
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 622011   1813 1969    157      4      0    .543    .30    .61   .113   .851   .153   1.52   .173   .039   1
+   2 622021   1772 1969    198      5      1    .532    .26    .50   .099   .838   .168   1.64   .176   .022   1
+   3 622041   1786 1969    184      5      0    .655    .32    .85   .136   .830   .178   1.59   .193  -.020   3
+   4 622051   1820 1969    150      4      0    .596    .31    .67   .100   .786   .163   1.50   .170  -.022   3
+   5 622071   1754 1969    216      5      0    .655    .31    .81   .128   .795   .180   1.53   .187   .029   1
+   6 622081   1806 1969    164      4      2    .445    .25    .47   .100   .901   .145   1.52   .145   .038   1
+   7 622091   1762 1969    208      5      0    .712    .29    .60   .112   .830   .177   1.63   .182   .016   1
+   8 622111   1796 1969    174      5      1    .504    .20    .47   .101   .888   .198   1.58   .213  -.048   3
+   9 622121   1742 1969    228      5      0    .602    .19    .56   .115   .927   .155   1.62   .174  -.014   2
+  10 622151   1782 1969    188      5      0    .646    .21    .48   .080   .775   .191   2.01   .204   .032   1
+  11 622171   1762 1969    208      5      0    .627    .24    .50   .073   .682   .175   1.61   .186   .008   1
+  12 622181   1760 1969    210      5      0    .587    .22    .66   .129   .885   .215   1.76   .235  -.000   2
+  13 622191   1792 1969    178      5      0    .680    .28    .65   .104   .840   .154   1.46   .169   .006   3
+  14 622201   1797 1969    173      5      0    .607    .46    .87   .126   .682   .167   1.48   .178  -.021   3
+  15 622221   1765 1969    205      5      0    .595    .24    .71   .118   .880   .175   1.56   .173  -.018   3
+  16 622261   1758 1969    212      5      0    .648    .25    .66   .100   .843   .155   2.02   .169  -.000   3
+  17 622281   1750 1969    220      5      1    .560    .34    .86   .186   .929   .143   1.40   .147  -.013   2
+  18 622291   1747 1969    223      5      0    .569    .20    .56   .073   .609   .226   2.28   .263  -.020   3
+  19 622301   1754 1969    216      5      0    .700    .35    .86   .195   .913   .156   1.61   .174  -.009   2
+  20 622901   1787 1969    183      5      0    .643    .35    .84   .141   .859   .158   1.49   .159   .038   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3895     97      5    .608    .28    .87   .117   .827   .172   2.28   .184   .002
+
+ DATA CHECKS (rwl.check): pola300
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/pola300.rwl
+ 20 series, 3895 measurements, 1742-1969, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1732-1969 but the measurements cover 1742-1969
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file pola300.rwl, MD5 a1baedad508bbc2606a81b832bd4fda8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: swit295
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit295.rwl
+      MD5 of measurement file: 925c38f10bf30f495668ba4090ef61e2
+      Date checked           : 01OCT26
+      Beginning year         : 1838
+      Ending year            : 1998
+      Principal investigators: Cherubini, P.
+      Site name              : Lausanne
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.5850 N
+      Longitude              : 6.6586 E
+      Elevation              : 804 m
+
+      Series intercorrelation: 0.612
+      Avg mean sensitivity   : 0.369
+      Avg standard deviation : 0.849
+      Avg autocorrelation    : 0.697
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.55
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit295
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 fs01a    1888 1998  .62  .66 
+   2 fs01b    1855 1998  .74  .74 
+   3 fs02a    1877 1998  .80  .83 
+   4 fs02b    1874 1998  .69  .57 
+   6 fs03b    1879 1998  .68  .72 
+   7 fs04a    1859 1998  .80  .76 
+   8 fs04b    1858 1998  .71  .67 
+   9 fs05a    1845 1998  .81  .64 
+  10 fs05b    1847 1998  .81  .67 
+  11 fs06a    1846 1998  .50  .59 
+  12 fs06b    1850 1998  .23B .46 
+  13 fs07a    1857 1998  .79  .73 
+  14 fs07b    1880 1998  .72  .61 
+  15 fs08a    1868 1998  .81  .75 
+  16 fs08b    1843 1998  .68  .77 
+  17 fs09a    1838 1970  .75      
+  18 fs09b    1852 1972  .72      
+  19 fs10a    1839 1998  .44  .59 
+  20 fs10b    1847 1998  .22A .36 
+  21 fs11a    1863 1998  .67  .71 
+  22 fs11b    1849 1998  .70  .59 
+  23 fs12a    1848 1998  .47  .41 
+  24 fs12b    1849 1998  .58  .54 
+ Av segment correlation  .65  .64 
+
+ FLAGGED SEGMENTS: swit295
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 fs06b    1900 1949     B     .234         7      .280   .046  weak at every lag
+  20 fs10b    1900 1949     A     .222         0
+
+ DESCRIPTIVE STATISTICS: swit295
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 fs01a    1888 1998    111      2      0    .633   2.48   4.72   .787   .427   .279   1.66   .269  -.019   2
+   2 fs01b    1855 1998    144      2      0    .650   2.40   5.13   .959   .647   .284   1.87   .277  -.036   3
+   3 fs02a    1877 1998    122      2      0    .767   1.59   3.62   .702   .411   .421   1.78   .347  -.024   3
+   4 fs02b    1874 1998    125      2      0    .551   1.44   3.00   .556   .612   .284   1.64   .266  -.015   3
+   5 fs03a    1926 1998     73      0      0    .715   1.51   3.48   .641   .458   .402   1.72   .352  -.015   2
+   6 fs03b    1879 1998    120      2      0    .631   1.88   4.20   .785   .552   .349   2.18   .325  -.010   2
+   7 fs04a    1859 1998    140      2      0    .739   1.51   4.09   .822   .616   .416   2.58   .407  -.030   3
+   8 fs04b    1858 1998    141      2      0    .636   1.71   3.81   .822   .684   .373   2.38   .361  -.022   3
+   9 fs05a    1845 1998    154      2      0    .700   1.68   3.90   .998   .787   .433   1.95   .359  -.005   2
+  10 fs05b    1847 1998    152      2      0    .668   1.67   4.61  1.048   .801   .411   2.31   .362  -.015   2
+  11 fs06a    1846 1998    153      2      0    .532   1.64   4.20   .800   .665   .342   1.93   .327  -.040   3
+  12 fs06b    1850 1998    149      2      1    .407   1.70   4.74   .826   .618   .334   2.10   .324   .010   1
+  13 fs07a    1857 1998    142      2      0    .635   1.62   4.78  1.085   .799   .482   2.26   .417  -.029   3
+  14 fs07b    1880 1998    119      2      0    .558   1.95   5.88  1.348   .845   .392   1.95   .358  -.002   2
+  15 fs08a    1868 1998    131      2      0    .780   1.83   4.67   .849   .722   .327   1.88   .309  -.027   3
+  16 fs08b    1843 1998    156      2      0    .664   1.63   4.29   .782   .666   .339   2.15   .324  -.031   3
+  17 fs09a    1838 1970    133      1      0    .671   1.34   4.04  1.004   .897   .365   2.15   .364   .026   1
+  18 fs09b    1852 1972    121      1      0    .697   1.29   3.47   .813   .781   .401   2.24   .384  -.026   3
+  19 fs10a    1839 1998    160      2      0    .494   1.14   3.65   .729   .871   .238   1.84   .249   .023   1
+  20 fs10b    1847 1998    152      2      1    .362   1.10   7.86  1.105   .920   .306   1.81   .308  -.010   2
+  21 fs11a    1863 1998    136      2      0    .585   1.15   3.16   .551   .635   .362   1.91   .354  -.029   1
+  22 fs11b    1849 1998    150      2      0    .573   1.21   4.26   .734   .798   .351   1.88   .335  -.037   3
+  23 fs12a    1848 1998    151      2      0    .580   1.25   3.24   .745   .663   .429   2.36   .431  -.019   1
+  24 fs12b    1849 1998    150      2      0    .585   1.13   3.42   .766   .616   .533   2.80   .514   .095   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3285     44      2    .612   1.56   7.86   .849   .697   .369   2.80   .348  -.011
+
+ DATA CHECKS (rwl.check): swit295
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit295.rwl
+ 24 series, 3285 measurements, 1838-1998, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit295.rwl, MD5 925c38f10bf30f495668ba4090ef61e2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

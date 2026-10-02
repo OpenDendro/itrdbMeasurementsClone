@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: mn031
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mn031.rwl
+      MD5 of measurement file: f037b64a108053cb6b517bede52775c1
+      Date checked           : 01OCT26
+      Beginning year         : 1798
+      Ending year            : 2004
+      Principal investigators: Larson, E.R.; Elliott, G.P.
+      Site name              : Duquette General Store
+      Species information    : PIST Pinus strobus L.
+      Latitude               : 46.3697 N
+      Longitude              : 92.5533 W
+      Elevation              : 349 m
+
+      Series intercorrelation: 0.653
+      Avg mean sensitivity   : 0.236
+      Avg standard deviation : 1.142
+      Avg autocorrelation    : 0.810
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 4.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mn031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 DGS001A  1798 1999  .46  .38  .45  .68  .76  .75  .76 
+   2 dgs001b  1798 1988  .49  .53  .56  .58  .56  .48      
+   3 DGS002a  1855 2001                 .73  .68  .74  .69 
+   4 DGS002b  1861 2001                 .81  .63  .64  .63 
+   5 DGS003a  1883 2004                      .61  .55  .68 
+   6 DGS003b  1866 2004                 .67  .54  .59  .76 
+   7 DGS004a  1886 2004                      .64  .68  .69 
+   8 DGS004b  1886 2004                      .69  .79  .76 
+   9 DGS005a  1843 2004            .43  .69  .69  .69  .84 
+  10 DGS005b  1868 2004                 .76  .73  .70  .82 
+  11 DGS006a  1868 2004                 .62  .71  .74  .68 
+  12 DGS006b  1840 2004            .56  .57  .59  .67  .42 
+  13 DGS007a  1832 2003            .73  .81  .79  .84  .87 
+  14 DGS007b  1843 2004            .64  .67  .74  .79  .82 
+  15 DGS008a  1850 2004                 .68  .66  .75  .81 
+  16 DGS008b  1875 1999                      .73  .76  .84 
+  17 DGS009a  1879 1995                      .55  .66      
+  18 DGS009b  1896 1973                      .67           
+  19 DGS010a  1879 2004                      .74  .65  .57 
+  20 DGS010b  1880 2004                      .83  .57  .33A
+  21 DGS011a  1835 2004            .81  .80  .77  .61  .46 
+  22 DGS011b  1828 2004            .80  .85  .82  .53  .45 
+  23 DGS012a  1844 2004            .48  .64  .20B .15B .54 
+  24 DGS012b  1841 2004            .38  .54  .51  .51  .58 
+  25 DGS013a  1888 2004                      .70  .74  .72 
+  26 DGS013b  1852 2004                 .21B .30A .73  .63 
+ Av segment correlation  .47  .46  .58  .66  .65  .65  .67 
+
+ FLAGGED SEGMENTS: mn031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 DGS010b  1950 1999     A     .328         0
+  23 DGS012a  1900 1949     B     .199         9      .283   .084  weak at every lag
+  23 DGS012a  1925 1974     B     .154         7      .326   .172  weak at every lag
+  26 DGS013b  1875 1924     B     .206         6      .235   .029  weak at every lag
+  26 DGS013b  1900 1949     A     .302         0
+
+ DESCRIPTIVE STATISTICS: mn031
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DGS001A  1798 1999    202      7      0    .608   3.10   7.42  1.419   .805   .233   1.84   .250   .024   2
+   2 dgs001b  1798 1988    191      6      0    .469   2.14   5.96  1.340   .873   .237   1.65   .237   .043   1
+   3 DGS002a  1855 2001    147      4      0    .703   2.15   6.84  1.199   .801   .245   1.78   .263   .036   1
+   4 DGS002b  1861 2001    141      4      0    .730   1.82   5.02  1.009   .835   .258   1.93   .287   .056   1
+   5 DGS003a  1883 2004    122      3      0    .692   3.14   5.92  1.090   .732   .214   1.67   .203  -.029   3
+   6 DGS003b  1866 2004    139      4      0    .706   3.03   7.03  1.472   .839   .230   1.60   .219   .012   2
+   7 DGS004a  1886 2004    119      3      0    .706   2.73   9.14  1.812   .917   .204   2.17   .222  -.034   3
+   8 DGS004b  1886 2004    119      3      0    .773   2.84   9.04  1.770   .884   .254   1.72   .270  -.030   3
+   9 DGS005a  1843 2004    162      5      0    .647   1.89   4.80   .938   .806   .236   1.67   .239   .012   2
+  10 DGS005b  1868 2004    137      4      0    .726   2.27   5.48  1.123   .774   .255   1.75   .269   .003   2
+  11 DGS006a  1868 2004    137      4      0    .666   2.17   5.45  1.088   .802   .234   1.90   .263   .005   2
+  12 DGS006b  1840 2004    165      5      0    .521   1.85   6.92  1.017   .811   .251   1.78   .266  -.020   2
+  13 DGS007a  1832 2003    172      5      0    .811   2.10   4.54   .837   .733   .233   1.78   .239   .029   2
+  14 DGS007b  1843 2004    162      5      0    .748   2.32   5.96   .953   .780   .215   1.60   .229   .018   2
+  15 DGS008a  1850 2004    155      4      0    .748   2.03   4.92   .995   .854   .217   1.82   .236   .039   1
+  16 DGS008b  1875 1999    125      3      0    .790   2.57   5.62   .801   .629   .203   1.91   .219   .039   1
+  17 DGS009a  1879 1995    117      2      0    .636   3.46   7.62  1.473   .759   .234   1.92   .249   .000   3
+  18 DGS009b  1896 1973     78      1      0    .667   2.60   6.33  1.112   .772   .232   1.62   .243  -.002   3
+  19 DGS010a  1879 2004    126      3      0    .697   2.01   4.90  1.000   .879   .205   1.68   .221  -.018   3
+  20 DGS010b  1880 2004    125      3      1    .587   2.03   5.54  1.356   .911   .217   1.62   .219   .047   1
+  21 DGS011a  1835 2004    170      5      0    .665   2.25   5.76  1.061   .797   .245   1.61   .245   .049   1
+  22 DGS011b  1828 2004    177      5      0    .607   2.01   5.02   .981   .815   .259   2.05   .260   .003   2
+  23 DGS012a  1844 2004    161      5      2    .445   1.62   4.95   .784   .844   .220   1.81   .230   .015   2
+  24 DGS012b  1841 2004    164      5      0    .527   2.10   7.05  1.192   .784   .270   1.85   .284  -.021   3
+  25 DGS013a  1888 2004    117      3      0    .745   1.93   5.56  1.077   .851   .249   1.78   .253   .036   1
+  26 DGS013b  1852 2004    153      4      2    .541   2.16   4.91  1.068   .769   .258   1.89   .287   .036   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3783    105      5    .653   2.30   9.14  1.142   .810   .236   2.17   .247   .015
+
+ DATA CHECKS (rwl.check): mn031
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mn031.rwl
+ 26 series, 3783 measurements, 1798-2004, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file mn031.rwl, MD5 f037b64a108053cb6b517bede52775c1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: cmr004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cmr004.rwl
+      MD5 of measurement file: fed34e3d7d6d7bfd350541e2d3046101
+      Date checked           : 01OCT26
+      Beginning year         : 1881
+      Ending year            : 2014
+      Principal investigators: Ligot, G.; Gourlet-Fleury, S.; Fayolle, A.; Doucet, J.
+      Site name              : Abong-Mbang
+      Species information    : TRSL Triplochiton scleroxylon K.Schum.
+      Latitude               : 3.9500 N
+      Longitude              : 13.1800 E
+      Elevation              : 712 m
+
+      Series intercorrelation: 0.133
+      Avg mean sensitivity   : 0.455
+      Avg standard deviation : 0.307
+      Avg autocorrelation    : 0.661
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 15  (A 4, B 11; 6 of the B weak at every lag)
+      Pct problem segments   : 78.95
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cmr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 AY120a   1885 2013 -.23B-.07B .01B
+   2 AY138    1900 2013       .17B .26B
+   3 AY142    1910 2012       .28B .24A
+   4 AY159    1908 2012       .37  .31A
+   5 AY160    1907 2012       .10B .12B
+   6 AY162    1881 2014  .09B .21A .23B
+   7 AY165    1900 2014       .44  .39 
+   8 AY172    1892 2013  .10B .19A .35 
+ Av segment correlation -.01  .21  .24 
+
+ FLAGGED SEGMENTS: cmr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 AY120a   1900 1949     B    -.229        -5      .446   .676
+   1 AY120a   1925 1974     B    -.069         2      .360   .430
+   1 AY120a   1950 1999     B     .013         2      .258   .245  weak at every lag
+   2 AY138    1925 1974     B     .169         9      .222   .054  weak at every lag
+   2 AY138    1950 1999     B     .261         9      .337   .076
+   3 AY142    1925 1974     B     .284        -4      .394   .109
+   3 AY142    1950 1999     A     .245         0
+   4 AY159    1950 1999     A     .306         0
+   5 AY160    1925 1974     B     .100         5      .369   .270
+   5 AY160    1950 1999     B     .118         5      .289   .171  weak at every lag
+   6 AY162    1900 1949     B     .085        -7      .238   .153  weak at every lag
+   6 AY162    1925 1974     A     .206         0
+   6 AY162    1950 1999     B     .228        -3      .238   .010  weak at every lag
+   8 AY172    1900 1949     B     .100        -5      .159   .060  weak at every lag
+   8 AY172    1925 1974     A     .190         0
+
+ DESCRIPTIVE STATISTICS: cmr004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AY120a   1885 2013    129      3      3   -.004    .38   1.22   .241   .451   .463   2.53   .451  -.001   2
+   2 AY138    1900 2013    114      2      2    .072    .42   1.26   .302   .654   .482   2.09   .413  -.018   1
+   3 AY142    1910 2012    103      2      2   -.017    .49   1.78   .416   .877   .432   2.60   .430   .018   2
+   4 AY159    1908 2012    105      2      1    .232    .56   1.40   .314   .622   .440   2.63   .443   .014   1
+   5 AY160    1907 2012    106      2      2    .074    .43   1.51   .355   .808   .461   2.57   .493   .035   3
+   6 AY162    1881 2014    134      3      3    .169    .37   1.32   .270   .592   .519   2.64   .507   .093   1
+   7 AY165    1900 2014    115      2      0    .390    .45   1.74   .372   .768   .449   2.73   .457   .023   1
+   8 AY172    1892 2013    122      3      2    .146    .43   1.29   .224   .591   .387   2.45   .372   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            928     19     15    .133    .44   1.78   .307   .661   .455   2.73   .446   .022
+
+ DATA CHECKS (rwl.check): cmr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/cmr004.rwl
+ 8 series, 928 measurements, 1881-2014, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cmr004.rwl, MD5 fed34e3d7d6d7bfd350541e2d3046101.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

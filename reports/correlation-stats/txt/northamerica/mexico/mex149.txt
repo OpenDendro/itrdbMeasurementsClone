@@ -1,0 +1,192 @@
+
+ COFECHA-style crossdating report: mex149
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex149.rwl
+      MD5 of measurement file: ab2c7850c9f65f9d9ac64ec65f147d16
+      Date checked           : 01OCT26
+      Beginning year         : 1879
+      Ending year            : 2015
+      Principal investigators: Cerano Paredes, J.; Cambrón-Sandoval, V.; Cervantes-Martínez, R.
+      Site name              : Tarajeas, Oaxaca (TAR)
+      Species information    : PIRU Pinus rudis Endl.
+      Latitude               : 17.1573 N
+      Longitude              : 96.1573 W
+      Elevation              : 2970 m
+
+      Series intercorrelation: 0.454
+      Avg mean sensitivity   : 0.317
+      Avg standard deviation : 1.322
+      Avg autocorrelation    : 0.633
+      Number dated series    : 49
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 7, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 19.05
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex149
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BEJ06B   1940 2015            .56 
+   2 BEJ06C   1922 2015       .27A .62 
+   6 BEJ09A   1912 2015       .44  .65 
+   7 BEJ09B   1913 2015       .66  .58 
+   8 BEJ09C   1912 2015       .67  .58 
+   9 BEJ10A   1915 2015       .45  .61 
+  10 BEJ10B   1926 2015            .70 
+  11 BEJ10C   1924 2015       .49  .58 
+  12 SIE05A   1907 2015       .41  .14B
+  13 SIE05B   1900 2015       .30A .34 
+  14 SIE07B   1879 1954  .33A          
+  15 SIE09A   1936 2015            .58 
+  16 SIE09C   1948 2015            .38 
+  17 SIE10A   1911 2015       .45  .42 
+  18 SIE10B   1923 2015       .32A .27A
+  19 SIE10C   1908 2015       .49  .43 
+  20 SIE11B   1926 2015            .33 
+  24 SIE15A   1938 2015            .48 
+  25 SIE15B   1924 2015            .25A
+  26 SIE15C   1921 2015       .46  .52 
+  27 TAR17B   1921 2015       .63  .71 
+  28 TAR17C   1919 2015       .61  .67 
+  29 TAR18B   1900 2015       .54  .51 
+  30 TAR18C   1900 2015       .41  .45 
+  31 TAR19B   1940 2000            .49 
+  32 TAR19C   1940 2000            .50 
+  33 TAR20A   1930 2015            .55 
+  34 TAR21A   1928 2015            .64 
+  38 TAR26B   1950 2015            .51 
+  39 TAR26C   1938 2015            .60 
+  40 TAR27A   1904 2015       .51  .67 
+  41 TAR27B   1899 2015  .40  .50  .71 
+  42 TAR27C   1909 2015       .32B .63 
+  43 TAR28A   1906 2015       .16B .52 
+  44 TAR28B   1909 2015       .41  .57 
+  45 TAR28C   1906 2015       .35  .38 
+  47 TAR29B   1939 2015            .24B
+  48 TAR29C   1941 2015            .38 
+  49 TAR30C   1901 2015       .38B .28A
+ Av segment correlation  .36  .44  .50 
+
+ FLAGGED SEGMENTS: mex149
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 BEJ06C   1925 1974     A     .270         0
+  12 SIE05A   1950 1999     B     .137         9      .166   .029  weak at every lag
+  13 SIE05B   1925 1974     A     .303         0
+  14 SIE07B   1900 1949     A     .326         0
+  18 SIE10B   1925 1974     A     .320         0
+  18 SIE10B   1950 1999     A     .273         0
+  25 SIE15B   1950 1999     A     .250         0
+  42 TAR27C   1925 1974     B     .322         7      .523   .202
+  43 TAR28A   1925 1974     B     .157         7      .234   .077  weak at every lag
+  47 TAR29B   1950 1999     B     .243        -2      .285   .042  weak at every lag
+  49 TAR30C   1925 1974     B     .375        -4      .435   .060
+  49 TAR30C   1950 1999     A     .283         0
+
+ DESCRIPTIVE STATISTICS: mex149
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BEJ06B   1940 2015     76      1      0    .557   1.92   5.78  1.065   .628   .380   1.70   .354  -.058   3
+   2 BEJ06C   1922 2015     94      2      1    .401   2.09   5.40  1.086   .535   .386   1.91   .376  -.037   3
+   3 BEJ07A   1952 2015     64      0      0    .666   3.16   7.59  1.587   .636   .398   1.66   .292  -.024   1
+   4 BEJ07B   1957 2015     59      0      0    .449   4.98   9.24  1.917   .648   .286   1.45   .244   .000   0
+   5 BEJ07C   1960 2015     56      0      0    .489   5.00  12.38  2.364   .710   .315   1.61   .260  -.008   0
+   6 BEJ09A   1912 2015    104      2      0    .527   2.13   8.29  1.715   .834   .359   1.85   .341  -.029   1
+   7 BEJ09B   1913 2015    103      2      0    .494   3.25   7.83  1.931   .715   .364   2.02   .370  -.005   1
+   8 BEJ09C   1912 2015    104      2      0    .491   3.47  10.07  2.073   .761   .334   2.14   .389   .008   1
+   9 BEJ10A   1915 2015    101      2      0    .294   2.09   5.14  1.352   .868   .269   1.80   .254   .080   0
+  10 BEJ10B   1926 2015     90      1      0    .521   2.42   7.38  1.780   .804   .336   2.01   .309   .015   2
+  11 BEJ10C   1924 2015     92      2      0    .481   1.87   6.05  1.317   .857   .312   2.10   .324   .129   0
+  12 SIE05A   1907 2015    109      2      1    .286   2.02   5.39  1.218   .612   .457   2.21   .459   .015   1
+  13 SIE05B   1900 2015    116      2      1    .464   2.53   6.31  1.238   .659   .377   1.91   .333   .008   3
+  14 SIE07B   1879 1954     76      1      1    .339   3.00   5.13  1.036   .500   .291   1.74   .269   .126   0
+  15 SIE09A   1936 2015     80      1      0    .513   1.79   4.56   .775   .733   .233   2.19   .270   .076   1
+  16 SIE09C   1948 2015     68      1      0    .419   2.18   3.83   .733   .604   .231   1.65   .241   .008   1
+  17 SIE10A   1911 2015    105      2      0    .472   1.90   5.66  1.156   .811   .278   1.67   .281  -.028   1
+  18 SIE10B   1923 2015     93      2      2    .400   2.12   8.75  1.292   .815   .268   1.77   .282   .006   1
+  19 SIE10C   1908 2015    108      2      0    .411   2.43   7.72  1.255   .688   .280   1.80   .267   .130   3
+  20 SIE11B   1926 2015     90      1      0    .389   1.55   3.18   .608   .342   .379   1.84   .348   .127   0
+  21 SIE13A   1952 2015     64      0      0    .282   3.38  11.06  1.994   .743   .356   1.78   .339  -.030   1
+  22 SIE13B   1958 2015     58      0      0    .392   6.11  15.39  2.684   .642   .292   1.91   .302   .098   1
+  23 SIE13C   1959 2015     57      0      0    .358   6.48  12.56  2.705   .692   .304   1.52   .280  -.017   2
+  24 SIE15A   1938 2015     78      1      0    .489   4.14  12.00  2.328   .833   .244   1.78   .252   .072   1
+  25 SIE15B   1924 2015     92      1      1    .414   3.52   7.94  1.585   .857   .192   1.60   .192   .000   2
+  26 SIE15C   1921 2015     95      2      0    .480   3.40   6.74  1.182   .610   .245   1.47   .231   .026   1
+  27 TAR17B   1921 2015     95      2      0    .642   2.81   6.53  1.147   .359   .385   2.09   .337   .037   0
+  28 TAR17C   1919 2015     97      2      0    .667   2.73   6.25  1.217   .403   .369   1.94   .326   .051   0
+  29 TAR18B   1900 2015    116      2      0    .510   1.94   5.41   .868   .431   .347   2.27   .357   .012   3
+  30 TAR18C   1900 2015    116      2      0    .486   2.26   6.53   .991   .389   .353   2.30   .365  -.025   2
+  31 TAR19B   1940 2000     61      1      0    .517   2.77   9.37  1.557   .638   .404   1.84   .370   .036   1
+  32 TAR19C   1940 2000     61      1      0    .496   2.75   9.16  1.476   .625   .343   1.80   .299   .047   3
+  33 TAR20A   1930 2015     86      1      0    .567   2.11   4.14   .654   .309   .287   1.62   .268  -.007   3
+  34 TAR21A   1928 2015     88      1      0    .425   2.07   4.02   .657   .349   .294   1.63   .275   .015   3
+  35 TAR25A   1950 2015     66      0      0    .297   1.69   4.22   .894   .619   .386   2.26   .408   .000   1
+  36 TAR25B   1950 2015     66      0      0    .293   1.73   5.78  1.376   .818   .379   2.16   .394   .074   3
+  37 TAR25C   1950 2015     66      0      0    .361   1.68   5.37  1.055   .731   .357   2.13   .378  -.016   2
+  38 TAR26B   1950 2015     66      1      0    .538   3.10   9.10  1.245   .340   .290   1.75   .288   .146   0
+  39 TAR26C   1938 2015     78      1      0    .492   2.90   5.34   .771   .369   .231   1.58   .200  -.005   2
+  40 TAR27A   1904 2015    112      2      0    .583   2.09   7.81  1.075   .724   .273   1.65   .261   .053   1
+  41 TAR27B   1899 2015    117      3      0    .530   2.38   6.08   .998   .411   .319   1.76   .312   .066   1
+  42 TAR27C   1909 2015    107      2      1    .512   2.22   4.49   .788   .475   .316   1.83   .295  -.026   2
+  43 TAR28A   1906 2015    110      2      1    .343   3.16   7.52  1.653   .782   .283   1.53   .264   .023   1
+  44 TAR28B   1909 2015    107      2      0    .550   2.28   5.98  1.397   .839   .322   1.72   .301   .036   1
+  45 TAR28C   1906 2015    110      2      0    .428   2.16   6.73  1.491   .856   .351   1.78   .314  -.007   1
+  46 TAR29A   1964 2015     52      0      0    .358   4.36   8.37  1.585   .660   .222   1.68   .237  -.045   2
+  47 TAR29B   1939 2015     77      1      1    .327   3.18   8.10  1.426   .666   .249   1.91   .261   .081   1
+  48 TAR29C   1941 2015     75      1      0    .325   3.27   8.40  1.388   .651   .228   1.79   .262   .016   1
+  49 TAR30C   1901 2015    115      2      2    .318   2.80   5.81  1.023   .508   .314   1.91   .302  -.021   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4276     63     12    .454   2.69  15.39  1.322   .633   .317   2.30   .307   .025
+
+ DATA CHECKS (rwl.check): mex149
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex149.rwl
+ 49 series, 4276 measurements, 1879-2015, 0.01 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 939 carriage return(s) against 471 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file mex149.rwl, MD5 ab2c7850c9f65f9d9ac64ec65f147d16.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

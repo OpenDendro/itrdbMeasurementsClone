@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: nm633
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nm633.rwl
+      MD5 of measurement file: f8feb0b981d6be09e1b2969cf3c39e49
+      Date checked           : 01OCT26
+      Beginning year         : 1667
+      Ending year            : 2015
+      Principal investigators: King, K.E.; Harley, G.L.
+      Site name              : Wheeler Peak
+      Species information    : PIEN Pinus engelmannii Carr.
+      Latitude               : 36.6500 N
+      Longitude              : 105.4200 W
+      Elevation              : 3600 m
+
+      Series intercorrelation: 0.595
+      Avg mean sensitivity   : 0.174
+      Avg standard deviation : 0.494
+      Avg autocorrelation    : 0.860
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 3.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nm633
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 WHE01B   1804 2015                           .58  .46  .49  .53  .33A .26B
+   2 WHE02A   1834 2015                                .59  .76  .51  .70  .68 
+   3 WHE02B   1927 2015                                                    .50 
+   4 WHE03B   1893 2015                                          .55  .57  .75 
+   5 WHE04A   1836 2015                                .74  .78  .65  .69  .74 
+   6 WHE04B   1817 2015                           .25A .56  .68  .34  .44  .76 
+   7 WHE05A   1789 2015                      .61  .57  .70  .70  .51  .53  .67 
+   8 WHE05B   1788 2015                      .46  .56  .73  .73  .62  .69  .74 
+   9 WHE06A   1921 2015                                               .49  .77 
+  10 WHE06B   1861 2015                                     .52  .18B .63  .84 
+  11 WHE07A   1822 2015                           .37  .52  .52  .32B .46  .67 
+  12 WHE07B   1934 2015                                                    .46 
+  13 WHE08A   1823 2015                           .41  .69  .66  .39  .56  .58 
+  14 WHE08B   1885 2015                                          .43  .68  .74 
+  15 WHE09B   1841 2015                                .49  .50  .35  .56  .67 
+  16 WHE10A   1870 2015                                     .51  .40  .63  .68 
+  17 WHE10B   1840 2015                                .36B .43  .50  .64  .59 
+  18 WHE11B   1835 2015                                .58  .58  .39  .58  .69 
+  19 WHE11BB  1830 2015                                .56  .57  .34  .56  .71 
+  20 WHE12B   1796 2015                      .55  .60  .70  .73  .61  .63  .63 
+  21 WHE13A   1728 2015            .39  .52  .67  .69  .65  .64  .58  .60  .75 
+  22 WHE13B   1724 2015       .56  .53  .58  .75  .74  .76  .73  .62  .62  .74 
+  23 WHE15A   1694 2015  .71  .76  .62  .49  .55  .65  .81  .73  .55  .71  .77 
+  24 WHE15B   1725 2015            .64  .72  .57  .44  .66  .60  .46  .55  .62 
+  25 WHE16A   1699 2015  .73  .82  .73  .74  .82  .71  .77  .77  .66  .61  .69 
+  26 WHE16B   1667 2015  .64  .73  .72  .67  .65  .66  .81  .80  .67  .67  .77 
+ Av segment correlation  .69  .71  .61  .62  .63  .56  .64  .64  .48  .59  .67 
+
+ FLAGGED SEGMENTS: nm633
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 WHE01B   1925 1974     A     .328         0
+   1 WHE01B   1950 1999     B     .256         1      .289   .033  weak at every lag
+   6 WHE04B   1825 1874     A     .247         0
+  10 WHE06B   1900 1949     B     .184         9      .344   .160
+  11 WHE07A   1900 1949     B     .317        -9      .396   .079
+  17 WHE10B   1850 1899     B     .359         6      .368   .009
+
+ DESCRIPTIVE STATISTICS: nm633
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WHE01B   1804 2015    212      6      2    .406   1.03   2.23   .414   .855   .172   1.43   .169   .005   2
+   2 WHE02A   1834 2015    182      5      0    .614   1.52   3.16   .634   .907   .146   1.38   .146   .014   3
+   3 WHE02B   1927 2015     89      1      0    .516    .84   1.43   .272   .680   .203   1.37   .193   .004   2
+   4 WHE03B   1893 2015    123      3      0    .667   1.25   2.58   .509   .865   .173   1.49   .180   .025   1
+   5 WHE04A   1836 2015    180      5      0    .698   1.47   4.20   .633   .892   .146   1.39   .146   .008   1
+   6 WHE04B   1817 2015    199      6      1    .448   1.54   3.52   .782   .918   .153   2.36   .180   .025   1
+   7 WHE05A   1789 2015    227      7      0    .620   1.04   3.31   .542   .898   .193   1.59   .183   .017   1
+   8 WHE05B   1788 2015    228      7      0    .644   1.03   3.65   .589   .917   .194   1.48   .178   .009   1
+   9 WHE06A   1921 2015     95      2      0    .538    .83   1.68   .305   .778   .181   1.60   .193  -.046   1
+  10 WHE06B   1861 2015    155      4      1    .627   1.26   2.34   .334   .718   .152   1.54   .154   .007   2
+  11 WHE07A   1822 2015    194      6      1    .508   1.85   4.26   .909   .891   .156   1.40   .165  -.026   3
+  12 WHE07B   1934 2015     82      1      0    .490   1.78   4.29   .685   .804   .196   1.55   .182  -.052   1
+  13 WHE08A   1823 2015    193      6      0    .547   1.57   3.03   .466   .668   .178   1.48   .172   .006   1
+  14 WHE08B   1885 2015    131      3      0    .665   1.51   3.48   .486   .788   .146   1.49   .153   .009   1
+  15 WHE09B   1841 2015    175      5      0    .562   1.84   4.60   .913   .884   .156   1.47   .162  -.020   1
+  16 WHE10A   1870 2015    146      4      0    .602   1.67   5.07   .771   .848   .189   1.87   .196   .042   1
+  17 WHE10B   1840 2015    176      5      1    .477   1.19   4.93   .795   .905   .193   1.73   .223   .062   1
+  18 WHE11B   1835 2015    181      5      0    .611   1.20   2.88   .533   .856   .186   1.58   .187   .028   1
+  19 WHE11BB  1830 2015    186      5      0    .543   1.39   3.59   .691   .885   .184   1.71   .193   .021   1
+  20 WHE12B   1796 2015    220      7      0    .622   1.02   2.31   .428   .902   .144   1.44   .156   .011   2
+  21 WHE13A   1728 2015    288      9      0    .559    .63   1.42   .239   .846   .173   1.54   .173  -.013   1
+  22 WHE13B   1724 2015    292     10      0    .612    .73   1.48   .265   .879   .146   1.48   .156  -.023   1
+  23 WHE15A   1694 2015    322     11      0    .659    .77   1.77   .342   .870   .179   1.69   .203   .039   1
+  24 WHE15B   1725 2015    291      9      0    .618    .55   1.29   .242   .815   .192   1.68   .205   .005   2
+  25 WHE16A   1699 2015    317     11      0    .713    .75   1.87   .387   .891   .193   1.79   .208   .028   1
+  26 WHE16B   1667 2015    349     11      0    .662    .57   1.62   .339   .911   .193   1.72   .202  -.010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5233    154      6    .595   1.10   5.07   .494   .860   .174   2.36   .181   .008
+
+ DATA CHECKS (rwl.check): nm633
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nm633.rwl
+ 26 series, 5233 measurements, 1667-2015, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file nm633.rwl, MD5 f8feb0b981d6be09e1b2969cf3c39e49.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

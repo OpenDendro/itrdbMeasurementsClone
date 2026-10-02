@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: tuni002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tuni002.rwl
+      MD5 of measurement file: cc0fdd78c1ed7ebd5b5c4fb3e60c9cdf
+      Date checked           : 01OCT26
+      Beginning year         : 1890
+      Ending year            : 2003
+      Principal investigators: Touchan, R.
+      Site name              : Dahllia
+      Species information    : PIHA Pinus halepensis Mill.
+      Latitude               : 36.2333 N
+      Longitude              : 8.4333 E
+      Elevation              : 950 m
+
+      Series intercorrelation: 0.698
+      Avg mean sensitivity   : 0.370
+      Avg standard deviation : 0.986
+      Avg autocorrelation    : 0.642
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tuni002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 DHA01A   1890 2001  .82  .81  .71 
+   2 DHA01B   1896 2002  .85  .80  .75 
+   3 DHA02A   1899 2001  .60  .54  .56 
+   4 DHA02B   1900 1987       .47      
+   5 DHA03    1910 2001       .68  .70 
+   6 DHA04B   1896 2002  .64  .65  .28B
+   8 DHA06A   1947 2002            .59 
+   9 DHA06B   1945 2002            .61 
+  10 DHA07A   1906 2002       .84  .86 
+  11 DHA07B   1916 2001       .81  .84 
+  12 DHA08A   1905 2002       .73  .77 
+  13 DHA08B   1906 2003       .64  .76 
+  14 DHA09A   1897 1998  .70  .72      
+  15 DHA09B   1898 2002  .75  .79  .78 
+  16 DHA10A   1910 2002       .69  .82 
+  17 DHA10B   1906 2002       .52  .82 
+  18 DHA11A   1895 2002  .57  .66  .64 
+  19 DHA11B   1893 2002  .78  .78  .83 
+ Av segment correlation  .71  .70  .71 
+
+ FLAGGED SEGMENTS: tuni002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 DHA04B   1950 1999     B     .278        -5      .314   .036  weak at every lag
+
+ DESCRIPTIVE STATISTICS: tuni002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DHA01A   1890 2001    112      3      0    .733   1.85   5.66  1.374   .885   .300   1.79   .293   .039   1
+   2 DHA01B   1896 2002    107      3      0    .793   1.93   4.40   .994   .813   .287   1.91   .299   .050   1
+   3 DHA02A   1899 2001    103      3      0    .570   1.92   6.91  1.436   .848   .404   2.15   .390  -.001   1
+   4 DHA02B   1900 1987     88      1      0    .447   1.99   6.65  1.426   .834   .356   2.16   .375   .003   1
+   5 DHA03    1910 2001     92      2      0    .687   1.49   4.97  1.198   .811   .419   2.24   .361   .026   0
+   6 DHA04B   1896 2002    107      3      1    .387   1.84   5.31  1.021   .527   .398   2.75   .403   .097   0
+   7 DHA05A   1951 2002     52      0      0    .812   2.40   6.79  1.288   .556   .392   2.10   .383   .041   2
+   8 DHA06A   1947 2002     56      1      0    .614   1.61   4.53   .875   .510   .406   2.15   .403   .036   1
+   9 DHA06B   1945 2002     58      1      0    .616   2.61   4.83   .965   .392   .334   1.59   .328   .058   1
+  10 DHA07A   1906 2002     97      2      0    .829   1.39   3.72   .772   .615   .398   3.14   .407   .026   1
+  11 DHA07B   1916 2001     86      2      0    .840   1.15   3.27   .652   .539   .429   2.92   .429  -.030   2
+  12 DHA08A   1905 2002     98      2      0    .757   1.28   4.89   .746   .560   .363   2.74   .395   .029   3
+  13 DHA08B   1906 2003     98      2      0    .748   1.78   4.63   .832   .474   .392   2.12   .348   .030   2
+  14 DHA09A   1897 1998    102      2      0    .716   1.12   4.22   .879   .697   .439   2.62   .436  -.003   3
+  15 DHA09B   1898 2002    105      3      0    .781   1.40   4.96   .920   .664   .388   2.26   .380   .040   2
+  16 DHA10A   1910 2002     93      2      0    .765   1.29   4.98   .631   .495   .308   2.28   .310   .028   2
+  17 DHA10B   1906 2002     97      2      0    .710   1.22   3.99   .627   .565   .298   2.22   .309   .024   2
+  18 DHA11A   1895 2002    108      3      0    .629   1.67   7.31  1.376   .712   .388   2.45   .436   .065   2
+  19 DHA11B   1893 2002    110      3      0    .811   1.24   5.31   .714   .479   .354   3.54   .452   .013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1769     40      1    .698   1.60   7.31   .986   .642   .370   3.54   .376   .030
+
+ DATA CHECKS (rwl.check): tuni002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/tuni002.rwl
+ 19 series, 1769 measurements, 1890-2003, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file tuni002.rwl, MD5 cc0fdd78c1ed7ebd5b5c4fb3e60c9cdf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

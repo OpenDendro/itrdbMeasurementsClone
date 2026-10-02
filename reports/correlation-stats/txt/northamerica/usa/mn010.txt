@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: mn010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mn010.rwl
+      MD5 of measurement file: 4bc59dea9258aef2293a4fb6a4c21924
+      Date checked           : 01OCT26
+      Beginning year         : 1731
+      Ending year            : 1971
+      Principal investigators: Fritts, H.C.
+      Site name              : Bohall Trail
+      Species information    : PIRE Pinus resinosa Aiton
+      Latitude               : 47.2000 N
+      Longitude              : 95.2500 W
+      Elevation              : 482 m
+
+      Series intercorrelation: 0.524
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.718
+      Avg autocorrelation    : 0.872
+      Number dated series    : 19
+      Series crossdated      : 18
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mn010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 
+                        1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 429011   1776 1971  .33  .40  .63  .39  .50 
+   2 429012   1731 1971  .41  .38  .49  .35  .52 
+   3 429021   1751 1971  .45  .42  .52  .44  .61 
+   4 429031   1855 1971                 .49  .67 
+   5 429041   1830 1971            .59  .63  .66 
+   6 429042   1820 1971       .45  .56  .57  .60 
+   7 429051   1830 1971            .47  .55  .48 
+   8 429061   1831 1971            .39  .63  .69 
+   9 429062   1827 1971            .66  .64  .60 
+  11 429072   1826 1971            .48  .61  .77 
+  12 429081   1828 1971            .73  .79  .76 
+  13 429082   1827 1971            .61  .73  .66 
+  14 429091   1829 1971            .56  .34  .36 
+  15 429092   1833 1971            .50  .66  .59 
+  16 429101   1830 1971            .55  .66  .63 
+  17 429102   1830 1971            .68  .65  .72 
+  18 429111   1764 1971  .37  .55  .55  .42  .58 
+  19 429112   1762 1971  .32A .59  .42  .22B .56 
+ Av segment correlation  .38  .47  .55  .54  .61 
+
+ FLAGGED SEGMENTS: mn010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  19 429112   1800 1849     A     .317         0
+  19 429112   1875 1924     B     .223        10      .313   .089  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mn010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 429011   1776 1971    196      5      0    .450    .87   3.00   .572   .918   .210   1.79   .230   .021   1
+   2 429012   1731 1971    241      5      0    .379   1.14   3.82   .577   .814   .202   1.62   .213   .002   2
+   3 429021   1751 1971    221      5      0    .431   1.19   3.43   .738   .902   .207   1.50   .213  -.005   1
+   4 429031   1855 1971    117      2      0    .549   1.29   3.91   .676   .885   .201   1.72   .202   .059   1
+   5 429041   1830 1971    142      3      0    .563   1.35   3.32   .687   .876   .174   1.50   .186   .036   1
+   6 429042   1820 1971    152      4      0    .533   1.43   3.58   .736   .920   .156   1.60   .161   .008   2
+   7 429051   1830 1971    142      3      0    .492   1.55   3.69   .718   .831   .194   1.71   .213  -.007   2
+   8 429061   1831 1971    141      3      0    .551   1.34   3.44   .697   .905   .177   1.52   .177   .026   2
+   9 429062   1827 1971    145      3      0    .583   1.33   6.67  1.055   .962   .162   1.49   .162  -.011   3
+  10 429071   1829 1971    142                         1.25   5.30   .888   .928   .233                         
+  11 429072   1826 1971    146      3      0    .664   1.38   5.77  1.056   .939   .206   1.67   .201  -.015   3
+  12 429081   1828 1971    144      3      0    .707   1.46   5.78   .802   .900   .182   1.59   .185   .022   1
+  13 429082   1827 1971    145      3      0    .622   1.50   5.67   .847   .898   .185   1.86   .193   .003   1
+  14 429091   1829 1971    143      3      0    .478   1.47   3.81   .781   .883   .189   1.53   .201   .039   1
+  15 429092   1833 1971    139      3      0    .570   1.45   3.69   .664   .813   .197   1.61   .213  -.006   2
+  16 429101   1830 1971    142      3      0    .590   1.34   3.21   .524   .785   .202   1.67   .208   .005   1
+  17 429102   1830 1971    142      3      0    .660   1.57   4.78   .650   .756   .208   1.59   .222   .037   1
+  18 429111   1764 1971    208      5      0    .471   1.01   2.65   .529   .840   .236   1.66   .233  -.011   1
+  19 429112   1762 1971    210      5      2    .407   1.24   4.13   .662   .838   .223   1.69   .224  -.012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3058     64      2    .524   1.30   6.67   .718   .872   .199   1.86   .204   .009
+
+ DATA CHECKS (rwl.check): mn010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mn010.rwl
+ 19 series, 3058 measurements, 1731-1971, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     429071: no measurement for 1929, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file mn010.rwl, MD5 4bc59dea9258aef2293a4fb6a4c21924.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 429071 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

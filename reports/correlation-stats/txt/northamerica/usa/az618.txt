@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: az618
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az618.rwl
+      MD5 of measurement file: 7f1caa18c42b88082e8894622b4f55bf
+      Date checked           : 01OCT26
+      Beginning year         : 1646
+      Ending year            : 2018
+      Principal investigators: O'Neill, L.; Fulé, P.Z.
+      Site name              : Crazy Jug
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.4620 N
+      Longitude              : 112.4060 W
+      Elevation              : 2125 m
+
+      Series intercorrelation: 0.706
+      Avg mean sensitivity   : 0.398
+      Avg standard deviation : 0.717
+      Avg autocorrelation    : 0.723
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az618
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CJ-001   1678 2018  .37  .34  .83  .88  .86  .82  .86  .87  .84  .84  .79 
+   2 CJ-002   1801 2018                           .60  .83  .89  .83  .65  .68 
+   3 CJ-003   1646 2000  .52  .46  .76  .72  .68  .77  .73  .68  .72  .79  .70 
+   4 CJ-004   1753 2018                 .82  .74  .78  .89  .86  .77  .78  .79 
+   5 CJ-005   1704 1960       .81  .79  .83  .88  .89  .90  .89  .80           
+   6 CJ-007   1900 2018                                          .61  .79  .82 
+   7 CJ-008   1757 1980                 .82  .82  .75  .78  .78  .64  .52      
+   8 CJ-009   1792 2018                      .71  .70  .76  .85  .73  .58  .29B
+   9 CJ-010   1760 2018                 .79  .83  .87  .88  .89  .79  .79  .83 
+  10 CJ-011   1817 2018                           .63  .72  .70  .59  .51  .63 
+  11 CJ-012   1772 2018                 .62  .83  .88  .89  .89  .81  .84  .84 
+  12 CJ-013   1764 2018                 .61  .70  .74  .72  .68  .59  .64  .47 
+  13 CJ-016   1700 2018       .54  .30A .48  .74  .78  .79  .75  .55  .38  .43 
+  14 CJ-017   1801 2018                           .54  .79  .79  .64  .43  .54 
+  15 CJ-018   1680 2017  .75  .75  .71  .68  .60  .60  .79  .77  .58  .55  .47 
+  16 CJ-019   1809 1990                           .66  .82  .83  .59  .49      
+  17 CJ-020   1685 1980  .85  .78  .73  .78  .75  .74  .71  .65  .62  .69      
+ Av segment correlation  .62  .61  .69  .73  .76  .73  .80  .80  .69  .64  .64 
+
+ FLAGGED SEGMENTS: az618
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 CJ-009   1950 1999     B     .287         7      .305   .017  weak at every lag
+  13 CJ-016   1750 1799     A     .305         0
+
+ DESCRIPTIVE STATISTICS: az618
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CJ-001   1678 2018    341     11      0    .746   1.10   3.82   .690   .660   .450   2.27   .394   .001   1
+   2 CJ-002   1801 2018    218      6      0    .618    .79   2.78   .494   .451   .556   2.29   .478   .062   0
+   3 CJ-003   1646 2000    355     11      0    .675    .91   4.17   .646   .675   .481   2.24   .401   .021   3
+   4 CJ-004   1753 2018    266      8      0    .798   1.25   3.83   .742   .695   .420   1.95   .355   .055   0
+   5 CJ-005   1704 1960    257      8      0    .830    .75   2.48   .430   .620   .429   2.12   .364  -.005   1
+   6 CJ-007   1900 2018    119      3      0    .763    .73   1.91   .422   .717   .451   1.86   .350   .003   0
+   7 CJ-008   1757 1980    224      7      0    .695   1.06   2.38   .542   .729   .330   2.02   .315  -.011   2
+   8 CJ-009   1792 2018    227      7      1    .655   1.37   5.42  1.021   .794   .404   2.36   .358  -.010   1
+   9 CJ-010   1760 2018    259      8      0    .838   1.39   6.16  1.180   .842   .417   2.14   .382   .012   2
+  10 CJ-011   1817 2018    202      6      0    .702   1.92   4.02   .803   .617   .335   2.09   .304   .026   3
+  11 CJ-012   1772 2018    247      8      0    .797   1.12   5.79   .975   .849   .396   1.94   .351  -.001   2
+  12 CJ-013   1764 2018    255      8      0    .621    .97   4.01   .738   .869   .381   1.90   .320   .008   3
+  13 CJ-016   1700 2018    319     10      1    .611   1.27   4.39   .734   .737   .329   1.84   .301  -.001   2
+  14 CJ-017   1801 2018    218      6      0    .620    .53   1.23   .265   .702   .405   2.06   .354   .025   3
+  15 CJ-018   1680 2017    338     11      0    .640   1.13   5.84   .878   .828   .336   2.44   .318   .005   1
+  16 CJ-019   1809 1990    182      5      0    .689   1.45   3.73   .738   .747   .268   1.90   .268   .001   1
+  17 CJ-020   1685 1980    296     10      0    .738   1.13   3.53   .659   .719   .369   1.85   .330  -.025   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4323    133      2    .706   1.11   6.16   .717   .723   .398   2.44   .351   .009
+
+ DATA CHECKS (rwl.check): az618
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az618.rwl
+ 17 series, 4323 measurements, 1646-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file az618.rwl, MD5 7f1caa18c42b88082e8894622b4f55bf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

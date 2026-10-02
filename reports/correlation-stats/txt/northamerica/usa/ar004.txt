@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: ar004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ar004.rwl
+      MD5 of measurement file: d4348511b5b83f037d4a33013dc94307
+      Date checked           : 01OCT26
+      Beginning year         : 1649
+      Ending year            : 1850
+      Principal investigators: Stahle, D.W.
+      Site name              : Drury House
+      Species information    : PIEC Pinus echinata Mill.
+      Latitude               : 35.8300 N
+      Longitude              : 92.9000 W
+      Elevation              : 822 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.265
+      Avg standard deviation : 0.577
+      Avg autocorrelation    : 0.785
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ar004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 
+                        1749 1774 1799 1824 1849 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 664011   1722 1850       .69  .62  .59  .56 
+   2 664021   1751 1850                 .67  .63 
+   3 664031   1723 1850       .43  .70  .63  .66 
+   4 664041   1649 1850  .61  .60  .56  .55  .56 
+   5 664051   1674 1836  .65  .57  .54  .38      
+   6 664061   1735 1850            .72  .50  .41 
+   7 664071   1769 1850                 .66  .59 
+   8 664081   1770 1850                 .49  .44 
+   9 664091   1753 1850                 .73  .50 
+  10 664101   1747 1850            .75  .72  .71 
+ Av segment correlation  .63  .57  .65  .59  .56 
+
+ FLAGGED SEGMENTS: ar004
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: ar004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 664011   1722 1850    129      4      0    .578    .79   1.73   .371   .704   .284   1.67   .252   .051   0
+   2 664021   1751 1850    100      2      0    .624   1.01   2.48   .598   .745   .294   2.00   .340   .084   1
+   3 664031   1723 1850    128      4      0    .552   1.02   2.46   .549   .756   .283   2.03   .269  -.018   1
+   4 664041   1649 1850    202      5      0    .545    .82   3.00   .528   .806   .277   1.75   .269   .003   1
+   5 664051   1674 1836    163      4      0    .430   1.02   3.31   .763   .940   .225   1.55   .212  -.023   1
+   6 664061   1735 1850    116      3      0    .559   1.26   3.70   .852   .889   .232   1.64   .217   .020   3
+   7 664071   1769 1850     82      2      0    .607   1.15   3.04   .587   .853   .221   1.81   .228  -.025   1
+   8 664081   1770 1850     81      2      0    .476   1.33   2.59   .471   .711   .222   1.52   .207   .012   1
+   9 664091   1753 1850     98      2      0    .554   1.05   2.52   .533   .734   .280   2.03   .291   .122   0
+  10 664101   1747 1850    104      3      0    .736    .91   2.15   .456   .612   .323   1.88   .309   .035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1203     31      0    .558   1.00   3.70   .577   .785   .265   2.03   .259   .022
+
+ DATA CHECKS (rwl.check): ar004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ar004.rwl
+ 10 series, 1203 measurements, 1649-1850, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file ar004.rwl, MD5 d4348511b5b83f037d4a33013dc94307.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

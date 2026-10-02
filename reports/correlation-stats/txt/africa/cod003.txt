@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: cod003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cod003.rwl
+      MD5 of measurement file: d51fe4d890d0f82dc35831fb0d23ffd9
+      Date checked           : 01OCT26
+      Beginning year         : 1894
+      Ending year            : 2006
+      Principal investigators: Couralet, C.; Beeckman, H.
+      Site name              : Luki
+      Species information    : COPA Corynanthe paniculata Welw.
+      Latitude               : 5.6000 S
+      Longitude              : 13.1500 E
+      Elevation              : 292 m
+
+      Series intercorrelation: 0.194
+      Avg mean sensitivity   : 0.417
+      Avg standard deviation : 0.698
+      Avg autocorrelation    : 0.540
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 20  (A 6, B 14; 14 of the B weak at every lag)
+      Pct problem segments   : 90.91
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cod003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 CO51a    1919 2005       .18B .31A
+   2 CO51b    1919 2005       .08B .42 
+   3 CO52a    1903 2006       .09B .25A
+   4 CO52b    1903 2006       .06B .09B
+   5 CO53a    1895 2006  .23B-.07B-.16B
+   6 CO53b    1894 2006 -.07B-.02B .03B
+   7 CO54a    1937 2005            .31A
+   8 CO54b    1937 2005            .24A
+   9 CO55a    1896 2005  .03B .01B .41 
+  10 CO55b    1896 2005  .16B .27A .25A
+ Av segment correlation  .09  .07  .21 
+
+ FLAGGED SEGMENTS: cod003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CO51a    1925 1974     B     .181         4      .202   .020  weak at every lag
+   1 CO51a    1950 1999     A     .310         0
+   2 CO51b    1925 1974     B     .084        -7      .212   .127  weak at every lag
+   3 CO52a    1925 1974     B     .087         8      .314   .227  weak at every lag
+   3 CO52a    1950 1999     A     .247         0
+   4 CO52b    1925 1974     B     .056         8      .275   .219  weak at every lag
+   4 CO52b    1950 1999     B     .086         2      .186   .101  weak at every lag
+   5 CO53a    1900 1949     B     .227         9      .270   .043  weak at every lag
+   5 CO53a    1925 1974     B    -.072         2      .298   .369  weak at every lag
+   5 CO53a    1950 1999     B    -.165         5      .221   .386  weak at every lag
+   6 CO53b    1900 1949     B    -.069         6      .267   .336  weak at every lag
+   6 CO53b    1925 1974     B    -.025         9      .218   .243  weak at every lag
+   6 CO53b    1950 1999     B     .027        -4      .267   .240  weak at every lag
+   7 CO54a    1950 1999     A     .306         0
+   8 CO54b    1950 1999     A     .242         0
+   9 CO55a    1900 1949     B     .029         2      .261   .232  weak at every lag
+   9 CO55a    1925 1974     B     .007        -1      .207   .200  weak at every lag
+  10 CO55b    1900 1949     B     .164         2      .316   .152  weak at every lag
+  10 CO55b    1925 1974     A     .275         0
+  10 CO55b    1950 1999     A     .254         0
+
+ DESCRIPTIVE STATISTICS: cod003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CO51a    1919 2005     87      2      2    .297   1.56   3.68   .830   .370   .480   2.43   .446   .021   1
+   2 CO51b    1919 2005     87      2      1    .213   2.04   5.27  1.043   .447   .412   2.70   .418  -.001   1
+   3 CO52a    1903 2006    104      2      2    .195   1.52   5.72  1.136   .763   .415   2.17   .372   .050   3
+   4 CO52b    1903 2006    104      2      2    .235    .93   2.44   .481   .501   .375   2.07   .381   .008   1
+   5 CO53a    1895 2006    112      3      3    .092   1.08   3.79   .741   .498   .461   2.71   .433  -.007   0
+   6 CO53b    1894 2006    113      3      3    .050    .88   2.45   .578   .510   .521   2.20   .490   .001   3
+   7 CO54a    1937 2005     69      1      1    .229   1.14   3.77   .772   .689   .407   2.12   .408   .022   1
+   8 CO54b    1937 2005     69      1      1    .232   1.02   4.98   .898   .630   .385   2.18   .399  -.015   3
+   9 CO55a    1896 2005    110      3      2    .227    .70   2.95   .445   .715   .332   2.24   .341   .022   1
+  10 CO55b    1896 2005    110      3      3    .232    .65   1.33   .277   .326   .374   1.85   .365   .098   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            965     22     20    .194   1.13   5.72   .698   .540   .417   2.71   .405   .022
+
+ DATA CHECKS (rwl.check): cod003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/cod003.rwl
+ 10 series, 965 measurements, 1894-2006, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cod003.rwl, MD5 d51fe4d890d0f82dc35831fb0d23ffd9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

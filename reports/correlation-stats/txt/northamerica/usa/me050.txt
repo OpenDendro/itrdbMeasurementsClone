@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: me050
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : me050.rwl
+      MD5 of measurement file: 2f2de11529fd9f5a68a76825ad54dfac
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 2009
+      Principal investigators: Larson, E.R.; Allen, S.A.; Flinner, N.L.; Labarge, S.G.; Wilding, T.C.
+      Site name              : Ironbound Island 2
+      Species information    : PCRU Picea rubens Sarg.
+      Latitude               : 44.3917 N
+      Longitude              : 68.1376 W
+      Elevation              : 43 m
+
+      Series intercorrelation: 0.458
+      Avg mean sensitivity   : 0.182
+      Avg standard deviation : 0.967
+      Avg autocorrelation    : 0.870
+      Number dated series    : 12
+      Series crossdated      : 11
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 21.21
+
+
+ CORRELATION OF SERIES BY SEGMENTS: me050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 IRB001   1888 2006  .41  .46  .44 
+   2 IRB002b  1875 2009  .52  .60  .62 
+   3 IRB002A  1887 2009  .68  .59  .36 
+   4 IRB003a  1864 2009  .31A .22B .53 
+   5 IRB003b  1866 2009  .49  .23B .08B
+   6 IRB004b  1881 2009  .61  .59  .66 
+   8 IRB005b  1862 2009  .55  .47  .29A
+   9 IRB006a  1874 2009  .53  .62  .66 
+  10 IRB006b  1863 2009  .66  .67  .45 
+  11 IRB007b  1850 2009  .64  .54  .27A
+  12 IRB007a  1850 2009  .56  .47  .23B
+ Av segment correlation  .54  .50  .42 
+
+ FLAGGED SEGMENTS: me050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 IRB003a  1900 1949     A     .305         0
+   4 IRB003a  1925 1974     B     .219         6      .252   .032  weak at every lag
+   5 IRB003b  1925 1974     B     .228        -2      .251   .022  weak at every lag
+   5 IRB003b  1950 1999     B     .080         1      .269   .189  weak at every lag
+   8 IRB005b  1950 1999     A     .295         0
+  11 IRB007b  1950 1999     A     .268         0
+  12 IRB007a  1950 1999     B     .232        10      .275   .043  weak at every lag
+
+ DESCRIPTIVE STATISTICS: me050
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 IRB001   1888 2006    119      3      0    .415   2.59   5.43   .771   .762   .162   1.43   .167  -.001   3
+   2 IRB002b  1875 2009    135      3      0    .534   2.56   5.93  1.084   .918   .130   1.47   .144   .021   1
+   3 IRB002A  1887 2009    123      3      0    .463   1.41   3.72   .599   .863   .177   1.48   .187   .050   1
+   4 IRB003a  1864 2009    146      3      2    .377   1.62   4.19   .869   .893   .175   1.43   .182   .043   1
+   5 IRB003b  1866 2009    144      3      2    .342   2.15   7.45  1.133   .783   .227   1.80   .250   .028   2
+   6 IRB004b  1881 2009    129      3      0    .582   1.79   6.62  1.407   .818   .277   2.02   .282  -.017   1
+   7 IRB005a  1830 2009    180                         1.56   5.83  1.188   .926   .204                         
+   8 IRB005b  1862 2009    148      3      1    .401   1.12   3.60   .642   .883   .206   1.68   .221  -.015   2
+   9 IRB006a  1874 2009    136      3      0    .552   2.56   5.90  1.083   .916   .129   1.48   .145   .011   1
+  10 IRB006b  1863 2009    147      3      0    .553   1.52   4.93   .823   .834   .193   1.88   .208   .009   2
+  11 IRB007b  1850 2009    160      3      1    .463   1.72   4.83   .889   .862   .147   1.79   .170   .062   1
+  12 IRB007a  1850 2009    160      3      1    .383   1.53   3.98  1.047   .947   .158   1.68   .182   .086   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1727     33      7    .458   1.82   7.45   .967   .870   .182   2.02   .194   .027
+
+ DATA CHECKS (rwl.check): me050
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/me050.rwl
+ 12 series, 1727 measurements, 1830-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file me050.rwl, MD5 2f2de11529fd9f5a68a76825ad54dfac.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series IRB005a is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

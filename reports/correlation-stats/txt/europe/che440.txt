@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: che440
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che440.rwl
+      MD5 of measurement file: f79fcc1cdd750aded00d87730e224041
+      Date checked           : 01OCT26
+      Beginning year         : 1869
+      Ending year            : 2013
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Tariche Haute Côte
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.3356 N
+      Longitude              : 7.1619 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.668
+      Avg mean sensitivity   : 0.273
+      Avg standard deviation : 0.713
+      Avg autocorrelation    : 0.655
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 2.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che440
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 42270    1884 2013  .73  .77  .83 
+   2 42271    1882 2013  .76  .80  .74 
+   3 42272    1896 2013  .74  .81  .71 
+   4 42273    1884 2013  .35B .53  .66 
+   5 42274    1889 2013  .86  .84  .74 
+   6 42275    1869 2013  .69  .61  .78 
+   7 42276    1891 2013  .77  .76  .81 
+   8 42277    1879 2013  .63  .65  .68 
+   9 42278    1877 2013  .64  .62  .71 
+  10 42279    1877 2013  .66  .70  .68 
+  11 42280    1886 2013  .46  .64  .70 
+  12 42281    1874 2013  .37  .47  .65 
+ Av segment correlation  .64  .68  .72 
+
+ FLAGGED SEGMENTS: che440
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 42273    1900 1949     B     .355         7      .367   .012
+
+ DESCRIPTIVE STATISTICS: che440
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 42270    1884 2013    130      3      0    .763   1.90   3.26   .509   .276   .264   1.53   .242   .107   0
+   2 42271    1882 2013    132      3      0    .721   1.71   3.10   .531   .500   .261   1.52   .249   .028   1
+   3 42272    1896 2013    118      3      0    .704   2.13   4.17   .658   .354   .289   1.80   .264  -.019   2
+   4 42273    1884 2013    130      3      1    .578   1.63   3.17   .576   .637   .254   1.70   .262   .018   3
+   5 42274    1889 2013    125      3      0    .753   1.63   3.58   .815   .827   .272   1.74   .261   .002   3
+   6 42275    1869 2013    145      3      0    .715   1.91   3.72   .744   .636   .307   1.59   .269   .008   2
+   7 42276    1891 2013    123      3      0    .780   1.81   4.21   .733   .664   .272   1.67   .265   .016   1
+   8 42277    1879 2013    135      3      0    .570   1.47   4.09   .699   .835   .245   1.54   .229  -.058   3
+   9 42278    1877 2013    137      3      0    .644   1.62   3.86  1.016   .911   .251   2.00   .253   .002   1
+  10 42279    1877 2013    137      3      0    .634   1.65   3.60   .726   .785   .245   1.67   .225   .033   0
+  11 42280    1886 2013    128      3      0    .590   1.58   3.17   .580   .616   .249   1.98   .262  -.012   1
+  12 42281    1874 2013    140      3      0    .581   1.57   4.01   .929   .765   .357   1.99   .328   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1580     36      1    .668   1.71   4.21   .713   .655   .273   2.00   .259   .013
+
+ DATA CHECKS (rwl.check): che440
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che440.rwl
+ 12 series, 1580 measurements, 1869-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che440.rwl, MD5 f79fcc1cdd750aded00d87730e224041.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

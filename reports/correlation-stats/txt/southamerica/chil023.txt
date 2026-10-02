@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: chil023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : chil023.rwl
+      MD5 of measurement file: 01a351b809b1408632d2051759670863
+      Date checked           : 01OCT26
+      Beginning year         : 1770
+      Ending year            : 1995
+      Principal investigators: Lara, A.; Aravena, J.C.; Villalba, R.; Wolodarsky-Franke, A.; Luckman, B.H.; Wilson, R.J.S.
+      Site name              : Los Petronquines
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 37.4833 S
+      Longitude              : 71.3167 W
+      Elevation              : 1690 m
+
+      Series intercorrelation: 0.422
+      Avg mean sensitivity   : 0.259
+      Avg standard deviation : 0.931
+      Avg autocorrelation    : 0.706
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 15.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: chil023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ALP17B   1923 1995                           .39 
+   2 ALP16B   1916 1976                           .23A
+   3 ALP34    1777 1995  .44  .35  .37  .39  .42  .34 
+   4 ALP32    1796 1995  .45  .42  .59  .55  .53  .58 
+   7 ALP15A   1899 1983                      .45  .33A
+   8 ALP39    1772 1982  .46  .32A .34  .45  .43  .33 
+   9 ALP18A   1921 1986                           .50 
+  10 ALP20A   1922 1993                           .41 
+  11 ALP5     1776 1849  .19B                         
+  14 ALP35    1776 1995  .63  .59  .68  .53  .39  .50 
+  15 ALP38    1770 1995  .47  .53  .68  .56  .25A .30B
+  21 ALP26A   1925 1995                           .58 
+ Av segment correlation  .44  .44  .53  .50  .41  .41 
+
+ FLAGGED SEGMENTS: chil023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 ALP16B   1925 1974     A     .234         0
+   7 ALP15A   1925 1974     A     .325         0
+   8 ALP39    1825 1874     A     .318         0
+  11 ALP5     1800 1849     B     .193         9      .346   .153
+  15 ALP38    1900 1949     A     .250         0
+  15 ALP38    1925 1974     B     .303        -6      .306   .004  weak at every lag
+
+ DESCRIPTIVE STATISTICS: chil023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ALP17B   1923 1995     73      1      0    .326   2.74   4.65   .727   .598   .182   1.47   .178  -.005   1
+   2 ALP16B   1916 1976     61      1      1    .234   1.87   3.18   .450   .309   .216   1.63   .221   .163   0
+   3 ALP34    1777 1995    219      6      0    .382   1.39   4.86   .687   .566   .332   2.56   .324  -.006   3
+   4 ALP32    1796 1995    200      6      0    .513   1.33   3.41   .604   .685   .296   1.88   .288   .032   3
+   5 ALP24A   1935 1995     61      0      0    .256   2.84   4.91  1.322   .907   .176   1.39   .188  -.024   1
+   6 ALP12A   1954 1995     42      0      0    .413   2.67   5.50  1.383   .908   .190   1.84   .218   .046   2
+   7 ALP15A   1899 1983     85      2      1    .428   1.86   5.38  1.268   .788   .296   2.08   .287   .036   1
+   8 ALP39    1772 1982    211      6      1    .367   1.40   5.60   .861   .752   .317   2.78   .332   .012   3
+   9 ALP18A   1921 1986     66      1      0    .459   2.97   6.06  1.437   .855   .195   1.43   .187  -.020   1
+  10 ALP20A   1922 1993     72      1      0    .432   2.13   4.89   .810   .599   .259   1.74   .269   .037   2
+  11 ALP5     1776 1849     74      1      1    .105   2.26   7.03  1.431   .895   .228   1.73   .242   .058   1
+  12 ALP40    1816 1869     54      0      0    .409    .53   1.06   .273   .753   .355   2.00   .342  -.012   1
+  13 ALP16A   1779 1843     65      0      0    .341   1.70   3.31   .668   .754   .241   1.82   .229  -.105   3
+  14 ALP35    1776 1995    220      6      0    .544   1.36   3.14   .524   .581   .275   1.75   .263   .011   3
+  15 ALP38    1770 1995    226      6      2    .442   1.38   4.63   .648   .566   .316   2.73   .329  -.013   3
+  16 ALP13B   1945 1995     51      0      0    .368   1.97   5.57  1.388   .914   .221   1.73   .236   .122   1
+  17 ALP33    1944 1995     52      0      0    .334   2.98   6.85  1.130   .643   .224   1.37   .194   .034   3
+  18 ALP29A   1946 1995     50      0      0    .318   2.22   5.60  1.054   .830   .185   1.88   .224  -.096   3
+  19 ALP24B   1934 1995     62      0      0    .571   2.97   5.75  1.456   .898   .155   1.36   .158  -.013   1
+  20 ALP23B   1933 1995     63      0      0    .472   2.15   4.12   .801   .847   .168   1.30   .162   .131   0
+  21 ALP26A   1925 1995     71      1      0    .545   4.20  10.58  2.095   .811   .206   1.47   .184  -.043   0
+  22 ALP26B   1934 1995     62      0      0    .667   3.48   8.14  1.860   .854   .223   1.45   .168  -.007   1
+  23 ALP20B   1925 1995     71      0      0    .427   2.16   5.48   .971   .862   .168   1.40   .167  -.011   2
+  24 ALP29B   1934 1995     62      0      0    .438   3.04   7.99  1.631   .789   .174   1.90   .218  -.009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2273     38      6    .422   1.95  10.58   .931   .706   .259   2.78   .258   .011
+
+ DATA CHECKS (rwl.check): chil023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/chil023.rwl
+ 24 series, 2273 measurements, 1770-1995, 0.002 mm precision
+ 0 error(s), 0 warning(s), 9 note(s)
+ -------------
+ Nothing to report at this severity.
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file chil023.rwl, MD5 01a351b809b1408632d2051759670863.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

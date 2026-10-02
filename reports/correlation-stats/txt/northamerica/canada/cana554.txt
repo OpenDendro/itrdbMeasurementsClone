@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: cana554
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana554.rwl
+      MD5 of measurement file: dcebebc74a48c9e3b80991de2116d290
+      Date checked           : 01OCT26
+      Beginning year         : 1922
+      Ending year            : 2010
+      Principal investigators: Dietrich, R.
+      Site name              : Misery Lake
+      Species information    : PIBN Pinus banksiana Lamb.
+      Latitude               : 49.7833 N
+      Longitude              : 91.1667 W
+      Elevation              : 449 m
+
+      Series intercorrelation: 0.448
+      Avg mean sensitivity   : 0.215
+      Avg standard deviation : 0.601
+      Avg autocorrelation    : 0.743
+      Number dated series    : 20
+      Segment length tested  : 44
+
+      Number problem segments: 6  (A 2, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 31.58
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana554
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  44-year dated segments, lagged  22 years
+ Flags:  A = correlation under   .3496 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1993 
+ --- -------- ---------  ---- 
+   1 F02011   1924 2010  .41 
+   2 F02012   1923 2010  .28B
+   3 F02021   1928 2010  .32A
+   5 F02031   1926 2006  .31A
+   6 F02032   1925 2010  .03B
+   7 F02041   1925 2010  .70 
+   8 F02042   1923 2010  .60 
+   9 F02051   1923 2010  .67 
+  10 F02052   1925 2009  .13B
+  11 F02061   1925 2010  .63 
+  12 F02062   1923 2009 -.14B
+  13 F02071   1924 2010  .52 
+  14 F02072   1925 2010  .64 
+  15 F02081   1932 2010  .78 
+  16 F02082   1926 2010  .64 
+  17 F02091   1922 2010  .67 
+  18 F02092   1923 2010  .57 
+  19 F02101   1923 2010  .81 
+  20 F02102   1925 2010  .70 
+ Av segment correlation  .49 
+
+ FLAGGED SEGMENTS: cana554
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 F02012   1950 1993     B     .277         7      .377   .101
+   3 F02021   1950 1993     A     .322         0
+   5 F02031   1950 1993     A     .305         0
+   6 F02032   1950 1993     B     .026        -1      .295   .269  weak at every lag
+  10 F02052   1950 1993     B     .128         2      .604   .476
+  12 F02062   1950 1993     B    -.137         2      .496   .634
+
+ DESCRIPTIVE STATISTICS: cana554
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 F02011   1924 2010     87      1      0    .430   1.32   2.57   .450   .746   .201   1.57   .206   .074   1
+   2 F02012   1923 2010     88      1      1    .309   1.38   4.18   .767   .809   .232   1.92   .247  -.003   2
+   3 F02021   1928 2010     83      1      1    .364   1.39   3.22   .994   .908   .231   1.73   .248   .121   1
+   4 F02022   1977 2010     34      0      0    .017   2.02   3.15   .453   .400   .208   1.36   .198   .235   0
+   5 F02031   1926 2006     81      1      1    .367   1.56   9.25  1.206   .827   .279   1.72   .281   .102   1
+   6 F02032   1925 2010     86      1      1    .158   1.47   3.93   .845   .858   .258   1.94   .255   .011   2
+   7 F02041   1925 2010     86      1      0    .567   1.97   4.28   .617   .633   .215   1.63   .210  -.011   1
+   8 F02042   1923 2010     88      1      0    .481   1.45   3.47   .565   .690   .211   1.61   .205  -.010   1
+   9 F02051   1923 2010     88      1      0    .601   1.55   3.18   .522   .731   .181   1.69   .184   .115   0
+  10 F02052   1925 2009     85      1      1    .199   1.38   2.79   .480   .743   .183   1.49   .192   .015   2
+  11 F02061   1925 2010     86      1      0    .509   1.36   3.02   .542   .795   .194   1.83   .202   .114   3
+  12 F02062   1923 2009     87      1      1    .071   1.12   2.07   .516   .788   .222   1.76   .221   .093   3
+  13 F02071   1924 2010     87      1      0    .477   1.41   4.09   .567   .776   .183   1.45   .165   .042   0
+  14 F02072   1925 2010     86      1      0    .512   1.17   2.61   .466   .795   .218   1.47   .191   .011   3
+  15 F02081   1932 2010     79      1      0    .668   1.07   1.86   .346   .526   .258   1.64   .238   .025   1
+  16 F02082   1926 2010     85      1      0    .577   1.23   5.60   .959   .875   .263   1.85   .266   .021   3
+  17 F02091   1922 2010     89      1      0    .621   1.24   1.98   .312   .698   .164   1.34   .166   .036   1
+  18 F02092   1923 2010     88      1      0    .537   1.29   2.50   .362   .638   .179   1.52   .187   .200   1
+  19 F02101   1923 2010     88      1      0    .669   1.12   3.18   .513   .690   .240   1.56   .229   .058   2
+  20 F02102   1925 2010     86      1      0    .555   1.16   2.87   .506   .722   .191   1.73   .207   .209   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1667     19      6    .448   1.36   9.25   .601   .743   .215   1.94   .215   .068
+
+ DATA CHECKS (rwl.check): cana554
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana554.rwl
+ 20 series, 1667 measurements, 1922-2010, 0.01 mm precision
+ 1 error(s), 0 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     F02052: correlates best with the master at lag 2 (r = 0.467 against r = 0.142 as dated); the series may be misdated by 2 year(s), most likely a false ring or a ring measured twice
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cana554.rwl, MD5 dcebebc74a48c9e3b80991de2116d290.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3496 for 44-year segments.
+ Segments: 44 years, lagged 22, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 44 years: the record is only 89 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

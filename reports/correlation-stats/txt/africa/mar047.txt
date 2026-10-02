@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: mar047
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mar047.rwl
+      MD5 of measurement file: 9648b40465186d113ec679c77ae72dbb
+      Date checked           : 01OCT26
+      Beginning year         : 1720
+      Ending year            : 2011
+      Principal investigators: Touchan, R.
+      Site name              : Tizarine
+      Species information    : CDAT Cedrus atlantica (Endl.) Manetti ex Carrière
+      Latitude               : 35.0200 N
+      Longitude              : 4.9000 W
+      Elevation              : 1743 m
+
+      Series intercorrelation: 0.623
+      Avg mean sensitivity   : 0.269
+      Avg standard deviation : 0.868
+      Avg autocorrelation    : 0.795
+      Number dated series    : 20
+      Series crossdated      : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mar047
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 TIZ02A   1799 2011  .73  .58  .43  .55  .72  .65  .55 
+   2 TIZ02B   1936 2011                                .65 
+   3 TIZ04B   1777 1914  .58  .62  .73                     
+   4 TIZ05A   1727 1943  .43B .72  .82  .88                
+   5 TIZ05B   1749 1946  .47  .38  .76  .85                
+   6 TIZ07A   1775 1890  .77  .75                          
+   7 TIZ08A   1925 2011                                .71 
+   8 TIZ08B   1901 2011                           .49  .55 
+   9 TIZ09A   1850 1965                 .57  .62           
+  10 TIZ11A   1787 2011  .71  .76  .77  .80  .82  .63  .56 
+  11 TIZ11B   1831 2011            .80  .87  .86  .72  .67 
+  12 TIZ13A1  1781 1873  .66                               
+  13 TIZ13B   1808 2011       .48  .51  .44  .36  .53  .59 
+  14 TIZ12A   1788 1899  .82  .62  .58                     
+  16 TIZ15A   1837 2011            .63  .60  .53  .52  .64 
+  17 TIZ16A   1794 2011  .73  .58  .57  .67  .68  .61  .61 
+  18 TIZ17A   1850 2011                 .68  .66  .58  .60 
+  20 TIZ19B   1763 2011  .78  .76  .75  .65  .51  .48  .76 
+ Av segment correlation  .67  .63  .67  .69  .64  .58  .63 
+
+ FLAGGED SEGMENTS: mar047
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 TIZ05A   1800 1849     B     .429        -1      .492   .063
+
+ DESCRIPTIVE STATISTICS: mar047
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TIZ02A   1799 2011    213      7      0    .602   1.87   4.32   .906   .835   .270   1.70   .263   .047   1
+   2 TIZ02B   1936 2011     76      1      0    .621   3.17   6.95  1.305   .853   .166   1.56   .181   .009   2
+   3 TIZ04B   1777 1914    138      3      0    .600   1.04   2.76   .509   .766   .251   1.70   .270   .038   1
+   4 TIZ05A   1727 1943    217      4      1    .612   1.34   4.56   .818   .899   .297   1.84   .284   .004   3
+   5 TIZ05B   1749 1946    198      4      0    .578   1.47   8.17   .914   .562   .353   3.30   .384  -.044   3
+   6 TIZ07A   1775 1890    116      2      0    .691   1.73   4.19   .745   .858   .221   1.44   .199  -.041   3
+   7 TIZ08A   1925 2011     87      1      0    .591   1.53   2.60   .451   .801   .143   1.49   .164   .021   1
+   8 TIZ08B   1901 2011    111      2      0    .561   1.84   3.23   .712   .850   .184   1.68   .198  -.032   3
+   9 TIZ09A   1850 1965    116      2      0    .521   1.69   4.29   .905   .811   .334   2.07   .319  -.005   3
+  10 TIZ11A   1787 2011    225      7      0    .726   1.45   3.70   .558   .818   .193   1.53   .192  -.010   3
+  11 TIZ11B   1831 2011    181      5      0    .801   1.28   2.44   .371   .705   .187   1.55   .190  -.025   3
+  12 TIZ13A1  1781 1873     93      1      0    .613   2.40   6.56  1.446   .889   .222   1.48   .202   .055   3
+  13 TIZ13B   1808 2011    204      6      0    .453   1.81   4.65   .738   .685   .252   1.85   .254  -.019   2
+  14 TIZ12A   1788 1899    112      3      0    .657   2.17   8.57  1.912   .933   .384   1.77   .311   .020   2
+  15 TIZ14A   1720 1835    116      0      0    .669   1.75   4.18   .869   .821   .306   1.67   .272   .012   3
+  16 TIZ15A   1837 2011    175      5      0    .575   2.09   5.11   .865   .770   .219   1.54   .239  -.011   3
+  17 TIZ16A   1794 2011    218      7      0    .619   1.82   4.04   .893   .810   .304   1.60   .266   .008   3
+  18 TIZ17A   1850 2011    162      4      0    .634   2.25   4.81  1.143   .801   .336   1.90   .292   .182   3
+  19 TIZ19A   1789 2011    213                         1.82   5.30  1.063   .818   .282                         
+  20 TIZ19B   1763 2011    249      7      0    .674   1.51   4.37   .866   .798   .327   1.76   .280   .022   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3220     71      1    .623   1.74   8.57   .868   .795   .269   3.30   .257   .011
+
+ DATA CHECKS (rwl.check): mar047
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/mar047.rwl
+ 20 series, 3220 measurements, 1720-2011, 0.01 mm precision
+ 1 error(s), 2 warning(s), 3 note(s)
+ -------------
+ ERROR
+   RWL_COLUMN_LAYOUT (1)
+     TIZ19A: core TIZ19A, decade starting 1900: the ten fixed-width columns and a whitespace split of the same line give different measurements, so the line does not conform to the Tucson column layout and cannot be read unambiguously. Returned as NA. Columns give (55 80 88 97 92 68 0 4 310 411); whitespace gives (55 80 88 97 92 68 0 43 104 11). Line: TIZ19A  1900    55    80    88    97    92    68     0     43   104   11
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     TIZ19A: no measurement for 1900-1909, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+   RWL_PAST_COL72 (1)
+     2 line(s) hold a digit in column 72 and another in column 73. Either the last measurement runs past the column-72 boundary, in which case truncating there drops a digit, or the record ends at column 72 and what follows is not a measurement. The line does not say which, and the reader takes the shorter reading: everything past column 72 is dropped. Worth checking against the neighbouring years, since a value that is out of range for its series is the sign that the digit belonged to it. First one: TIZ02A  1880    95    80   101   128   170   213   253   279   244    23 <<past column 72>> 3
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file mar047.rwl, MD5 9648b40465186d113ec679c77ae72dbb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series TIZ19A has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

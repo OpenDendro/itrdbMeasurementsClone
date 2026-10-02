@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: norw002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : norw002.rwl
+      MD5 of measurement file: 58d535cb389d0d5769699c5c89c732a2
+      Date checked           : 01OCT26
+      Beginning year         : 1776
+      Ending year            : 1978
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Tua Steinkier
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 63.9500 N
+      Longitude              : 10.8800 E
+      Elevation              : 300 m
+
+      Series intercorrelation: 0.577
+      Avg mean sensitivity   : 0.216
+      Avg standard deviation : 0.492
+      Avg autocorrelation    : 0.803
+      Number dated series    : 24
+      Series crossdated      : 23
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 1.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: norw002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 545011   1776 1978  .72  .70  .74  .70  .46  .46 
+   2 545012   1785 1978  .59  .65  .58  .46  .32A .40 
+   3 545021   1790 1978  .57  .58  .55  .59  .49  .50 
+   4 545022   1809 1978       .81  .79  .62  .60  .67 
+   5 545031   1873 1978                 .48  .40  .45 
+   6 545032   1893 1978                      .71  .60 
+   7 545041   1815 1978       .69  .75  .64  .49  .46 
+   8 545042   1807 1977       .59  .62  .58  .60  .66 
+   9 545051   1776 1978  .62  .51  .48  .46  .53  .64 
+  10 545052   1776 1957  .67  .69  .64  .58  .63      
+  12 545062   1832 1978            .69  .54  .59  .62 
+  13 545071   1797 1978  .45  .56  .63  .61  .71  .71 
+  14 545072   1803 1978       .56  .63  .66  .71  .69 
+  15 545081   1839 1977            .67  .66  .58  .45 
+  16 545082   1874 1978                 .72  .66  .54 
+  17 545091   1835 1978            .43  .19B .45  .59 
+  18 545092   1847 1978            .51  .40  .53  .59 
+  19 545101   1812 1978       .62  .54  .41  .47  .52 
+  20 545102   1815 1978       .72  .64  .68  .75  .58 
+  21 545111   1827 1966            .64  .59  .67      
+  22 545112   1828 1978            .61  .52  .57  .60 
+  23 545121   1844 1978            .72  .57  .48  .52 
+  24 545122   1852 1953                 .54  .58      
+ Av segment correlation  .60  .64  .62  .56  .56  .56 
+
+ FLAGGED SEGMENTS: norw002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 545012   1900 1949     A     .316         0
+  17 545091   1875 1924     B     .187        -5      .337   .150
+
+ DESCRIPTIVE STATISTICS: norw002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 545011   1776 1978    203      6      0    .529   1.13   3.20   .557   .834   .200   1.97   .220   .061   1
+   2 545012   1785 1978    194      6      1    .516    .84   1.78   .324   .819   .194   1.52   .187  -.037   1
+   3 545021   1790 1978    189      6      0    .507    .78   2.16   .447   .876   .216   1.95   .216   .024   1
+   4 545022   1809 1978    170      5      0    .701    .98   2.94   .543   .851   .224   1.52   .217   .029   1
+   5 545031   1873 1978    106      3      0    .468   1.54   2.80   .466   .748   .166   1.32   .161   .002   2
+   6 545032   1893 1978     86      2      0    .609   1.88   3.37   .663   .799   .176   1.62   .182   .005   1
+   7 545041   1815 1978    164      5      0    .609   1.06   3.27   .662   .882   .236   1.77   .227  -.019   2
+   8 545042   1807 1977    171      5      0    .535    .89   2.43   .519   .798   .272   2.24   .299   .001   1
+   9 545051   1776 1978    203      6      0    .567    .79   2.19   .396   .871   .186   1.58   .195  -.018   2
+  10 545052   1776 1957    182      5      0    .571    .80   1.97   .290   .693   .218   1.76   .225   .091   1
+  11 545061   1845 1978    103                         1.03   2.17   .355   .712   .203                         
+  12 545062   1832 1978    147      4      0    .609   1.02   2.53   .444   .801   .214   1.53   .214  -.024   1
+  13 545071   1797 1978    182      6      0    .597    .84   1.91   .416   .866   .206   1.47   .204  -.014   1
+  14 545072   1803 1978    176      5      0    .618    .87   2.41   .519   .857   .222   1.70   .223   .019   1
+  15 545081   1839 1977    139      4      0    .568   1.06   3.01   .387   .672   .217   1.74   .234  -.018   1
+  16 545082   1874 1978    105      3      0    .601   1.21   2.62   .517   .774   .219   1.79   .218  -.029   1
+  17 545091   1835 1978    144      4      1    .479   1.31   3.56   .676   .811   .235   1.75   .253  -.017   3
+  18 545092   1847 1978    132      4      0    .540   1.16   2.93   .622   .853   .193   1.80   .207   .034   2
+  19 545101   1812 1978    167      5      0    .529    .77   2.13   .450   .832   .285   1.58   .260   .028   1
+  20 545102   1815 1978    164      5      0    .656   1.06   2.42   .450   .775   .219   1.70   .220  -.003   3
+  21 545111   1827 1966    140      3      0    .674   1.17   3.04   .462   .756   .202   1.67   .227  -.030   3
+  22 545112   1828 1978    151      4      0    .595   1.33   2.90   .424   .605   .214   1.79   .228   .056   1
+  23 545121   1844 1978    135      4      0    .601   1.28   3.09   .643   .815   .217   1.58   .210   .030   2
+  24 545122   1852 1953    102      2      0    .646   1.32   3.81   .860   .849   .222   1.54   .228   .007   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3655    102      2    .577   1.04   3.81   .492   .803   .216   2.24   .221   .009
+
+ DATA CHECKS (rwl.check): norw002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/norw002.rwl
+ 24 series, 3655 measurements, 1776-1978, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     545061: no measurement for 1899-1929, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file norw002.rwl, MD5 58d535cb389d0d5769699c5c89c732a2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 545061 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

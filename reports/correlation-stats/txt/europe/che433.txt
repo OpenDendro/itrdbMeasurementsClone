@@ -1,0 +1,113 @@
+
+ COFECHA-style crossdating report: che433
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che433.rwl
+      MD5 of measurement file: df6df6f2e4bfc503affb0687f0dce174
+      Date checked           : 01OCT26
+      Beginning year         : 1922
+      Ending year            : 2013
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Bois de Chênes
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.4356 N
+      Longitude              : 6.2389 E
+      Elevation              : 530 m
+
+      Series intercorrelation: 0.493
+      Avg mean sensitivity   : 0.225
+      Avg standard deviation : 1.189
+      Avg autocorrelation    : 0.781
+      Number dated series    : 12
+      Segment length tested  : 46
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che433
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1995 
+ --- -------- ---------  ---- 
+   1 11470    1935 2013  .53 
+   2 11471    1931 2013  .57 
+   4 11473    1922 2013  .58 
+   5 11474    1929 2013  .64 
+   6 11475    1941 2013  .74 
+   7 11476    1928 2013  .41 
+   8 11477    1927 2013  .46 
+  10 11479    1948 2013  .56 
+  11 11480    1926 2013  .51 
+  12 11481    1936 2013  .62 
+ Av segment correlation  .56 
+
+ FLAGGED SEGMENTS: che433
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che433
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 11470    1935 2013     79      1      0    .472   2.06   7.20  1.204   .648   .257   3.09   .365   .001   1
+   2 11471    1931 2013     83      1      0    .578   3.12   5.13  1.033   .767   .207   1.47   .211  -.009   1
+   3 11472b   1924 1986     63      0      0    .405   2.02   4.63  1.109   .896   .206   1.47   .192  -.004   1
+   4 11473    1922 2013     92      1      0    .393   2.46   5.94  1.224   .848   .208   1.78   .238   .019   2
+   5 11474    1929 2013     85      1      0    .548   2.18   5.52   .973   .725   .226   1.68   .238  -.021   2
+   6 11475    1941 2013     73      1      0    .628   3.07   5.64   .857   .593   .199   1.57   .210  -.020   1
+   7 11476    1928 2013     86      1      0    .425   2.22   4.74  1.016   .761   .250   1.79   .261  -.053   3
+   8 11477    1927 2013     87      1      0    .444   2.40   6.74  1.367   .876   .236   1.84   .231  -.035   2
+   9 11478    1952 2013     62      0      0    .687   2.74   6.93  1.507   .901   .220   1.64   .236  -.042   1
+  10 11479    1948 2013     66      1      0    .423   2.06   8.05  1.109   .636   .246   2.21   .264   .067   0
+  11 11480    1926 2013     88      1      0    .392   2.77   8.51  1.856   .891   .244   1.71   .258   .034   1
+  12 11481    1936 2013     78      1      0    .571   2.51   4.68   .962   .808   .200   1.58   .195  -.017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            942     10      0    .493   2.47   8.51  1.189   .781   .225   3.09   .242  -.007
+
+ DATA CHECKS (rwl.check): che433
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che433.rwl
+ 12 series, 942 measurements, 1922-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che433.rwl, MD5 df6df6f2e4bfc503affb0687f0dce174.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 46 years: the record is only 92 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

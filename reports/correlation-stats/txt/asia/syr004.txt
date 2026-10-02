@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: syr004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : syr004.rwl
+      MD5 of measurement file: 003ea94f4b7706df4d088719a8e021b7
+      Date checked           : 01OCT26
+      Beginning year         : 1892
+      Ending year            : 2001
+      Principal investigators: Touchan, R.
+      Site name              : Atera
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 35.8300 N
+      Longitude              : 36.0200 E
+      Elevation              : 440 m
+
+      Series intercorrelation: 0.518
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.840
+      Avg autocorrelation    : 0.739
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: syr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ATEP01   1913 2001       .60  .51 
+   2 ATEP02   1898 2001  .53  .58  .47 
+   3 ATEP04   1910 2001       .55  .52 
+   4 ATEP05   1892 2001  .37  .47  .51 
+   5 ATEP07   1900 2001       .44  .51 
+   6 ATEP08   1920 2001       .65  .55 
+   7 ATEP09   1896 2001  .43  .42  .37 
+ Av segment correlation  .44  .53  .49 
+
+ FLAGGED SEGMENTS: syr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: syr004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ATEP01   1913 2001     89      2      0    .592   2.11   4.89   .895   .714   .243   1.51   .226   .004   2
+   2 ATEP02   1898 2001    104      3      0    .525   1.46   4.24   .881   .848   .216   1.53   .219   .052   1
+   3 ATEP04   1910 2001     92      2      0    .610   2.56   4.71   .843   .521   .261   1.68   .229   .078   0
+   4 ATEP05   1892 2001    110      3      0    .449   1.02   4.88  1.054   .898   .315   1.67   .293   .051   1
+   5 ATEP07   1900 2001    102      2      0    .482   1.65   3.93   .863   .812   .205   1.61   .215   .033   1
+   6 ATEP08   1920 2001     82      2      0    .555   1.85   3.11   .517   .526   .202   1.47   .191   .006   1
+   7 ATEP09   1896 2001    106      3      0    .446   1.88   5.19   .758   .770   .211   1.46   .204  -.015   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            685     17      0    .518   1.76   5.19   .840   .739   .237   1.68   .227   .030
+
+ DATA CHECKS (rwl.check): syr004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/syr004.rwl
+ 7 series, 685 measurements, 1892-2001, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file syr004.rwl, MD5 003ea94f4b7706df4d088719a8e021b7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

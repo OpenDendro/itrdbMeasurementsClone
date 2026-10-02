@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: nc3
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc3.rwl
+      MD5 of measurement file: 410f50786c0b33e89ba4c97f16a55f4b
+      Date checked           : 01OCT26
+      Beginning year         : 1648
+      Ending year            : 1847
+      Principal investigators: Barefoot, A.C.
+      Site name              : Lead Mine  Hampton Hills
+      Species information    : PIEC Pinus echinata Mill.
+      Latitude               : 35.8200 N
+      Longitude              : 78.6800 W
+      Elevation              : 108 m
+
+      Series intercorrelation: 0.430
+      Avg mean sensitivity   : 0.244
+      Avg standard deviation : 0.606
+      Avg autocorrelation    : 0.736
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 18.75
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc3
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 LMHH01   1744 1814            .42      
+   4 LMHH04   1712 1847      -.13B .45  .55 
+   7 LMHH07   1742 1847            .48  .47 
+   8 LMHH08   1668 1847  .38  .25B .58  .59 
+   9 LMHH09   1760 1838                 .56 
+  13 LMHH13   1764 1847                 .61 
+  14 LMHH14   1754 1847                 .56 
+  15 LMHH15   1724 1847       .21A .43  .54 
+ Av segment correlation  .38  .11  .47  .55 
+
+ FLAGGED SEGMENTS: nc3
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 LMHH04   1725 1774     B    -.132        -7      .289   .421  weak at every lag
+   8 LMHH08   1725 1774     B     .246        -8      .269   .023  weak at every lag
+  15 LMHH15   1725 1774     A     .205         0
+
+ DESCRIPTIVE STATISTICS: nc3
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LMHH01   1744 1814     71      1      0    .331   1.30   2.26   .465   .767   .199   1.50   .202   .076   3
+   2 LMHH02   1750 1812     63      0      0    .278   1.36   2.67   .578   .830   .223   1.48   .222   .005   1
+   3 LMHH03   1768 1804     37      0      0   -.020   2.58   4.66  1.146   .719   .308   1.79   .316   .072   1
+   4 LMHH04   1712 1847    136      3      1    .350   1.34   6.50  1.016   .852   .260   1.58   .245   .024   1
+   5 LMHH05   1730 1784     55      0      0   -.166   1.15   2.49   .475   .792   .216   1.55   .219   .034   1
+   6 LMHH06   1648 1748    101      0      0    .621   1.28   4.04   .665   .690   .333   1.99   .305   .065   1
+   7 LMHH07   1742 1847    106      2      0    .485    .74   1.37   .244   .603   .245   1.55   .224   .006   1
+   8 LMHH08   1668 1847    180      4      1    .550   1.00   4.34   .544   .780   .266   2.38   .291   .001   3
+   9 LMHH09   1760 1838     79      1      0    .548   1.51   2.71   .541   .730   .220   1.62   .221  -.014   2
+  10 LMHH10   1692 1744     53      0      0    .311   2.05   4.82  1.039   .660   .352   1.67   .332  -.010   2
+  11 LMHH11   1751 1803     53      0      0    .411   1.77   3.42   .789   .823   .244   1.72   .248  -.023   2
+  12 LMHH12   1778 1847     70      0      0    .479   1.23   2.20   .361   .683   .204   1.43   .181   .083   3
+  13 LMHH13   1764 1847     84      1      0    .574   1.02   1.72   .310   .570   .240   1.56   .219   .107   3
+  14 LMHH14   1754 1847     94      1      0    .526   1.76   4.69   .950   .929   .173   1.34   .181   .052   1
+  15 LMHH15   1724 1847    124      3      1    .462   1.26   2.64   .361   .611   .196   1.38   .178   .013   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1306     16      3    .430   1.32   6.50   .606   .736   .244   2.38   .238   .030
+
+ DATA CHECKS (rwl.check): nc3
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc3.rwl
+ 15 series, 1306 measurements, 1648-1847, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1770-1991 but the measurements cover 1648-1847
+   RWL_SERIES_OUTLIER (1)
+     LMHH05: correlates with the rest of the collection at r = -0.171 where the collection median is 0.465 (5 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file nc3.rwl, MD5 410f50786c0b33e89ba4c97f16a55f4b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: az043
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az043.rwl
+      MD5 of measurement file: 9e56e13d5ec7d040203afd1206891227
+      Date checked           : 01OCT26
+      Beginning year         : 1660
+      Ending year            : 1965
+      Principal investigators: Harlan, T.P.
+      Site name              : Rose Peak
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 33.3800 N
+      Longitude              : 109.3700 W
+      Elevation              : 2316 m
+
+      Series intercorrelation: 0.708
+      Avg mean sensitivity   : 0.532
+      Avg standard deviation : 0.577
+      Avg autocorrelation    : 0.600
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 7.37
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az043
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 162011   1752 1965                 .87  .77  .69  .44  .59  .87 
+   2 162012   1753 1965                 .65  .75  .71  .53  .63  .81 
+   3 162021   1848 1965                                .22B .74  .82 
+   4 162022   1820 1965                           .24B .32B .71  .79 
+   5 162031   1660 1965  .91  .90  .91  .93  .78  .65  .78  .80  .83 
+   6 162032   1670 1965  .89  .88  .87  .86  .73  .66  .80  .89  .94 
+   7 162041   1700 1965       .84  .82  .87  .85  .78  .63  .77  .91 
+   8 162042   1730 1965            .52  .62  .74  .47  .45B .76  .91 
+   9 162051   1760 1965                 .83  .65  .35  .13B .63  .91 
+  10 162052   1730 1965            .79  .87  .74  .30A .13B .67  .90 
+  11 162061   1708 1965       .69  .71  .85  .74  .71  .74  .82  .82 
+  12 162062   1742 1965            .63  .79  .75  .76  .73  .69  .65 
+  13 162071   1730 1965            .84  .89  .87  .76  .71  .80  .88 
+  14 162072   1720 1965       .89  .85  .91  .89  .72  .61  .76  .90 
+ Av segment correlation  .90  .84  .77  .83  .77  .60  .51  .73  .85 
+
+ FLAGGED SEGMENTS: az043
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 162021   1850 1899     B     .224        -1      .587   .363
+   4 162022   1825 1874     B     .235        -1      .526   .291
+   4 162022   1850 1899     B     .324        -1      .432   .108
+   8 162042   1850 1899     B     .450        10      .497   .047
+   9 162051   1850 1899     B     .130         1      .279   .149  weak at every lag
+  10 162052   1825 1874     A     .296         0
+  10 162052   1850 1899     B     .128         1      .376   .248
+
+ DESCRIPTIVE STATISTICS: az043
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 162011   1752 1965    214      6      0    .668    .57   2.48   .369   .650   .464   2.35   .418   .004   1
+   2 162012   1753 1965    213      6      0    .665    .78   2.68   .510   .646   .461   2.56   .423   .000   2
+   3 162021   1848 1965    118      3      1    .476    .83   2.66   .480   .551   .469   2.03   .388   .127   0
+   4 162022   1820 1965    146      4      2    .458   1.25   3.48   .792   .701   .445   2.30   .399  -.019   1
+   5 162031   1660 1965    306      9      0    .846    .91   2.59   .536   .632   .444   2.21   .383  -.004   1
+   6 162032   1670 1965    296      9      0    .833    .85   2.89   .510   .623   .458   2.23   .399   .010   1
+   7 162041   1700 1965    266      8      0    .765    .87   3.02   .578   .645   .523   2.86   .446   .011   1
+   8 162042   1730 1965    236      7      1    .679    .94   3.01   .545   .510   .538   2.47   .435   .012   1
+   9 162051   1760 1965    206      6      1    .645    .64   1.90   .402   .412   .609   2.53   .490   .007   1
+  10 162052   1730 1965    236      7      2    .651    .72   2.27   .457   .566   .560   2.25   .471   .013   1
+  11 162061   1708 1965    258      8      0    .688    .94   3.66   .702   .566   .601   2.28   .475  -.007   1
+  12 162062   1742 1965    224      7      0    .676   1.16   3.85   .737   .534   .567   2.22   .456  -.011   1
+  13 162071   1730 1965    236      7      0    .771    .92   4.16   .833   .726   .623   2.85   .518  -.001   2
+  14 162072   1720 1965    246      8      0    .780    .81   3.41   .633   .617   .649   2.63   .551   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3201     95      7    .708    .87   4.16   .577   .600   .532   2.86   .448   .007
+
+ DATA CHECKS (rwl.check): az043
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az043.rwl
+ 14 series, 3201 measurements, 1660-1965, 0.01 mm precision
+ 0 error(s), 0 warning(s), 15 note(s)
+ -------------
+ Nothing to report at this severity.
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file az043.rwl, MD5 9e56e13d5ec7d040203afd1206891227.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,152 @@
+
+ COFECHA-style crossdating report: mex119
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex119.rwl
+      MD5 of measurement file: dbd1476c513736ffcf31e2e7f22127d3
+      Date checked           : 01OCT26
+      Beginning year         : 1880
+      Ending year            : 2005
+      Principal investigators: Villanueva-Díaz, J.; Sheppard, P.R.
+      Site name              : Santa Teresa
+      Species information    : PIOO Pinus oocarpa Schiede
+      Latitude               : 14.5830 N
+      Longitude              : 89.4340 W
+      Elevation              : 1238 m
+
+      Series intercorrelation: 0.461
+      Avg mean sensitivity   : 0.327
+      Avg standard deviation : 1.470
+      Avg autocorrelation    : 0.706
+      Number dated series    : 40
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 17.65
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex119
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   6 STE08A   1928 2000            .31A
+   7 STE08B   1927 2005            .57 
+  11 STA12B   1927 2005            .47 
+  13 STE17A   1939 2005            .59 
+  14 STE17B   1941 2005            .69 
+  16 STE20A   1941 2005            .33 
+  18 STE21B   1940 2005            .31A
+  22 STE27B   1907 1981       .47      
+  26 STE31A   1921 2005       .27B .61 
+  27 STE31B   1930 2005            .50 
+  28 STE32B   1942 2005            .49 
+  29 STE34A   1936 2005            .33 
+  32 STE36A   1940 2002            .36 
+  34 STE38B   1936 2005            .47 
+  36 STE39B   1931 2005            .64 
+  37 STE41A   1947 2005            .42 
+ Av segment correlation       .37  .47 
+
+ FLAGGED SEGMENTS: mex119
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 STE08A   1950 1999     A     .313         0
+  18 STE21B   1950 1999     A     .307         0
+  26 STE31A   1925 1974     B     .275       -10      .296   .022  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mex119
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 STE01A   1950 2005     56      0      0    .318   2.66   6.45  1.406   .794   .308   1.62   .317   .077   1
+   2 STE01B   1950 2005     56      0      0    .438   2.90   7.54  1.669   .807   .294   1.58   .307   .088   1
+   3 STE03A   1965 2005     41      0      0    .418   3.27   6.74  1.577   .799   .253   1.53   .227   .047   3
+   4 STE03B   1965 2005     41      0      0    .621   5.03   9.37  1.835   .651   .281   1.55   .253  -.035   2
+   5 RSM04A   1880 1969     90      0      0    .288   1.63  10.96  1.667   .747   .336   2.70   .386  -.010   2
+   6 STE08A   1928 2000     73      1      1    .320   2.02   5.11   .966   .739   .294   1.67   .293   .015   1
+   7 STE08B   1927 2005     79      1      0    .568   2.10   6.44  1.131   .503   .380   3.05   .415   .003   1
+   8 STE09A   1952 2005     54      0      0    .267   2.17   4.33  1.000   .757   .279   1.65   .287  -.020   1
+   9 STE09B   1952 2005     54      0      0    .454   2.21   7.26  1.233   .821   .281   1.64   .290  -.001   2
+  10 STE11B   1964 2005     42      0      0    .250   2.80  10.11  2.535   .898   .344   1.49   .272   .046   2
+  11 STA12B   1927 2005     79      1      0    .462   2.30   7.00  1.269   .654   .329   2.36   .350  -.013   1
+  12 STE16A   1975 2005     31      0      0    .506   4.03   8.11  2.168   .693   .352   1.76   .354   .023   1
+  13 STE17A   1939 2005     67      1      0    .581   1.73   7.02  1.359   .838   .340   2.30   .369   .007   1
+  14 STE17B   1941 2005     65      1      0    .651   1.99   6.85  1.313   .785   .340   2.00   .368  -.009   1
+  15 STE19B   1940 1990     51      0      0    .633   3.89  12.22  2.337   .799   .308   1.56   .277   .034   1
+  16 STE20A   1941 2005     65      1      0    .330   2.45   5.24  1.200   .752   .262   2.00   .289   .175   0
+  17 STE21A   1950 2005     56      0      0    .477   2.05   4.26   .858   .655   .328   1.94   .311   .089   1
+  18 STE21B   1940 2005     66      1      1    .328   2.01   4.25   .894   .654   .287   1.73   .288   .004   2
+  19 STE21C   1940 1973     34      0      0    .558   2.57   6.25  1.442   .855   .281   1.33   .255   .128   1
+  20 STE24B   1980 2005     26      0      0    .283   4.67   7.51  1.751   .859   .165   1.49   .177   .034   1
+  21 STE26B   1980 2005     26      0      0    .382   3.37   9.88  1.779   .501   .271   2.24   .352  -.001   2
+  22 STE27B   1907 1981     75      1      0    .398   1.69   3.53   .690   .440   .326   1.71   .303   .149   0
+  23 STE28A   1951 2005     55      0      0    .540   2.22   5.36  1.102   .434   .390   1.96   .367   .186   0
+  24 STE28B   1934 1990     57      0      0    .405   1.98   5.58   .950   .308   .383   2.49   .363   .025   0
+  25 STE29A   1940 1990     51      0      0    .616   2.36   9.48  1.537   .802   .308   1.63   .280   .088   1
+  26 STE31A   1921 2005     85      2      1    .481   1.99   6.48  1.514   .770   .424   2.21   .414  -.013   2
+  27 STE31B   1930 2005     76      1      0    .454   1.55   4.02   .868   .741   .415   1.70   .337   .061   3
+  28 STE32B   1942 2005     64      1      0    .454   2.08   6.70  1.648   .737   .356   2.59   .409   .055   1
+  29 STE34A   1936 2005     70      1      0    .433   2.84  10.57  1.928   .743   .320   2.37   .348  -.039   3
+  30 STE35A   1980 2005     26      0      0    .566   4.36   7.03  1.605   .577   .283   1.69   .255   .166   0
+  31 STE35B   1980 2005     26      0      0    .523   5.09   9.78  2.174   .665   .290   1.67   .292  -.018   1
+  32 STE36A   1940 2002     63      1      0    .407   2.17   8.12  1.371   .630   .394   1.87   .376   .100   0
+  33 STE38A   1980 2005     26      0      0    .717   4.16   6.75  1.798   .872   .194   1.32   .169   .135   0
+  34 STE38B   1936 2005     70      1      0    .522   2.66   8.42  1.692   .754   .315   2.22   .331   .035   1
+  35 STE39A   1934 1990     57      0      0    .564   2.72   7.25  1.735   .765   .383   1.66   .345  -.003   1
+  36 STE39B   1931 2005     75      1      0    .677   2.60   8.23  1.545   .799   .357   1.63   .310  -.016   1
+  37 STE41A   1947 2005     59      1      0    .382   3.39  10.88  2.423   .805   .316   1.86   .327  -.021   2
+  38 STE44A   1980 2005     26      0      0    .380   4.38   8.67  1.973   .412   .318   2.15   .390   .269   1
+  39 STE44B   1980 2005     26      0      0    .512   4.41   8.34  1.792   .401   .332   1.77   .383   .290   0
+  40 STE45A   1975 2005     31      0      0    .426   2.59   7.41  2.135   .941   .268   1.88   .280   .152   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2170     17      3    .461   2.56  12.22  1.470   .706   .327   3.05   .328   .045
+
+ DATA CHECKS (rwl.check): mex119
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex119.rwl
+ 40 series, 2170 measurements, 1880-2005, 0.01 mm precision
+ 0 error(s), 3 warning(s), 15 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 497 carriage return(s) against 250 line feed(s); mixed endings can defeat a reader
+   RWL_SITE_CODE (2)
+     RSM04A: site code differs from the ste used by 38 of 40 series
+     STA12B: site code differs from the ste used by 38 of 40 series
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file mex119.rwl, MD5 dbd1476c513736ffcf31e2e7f22127d3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

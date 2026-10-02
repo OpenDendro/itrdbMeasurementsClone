@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: swit305
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit305.rwl
+      MD5 of measurement file: f7235a3f9a7d544dc433aaff12fbb046
+      Date checked           : 01OCT26
+      Beginning year         : 1956
+      Ending year            : 1995
+      Principal investigators: Fonti, P.; García-González, I.
+      Site name              : Novaggio
+      Species information    : CASA Castanea sativa Mill.
+      Latitude               : 46.0639 N
+      Longitude              : 8.8639 E
+      Elevation              : 726 m
+
+      Series intercorrelation: 0.531
+      Avg mean sensitivity   : 0.309
+      Avg standard deviation : 1.003
+      Avg autocorrelation    : 0.631
+      Number dated series    : 17
+      Segment length tested  : 20
+
+      Number problem segments: 8  (A 3, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 23.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit305
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  20-year dated segments, lagged  10 years
+ Flags:  A = correlation under   .5155 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1970 
+                        1979 1989 
+ --- -------- ---------  ---- ---- 
+   1 N0-103   1956 1995  .44B .65 
+   2 N0-105   1956 1995  .57  .58 
+   3 N1-4011  1956 1995  .60  .70 
+   4 N0-502   1956 1995  .60  .53B
+   5 N0-505   1956 1995  .79  .67 
+   6 N0-552   1956 1995  .72  .63 
+   7 N0-561   1956 1995  .64  .72 
+   8 N0-601   1956 1995 -.08B-.19B
+   9 N1-284   1956 1995  .62  .79 
+  10 N1-285   1956 1995  .72  .65 
+  11 N1-361   1956 1995  .79  .75 
+  12 N1-398   1956 1995  .48A .53 
+  13 N1-406   1956 1995  .85  .89 
+  14 N1-483   1956 1995  .54  .65 
+  15 N1-721   1956 1995  .71  .34B
+  16 N1-725   1956 1995  .64  .60 
+  17 N1-741   1956 1995  .50A .49A
+ Av segment correlation  .60  .59 
+
+ FLAGGED SEGMENTS: swit305
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 N0-103   1960 1979     B     .436        -4      .608   .172
+   4 N0-502   1970 1989     B     .528        -4      .602   .074
+   8 N0-601   1960 1979     B    -.084         3      .365   .448  weak at every lag
+   8 N0-601   1970 1989     B    -.187         3      .282   .470  weak at every lag
+  12 N1-398   1960 1979     A     .484         0
+  15 N1-721   1970 1989     B     .341        -8      .520   .179
+  17 N1-741   1960 1979     A     .502         0
+  17 N1-741   1970 1989     A     .486         0
+
+ DESCRIPTIVE STATISTICS: swit305
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 N0-103   1956 1995     40      2      1    .526   2.06   5.06  1.001   .760   .266   1.46   .266   .055   1
+   2 N0-105   1956 1995     40      2      0    .493   1.47   3.32   .874   .589   .356   1.85   .409   .001   3
+   3 N1-4011  1956 1995     40      2      0    .650   1.82   3.50   .760   .104   .427   1.67   .389  -.014   0
+   4 N0-502   1956 1995     40      2      1    .553   2.16   3.60   .773   .423   .332   1.46   .235  -.092   2
+   5 N0-505   1956 1995     40      2      0    .680   1.87   3.80   .913   .637   .309   1.82   .294   .038   3
+   6 N0-552   1956 1995     40      2      0    .574   1.70   3.68   .774   .701   .290   1.43   .253   .255   1
+   7 N0-561   1956 1995     40      2      0    .622   2.69   5.30  1.401   .470   .432   1.70   .339  -.051   3
+   8 N0-601   1956 1995     40      2      2   -.002   3.48   5.61  1.531   .735   .235   1.96   .275   .132   3
+   9 N1-284   1956 1995     40      2      0    .639   1.68   5.13  1.111   .606   .329   2.10   .317  -.119   2
+  10 N1-285   1956 1995     40      2      0    .668   1.78   6.10  1.621   .792   .419   2.83   .458   .006   2
+  11 N1-361   1956 1995     40      2      0    .704   1.62   3.12   .668   .811   .207   1.46   .228  -.001   2
+  12 N1-398   1956 1995     40      2      1    .438   1.97   4.04   .915   .825   .247   1.35   .235   .008   1
+  13 N1-406   1956 1995     40      2      0    .763   2.03   5.82  1.309   .528   .342   1.95   .400   .198   0
+  14 N1-483   1956 1995     40      2      0    .394   1.97   4.67  1.373   .816   .280   2.20   .347   .046   1
+  15 N1-721   1956 1995     40      2      1    .440   2.87   4.90   .936   .666   .221   1.57   .218   .041   1
+  16 N1-725   1956 1995     40      2      0    .566   1.49   2.81   .555   .499   .334   1.69   .287  -.077   3
+  17 N1-741   1956 1995     40      2      2    .313   1.25   2.76   .541   .766   .229   1.74   .235   .125   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            680     34      8    .531   2.00   6.10  1.003   .631   .309   2.83   .305   .033
+
+ DATA CHECKS (rwl.check): swit305
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit305.rwl
+ 17 series, 680 measurements, 1956-1995, 0.01 mm precision
+ 0 error(s), 0 warning(s), 24 note(s)
+ -------------
+ Nothing to report at this severity.
+ 24 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file swit305.rwl, MD5 f7235a3f9a7d544dc433aaff12fbb046.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5155 for 20-year segments.
+ Segments: 20 years, lagged 10, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 20 years: the record is only 40 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: swit288
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit288.rwl
+      MD5 of measurement file: ebe8b5829000aa24b4d4e51b6250cb6d
+      Date checked           : 01OCT26
+      Beginning year         : 1764
+      Ending year            : 1990
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Lauperswil Dürsrüti LI
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.9608 N
+      Longitude              : 7.7744 E
+      Elevation              : 910 m
+
+      Series intercorrelation: 0.490
+      Avg mean sensitivity   : 0.223
+      Avg standard deviation : 0.968
+      Avg autocorrelation    : 0.884
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3)
+      Pct problem segments   : 5.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit288
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 LA0040T1 1889 1990                      .68  .67 
+   2 LA0055T1 1897 1990                      .61  .56 
+   3 LA0058T1 1892 1990                      .62  .66 
+   4 LA0225T1 1917 1990                           .51 
+   5 LA0245T1 1764 1990  .36  .42  .59  .63  .80  .63 
+   6 LA0403T1 1887 1990                      .55  .51 
+   7 LA0403Td 1887 1990                      .61  .66 
+   8 LA0870T1 1764 1990  .58  .68  .60  .64  .73  .61 
+   9 LA2055T1 1797 1990  .42  .69  .65  .54  .45  .53 
+  10 LA2055Td 1797 1990  .59  .77  .67  .41  .42  .36 
+  11 LA2300T1 1787 1990  .62  .69  .62  .64  .69  .69 
+  12 LA3960T1 1776 1990  .52  .65  .56  .42  .47  .38 
+  13 LA5280T1 1806 1990       .15B .28B .39  .59  .50 
+  14 LA5670T1 1832 1990            .53  .66  .78  .64 
+  15 LA5835T1 1769 1990  .58  .51  .57  .68  .81  .62 
+  16 LA5835Td 1769 1990  .41  .39B .42  .32A .70  .70 
+  17 LA6045T1 1795 1990  .65  .57  .54  .50  .60  .61 
+  18 LA7175T1 1784 1990  .63  .73  .71  .51  .54  .33 
+  19 LA7200T1 1781 1990  .68  .68  .48  .32A .48  .55 
+ Av segment correlation  .55  .58  .56  .51  .62  .56 
+
+ FLAGGED SEGMENTS: swit288
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 LA5280T1 1825 1874     B     .152         7      .501   .349
+  13 LA5280T1 1850 1899     B     .281         7      .493   .212
+  16 LA5835Td 1825 1874     B     .388        -4      .390   .003
+  16 LA5835Td 1875 1924     A     .320         0
+  19 LA7200T1 1875 1924     A     .323         0
+
+ DESCRIPTIVE STATISTICS: swit288
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LA0040T1 1889 1990    102      2      0    .514   1.73   6.04  1.434   .911   .266   2.11   .291   .004   1
+   2 LA0055T1 1897 1990     94      2      0    .528   2.10   6.04  1.310   .933   .207   1.68   .189   .117   0
+   3 LA0058T1 1892 1990     99      2      0    .542   1.91   5.42  1.169   .939   .168   1.41   .166   .015   1
+   4 LA0225T1 1917 1990     74      1      0    .464   3.72   6.26  1.215   .833   .169   1.52   .170  -.037   2
+   5 LA0245T1 1764 1990    227      6      0    .465   1.55   3.27   .644   .799   .220   1.63   .236  -.005   1
+   6 LA0403T1 1887 1990    104      2      0    .522   2.15   7.28  1.549   .955   .192   1.53   .196  -.006   1
+   7 LA0403Td 1887 1990    104      2      0    .648   2.23   7.01  1.481   .939   .215   1.60   .216  -.004   1
+   8 LA0870T1 1764 1990    227      6      0    .491   2.43   4.77  1.031   .913   .159   1.49   .162   .038   3
+   9 LA2055T1 1797 1990    194      6      0    .504   1.29   2.98   .638   .841   .221   1.86   .222   .045   3
+  10 LA2055Td 1797 1990    194      6      0    .425   1.58   4.11   .804   .862   .205   2.46   .233   .016   2
+  11 LA2300T1 1787 1990    204      6      0    .599   1.48   2.83   .626   .845   .192   1.52   .179  -.005   1
+  12 LA3960T1 1776 1990    215      6      0    .465   1.85   4.05   .729   .818   .179   1.81   .191  -.012   3
+  13 LA5280T1 1806 1990    185      5      2    .262   1.16   3.60  1.003   .936   .330   2.90   .380   .007   2
+  14 LA5670T1 1832 1990    159      4      0    .535   1.87   5.27   .802   .781   .203   1.71   .219  -.040   1
+  15 LA5835T1 1769 1990    222      6      0    .567   1.49   4.36  1.072   .926   .245   2.16   .273  -.012   1
+  16 LA5835Td 1769 1990    222      6      2    .389   1.33   5.08  1.411   .955   .340   6.34   .567  -.005   2
+  17 LA6045T1 1795 1990    196      6      0    .540   1.09   3.94  1.052   .959   .245   2.09   .247  -.044   1
+  18 LA7175T1 1784 1990    207      6      0    .504   1.53   3.44   .650   .804   .207   2.29   .218  -.004   2
+  19 LA7200T1 1781 1990    210      6      1    .476   1.32   4.24   .938   .927   .202   2.16   .234   .003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3239     86      5    .490   1.67   7.28   .968   .884   .223   6.34   .250   .002
+
+ DATA CHECKS (rwl.check): swit288
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit288.rwl
+ 19 series, 3239 measurements, 1764-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit288.rwl, MD5 ebe8b5829000aa24b4d4e51b6250cb6d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

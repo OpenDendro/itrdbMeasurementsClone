@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: newz031
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz031.rwl
+      MD5 of measurement file: 74d9128a09652017f65969b023bc00dc
+      Date checked           : 01OCT26
+      Beginning year         : 1630
+      Ending year            : 1979
+      Principal investigators: Norton, D.A.
+      Site name              : Takahe Valley
+      Species information    : NOSO Nothofagus solanderi (Hook f.) Oerst.
+      Latitude               : 45.3000 S
+      Longitude              : 167.6800 E
+      Elevation              : 1100 m
+
+      Series intercorrelation: 0.676
+      Avg mean sensitivity   : 0.392
+      Avg standard deviation : 0.431
+      Avg autocorrelation    : 0.666
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 1.55
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 633011   1800 1979                           .75  .77  .78  .82  .86 
+   2 633012   1811 1979                           .76  .79  .80  .79  .70 
+   3 633021   1840 1979                                .71  .76  .78  .72 
+   4 633022   1840 1979                                .57  .69  .69  .70 
+   5 633051   1750 1979                 .80  .85  .82  .81  .87  .81  .76 
+   6 633052   1720 1979       .78  .73  .80  .86  .79  .69  .85  .84  .76 
+   7 633071   1760 1979                 .51  .63  .56  .66  .72  .76  .68 
+   8 633072   1760 1979                 .64  .64  .54  .54  .72  .80  .70 
+   9 633091   1740 1979            .74  .64  .74  .72  .65  .65  .63  .67 
+  10 633092   1840 1979                                .60  .69  .63  .58 
+  11 633101   1780 1979                      .59  .62  .61  .75  .73  .61 
+  12 633102   1760 1979                 .40  .65  .66  .70  .83  .85  .80 
+  13 633041   1740 1979            .70  .59  .75  .72  .68  .72  .73  .74 
+  14 633061   1800 1979                           .77  .47  .50  .69  .77 
+  15 633062   1820 1979                           .65  .52  .62  .70  .62 
+  16 633081   1680 1979  .50  .55  .43  .54B .81  .80  .57  .69  .70  .61 
+  17 633111   1630 1979  .57  .75  .75  .73  .81  .75  .63  .74  .87  .85 
+  18 633031   1680 1977  .71  .67  .54  .72  .82  .83  .86  .80  .78  .73 
+  19 633032   1660 1940  .65  .50  .30B .73  .81  .79  .83  .84           
+ Av segment correlation  .61  .65  .60  .65  .75  .72  .67  .74  .76  .72 
+
+ FLAGGED SEGMENTS: newz031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 633081   1775 1824     B     .542         9      .593   .052
+  19 633032   1750 1799     B     .296       -10      .298   .002  weak at every lag
+
+ DESCRIPTIVE STATISTICS: newz031
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 633011   1800 1979    180      5      0    .785    .68   2.17   .343   .590   .430   2.12   .396  -.028   3
+   2 633012   1811 1979    169      5      0    .743    .62   1.95   .404   .752   .470   2.38   .417  -.017   3
+   3 633021   1840 1979    140      4      0    .706    .79   1.58   .349   .763   .268   1.73   .273   .039   1
+   4 633022   1840 1979    140      4      0    .643    .62   1.33   .267   .700   .286   1.73   .288  -.016   3
+   5 633051   1750 1979    230      7      0    .806   1.00   2.93   .458   .610   .378   2.25   .335   .015   2
+   6 633052   1720 1979    260      9      0    .789    .60   1.49   .299   .442   .493   2.22   .413  -.000   1
+   7 633071   1760 1979    220      7      0    .548    .88   2.26   .436   .701   .323   1.88   .300   .015   1
+   8 633072   1760 1979    220      7      0    .607   1.02   2.23   .437   .656   .285   1.84   .272   .015   2
+   9 633091   1740 1979    240      8      0    .675    .75   2.26   .433   .686   .440   2.34   .395  -.008   3
+  10 633092   1840 1979    140      4      0    .607    .93   2.01   .513   .771   .329   1.98   .332  -.002   2
+  11 633101   1780 1979    200      6      0    .606    .80   1.83   .354   .580   .372   1.94   .341  -.009   2
+  12 633102   1760 1979    220      7      0    .696    .75   1.82   .344   .590   .357   2.39   .360  -.004   2
+  13 633041   1740 1979    240      8      0    .701    .73   1.91   .413   .832   .404   1.81   .319  -.015   2
+  14 633061   1800 1979    180      5      0    .649    .84   2.54   .483   .690   .397   2.20   .351   .011   2
+  15 633062   1820 1979    160      5      0    .617   1.37   4.08   .834   .748   .375   1.75   .354   .031   1
+  16 633081   1680 1979    300     10      1    .595    .92   3.05   .504   .700   .333   1.92   .317   .012   1
+  17 633111   1630 1979    350     10      0    .688    .63   1.55   .305   .500   .446   2.24   .395   .012   1
+  18 633031   1680 1977    298     10      0    .704    .72   2.33   .480   .721   .437   2.62   .425   .015   1
+  19 633032   1660 1940    281      8      1    .649    .79   3.05   .575   .794   .462   2.62   .412  -.026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4168    129      2    .676    .80   4.08   .431   .666   .392   2.62   .358   .002
+
+ DATA CHECKS (rwl.check): newz031
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz031.rwl
+ 19 series, 4168 measurements, 1630-1979, 0.01 mm precision
+ 0 error(s), 0 warning(s), 12 note(s)
+ -------------
+ Nothing to report at this severity.
+ 12 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file newz031.rwl, MD5 74d9128a09652017f65969b023bc00dc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

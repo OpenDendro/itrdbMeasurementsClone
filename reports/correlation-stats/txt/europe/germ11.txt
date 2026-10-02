@@ -1,0 +1,118 @@
+
+ COFECHA-style crossdating report: germ11
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ11.rwl
+      MD5 of measurement file: dbd8a2e4bd4f295bc01bbabee2a22397
+      Date checked           : 01OCT26
+      Beginning year         : 1573
+      Ending year            : 1961
+      Principal investigators: Becker, B.
+      Site name              : Kreuth
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.6300 N
+      Longitude              : 11.7500 E
+      Elevation              : 1150 m
+
+      Series intercorrelation: 0.391
+      Avg mean sensitivity   : 0.166
+      Avg standard deviation : 0.496
+      Avg autocorrelation    : 0.841
+      Number dated series    : 8
+      Series crossdated      : 7
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7; 5 of the B weak at every lag)
+      Pct problem segments   : 15.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   2 894131   1760 1961                                     .06B .43  .52  .48  .21B .09B
+   3 894141   1665 1961                -.00B .68  .53  .44  .37  .56  .62  .51  .35  .43 
+   4 894151   1664 1961                -.10B .51  .44  .50  .45  .56  .68  .57  .69  .68 
+   5 894161   1754 1961                                     .59  .65  .62  .54  .57  .49 
+   6 894171   1573 1961                 .21B .52  .55  .51  .52  .57  .55  .52  .50  .51 
+   7 894181   1709 1961                           .49  .53  .46  .46  .47  .29A .41  .43 
+   8 894191   1736 1961                                .28A .32B .46  .66  .70  .68  .54 
+ Av segment correlation                 .04  .57  .50  .45  .40  .53  .59  .52  .49  .45 
+
+ FLAGGED SEGMENTS: germ11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 894131   1775 1824     B     .065        -6      .208   .144  weak at every lag
+   2 894131   1875 1924     B     .213        -8      .381   .168
+   2 894131   1900 1949     B     .089         4      .284   .195  weak at every lag
+   3 894141   1675 1724     B    -.000        -4      .288   .288  weak at every lag
+   4 894151   1675 1724     B    -.096       -10      .276   .372  weak at every lag
+   6 894171   1675 1724     B     .214        -1      .219   .005  weak at every lag
+   7 894181   1850 1899     A     .292         0
+   8 894191   1750 1799     A     .277         0
+   8 894191   1775 1824     B     .324         5      .368   .043
+
+ DESCRIPTIVE STATISTICS: germ11
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 894121   1700 1958    258                         1.04   2.45   .428   .803   .194                         
+   2 894131   1760 1961    202      6      3    .263   1.75   4.03   .789   .878   .173   1.66   .191   .044   1
+   3 894141   1665 1961    297     10      1    .354   1.02   2.42   .297   .655   .164   1.87   .195  -.003   3
+   4 894151   1664 1961    298     10      1    .271    .90   2.26   .401   .842   .160   2.66   .187  -.005   1
+   5 894161   1754 1961    208      6      0    .593   1.12   3.10   .528   .876   .163   1.43   .172   .022   1
+   6 894171   1573 1961    389     10      1    .375    .93   2.48   .374   .877   .143   1.67   .155  -.001   3
+   7 894181   1709 1961    253      8      1    .463   1.31   3.32   .704   .923   .153   1.43   .154   .020   1
+   8 894191   1736 1961    226      7      2    .471    .99   4.03   .651   .908   .196   1.69   .190  -.015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2131     57      9    .391   1.10   4.03   .496   .841   .166   2.66   .176   .007
+
+ DATA CHECKS (rwl.check): germ11
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ11.rwl
+ 8 series, 2131 measurements, 1573-1961, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     894121: no measurement for 1816, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file germ11.rwl, MD5 dbd8a2e4bd4f295bc01bbabee2a22397.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 894121 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

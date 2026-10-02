@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: russ290
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ290.rwl
+      MD5 of measurement file: eeac80d845d999cc5b8234e908b63d10
+      Date checked           : 01OCT26
+      Beginning year         : 1873
+      Ending year            : 2005
+      Principal investigators: Oskolkov, V.A.; Voronin, V.I.
+      Site name              : Harich
+      Species information    : LASI Larix sibirica Ledeb. = Larix russica (Endl.) Sabine ex Trautv.
+      Latitude               : 52.9667 N
+      Longitude              : 106.8000 E
+      Elevation              : 698 m
+
+      Series intercorrelation: 0.667
+      Avg mean sensitivity   : 0.503
+      Avg standard deviation : 0.779
+      Avg autocorrelation    : 0.677
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 9.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ290
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 haric0   1873 2005  .82  .83  .89 
+   2 haric1   1907 2005       .27B .44 
+   3 haric2   1890 2005  .79  .87  .93 
+   4 haric3   1909 2005       .79  .87 
+   5 haric4   1878 2005  .66  .78  .73 
+   6 haric5   1911 2005       .86  .88 
+   7 haric6   1904 2005       .73  .85 
+   8 harih1   1927 2005            .83 
+   9 haric7   1899 2005  .39B .81  .81 
+ Av segment correlation  .67  .74  .80 
+
+ FLAGGED SEGMENTS: russ290
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 haric1   1925 1974     B     .268         5      .292   .024  weak at every lag
+   9 haric7   1900 1949     B     .392         1      .440   .048
+
+ DESCRIPTIVE STATISTICS: russ290
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 haric0   1873 2005    133      3      0    .779    .66   3.12   .579   .674   .524   2.00   .444   .027   1
+   2 haric1   1907 2005     99      2      1    .380   1.61   6.65  1.319   .683   .542   2.53   .530   .016   2
+   3 haric2   1890 2005    116      3      0    .756    .65   2.98   .529   .563   .517   2.40   .460   .016   1
+   4 haric3   1909 2005     97      2      0    .825    .93   3.28   .642   .573   .511   2.22   .475  -.017   1
+   5 haric4   1878 2005    128      3      0    .703   1.24   5.34  1.092   .772   .427   2.11   .398   .000   1
+   6 haric5   1911 2005     95      2      0    .877    .81   2.74   .561   .682   .492   2.34   .430   .123   0
+   7 haric6   1904 2005    102      2      0    .786    .59   1.89   .436   .627   .490   2.60   .452   .036   1
+   8 harih1   1927 2005     79      1      0    .810   1.12   4.95  1.104   .776   .499   2.62   .491   .155   0
+   9 haric7   1899 2005    107      3      1    .103   1.01   3.36   .828   .748   .538  74.74  7.150   .223   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            956     21      2    .667    .95   6.65   .779   .677   .503  74.74  1.206   .060
+
+ DATA CHECKS (rwl.check): russ290
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ290.rwl
+ 9 series, 956 measurements, 1873-2005, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (1)
+     harih1: site code differs from the haric used by 8 of 9 series
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file russ290.rwl, MD5 eeac80d845d999cc5b8234e908b63d10.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: bra010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra010.rwl
+      MD5 of measurement file: 2abb192196416419ddca235492eae1f6
+      Date checked           : 01OCT26
+      Beginning year         : 1946
+      Ending year            : 2015
+      Principal investigators: Venegas-González, A.; Roig, F.A.
+      Site name              : Juquitiba
+      Species information    : CEOD Cedrela odorata L.
+      Latitude               : 23.9567 S
+      Longitude              : 47.0408 W
+      Elevation              : 680 m
+
+      Series intercorrelation: 0.409
+      Avg mean sensitivity   : 0.515
+      Avg standard deviation : 1.592
+      Avg autocorrelation    : 0.488
+      Number dated series    : 29
+      Series crossdated      : 28
+      Segment length tested  : 34
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  34-year dated segments, lagged  17 years
+ Flags:  A = correlation under   .3972 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1967 
+                        1983 2000 
+ --- -------- ---------  ---- ---- 
+   1 JUQ03A   1955 2015       .43 
+   2 JUQ03B   1962 2014       .46 
+   4 JUQ05B   1967 2015       .56 
+   6 JUQ03C   1955 2003       .46 
+  13 JUQ11A   1965 2014       .52 
+  14 JUQ12B   1960 2010       .39A
+  19 JUQ16A   1960 2012       .34A
+  20 JUQ16B   1958 2015       .44 
+  23 JU019B   1960 2015       .31B
+  25 JUQ22A   1965 2009       .36A
+  27 JUQ24B   1946 2015       .48 
+  28 JUQ25A   1962 2015       .51 
+ Av segment correlation       .44 
+
+ FLAGGED SEGMENTS: bra010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  14 JUQ12B   1967 2000     A     .391         0
+  19 JUQ16A   1967 2000     A     .345         0
+  23 JU019B   1967 2000     B     .305         2      .393   .088  weak at every lag
+  25 JUQ22A   1967 2000     A     .360         0
+
+ DESCRIPTIVE STATISTICS: bra010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 JUQ03A   1955 2015     61      1      0    .466   2.54   8.91  2.139   .814   .476   1.80   .421  -.055   1
+   2 JUQ03B   1962 2014     53      1      0    .411   2.67  10.18  2.475   .767   .381   2.43   .449   .131   1
+   3 JUQ05A   1976 2015     40      0      0    .498   1.55   3.98   .942   .212   .593   2.17   .481   .011   0
+   4 JUQ05B   1967 2015     49      1      0    .526   1.93   4.75  1.149   .161   .620   2.57   .566   .107   0
+   5 JUQ05C   1976 2015     40      0      0    .602   2.41   8.34  1.556   .191   .528   2.81   .542   .130   0
+   6 JUQ03C   1955 2003     49      1      0    .497   2.16   6.12  1.498   .707   .443   1.98   .383   .006   1
+   7 JUQ04A   1962 2015     54                         1.60   5.93  1.427   .726   .578                         
+   8 JUQ02A   1999 2015     17      0      0    .051   6.24  11.48  2.920   .249   .457   2.14   .415  -.101   0
+   9 JUQ02B   1997 2015     19      0      0    .635   6.67  13.18  3.234   .405   .429   2.05   .432   .243   0
+  10 JUQ06B   1978 2015     38      0      0    .354   1.68   4.75   .803   .537   .384   1.80   .342   .056   1
+  11 JUQ08A   1973 2014     42      0      0    .205   2.18   5.78  1.299   .415   .510   2.11   .456   .003   0
+  12 JUQ10A   1976 2006     31      0      0    .447   4.68  11.83  2.367   .386   .480   1.92   .435  -.000   1
+  13 JUQ11A   1965 2014     50      1      0    .501   3.87  12.63  2.810   .480   .599   2.39   .567   .119   0
+  14 JUQ12B   1960 2010     51      1      1    .467   2.46   6.59  1.480   .690   .384   1.71   .356   .031   3
+  15 JUQ13C   1969 2001     33      0      0    .264   2.00   5.11  1.273   .445   .588   2.10   .517   .240   0
+  16 JUQ13B   1988 2015     28      0      0    .403   2.54   6.50  1.709   .656   .485   2.50   .472   .029   1
+  17 JUQ14A   1988 2015     28      0      0    .226   4.20   9.14  2.577   .467   .446   1.99   .505   .022   1
+  18 JUQ15B   1983 2015     33      0      0    .309   1.89   5.87  1.502   .445   .614   7.73  1.339  -.172   0
+  19 JUQ16A   1960 2012     53      1      1    .351   1.99   4.29  1.108   .301   .500   2.01   .422  -.114   0
+  20 JUQ16B   1958 2015     58      1      0    .371   1.76   5.06  1.065   .430   .516   1.97   .468   .047   2
+  21 JUQ17A   1966 2015     50      0      0    .402   1.95   5.29  1.428   .354   .679   2.65   .671   .015   2
+  22 JUQ18A   1972 2015     44      0      0    .462   2.76   6.00  1.402   .413   .531   1.95   .421  -.051   0
+  23 JU019B   1960 2015     56      1      1    .336   1.48   5.90  1.408   .613   .522   2.56   .559   .026   1
+  24 JU021B   1981 2015     35      0      0    .318   1.87   4.48  1.256   .331   .601   2.34   .572   .202   0
+  25 JUQ22A   1965 2009     45      1      1    .345   3.23   8.70  2.387   .838   .365   2.21   .371   .024   1
+  26 JUQ23B   1975 2015     41      0      0    .423   2.31   7.00  1.279   .425   .501   2.45   .447   .195   0
+  27 JUQ24B   1946 2015     70      1      0    .434   1.80   6.24  1.141   .609   .479   2.50   .469   .065   1
+  28 JUQ25A   1962 2015     54      1      0    .495   1.77   5.49  1.170   .135   .665   2.45   .536  -.106   3
+  29 JUQ26B   2003 2015     13      0      0    .294   3.88   6.67  1.642   .352   .423   1.54   .310  -.338   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1235     12      4    .409   2.43  13.18  1.592   .488   .515   7.73   .497   .032
+
+ DATA CHECKS (rwl.check): bra010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra010.rwl
+ 29 series, 1235 measurements, 1946-2015, 0.001 mm precision
+ 0 error(s), 1 warning(s), 22 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 22 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file bra010.rwl, MD5 2abb192196416419ddca235492eae1f6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3972 for 34-year segments.
+ Segments: 34 years, lagged 17, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series JUQ04A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 34 years: the record is only 70 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

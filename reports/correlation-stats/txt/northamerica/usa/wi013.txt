@@ -1,0 +1,150 @@
+
+ COFECHA-style crossdating report: wi013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi013.rwl
+      MD5 of measurement file: fe7e950a8102aef0066b057bd18a5802
+      Date checked           : 01OCT26
+      Beginning year         : 1
+      Ending year            : 252
+      Principal investigators: Kaiser, K.F.
+      Site name              : Two Creeks
+      Species information    : PCMA Picea mariana (Mill.) Britton, Sterns, & Poggenb.
+      Latitude               : 44.3067 N
+      Longitude              : 87.5283 W
+      Elevation              : 630 m
+
+      Series intercorrelation: 0.356
+      Avg mean sensitivity   : 0.156
+      Avg standard deviation : 0.194
+      Avg autocorrelation    : 0.881
+      Number dated series    : 21
+      Series crossdated      : 20
+      Segment length tested  : 50
+
+      Number problem segments: 17  (A 7, B 10; 5 of the B weak at every lag)
+      Pct problem segments   : 36.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   100  125  150  175  200 
+                         149  174  199  224  249 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 TC84_54    18  252  .19B .25A .12B          
+   2 TC80_78     1  205  .47  .53  .51           
+   3 TC80_85    11  204  .47  .60  .36           
+   4 TC80_301   21  203  .28A .22A-.02B          
+   5 TC84_131   34  203  .31A .47  .76           
+   6 TC80_112   38  200  .37  .44  .48           
+   7 TC80_96    41  202  .34  .20B .14B          
+   8 TC80_99    45  205  .48  .51  .49           
+   9 TC80_91    48  205  .28A .15B .17B          
+  10 TC80_142   29  183  .41  .41                
+  11 TC80_50    51  204  .30A .48  .57           
+  12 TC80_70    86  205  .22A .60  .61           
+  13 TC84_48    96  206  .53  .55  .39           
+  14 TC80_31    88  192  .47  .61                
+  16 TC80_30    99  193  .34B .51                
+  17 TC84_173  109  197       .49                
+  18 TC80_103  120  205       .35B .44           
+  19 TC80_307  131  200            .16B          
+ Av segment correlation  .36  .43  .37           
+
+ FLAGGED SEGMENTS: wi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 TC84_54   100  149     B     .187        -8      .275   .088  weak at every lag
+   1 TC84_54   125  174     A     .249         0
+   1 TC84_54   150  199     B     .119         3      .325   .207  weak at every lag
+   4 TC80_301  100  149     A     .284         0
+   4 TC80_301  125  174     A     .224         0
+   4 TC80_301  150  199     B    -.017         7      .187   .205  weak at every lag
+   5 TC84_131  100  149     A     .311         0
+   7 TC80_96   125  174     B     .203        -9      .428   .225
+   7 TC80_96   150  199     B     .140         2      .454   .315
+   9 TC80_91   100  149     A     .277         0
+   9 TC80_91   125  174     B     .147       -10      .165   .017  weak at every lag
+   9 TC80_91   150  199     B     .170         8      .289   .119  weak at every lag
+  11 TC80_50   100  149     A     .301         0
+  12 TC80_70   100  149     A     .218         0
+  16 TC80_30   100  149     B     .339        -8      .376   .037
+  18 TC80_103  125  174     B     .352         7      .380   .028
+  19 TC80_307  150  199     B     .157        -6      .423   .266
+
+ DESCRIPTIVE STATISTICS: wi013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TC84_54    18  252    235      3      3    .188    .29   1.08   .172   .911   .148   1.60   .162   .001   1
+   2 TC80_78     1  205    205      3      0    .388    .20    .90   .146   .946   .126   1.45   .138  -.005   1
+   3 TC80_85    11  204    194      3      0    .393    .28    .69   .124   .895   .146   1.62   .161  -.015   1
+   4 TC80_301   21  203    183      3      3    .170    .26    .49   .101   .804   .195   1.69   .205   .075   1
+   5 TC84_131   34  203    170      3      1    .568    .53   1.77   .398   .965   .116   1.46   .130   .045   1
+   6 TC80_112   38  200    163      3      0    .454    .15    .26   .051   .787   .169   1.66   .179  -.029   1
+   7 TC80_96    41  202    162      3      2    .285    .19    .56   .106   .930   .155   1.66   .172   .010   3
+   8 TC80_99    45  205    161      3      0    .434    .30    .59   .123   .851   .155   1.52   .175   .034   3
+   9 TC80_91    48  205    158      3      3    .344    .21    .57   .107   .877   .178   1.78   .211   .036   1
+  10 TC80_142   29  183    155      2      0    .343    .43   1.09   .293   .959   .145   1.49   .157   .080   1
+  11 TC80_50    51  204    154      3      1    .468    .23    .63   .074   .743   .148   1.35   .133  -.051   3
+  12 TC80_70    86  205    120      3      1    .435    .91   1.97   .456   .969   .118   1.65   .141   .187   1
+  13 TC84_48    96  206    111      3      0    .471    .52   1.15   .256   .939   .115   1.37   .125  -.056   1
+  14 TC80_31    88  192    105      2      0    .393    .39    .82   .193   .900   .161   1.93   .225   .220   1
+  15 TC80_32   100  203    104                          .37    .85   .199   .935   .156                         
+  16 TC80_30    99  193     95      2      1    .289    .91   1.58   .352   .856   .170   1.80   .191   .080   1
+  17 TC84_173  109  197     89      1      0    .317    .38    .81   .161   .877   .174   1.55   .193   .049   1
+  18 TC80_103  120  205     86      2      1    .423    .56   1.20   .253   .843   .177   1.62   .192   .048   1
+  19 TC80_307  131  200     70      1      1   -.019    .41   1.20   .263   .902   .226   3.29   .375   .358   1
+  20 TC84_37   157  201     45      0      0    .429    .85   2.50   .586   .879   .238   1.55   .246  -.017   1
+  21 TC80_402  169  204     36      0      0    .217    .79   1.19   .180   .309   .232   1.34   .186  -.105   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2801     46     17    .356    .37   2.50   .194   .881   .156   3.29   .175   .039
+
+ DATA CHECKS (rwl.check): wi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi013.rwl
+ 21 series, 2801 measurements, 1-252, 0.01 mm precision
+ 0 error(s), 1 warning(s), 14 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     TC80_307: correlates with the rest of the collection at r = -0.168 where the collection median is 0.336 (4.2 MAD below it); it does not fit the collection it is in
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wi013.rwl, MD5 fe7e950a8102aef0066b057bd18a5802.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series TC80_32 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

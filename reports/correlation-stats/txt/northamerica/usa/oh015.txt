@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: oh015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : oh015.rwl
+      MD5 of measurement file: bd4dbfecf8a8e110364520017942de35
+      Date checked           : 01OCT26
+      Beginning year         : 1790
+      Ending year            : 2016
+      Principal investigators: Maxwell, J.T.; Matheus, T.J.
+      Site name              : Johnson Nature Preserve
+      Species information    : QURU Quercus rubra L.
+      Latitude               : 40.8800 N
+      Longitude              : 81.7500 W
+      Elevation              : 335 m
+
+      Series intercorrelation: 0.537
+      Avg mean sensitivity   : 0.186
+      Avg standard deviation : 0.808
+      Avg autocorrelation    : 0.780
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.43
+
+
+ CORRELATION OF SERIES BY SEGMENTS: oh015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 AJR01A   1931 2016                                .61 
+   2 AJR01B   1872 2016                 .52  .66  .67  .67 
+   3 AJR02A   1876 2016                      .61  .57  .50 
+   4 AJR02B   1900 2016                           .70  .61 
+   5 AJR03A   1897 2016                      .44  .63  .59 
+   6 AJR03B   1895 2016                      .55  .66  .64 
+   7 AJR04A   1834 2016            .72  .63  .56  .61  .60 
+   8 AJR04B   1814 2016       .44  .55  .55  .42  .40  .48 
+   9 AJR05A   1903 2016                           .47  .55 
+  10 AJR05B   1872 2016                 .53  .50  .37  .49 
+  11 AJR06A   1881 2016                      .68  .71  .79 
+  12 AJR06B   1860 2016                 .72  .52  .51  .60 
+  13 AJR07A   1856 2016                 .66  .58  .57  .50 
+  14 AJR07B   1919 2016                           .69  .67 
+  15 AJR08A   1815 2016       .15B .63  .66  .69  .65  .50 
+  16 AJR08B   1841 2016            .71  .72  .63  .70  .66 
+  17 AJR09A   1869 2016                 .79  .71  .71  .60 
+  18 AJR10A   1875 2016                      .47  .52  .45 
+  19 AJR10B   1790 2016       .40  .63  .61  .59  .57  .50 
+ Av segment correlation       .33  .65  .64  .58  .60  .58 
+
+ FLAGGED SEGMENTS: oh015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 AJR08A   1825 1874     B     .152        -7      .409   .256
+
+ DESCRIPTIVE STATISTICS: oh015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AJR01A   1931 2016     86      1      0    .572   2.22   3.96   .641   .700   .172   1.46   .173   .032   1
+   2 AJR01B   1872 2016    145      4      0    .562   2.40   4.85   .892   .800   .167   1.66   .180   .040   1
+   3 AJR02A   1876 2016    141      3      0    .451   1.54   3.38   .635   .844   .167   1.65   .169  -.048   3
+   4 AJR02B   1900 2016    117      2      0    .585   3.13   5.74  1.155   .754   .215   1.50   .204  -.042   2
+   5 AJR03A   1897 2016    120      3      0    .524   2.40   5.62  1.155   .820   .189   1.53   .198  -.000   2
+   6 AJR03B   1895 2016    122      3      0    .568   2.11   4.85   .962   .829   .180   1.54   .186   .048   1
+   7 AJR04A   1834 2016    183      5      0    .580   1.88   4.12   .885   .847   .221   1.82   .226   .012   1
+   8 AJR04B   1814 2016    203      6      0    .398   1.66   4.14   .936   .856   .240   1.72   .241   .030   1
+   9 AJR05A   1903 2016    114      2      0    .538   2.66   4.46   .688   .712   .151   1.48   .154  -.010   2
+  10 AJR05B   1872 2016    145      4      0    .477   2.53   4.11   .588   .601   .166   1.51   .173   .027   1
+  11 AJR06A   1881 2016    136      3      0    .774   3.06   5.50   .856   .709   .161   1.46   .170   .022   1
+  12 AJR06B   1860 2016    157      4      0    .608   2.14   4.26   .738   .802   .162   1.53   .172   .019   3
+  13 AJR07A   1856 2016    161      4      0    .535   2.34   3.59   .610   .781   .136   1.51   .139  -.042   2
+  14 AJR07B   1919 2016     98      2      0    .616   3.82   6.53   .943   .812   .118   1.38   .123  -.017   2
+  15 AJR08A   1815 2016    202      6      1    .353   1.78   3.94   .913   .848   .217   1.98   .227   .045   1
+  16 AJR08B   1841 2016    176      5      0    .656   2.03   4.21   .692   .721   .192   1.91   .195   .003   2
+  17 AJR09A   1869 2016    148      4      0    .676   2.10   4.42   .860   .809   .179   1.67   .182   .037   1
+  18 AJR10A   1875 2016    142      3      0    .439   1.53   2.93   .483   .712   .183   1.67   .170   .019   2
+  19 AJR10B   1790 2016    227      6      0    .471   1.70   4.13   .775   .772   .228   1.60   .213   .008   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2823     70      1    .537   2.18   6.53   .808   .780   .186   1.98   .189   .011
+
+ DATA CHECKS (rwl.check): oh015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/oh015.rwl
+ 19 series, 2823 measurements, 1790-2016, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file oh015.rwl, MD5 bd4dbfecf8a8e110364520017942de35.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

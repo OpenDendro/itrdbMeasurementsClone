@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: rus367
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus367.rwl
+      MD5 of measurement file: 6ba72516c9912bdf0938d2b16d2abd34
+      Date checked           : 01OCT26
+      Beginning year         : 1799
+      Ending year            : 2014
+      Principal investigators: Solomina, O.; Kuznetsova, V.V.
+      Site name              : Privolzhskaya Lesostep Preserve - T10S
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 53.3633 N
+      Longitude              : 46.8957 E
+      Elevation              : 292 m
+
+      Series intercorrelation: 0.572
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.761
+      Avg autocorrelation    : 0.816
+      Number dated series    : 33
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 3, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 3.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus367
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 T10S01A  1824 2014            .62  .59  .56  .65  .75 
+   2 T10S01B  1804 2014       .69  .51  .76  .80  .81  .80 
+   3 T10S02A  1861 2014                 .57  .64  .66  .74 
+   4 T10S03A  1818 2014       .37  .33B .68  .78  .72  .55 
+   5 T10S03B  1870 2014                 .62  .57  .33A .29A
+   6 T10S04A  1820 2014       .54  .33  .57  .67  .65  .58 
+   7 T10S04B  1809 2014       .42  .44  .63  .63  .52  .41 
+   8 T10S05A  1854 2014                 .54  .60  .52  .49 
+   9 T10S05B  1867 1982                 .62  .49  .30A     
+  10 T10S06B  1894 2014                      .72  .54  .53 
+  11 T10S07A  1800 2014       .57  .50  .58  .62  .67  .61 
+  12 T10S07B  1854 2014                 .58  .58  .56  .63 
+  13 T10S08A  1823 2014       .45  .57  .68  .67  .67  .69 
+  14 T10S08B  1888 2013                      .54  .51  .56 
+  15 T10S10A  1845 2014            .42B .68  .79  .67  .61 
+  16 T10S10B  1859 2014                 .67  .58  .53  .58 
+  17 T10S11A  1823 2014            .63  .83  .84  .69  .64 
+  18 T10S11B  1803 2014       .50  .34  .73  .78  .64  .58 
+  19 T10S12A  1824 2012            .40  .74  .78  .46  .51 
+  20 T10S12B  1889 2014                      .72  .75  .72 
+  21 T10S13A  1802 2014       .60  .59  .56  .60  .65  .60 
+  22 T10S13B  1804 2014       .55  .27B .72  .83  .72  .77 
+  23 T10S14A  1868 2014                 .66  .73  .57  .58 
+  24 T10S14B  1924 2014                                .71 
+  25 T10S15A  1883 2014                      .69  .49  .60 
+  26 T10S15B  1813 2014       .52  .44  .73  .74  .41  .51 
+  27 T10S16A  1815 1973       .69  .62  .79  .72           
+  28 T10S16B  1799 2014       .56  .58  .70  .69  .56  .57 
+  29 T10S17A  1817 2014       .52  .48  .76  .73  .54  .33 
+  30 T10S17B  1801 2014       .34  .39  .34  .38  .54  .64 
+  31 T10S18A  1819 2014       .46  .40  .58  .66  .57  .48 
+  32 T10S18B  1818 2014       .59  .49  .68  .71  .61  .56 
+ Av segment correlation       .52  .47  .65  .67  .58  .59 
+
+ FLAGGED SEGMENTS: rus367
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 T10S03A  1850 1899     B     .333        -8      .335   .001
+   5 T10S03B  1925 1974     A     .327         0
+   5 T10S03B  1950 1999     A     .294         0
+   9 T10S05B  1925 1974     A     .301         0
+  15 T10S10A  1850 1899     B     .418         8      .420   .002
+  22 T10S13B  1850 1899     B     .273        -1      .286   .013  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus367
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 T10S01A  1824 2014    191      5      0    .631   1.68   4.38   .726   .809   .201   1.59   .190  -.012   2
+   2 T10S01B  1804 2014    211      6      0    .736   1.85   5.80  1.015   .855   .217   1.84   .227   .015   1
+   3 T10S02A  1861 2014    154      4      0    .634   1.74   3.08   .561   .705   .208   1.55   .193   .012   3
+   4 T10S03A  1818 2014    197      6      1    .587   1.46   4.07   .972   .886   .227   1.89   .245   .007   2
+   5 T10S03B  1870 2014    145      4      2    .458    .83   3.46   .610   .865   .220   2.16   .264   .035   2
+   6 T10S04A  1820 2014    195      6      0    .585   1.19   2.93   .523   .777   .231   2.19   .242  -.003   1
+   7 T10S04B  1809 2014    206      6      0    .475   1.32   3.07   .567   .699   .265   1.73   .263   .031   1
+   8 T10S05A  1854 2014    161      4      0    .500   1.61   4.48  1.001   .878   .237   1.59   .212   .006   1
+   9 T10S05B  1867 1982    116      3      1    .441   1.29   3.00   .646   .807   .242   1.60   .230   .027   1
+  10 T10S06B  1894 2014    121      3      0    .611    .86   2.14   .388   .564   .347   2.10   .300   .026   3
+  11 T10S07A  1800 2014    215      6      0    .531   1.17   3.76   .535   .725   .244   2.14   .267   .060   1
+  12 T10S07B  1854 2014    161      4      0    .585    .47   1.28   .235   .554   .388   2.22   .363  -.008   1
+  13 T10S08A  1823 2014    192      6      0    .622   1.31   4.38   .664   .852   .204   1.66   .199   .015   2
+  14 T10S08B  1888 2013    126      3      0    .541    .29    .76   .181   .610   .427   2.28   .405  -.006   1
+  15 T10S10A  1845 2014    170      5      1    .648   2.16   5.72   .976   .772   .224   1.74   .230   .031   3
+  16 T10S10B  1859 2014    156      4      0    .575   1.78   4.77   .966   .868   .226   1.56   .225   .044   3
+  17 T10S11A  1823 2014    192      5      0    .725   1.49   4.72   .943   .912   .224   2.20   .235   .035   3
+  18 T10S11B  1803 2014    212      6      0    .633   1.33   4.10   .785   .911   .215   2.28   .220   .002   2
+  19 T10S12A  1824 2012    189      5      0    .557   1.32   3.32   .515   .627   .263   1.74   .260   .054   3
+  20 T10S12B  1889 2014    126      3      0    .683   1.55   4.14   .678   .630   .258   1.77   .252   .060   3
+  21 T10S13A  1802 2014    213      6      0    .207   1.37   4.05   .796   .843   .248   7.03   .489   .122   0
+  22 T10S13B  1804 2014    211      6      1    .676   1.41   4.21   .825   .871   .236   1.83   .237   .003   2
+  23 T10S14A  1868 2014    147      4      0    .600   1.19   2.44   .523   .779   .231   1.64   .234   .052   3
+  24 T10S14B  1924 2014     91      1      0    .641   1.45   2.56   .489   .674   .231   1.44   .206   .048   3
+  25 T10S15A  1883 2014    132      3      0    .598    .98   2.86   .564   .821   .248   1.80   .265  -.016   1
+  26 T10S15B  1813 2014    202      6      0    .585   1.39   5.14  1.169   .929   .240   1.67   .237  -.004   1
+  27 T10S16A  1815 1973    159      4      0    .668   1.83   6.61  1.502   .928   .222   2.46   .268   .005   2
+  28 T10S16B  1799 2014    216      6      0    .481   1.54   4.16   .856   .896   .201   1.67   .205  -.016   1
+  29 T10S17A  1817 2014    198      6      0    .554   1.06   5.11   .864   .939   .186   1.53   .198  -.007   1
+  30 T10S17B  1801 2014    214      6      0    .446   1.10   4.65   .888   .941   .195   1.56   .193   .012   1
+  31 T10S18A  1819 2014    196      6      0    .546   1.45   3.95   .935   .904   .202   1.49   .205   .001   2
+  32 T10S18B  1818 2014    197      6      0    .613   1.37   3.95   .843   .896   .212   1.51   .209  -.002   2
+  33 T10S20A  1816 1862     47      0      0    .633   1.49   2.72   .585   .830   .197   1.45   .200  -.064   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5659    154      6    .572   1.36   6.61   .761   .816   .237   7.03   .247   .018
+
+ DATA CHECKS (rwl.check): rus367
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus367.rwl
+ 33 series, 5659 measurements, 1799-2014, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file rus367.rwl, MD5 6ba72516c9912bdf0938d2b16d2abd34.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

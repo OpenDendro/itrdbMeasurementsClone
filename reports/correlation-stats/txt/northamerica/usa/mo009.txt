@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: mo009
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mo009.rwl
+      MD5 of measurement file: 9ff01d11038c753ddd1f1f5c37c037af
+      Date checked           : 01OCT26
+      Beginning year         : 1750
+      Ending year            : 1942
+      Principal investigators: Bell, R.; Magre, F.; Senter, D.
+      Site name              : Jefferson County Missouri
+      Species information    : JUVI Juniperus virginiana L.
+      Latitude               : 38.2500 N
+      Longitude              : 90.4200 W
+      Elevation              : 150 m
+
+      Series intercorrelation: 0.540
+      Avg mean sensitivity   : 0.306
+      Avg standard deviation : 0.420
+      Avg autocorrelation    : 0.662
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mo009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 
+                        1849 1874 1899 1924 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 381011   1775 1941  .66  .71  .79  .74 
+   2 381021   1794 1941  .65  .84  .85  .67 
+   3 381061   1855 1936                 .60 
+   4 381081   1844 1941            .29A .52 
+   5 381151   1818 1942       .53  .66  .73 
+   6 381161   1850 1942                 .58 
+   7 381171   1852 1930                 .51 
+   8 381181   1784 1940  .38  .45  .62  .70 
+   9 381191   1850 1941                 .50 
+  10 381271   1766 1941  .58  .56  .56  .59 
+  11 381441   1809 1942       .62  .51  .37 
+  12 381451   1871 1942                 .56 
+  14 381561   1780 1941  .39  .39  .54  .60 
+  16 381572   1870 1942                 .60 
+  17 381581   1771 1942  .40  .45  .50  .56 
+  18 381591   1830 1942            .67  .50 
+  19 381601   1775 1942  .56  .48  .59  .64 
+  20 381611   1807 1942       .60  .47  .43 
+  21 381621   1792 1942  .54  .60  .56  .62 
+  22 381631   1848 1942            .47  .61 
+  24 381651   1787 1942  .17B .50  .81  .74 
+  25 381661   1757 1942  .42  .44  .57  .60 
+  26 381741   1750 1942  .54  .64  .58  .66 
+  27 381751   1776 1942  .78  .77  .77  .72 
+ Av segment correlation  .51  .57  .60  .60 
+
+ FLAGGED SEGMENTS: mo009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 381081   1850 1899     A     .290         0
+  24 381651   1800 1849     B     .165         9      .277   .112  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mo009
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 381011   1775 1941    167      4      0    .709   1.00   2.21   .427   .723   .258   1.56   .238  -.030   3
+   2 381021   1794 1941    148      4      0    .659    .93   3.13   .493   .807   .243   1.66   .238   .002   1
+   3 381061   1855 1936     82      1      0    .552   1.65   3.91   .868   .526   .373   2.25   .391   .051   1
+   4 381081   1844 1941     98      2      1    .307   1.74   4.82   .992   .805   .300   2.43   .312   .079   0
+   5 381151   1818 1942    125      3      0    .506    .95   2.59   .659   .835   .300   2.04   .280   .043   0
+   6 381161   1850 1942     93      1      0    .528   1.30   3.68   .567   .667   .303   1.80   .286   .054   2
+   7 381171   1852 1930     79      1      0    .561    .86   3.05   .759   .789   .380   2.57   .393   .012   1
+   8 381181   1784 1940    157      4      0    .554    .46   1.19   .180   .651   .256   1.88   .250  -.002   1
+   9 381191   1850 1941     92      1      0    .472   1.26   3.43   .585   .480   .314   2.62   .349   .016   3
+  10 381271   1766 1941    176      4      0    .553    .88   2.45   .439   .658   .310   1.82   .281  -.046   3
+  11 381441   1809 1942    134      3      0    .474    .86   2.02   .487   .765   .314   2.05   .331   .018   1
+  12 381451   1871 1942     72      1      0    .477   1.11   3.00   .692   .774   .340   1.67   .283   .003   0
+  13 381471   1876 1938     63      0      0    .548   1.12   4.86   .979   .821   .347   1.79   .309   .171   0
+  14 381561   1780 1941    162      4      0    .517    .40    .97   .185   .629   .321   1.80   .289  -.033   3
+  15 381571   1875 1942     68      0      0    .498    .26    .49   .090   .327   .361   1.70   .317  -.022   3
+  16 381572   1870 1942     73      1      0    .560    .32    .57   .117   .396   .323   1.90   .299  -.061   3
+  17 381581   1771 1942    172      4      0    .512    .62   2.15   .366   .820   .295   1.89   .270   .000   1
+  18 381591   1830 1942    113      2      0    .598    .60   2.24   .369   .793   .305   1.96   .289  -.002   1
+  19 381601   1775 1942    168      4      0    .504    .47   1.26   .205   .656   .278   1.85   .280   .000   1
+  20 381611   1807 1942    136      3      0    .465    .52   1.37   .259   .738   .327   2.11   .291   .003   1
+  21 381621   1792 1942    151      4      0    .569   1.63   3.30   .659   .771   .200   1.57   .211  -.035   3
+  22 381631   1848 1942     95      2      0    .512    .74   1.90   .321   .630   .290   1.89   .266   .031   2
+  23 381641   1908 1942     35      0      0    .743   2.00   4.51   .788   .128   .389   2.16   .371   .022   0
+  24 381651   1787 1942    156      4      1    .474    .63   1.86   .286   .505   .363   2.10   .330   .009   1
+  25 381661   1757 1942    186      4      0    .486    .50   1.06   .221   .632   .318   2.08   .306   .008   1
+  26 381741   1750 1942    193      4      0    .552    .67   1.64   .273   .676   .260   1.73   .239   .037   0
+  27 381751   1776 1942    167      4      0    .676    .62   1.77   .271   .439   .386   2.60   .357   .074   0
+  28 381761   1877 1942     66      0      0    .545   1.13   2.48   .515   .462   .363   2.02   .337   .080   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3427     69      2    .540    .83   4.86   .420   .662   .306   2.62   .291   .012
+
+ DATA CHECKS (rwl.check): mo009
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mo009.rwl
+ 28 series, 3427 measurements, 1750-1942, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file mo009.rwl, MD5 9ff01d11038c753ddd1f1f5c37c037af.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

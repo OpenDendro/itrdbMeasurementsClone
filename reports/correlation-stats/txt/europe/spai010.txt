@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: spai010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai010.rwl
+      MD5 of measurement file: b3fcf7e582d2a24318ea8243cabf87e1
+      Date checked           : 01OCT26
+      Beginning year         : 1615
+      Ending year            : 1988
+      Principal investigators: Génova Fuster, M.; Fernández Cancio, A.; Perez Antelo, A.
+      Site name              : Tierra Muerta
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 40.3000 N
+      Longitude              : 2.1300 W
+      Elevation              : 1350 m
+
+      Series intercorrelation: 0.688
+      Avg mean sensitivity   : 0.299
+      Avg standard deviation : 0.863
+      Avg autocorrelation    : 0.816
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 1.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 TIER1NPN 1627 1988  .82  .73  .71  .74  .81  .83  .84  .80  .73  .48 
+   2 TIER1EPN 1686 1988  .73  .54  .61  .55  .58  .79  .75  .78  .72  .53 
+   3 TIER2SPN 1826 1988                                .67  .75  .72  .49 
+   4 TIER2OPN 1829 1988                                .69  .79  .80  .70 
+   5 TIER3NPN 1804 1987                           .79  .83  .76  .63  .51 
+   6 TIER3SPN 1820 1987                           .56  .73  .77  .79  .63 
+   7 TIER4EPN 1788 1988                      .84  .80  .80  .86  .83  .70 
+   8 TIER4OPN 1791 1988                      .78  .80  .82  .83  .79  .47 
+   9 TIER5NPN 1786 1988                      .72  .69  .48  .34B .43  .42 
+  10 TIER5SPN 1810 1988                           .79  .74  .68  .64  .71 
+  11 TIER6SPN 1786 1988                      .81  .74  .73  .75  .65  .44B
+  12 TIER6XPN 1737 1988            .67  .70  .46  .43  .60  .55  .60  .77 
+  13 TIER7NPN 1849 1988                                     .71  .79  .72 
+  14 TIER8NPN 1757 1986                 .57  .74  .76  .72  .75  .61  .49 
+  15 TIER8SPN 1780 1986                      .69  .71  .69  .63  .66  .63 
+  16 TIER9NPN 1615 1970  .80  .74  .69  .55  .63  .73  .63  .64  .65      
+  17 TIER9SPN 1659 1988  .86  .85  .84  .85  .87  .78  .67  .75  .74  .68 
+ Av segment correlation  .80  .71  .70  .66  .72  .73  .71  .71  .69  .59 
+
+ FLAGGED SEGMENTS: spai010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 TIER5NPN 1875 1924     B     .345        -1      .365   .020
+  11 TIER6SPN 1925 1974     B     .439         1      .476   .037
+
+ DESCRIPTIVE STATISTICS: spai010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TIER1NPN 1627 1988    362     10      0    .766    .80   3.52   .556   .857   .285   2.07   .267   .006   2
+   2 TIER1EPN 1686 1988    303     10      0    .630    .90   2.57   .398   .676   .280   1.92   .265  -.003   2
+   3 TIER2SPN 1826 1988    163      4      0    .646   1.34   3.71   .856   .821   .277   1.94   .288  -.017   2
+   4 TIER2OPN 1829 1988    160      4      0    .703   1.33   3.70   .823   .771   .306   1.73   .295  -.016   3
+   5 TIER3NPN 1804 1987    184      5      0    .678   1.36   7.64  1.393   .873   .311   1.97   .290  -.004   3
+   6 TIER3SPN 1820 1987    168      5      0    .618   1.22   5.57   .879   .792   .334   1.72   .303  -.029   2
+   7 TIER4EPN 1788 1988    201      6      0    .783   1.66   8.22  1.454   .835   .301   1.89   .283   .036   1
+   8 TIER4OPN 1791 1988    198      6      0    .732   1.23   6.90  1.163   .909   .296   1.72   .284   .001   2
+   9 TIER5NPN 1786 1988    203      6      1    .570   1.42   6.65  1.373   .868   .318   2.10   .315   .016   2
+  10 TIER5SPN 1810 1988    179      5      0    .717   1.19   3.74   .807   .814   .293   1.91   .294   .016   2
+  11 TIER6SPN 1786 1988    203      6      1    .684    .87   5.21   .833   .846   .283   2.07   .297  -.009   2
+  12 TIER6XPN 1737 1988    252      8      0    .575   1.14   5.38  1.306   .959   .225   1.58   .238   .017   2
+  13 TIER7NPN 1849 1988    140      3      0    .691   1.37   4.54   .711   .642   .363   1.84   .332  -.009   2
+  14 TIER8NPN 1757 1986    230      7      0    .646   1.41   6.53  1.148   .872   .319   2.17   .302  -.007   2
+  15 TIER8SPN 1780 1986    207      6      0    .636   1.35   4.64   .925   .859   .285   1.72   .266   .026   1
+  16 TIER9NPN 1615 1970    356      9      0    .728    .80   2.93   .532   .819   .335   1.88   .315  -.002   2
+  17 TIER9SPN 1659 1988    330     10      0    .793    .84   2.75   .383   .674   .301   1.96   .290   .010   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3839    110      2    .688   1.13   8.22   .863   .816   .299   2.17   .288   .003
+
+ DATA CHECKS (rwl.check): spai010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai010.rwl
+ 17 series, 3839 measurements, 1615-1988, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_REPEATED_VALUE (1)
+     TIER1NPN: 0.38 repeated in 6 consecutive rings, 1943-1948; a constant stretch is a placeholder, not a measurement
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file spai010.rwl, MD5 b3fcf7e582d2a24318ea8243cabf87e1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: ital007
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ital007.rwl
+      MD5 of measurement file: 5b22811084754167ee44244b94ffeafc
+      Date checked           : 01OCT26
+      Beginning year         : 1660
+      Ending year            : 1975
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Cortina d'Ampezzo South
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.5300 N
+      Longitude              : 12.0700 E
+      Elevation              : 1900 m
+
+      Series intercorrelation: 0.576
+      Avg mean sensitivity   : 0.179
+      Avg standard deviation : 0.292
+      Avg autocorrelation    : 0.807
+      Number dated series    : 10
+      Series crossdated      : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ital007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 254160   1842 1975                                .65  .54  .53  .33 
+   2 254170   1839 1975                                .49  .70  .72  .55 
+   3 254180   1725 1975            .42  .60  .66  .56  .51  .64  .72  .45 
+   4 254190   1695 1975  .69  .65  .63  .71  .62  .55  .38  .60  .71  .62 
+   5 254200   1745 1975            .52  .58  .63  .56  .46  .53  .71  .68 
+   8 254280   1687 1975  .68  .63  .46  .50  .52  .47  .51  .66  .63  .51 
+   9 254290   1804 1975                           .44  .47  .62  .74  .62 
+  10 254300   1794 1975                      .50  .68  .69  .69  .66  .48 
+ Av segment correlation  .68  .64  .51  .59  .59  .54  .52  .62  .68  .53 
+
+ FLAGGED SEGMENTS: ital007
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: ital007
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 254160   1842 1975    134      4      0    .519    .66   1.76   .318   .867   .188   1.69   .183  -.011   1
+   2 254170   1839 1975    137      4      0    .607   1.70   4.15   .604   .865   .149   1.44   .135  -.017   3
+   3 254180   1725 1975    251      8      0    .565    .48   1.09   .228   .867   .216   1.67   .206   .009   2
+   4 254190   1695 1975    281     10      0    .628    .88   1.57   .201   .700   .137   1.42   .135   .000   1
+   5 254200   1745 1975    231      8      0    .582    .61   1.53   .236   .749   .229   1.76   .194   .013   2
+   6 254210   1725 1975    249                          .66   1.28   .220   .653   .228                         
+   7 254260   1660 1975    314                          .55   2.07   .351   .939   .176                         
+   8 254280   1687 1975    289     10      0    .564    .67   3.00   .311   .854   .151   1.42   .158   .022   1
+   9 254290   1804 1975    172      5      0    .543    .83   1.43   .207   .730   .148   1.37   .143  -.016   1
+  10 254300   1794 1975    182      6      0    .575    .98   2.22   .382   .861   .155   1.65   .157   .049   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2240     55      0    .576    .75   4.15   .292   .807   .179   1.76   .165   .009
+
+ DATA CHECKS (rwl.check): ital007
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ital007.rwl
+ 10 series, 2240 measurements, 1660-1975, 0.01 mm precision
+ 0 error(s), 2 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     254210: no measurement for 1791-1792, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     254260: no measurement for 1782-1783, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ital007.rwl, MD5 5b22811084754167ee44244b94ffeafc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 254210 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 254260 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

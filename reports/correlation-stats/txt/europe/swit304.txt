@@ -1,0 +1,377 @@
+
+ COFECHA-style crossdating report: swit304
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit304.rwl
+      MD5 of measurement file: a14ffefad03e19d3654c054a5e2d4a56
+      Date checked           : 01OCT26
+      Beginning year         : 1914
+      Ending year            : 1995
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Bedea
+      Species information    : CASA Castanea sativa Mill.
+      Latitude               : 46.0089 N
+      Longitude              : 8.8614 E
+      Elevation              : 650 m
+
+      Series intercorrelation: 0.523
+      Avg mean sensitivity   : 0.331
+      Avg standard deviation : 1.016
+      Avg autocorrelation    : 0.706
+      Number dated series    : 191
+      Series crossdated      : 171
+      Segment length tested  : 40
+
+      Number problem segments: 5  (A 2, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 17.86
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit304
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  40-year dated segments, lagged  20 years
+ Flags:  A = correlation under   .3665 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1989 
+ --- -------- ---------  ---- 
+   1 01.1e    1947 1994  .24A
+   2 01.1o    1947 1994  .57 
+   6 02.1o    1950 1995  .62 
+ 102 53.1e    1945 1995  .60 
+ 103 53.1o    1945 1995  .55 
+ 128 59.2e    1950 1991  .58 
+ 129 59.2o    1950 1991  .37 
+ 131 59.3e2   1947 1995  .22A
+ 133 59.3o2   1947 1995  .07B
+ 134 59.4e    1950 1995  .63 
+ 161 71.1e    1945 1994  .53 
+ 162 71.1o    1945 1994  .58 
+ 163 72.1e    1945 1995  .50 
+ 164 72.1o    1945 1995  .87 
+ 165 72.2e    1946 1995  .67 
+ 166 72.2o    1946 1995  .56 
+ 167 72.3e    1946 1991  .34B
+ 169 72.4e    1945 1995  .79 
+ 170 72.4o    1945 1995  .71 
+ 171 72.5e    1945 1995  .76 
+ 172 72.5o    1945 1995  .77 
+ 173 72.6e    1945 1991  .72 
+ 174 72.6o    1945 1991  .67 
+ 175 72.7e    1946 1994  .62 
+ 176 72.7o    1945 1994  .47 
+ 177 74.1e    1940 1995  .56 
+ 178 74.1o    1940 1995  .65 
+ 179 75.4e    1915 1995 -.08B
+ Av segment correlation  .54 
+
+ FLAGGED SEGMENTS: swit304
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 01.1e    1950 1989     A     .236         0
+ 131 59.3e2   1950 1989     A     .218         0
+ 133 59.3o2   1950 1989     B     .074         1      .369   .295
+ 167 72.3e    1950 1989     B     .345        -2      .345   .000  weak at every lag
+ 179 75.4e    1950 1989     B    -.084        -8      .102   .186  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit304
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01.1e    1947 1994     48      1      1    .070   1.09   3.50   .770   .711   .432  10.10  1.417   .433   0
+   2 01.1o    1947 1994     48      1      0    .465   1.29   3.73   .949   .808   .375   2.09   .395  -.022   1
+   3 01.7e    1969 1986     18      0      0    .077   1.88   3.32   .582   .367   .230   1.90   .264   .149   0
+   4 01.7o    1969 1995     27                         1.61   3.78  1.065   .733   .379                         
+   5 02.1e    1950 1995     46      0      0    .623   1.32   4.10   .726   .673   .323   2.11   .328  -.037   1
+   6 02.1o    1950 1995     46      1      0    .653   1.81   4.22   .967   .705   .339   1.64   .305   .199   0
+   7 02.2e    1950 1995     46      0      0    .374   2.50   8.45  2.190   .815   .368   2.08   .393  -.069   1
+   8 02.2o    1950 1995     46      0      0    .297   2.11   7.87  1.321   .584   .340   2.30   .389   .003   1
+   9 02.3e    1950 1995     46      0      0    .459   2.02   3.60   .815   .623   .305   1.49   .273  -.023   1
+  10 02.3o    1950 1995     46      0      0    .648   1.98   4.10   .817   .567   .292   1.83   .284  -.006   1
+  11 02.4e    1950 1995     46      0      0    .492   2.33   4.95   .717   .466   .227   1.61   .233   .012   1
+  12 02.4o    1950 1995     46      0      0    .742   2.65   4.87   .952   .582   .260   1.84   .254  -.002   1
+  13 03.3e    1954 1995     42      0      0    .189   1.52   3.58   .952   .872   .311   3.60   .508   .052   2
+  14 03.3o    1954 1995     42      0      0    .469   1.52   3.94   .916   .728   .392   1.95   .335   .004   0
+  15 04.2o    1947 1985     39      0      0    .456    .91   3.13   .700   .794   .319   2.28   .378   .032   1
+  16 04.7e    1956 1995     40                         1.31   3.38  1.097   .894   .324                         
+  17 04.7o    1956 1995     40      0      0    .583   1.19   2.38   .592   .692   .288   1.48   .251   .050   0
+  18 05.2e    1955 1995     41      0      0    .458   1.68   4.23   .974   .757   .323   1.69   .319  -.025   1
+  19 05.2o    1955 1995     41      0      0    .377   2.07   5.53  1.562   .842   .376   1.94   .375  -.027   1
+  20 10.1e    1955 1995     41      0      0    .607   2.58   4.42   .705   .438   .230   1.56   .232  -.026   1
+  21 10.1o    1955 1995     41      0      0    .557   2.72   5.09  1.119   .748   .266   1.52   .249   .038   1
+  22 10.2e    1955 1994     40      0      0    .277   1.38   4.01   .776   .732   .348   2.17   .364   .044   1
+  23 10.3e    1955 1995     41      0      0    .610   1.60   5.57  1.006   .741   .405   1.87   .344   .025   3
+  24 10.3o    1955 1995     41      0      0    .648   1.55   4.93   .952   .777   .343   1.56   .309   .055   1
+  25 10.4e    1955 1994     40      0      0    .224   1.24   4.43   .965   .774   .399   3.60   .574   .009   2
+  26 10.4o    1955 1994     40      0      0    .322   1.64   4.66  1.314   .880   .398   3.12   .522  -.068   3
+  27 10.5e    1955 1994     40      0      0    .394   1.84   5.39  1.341   .840   .374   2.66   .442  -.026   2
+  28 10.5o    1955 1994     40      0      0    .458   1.25   4.28   .899   .774   .365   2.32   .445   .015   1
+  29 16.1e    1959 1995     37      0      0    .296   2.54   5.66  1.484   .778   .322   2.68   .443   .092   1
+  30 16.1o    1959 1995     37                         2.56   5.30  1.627   .701   .403                         
+  31 21.1e    1955 1995     41      0      0    .397   1.03   2.39   .758   .793   .347   1.73   .387  -.047   1
+  32 22.2e    1955 1995     41      0      0    .612   2.82   4.81   .914   .736   .186   1.40   .184   .137   0
+  33 22.2o    1955 1995     41      0      0    .629   1.92   4.08   .927   .827   .278   1.45   .237   .045   0
+  34 22.3e    1955 1995     41      0      0    .717   2.40   4.75  1.059   .745   .283   1.61   .289   .046   1
+  35 22.3e2   1955 1995     41      0      0    .717   2.40   4.75  1.059   .745   .283   1.61   .289   .046   1
+  36 22.3o    1955 1995     41      0      0    .385   1.93   3.98   .761   .280   .324   2.05   .340   .060   0
+  37 24.1e    1961 1995     35                         1.63   3.94  1.211   .747   .383                         
+  38 24.1o    1961 1995     35                         1.40   3.56  1.091   .843   .335                         
+  39 24.3?e   1954 1995     42      0      0    .525   2.24   4.24  1.054   .733   .270   1.47   .247   .006   1
+  40 24.3?o   1954 1995     42      0      0    .411   2.38   4.25   .685   .451   .230   1.52   .241   .027   1
+  41 24.3e    1954 1995     42      0      0    .538   2.92   5.48  1.055   .575   .256   1.68   .266   .062   1
+  42 24.3o    1954 1995     42      0      0    .451   3.81   6.72  1.183   .446   .257   1.67   .239   .003   2
+  43 26.7e    1953 1990     38      0      0    .236   1.51   2.89   .907   .787   .386   3.47   .550   .026   3
+  44 26.7o    1953 1990     38      0      0    .279    .93   2.92   .656   .490   .512   3.26   .672   .009   3
+  45 26.9e    1955 1995     41      0      0    .608   1.99   3.80   .710   .607   .245   1.63   .260  -.081   3
+  46 26.9o    1955 1995     41      0      0    .670   1.17   2.83   .690   .789   .336   2.46   .382   .048   1
+  47 28.1e    1959 1995     37      0      0    .345   1.03   3.10   .947   .831   .344   2.26   .428   .030   1
+  48 28.1o    1953 1989     37      0      0    .318   1.21   3.53  1.113   .861   .384   2.52   .501   .072   1
+  49 28.4e    1953 1995     43      0      0    .543   1.39   3.33   .876   .836   .319   1.52   .297  -.020   2
+  50 28.4o    1953 1995     43      0      0    .748   1.82   4.90  1.097   .678   .343   1.82   .359   .042   1
+  51 28.5e    1953 1995     43      0      0    .530   1.36   4.77  1.173   .912   .305   1.71   .334  -.047   3
+  52 28.5o    1953 1995     43      0      0    .656   1.34   3.91  1.004   .837   .392   2.14   .412  -.071   2
+  53 29.1e    1953 1995     43      0      0    .124   2.75   7.16  1.438   .765   .274   1.84   .307   .130   1
+  54 29.1o    1953 1995     43      0      0    .437   1.81   3.44   .670   .542   .278   1.76   .297  -.023   1
+  55 29.2e    1954 1995     42      0      0    .404   2.73   4.28   .889   .662   .211   1.55   .217  -.056   1
+  56 29.2o    1954 1995     42      0      0    .336   2.05   6.56  1.121   .447   .365   3.10   .463   .031   1
+  57 31.1o    1952 1995     44      0      0    .640   1.76   4.47   .663   .641   .194   1.49   .207   .200   1
+  58 31.2e    1953 1995     43      0      0    .365    .85   2.44   .545   .693   .390   1.99   .442  -.012   1
+  59 31.2o    1953 1995     43                          .76   2.65   .610   .827   .364                         
+  60 33.1e    1951 1995     45      0      0    .638   2.27   3.65   .629   .452   .231   1.60   .242   .020   1
+  61 33.1o    1951 1995     45      0      0    .429   1.21   3.43   .892   .903   .254   1.71   .285  -.002   3
+  62 33.7e    1951 1995     45      0      0    .583   1.59   3.41   .593   .508   .276   1.71   .262   .069   2
+  63 33.7o    1951 1995     45      0      0    .625   2.35   4.27   .950   .648   .267   1.53   .248   .057   0
+  64 36.1e    1952 1995     44      0      0    .539   1.35   4.55   .793   .508   .333   1.71   .348   .163   1
+  65 39.4e    1950 1991     42                         1.12   3.07   .865   .759   .345                         
+  66 39.4o    1950 1991     42                         1.54   4.07  1.214   .839   .322                         
+  67 39.8e    1950 1995     46      0      0    .710   1.79   5.37  1.188   .861   .293   1.64   .300   .036   1
+  68 39.8o    1950 1995     46      0      0    .646   1.92   5.29  1.145   .834   .276   1.72   .281   .002   1
+  69 40.11e   1953 1995     43      0      0    .641   2.02   4.62   .980   .491   .374   2.16   .375   .048   1
+  70 40.11o   1953 1995     43      0      0    .609   2.57   5.20  1.409   .721   .337   1.67   .315   .022   1
+  71 40.2e    1953 1995     43      0      0    .549   1.56   4.11  1.304   .899   .303   1.97   .319   .080   1
+  72 40.2o    1955 1994     40      0      0    .441   1.96   4.33  1.362   .924   .266   1.81   .289  -.013   1
+  73 40.2o2   1953 1995     43      0      0    .560   2.27   5.77  1.526   .829   .320   2.56   .373   .131   1
+  74 40.6e    1953 1995     43      0      0    .709   2.02   5.28  1.343   .705   .379   2.87   .426  -.020   3
+  75 40.6o    1953 1995     43                         2.26   5.36  1.481   .772   .303                         
+  76 40.8e    1953 1995     43      0      0    .711   2.88   5.80  1.738   .907   .212   1.41   .212  -.037   1
+  77 40.8o    1953 1995     43      0      0    .749   2.53   4.95  1.100   .622   .314   1.69   .302  -.006   1
+  78 41.1e    1954 1995     42      0      0    .631   1.83   2.70   .511   .332   .259   1.51   .248   .009   1
+  79 41.1o    1954 1995     42      0      0    .688   2.12   4.20   .847   .408   .364   1.94   .344  -.007   1
+  80 41.2e    1955 1986     32      0      0    .343   2.06   3.46   .721   .699   .245   1.36   .215   .150   0
+  81 41.2o    1955 1986     32      0      0    .284   1.91   3.25   .745   .348   .387   2.00   .359   .032   0
+  82 44.3e    1955 1995     41      0      0    .596   1.68   4.20   .905   .774   .269   1.60   .250  -.016   3
+  83 44.3o    1955 1995     41      0      0    .747   2.18   4.79   .934   .641   .283   1.76   .267  -.046   3
+  84 47.2e    1960 1995     36      0      0   -.082   1.83   6.45  1.211   .525   .321  21.03  3.371   .010   0
+  85 47.2o    1956 1995     40                         1.21   5.91  1.077   .380   .421                         
+  86 48.2e    1955 1995     41      0      0    .571   1.57   3.08   .711   .705   .306   1.50   .273  -.052   1
+  87 48.2o    1955 1995     41      0      0    .533   1.16   2.72   .607   .734   .290   2.02   .320   .071   1
+  88 48.3e    1956 1995     40      0      0    .510   1.91   4.21  1.147   .870   .247   1.87   .293   .351   1
+  89 48.3o    1955 1995     41      0      0    .662   1.98   4.75  1.234   .871   .247   1.90   .269   .039   1
+  90 50.2e    1951 1995     45      0      0    .614   2.78   4.78   .995   .457   .292   1.47   .232  -.060   0
+  91 50.2o    1951 1995     45      0      0    .579   1.74   3.10   .634   .218   .371   1.60   .324   .100   0
+  92 50.4e    1951 1995     45      0      0    .523   1.64   4.77   .826   .704   .265   1.73   .245  -.051   3
+  93 50.4o    1951 1995     45      0      0    .598   2.21   5.20  1.226   .827   .284   1.42   .262   .040   1
+  94 50.5e    1950 1995     46      0      0    .601   2.09   4.75  1.225   .723   .351   1.94   .364   .037   1
+  95 50.5o    1950 1995     46      0      0    .803   2.83   5.71  1.152   .500   .311   2.16   .319   .036   1
+  96 50.8e    1969 1992     24      0      0    .461   1.64   4.03   .930   .613   .359   1.51   .309   .115   0
+  97 50.8o    1950 1979     30      0      0    .554   2.11   4.01   .908   .621   .337   1.66   .304  -.020   1
+  98 51.1e    1950 1995     46      0      0    .442   1.72   3.98   .992   .802   .324   1.79   .315   .086   1
+  99 51.1o    1950 1995     46      0      0    .470   1.27   3.51   .996   .849   .362   2.24   .416   .119   1
+ 100 52.2e    1950 1977     28      0      0    .509   2.06   3.55   .779   .522   .358   1.66   .316   .065   1
+ 101 52.2o    1950 1977     28      0      0    .608   2.32   4.90  1.048   .565   .362   1.62   .348   .031   1
+ 102 53.1e    1945 1995     51      1      0    .696   1.96   5.75   .983   .579   .370   1.77   .349   .002   1
+ 103 53.1o    1945 1995     51      1      0    .621   2.18   5.69  1.031   .668   .321   1.61   .313  -.002   1
+ 104 54.1e    1951 1995     45      0      0    .574   1.73   4.35  1.394   .905   .339   1.74   .377   .051   1
+ 105 54.1o    1951 1995     45      0      0    .436    .96   2.82   .932   .792   .329   1.90   .403   .039   1
+ 106 54.2e    1950 1995     46      0      0    .529   1.18   4.09   .972   .642   .490   2.53   .525   .053   1
+ 107 54.2o    1950 1995     46      0      0    .517   2.25   4.86  1.377   .782   .343   1.76   .335   .004   1
+ 108 54.3e    1951 1995     45      0      0    .679   2.10   4.02   .670   .547   .242   1.62   .255   .078   1
+ 109 54.3o    1951 1995     45      0      0    .764   2.29   4.43  1.189   .758   .334   1.52   .308   .056   1
+ 110 55.1e    1951 1992     42      0      0    .166   2.05   4.31  1.417   .885   .306  19.91  2.952   .535   0
+ 111 55.1o    1951 1995     45      0      0    .782   1.54   3.55   .816   .580   .381   1.89   .373  -.035   2
+ 112 55.3e    1951 1974     24      0      0    .679   2.22   4.10  1.114   .647   .366   1.75   .368   .062   2
+ 113 55.3o    1951 1974     24      0      0    .453   1.58   5.45  1.247   .765   .490   1.91   .467   .065   1
+ 114 56.1e    1951 1995     45      0      0    .653   3.30   5.75  1.049   .415   .275   1.73   .266  -.037   3
+ 115 56.1o    1951 1995     45      0      0    .570   2.01   4.73   .921   .728   .275   1.61   .269  -.031   3
+ 116 56.2e    1951 1992     42                         1.65   3.75  1.125   .796   .392                         
+ 117 56.2o    1951 1992     42                         1.03   3.24   .907   .609   .428                         
+ 118 56.3e    1951 1995     45      0      0    .532   2.45   4.80   .909   .568   .296   1.67   .245  -.056   3
+ 119 56.3o    1951 1995     45      0      0    .557   1.29   3.38   .733   .703   .353   1.95   .369   .087   1
+ 120 57.1e    1951 1994     44      0      0    .374   1.26   4.70  1.316   .866   .370   2.15   .420  -.056   1
+ 121 57.1o    1951 1994     44                         1.62   4.58  1.417   .820   .406                         
+ 122 57.2e    1951 1992     42                         1.81   4.90  1.487   .810   .412                         
+ 123 57.2o    1951 1992     42      0      0    .424   1.41   4.50  1.144   .773   .466   5.02   .826   .286   1
+ 124 58.4e    1951 1994     44      0      0    .506    .94   3.67   .819   .758   .394   2.72   .439   .183   1
+ 125 58.4o    1951 1994     44      0      0    .516   1.17   3.83   .797   .652   .381   2.14   .431   .211   1
+ 126 59.1e    1950 1991     42                         1.31   4.50  1.251   .880   .333                         
+ 127 59.1o    1950 1991     42                         1.44   4.37  1.319   .816   .348                         
+ 128 59.2e    1950 1991     42      1      0    .525   1.19   3.29   .784   .696   .420   3.55   .563   .159   0
+ 129 59.2o    1950 1991     42      1      0    .263   1.00   3.71   .784   .766   .417   2.44   .488   .141   0
+ 130 59.3e    1953 1982     30      0      0    .175   1.61   4.16  1.143   .839   .386   3.07   .545   .078   1
+ 131 59.3e2   1947 1995     49      1      1    .276   1.08   3.29   .834   .851   .369   2.22   .403  -.026   1
+ 132 59.3o    1950 1973     24      0      0    .452   2.09   3.88  1.148   .803   .302   1.64   .288   .071   1
+ 133 59.3o2   1947 1995     49      1      1    .150   1.12   2.61   .725   .730   .404   2.41   .437   .009   1
+ 134 59.4e    1950 1995     46      1      0    .611   1.38   4.48   .886   .519   .388   2.04   .374   .156   0
+ 135 59.4o    1950 1995     46      0      0    .687   1.23   3.97   .800   .643   .369   2.08   .386   .099   1
+ 136 60.1e    1952 1995     44      0      0    .778   3.32   6.40  1.700   .835   .263   1.34   .223  -.030   1
+ 137 60.1o    1952 1995     44      0      0    .807   2.92   5.65  1.235   .747   .277   1.34   .236  -.013   1
+ 138 60.2e    1950 1995     46      0      0    .691   2.80   5.42  1.222   .701   .286   1.44   .274  -.011   3
+ 139 60.2o    1950 1995     46      0      0    .649   2.89   5.17  1.264   .697   .274   1.50   .252   .032   1
+ 140 61.1e    1950 1995     46      0      0    .427   1.38   3.87   .823   .815   .321   2.15   .369   .036   2
+ 141 61.1o    1950 1995     46      0      0    .632   1.57   3.34   .829   .746   .342   1.69   .335  -.067   3
+ 142 63.1e    1950 1995     46      0      0    .530   1.67   4.91  1.170   .819   .363   1.89   .364  -.001   1
+ 143 63.1o    1950 1995     46      0      0    .481   1.50   3.81   .810   .629   .375   1.87   .371   .027   1
+ 144 63.2e    1950 1995     46      0      0    .655   1.61   3.97   .974   .651   .434   2.16   .425   .006   3
+ 145 63.2o    1950 1995     46      0      0    .649   2.30   4.20   .964   .639   .283   1.64   .301   .196   1
+ 146 63.3o    1956 1993     38      0      0    .242   1.25   5.47   .991   .653   .405   7.39  1.132   .123   0
+ 147 63.4o    1950 1993     44      0      0    .188    .98   5.02  1.036   .775   .449   2.14   .509   .015   3
+ 148 63.5e    1950 1978     29      0      0    .574   1.98   5.16  1.406   .782   .390   1.73   .374   .377   1
+ 149 63.5o    1950 1983     34      0      0    .753   2.36   5.50  1.542   .640   .443   1.96   .422   .227   1
+ 150 64.3e    1950 1967     18      0      0    .402   2.93   4.72  1.217   .844   .201   1.27   .220   .121   1
+ 151 64.3o    1950 1982     33                         1.58   4.57  1.460   .940   .227                         
+ 152 64.5e    1947 1982     36                         1.28   3.86  1.073   .850   .364                         
+ 153 64.5o    1947 1981     35                         2.68   6.37  1.882   .895   .342                         
+ 154 65.1e    1950 1995     46      0      0    .548   2.52   3.69   .579   .470   .191   1.38   .183  -.003   1
+ 155 65.1o    1950 1995     46      0      0    .724   2.04   3.84   .766   .640   .278   1.48   .260  -.050   2
+ 156 65.2e    1950 1995     46      0      0    .692   2.04   3.26   .602   .454   .264   1.41   .233  -.072   3
+ 157 65.2o    1949 1995     47      0      0    .560   2.19   4.95  1.007   .698   .330   1.75   .285  -.061   3
+ 158 69.1e    1965 1995     31      0      0    .626   1.79   3.62   .868   .810   .285   1.75   .275   .012   2
+ 159 69.1o    1965 1995     31      0      0    .572   1.52   3.00   .740   .723   .301   1.62   .273   .015   0
+ 160 69.2o    1914 1962     49      0      0    .422    .91   3.70   .928   .864   .368   1.68   .334  -.066   1
+ 161 71.1e    1945 1994     50      1      0    .594   1.23   4.70   .888   .677   .389   1.70   .343  -.003   3
+ 162 71.1o    1945 1994     50      1      0    .670   1.00   4.40   .875   .733   .370   1.90   .404   .011   1
+ 163 72.1e    1945 1995     51      1      0    .519   2.50   4.65  1.053   .650   .255   2.43   .316  -.015   2
+ 164 72.1o    1945 1995     51      1      0    .876   3.14   5.21   .945   .427   .251   1.57   .264   .036   1
+ 165 72.2e    1946 1995     50      1      0    .661   1.72   5.19   .918   .632   .305   1.74   .318  -.061   2
+ 166 72.2o    1946 1995     50      1      0    .602   1.85   4.95   .797   .524   .316   1.62   .293   .185   0
+ 167 72.3e    1946 1991     46      1      1    .110   1.18   4.26   .841   .787   .348   7.18  1.022   .221   0
+ 168 72.3o    1946 1991     46                         1.09   3.48   .855   .839   .341                         
+ 169 72.4e    1945 1995     51      1      0    .778   2.38   5.80  1.124   .483   .375   1.84   .361   .023   1
+ 170 72.4o    1945 1995     51      1      0    .734   1.96   3.69   .793   .622   .265   1.60   .271   .052   1
+ 171 72.5e    1945 1995     51      1      0    .735   1.27   4.24   .804   .669   .402   2.27   .393   .050   1
+ 172 72.5o    1945 1995     51      1      0    .755   1.29   4.66   .842   .681   .374   1.70   .357  -.051   3
+ 173 72.6e    1945 1991     47      1      0    .678   1.12   4.75  1.013   .768   .482   2.13   .467   .050   1
+ 174 72.6o    1945 1991     47      1      0    .666   1.24   5.16  1.122   .819   .408   1.60   .338  -.012   3
+ 175 72.7e    1946 1994     49      1      0    .490    .94   4.46   .855   .770   .418   2.27   .414   .008   3
+ 176 72.7o    1945 1994     50      1      0    .486    .92   4.76  1.024   .826   .397   2.27   .413  -.053   1
+ 177 74.1e    1940 1995     56      1      0    .563   1.19   2.85   .623   .737   .346   2.44   .352   .113   0
+ 178 74.1o    1940 1995     56      1      0    .682   1.31   3.52   .792   .721   .376   2.55   .419   .042   1
+ 179 75.4e    1915 1995     81      1      1    .376   1.22   4.25  1.056   .857   .282   1.67   .305   .079   1
+ 180 75.4o    1915 1955     41      0      0    .475   3.09   5.55  1.068   .622   .270   1.64   .265   .026   1
+ 181 75.5e    1951 1995     45      0      0    .658   2.49   5.00  1.486   .866   .295   1.88   .327   .046   1
+ 182 75.5o    1951 1995     45      0      0    .436   3.28   7.62  2.030   .848   .325   1.62   .333   .046   1
+ 183 78.1e    1955 1995     41      0      0    .265   1.01   2.23   .545   .800   .302   1.74   .289  -.001   3
+ 184 78.1o    1955 1995     41      0      0    .348   1.94   5.24  1.233   .701   .375   1.92   .363  -.021   3
+ 185 78.2e    1955 1995     41      0      0    .591   3.64   6.65  1.201   .602   .237   1.60   .245   .050   1
+ 186 78.2o    1955 1995     41      0      0    .375   2.35   4.21   .745   .598   .235   1.50   .227  -.011   2
+ 187 78.3e    1924 1975     52      0      0    .387   1.84   4.05  1.165   .847   .327   1.57   .289  -.003   2
+ 188 78.3o    1924 1975     52      0      0    .534   1.72   4.01  1.162   .842   .366   1.68   .315   .013   1
+ 189 teste1   1951 1995     45      0      0    .002   1.94   4.37  1.465   .917   .330  85.68 12.639   .877   0
+ 190 teste    1951 1994     44      0      0    .224   1.09   6.42  1.484   .847   .453   3.20   .691   .019   1
+ 191 testo    1955 1995     41      0      0    .557   1.44   3.38   .867   .744   .343   2.09   .354   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           8124     28      5    .523   1.81   8.45  1.016   .706   .331  85.68   .461   .044
+
+ DATA CHECKS (rwl.check): swit304
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit304.rwl
+ 191 series, 8124 measurements, 1914-1995, 0.01 mm precision
+ 1 error(s), 0 warning(s), 184 note(s)
+ -------------
+ ERROR
+   RWL_DUP_SERIES (1)
+     22.3e: identical measurements in 22.3e, 22.3e2; one core may be archived twice
+ 184 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit304.rwl, MD5 a14ffefad03e19d3654c054a5e2d4a56.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3665 for 40-year segments.
+ Segments: 40 years, lagged 20, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 01.7o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 04.7e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 16.1o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 24.1e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 24.1o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 31.2o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 39.4e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 39.4o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 40.6o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 47.2o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 56.2e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 56.2o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 57.1o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 57.2e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 59.1e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 59.1o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 64.3o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 64.5e is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 64.5o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series 72.3o is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 40 years: the record is only 82 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

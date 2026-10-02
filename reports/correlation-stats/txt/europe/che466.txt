@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: che466
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che466.rwl
+      MD5 of measurement file: 45c6c263c9244388ba5f9cb1e10c2b39
+      Date checked           : 01OCT26
+      Beginning year         : 1776
+      Ending year            : 2023
+      Principal investigators: Ferrari, M.; Nötzli, M.; Bigler, C.
+      Site name              : Bosch Tens, Val Bregaglia
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.3245 N
+      Longitude              : 9.5387 E
+      Elevation              : 1310 m
+
+      Series intercorrelation: 0.432
+      Avg mean sensitivity   : 0.154
+      Avg standard deviation : 0.398
+      Avg autocorrelation    : 0.877
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 14.89
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che466
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 TE01TA   1845 2023            .37  .47  .52  .55  .67 
+   2 TE02TA   1939 2023                                .52 
+   3 TE03TA   1776 2023  .34  .43  .41  .42  .27B .26B .43 
+   4 TE04TA   1910 2023                           .29A .56 
+   5 TE05TA   1778 2023  .22B .40  .36  .41  .45  .47  .65 
+   6 TE16TB   1818 2023       .73  .77  .68  .67  .48  .51 
+   7 TE18TB   1806 2023       .54  .55  .62  .58  .41  .47 
+   8 TE20TA   1781 2023  .21B .53  .56  .59  .64  .26B .30B
+   9 TE23TB   1800 2023       .47  .50  .62  .60  .42  .57 
+ Av segment correlation  .26  .52  .50  .54  .53  .39  .52 
+
+ FLAGGED SEGMENTS: che466
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 TE03TA   1900 1949     B     .269         3      .305   .036  weak at every lag
+   3 TE03TA   1925 1974     B     .258        -1      .369   .112
+   4 TE04TA   1925 1974     A     .286         0
+   5 TE05TA   1800 1849     B     .219        -1      .353   .135
+   8 TE20TA   1800 1849     B     .213         2      .280   .067  weak at every lag
+   8 TE20TA   1925 1974     B     .258        -8      .269   .011  weak at every lag
+   8 TE20TA   1950 1999     B     .299        -8      .304   .005  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che466
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TE01TA   1845 2023    179      5      0    .462   1.06   2.02   .359   .826   .156   1.50   .157  -.014   1
+   2 TE02TA   1939 2023     85      1      0    .401   2.14   3.60   .521   .818   .116   1.21   .113   .007   1
+   3 TE03TA   1776 2023    248      7      2    .291    .80   1.85   .261   .873   .127   1.45   .131  -.012   1
+   4 TE04TA   1910 2023    114      2      1    .421   1.58   2.71   .527   .894   .125   1.34   .132  -.040   1
+   5 TE05TA   1778 2023    246      7      1    .307    .74   1.55   .309   .847   .186   2.00   .203  -.000   1
+   6 TE16TB   1818 2023    206      6      0    .632   1.08   2.67   .372   .870   .138   1.43   .143   .001   2
+   7 TE18TB   1806 2023    218      6      0    .488    .85   2.09   .384   .878   .171   1.52   .178  -.027   1
+   8 TE20TA   1781 2023    243      7      3    .421    .62   1.64   .306   .904   .168   1.62   .177  -.001   3
+   9 TE23TB   1800 2023    224      6      0    .492   1.01   3.92   .705   .946   .163   1.50   .180  -.001   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1763     47      7    .432    .97   3.92   .398   .877   .154   2.00   .163  -.009
+
+ DATA CHECKS (rwl.check): che466
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che466.rwl
+ 9 series, 1763 measurements, 1776-2023, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file che466.rwl, MD5 45c6c263c9244388ba5f9cb1e10c2b39.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

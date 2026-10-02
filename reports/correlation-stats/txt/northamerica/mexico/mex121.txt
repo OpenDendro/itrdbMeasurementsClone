@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: mex121
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex121.rwl
+      MD5 of measurement file: 40f064e195050f03daa9e1ae1f5d4f67
+      Date checked           : 01OCT26
+      Beginning year         : 1719
+      Ending year            : 2005
+      Principal investigators: Therrell, M.D.; Acuno, R.
+      Site name              : Rio Atoyac
+      Species information    : TAMU Taxodium mucronatum Ten.
+      Latitude               : 16.6000 N
+      Longitude              : 96.9000 W
+      Elevation              : 1493 m
+
+      Series intercorrelation: 0.517
+      Avg mean sensitivity   : 0.355
+      Avg standard deviation : 1.066
+      Avg autocorrelation    : 0.726
+      Number dated series    : 20
+      Series crossdated      : 19
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 7, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 12.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex121
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 ATO02B   1780 2005  .45  .48  .56  .51  .53  .72  .73 
+   2 ATO04A   1824 1974           -.06B-.15B .43  .51      
+   3 ATO05A   1880 2005                      .51  .66  .63 
+   4 ATO05B   1880 1985                      .48  .57      
+   5 ATO06A   1777 2005  .48  .61  .47  .38B .51  .33  .31A
+   6 ATO06B   1780 1910  .59  .61  .46                     
+   7 ATO11B   1750 2005  .46  .44  .56  .40  .32A .53  .63 
+   8 ATO12A   1740 2005  .73  .78  .77  .69  .66  .71  .69 
+   9 ATO12B   1730 2005  .66  .46  .40  .53  .62  .83  .72 
+  10 ATO12C   1737 2005  .68  .74  .76  .77  .73  .80  .84 
+  11 ATO13A   1719 2005  .73  .70  .62  .52  .62  .83  .80 
+  12 ATO13B   1750 2005  .60  .65  .74  .74  .70  .77  .82 
+  13 ATO15A   1750 2005  .60  .35  .32A .40  .40  .42  .44 
+  14 ATO15B   1750 1949  .57  .49  .34  .33  .24A          
+  15 ATO16A   1750 2005  .28B .57  .51  .52  .43  .37  .56 
+  17 ATO18A   1870 2005                 .33  .31A .55  .39 
+  18 ATO18B   1800 2005       .40  .32A .27A .45  .51  .57 
+  19 ATO20A   1811 2005       .29B .31B .46  .54  .63  .67 
+  20 ATO20B   1850 2005                 .51  .46  .58  .67 
+ Av segment correlation  .57  .54  .47  .45  .50  .61  .63 
+
+ FLAGGED SEGMENTS: mex121
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 ATO04A   1850 1899     B    -.064        -1      .229   .294  weak at every lag
+   2 ATO04A   1875 1924     B    -.153        -1      .251   .405  weak at every lag
+   5 ATO06A   1875 1924     B     .380         9      .386   .006
+   5 ATO06A   1950 1999     A     .306         0
+   7 ATO11B   1900 1949     A     .323         0
+  13 ATO15A   1850 1899     A     .316         0
+  14 ATO15B   1900 1949     A     .239         0
+  15 ATO16A   1800 1849     B     .282        -6      .312   .030  weak at every lag
+  17 ATO18A   1900 1949     A     .305         0
+  18 ATO18B   1850 1899     A     .323         0
+  18 ATO18B   1875 1924     A     .269         0
+  19 ATO20A   1825 1874     B     .293        -7      .330   .037
+  19 ATO20A   1850 1899     B     .306        -7      .415   .109
+
+ DESCRIPTIVE STATISTICS: mex121
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ATO02B   1780 2005    226      7      0    .541    .75   2.75   .386   .543   .405   2.53   .369  -.032   1
+   2 ATO04A   1824 1974    151      4      2    .238   1.88   9.00  2.157   .897   .391   3.17   .410   .006   2
+   3 ATO05A   1880 2005    126      3      0    .508   1.27   3.96   .807   .594   .376   2.25   .394   .010   1
+   4 ATO05B   1880 1985    106      2      0    .504   1.45   7.80  1.261   .621   .412   2.74   .473  -.025   2
+   5 ATO06A   1777 2005    229      7      2    .423   1.26   3.60   .801   .795   .326   1.84   .316  -.001   2
+   6 ATO06B   1780 1910    131      3      0    .522   1.04   3.48   .625   .760   .273   2.29   .313   .002   1
+   7 ATO11B   1750 2005    256      7      1    .481   1.86  10.75  1.808   .835   .383   2.33   .362  -.007   1
+   8 ATO12A   1740 2005    266      7      0    .679   1.19   4.60   .637   .675   .326   2.21   .315   .003   1
+   9 ATO12B   1730 2005    276      7      0    .587   1.07   4.23   .613   .714   .304   2.76   .330  -.008   1
+  10 ATO12C   1737 2005    269      7      0    .707   1.55   6.46   .947   .753   .315   2.30   .308  -.002   3
+  11 ATO13A   1719 2005    287      7      0    .609   1.31   9.83  1.403   .737   .442   4.02   .487  -.010   3
+  12 ATO13B   1750 2005    256      7      0    .703   1.30   4.30   .768   .779   .314   2.37   .313  -.014   3
+  13 ATO15A   1750 2005    256      7      1    .421   2.02   8.17  1.313   .763   .330   2.15   .326  -.012   3
+  14 ATO15B   1750 1949    200      5      1    .392   1.62   4.36   .799   .740   .275   2.18   .273  -.010   3
+  15 ATO16A   1750 2005    256      7      1    .413    .97   8.68   .911   .651   .397   3.96   .496  -.004   2
+  16 ATO16B   1900 2005    106                         1.03   4.13   .761   .605   .439                         
+  17 ATO18A   1870 2005    136      4      1    .363    .94   5.62   .978   .713   .421   2.71   .413   .002   2
+  18 ATO18B   1800 2005    206      6      2    .436   1.15   7.74   .949   .538   .369   3.14   .404  -.001   2
+  19 ATO20A   1811 2005    195      6      2    .484   1.91  12.34  2.286   .932   .317   2.41   .355  -.014   1
+  20 ATO20B   1850 2005    156      4      0    .525   1.52   7.17  1.312   .790   .354   2.41   .386  -.020   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4090    107     13    .517   1.36  12.34  1.066   .726   .355   4.02   .367  -.007
+
+ DATA CHECKS (rwl.check): mex121
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex121.rwl
+ 20 series, 4090 measurements, 1719-2005, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 845 carriage return(s) against 424 line feed(s); mixed endings can defeat a reader
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mex121.rwl, MD5 40f064e195050f03daa9e1ae1f5d4f67.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series ATO16B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

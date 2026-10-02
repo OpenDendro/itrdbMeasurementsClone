@@ -6,16 +6,21 @@ objects you can load in one line.
 
 Part of the [openDendro](https://opendendro.org) project.
 
+> **Crossdating reports for the whole archive.** Every ring-width file here has a
+> COFECHA-style report made by dplR's `xdate.report()`: 6,807 reports, 1.5 million
+> segments tested. [Start with the overview](reports/correlation-stats/), or
+> [jump to an example](reports/correlation-stats/txt/northamerica/usa/ca671.txt).
+
 ## Why this exists
 
 The ITRDB is the archive of record for tree-ring measurements. It holds several thousand
 studies contributed over decades. Getting all of it into R, though, means downloading
-thousands of files from a public FTP tree, matching each one to its metadata in a separate
-XML record, and parsing a fixed-width format that has drifted over forty years of use.
+thousands of files, working out what each one measures, matching it to its study's
+metadata, and parsing a fixed-width format that has drifted over forty years of use.
 
 Every project that wants to work across the whole database repeats that work. This repo does
 it once and publishes the result: **two files that load in a second and give you every
-readable ring-width study with its metadata attached.**
+readable measurement file with its metadata attached.**
 
 That makes questions across the whole archive tractable — how sample depth varies by species,
 what the age structure of the network looks like, how many series cover a given period —
@@ -74,6 +79,40 @@ piab <- rwls[rw & rwls_meta$GenusSpp %in% "Picea abies"]
 length(piab)
 ```
 
+## Crossdating reports
+
+`reports/correlation-stats/` holds a crossdating report for every ring-width file, made by
+dplR's [`xdate.report()`](https://github.com/OpenDendro/dplR) in the layout of the COFECHA
+output NOAA publishes with each study. It shows the function running across the whole
+archive. It is not NOAA's published statistics.
+
+- **[The overview](reports/correlation-stats/)** summarises the run and lists the files
+  that need a look: 1,278 have 10% or more of their segments flagged. Each continent's
+  folder lists its own reports, most flagged first.
+- **Every report comes twice**, as fixed-width text and as a self-contained HTML page, in
+  `txt/` and `html/` under the same folder its `.rwl` has. For `ca671.rwl`:
+  [`txt/northamerica/usa/ca671.txt`](reports/correlation-stats/txt/northamerica/usa/ca671.txt)
+  and `html/northamerica/usa/ca671.html`. GitHub shows `.html` as source; download it to
+  read it as a page.
+- **Every number is in [`reports/xdate-summary.csv`](reports/xdate-summary.csv)**, one row
+  per file: series, segments tested, A and B flags, percent flagged, series
+  intercorrelation, and any notes.
+
+From a study code to its report in R:
+
+```r
+s <- read.csv("reports/xdate-summary.csv")
+x <- s[s$code == "CA671", ]
+x[, c("file", "nSeries", "nA", "nB", "pctFlagged", "interseriesCor")]
+file.show(file.path("reports/correlation-stats/txt", x$subdir, paste0(x$file, ".txt")))
+```
+
+A segment is flagged **B** when another position correlates better with the master than the
+dated one, and **A** when the dated position is the best tested but is under the critical
+value. `xdate.report()` departs from COFECHA in two places, on purpose. On a record too
+short for 50-year segments it shortens the segment length, and that report's notes say so
+(506 files). And it does not score partial segments at the ends of a series.
+
 ## Current build
 
 Built 1 October 2026 from the ITRDB as it stood then. Figures from `code/04_readRWLs.R`.
@@ -106,6 +145,9 @@ Scripts in `code/`, run in order:
 3. **`03_metaITRDB.R`** adds family, order and group to each species, and fills the few
    missing elevations from a terrain model.
 4. **`04_readRWLs.R`** reads every file into an `rwl` object.
+5. **`05_xdateReports.R`** runs dplR's `xdate.report()`, a COFECHA-style crossdating
+   report, on every ring-width file. The reports and an overview are in
+   [`reports/correlation-stats/`](reports/correlation-stats/).
 
 Reading is done by `dplR::read.tucson()` (dplR 1.8.0 or later, on CRAN), which records what it found in each
 file and returns that alongside the data. Each run writes three reports to `reports/`:

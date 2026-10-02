@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: ny051
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ny051.rwl
+      MD5 of measurement file: 57e097059bde4ec94eaf8b01cd67014a
+      Date checked           : 01OCT26
+      Beginning year         : 1512
+      Ending year            : 1891
+      Principal investigators: Rao, M.P.; Leland, C.; Cook, E.R.; Cook, B.I.; Lapidus, B.M.; Staniforth, A.B.; Solomon, A.; Holloway, M.Y.; Rodriguez-Catón, M.
+      Site name              : Terminal Warehouse Building
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 40.7518 N
+      Longitude              : 74.0052 W
+      Elevation              : 6 m
+
+      Series intercorrelation: 0.406
+      Avg mean sensitivity   : 0.278
+      Avg standard deviation : 0.500
+      Avg autocorrelation    : 0.691
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 5, B 8; 6 of the B weak at every lag)
+      Pct problem segments   : 17.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ny051
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 TWB01a   1664 1835                 .06B .44  .66  .71  .55           
+   2 TWB02a   1670 1818                 .37  .36  .48  .41                
+   3 TWB03a   1613 1802       .21B .39  .48  .63  .67  .65                
+   4 TWB04a   1652 1858                 .47  .38  .33A .28A .44  .44      
+   5 TWB06a   1703 1852                           .57  .54  .58  .51      
+   6 TWB07a   1731 1857                                .50  .61  .54      
+   7 TWB08a   1650 1800                 .50  .51  .54  .30A               
+   8 TWB09a   1709 1890                           .47  .37  .35  .37  .48 
+   9 TWB10a   1623 1825            .39  .18B .08B .26B .27A .40           
+  10 TWB11a   1694 1889                      .40  .44  .34B .37  .60  .55 
+  11 TWB12a   1724 1891                                .33  .37  .41  .24B
+  12 TWB14a   1669 1834                 .41  .59  .62  .61  .55           
+  13 TWB16a   1669 1812                 .51  .56  .59  .54                
+  14 TWB19a   1749 1862                                .40  .44  .35      
+  15 TWB20a   1639 1805            .37  .63  .68  .69  .54                
+  16 TWB21a   1512 1779       .08B .45  .52  .51  .30A                    
+ Av segment correlation       .14  .40  .41  .47  .51  .45  .47  .46  .42 
+
+ FLAGGED SEGMENTS: ny051
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 TWB01a   1675 1724     B     .056        -6      .260   .204  weak at every lag
+   3 TWB03a   1625 1674     B     .207        -1      .275   .068  weak at every lag
+   4 TWB04a   1725 1774     A     .327         0
+   4 TWB04a   1750 1799     A     .283         0
+   7 TWB08a   1750 1799     A     .299         0
+   9 TWB10a   1675 1724     B     .177         8      .226   .049  weak at every lag
+   9 TWB10a   1700 1749     B     .078       -10      .216   .138  weak at every lag
+   9 TWB10a   1725 1774     B     .256        -2      .269   .013  weak at every lag
+   9 TWB10a   1750 1799     A     .270         0
+  10 TWB11a   1750 1799     B     .337         4      .397   .059
+  11 TWB12a   1825 1874     B     .240         5      .323   .083  weak at every lag
+  16 TWB21a   1625 1674     B     .077        -7      .432   .354
+  16 TWB21a   1725 1774     A     .297         0
+
+ DESCRIPTIVE STATISTICS: ny051
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TWB01a   1664 1835    172      5      1    .379   1.00   5.25   .611   .764   .269   1.72   .271   .013   1
+   2 TWB02a   1670 1818    149      4      0    .418    .97   2.17   .318   .472   .262   1.95   .269   .016   1
+   3 TWB03a   1613 1802    190      6      1    .376    .96   2.97   .533   .787   .289   1.69   .272  -.003   2
+   4 TWB04a   1652 1858    207      6      2    .425    .98   2.46   .410   .604   .271   2.22   .283  -.006   2
+   5 TWB06a   1703 1852    150      4      0    .511   1.18   4.27   .752   .792   .262   1.84   .248  -.019   2
+   6 TWB07a   1731 1857    127      3      0    .513   1.21   2.27   .475   .540   .287   1.73   .271   .004   1
+   7 TWB08a   1650 1800    151      4      1    .395   1.13   2.71   .507   .600   .332   1.93   .316   .013   1
+   8 TWB09a   1709 1890    182      5      0    .403    .90   3.41   .590   .863   .231   1.66   .224   .012   3
+   9 TWB10a   1623 1825    203      6      4    .204    .89   3.01   .364   .612   .262   1.80   .258  -.006   3
+  10 TWB11a   1694 1889    196      6      1    .449    .86   2.10   .326   .648   .247   1.67   .232  -.012   3
+  11 TWB12a   1724 1891    168      4      1    .420    .89   2.53   .433   .796   .220   1.56   .208  -.036   3
+  12 TWB14a   1669 1834    166      5      0    .543    .93   2.13   .387   .599   .300   1.79   .276  -.006   2
+  13 TWB16a   1669 1812    144      4      0    .504   1.20   3.11   .552   .814   .215   1.40   .203   .019   1
+  14 TWB19a   1749 1862    114      3      0    .409   1.60   4.96  1.020   .677   .431   2.37   .396   .028   1
+  15 TWB20a   1639 1805    167      5      0    .474    .84   2.02   .328   .667   .245   1.86   .221   .046   0
+  16 TWB21a   1512 1779    268      5      2    .252    .89   2.94   .587   .753   .346   2.25   .320  -.031   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2754     75     13    .406   1.00   5.25   .500   .691   .278   2.37   .266  -.000
+
+ DATA CHECKS (rwl.check): ny051
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ny051.rwl
+ 16 series, 2754 measurements, 1512-1891, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file ny051.rwl, MD5 57e097059bde4ec94eaf8b01cd67014a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

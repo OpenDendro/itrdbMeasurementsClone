@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: cod001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cod001.rwl
+      MD5 of measurement file: 4e79a7bac899581d5daff92e2faab65a
+      Date checked           : 01OCT26
+      Beginning year         : 1922
+      Ending year            : 2005
+      Principal investigators: Couralet, C.; Beeckman, H.; Bräuning, A.
+      Site name              : Luki
+      Species information    : AIOC Aidia ochroleuca (K.Schum.) E.M.A.Petit
+      Latitude               : 5.6000 S
+      Longitude              : 13.1500 E
+      Elevation              : 292 m
+
+      Series intercorrelation: 0.294
+      Avg mean sensitivity   : 0.415
+      Avg standard deviation : 1.138
+      Avg autocorrelation    : 0.607
+      Number dated series    : 10
+      Segment length tested  : 42
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 100.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cod001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1991 
+ --- -------- ---------  ---- 
+   1 AI56a    1932 2005  .10B
+   2 AI56b    1932 2005 -.00B
+   3 AI57a    1922 2005  .32A
+   4 AI57b    1922 2005  .18B
+ Av segment correlation  .15 
+
+ FLAGGED SEGMENTS: cod001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 AI56a    1950 1991     B     .102        -9      .300   .198  weak at every lag
+   2 AI56b    1950 1991     B    -.002        -2      .295   .297  weak at every lag
+   3 AI57a    1950 1991     A     .320         0
+   4 AI57b    1950 1991     B     .177        -2      .430   .253
+
+ DESCRIPTIVE STATISTICS: cod001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AI56a    1932 2005     74      1      1    .023   1.57   4.12   .799   .290   .445   2.13   .428   .084   0
+   2 AI56b    1932 2005     74      1      1   -.043   1.41   3.41   .702   .410   .376   1.94   .395   .013   2
+   3 AI57a    1922 2005     84      1      1    .379   1.69   7.13  1.365   .760   .363   2.17   .397  -.013   1
+   4 AI57b    1922 2005     84      1      1    .415   1.68   6.31  1.384   .694   .454   2.31   .452  -.012   1
+   5 AI58a    1963 2005     43      0      0    .436   1.57   4.77  1.067   .577   .461   1.99   .453  -.044   2
+   6 AI58b    1963 2005     43      0      0    .359   1.29   4.73   .854   .521   .441   2.47   .482   .055   1
+   7 AI59a    1967 2005     39      0      0    .293   2.07   7.68  1.651   .798   .366   5.10   .794   .321   0
+   8 AI59b    1967 2005     39      0      0    .591   1.57   6.36  1.244   .747   .480   2.30   .425  -.017   1
+   9 AI60a    1970 2005     36      0      0    .535   2.04   4.36  1.164   .673   .407   1.61   .336   .186   0
+  10 AI60c    1970 2005     36      0      0    .257   1.89   4.83  1.348   .817   .373   2.85   .473   .178   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            552      4      4    .294   1.65   7.68  1.138   .607   .415   5.10   .451   .055
+
+ DATA CHECKS (rwl.check): cod001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/cod001.rwl
+ 10 series, 552 measurements, 1922-2005, 0.01 mm precision
+ 0 error(s), 1 warning(s), 7 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file cod001.rwl, MD5 4e79a7bac899581d5daff92e2faab65a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 42 years: the record is only 84 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

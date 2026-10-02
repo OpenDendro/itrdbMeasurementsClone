@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: tha029
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tha029.rwl
+      MD5 of measurement file: 029a8818327d32224994d6b2aad5f8df
+      Date checked           : 01OCT26
+      Beginning year         : 1867
+      Ending year            : 1996
+      Principal investigators: Pumijumnong, N.
+      Site name              : Mae Wong
+      Species information    : TEGR Tectona grandis L. f.
+      Latitude               : 15.8138 N
+      Longitude              : 99.3086 E
+      Elevation              : 450 m
+
+      Series intercorrelation: 0.504
+      Avg mean sensitivity   : 0.498
+      Avg standard deviation : 2.117
+      Avg autocorrelation    : 0.540
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 3, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 17.65
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tha029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 MV08A    1898 1996  .55  .52 
+   2 MV08B    1885 1996  .61  .75 
+   3 MV12B    1891 1996  .71  .71 
+   4 MV12A    1867 1996  .48  .53 
+   5 MV12C    1894 1979  .54  .60 
+   6 MV05B    1895 1996  .64  .69 
+   7 MV05D    1906 1989       .42 
+   8 MV07B    1908 1996       .71 
+   9 MV07A    1870 1994  .42  .25B
+  14 MV06A    1900 1993       .45 
+  15 MV03D    1915 1996       .44 
+  16 MV03A    1875 1996  .50  .45 
+  17 MV01B    1889 1996  .46  .67 
+  18 MV01A    1874 1996  .33  .36 
+  19 MV02A    1869 1996  .29A .42 
+  20 MV10A    1916 1996       .37 
+  21 MV09B    1895 1996  .30B .27A
+  22 MV09A    1885 1996  .56  .42 
+  23 MV13A    1884 1968  .46      
+  24 MV11A    1920 1985       .25A
+  25 MV11B    1919 1996       .23B
+ Av segment correlation  .49  .48 
+
+ FLAGGED SEGMENTS: tha029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 MV07A    1925 1974     B     .251         7      .286   .035  weak at every lag
+  19 MV02A    1900 1949     A     .295         0
+  21 MV09B    1900 1949     B     .296        -1      .308   .011  weak at every lag
+  21 MV09B    1925 1974     A     .271         0
+  24 MV11A    1925 1974     A     .255         0
+  25 MV11B    1925 1974     B     .232        -7      .504   .273
+
+ DESCRIPTIVE STATISTICS: tha029
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MV08A    1898 1996     99      2      0    .639   2.65   9.29  1.747   .364   .533   3.18   .551   .111   0
+   2 MV08B    1885 1996    112      2      0    .710   2.81   8.89  2.127   .574   .482   2.71   .510  -.012   1
+   3 MV12B    1891 1996    106      2      0    .707   3.24  11.79  2.071   .480   .506   2.34   .490   .001   2
+   4 MV12A    1867 1996    130      2      0    .596   2.38   9.23  1.951   .427   .553   3.17   .586   .019   1
+   5 MV12C    1894 1979     86      2      0    .505   2.79  11.31  1.866   .591   .490   1.95   .432   .025   2
+   6 MV05B    1895 1996    102      2      0    .673   2.94  15.79  2.765   .586   .584   3.37   .600   .047   1
+   7 MV05D    1906 1989     84      1      0    .279   3.32  12.69  2.473   .631   .482   3.22   .519   .040   1
+   8 MV07B    1908 1996     89      1      0    .729   3.16  11.94  2.023   .535   .440   2.19   .423   .026   1
+   9 MV07A    1870 1994    125      2      1    .424   2.23   9.45  1.826   .719   .413   2.49   .426   .031   1
+  10 MV04A    1957 1996     40      0      0    .601   7.33  14.54  3.729   .149   .512   1.99   .395   .056   2
+  11 MV04C    1952 1996     45      0      0    .494   7.15  17.17  3.822   .308   .536   2.11   .462   .030   2
+  12 MV04B    1948 1996     49      0      0    .548   2.23  11.95  1.917   .353   .476   3.35   .576  -.023   1
+  13 MV06B    1950 1995     46      0      0    .804   2.34   8.70  1.830   .132   .662   2.59   .606  -.048   0
+  14 MV06A    1900 1993     94      1      0    .297   2.10  13.85  2.466   .743   .536   3.00   .572   .042   1
+  15 MV03D    1915 1996     82      1      0    .577   2.70   9.06  1.529   .543   .347   1.98   .392   .029   1
+  16 MV03A    1875 1996    122      2      0    .461   2.48  10.57  2.048   .719   .444   2.12   .441   .034   1
+  17 MV01B    1889 1996    108      2      0    .535   2.88  17.83  3.093   .738   .482   3.41   .517   .153   1
+  18 MV01A    1874 1996    123      2      0    .466   2.32  11.15  2.040   .579   .458   2.88   .520   .038   1
+  19 MV02A    1869 1996    128      2      1    .478   1.82   9.31  1.743   .723   .465   2.85   .501   .015   1
+  20 MV10A    1916 1996     81      1      0    .451   2.07   7.98  1.804   .210   .681   3.82   .736   .012   0
+  21 MV09B    1895 1996    102      2      2    .348   3.47   9.87  2.262   .589   .490   2.18   .463   .028   1
+  22 MV09A    1885 1996    112      2      0    .390   1.98   9.59  1.521   .473   .503   3.47   .567   .032   1
+  23 MV13A    1884 1968     85      1      0    .470   1.97   8.63  1.478   .290   .516   4.06   .584   .001   2
+  24 MV11A    1920 1985     66      1      1    .142   2.37   9.03  2.088   .705   .442   2.44   .494  -.015   3
+  25 MV11B    1919 1996     78      1      1    .304   3.04  11.77  2.403   .513   .561   3.26   .617   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2294     34      6    .504   2.74  17.83  2.117   .540   .498   4.06   .519   .030
+
+ DATA CHECKS (rwl.check): tha029
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/tha029.rwl
+ 25 series, 2294 measurements, 1867-1996, 0.01 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 505 carriage return(s) against 254 line feed(s); mixed endings can defeat a reader
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file tha029.rwl, MD5 029a8818327d32224994d6b2aad5f8df.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

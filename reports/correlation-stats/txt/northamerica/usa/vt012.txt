@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: vt012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : vt012.rwl
+      MD5 of measurement file: d548000c5ed1a1a51e3e129c743f3e44
+      Date checked           : 01OCT26
+      Beginning year         : 1600
+      Ending year            : 1809
+      Principal investigators: Baisan, C.H.
+      Site name              : Evan's Farm Barn
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 42.7996 N
+      Longitude              : 72.5987 W
+      Elevation              : 229 m
+
+      Avg mean sensitivity   : 0.204
+      Avg standard deviation : 0.251
+      Avg autocorrelation    : 0.742
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: vt012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EFB11    1600 1798    199                          .66   1.30   .253   .784   .226                        3
+   2 EFB12    1670 1809    140                          .92   1.76   .249   .682   .174                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            339                          .77   1.76   .251   .742   .204                     
+
+ DATA CHECKS (rwl.check): vt012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/vt012.rwl
+ 2 series, 339 measurements, 1600-1809, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file vt012.rwl, MD5 d548000c5ed1a1a51e3e129c743f3e44.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

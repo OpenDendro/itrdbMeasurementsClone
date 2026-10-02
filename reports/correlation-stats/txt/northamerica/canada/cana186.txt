@@ -1,0 +1,106 @@
+
+ COFECHA-style crossdating report: cana186
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana186.rwl
+      MD5 of measurement file: fc9a94577a30df279f5f590dd7e42882
+      Date checked           : 01OCT26
+      Beginning year         : 1875
+      Ending year            : 1998
+      Principal investigators: St. George, S.
+      Site name              : Remus Farm
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 49.0700 N
+      Longitude              : 97.2000 W
+      Elevation              : 235 m
+
+      Series intercorrelation: 0.732
+      Avg mean sensitivity   : 0.242
+      Avg standard deviation : 0.656
+      Avg autocorrelation    : 0.668
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana186
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 e9901a   1879 1998  .71  .83 
+   2 e9902a   1881 1998  .66  .74 
+   3 E9903a   1903 1998       .85 
+   4 e9904a   1894 1998  .78  .80 
+   5 e9905a   1879 1998  .76  .87 
+   6 e9906a   1894 1998  .75  .85 
+   7 e9907a   1882 1998  .73  .76 
+   8 e9908a   1883 1998  .75  .80 
+   9 e9909a   1875 1998  .81  .83 
+  10 e9910a   1887 1998  .74  .83 
+ Av segment correlation  .74  .82 
+
+ FLAGGED SEGMENTS: cana186
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: cana186
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 e9901a   1879 1998    120      2      0    .767   1.47   2.71   .408   .504   .218   1.55   .206   .016   1
+   2 e9902a   1881 1998    118      2      0    .680   1.60   3.27   .669   .726   .251   1.62   .236  -.001   2
+   3 E9903a   1903 1998     96      1      0    .801   1.92   3.42   .529   .444   .234   1.58   .196  -.059   0
+   4 e9904a   1894 1998    105      2      0    .787   1.80   3.46   .658   .668   .246   1.63   .230  -.001   1
+   5 e9905a   1879 1998    120      2      0    .800   1.38   4.04   .791   .792   .287   1.81   .261   .004   2
+   6 e9906a   1894 1998    105      2      0    .751   1.71   3.99   .714   .653   .278   1.94   .261   .007   0
+   7 e9907a   1882 1998    117      2      0    .506   1.82   3.66   .694   .743   .228   3.91   .348   .180   0
+   8 e9908a   1883 1998    116      2      0    .713   1.68   3.08   .615   .634   .264   1.99   .266  -.124   1
+   9 e9909a   1875 1998    124      2      0    .737   1.94   3.87   .771   .805   .188   1.78   .209  -.005   1
+  10 e9910a   1887 1998    112      2      0    .798   2.08   3.63   .688   .661   .227   1.67   .219   .018   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1133     19      0    .732   1.73   4.04   .656   .668   .242   3.91   .244   .005
+
+ DATA CHECKS (rwl.check): cana186
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana186.rwl
+ 10 series, 1133 measurements, 1875-1998, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file cana186.rwl, MD5 fc9a94577a30df279f5f590dd7e42882.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

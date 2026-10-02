@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: deu315
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu315.rwl
+      MD5 of measurement file: ff0b22b40c05f7b87157f475368dd170
+      Date checked           : 01OCT26
+      Beginning year         : 1791
+      Ending year            : 2017
+      Principal investigators: Schneider, C.; Neuwirth, B.; Schneider, S.; Balanzategui, D.; Elsholz, S.; Fenner, D.; Meier, F.; Heinrich, I.
+      Site name              : Berlin Volkspark Hasenheide den15
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 52.4853 N
+      Longitude              : 13.4183 E
+      Elevation              : 42 m
+
+      Series intercorrelation: 0.601
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 0.891
+      Avg autocorrelation    : 0.740
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 2.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu315
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 den1501m 1944 2017                                .68 
+   2 den1502m 1851 2017                 .31A .57  .66  .60 
+   3 den1503m 1892 2017                      .61  .48  .56 
+   4 den1504m 1889 2017                      .62  .54  .71 
+   5 den1505m 1882 2017                      .59  .70  .78 
+   6 den1506m 1808 2017       .55  .64  .79  .66  .59  .74 
+   7 den1507m 1829 2017            .77  .79  .72  .68  .60 
+   8 den1508m 1800 2017       .61  .70  .66  .71  .74  .73 
+   9 den1509m 1842 2017            .47  .50  .59  .62  .62 
+  10 den1510m 1908 2017                           .43  .75 
+  11 den1511m 1901 2017                           .63  .69 
+  12 den1512m 1791 2017       .62  .71  .76  .72  .72  .75 
+ Av segment correlation       .60  .66  .64  .64  .62  .69 
+
+ FLAGGED SEGMENTS: deu315
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 den1502m 1875 1924     A     .314         0
+
+ DESCRIPTIVE STATISTICS: deu315
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 den1501m 1944 2017     74      1      0    .536   4.59   8.85  2.091   .691   .281   1.66   .273   .051   1
+   2 den1502m 1851 2017    167      4      1    .470   2.03   4.46   .943   .820   .203   1.79   .224  -.004   1
+   3 den1503m 1892 2017    126      3      0    .575   2.67   4.56   .746   .602   .196   1.52   .180  -.031   0
+   4 den1504m 1889 2017    129      3      0    .656   2.06   3.96   .831   .738   .232   1.61   .239   .005   1
+   5 den1505m 1882 2017    136      3      0    .684   2.28   7.79   .965   .714   .226   1.63   .223   .008   1
+   6 den1506m 1808 2017    210      6      0    .616   1.75   5.31   .858   .819   .231   2.02   .247   .033   1
+   7 den1507m 1829 2017    189      5      0    .690   1.82   5.22   .745   .743   .211   1.53   .188   .013   0
+   8 den1508m 1800 2017    218      6      0    .606   1.63   5.79   .744   .744   .211   2.86   .232   .003   2
+   9 den1509m 1842 2017    176      5      0    .517   1.89   4.42   .837   .815   .213   1.92   .232   .012   1
+  10 den1510m 1908 2017    110      2      0    .575   3.21   5.57  1.072   .613   .233   1.74   .222  -.011   3
+  11 den1511m 1901 2017    117      2      0    .573   3.17   8.81  1.323   .636   .243   1.76   .241   .014   1
+  12 den1512m 1791 2017    227      6      0    .653   1.25   3.56   .554   .769   .223   2.19   .232  -.007   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1879     46      1    .601   2.13   8.85   .891   .740   .222   2.86   .227   .006
+
+ DATA CHECKS (rwl.check): deu315
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu315.rwl
+ 12 series, 1879 measurements, 1791-2017, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     den1502m: correlates with the rest of the collection at r = 0.326 where the collection median is 0.595 (4.2 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file deu315.rwl, MD5 ff0b22b40c05f7b87157f475368dd170.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: tn019
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tn019.rwl
+      MD5 of measurement file: a7329c8cd5bb14cabb9eba544f84ce53
+      Date checked           : 01OCT26
+      Beginning year         : 1793
+      Ending year            : 1995
+      Principal investigators: Young, P.J.; Keeland, R.; Nunes, E.
+      Site name              : Hen Wallow Falls B
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 35.7500 N
+      Longitude              : 83.2300 W
+      Elevation              : 218 m
+
+      Series intercorrelation: 0.504
+      Avg mean sensitivity   : 0.243
+      Avg standard deviation : 0.938
+      Avg autocorrelation    : 0.788
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 3.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tn019
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 HW201A   1876 1995                      .45  .47 
+   2 HW202B   1800 1995       .49  .67  .65  .68  .69 
+   3 HW203A   1825 1995            .51  .45B .63  .67 
+   4 HW204B   1826 1995            .67  .57  .60  .53 
+   5 HW205A   1830 1995            .58  .56  .58  .56 
+   6 HW205B   1793 1995       .53  .68  .53  .52  .61 
+   7 HW206A   1870 1995                 .61  .42  .42 
+   8 HW206B   1827 1995            .68  .50  .43  .60 
+   9 HW207A   1845 1995            .82  .66  .53  .63 
+  10 HW207B   1831 1995            .71  .65  .60  .65 
+  11 HW208A   1850 1995                 .40  .41  .47 
+  12 HW208B   1860 1995                 .50  .48  .48 
+  13 HW209A   1896 1995                      .39  .36 
+  14 HW209B   1870 1995                 .49  .40  .46 
+  15 HW210A   1848 1995            .48  .53  .59  .40 
+  16 HW210B   1847 1995            .56  .35  .51  .64 
+  17 HW221A   1917 1995                           .36 
+  18 HW221B   1914 1995                           .31A
+ Av segment correlation       .51  .64  .53  .51  .52 
+
+ FLAGGED SEGMENTS: tn019
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 HW203A   1875 1924     B     .454        -3      .465   .011
+  18 HW221B   1925 1974     A     .314         0
+
+ DESCRIPTIVE STATISTICS: tn019
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HW201A   1876 1995    120      2      0    .493   1.88   5.58  1.003   .727   .250   2.21   .287   .010   1
+   2 HW202B   1800 1995    196      5      0    .616   1.41   3.84   .683   .768   .235   1.70   .239   .044   1
+   3 HW203A   1825 1995    171      4      1    .551   1.63   3.15   .514   .731   .190   1.42   .192  -.022   3
+   4 HW204B   1826 1995    170      4      0    .525   1.84   6.08   .971   .778   .223   1.82   .238  -.011   3
+   5 HW205A   1830 1995    166      4      0    .511   1.52   5.76   .876   .695   .261   1.90   .280  -.010   1
+   6 HW205B   1793 1995    203      5      0    .547   1.55   8.41  1.191   .850   .249   2.09   .277   .037   2
+   7 HW206A   1870 1995    126      3      0    .565   2.20   7.28  1.314   .894   .201   1.80   .222   .004   1
+   8 HW206B   1827 1995    169      4      0    .533   2.19   7.40  1.723   .925   .235   1.74   .262   .009   2
+   9 HW207A   1845 1995    151      4      0    .654   1.81   8.16  1.072   .722   .266   2.68   .287  -.016   2
+  10 HW207B   1831 1995    165      4      0    .613   1.68   5.20  1.017   .849   .260   1.71   .256  -.002   1
+  11 HW208A   1850 1995    146      3      0    .482   1.94   5.16   .874   .623   .254   2.42   .289  -.033   1
+  12 HW208B   1860 1995    136      3      0    .464   1.56   7.17   .953   .750   .276   2.46   .318  -.003   1
+  13 HW209A   1896 1995    100      2      0    .389   1.80   5.93  1.154   .616   .330   2.70   .379  -.021   2
+  14 HW209B   1870 1995    126      3      0    .521   2.07   7.70  1.441   .818   .265   1.70   .265   .008   1
+  15 HW210A   1848 1995    148      4      0    .429   1.74   5.91  1.203   .860   .250   2.51   .288  -.003   2
+  16 HW210B   1847 1995    149      4      0    .534   1.97   8.37  1.644   .870   .257   2.35   .281   .015   1
+  17 HW221A   1917 1995     79      1      0    .328    .97   2.71   .596   .889   .247   1.85   .265  -.025   1
+  18 HW221B   1914 1995     82      1      1    .369   1.03   3.01   .720   .900   .280   1.51   .269   .066   1
+  19 HW222A   1938 1995     58      0      0    .293    .63   1.42   .367   .838   .331   1.57   .292   .011   1
+  20 HW222B   1944 1995     52      0      0    .438    .58   1.43   .317   .764   .343   1.67   .305  -.032   2
+  21 HW223A   1938 1995     58      0      0    .236    .93   2.09   .609   .904   .267   3.20   .443   .167   0
+  22 HW223B   1966 1995     30      0      0    .289   1.29   2.62   .462   .684   .195   1.52   .213   .038   1
+  23 HW224A   1945 1995     51      0      0    .500   1.38   3.17   .609   .894   .149   1.42   .174   .103   1
+  24 HW224B   1955 1995     41      0      0    .658   1.45   2.58   .493   .798   .174   1.46   .165  -.061   2
+  25 HW225A   1957 1995     39      0      0    .548   1.35   1.86   .353   .713   .159   1.37   .167   .006   1
+  26 HW225B   1946 1995     50      0      0    .489   1.35   2.47   .498   .837   .182   1.49   .194   .015   1
+  27 HW226A   1962 1995     34      0      0    .484   1.14   2.40   .383   .610   .189   1.72   .213  -.013   1
+  28 HW226B   1945 1995     51      0      0    .221    .91   2.12   .485   .904   .168   1.46   .180   .070   1
+  29 HW227A   1937 1995     59      0      0    .487    .50   1.00   .208   .780   .228   1.70   .239  -.059   3
+  30 HW228A   1940 1995     56      0      0    .416   1.27   2.37   .422   .732   .204   1.50   .214   .024   1
+  31 HW228B   1951 1995     45      0      0    .613   1.18   2.09   .307   .433   .230   1.60   .227   .071   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3227     60      2    .504   1.60   8.41   .938   .788   .243   3.20   .263   .008
+
+ DATA CHECKS (rwl.check): tn019
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/tn019.rwl
+ 31 series, 3227 measurements, 1793-1995, 0.001 mm precision
+ 0 error(s), 1 warning(s), 6 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     HW226B: correlates with the rest of the collection at r = 0.011 where the collection median is 0.446 (4.6 MAD below it); it does not fit the collection it is in
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file tn019.rwl, MD5 a7329c8cd5bb14cabb9eba544f84ce53.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: arge045
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge045.rwl
+      MD5 of measurement file: f4120082a02d9a530c9fe5d6e149908f
+      Date checked           : 01OCT26
+      Beginning year         : 1826
+      Ending year            : 1979
+      Principal investigators: Villalba, R.
+      Site name              : Los Laureles Salta
+      Species information    : JGAU Juglans australis Griseb.
+      Latitude               : 25.1200 S
+      Longitude              : 65.5500 W
+      Elevation              : 1650 m
+
+      Series intercorrelation: 0.607
+      Avg mean sensitivity   : 0.503
+      Avg standard deviation : 1.469
+      Avg autocorrelation    : 0.703
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge045
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   3 LLL05A   1864 1979  .73  .56 
+   4 LLL05B   1847 1979  .76  .77 
+   5 LLL05C   1893 1979  .62  .62 
+   6 LLL06A   1863 1979  .79  .63 
+   7 LLL06B   1855 1979  .70  .68 
+   8 LLL07A   1854 1979  .82  .62 
+   9 LLL08A   1826 1959  .68      
+  10 LLL08B   1838 1953  .63      
+  11 LLL09A   1891 1979  .76  .73 
+  12 LLL09B   1829 1959  .64      
+ Av segment correlation  .71  .66 
+
+ FLAGGED SEGMENTS: arge045
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: arge045
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LLL04A   1910 1955     46      0      0    .547   2.26  10.76  2.605   .894   .596   2.26   .514   .067   0
+   2 LLL04C   1904 1957     54      0      0    .605   1.61   8.36  1.978   .886   .581   2.41   .539  -.026   1
+   3 LLL05A   1864 1979    116      2      0    .562   1.63   6.36  1.314   .535   .552   3.34   .541  -.024   1
+   4 LLL05B   1847 1979    133      2      0    .708   1.94   9.88  1.758   .733   .577   2.36   .522  -.014   1
+   5 LLL05C   1893 1979     87      2      0    .566   2.37  15.94  3.294   .876   .588   3.67   .653   .021   2
+   6 LLL06A   1863 1979    117      2      0    .645   1.99   6.15  1.568   .738   .397   2.03   .380   .014   2
+   7 LLL06B   1855 1979    125      2      0    .583   1.21   5.52  1.128   .721   .430   2.60   .439  -.040   1
+   8 LLL07A   1854 1979    126      2      0    .688   1.92   5.42  1.245   .624   .448   2.42   .424  -.004   1
+   9 LLL08A   1826 1959    134      1      0    .562   1.18   3.84   .782   .614   .466   2.50   .445  -.025   1
+  10 LLL08B   1838 1953    116      1      0    .586   1.64   6.12  1.162   .730   .423   2.01   .387   .024   1
+  11 LLL09A   1891 1979     89      2      0    .739   1.21   5.25  1.063   .646   .612   2.23   .475  -.020   3
+  12 LLL09B   1829 1959    131      1      0    .479   1.46   6.87  1.190   .699   .518   3.19   .519   .004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1274     17      0    .607   1.66  15.94  1.469   .703   .503   3.67   .478  -.005
+
+ DATA CHECKS (rwl.check): arge045
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge045.rwl
+ 12 series, 1274 measurements, 1826-1979, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file arge045.rwl, MD5 f4120082a02d9a530c9fe5d6e149908f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

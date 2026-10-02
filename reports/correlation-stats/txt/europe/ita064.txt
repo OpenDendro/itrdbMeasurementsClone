@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: ita064
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ita064.rwl
+      MD5 of measurement file: 24d072c81dfa5fa2d889bdbe059fbbec
+      Date checked           : 01OCT26
+      Beginning year         : 1960
+      Ending year            : 2019
+      Principal investigators: Vacchiano, G.
+      Site name              : Astrio
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 45.9500 N
+      Longitude              : 10.1700 E
+      Elevation              : 795 m
+
+      Series intercorrelation: 0.162
+      Avg mean sensitivity   : 0.308
+      Avg standard deviation : 1.569
+      Avg autocorrelation    : 0.367
+      Number dated series    : 10
+      Segment length tested  : 30
+
+      Number problem segments: 14  (A 2, B 12; 10 of the B weak at every lag)
+      Pct problem segments   : 93.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ita064
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  30-year dated segments, lagged  15 years
+ Flags:  A = correlation under   .4226 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1975 1990 
+                        1989 2004 2019 
+ --- -------- ---------  ---- ---- ---- 
+   1 FASY12X  1967 2019       .14B .04B
+   2 FASY01Y  1978 2019           -.04B
+   3 FASY07X  1987 2019            .20B
+   4 FASY08Y  1985 2019            .10B
+   5 FASY11   1960 2019       .11B .36A
+   6 FASY15   1967 2019       .07B .33A
+   7 FASY02   1968 2019       .24B .10B
+   8 FASY03   1972 2019       .17B .26B
+   9 FASY05   1977 2019            .25B
+  10 FASY05b  1976 2019            .72 
+ Av segment correlation       .15  .23 
+
+ FLAGGED SEGMENTS: ita064
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 FASY12X  1975 2004     B     .139        -5      .376   .237  weak at every lag
+   1 FASY12X  1990 2019     B     .045        -5      .275   .230  weak at every lag
+   2 FASY01Y  1990 2019     B    -.044        -6      .283   .327  weak at every lag
+   3 FASY07X  1990 2019     B     .198        -3      .482   .283
+   4 FASY08Y  1990 2019     B     .103       -10      .353   .251  weak at every lag
+   5 FASY11   1975 2004     B     .112         3      .299   .187  weak at every lag
+   5 FASY11   1990 2019     A     .357         0
+   6 FASY15   1975 2004     B     .071         3      .492   .421
+   6 FASY15   1990 2019     A     .327         0
+   7 FASY02   1975 2004     B     .241        10      .305   .064  weak at every lag
+   7 FASY02   1990 2019     B     .097        -6      .211   .114  weak at every lag
+   8 FASY03   1975 2004     B     .166        -7      .327   .161  weak at every lag
+   8 FASY03   1990 2019     B     .260        -8      .278   .018  weak at every lag
+   9 FASY05   1990 2019     B     .251        -6      .291   .040  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ita064
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FASY12X  1967 2019     53      2      2    .068   4.04  10.50  2.114   .336   .477   2.34   .413   .012   0
+   2 FASY01Y  1978 2019     42      1      1   -.024   2.76   7.10  1.608   .540   .365   1.92   .361  -.108   0
+   3 FASY07X  1987 2019     33      1      1    .187   5.19  11.05  1.937   .039   .352   2.04   .343  -.094   0
+   4 FASY08Y  1985 2019     35      1      1    .040   4.03  10.73  2.231   .394   .316   2.24   .445   .016   1
+   5 FASY11   1960 2019     60      2      2    .052   2.67   5.14   .664   .235   .218   1.64   .211   .013   0
+   6 FASY15   1967 2019     53      2      2    .174   3.31   6.99  1.402   .361   .376   1.74   .305  -.161   0
+   7 FASY02   1968 2019     52      2      2    .146   3.95   6.27  1.074   .564   .202   1.53   .215   .107   1
+   8 FASY03   1972 2019     48      2      2    .150   4.20  10.76  1.604   .371   .233   2.33   .302   .110   0
+   9 FASY05   1977 2019     43      1      1    .165   5.00   9.77  1.649   .420   .249   1.75   .215  -.216   0
+  10 FASY05b  1976 2019     44      1      0    .699   4.90   9.50  1.980   .364   .317   1.80   .272  -.022   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            463     15     14    .162   3.92  11.05  1.569   .367   .308   2.34   .302  -.029
+
+ DATA CHECKS (rwl.check): ita064
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ita064.rwl
+ 10 series, 463 measurements, 1960-2019, 0.01 mm precision
+ 0 error(s), 0 warning(s), 7 note(s)
+ -------------
+ Nothing to report at this severity.
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ita064.rwl, MD5 24d072c81dfa5fa2d889bdbe059fbbec.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4226 for 30-year segments.
+ Segments: 30 years, lagged 15, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 30 years: the record is only 60 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

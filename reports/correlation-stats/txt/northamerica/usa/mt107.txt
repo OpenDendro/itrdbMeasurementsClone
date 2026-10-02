@@ -1,0 +1,153 @@
+
+ COFECHA-style crossdating report: mt107
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mt107.rwl
+      MD5 of measurement file: afad3617b9db918cbbd18176a7b3277e
+      Date checked           : 01OCT26
+      Beginning year         : 1782
+      Ending year            : 1983
+      Principal investigators: Briffa, K.R.; Schweingruber, F.H.
+      Site name              : Skalkaho Pass   Bitterroot
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 46.2300 N
+      Longitude              : 113.7700 W
+      Elevation              : 2160 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.136
+      Avg standard deviation : 0.495
+      Avg autocorrelation    : 0.810
+      Number dated series    : 26
+      Series crossdated      : 24
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 4, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.35
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mt107
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 747011   1820 1983       .67  .60  .57  .57  .52 
+   2 747012   1827 1983            .19B .33A .44  .41 
+   3 747021   1782 1983  .52  .66  .67  .69  .74  .77 
+   4 747022   1786 1983  .56  .68  .62  .62  .69  .70 
+   5 747031   1823 1983       .54  .65  .71  .70  .55 
+   6 747032   1836 1983            .66  .58  .65  .73 
+   7 747041   1824 1983            .73  .62  .43  .45 
+   8 747042   1831 1983            .50  .61  .46  .49 
+   9 747051   1822 1983       .61  .54  .65  .60  .49 
+  10 747052   1834 1983            .65  .83  .72  .58 
+  11 747061   1803 1981       .64  .64  .77  .47  .43 
+  12 747062   1817 1983       .65  .74  .70  .49  .48 
+  13 747071   1805 1983       .64  .71  .67  .60  .52 
+  14 747072   1787 1983  .51  .63  .58  .63  .53  .53 
+  15 747081   1801 1983       .61  .57  .65  .70  .62 
+  16 747082   1815 1983       .60  .56  .61  .54  .55 
+  18 747092   1799 1983       .61  .60  .54  .65  .70 
+  19 747101   1805 1983       .58  .58  .59  .75  .76 
+  20 747102   1792 1983  .62  .59  .66  .72  .61  .61 
+  22 747112   1786 1983  .54  .69  .58  .50  .34  .27A
+  23 747121   1853 1983                 .70  .60  .52 
+  24 747122   1850 1983                 .57  .48  .42 
+  25 747131   1809 1983       .32A .28A .49  .54  .53 
+  26 747132   1828 1983            .37  .57  .63  .62 
+ Av segment correlation  .55  .61  .58  .62  .58  .55 
+
+ FLAGGED SEGMENTS: mt107
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 747012   1850 1899     B     .185         5      .294   .108  weak at every lag
+   2 747012   1875 1924     A     .326         0
+  22 747112   1925 1974     A     .267         0
+  25 747131   1825 1874     A     .320         0
+  25 747131   1850 1899     A     .275         0
+
+ DESCRIPTIVE STATISTICS: mt107
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 747011   1820 1983    164      5      0    .545   1.97   6.49   .804   .802   .149   2.00   .167  -.017   3
+   2 747012   1827 1983    157      4      2    .381   1.76   3.03   .529   .751   .165   1.60   .174   .038   1
+   3 747021   1782 1983    202      6      0    .663   1.83   3.85   .661   .802   .170   1.48   .163   .011   1
+   4 747022   1786 1983    198      6      0    .629   1.71   3.00   .445   .679   .160   1.39   .158  -.018   3
+   5 747031   1823 1983    161      5      0    .575   1.72   2.91   .471   .781   .135   1.38   .141   .023   1
+   6 747032   1836 1983    148      4      0    .649   2.08   3.43   .506   .767   .136   1.31   .135   .020   2
+   7 747041   1824 1983    160      4      0    .499   1.49   3.04   .435   .780   .133   1.64   .166  -.042   3
+   8 747042   1831 1983    153      4      0    .472   1.66   3.70   .560   .850   .135   1.79   .153   .029   1
+   9 747051   1822 1983    162      5      0    .564   1.35   2.17   .279   .757   .114   1.30   .119  -.029   1
+  10 747052   1834 1983    150      4      0    .658   1.63   3.24   .400   .812   .122   1.34   .119   .006   1
+  11 747061   1803 1981    179      5      0    .531   1.65   3.10   .636   .868   .150   1.81   .157   .061   3
+  12 747062   1817 1983    167      5      0    .569   1.56   2.84   .554   .894   .128   1.37   .126  -.001   1
+  13 747071   1805 1983    179      5      0    .553   1.16   2.10   .475   .926   .116   1.61   .122   .020   1
+  14 747072   1787 1983    197      6      0    .533   1.24   3.39   .537   .916   .122   1.37   .123   .018   1
+  15 747081   1801 1983    183      5      0    .591    .97   1.76   .370   .887   .142   1.33   .135  -.006   1
+  16 747082   1815 1983    169      5      0    .563    .98   1.65   .284   .877   .121   1.36   .119   .007   3
+  17 747091   1790 1983    141                         1.32   2.38   .291   .620   .145                         
+  18 747092   1799 1983    185      5      0    .618   1.23   2.53   .304   .752   .131   1.58   .138  -.003   2
+  19 747101   1805 1983    179      5      0    .626   1.48   2.40   .331   .719   .135   1.47   .128  -.011   3
+  20 747102   1792 1983    192      6      0    .639   1.36   2.08   .245   .548   .140   1.36   .133   .004   3
+  21 747111   1795 1983    123                         1.74   4.04   .914   .944   .138                         
+  22 747112   1786 1983    198      6      1    .434   1.73   4.34   .663   .911   .122   1.36   .120   .014   1
+  23 747121   1853 1983    131      3      0    .596   1.78   3.92   .559   .869   .115   1.37   .119  -.013   3
+  24 747122   1850 1983    134      3      0    .505   1.59   2.57   .376   .843   .110   1.26   .107   .016   2
+  25 747131   1809 1983    175      5      2    .437   1.83   3.38   .679   .874   .152   1.43   .158  -.024   1
+  26 747132   1828 1983    156      4      0    .523   1.88   3.27   .624   .870   .123   1.35   .130   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4343    115      5    .558   1.56   6.49   .495   .810   .136   2.00   .138   .005
+
+ DATA CHECKS (rwl.check): mt107
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mt107.rwl
+ 26 series, 4343 measurements, 1782-1983, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     747091: no measurement for 1884-1936, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     747111: no measurement for 1865-1930, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file mt107.rwl, MD5 afad3617b9db918cbbd18176a7b3277e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 747091 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 747111 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

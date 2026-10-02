@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: germ106
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ106.rwl
+      MD5 of measurement file: fe4f2a86d5fe156989ac6615639e59fe
+      Date checked           : 01OCT26
+      Beginning year         : 1789
+      Ending year            : 1885
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Winkler Str. 1 Regensburg Historical Timbers
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.0167 N
+      Longitude              : 12.1000 E
+      Elevation              : 350 m
+
+      Series intercorrelation: 0.577
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.508
+      Avg autocorrelation    : 0.829
+      Number dated series    : 6
+      Segment length tested  : 48
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ106
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  48-year dated segments, lagged  24 years
+ Flags:  A = correlation under   .3348 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1824 
+                        1847 1871 
+ --- -------- ---------  ---- ---- 
+   1 WFB01A   1813 1884       .76 
+   2 WFB01B   1805 1884       .63 
+   3 WHB01A   1789 1873  .61  .59 
+   4 WHB01B   1789 1878  .50  .53 
+   5 WHB02A   1797 1885  .50  .47 
+   6 WHB02B   1797 1885  .44  .46 
+ Av segment correlation  .51  .57 
+
+ FLAGGED SEGMENTS: germ106
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ106
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WFB01A   1813 1884     72      1      0    .689   1.62   2.89   .528   .761   .202   1.43   .192  -.052   3
+   2 WFB01B   1805 1884     80      1      0    .557   1.43   2.99   .581   .868   .176   1.42   .182   .034   1
+   3 WHB01A   1789 1873     85      2      0    .667    .51   1.07   .200   .609   .227   2.11   .256   .162   0
+   4 WHB01B   1789 1878     90      2      0    .532    .63   3.32   .530   .854   .214   1.95   .247  -.016   1
+   5 WHB02A   1797 1885     89      2      0    .536    .74   2.83   .595   .942   .189   1.39   .190   .020   1
+   6 WHB02B   1797 1885     89      2      0    .506    .86   2.76   .611   .923   .184   1.38   .181  -.013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            505     10      0    .577    .94   3.32   .508   .829   .199   2.11   .209   .024
+
+ DATA CHECKS (rwl.check): germ106
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ106.rwl
+ 6 series, 505 measurements, 1789-1885, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file germ106.rwl, MD5 fe4f2a86d5fe156989ac6615639e59fe.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3348 for 48-year segments.
+ Segments: 48 years, lagged 24, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 48 years: the record is only 97 years long.

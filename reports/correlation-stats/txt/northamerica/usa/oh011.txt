@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: oh011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : oh011.rwl
+      MD5 of measurement file: e52f8d59927969eebc47d7424bc18491
+      Date checked           : 01OCT26
+      Beginning year         : 1760
+      Ending year            : 2016
+      Principal investigators: Maxwell, J.T.; Matheus, T.J.
+      Site name              : Goll Woods
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 41.5540 N
+      Longitude              : 84.3620 W
+      Elevation              : 217 m
+
+      Series intercorrelation: 0.635
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.794
+      Avg autocorrelation    : 0.672
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 2.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: oh011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 GWA01A   1804 2015       .43  .35B .50  .75  .67  .54 
+   2 GWA01B   1840 2016            .54  .53  .68  .64  .65 
+   3 GWA02A   1869 2015                 .70  .77  .81  .74 
+   4 GWA02B   1868 2016                 .73  .83  .85  .77 
+   5 GWA3A    1817 2015       .49  .64  .65  .73  .79  .76 
+   6 GWA03B   1863 2016                 .64  .66  .80  .79 
+   7 GWA04A   1806 2016       .58  .70  .70  .67  .54  .59 
+   8 GWA04B   1830 2016            .77  .83  .68  .67  .81 
+   9 GWA5A    1815 2015       .63  .68  .81  .88  .81  .78 
+  10 GWA05B   1840 2016            .63  .79  .79  .80  .83 
+  11 GWA06A   1853 2016                 .77  .78  .77  .74 
+  12 GWA06B   1856 2016                 .78  .66  .70  .77 
+  13 GWA07A   1805 2015       .39  .52  .69  .65  .57  .45 
+  14 GWA07B   1805 2015       .48  .55  .70  .75  .58  .39 
+  15 GWA08A   1872 2016                 .80  .82  .67  .57 
+  16 GWA08B   1845 2016            .73  .78  .84  .75  .61 
+  17 GWA09A   1760 2015  .33A .45  .64  .76  .60  .47  .50 
+  18 GWA09B   1763 2015  .38  .54  .50  .48  .42  .46  .50 
+  19 GWA10A   1822 2016       .53  .52  .64  .51  .57  .76 
+  20 GWA10B   1780 2015  .52  .46  .49B .79  .76  .74  .68 
+ Av segment correlation  .41  .50  .59  .70  .71  .68  .66 
+
+ FLAGGED SEGMENTS: oh011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 GWA01A   1850 1899     B     .350        -9      .397   .047
+  17 GWA09A   1800 1849     A     .327         0
+  20 GWA10B   1850 1899     B     .488         7      .490   .002
+
+ DESCRIPTIVE STATISTICS: oh011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GWA01A   1804 2015    212      6      1    .502   1.66   3.67   .516   .655   .210   1.61   .198   .022   1
+   2 GWA01B   1840 2016    177      5      0    .637   1.98   3.58   .580   .608   .212   1.46   .194  -.007   3
+   3 GWA02A   1869 2015    147      4      0    .748   1.94   4.95   .864   .786   .242   1.87   .235  -.010   1
+   4 GWA02B   1868 2016    149      4      0    .741   2.22   5.67   .897   .543   .267   1.71   .253   .065   0
+   5 GWA3A    1817 2015    199      6      0    .603   1.59   4.52   .831   .849   .223   1.82   .213  -.001   3
+   6 GWA03B   1863 2016    154      4      0    .700   2.21   5.33   .818   .682   .215   1.87   .218  -.018   2
+   7 GWA04A   1806 2016    211      6      0    .605   1.39   5.83  1.061   .836   .310   2.63   .337   .000   1
+   8 GWA04B   1830 2016    187      5      0    .744   1.59   5.49   .946   .827   .278   1.77   .276   .022   1
+   9 GWA5A    1815 2015    201      6      0    .740   1.96   4.66   .881   .722   .259   1.95   .255  -.003   1
+  10 GWA05B   1840 2016    177      5      0    .730   2.27   4.91   .900   .663   .265   1.79   .259   .007   2
+  11 GWA06A   1853 2016    164      4      0    .730   2.41   4.14   .670   .485   .221   1.59   .196  -.028   0
+  12 GWA06B   1856 2016    161      4      0    .718   2.39   4.48   .645   .421   .227   1.53   .198  -.051   0
+  13 GWA07A   1805 2015    211      6      0    .460   2.44   6.49   .881   .653   .206   2.04   .205   .001   3
+  14 GWA07B   1805 2015    211      6      0    .553   2.51   5.80   .807   .674   .193   1.84   .192   .015   2
+  15 GWA08A   1872 2016    145      4      0    .717   2.77   5.02   .867   .662   .196   1.49   .188   .080   0
+  16 GWA08B   1845 2016    172      5      0    .722   2.33   4.03   .593   .382   .217   1.52   .188   .008   2
+  17 GWA09A   1760 2015    256      7      1    .543   1.46   4.64   .546   .557   .253   2.31   .250   .009   3
+  18 GWA09B   1763 2015    253      7      0    .527   1.27   3.18   .479   .711   .213   1.99   .231   .000   2
+  19 GWA10A   1822 2016    195      6      0    .610   2.17   6.83  1.213   .790   .252   2.18   .255  -.009   1
+  20 GWA10B   1780 2015    236      7      1    .603   1.80   4.93  1.003   .807   .260   1.89   .268  -.009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3818    107      3    .635   1.97   6.83   .794   .672   .237   2.63   .232   .004
+
+ DATA CHECKS (rwl.check): oh011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/oh011.rwl
+ 20 series, 3818 measurements, 1760-2016, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file oh011.rwl, MD5 e52f8d59927969eebc47d7424bc18491.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

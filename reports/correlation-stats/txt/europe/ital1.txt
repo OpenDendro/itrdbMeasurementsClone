@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: ital1
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ital1.rwl
+      MD5 of measurement file: e58bb48e215935734c3edb47a3eac2c6
+      Date checked           : 01OCT26
+      Beginning year         : 1855
+      Ending year            : 1965
+      Principal investigators: Becker, B.
+      Site name              : Tinnebachtal
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.6500 N
+      Longitude              : 11.5000 E
+      Elevation              : 1050 m
+
+      Series intercorrelation: 0.475
+      Avg mean sensitivity   : 0.155
+      Avg standard deviation : 0.802
+      Avg autocorrelation    : 0.764
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ital1
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 
+                        1949 
+ --- -------- ---------  ---- 
+   1 897011   1883 1965  .59 
+   2 897021   1876 1965  .59 
+   3 897031   1895 1965  .35 
+   4 897041   1856 1965  .44 
+   5 897051   1888 1965  .57 
+   7 897071   1863 1965  .48 
+   8 897081   1855 1965  .54 
+   9 897091   1871 1965  .63 
+  10 897101   1893 1965  .58 
+ Av segment correlation  .53 
+
+ FLAGGED SEGMENTS: ital1
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: ital1
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 897011   1883 1965     83      1      0    .577   2.99   5.76  1.030   .843   .140   1.76   .170   .004   1
+   2 897021   1876 1965     90      1      0    .403   2.03   4.76   .886   .769   .212   1.49   .226   .238   1
+   3 897031   1895 1965     71      1      0    .231   3.40   6.90   .813   .487   .157   1.75   .191   .066   1
+   4 897041   1856 1965    110      1      0    .467   2.20   3.90   .610   .789   .137   1.36   .144   .046   2
+   5 897051   1888 1965     78      1      0    .463   1.96   3.86   .752   .882   .145   1.45   .149   .009   1
+   6 897061   1898 1965     68      0      0    .525   3.23   4.62   .602   .516   .139   1.29   .131  -.082   3
+   7 897071   1863 1965    103      1      0    .472   2.13   4.48   .854   .874   .165   1.53   .172  -.017   3
+   8 897081   1855 1965    111      1      0    .441   1.89   3.71   .558   .714   .150   1.72   .164  -.032   1
+   9 897091   1871 1965     95      1      0    .625   2.20   5.10   .768   .811   .166   1.53   .172  -.056   1
+  10 897101   1893 1965     73      1      0    .529   3.52   6.95  1.295   .860   .132   1.44   .157  -.041   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            882      9      0    .475   2.47   6.95   .802   .764   .155   1.76   .168   .015
+
+ DATA CHECKS (rwl.check): ital1
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ital1.rwl
+ 10 series, 882 measurements, 1855-1965, 0.01 mm precision
+ 2 error(s), 0 warning(s), 0 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     897031: correlates best with the master at lag -1 (r = 0.381 against r = 0.319 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+     897041: correlates best with the master at lag -2 (r = 0.379 against r = 0.293 as dated); the series may be misdated by 2 year(s), most likely a missing ring
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ital1.rwl, MD5 e58bb48e215935734c3edb47a3eac2c6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

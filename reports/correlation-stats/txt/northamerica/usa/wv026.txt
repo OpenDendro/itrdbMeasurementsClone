@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: wv026
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv026.rwl
+      MD5 of measurement file: 6eeb4f5ab2994925c5ff7912a64e0800
+      Date checked           : 01OCT26
+      Beginning year         : 1714
+      Ending year            : 1840
+      Principal investigators: de Graauw, K.K.; Hessl, A.E.
+      Site name              : Pitsenbarger Barn
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 38.5800 N
+      Longitude              : 79.3000 W
+      Elevation              : 824 m
+
+      Series intercorrelation: 0.543
+      Avg mean sensitivity   : 0.206
+      Avg standard deviation : 0.263
+      Avg autocorrelation    : 0.600
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 16.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv026
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1750 1775 
+                        1799 1824 
+ --- -------- ---------  ---- ---- 
+   2 PBW108A  1717 1839  .60  .22B
+   3 PBW302A  1757 1840       .44 
+   4 PBN306A  1774 1840       .43 
+   5 PBE105A  1730 1840  .30A .31A
+   6 PBS104A  1727 1840  .34  .27A
+   9 PBW303A  1758 1840       .60 
+  10 PBN105A  1757 1840       .55 
+  11 PBW104A  1724 1840  .64  .57 
+  12 PBN108A  1730 1840  .76  .73 
+  13 PBW102A  1714 1840  .45  .48 
+  14 PBS106A  1768 1840       .73 
+  15 PBS105A  1748 1840  .59  .52 
+  16 PBN304A  1756 1840       .66 
+  17 PBN103A  1736 1840  .66  .65 
+  18 PBN102A  1737 1840  .45  .35 
+ Av segment correlation  .53  .50 
+
+ FLAGGED SEGMENTS: wv026
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 PBW108A  1775 1824     B     .220        -5      .295   .076  weak at every lag
+   5 PBE105A  1750 1799     A     .297         0
+   5 PBE105A  1775 1824     A     .312         0
+   6 PBS104A  1775 1824     A     .271         0
+
+ DESCRIPTIVE STATISTICS: wv026
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PBN402A  1799 1840     42      0      0    .343   1.48   2.04   .259   .037   .186   1.33   .164  -.013   0
+   2 PBW108A  1717 1839    123      2      1    .442    .61   1.38   .335   .813   .251   1.65   .230   .001   1
+   3 PBW302A  1757 1840     84      1      0    .456    .67   1.55   .269   .767   .211   1.55   .195   .114   0
+   4 PBN306A  1774 1840     67      1      0    .527    .71   1.21   .165   .628   .154   1.35   .165   .026   1
+   5 PBE105A  1730 1840    111      2      2    .430    .56   1.03   .176   .490   .245   2.07   .244  -.015   2
+   6 PBS104A  1727 1840    114      2      1    .349    .82   1.85   .428   .862   .197   2.73   .231   .013   1
+   7 PBN307A  1777 1840     64      0      0    .558    .66   1.34   .238   .831   .159   1.46   .166  -.005   1
+   8 PBE303A  1801 1840     40      0      0    .779    .98   1.70   .236   .425   .187   1.38   .180   .059   0
+   9 PBW303A  1758 1840     83      1      0    .647    .81   1.26   .226   .713   .169   1.53   .181   .062   1
+  10 PBN105A  1757 1840     84      1      0    .536    .76   1.72   .294   .740   .202   1.53   .212   .023   2
+  11 PBW104A  1724 1840    117      2      0    .627    .60   1.11   .184   .615   .207   1.49   .200  -.019   1
+  12 PBN108A  1730 1840    111      2      0    .718    .83   2.61   .339   .572   .228   2.03   .225   .105   0
+  13 PBW102A  1714 1840    127      2      0    .415    .78   1.26   .182   .458   .194   1.48   .176   .091   0
+  14 PBS106A  1768 1840     73      1      0    .708   1.03   1.89   .281   .355   .239   1.63   .213   .039   0
+  15 PBS105A  1748 1840     93      2      0    .510    .93   2.11   .288   .606   .208   1.63   .190   .134   0
+  16 PBN304A  1756 1840     85      1      0    .686    .79   1.17   .145   .422   .154   1.50   .153   .004   1
+  17 PBN103A  1736 1840    105      2      0    .633    .90   2.38   .296   .538   .219   1.65   .221   .058   1
+  18 PBN102A  1737 1840    104      2      0    .557   1.03   2.23   .316   .534   .223   1.76   .206   .069   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1627     24      4    .543    .80   2.61   .263   .600   .206   2.73   .202   .043
+
+ DATA CHECKS (rwl.check): wv026
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv026.rwl
+ 18 series, 1627 measurements, 1714-1840, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file wv026.rwl, MD5 6eeb4f5ab2994925c5ff7912a64e0800.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

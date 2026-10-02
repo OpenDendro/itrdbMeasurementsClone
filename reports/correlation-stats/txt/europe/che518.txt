@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: che518
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che518.rwl
+      MD5 of measurement file: 0589ec9e1854a2c1976bc6839ea071b8
+      Date checked           : 01OCT26
+      Beginning year         : 1908
+      Ending year            : 2010
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : OEF
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.3540 N
+      Longitude              : 8.0227 E
+      Elevation              : 455 m
+
+      Series intercorrelation: 0.546
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.991
+      Avg autocorrelation    : 0.792
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 10.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che518
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 OEF01a   1912 2010  .57 
+   2 OEF02a   1914 2010  .52 
+   3 OEF03a   1912 2010  .56 
+   4 OEF04b   1910 2010  .21A
+   5 OEF05a   1911 2010  .58 
+   6 OEF06a   1922 2010  .64 
+   7 OEF07a   1913 2010  .50 
+   8 OEF08a   1908 2010  .45 
+   9 OEF09a   1925 2010  .46 
+  10 OEF10a   1913 2010  .36 
+ Av segment correlation  .48 
+
+ FLAGGED SEGMENTS: che518
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 OEF04b   1950 1999     A     .214         0
+
+ DESCRIPTIVE STATISTICS: che518
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OEF01a   1912 2010     99      1      0    .545   1.62   4.04   .839   .859   .227   1.82   .243   .017   1
+   2 OEF02a   1914 2010     97      1      0    .479   2.21   4.46   .732   .652   .225   1.55   .223   .006   2
+   3 OEF03a   1912 2010     99      1      0    .640   1.93   5.07  1.103   .857   .239   1.53   .217   .019   2
+   4 OEF04b   1910 2010    101      1      1    .356   3.57   6.68  1.518   .763   .263   1.89   .294   .031   1
+   5 OEF05a   1911 2010    100      1      0    .551   1.40   3.62   .625   .845   .208   1.55   .201  -.011   1
+   6 OEF06a   1922 2010     89      1      0    .720   2.45   4.18   .648   .554   .202   1.72   .203   .026   1
+   7 OEF07a   1913 2010     98      1      0    .621   2.15   4.84   .863   .787   .222   2.20   .245   .060   1
+   8 OEF08a   1908 2010    103      1      0    .597   2.05   6.57  1.415   .883   .252   1.94   .260   .156   1
+   9 OEF09a   1925 2010     86      1      0    .518   2.07   6.89  1.213   .859   .237   1.55   .228   .056   1
+  10 OEF10a   1913 2010     98      1      0    .448   2.23   4.26   .913   .844   .196   1.57   .207   .013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            970     10      1    .546   2.17   6.89   .991   .792   .227   2.20   .233   .038
+
+ DATA CHECKS (rwl.check): che518
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che518.rwl
+ 10 series, 970 measurements, 1908-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che518.rwl, MD5 0589ec9e1854a2c1976bc6839ea071b8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

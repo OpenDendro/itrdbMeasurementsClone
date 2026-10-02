@@ -1,0 +1,151 @@
+
+ COFECHA-style crossdating report: newz117
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz117.rwl
+      MD5 of measurement file: 04da610530af97fe145562958d84ac2d
+      Date checked           : 01OCT26
+      Beginning year         : 1850
+      Ending year            : 2013
+      Principal investigators: Palmer, J.G.; Fenwick, P.; Turney, C.S.M.
+      Site name              : Campbell Island
+      Species information    : DRLO Dracophyllum longifolium R.Br. ex Roem. & Schult.
+      Latitude               : 52.5660 S
+      Longitude              : 169.1500 E
+      Elevation              : 10 m
+
+      Series intercorrelation: 0.483
+      Avg mean sensitivity   : 0.191
+      Avg standard deviation : 0.273
+      Avg autocorrelation    : 0.787
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 5, B 0)
+      Pct problem segments   : 7.04
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz117
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SE01     1850 1998  .46  .53      
+   2 SE02     1850 1967  .34           
+   3 SE03     1896 2013  .30A .45  .55 
+   4 SE04     1877 2013  .29A .56  .74 
+   5 SE05     1861 2013  .52  .61  .57 
+   6 SE06     1867 2013  .72  .66  .68 
+   7 SE07     1865 1990  .38  .46      
+   8 SE08     1903 2013       .56  .76 
+   9 SE09     1910 2013       .56  .76 
+  10 SE10     1905 2013       .52  .53 
+  11 SE11     1890 2013  .47  .57  .63 
+  12 SE12     1892 2013  .47  .57  .67 
+  13 SE13     1884 2013  .56  .58  .60 
+  14 SE14     1875 2013  .46  .43  .49 
+  15 SE15     1928 2013            .65 
+  16 NW01     1919 2008       .30A .58 
+  17 NW02     1900 2009       .47  .59 
+  18 NW03     1908 2006       .61  .67 
+  19 NW04     1893 2013  .30A .51  .66 
+  20 NW07     1870 2013  .30A .62  .58 
+  21 NW08     1900 2013       .59  .63 
+  22 NW09     1900 2013       .65  .75 
+  23 NW10     1885 2013  .47  .58  .64 
+  24 NW11     1909 2013       .51  .77 
+  25 NW12     1892 2013  .37  .65  .65 
+  26 NW13     1873 2013  .50  .51  .43 
+  27 NW14     1893 2013  .53  .58  .63 
+  28 NW15     1876 2013  .47  .54  .59 
+  30 CB05     1900 2012       .55  .58 
+ Av segment correlation  .44  .55  .63 
+
+ FLAGGED SEGMENTS: newz117
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 SE03     1900 1949     A     .301         0
+   4 SE04     1900 1949     A     .294         0
+  16 NW01     1925 1974     A     .299         0
+  19 NW04     1900 1949     A     .300         0
+  20 NW07     1900 1949     A     .297         0
+
+ DESCRIPTIVE STATISTICS: newz117
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SE01     1850 1998    149      2      0    .416    .43   1.01   .186   .861   .173   1.47   .184   .089   1
+   2 SE02     1850 1967    118      1      0    .321    .40   1.08   .191   .872   .186   1.45   .194   .000   2
+   3 SE03     1896 2013    118      3      1    .464    .54   1.08   .215   .808   .197   1.48   .210   .010   1
+   4 SE04     1877 2013    137      3      1    .517    .64   1.18   .192   .783   .157   1.43   .172   .066   1
+   5 SE05     1861 2013    153      3      0    .518    .55   1.11   .163   .622   .193   1.72   .193   .008   1
+   6 SE06     1867 2013    147      3      0    .595    .72   1.89   .353   .790   .235   1.66   .238   .020   1
+   7 SE07     1865 1990    126      2      0    .410    .56   1.53   .299   .885   .194   1.66   .209  -.019   3
+   8 SE08     1903 2013    111      2      0    .599    .48   1.28   .218   .852   .186   1.46   .194  -.042   1
+   9 SE09     1910 2013    104      2      0    .598    .85   2.19   .360   .886   .153   1.37   .165   .016   1
+  10 SE10     1905 2013    109      2      0    .437    .59   1.00   .156   .640   .175   1.58   .180  -.024   2
+  11 SE11     1890 2013    124      3      0    .498    .56    .90   .135   .670   .154   1.48   .164   .032   1
+  12 SE12     1892 2013    122      3      0    .612    .69   1.16   .201   .605   .200   1.54   .199   .003   2
+  13 SE13     1884 2013    130      3      0    .549    .73   1.26   .235   .693   .213   1.55   .203  -.007   2
+  14 SE14     1875 2013    139      3      0    .411    .56   1.02   .165   .601   .211   1.61   .213   .065   1
+  15 SE15     1928 2013     86      1      0    .519    .86   1.67   .353   .890   .159   1.36   .166  -.052   1
+  16 NW01     1919 2008     90      2      1    .458   1.27   2.48   .486   .886   .163   1.38   .167   .018   1
+  17 NW02     1900 2009    110      2      0    .365    .86   1.75   .414   .933   .166   2.01   .197   .080   1
+  18 NW03     1908 2006     99      2      0    .546    .92   1.73   .274   .717   .183   1.52   .187   .065   1
+  19 NW04     1893 2013    121      3      1    .485    .65   2.10   .389   .801   .262   1.88   .277  -.007   3
+  20 NW07     1870 2013    144      3      1    .307    .70   1.23   .257   .864   .163   1.82   .185  -.050   1
+  21 NW08     1900 2013    114      2      0    .500    .57   1.12   .225   .825   .203   1.55   .204   .001   1
+  22 NW09     1900 2013    114      2      0    .514    .61   1.15   .165   .705   .168   1.55   .184  -.036   1
+  23 NW10     1885 2013    129      3      0    .499    .55   1.10   .217   .739   .223   1.60   .235  -.010   2
+  24 NW11     1909 2013    105      2      0    .603   1.09   2.22   .443   .807   .206   1.52   .219   .021   1
+  25 NW12     1892 2013    122      3      0    .538    .72   1.92   .470   .944   .172   1.49   .193   .062   1
+  26 NW13     1873 2013    141      3      0    .373    .70   1.54   .347   .879   .203   1.63   .221   .049   1
+  27 NW14     1893 2013    121      3      0    .529    .74   1.47   .217   .709   .180   1.44   .177   .010   2
+  28 NW15     1876 2013    138      3      0    .428    .71   1.68   .401   .910   .193   2.20   .215   .033   2
+  29 CB04     1958 2012     55      0      0    .533    .80   1.73   .309   .701   .204   1.52   .215  -.028   1
+  30 CB05     1900 2012    113      2      0    .448    .69   1.73   .303   .773   .229   1.62   .238   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3589     71      5    .483    .68   2.48   .273   .787   .191   2.20   .201   .015
+
+ DATA CHECKS (rwl.check): newz117
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz117.rwl
+ 30 series, 3589 measurements, 1850-2013, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file newz117.rwl, MD5 04da610530af97fe145562958d84ac2d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

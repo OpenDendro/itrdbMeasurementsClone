@@ -1,0 +1,106 @@
+
+ COFECHA-style crossdating report: swed006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swed006.rwl
+      MD5 of measurement file: dd50c2b15079358b2e963d067878c5f8
+      Date checked           : 01OCT26
+      Beginning year         : 1647
+      Ending year            : 1971
+      Principal investigators: Harlan, T.P.
+      Site name              : Muddas National Park B
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 66.7800 N
+      Longitude              : 20.1300 E
+      Elevation              : 380 m
+
+      Series intercorrelation: 0.500
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 0.406
+      Avg autocorrelation    : 0.885
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3)
+      Pct problem segments   : 8.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swed006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 252011   1675 1971  .71  .57  .49  .73  .61  .44  .49  .28B .03B
+   2 252021   1647 1971  .45B .69  .72  .63  .56  .60  .48  .49  .62 
+   3 252022   1674 1971  .49  .47  .48  .69  .71  .68  .54  .63  .57 
+   4 252031   1783 1971                      .50  .53  .58  .62  .62 
+   5 252032   1839 1971                                .65  .64  .69 
+   6 252041   1769 1971                 .61  .64  .45  .29A .53  .69 
+   7 252051   1649 1971  .53  .48  .36  .45  .38  .37  .53  .36  .39 
+ Av segment correlation  .55  .55  .51  .62  .57  .51  .51  .51  .52 
+
+ FLAGGED SEGMENTS: swed006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 252011   1875 1924     B     .280         1      .359   .078
+   1 252011   1900 1949     B     .030         1      .436   .405
+   2 252021   1700 1749     B     .451         1      .524   .072
+   6 252041   1850 1899     A     .294         0
+
+ DESCRIPTIVE STATISTICS: swed006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 252011   1675 1971    297      9      2    .448    .43   1.96   .385   .938   .257   1.94   .249   .004   1
+   2 252021   1647 1971    325      9      1    .504    .45   2.34   .378   .931   .251   1.76   .239   .001   1
+   3 252022   1674 1971    298      9      0    .560    .64   1.95   .331   .845   .233   1.84   .226   .009   1
+   4 252031   1783 1971    189      5      0    .541    .98   2.72   .524   .835   .221   1.67   .217   .017   1
+   5 252032   1839 1971    133      3      0    .612   1.00   3.22   .528   .803   .240   1.72   .232  -.006   2
+   6 252041   1769 1971    203      6      1    .542    .80   2.11   .359   .804   .230   1.89   .234   .016   1
+   7 252051   1649 1971    323      9      0    .390    .44   2.33   .432   .941   .267   1.91   .263  -.000   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1768     50      4    .500    .62   3.22   .406   .885   .245   1.94   .239   .005
+
+ DATA CHECKS (rwl.check): swed006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swed006.rwl
+ 7 series, 1768 measurements, 1647-1971, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file swed006.rwl, MD5 dd50c2b15079358b2e963d067878c5f8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

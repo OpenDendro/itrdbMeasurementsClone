@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: germ058
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ058.rwl
+      MD5 of measurement file: 496b0f31599bf9f33247dd88d815bcc4
+      Date checked           : 01OCT26
+      Beginning year         : 1885
+      Ending year            : 2001
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Traitsching
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 49.1800 N
+      Longitude              : 12.6500 E
+      Elevation              : 500 m
+
+      Series intercorrelation: 0.636
+      Avg mean sensitivity   : 0.281
+      Avg standard deviation : 0.892
+      Avg autocorrelation    : 0.673
+      Number dated series    : 32
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.35
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ058
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 TRT01A   1938 2001            .67 
+   2 TRT01B   1920 2001       .61  .66 
+   3 TRT02A   1928 2001            .74 
+   4 TRT02B   1918 2001       .64  .61 
+   5 TRT03A   1932 2001            .40B
+   6 TRT03B   1932 2001            .40 
+   7 TRT04A   1916 2001       .78  .82 
+   8 TRT04B   1926 2001            .77 
+   9 TRT05A   1930 2001            .73 
+  10 TRT05B   1924 2001            .82 
+  11 TRT06A   1921 2001       .74  .40 
+  12 TRT06B   1925 2001            .71 
+  13 TRT07A   1919 2001       .76  .58 
+  14 TRT07B   1919 1996       .79      
+  15 TRT08A   1931 2001            .58 
+  16 TRT08B   1931 2001            .66 
+  17 TRT09A   1924 1999       .75  .77 
+  18 TRT09B   1924 2001            .60 
+  19 TRT10A   1927 2001            .83 
+  20 TRT10B   1927 2001            .75 
+  21 TRT11A   1927 2001            .62 
+  22 TRT11B   1927 2001            .63 
+  23 TRT12A   1943 2001            .72 
+  24 TRT12B   1950 2001            .73 
+  25 TRT13A   1925 2001            .71 
+  26 TRT13B   1933 2001            .60 
+  27 TRT14A   1916 2001       .56  .64 
+  28 TRT14B   1916 2001       .64  .68 
+  29 TRT16A   1885 2001  .53  .47  .55 
+  30 TRT16B   1901 2001       .61  .66 
+  31 TRT17A   1919 2001       .71  .76 
+  32 TRT17B   1895 2001  .26B .62  .55 
+ Av segment correlation  .39  .67  .66 
+
+ FLAGGED SEGMENTS: germ058
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 TRT03A   1950 1999     B     .398        -2      .400   .003
+  32 TRT17B   1900 1949     B     .260        10      .299   .039  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ058
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TRT01A   1938 2001     64      1      0    .610   3.84   8.30  1.542   .644   .269   1.72   .263   .011   1
+   2 TRT01B   1920 2001     82      2      0    .628   2.51   4.62   .828   .605   .238   1.62   .236  -.002   1
+   3 TRT02A   1928 2001     74      1      0    .739   2.09   3.97   .630   .573   .223   1.55   .226   .003   1
+   4 TRT02B   1918 2001     84      2      0    .612   1.89   3.79   .586   .534   .224   1.66   .223   .038   1
+   5 TRT03A   1932 2001     70      1      1    .407   2.11   5.45  1.057   .777   .223   1.53   .231  -.035   1
+   6 TRT03B   1932 2001     70      1      0    .371   1.06   2.67   .450   .726   .245   1.64   .222  -.020   3
+   7 TRT04A   1916 2001     86      2      0    .777   1.84   3.84   .844   .713   .288   1.53   .269  -.043   1
+   8 TRT04B   1926 2001     76      1      0    .743   1.88   4.32   .754   .734   .236   1.56   .231   .024   1
+   9 TRT05A   1930 2001     72      1      0    .723   2.45   5.33   .920   .455   .334   1.89   .315   .013   1
+  10 TRT05B   1924 2001     78      1      0    .756   1.82   4.70  1.061   .772   .306   1.62   .307  -.034   3
+  11 TRT06A   1921 2001     81      2      0    .492   3.05  10.83  1.462   .578   .284   2.82   .343   .055   1
+  12 TRT06B   1925 2001     77      1      0    .735   3.14   6.34  1.405   .701   .298   1.79   .296   .004   1
+  13 TRT07A   1919 2001     83      2      0    .655   1.43   3.86   .929   .793   .469   1.68   .382   .011   1
+  14 TRT07B   1919 1996     78      1      0    .648   1.33   4.86   .986   .814   .375   1.73   .342  -.028   1
+  15 TRT08A   1931 2001     71      1      0    .586   1.43   3.20   .517   .719   .208   1.60   .209  -.048   3
+  16 TRT08B   1931 2001     71      1      0    .586   1.72   2.95   .525   .511   .254   1.46   .233   .144   0
+  17 TRT09A   1924 1999     76      2      0    .794   1.79   5.18  1.082   .835   .275   1.88   .285   .038   1
+  18 TRT09B   1924 2001     78      1      0    .634   2.85   7.32  1.258   .499   .341   2.03   .334  -.006   3
+  19 TRT10A   1927 2001     75      1      0    .822   1.57   3.17   .680   .625   .342   1.74   .312  -.026   3
+  20 TRT10B   1927 2001     75      1      0    .785   1.28   2.78   .571   .604   .352   1.64   .319  -.004   1
+  21 TRT11A   1927 2001     75      1      0    .643   1.28   4.04   .860   .765   .403   1.89   .343   .071   3
+  22 TRT11B   1927 2001     75      1      0    .661   1.79   4.41  1.104   .767   .395   2.00   .365   .030   3
+  23 TRT12A   1943 2001     59      1      0    .729   2.33   4.95   .754   .480   .289   1.66   .261  -.018   3
+  24 TRT12B   1950 2001     52      1      0    .724   2.72   4.70   .962   .475   .296   1.72   .302   .185   0
+  25 TRT13A   1925 2001     77      1      0    .621   2.41   4.70   .810   .688   .222   1.54   .216   .063   3
+  26 TRT13B   1933 2001     69      1      0    .596   2.48   4.54   .818   .680   .216   1.62   .212   .067   3
+  27 TRT14A   1916 2001     86      2      0    .624   1.88   7.51  1.190   .820   .221   2.04   .267   .054   1
+  28 TRT14B   1916 2001     86      2      0    .644   1.90   7.15  1.118   .799   .222   1.83   .272  -.015   3
+  29 TRT16A   1885 2001    117      3      0    .513   1.78   4.04   .693   .609   .246   2.04   .265   .025   1
+  30 TRT16B   1901 2001    101      2      0    .650   1.66   4.54   .782   .715   .237   1.74   .270  -.035   3
+  31 TRT17A   1919 2001     83      2      0    .635   2.11   4.17   .875   .675   .266   1.72   .264  -.008   3
+  32 TRT17B   1895 2001    107      3      1    .380   1.47   4.10   .655   .715   .244   1.84   .261   .010   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2508     46      2    .636   2.00  10.83   .892   .673   .281   2.82   .277   .014
+
+ DATA CHECKS (rwl.check): germ058
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ058.rwl
+ 32 series, 2508 measurements, 1885-2001, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file germ058.rwl, MD5 496b0f31599bf9f33247dd88d815bcc4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

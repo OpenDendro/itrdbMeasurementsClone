@@ -1,0 +1,162 @@
+
+ COFECHA-style crossdating report: fin108
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fin108.rwl
+      MD5 of measurement file: 23e7a0ae1ab7056fc6086f474ccf79e8
+      Date checked           : 01OCT26
+      Beginning year         : 1794
+      Ending year            : 2016
+      Principal investigators: Esper, J.
+      Site name              : Niesalompolo lake KLN03
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 67.5147 N
+      Longitude              : 24.0785 E
+      Elevation              : 210 m
+
+      Series intercorrelation: 0.563
+      Avg mean sensitivity   : 0.232
+      Avg standard deviation : 0.283
+      Avg autocorrelation    : 0.824
+      Number dated series    : 36
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 1 of the B weak at every lag)
+      Pct problem segments   : 4.27
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fin108
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 KLN0351B 1880 2004                      .53  .73  .68 
+   2 KLN0353A 1864 2016                 .52  .74  .84  .65 
+   3 KLN0353B 1869 2016                 .56  .66  .66  .69 
+   4 KLN0354A 1841 2016            .67  .74  .75  .71  .67 
+   5 KLN0354B 1841 2016            .71  .67  .58  .69  .66 
+   6 KLN0355A 1794 1955       .64  .74  .65  .51           
+   7 KLN0355B 1817 2016       .62  .67  .63  .64  .69  .60 
+   8 KLN0356A 1877 2016                      .57  .62  .70 
+   9 KLN0356B 1895 2016                      .68  .74  .69 
+  10 KLN0357D 1802 1934       .45B .38B .41                
+  11 KLN0358A 1842 2016            .42  .68  .80  .82  .82 
+  12 KLN0358B 1846 2016            .48  .68  .70  .74  .76 
+  13 KLN0359A 1846 2016            .55  .68  .70  .75  .74 
+  14 KLN0359B 1851 2016                 .66  .65  .59  .64 
+  15 KLN0360A 1902 2016                           .70  .60 
+  16 KLN0361A 1945 2016                                .42 
+  17 KLN0361B 1945 2014                                .49 
+  18 KLN0362A 1842 2016            .46  .60  .52  .68  .67 
+  19 KLN0362B 1818 2016      -.17B .37B .59  .67  .56  .50 
+  20 KLN0364A 1902 2016                           .56  .70 
+  21 KLN0364B 1876 2016                      .72  .71  .55 
+  22 KLN0365A 1859 2016                 .65  .66  .69  .64 
+  23 KLN0365B 1830 2008            .52  .55  .64  .52  .18B
+  24 KLN0366A 1830 2016            .67  .73  .69  .70  .70 
+  25 KLN0366B 1872 2016                 .51  .36  .68  .82 
+  28 KLN0369A 1922 2016                           .63  .63 
+  29 KLN0369B 1928 2016                                .45 
+  30 KLN0370A 1873 2016                 .68  .65  .62  .59 
+  31 KLN0370B 1884 2016                      .53  .70  .70 
+  32 KLN0371A 1880 2016                      .52  .61  .59 
+  33 KLN0371B 1896 2016                      .69  .78  .73 
+  34 KLN0372A 1915 2016                           .69  .67 
+  35 KLN0372B 1909 2016                           .65  .48 
+ Av segment correlation       .38  .55  .62  .63  .68  .63 
+
+ FLAGGED SEGMENTS: fin108
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 KLN0357D 1825 1874     B     .447        -2      .512   .066
+  10 KLN0357D 1850 1899     B     .379        -4      .394   .015
+  19 KLN0362B 1825 1874     B    -.168         1      .514   .681
+  19 KLN0362B 1850 1899     B     .375         1      .452   .077
+  23 KLN0365B 1950 1999     B     .179        -1      .248   .069  weak at every lag
+
+ DESCRIPTIVE STATISTICS: fin108
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KLN0351B 1880 2004    125      3      0    .581    .31    .87   .188   .815   .332   1.86   .314  -.028   1
+   2 KLN0353A 1864 2016    153      4      0    .602    .48   1.08   .192   .821   .209   1.85   .211  -.010   1
+   3 KLN0353B 1869 2016    148      4      0    .601    .48    .93   .156   .752   .185   1.52   .178  -.003   1
+   4 KLN0354A 1841 2016    176      5      0    .651    .79   2.08   .402   .869   .195   1.52   .187   .034   1
+   5 KLN0354B 1841 2016    176      5      0    .630    .66   2.05   .342   .863   .212   1.53   .207   .024   1
+   6 KLN0355A 1794 1955    162      4      0    .624    .46   1.18   .217   .797   .241   1.78   .247   .012   1
+   7 KLN0355B 1817 2016    200      6      0    .548    .36   1.38   .231   .886   .264   1.81   .270   .043   1
+   8 KLN0356A 1877 2016    140      3      0    .620    .33    .98   .161   .766   .260   1.77   .251   .028   1
+   9 KLN0356B 1895 2016    122      3      0    .660    .40   1.32   .177   .741   .241   1.63   .231   .017   1
+  10 KLN0357D 1802 1934    133      3      2    .391    .38    .97   .220   .837   .285   1.73   .284   .005   2
+  11 KLN0358A 1842 2016    175      5      0    .660    .63   1.32   .247   .769   .210   1.69   .221   .029   1
+  12 KLN0358B 1846 2016    171      5      0    .664    .53   1.13   .220   .737   .244   1.93   .264   .039   1
+  13 KLN0359A 1846 2016    171      5      0    .653    .45   1.21   .191   .776   .219   1.64   .222  -.002   1
+  14 KLN0359B 1851 2016    166      4      0    .601    .42   1.65   .213   .845   .214   1.85   .230  -.023   1
+  15 KLN0360A 1902 2016    115      2      0    .534    .39   1.10   .242   .877   .271   1.71   .246   .009   2
+  16 KLN0361A 1945 2016     72      1      0    .434    .29    .86   .193   .859   .310   1.94   .315   .034   1
+  17 KLN0361B 1945 2014     70      1      0    .504    .32    .88   .169   .778   .250   1.59   .278   .008   2
+  18 KLN0362A 1842 2016    175      5      0    .545    .64   2.15   .446   .925   .196   1.62   .208  -.017   1
+  19 KLN0362B 1818 2016    199      6      2    .327    .66   2.06   .398   .900   .186   1.93   .211  -.002   1
+  20 KLN0364A 1902 2016    115      2      0    .422    .69   2.15   .338   .812   .205   1.65   .198   .010   1
+  21 KLN0364B 1876 2016    141      3      0    .578    .60   1.45   .324   .870   .210   1.62   .203   .066   3
+  22 KLN0365A 1859 2016    158      4      0    .621    .47   1.25   .255   .740   .288   2.34   .320   .042   1
+  23 KLN0365B 1830 2008    179      5      1    .410    .52   2.42   .408   .872   .307   1.86   .315  -.019   1
+  24 KLN0366A 1830 2016    187      5      0    .589    .38    .96   .157   .713   .224   2.10   .250  -.006   2
+  25 KLN0366B 1872 2016    145      4      0    .621    .45    .90   .172   .659   .263   1.66   .260   .019   1
+  26 KLN0367A 1954 2016     63      0      0    .384    .66   1.53   .277   .843   .180   1.65   .189   .076   1
+  27 KLN0367B 1964 2016     53      0      0    .472    .65   1.31   .315   .880   .194   1.35   .201  -.025   2
+  28 KLN0369A 1922 2016     95      2      0    .595    .53    .93   .142   .646   .198   1.39   .191   .000   1
+  29 KLN0369B 1928 2016     89      1      0    .428    .52   1.01   .188   .793   .222   1.60   .222   .082   1
+  30 KLN0370A 1873 2016    144      4      0    .574    .73   1.83   .385   .890   .164   1.62   .175   .023   2
+  31 KLN0370B 1884 2016    133      3      0    .643    .60   1.56   .320   .891   .164   1.37   .168   .002   1
+  32 KLN0371A 1880 2016    137      3      0    .521    .86   2.50   .687   .939   .300   2.07   .325   .021   1
+  33 KLN0371B 1896 2016    121      3      0    .694    .66   1.56   .327   .837   .235   1.61   .246   .028   1
+  34 KLN0372A 1915 2016    102      2      0    .622    .60   1.64   .383   .921   .213   1.54   .217  -.016   1
+  35 KLN0372B 1909 2016    108      2      0    .452    .70   2.41   .562   .946   .231   1.49   .226   .016   2
+  36 KLN0374B 1976 2016     41      0      0    .390    .50    .96   .189   .732   .229   1.57   .239   .061   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4860    117      5    .563    .53   2.50   .283   .824   .232   2.34   .237   .014
+
+ DATA CHECKS (rwl.check): fin108
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fin108.rwl
+ 36 series, 4860 measurements, 1794-2016, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file fin108.rwl, MD5 23e7a0ae1ab7056fc6086f474ccf79e8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,154 @@
+
+ COFECHA-style crossdating report: germ060
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ060.rwl
+      MD5 of measurement file: 52df0f6ab95f7f98b48af8c502caeaf3
+      Date checked           : 01OCT26
+      Beginning year         : 1859
+      Ending year            : 1997
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Falkenfels
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 48.9800 N
+      Longitude              : 12.5700 E
+      Elevation              : 420 m
+
+      Series intercorrelation: 0.601
+      Avg mean sensitivity   : 0.309
+      Avg standard deviation : 0.760
+      Avg autocorrelation    : 0.810
+      Number dated series    : 32
+      Series crossdated      : 31
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 FAF01A   1865 1997  .69  .72 
+   3 FAF02A   1864 1997  .76  .71 
+   4 FAF02B   1864 1997  .80  .72 
+   5 FAF03A   1866 1997  .68  .52 
+   6 FAF03B   1871 1997  .66  .58 
+   7 FAF04A   1867 1997  .63  .78 
+   8 FAF04B   1864 1997  .62  .71 
+  10 FAF07A   1899 1997       .72 
+  11 FAF07B   1899 1997       .57 
+  12 FAF07C   1919 1997       .57 
+  13 FAF08A   1899 1997       .38 
+  14 FAF08B   1899 1997       .70 
+  15 FAF09A   1862 1997  .64  .65 
+  16 FAF09B   1862 1997  .52  .58 
+  17 FAF10A   1863 1997  .72  .74 
+  18 FAF10B   1869 1997  .73  .77 
+  19 FAF11A   1859 1997  .75  .77 
+  20 FAF11B   1859 1997  .78  .68 
+  21 FAF12A   1866 1997  .29B .36 
+  22 FAF12B   1870 1997  .24B .34 
+  23 FAF13A   1883 1966  .54      
+  24 FAF13B   1875 1997  .65  .63 
+  25 FAF14A   1864 1997  .63  .66 
+  26 FAF14B   1864 1997  .74  .77 
+  27 FAF15A   1867 1997  .65  .41 
+  28 FAF16A   1863 1997  .53  .50 
+  31 FAF18A   1872 1997  .64  .38 
+  32 FAF18B   1872 1997  .63  .36 
+ Av segment correlation  .63  .60 
+
+ FLAGGED SEGMENTS: germ060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  21 FAF12A   1900 1949     B     .289        -9      .388   .099
+  22 FAF12B   1900 1949     B     .236        -2      .276   .040  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ060
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FAF01A   1865 1997    133      2      0    .689   1.13   4.87   .993   .858   .355   2.27   .355  -.026   1
+   2 FAF01B   1865 1997    133                         1.26   5.89  1.213   .884   .347                         
+   3 FAF02A   1864 1997    134      2      0    .663   1.22   3.14   .652   .783   .259   1.81   .253   .026   3
+   4 FAF02B   1864 1997    134      2      0    .703   1.17   3.18   .656   .811   .278   1.72   .260   .026   3
+   5 FAF03A   1866 1997    132      2      0    .658    .91   2.72   .647   .868   .317   1.91   .283  -.004   2
+   6 FAF03B   1871 1997    127      2      0    .660    .92   2.69   .456   .746   .288   1.87   .264  -.012   3
+   7 FAF04A   1867 1997    131      2      0    .683   1.14   2.79   .545   .753   .304   1.71   .255  -.002   2
+   8 FAF04B   1864 1997    134      2      0    .718   1.25   3.46   .616   .772   .306   1.72   .263   .045   2
+   9 FAF05A   1955 1997     43      0      0    .504   3.97   6.25  1.011   .195   .254   1.49   .218  -.156   0
+  10 FAF07A   1899 1997     99      1      0    .679   1.03   3.84   .638   .719   .252   1.84   .278   .004   2
+  11 FAF07B   1899 1997     99      1      0    .600   1.62   4.89  1.038   .783   .290   1.84   .296  -.036   3
+  12 FAF07C   1919 1997     79      1      0    .649   1.23   5.01   .980   .788   .310   1.89   .318   .023   2
+  13 FAF08A   1899 1997     99      1      0    .499   1.52   3.89   .823   .867   .236   1.58   .230  -.012   3
+  14 FAF08B   1899 1997     99      1      0    .680   1.04   2.80   .688   .814   .346   1.84   .311   .006   2
+  15 FAF09A   1862 1997    136      2      0    .556   1.14   6.43  1.127   .920   .315   3.42   .435   .013   2
+  16 FAF09B   1862 1997    136      2      0    .567   1.28   4.54   .839   .831   .279   1.99   .269   .037   3
+  17 FAF10A   1863 1997    135      2      0    .721   1.00   2.92   .483   .785   .265   1.92   .297   .014   2
+  18 FAF10B   1869 1997    129      2      0    .729    .83   2.38   .401   .820   .266   1.60   .262   .003   3
+  19 FAF11A   1859 1997    139      2      0    .711   1.01   3.11   .656   .871   .285   1.89   .286  -.010   3
+  20 FAF11B   1859 1997    139      2      0    .667   1.11   3.31   .641   .852   .253   2.13   .252   .012   2
+  21 FAF12A   1866 1997    132      2      1    .404   1.09   3.29   .604   .684   .341   2.78   .340   .013   3
+  22 FAF12B   1870 1997    128      2      1    .423   1.17   2.92   .593   .658   .364   2.79   .376  -.010   1
+  23 FAF13A   1883 1966     84      1      0    .461   1.29   3.24   .799   .824   .321   2.37   .347  -.021   1
+  24 FAF13B   1875 1997    123      2      0    .601   1.35   4.45   .925   .835   .349   2.25   .351   .021   3
+  25 FAF14A   1864 1997    134      2      0    .684    .90   3.29   .562   .824   .312   1.80   .297   .009   3
+  26 FAF14B   1864 1997    134      2      0    .715    .79   3.64   .565   .870   .306   2.08   .290   .030   2
+  27 FAF15A   1867 1997    131      2      0    .373    .74   3.31   .534   .826   .344  14.20  1.357  -.012   1
+  28 FAF16A   1863 1997    135      2      0    .511    .86   3.67   .753   .812   .406   3.10   .506  -.047   3
+  29 FAF17A   1931 1997     67      0      0    .471   1.94   6.52  1.207   .822   .340   1.88   .306  -.052   3
+  30 FAF17B   1931 1997     67      0      0    .465   1.99   6.45  1.229   .793   .320   1.75   .319  -.019   3
+  31 FAF18A   1872 1997    126      2      0    .484   1.40   5.66  1.202   .901   .310   3.58   .458   .017   2
+  32 FAF18B   1872 1997    126      2      0    .447   1.10   6.08  1.044   .910   .345   3.08   .472   .024   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3777     50      2    .601   1.17   6.52   .760   .810   .309  14.20   .355   .002
+
+ DATA CHECKS (rwl.check): germ060
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ060.rwl
+ 32 series, 3777 measurements, 1859-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 15 note(s)
+ -------------
+ Nothing to report at this severity.
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file germ060.rwl, MD5 52df0f6ab95f7f98b48af8c502caeaf3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series FAF01B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

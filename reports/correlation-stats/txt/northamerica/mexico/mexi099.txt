@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: mexi099
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi099.rwl
+      MD5 of measurement file: c1962b7bbf87e1ac418f263c7fce7baa
+      Date checked           : 01OCT26
+      Beginning year         : 1739
+      Ending year            : 1995
+      Principal investigators: Villanueva-Díaz, J.
+      Site name              : Bacadehuachi
+      Species information    : PIAZ Pinus arizonica Engelm.
+      Latitude               : 29.9470 N
+      Longitude              : 107.0780 W
+      Elevation              : 2350 m
+
+      Series intercorrelation: 0.596
+      Avg mean sensitivity   : 0.340
+      Avg standard deviation : 0.527
+      Avg autocorrelation    : 0.572
+      Number dated series    : 36
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.64
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi099
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BAC01A   1771 1995  .63  .59  .44  .63  .66  .69 
+   2 BAC01B   1790 1995  .48  .35  .34  .66  .63  .56 
+   4 BAC01D   1745 1993  .62  .53  .51  .58  .49  .56 
+   5 BAC02A   1870 1995                 .33A .55  .59 
+   7 BAC04B   1920 1995                           .78 
+   8 BAC05A   1919 1995                           .73 
+  11 BAC09A   1871 1995                 .73  .53  .44 
+  12 BAC10A   1917 1980                           .80 
+  13 BAC11B   1850 1977                 .76  .83  .59 
+  14 BAC12A   1918 1993                           .60 
+  17 BAC14A   1883 1978                      .57  .64 
+  18 BAC14B   1870 1995                 .71  .77  .82 
+  25 BAC25A   1839 1995            .39  .58  .44  .21B
+  26 BAC27A   1898 1995                      .59  .40 
+  27 BAC29A   1860 1995                 .64  .65  .69 
+  28 BAC30A   1896 1952                      .46      
+  29 BAC30B   1883 1995                      .76  .84 
+  31 BAC31B   1922 1995                           .63 
+  32 BAC32A   1897 1995                      .43  .53 
+  34 BAC33B   1912 1995                           .56 
+  35 BAC50A   1859 1995                 .51  .54  .71 
+ Av segment correlation  .58  .49  .42  .61  .59  .62 
+
+ FLAGGED SEGMENTS: mexi099
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 BAC02A   1875 1924     A     .328         0
+  25 BAC25A   1925 1974     B     .215         5      .286   .072  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mexi099
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BAC01A   1771 1995    225      6      0    .627    .75   1.73   .274   .615   .248   1.70   .224   .013   2
+   2 BAC01B   1790 1995    206      6      0    .508    .84   1.77   .296   .543   .264   1.97   .243   .045   0
+   3 BAC01C   1739 1790     52      0      0    .705   1.21   2.57   .508   .763   .200   1.54   .202   .103   1
+   4 BAC01D   1745 1993    249      6      0    .616    .88   2.95   .434   .760   .256   1.63   .233   .045   0
+   5 BAC02A   1870 1995    126      3      1    .500    .87   2.30   .495   .671   .382   1.94   .353   .012   1
+   6 BAC04A   1928 1995     68      0      0    .588   1.73   3.20   .587   .506   .271   2.27   .289   .112   0
+   7 BAC04B   1920 1995     76      1      0    .699   1.35   2.92   .579   .711   .288   1.66   .262  -.046   3
+   8 BAC05A   1919 1995     77      1      0    .656   1.40   2.43   .459   .445   .254   1.60   .255   .140   0
+   9 BAC08A   1946 1995     50      0      0    .617   2.24   3.95   .884   .729   .224   1.41   .229   .045   1
+  10 BAC08B   1958 1995     38      0      0    .481   1.92   3.56   .703   .653   .265   1.79   .275   .194   0
+  11 BAC09A   1871 1995    125      3      0    .463   1.09   2.92   .673   .580   .560   2.72   .457   .075   0
+  12 BAC10A   1917 1980     64      1      0    .772   1.45   2.60   .544   .307   .411   1.70   .354   .001   1
+  13 BAC11B   1850 1977    128      3      0    .602   1.00   2.18   .456   .690   .288   1.97   .289  -.007   1
+  14 BAC12A   1918 1993     76      1      0    .647   1.05   2.38   .438   .427   .340   1.89   .307  -.080   3
+  15 BAC12B   1935 1995     61      0      0    .739   1.17   1.99   .409   .267   .351   1.65   .299   .010   0
+  16 BAC13A   1941 1995     55      0      0    .743   1.46   2.86   .701   .718   .332   1.66   .306   .011   2
+  17 BAC14A   1883 1978     96      2      0    .673   1.33   2.56   .543   .301   .381   1.96   .357   .076   0
+  18 BAC14B   1870 1995    126      3      0    .784   1.30   2.83   .603   .500   .405   1.97   .358  -.024   2
+  19 BAC15A   1934 1995     62      0      0    .780   1.50   2.99   .572   .534   .303   1.67   .276   .002   1
+  20 BAC17A   1923 1995     73      0      0    .592   1.68   3.51   .597   .535   .284   1.73   .275   .005   3
+  21 BAC17B   1943 1995     53      0      0    .667   1.70   3.15   .596   .405   .294   1.46   .258   .081   0
+  22 BAC19A   1926 1995     70      0      0    .715   1.10   2.50   .553   .653   .327   1.57   .300  -.026   1
+  23 BAC21A   1927 1995     69      0      0    .437    .83   2.47   .561   .785   .356   2.01   .371   .040   1
+  24 BAC21B   1927 1995     69      0      0    .452    .82   2.84   .607   .704   .423   1.96   .391  -.008   1
+  25 BAC25A   1839 1995    157      4      1    .330    .95   3.21   .669   .809   .395   2.25   .369  -.111   0
+  26 BAC27A   1898 1995     98      2      0    .462    .82   1.72   .347   .472   .324   1.80   .300   .125   0
+  27 BAC29A   1860 1995    136      3      0    .610    .94   2.55   .580   .440   .518   2.26   .471  -.006   2
+  28 BAC30A   1896 1952     57      1      0    .524   1.66   4.39   .978   .764   .385   1.73   .351  -.015   1
+  29 BAC30B   1883 1995    113      2      0    .735   1.72   5.33  1.081   .683   .438   2.02   .404  -.014   1
+  30 BAC31A   1940 1995     56      0      0    .727   1.22   1.82   .307   .183   .262   1.51   .234   .039   0
+  31 BAC31B   1922 1995     74      1      0    .587   1.21   2.24   .395   .378   .310   1.66   .269   .122   0
+  32 BAC32A   1897 1995     99      2      0    .559   1.46   4.08   .961   .816   .349   1.78   .287  -.047   0
+  33 BAC33A   1950 1995     46      0      0    .752    .89   2.20   .409   .177   .471   1.87   .366  -.137   0
+  34 BAC33B   1912 1995     84      1      0    .541    .97   2.43   .445   .285   .479   1.97   .372  -.078   0
+  35 BAC50A   1859 1995    137      3      0    .573   1.09   2.15   .401   .562   .270   1.86   .258   .006   1
+  36 BAC51A   1910 1970     61      0      0    .491    .46    .94   .163   .325   .325   1.96   .320   .121   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3412     55      2    .596   1.13   5.33   .527   .572   .340   2.72   .309   .018
+
+ DATA CHECKS (rwl.check): mexi099
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi099.rwl
+ 36 series, 3412 measurements, 1739-1995, 0.001 mm precision
+ 0 error(s), 0 warning(s), 7 note(s)
+ -------------
+ Nothing to report at this severity.
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mexi099.rwl, MD5 c1962b7bbf87e1ac418f263c7fce7baa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

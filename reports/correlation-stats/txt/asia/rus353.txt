@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: rus353
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus353.rwl
+      MD5 of measurement file: 167c3006de0920af552b20a82d14cc39
+      Date checked           : 01OCT26
+      Beginning year         : 1806
+      Ending year            : 2014
+      Principal investigators: Khasanov, B.
+      Site name              : Dzerzhinskiy
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 54.7323 N
+      Longitude              : 36.0002 E
+      Elevation              : 170 m
+
+      Series intercorrelation: 0.574
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 1.256
+      Avg autocorrelation    : 0.798
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus353
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 PZ00115a 1806 2014  .53  .55  .63 
+   2 PZ00115b 1843 2014  .59  .55  .44 
+   3 PZ00215  1879 2014  .63  .69  .61 
+   4 PZ00315a 1874 2014  .65  .55  .41 
+   5 PZ00315b 1880 2014  .68  .68  .61 
+   6 PZ00415  1892 2014  .61  .69  .66 
+   7 PZ00515a 1916 2014       .43  .54 
+   8 PZ00515b 1923 2014       .46  .48 
+   9 PZ00615a 1879 2014  .71  .70  .48 
+  10 PZ00615b 1875 2014  .67  .80  .69 
+  11 PZ00715a 1885 2014  .69  .67  .57 
+  12 PZ00715b 1882 2014  .63  .50  .40 
+ Av segment correlation  .64  .61  .54 
+
+ FLAGGED SEGMENTS: rus353
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: rus353
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PZ00115a 1806 2014    209      3      0    .561   1.64   4.33   .758   .777   .209   2.03   .231   .001   3
+   2 PZ00115b 1843 2014    172      3      0    .492   2.67   8.77  1.246   .708   .212   2.32   .236   .030   1
+   3 PZ00215  1879 2014    136      3      0    .548   2.85   6.60  1.338   .867   .184   1.43   .195  -.048   1
+   4 PZ00315a 1874 2014    141      3      0    .513   2.30   4.81  1.198   .840   .211   1.67   .215   .024   1
+   5 PZ00315b 1880 2014    135      3      0    .645   1.95   4.33   .892   .808   .219   1.50   .214   .024   1
+   6 PZ00415  1892 2014    123      3      0    .641   3.20   7.69  1.373   .798   .220   1.58   .223   .033   1
+   7 PZ00515a 1916 2014     99      2      0    .491   3.24   7.86  1.657   .825   .245   1.55   .239   .014   2
+   8 PZ00515b 1923 2014     92      2      0    .480   3.81   8.02  1.971   .880   .187   1.59   .192   .048   1
+   9 PZ00615a 1879 2014    136      3      0    .664   3.28   7.42  1.704   .866   .223   1.82   .240  -.005   2
+  10 PZ00615b 1875 2014    140      3      0    .646   2.44   5.76  1.230   .774   .286   2.17   .291   .018   1
+  11 PZ00715a 1885 2014    130      3      0    .630   3.40   7.81  1.427   .722   .230   1.69   .239   .012   2
+  12 PZ00715b 1882 2014    133      3      0    .563   1.99   4.75   .900   .782   .214   2.02   .232   .017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1646     34      0    .574   2.63   8.77  1.256   .798   .220   2.32   .230   .013
+
+ DATA CHECKS (rwl.check): rus353
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus353.rwl
+ 12 series, 1646 measurements, 1806-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file rus353.rwl, MD5 167c3006de0920af552b20a82d14cc39.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

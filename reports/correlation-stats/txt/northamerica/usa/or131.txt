@@ -1,0 +1,167 @@
+
+ COFECHA-style crossdating report: or131
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or131.rwl
+      MD5 of measurement file: a79e70c442d3f92958e5c6617dac5b73
+      Date checked           : 01OCT26
+      Beginning year         : 1913
+      Ending year            : 2020
+      Principal investigators: Andrus, R.A.; Peach, L.R.; Cinquini, A.R.; Mills, B.; Yusi, J.T.; Buhl, C.; Fischer, M.; Goodrich, B.A.; Hulbert, J.M.; Holz, A.; Meddens, A.J.H.; Moffett, K.B.; Ramirez, A.; Adams, H.D.
+      Site name              : Mt. Richmond
+      Species information    : THPL Thuja plicata Donn ex D. Don
+      Latitude               : 45.4284 N
+      Longitude              : 123.2311 W
+      Elevation              : 202 m
+
+      Series intercorrelation: 0.444
+      Avg mean sensitivity   : 0.244
+      Avg standard deviation : 1.520
+      Avg autocorrelation    : 0.729
+      Number dated series    : 53
+      Series crossdated      : 52
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 13.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or131
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   5 MR11A    1920 2018  .58 
+   6 MR11B    1938 2018  .37 
+  10 MR13B    1928 2020  .64 
+  13 MR15A    1937 2020  .52 
+  16 MR16B    1947 2020 -.09B
+  17 MR17A    1919 2020  .49 
+  18 MR17B    1918 2020  .51 
+  20 MR18B    1949 2020  .62 
+  22 MR20A    1913 2020  .57 
+  23 MR20B    1932 2020  .77 
+  26 MR22A    1949 2020  .56 
+  28 MR23A    1945 2010  .57 
+  37 MR28B    1914 2020  .69 
+  47 MR6B     1950 2018  .30B
+  50 MR8A     1933 2020  .59 
+ Av segment correlation  .51 
+
+ FLAGGED SEGMENTS: or131
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 MR16B    1950 1999     B    -.090         9      .303   .393  weak at every lag
+  47 MR6B     1950 1999     B     .300         3      .323   .023  weak at every lag
+
+ DESCRIPTIVE STATISTICS: or131
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MR1A     1982 2016     35      0      0    .617   4.56   8.68  1.977   .811   .224   1.36   .185  -.024   0
+   2 MR1B     1985 2017     33      0      0    .473   1.72   3.41   .781   .771   .284   1.44   .266   .132   1
+   3 MR10A    1977 2020     44      0      0    .363   2.97   7.93  1.836   .791   .275   1.55   .277   .044   1
+   4 MR10B    1970 2020     51      0      0    .353   1.86   4.69  1.029   .841   .271   1.66   .258   .031   1
+   5 MR11A    1920 2018     99      1      0    .543    .90   2.55   .403   .636   .281   1.74   .270  -.038   1
+   6 MR11B    1938 2018     81      1      0    .380   1.40   3.15   .721   .855   .231   1.60   .220  -.024   1
+   7 MR12A    1975 2015     41      0      0    .408   8.48  21.67  3.487   .463   .293   2.27   .320   .061   1
+   8 MR12B    1970 2015     46      0      0    .423   8.30  16.12  3.288   .827   .195   1.56   .206   .083   1
+   9 MR13A    1985 2018     34      0      0    .635   3.41   6.15   .967   .587   .197   1.52   .191  -.006   1
+  10 MR13B    1928 2020     93      1      0    .657   2.88   6.62  1.404   .805   .270   1.53   .254   .012   1
+  11 MR14A    1959 2017     59      0      0    .552   4.97  10.55  2.439   .767   .287   1.95   .299   .055   1
+  12 MR14B    1977 2017     41      0      0    .694   6.68  13.56  2.788   .663   .291   1.67   .279   .089   0
+  13 MR15A    1937 2020     84      1      0    .074   1.71   4.64  1.197   .899   .279   2.82   .405   .067   1
+  14 MR15B    1970 2020     51      0      0    .442   5.21   9.42  1.589   .670   .209   1.44   .191  -.087   3
+  15 MR16A    1981 2020     40      0      0    .004   3.71   5.79   .969   .520   .208   1.44   .201   .048   1
+  16 MR16B    1947 2020     74      1      1    .143   3.26   7.48  1.632   .841   .224   1.68   .250   .033   1
+  17 MR17A    1919 2020    102      1      0    .562   2.86   5.35  1.027   .610   .258   1.64   .246  -.014   1
+  18 MR17B    1918 2020    103      1      0    .534   2.80   6.90   .971   .601   .211   1.84   .205   .059   0
+  19 MR18A    1960 2020     61      0      0    .739   3.64   6.94  1.297   .650   .246   1.52   .219   .038   1
+  20 MR18B    1949 2020     72      1      0    .644   4.01   7.49  1.737   .813   .220   1.51   .229   .055   1
+  21 MR2B     1961 2016     56      0      0    .353   4.24   7.45  1.406   .735   .169   1.66   .181   .013   1
+  22 MR20A    1913 2020    108      1      0    .489   3.12  11.10  1.861   .839   .263   2.23   .277   .024   1
+  23 MR20B    1932 2020     89      1      0    .769   4.46  12.18  2.358   .798   .268   1.66   .267   .043   1
+  24 MR21A    1971 2020     50      0      0    .258   4.05   6.71  1.165   .775   .145   1.36   .154  -.010   1
+  25 MR21B    1963 2020     58      0      0    .034   4.32   8.54  1.646   .811   .179   1.58   .195   .129   1
+  26 MR22A    1949 2020     72      1      0    .610   4.32   8.24  1.704   .810   .229   1.52   .210   .019   1
+  27 MR22B    1963 2020     58      0      0    .336   2.32   5.42   .997   .627   .315   1.41   .270   .017   3
+  28 MR23A    1945 2010     66      1      0    .486   3.88   6.88  1.058   .566   .210   1.40   .190   .034   1
+  29 MR23B    1963 2017     55      0      0    .615   4.62   8.15  1.390   .635   .195   1.51   .190   .192   0
+  30 MR24A    1991 2020     30      0      0    .395   4.00   6.82  1.231   .535   .234   1.77   .236  -.064   2
+  31 MR24B    1956 2020     65      0      0    .346   3.75   7.53  1.668   .813   .225   1.81   .239   .039   1
+  32 MR25A    1985 2017     33      0      0    .568   6.20  11.71  2.241   .749   .217   1.43   .214   .040   1
+  33 MR25B    1985 2017     33      0      0    .332   5.39   9.25  2.074   .634   .267   1.59   .292   .174   0
+  34 MR27A    1967 2020     54      0      0    .046   3.37   7.04  1.075   .500   .250   1.59   .232   .042   1
+  35 MR27B    1964 2019     56      0      0   -.023   3.44   5.74   .969   .266   .263   1.72   .259   .007   0
+  36 MR28A    1959 2020     62      0      0    .579   2.95  10.14  1.761   .847   .234   1.71   .246   .088   1
+  37 MR28B    1914 2020    107      1      0    .537   2.88   9.28  2.246   .919   .237   1.91   .264   .050   1
+  38 MR29A    1970 2020     51      0      0    .662   2.95   6.69  1.805   .919   .182   1.52   .191   .014   1
+  39 MR29B    1969 2020     52      0      0    .540   3.21   7.60  1.219   .593   .263   1.78   .259   .051   1
+  40 MR3A     1975 2020     46      0      0    .015   3.51   7.33  1.691   .784   .250   1.82   .242   .115   0
+  41 MR3B     1977 2020     44      0      0    .030   3.70   7.01  1.242   .753   .202   1.39   .166  -.067   3
+  42 MR30A    1977 2019     43      0      0    .533   1.68   3.97  1.009   .830   .256   1.65   .259   .155   1
+  43 MR4A     1958 2015     58      0      0    .572   4.92   8.76  1.482   .579   .221   1.49   .204   .100   0
+  44 MR4B     1954 2018     65      0      0    .655   4.83  10.55  1.879   .629   .271   1.47   .240   .117   0
+  45 MR5A     1979 2018     40      0      0    .313   3.43   8.73  2.149   .818   .295   1.75   .250  -.038   1
+  46 MR6A     1944 2018     75                         2.02   5.37  1.223   .771   .343                         
+  47 MR6B     1950 2018     69      1      1    .314   2.95   5.47  1.255   .708   .257   1.79   .271   .139   0
+  48 MR7A     1980 2020     41      0      0    .218   3.05   8.38  1.714   .899   .210   1.59   .220   .024   1
+  49 MR7B     1979 2020     42      0      0    .625   2.68   6.33  1.448   .848   .249   1.49   .258   .078   1
+  50 MR8A     1933 2020     88      1      0    .522   2.43   5.23  1.314   .742   .272   1.59   .224   .011   2
+  51 MR8B     1957 2020     64      0      0    .561   3.67   7.94  1.605   .738   .254   1.58   .231  -.005   2
+  52 MR9A     1983 2020     38      0      0    .380   5.93  12.67  2.352   .668   .236   1.44   .221   .170   0
+  53 MR9B     1974 2020     47      0      0    .383   4.26   7.31  1.015   .646   .158   1.41   .162   .194   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3159     15      2    .444   3.52  21.67  1.520   .729   .244   2.82   .240   .044
+
+ DATA CHECKS (rwl.check): or131
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or131.rwl
+ 53 series, 3159 measurements, 1913-2020, 0.01 mm precision
+ 3 error(s), 0 warning(s), 36 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (3)
+     MR16B: correlates best with the master at lag 3 (r = 0.405 against r = 0.149 as dated); the series may be misdated by 3 year(s), most likely a false ring or a ring measured twice
+     MR27A: correlates best with the master at lag -4 (r = 0.474 against r = 0.047 as dated); the series may be misdated by 4 year(s), most likely a missing ring
+     MR6B: correlates best with the master at lag 4 (r = 0.409 against r = 0.268 as dated); the series may be misdated by 4 year(s), most likely a false ring or a ring measured twice
+ 36 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file or131.rwl, MD5 a79e70c442d3f92958e5c6617dac5b73.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series MR6A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

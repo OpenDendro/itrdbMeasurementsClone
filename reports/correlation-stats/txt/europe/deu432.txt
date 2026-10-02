@@ -1,0 +1,198 @@
+
+ COFECHA-style crossdating report: deu432
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu432.rwl
+      MD5 of measurement file: f0b1f3418942ae2f570a493792baefdb
+      Date checked           : 01OCT26
+      Beginning year         : 1928
+      Ending year            : 2020
+      Principal investigators: Esper, J.
+      Site name              : Eifel EDI04
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.4214 N
+      Longitude              : 7.2619 E
+      Elevation              : 320 m
+
+      Series intercorrelation: 0.682
+      Avg mean sensitivity   : 0.323
+      Avg standard deviation : 1.590
+      Avg autocorrelation    : 0.877
+      Number dated series    : 41
+      Series crossdated      : 32
+      Segment length tested  : 46
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu432
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1973 
+                        1995 2018 
+ --- -------- ---------  ---- ---- 
+   1 EDI0401A 1937 2020  .76  .75 
+   2 EDI0401B 1930 2020  .57  .61 
+   3 EDI0408A 1942 2020  .57  .63 
+   5 EDI0409A 1929 2020  .65  .73 
+   6 EDI0409B 1933 2020  .61  .74 
+   7 EDI0410A 1934 2020  .81  .82 
+   8 EDI0410B 1929 2020  .72  .67 
+   9 EDI0411A 1930 2020  .80  .72 
+  13 EDI0413B 1936 1996  .66      
+  16 EDI0415A 1935 2020  .78  .70 
+  17 EDI0415C 1935 2020  .68  .58 
+  18 EDI0416A 1935 2015  .77      
+  19 EDI0416B 1934 2001  .78      
+  20 EDI0417A 1933 2005  .57      
+  25 EDI0419B 1930 2019  .51  .71 
+  26 EDI0420A 1928 2020  .80  .74 
+  27 EDI0420B 1929 2020  .76  .76 
+  28 EDI0421A 1933 2015  .67      
+  29 EDI0421B 1939 2015  .74      
+  30 EDI0422A 1933 2008  .82      
+  31 EDI0422B 1933 2020  .81  .83 
+  32 EDI0423A 1935 2020  .85  .77 
+  33 EDI0423B 1934 2015  .29B     
+  34 EDI0424A 1936 2020  .71  .75 
+  35 EDI0424B 1936 2020  .60  .75 
+  36 EDI0425A 1931 2020  .71  .74 
+  37 EDI0425B 1929 2020  .68  .81 
+  41 EDI0431B 1929 2018  .71  .69 
+ Av segment correlation  .69  .73 
+
+ FLAGGED SEGMENTS: deu432
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  33 EDI0423B 1950 1995     B     .291         2      .340   .050  weak at every lag
+
+ DESCRIPTIVE STATISTICS: deu432
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EDI0401A 1937 2020     84      2      0    .761   1.93   5.65   .944   .735   .291   2.26   .313   .038   1
+   2 EDI0401B 1930 2020     91      2      0    .620   2.88   7.77  1.211   .700   .246   1.73   .264   .029   2
+   3 EDI0408A 1942 2020     79      2      0    .622   2.23  11.11  2.391   .912   .354   2.02   .349  -.023   2
+   4 EDI0408B 1939 2020     81                         1.29   5.02  1.130   .874   .331                         
+   5 EDI0409A 1929 2020     92      2      0    .719   1.96  11.39  2.364   .921   .327   1.94   .338  -.004   2
+   6 EDI0409B 1933 2020     88      2      0    .740   1.36   4.41   .898   .797   .311   1.72   .296  -.019   2
+   7 EDI0410A 1934 2020     87      2      0    .776   1.45   4.77  1.097   .856   .318   1.69   .301  -.057   3
+   8 EDI0410B 1929 2020     92      2      0    .646   1.68   6.71  1.477   .919   .324   2.43   .336  -.014   1
+   9 EDI0411A 1930 2020     91      2      0    .743   1.88  10.43  2.299   .932   .328   2.10   .329  -.005   1
+  10 EDI0412A 1945 2009     63                         1.25   7.10  1.580   .927   .346                         
+  11 EDI0412B 1945 2014     68                         1.24   5.66  1.323   .840   .420                         
+  12 EDI0413A 1931 1960     30      0      0    .617   2.75   4.84  1.030   .670   .284   1.32   .227   .057   2
+  13 EDI0413B 1936 1996     61      1      0    .595   1.72   5.64  1.247   .831   .361   2.26   .339  -.009   2
+  14 EDI0414A 1937 2009     72                          .94   6.12  1.013   .892   .305                         
+  15 EDI0414B 1933 1966     34      0      0    .370   2.00   5.51  1.453   .736   .316   1.66   .306   .185   0
+  16 EDI0415A 1935 2020     86      2      0    .693   1.54  10.11  1.600   .829   .340   1.89   .334   .024   1
+  17 EDI0415C 1935 2020     86      2      0    .545   1.87   7.44  1.471   .640   .398   2.09   .374  -.007   1
+  18 EDI0416A 1935 2015     81      1      0    .787   1.30   5.98  1.261   .899   .351   2.46   .373   .043   1
+  19 EDI0416B 1934 2001     68      1      0    .785   1.54   6.33  1.512   .925   .352   1.77   .354   .023   1
+  20 EDI0417A 1933 2005     73      1      0    .385   1.14   7.78  1.756   .948   .409   2.25   .437   .062   1
+  21 EDI0417B 1929 2005     76                         1.07   5.70  1.433   .952   .378                         
+  22 EDI0418A 1934 2017     78                         1.72  10.58  2.198   .899   .378                         
+  23 EDI0418B 1933 1993     61      0      0    .841   1.98   9.19  2.209   .901   .377   1.78   .362   .007   1
+  24 EDI0419A 1933 2018     82                         1.54   8.59  1.963   .965   .370                         
+  25 EDI0419B 1930 2019     90      2      0    .539   1.47   8.85  1.933   .959   .386   2.58   .404  -.022   2
+  26 EDI0420A 1928 2020     93      2      0    .773   1.90  10.59  2.341   .932   .268   1.80   .295  -.012   1
+  27 EDI0420B 1929 2020     92      2      0    .736   1.39   7.23  1.746   .925   .288   1.99   .304  -.008   2
+  28 EDI0421A 1933 2015     83      1      0    .675   1.56   8.46  1.775   .957   .273   1.74   .267   .106   0
+  29 EDI0421B 1939 2015     77      1      0    .779   1.32   6.43  1.400   .913   .313   2.12   .328   .026   1
+  30 EDI0422A 1933 2008     76      1      0    .833   2.10  11.83  2.835   .953   .283   2.07   .299  -.043   1
+  31 EDI0422B 1933 2020     88      2      0    .788   1.93  11.87  2.689   .956   .289   2.26   .300  -.042   1
+  32 EDI0423A 1935 2020     86      2      0    .782   1.92   9.66  2.429   .950   .321   2.04   .326  -.016   1
+  33 EDI0423B 1934 2015     82      1      1    .165   1.20   7.21  1.683   .935   .365   2.65   .406   .044   1
+  34 EDI0424A 1936 2020     85      2      0    .750   1.63   3.70   .730   .657   .314   1.98   .310  -.015   1
+  35 EDI0424B 1936 2020     85      2      0    .716   2.18   5.68  1.022   .705   .282   1.82   .304   .007   1
+  36 EDI0425A 1931 2020     90      2      0    .703   2.27   5.67  1.150   .870   .228   1.56   .246   .004   1
+  37 EDI0425B 1929 2020     92      2      0    .751   2.09   5.31  1.334   .892   .263   1.85   .289   .037   1
+  38 EDI0430A 1935 2017     82                         1.06   4.68  1.127   .963   .278                         
+  39 EDI0430B 1935 2018     83                          .86   4.12   .804   .924   .285                         
+  40 EDI0431A 1933 1957     25      0      0    .554   2.20   6.41  1.466   .908   .244   1.62   .256   .209   1
+  41 EDI0431B 1929 2018     90      2      0    .699   1.51   5.87  1.292   .900   .348   1.72   .330   .021   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3203     48      1    .682   1.66  11.87  1.590   .877   .323   2.65   .324   .010
+
+ DATA CHECKS (rwl.check): deu432
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu432.rwl
+ 41 series, 3203 measurements, 1928-2020, 0.01 mm precision
+ 0 error(s), 9 warning(s), 12 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (9)
+     EDI0408B: no measurement for 1976, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0412A: no measurement for 1959, 1976, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0412B: no measurement for 1973, 1999, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0414A: no measurement for 1976, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0417B: no measurement for 1973, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0418A: no measurement for 1989-1994, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0419A: no measurement for 1980-1983, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0430A: no measurement for 1996, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDI0430B: no measurement for 1996, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 12 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file deu432.rwl, MD5 f0b1f3418942ae2f570a493792baefdb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series EDI0408B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0412A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0412B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0414A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0417B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0418A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0419A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0430A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDI0430B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Segment length reduced from 50 to 46 years: the record is only 93 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

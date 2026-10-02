@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: russ003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ003.rwl
+      MD5 of measurement file: d6477aaf69ae631690bfff268ae06004
+      Date checked           : 01OCT26
+      Beginning year         : 1590
+      Ending year            : 1969
+      Principal investigators: Shiyatov, S.G.
+      Site name              : North Urals Upper Timberline Near Spring Site
+      Species information    : LASI Larix sibirica Ledeb. = Larix russica (Endl.) Sabine ex Trautv.
+      Latitude               : 59.5800 N
+      Longitude              : 59.1700 E
+      Elevation              : 800 m
+
+      Series intercorrelation: 0.686
+      Avg mean sensitivity   : 0.426
+      Avg standard deviation : 0.191
+      Avg autocorrelation    : 0.699
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 3.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 S11701   1590 1969       .58  .61  .75  .88  .81  .73  .71  .48  .65  .75  .73  .73 
+   2 S11611   1600 1969       .57  .54  .60  .75  .66  .49  .65  .71  .78  .78  .69  .61 
+   3 S11671   1614 1969       .22A .45  .23B .22A .46  .35B .51  .58  .52  .53  .46  .40 
+   4 S11621   1634 1969            .64  .69  .77  .65  .36  .58  .73  .85  .78  .71  .69 
+   5 S11691   1716 1969                           .63  .63  .70  .79  .84  .82  .75  .59 
+   6 S11681   1760 1969                                     .35  .51  .40  .38  .47  .54 
+   7 S11551   1782 1969                                          .76  .81  .87  .86  .85 
+   8 S11531   1787 1969                                          .83  .89  .86  .80  .70 
+   9 S11591   1789 1969                                          .64  .63  .71  .63  .61 
+  10 S11541   1792 1969                                          .72  .83  .81  .79  .73 
+  11 S11511   1797 1969                                          .75  .86  .75  .65  .68 
+  12 S11751   1797 1969                                          .84  .89  .87  .78  .68 
+  13 S11521   1799 1969                                               .90  .86  .83  .75 
+  14 S11741   1801 1969                                               .85  .88  .84  .72 
+  15 S11641   1804 1969                                               .56  .74  .85  .77 
+  16 S11581   1804 1969                                               .79  .83  .78  .73 
+  17 S11661   1804 1969                                               .89  .83  .76  .72 
+  18 S11631   1806 1969                                               .81  .87  .72  .60 
+  19 S11011   1806 1969                                               .85  .90  .80  .66 
+  20 S11021   1806 1969                                               .79  .78  .77  .70 
+  21 S11561   1815 1969                                               .83  .86  .87  .83 
+  22 S11651   1815 1969                                               .30A .52  .67  .74 
+  23 S11601   1815 1969                                               .78  .81  .77  .62 
+  24 S11571   1822 1969                                               .79  .85  .80  .66 
+  25 S11731   1826 1969                                                    .67  .68  .79 
+ Av segment correlation       .46  .56  .57  .66  .64  .51  .58  .69  .75  .77  .74  .68 
+
+ FLAGGED SEGMENTS: russ003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 S11671   1625 1674     A     .221         0
+   3 S11671   1675 1724     B     .228        -5      .275   .046  weak at every lag
+   3 S11671   1700 1749     A     .222         0
+   3 S11671   1750 1799     B     .352         2      .457   .105
+  22 S11651   1825 1874     A     .296         0
+
+ DESCRIPTIVE STATISTICS: russ003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 S11701   1590 1969    380     12      0    .708    .20   1.00   .176   .754   .529   2.37   .432   .004   1
+   2 S11611   1600 1969    370     12      0    .668    .19    .95   .159   .760   .457   2.29   .375   .001   3
+   3 S11671   1614 1969    356     12      4    .386    .15    .38   .080   .663   .389   2.63   .377  -.005   3
+   4 S11621   1634 1969    336     11      0    .687    .19    .90   .145   .751   .495   2.12   .423  -.001   1
+   5 S11691   1716 1969    254      8      0    .686    .26    .94   .202   .672   .624   2.46   .481  -.003   1
+   6 S11681   1760 1969    210      6      0    .393    .37   1.21   .212   .809   .237   2.20   .253  -.011   3
+   7 S11551   1782 1969    188      5      0    .815    .37   1.23   .234   .732   .416   1.86   .367  -.015   1
+   8 S11531   1787 1969    183      5      0    .797    .25    .88   .203   .832   .487   2.83   .425  -.027   3
+   9 S11591   1789 1969    181      5      0    .620    .40   1.31   .231   .704   .392   2.06   .387   .030   1
+  10 S11541   1792 1969    178      5      0    .730    .25    .86   .179   .739   .458   2.22   .419   .008   1
+  11 S11511   1797 1969    173      5      0    .712    .30    .87   .135   .575   .379   1.94   .351  -.022   3
+  12 S11751   1797 1969    173      5      0    .807    .47   1.20   .257   .644   .435   2.68   .393  -.011   1
+  13 S11521   1799 1969    171      4      0    .783    .29    .89   .142   .577   .382   2.24   .352  -.025   3
+  14 S11741   1801 1969    169      4      0    .730    .40    .96   .196   .445   .477   2.77   .415  -.008   1
+  15 S11641   1804 1969    166      4      0    .698    .49   1.40   .291   .844   .290   1.98   .290   .025   1
+  16 S11581   1804 1969    166      4      0    .752    .44   1.14   .204   .593   .358   2.01   .343  -.026   3
+  17 S11661   1804 1969    166      4      0    .784    .42   1.04   .217   .679   .392   2.43   .365  -.005   1
+  18 S11631   1806 1969    164      4      0    .746    .47   1.20   .238   .642   .323   2.12   .327   .018   1
+  19 S11011   1806 1969    164      4      0    .752    .30    .92   .204   .682   .522   2.15   .440  -.024   1
+  20 S11021   1806 1969    164      4      0    .728    .34    .85   .169   .659   .371   2.26   .356  -.002   1
+  21 S11561   1815 1969    155      4      0    .830    .40   1.21   .244   .671   .427   2.29   .402  -.002   1
+  22 S11651   1815 1969    155      4      1    .551    .42   1.05   .243   .835   .278   2.07   .279   .035   1
+  23 S11601   1815 1969    155      4      0    .734    .39   1.01   .183   .681   .320   1.93   .318   .031   1
+  24 S11571   1822 1969    148      4      0    .786    .27    .99   .199   .682   .473   2.14   .442   .004   1
+  25 S11731   1826 1969    144      3      0    .660    .41   1.19   .262   .682   .475   2.16   .443   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5069    142      5    .686    .31   1.40   .191   .699   .426   2.83   .383  -.001
+
+ DATA CHECKS (rwl.check): russ003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ003.rwl
+ 25 series, 5069 measurements, 1590-1969, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     S11671: correlates with the rest of the collection at r = 0.375 where the collection median is 0.719 (4.6 MAD below it); it does not fit the collection it is in
+     S11681: correlates with the rest of the collection at r = 0.419 where the collection median is 0.719 (4 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file russ003.rwl, MD5 d6477aaf69ae631690bfff268ae06004.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

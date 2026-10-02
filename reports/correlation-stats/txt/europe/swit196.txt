@@ -1,0 +1,106 @@
+
+ COFECHA-style crossdating report: swit196
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit196.rwl
+      MD5 of measurement file: 28fb13ff4e08ad310a4feeaf90e1f566
+      Date checked           : 01OCT26
+      Beginning year         : 1
+      Ending year            : 375
+      Principal investigators: Kaiser, K.F.
+      Site name              : Daettnau 2 Late Glacial Subfossil
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 47.4833 N
+      Longitude              : 8.6833 E
+      Elevation              : 487 m
+
+      Series intercorrelation: 0.653
+      Avg mean sensitivity   : 0.210
+      Avg standard deviation : 0.505
+      Avg autocorrelation    : 0.865
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 4.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit196
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   100  125  150  175  200  225  250  275  300  325 
+                         149  174  199  224  249  274  299  324  349  374 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 DAEALCH2    1  375  .95  .96  .97  .94  .95  .94  .91  .82  .88  .97 
+   2 KFKA3030    1  219  .59  .62  .57                                    
+   3 DAEK2120   50  375  .67  .71  .60  .45  .79  .72  .52  .31A .44  .73 
+   4 KFKA2680   53  310  .35  .47  .54  .59  .61  .64  .68                
+   5 KFKA3010  177  365                      .32A .38  .39  .58  .57      
+   6 KFKA4010   66  267  .65  .71  .65  .39  .36                          
+   7 KFKA2640  129  235            .73  .48                               
+ Av segment correlation  .64  .69  .68  .57  .61  .67  .62  .57  .63  .85 
+
+ FLAGGED SEGMENTS: swit196
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 DAEK2120  275  324     A     .311         0
+   5 KFKA3010  200  249     A     .324         0
+
+ DESCRIPTIVE STATISTICS: swit196
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DAEALCH2    1  375    375     10      0    .881    .93   2.01   .409   .880   .180   2.64   .212   .075   3
+   2 KFKA3030    1  219    219      3      0    .673   1.20   2.84   .595   .862   .217   1.83   .226   .031   1
+   3 DAEK2120   50  375    326     10      1    .689    .74   1.69   .359   .814   .243   4.73   .332   .166   1
+   4 KFKA2680   53  310    258      7      0    .446    .91   3.29   .533   .918   .194   1.98   .214  -.018   3
+   5 KFKA3010  177  365    189      5      1    .498    .64   2.06   .456   .900   .269   2.25   .294  -.012   1
+   6 KFKA4010   66  267    202      5      0    .553   1.37   3.60   .831   .921   .181   1.55   .201   .008   3
+   7 KFKA2640  129  235    107      2      0    .664   1.58   2.90   .503   .672   .184   1.69   .211  -.013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1676     42      2    .653    .99   3.60   .505   .865   .210   4.73   .245   .049
+
+ DATA CHECKS (rwl.check): swit196
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit196.rwl
+ 7 series, 1676 measurements, 1-375, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 1 carriage return(s) against 177 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file swit196.rwl, MD5 28fb13ff4e08ad310a4feeaf90e1f566.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

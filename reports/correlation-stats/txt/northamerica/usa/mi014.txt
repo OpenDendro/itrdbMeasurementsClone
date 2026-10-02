@@ -1,0 +1,98 @@
+
+ COFECHA-style crossdating report: mi014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mi014.rwl
+      MD5 of measurement file: 0fece019476dcf0b87326821b618aee6
+      Date checked           : 01OCT26
+      Beginning year         : 1898
+      Ending year            : 2002
+      Principal investigators: Wyse, T.C.; Goebel, P.C.
+      Site name              : Good Harbor Plains
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 44.9300 N
+      Longitude              : 85.8500 W
+      Elevation              : 188 m
+
+      Series intercorrelation: 0.434
+      Avg mean sensitivity   : 0.275
+      Avg standard deviation : 0.526
+      Avg autocorrelation    : 0.701
+      Number dated series    : 5
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 16.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mi014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 95-1     1949 2002            .30A
+   2 75-1     1898 2002       .47  .55 
+   3 93-1     1947 2002            .49 
+   4 75-2     1915 2002       .48  .61 
+ Av segment correlation       .47  .49 
+
+ FLAGGED SEGMENTS: mi014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 95-1     1950 1999     A     .302         0
+
+ DESCRIPTIVE STATISTICS: mi014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 95-1     1949 2002     54      1      1    .322   1.55   4.13   .832   .815   .234   1.66   .249  -.068   1
+   2 75-1     1898 2002    105      2      0    .463   1.26   3.63   .801   .869   .267   2.03   .274  -.010   1
+   3 93-1     1947 2002     56      1      0    .504    .67   1.36   .245   .412   .275   1.92   .301  -.043   3
+   4 75-2     1915 2002     88      2      0    .458    .58   1.06   .236   .551   .298   1.78   .301  -.027   1
+   5 93-4     1967 2002     36      0      0    .349    .69   1.59   .414   .858   .308   1.56   .280  -.010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            339      6      1    .434    .97   4.13   .526   .701   .275   2.03   .282  -.029
+
+ DATA CHECKS (rwl.check): mi014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mi014.rwl
+ 5 series, 339 measurements, 1898-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file mi014.rwl, MD5 0fece019476dcf0b87326821b618aee6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

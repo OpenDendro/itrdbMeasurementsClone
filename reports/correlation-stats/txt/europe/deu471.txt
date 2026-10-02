@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: deu471
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu471.rwl
+      MD5 of measurement file: 50c33c99ec9a48a90658da4f68351f61
+      Date checked           : 01OCT26
+      Beginning year         : 1913
+      Ending year            : 2018
+      Principal investigators: Esper, J.
+      Site name              : Koblenz HDK04
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 50.3267 N
+      Longitude              : 7.5755 E
+      Elevation              : 185 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.265
+      Avg standard deviation : 1.267
+      Avg autocorrelation    : 0.721
+      Number dated series    : 23
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 10.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu471
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 HDK0401a 1922 2018  .53 
+   2 HDK0401b 1932 2018  .63 
+   3 HDK0402a 1927 2014  .32A
+   4 HDK0402B 1920 2018  .59 
+   5 HDK0403a 1927 2018  .59 
+   6 HDK0403B 1921 2017  .47 
+   8 HDK0404b 1936 2017  .51 
+   9 HDK0405a 1916 2018  .54 
+  10 HDK0405b 1945 2018  .58 
+  11 HDK0406a 1924 2017  .34 
+  12 HDK0406b 1931 2017  .26B
+  13 HDK0407a 1927 2018  .50 
+  15 HDK0408a 1928 2018  .55 
+  16 HDK0408b 1931 2018  .52 
+  17 HDK0409a 1921 2018  .46 
+  18 HDK0409b 1932 2018  .52 
+  19 HDK0410a 1924 2018  .53 
+  21 HDK0411a 1927 2018  .65 
+  22 HDK0411B 1922 2018  .50 
+  23 HDK0412b 1934 2017  .39 
+ Av segment correlation  .50 
+
+ FLAGGED SEGMENTS: deu471
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 HDK0402a 1950 1999     A     .324         0
+  12 HDK0406b 1950 1999     B     .263        -7      .295   .032  weak at every lag
+
+ DESCRIPTIVE STATISTICS: deu471
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HDK0401a 1922 2018     97      1      0    .606   2.88   5.38  1.053   .752   .231   1.66   .226  -.028   2
+   2 HDK0401b 1932 2018     87      1      0    .658   3.46   7.40  1.309   .650   .280   1.73   .255  -.004   2
+   3 HDK0402a 1927 2014     88      1      1    .474   2.31   5.40  1.098   .838   .186   1.52   .191  -.026   1
+   4 HDK0402B 1920 2018     99      1      0    .552   2.26   6.75  1.393   .926   .190   1.58   .203   .060   1
+   5 HDK0403a 1927 2018     92      1      0    .515   2.55   8.60  1.145   .774   .191   1.51   .200   .096   1
+   6 HDK0403B 1921 2017     97      1      0    .368   3.06  12.21  1.390   .566   .204   1.55   .177   .062   2
+   7 HDK0404a 1913 2018    105                         2.01   6.22  1.345   .804   .368                         
+   8 HDK0404b 1936 2017     82      1      0    .327   2.22   5.71  1.022   .773   .246   1.52   .228   .134   0
+   9 HDK0405a 1916 2018    103      1      0    .430   2.35   7.67  1.339   .858   .269   1.81   .220   .017   3
+  10 HDK0405b 1945 2018     74      1      0    .652   2.78   9.33  1.306   .588   .334   1.70   .297  -.005   0
+  11 HDK0406a 1924 2017     94      1      0    .456   2.78   8.05  1.752   .892   .277   1.99   .273  -.029   3
+  12 HDK0406b 1931 2017     87      1      1    .399   3.50   7.54  1.345   .595   .324   1.54   .270   .029   3
+  13 HDK0407a 1927 2018     92      1      0    .624   2.45   5.52  1.159   .722   .284   1.89   .302   .082   1
+  14 HDK0407b 1939 2018     79                         2.12   5.89  1.236   .781   .310                         
+  15 HDK0408a 1928 2018     91      1      0    .665   2.26   5.41  1.248   .806   .309   2.03   .315   .051   3
+  16 HDK0408b 1931 2018     88      1      0    .662   3.02   6.47  1.224   .529   .369   1.64   .314  -.012   3
+  17 HDK0409a 1921 2018     98      1      0    .618   3.02   6.30   .994   .718   .211   1.48   .210  -.028   3
+  18 HDK0409b 1932 2018     87      1      0    .400   3.27   6.79  1.121   .733   .210   1.53   .216   .006   1
+  19 HDK0410a 1924 2018     95      1      0    .638   2.15   6.06  1.087   .716   .286   1.78   .279   .011   1
+  20 HDK0410b 1962 2018     57      0      0    .548   4.57  10.18  1.493   .270   .275   1.78   .283   .011   0
+  21 HDK0411a 1927 2018     92      1      0    .722   2.66   5.96   .955   .648   .221   1.46   .238   .010   1
+  22 HDK0411B 1922 2018     97      1      0    .577   3.37   8.65  1.423   .749   .229   1.61   .239   .121   1
+  23 HDK0412b 1934 2017     84      1      0    .418   3.16   9.08  1.783   .656   .318   2.43   .356   .001   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2065     20      2    .539   2.76  12.21  1.267   .721   .265   2.43   .250   .027
+
+ DATA CHECKS (rwl.check): deu471
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu471.rwl
+ 23 series, 2065 measurements, 1913-2018, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     HDK0404a: no measurement for 1976, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     HDK0407b: no measurement for 1974, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file deu471.rwl, MD5 50c33c99ec9a48a90658da4f68351f61.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series HDK0404a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series HDK0407b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

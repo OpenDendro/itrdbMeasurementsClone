@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: ak025
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak025.rwl
+      MD5 of measurement file: 10cf942c42f9d9c466d825e68abac319
+      Date checked           : 01OCT26
+      Beginning year         : 1450
+      Ending year            : 1991
+      Principal investigators: Wiles, G.; Calkin, P.E.
+      Site name              : Tebenkof Glacier
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 60.7300 N
+      Longitude              : 148.4700 W
+      Elevation              : 50 m
+
+      Series intercorrelation: 0.582
+      Avg mean sensitivity   : 0.293
+      Avg standard deviation : 0.250
+      Avg autocorrelation    : 0.737
+      Number dated series    : 15
+      Series crossdated      : 14
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2)
+      Pct problem segments   : 3.85
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1549 1574 1599 1624 1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 TB01NW   1450 1991       .17B .25A .41  .45  .62  .69  .66  .66  .67  .68  .59  .51  .59  .69  .58  .54  .69 
+   2 TB02NE   1670 1991                                     .67  .64  .81  .69  .53  .58  .63  .72  .75  .72  .69 
+   4 TB10NE   1601 1949                           .59  .67  .73  .48  .46  .50  .50  .71  .63  .62  .64  .57      
+   5 TB13S1   1720 1991                                               .54  .50  .53  .74  .80  .84  .85  .76  .74 
+   6 TB13S2   1749 1991                                                         .68  .71  .70  .76  .79  .73  .65 
+   7 TB14SW   1660 1899                                     .71  .63  .58  .50  .49  .74  .64  .59                
+   8 TB16NW   1734 1991                                                    .48  .30A .40  .55  .59  .59  .59  .68 
+   9 TB18NE   1690 1858                                          .43  .48  .32A .51  .56                          
+  10 TB18SW   1523 1618       .62  .75                                                                            
+  11 TB18NW   1534 1989            .83  .69  .47  .50  .59  .48  .40B .47  .33  .39  .50  .54  .57  .61  .74  .58 
+  12 TB20NW   1628 1991                                .67  .72  .75  .71  .51  .41  .68  .65  .57  .61  .68  .72 
+  13 TB22NW   1729 1991                                                    .53  .52  .62  .63  .47  .49  .74  .75 
+  14 TB24NW   1800 1991                                                                   .58  .59  .64  .44  .48 
+  15 TB9211   1696 1991                                          .44  .52  .59  .45  .65  .72  .68  .67  .54  .59 
+ Av segment correlation       .40  .61  .55  .46  .57  .65  .66  .55  .58  .51  .49  .62  .64  .64  .66  .64  .66 
+
+ FLAGGED SEGMENTS: ak025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 TB01NW   1525 1574     B     .169         2      .330   .161
+   1 TB01NW   1550 1599     A     .248         0
+   8 TB16NW   1775 1824     A     .302         0
+   9 TB18NE   1750 1799     A     .325         0
+  11 TB18NW   1700 1749     B     .400        10      .431   .031
+
+ DESCRIPTIVE STATISTICS: ak025
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TB01NW   1450 1991    542     17      2    .515    .38    .80   .162   .824   .212   1.75   .219  -.016   3
+   2 TB02NE   1670 1991    322     11      0    .677    .67   2.17   .393   .790   .306   2.01   .311  -.021   3
+   3 TB02NW   1489 1857    345                          .52   1.47   .265   .653   .346                         
+   4 TB10NE   1601 1949    349     12      0    .590    .64   2.29   .318   .773   .279   2.05   .278   .016   3
+   5 TB13S1   1720 1991    272      9      0    .631    .47   1.22   .225   .688   .318   2.54   .318  -.014   3
+   6 TB13S2   1749 1991    243      7      0    .668    .51   1.40   .208   .624   .303   2.10   .292  -.012   3
+   7 TB14SW   1660 1899    240      8      0    .625    .48   1.66   .286   .834   .296   1.91   .287  -.023   3
+   8 TB16NW   1734 1991    258      8      1    .547    .49   1.26   .261   .830   .268   2.23   .278  -.001   3
+   9 TB18NE   1690 1858    169      5      1    .458    .44   1.27   .274   .790   .320   2.14   .321   .020   1
+  10 TB18SW   1523 1618     96      2      0    .576    .63   1.54   .325   .765   .344   1.83   .316   .030   1
+  11 TB18NW   1534 1989    456     16      1    .520    .47   1.69   .272   .742   .307   2.69   .340   .023   1
+  12 TB20NW   1628 1991    364     12      0    .630    .47   1.69   .249   .706   .323   2.71   .317   .006   3
+  13 TB22NW   1729 1991    263      8      0    .590    .44   1.01   .154   .683   .234   1.79   .235  -.021   3
+  14 TB24NW   1800 1991    192      5      0    .565    .47   1.38   .209   .574   .314   2.13   .324  -.005   3
+  15 TB9211   1696 1991    296     10      0    .590    .45   1.14   .215   .701   .325   2.36   .322  -.000   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4407    130      5    .582    .49   2.29   .250   .737   .293   2.71   .292  -.002
+
+ DATA CHECKS (rwl.check): ak025
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak025.rwl
+ 15 series, 4407 measurements, 1450-1991, 0.001 mm precision
+ 0 error(s), 1 warning(s), 8 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     TB02NW: no measurement for 1645-1668, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file ak025.rwl, MD5 10cf942c42f9d9c466d825e68abac319.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series TB02NW has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

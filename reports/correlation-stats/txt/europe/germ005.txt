@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: germ005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ005.rwl
+      MD5 of measurement file: 6f729c54e6a0dbba2265e7f9e2f71129
+      Date checked           : 01OCT26
+      Beginning year         : 1843
+      Ending year            : 1971
+      Principal investigators: Schmidt, B.
+      Site name              : Hessisch-Oldendorf
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 52.1800 N
+      Longitude              : 9.2800 E
+      Elevation              : 291 m
+
+      Series intercorrelation: 0.561
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.856
+      Avg autocorrelation    : 0.840
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 8.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 
+                        1949 
+ --- -------- ---------  ---- 
+   1 230113   1844 1971  .52 
+   2 230123   1844 1956  .15B
+   3 230213   1863 1971  .54 
+   4 230223   1871 1971  .43 
+   5 230313   1863 1971  .67 
+   6 230323   1864 1971  .60 
+   7 230413   1843 1971  .50 
+   8 230423   1843 1971  .59 
+   9 230513   1862 1971  .49 
+  10 230523   1864 1971  .52 
+  11 230613   1861 1971  .54 
+  12 230623   1862 1971  .56 
+ Av segment correlation  .51 
+
+ FLAGGED SEGMENTS: germ005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 230123   1900 1949     B     .152        -5      .316   .164  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 230113   1844 1971    128      1      0    .503   2.34   5.41  1.143   .820   .217   1.76   .227   .043   1
+   2 230123   1844 1956    113      1      1    .303   2.29   5.11  1.083   .848   .199   1.42   .180  -.000   3
+   3 230213   1863 1971    109      1      0    .612   2.25   4.08   .656   .674   .192   1.60   .186  -.043   3
+   4 230223   1871 1971    101      1      0    .480   1.84   3.27   .624   .809   .178   1.49   .177   .008   2
+   5 230313   1863 1971    109      1      0    .656   1.63   5.73   .953   .910   .169   1.50   .170  -.004   1
+   6 230323   1864 1971    108      1      0    .642   1.29   4.27   .870   .907   .197   1.64   .187   .017   1
+   7 230413   1843 1971    129      1      0    .568   1.92   4.78   .874   .848   .207   1.49   .211  -.038   1
+   8 230423   1843 1971    129      1      0    .604   1.81   3.58   .720   .761   .229   1.77   .241   .042   1
+   9 230513   1862 1971    110      1      0    .606   1.50   5.08   .994   .914   .176   1.53   .173  -.014   1
+  10 230523   1864 1971    108      1      0    .576   1.23   4.33   .896   .895   .235   1.90   .237   .004   1
+  11 230613   1861 1971    111      1      0    .603   1.53   3.84   .717   .886   .171   1.53   .179  -.008   1
+  12 230623   1862 1971    110      1      0    .583   1.33   3.99   .687   .821   .202   1.62   .204   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1365     12      1    .561   1.76   5.73   .856   .840   .199   1.90   .199   .001
+
+ DATA CHECKS (rwl.check): germ005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ005.rwl
+ 12 series, 1365 measurements, 1843-1971, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     230123: correlates with the rest of the collection at r = 0.376 where the collection median is 0.624 (9.5 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file germ005.rwl, MD5 6f729c54e6a0dbba2265e7f9e2f71129.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

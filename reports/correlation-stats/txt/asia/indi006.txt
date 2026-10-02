@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: indi006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indi006.rwl
+      MD5 of measurement file: a0b198a915e0967f296583475e050e21
+      Date checked           : 01OCT26
+      Beginning year         : 1654
+      Ending year            : 1981
+      Principal investigators: Hughes, M.K.
+      Site name              : Thijwas B
+      Species information    : ABPI Abies pindrow (Royle ex D. Don) Royle
+      Latitude               : 34.5800 N
+      Longitude              : 75.5300 E
+      Elevation              : 3400 m
+
+      Series intercorrelation: 0.415
+      Avg mean sensitivity   : 0.158
+      Avg standard deviation : 0.342
+      Avg autocorrelation    : 0.756
+      Number dated series    : 16
+      Series crossdated      : 14
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 3, B 8; 3 of the B weak at every lag)
+      Pct problem segments   : 16.92
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indi006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 01094    1746 1981            .35  .42  .47  .47  .62  .63  .56  .52 
+   3 01101    1864 1981                                     .40  .60  .52 
+   4 01102    1737 1899            .42  .60  .40  .23B .35                
+   5 01103    1861 1981                                     .67  .64  .65 
+   6 01105    1861 1981                                     .29B .24B .43 
+   8 01085    1654 1981            .18B .40  .47  .48  .63  .71  .39B .38 
+   9 01088    1875 1981                                          .37  .29A
+  10 01090    1780 1945                      .14B .36  .38  .37           
+  11 01093    1850 1981                                     .41  .46  .56 
+  12 01096    1817 1981                           .41  .62  .60  .62  .70 
+  13 01099    1781 1981                      .27A .39  .66  .55  .52  .68 
+  14 01083    1900 1981                                          .53  .54 
+  15 01092    1782 1981                      .29A .42  .43  .41  .53  .64 
+  16 01087    1729 1954            .22B .27B .35  .41  .47  .64  .54      
+ Av segment correlation            .29  .42  .34  .40  .52  .52  .50  .54 
+
+ FLAGGED SEGMENTS: indi006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 01102    1825 1874     B     .226        -2      .305   .079  weak at every lag
+   6 01105    1875 1924     B     .292        -1      .413   .121
+   6 01105    1900 1949     B     .235        -1      .276   .041  weak at every lag
+   8 01085    1750 1799     B     .181         7      .222   .041  weak at every lag
+   8 01085    1900 1949     B     .387        -1      .399   .012
+   9 01088    1925 1974     A     .293         0
+  10 01090    1800 1849     B     .137         8      .354   .217
+  13 01099    1800 1849     A     .274         0
+  15 01092    1800 1849     A     .294         0
+  16 01087    1750 1799     B     .222        -3      .423   .201
+  16 01087    1775 1824     B     .273        -3      .334   .061
+
+ DESCRIPTIVE STATISTICS: indi006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01094    1746 1981    236      8      0    .457   1.14   2.32   .299   .716   .156   1.56   .165  -.018   1
+   2 01097    1793 1981    144                         1.30   2.39   .434   .860   .148                         
+   3 01101    1864 1981    118      3      0    .485    .79   1.91   .317   .828   .166   1.52   .178   .042   1
+   4 01102    1737 1899    163      5      1    .325    .64   2.19   .304   .878   .151   1.42   .160  -.022   1
+   5 01103    1861 1981    121      3      0    .664    .87   1.52   .190   .602   .151   1.43   .154  -.015   1
+   6 01105    1861 1981    121      3      2    .330   1.38   3.34   .487   .795   .169   1.74   .181   .042   1
+   7 01084    1825 1981    152                         1.21   2.84   .416   .693   .193                         
+   8 01085    1654 1981    328      8      2    .298    .83   1.98   .253   .753   .151   1.75   .153   .081   2
+   9 01088    1875 1981    107      2      1    .460    .96   1.54   .199   .608   .146   1.69   .152  -.012   3
+  10 01090    1780 1945    166      4      1    .316    .72   1.30   .186   .840   .116   1.28   .112  -.012   3
+  11 01093    1850 1981    132      3      0    .451   1.48   3.21   .459   .749   .154   1.48   .162  -.036   3
+  12 01096    1817 1981    165      5      0    .540   1.06   2.69   .367   .713   .186   1.72   .208   .035   1
+  13 01099    1781 1981    201      6      1    .504   1.11   1.82   .244   .725   .131   1.38   .132  -.005   1
+  14 01083    1900 1981     82      2      0    .509   1.25   1.99   .317   .795   .128   1.25   .115   .097   0
+  15 01092    1782 1981    200      6      1    .434   1.47   3.27   .492   .765   .168   1.67   .185   .040   1
+  16 01087    1729 1954    226      7      2    .296   1.35   3.34   .514   .768   .195   1.64   .210  -.019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2662     65     11    .415   1.09   3.34   .342   .756   .158   1.75   .164   .015
+
+ DATA CHECKS (rwl.check): indi006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indi006.rwl
+ 16 series, 2662 measurements, 1654-1981, 0.01 mm precision
+ 0 error(s), 2 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     01084: no measurement for 1923-1927, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     01097: no measurement for 1875-1919, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file indi006.rwl, MD5 a0b198a915e0967f296583475e050e21.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 01097 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 01084 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

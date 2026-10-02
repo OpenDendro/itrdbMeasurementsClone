@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: bol001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bol001.rwl
+      MD5 of measurement file: 46635b581fb99fdfe2c01f33c7be6d8c
+      Date checked           : 01OCT26
+      Beginning year         : 1836
+      Ending year            : 2005
+      Principal investigators: López, L.; Villalba, R.
+      Site name              : Inpa-Conception
+      Species information    : CEMC Centrolobium microchaete (Benth.) H.C. Lima
+      Latitude               : 16.2182 S
+      Longitude              : 61.6628 W
+      Elevation              : 503 m
+
+      Series intercorrelation: 0.468
+      Avg mean sensitivity   : 0.433
+      Avg standard deviation : 1.169
+      Avg autocorrelation    : 0.553
+      Number dated series    : 32
+      Series crossdated      : 31
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 6, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 17.91
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bol001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 inp610a  1925 2005       .78  .75 
+   2 inp610b  1926 2005            .71 
+   3 inp640a  1914 2005       .47  .41 
+   4 inp01    1909 2005       .51  .60 
+   5 inp620a  1884 2005  .40  .53  .64 
+   6 inp587a  1927 2005            .59 
+   7 inp587b  1927 2005            .63 
+   8 inp640d  1911 2005       .49  .46 
+   9 inp141a  1941 2005            .64 
+  10 inp141b  1916 2005       .30A .59 
+  12 inp213a  1923 2005       .49  .36 
+  13 inp04a   1874 2005  .35  .36  .40 
+  14 inp569a  1912 2005       .48  .44 
+  15 inp88b   1912 2005       .34B .42 
+  16 inp130a  1901 2005       .66  .66 
+  18 inp551a  1909 2005       .58  .46 
+  19 inp21a   1911 2005       .48  .54 
+  20 inp769b  1894 2005  .56  .55  .46 
+  21 inp769bb 1894 2005  .46  .47  .45 
+  22 inp164b  1919 2005       .41  .49 
+  23 inp29a   1863 2005  .46  .57  .63 
+  24 inp20b   1909 2005       .44  .69 
+  25 inp628a  1913 2005       .32B .32A
+  26 inp628b  1913 2005       .33B .36 
+  27 inp55a   1851 2005  .53  .62  .71 
+  28 inp55aa  1851 2005  .46  .39  .56 
+  29 inp51b   1836 2000  .23B .54  .56 
+  30 inp51a   1836 2005  .32A .24B .35B
+  31 inp618b  1887 2005  .35  .27A .54 
+  32 inp84b   1882 2005  .34  .24A .32A
+ Av segment correlation  .41  .46  .52 
+
+ FLAGGED SEGMENTS: bol001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 inp141b  1925 1974     A     .304         0
+  15 inp88b   1925 1974     B     .343         3      .357   .014
+  25 inp628a  1925 1974     B     .322         6      .359   .037
+  25 inp628a  1950 1999     A     .317         0
+  26 inp628b  1925 1974     B     .330         3      .333   .003
+  29 inp51b   1900 1949     B     .234       -10      .334   .100
+  30 inp51a   1900 1949     A     .316         0
+  30 inp51a   1925 1974     B     .237         1      .300   .063  weak at every lag
+  30 inp51a   1950 1999     B     .347        -5      .353   .006
+  31 inp618b  1925 1974     A     .275         0
+  32 inp84b   1925 1974     A     .245         0
+  32 inp84b   1950 1999     A     .320         0
+
+ DESCRIPTIVE STATISTICS: bol001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 inp610a  1925 2005     81      2      0    .740   2.02   6.24  1.305   .294   .602   2.27   .514  -.053   0
+   2 inp610b  1926 2005     80      1      0    .703   2.23   6.54  1.435   .329   .553   2.33   .497  -.038   0
+   3 inp640a  1914 2005     92      2      0    .430   1.50   4.48   .843   .317   .485   2.02   .434   .000   2
+   4 inp01    1909 2005     97      2      0    .553   2.22   6.83  1.382   .488   .493   2.34   .430   .074   0
+   5 inp620a  1884 2005    122      3      0    .471   1.61   4.01   .872   .553   .385   2.63   .423  -.000   1
+   6 inp587a  1927 2005     79      1      0    .600   2.34   7.84  1.564   .488   .527   2.29   .484  -.020   1
+   7 inp587b  1927 2005     79      1      0    .618   2.15   7.17  1.441   .512   .506   2.41   .491  -.029   1
+   8 inp640d  1911 2005     95      2      0    .418   1.89   6.83  1.280   .455   .454   2.80   .469   .004   1
+   9 inp141a  1941 2005     65      1      0    .512   1.67   4.94   .874   .675   .341   1.92   .334   .011   1
+  10 inp141b  1916 2005     90      2      1    .385   2.11   5.44   .967   .478   .352   2.06   .353  -.005   1
+  11 inp213f  1974 2005     32      0      0    .468   1.96   8.83  1.607   .599   .318   2.65   .421  -.004   1
+  12 inp213a  1923 2005     83      2      0    .383   2.06   6.04  1.228   .566   .391   2.75   .415   .026   1
+  13 inp04a   1874 2005    132      3      0    .349   1.34   6.56   .856   .546   .373   3.03   .438   .018   1
+  14 inp569a  1912 2005     94      2      0    .367   1.48   4.30   .891   .682   .442   2.15   .391   .000   1
+  15 inp88b   1912 2005     94      2      1    .462   2.01   5.00  1.104   .535   .408   1.83   .375  -.003   1
+  16 inp130a  1901 2005    105      2      0    .605   1.73   5.21  1.065   .413   .478   2.23   .454   .122   0
+  17 inp130b  1905 2005    100                         1.78   5.24   .969   .333   .471                         
+  18 inp551a  1909 2005     97      2      0    .466   1.74   6.93  1.204   .473   .496   2.33   .475  -.006   1
+  19 inp21a   1911 2005     95      2      0    .529   1.84   4.83  1.026   .569   .371   2.45   .392   .037   2
+  20 inp769b  1894 2005    112      3      0    .479   1.89   7.72  1.623   .713   .456   2.85   .514  -.010   3
+  21 inp769bb 1894 2005    112      3      0    .437   1.84   7.68  1.612   .684   .458   2.92   .512   .019   3
+  22 inp164b  1919 2005     87      2      0    .470   2.02   6.84  1.421   .521   .464   2.82   .469  -.001   2
+  23 inp29a   1863 2005    143      3      0    .435   1.14   3.63   .655   .582   .371   5.52   .549   .190   1
+  24 inp20b   1909 2005     97      2      0    .468   1.84   7.08  1.285   .782   .375   2.32   .366   .041   1
+  25 inp628a  1913 2005     93      2      2    .386   1.82   6.81  1.563   .776   .422   2.47   .420   .026   1
+  26 inp628b  1913 2005     93      2      1    .347   1.67   6.31  1.432   .714   .399   2.20   .401   .005   2
+  27 inp55a   1851 2005    155      3      0    .662   1.69   8.63  1.292   .632   .434   2.62   .418   .014   1
+  28 inp55aa  1851 2005    155      3      0    .550   1.72   7.63  1.325   .652   .410   2.26   .412   .019   1
+  29 inp51b   1836 2000    165      3      1    .288   1.74   5.61  1.026   .547   .358   2.29   .367  -.016   1
+  30 inp51a   1836 2005    170      3      3    .355   1.48   7.49   .932   .566   .366   2.41   .399  -.021   1
+  31 inp618b  1887 2005    119      3      1    .423   1.35   9.00  1.342   .577   .505   2.85   .547  -.004   2
+  32 inp84b   1882 2005    124      3      2    .386   1.43   4.57   .866   .476   .479   2.69   .498  -.020   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3337     67     12    .468   1.75   9.00  1.169   .553   .433   5.52   .441   .015
+
+ DATA CHECKS (rwl.check): bol001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bol001.rwl
+ 32 series, 3337 measurements, 1836-2005, 0.001 mm precision
+ 0 error(s), 1 warning(s), 14 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     inp130b: no measurement for 1906, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file bol001.rwl, MD5 46635b581fb99fdfe2c01f33c7be6d8c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series inp130b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

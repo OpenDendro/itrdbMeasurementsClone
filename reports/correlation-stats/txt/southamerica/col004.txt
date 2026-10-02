@@ -1,0 +1,163 @@
+
+ COFECHA-style crossdating report: col004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : col004.rwl
+      MD5 of measurement file: fe241110cbbe069e17644622c4ff1232
+      Date checked           : 01OCT26
+      Beginning year         : 1828
+      Ending year            : 2009
+      Principal investigators: del Valle, J.I.; Moreno, M.; Giraldo, J.
+      Site name              : Domingodó (Biogeographical Chocó)
+      Species information    : CAPY Cariniana pyriformis Miers
+      Latitude               : 7.1659 N
+      Longitude              : 77.1839 W
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.474
+      Avg mean sensitivity   : 0.366
+      Avg standard deviation : 1.083
+      Avg autocorrelation    : 0.523
+      Number dated series    : 32
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 4, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 8.43
+
+
+ CORRELATION OF SERIES BY SEGMENTS: col004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 CAR15A   1900 2009  .62  .63  .58 
+   2 CAR15B   1900 2009       .66  .68 
+   3 CAR15C   1900 2009       .59  .65 
+   4 CAR14A   1900 2009       .57  .52 
+   5 CAR14B   1900 2009       .45  .52 
+   6 CAR14C   1900 2009       .40  .45 
+   7 CAR20A   1926 2009            .50 
+   8 CAR20B   1926 2009            .46 
+   9 CAR20C   1926 2009            .30A
+  10 CAR22A   1874 2009  .55  .52  .57 
+  11 CAR22B   1874 2009  .62  .56  .47 
+  12 CAR22C   1874 2009  .45  .45  .53 
+  13 CAR19A   1877 2009  .54  .60  .65 
+  14 CAR19B   1877 2009  .47  .44  .58 
+  15 CAR19C   1877 2009  .59  .50  .58 
+  16 CAR24A   1854 2009  .47  .63  .64 
+  17 CAR24B   1854 2009  .43  .42  .42 
+  18 CAR09A   1867 2009  .58  .57  .54 
+  19 CAR09B   1867 2009  .45  .56  .54 
+  20 CAR09C   1867 2009  .46  .45  .24B
+  21 CAR10A   1910 2009       .41  .60 
+  22 CAR10B   1910 2009       .65  .52 
+  23 CAR21A   1862 2009  .62  .59  .66 
+  24 CAR21B   1862 2009  .54  .48  .43 
+  25 CAR21C   1862 2009  .48  .45  .48 
+  26 CAR25A   1853 2009  .44  .46  .54 
+  27 CAR25B   1853 2009  .39  .30A .48 
+  28 CAR25C   1853 2009  .52  .48  .60 
+  29 CAR11A   1828 2009  .47  .20A .12B
+  30 CAR11B   1828 2009  .45  .33  .26B
+  31 CAR17C   1885 2009  .34  .47  .48 
+  32 CARCHC   1891 2008  .33A .55  .39 
+ Av segment correlation  .49  .50  .50 
+
+ FLAGGED SEGMENTS: col004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 CAR20C   1950 1999     A     .295         0
+  20 CAR09C   1950 1999     B     .245         6      .248   .003  weak at every lag
+  27 CAR25B   1925 1974     A     .300         0
+  29 CAR11A   1925 1974     A     .197         0
+  29 CAR11A   1950 1999     B     .124        -6      .242   .118  weak at every lag
+  30 CAR11B   1950 1999     B     .256        -4      .311   .055  weak at every lag
+  32 CARCHC   1900 1949     A     .328         0
+
+ DESCRIPTIVE STATISTICS: col004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CAR15A   1900 2009    110      3      0    .601   2.13   5.96  1.154   .580   .414   2.27   .406   .134   0
+   2 CAR15B   1900 2009    110      2      0    .564   2.04   5.09  1.058   .483   .408   2.65   .414  -.009   1
+   3 CAR15C   1900 2009    110      2      0    .592   1.64   4.49   .857   .422   .459   3.08   .416   .004   3
+   4 CAR14A   1900 2009    110      2      0    .478   3.87  14.61  2.493   .683   .302   2.05   .332   .007   3
+   5 CAR14B   1900 2009    110      2      0    .442   2.78  12.90  2.034   .603   .337   2.63   .402   .010   1
+   6 CAR14C   1900 2009    110      2      0    .485   2.55  10.63  1.864   .515   .391   2.21   .417   .012   1
+   7 CAR20A   1926 2009     84      1      0    .484   2.26   5.81  1.565   .649   .397   1.93   .335  -.131   0
+   8 CAR20B   1926 2009     84      1      0    .333   2.18   6.04  1.271   .620   .349   1.75   .312   .018   0
+   9 CAR20C   1926 2009     84      1      1    .253   2.46   5.76  1.283   .603   .327   1.72   .321   .056   1
+  10 CAR22A   1874 2009    136      3      0    .536   1.81   6.61  1.292   .787   .360   2.19   .356  -.016   1
+  11 CAR22B   1874 2009    136      3      0    .525   1.69   6.96  1.339   .705   .420   2.39   .408  -.002   3
+  12 CAR22C   1874 2009    136      3      0    .478   1.71   4.83  1.102   .700   .375   2.23   .374  -.011   1
+  13 CAR19A   1877 2009    133      3      0    .559   1.54   3.81   .769   .375   .396   2.02   .365   .012   0
+  14 CAR19B   1877 2009    133      3      0    .523   1.85   6.62  1.025   .400   .421   2.06   .378  -.019   0
+  15 CAR19C   1877 2009    133      3      0    .561   1.86   4.97   .949   .442   .391   1.92   .355  -.003   0
+  16 CAR24A   1854 2009    156      3      0    .501   1.20   3.23   .556   .481   .331   2.34   .326   .106   0
+  17 CAR24B   1854 2009    156      3      0    .447   1.39   3.87   .591   .418   .318   2.22   .322   .083   0
+  18 CAR09A   1867 2009    143      3      0    .533   2.07   5.44  1.086   .589   .328   2.11   .328   .004   1
+  19 CAR09B   1867 2009    143      3      0    .353   1.93   6.07  1.026   .524   .345   2.24   .356  -.002   1
+  20 CAR09C   1867 2009    143      3      1    .378   1.88   5.31  1.079   .537   .341   2.70   .388   .101   0
+  21 CAR10A   1910 2009    100      2      0    .411   1.65   5.80  1.105   .713   .351   2.03   .360  -.030   1
+  22 CAR10B   1910 2009    100      2      0    .502   1.98   5.96  1.247   .605   .380   2.33   .398  -.031   1
+  23 CAR21A   1862 2009    148      3      0    .644   1.81   4.52   .759   .132   .404   2.08   .370  -.024   0
+  24 CAR21B   1862 2009    148      3      0    .531   2.40   5.90  1.183   .483   .331   2.48   .350  -.022   3
+  25 CAR21C   1862 2009    148      3      0    .493   1.78   4.97  1.003   .586   .364   2.61   .354  -.043   3
+  26 CAR25A   1853 2009    157      3      0    .471   1.48   4.35   .683   .350   .344   2.81   .374  -.043   0
+  27 CAR25B   1853 2009    157      3      1    .447   1.57   3.77   .721   .439   .361   1.87   .345   .104   0
+  28 CAR25C   1853 2009    157      3      0    .460   1.66   4.15   .812   .596   .345   2.29   .323  -.057   0
+  29 CAR11A   1828 2009    182      3      2    .386   1.74   6.07  1.029   .581   .362   2.53   .372   .091   0
+  30 CAR11B   1828 2009    182      3      1    .390   2.30   7.13  1.304   .595   .372   2.20   .351  -.037   3
+  31 CAR17C   1885 2009    125      3      0    .417   1.50   4.65   .707   .414   .355   2.14   .370   .001   1
+  32 CARCHC   1891 2008    118      3      1    .332   2.04   5.01   .874   .327   .372   1.86   .356   .064   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4182     83      7    .474   1.92  14.61  1.083   .523   .366   3.08   .363   .012
+
+ DATA CHECKS (rwl.check): col004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/col004.rwl
+ 32 series, 4182 measurements, 1828-2009, 0.01 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 925 carriage return(s) against 464 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file col004.rwl, MD5 fe241110cbbe069e17644622c4ff1232.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

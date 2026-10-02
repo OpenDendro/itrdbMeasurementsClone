@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: spai066
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai066.rwl
+      MD5 of measurement file: 5428e6bbb233df7050f847688ff2015f
+      Date checked           : 01OCT26
+      Beginning year         : 1958
+      Ending year            : 2007
+      Principal investigators: Alla, A.; Camarero, J.J.
+      Site name              : Nueno
+      Species information    : QUFG Quercus faginea Lam.
+      Latitude               : 42.2500 N
+      Longitude              : 0.4167 W
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.644
+      Avg mean sensitivity   : 0.297
+      Avg standard deviation : 0.767
+      Avg autocorrelation    : 0.548
+      Number dated series    : 16
+      Segment length tested  : 24
+
+      Number problem segments: 6  (A 2, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 20.69
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai066
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  24-year dated segments, lagged  12 years
+ Flags:  A = correlation under   .4716 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1972 1984 
+                        1983 1995 2007 
+ --- -------- ---------  ---- ---- ---- 
+   2 NF01SWXX 1972 2007       .32B .64 
+   3 NF05NWXX 1966 2007       .01B .44A
+   4 NF05SEXX 1966 2007       .50  .64 
+   6 NF06SSXX 1973 2007            .73 
+   7 NF07NNXX 1958 2007  .51  .75  .81 
+   8 NF07SSXX 1958 2007  .57  .51B .74 
+   9 NF09NNXX 1964 2007       .86  .86 
+  10 NF09SSXX 1964 2007       .75  .83 
+  11 NF12NNXX 1970 2007       .67  .73 
+  12 NF12SSXX 1965 2007       .75  .75 
+  13 NF15NNXX 1968 2007       .26B .64 
+  14 NF15SSXX 1968 2007       .35A .71 
+  15 NF19NNXX 1965 2007       .65  .61 
+  16 NF19SSXX 1965 2007       .63  .70 
+ Av segment correlation  .54  .54  .70 
+
+ FLAGGED SEGMENTS: spai066
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 NF01SWXX 1972 1995     B     .323        -5      .343   .020  weak at every lag
+   3 NF05NWXX 1972 1995     B     .010        -8      .540   .530
+   3 NF05NWXX 1984 2007     A     .437         0
+   8 NF07SSXX 1972 1995     B     .508         9      .762   .254
+  13 NF15NNXX 1972 1995     B     .255         4      .505   .250
+  14 NF15SSXX 1972 1995     A     .353         0
+
+ DESCRIPTIVE STATISTICS: spai066
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NF01NEXX 1972 2003     32      0      0    .530   2.00   3.26   .643   .547   .256   1.42   .241  -.015   1
+   2 NF01SWXX 1972 2007     36      2      1    .551   1.85   5.73   .947   .443   .266   1.86   .313   .240   0
+   3 NF05NWXX 1966 2007     42      2      2    .368   1.25   6.20  1.209   .820   .277   2.00   .322   .054   2
+   4 NF05SEXX 1966 2007     42      2      0    .545   2.69  10.68  2.193   .789   .291   2.25   .341   .049   2
+   5 NF06NNXX 1973 2006     34      0      0    .772   1.07   2.21   .457   .613   .325   1.83   .307   .113   0
+   6 NF06SSXX 1973 2007     35      1      0    .693    .87   2.35   .517   .749   .347   1.82   .349   .145   0
+   7 NF07NNXX 1958 2007     50      3      0    .669    .92   2.45   .577   .762   .317   1.97   .320   .007   1
+   8 NF07SSXX 1958 2007     50      3      1    .677    .84   3.51   .672   .600   .342   3.55   .496   .025   1
+   9 NF09NNXX 1964 2007     44      2      0    .752   1.28   2.79   .469   .348   .279   1.99   .301   .146   0
+  10 NF09SSXX 1964 2007     44      2      0    .741   1.82   3.66   .797   .543   .286   2.36   .328   .117   0
+  11 NF12NNXX 1970 2007     38      2      0    .718   1.71   3.18   .478   .506   .202   1.48   .199   .125   2
+  12 NF12SSXX 1965 2007     43      2      0    .747   1.57   3.28   .611   .617   .245   1.60   .257   .105   1
+  13 NF15NNXX 1968 2007     40      2      1    .523   1.60   3.40   .592   .653   .232   1.55   .232   .037   1
+  14 NF15SSXX 1968 2007     40      2      1    .667   1.88   4.00   .654   .383   .266   1.85   .282   .193   0
+  15 NF19NNXX 1965 2007     43      2      0    .634   1.52   3.29   .651   .257   .365   1.96   .363   .134   0
+  16 NF19SSXX 1965 2007     43      2      0    .687   1.47   4.20   .731   .133   .430   2.47   .445   .070   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            656     29      6    .644   1.51  10.68   .767   .548   .297   3.55   .323   .094
+
+ DATA CHECKS (rwl.check): spai066
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai066.rwl
+ 16 series, 656 measurements, 1958-2007, 0.01 mm precision
+ 0 error(s), 0 warning(s), 14 note(s)
+ -------------
+ Nothing to report at this severity.
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file spai066.rwl, MD5 5428e6bbb233df7050f847688ff2015f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4716 for 24-year segments.
+ Segments: 24 years, lagged 12, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 24 years: the record is only 50 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.
