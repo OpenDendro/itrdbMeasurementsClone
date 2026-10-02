@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: che472
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che472.rwl
+      MD5 of measurement file: 9d07c493ec1d03127fdaaf57a373d643
+      Date checked           : 01OCT26
+      Beginning year         : 1787
+      Ending year            : 2023
+      Principal investigators: Ferrari, M.; Nötzli, M.; Bigler, C.
+      Site name              : Camana, Val Bregaglia
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.3377 N
+      Longitude              : 9.5946 E
+      Elevation              : 1209 m
+
+      Series intercorrelation: 0.571
+      Avg mean sensitivity   : 0.201
+      Avg standard deviation : 0.417
+      Avg autocorrelation    : 0.804
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 2.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che472
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 CA01FA   1807 2023       .60  .72  .73  .60  .41  .46 
+   2 CA02FA   1787 2023  .27B .38  .51  .55  .63  .50  .61 
+   3 CA04FA   1802 2023       .43  .48  .57  .61  .63  .60 
+   4 CA05FA   1828 2023            .55  .71  .69  .64  .69 
+   5 CA06FA   1836 2023            .61  .73  .73  .51  .69 
+   6 CA07FA   1788 2023  .35B .49  .57  .63  .52  .46  .47 
+   7 CA08FA   1802 2023       .66  .84  .70  .52  .49  .63 
+   8 CA10FA   1846 2023            .70  .74  .71  .75  .82 
+   9 CA11FA   1869 2023                 .83  .72  .60  .74 
+  10 CA12FA   1837 2023            .61  .66  .49  .40  .72 
+  11 CA13FA   1912 2023                           .39  .59 
+  12 CA16FA   1815 2023       .61  .66  .70  .67  .43  .45 
+  13 CA17FB   1791 2023  .54  .72  .72  .74  .73  .69  .79 
+  14 CA18FA   1805 2023       .57  .63  .68  .61  .45  .62 
+  15 CA19FA   1812 2023       .40  .71  .76  .71  .73  .65 
+ Av segment correlation  .39  .54  .64  .69  .64  .54  .64 
+
+ FLAGGED SEGMENTS: che472
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 CA02FA   1800 1849     B     .271        -2      .281   .010  weak at every lag
+   6 CA07FA   1800 1849     B     .353        -2      .380   .027
+
+ DESCRIPTIVE STATISTICS: che472
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CA01FA   1807 2023    217      6      0    .413    .72   2.05   .502   .919   .205   2.47   .248  -.014   1
+   2 CA02FA   1787 2023    237      7      1    .440    .48   1.82   .209   .826   .175   1.82   .185  -.004   3
+   3 CA04FA   1802 2023    222      6      0    .552    .80   2.91   .433   .867   .223   1.60   .228   .012   1
+   4 CA05FA   1828 2023    196      5      0    .603   1.14   2.71   .365   .611   .229   1.63   .227  -.017   1
+   5 CA06FA   1836 2023    188      5      0    .651   1.50   3.11   .651   .770   .245   1.78   .239   .000   1
+   6 CA07FA   1788 2023    236      7      1    .470   1.02   2.64   .395   .773   .217   1.73   .228  -.021   3
+   7 CA08FA   1802 2023    222      6      0    .591    .57   2.27   .373   .901   .211   1.56   .217  -.012   3
+   8 CA10FA   1846 2023    178      5      0    .769    .66   1.24   .187   .584   .203   1.44   .203   .019   1
+   9 CA11FA   1869 2023    155      4      0    .749   1.10   3.01   .411   .831   .172   1.49   .174   .051   1
+  10 CA12FA   1837 2023    187      5      0    .546   1.12   2.25   .301   .771   .141   1.52   .148  -.010   2
+  11 CA13FA   1912 2023    112      2      0    .552   1.31   4.06   .755   .919   .175   1.56   .187  -.002   1
+  12 CA16FA   1815 2023    209      6      0    .512    .71   2.31   .316   .828   .196   1.99   .207  -.014   3
+  13 CA17FB   1791 2023    233      7      0    .645    .99   3.14   .430   .821   .200   1.54   .211   .031   1
+  14 CA18FA   1805 2023    219      6      0    .549   1.32   3.34   .625   .838   .201   1.70   .211   .018   3
+  15 CA19FA   1812 2023    212      6      0    .621    .97   2.99   .442   .799   .199   1.75   .210  -.032   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3023     83      2    .571    .94   4.06   .417   .804   .201   2.47   .210  -.001
+
+ DATA CHECKS (rwl.check): che472
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che472.rwl
+ 15 series, 3023 measurements, 1787-2023, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file che472.rwl, MD5 9d07c493ec1d03127fdaaf57a373d643.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

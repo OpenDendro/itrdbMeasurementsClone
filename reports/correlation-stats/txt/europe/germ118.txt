@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: germ118
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ118.rwl
+      MD5 of measurement file: 21d944b60e06f01cb17445e1c95bbd96
+      Date checked           : 01OCT26
+      Beginning year         : 1456
+      Ending year            : 1538
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Theresienplatz 40-2 Straubing Historical Timbers
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 48.8833 N
+      Longitude              : 12.5667 E
+      Elevation              : 326 m
+
+      Series intercorrelation: 0.544
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 1.086
+      Avg autocorrelation    : 0.783
+      Number dated series    : 7
+      Segment length tested  : 40
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ118
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  40-year dated segments, lagged  20 years
+ Flags:  A = correlation under   .3665 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1460 1480 
+                        1499 1519 
+ --- -------- ---------  ---- ---- 
+   3 SGG06    1473 1538       .75 
+   5 SGG17    1456 1531       .54 
+   7 SGG27    1480 1533       .48 
+ Av segment correlation       .59 
+
+ FLAGGED SEGMENTS: germ118
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ118
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SGG04    1473 1503     31      0      0    .245   3.91   5.99  1.075   .640   .203   1.28   .164  -.072   3
+   2 SGG05    1479 1515     37      0      0    .657   3.61   6.90  1.758   .907   .228   1.47   .199  -.040   3
+   3 SGG06    1473 1538     66      1      0    .663   1.88   5.20  1.031   .899   .222   1.49   .214  -.025   1
+   4 SGG15    1482 1537     56      0      0    .682   2.09   4.17   .997   .853   .216   1.28   .193  -.012   1
+   5 SGG17    1456 1531     76      1      0    .512   2.45   3.71   .627   .693   .159   1.36   .156   .042   1
+   6 SGG26    1493 1535     43      0      0    .533   2.63   5.74  1.465   .884   .227   1.40   .218   .061   2
+   7 SGG27    1480 1533     54      1      0    .404   3.10   5.43  1.136   .610   .268   1.68   .245   .145   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            363      3      0    .544   2.65   6.90  1.086   .783   .214   1.68   .198   .021
+
+ DATA CHECKS (rwl.check): germ118
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ118.rwl
+ 7 series, 363 measurements, 1456-1538, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file germ118.rwl, MD5 21d944b60e06f01cb17445e1c95bbd96.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3665 for 40-year segments.
+ Segments: 40 years, lagged 20, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 40 years: the record is only 83 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

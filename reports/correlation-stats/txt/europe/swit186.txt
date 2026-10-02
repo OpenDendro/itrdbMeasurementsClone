@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: swit186
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit186.rwl
+      MD5 of measurement file: 04fba874fbae11b12732f1f0d91e8068
+      Date checked           : 01OCT26
+      Beginning year         : 1736
+      Ending year            : 2007
+      Principal investigators: Bigler, C.; Bircher, N.; Meile, C.
+      Site name              : Bergün GR Val Tuors
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.6300 N
+      Longitude              : 9.7800 E
+      Elevation              : 2065 m
+
+      Series intercorrelation: 0.452
+      Avg mean sensitivity   : 0.167
+      Avg standard deviation : 0.353
+      Avg autocorrelation    : 0.852
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 4, B 6; 2 of the B weak at every lag)
+      Pct problem segments   : 15.38
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit186
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BTK22    1844 2007            .34  .32A .32B .38  .45 
+   2 BTK24    1825 2007            .57  .49  .38  .30A .47 
+   3 BTK25    1770 2007  .36  .41  .48  .66  .58  .49  .65 
+   4 BTK26    1736 2007  .42  .47  .55  .51  .49  .42  .64 
+   5 BTK31    1886 2006                      .33B .51  .46 
+   6 BTK33    1925 2007                                .32A
+   7 BTK34    1755 2007  .33B .25B .49  .62  .57  .42  .45 
+   8 BTK35    1815 2007       .69  .57  .39  .38  .32B .37 
+   9 BTK36    1875 2007                      .43  .49  .59 
+  10 BTK37    1775 2007  .59  .65  .43  .42  .55  .53  .59 
+  11 BTK38    1772 2007  .44  .34  .32A .37  .43  .43  .51 
+  12 BTK39    1738 2007  .48  .35  .43  .44  .28B .48  .52 
+ Av segment correlation  .44  .45  .46  .47  .43  .43  .50 
+
+ FLAGGED SEGMENTS: swit186
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BTK22    1875 1924     A     .319         0
+   1 BTK22    1900 1949     B     .324         8      .429   .106
+   2 BTK24    1925 1974     A     .305         0
+   5 BTK31    1900 1949     B     .332         5      .368   .036
+   6 BTK33    1950 1999     A     .324         0
+   7 BTK34    1800 1849     B     .325        -6      .361   .036
+   7 BTK34    1825 1874     B     .254        -6      .261   .007  weak at every lag
+   8 BTK35    1925 1974     B     .316        -3      .366   .050
+  11 BTK38    1850 1899     A     .319         0
+  12 BTK39    1900 1949     B     .277        -4      .283   .006  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit186
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BTK22    1844 2007    164      5      2    .336   1.24   2.22   .394   .846   .135   1.44   .140  -.001   1
+   2 BTK24    1825 2007    183      5      1    .476    .36    .61   .097   .684   .169   1.47   .160   .004   1
+   3 BTK25    1770 2007    238      7      0    .505    .69   1.08   .128   .543   .135   1.44   .137   .020   3
+   4 BTK26    1736 2007    272      7      0    .483    .63   2.32   .395   .924   .163   1.69   .185   .004   1
+   5 BTK31    1886 2006    121      3      1    .307    .61   2.38   .598   .952   .252   1.95   .280   .058   1
+   6 BTK33    1925 2007     83      1      1    .371   2.32   6.72   .999   .832   .150   1.74   .177   .063   1
+   7 BTK34    1755 2007    253      7      2    .483    .61   1.98   .329   .933   .151   1.42   .153  -.001   2
+   8 BTK35    1815 2007    193      6      1    .481    .42   3.59   .555   .926   .200   1.73   .228   .007   3
+   9 BTK36    1875 2007    133      3      0    .500   1.07   2.47   .445   .864   .173   1.48   .178   .034   1
+  10 BTK37    1775 2007    233      7      0    .499    .47   1.96   .311   .884   .196   1.67   .200   .012   3
+  11 BTK38    1772 2007    236      7      1    .430    .31    .93   .127   .849   .178   1.51   .192   .011   1
+  12 BTK39    1738 2007    270      7      1    .426    .53   3.17   .420   .970   .139   1.41   .147   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2379     65     10    .452    .66   6.72   .353   .852   .167   1.95   .177   .013
+
+ DATA CHECKS (rwl.check): swit186
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit186.rwl
+ 12 series, 2379 measurements, 1736-2007, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit186.rwl, MD5 04fba874fbae11b12732f1f0d91e8068.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

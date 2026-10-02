@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: brit11
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit11.rwl
+      MD5 of measurement file: 96cd4f02c38c83120eca569735d624f1
+      Date checked           : 01OCT26
+      Beginning year         : 1708
+      Ending year            : 1972
+      Principal investigators: Morgan, R.
+      Site name              : Castle Howard
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 54.1200 N
+      Longitude              : 0.9200 W
+      Elevation              : 213 m
+
+      Series intercorrelation: 0.419
+      Avg mean sensitivity   : 0.211
+      Avg standard deviation : 0.639
+      Avg autocorrelation    : 0.707
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 1, B 8; 1 of the B weak at every lag)
+      Pct problem segments   : 22.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 
+                        1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 CHO011   1829 1972            .71  .71  .66 
+   2 CHO031   1796 1972  .35  .67  .52  .36B .47 
+   3 CHO041   1776 1972  .52  .62  .57  .52  .51 
+   4 CHO051   1760 1972  .54  .59  .62  .67  .76 
+   5 CHO061   1734 1972  .12B .15B .26A .43  .56 
+   6 CHO071   1769 1972  .36  .56  .72  .64  .67 
+   7 CHO081   1774 1972 -.00B .07B-.02B .12B .49 
+   8 CHO091   1708 1972  .42  .46  .55  .42  .42 
+   9 HOWSHA   1865 1970                 .67  .42B
+ Av segment correlation  .33  .45  .49  .50  .55 
+
+ FLAGGED SEGMENTS: brit11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 CHO031   1875 1924     B     .363         7      .416   .053
+   5 CHO061   1800 1849     B     .116        -1      .360   .244
+   5 CHO061   1825 1874     B     .150         3      .222   .072  weak at every lag
+   5 CHO061   1850 1899     A     .261         0
+   7 CHO081   1800 1849     B    -.002        -2      .440   .442
+   7 CHO081   1825 1874     B     .072        -2      .489   .417
+   7 CHO081   1850 1899     B    -.022        -2      .489   .510
+   7 CHO081   1875 1924     B     .119        -8      .349   .229
+   9 HOWSHA   1900 1949     B     .421        -8      .494   .073
+
+ DESCRIPTIVE STATISTICS: brit11
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CHO011   1829 1972    144      3      0    .688   2.29   4.50   .706   .629   .195   1.80   .208   .024   1
+   2 CHO031   1796 1972    177      5      1    .450   1.94   6.00  1.344   .873   .208   1.75   .238  -.013   2
+   3 CHO041   1776 1972    197      5      0    .514   1.53   3.60   .465   .590   .205   1.72   .196   .008   1
+   4 CHO051   1760 1972    213      5      0    .590   1.48   6.50   .695   .735   .222   1.76   .218  -.004   3
+   5 CHO061   1734 1972    239      5      3    .223   1.40   3.50   .495   .594   .232   1.91   .254  -.021   3
+   6 CHO071   1769 1972    204      5      0    .596   1.57   3.50   .637   .721   .223   1.66   .223  -.020   3
+   7 CHO081   1774 1972    199      5      4    .153   1.02   2.00   .336   .813   .166   1.61   .172   .006   1
+   8 CHO091   1708 1972    265      5      0    .256   1.24   3.50   .454   .693   .216   1.76   .217  -.017   3
+   9 HOWSHA   1865 1970    106      2      1    .485   2.13   5.10   .945   .766   .232   1.51   .208   .030   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1744     40      9    .419   1.55   6.50   .639   .707   .211   1.91   .216  -.004
+
+ DATA CHECKS (rwl.check): brit11
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit11.rwl
+ 9 series, 1744 measurements, 1708-1972, 0.1 mm precision
+ 0 error(s), 3 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1708-1973 but the measurements cover 1708-1972
+   RWL_REPEATED_VALUE (1)
+     CHO031: 0.5 repeated in 6 consecutive rings, 1910-1915; a constant stretch is a placeholder, not a measurement
+   RWL_SITE_CODE (1)
+     HOWSHA: site code differs from the cho used by 8 of 9 series
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file brit11.rwl, MD5 96cd4f02c38c83120eca569735d624f1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: che439
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che439.rwl
+      MD5 of measurement file: 6ef25bb5746712bea5e5b1501f2a6935
+      Date checked           : 01OCT26
+      Beginning year         : 1924
+      Ending year            : 2013
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Bois de Chênes
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.4356 N
+      Longitude              : 6.2389 E
+      Elevation              : 530 m
+
+      Series intercorrelation: 0.427
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 1.378
+      Avg autocorrelation    : 0.813
+      Number dated series    : 6
+      Segment length tested  : 44
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 66.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che439
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  44-year dated segments, lagged  22 years
+ Flags:  A = correlation under   .3496 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1993 
+ --- -------- ---------  ---- 
+   3 41473    1931 2013  .35A
+   4 41477    1924 2013  .33A
+   5 41478    1932 2013  .42 
+ Av segment correlation  .37 
+
+ FLAGGED SEGMENTS: che439
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 41473    1950 1993     A     .349         0
+   4 41477    1950 1993     A     .332         0
+
+ DESCRIPTIVE STATISTICS: che439
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 41471    1951 2013     63      0      0    .457   3.54   7.76  1.917   .829   .272   1.65   .283   .095   1
+   2 41472    1963 2013     51      0      0    .660   3.78   5.93  1.101   .645   .216   1.36   .200  -.033   1
+   3 41473    1931 2013     83      1      1    .370   2.52   6.17  1.382   .871   .248   1.76   .255   .067   1
+   4 41477    1924 2013     90      1      1    .281   2.76   5.19  1.410   .903   .206   1.75   .243   .082   1
+   5 41478    1932 2013     82      1      0    .399   2.55   5.97  1.329   .790   .287   1.92   .277  -.008   3
+   6 41479    1957 2013     57      0      0    .537   2.62   5.82  1.045   .753   .239   1.58   .249  -.009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            426      3      2    .427   2.89   7.76  1.378   .813   .245   1.92   .254   .038
+
+ DATA CHECKS (rwl.check): che439
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che439.rwl
+ 6 series, 426 measurements, 1924-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che439.rwl, MD5 6ef25bb5746712bea5e5b1501f2a6935.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3496 for 44-year segments.
+ Segments: 44 years, lagged 22, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 44 years: the record is only 90 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

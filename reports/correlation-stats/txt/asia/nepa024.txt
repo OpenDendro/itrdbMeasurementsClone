@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: nepa024
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa024.rwl
+      MD5 of measurement file: 27ff240a0dcf9f583dbe7942931e72c7
+      Date checked           : 01OCT26
+      Beginning year         : 1671
+      Ending year            : 1997
+      Principal investigators: Krusic, P.J.; Cook, E.R.
+      Site name              : KatyaKhola-3
+      Species information    : PCSM Picea smithiana (Wall.) Boiss.
+      Latitude               : 29.3000 N
+      Longitude              : 82.0200 E
+      Elevation              : 3480 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.182
+      Avg standard deviation : 0.616
+      Avg autocorrelation    : 0.814
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 4, B 9; 5 of the B weak at every lag)
+      Pct problem segments   : 10.16
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PS03A    1803 1997                           .56  .55  .60  .66  .65 
+   2 PS08B    1831 1997                                .41  .44  .44  .53 
+   3 PS18A    1767 1997                 .67  .65  .64  .66  .52  .52  .56 
+   4 PS16A    1718 1997       .64  .58  .60  .62  .59  .78  .84  .64  .58 
+   5 PS16B    1706 1997       .60  .57  .61  .59  .58  .73  .69  .57  .60 
+   6 PS11A    1717 1997       .30A .49  .49  .59  .62  .59  .54  .63  .77 
+   7 PS11B    1741 1997            .52  .59  .63  .71  .65  .66  .75  .74 
+   8 PS14A    1772 1997                 .57  .55  .43  .45  .52  .47  .52 
+   9 PS05A    1823 1997                           .63  .75  .58  .37B .41 
+  10 PS10A    1787 1997                      .41  .69  .63  .59  .49  .49 
+  11 PS1OB    1820 1997                           .23B .43  .71  .52  .24B
+  12 PS05B    1850 1997                                     .59  .38  .38 
+  13 PS15A    1838 1997                                .59  .60  .54  .53 
+  14 PS15B    1838 1997                                .54  .66  .58  .54 
+  15 PS13A    1789 1997                      .55  .28A .35B .55  .46  .51 
+  16 PS13B    1820 1997                           .16B .48  .51  .37  .43 
+  17 PS07A    1848 1997                                .34  .43  .46  .52 
+  18 PS18B    1671 1995       .44  .47  .62  .53  .51  .60  .66  .70  .69 
+  19 PS14B    1744 1997            .40B .31A .26A .34  .65  .75  .60  .52 
+  20 PS17A    1823 1997                           .75  .50  .62  .61  .37B
+  21 PS17B    1780 1997                      .25B .18B .58  .66  .67  .53 
+ Av segment correlation       .50  .51  .56  .51  .50  .56  .61  .54  .53 
+
+ FLAGGED SEGMENTS: nepa024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 PS11A    1725 1774     A     .296         0
+   9 PS05A    1900 1949     B     .365         3      .371   .006
+  11 PS1OB    1825 1874     B     .234        -6      .244   .010  weak at every lag
+  11 PS1OB    1925 1974     B     .239        -6      .255   .016  weak at every lag
+  15 PS13A    1825 1874     A     .285         0
+  15 PS13A    1850 1899     B     .351         8      .367   .016
+  16 PS13B    1825 1874     B     .163         6      .302   .139  weak at every lag
+  19 PS14B    1750 1799     B     .397        -5      .421   .024
+  19 PS14B    1775 1824     A     .306         0
+  19 PS14B    1800 1849     A     .265         0
+  20 PS17A    1925 1974     B     .374        -3      .488   .114
+  21 PS17B    1800 1849     B     .246        -6      .267   .021  weak at every lag
+  21 PS17B    1825 1874     B     .183         6      .231   .049  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nepa024
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PS03A    1803 1997    195      5      0    .570   2.15   4.34   .718   .813   .163   1.56   .169  -.012   3
+   2 PS08B    1831 1997    167      4      0    .476   2.11   4.35   .831   .845   .167   1.71   .195   .012   1
+   3 PS18A    1767 1997    231      7      0    .590   1.04   2.18   .289   .712   .155   1.74   .162  -.013   3
+   4 PS16A    1718 1997    280      9      0    .633   1.53   3.92   .493   .791   .163   1.52   .165  -.027   1
+   5 PS16B    1706 1997    292      9      0    .586   1.27   3.22   .363   .720   .171   1.62   .162   .034   2
+   6 PS11A    1717 1997    281      9      1    .523   1.55   3.79   .591   .847   .165   1.68   .166  -.019   1
+   7 PS11B    1741 1997    257      8      0    .623   1.27   2.74   .380   .793   .151   1.49   .155  -.014   1
+   8 PS14A    1772 1997    226      7      0    .500   1.88   3.93   .776   .867   .154   1.40   .157   .018   1
+   9 PS05A    1823 1997    175      5      1    .535   1.69   3.73   .666   .865   .156   1.41   .164  -.025   1
+  10 PS10A    1787 1997    211      6      0    .512   1.26   2.54   .468   .851   .141   1.77   .161   .004   1
+  11 PS1OB    1820 1997    178      5      2    .362   1.82   3.68   .516   .779   .137   1.45   .137   .015   1
+  12 PS05B    1850 1997    148      3      0    .434   1.65   3.30   .600   .847   .160   1.48   .168  -.005   3
+  13 PS15A    1838 1997    160      4      0    .477   1.57   4.07   .595   .729   .224   1.58   .226  -.019   3
+  14 PS15B    1838 1997    160      4      0    .506   1.28   3.82   .641   .862   .186   1.54   .190   .025   1
+  15 PS13A    1789 1997    209      6      2    .462    .68   1.95   .383   .705   .376   2.33   .365   .008   2
+  16 PS13B    1820 1997    178      5      1    .368    .71   2.07   .466   .823   .303   1.84   .293  -.011   1
+  17 PS07A    1848 1997    150      4      0    .383   3.09   7.74  1.096   .774   .174   1.76   .195  -.009   1
+  18 PS18B    1671 1995    325      9      0    .552   1.31   6.18  1.179   .938   .211   1.78   .217   .006   1
+  19 PS14B    1744 1997    254      8      3    .490   1.79   4.08   .808   .892   .153   1.51   .163  -.023   1
+  20 PS17A    1823 1997    175      5      1    .545    .89   1.76   .263   .814   .144   1.44   .154  -.005   1
+  21 PS17B    1780 1997    218      6      2    .429   1.06   6.54   .778   .778   .193   2.05   .228  -.015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4470    128     13    .514   1.47   7.74   .616   .814   .182   2.33   .189  -.004
+
+ DATA CHECKS (rwl.check): nepa024
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa024.rwl
+ 21 series, 4470 measurements, 1671-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file nepa024.rwl, MD5 27ff240a0dcf9f583dbe7942931e72c7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

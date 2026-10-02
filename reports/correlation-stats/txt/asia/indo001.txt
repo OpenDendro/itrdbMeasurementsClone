@@ -1,0 +1,112 @@
+
+ COFECHA-style crossdating report: indo001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indo001.rwl
+      MD5 of measurement file: 3c1d337274bf670d64288015f76716e0
+      Date checked           : 01OCT26
+      Beginning year         : 1841
+      Ending year            : 1995
+      Principal investigators: D'Arrigo, R.D.; Krusic, P.J.; Jacoby, G.C.; Buckley, B.M.
+      Site name              : Bigin
+      Species information    : TEGR Tectona grandis L. f.
+      Latitude               : 7.2500 S
+      Longitude              : 111.8300 E
+      Elevation              : 75 m
+
+      Series intercorrelation: 0.568
+      Avg mean sensitivity   : 0.407
+      Avg standard deviation : 1.544
+      Avg autocorrelation    : 0.626
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indo001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 BIGTG04  1854 1977  .52  .44 
+   3 BIGTG11  1846 1995  .54  .68 
+   4 BIGTG02  1859 1995  .49  .42 
+   5 BIGTG01  1846 1995  .67  .73 
+   6 BIGTG12  1852 1995  .51  .56 
+   7 BIGTG09  1841 1995  .52  .63 
+   9 BIGTG07  1889 1995  .56  .65 
+  10 BIGTG06  1901 1995       .65 
+  11 BIGTG05  1874 1995  .58  .65 
+  12 BIGTT05  1899 1995  .42  .65 
+ Av segment correlation  .53  .60 
+
+ FLAGGED SEGMENTS: indo001
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: indo001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BIGTG04  1854 1977    124      2      0    .499   2.21  10.63  1.829   .630   .421   4.31   .505   .002   1
+   2 BIGTG03  1857 1947     91      0      0    .585   2.93   7.59  1.264   .262   .445   1.99   .372  -.089   0
+   3 BIGTG11  1846 1995    150      2      0    .518   2.43   9.52  1.462   .742   .341   2.16   .339   .003   2
+   4 BIGTG02  1859 1995    137      2      0    .564   3.11   8.05  1.572   .526   .379   2.23   .362  -.002   0
+   5 BIGTG01  1846 1995    150      2      0    .664   2.77   8.60  1.731   .724   .397   2.65   .407   .000   1
+   6 BIGTG12  1852 1995    144      2      0    .504   1.48   5.25   .955   .654   .381   2.67   .378   .030   1
+   7 BIGTG09  1841 1995    155      2      0    .607   2.28   8.00  1.646   .699   .434   2.36   .403  -.007   2
+   8 BIGTG08  1860 1911     52      0      0    .586   2.69   7.80  1.633   .442   .438   2.06   .421   .109   0
+   9 BIGTG07  1889 1995    107      2      0    .558   2.25   5.82  1.209   .626   .399   1.85   .344  -.011   2
+  10 BIGTG06  1901 1995     95      1      0    .481   3.62  11.80  3.052   .821   .359   2.26   .363   .009   1
+  11 BIGTG05  1874 1995    122      2      0    .655   1.89   9.18  1.420   .645   .475   2.89   .468   .003   1
+  12 BIGTT05  1899 1995     97      2      0    .591   1.56   4.99   .952   .500   .463   2.59   .487   .102   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1424     19      0    .568   2.40  11.80  1.544   .626   .407   4.31   .402   .008
+
+ DATA CHECKS (rwl.check): indo001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indo001.rwl
+ 12 series, 1424 measurements, 1841-1995, 0.01 mm precision
+ 0 error(s), 2 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1839-1995 but the measurements cover 1841-1995
+   RWL_SITE_CODE (1)
+     BIGTT05: site code differs from the bigtg used by 11 of 12 series
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file indo001.rwl, MD5 3c1d337274bf670d64288015f76716e0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

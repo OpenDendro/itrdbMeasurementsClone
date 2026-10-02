@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: wi058
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi058.rwl
+      MD5 of measurement file: 709471a808ca55ab60db93b08440d7a9
+      Date checked           : 01OCT26
+      Beginning year         : 1788
+      Ending year            : 2013
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Weir White Oaks
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 42.5770 N
+      Longitude              : 89.9050 W
+      Elevation              : 258 m
+
+      Series intercorrelation: 0.557
+      Avg mean sensitivity   : 0.220
+      Avg standard deviation : 0.819
+      Avg autocorrelation    : 0.659
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 4.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi058
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 WWO001A  1857 2013                 .59  .68  .64  .68 
+   2 WWO001B  1852 2013                 .69  .65  .50  .69 
+   3 WWO002A  1828 2013            .61  .75  .76  .62  .58 
+   4 WWO002B  1826 2013            .72  .73  .74  .66  .68 
+   5 WWO003A  1857 2013                 .72  .70  .65  .30B
+   6 WWO003B  1859 2013                 .75  .69  .50  .38 
+   7 WWO004A  1807 2013       .00B .44  .70  .72  .70  .69 
+   8 WWO004B  1862 2013                 .71  .74  .66  .47 
+   9 WWO005A  1862 2013                 .50  .55  .55  .55 
+  10 WWO005B  1873 2013                 .53  .64  .58  .44 
+  11 WWO006A  1877 2013                      .58  .58  .64 
+  12 WWO006B  1891 2013                      .70  .59  .68 
+  13 WWO007A  1788 2013       .12B .51  .74  .77  .71  .61 
+  14 WWO007B  1887 2013                      .69  .69  .59 
+  15 WWO008A  1918 2013                           .63  .57 
+  16 WWO008B  1917 2013                           .67  .65 
+  17 WWO009A  1896 2013                      .56  .48  .63 
+  18 WWO009B  1912 2013                           .62  .67 
+  19 WWO010A  1851 2013                 .58  .55  .56  .64 
+  20 WWO010B  1882 2013                      .80  .79  .56 
+ Av segment correlation       .06  .57  .67  .68  .62  .59 
+
+ FLAGGED SEGMENTS: wi058
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 WWO003A  1950 1999     B     .303        10      .368   .065
+   7 WWO004A  1825 1874     B     .001        -5      .220   .219  weak at every lag
+  13 WWO007A  1825 1874     B     .116        -9      .163   .048  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wi058
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WWO001A  1857 2013    157      4      0    .643   1.68   3.41   .471   .447   .234   1.73   .230   .002   2
+   2 WWO001B  1852 2013    162      4      0    .644   1.91   5.55   .790   .694   .244   1.78   .239   .039   1
+   3 WWO002A  1828 2013    186      5      0    .530   1.65   3.15   .412   .490   .200   1.43   .184  -.024   3
+   4 WWO002B  1826 2013    188      5      0    .551   1.67   3.22   .484   .624   .191   1.68   .187   .009   1
+   5 WWO003A  1857 2013    157      4      1    .565   1.96   5.17   .815   .646   .240   2.35   .257   .037   1
+   6 WWO003B  1859 2013    155      4      0    .672   1.93   4.59   .791   .668   .232   1.71   .223   .017   1
+   7 WWO004A  1807 2013    207      6      1    .322   1.60   4.49   .795   .734   .268   2.14   .268   .001   1
+   8 WWO004B  1862 2013    152      4      0    .613   2.12   5.33   .883   .686   .229   2.02   .236   .030   1
+   9 WWO005A  1862 2013    152      4      0    .540   2.17   4.53   .787   .743   .192   1.72   .197   .022   1
+  10 WWO005B  1873 2013    141      4      0    .514   2.28   4.26   .686   .672   .190   1.57   .187   .045   1
+  11 WWO006A  1877 2013    137      3      0    .676   2.34   5.25   .779   .761   .173   1.63   .172   .015   1
+  12 WWO006B  1891 2013    123      3      0    .711   2.20   4.83   .607   .474   .211   1.65   .209  -.020   1
+  13 WWO007A  1788 2013    226      6      1    .377   1.43   7.77  1.166   .913   .236   1.77   .240   .035   1
+  14 WWO007B  1887 2013    127      3      0    .417   2.23  12.32  1.396   .616   .239   2.73   .273  -.057   3
+  15 WWO008A  1918 2013     96      2      0    .609   3.40   5.21   .691   .292   .196   1.44   .167  -.013   0
+  16 WWO008B  1917 2013     97      2      0    .648   3.18   5.31   .599   .401   .166   1.35   .151   .082   0
+  17 WWO009A  1896 2013    118      3      0    .562   2.86   6.82  1.213   .797   .200   1.97   .224   .037   1
+  18 WWO009B  1912 2013    102      2      0    .646   2.68   5.61  1.017   .665   .233   1.59   .219   .049   3
+  19 WWO010A  1851 2013    163      4      0    .580   2.04   6.16   .904   .744   .236   2.09   .249  -.017   1
+  20 WWO010B  1882 2013    132      3      0    .582   2.59   7.96  1.229   .791   .240   1.90   .263  -.017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2978     75      3    .557   2.09  12.32   .819   .659   .220   2.73   .222   .013
+
+ DATA CHECKS (rwl.check): wi058
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi058.rwl
+ 20 series, 2978 measurements, 1788-2013, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wi058.rwl, MD5 709471a808ca55ab60db93b08440d7a9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

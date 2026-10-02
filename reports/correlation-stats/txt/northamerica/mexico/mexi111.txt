@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: mexi111
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi111.rwl
+      MD5 of measurement file: 64d809e41748e80597f2860a4d7b7765
+      Date checked           : 01OCT26
+      Beginning year         : 1800
+      Ending year            : 2009
+      Principal investigators: Stahle, D.W.
+      Site name              : Rio Azul
+      Species information    : TAMU Taxodium mucronatum Ten.
+      Latitude               : 15.7610 N
+      Longitude              : 91.8430 W
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.386
+      Avg mean sensitivity   : 0.333
+      Avg standard deviation : 0.961
+      Avg autocorrelation    : 0.645
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 4, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 35.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi111
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 AZU05A   1900 2009                           .40  .18B
+   2 AZU08A   1850 2009                 .44  .45  .33A .32A
+   3 AZU08B   1850 2009                 .36  .31A .14B .20A
+   4 AZU11A   1900 2009                           .33  .34B
+   5 AZU12A   1925 2009                                .60 
+   6 AZU14A   1875 2009                      .37  .25B .52 
+   7 AZU14B   1875 2009                      .62  .44  .42 
+   8 AZU15A   1825 1899            .55                     
+   9 AZU15B   1800 2009       .29B .44  .55  .63  .61  .27B
+  10 AZU15C   1825 1949       .36B .48  .48  .45           
+  11 AZU17D   1925 2009                           .28B .62 
+  12 AZU25A   1900 2009                           .46  .51 
+ Av segment correlation       .32  .49  .46  .47  .36  .40 
+
+ FLAGGED SEGMENTS: mexi111
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 AZU05A   1950 1999     B     .183         4      .287   .105  weak at every lag
+   2 AZU08A   1925 1974     A     .326         0
+   2 AZU08A   1950 1999     A     .315         0
+   3 AZU08B   1900 1949     A     .314         0
+   3 AZU08B   1925 1974     B     .139        -1      .240   .101  weak at every lag
+   3 AZU08B   1950 1999     A     .196         0
+   4 AZU11A   1950 1999     B     .337         3      .415   .078
+   6 AZU14A   1925 1974     B     .252         5      .257   .005  weak at every lag
+   9 AZU15B   1825 1874     B     .290        10      .332   .043
+   9 AZU15B   1950 1999     B     .271        10      .277   .006  weak at every lag
+  10 AZU15C   1825 1874     B     .360       -10      .367   .007
+  11 AZU17D   1925 1974     B     .275        10      .332   .057
+
+ DESCRIPTIVE STATISTICS: mexi111
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AZU05A   1900 2009    110      2      1    .281   1.88   8.77  1.500   .765   .304   2.37   .388  -.021   2
+   2 AZU08A   1850 2009    160      4      2    .389   2.05   6.31  1.153   .700   .315   2.14   .316  -.022   3
+   3 AZU08B   1850 2009    160      4      3    .272   1.78   6.08  1.075   .783   .299   1.89   .309  -.038   3
+   4 AZU11A   1900 2009    110      2      1    .382   1.93   5.04  1.028   .574   .392   2.64   .400  -.014   1
+   5 AZU12A   1925 2009     85      1      0    .422   3.45   9.75  2.035   .459   .427   2.83   .482   .012   1
+   6 AZU14A   1875 2009    135      3      1    .336   1.39   7.03   .749   .636   .260   2.91   .321  -.009   2
+   7 AZU14B   1875 2009    135      3      0    .517   1.93   6.27  1.189   .727   .318   1.89   .322  -.050   3
+   8 AZU15A   1825 1899     75      1      0    .593    .92   1.92   .393   .675   .286   1.55   .256   .027   1
+   9 AZU15B   1800 2009    210      6      2    .410   1.35   7.41   .777   .575   .307   3.01   .343  -.011   1
+  10 AZU15C   1825 1949    125      4      1    .408   1.05   3.08   .527   .627   .330   2.52   .330   .085   0
+  11 AZU17D   1925 2009     85      2      1    .418    .85   2.40   .466   .421   .514   2.10   .450  -.106   0
+  12 AZU25A   1900 2009    110      2      0    .298   1.07   4.26   .669   .680   .362   2.29   .363  -.019   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1500     34     12    .386   1.63   9.75   .961   .645   .333   3.01   .350  -.014
+
+ DATA CHECKS (rwl.check): mexi111
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi111.rwl
+ 12 series, 1500 measurements, 1800-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file mexi111.rwl, MD5 64d809e41748e80597f2860a4d7b7765.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

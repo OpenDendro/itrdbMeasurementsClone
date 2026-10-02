@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: nc035
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc035.rwl
+      MD5 of measurement file: 7752fdb85bac5168b0547c70f376e8ae
+      Date checked           : 01OCT26
+      Beginning year         : 1805
+      Ending year            : 2016
+      Principal investigators: Knapp, P.A.; Maxwell, J.T.; Soulé, P.T.
+      Site name              : Salters Lake
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 34.6947 N
+      Longitude              : 78.5964 W
+      Elevation              : 24 m
+
+      Series intercorrelation: 0.458
+      Avg mean sensitivity   : 0.283
+      Avg standard deviation : 0.788
+      Avg autocorrelation    : 0.773
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 5, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 21.62
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BCL1A    1934 2016            .54 
+   2 BCL3A    1939 2016            .67 
+   3 BLA2B    1881 2016  .22B .17B .39 
+   4 BLA3A    1892 2016  .51  .51  .68 
+   5 BLA3B    1910 2016       .61  .72 
+   6 BLA3C    1897 2016  .49  .50  .72 
+   7 BLA6A    1943 2016            .57 
+   8 SAL2B    1929 2016            .22A
+   9 SAL3B    1931 2016            .62 
+  10 SAL4B    1939 2016            .43 
+  11 SAL5A    1871 2016  .33  .42  .44 
+  12 SAL6B    1894 2016  .37  .41  .50 
+  13 SAL9A    1805 2016  .32A .32A .49 
+  14 SAL11B   1946 2016            .48 
+  15 SAL12B   1850 2016  .21B .44  .59 
+  16 SAL14A   1903 2016       .36  .34 
+  17 SAL15B   1942 2016            .38 
+  19 SAL16C   1825 2016  .30A .32A .56 
+  20 SAL17B   1940 2016            .63 
+ Av segment correlation  .34  .41  .52 
+
+ FLAGGED SEGMENTS: nc035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 BLA2B    1900 1949     B     .221        10      .275   .054  weak at every lag
+   3 BLA2B    1925 1974     B     .172         8      .228   .056  weak at every lag
+   8 SAL2B    1950 1999     A     .221         0
+  13 SAL9A    1900 1949     A     .318         0
+  13 SAL9A    1925 1974     A     .324         0
+  15 SAL12B   1900 1949     B     .206        -6      .315   .109  weak at every lag
+  19 SAL16C   1900 1949     A     .301         0
+  19 SAL16C   1925 1974     A     .322         0
+
+ DESCRIPTIVE STATISTICS: nc035
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BCL1A    1934 2016     83      1      0    .498   1.14   4.42  1.198   .915   .347   1.86   .307   .036   0
+   2 BCL3A    1939 2016     78      1      0    .657   1.46   3.08   .678   .614   .319   1.90   .309   .010   2
+   3 BLA2B    1881 2016    136      3      2    .357   1.60   4.27   .941   .765   .259   1.67   .265  -.004   2
+   4 BLA3A    1892 2016    125      3      0    .583   1.38   4.66   .636   .684   .273   2.02   .274  -.051   3
+   5 BLA3B    1910 2016    107      2      0    .709   1.45   4.37   .709   .685   .292   1.99   .287  -.019   3
+   6 BLA3C    1897 2016    120      3      0    .599   1.51   4.32   .718   .736   .262   1.84   .257   .015   1
+   7 BLA6A    1943 2016     74      1      0    .525   2.26   5.10   .984   .723   .275   1.64   .267   .001   1
+   8 SAL2B    1929 2016     88      1      1    .408   1.30   4.30  1.049   .834   .321   1.87   .322   .018   3
+   9 SAL3B    1931 2016     86      1      0    .601   1.59   5.11   .700   .604   .274   2.17   .268   .043   2
+  10 SAL4B    1939 2016     78      1      0    .194   1.55   3.94   .812   .790   .263   1.76   .242  -.040   2
+  11 SAL5A    1871 2016    146      3      0    .451   1.57   7.10  1.263   .882   .229   1.85   .247   .039   1
+  12 SAL6B    1894 2016    123      3      0    .440   1.05   3.43   .643   .890   .222   1.55   .224   .007   1
+  13 SAL9A    1805 2016    212      3      2    .313    .54   2.02   .351   .616   .366   2.31   .393   .033   1
+  14 SAL11B   1946 2016     71      1      0    .448   2.10  11.41  2.180   .946   .271   1.97   .273   .022   2
+  15 SAL12B   1850 2016    167      3      1    .389    .75   2.23   .464   .872   .257   1.70   .251  -.008   1
+  16 SAL14A   1903 2016    114      2      0    .379   1.05   2.69   .673   .892   .260   1.55   .228   .097   0
+  17 SAL15B   1942 2016     75      1      0    .413   1.95   4.91  1.178   .862   .327   1.86   .284  -.013   2
+  18 SAL16A   1950 2016     67      0      0    .733    .95   2.52   .552   .779   .315   1.78   .282   .052   2
+  19 SAL16C   1825 2016    192      3      2    .316   1.12   3.26   .588   .757   .288   1.85   .292   .020   1
+  20 SAL17B   1940 2016     77      1      0    .586   1.86   3.50   .700   .697   .233   1.57   .240   .137   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2219     37      8    .458   1.31  11.41   .788   .773   .283   2.31   .280   .018
+
+ DATA CHECKS (rwl.check): nc035
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc035.rwl
+ 20 series, 2219 measurements, 1805-2016, 0.001 mm precision
+ 0 error(s), 0 warning(s), 10 note(s)
+ -------------
+ Nothing to report at this severity.
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file nc035.rwl, MD5 7752fdb85bac5168b0547c70f376e8ae.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

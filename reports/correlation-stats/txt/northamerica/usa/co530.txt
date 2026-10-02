@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: co530
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co530.rwl
+      MD5 of measurement file: adf5eb4f4fe5f40aaed5d8516e94cd7e
+      Date checked           : 01OCT26
+      Beginning year         : 1861
+      Ending year            : 1983
+      Principal investigators: Swetnam, T.W.; Lynch, A.M.; Raimo, B.J.
+      Site name              : Oak Creek
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 38.3000 N
+      Longitude              : 105.2800 W
+      Elevation              : 2408 m
+
+      Series intercorrelation: 0.776
+      Avg mean sensitivity   : 0.389
+      Avg standard deviation : 0.935
+      Avg autocorrelation    : 0.848
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co530
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 OAK011   1862 1983  .70  .84 
+   2 OAK012   1861 1983  .59  .78 
+   3 OAK021   1885 1983  .62  .72 
+   4 OAK022   1875 1983  .61  .81 
+   7 OAK051   1896 1983  .80  .88 
+   8 OAK052   1899 1983       .87 
+   9 OAK091   1891 1983  .84  .87 
+  10 OAK092   1889 1983  .82  .83 
+  11 OAK101   1896 1983  .75  .84 
+  12 OAK102   1893 1983  .70  .80 
+ Av segment correlation  .71  .82 
+
+ FLAGGED SEGMENTS: co530
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: co530
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OAK011   1862 1983    122      2      0    .759   1.36   4.96  1.237   .928   .278   1.60   .262   .020   1
+   2 OAK012   1861 1983    123      2      0    .726   1.35   4.11  1.063   .933   .277   1.56   .262  -.005   1
+   3 OAK021   1885 1983     99      2      0    .718   1.52   4.97   .965   .864   .301   1.61   .245   .001   3
+   4 OAK022   1875 1983    109      2      0    .753   1.36   3.66   .973   .888   .345   1.79   .275   .027   2
+   5 OAK041   1933 1983     51      0      0    .703   1.75   3.42   .840   .821   .313   1.85   .305   .055   1
+   6 OAK042   1939 1983     45      0      0    .655   1.86   3.63   .855   .572   .380   1.63   .333  -.024   1
+   7 OAK051   1896 1983     88      2      0    .844   1.09   2.87   .631   .739   .455   1.98   .362  -.007   1
+   8 OAK052   1899 1983     85      1      0    .829   1.25   3.60   .930   .778   .470   2.28   .373   .025   2
+   9 OAK091   1891 1983     93      2      0    .842   1.01   3.82  1.042   .928   .497   2.13   .418   .057   1
+  10 OAK092   1889 1983     95      2      0    .809    .92   3.00   .844   .900   .501   2.08   .405  -.004   1
+  11 OAK101   1896 1983     88      2      0    .824    .98   2.78   .716   .837   .450   1.77   .369   .005   2
+  12 OAK102   1893 1983     91      2      0    .794   1.29   3.24   .873   .754   .464   2.23   .400  -.015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1089     19      0    .776   1.28   4.97   .935   .848   .389   2.28   .329   .011
+
+ DATA CHECKS (rwl.check): co530
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co530.rwl
+ 12 series, 1089 measurements, 1861-1983, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file co530.rwl, MD5 adf5eb4f4fe5f40aaed5d8516e94cd7e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

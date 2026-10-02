@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: arge048
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge048.rwl
+      MD5 of measurement file: 21071c8c48ea449b9b5514d83595d265
+      Date checked           : 01OCT26
+      Beginning year         : 1768
+      Ending year            : 1986
+      Principal investigators: Roig, F.A.; Boninsegna, J.A.
+      Site name              : Alto Los Manantiales
+      Latitude               : 32.7200 S
+      Longitude              : 69.0800 W
+      Elevation              : 3100 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.361
+      Avg standard deviation : 0.204
+      Avg autocorrelation    : 0.428
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 8.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 AMA11A   1847 1965            .76  .70  .68      
+   2 AMA11B   1827 1984            .73  .78  .80  .82 
+   4 AMA14A   1866 1983                 .73  .72  .68 
+   5 AMA14B   1865 1986                 .69  .72  .75 
+   6 AMA15C   1866 1984                 .40  .37  .50 
+   7 AMA16    1792 1958  .49  .43  .09B .15B .53      
+   8 AMA1A    1816 1986       .56  .37  .41  .48  .56 
+   9 AMA26    1862 1970                 .30A .53      
+  10 AMA30    1919 1986                           .47 
+  11 AMA31    1813 1954       .38B .40  .57  .35      
+  12 AMA33    1768 1981  .49B .43  .43  .51  .49  .56 
+  14 AMA42    1842 1931            .59  .53           
+  15 AMA61    1861 1978                 .49  .44  .50 
+  16 AMA71A   1834 1984            .76  .71  .71  .75 
+  17 AMA71B   1834 1969            .76  .68  .61      
+  18 AMA7A    1858 1983                 .42  .39  .56 
+  19 AMA81B   1855 1981                 .37  .39  .35 
+ Av segment correlation  .49  .45  .54  .53  .55  .59 
+
+ FLAGGED SEGMENTS: arge048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 AMA16    1850 1899     B     .088         6      .400   .312
+   7 AMA16    1875 1924     B     .153         6      .262   .109  weak at every lag
+   9 AMA26    1875 1924     A     .297         0
+  11 AMA31    1825 1874     B     .385        -6      .419   .034
+  12 AMA33    1800 1849     B     .488        -2      .504   .016
+
+ DESCRIPTIVE STATISTICS: arge048
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AMA11A   1847 1965    119      3      0    .736    .45    .93   .161   .425   .301   2.09   .292   .043   1
+   2 AMA11B   1827 1984    158      4      0    .745    .45   1.11   .246   .705   .336   1.93   .320   .011   1
+   3 AMA13B   1930 1985     56      0      0    .391    .71   1.40   .348   .460   .409   2.15   .377  -.060   0
+   4 AMA14A   1866 1983    118      3      0    .690    .57   1.29   .252   .267   .399   2.27   .382  -.000   2
+   5 AMA14B   1865 1986    122      3      0    .681    .55   1.32   .257   .328   .423   1.96   .393  -.037   3
+   6 AMA15C   1866 1984    119      3      0    .455    .41    .88   .177   .296   .410   1.82   .375   .107   0
+   7 AMA16    1792 1958    167      5      2    .377    .52   1.22   .223   .425   .357   1.85   .317   .056   0
+   8 AMA1A    1816 1986    171      5      0    .533    .42   1.20   .149   .265   .326   1.98   .298  -.018   3
+   9 AMA26    1862 1970    109      2      1    .378    .45   1.17   .205   .366   .384   2.44   .362   .066   0
+  10 AMA30    1919 1986     68      1      0    .494    .32    .56   .117   .347   .350   1.69   .305   .110   0
+  11 AMA31    1813 1954    142      4      1    .441    .44   1.23   .195   .435   .375   2.11   .373  -.006   1
+  12 AMA33    1768 1981    214      6      1    .499    .36    .88   .149   .581   .320   2.00   .311  -.002   1
+  13 AMA41    1907 1944     38      0      0    .499    .50    .92   .160   .684   .210   1.49   .217   .024   1
+  14 AMA42    1842 1931     90      2      0    .498    .40    .96   .186   .604   .327   1.91   .324  -.000   1
+  15 AMA61    1861 1978    118      3      0    .474    .51   1.92   .304   .428   .435   2.50   .414   .039   0
+  16 AMA71A   1834 1984    151      4      0    .717    .44   1.27   .204   .626   .319   1.98   .311   .005   1
+  17 AMA71B   1834 1969    136      3      0    .700    .52   1.21   .189   .438   .294   2.09   .286   .107   0
+  18 AMA7A    1858 1983    126      3      0    .446    .31    .89   .166   .442   .393   2.56   .397  -.011   3
+  19 AMA81B   1855 1981    127      3      0    .339    .46   1.87   .249   .037   .465   3.23   .462  -.089   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2349     57      5    .539    .45   1.92   .204   .428   .361   3.23   .344   .017
+
+ DATA CHECKS (rwl.check): arge048
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge048.rwl
+ 19 series, 2349 measurements, 1768-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file arge048.rwl, MD5 21071c8c48ea449b9b5514d83595d265.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

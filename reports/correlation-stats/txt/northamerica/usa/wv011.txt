@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: wv011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv011.rwl
+      MD5 of measurement file: c2cb240c4bb48fbac9d2893ea5ee4485
+      Date checked           : 01OCT26
+      Beginning year         : 1670
+      Ending year            : 2013
+      Principal investigators: Cockrell, S.W.; de Graauw, K.K.; Stetler, R.; Hessl, A.E.
+      Site name              : Carnifex Ferry Battlefield State Park
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 38.2114 N
+      Longitude              : 80.9372 W
+      Elevation              : 470 m
+
+      Series intercorrelation: 0.538
+      Avg mean sensitivity   : 0.194
+      Avg standard deviation : 0.476
+      Avg autocorrelation    : 0.654
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 3, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 6.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CFQ007B  1708 2013       .44  .60  .69  .46  .33  .32A .20B .19B .38  .55 
+   2 CFQ010A  1800 2013                           .48  .65  .65  .64  .58  .42 
+   3 CFQ012B  1708 2013       .30B .26B .32B .56  .51  .49  .59  .64  .44  .44 
+   4 CFQ003C  1690 2013  .47  .78  .79  .65  .65  .57  .53  .77  .73  .61  .60 
+   5 CFQ108   1879 2013                                          .67  .49  .63 
+   6 CFQ005B  1841 2009                                .44  .54  .57  .50  .54 
+   7 CFQ105   1737 2013            .70  .72  .62  .55  .59  .71  .61  .51  .40B
+   8 CFQ002A  1670 2013  .56  .70  .77  .57  .43  .50  .42  .63  .59  .56  .70 
+   9 CFQ003A  1757 2013                 .71  .62  .48  .44  .77  .75  .68  .69 
+  10 CFQ003B  1723 2013            .77  .66  .60  .64  .62  .75  .75  .72  .69 
+  11 CFQ100   1781 2013                      .56  .51  .44  .59  .61  .55  .69 
+  12 CFQ008B  1814 2013                           .47  .39  .47  .45  .50  .53 
+  13 CFQ002B  1755 2013                 .45  .25A .59  .58  .56  .44  .45  .56 
+  14 CFQ010B  1800 2013                           .51  .59  .63  .70  .55  .50 
+  15 CFQ009B  1852 2013                                     .70  .57  .43  .57 
+  16 CFQ009A  1827 2013                                .56  .64  .66  .41  .43 
+  17 CFQ106   1907 2013                                               .34  .27A
+  18 CFQ001A  1896 2013                                          .69  .60  .67 
+  19 CFQ006A  1935 2013                                                    .60 
+  20 CFQ011A  1818 2013                           .51  .35  .54  .46  .35  .49 
+  21 CFQ012A  1888 2013                                          .62  .69  .47 
+  22 CFQ101   1936 2013                                                    .53 
+  23 CFQ107   1938 2013                                                    .75 
+  24 CFQ1004  1898 2013                                          .43  .53  .60 
+ Av segment correlation  .51  .55  .65  .60  .53  .51  .49  .61  .59  .52  .55 
+
+ FLAGGED SEGMENTS: wv011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CFQ007B  1850 1899     A     .317         0
+   1 CFQ007B  1875 1924     B     .202        -1      .244   .042  weak at every lag
+   1 CFQ007B  1900 1949     B     .191        -1      .224   .033  weak at every lag
+   3 CFQ012B  1725 1774     B     .298        -5      .310   .012  weak at every lag
+   3 CFQ012B  1750 1799     B     .264        -1      .283   .018  weak at every lag
+   3 CFQ012B  1775 1824     B     .317        -1      .416   .099
+   7 CFQ105   1950 1999     B     .403         5      .417   .014
+  13 CFQ002B  1800 1849     A     .255         0
+  17 CFQ106   1950 1999     A     .272         0
+
+ DESCRIPTIVE STATISTICS: wv011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CFQ007B  1708 2013    306     10      3    .449    .94   2.14   .419   .850   .176   1.50   .167  -.004   1
+   2 CFQ010A  1800 2013    214      6      0    .521   1.11   2.38   .451   .782   .211   1.43   .177  -.013   2
+   3 CFQ012B  1708 2013    306     10      3    .359   1.00   4.96   .533   .692   .217   5.08   .317  -.006   1
+   4 CFQ003C  1690 2013    324     11      0    .555    .99   1.64   .227   .550   .175   1.52   .173  -.004   3
+   5 CFQ108   1879 2013    135      3      0    .593    .99   1.72   .245   .318   .235   1.49   .179  -.003   1
+   6 CFQ005B  1841 2009    169      5      0    .492   1.51   4.70   .663   .748   .201   1.75   .212  -.035   3
+   7 CFQ105   1737 2013    277      9      1    .628   1.11   2.56   .318   .536   .211   1.78   .194  -.002   1
+   8 CFQ002A  1670 2013    344     11      0    .588   1.12   2.42   .322   .507   .221   1.87   .214   .018   3
+   9 CFQ003A  1757 2013    257      8      0    .649    .96   1.62   .237   .683   .147   1.47   .152  -.000   1
+  10 CFQ003B  1723 2013    291      9      0    .678   1.18   2.30   .297   .626   .169   1.60   .173   .004   3
+  11 CFQ100   1781 2013    233      7      0    .575    .98   1.58   .257   .691   .164   1.52   .167   .003   2
+  12 CFQ008B  1814 2013    200      6      0    .491   1.18   2.37   .321   .674   .176   1.42   .165  -.006   1
+  13 CFQ002B  1755 2013    259      8      1    .500   1.22   2.44   .328   .526   .199   1.58   .187   .026   3
+  14 CFQ010B  1800 2013    214      6      0    .487   1.40   3.23   .635   .774   .222   1.49   .201  -.018   1
+  15 CFQ009B  1852 2013    162      4      0    .554   1.56   2.85   .390   .491   .193   1.50   .188  -.012   1
+  16 CFQ009A  1827 2013    187      5      0    .516   1.80   3.60   .598   .730   .192   1.45   .178   .062   0
+  17 CFQ106   1907 2013    107      2      1    .405   3.14   7.12  1.064   .717   .195   1.41   .178  -.019   1
+  18 CFQ001A  1896 2013    118      3      0    .654   3.28   5.47   .818   .601   .191   1.39   .187   .059   1
+  19 CFQ006A  1935 2013     79      1      0    .587   3.40  10.91  2.505   .940   .213   1.47   .206   .022   1
+  20 CFQ011A  1818 2013    196      6      0    .451   1.73   5.15   .741   .805   .182   1.66   .182   .011   1
+  21 CFQ012A  1888 2013    126      3      0    .539   1.45   6.37   .835   .890   .194   1.83   .219  -.040   1
+  22 CFQ101   1936 2013     78      1      0    .523   1.89   3.91   .594   .733   .184   1.44   .183   .080   1
+  23 CFQ107   1938 2013     76      1      0    .701   2.11   3.47   .576   .342   .263   1.61   .235  -.006   1
+  24 CFQ1004  1898 2013    116      3      0    .509   1.83   3.14   .421   .560   .180   1.55   .181   .031   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4774    138      9    .538   1.37  10.91   .476   .654   .194   5.08   .193   .004
+
+ DATA CHECKS (rwl.check): wv011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv011.rwl
+ 24 series, 4774 measurements, 1670-2013, 0.001 mm precision
+ 0 error(s), 0 warning(s), 8 note(s)
+ -------------
+ Nothing to report at this severity.
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wv011.rwl, MD5 c2cb240c4bb48fbac9d2893ea5ee4485.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

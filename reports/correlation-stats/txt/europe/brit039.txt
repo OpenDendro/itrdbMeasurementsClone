@@ -1,0 +1,189 @@
+
+ COFECHA-style crossdating report: brit039
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit039.rwl
+      MD5 of measurement file: ac81953ae3dad7d0fad950e484e41b74
+      Date checked           : 01OCT26
+      Beginning year         : -1689
+      Ending year            : -1488
+      Principal investigators: Boswijk, G.
+      Site name              : Thorne Moors GM02 T51
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 53.6300 N
+      Longitude              : 0.8800 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.633
+      Avg mean sensitivity   : 0.307
+      Avg standard deviation : 0.725
+      Avg autocorrelation    : 0.770
+      Number dated series    : 52
+      Series crossdated      : 51
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 15.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  -1600 -1575 -1550 
+                        -1551 -1526 -1501 
+ --- -------- ---------  ---- ---- ---- 
+   1 G003S    -1653 -1542  .83           
+   2 G005     -1651 -1525  .79  .75      
+   4 G043     -1683 -1524  .39  .42      
+   5 G044S    -1680 -1544  .20B          
+   6 G046     -1680 -1514  .51  .29B     
+   9 NM004_1  -1666 -1540  .67           
+  29 NM029    -1658 -1531  .73           
+  35 NM037S   -1650 -1497  .55  .17B .19B
+  36 NM039    -1652 -1514  .79  .81      
+  37 NM040S   -1643 -1544  .66           
+  38 NM041    -1648 -1550  .10B          
+  39 NM043    -1677 -1488  .77  .84  .56 
+  40 NM044    -1672 -1538  .82           
+  41 NM049    -1653 -1518  .74  .70      
+  42 NM054    -1656 -1493  .80  .73  .56 
+  43 NM055    -1681 -1513  .75  .77      
+  44 NM063S   -1684 -1535  .78           
+  47 NM073S   -1659 -1540  .78           
+  48 NM077    -1689 -1547  .61           
+  49 NMF004   -1658 -1532  .65           
+  50 NMF005S  -1689 -1547  .42           
+ Av segment correlation  .63  .61  .43 
+
+ FLAGGED SEGMENTS: brit039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 G044S    -1600 -1551     B     .200        10      .289   .090  weak at every lag
+   6 G046     -1575 -1526     B     .288        -1      .363   .076
+  35 NM037S   -1575 -1526     B     .173         1      .771   .598
+  35 NM037S   -1550 -1501     B     .186         1      .621   .435
+  38 NM041    -1600 -1551     B     .101        -8      .191   .091  weak at every lag
+
+ DESCRIPTIVE STATISTICS: brit039
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 G003S    -1653 -1542    112      1      0    .756   1.09   2.93   .652   .706   .345   1.91   .351  -.010   3
+   2 G005     -1651 -1525    127      2      0    .780    .88   3.85   .613   .727   .344   2.16   .366  -.013   3
+   3 G030     -1648 -1580     69      0      0    .294   1.70   3.29   .635   .695   .199   1.55   .234   .009   3
+   4 G043     -1683 -1524    160      2      0    .556    .94   3.05   .529   .773   .269   1.93   .304  -.012   2
+   5 G044S    -1680 -1544    137      1      1    .389   1.10   4.20   .841   .886   .273   1.83   .284  -.015   3
+   6 G046     -1680 -1514    167      2      1    .485   1.39   3.87   .855   .835   .280   2.31   .275   .010   2
+   7 NM001_1  -1659 -1582     78      0      0    .821   1.14   3.12   .640   .653   .367   1.84   .356   .005   3
+   8 NM002_3  -1653 -1569     85      0      0    .659   1.21   3.10   .626   .636   .308   1.66   .300   .032   3
+   9 NM004_1  -1666 -1540    127      1      0    .693   1.33   2.68   .558   .696   .280   1.79   .282  -.016   3
+  10 NM005    -1661 -1605     57      0      0    .765   1.67   5.06  1.024   .780   .316   2.05   .328   .128   2
+  11 NM006    -1650 -1594     57      0      0    .602   1.30   4.48   .784   .759   .325   1.82   .330   .101   1
+  12 NM007S   -1645 -1564     82      0      0    .722   1.64   4.42   .727   .716   .270   1.94   .268   .000   3
+  13 NM008_9  -1674 -1607     68      0      0    .726   1.64   4.53   .974   .771   .337   1.93   .305  -.012   2
+  14 NM012    -1672 -1544    129                         1.23   4.29   .833   .824   .293                         
+  15 NM013    -1668 -1569    100      0      0    .708   1.36   3.05   .538   .553   .317   1.76   .307  -.014   2
+  16 NM014    -1668 -1603     66      0      0    .586   1.16   2.51   .539   .733   .290   1.78   .261  -.015   3
+  17 NM015    -1670 -1603     68      0      0    .601   1.38   3.80   .911   .813   .302   2.00   .269  -.081   3
+  18 NM016    -1656 -1578     79      0      0    .634   1.14   2.61   .485   .613   .283   1.59   .257   .076   3
+  19 NM017    -1643 -1552     92      0      0    .686   1.45   3.88   .640   .720   .269   1.86   .277  -.008   3
+  20 NM018    -1668 -1584     85      0      0    .635   1.44   4.35   .590   .632   .235   2.08   .257  -.042   3
+  21 NM019    -1672 -1589     84      0      0    .731   1.52   4.56   .727   .730   .249   1.77   .248  -.056   3
+  22 NM020    -1649 -1570     80      0      0    .716   1.29   2.60   .516   .676   .280   1.74   .265   .056   3
+  23 NM022    -1654 -1602     53      0      0    .735   1.81   4.84   .945   .814   .247   1.46   .234  -.044   2
+  24 NM023    -1642 -1577     66      0      0    .718   1.45   3.38   .619   .609   .303   1.61   .275   .072   2
+  25 NM024    -1645 -1581     65      0      0    .763   1.64   3.80   .674   .711   .256   1.61   .256  -.028   3
+  26 NM025    -1664 -1600     65      0      0    .644   1.46   3.32   .639   .803   .217   1.40   .200  -.035   3
+  27 NM026    -1669 -1563    107      0      0    .694   2.00   4.68   .919   .684   .273   1.97   .290  -.005   2
+  28 NM028    -1666 -1594     73      0      0    .718   1.81   4.79   .911   .734   .271   1.87   .260  -.007   3
+  29 NM029    -1658 -1531    128      1      0    .695   1.07   3.56   .745   .832   .337   1.96   .368  -.010   2
+  30 NM030    -1676 -1607     70      0      0    .627   1.34   4.73   .861   .786   .326   2.05   .289  -.059   3
+  31 NM031    -1672 -1613     60      0      0    .780   1.41   5.00  1.026   .815   .285   1.55   .240  -.090   3
+  32 NM032    -1672 -1591     82      0      0    .660   1.41   5.82  1.012   .805   .300   1.64   .241   .029   3
+  33 NM034    -1675 -1609     67      0      0    .755   1.53   5.40  1.066   .876   .254   1.57   .235   .016   2
+  34 NM036    -1677 -1613     65      0      0    .541   2.04   5.75  1.252   .866   .257   1.69   .231   .004   3
+  35 NM037S   -1650 -1497    154      3      2    .471    .99   3.57   .845   .829   .399   2.29   .440  -.011   2
+  36 NM039    -1652 -1514    139      2      0    .716    .83   2.52   .498   .661   .396   3.01   .436  -.005   3
+  37 NM040S   -1643 -1544    100      1      0    .682    .75   3.02   .632   .877   .323   2.20   .374   .028   2
+  38 NM041    -1648 -1550     99      1      1    .275   1.20   4.36  1.010   .839   .291   1.90   .325  -.002   2
+  39 NM043    -1677 -1488    190      3      0    .563    .97   4.19   .843   .872   .329   2.38   .356  -.030   3
+  40 NM044    -1672 -1538    135      1      0    .743    .80   3.62   .587   .818   .319   2.01   .334  -.020   3
+  41 NM049    -1653 -1518    136      2      0    .697    .78   3.61   .642   .858   .296   2.45   .313  -.011   2
+  42 NM054    -1656 -1493    164      3      0    .642    .57   1.96   .408   .728   .361   2.64   .388  -.010   2
+  43 NM055    -1681 -1513    169      2      0    .708    .80   3.65   .713   .860   .372   2.45   .407  -.040   3
+  44 NM063S   -1684 -1535    150      1      0    .642    .78   2.28   .585   .801   .354   3.98   .489   .161   3
+  45 NM065    -1650 -1552     99      0      0    .655   1.06   4.78   .882   .846   .353   1.81   .349  -.032   3
+  46 NM071    -1665 -1567     99      0      0    .626   1.04   3.40   .557   .756   .287   1.91   .288   .017   2
+  47 NM073S   -1659 -1540    120      1      0    .692    .64   2.22   .365   .679   .337   2.17   .371   .038   3
+  48 NM077    -1689 -1547    143      1      0    .677    .83   3.19   .563   .750   .318   1.99   .328  -.060   3
+  49 NMF004   -1658 -1532    127      1      0    .630   1.03   5.36   .955   .919   .260   1.86   .272   .052   3
+  50 NMF005S  -1689 -1547    143      1      0    .625    .97   6.48   .869   .814   .270   2.75   .320  -.005   3
+  51 S028     -1679 -1623     57      0      0    .267   1.54   3.12   .619   .710   .252   1.60   .256  -.008   3
+  52 S083     -1663 -1578     86      0      0    .270   2.01   4.87  1.197   .730   .348   2.02   .380   .078   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5320     33      5    .633   1.17   6.48   .725   .770   .307   3.98   .321   .001
+
+ DATA CHECKS (rwl.check): brit039
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit039.rwl
+ 52 series, 5320 measurements, -1689--1488, 0.01 mm precision
+ 1 error(s), 13 warning(s), 20 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     NM041: correlates best with the master at lag 1 (r = 0.451 against r = 0.301 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (5)
+     G030: correlates with the rest of the collection at r = 0.289 where the collection median is 0.735 (7.3 MAD below it); it does not fit the collection it is in
+     G044S: correlates with the rest of the collection at r = 0.45 where the collection median is 0.735 (4.7 MAD below it); it does not fit the collection it is in
+     NM041: correlates with the rest of the collection at r = 0.301 where the collection median is 0.735 (7.1 MAD below it); it does not fit the collection it is in
+     S028: correlates with the rest of the collection at r = 0.232 where the collection median is 0.735 (8.2 MAD below it); it does not fit the collection it is in
+     S083: correlates with the rest of the collection at r = 0.255 where the collection median is 0.735 (7.9 MAD below it); it does not fit the collection it is in
+   RWL_SITE_CODE (8)
+     G003S: site code differs from the nm used by 42 of 52 series
+     G005: site code differs from the nm used by 42 of 52 series
+     G030: site code differs from the nm used by 42 of 52 series
+     G043: site code differs from the nm used by 42 of 52 series
+     G044S: site code differs from the nm used by 42 of 52 series
+     G046: site code differs from the nm used by 42 of 52 series
+     S028: site code differs from the nm used by 42 of 52 series
+     S083: site code differs from the nm used by 42 of 52 series
+ 20 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit039.rwl, MD5 ac81953ae3dad7d0fad950e484e41b74.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series NM012 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: cana630
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana630.rwl
+      MD5 of measurement file: 28f0f220d79d34cba7d74842407cbf4f
+      Date checked           : 01OCT26
+      Beginning year         : 1853
+      Ending year            : 2017
+      Principal investigators: Stefanuk, M.A.; Danby, R.
+      Site name              : Frontenac Arch FR07
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 44.5069 N
+      Longitude              : 76.0423 W
+      Elevation              : 92 m
+
+      Series intercorrelation: 0.634
+      Avg mean sensitivity   : 0.372
+      Avg standard deviation : 0.745
+      Avg autocorrelation    : 0.529
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana630
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 094FR07A 1901 2017       .72  .81 
+   2 094FR07B 1896 2017  .68  .73  .72 
+   3 095FR07B 1905 2017       .82  .80 
+   4 096FR07A 1911 2017       .78  .75 
+   5 096FR07B 1898 2017  .54  .52  .50 
+   6 097FR07A 1859 2017  .60  .80  .69 
+   7 097FR07B 1853 2017  .47  .77  .71 
+ Av segment correlation  .57  .73  .71 
+
+ FLAGGED SEGMENTS: cana630
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: cana630
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 094FR07A 1901 2017    117      2      0    .731   1.31   2.44   .510   .183   .399   1.89   .341  -.065   0
+   2 094FR07B 1896 2017    122      3      0    .691   1.33   2.76   .579   .324   .385   1.99   .337   .038   0
+   3 095FR07B 1905 2017    113      2      0    .642   1.25   3.25   .591   .262   .444   2.16   .411  -.002   2
+   4 096FR07A 1911 2017    107      2      0    .696    .94   2.69   .619   .547   .476   2.10   .432   .006   1
+   5 096FR07B 1898 2017    120      3      0    .537   1.19   2.65   .636   .466   .445   2.05   .408  -.023   1
+   6 097FR07A 1859 2017    159      3      0    .573   1.72   6.44  1.149   .858   .262   2.01   .277   .043   1
+   7 097FR07B 1853 2017    165      3      0    .606   1.58   4.76   .914   .824   .277   1.82   .282   .041   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            903     18      0    .634   1.37   6.44   .745   .529   .372   2.16   .347   .009
+
+ DATA CHECKS (rwl.check): cana630
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana630.rwl
+ 7 series, 903 measurements, 1853-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file cana630.rwl, MD5 28f0f220d79d34cba7d74842407cbf4f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

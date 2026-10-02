@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: ak162
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak162.rwl
+      MD5 of measurement file: 2d14b83630a4441122a6febb3415b412
+      Date checked           : 01OCT26
+      Beginning year         : 1968
+      Ending year            : 2016
+      Principal investigators: Ackerman, D.; Griffin, R.D.; Hobbie, S.E.; Popham, K.; Jones, E.; Finlay, J.C.
+      Site name              : Inigok Riparian
+      Species information    : SAPC Salix pulchra Cham.
+      Latitude               : 69.9900 N
+      Longitude              : 153.0400 W
+      Elevation              : 35 m
+
+      Series intercorrelation: 0.590
+      Avg mean sensitivity   : 0.445
+      Avg standard deviation : 0.121
+      Avg autocorrelation    : 0.450
+      Number dated series    : 37
+      Segment length tested  : 24
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak162
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  24-year dated segments, lagged  12 years
+ Flags:  A = correlation under   .4716 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1982 
+                        1993 2005 
+ --- -------- ---------  ---- ---- 
+   3 INR03    1982 2016       .58 
+   4 INR04    1976 2016       .20B
+   7 INR07    1980 2016       .46A
+  12 INR14    1982 2016       .48 
+  14 INR16    1968 2016       .58 
+  21 INR23    1982 2016       .66 
+ Av segment correlation       .49 
+
+ FLAGGED SEGMENTS: ak162
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 INR04    1982 2005     B     .200        -5      .200   .000  weak at every lag
+   7 INR07    1982 2005     A     .459         0
+
+ DESCRIPTIVE STATISTICS: ak162
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 INR01    1997 2016     20      0      0    .536    .44   1.02   .223   .437   .458   1.77   .397   .116   0
+   2 INR02    1996 2016     21      0      0    .764    .39    .96   .190   .074   .557   2.13   .425  -.067   0
+   3 INR03    1982 2016     35      1      0    .704    .20    .52   .116   .388   .601   1.80   .431  -.016   0
+   4 INR04    1976 2016     41      1      1    .405    .13    .42   .080   .458   .430   2.01   .390   .201   0
+   5 INR05    1994 2016     23      0      0    .452    .28    .46   .132  -.085   .579   1.63   .431  -.168   0
+   6 INR06    1999 2016     18      0      0    .727    .42    .85   .188   .623   .344   1.40   .307   .089   0
+   7 INR07    1980 2016     37      1      1    .483    .31    .59   .119   .546   .312   1.61   .297   .077   1
+   8 INR08    1991 2016     26      0      0    .426    .18    .39   .092   .440   .468   2.06   .437   .252   0
+   9 INR09    1993 2016     24      0      0    .498    .28    .66   .147   .412   .527   2.00   .458  -.211   0
+  10 INR11    1991 2016     26      0      0    .553    .16    .43   .085   .483   .428   1.85   .385   .120   0
+  11 INR12    1994 2016     23      0      0    .701    .21    .48   .121   .608   .493   1.86   .393  -.045   0
+  12 INR14    1982 2016     35      1      0    .545    .21    .34   .065   .404   .269   1.52   .263   .212   0
+  13 INR15    1996 2016     21      0      0    .233    .38    .90   .162   .164   .381   2.23   .394   .091   0
+  14 INR16    1968 2016     49      1      0    .437    .17    .66   .114   .439   .517   2.05   .454   .167   0
+  15 INR17    1994 2016     23      0      0    .505    .25    .40   .089   .002   .504   1.59   .350  -.066   0
+  16 INR18    1991 2016     26      0      0    .701    .32    .64   .130   .109   .401   2.02   .372  -.074   0
+  17 INR19    2008 2016      9      0      0    .456    .31    .68   .177  -.071   .658   1.83   .492  -.170   0
+  18 INR20    1983 2016     34      0      0    .740    .15    .38   .070   .319   .401   1.80   .326   .061   0
+  19 INR21    2005 2016     12      0      0    .758    .47    .82   .200   .491   .389   1.31   .259  -.185   3
+  20 INR22    1994 2016     23      0      0    .464    .16    .32   .087   .774   .330   1.53   .313   .154   0
+  21 INR23    1982 2016     35      1      0    .739    .16    .47   .096   .515   .576   2.04   .444  -.041   0
+  22 INR24    1998 2016     19      0      0    .712    .31    .76   .232   .734   .533   1.99   .413  -.022   2
+  23 INR25    1995 2016     22      0      0    .689    .23    .55   .136   .767   .438   1.75   .370   .139   0
+  24 INR26    1990 2016     27      0      0    .725    .23    .66   .151   .671   .366   1.62   .351  -.039   1
+  25 INR27    1993 2016     24      0      0    .753    .18    .45   .100   .628   .492   1.68   .376  -.042   0
+  26 INR28    1984 2016     33      0      0    .612    .19    .54   .158   .842   .596   2.08   .514   .098   0
+  27 INR29    1993 2016     24      0      0    .511    .18    .42   .088   .461   .380   1.61   .376   .207   1
+  28 INR30    1993 2016     24      0      0    .569    .25    .46   .102   .047   .487   1.75   .398  -.082   0
+  29 INR32    1999 2016     18      0      0    .806    .34    .60   .141   .614   .365   1.62   .301   .124   0
+  30 INR33    1999 2016     18      0      0    .728    .28    .67   .156   .311   .593   2.10   .521   .227   0
+  31 INR34    1990 2016     27      0      0    .575    .30    .58   .123   .427   .323   1.72   .286  -.187   0
+  32 INR35    1994 2016     23      0      0    .644    .34    .74   .177   .676   .280   1.54   .303  -.088   1
+  33 INR36    1990 2016     27      0      0    .469    .18    .38   .105   .606   .442   2.05   .439   .143   0
+  34 INR37    1991 2016     26      0      0    .660    .16    .31   .066   .202   .443   2.18   .399   .043   0
+  35 INR38    1991 2016     26      0      0    .551    .20    .37   .078   .365   .404   1.69   .363   .270   0
+  36 INR39    1991 2016     26      0      0    .555    .29    .67   .162   .772   .320   1.68   .291   .201   0
+  37 INR40    1990 2016     27      0      0    .739    .16    .42   .090   .572   .457   1.57   .362   .078   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            952      6      2    .590    .24   1.02   .121   .450   .445   2.23   .381   .055
+
+ DATA CHECKS (rwl.check): ak162
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak162.rwl
+ 37 series, 952 measurements, 1968-2016, 0.01 mm precision
+ 0 error(s), 0 warning(s), 38 note(s)
+ -------------
+ Nothing to report at this severity.
+ 38 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file ak162.rwl, MD5 2d14b83630a4441122a6febb3415b412.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4716 for 24-year segments.
+ Segments: 24 years, lagged 12, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 24 years: the record is only 49 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

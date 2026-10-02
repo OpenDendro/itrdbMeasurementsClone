@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: swit272
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit272.rwl
+      MD5 of measurement file: f9eaac21c4777568cbd8d18b7891e74e
+      Date checked           : 01OCT26
+      Beginning year         : 1739
+      Ending year            : 2011
+      Principal investigators: Bigler, C.; Clalüna, A.
+      Site name              : Sils-Maria GR Blais dal Fö
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.4333 N
+      Longitude              : 9.7833 E
+      Elevation              : 2100 m
+
+      Series intercorrelation: 0.699
+      Avg mean sensitivity   : 0.319
+      Avg standard deviation : 0.468
+      Avg autocorrelation    : 0.651
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 5.66
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit272
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 So.L01   1859 2011                 .71  .77  .81  .78 
+   2 So.L02   1782 2011  .78  .84  .84  .87  .85  .78  .74 
+   3 So.L03   1796 2011  .88  .84  .79  .76  .82  .88  .88 
+   4 So.L04   1818 2011       .76  .77  .74  .75  .78  .73 
+   5 So.L05   1814 2011       .66  .62  .70  .70  .67  .76 
+   6 So.L06   1790 2011  .83  .86  .81  .76  .80  .85  .79 
+   7 So.L07   1755 2011  .74  .73  .84  .86  .86  .89  .84 
+   8 So.L08   1870 2011                 .21B .22B .16B .26A
+   9 So.L09   1877 2011                      .62  .76  .81 
+  10 So.L10   1889 2011                      .75  .76  .85 
+  11 So.L10b  1849 2011            .84  .82  .82  .85  .85 
+  12 So.L11   1818 2011       .07B .55  .72  .77  .77  .81 
+  13 So.L12   1803 2011       .84  .80  .85  .87  .87  .87 
+  14 So.L13   1855 2011                 .71  .77  .81  .83 
+  15 So.L14   1815 2011       .71  .62  .68  .79  .78  .70 
+  17 So.L16   1739 2011  .43  .68  .30A .39  .87  .88  .86 
+  18 So.L17   1864 2011                 .87  .89  .92  .89 
+  19 So.L18   1843 2011            .74  .74  .82  .76  .79 
+  20 So.L19   1867 2011                 .74  .71  .69  .75 
+  21 So.L20   1834 2011            .75  .83  .85  .84  .85 
+ Av segment correlation  .73  .70  .71  .72  .77  .78  .78 
+
+ FLAGGED SEGMENTS: swit272
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 So.L08   1875 1924     B     .211         3      .299   .089  weak at every lag
+   8 So.L08   1900 1949     B     .222         3      .240   .019  weak at every lag
+   8 So.L08   1925 1974     B     .156        -3      .193   .036  weak at every lag
+   8 So.L08   1950 1999     A     .263         0
+  12 So.L11   1825 1874     B     .072        -4      .633   .561
+  17 So.L16   1850 1899     A     .305         0
+
+ DESCRIPTIVE STATISTICS: swit272
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 So.L01   1859 2011    153      4      0    .748    .82   2.28   .469   .730   .374   1.89   .337  -.001   1
+   2 So.L02   1782 2011    230      7      0    .763    .79   2.82   .500   .744   .406   2.40   .378   .009   1
+   3 So.L03   1796 2011    216      7      0    .834    .94   2.71   .507   .692   .385   1.92   .360  -.006   2
+   4 So.L04   1818 2011    194      6      0    .757   1.56   3.19   .582   .462   .315   1.77   .300   .011   1
+   5 So.L05   1814 2011    198      6      0    .691    .71   2.70   .383   .702   .303   2.89   .325  -.011   1
+   6 So.L06   1790 2011    222      7      0    .770   1.04   2.70   .561   .610   .406   2.13   .376   .001   1
+   7 So.L07   1755 2011    257      7      0    .663    .79   3.25   .503   .729   .373   2.03   .361  -.011   1
+   8 So.L08   1870 2011    142      4      4    .167   1.16   2.38   .355   .680   .186   1.64   .192   .001   1
+   9 So.L09   1877 2011    135      3      0    .676   1.10   2.71   .454   .580   .277   1.71   .257  -.001   1
+  10 So.L10   1889 2011    123      3      0    .758    .97   1.98   .299   .602   .227   1.58   .222  -.013   1
+  11 So.L10b  1849 2011    163      5      0    .822    .85   2.23   .382   .594   .305   1.88   .277   .012   1
+  12 So.L11   1818 2011    194      6      1    .498    .74   2.27   .483   .724   .372   2.09   .379  -.063   1
+  13 So.L12   1803 2011    209      6      0    .835    .95   2.49   .372   .556   .295   1.82   .287  -.013   1
+  14 So.L13   1855 2011    157      4      0    .768    .91   2.17   .312   .482   .280   2.15   .274   .004   1
+  15 So.L14   1815 2011    197      6      0    .647    .68   2.97   .406   .667   .320   2.56   .346   .066   1
+  16 So.L15   1952 2011     60      0      0    .668   2.44   4.13   .820   .478   .278   1.65   .255   .181   0
+  17 So.L16   1739 2011    273      7      1    .452    .80   2.32   .420   .661   .339   2.30   .326  -.015   1
+  18 So.L17   1864 2011    148      4      0    .867   1.19   3.00   .558   .728   .289   1.86   .280  -.020   1
+  19 So.L18   1843 2011    169      5      0    .778   1.07   3.01   .408   .674   .239   1.72   .228   .025   1
+  20 So.L19   1867 2011    145      4      0    .723   1.77   3.77   .719   .703   .251   1.75   .256   .036   1
+  21 So.L20   1834 2011    178      5      0    .824   1.25   3.14   .513   .685   .277   1.77   .266  -.040   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3763    106      6    .699   1.00   4.13   .468   .651   .319   2.89   .309   .001
+
+ DATA CHECKS (rwl.check): swit272
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit272.rwl
+ 21 series, 3763 measurements, 1739-2011, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     So.L08: correlates with the rest of the collection at r = 0.105 where the collection median is 0.711 (4.9 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file swit272.rwl, MD5 f9eaac21c4777568cbd8d18b7891e74e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

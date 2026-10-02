@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: deu384
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu384.rwl
+      MD5 of measurement file: 7df8d1444e0afaa0e284572c3b5dbcea
+      Date checked           : 01OCT26
+      Beginning year         : 1826
+      Ending year            : 2008
+      Principal investigators: Hartl, C.; Dittmar, C.; Zang, C.; Rothe, A.
+      Site name              : Saalforste, Grasenbach
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.5310 N
+      Longitude              : 12.7390 E
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.520
+      Avg mean sensitivity   : 0.156
+      Avg standard deviation : 0.610
+      Avg autocorrelation    : 0.789
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 7.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu384
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SAGB102A 1943 2008            .66 
+   2 SAGB102M 1947 2008            .69 
+   3 SAGB103A 1936 2008            .42 
+   4 SAGB103M 1940 2008            .43 
+   5 SAGB104A 1928 2008            .49 
+   6 SAGB104M 1928 2008            .57 
+   7 SAGB105A 1933 2008            .53 
+   8 SAGB105M 1935 2008            .49 
+   9 SAGB107A 1875 2008  .60  .50  .64 
+  10 SAGB107M 1878 2008  .69  .57  .60 
+  11 SAGB109A 1853 2008  .40  .12B .51 
+  12 SAGB109M 1860 2008  .55  .26B .57 
+  13 SAGB110A 1885 2008  .43  .40  .48 
+  14 SAGB110M 1900 2008       .38  .38 
+  15 SAGB111A 1902 2008       .45  .59 
+  16 SAGB111M 1910 2008       .42  .64 
+  17 SAGB113A 1874 2008  .60  .39  .34 
+  18 SAGB113M 1879 2008  .63  .54  .48 
+  19 SAGB114A 1833 2008  .47  .29A .48 
+  20 SAGB114M 1826 2008  .56  .48  .43 
+ Av segment correlation  .55  .40  .52 
+
+ FLAGGED SEGMENTS: deu384
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 SAGB109A 1925 1974     B     .125         9      .197   .073  weak at every lag
+  12 SAGB109M 1925 1974     B     .263         6      .296   .033  weak at every lag
+  19 SAGB114A 1925 1974     A     .288         0
+
+ DESCRIPTIVE STATISTICS: deu384
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SAGB102A 1943 2008     66      1      0    .455   2.39   3.36   .539   .486   .184   1.31   .153   .001   0
+   2 SAGB102M 1947 2008     62      1      0    .652   2.78   3.94   .708   .658   .173   1.33   .156   .008   1
+   3 SAGB103A 1936 2008     73      1      0    .463   3.11   4.50   .837   .788   .147   1.36   .150  -.018   2
+   4 SAGB103M 1940 2008     69      1      0    .453   2.82   4.19   .666   .674   .146   1.45   .166   .020   1
+   5 SAGB104A 1928 2008     81      1      0    .435   2.38   4.00   .639   .779   .141   1.36   .151   .096   1
+   6 SAGB104M 1928 2008     81      1      0    .487   2.19   4.16   .734   .842   .135   1.38   .151   .063   1
+   7 SAGB105A 1933 2008     76      1      0    .591   2.30   5.73  1.369   .950   .163   1.52   .157   .009   1
+   8 SAGB105M 1935 2008     74      1      0    .532   1.85   3.89   .963   .916   .162   1.35   .164   .031   1
+   9 SAGB107A 1875 2008    134      3      0    .601   1.44   2.68   .379   .776   .139   1.28   .136  -.018   2
+  10 SAGB107M 1878 2008    131      3      0    .632   1.48   2.52   .323   .575   .151   1.58   .153   .073   1
+  11 SAGB109A 1853 2008    156      3      1    .480   1.01   1.87   .305   .667   .176   1.57   .182  -.025   1
+  12 SAGB109M 1860 2008    149      3      1    .540   1.17   2.31   .355   .716   .167   1.51   .181   .060   1
+  13 SAGB110A 1885 2008    124      3      0    .423   1.64   3.61   .723   .872   .165   1.53   .177  -.031   1
+  14 SAGB110M 1900 2008    109      2      0    .467   1.32   3.48   .604   .853   .183   1.80   .197   .035   1
+  15 SAGB111A 1902 2008    107      2      0    .528   2.42   6.23  1.096   .915   .139   1.38   .133  -.017   1
+  16 SAGB111M 1910 2008     99      2      0    .603   2.00   5.06   .844   .894   .142   1.45   .143  -.004   1
+  17 SAGB113A 1874 2008    135      3      0    .446   1.29   2.59   .363   .660   .170   1.75   .179  -.028   3
+  18 SAGB113M 1879 2008    130      3      0    .537   1.35   3.55   .637   .891   .162   1.38   .162  -.004   2
+  19 SAGB114A 1833 2008    176      3      1    .511   1.24   3.05   .514   .845   .146   1.50   .145   .002   3
+  20 SAGB114M 1826 2008    183      3      0    .542   1.18   3.37   .577   .920   .134   1.39   .134  -.026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2215     41      3    .520   1.69   6.23   .610   .789   .156   1.80   .159   .008
+
+ DATA CHECKS (rwl.check): deu384
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu384.rwl
+ 20 series, 2215 measurements, 1826-2008, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu384.rwl, MD5 7df8d1444e0afaa0e284572c3b5dbcea.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

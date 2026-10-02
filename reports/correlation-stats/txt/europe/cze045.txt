@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: cze045
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze045.rwl
+      MD5 of measurement file: d14133a86c71362a4affdfa152fe79fc
+      Date checked           : 01OCT26
+      Beginning year         : 1856
+      Ending year            : 2020
+      Principal investigators: Mašek, J.; Hofman, M.; Fišer, P.
+      Site name              : 12NS Kokořínsko
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.5746 N
+      Longitude              : 14.4573 E
+      Elevation              : 413 m
+
+      Series intercorrelation: 0.419
+      Avg mean sensitivity   : 0.260
+      Avg standard deviation : 0.460
+      Avg autocorrelation    : 0.792
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 0, B 19; 4 of the B weak at every lag)
+      Pct problem segments   : 24.68
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze045
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 12SS05   1880 2019  .67  .56  .44 
+   2 12SS03   1865 2019 -.12B-.03B .27B
+   3 12SS24   1869 2019  .70  .68  .70 
+   4 12SS12   1863 2019  .21B .46  .51 
+   5 12SS17   1856 2019  .70  .71  .67 
+   6 12SS02   1910 2012       .23B-.03B
+   7 12SS16   1883 2019  .66  .71  .71 
+   8 12SS01   1856 2019  .57  .52  .56 
+   9 12SS23   1863 2019  .47  .60  .33 
+  10 12SS21   1862 2019  .78  .73  .50 
+  11 12SS20   1880 2019  .60  .50  .52 
+  12 12SS09   1863 2019  .72  .61  .69 
+  13 12SS06   1869 2018  .04B .11B .17B
+  14 12SS13   1878 2020 -.36B-.41B-.17B
+  15 12SS11   1862 2017  .67  .56  .46 
+  16 12SS08   1873 2018  .82  .74  .61 
+  17 12SS14   1861 2017  .17B .07B .14B
+  18 12SS22   1878 2020  .70  .71  .70 
+  19 12SS10   1864 2019  .58  .60  .70 
+  20 12SS18   1864 2019  .54  .40  .37 
+  21 12SS19   1869 2019 -.08B-.10B .04B
+  22 12SS04   1865 2019  .56  .62  .71 
+  23 12SS25   1865 2018  .65  .73  .24B
+  24 12SS26   1866 2016  .68  .69  .62 
+  25 12SS15   1873 2018  .65  .58  .51 
+  26 12SS07   1871 2013  .68  .69  .48 
+ Av segment correlation  .49  .47  .44 
+
+ FLAGGED SEGMENTS: cze045
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 12SS03   1900 1949     B    -.119        -8      .626   .745
+   2 12SS03   1925 1974     B    -.030        -8      .697   .727
+   2 12SS03   1950 1999     B     .269        -8      .532   .263
+   4 12SS12   1900 1949     B     .207         1      .635   .428
+   6 12SS02   1925 1974     B     .232         1      .294   .062  weak at every lag
+   6 12SS02   1950 1999     B    -.030        -5      .159   .190  weak at every lag
+  13 12SS06   1900 1949     B     .043        -8      .594   .551
+  13 12SS06   1925 1974     B     .112        -8      .637   .524
+  13 12SS06   1950 1999     B     .166        -8      .546   .380
+  14 12SS13   1900 1949     B    -.365        -3      .523   .887
+  14 12SS13   1925 1974     B    -.405        -3      .423   .828
+  14 12SS13   1950 1999     B    -.174        -3      .402   .575
+  17 12SS14   1900 1949     B     .175        -1      .652   .478
+  17 12SS14   1925 1974     B     .071        -1      .702   .631
+  17 12SS14   1950 1999     B     .140         6      .222   .082  weak at every lag
+  21 12SS19   1900 1949     B    -.085        -5      .660   .745
+  21 12SS19   1925 1974     B    -.100        -5      .808   .908
+  21 12SS19   1950 1999     B     .038        -5      .435   .397
+  23 12SS25   1950 1999     B     .240         1      .316   .076  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cze045
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 12SS05   1880 2019    140      3      0    .526    .93   2.34   .441   .824   .246   1.80   .253   .013   1
+   2 12SS03   1865 2019    155      3      3    .052    .99   2.80   .663   .906   .268   1.80   .262   .013   1
+   3 12SS24   1869 2019    151      3      0    .625    .97   2.34   .483   .834   .222   1.71   .235   .005   1
+   4 12SS12   1863 2019    157      3      1    .298    .85   1.86   .333   .671   .256   1.56   .263   .007   1
+   5 12SS17   1856 2019    164      3      0    .567   1.13   3.63   .658   .851   .251   2.12   .284   .029   1
+   6 12SS02   1910 2012    103      2      2    .209   1.10   2.31   .509   .816   .256   2.05   .284   .035   1
+   7 12SS16   1883 2019    137      3      0    .695    .76   2.94   .421   .817   .260   1.79   .271   .019   1
+   8 12SS01   1856 2019    164      3      0    .425   1.13   2.77   .509   .860   .209   1.64   .213   .002   1
+   9 12SS23   1863 2019    157      3      0    .398    .70   1.49   .311   .687   .325   1.87   .294   .026   1
+  10 12SS21   1862 2019    158      3      0    .527    .82   1.90   .416   .803   .280   1.89   .269   .025   1
+  11 12SS20   1880 2019    140      3      0    .506    .65   1.74   .366   .817   .260   1.71   .267  -.001   1
+  12 12SS09   1863 2019    157      3      0    .641   1.34   3.04   .561   .813   .206   1.76   .215  -.004   1
+  13 12SS06   1869 2018    150      3      3    .143    .51   2.14   .322   .844   .292   1.67   .274  -.002   3
+  14 12SS13   1878 2020    143      3      3   -.150   1.20   2.29   .537   .815   .246   2.20   .252  -.044   3
+  15 12SS11   1862 2017    156      3      0    .469    .98   2.91   .536   .859   .245   1.81   .257  -.051   1
+  16 12SS08   1873 2018    146      3      0    .699    .87   1.97   .348   .688   .278   1.96   .274   .023   1
+  17 12SS14   1861 2017    157      3      3    .198    .94   2.19   .429   .816   .230   1.56   .235   .033   1
+  18 12SS22   1878 2020    143      3      0    .688    .78   1.98   .320   .639   .280   1.88   .281   .007   1
+  19 12SS10   1864 2019    156      3      0    .573   1.39   2.81   .436   .630   .215   1.59   .223  -.006   3
+  20 12SS18   1864 2019    156      3      0    .499    .53   2.30   .291   .747   .264   2.37   .298   .052   1
+  21 12SS19   1869 2019    151      3      3    .079    .88   2.88   .640   .918   .276   2.05   .271  -.008   2
+  22 12SS04   1865 2019    155      3      0    .513   1.10   3.30   .489   .764   .249   1.82   .251  -.018   3
+  23 12SS25   1865 2018    154      3      1    .396    .68   1.58   .262   .695   .244   1.97   .247   .044   1
+  24 12SS26   1866 2016    151      3      0    .254    .72   2.26   .515   .820   .318  15.68  1.275   .459   1
+  25 12SS15   1873 2018    146      3      0    .529   1.01   2.95   .567   .813   .318   1.95   .317  -.003   2
+  26 12SS07   1871 2013    143      3      0    .485    .98   3.00   .594   .858   .275   1.98   .269  -.006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3890     77     19    .419    .92   3.63   .460   .792   .260  15.68   .301   .025
+
+ DATA CHECKS (rwl.check): cze045
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze045.rwl
+ 26 series, 3890 measurements, 1856-2020, 0.01 mm precision
+ 2 error(s), 2 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     12SS13: correlates best with the master at lag -3 (r = 0.447 against r = -0.159 as dated); the series may be misdated by 3 year(s), most likely a missing ring
+     12SS14: correlates best with the master at lag -1 (r = 0.413 against r = 0.32 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     12 byte(s) outside printable ASCII
+   RWL_SERIES_OUTLIER (1)
+     12SS13: correlates with the rest of the collection at r = -0.159 where the collection median is 0.496 (4.6 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file cze045.rwl, MD5 d14133a86c71362a4affdfa152fe79fc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: arg151
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg151.rwl
+      MD5 of measurement file: 6139f96cd351ca4834884ea2cbda7f36
+      Date checked           : 01OCT26
+      Beginning year         : 1709
+      Ending year            : 1999
+      Principal investigators: Villalba, R.; Ferrero, M.E.
+      Site name              : La Mesada - LMJ
+      Species information    : JGAU Juglans australis Griseb.
+      Latitude               : 22.3333 S
+      Longitude              : 64.6333 W
+      Elevation              : 1460 m
+
+      Series intercorrelation: 0.519
+      Avg mean sensitivity   : 0.442
+      Avg standard deviation : 1.004
+      Avg autocorrelation    : 0.561
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 5, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 15.38
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 lmj16b   1916 1999                           .30A .30A
+   2 lmj14b   1930 1999                                .54 
+   4 lmj15a   1917 1999                           .24A .46 
+   5 lmj19a   1709 1999       .52  .36  .21B .29B .52  .55 
+   6 lmj20a   1916 1999                           .35  .46 
+   7 lmj20b   1905 1996                           .48      
+   8 lmj28a   1812 1999       .74  .66  .56  .32A .33  .65 
+   9 lmj29a   1890 1999                      .68  .38  .49 
+  10 lmj29b   1837 1999            .53  .48  .62  .69  .52 
+  11 lmj31b   1896 1999                      .63  .69  .64 
+  13 lmr32b   1914 1999                           .51  .78 
+  15 lmj33b   1839 1999            .58  .58  .64  .71  .70 
+  16 lmj35a   1859 1999                 .68  .66  .63  .60 
+  17 lmj36A   1914 1999                           .70  .80 
+  18 lmj36B   1925 1994                           .67      
+  19 lmj38b   1818 1999       .62  .38  .24B .32A .60  .67 
+  20 lmj39a   1912 1998                           .54      
+ Av segment correlation       .63  .50  .46  .52  .52  .58 
+
+ FLAGGED SEGMENTS: arg151
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 lmj16b   1925 1974     A     .295         0
+   1 lmj16b   1950 1999     A     .299         0
+   4 lmj15a   1925 1974     A     .237         0
+   5 lmj19a   1875 1924     B     .207         4      .227   .020  weak at every lag
+   5 lmj19a   1900 1949     B     .294         4      .362   .068
+   8 lmj28a   1900 1949     A     .322         0
+  19 lmj38b   1875 1924     B     .236        -7      .239   .003  weak at every lag
+  19 lmj38b   1900 1949     A     .323         0
+
+ DESCRIPTIVE STATISTICS: arg151
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 lmj16b   1916 1999     84      2      2    .306   2.81   5.80  1.352   .734   .313   1.74   .303   .148   0
+   2 lmj14b   1930 1999     70      1      0    .486   1.89   6.23  1.019   .350   .479   2.67   .446   .029   1
+   3 lm14b2   1900 1930     31      0      0    .399   2.49   5.86  1.160   .269   .550   1.87   .393   .022   2
+   4 lmj15a   1917 1999     83      2      1    .417   3.48   6.59  1.335   .452   .334   1.88   .306   .016   2
+   5 lmj19a   1709 1999    291      6      2    .336    .82   3.43   .521   .474   .467   3.54   .440   .041   0
+   6 lmj20a   1916 1999     84      2      0    .438   2.29   5.99  1.173   .689   .365   2.13   .311   .043   0
+   7 lmj20b   1905 1996     92      1      0    .263   2.67   7.41  1.294   .430   .390   2.60   .368  -.029   0
+   8 lmj28a   1812 1999    188      6      1    .527    .57   2.18   .400   .566   .546   2.80   .492   .003   1
+   9 lmj29a   1890 1999    110      3      0    .600   1.64   4.48   .978   .595   .506   2.32   .463   .026   1
+  10 lmj29b   1837 1999    163      5      0    .554   1.41   3.49   .771   .365   .543   2.09   .472   .006   3
+  11 lmj31b   1896 1999    104      3      0    .637   1.43   4.44   .866   .528   .440   2.40   .442   .035   1
+  12 lmj32a   1952 1999     48      0      0    .786   3.21   6.08  1.094   .040   .387   1.73   .319  -.111   0
+  13 lmr32b   1914 1999     86      2      0    .613   2.04   4.86  1.044   .450   .408   2.35   .397   .019   1
+  14 lmj32c   1959 1999     41      0      0    .679   3.70  10.37  2.378   .751   .362   1.89   .388   .191   0
+  15 lmj33b   1839 1999    161      5      0    .628   1.29   6.16  1.263   .809   .430   1.85   .354   .020   0
+  16 lmj35a   1859 1999    141      4      0    .652   1.59   4.65   .963   .501   .537   3.14   .496   .094   0
+  17 lmj36A   1914 1999     86      2      0    .687   2.52   7.02  1.357   .763   .315   1.60   .287   .013   2
+  18 lmj36B   1925 1994     70      1      0    .683   1.93   5.76  1.202   .839   .321   1.75   .307   .104   0
+  19 lmj38b   1818 1999    182      6      2    .511   1.46   4.74   .932   .634   .451   2.06   .388   .017   2
+  20 lmj39a   1912 1998     87      1      0    .516   2.75   7.36  1.856   .812   .333   2.34   .360   .018   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2202     52      8    .519   1.75  10.37  1.004   .561   .442   3.54   .404   .032
+
+ DATA CHECKS (rwl.check): arg151
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg151.rwl
+ 20 series, 2202 measurements, 1709-1999, 0.001 mm precision
+ 0 error(s), 1 warning(s), 6 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (1)
+     lmr32b: site code differs from the lmj used by 18 of 20 series
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file arg151.rwl, MD5 6139f96cd351ca4834884ea2cbda7f36.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

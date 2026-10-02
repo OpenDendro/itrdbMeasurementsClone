@@ -1,0 +1,148 @@
+
+ COFECHA-style crossdating report: lith006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : lith006.rwl
+      MD5 of measurement file: e2e110363d1adcc5a077672967ee604d
+      Date checked           : 01OCT26
+      Beginning year         : 1876
+      Ending year            : 1998
+      Principal investigators: Vitas, A.
+      Site name              : Kajackai-p
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 54.8000 N
+      Longitude              : 23.6000 E
+      Elevation              : 75 m
+
+      Series intercorrelation: 0.508
+      Avg mean sensitivity   : 0.242
+      Avg standard deviation : 1.016
+      Avg autocorrelation    : 0.820
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 3, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 15.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: lith006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   2 KPEM03   1892 1998  .39  .50 
+   3 KPEM04   1904 1998       .65 
+   4 KPEM05   1884 1998  .24B .66 
+   5 KPEM06   1894 1998  .22A .43 
+   6 KPEM07   1892 1998  .31A .48 
+   7 KPEM08   1886 1998  .41  .61 
+   8 KPEM09   1894 1998  .52  .58 
+   9 KPEM10   1876 1998  .18B .35B
+  10 KPEM11   1897 1998  .45  .56 
+  11 KPEM12   1887 1998  .60  .68 
+  12 KPEM13   1891 1998  .49  .47 
+  13 KPEM14   1894 1998  .59  .67 
+  14 KPEM16   1886 1998  .45  .51 
+  15 KPEM17   1915 1998       .62 
+  16 KPEM18   1914 1998       .48 
+  17 KPEM19   1918 1998       .54 
+  19 KPEM21   1890 1998  .28A .47 
+  21 KPEM23   1923 1998       .35 
+  22 KPEM24   1923 1998       .53 
+  23 KPEM25   1905 1998       .43 
+  24 KPEM26   1909 1998       .49 
+  25 KPEM27   1921 1998       .38 
+  26 KPEM28   1923 1998       .36 
+  27 KPEM29   1913 1998       .38 
+  28 KPEM30   1904 1998       .76 
+ Av segment correlation  .39  .52 
+
+ FLAGGED SEGMENTS: lith006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 KPEM05   1900 1949     B     .237         2      .297   .060  weak at every lag
+   5 KPEM06   1900 1949     A     .224         0
+   6 KPEM07   1900 1949     A     .308         0
+   9 KPEM10   1900 1949     B     .179        -4      .317   .138  weak at every lag
+   9 KPEM10   1925 1974     B     .350        -1      .359   .008
+  19 KPEM21   1900 1949     A     .283         0
+
+ DESCRIPTIVE STATISTICS: lith006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KPEM02   1930 1998     69      0      0    .572   1.77   3.22   .556   .553   .237   1.53   .239   .025   1
+   2 KPEM03   1892 1998    107      2      0    .505   1.50   4.74  1.005   .882   .239   1.56   .219   .004   3
+   3 KPEM04   1904 1998     95      1      0    .597   1.97   5.05  1.029   .705   .312   1.96   .300   .002   2
+   4 KPEM05   1884 1998    115      2      1    .368   1.59   6.00  1.110   .821   .240   2.98   .304   .111   1
+   5 KPEM06   1894 1998    105      2      1    .380   1.19   8.48  1.175   .847   .229   2.36   .280   .039   1
+   6 KPEM07   1892 1998    107      2      1    .509   1.29   4.40   .981   .906   .258   1.74   .252   .042   1
+   7 KPEM08   1886 1998    113      2      0    .532   1.79   7.53  1.356   .902   .241   1.60   .257   .060   1
+   8 KPEM09   1894 1998    105      2      0    .568   1.45   3.67   .780   .888   .193   1.42   .198   .042   1
+   9 KPEM10   1876 1998    123      2      2    .383   1.44   7.48  1.170   .689   .311   1.97   .331   .014   2
+  10 KPEM11   1897 1998    102      2      0    .502   2.54   6.45  1.517   .839   .261   1.86   .284   .114   1
+  11 KPEM12   1887 1998    112      2      0    .587   2.20   6.98  1.318   .807   .262   2.07   .290  -.002   1
+  12 KPEM13   1891 1998    108      2      0    .547   1.30   3.90   .841   .871   .257   1.86   .286   .066   1
+  13 KPEM14   1894 1998    105      2      0    .659   1.60   4.64   .933   .860   .258   1.78   .268   .052   1
+  14 KPEM16   1886 1998    113      2      0    .446   1.40   8.50  1.303   .800   .269   2.12   .307   .071   1
+  15 KPEM17   1915 1998     84      1      0    .643   1.53   4.81  1.159   .917   .232   1.50   .222  -.030   1
+  16 KPEM18   1914 1998     85      1      0    .537   1.68   4.29   .889   .789   .233   1.73   .226  -.029   2
+  17 KPEM19   1918 1998     81      1      0    .602   2.08   4.00   .830   .781   .246   1.46   .227  -.007   2
+  18 KPEM20   1928 1998     71      0      0    .593   2.53   5.99  1.259   .736   .242   1.69   .230  -.017   2
+  19 KPEM21   1890 1998    109      2      1    .395   1.27   4.54  1.227   .937   .269   1.77   .269   .026   3
+  20 KPEM22   1933 1998     66      0      0    .541   2.37   5.20  1.049   .807   .226   1.58   .237  -.003   1
+  21 KPEM23   1923 1998     76      1      0    .373   2.40   5.26  1.011   .811   .227   1.41   .200   .019   2
+  22 KPEM24   1923 1998     76      1      0    .580   1.42   3.69   .740   .850   .207   1.67   .226   .070   1
+  23 KPEM25   1905 1998     94      1      0    .443   1.35   3.38   .827   .880   .249   2.99   .325  -.043   1
+  24 KPEM26   1909 1998     90      1      0    .484   1.25   2.99   .581   .848   .200   1.45   .210   .040   1
+  25 KPEM27   1921 1998     78      1      0    .398   1.63   3.10   .529   .699   .190   1.90   .211   .000   2
+  26 KPEM28   1923 1998     76      1      0    .495   1.94   5.14   .845   .750   .191   2.02   .219  -.009   2
+  27 KPEM29   1913 1998     86      1      0    .415   1.97   5.27  1.043   .765   .229   1.74   .225   .028   1
+  28 KPEM30   1904 1998     95      1      0    .671   2.06   4.10   .837   .846   .188   1.58   .207  -.011   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2646     38      6    .508   1.70   8.50  1.016   .820   .242   2.99   .256   .027
+
+ DATA CHECKS (rwl.check): lith006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/lith006.rwl
+ 28 series, 2646 measurements, 1876-1998, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 278 carriage return(s) against 282 line feed(s); mixed endings can defeat a reader
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file lith006.rwl, MD5 e2e110363d1adcc5a077672967ee604d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

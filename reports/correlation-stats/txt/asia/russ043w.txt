@@ -1,0 +1,171 @@
+
+ COFECHA-style crossdating report: russ043w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ043w.rwl
+      MD5 of measurement file: 295d58f661c6ad542940f7134de46c5f
+      Date checked           : 01OCT26
+      Beginning year         : 1753
+      Ending year            : 1990
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Voroney
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 63.4300 N
+      Longitude              : 43.5500 E
+      Elevation              : 120 m
+
+      Series intercorrelation: 0.650
+      Avg mean sensitivity   : 0.228
+      Avg standard deviation : 0.301
+      Avg autocorrelation    : 0.748
+      Number dated series    : 24
+      Series crossdated      : 14
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 4.55
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ043w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 892022   1776 1990  .85  .80  .77  .69  .56  .70 
+   2 892023   1766 1990  .81  .80  .78  .73  .56  .80 
+   3 892031   1772 1990  .78  .72  .63  .60  .43  .55 
+   5 892041   1753 1938  .68  .60  .61  .28A          
+   6 892042   1775 1927  .58  .58  .73  .71           
+   7 892051   1760 1990  .83  .86  .88  .83  .65  .75 
+  12 892072   1855 1990                 .69  .58  .41 
+  13 892081   1782 1959  .83  .74  .65  .52  .41      
+  14 892082   1764 1949  .78  .61  .36B .34B .50      
+  16 892092   1903 1990                           .47 
+  17 892121   1763 1990  .82  .80  .63  .63  .69  .53 
+  20 892132   1781 1990  .58  .76  .53  .46  .63  .65 
+  21 892141   1834 1947            .65  .61           
+  24 892152   1793 1990  .73  .75  .63  .54  .67  .82 
+ Av segment correlation  .75  .73  .65  .59  .57  .63 
+
+ FLAGGED SEGMENTS: russ043w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 892041   1875 1924     A     .278         0
+  14 892082   1850 1899     B     .360        -5      .404   .044
+  14 892082   1875 1924     B     .342        -5      .401   .059
+
+ DESCRIPTIVE STATISTICS: russ043w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 892022   1776 1990    215      6      0    .734    .73   2.02   .457   .850   .279   1.79   .279   .017   1
+   2 892023   1766 1990    225      6      0    .757    .74   2.00   .466   .850   .281   1.89   .289  -.009   1
+   3 892031   1772 1990    219      6      0    .644    .50   1.13   .171   .684   .223   1.76   .218   .004   3
+   4 892032   1874 1990    114                          .58   1.26   .204   .786   .184                         
+   5 892041   1753 1938    186      4      1    .462    .83   1.55   .281   .628   .238   1.90   .241   .012   2
+   6 892042   1775 1927    153      4      0    .648    .62   1.72   .280   .769   .229   1.71   .232   .003   1
+   7 892051   1760 1990    231      6      0    .762    .59   1.42   .249   .778   .226   1.77   .241   .058   1
+   8 892052   1782 1990    208                          .48    .81   .149   .632   .218                         
+   9 892061   1786 1990    203                          .60   1.62   .267   .838   .203                         
+  10 892062   1777 1990    212                          .57   1.26   .219   .765   .203                         
+  11 892071   1872 1990    118                          .86   2.17   .277   .638   .199                         
+  12 892072   1855 1990    136      3      0    .595    .91   1.89   .289   .641   .200   1.52   .193   .017   2
+  13 892081   1782 1959    178      5      0    .638    .51   1.57   .309   .904   .232   1.57   .224  -.002   2
+  14 892082   1764 1949    186      5      2    .550    .83   1.70   .323   .814   .184   1.69   .203  -.045   1
+  15 892091   1805 1990    185                          .82   2.95   .539   .836   .268                         
+  16 892092   1903 1990     88      1      0    .557   1.35   2.95   .610   .835   .238   1.54   .229   .054   1
+  17 892121   1763 1990    228      6      0    .672    .69   1.39   .249   .765   .190   1.78   .207   .007   1
+  18 892122   1772 1990    217                          .63   1.45   .234   .812   .178                         
+  19 892131   1793 1990    197                          .78   1.80   .298   .616   .278                         
+  20 892132   1781 1990    210      6      0    .611    .76   1.70   .314   .608   .290   2.52   .306   .013   2
+  21 892141   1834 1947    114      2      0    .615    .80   1.96   .350   .820   .216   1.53   .210   .094   1
+  22 892143   1829 1990    147                          .73   1.45   .255   .763   .205                         
+  23 892151   1788 1990    201                          .82   1.85   .265   .642   .222                         
+  24 892152   1793 1990    198      6      0    .706    .85   2.18   .313   .708   .235   1.92   .233   .017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4369     66      3    .650    .71   2.95   .301   .748   .228   2.52   .239   .014
+
+ DATA CHECKS (rwl.check): russ043w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ043w.rwl
+ 24 series, 4369 measurements, 1753-1990, 0.01 mm precision
+ 0 error(s), 10 warning(s), 10 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (10)
+     892032: no measurement for 1925-1927, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892052: no measurement for 1841, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892061: no measurement for 1813, 1889, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892062: no measurement for 1892-1893, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892071: no measurement for 1963, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892091: no measurement for 1893, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892122: no measurement for 1831-1832, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892131: no measurement for 1865, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892143: no measurement for 1900-1913, 1957, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     892151: no measurement for 1881-1882, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file russ043w.rwl, MD5 295d58f661c6ad542940f7134de46c5f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 892032 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892052 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892061 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892062 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892071 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892091 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892122 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892131 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892143 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 892151 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

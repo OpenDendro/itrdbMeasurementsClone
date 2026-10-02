@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: ia034
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ia034.rwl
+      MD5 of measurement file: 92e65ba06b6e0a4ef1e7d1d64a18bdb3
+      Date checked           : 01OCT26
+      Beginning year         : 1702
+      Ending year            : 1857
+      Principal investigators: Stambaugh, M.C.; Guyette, R.P.; Marschall, J.M.
+      Site name              : Nye Homestead
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 41.4333 N
+      Longitude              : 90.9167 W
+      Elevation              : 198 m
+
+      Series intercorrelation: 0.457
+      Avg mean sensitivity   : 0.210
+      Avg standard deviation : 0.392
+      Avg autocorrelation    : 0.654
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ia034
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 
+                        1849 
+ --- -------- ---------  ---- 
+   2 NYE005   1741 1854  .61 
+   3 NYE07b   1711 1857  .56 
+   7 NYE06a   1730 1857  .65 
+   8 NYE06b   1730 1857  .65 
+   9 NYE04b   1705 1857  .56 
+  11 NYE001   1772 1856  .49 
+  12 NYE003   1740 1854  .43 
+  15 NYE10a   1716 1853  .53 
+  16 NYE04a   1702 1857  .50 
+ Av segment correlation  .55 
+
+ FLAGGED SEGMENTS: ia034
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: ia034
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PGC001   1711 1845    135      0      0    .521   1.12   3.06   .397   .706   .157   1.85   .186   .012   2
+   2 NYE005   1741 1854    114      1      0    .409   1.12   2.59   .469   .783   .218   1.65   .230   .031   1
+   3 NYE07b   1711 1857    147      1      0    .480   1.21   3.00   .385   .670   .179   1.68   .183   .018   1
+   4 NYE02a   1751 1847     97      0      0    .608   1.10   1.97   .304   .402   .235   1.54   .230   .132   0
+   5 NYE02b   1751 1847     97      0      0    .502   1.22   1.98   .313   .394   .226   1.46   .210   .118   0
+   6 NYE11b   1715 1835    121      0      0    .305   1.07   2.86   .567   .728   .280   2.09   .305   .022   1
+   7 NYE06a   1730 1857    128      1      0    .572   1.10   2.94   .340   .566   .197   1.76   .200   .009   1
+   8 NYE06b   1730 1857    128      1      0    .578   1.14   3.01   .345   .574   .181   1.76   .186   .000   2
+   9 NYE04b   1705 1857    153      1      0    .397    .84   2.34   .462   .823   .248   1.88   .248   .064   1
+  10 PCG01B   1755 1845     91      0      0    .329   1.20   1.90   .235   .454   .151   1.32   .143   .087   0
+  11 NYE001   1772 1856     85      1      0    .513   1.23   2.91   .492   .766   .206   2.36   .248   .042   1
+  12 NYE003   1740 1854    115      1      0    .341    .89   2.02   .327   .763   .183   1.46   .182   .018   1
+  13 NYE08a   1705 1843    139      0      0    .522   1.25   2.81   .436   .691   .203   1.69   .211   .039   1
+  14 NYE08b   1706 1806    101      0      0    .508   1.21   2.30   .368   .561   .210   1.56   .207   .002   2
+  15 NYE10a   1716 1853    138      1      0    .311    .93   2.05   .328   .639   .215   1.85   .224  -.043   3
+  16 NYE04a   1702 1857    156      1      0    .447    .87   2.32   .441   .742   .257   1.78   .259  -.011   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1945      9      0    .457   1.08   3.06   .392   .654   .210   2.36   .217   .029
+
+ DATA CHECKS (rwl.check): ia034
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ia034.rwl
+ 16 series, 1945 measurements, 1702-1857, 0.01 mm precision
+ 0 error(s), 3 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     NYE10a: correlates with the rest of the collection at r = 0.207 where the collection median is 0.479 (4 MAD below it); it does not fit the collection it is in
+   RWL_SITE_CODE (2)
+     PCG01B: site code differs from the nye used by 14 of 16 series
+     PGC001: site code differs from the nye used by 14 of 16 series
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file ia034.rwl, MD5 92e65ba06b6e0a4ef1e7d1d64a18bdb3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

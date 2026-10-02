@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: ak017
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak017.rwl
+      MD5 of measurement file: 08e77dfcf82509da05a39a20f0063829
+      Date checked           : 01OCT26
+      Beginning year         : 1719
+      Ending year            : 1988
+      Principal investigators: Wiles, G.; Calkin, P.E.
+      Site name              : Grewingk Glacier
+      Species information    : PCSI Picea sitchensis (Bong.) Carrière
+      Latitude               : 59.6200 N
+      Longitude              : 151.1500 W
+      Elevation              : 20 m
+
+      Series intercorrelation: 0.469
+      Avg mean sensitivity   : 0.209
+      Avg standard deviation : 0.552
+      Avg autocorrelation    : 0.857
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 3, B 10; 4 of the B weak at every lag)
+      Pct problem segments   : 14.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GB01SE   1785 1988  .55  .34  .42  .55  .48  .66 
+   2 GB01NE   1814 1988       .41  .43  .56  .65  .76 
+   3 GB01NW   1808 1988       .44  .39  .55  .56  .57 
+   4 GB02SW   1800 1988       .54  .66  .42  .19B .34B
+   5 GB03SW   1837 1988            .61  .51  .37  .46 
+   6 GB06SE   1792 1988  .40  .51  .66  .72  .50  .39 
+   7 GB07SW   1737 1988  .69  .72  .61  .39  .29A .66 
+   8 GB07NW   1747 1988  .57  .69  .63  .41  .12B .21B
+   9 GB07SE   1738 1988  .63  .60  .54  .50  .40  .51 
+  10 GB08NW   1839 1988            .41  .26A .34  .52 
+  11 GB08SE   1812 1988       .62  .62  .58  .42  .49 
+  12 GB08NE   1770 1988  .58  .65  .69  .68  .61  .39 
+  13 GB09SE   1719 1988  .66  .61  .65  .51 -.01B .02B
+  14 GB09SW   1755 1988  .63  .58  .62  .47  .39  .54 
+  15 GB13NW   1810 1988       .41  .41  .40  .39  .27B
+  16 GB16NW   1802 1988       .48  .57  .58  .38  .26A
+  17 GB23SE   1762 1988  .40  .36  .31B .21B .23B .42 
+ Av segment correlation  .57  .53  .54  .49  .37  .44 
+
+ FLAGGED SEGMENTS: ak017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 GB02SW   1900 1949     B     .194         6      .236   .042  weak at every lag
+   4 GB02SW   1925 1974     B     .340         3      .511   .171
+   7 GB07SW   1900 1949     A     .295         0
+   8 GB07NW   1900 1949     B     .115         5      .312   .197  weak at every lag
+   8 GB07NW   1925 1974     B     .209         1      .251   .041  weak at every lag
+  10 GB08NW   1875 1924     A     .259         0
+  13 GB09SE   1900 1949     B    -.014        -5      .323   .337  weak at every lag
+  13 GB09SE   1925 1974     B     .015         1      .488   .472
+  15 GB13NW   1925 1974     B     .268         2      .343   .074
+  16 GB16NW   1925 1974     A     .260         0
+  17 GB23SE   1850 1899     B     .312        10      .348   .037
+  17 GB23SE   1875 1924     B     .208        10      .353   .145
+  17 GB23SE   1900 1949     B     .226        -7      .329   .103
+
+ DESCRIPTIVE STATISTICS: ak017
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GB01SE   1785 1988    204      6      0    .500   1.50   3.00   .529   .842   .151   1.46   .156   .005   3
+   2 GB01NE   1814 1988    175      5      0    .573   1.34   2.75   .535   .864   .152   1.45   .168   .007   1
+   3 GB01NW   1808 1988    181      5      0    .522   1.89   4.12   .849   .870   .153   1.48   .167  -.020   3
+   4 GB02SW   1800 1988    189      5      2    .413   1.46   4.44   .814   .896   .167   1.78   .180  -.005   1
+   5 GB03SW   1837 1988    152      4      0    .496   1.40   3.18   .632   .873   .180   1.64   .190  -.003   2
+   6 GB06SE   1792 1988    197      6      0    .447   1.09   3.05   .644   .913   .194   1.61   .219   .039   1
+   7 GB07SW   1737 1988    252      6      1    .519    .85   2.20   .365   .801   .229   1.67   .222  -.043   3
+   8 GB07NW   1747 1988    242      6      2    .471   1.07   2.44   .398   .689   .232   1.77   .252  -.023   3
+   9 GB07SE   1738 1988    251      6      0    .514    .66   1.67   .289   .777   .250   1.61   .240   .049   1
+  10 GB08NW   1839 1988    150      4      1    .377   1.46   3.48   .805   .901   .202   1.83   .238   .016   2
+  11 GB08SE   1812 1988    177      5      0    .523    .74   1.80   .389   .869   .219   1.74   .234   .022   1
+  12 GB08NE   1770 1988    219      6      0    .512    .51   1.64   .275   .855   .222   1.77   .238  -.016   3
+  13 GB09SE   1719 1988    270      6      2    .427    .58   1.94   .458   .925   .253   1.97   .269   .004   1
+  14 GB09SW   1755 1988    234      6      0    .520    .85   3.14   .617   .924   .229   1.68   .244  -.010   3
+  15 GB13NW   1810 1988    179      5      1    .376   1.13   6.66   .842   .830   .220   2.05   .257  -.011   3
+  16 GB16NW   1802 1988    187      5      1    .439   1.11   2.58   .564   .875   .228   1.71   .240   .026   1
+  17 GB23SE   1762 1988    227      6      3    .333    .95   4.05   .692   .913   .212   1.96   .239   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3486     92     13    .469   1.05   6.66   .552   .857   .209   2.05   .223   .003
+
+ DATA CHECKS (rwl.check): ak017
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak017.rwl
+ 17 series, 3486 measurements, 1719-1988, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file ak017.rwl, MD5 08e77dfcf82509da05a39a20f0063829.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,189 @@
+
+ COFECHA-style crossdating report: nd015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nd015.rwl
+      MD5 of measurement file: c729b2b604e17ca3be758be84f4d6d1a
+      Date checked           : 01OCT26
+      Beginning year         : 1826
+      Ending year            : 2015
+      Principal investigators: Friedman, J.; Ankney, F.R.; Wolf, J.M.
+      Site name              : Garrison Dam Floodplain
+      Species information    : PPDE Populus deltoides Bartr. ex Marsh.
+      Latitude               : 46.9500 N
+      Longitude              : 100.9200 W
+      Elevation              : 500 m
+
+      Series intercorrelation: 0.438
+      Avg mean sensitivity   : 0.271
+      Avg standard deviation : 1.858
+      Avg autocorrelation    : 0.728
+      Number dated series    : 43
+      Series crossdated      : 41
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 7, B 6; 5 of the B weak at every lag)
+      Pct problem segments   : 13.98
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nd015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 GM01A    1882 2014  .38  .60  .49 
+   2 GM01B    1875 2014  .42  .52  .43 
+   3 GM02A    1862 2014  .43  .45  .25B
+   4 GM02B    1909 2013       .63  .49 
+   5 GM03A    1921 2014       .38  .16B
+   6 GM07B    1918 2014       .53  .56 
+   7 GM07D    1930 2014            .30A
+   8 GM08A    1902 2014       .68  .51 
+   9 GM08B    1898 2014  .46  .65  .62 
+  10 GM09A    1915 2014       .72  .57 
+  11 GM09B    1895 2014  .57  .75  .59 
+  12 GM10A    1901 2014       .76  .65 
+  13 GM11A    1921 2014       .77  .68 
+  14 GM12A    1885 2014  .32A .50  .56 
+  15 GM12B    1888 2014  .51  .62  .39 
+  16 GM13A    1873 2012  .33A .52  .27A
+  17 GM13B    1859 2014  .51  .34  .18B
+  18 GM16A    1879 2011  .63  .64  .38 
+  19 GM16B    1895 2012  .45  .55  .24A
+  20 GM20A    1920 2015       .52  .51 
+  21 GM20B    1918 2015       .37  .40 
+  22 GM21A    1920 2015       .48  .45 
+  23 GM21B    1919 2015       .43  .20B
+  24 GM22B    1913 2015       .51  .39 
+  27 GM24B    1906 2015       .50  .51 
+  28 GM26A    1941 2015            .48 
+  29 GM26B    1922 2015       .35  .35B
+  31 GM28B    1909 2015       .67  .65 
+  32 GM28C    1877 2015  .53  .57  .54 
+  33 GM29A    1920 2015       .51  .39 
+  34 GM30A    1878 2015  .37  .37  .30A
+  36 GM31B    1910 2015       .55  .46 
+  37 GM32A    1849 2015  .63  .59  .36 
+  38 GM32B    1826 2015  .58  .57  .39 
+  40 GM33B    1885 2015  .32A .58  .35 
+  41 GM34A    1868 2015  .48  .37  .12B
+  42 GM35A    1855 2015  .44  .38  .37 
+  43 GM35B    1853 2015  .59  .60  .46 
+ Av segment correlation  .47  .54  .42 
+
+ FLAGGED SEGMENTS: nd015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 GM02A    1950 1999     B     .248         7      .259   .012  weak at every lag
+   5 GM03A    1950 1999     B     .164        10      .254   .091  weak at every lag
+   7 GM07D    1950 1999     A     .300         0
+  14 GM12A    1900 1949     A     .321         0
+  16 GM13A    1900 1949     A     .326         0
+  16 GM13A    1950 1999     A     .272         0
+  17 GM13B    1950 1999     B     .176         6      .213   .037  weak at every lag
+  19 GM16B    1950 1999     A     .239         0
+  23 GM21B    1950 1999     B     .200         1      .229   .029  weak at every lag
+  29 GM26B    1950 1999     B     .353         6      .353   .000
+  34 GM30A    1950 1999     A     .304         0
+  40 GM33B    1900 1949     A     .319         0
+  41 GM34A    1950 1999     B     .116         1      .251   .135  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nd015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GM01A    1882 2014    133      3      0    .385   2.51   4.57   .819   .786   .179   1.49   .176  -.007   2
+   2 GM01B    1875 2014    140      3      0    .381   3.22   6.44  1.043   .715   .188   1.73   .192  -.014   1
+   3 GM02A    1862 2014    153      3      1    .278   2.74   9.15  1.228   .678   .198   2.07   .220   .005   1
+   4 GM02B    1909 2013    105      2      0    .470   1.95   5.52   .972   .808   .245   1.67   .252   .042   1
+   5 GM03A    1921 2014     94      2      1    .340   1.63   4.42   .706   .655   .275   1.76   .285   .034   1
+   6 GM07B    1918 2014     97      2      0    .503   6.37  16.45  3.896   .840   .299   1.73   .278  -.015   2
+   7 GM07D    1930 2014     85      1      1    .387   7.01  18.51  4.623   .744   .351   1.99   .348   .015   1
+   8 GM08A    1902 2014    113      2      0    .574   3.52  13.52  2.706   .928   .272   1.91   .266   .008   1
+   9 GM08B    1898 2014    117      3      0    .556   5.58  12.33  2.831   .795   .303   1.76   .301   .025   1
+  10 GM09A    1915 2014    100      2      0    .531   3.22   7.96  1.479   .728   .292   1.79   .286   .049   1
+  11 GM09B    1895 2014    120      3      0    .571   4.46  11.06  1.909   .725   .261   1.59   .260   .022   2
+  12 GM10A    1901 2014    114      2      0    .548   4.61  15.30  2.543   .758   .238   1.95   .275   .013   1
+  13 GM11A    1921 2014     94      2      0    .657   6.69  12.41  2.231   .418   .306   1.51   .256  -.028   3
+  14 GM12A    1885 2014    130      3      1    .402   4.04   9.81  1.870   .666   .276   1.59   .258   .014   1
+  15 GM12B    1888 2014    127      3      0    .396   3.73  10.17  1.941   .718   .264   2.07   .283  -.026   1
+  16 GM13A    1873 2012    140      3      2    .266   3.66  13.02  1.724   .512   .280   3.26   .358   .007   1
+  17 GM13B    1859 2014    156      3      1    .289   3.88  10.50  1.733   .707   .255   2.62   .293   .039   1
+  18 GM16A    1879 2011    133      3      0    .354   3.91  10.52  2.552   .835   .260   1.92   .261  -.007   3
+  19 GM16B    1895 2012    118      3      1    .267   4.68  11.91  2.640   .860   .204   1.47   .218  -.079   3
+  20 GM20A    1920 2015     96      2      0    .368   4.86  11.46  2.622   .730   .292   1.71   .269  -.004   3
+  21 GM20B    1918 2015     98      2      0    .349   6.54  15.80  2.561   .461   .272   2.54   .310   .014   1
+  22 GM21A    1920 2015     96      2      0    .424   7.51  21.68  3.574   .756   .210   1.57   .220   .009   1
+  23 GM21B    1919 2015     97      2      1    .407   7.40  16.11  2.461   .614   .202   1.58   .212   .006   1
+  24 GM22B    1913 2015    103      2      0    .429   3.84   8.26  1.624   .754   .243   1.73   .236   .020   1
+  25 GM23A    1892 2015    124                         5.56  13.03  2.817   .835   .242                         
+  26 GM23B    1891 2015    125                         4.87  12.45  2.695   .784   .300                         
+  27 GM24B    1906 2015    110      2      0    .527   5.12  13.67  2.591   .777   .258   1.82   .276  -.005   2
+  28 GM26A    1941 2015     75      1      0    .462   4.72   8.84  1.604   .612   .228   1.53   .197  -.073   0
+  29 GM26B    1922 2015     94      2      1    .307   5.85  13.70  2.367   .670   .216   1.47   .191   .035   2
+  30 GM27B    1951 2015     65      0      0    .486   2.28   7.98  1.334   .783   .289   1.82   .303  -.046   3
+  31 GM28B    1909 2015    107      2      0    .640   2.02   4.20   .815   .673   .301   1.77   .257   .100   0
+  32 GM28C    1877 2015    139      3      0    .538   2.15   4.65   .912   .683   .270   1.54   .247   .005   1
+  33 GM29A    1920 2015     96      2      0    .476   1.95   9.35  1.417   .772   .348   2.23   .345  -.013   2
+  34 GM30A    1878 2015    138      3      1    .384   1.44   7.76  1.068   .835   .302   1.58   .274   .018   1
+  35 GM30B    1972 2015     44      0      0    .476   1.07   3.64   .900   .728   .489   2.01   .437   .001   1
+  36 GM31B    1910 2015    106      2      0    .480   3.16  11.45  1.772   .736   .308   1.91   .293  -.001   2
+  37 GM32A    1849 2015    167      3      0    .578   2.44   7.84  1.242   .688   .259   2.08   .279  -.035   2
+  38 GM32B    1826 2015    190      3      0    .591   2.35   8.36  1.334   .724   .299   2.84   .310   .000   2
+  39 GM33A    1961 2015     55      0      0    .368   1.72   6.11  1.164   .776   .305   2.01   .292  -.003   1
+  40 GM33B    1885 2015    131      3      1    .348   1.97   5.15  1.104   .744   .322   2.12   .318  -.017   1
+  41 GM34A    1868 2015    148      3      1    .392   2.08   7.64  1.490   .776   .348   2.18   .346   .020   1
+  42 GM35A    1855 2015    161      3      0    .406   2.48  10.81  1.461   .772   .302   1.94   .284  -.002   3
+  43 GM35B    1853 2015    163      3      0    .434   2.56   9.65  1.445   .705   .262   1.66   .261   .063   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4997     93     13    .438   3.70  21.68  1.858   .728   .271   3.26   .272   .006
+
+ DATA CHECKS (rwl.check): nd015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nd015.rwl
+ 43 series, 4997 measurements, 1826-2015, 0.002 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file nd015.rwl, MD5 c729b2b604e17ca3be758be84f4d6d1a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series GM23A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series GM23B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

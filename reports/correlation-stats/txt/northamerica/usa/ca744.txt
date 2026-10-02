@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: ca744
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca744.rwl
+      MD5 of measurement file: 10098538afe9d4586995b3007f888324
+      Date checked           : 01OCT26
+      Beginning year         : 1776
+      Ending year            : 2023
+      Principal investigators: Birch, J.D.; Miesel, J.R.; Dickinson, M.B.
+      Site name              : Golden Trout Wilderness
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.2642 N
+      Longitude              : 118.5186 W
+      Elevation              : 1959 m
+
+      Series intercorrelation: 0.489
+      Avg mean sensitivity   : 0.231
+      Avg standard deviation : 0.600
+      Avg autocorrelation    : 0.684
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 12.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca744
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 PL11_09  1926 2023                                .59 
+   2 PL11_07  1870 2023                 .40  .55  .50  .49 
+   3 PL11_16  1855 2023                 .44  .41  .61  .66 
+   4 PL11_10  1910 2023                           .41  .45 
+   5 PL11_02  1924 2023                           .49  .53 
+   6 PL11_04  1897 2023                      .68  .63  .66 
+   7 PL11_15  1838 2023            .58  .49  .16B .31A .61 
+   8 PL11_03  1895 2023                      .59  .67  .58 
+   9 PL11_13  1776 2010            .47  .55  .44  .46  .43 
+  10 PL11_01  1898 2023                           .56  .58 
+  12 PL11_05  1935 2023                                .38 
+  13 PL11_11  1930 2023                                .62 
+  14 PL11_08  1910 2023                           .33  .54 
+  15 PL11_12  1912 2023                           .24B .35 
+  16 PL11_06  1830 1932            .36B .31A               
+ Av segment correlation            .47  .44  .47  .47  .53 
+
+ FLAGGED SEGMENTS: ca744
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 PL11_15  1900 1949     B     .155        -9      .197   .042  weak at every lag
+   7 PL11_15  1925 1974     A     .310         0
+  15 PL11_12  1925 1974     B     .237        -1      .321   .084  weak at every lag
+  16 PL11_06  1850 1899     B     .364         6      .434   .070
+  16 PL11_06  1875 1924     A     .313         0
+
+ DESCRIPTIVE STATISTICS: ca744
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PL11_09  1926 2023     98      1      0    .500   1.69   3.10   .508   .529   .221   1.89   .211  -.107   3
+   2 PL11_07  1870 2023    154      4      0    .448   1.44   3.46   .708   .850   .188   1.53   .188  -.017   1
+   3 PL11_16  1855 2023    169      4      0    .543   1.14   2.00   .354   .583   .229   1.45   .214  -.005   3
+   4 PL11_10  1910 2023    114      2      0    .506   1.15   2.11   .409   .587   .263   1.62   .248  -.024   1
+   5 PL11_02  1924 2023    100      2      0    .472   1.40   2.44   .375   .469   .232   1.48   .208   .141   0
+   6 PL11_04  1897 2023    127      3      0    .661   2.28   5.77  1.184   .915   .178   1.45   .172   .020   1
+   7 PL11_15  1838 2023    186      5      2    .562   1.40   3.04   .435   .312   .280   1.80   .251  -.003   2
+   8 PL11_03  1895 2023    129      3      0    .609   1.38   4.03   .919   .913   .217   1.71   .216   .006   1
+   9 PL11_13  1776 2010    235      5      0    .432   1.40   2.65   .448   .519   .265   1.60   .198  -.018   3
+  10 PL11_01  1898 2023    126      2      0    .493   1.68   3.66   .672   .841   .198   1.47   .170   .015   3
+  11 PL11_14  1962 2023     62      0      0    .609   1.98   5.45  1.142   .873   .185   1.35   .186   .065   1
+  12 PL11_05  1935 2023     89      1      0    .435   1.09   2.55   .582   .896   .199   1.53   .206  -.068   1
+  13 PL11_11  1930 2023     94      1      0    .539   1.18   2.51   .460   .740   .236   1.59   .225   .114   0
+  14 PL11_08  1910 2023    114      2      0    .369   1.13   1.93   .512   .853   .243   1.76   .246  -.029   1
+  15 PL11_12  1912 2023    112      2      1    .396   1.17   2.28   .473   .760   .245   1.72   .233  -.027   2
+  16 PL11_06  1830 1932    103      2      2    .244   1.88   4.88   .849   .739   .243   2.01   .273  -.001   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2012     39      5    .489   1.44   5.77   .600   .684   .231   2.01   .215   .000
+
+ DATA CHECKS (rwl.check): ca744
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca744.rwl
+ 16 series, 2012 measurements, 1776-2023, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ca744.rwl, MD5 10098538afe9d4586995b3007f888324.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,157 @@
+
+ COFECHA-style crossdating report: or083
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or083.rwl
+      MD5 of measurement file: 1f0fe4c768169f39de7a31f704794361
+      Date checked           : 01OCT26
+      Beginning year         : 1892
+      Ending year            : 2002
+      Principal investigators: King, J.C.
+      Site name              : Greenhorn Mountains
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 44.7000 N
+      Longitude              : 118.5500 W
+      Elevation              : 2295 m
+
+      Series intercorrelation: 0.562
+      Avg mean sensitivity   : 0.215
+      Avg standard deviation : 0.638
+      Avg autocorrelation    : 0.673
+      Number dated series    : 43
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 16.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or083
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 72-2-3   1938 2001            .57 
+   4 72-10-16 1937 2001            .65 
+   5 72-11-1  1933 2001            .47 
+   6 78-6-3   1944 2001            .73 
+   8 92-5-4   1936 2001            .64 
+   9 92-5-5   1934 2001            .70 
+  14 100-1-1  1896 2001  .30B .52  .42 
+  15 100-1-2  1914 2001       .50  .59 
+  16 100-2-4  1910 2001       .22B .24B
+  17 100-2-9  1910 2001       .36  .39 
+  18 100-2-10 1892 2001  .30A .54  .64 
+  19 100-3-3  1914 2001       .68  .76 
+  24 102-1-3  1947 2001            .75 
+  25 102-1-6  1948 2001            .65 
+  26 102-4-1  1901 2001       .57  .64 
+  27 102-4-3  1941 2001            .39 
+  28 102-5-2  1948 2001            .51 
+  31 109-5-4  1909 2001       .37  .24B
+  32 109-7-2  1938 2001            .67 
+  38 129-3-2  1946 2002            .63 
+  41 791-4-5  1935 2001            .73 
+ Av segment correlation  .30  .47  .57 
+
+ FLAGGED SEGMENTS: or083
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  14 100-1-1  1900 1949     B     .301        -3      .323   .022  weak at every lag
+  16 100-2-4  1925 1974     B     .216        10      .277   .061  weak at every lag
+  16 100-2-4  1950 1999     B     .236        -8      .297   .060  weak at every lag
+  18 100-2-10 1900 1949     A     .296         0
+  31 109-5-4  1950 1999     B     .239        -6      .242   .003  weak at every lag
+
+ DESCRIPTIVE STATISTICS: or083
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 69-2-3   1962 2001     40      0      0    .560   1.10   3.12   .610   .638   .331   1.99   .321   .033   2
+   2 72-1-4   1970 2001     32      0      0    .447   1.48   2.33   .459   .751   .162   1.27   .125  -.019   2
+   3 72-2-3   1938 2001     64      1      0    .550   1.31   3.00   .516   .760   .223   1.38   .210   .023   1
+   4 72-10-16 1937 2001     65      1      0    .645   1.69   2.98   .538   .652   .208   1.66   .216   .033   1
+   5 72-11-1  1933 2001     69      1      0    .506   3.12   5.93   .839   .466   .210   1.78   .201   .043   0
+   6 78-6-3   1944 2001     58      1      0    .727   3.64   7.19  1.516   .824   .217   1.53   .228   .009   2
+   7 92-4-7   1972 2001     30      0      0    .634   3.37   5.46  1.352   .845   .191   1.51   .187   .062   1
+   8 92-5-4   1936 2001     66      1      0    .649   2.40   4.51   .863   .871   .153   1.37   .156  -.025   1
+   9 92-5-5   1934 2001     68      1      0    .679   1.88   5.39   .824   .822   .211   1.50   .187  -.045   0
+  10 93-1-1   1968 2002     35      0      0    .720   1.42   2.71   .522   .482   .287   1.74   .291   .043   1
+  11 93-2-4   1955 2002     48      0      0    .794   1.64   2.53   .386   .469   .201   1.54   .195  -.006   2
+  12 93-2-5   1952 2002     51      0      0    .736   1.59   2.61   .382   .564   .186   1.46   .178   .057   1
+  13 93-3-6   1971 2002     32      0      0    .610   1.33   2.45   .543   .609   .292   1.87   .321   .071   0
+  14 100-1-1  1896 2001    106      3      1    .391   1.80   2.89   .407   .563   .172   1.52   .163   .007   2
+  15 100-1-2  1914 2001     88      2      0    .551   1.23   2.57   .639   .894   .195   1.74   .209   .150   0
+  16 100-2-4  1910 2001     92      2      2    .335    .57   2.15   .429   .841   .269   1.81   .274   .039   1
+  17 100-2-9  1910 2001     92      2      0    .226    .88   2.76   .509   .708   .265   1.81   .276   .029   1
+  18 100-2-10 1892 2001    110      3      1    .499   1.40   2.36   .498   .824   .170   1.58   .161   .043   0
+  19 100-3-3  1914 2001     88      2      0    .721   1.51   2.32   .434   .646   .210   1.43   .194   .018   0
+  20 100-4-2  1973 2001     29      0      0    .687   1.28   2.18   .450   .543   .249   1.53   .282   .031   1
+  21 100-4-3  1967 2001     35      0      0    .677   1.69   2.65   .377   .482   .164   1.44   .180   .005   1
+  22 100-8-4  1980 2001     22      0      0    .596   3.09   5.41  1.367   .607   .329   2.38   .416   .257   0
+  23 100-9-1  1956 2001     46      0      0    .524   3.44   5.59   .922   .625   .174   1.33   .167  -.073   1
+  24 102-1-3  1947 2001     55      1      0    .749   1.93   3.24   .509   .576   .178   1.32   .173   .010   1
+  25 102-1-6  1948 2001     54      1      0    .656   2.20   3.86   .768   .619   .239   1.65   .235  -.072   1
+  26 102-4-1  1901 2001    101      2      0    .549   1.66   3.33   .606   .800   .195   1.56   .201   .061   1
+  27 102-4-3  1941 2001     61      1      0    .306    .83   1.69   .268   .766   .162   1.32   .162  -.078   1
+  28 102-5-2  1948 2001     54      1      0    .425   2.38   4.56   .849   .778   .211   1.79   .222   .078   0
+  29 109-2-2  1968 2001     34      0      0    .681   1.69   2.75   .633   .690   .256   1.64   .270  -.013   1
+  30 109-4-5  1961 2001     41      0      0    .646   1.20   2.10   .480   .480   .359   1.79   .356   .074   1
+  31 109-5-4  1909 2001     93      2      1    .355   2.34   3.86   .537   .580   .155   1.54   .154  -.020   1
+  32 109-7-2  1938 2001     64      1      0    .629   2.45   4.78   .834   .648   .175   1.46   .178   .070   0
+  33 109-9-6  1985 2001     17      0      0    .489   2.91   3.95   .709   .531   .170   1.27   .187  -.002   1
+  34 112-5-1  1968 2002     35      0      0    .640   1.60   2.71   .469   .293   .294   1.55   .277   .202   0
+  35 123-2-1  1968 2001     34      0      0    .678   2.87   4.71   .677   .567   .159   1.38   .172  -.027   1
+  36 123-2-2  1982 2001     20      0      0    .599   2.01   3.58   .615   .503   .215   1.58   .197  -.019   0
+  37 129-2-3  1951 2002     52      0      0    .621    .79   2.00   .483   .867   .286   1.52   .283   .086   1
+  38 129-3-2  1946 2002     57      1      0    .635   3.20   6.12  1.002   .612   .214   1.47   .208  -.047   1
+  39 791-3-4  1972 2001     30      0      0    .646   3.27   5.92   .940   .536   .204   1.54   .222   .012   1
+  40 791-4-2  1968 2001     34      0      0    .617   1.20   3.59   .872   .661   .428   2.20   .437  -.070   1
+  41 791-4-5  1935 2001     67      1      0    .670   1.83   3.99   .764   .808   .205   1.62   .208   .023   1
+  42 791-4-8  1959 2001     43      0      0    .531   2.86   3.99   .603   .492   .183   1.31   .151  -.005   3
+  43 791-7-1  1987 2001     15      0      0    .535   2.92   3.57   .522   .051   .219   1.17   .121   .053   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2327     31      5    .562   1.87   7.19   .638   .673   .215   2.38   .214   .024
+
+ DATA CHECKS (rwl.check): or083
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or083.rwl
+ 43 series, 2327 measurements, 1892-2002, 0.001 mm precision
+ 0 error(s), 0 warning(s), 34 note(s)
+ -------------
+ Nothing to report at this severity.
+ 34 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file or083.rwl, MD5 1f0fe4c768169f39de7a31f704794361.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

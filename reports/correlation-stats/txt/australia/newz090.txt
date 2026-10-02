@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: newz090
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz090.rwl
+      MD5 of measurement file: f82b44e7a95926619ab8d01f05c52994
+      Date checked           : 01OCT26
+      Beginning year         : 1580
+      Ending year            : 1981
+      Principal investigators: Ahmed, M.
+      Site name              : Mt. William
+      Species information    : AGAU Agathis australis (D. Don) Loudon
+      Latitude               : 37.2200 S
+      Longitude              : 175.0300 E
+      Elevation              : 375 m
+
+      Series intercorrelation: 0.580
+      Avg mean sensitivity   : 0.330
+      Avg standard deviation : 0.601
+      Avg autocorrelation    : 0.653
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7; 1 of the B weak at every lag)
+      Pct problem segments   : 9.47
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz090
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 MWL0511  1780 1900                                          .57  .19B-.09B               
+   2 MWL0513  1780 1980                                          .58  .55  .46  .61  .56  .35 
+   3 MWL0521  1642 1980            .65  .46B .47  .76  .76  .63  .76  .78  .55  .60  .67  .73 
+   4 MWL0522  1740 1980                                .68  .47  .40  .44  .59  .74  .75  .71 
+   5 MWL0523  1670 1980                 .62  .58  .62  .77  .68  .64  .75  .53  .65  .73  .75 
+   6 MWL0571  1754 1980                                     .61  .56  .59  .49  .65  .75  .66 
+   7 MWL0572  1790 1980                                          .58  .67  .60  .73  .64  .44 
+   8 MWL0631  1760 1980                                     .31A .53  .61  .60  .65  .48  .32A
+   9 MWL0691  1580 1981  .37B .21B .21B .44  .53  .66  .69  .54  .60  .70  .61  .59  .68  .82 
+  10 MWL0692  1580 1981  .44B .54  .70  .51  .53  .71  .65  .58  .75  .80  .55  .68  .80  .77 
+  11 MWL0701  1740 1950                                .53  .52  .58  .69  .57  .67  .62      
+ Av segment correlation  .41  .38  .52  .51  .53  .69  .68  .54  .60  .62  .50  .66  .67  .62 
+
+ FLAGGED SEGMENTS: newz090
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 MWL0511  1825 1874     B     .193        -7      .199   .006  weak at every lag
+   1 MWL0511  1850 1899     B    -.087         2      .379   .465
+   3 MWL0521  1675 1724     B     .456         3      .493   .037
+   8 MWL0631  1775 1824     A     .309         0
+   8 MWL0631  1925 1974     A     .322         0
+   9 MWL0691  1600 1649     B     .375         3      .511   .137
+   9 MWL0691  1625 1674     B     .212         2      .400   .188
+   9 MWL0691  1650 1699     B     .213         2      .330   .117
+  10 MWL0692  1600 1649     B     .436        -3      .505   .069
+
+ DESCRIPTIVE STATISTICS: newz090
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MWL0511  1780 1900    121      3      2    .262   1.66   2.87   .584   .563   .262   2.00   .256   .004   3
+   2 MWL0513  1780 1980    201      6      0    .470   1.40   4.21   .771   .768   .355   2.12   .318  -.011   3
+   3 MWL0521  1642 1980    339     12      1    .639   1.01   3.88   .593   .806   .254   2.29   .258  -.018   3
+   4 MWL0522  1740 1980    241      8      0    .647   1.44   3.50   .591   .705   .240   2.09   .245   .001   1
+   5 MWL0523  1670 1980    311     11      0    .673   1.11   3.66   .563   .718   .282   2.54   .302  -.017   3
+   6 MWL0571  1754 1980    227      7      0    .635   1.05   2.58   .530   .442   .482   2.15   .360   .012   2
+   7 MWL0572  1790 1980    191      6      0    .608   1.38   3.24   .661   .208   .541   2.68   .404   .001   3
+   8 MWL0631  1760 1980    221      7      2    .426   1.50   4.30   .811   .627   .379   1.92   .353  -.011   3
+   9 MWL0691  1580 1981    402     14      3    .563   1.10   2.87   .471   .700   .267   1.98   .271  -.014   3
+  10 MWL0692  1580 1981    402     14      1    .631   1.03   3.51   .571   .774   .291   1.94   .267   .007   2
+  11 MWL0701  1740 1950    211      7      0    .566   1.28   3.22   .637   .524   .436   1.96   .361   .006   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2867     95      9    .580   1.21   4.30   .601   .653   .330   2.68   .302  -.005
+
+ DATA CHECKS (rwl.check): newz090
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz090.rwl
+ 11 series, 2867 measurements, 1580-1981, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file newz090.rwl, MD5 f82b44e7a95926619ab8d01f05c52994.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

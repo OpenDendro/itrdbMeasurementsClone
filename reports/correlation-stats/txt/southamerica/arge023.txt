@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: arge023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge023.rwl
+      MD5 of measurement file: 3c4cfd40c6f9cd4ab3dca67214310432
+      Date checked           : 01OCT26
+      Beginning year         : 1755
+      Ending year            : 1988
+      Principal investigators: Roig, F.A.
+      Site name              : Balmaceda
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 45.9200 S
+      Longitude              : 71.7500 W
+      Elevation              : 600 m
+
+      Series intercorrelation: 0.614
+      Avg mean sensitivity   : 0.328
+      Avg standard deviation : 0.362
+      Avg autocorrelation    : 0.609
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.49
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BAL01B   1860 1988                 .81  .79  .71 
+   2 BAL03A   1769 1988  .39  .57  .75  .71  .68  .44 
+   3 BAL03B   1755 1988  .38  .52  .63  .67  .67  .55 
+   4 BAL06B   1876 1988                      .74  .70 
+   5 BAL06C   1887 1987                      .46  .69 
+   6 BAL07B   1792 1988  .67  .72  .83  .76  .77  .79 
+   7 BAL09A   1850 1985                 .76  .73  .65 
+   8 BAL09B   1850 1986                 .80  .73  .67 
+   9 BAL13B   1830 1985            .69  .68  .58  .51 
+  10 BAL14A   1804 1905       .72  .84                
+  11 BAL14B   1908 1988                           .57 
+  12 BAL15A   1869 1988                 .51  .30B .49 
+  13 BAL16B   1824 1988       .54  .81  .83  .81  .81 
+  14 BAL17A   1894 1982                      .63  .67 
+  15 BAL18A   1796 1988  .57  .51  .67  .80  .78  .75 
+  16 BAL19A   1811 1988       .54  .61  .64  .72  .60 
+  17 BAL24A   1830 1983            .73  .75  .74  .65 
+  18 BAL25A   1830 1988            .80  .72  .66  .67 
+ Av segment correlation  .50  .59  .74  .73  .67  .64 
+
+ FLAGGED SEGMENTS: arge023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 BAL15A   1900 1949     B     .296        -7      .383   .087
+
+ DESCRIPTIVE STATISTICS: arge023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BAL01B   1860 1988    129      3      0    .727    .66   3.48   .468   .750   .362   2.16   .342   .014   1
+   2 BAL03A   1769 1988    220      6      0    .510    .72   2.50   .405   .755   .311   2.07   .306  -.000   3
+   3 BAL03B   1755 1988    234      6      0    .553    .79   2.94   .460   .760   .337   2.16   .341  -.011   2
+   4 BAL06B   1876 1988    113      2      0    .525    .52   2.49   .412   .551   .423   4.16   .544   .020   1
+   5 BAL06C   1887 1987    101      2      0    .489    .68   3.02   .544   .711   .439   2.67   .439   .058   2
+   6 BAL07B   1792 1988    197      6      0    .722   1.05   2.63   .346   .526   .282   1.96   .254   .015   2
+   7 BAL09A   1850 1985    136      3      0    .655    .46   1.16   .232   .593   .368   2.16   .358   .022   2
+   8 BAL09B   1850 1986    137      3      0    .688    .59   1.57   .280   .403   .417   2.32   .389  -.017   2
+   9 BAL13B   1830 1985    156      4      0    .573   1.21   2.80   .525   .523   .378   1.89   .344  -.013   2
+  10 BAL14A   1804 1905    102      2      0    .713    .84   1.91   .367   .620   .327   1.61   .289  -.010   2
+  11 BAL14B   1908 1988     81      1      0    .493   1.21   3.42   .661   .660   .317   2.24   .375  -.003   2
+  12 BAL15A   1869 1988    120      3      1    .442   1.83   3.92   .530   .640   .198   1.61   .209  -.010   2
+  13 BAL16B   1824 1988    165      5      0    .715    .53   1.64   .221   .541   .311   1.95   .305   .008   1
+  14 BAL17A   1894 1982     89      2      0    .598   1.20   2.59   .461   .571   .295   1.82   .270   .023   1
+  15 BAL18A   1796 1988    193      6      0    .663    .62   1.22   .233   .543   .298   1.87   .287   .010   2
+  16 BAL19A   1811 1988    178      5      0    .561    .53   1.35   .249   .671   .300   2.05   .312  -.012   2
+  17 BAL24A   1830 1983    154      4      0    .689    .40    .93   .153   .446   .314   2.19   .315   .019   1
+  18 BAL25A   1830 1988    159      4      0    .672    .65   1.44   .264   .637   .289   1.93   .280   .029   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2664     67      1    .614    .78   3.92   .362   .609   .328   4.16   .325   .006
+
+ DATA CHECKS (rwl.check): arge023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge023.rwl
+ 18 series, 2664 measurements, 1755-1988, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file arge023.rwl, MD5 3c4cfd40c6f9cd4ab3dca67214310432.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

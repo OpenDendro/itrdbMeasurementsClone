@@ -1,0 +1,120 @@
+
+ COFECHA-style crossdating report: nc015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc015.rwl
+      MD5 of measurement file: 1d21ca908340661771e6dffc388c1859
+      Date checked           : 01OCT26
+      Beginning year         : 1780
+      Ending year            : 1939
+      Principal investigators: Young, P.J.; Keeland, R.
+      Site name              : Thomas Divide Trail
+      Species information    : CADN Castanea dentata (Marsh.) Borkh.
+      Latitude               : 35.5800 N
+      Longitude              : 83.3800 W
+      Elevation              : 427 m
+
+      Series intercorrelation: 0.455
+      Avg mean sensitivity   : 0.203
+      Avg standard deviation : 0.852
+      Avg autocorrelation    : 0.729
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 18.18
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 
+                        1849 1874 1899 1924 
+ --- -------- ---------  ---- ---- ---- ---- 
+   4 TDT03A   1855 1933                 .43 
+   6 TDT03C   1855 1939                 .48 
+   9 TDT05A   1822 1932       .65  .61  .45 
+  10 TDT05B   1821 1930       .69  .72  .52 
+  11 TDT06A   1840 1932            .54  .60 
+  12 TDT06B   1840 1929            .45  .60 
+  15 TDT08A   1780 1932  .73  .70  .32A .30A
+  16 TDT08B   1780 1889  .63  .49           
+  17 TDT09A   1827 1938            .28B .33 
+  18 TDT09B   1828 1930            .27B .36 
+ Av segment correlation  .68  .63  .45  .45 
+
+ FLAGGED SEGMENTS: nc015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 TDT08A   1850 1899     A     .323         0
+  15 TDT08A   1875 1924     A     .304         0
+  17 TDT09A   1850 1899     B     .275        -4      .299   .024  weak at every lag
+  18 TDT09B   1850 1899     B     .269        -4      .321   .051  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nc015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TDT01A   1886 1932     47      0      0    .521   4.25   6.92  1.245   .689   .196   1.31   .177   .022   1
+   2 TDT02A   1880 1925     46      0      0    .468   3.23   6.21  1.340   .778   .201   1.44   .203   .055   1
+   3 TDT02B   1879 1925     47      0      0    .538   3.23   6.54  1.490   .811   .204   1.47   .207   .161   1
+   4 TDT03A   1855 1933     79      1      0    .273   2.70   6.25  1.177   .713   .245   1.72   .246  -.090   3
+   5 TDT03B   1855 1921     67      0      0    .563   2.38   4.78  1.038   .731   .251   1.57   .243  -.029   2
+   6 TDT03C   1855 1939     85      1      0    .433   2.25   4.84  1.041   .754   .230   1.55   .246   .126   1
+   7 TDT04B   1841 1894     54      0      0    .197   2.75   7.61  1.112   .571   .268   2.20   .296   .052   1
+   8 TDT04C   1807 1855     49      0      0    .402   2.37   3.58   .581   .486   .222   1.40   .197   .016   0
+   9 TDT05A   1822 1932    111      3      0    .513   2.10   4.20   .982   .874   .172   2.03   .191   .003   2
+  10 TDT05B   1821 1930    110      3      0    .580   2.44   5.12   .832   .832   .151   1.52   .160   .025   1
+  11 TDT06A   1840 1932     93      2      0    .402   2.12   3.59   .724   .721   .188   1.47   .184   .006   2
+  12 TDT06B   1840 1929     90      2      0    .401   2.13   3.22   .670   .733   .180   1.43   .179   .043   1
+  13 TDT07A   1880 1932     53      0      0    .539   3.70   6.13   .856   .425   .188   1.59   .198  -.010   1
+  14 TDT07B   1882 1939     58      0      0    .489   3.34   5.63  1.012   .610   .221   1.46   .199   .078   1
+  15 TDT08A   1780 1932    153      4      2    .466   1.30   4.36   .645   .722   .211   2.68   .258  -.009   1
+  16 TDT08B   1780 1889    110      2      0    .523    .93   1.94   .365   .738   .215   1.67   .232   .060   1
+  17 TDT09A   1827 1938    112      2      1    .397   2.11   3.81   .674   .744   .178   1.54   .177  -.011   3
+  18 TDT09B   1828 1930    103      2      1    .443   1.53   4.08   .716   .830   .196   1.70   .212   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1467     22      4    .455   2.25   7.61   .852   .729   .203   2.68   .212   .024
+
+ DATA CHECKS (rwl.check): nc015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc015.rwl
+ 18 series, 1467 measurements, 1780-1939, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file nc015.rwl, MD5 1d21ca908340661771e6dffc388c1859.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

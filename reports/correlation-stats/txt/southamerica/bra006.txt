@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: bra006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra006.rwl
+      MD5 of measurement file: 9b1808ec0d75ac74c3e768be17f05de1
+      Date checked           : 01OCT26
+      Beginning year         : 1896
+      Ending year            : 2006
+      Principal investigators: Venegas-González, A.; Lisi, C.
+      Site name              : Campos de Jodão
+      Species information    : CEFI Cedrela fissilis Vell.
+      Latitude               : 22.7986 S
+      Longitude              : 45.5819 W
+      Elevation              : 1500 m
+
+      Series intercorrelation: 0.358
+      Avg mean sensitivity   : 0.512
+      Avg standard deviation : 1.348
+      Avg autocorrelation    : 0.429
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 50.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 AAC02D   1926 2004            .68 
+   2 AAC02A   1925 2004            .69 
+   3 AAC02B   1944 2003            .45 
+   4 AAC03C   1908 2005       .21B .16B
+   5 AAC03A   1899 2004       .16B .36 
+   6 AAC01B   1896 1965  .37           
+   8 AAC05B   1900 2003  .39  .19B .30A
+   9 AAC07A   1935 2005            .30A
+  14 AAC10B   1950 2004            .22A
+  15 AAC11D   1935 2005            .40 
+ Av segment correlation  .38  .19  .40 
+
+ FLAGGED SEGMENTS: bra006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 AAC03C   1925 1974     B     .208        -2      .249   .041  weak at every lag
+   4 AAC03C   1950 1999     B     .162         6      .292   .130  weak at every lag
+   5 AAC03A   1925 1974     B     .164         2      .328   .163  weak at every lag
+   8 AAC05B   1925 1974     B     .192        -2      .342   .151
+   8 AAC05B   1950 1999     A     .297         0
+   9 AAC07A   1950 1999     A     .305         0
+  14 AAC10B   1950 1999     A     .222         0
+
+ DESCRIPTIVE STATISTICS: bra006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AAC02D   1926 2004     79      1      0    .647   3.63   8.27  1.679   .586   .317   1.75   .302   .014   1
+   2 AAC02A   1925 2004     80      1      0    .536   2.88   8.34  1.485   .622   .370   1.87   .349   .018   1
+   3 AAC02B   1944 2003     60      1      0    .478   3.14   6.96  1.605   .637   .362   1.82   .357   .060   1
+   4 AAC03C   1908 2005     98      2      2    .290   1.52   8.18  1.126   .395   .512   3.43   .534  -.033   1
+   5 AAC03A   1899 2004    106      2      1    .295   1.75   8.50  1.383   .440   .447   3.09   .499   .009   3
+   6 AAC01B   1896 1965     70      1      0    .259   2.60   9.55  1.884   .401   .520   2.02   .409  -.033   3
+   7 AAC01A   1965 2006     42      0      0    .595   2.97   7.00  1.736   .218   .536   2.38   .495   .032   0
+   8 AAC05B   1900 2003    104      3      2    .336   1.83   7.23  1.156   .192   .637   2.96   .555  -.023   0
+   9 AAC07A   1935 2005     71      1      1    .222   1.66   5.01  1.263   .385   .616   2.34   .599   .022   3
+  10 AAC08C   1950 2003     54      0      0    .342   2.27   7.37  1.745   .624   .469   3.27   .573   .092   1
+  11 AAC09C   1970 2004     35      0      0    .150    .97   2.18   .549   .309   .512   2.37   .527   .199   0
+  12 AAC09B   1927 1970     44      0      0    .314   1.29   3.69   .913   .307   .641   2.62   .523  -.087   0
+  13 AAC10D   1951 2005     55      0      0    .324   1.65   4.84  1.212   .391   .597   3.21   .619  -.017   0
+  14 AAC10B   1950 2004     55      1      1    .228   1.67   8.65  1.651   .404   .703   5.39   .814   .130   0
+  15 AAC11D   1935 2005     71      1      0    .375    .91   2.93   .662   .411   .540   3.08   .581  -.015   1
+  16 AAC12D   1967 1999     33      0      0    .244   2.19   5.25  1.432   .538   .518   1.84   .410   .033   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1057     14      7    .358   2.07   9.55  1.348   .429   .512   5.39   .505   .016
+
+ DATA CHECKS (rwl.check): bra006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra006.rwl
+ 16 series, 1057 measurements, 1896-2006, 0.001 mm precision
+ 0 error(s), 1 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file bra006.rwl, MD5 9b1808ec0d75ac74c3e768be17f05de1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

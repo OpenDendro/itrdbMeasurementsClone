@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: chil010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : chil010.rwl
+      MD5 of measurement file: c2d43a3145f803bdfa1811cd0e79c5cb
+      Date checked           : 01OCT26
+      Beginning year         : 1733
+      Ending year            : 1975
+      Principal investigators: Holmes, R.L.
+      Site name              : Abanico
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 37.3500 S
+      Longitude              : 71.6000 W
+      Elevation              : 820 m
+
+      Series intercorrelation: 0.585
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.632
+      Avg autocorrelation    : 0.805
+      Number dated series    : 33
+      Series crossdated      : 31
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 5.56
+
+
+ CORRELATION OF SERIES BY SEGMENTS: chil010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ABA141   1915 1975                           .74 
+   2 ABA142   1889 1975                      .74  .83 
+   3 ABA151   1864 1947                 .72           
+   4 ABA152   1842 1975            .58  .69  .69  .63 
+   5 ABA153   1848 1975            .68  .62  .47  .59 
+   6 ABA154   1864 1935                 .57           
+   7 ABA155   1840 1971            .55  .63  .63      
+   8 ABA162   1813 1974       .35  .08B .51  .57  .48 
+   9 ABA163   1804 1973       .31A .34  .60  .65      
+  10 ABA164   1804 1972       .46  .36  .32A .24B     
+  11 ABA171   1811 1975       .37  .13B .53  .63  .70 
+  12 ABA172   1822 1975       .44  .22B .47  .57  .66 
+  13 ABA173   1807 1975       .64  .36  .56  .58  .60 
+  14 ABA181   1796 1975  .48  .52  .71  .59  .52  .69 
+  15 ABA182   1838 1975            .54  .59  .64  .71 
+  16 ABA183   1812 1975       .37  .47  .46  .49  .68 
+  17 ABA184   1871 1975                 .58  .66  .77 
+  18 ABA201   1860 1956                 .43  .65      
+  19 ABA202   1875 1972                      .60      
+  20 ABA204   1856 1973                 .37  .60      
+  21 ABA211   1838 1973            .59  .60  .71      
+  22 ABA212   1838 1975            .64  .65  .72  .80 
+  23 ABA213   1838 1975            .64  .65  .66  .80 
+  24 ABA221   1875 1975                      .74  .72 
+  25 ABA222   1897 1975                      .66  .75 
+  28 ABA242   1733 1975  .48  .67  .55  .52  .62  .71 
+  29 ABA243   1862 1975                 .58  .76  .68 
+  30 ABA251   1793 1975  .52  .66  .63  .56  .68  .70 
+  31 ABA252   1807 1975       .70  .63  .67  .66  .65 
+  32 ABA253   1832 1975            .49  .47  .57  .67 
+  33 ABA261   1877 1975                      .56  .79 
+ Av segment correlation  .49  .50  .48  .56  .62  .70 
+
+ FLAGGED SEGMENTS: chil010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 ABA162   1850 1899     B     .080        -2      .227   .146  weak at every lag
+   9 ABA163   1825 1874     A     .313         0
+  10 ABA164   1875 1924     A     .319         0
+  10 ABA164   1900 1949     B     .243         9      .332   .089
+  11 ABA171   1850 1899     B     .129         4      .200   .071  weak at every lag
+  12 ABA172   1850 1899     B     .221        -3      .244   .024  weak at every lag
+
+ DESCRIPTIVE STATISTICS: chil010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ABA141   1915 1975     61      1      0    .743    .96   1.85   .399   .607   .285   1.54   .277   .013   1
+   2 ABA142   1889 1975     87      2      0    .755   1.41   4.16   .762   .671   .353   1.96   .342   .001   1
+   3 ABA151   1864 1947     84      1      0    .614   2.12   4.43   .637   .762   .149   1.51   .168   .019   1
+   4 ABA152   1842 1975    134      4      0    .634   1.51   4.28   .946   .935   .181   1.50   .194   .016   1
+   5 ABA153   1848 1975    128      4      0    .585   1.84   5.76  1.011   .836   .232   1.79   .247  -.002   1
+   6 ABA154   1864 1935     72      1      0    .520   2.24   5.63  1.019   .831   .187   1.61   .203   .019   2
+   7 ABA155   1840 1971    132      3      0    .585   1.75   5.40  1.003   .865   .232   1.60   .230   .001   1
+   8 ABA162   1813 1974    162      5      1    .402   1.58   5.18   .925   .826   .260   1.58   .251  -.033   3
+   9 ABA163   1804 1973    170      4      1    .486   1.92   4.64  1.011   .899   .194   1.53   .190  -.012   3
+  10 ABA164   1804 1972    169      4      2    .419   1.35   3.82   .990   .940   .236   1.79   .244   .004   1
+  11 ABA171   1811 1975    165      5      1    .504   2.51   6.89  1.384   .820   .276   1.69   .262  -.009   2
+  12 ABA172   1822 1975    154      5      1    .507   1.93   4.36   .822   .620   .282   2.27   .283   .007   2
+  13 ABA173   1807 1975    169      5      0    .585   1.58   4.26   .780   .787   .276   1.64   .269   .027   1
+  14 ABA181   1796 1975    180      6      0    .569   1.22   2.95   .605   .888   .193   1.50   .193  -.003   1
+  15 ABA182   1838 1975    138      4      0    .612    .69   1.24   .270   .767   .221   1.79   .231  -.019   1
+  16 ABA183   1812 1975    164      5      0    .514    .71   1.66   .332   .844   .206   1.57   .207   .077   1
+  17 ABA184   1871 1975    105      3      0    .700   1.01   2.74   .556   .906   .207   1.55   .197  -.002   1
+  18 ABA201   1860 1956     97      2      0    .492    .48   1.63   .268   .804   .294   1.80   .285   .018   1
+  19 ABA202   1875 1972     98      1      0    .511    .49   2.75   .439   .882   .258   2.13   .271  -.023   3
+  20 ABA204   1856 1973    118      2      0    .473    .63   2.68   .490   .824   .282   2.26   .331   .022   2
+  21 ABA211   1838 1973    136      3      0    .650   1.65   5.86  1.025   .873   .222   1.68   .230  -.003   2
+  22 ABA212   1838 1975    138      4      0    .719   1.36   6.71   .962   .902   .225   1.71   .235  -.005   2
+  23 ABA213   1838 1975    138      4      0    .718    .97   2.75   .473   .802   .236   1.61   .233  -.016   3
+  24 ABA221   1875 1975    101      2      0    .692    .69   2.66   .592   .891   .297   1.92   .283  -.021   1
+  25 ABA222   1897 1975     79      2      0    .724   1.06   2.76   .467   .688   .302   1.65   .261   .039   0
+  26 ABA223   1809 1975    159                         1.78   7.31  1.160   .867   .253                         
+  27 ABA241   1793 1975    179                          .35   1.71   .155   .773   .205                         
+  28 ABA242   1733 1975    243      6      0    .592    .35   1.16   .119   .660   .207   1.62   .209   .020   1
+  29 ABA243   1862 1975    114      3      0    .643    .28    .55   .103   .801   .183   1.50   .186  -.002   1
+  30 ABA251   1793 1975    183      6      0    .621    .61   1.51   .266   .801   .231   1.61   .237  -.008   1
+  31 ABA252   1807 1975    169      5      0    .636    .37    .86   .154   .765   .224   1.50   .223   .008   1
+  32 ABA253   1832 1975    144      4      0    .597    .39    .91   .144   .575   .262   1.85   .266  -.019   3
+  33 ABA261   1877 1975     99      2      0    .652   1.59   3.98   .745   .758   .278   1.63   .256   .017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4469    108      6    .585   1.17   7.31   .632   .805   .237   2.27   .239   .004
+
+ DATA CHECKS (rwl.check): chil010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/chil010.rwl
+ 33 series, 4469 measurements, 1733-1975, 0.01 mm precision
+ 0 error(s), 2 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     ABA223: no measurement for 1830-1837, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ABA241: no measurement for 1926-1929, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file chil010.rwl, MD5 c2d43a3145f803bdfa1811cd0e79c5cb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series ABA223 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series ABA241 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: finl023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : finl023.rwl
+      MD5 of measurement file: e61e94d805fdec77ea26b241d2aa6d52
+      Date checked           : 01OCT26
+      Beginning year         : 1623
+      Ending year            : 1851
+      Principal investigators: Meriläinen, J.; Lindholm, M.; Timonen, M.
+      Site name              : Lemola Savonlinna House
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 61.8700 N
+      Longitude              : 28.8800 E
+      Elevation              : 71 m
+
+      Series intercorrelation: 0.571
+      Avg mean sensitivity   : 0.191
+      Avg standard deviation : 0.519
+      Avg autocorrelation    : 0.917
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2)
+      Pct problem segments   : 5.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: finl023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 
+                        1749 1774 1799 1824 1849 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 OMA0851A 1623 1823  .68  .65  .66           
+   2 OMA0851B 1623 1851  .55  .66  .69  .63  .26A
+   3 OMA0852A 1692 1846  .40  .39  .57  .51      
+   4 OMA0852B 1692 1823  .30A .42  .50           
+   5 OMA0853A 1712 1844       .59  .56  .48      
+   6 OMA0853B 1712 1840       .72  .60  .51      
+   7 OMA0854A 1692 1850  .41B .65  .72  .73  .55 
+   8 OMA0854B 1692 1845  .51  .60  .71  .64      
+   9 OMA0855A 1702 1840       .60  .66  .69      
+  10 OMA0855B 1702 1850       .63  .71  .60  .35 
+  11 OMA0856A 1630 1846  .67  .75  .70  .73      
+  12 OMA0856B 1630 1832  .65  .77  .67  .66      
+  13 OMA0857A 1683 1847  .41  .70  .70  .67      
+  14 OMA0857B 1684 1850  .44  .57  .64  .68  .39 
+  15 OMA0860A 1630 1845  .66  .78  .76  .73      
+  16 OMA0860B 1630 1842  .71  .71  .65  .63      
+  17 OMA0862A 1680 1835  .48  .67  .56  .45      
+  18 OMA0862B 1680 1839  .34B .53  .63  .50      
+ Av segment correlation  .52  .63  .65  .62  .39 
+
+ FLAGGED SEGMENTS: finl023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 OMA0851B 1800 1849     A     .257         0
+   4 OMA0852B 1700 1749     A     .302         0
+   7 OMA0854A 1700 1749     B     .413        -5      .487   .074
+  18 OMA0862B 1700 1749     B     .341        -5      .384   .043
+
+ DESCRIPTIVE STATISTICS: finl023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OMA0851A 1623 1823    201      3      0    .510    .67   2.63   .489   .909   .206   1.58   .215   .045   1
+   2 OMA0851B 1623 1851    229      5      1    .478    .59   2.73   .473   .923   .208   1.63   .227   .011   3
+   3 OMA0852A 1692 1846    155      4      0    .446    .88   2.93   .641   .917   .191   1.49   .199   .021   1
+   4 OMA0852B 1692 1823    132      3      1    .430   1.05   2.24   .591   .925   .180   1.46   .190   .017   1
+   5 OMA0853A 1712 1844    133      3      0    .503   1.11   1.95   .441   .866   .158   1.42   .161   .023   3
+   6 OMA0853B 1712 1840    129      3      0    .552   1.20   2.96   .611   .920   .164   1.45   .171   .034   3
+   7 OMA0854A 1692 1850    159      5      1    .579    .76   2.73   .598   .966   .154   1.47   .168   .021   1
+   8 OMA0854B 1692 1845    154      4      0    .582    .82   3.00   .709   .974   .167   1.46   .186  -.003   1
+   9 OMA0855A 1702 1840    139      3      0    .597    .98   3.69   .630   .926   .163   1.54   .178   .010   1
+  10 OMA0855B 1702 1850    149      4      0    .496    .90   3.96   .598   .903   .172   1.50   .182   .009   2
+  11 OMA0856A 1630 1846    217      4      0    .751    .58   1.66   .358   .892   .218   1.87   .246  -.005   2
+  12 OMA0856B 1630 1832    203      4      0    .762    .59   1.78   .365   .912   .195   1.55   .214   .005   2
+  13 OMA0857A 1683 1847    165      4      0    .409    .76   3.91   .722   .951   .205   1.48   .203   .035   1
+  14 OMA0857B 1684 1850    167      5      0    .450    .75   3.33   .639   .949   .195   1.51   .200   .029   1
+  15 OMA0860A 1630 1845    216      4      0    .773    .59   1.94   .359   .899   .206   1.67   .239   .000   2
+  16 OMA0860B 1630 1842    213      4      0    .703    .49   1.54   .273   .910   .183   1.56   .201   .005   3
+  17 OMA0862A 1680 1835    156      4      0    .552    .74   3.72   .577   .896   .208   1.55   .211  -.048   3
+  18 OMA0862B 1680 1839    160      4      1    .492    .82   4.09   .577   .881   .222   1.63   .235   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3077     70      4    .571    .76   4.09   .519   .917   .191   1.87   .205   .013
+
+ DATA CHECKS (rwl.check): finl023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/finl023.rwl
+ 18 series, 3077 measurements, 1623-1851, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file finl023.rwl, MD5 e61e94d805fdec77ea26b241d2aa6d52.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

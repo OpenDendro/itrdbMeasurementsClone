@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: deu333
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu333.rwl
+      MD5 of measurement file: 571985b2bf85e1801143babf7bf4833a
+      Date checked           : 01OCT26
+      Beginning year         : 1844
+      Ending year            : 2008
+      Principal investigators: Hartl, C.; Dittmar, C.; Rothe, A.
+      Site name              : Berchtesgaden, Ochshütte
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.6480 N
+      Longitude              : 13.0200 E
+      Elevation              : 770 m
+
+      Series intercorrelation: 0.547
+      Avg mean sensitivity   : 0.190
+      Avg standard deviation : 0.693
+      Avg autocorrelation    : 0.813
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu333
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BGOB101C 1894 2008  .57  .48  .54 
+   2 BGOB101O 1894 2008  .62  .63  .60 
+   3 BGOB102C 1870 2008  .65  .42  .51 
+   4 BGOB102O 1872 2008  .55  .51  .47 
+   5 BGOB104C 1880 2008  .46  .61  .72 
+   6 BGOB104O 1891 2008  .48  .58  .75 
+   7 BGOB105C 1905 2008       .40  .70 
+   8 BGOB105O 1886 2008  .54  .51  .78 
+   9 BGOB106C 1889 2008  .42  .59  .76 
+  10 BGOB106O 1896 2008  .54  .46  .64 
+  11 BGOB109C 1924 2008            .46 
+  12 BGOB109O 1916 2008       .21B .30A
+  13 BGOB110C 1902 2008       .39  .66 
+  14 BGOB110O 1918 2008       .42  .71 
+  15 BGOB111C 1844 2008  .61  .52  .68 
+  16 BGOB111O 1848 2008  .65  .62  .63 
+  17 BGOB112C 1895 2008  .57  .75  .82 
+  18 BGOB112O 1881 2008  .44  .40  .64 
+  19 BGOB113C 1883 2008  .58  .45  .62 
+  20 BGOB113O 1883 2008  .45  .37  .54 
+ Av segment correlation  .54  .49  .63 
+
+ FLAGGED SEGMENTS: deu333
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 BGOB109O 1925 1974     B     .214        -4      .299   .085  weak at every lag
+  12 BGOB109O 1950 1999     A     .296         0
+
+ DESCRIPTIVE STATISTICS: deu333
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BGOB101C 1894 2008    115      3      0    .536   1.13   2.58   .469   .856   .157   1.40   .161   .003   1
+   2 BGOB101O 1894 2008    115      3      0    .603   1.17   1.92   .358   .831   .142   1.35   .132   .011   1
+   3 BGOB102C 1870 2008    139      3      0    .417   1.39   3.30   .683   .905   .155   1.43   .159  -.013   1
+   4 BGOB102O 1872 2008    137      3      0    .403   1.49   4.59  1.126   .928   .181   1.53   .196   .012   2
+   5 BGOB104C 1880 2008    129      3      0    .595   1.39   3.28   .767   .884   .229   1.56   .229  -.003   1
+   6 BGOB104O 1891 2008    118      3      0    .572   1.39   2.95   .624   .814   .246   1.68   .245  -.019   1
+   7 BGOB105C 1905 2008    104      2      0    .593   1.71   3.06   .443   .653   .162   1.40   .160   .025   1
+   8 BGOB105O 1886 2008    123      3      0    .611   2.00   3.63   .614   .773   .163   1.36   .156  -.048   1
+   9 BGOB106C 1889 2008    120      3      0    .635   1.90   5.94  1.182   .924   .173   1.47   .175  -.021   1
+  10 BGOB106O 1896 2008    113      3      0    .643   1.79   4.33   .961   .878   .197   1.61   .193   .015   3
+  11 BGOB109C 1924 2008     85      1      0    .426   1.94   3.79   .599   .584   .221   1.65   .211   .003   2
+  12 BGOB109O 1916 2008     93      2      2    .330   2.42   5.70   .934   .640   .201   1.79   .244   .183   1
+  13 BGOB110C 1902 2008    107      2      0    .530   1.98   3.42   .657   .680   .228   1.56   .216  -.003   1
+  14 BGOB110O 1918 2008     91      2      0    .640   2.31   3.55   .537   .555   .175   1.33   .167  -.010   2
+  15 BGOB111C 1844 2008    165      3      0    .557   1.40   3.74   .750   .898   .206   1.67   .224   .047   1
+  16 BGOB111O 1848 2008    161      3      0    .581   1.26   2.95   .605   .853   .204   1.85   .219   .030   1
+  17 BGOB112C 1895 2008    114      3      0    .735   1.93   3.85   .688   .857   .165   1.37   .153  -.017   1
+  18 BGOB112O 1881 2008    128      3      0    .477   1.59   3.39   .711   .902   .170   1.79   .201   .423   1
+  19 BGOB113C 1883 2008    126      3      0    .590   1.44   2.53   .543   .784   .206   1.49   .194  -.188   3
+  20 BGOB113O 1883 2008    126      3      0    .453   1.32   2.74   .513   .776   .226   2.02   .230  -.072   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2409     54      2    .547   1.61   5.94   .693   .813   .190   2.02   .194   .018
+
+ DATA CHECKS (rwl.check): deu333
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu333.rwl
+ 20 series, 2409 measurements, 1844-2008, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu333.rwl, MD5 571985b2bf85e1801143babf7bf4833a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

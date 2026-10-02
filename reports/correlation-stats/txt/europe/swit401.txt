@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: swit401
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit401.rwl
+      MD5 of measurement file: 1b82a40da44e425a74144277d966b9bf
+      Date checked           : 01OCT26
+      Beginning year         : 1819
+      Ending year            : 2011
+      Principal investigators: Vanoni, M.; Frey, H.-U.; Bigler, C.
+      Site name              : Andeer
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.5713 N
+      Longitude              : 9.4181 E
+      Elevation              : 1300 m
+
+      Series intercorrelation: 0.599
+      Avg mean sensitivity   : 0.164
+      Avg standard deviation : 0.958
+      Avg autocorrelation    : 0.907
+      Number dated series    : 14
+      Series crossdated      : 13
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 5.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit401
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ART01    1819 2011  .50  .19B .13B
+   2 ART02    1834 2011  .61  .74  .64 
+   3 ART03    1849 2011  .61  .64  .61 
+   4 ART04    1873 2011  .56  .61  .74 
+   6 ART06    1867 2011  .60  .75  .75 
+   7 ART08    1835 2011  .59  .57  .58 
+   8 ART10    1840 2011  .73  .69  .65 
+   9 ART11    1835 2011  .74  .63  .62 
+  10 ART12    1852 2011  .71  .67  .68 
+  11 ART13    1853 2011  .78  .70  .66 
+  12 ART14    1839 2011  .58  .57  .52 
+  13 ART15    1846 2011  .68  .70  .75 
+  14 ART16    1872 2011  .59  .52  .47 
+ Av segment correlation  .64  .61  .60 
+
+ FLAGGED SEGMENTS: swit401
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 ART01    1925 1974     B     .191        -3      .306   .115  weak at every lag
+   1 ART01    1950 1999     B     .131        10      .370   .239
+
+ DESCRIPTIVE STATISTICS: swit401
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ART01    1819 2011    193      3      2    .396   1.02   2.75   .596   .918   .184   1.67   .198   .112   1
+   2 ART02    1834 2011    178      3      0    .610   1.29   2.58   .390   .705   .174   1.66   .181  -.004   1
+   3 ART03    1849 2011    163      3      0    .632   1.76   6.73  1.424   .949   .161   1.66   .175  -.014   3
+   4 ART04    1873 2011    139      3      0    .668   2.55   6.02  1.205   .931   .119   1.50   .133   .013   3
+   5 ART05    1941 2011     71                         3.11   6.86  1.576   .927   .160                         
+   6 ART06    1867 2011    145      3      0    .653   1.35   3.67  1.044   .964   .166   1.76   .193   .000   2
+   7 ART08    1835 2011    177      3      0    .491   1.23   4.03  1.137   .942   .217   1.62   .229   .035   2
+   8 ART10    1840 2011    172      3      0    .644   1.41   3.69   .690   .920   .148   1.59   .151   .005   2
+   9 ART11    1835 2011    177      3      0    .633   1.33   4.72   .911   .945   .159   1.97   .180  -.003   2
+  10 ART12    1852 2011    160      3      0    .630   1.99   4.16   .884   .901   .158   1.46   .163  -.016   1
+  11 ART13    1853 2011    159      3      0    .648   1.74   7.61  1.203   .950   .147   1.41   .157   .030   2
+  12 ART14    1839 2011    173      3      0    .581   1.22   8.37  1.575   .968   .210   1.76   .227   .014   2
+  13 ART15    1846 2011    166      3      0    .722   1.57   2.77   .506   .835   .142   1.38   .139  -.020   1
+  14 ART16    1872 2011    140      3      0    .527   1.92   4.02   .723   .874   .134   1.61   .158  -.026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2213     39      2    .599   1.59   8.37   .958   .907   .164   1.97   .177   .012
+
+ DATA CHECKS (rwl.check): swit401
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit401.rwl
+ 14 series, 2213 measurements, 1819-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file swit401.rwl, MD5 1b82a40da44e425a74144277d966b9bf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series ART05 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

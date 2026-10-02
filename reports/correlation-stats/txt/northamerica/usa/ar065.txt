@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: ar065
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ar065.rwl
+      MD5 of measurement file: 6b6a6a4b8485247123e6896c3b6d2107
+      Date checked           : 01OCT26
+      Beginning year         : 1762
+      Ending year            : 1991
+      Principal investigators: Imrie, G.
+      Site name              : Dragover Takeout
+      Species information    : JUVI Juniperus virginiana L.
+      Latitude               : 34.6300 N
+      Longitude              : 93.6300 W
+      Elevation              : 201 m
+
+      Series intercorrelation: 0.582
+      Avg mean sensitivity   : 0.326
+      Avg standard deviation : 0.306
+      Avg autocorrelation    : 0.626
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 2.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ar065
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ODO01A   1895 1990                      .41  .53 
+   2 ODO04B   1827 1950            .48  .53  .69      
+   3 ODO05A   1846 1924            .76  .66           
+   4 ODO06A   1862 1991                 .54  .36  .56 
+   5 ODO07A   1820 1991       .45  .67  .73  .50  .50 
+   6 ODO08A   1825 1991            .59  .61  .67  .69 
+   7 ODO13A   1768 1970  .53  .53  .70  .59  .56      
+   8 ODO13B   1768 1991  .35  .49  .70  .70  .57  .39 
+   9 ODO14A   1840 1991            .75  .73  .65  .64 
+  10 ODO21A   1780 1899  .62  .56  .48                
+  11 ODO21B   1762 1991  .54  .49  .54  .53  .28B .44 
+  12 ODO22A   1800 1991       .70  .79  .63  .32B .54 
+  13 ODO22B   1833 1991            .72  .55  .41  .53 
+  14 ODO34A   1854 1991                 .63  .50  .58 
+  15 ODO35A   1846 1991            .73  .69  .51  .41 
+  16 ODO36A   1821 1991       .51  .68  .70  .66  .58 
+  17 ODO37A   1800 1991       .52  .55  .52  .56  .60 
+ Av segment correlation  .51  .53  .65  .62  .51  .54 
+
+ FLAGGED SEGMENTS: ar065
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 ODO21B   1900 1949     B     .285         6      .344   .060
+  12 ODO22A   1900 1949     B     .321         6      .332   .011
+
+ DESCRIPTIVE STATISTICS: ar065
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ODO01A   1895 1990     96      2      0    .495   1.12   3.02   .507   .603   .306   1.75   .300  -.020   3
+   2 ODO04B   1827 1950    124      3      0    .555    .59   1.64   .259   .665   .281   1.72   .287  -.023   1
+   3 ODO05A   1846 1924     79      2      0    .674    .40    .79   .153   .446   .343   1.79   .310  -.001   1
+   4 ODO06A   1862 1991    130      3      0    .564    .84   1.92   .288   .340   .321   1.73   .254  -.002   2
+   5 ODO07A   1820 1991    172      5      0    .538    .47   1.02   .214   .645   .315   1.72   .295  -.019   1
+   6 ODO08A   1825 1991    167      4      0    .612    .51   1.34   .254   .652   .397   1.90   .340  -.007   3
+   7 ODO13A   1768 1970    203      5      0    .582    .59   1.62   .297   .655   .351   1.85   .314  -.008   3
+   8 ODO13B   1768 1991    224      6      0    .557    .39    .95   .175   .645   .329   1.83   .312   .004   1
+   9 ODO14A   1840 1991    152      4      0    .712    .54   1.00   .165   .638   .206   1.67   .210  -.028   3
+  10 ODO21A   1780 1899    120      3      0    .534    .41    .96   .180   .512   .366   1.85   .333   .001   1
+  11 ODO21B   1762 1991    230      6      1    .517    .79   2.99   .471   .644   .320   2.46   .324   .038   3
+  12 ODO22A   1800 1991    192      5      1    .597    .66   2.01   .341   .686   .364   2.31   .351  -.003   2
+  13 ODO22B   1833 1991    159      4      0    .638    .68   2.61   .390   .641   .391   3.03   .387   .033   1
+  14 ODO34A   1854 1991    138      3      0    .599    .99   2.56   .468   .627   .323   1.96   .318   .032   1
+  15 ODO35A   1846 1991    146      4      0    .631   1.02   2.58   .487   .679   .277   1.83   .266  -.002   1
+  16 ODO36A   1821 1991    171      5      0    .623    .50   1.40   .231   .777   .237   2.03   .254   .040   1
+  17 ODO37A   1800 1991    192      5      0    .521    .54   1.93   .308   .575   .387   2.48   .395  -.008   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2695     69      2    .582    .64   3.02   .306   .626   .326   3.03   .312   .003
+
+ DATA CHECKS (rwl.check): ar065
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ar065.rwl
+ 17 series, 2695 measurements, 1762-1991, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ar065.rwl, MD5 6b6a6a4b8485247123e6896c3b6d2107.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

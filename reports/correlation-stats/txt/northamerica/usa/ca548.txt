@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: ca548
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca548.rwl
+      MD5 of measurement file: 308730aea71f79cf75b28b179ed597bc
+      Date checked           : 01OCT26
+      Beginning year         : 1800
+      Ending year            : 1988
+      Principal investigators: Peterson, D.L.
+      Site name              : San Bernardino Mountains M
+      Species information    : PSMA Pseudotsuga macrocarpa (Vasey) Mayr
+      Latitude               : 34.1500 N
+      Longitude              : 117.0200 W
+      Elevation              : 1400 m
+
+      Series intercorrelation: 0.744
+      Avg mean sensitivity   : 0.434
+      Avg standard deviation : 0.528
+      Avg autocorrelation    : 0.618
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3)
+      Pct problem segments   : 4.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca548
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BC2801B  1800 1988       .82  .67  .42B .41B .83 
+   2 BC2802B  1800 1988       .76  .78  .83  .70  .72 
+   3 BC2803A  1800 1988       .90  .91  .81  .68  .86 
+   4 BC2804A  1800 1988       .85  .88  .92  .89  .90 
+   5 BC2805A  1800 1988       .78  .88  .74  .28B .60 
+   6 BC2806A  1851 1988                 .61  .62  .44 
+   7 BC2807B  1850 1988                 .67  .70  .79 
+   8 BC2808B  1820 1988       .70  .69  .79  .54  .74 
+   9 BC2809B  1850 1988                 .81  .59  .78 
+  10 BC2810A  1810 1988       .77  .75  .76  .62  .26A
+  11 BC2811B  1800 1988       .84  .76  .71  .74  .74 
+  12 BC2812B  1800 1988       .76  .76  .65  .49  .76 
+  13 BC2813B  1800 1988       .65  .55  .54  .54  .68 
+  14 BC2814A  1800 1988       .72  .83  .81  .56  .72 
+  15 BC2815A  1818 1988       .71  .73  .68  .51  .75 
+  16 BC2816B  1867 1988                 .82  .71  .83 
+  17 BC2817A  1888 1988                      .79  .89 
+  18 BC2818A  1891 1988                      .58  .78 
+  19 BC2819A  1869 1988                 .81  .68  .71 
+  20 BC2820A  1812 1988       .76  .82  .86  .75  .80 
+ Av segment correlation       .77  .77  .74  .62  .73 
+
+ FLAGGED SEGMENTS: ca548
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BC2801B  1875 1924     B     .425        -1      .475   .050
+   1 BC2801B  1900 1949     B     .409        -1      .467   .058
+   5 BC2805A  1900 1949     B     .282        -1      .717   .434
+  10 BC2810A  1925 1974     A     .265         0
+
+ DESCRIPTIVE STATISTICS: ca548
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BC2801B  1800 1988    189      5      2    .738    .74   4.65   .799   .786   .528   2.77   .466   .014   2
+   2 BC2802B  1800 1988    189      5      0    .804   1.01   6.68   .951   .812   .405   2.28   .378   .009   2
+   3 BC2803A  1800 1988    189      5      0    .861    .98   3.54   .630   .611   .485   2.52   .441  -.022   1
+   4 BC2804A  1800 1988    189      5      0    .883    .86   3.18   .504   .668   .402   2.18   .364   .010   2
+   5 BC2805A  1800 1988    189      5      1    .752    .80   3.37   .571   .606   .532   2.35   .464  -.018   3
+   6 BC2806A  1851 1988    138      3      0    .488    .68   1.80   .415   .667   .446   2.04   .383  -.035   3
+   7 BC2807B  1850 1988    139      3      0    .705    .96   3.92   .631   .515   .484   3.40   .457  -.003   3
+   8 BC2808B  1820 1988    169      5      0    .756    .75   1.58   .318   .556   .344   1.88   .303   .004   3
+   9 BC2809B  1850 1988    139      3      0    .781    .80   1.55   .335   .600   .323   1.81   .302  -.023   1
+  10 BC2810A  1810 1988    179      5      1    .542    .45   1.42   .288   .676   .471   2.46   .429   .005   1
+  11 BC2811B  1800 1988    189      5      0    .782    .39   1.25   .232   .584   .467   1.85   .378  -.003   2
+  12 BC2812B  1800 1988    189      5      0    .728    .49   2.13   .383   .736   .470   2.16   .402  -.012   1
+  13 BC2813B  1800 1988    189      5      0    .652    .56   1.52   .285   .593   .381   1.88   .321  -.014   3
+  14 BC2814A  1800 1988    189      5      0    .746    .82   2.22   .439   .631   .360   2.18   .333  -.028   3
+  15 BC2815A  1818 1988    171      5      0    .725    .98   2.89   .494   .704   .304   1.84   .302   .020   1
+  16 BC2816B  1867 1988    122      3      0    .823    .78   2.87   .474   .508   .469   2.32   .405   .020   2
+  17 BC2817A  1888 1988    101      2      0    .846   1.83   4.64   .839   .483   .357   1.79   .342   .018   1
+  18 BC2818A  1891 1988     98      2      0    .722   1.69   5.66   .841   .493   .357   1.96   .324   .131   0
+  19 BC2819A  1869 1988    120      3      0    .759   1.02   4.54   .760   .311   .553   2.77   .543   .011   2
+  20 BC2820A  1812 1988    177      5      0    .783   1.12   3.36   .641   .524   .499   1.94   .400  -.018   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3254     84      4    .744    .84   6.68   .528   .618   .434   3.40   .387  -.000
+
+ DATA CHECKS (rwl.check): ca548
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca548.rwl
+ 20 series, 3254 measurements, 1800-1988, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file ca548.rwl, MD5 308730aea71f79cf75b28b179ed597bc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

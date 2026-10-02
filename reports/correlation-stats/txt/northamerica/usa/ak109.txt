@@ -1,0 +1,185 @@
+
+ COFECHA-style crossdating report: ak109
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak109.rwl
+      MD5 of measurement file: f67893436bb43dee7853c1388c5dd3a5
+      Date checked           : 01OCT26
+      Beginning year         : 1524
+      Ending year            : 1990
+      Principal investigators: Jacoby, G.C.; D'Arrigo, R.D.; Buckley, B.M.
+      Site name              : 412/Noatak
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 67.9167 N
+      Longitude              : 162.3000 W
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.652
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.124
+      Avg autocorrelation    : 0.810
+      Number dated series    : 31
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 3.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak109
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   2 FTR8SS   1774 1990                                     .69  .66  .67  .61  .73  .83  .63 
+   3 FTR8ES   1766 1990                                     .57  .66  .81  .71  .76  .85  .50 
+   5 FTR11SS  1819 1990                                               .73  .85  .86  .81  .68 
+   7 FTR13NS  1860 1990                                                         .76  .76  .71 
+  11 FTR17NS  1858 1990                                                         .63  .70  .56 
+  12 FTR19ES  1753 1990                                     .59  .49  .64  .63  .66  .62  .44 
+  15 FTR31SS  1860 1990                                                         .64  .69  .58 
+  16 FTR33SWS 1859 1990                                                         .74  .74  .58 
+  19 FTR38WS  1759 1990                                     .55  .56  .50  .58  .68  .74  .64 
+  20 FTR44WS  1722 1923                           .39  .26B .38  .39  .48  .67                
+  21 21012ES  1633 1976            .80  .81  .82  .76  .77  .67  .58  .58  .64  .74  .74  .65 
+  22 021012WS 1635 1976            .82  .81  .78  .78  .77  .61  .46  .31A .46  .74  .75  .67 
+  23 21022NES 1577 1903  .71  .71  .62  .56  .74  .70  .60  .76  .56  .51  .66                
+  24 21022SWS 1560 1976  .75  .80  .69  .62  .53  .41  .38  .37  .15B .41  .72  .78  .70  .45 
+  25 02103SS  1569 1924  .64  .61  .55  .62  .70  .76  .76  .74  .51  .06B .14B .50           
+  26 21011NES 1611 1816       .83  .68  .62  .75  .78  .72                                    
+  28 21011SWS 1635 1736            .75  .66                                                   
+  29 02103NS  1595 1976  .67  .68  .57  .45  .56  .73  .80  .75  .58  .65  .72  .60  .60  .64 
+  30 02102NES 1600 1819       .82  .76  .76  .85  .82  .71                                    
+ Av segment correlation  .70  .74  .69  .66  .72  .68  .64  .61  .51  .53  .62  .70  .73  .59 
+
+ FLAGGED SEGMENTS: ak109
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 FTR44WS  1750 1799     B     .255         6      .259   .003  weak at every lag
+  22 021012WS 1825 1874     A     .307         0
+  24 21022SWS 1800 1849     B     .151         8      .319   .168  weak at every lag
+  25 02103SS  1825 1874     B     .060        -1      .402   .342
+  25 02103SS  1850 1899     B     .144         1      .289   .146  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ak109
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FTR6NS   1930 1990     61      0      0    .640    .43    .98   .229   .906   .167   1.40   .164  -.028   1
+   2 FTR8SS   1774 1990    217      7      0    .715    .27    .81   .133   .781   .202   1.99   .206   .002   1
+   3 FTR8ES   1766 1990    225      7      0    .709    .29   1.05   .180   .831   .230   1.87   .223   .003   2
+   4 FTR10NS  1749 1990    239                          .21    .46   .085   .799   .210                         
+   5 FTR11SS  1819 1990    172      5      0    .791    .34    .82   .136   .726   .219   1.78   .223  -.023   1
+   6 FTR12NWS 1747 1990    241                          .24    .73   .133   .881   .189                         
+   7 FTR13NS  1860 1990    131      3      0    .730    .36   1.08   .195   .769   .218   2.01   .221  -.010   1
+   8 FTR14WS  1851 1990    138                          .39    .91   .176   .822   .198                         
+   9 FTR14ES  1848 1990    129                          .43    .98   .189   .800   .199                         
+  10 FTR15WS  1782 1990    208                          .27    .68   .113   .795   .186                         
+  11 FTR17NS  1858 1990    133      3      0    .564    .49    .89   .202   .838   .170   1.68   .189  -.020   1
+  12 FTR19ES  1753 1990    238      7      0    .607    .18    .53   .080   .799   .211   1.67   .220  -.016   1
+  13 FTR25WS  1769 1990    197                          .25    .59   .135   .907   .181                         
+  14 FTR30NWS 1802 1989    187                          .56   1.48   .345   .880   .207                         
+  15 FTR31SS  1860 1990    131      3      0    .644    .42    .92   .254   .925   .175   1.48   .169  -.009   1
+  16 FTR33SWS 1859 1990    132      3      0    .708    .64   1.37   .268   .823   .174   1.61   .177  -.024   3
+  17 FTR36SS  1799 1990    191                          .27    .76   .147   .855   .213                         
+  18 FTR38ES  1764 1990    220                          .27    .61   .114   .875   .165                         
+  19 FTR38WS  1759 1990    232      7      0    .602    .29    .94   .117   .792   .188   1.67   .198   .016   1
+  20 FTR44WS  1722 1923    202      6      1    .478    .24    .69   .131   .869   .239   1.75   .237   .001   2
+  21 21012ES  1633 1976    344     12      0    .738    .16    .49   .074   .780   .234   2.00   .228  -.002   3
+  22 021012WS 1635 1976    342     12      1    .705    .16    .46   .073   .796   .219   1.95   .222  -.007   3
+  23 21022NES 1577 1903    327     11      0    .637    .21    .62   .088   .693   .243   1.82   .256  -.016   3
+  24 21022SWS 1560 1976    417     14      1    .549    .19    .67   .101   .868   .217   2.06   .218   .004   1
+  25 02103SS  1569 1924    356     12      2    .519    .15    .79   .108   .827   .296   2.15   .283   .061   0
+  26 21011NES 1611 1816    206      6      0    .690    .16    .47   .083   .842   .233   1.59   .224  -.031   1
+  27 2103SWS  1524 1852    327                          .18    .58   .085   .703   .246                         
+  28 21011SWS 1635 1736    102      2      0    .788    .17    .38   .069   .768   .218   1.44   .205  -.002   3
+  29 02103NS  1595 1976    382     14      0    .632    .15    .44   .079   .791   .261   1.96   .245  -.009   3
+  30 02102NES 1600 1819    220      6      0    .769    .16    .46   .073   .812   .222   1.94   .226   .007   1
+  31 02102SWS 1600 1662     63      0      0    .860    .27    .43   .075   .556   .232   1.47   .216  -.009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           6710    140      5    .652    .25   1.48   .124   .810   .218   2.15   .225  -.001
+
+ DATA CHECKS (rwl.check): ak109
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak109.rwl
+ 31 series, 6710 measurements, 1524-1990, 0.001 mm precision
+ 0 error(s), 10 warning(s), 11 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (10)
+     2103SWS: no measurement for 1666-1667, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR10NS: no measurement for 1913, 1950-1951, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR12NWS: no measurement for 1798-1800, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR14ES: no measurement for 1884-1897, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR14WS: no measurement for 1913-1914, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR15WS: no measurement for 1908, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR25WS: no measurement for 1819-1841, 1926, 1958, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR30NWS: no measurement for 1831, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR36SS: no measurement for 1883, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     FTR38ES: no measurement for 1907-1913, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 11 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ak109.rwl, MD5 f67893436bb43dee7853c1388c5dd3a5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series FTR10NS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR12NWS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR14WS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR14ES has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR15WS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR25WS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR30NWS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR36SS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series FTR38ES has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series 2103SWS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

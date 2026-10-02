@@ -1,0 +1,164 @@
+
+ COFECHA-style crossdating report: me030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : me030.rwl
+      MD5 of measurement file: c6ea5d6769b7011a6aa039d99264237f
+      Date checked           : 01OCT26
+      Beginning year         : 1880
+      Ending year            : 1994
+      Principal investigators: Hager, A.E.S.
+      Site name              : Carroll
+      Species information    : FRNI Fraxinus nigra Marsh.
+      Latitude               : 45.4200 N
+      Longitude              : 68.0700 W
+      Elevation              : 120 m
+
+      Series intercorrelation: 0.653
+      Avg mean sensitivity   : 0.312
+      Avg standard deviation : 0.701
+      Avg autocorrelation    : 0.776
+      Number dated series    : 43
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 9.09
+
+
+ CORRELATION OF SERIES BY SEGMENTS: me030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 32-01A   1921 1994       .70 
+   2 32-01B   1908 1994       .70 
+   3 32-02A   1880 1994  .64  .71 
+   4 32-02B   1891 1994  .62  .63 
+   5 32-03A   1920 1994       .74 
+   6 32-04A   1912 1994       .69 
+   7 32-04B   1912 1994       .71 
+   9 32-05A   1893 1994  .52  .70 
+  10 32-05B   1898 1994       .71 
+  14 32-08B   1916 1994       .77 
+  15 32-09A   1924 1994       .75 
+  16 32-09C   1923 1994       .77 
+  17 32-10A   1894 1994  .19B .27B
+  23 32-12B   1921 1994       .77 
+  24 32-12C   1922 1994       .76 
+  30 32-15B   1915 1994       .65 
+  31 32-16A   1912 1994       .47 
+  33 32-16D   1912 1994       .86 
+  34 32-17A   1891 1994  .02B .77 
+  35 32-18A   1914 1994       .76 
+  37 32-18C   1903 1994       .69 
+  38 32-20A   1902 1994       .68 
+  39 32-20B   1903 1994       .56 
+  40 32-21A   1919 1994       .80 
+  41 32-21B   1921 1994       .74 
+  42 32-22B   1897 1994  .78  .73 
+  43 32-22C   1910 1994       .69 
+ Av segment correlation  .46  .69 
+
+ FLAGGED SEGMENTS: me030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 32-10A   1900 1949     B     .191         6      .198   .007  weak at every lag
+  17 32-10A   1925 1974     B     .267       -10      .270   .002  weak at every lag
+  34 32-17A   1900 1949     B     .018        -4      .371   .353
+
+ DESCRIPTIVE STATISTICS: me030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 32-01A   1921 1994     74      1      0    .702   1.27   4.37   .952   .835   .338   2.21   .361  -.006   2
+   2 32-01B   1908 1994     87      1      0    .632   1.55   5.18  1.137   .809   .319   1.99   .355   .100   1
+   3 32-02A   1880 1994    115      2      0    .641   1.16   3.91  1.046   .842   .371   2.56   .406   .385   2
+   4 32-02B   1891 1994    104      2      0    .548    .91   3.11   .664   .827   .301   1.82   .303   .006   3
+   5 32-03A   1920 1994     75      1      0    .707   1.04   2.82   .813   .851   .298   2.20   .356   .083   1
+   6 32-04A   1912 1994     83      1      0    .716    .73   1.75   .418   .705   .331   2.17   .360  -.015   1
+   7 32-04B   1912 1994     83      1      0    .766    .73   2.54   .477   .757   .316   2.10   .352   .020   1
+   8 32-04C   1929 1994     66      0      0    .782    .75   2.27   .531   .799   .301   2.09   .359   .016   1
+   9 32-05A   1893 1994    102      2      0    .486    .72   1.83   .395   .683   .313   2.66   .381   .030   1
+  10 32-05B   1898 1994     97      1      0    .603    .64   1.72   .387   .702   .335   2.32   .392  -.065   3
+  11 32-06A   1930 1994     65      0      0    .819   1.47   3.61   .866   .801   .279   1.90   .321   .005   2
+  12 32-06B   1930 1994     65      0      0    .841   1.52   3.24   .754   .725   .273   1.98   .314  -.009   2
+  13 32-06D   1930 1994     65      0      0    .841   1.50   3.70   .898   .818   .243   1.84   .293   .122   1
+  14 32-08B   1916 1994     79      1      0    .739    .81   1.98   .486   .779   .308   2.07   .335   .053   1
+  15 32-09A   1924 1994     71      1      0    .667   1.13   3.05   .811   .815   .307   2.57   .405   .398   1
+  16 32-09C   1923 1994     72      1      0    .746    .73   2.02   .520   .741   .337   2.23   .405   .079   1
+  17 32-10A   1894 1994    101      2      2    .274    .46   1.89   .310   .661   .306   2.54   .340   .058   1
+  18 32-10C   1929 1994     66      0      0    .600   1.01   2.81   .770   .812   .289   2.28   .363  -.051   1
+  19 32-11A   1944 1994     51      0      0    .779    .87   2.63   .594   .752   .328   2.02   .370   .100   1
+  20 32-11B   1941 1994     54      0      0    .819   1.02   3.00   .753   .776   .327   2.13   .378   .033   1
+  21 32-11C   1941 1994     54      0      0    .852   1.36   3.89  1.006   .831   .288   1.88   .327   .036   1
+  22 32-12A   1935 1994     60      0      0    .800    .98   2.87   .821   .771   .328   2.08   .426  -.009   1
+  23 32-12B   1921 1994     74      1      0    .791    .84   3.08   .676   .640   .435   2.46   .488  -.051   1
+  24 32-12C   1922 1994     73      1      0    .728    .92   2.96   .739   .684   .375   2.14   .457  -.047   1
+  25 32-12D   1935 1994     60      0      0    .874    .99   3.12   .793   .668   .370   2.46   .466  -.026   1
+  26 32-13A   1931 1994     64      0      0    .428    .71   2.44   .456   .853   .225   1.70   .258   .039   1
+  27 32-13C   1932 1994     63      0      0    .458    .87   2.66   .599   .849   .248   1.67   .281   .210   1
+  28 32-14A   1932 1994     63      0      0    .845   1.04   2.45   .609   .772   .259   2.05   .333  -.014   1
+  29 32-15A   1929 1994     66      0      0    .620    .87   2.55   .624   .822   .313   1.94   .367  -.018   2
+  30 32-15B   1915 1994     80      1      0    .582    .73   2.07   .482   .815   .279   2.26   .385   .011   3
+  31 32-16A   1912 1994     83      1      0    .506    .40    .81   .160   .524   .311   1.84   .303  -.045   1
+  32 32-16C   1944 1994     51      0      0    .428    .83   2.25   .558   .739   .320   1.97   .350   .047   1
+  33 32-16D   1912 1994     83      1      0    .682    .98   2.86   .688   .746   .366   2.02   .374   .019   1
+  34 32-17A   1891 1994    104      2      1    .313   1.01   3.57   .714   .786   .324   8.64   .869   .560   1
+  35 32-18A   1914 1994     81      1      0    .674    .90   2.69   .705   .883   .278   1.95   .359   .188   1
+  36 32-18B   1928 1994     67      0      0    .728   1.36   4.04  1.041   .885   .253   1.82   .288   .114   3
+  37 32-18C   1903 1994     92      1      0    .681   1.45   4.49  1.037   .894   .260   1.54   .256  -.012   3
+  38 32-20A   1902 1994     93      1      0    .577   1.24   3.76   .954   .789   .293   1.76   .315   .053   1
+  39 32-20B   1903 1994     92      1      0    .561   1.31   4.76  1.034   .823   .302   2.82   .368  -.041   3
+  40 32-21A   1919 1994     76      1      0    .693   1.12   2.69   .713   .810   .318   2.42   .397   .041   1
+  41 32-21B   1921 1994     74      1      0    .766    .84   3.07   .527   .712   .318   2.39   .375   .114   1
+  42 32-22B   1897 1994     98      2      0    .697   1.07   3.34   .836   .826   .329   2.15   .357  -.012   1
+  43 32-22C   1910 1994     85      1      0    .683    .92   3.30   .834   .795   .322   2.53   .383  -.084   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3311     33      3    .653    .99   5.18   .701   .776   .312   8.64   .375   .062
+
+ DATA CHECKS (rwl.check): me030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/me030.rwl
+ 43 series, 3311 measurements, 1880-1994, 0.01 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     32-10A: correlates with the rest of the collection at r = 0.175 where the collection median is 0.78 (5.6 MAD below it); it does not fit the collection it is in
+     32-13C: correlates with the rest of the collection at r = 0.321 where the collection median is 0.78 (4.2 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file me030.rwl, MD5 c6ea5d6769b7011a6aa039d99264237f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,158 @@
+
+ COFECHA-style crossdating report: nepa052
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa052.rwl
+      MD5 of measurement file: 63b6b811166a5babd553a601d16859c7
+      Date checked           : 01OCT26
+      Beginning year         : 1846
+      Ending year            : 2013
+      Principal investigators: Kharal, D.K.; Thapa, U.K.; St. George, S.; Meilby, H.; Rayamajhi, S.; Bhuju, D.R.
+      Site name              : Manang Valley 2
+      Species information    : ABSB Abies spectabilis (D. Don) Spach
+      Latitude               : 28.6000 N
+      Longitude              : 84.1740 E
+      Elevation              : 3375 m
+
+      Series intercorrelation: 0.415
+      Avg mean sensitivity   : 0.196
+      Avg standard deviation : 0.993
+      Avg autocorrelation    : 0.808
+      Number dated series    : 40
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 4, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 24.39
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ABSP006B 1930 2013            .35 
+   3 ABSP010A 1944 2013            .53 
+   4 ABSP010B 1944 2013            .44 
+   5 ABSP011A 1890 2013  .53  .59  .29A
+   6 ABSP011B 1887 2013  .12B .18B .37 
+  11 ABSP016A 1865 2013  .40  .40  .38 
+  12 ABSP020B 1846 2013  .39  .49  .64 
+  13 ABSP023B 1915 2013       .47  .36 
+  14 ABSP024B 1910 2013       .55  .42 
+  15 ABSP025B 1902 2013       .37B .39B
+  16 ABSP029B 1875 2013  .48  .46  .34 
+  17 ABSP030A 1906 2013       .47  .51 
+  18 ABSP030B 1868 2013  .27B .39  .45 
+  19 ABSP031  1872 2013  .21A .29A .42 
+  20 ABSP031B 1889 2013  .56  .38  .34 
+  22 ABSP033A 1900 2013       .55  .46 
+  23 ABSP033B 1930 2013            .50 
+  35 ABSP042B 1943 2013            .31A
+  36 ABSP043A 1945 2013            .25B
+  40 ABSP052B 1949 2013            .40 
+ Av segment correlation  .37  .43  .41 
+
+ FLAGGED SEGMENTS: nepa052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 ABSP011A 1950 1999     A     .292         0
+   6 ABSP011B 1900 1949     B     .117       -10      .450   .333
+   6 ABSP011B 1925 1974     B     .181       -10      .252   .071  weak at every lag
+  15 ABSP025B 1925 1974     B     .366         5      .461   .095
+  15 ABSP025B 1950 1999     B     .395         5      .424   .029
+  18 ABSP030B 1900 1949     B     .275         7      .390   .115
+  19 ABSP031  1900 1949     A     .209         0
+  19 ABSP031  1925 1974     A     .293         0
+  35 ABSP042B 1950 1999     A     .311         0
+  36 ABSP043A 1950 1999     B     .248       -10      .367   .119
+
+ DESCRIPTIVE STATISTICS: nepa052
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ABSP006B 1930 2013     84      1      0    .340   1.50   2.89   .421   .438   .221   1.81   .224   .011   1
+   2 ABSP009B 1953 2013     61      0      0    .514   1.67   4.76   .691   .811   .190   1.43   .177   .047   1
+   3 ABSP010A 1944 2013     70      1      0    .454   1.77   6.33   .760   .798   .181   1.41   .170   .090   1
+   4 ABSP010B 1944 2013     70      1      0    .475    .98   5.55   .743   .885   .245   1.46   .229   .077   1
+   5 ABSP011A 1890 2013    124      3      1    .464   1.01   5.64   .926   .957   .213   1.77   .227  -.008   3
+   6 ABSP011B 1887 2013    127      3      2    .285    .77   2.38   .511   .931   .233   1.67   .235   .030   1
+   7 ABSP012A 1951 2013     63      0      0    .470   1.93   5.52  1.050   .937   .180   1.41   .177  -.016   2
+   8 ABSP012B 1951 2013     63      0      0    .492   2.77   5.92   .808   .710   .170   1.43   .178   .050   1
+   9 ABSP013B 1954 2013     60      0      0    .604   2.82   5.36  1.172   .874   .152   1.58   .190   .092   1
+  10 ABSP015B 1953 2013     61      0      0    .299   1.97   3.15   .493   .585   .173   1.48   .185   .048   1
+  11 ABSP016A 1865 2013    149      3      0    .347    .93   3.57   .599   .933   .178   1.48   .187   .012   1
+  12 ABSP020B 1846 2013    168      3      0    .457   1.49   5.74   .688   .854   .164   1.88   .186   .002   2
+  13 ABSP023B 1915 2013     99      2      0    .378   1.59   4.20   .643   .477   .250   1.77   .261   .096   2
+  14 ABSP024B 1910 2013    104      2      0    .545   1.04   2.44   .679   .894   .238   1.80   .246   .039   1
+  15 ABSP025B 1902 2013    112      2      2    .439   1.52   4.28   .729   .758   .226   1.66   .238  -.011   2
+  16 ABSP029B 1875 2013    139      3      0    .439   1.13   2.91   .443   .673   .222   1.70   .238  -.014   1
+  17 ABSP030A 1906 2013    108      2      0    .487   1.53   3.53   .459   .642   .191   1.63   .196   .057   1
+  18 ABSP030B 1868 2013    146      3      1    .362   1.74   8.99  1.042   .909   .165   1.52   .185   .025   1
+  19 ABSP031  1872 2013    142      3      2    .396   1.23   4.87   .892   .771   .246   1.98   .279   .005   2
+  20 ABSP031B 1889 2013    125      3      0    .364   1.18   3.00   .590   .828   .203   1.78   .206   .035   1
+  21 ABSP032B 1966 2013     48      0      0    .276   2.85   5.58  1.221   .899   .141   1.48   .166   .034   1
+  22 ABSP033A 1900 2013    114      2      0    .448   1.45   2.68   .359   .629   .171   1.67   .171  -.024   1
+  23 ABSP033B 1930 2013     84      1      0    .427   2.09   4.24   .725   .795   .159   1.53   .181  -.028   2
+  24 ABSP034A 1968 2013     46      0      0    .389   3.40   8.00  1.959   .865   .207   1.40   .197   .018   3
+  25 ABSP035A 1975 2013     39      0      0    .462   4.40   8.72  2.135   .921   .148   1.35   .150   .094   1
+  26 ABSP036A 1960 2013     54      0      0    .448   3.23   6.34  1.565   .935   .152   1.35   .160   .103   1
+  27 ABSP036B 1952 2013     62      0      0    .332   3.87  12.38  2.252   .864   .173   1.62   .179   .071   1
+  28 ABSP037B 1957 2013     57      0      0    .266   2.23   9.29  1.858   .785   .214   3.33   .377  -.042   0
+  29 ABSP038A 1975 2013     39      0      0    .319   3.18  20.24  3.260   .833   .214   1.81   .253   .301   1
+  30 ABSP038B 1975 2013     39      0      0    .406   4.26  15.66  2.568   .887   .172   1.37   .159   .154   1
+  31 ABSP039A 1970 2013     44      0      0    .631   3.97   7.38  1.720   .880   .147   1.41   .159   .223   0
+  32 ABSP041  1970 2013     44      0      0    .521   4.07   6.70  1.315   .826   .168   1.42   .174   .045   1
+  33 ABSP041B 1960 2013     54      0      0    .482   3.44   9.57  1.758   .909   .180   1.42   .168   .081   0
+  34 ABSP042A 1954 2013     60      0      0    .396   2.38   6.21  1.517   .942   .187   1.61   .210   .049   1
+  35 ABSP042B 1943 2013     71      1      1    .289   3.25   9.55  2.144   .876   .189   1.72   .200  -.007   3
+  36 ABSP043A 1945 2013     69      1      1    .351   3.67   7.84  1.721   .862   .220   1.60   .234   .017   3
+  37 ABSP043B 1951 2013     63      0      0    .483   2.78   6.16  1.386   .835   .256   1.67   .276   .006   1
+  38 ABSP044B 1977 2013     37      0      0    .192   4.71   8.55  1.605   .824   .139   1.29   .140  -.028   2
+  39 ABSP045A 1979 2013     35      0      0    .541   3.19   5.72  1.100   .787   .150   1.47   .168   .146   1
+  40 ABSP052B 1949 2013     65      1      0    .419   1.60   3.76   .699   .747   .224   1.50   .235   .053   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3199     41     10    .415   1.98  20.24   .993   .808   .196   3.33   .209   .034
+
+ DATA CHECKS (rwl.check): nepa052
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa052.rwl
+ 40 series, 3199 measurements, 1846-2013, 0.01 mm precision
+ 0 error(s), 0 warning(s), 13 note(s)
+ -------------
+ Nothing to report at this severity.
+ 13 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file nepa052.rwl, MD5 63b6b811166a5babd553a601d16859c7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: brit053
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit053.rwl
+      MD5 of measurement file: 273a1b825e62741875e991c18536eec1
+      Date checked           : 01OCT26
+      Beginning year         : 1759
+      Ending year            : 2003
+      Principal investigators: Tyers, I.
+      Site name              : Sheffield, Bingham Park Wood and Endcliffe Wood
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 53.3700 N
+      Longitude              : 1.5000 W
+      Elevation              : 140 m
+
+      Series intercorrelation: 0.578
+      Avg mean sensitivity   : 0.242
+      Avg standard deviation : 0.689
+      Avg autocorrelation    : 0.741
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 2.83
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit053
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BPW01    1784 2003  .69  .67  .61  .64  .72  .54  .29A
+   2 BPW02    1780 2003  .59  .60  .42  .55  .58  .52  .47 
+   3 BPW03    1812 2003       .68  .68  .43  .44  .63  .67 
+   4 BPW04    1821 2003       .56  .40  .52  .42  .46  .56 
+   5 BPW05    1799 2003  .66  .73  .55  .30B .43  .65  .64 
+   6 BPW06    1777 2003  .75  .69  .49  .58  .58  .53  .56 
+   7 BPW07    1841 2003            .54  .53  .51  .59  .63 
+   8 BPW08    1833 2003            .64  .64  .64  .43  .41 
+   9 BPW09    1808 2003       .66  .59  .75  .79  .69  .69 
+  10 BPW10    1804 2003       .52  .62  .66  .65  .67  .60 
+  11 EPW11    1759 2003  .61  .68  .69  .78  .65  .69  .71 
+  12 EPW12    1864 2003                 .62  .69  .53  .38 
+  13 EPW13    1836 2003            .57  .66  .70  .71  .71 
+  14 EPW14    1824 2003       .54  .65  .64  .53  .52  .58 
+  15 EPW15    1831 2003            .62  .64  .66  .66  .54 
+  16 EPW16    1843 2003            .50  .46  .64  .64  .47 
+  17 EPW17    1866 2003                 .73  .71  .67  .48 
+  18 EPW18    1917 2003                           .61  .58 
+  19 EPW19    1869 2003                 .59  .47  .44  .56 
+  20 EPW20    1920 2003                           .26B .45 
+ Av segment correlation  .66  .63  .57  .60  .60  .57  .55 
+
+ FLAGGED SEGMENTS: brit053
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BPW01    1950 1999     A     .288         0
+   5 BPW05    1875 1924     B     .304        -2      .413   .109
+  20 EPW20    1925 1974     B     .263         6      .395   .131
+
+ DESCRIPTIVE STATISTICS: brit053
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BPW01    1784 2003    220      7      1    .614   1.34   3.80   .651   .811   .204   1.74   .198  -.031   3
+   2 BPW02    1780 2003    224      7      0    .524    .95   3.65   .717   .827   .268   1.83   .290  -.028   3
+   3 BPW03    1812 2003    192      6      0    .610   1.67   3.64   .598   .814   .181   1.46   .179  -.068   3
+   4 BPW04    1821 2003    183      6      0    .491   1.38   4.29   .786   .701   .292   2.63   .313  -.025   2
+   5 BPW05    1799 2003    205      7      1    .586    .86   2.98   .532   .866   .204   1.84   .213   .022   1
+   6 BPW06    1777 2003    227      7      0    .581   1.50   3.30   .584   .673   .231   1.72   .230  -.028   3
+   7 BPW07    1841 2003    163      5      0    .569    .84   2.34   .417   .765   .254   1.74   .240  -.057   3
+   8 BPW08    1833 2003    171      5      0    .587   1.73   5.59   .832   .702   .245   1.90   .256  -.021   3
+   9 BPW09    1808 2003    196      6      0    .684   1.72   4.43   .914   .754   .268   1.80   .255  -.029   3
+  10 BPW10    1804 2003    200      6      0    .566    .94   2.85   .517   .766   .266   1.95   .277  -.023   3
+  11 EPW11    1759 2003    245      7      0    .659   1.09   2.93   .475   .690   .230   1.94   .238  -.004   1
+  12 EPW12    1864 2003    140      4      0    .570   1.51   4.09   .701   .842   .197   1.58   .193  -.023   3
+  13 EPW13    1836 2003    168      5      0    .635   1.63   6.79  1.016   .744   .251   1.82   .269  -.007   3
+  14 EPW14    1824 2003    180      6      0    .547   1.39   6.07  1.059   .683   .376   2.26   .388   .014   1
+  15 EPW15    1831 2003    173      5      0    .595   1.37   3.86   .675   .719   .246   1.84   .274   .002   1
+  16 EPW16    1843 2003    161      5      0    .508   1.46   5.10   .795   .806   .247   1.70   .240  -.011   3
+  17 EPW17    1866 2003    138      4      0    .649   1.77   3.52   .596   .598   .221   1.63   .232  -.023   3
+  18 EPW18    1917 2003     87      2      0    .522   2.68   6.35   .727   .505   .186   1.87   .206   .033   1
+  19 EPW19    1869 2003    135      4      0    .527   1.50   3.75   .622   .768   .194   1.83   .202   .012   3
+  20 EPW20    1920 2003     84      2      1    .349   2.37   4.23   .697   .504   .240   1.59   .221  -.005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3492    106      3    .578   1.41   6.79   .689   .741   .242   2.63   .248  -.017
+
+ DATA CHECKS (rwl.check): brit053
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit053.rwl
+ 20 series, 3492 measurements, 1759-2003, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 1 carriage return(s) against 373 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file brit053.rwl, MD5 273a1b825e62741875e991c18536eec1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

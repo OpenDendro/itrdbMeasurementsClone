@@ -1,0 +1,129 @@
+
+ COFECHA-style crossdating report: in040
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in040.rwl
+      MD5 of measurement file: 55bacc02be5937bf0b9532ea48e9383d
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 2016
+      Principal investigators: Maxwell, J.T.; Matheus, T.J.; Strange, B.M.
+      Site name              : Oppenheim Woods
+      Species information    : CYOV Carya ovata (Mill.) K. Koch
+      Latitude               : 41.3395 N
+      Longitude              : 85.7635 W
+      Elevation              : 274 m
+
+      Series intercorrelation: 0.647
+      Avg mean sensitivity   : 0.260
+      Avg standard deviation : 0.639
+      Avg autocorrelation    : 0.638
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 3.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in040
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 OWO01A   1830 2016  .56  .58  .58 
+   2 OWO01B   1833 2016  .50  .61  .62 
+   3 OWO02A   1863 2016  .63  .61  .43 
+   4 OWO02B   1849 2016  .70  .52  .29B
+   5 OWO03A   1877 2016  .75  .64  .46 
+   6 OWO03B   1855 2016  .76  .59  .29B
+   7 OWO04A   1834 2016  .61  .49  .44 
+   8 OWO04B   1840 2016  .74  .70  .47 
+   9 OWO05A   1884 2016  .81  .78  .65 
+  10 OWO05B   1832 2016  .80  .71  .57 
+  11 OWO06A   1838 2016  .88  .75  .58 
+  12 OWO06B   1842 2016  .73  .64  .67 
+  13 OWO07A   1879 2016  .63  .55  .58 
+  14 OWO07B   1851 2016  .62  .63  .58 
+  15 OWO08A   1856 2016  .66  .62  .70 
+  16 OWO08B   1869 2016  .75  .75  .58 
+  17 OWO09A   1876 2016  .68  .63  .63 
+  18 OWO09B   1851 2016  .78  .74  .62 
+  19 OWO10A   1859 2016  .76  .68  .57 
+  20 OWO10B   1880 2016  .82  .73  .42 
+ Av segment correlation  .71  .65  .54 
+
+ FLAGGED SEGMENTS: in040
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 OWO02B   1950 1999     B     .292        -8      .332   .040
+   6 OWO03B   1950 1999     B     .293         7      .487   .195
+
+ DESCRIPTIVE STATISTICS: in040
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OWO01A   1830 2016    187      3      0    .492    .96   2.40   .402   .494   .290   2.13   .280  -.012   3
+   2 OWO01B   1833 2016    184      3      0    .575   1.17   3.58   .529   .365   .323   2.05   .312  -.013   3
+   3 OWO02A   1863 2016    154      3      0    .643   1.31   5.91   .639   .712   .212   2.53   .261   .029   1
+   4 OWO02B   1849 2016    168      3      1    .633   1.16   2.57   .370   .578   .202   1.99   .231   .030   1
+   5 OWO03A   1877 2016    140      3      0    .732   1.46   3.19   .555   .638   .266   1.86   .261   .008   1
+   6 OWO03B   1855 2016    162      3      1    .595   1.32   3.60   .578   .796   .210   1.92   .222   .026   1
+   7 OWO04A   1834 2016    183      3      0    .616   1.41   3.67   .581   .636   .253   2.14   .269  -.011   3
+   8 OWO04B   1840 2016    177      3      0    .633   1.18   3.41   .635   .796   .223   2.29   .270   .011   3
+   9 OWO05A   1884 2016    133      3      0    .743   1.33   2.89   .479   .324   .318   1.89   .290  -.001   3
+  10 OWO05B   1832 2016    185      3      0    .607   1.24   3.03   .580   .569   .288   2.34   .321  -.028   1
+  11 OWO06A   1838 2016    179      3      0    .762   1.21   2.77   .478   .607   .248   1.78   .260  -.003   1
+  12 OWO06B   1842 2016    175      3      0    .666   1.27   2.78   .522   .500   .295   1.91   .284  -.026   3
+  13 OWO07A   1879 2016    138      3      0    .662   2.37   4.56  1.042   .762   .232   1.62   .239  -.026   3
+  14 OWO07B   1851 2016    166      3      0    .612   1.71   3.50   .759   .763   .237   1.76   .242   .026   2
+  15 OWO08A   1856 2016    161      3      0    .667   1.71   4.79   .977   .759   .275   2.02   .296  -.010   3
+  16 OWO08B   1869 2016    148      3      0    .654   1.72   4.97   .950   .718   .296   1.94   .288  -.028   1
+  17 OWO09A   1876 2016    141      3      0    .657   2.25   5.19   .838   .592   .255   1.71   .253  -.026   1
+  18 OWO09B   1851 2016    166      3      0    .715   1.57   3.89   .629   .598   .263   1.69   .263   .003   1
+  19 OWO10A   1859 2016    158      3      0    .690   1.08   4.66   .705   .827   .235   2.19   .252   .007   1
+  20 OWO10B   1880 2016    137      3      0    .662   1.15   4.50   .727   .804   .276   1.94   .280   .002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3242     60      2    .647   1.41   5.91   .639   .638   .260   2.53   .269  -.002
+
+ DATA CHECKS (rwl.check): in040
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in040.rwl
+ 20 series, 3242 measurements, 1830-2016, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file in040.rwl, MD5 55bacc02be5937bf0b9532ea48e9383d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

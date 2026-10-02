@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: aut135
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aut135.rwl
+      MD5 of measurement file: 178988067583139bdbe1324200bfbefa
+      Date checked           : 01OCT26
+      Beginning year         : 1850
+      Ending year            : 2009
+      Principal investigators: Hartl, C.; Rothe, A.
+      Site name              : Nationalpark Kalkalpen, Großer Größtenberg unten
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 47.7600 N
+      Longitude              : 14.4200 E
+      Elevation              : 1350 m
+
+      Series intercorrelation: 0.600
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 0.944
+      Avg autocorrelation    : 0.872
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aut135
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 NKGU901C 1873 2009  .76  .71  .65 
+   2 NKGU901O 1880 2009  .72  .71  .66 
+   3 NKGU902C 1877 2009  .73  .61  .53 
+   4 NKGU902O 1884 2009  .62  .63  .72 
+   5 NKGU905C 1878 2009  .77  .81  .73 
+   6 NKGU905O 1879 2009  .76  .79  .70 
+   7 NKGU906C 1862 2009  .71  .55  .31A
+   8 NKGU906O 1859 2009  .73  .72  .38 
+   9 NKGU907C 1868 2009  .46  .27A .26B
+  10 NKGU907O 1867 2009  .49  .44  .36B
+  11 NKGU908C 1853 2009  .53  .56  .44 
+  12 NKGU908O 1854 2009  .57  .63  .49 
+  13 NKGU909C 1855 2009  .72  .59  .56 
+  14 NKGU909O 1857 2009  .57  .54  .53 
+  15 NKGU910C 1865 2009  .68  .65  .40 
+  16 NKGU910O 1866 2009  .42  .54  .55 
+  17 NKGU912C 1862 2009  .65  .63  .65 
+  18 NKGU912O 1861 2009  .69  .66  .62 
+  19 NKGU914C 1850 2009  .74  .68  .54 
+  20 NKGU914O 1854 2009  .79  .66  .41 
+ Av segment correlation  .66  .62  .52 
+
+ FLAGGED SEGMENTS: aut135
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 NKGU906C 1950 1999     A     .312         0
+   9 NKGU907C 1925 1974     A     .274         0
+   9 NKGU907C 1950 1999     B     .261         8      .266   .006  weak at every lag
+  10 NKGU907O 1950 1999     B     .358        -4      .388   .030
+
+ DESCRIPTIVE STATISTICS: aut135
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NKGU901C 1873 2009    137      3      0    .708   1.63   6.01  1.157   .908   .216   1.59   .230   .039   1
+   2 NKGU901O 1880 2009    130      3      0    .707   1.34   4.36   .846   .870   .239   1.67   .242   .038   1
+   3 NKGU902C 1877 2009    133      3      0    .605   1.71   3.40   .671   .730   .235   2.00   .246   .027   1
+   4 NKGU902O 1884 2009    126      3      0    .649   1.54   3.35   .674   .755   .226   1.88   .242   .050   1
+   5 NKGU905C 1878 2009    132      3      0    .732   1.72   4.15   .795   .834   .231   1.61   .228  -.028   3
+   6 NKGU905O 1879 2009    131      3      0    .687   1.11   3.88   .743   .885   .245   1.56   .249  -.019   3
+   7 NKGU906C 1862 2009    148      3      1    .502   1.04   4.98  1.089   .935   .254   2.15   .282   .034   1
+   8 NKGU906O 1859 2009    151      3      0    .611   1.12   4.19  1.039   .907   .255   1.76   .263   .012   1
+   9 NKGU907C 1868 2009    142      3      2    .407   1.26   3.53   .786   .805   .329   1.88   .325   .057   1
+  10 NKGU907O 1867 2009    143      3      1    .463   1.03   3.31   .702   .844   .297   2.02   .331   .024   1
+  11 NKGU908C 1853 2009    157      3      0    .555   1.28   3.42   .731   .807   .270   1.67   .270   .021   1
+  12 NKGU908O 1854 2009    156      3      0    .617   1.22   3.36   .782   .837   .303   1.75   .292  -.012   1
+  13 NKGU909C 1855 2009    155      3      0    .661   1.45   4.56  1.044   .874   .288   1.79   .283  -.003   3
+  14 NKGU909O 1857 2009    153      3      0    .564   1.45   4.93  1.105   .886   .305   2.13   .299   .079   2
+  15 NKGU910C 1865 2009    145      3      0    .534   1.69   5.17  1.312   .926   .224   1.61   .224  -.010   2
+  16 NKGU910O 1866 2009    144      3      0    .464   1.32   4.32   .921   .893   .246   2.12   .278  -.009   1
+  17 NKGU912C 1862 2009    148      3      0    .649   1.52   4.66  1.055   .912   .240   1.78   .257  -.017   3
+  18 NKGU912O 1861 2009    149      3      0    .664   1.43   8.38  1.186   .910   .257   2.08   .270   .031   1
+  19 NKGU914C 1850 2009    160      3      0    .618   1.38   4.97   .982   .934   .219   1.55   .224   .011   2
+  20 NKGU914O 1854 2009    156      3      0    .640   1.29   4.49  1.149   .952   .210   1.81   .235  -.017   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2896     60      4    .600   1.37   8.38   .944   .872   .255   2.15   .264   .015
+
+ DATA CHECKS (rwl.check): aut135
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/aut135.rwl
+ 20 series, 2896 measurements, 1850-2009, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     6 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file aut135.rwl, MD5 178988067583139bdbe1324200bfbefa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

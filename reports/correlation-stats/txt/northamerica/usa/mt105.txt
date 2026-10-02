@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: mt105
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mt105.rwl
+      MD5 of measurement file: 4a9613261805663efe68d7468954407b
+      Date checked           : 01OCT26
+      Beginning year         : 1758
+      Ending year            : 1983
+      Principal investigators: Briffa, K.R.; Schweingruber, F.H.
+      Site name              : Hododoo Pass   SW-Superior
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 47.0000 N
+      Longitude              : 115.1700 W
+      Elevation              : 1710 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.152
+      Avg standard deviation : 0.793
+      Avg autocorrelation    : 0.844
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 3.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mt105
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 720011   1806 1983       .62  .70  .68  .58  .63 
+   2 720012   1806 1983       .59  .66  .60  .49  .58 
+   3 720021   1763 1983  .66  .76  .59  .52  .46  .40 
+   4 720022   1758 1983  .61  .69  .50  .50  .35  .32B
+   5 720031   1839 1983            .54  .61  .63  .58 
+   6 720032   1826 1983            .71  .77  .60  .32A
+   7 720041   1774 1983  .76  .79  .67  .66  .57  .41 
+   8 720042   1777 1983  .52  .65  .70  .72  .70  .41 
+   9 720051   1840 1983            .52  .59  .54  .53 
+  10 720052   1848 1983            .57  .69  .62  .53 
+  11 720061   1851 1983                 .52  .59  .60 
+  12 720062   1871 1983                 .56  .63  .70 
+  13 720071   1851 1983                 .36B .41  .58 
+  14 720072   1839 1983            .61  .36  .50  .78 
+  15 720081   1896 1983                      .63  .67 
+  16 720082   1892 1983                      .66  .59 
+  17 720101   1904 1983                           .43 
+  18 720102   1807 1983       .56  .47  .53  .64  .63 
+  19 720111   1890 1983                      .49  .66 
+  20 720112   1890 1983                      .40  .41 
+ Av segment correlation  .64  .67  .60  .58  .55  .54 
+
+ FLAGGED SEGMENTS: mt105
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 720022   1925 1974     B     .318        -6      .323   .005  weak at every lag
+   6 720032   1925 1974     A     .316         0
+  13 720071   1875 1924     B     .363       -10      .445   .082
+
+ DESCRIPTIVE STATISTICS: mt105
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 720011   1806 1983    178      5      0    .613   2.02   3.65   .557   .725   .152   1.58   .165  -.011   2
+   2 720012   1806 1983    178      5      0    .576   2.02   4.22   .673   .827   .144   1.55   .158  -.021   2
+   3 720021   1763 1983    221      6      0    .587   1.29   2.86   .596   .925   .133   1.53   .133   .007   1
+   4 720022   1758 1983    226      6      1    .520   1.55   3.23   .615   .907   .133   1.52   .137   .002   1
+   5 720031   1839 1983    145      4      0    .587   1.72   3.86   .576   .806   .156   1.41   .161   .028   3
+   6 720032   1826 1983    158      4      1    .548   1.85   3.35   .537   .813   .135   1.31   .139  -.021   3
+   7 720041   1774 1983    210      6      0    .635   1.75   4.90   .872   .913   .153   1.54   .165   .037   1
+   8 720042   1777 1983    207      6      0    .607   1.72   4.76   .899   .917   .153   1.50   .158   .004   1
+   9 720051   1840 1983    144      4      0    .529   2.41   4.90   .921   .831   .186   1.47   .181  -.024   1
+  10 720052   1848 1983    136      4      0    .570   2.61   5.44   .978   .796   .190   1.52   .188  -.010   2
+  11 720061   1851 1983    133      3      0    .498   2.35   4.83  1.254   .913   .179   1.33   .169  -.039   2
+  12 720062   1871 1983    113      3      0    .615   2.82   5.75  1.314   .925   .141   1.38   .146   .030   1
+  13 720071   1851 1983    133      3      1    .493   1.74   2.67   .425   .670   .159   1.59   .176  -.009   1
+  14 720072   1839 1983    145      4      0    .568   2.41   4.93  1.061   .935   .139   1.39   .144   .046   1
+  15 720081   1896 1983     88      2      0    .631   3.05   5.39   .823   .669   .174   1.42   .170   .026   2
+  16 720082   1892 1983     92      2      0    .525   2.71   5.00   .983   .764   .192   1.48   .208   .037   1
+  17 720101   1904 1983     80      1      0    .459   2.90   5.91   .813   .725   .149   1.56   .164  -.018   2
+  18 720102   1807 1983    177      5      0    .508   1.56   4.10   .665   .862   .158   1.55   .160   .015   1
+  19 720111   1890 1983     94      2      0    .547   2.97   5.56   .988   .847   .128   1.32   .125  -.018   2
+  20 720112   1890 1983     94      2      0    .420   3.23   5.12   .901   .863   .121   1.18   .106   .032   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2952     77      3    .558   2.08   5.91   .793   .844   .152   1.59   .157   .004
+
+ DATA CHECKS (rwl.check): mt105
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mt105.rwl
+ 20 series, 2952 measurements, 1758-1983, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file mt105.rwl, MD5 4a9613261805663efe68d7468954407b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

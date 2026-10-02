@@ -1,0 +1,162 @@
+
+ COFECHA-style crossdating report: nc2
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc2.rwl
+      MD5 of measurement file: c4c1a899a93c258d51d574dd404c4c30
+      Date checked           : 01OCT26
+      Beginning year         : 1608
+      Ending year            : 1829
+      Principal investigators: Barefoot, A.C.
+      Site name              : Jeffries Smokehouse
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 35.9700 N
+      Longitude              : 78.4200 W
+      Elevation              : 109 m
+
+      Series intercorrelation: 0.438
+      Avg mean sensitivity   : 0.301
+      Avg standard deviation : 0.737
+      Avg autocorrelation    : 0.696
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 2, B 12; 2 of the B weak at every lag)
+      Pct problem segments   : 29.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   7 SH0211   1620 1807  .57  .55  .38      
+   8 SH0212   1623 1808  .24B .16B .15B     
+   9 SH0213   1620 1806  .50  .51  .41      
+  10 SH0221   1608 1774  .45  .54           
+  11 SH0222   1608 1756  .61                
+  12 SH0311   1628 1777  .66  .58           
+  13 SH0312   1628 1806  .65  .69  .36      
+  14 SH0321   1618 1777  .60  .61           
+  17 SH0411   1640 1778  .65  .60           
+  18 SH0412   1640 1788  .74  .76           
+  19 SH0413   1651 1798  .79  .80           
+  20 SH0421   1627 1761  .73                
+  21 SH0422   1627 1768  .79                
+  22 SH0511   1640 1783  .08B-.05B          
+  23 SH0521   1649 1782  .07B-.06B          
+  24 SH0611   1637 1782  .05B .06B          
+  25 SH0621   1627 1769  .13B               
+  26 SH0811   1697 1829  .51  .62  .67  .60 
+  27 SH0812   1697 1829  .53  .65  .72  .66 
+  28 SH0911   1755 1829                 .18A
+  29 SH0912   1755 1829                 .32A
+  30 SH1011   1729 1829            .56  .18B
+  31 SH1012   1729 1829            .58  .28B
+ Av segment correlation  .49  .47  .48  .37 
+
+ FLAGGED SEGMENTS: nc2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 SH0212   1700 1749     B     .242        -2      .544   .302
+   8 SH0212   1725 1774     B     .160        -2      .579   .419
+   8 SH0212   1750 1799     B     .151        -2      .525   .374
+  22 SH0511   1700 1749     B     .081         1      .727   .646
+  22 SH0511   1725 1774     B    -.046         1      .689   .735
+  23 SH0521   1700 1749     B     .069         1      .689   .620
+  23 SH0521   1725 1774     B    -.060         1      .664   .724
+  24 SH0611   1700 1749     B     .053        -4      .495   .442
+  24 SH0611   1725 1774     B     .055        -4      .586   .531
+  25 SH0621   1700 1749     B     .132         1      .541   .410
+  28 SH0911   1775 1824     A     .179         0
+  29 SH0912   1775 1824     A     .317         0
+  30 SH1011   1775 1824     B     .182         5      .233   .051  weak at every lag
+  31 SH1012   1775 1824     B     .280        -8      .315   .035  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nc2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SH0111   1618 1743    126      0      0    .454   1.37   9.23  1.080   .690   .382   1.94   .346   .031   3
+   2 SH0112   1618 1741    124      0      0    .523   1.42   5.83  1.137   .791   .378   2.09   .355  -.016   3
+   3 SH0121   1610 1682     73      0      0    .709   2.19   3.89   .944   .578   .353   1.99   .331   .154   0
+   4 SH0122   1610 1673     64      0      0    .668   2.41   5.40  1.108   .556   .376   1.81   .336   .084   0
+   5 SH01M1   1615 1716    102      0      0    .620   1.62   5.19  1.041   .809   .324   1.85   .308  -.019   3
+   6 SH01M2   1616 1694     79      0      0    .686   2.28   7.54  1.185   .484   .344   2.29   .331  -.008   0
+   7 SH0211   1620 1807    188      3      0    .391    .95   6.50   .738   .895   .218   1.54   .210   .025   1
+   8 SH0212   1623 1808    186      3      3    .129    .96   6.22   .687   .868   .216   1.80   .212   .013   1
+   9 SH0213   1620 1806    187      3      0    .318    .95   4.52   .610   .927   .189   1.63   .191  -.000   1
+  10 SH0221   1608 1774    167      2      0    .509   1.16   5.68   .739   .874   .236   1.71   .222   .008   3
+  11 SH0222   1608 1756    149      1      0    .478   1.16   6.23   .810   .879   .227   1.71   .223  -.003   1
+  12 SH0311   1628 1777    150      2      0    .578   1.12   3.95   .773   .823   .334   2.11   .330   .021   1
+  13 SH0312   1628 1806    179      3      0    .483   1.08   5.78   .876   .777   .326   2.28   .335   .000   3
+  14 SH0321   1618 1777    160      2      0    .437   1.32   6.17   .821   .509   .336   3.23   .411  -.003   1
+  15 SH0322   1618 1732    115      0      0    .249   1.46   7.71   .975   .472   .320   3.65   .424   .009   1
+  16 SH0323   1618 1743    126      0      0    .509   1.35   5.53   .721   .675   .303   2.70   .328   .015   1
+  17 SH0411   1640 1778    139      2      0    .637   1.38   5.44   .751   .728   .312   1.81   .306  -.020   3
+  18 SH0412   1640 1788    149      2      0    .681   1.29   5.52   .748   .669   .329   1.89   .307   .020   1
+  19 SH0413   1651 1798    148      2      0    .648   1.15   2.98   .546   .588   .360   2.14   .336   .019   3
+  20 SH0421   1627 1761    135      1      0    .627   1.47   8.58   .945   .545   .346   2.64   .363   .071   1
+  21 SH0422   1627 1768    142      1      0    .667   1.47   7.73   .860   .529   .352   2.06   .369   .049   1
+  22 SH0511   1640 1783    144      2      2    .052   1.24   5.77   .756   .641   .349   2.30   .346  -.006   2
+  23 SH0521   1649 1782    134      2      2    .022   1.23   4.03   .654   .751   .297   2.13   .297   .039   1
+  24 SH0611   1637 1782    146      2      2    .075   1.20   5.04   .593   .654   .308   2.09   .298   .029   1
+  25 SH0621   1627 1769    143      1      1    .131   1.10   5.27   .577   .523   .306   1.65   .288   .062   1
+  26 SH0811   1697 1829    133      4      0    .590    .48   1.17   .184   .480   .272   1.97   .270  -.011   1
+  27 SH0812   1697 1829    133      4      0    .616    .49   1.17   .191   .520   .282   1.93   .274  -.004   1
+  28 SH0911   1755 1829     75      1      1    .346   1.08   3.14   .440   .603   .257   1.82   .264   .002   1
+  29 SH0912   1755 1829     75      1      1    .488   1.15   2.64   .490   .742   .235   1.66   .234   .047   3
+  30 SH1011   1729 1829    101      2      1    .263    .96   2.50   .496   .708   .318   1.94   .326  -.001   1
+  31 SH1012   1729 1829    101      2      1    .470   1.19   4.08   .700   .799   .288   1.88   .280  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4073     48     14    .438   1.22   9.23   .737   .696   .301   3.65   .301   .017
+
+ DATA CHECKS (rwl.check): nc2
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc2.rwl
+ 31 series, 4073 measurements, 1608-1829, 0.01 mm precision
+ 5 error(s), 0 warning(s), 3 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (5)
+     SH0212: correlates best with the master at lag -2 (r = 0.449 against r = 0.131 as dated); the series may be misdated by 2 year(s), most likely a missing ring
+     SH0511: correlates best with the master at lag 1 (r = 0.556 against r = 0.308 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+     SH0521: correlates best with the master at lag 1 (r = 0.62 against r = 0.306 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+     SH0611: correlates best with the master at lag -4 (r = 0.423 against r = 0.018 as dated); the series may be misdated by 4 year(s), most likely a missing ring
+     SH0621: correlates best with the master at lag 1 (r = 0.369 against r = 0.194 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file nc2.rwl, MD5 c4c1a899a93c258d51d574dd404c4c30.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

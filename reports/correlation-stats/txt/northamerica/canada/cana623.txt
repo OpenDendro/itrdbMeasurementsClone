@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: cana623
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana623.rwl
+      MD5 of measurement file: 90420f8c4249fd82890fdd9efee0a266
+      Date checked           : 01OCT26
+      Beginning year         : 1855
+      Ending year            : 2017
+      Principal investigators: Stefanuk, M.A.; Danby, R.
+      Site name              : Algonquin Highlands AL09
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 45.6660 N
+      Longitude              : 78.6030 W
+      Elevation              : 464 m
+
+      Series intercorrelation: 0.526
+      Avg mean sensitivity   : 0.301
+      Avg standard deviation : 0.961
+      Avg autocorrelation    : 0.794
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 6.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana623
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 064AL09A 1855 2017  .47  .75  .65 
+   2 064AL09B 1898 2017  .46  .72  .75 
+   3 067AL09A 1912 2017       .54  .62 
+   4 067AL09B 1917 2017       .62  .70 
+   5 069AL09A 1920 2017       .55  .67 
+   6 069AL09B 1889 2017  .24B .61  .61 
+ Av segment correlation  .39  .63  .67 
+
+ FLAGGED SEGMENTS: cana623
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 069AL09B 1900 1949     B     .238         8      .246   .008  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana623
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 064AL09A 1855 2017    163      3      0    .457   1.51   3.94   .924   .814   .339   1.62   .336   .030   1
+   2 064AL09B 1898 2017    120      3      0    .630   1.87   3.89   .811   .795   .244   1.55   .239   .060   2
+   3 067AL09A 1912 2017    106      2      0    .446   2.12   5.50  1.173   .755   .354   1.99   .344   .033   1
+   4 067AL09B 1917 2017    101      2      0    .650   2.18   5.12   .985   .766   .268   1.65   .256  -.001   1
+   5 069AL09A 1920 2017     98      2      0    .651   1.66   3.42   .855   .814   .270   1.56   .255   .019   1
+   6 069AL09B 1889 2017    129      3      1    .393   2.11   4.25  1.032   .806   .315   2.31   .307   .015   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            717     15      1    .526   1.88   5.50   .961   .794   .301   2.31   .293   .027
+
+ DATA CHECKS (rwl.check): cana623
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana623.rwl
+ 6 series, 717 measurements, 1855-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file cana623.rwl, MD5 90420f8c4249fd82890fdd9efee0a266.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

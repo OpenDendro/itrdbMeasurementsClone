@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: sc003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sc003.rwl
+      MD5 of measurement file: d77455c72ef7b08db62733bad1e55360
+      Date checked           : 01OCT26
+      Beginning year         : 1684
+      Ending year            : 1973
+      Principal investigators: Cleaveland, M.K.
+      Site name              : Clemson Forest
+      Species information    : PIEC Pinus echinata Mill.
+      Latitude               : 34.7000 N
+      Longitude              : 82.8700 W
+      Elevation              : 250 m
+
+      Series intercorrelation: 0.482
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 0.691
+      Avg autocorrelation    : 0.767
+      Number dated series    : 33
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 4, B 7; 1 of the B weak at every lag)
+      Pct problem segments   : 15.49
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sc003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 667131   1879 1973                                          .54 
+   2 667132   1853 1973                                     .56  .56 
+   3 667141   1887 1973                                          .60 
+   4 667142   1870 1973                                     .48  .70 
+   5 667151   1890 1973                                          .64 
+   6 667152   1887 1973                                          .56 
+  11 667181   1858 1973                                     .49  .44 
+  12 667182   1881 1973                                          .33A
+  13 667191   1859 1973                                     .44  .40 
+  14 667192   1850 1973                                     .59  .62 
+  15 667201   1862 1973                                     .33  .36 
+  16 667202   1862 1973                                     .47  .42 
+  17 667211   1884 1973                                          .40 
+  18 667212   1862 1973                                     .67  .53 
+  20 667222   1875 1973                                          .51 
+  21 667231   1841 1973                                .52  .57  .50 
+  22 667232   1862 1973                                     .36  .48 
+  23 667241   1851 1973                                     .56  .54 
+  24 667242   1832 1973                                .04B .33  .49 
+  25 667251   1854 1973                                     .54  .61 
+  26 667252   1832 1973                                .60  .62  .62 
+  27 667261   1833 1973                                .04B .26B .65 
+  28 667262   1831 1973                                .12B .28A .70 
+  29 667271   1897 1973                                          .46 
+  31 667281   1684 1957  .70  .75  .73  .63  .71  .63  .29B .40  .46 
+  32 667282   1717 1957       .53  .45  .32A .45  .26B .34  .56  .43B
+  33 667283   1689 1957  .63  .75  .73  .61  .62  .53  .28A .38  .47 
+ Av segment correlation  .66  .68  .64  .52  .60  .48  .28  .47  .52 
+
+ FLAGGED SEGMENTS: sc003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 667182   1900 1949     A     .326         0
+  24 667242   1850 1899     B     .040         8      .322   .282  weak at every lag
+  27 667261   1850 1899     B     .037        -3      .476   .438
+  27 667261   1875 1924     B     .263        -3      .374   .111
+  28 667262   1850 1899     B     .121        -1      .438   .317
+  28 667262   1875 1924     A     .284         0
+  31 667281   1850 1899     B     .287        -6      .337   .051
+  32 667282   1775 1824     A     .323         0
+  32 667282   1825 1874     B     .259        -1      .354   .094
+  32 667282   1900 1949     B     .434        -6      .598   .165
+  33 667283   1850 1899     A     .283         0
+
+ DESCRIPTIVE STATISTICS: sc003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 667131   1879 1973     95      1      0    .566   1.72   3.62   .684   .589   .275   1.66   .260   .019   1
+   2 667132   1853 1973    121      2      0    .509   1.79   3.83   .762   .641   .281   1.88   .268   .018   1
+   3 667141   1887 1973     87      1      0    .640   1.63   3.24   .708   .767   .215   1.48   .225   .052   1
+   4 667142   1870 1973    104      2      0    .533   1.92   4.95   .920   .745   .237   1.61   .232  -.004   1
+   5 667151   1890 1973     84      1      0    .617   1.71   3.76   .917   .844   .195   1.54   .197   .000   1
+   6 667152   1887 1973     87      1      0    .473   1.74   3.39   .771   .761   .230   1.54   .211   .016   1
+   7 667161   1921 1973     53      0      0    .490   3.06   6.81  1.511   .791   .234   1.60   .223  -.028   0
+   8 667162   1919 1973     55      0      0    .603   2.57   6.03  1.333   .816   .177   1.64   .232   .021   1
+   9 667171   1926 1973     48      0      0    .489   2.06   3.90   .781   .785   .183   1.30   .177   .032   1
+  10 667172   1926 1973     48      0      0    .732   2.00   4.07   .835   .805   .190   1.47   .186  -.053   3
+  11 667181   1858 1973    116      2      0    .550   1.33   2.73   .568   .772   .229   1.69   .219   .003   1
+  12 667182   1881 1973     93      1      1    .219   1.83   3.48   .817   .816   .211   1.57   .206   .041   1
+  13 667191   1859 1973    115      2      0    .451   1.26   2.35   .425   .678   .224   1.59   .221   .005   3
+  14 667192   1850 1973    124      2      0    .496   1.45   3.30   .516   .684   .223   1.67   .230   .004   1
+  15 667201   1862 1973    112      2      0    .414   1.11   3.18   .420   .652   .257   1.46   .230  -.006   2
+  16 667202   1862 1973    112      2      0    .481   1.05   3.30   .396   .702   .226   1.58   .213   .016   1
+  17 667211   1884 1973     90      1      0    .408   1.51   3.27   .612   .749   .223   1.63   .230  -.018   2
+  18 667212   1862 1973    112      2      0    .598   1.21   2.30   .407   .655   .240   1.50   .223   .023   2
+  19 667221   1901 1973     73      0      0    .383   1.81   3.93   .632   .579   .259   1.71   .248   .071   1
+  20 667222   1875 1973     99      1      0    .577   1.40   3.60   .670   .765   .241   1.73   .244   .024   1
+  21 667231   1841 1973    133      3      0    .410   1.30   3.33   .722   .833   .270   1.97   .266  -.007   2
+  22 667232   1862 1973    112      2      0    .387   2.04   5.40  1.155   .888   .221   1.83   .236   .018   1
+  23 667241   1851 1973    123      2      0    .410   1.61   6.11  1.351   .883   .309   1.96   .307   .032   1
+  24 667242   1832 1973    142      3      1    .267   1.11   2.72   .647   .836   .300   1.82   .292   .025   1
+  25 667251   1854 1973    120      2      0    .453   1.62   4.54  1.035   .807   .305   2.27   .333   .009   1
+  26 667252   1832 1973    142      3      0    .503   1.26   3.15   .595   .687   .287   1.98   .290   .002   3
+  27 667261   1833 1973    141      3      2    .344   1.14   3.53   .674   .886   .230   1.68   .239   .041   2
+  28 667262   1831 1973    143      3      2    .381   1.22   3.53   .824   .853   .297   2.15   .302   .024   3
+  29 667271   1897 1973     77      1      0    .495   1.85   4.52   .976   .819   .226   1.58   .225   .028   1
+  30 667272   1903 1973     71      0      0    .545   2.00   4.06  1.093   .847   .220   1.53   .234   .026   1
+  31 667281   1684 1957    274      9      1    .614    .77   2.53   .405   .784   .266   2.13   .288  -.002   2
+  32 667282   1717 1957    241      8      3    .398   1.52   3.34   .535   .787   .182   1.56   .190   .022   2
+  33 667283   1689 1957    269      9      1    .598    .78   1.76   .334   .750   .252   1.86   .261   .005   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3816     71     11    .482   1.44   6.81   .691   .767   .245   2.27   .247   .014
+
+ DATA CHECKS (rwl.check): sc003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sc003.rwl
+ 33 series, 3816 measurements, 1684-1973, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file sc003.rwl, MD5 d77455c72ef7b08db62733bad1e55360.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

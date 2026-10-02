@@ -1,0 +1,155 @@
+
+ COFECHA-style crossdating report: bra023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra023.rwl
+      MD5 of measurement file: cc1543aedae3d0a366474978fe79d1b7
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 2012
+      Principal investigators: Locosselli, G.M.
+      Site name              : Terra Ronca
+      Species information    : HYCO Hymenaea courbaril L.
+      Latitude               : 13.7364 S
+      Longitude              : 46.3611 W
+      Elevation              : 896 m
+
+      Series intercorrelation: 0.409
+      Avg mean sensitivity   : 0.529
+      Avg standard deviation : 0.933
+      Avg autocorrelation    : 0.411
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 4, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 23.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 goi01a   1879 2010  .52  .63  .58 
+   2 goi02a   1889 1991  .31B .58      
+   3 goi02b   1891 2012  .20B .44  .49 
+   4 goi03a   1847 2012  .33  .47  .65 
+   5 goi04a   1894 2012  .16B .23B .36 
+   6 goi04b   1895 2012  .41  .57  .66 
+   8 goi06a   1849 2012  .50  .52  .38 
+   9 goi07a   1937 2012            .53 
+  10 goi07b   1933 2012            .25B
+  11 goi08a   1911 2012       .37  .46 
+  12 goi08b   1935 2012            .49 
+  13 goi09a   1919 2012       .42  .44 
+  14 goi09b   1919 2012       .41  .26B
+  15 goi10a   1830 1977  .42  .40      
+  16 goi11a   1940 2012            .34B
+  17 goi12a   1842 2012  .37  .35B .34 
+  18 goi12b   1835 1995  .25A .28A     
+  19 goi13a   1939 2012            .40 
+  20 goi13b   1940 2012            .37 
+  21 goi14a   1910 2012       .50  .58 
+  22 goi15a   1920 2012       .48  .47 
+  23 goi16a   1933 2012            .46 
+  24 goi16b   1933 2012            .37 
+  25 goi17a   1919 1994       .34      
+  26 goi18a   1922 2012       .59  .37 
+  27 goi18b   1925 2012       .39  .30A
+  28 goi19a   1907 2012       .38  .31A
+ Av segment correlation  .35  .44  .43 
+
+ FLAGGED SEGMENTS: bra023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 goi02a   1900 1949     B     .313        10      .314   .001  weak at every lag
+   3 goi02b   1900 1949     B     .198        -5      .204   .007  weak at every lag
+   5 goi04a   1900 1949     B     .157        -5      .294   .138  weak at every lag
+   5 goi04a   1925 1974     B     .234         7      .324   .089  weak at every lag
+  10 goi07b   1950 1999     B     .247        -9      .340   .094
+  14 goi09b   1950 1999     B     .261        -7      .449   .188
+  16 goi11a   1950 1999     B     .341         7      .373   .033
+  17 goi12a   1925 1974     B     .346        -8      .369   .023
+  18 goi12b   1900 1949     A     .252         0
+  18 goi12b   1925 1974     A     .278         0
+  27 goi18b   1950 1999     A     .304         0
+  28 goi19a   1950 1999     A     .310         0
+
+ DESCRIPTIVE STATISTICS: bra023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 goi01a   1879 2010    132      3      0    .490   1.48   5.68  1.151   .630   .518   2.28   .433  -.004   2
+   2 goi02a   1889 1991    103      2      1    .337   1.77   5.11  1.168   .388   .596   2.38   .484  -.002   3
+   3 goi02b   1891 2012    122      3      1    .331   1.05   3.53   .570   .256   .488   2.72   .442   .041   0
+   4 goi03a   1847 2012    166      3      0    .364   1.29   4.86  1.015   .719   .468   2.17   .429   .043   1
+   5 goi04a   1894 2012    119      3      2    .271   1.45   3.99   .696   .310   .458   2.17   .397   .099   0
+   6 goi04b   1895 2012    118      3      0    .468   1.29   3.26   .702   .389   .497   2.60   .448   .022   1
+   7 goi05a   1954 2012     59      0      0    .464   1.54   2.85   .702   .219   .538   2.01   .409  -.006   3
+   8 goi06a   1849 2012    164      3      0    .429   1.16   3.45   .660   .308   .620   2.40   .469  -.085   0
+   9 goi07a   1937 2012     76      1      0    .550   1.77   5.72  1.056   .477   .540   2.11   .470   .021   1
+  10 goi07b   1933 2012     80      1      1    .395   1.62   4.46  1.036   .722   .443   2.57   .426  -.007   2
+  11 goi08a   1911 2012    102      2      0    .416   1.22   3.10   .643   .229   .600   2.19   .475   .059   0
+  12 goi08b   1935 2012     78      1      0    .482    .96   2.48   .556   .168   .564   2.43   .499   .012   0
+  13 goi09a   1919 2012     94      2      0    .421   1.73   5.75   .964   .372   .504   2.53   .443  -.105   0
+  14 goi09b   1919 2012     94      2      1    .377   1.69   5.74  1.108   .391   .551   3.06   .565  -.032   0
+  15 goi10a   1830 1977    148      2      0    .468   1.08   3.91   .754   .293   .725   2.86   .516  -.004   3
+  16 goi11a   1940 2012     73      1      1    .415   1.25   3.75   .775   .170   .658   2.69   .569   .001   0
+  17 goi12a   1842 2012    171      3      1    .414    .97   2.90   .612   .465   .531   2.60   .498   .090   0
+  18 goi12b   1835 1995    161      2      2    .384   1.32   4.06   .823   .503   .484   2.52   .467   .015   1
+  19 goi13a   1939 2012     74      1      0    .394   1.59   5.06  1.210   .487   .610   2.23   .494   .007   3
+  20 goi13b   1940 2012     73      1      0    .415   1.92   5.99  1.002   .519   .449   1.63   .353   .092   1
+  21 goi14a   1910 2012    103      2      0    .536   2.78   6.49  1.428   .321   .517   2.14   .417  -.078   0
+  22 goi15a   1920 2012     93      2      0    .428   3.07   7.08  1.272   .294   .409   2.30   .342  -.087   0
+  23 goi16a   1933 2012     80      1      0    .415   2.96   7.08  1.406   .456   .405   1.76   .370  -.008   1
+  24 goi16b   1933 2012     80      1      0    .375   3.08   7.07  1.541   .408   .431   2.17   .404   .014   1
+  25 goi17a   1919 1994     76      1      0    .361   1.30   4.04   .903   .377   .564   2.47   .547   .011   1
+  26 goi18a   1922 2012     91      2      0    .493   2.07   5.32  1.047   .280   .503   2.44   .450  -.042   3
+  27 goi18b   1925 2012     88      2      1    .324   1.76   4.45  1.093   .593   .518   2.37   .445   .124   0
+  28 goi19a   1907 2012    106      2      1    .298   1.57   4.47  1.014   .495   .559   2.86   .513   .047   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2924     52     12    .409   1.60   7.08   .933   .411   .529   3.06   .458   .010
+
+ DATA CHECKS (rwl.check): bra023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra023.rwl
+ 28 series, 2924 measurements, 1830-2012, 0.01 mm precision
+ 0 error(s), 0 warning(s), 8 note(s)
+ -------------
+ Nothing to report at this severity.
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file bra023.rwl, MD5 cc1543aedae3d0a366474978fe79d1b7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

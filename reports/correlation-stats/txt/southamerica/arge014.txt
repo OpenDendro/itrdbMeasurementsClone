@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: arge014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge014.rwl
+      MD5 of measurement file: dfccaa394b4a4bd03e3870cb367fe447
+      Date checked           : 01OCT26
+      Beginning year         : 1700
+      Ending year            : 1974
+      Principal investigators: Holmes, R.L.; Ambrose, J.E.
+      Site name              : Rio Kilca
+      Species information    : ARAR Araucaria araucana (Molina) K. Koch
+      Latitude               : 38.9200 S
+      Longitude              : 70.7700 W
+      Elevation              : 1540 m
+
+      Series intercorrelation: 0.403
+      Avg mean sensitivity   : 0.280
+      Avg standard deviation : 0.401
+      Avg autocorrelation    : 0.694
+      Number dated series    : 4
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 16.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 KL1912   1700 1974            .43  .52  .62  .48  .29B .34  .47  .47 
+   2 KL1931   1727 1974            .64  .61  .53  .45  .47  .51  .49  .49 
+   3 KL1932   1736 1974            .57  .49  .42  .36  .40  .50  .60  .52 
+   4 KL1972   1760 1974                 .07B .23B .38  .15B .28B .43  .44 
+ Av segment correlation            .55  .42  .45  .42  .33  .41  .50  .48 
+
+ FLAGGED SEGMENTS: arge014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 KL1912   1850 1899     B     .286         4      .381   .095
+   4 KL1972   1775 1824     B     .065         6      .237   .172  weak at every lag
+   4 KL1972   1800 1849     B     .231         3      .245   .014  weak at every lag
+   4 KL1972   1850 1899     B     .151        -4      .338   .187
+   4 KL1972   1875 1924     B     .279        -4      .392   .113
+
+ DESCRIPTIVE STATISTICS: arge014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KL1912   1700 1974    275      8      1    .355    .52   1.16   .189   .617   .257   1.68   .232   .064   0
+   2 KL1931   1727 1974    248      8      0    .467   1.10   3.43   .627   .839   .301   2.62   .301  -.019   1
+   3 KL1932   1736 1974    239      8      0    .477   1.41   3.74   .652   .827   .231   2.46   .238  -.016   1
+   4 KL1972   1760 1974    215      7      4    .310    .34    .89   .130   .479   .338   2.09   .298   .034   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            977     31      5    .403    .85   3.74   .401   .694   .280   2.62   .266   .017
+
+ DATA CHECKS (rwl.check): arge014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge014.rwl
+ 4 series, 977 measurements, 1700-1974, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file arge014.rwl, MD5 dfccaa394b4a4bd03e3870cb367fe447.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

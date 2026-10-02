@@ -1,0 +1,177 @@
+
+ COFECHA-style crossdating report: mex130
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex130.rwl
+      MD5 of measurement file: dedad2e0170d3710d1c619a0e3363957
+      Date checked           : 01OCT26
+      Beginning year         : 1880
+      Ending year            : 2019
+      Principal investigators: Villanueva-Díaz, J.; Velázquez-Pérez, A.; Reyes-Camarillo, F.
+      Site name              : Buenos Aires, Chiapas (BUA)
+      Species information    : PITE Pinus teocote Cham. & Schltdl.
+      Latitude               : 15.5930 N
+      Longitude              : 92.5000 W
+      Elevation              : 1549 m
+
+      Series intercorrelation: 0.420
+      Avg mean sensitivity   : 0.266
+      Avg standard deviation : 1.781
+      Avg autocorrelation    : 0.689
+      Number dated series    : 44
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 8, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 30.23
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex130
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 BUA162   1906 2010       .44  .25A
+   4 BUA163   1903 2010       .33B .37 
+   6 BUA165   1919 2019       .43  .31A
+   7 BIA166   1920 2017       .34  .59 
+   9 BUA167   1909 2018       .40  .10B
+  12 BUA170   1927 2014            .32A
+  13 BUA171   1916 2006       .36  .41 
+  14 BUA172   1914 2014       .37  .32A
+  15 BUA173   1915 1980       .36B     
+  17 BUA175   1945 2018            .21B
+  18 BUA176   1948 2018            .42 
+  20 BUA178   1939 2018            .31A
+  23 BUA180   1945 2018            .44 
+  24 BUA183   1947 2018            .41 
+  25 BUA184   1934 2000            .43 
+  28 BUA187   1918 2018       .22A .44 
+  29 BUA188   1917 2018       .34  .22B
+  30 BUA189   1890 2010  .49  .48  .45 
+  31 BUA18A   1880 2000  .49  .38  .35 
+  32 BUA18B   1943 2018            .45 
+  33 BUA18C   1950 2018            .36 
+  37 BUA193   1920 2018       .33  .46 
+  38 BUA194   1921 2018       .37  .32A
+  39 BUA195   1949 2018            .33 
+  43 BUA199   1905 2018       .38  .49 
+  44 BUA19A   1904 2018       .32A .38 
+ Av segment correlation  .49  .36  .36 
+
+ FLAGGED SEGMENTS: mex130
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 BUA162   1950 1999     A     .250         0
+   4 BUA163   1925 1974     B     .330        -7      .357   .027
+   6 BUA165   1950 1999     A     .306         0
+   9 BUA167   1950 1999     B     .104         4      .364   .259
+  12 BUA170   1950 1999     A     .320         0
+  14 BUA172   1950 1999     A     .317         0
+  15 BUA173   1925 1974     B     .358         5      .361   .004
+  17 BUA175   1950 1999     B     .206         4      .220   .014  weak at every lag
+  20 BUA178   1950 1999     A     .309         0
+  28 BUA187   1925 1974     A     .224         0
+  29 BUA188   1950 1999     B     .219        -8      .270   .051  weak at every lag
+  38 BUA194   1950 1999     A     .316         0
+  44 BUA19A   1925 1974     A     .320         0
+
+ DESCRIPTIVE STATISTICS: mex130
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BUA160   1980 2018     39      0      0    .415   4.93  10.19  2.179   .768   .239   1.43   .197   .011   3
+   2 BUA161   1977 2017     41      0      0    .313   5.57  13.16  3.210   .882   .242   2.24   .305   .069   1
+   3 BUA162   1906 2010    105      2      1    .277   2.52  13.36  2.357   .920   .207   1.74   .220   .015   1
+   4 BUA163   1903 2010    108      2      1    .479   3.02  11.60  2.048   .928   .188   2.03   .221   .028   1
+   5 BUA164   1950 2018     69      0      0    .283   1.45   3.31   .599   .506   .275   2.08   .322  -.059   1
+   6 BUA165   1919 2019    101      2      1    .428   2.93   9.13  1.629   .848   .237   1.68   .228   .025   2
+   7 BIA166   1920 2017     98      2      0    .533   2.39   5.22   .904   .655   .250   1.65   .271  -.002   1
+   8 BUA166   1950 2018     69      0      0    .439   1.25   4.32   .636   .594   .305   2.32   .342  -.003   1
+   9 BUA167   1909 2018    110      2      1    .292   2.54   8.79  1.560   .820   .269   1.85   .275   .131   0
+  10 BUA168   1960 2018     59      0      0    .211   4.63  11.30  2.164   .856   .174   1.62   .196   .053   1
+  11 BUA169   1970 2013     44      0      0    .369   6.89  13.06  2.952   .729   .212   1.90   .263   .076   1
+  12 BUA170   1927 2014     88      1      1    .438   3.41  14.60  2.315   .814   .306   2.13   .314   .108   0
+  13 BUA171   1916 2006     91      2      0    .360   3.77  10.29  2.059   .838   .225   1.81   .241  -.011   2
+  14 BUA172   1914 2014    101      2      1    .398   3.42  11.50  1.611   .474   .332   2.43   .337   .016   2
+  15 BUA173   1915 1980     66      1      1    .363   3.64   9.36  1.918   .762   .232   2.20   .271   .043   2
+  16 BUA174   1950 2018     69      0      0    .335   2.67   7.32  1.129   .656   .234   1.75   .264   .074   1
+  17 BUA175   1945 2018     74      1      1    .283   4.75   8.44  1.489   .616   .236   1.56   .234   .000   1
+  18 BUA176   1948 2018     71      1      0    .481   4.28   7.72  1.365   .595   .218   1.45   .219   .001   1
+  19 BUA177   1970 2018     49      0      0    .579   5.72  12.62  2.409   .494   .329   1.84   .345   .060   1
+  20 BUA178   1939 2018     80      1      1    .316   3.24  10.67  2.060   .765   .260   1.81   .245   .011   2
+  21 BUA181   1913 1970     58      0      0    .243   2.96   6.78  1.214   .789   .222   1.66   .215   .057   1
+  22 BUA182   1950 2018     69      0      0    .175   1.64   4.30   .822   .666   .324   1.91   .345  -.019   3
+  23 BUA180   1945 2018     74      1      0    .608   4.98  10.82  1.849   .352   .292   2.25   .314  -.034   3
+  24 BUA183   1947 2018     72      1      0    .640   3.82  17.07  2.772   .877   .275   2.23   .327  -.004   1
+  25 BUA184   1934 2000     67      1      0    .389   2.49   5.19   .983   .669   .244   1.61   .252   .009   1
+  26 BUA185   1950 2018     69      0      0    .272   3.44   7.11   .841   .616   .138   1.60   .155  -.003   3
+  27 BUA186   1917 1960     44      0      0    .075   3.40   8.52  2.331   .758   .309   1.54   .302  -.052   1
+  28 BUA187   1918 2018    101      2      1    .291   3.05  12.56  1.956   .605   .300   2.07   .321   .025   1
+  29 BUA188   1917 2018    102      2      1    .428   3.24  13.68  2.170   .656   .333   2.54   .373  -.018   3
+  30 BUA189   1890 2010    121      3      0    .510   2.80   8.45  1.853   .882   .212   2.31   .282  -.007   3
+  31 BUA18A   1880 2000    121      3      0    .416   2.03   6.40   .875   .308   .333   3.30   .379   .038   0
+  32 BUA18B   1943 2018     76      1      0    .604   3.40  10.11  2.082   .716   .327   2.63   .371  -.007   1
+  33 BUA18C   1950 2018     69      1      0    .611   4.31  12.96  2.909   .562   .386   4.12   .513   .139   0
+  34 BUA190   1952 2018     67      0      0    .507   3.48   9.29  1.847   .783   .263   1.65   .261   .017   1
+  35 BUA191   1956 2018     63      0      0    .445   4.40  13.03  2.868   .822   .309   1.69   .285  -.063   2
+  36 BUA192   1980 2010     31      0      0    .304   7.43  16.18  3.164   .376   .341   2.17   .373   .193   0
+  37 BUA193   1920 2018     99      2      0    .561   3.20   7.67  1.390   .475   .309   2.82   .355   .018   1
+  38 BUA194   1921 2018     98      2      1    .623   2.89   8.10  1.256   .532   .283   2.53   .337  -.007   2
+  39 BUA195   1949 2018     70      1      0    .374   3.35  12.69  3.019   .848   .260   1.68   .261  -.020   1
+  40 BUA196   1930 1990     61      0      0    .496   3.49   8.41  1.581   .630   .288   1.92   .290   .146   0
+  41 BUA197   1991 2010     20      0      0    .698   6.84  13.34  2.952   .475   .316   2.20   .380  -.026   1
+  42 BUA198   1992 2018     27      0      0    .715   5.96  14.17  2.465   .134   .407   2.34   .386   .039   0
+  43 BUA199   1905 2018    114      2      0    .374   3.12   8.10  1.724   .819   .228   1.65   .238   .022   1
+  44 BUA19A   1904 2018    115      2      1    .536   3.16   7.38  1.347   .780   .212   1.87   .206  -.032   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3340     43     13    .420   3.37  17.07  1.781   .689   .266   4.12   .288   .021
+
+ DATA CHECKS (rwl.check): mex130
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex130.rwl
+ 44 series, 3340 measurements, 1880-2019, 0.01 mm precision
+ 0 error(s), 3 warning(s), 14 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 733 carriage return(s) against 368 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     6 byte(s) outside printable ASCII
+   RWL_SITE_CODE (1)
+     BIA166: site code differs from the bua used by 43 of 44 series
+ 14 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mex130.rwl, MD5 dedad2e0170d3710d1c619a0e3363957.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

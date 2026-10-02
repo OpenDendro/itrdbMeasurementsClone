@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: arge068
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge068.rwl
+      MD5 of measurement file: 854088cdf9668914cd6f18671cb80f65
+      Date checked           : 01OCT26
+      Beginning year         : 1723
+      Ending year            : 1989
+      Principal investigators: Villalba, R.
+      Site name              : Confluencia 2
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 40.7000 S
+      Longitude              : 71.1500 W
+      Elevation              : 1075 m
+
+      Series intercorrelation: 0.686
+      Avg mean sensitivity   : 0.264
+      Avg standard deviation : 0.663
+      Avg autocorrelation    : 0.853
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 1.75
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge068
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 CF202A   1792 1989  .85  .80  .82  .84  .86  .87 
+   2 CF206B   1852 1989                 .74  .58  .54 
+   3 CF211A   1781 1989  .84  .77  .72  .35  .15B .44 
+   4 CF212B   1808 1989       .78  .90  .80  .68  .78 
+   5 CF213B   1780 1953  .89  .81  .78  .66  .54      
+   6 CF214B   1772 1875  .76  .70                     
+   7 CF217B   1784 1989  .81  .83  .85  .78  .78  .75 
+   8 CF218B   1793 1989  .79  .79  .77  .71  .74  .81 
+   9 CF221C   1773 1989  .76  .76  .83  .74  .77  .85 
+  10 CF222A   1839 1989            .57  .62  .64  .70 
+  11 CF223A   1803 1989       .82  .88  .79  .77  .83 
+  12 CF224A   1783 1989  .64  .71  .80  .76  .70  .75 
+  13 CF224B   1815 1989       .70  .71  .70  .63  .71 
+  14 CF225B   1801 1989       .80  .69  .57  .70  .70 
+  15 CF226A   1840 1989            .80  .68  .70  .74 
+  16 CF228B   1849 1979            .71  .66  .73  .65 
+  17 CF232A   1860 1989                 .60  .63  .70 
+  18 CF234A   1831 1989            .79  .70  .61  .69 
+  19 CF237A   1814 1989       .81  .85  .77  .73  .77 
+  20 CF239A   1855 1989                 .83  .77  .71 
+  21 CF240B   1791 1989  .83  .78  .73  .77  .70  .59 
+  22 CF216A   1787 1931  .65  .81  .80  .63           
+  23 CF219B   1736 1961  .51  .51  .52  .49  .59      
+  24 CF219C   1723 1957  .76  .86  .75  .59  .60      
+  25 CF238A   1898 1983                           .26B
+ Av segment correlation  .76  .77  .76  .69  .66  .69 
+
+ FLAGGED SEGMENTS: arge068
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 CF211A   1900 1949     B     .148        -9      .260   .112  weak at every lag
+  25 CF238A   1925 1974     B     .261        -3      .283   .021  weak at every lag
+
+ DESCRIPTIVE STATISTICS: arge068
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CF202A   1792 1989    198      6      0    .830    .99   3.67   .726   .912   .243   1.61   .229   .000   2
+   2 CF206B   1852 1989    138      3      0    .613   1.21   2.65   .574   .838   .217   1.53   .217   .003   2
+   3 CF211A   1781 1989    209      6      1    .581   1.13   4.29   .933   .842   .367   2.19   .330  -.006   3
+   4 CF212B   1808 1989    182      5      0    .786    .91   2.80   .599   .825   .259   1.57   .247  -.007   3
+   5 CF213B   1780 1953    174      5      0    .668    .74   2.44   .575   .910   .294   1.73   .264   .013   1
+   6 CF214B   1772 1875    104      2      0    .721    .60   1.28   .379   .917   .256   1.84   .241   .015   0
+   7 CF217B   1784 1989    206      6      0    .780    .94   3.09   .679   .906   .239   1.77   .243   .017   1
+   8 CF218B   1793 1989    197      6      0    .770    .84   3.23   .682   .919   .243   1.68   .242  -.005   1
+   9 CF221C   1773 1989    217      6      0    .761   1.13   2.95   .612   .878   .193   1.87   .211  -.008   3
+  10 CF222A   1839 1989    151      4      0    .634    .66   1.75   .398   .783   .316   1.85   .301   .017   1
+  11 CF223A   1803 1989    187      5      0    .768    .77   2.56   .379   .830   .210   1.61   .205   .022   1
+  12 CF224A   1783 1989    207      6      0    .657    .73   2.57   .507   .853   .287   1.79   .266  -.042   2
+  13 CF224B   1815 1989    175      5      0    .707    .76   2.66   .464   .769   .291   1.68   .265  -.025   3
+  14 CF225B   1801 1989    189      5      0    .647    .72   3.07   .673   .921   .316   1.75   .284   .026   2
+  15 CF226A   1840 1989    150      4      0    .724   1.58   4.49   .823   .725   .281   2.04   .279   .005   1
+  16 CF228B   1849 1979    131      4      0    .609    .80   1.92   .416   .792   .296   1.60   .280   .018   1
+  17 CF232A   1860 1989    130      3      0    .653    .71   2.10   .387   .787   .291   1.62   .275   .016   1
+  18 CF234A   1831 1989    159      4      0    .704    .89   4.07   .820   .921   .302   1.88   .273  -.004   3
+  19 CF237A   1814 1989    176      5      0    .785   1.25   4.55   .884   .884   .222   1.69   .220   .011   1
+  20 CF239A   1855 1989    135      3      0    .774   1.05   2.30   .475   .810   .215   1.61   .229   .022   1
+  21 CF240B   1791 1989    199      6      0    .723    .78   3.54   .708   .936   .192   1.67   .192  -.035   3
+  22 CF216A   1787 1931    145      4      0    .688    .44   1.03   .175   .532   .297   1.82   .282   .013   1
+  23 CF219B   1736 1961    226      5      0    .501   1.00   4.56  1.166   .937   .285   2.03   .283  -.017   3
+  24 CF219C   1723 1957    235      5      0    .620   1.66   4.51  1.279   .911   .237   1.71   .224  -.015   3
+  25 CF238A   1898 1983     86      1      1    .212    .68   2.30   .350   .732   .290   1.66   .264   .007   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4306    114      2    .686    .94   4.56   .663   .853   .264   2.19   .253  -.000
+
+ DATA CHECKS (rwl.check): arge068
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge068.rwl
+ 25 series, 4306 measurements, 1723-1989, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 926 carriage return(s) against 465 line feed(s); mixed endings can defeat a reader
+   RWL_SERIES_OUTLIER (1)
+     CF238A: correlates with the rest of the collection at r = 0.149 where the collection median is 0.695 (5.6 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file arge068.rwl, MD5 854088cdf9668914cd6f18671cb80f65.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

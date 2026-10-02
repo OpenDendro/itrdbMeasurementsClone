@@ -1,0 +1,155 @@
+
+ COFECHA-style crossdating report: nc7
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc7.rwl
+      MD5 of measurement file: 64ca4066d4389486df85edb760aec239
+      Date checked           : 01OCT26
+      Beginning year         : 1893
+      Ending year            : 1992
+      Principal investigators: Barefoot, A.C.
+      Site name              : New Hill Beaver Tree Farm
+      Species information    : PIPA Pinus palustris Mill.
+      Latitude               : 35.6500 N
+      Longitude              : 78.8800 W
+      Elevation              : 88 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 1.366
+      Avg autocorrelation    : 0.773
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 0, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 13.16
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc7
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 NHLLF041 1911 1979       .45 
+   2 NHLLF042 1917 1979       .47 
+   3 NHLLF051 1898 1979       .35B
+   4 NHLLF052 1898 1979  .42  .49 
+   5 NHLLF061 1899 1979  .62  .70 
+   6 NHLLF062 1901 1979       .55 
+   7 NHLLF121 1903 1979       .37 
+   8 NHLLF122 1903 1977       .48 
+   9 NHLLF151 1898 1979  .64  .48 
+  10 NHLLF152 1899 1979  .62  .63 
+  11 NHLLF181 1900 1979       .79 
+  12 NHLLF182 1900 1979       .57 
+  13 NHLLF201 1903 1979       .64 
+  14 NHLLF202 1903 1979       .32B
+  15 NHLLF221 1920 1979       .53 
+  16 NHLLF222 1921 1979       .55 
+  17 NHLLF251 1917 1979       .38 
+  18 NHLLF252 1917 1979       .49 
+  19 NHLLF281 1908 1979       .57 
+  20 NHLLF282 1908 1979       .73 
+  21 NHLLF311 1912 1992       .67 
+  24 NHLLF322 1912 1992       .39B
+  25 NHLLF331 1922 1992       .38 
+  26 NHLLF332 1921 1992       .53 
+  27 NHLLF341 1898 1992  .41  .62 
+  28 NHLLF343 1899 1992  .37  .59 
+  29 NHLLF352 1896 1992  .26B .48 
+  30 NHLLF353 1893 1992  .28B .48 
+  31 NHLLFAVE 1893 1992  .80  .97 
+ Av segment correlation  .49  .54 
+
+ FLAGGED SEGMENTS: nc7
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 NHLLF051 1925 1974     B     .345        -5      .394   .048
+  14 NHLLF202 1925 1974     B     .317         3      .352   .035
+  24 NHLLF322 1925 1974     B     .386         2      .397   .011
+  29 NHLLF352 1900 1949     B     .257         7      .284   .027  weak at every lag
+  30 NHLLF353 1900 1949     B     .285         8      .317   .033  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nc7
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NHLLF041 1911 1979     69      1      0    .414   2.11   8.92  1.683   .743   .355   2.97   .450   .001   2
+   2 NHLLF042 1917 1979     63      1      0    .378   1.60   4.07  1.137   .893   .311   1.68   .287  -.109   1
+   3 NHLLF051 1898 1979     82      1      1    .380   1.97  14.93  2.011   .884   .310   1.84   .298   .013   3
+   4 NHLLF052 1898 1979     82      2      0    .393   2.95  12.85  1.752   .859   .210   1.85   .214  -.033   1
+   5 NHLLF061 1899 1979     81      2      0    .648   2.55  11.60  1.976   .852   .244   1.51   .241   .006   1
+   6 NHLLF062 1901 1979     79      1      0    .606   1.92  10.47  1.325   .702   .224   1.53   .220   .105   1
+   7 NHLLF121 1903 1979     77      1      0    .415   2.37   6.22   .977   .769   .218   1.50   .201  -.033   2
+   8 NHLLF122 1903 1977     75      1      0    .484   2.60   5.53   .843   .721   .208   1.50   .193  -.006   1
+   9 NHLLF151 1898 1979     82      2      0    .492   4.09  12.49  1.954   .741   .228   1.66   .234  -.005   1
+  10 NHLLF152 1899 1979     81      2      0    .601   3.10   9.31  1.550   .854   .201   1.73   .209  -.017   1
+  11 NHLLF181 1900 1979     80      1      0    .660   2.89   6.11  1.209   .742   .247   1.68   .233   .006   1
+  12 NHLLF182 1900 1979     80      1      0    .521   2.29   6.96  1.217   .779   .216   1.49   .215   .004   1
+  13 NHLLF201 1903 1979     77      1      0    .578   2.50   6.30  1.333   .870   .231   1.63   .213   .037   2
+  14 NHLLF202 1903 1979     77      1      1    .336   2.10   7.48  1.407   .813   .215   1.80   .250  -.090   1
+  15 NHLLF221 1920 1979     60      1      0    .498   3.02   9.20  1.478   .854   .182   1.61   .199   .147   0
+  16 NHLLF222 1921 1979     59      1      0    .547   3.79   7.97  1.384   .835   .170   1.29   .156   .054   3
+  17 NHLLF251 1917 1979     63      1      0    .357   3.01  13.18  2.254   .906   .222   1.55   .219   .173   1
+  18 NHLLF252 1917 1979     63      1      0    .413   3.13  12.35  2.438   .887   .295   1.65   .266   .024   1
+  19 NHLLF281 1908 1979     72      1      0    .503   2.25   8.83  1.387   .856   .267   2.68   .330  -.046   2
+  20 NHLLF282 1908 1979     72      1      0    .582   2.60   7.98  1.301   .638   .284   2.49   .343   .096   1
+  21 NHLLF311 1912 1992     81      1      0    .599   2.36   5.56  1.311   .820   .254   1.66   .254   .163   1
+  22 NHLLF312 1928 1992     65      0      0    .722   3.85   7.84  1.737   .536   .329   1.81   .338   .127   0
+  23 NHLLF321 1932 1992     61      0      0    .666   2.57   4.30   .783   .514   .246   1.58   .237   .014   1
+  24 NHLLF322 1912 1992     81      1      1    .403   2.57   5.43  1.433   .795   .325   2.11   .329  -.047   1
+  25 NHLLF331 1922 1992     71      1      0    .571   2.91   5.07   .826   .629   .196   1.57   .197   .017   1
+  26 NHLLF332 1921 1992     72      1      0    .569   3.15   6.21  1.058   .519   .241   1.68   .246   .041   2
+  27 NHLLF341 1898 1992     95      2      0    .611   1.85   3.57   .703   .731   .239   1.83   .251   .175   1
+  28 NHLLF343 1899 1992     94      2      0    .568   1.89   3.45   .670   .735   .226   1.57   .231   .082   1
+  29 NHLLF352 1896 1992     97      2      1    .327   2.39   5.54  1.411   .903   .296   1.93   .292  -.024   1
+  30 NHLLF353 1893 1992    100      2      1    .390   2.28   5.25  1.328   .880   .237   1.88   .224   .081   3
+  31 NHLLFAVE 1893 1992    100      2      0    .698   2.68   7.37   .987   .643   .185   1.80   .184   .039   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2391     38      5    .514   2.59  14.93  1.366   .773   .245   2.97   .249   .032
+
+ DATA CHECKS (rwl.check): nc7
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc7.rwl
+ 31 series, 2391 measurements, 1893-1992, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1891-1994 but the measurements cover 1893-1992
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file nc7.rwl, MD5 64ca4066d4389486df85edb760aec239.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

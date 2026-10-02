@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: sd022
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sd022.rwl
+      MD5 of measurement file: 0387049a3939c1c00c49e687f64af52d
+      Date checked           : 01OCT26
+      Beginning year         : 1883
+      Ending year            : 2008
+      Principal investigators: Voelker, S.L.
+      Site name              : Lame Johnny Creek
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.6450 N
+      Longitude              : 103.3900 W
+      Elevation              : 1210 m
+
+      Series intercorrelation: 0.599
+      Avg mean sensitivity   : 0.282
+      Avg standard deviation : 0.834
+      Avg autocorrelation    : 0.652
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sd022
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 LJC011   1909 2008       .71  .69 
+   2 LJC020   1885 2008  .78  .71  .66 
+   3 LJC031   1883 2008  .68  .59  .51 
+   4 LJC041   1909 2008       .59  .59 
+ Av segment correlation  .73  .65  .61 
+
+ FLAGGED SEGMENTS: sd022
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: sd022
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LJC011   1909 2008    100      2      0    .603   3.54   6.50  1.193   .592   .236   1.52   .231   .070   1
+   2 LJC020   1885 2008    124      3      0    .689   1.62   4.65   .897   .799   .266   1.81   .287  -.014   1
+   3 LJC031   1883 2008    126      3      0    .605   1.39   3.60   .742   .814   .256   1.76   .247   .004   1
+   4 LJC041   1909 2008    100      2      0    .477   1.32   3.61   .739   .693   .335   1.94   .302  -.059   3
+   5 LJC050   1989 2008     20      0      0    .692   1.96   2.87   .518   .019   .290   1.54   .259  -.023   0
+   6 LJC051   1989 2008     20      0      0    .638   1.90   2.93   .583   .047   .366   1.54   .304   .038   0
+   7 LJC060   1981 2008     28      0      0    .428   1.93   3.21   .733   .500   .325   1.45   .292  -.035   1
+   8 LJC071   1984 2008     25      0      0    .689   1.60   2.64   .492   .342   .333   1.50   .264   .068   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            543     10      0    .599   1.90   6.50   .834   .652   .282   1.94   .269   .002
+
+ DATA CHECKS (rwl.check): sd022
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sd022.rwl
+ 8 series, 543 measurements, 1883-2008, 0.001 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file sd022.rwl, MD5 0387049a3939c1c00c49e687f64af52d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,120 @@
+
+ COFECHA-style crossdating report: germ181
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ181.rwl
+      MD5 of measurement file: 07b59a2d6cc70042047c8b2a1bbd9c30
+      Date checked           : 01OCT26
+      Beginning year         : 1808
+      Ending year            : 2004
+      Principal investigators: Neuwirth, B.
+      Site name              : Nordrhein-Westfalen/Eifel dre09
+      Species information    : QUPE Quercus petraea (Matt.) Liebl. = Quercus sessiliflora Salisb.
+      Latitude               : 50.6000 N
+      Longitude              : 6.4167 E
+      Elevation              : 400 m
+
+      Series intercorrelation: 0.722
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 0.697
+      Avg autocorrelation    : 0.707
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 7.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ181
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 dre0915m 1825 2004  .80  .74  .71 
+   2 dre0914m 1812 2004  .83  .73  .63 
+   3 dre0913m 1808 2004  .78  .79  .78 
+   4 dre0912m 1813 2004  .77  .73  .66 
+   5 dre0911m 1826 2004  .72  .73  .66 
+   6 dre0910m 1826 2004  .59  .44  .46 
+   7 dre0309m 1838 2004  .15B-.01B .17B
+   8 dre0908m 1814 2004  .77  .66  .61 
+   9 dre0907m 1818 2004  .74  .79  .78 
+  10 dre0906m 1865 2004  .65  .70  .82 
+  11 dre0904m 1824 2004  .72  .68  .75 
+  12 dre0903m 1821 2004  .79  .80  .74 
+  13 dre0902m 1844 2004  .77  .77  .80 
+  14 dre0901m 1825 2004  .80  .80  .67 
+ Av segment correlation  .71  .67  .66 
+
+ FLAGGED SEGMENTS: germ181
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 dre0309m 1900 1949     B     .154        -9      .283   .128  weak at every lag
+   7 dre0309m 1925 1974     B    -.013         5      .239   .253  weak at every lag
+   7 dre0309m 1950 1999     B     .167        -6      .172   .005  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ181
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 dre0915m 1825 2004    180      3      0    .813   1.85   6.76   .879   .842   .183   1.64   .182   .009   1
+   2 dre0914m 1812 2004    193      3      0    .860   1.58   5.40   .711   .707   .222   2.24   .226   .032   1
+   3 dre0913m 1808 2004    197      3      0    .857   1.75   7.20   .697   .574   .195   3.04   .249   .014   1
+   4 dre0912m 1813 2004    192      3      0    .685   1.29   6.32   .877   .869   .196   1.99   .212   .002   1
+   5 dre0911m 1826 2004    179      3      0    .724   1.23   5.82   .639   .735   .180   2.30   .214   .007   1
+   6 dre0910m 1826 2004    179      3      0    .577   1.27   4.75   .677   .926   .145   1.55   .151   .024   2
+   7 dre0309m 1838 2004    167      3      3    .185    .74   2.67   .508   .892   .311   1.98   .308   .008   1
+   8 dre0908m 1814 2004    191      3      0    .825   1.45   6.62   .797   .680   .269   2.38   .300   .031   1
+   9 dre0907m 1818 2004    187      3      0    .873   1.35   4.72   .542   .600   .227   2.79   .260   .002   1
+  10 dre0906m 1865 2004    140      3      0    .767   1.49   3.48   .535   .585   .219   1.80   .230  -.018   1
+  11 dre0904m 1824 2004    181      3      0    .781   1.63   4.22   .624   .730   .186   1.62   .197  -.000   1
+  12 dre0903m 1821 2004    184      3      0    .593   1.43   4.06   .631   .524   .261   2.60   .280   .062   0
+  13 dre0902m 1844 2004    161      3      0    .811   1.63   4.08   .680   .475   .304   1.79   .271   .018   0
+  14 dre0901m 1825 2004    180      3      0    .700   1.91   7.73   .894   .740   .227   1.83   .215   .002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2511     42      3    .722   1.48   7.73   .697   .707   .222   3.04   .235   .014
+
+ DATA CHECKS (rwl.check): germ181
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ181.rwl
+ 14 series, 2511 measurements, 1808-2004, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     dre0309m: correlates with the rest of the collection at r = 0.191 where the collection median is 0.736 (5 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file germ181.rwl, MD5 07b59a2d6cc70042047c8b2a1bbd9c30.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,186 @@
+
+ COFECHA-style crossdating report: czec025
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : czec025.rwl
+      MD5 of measurement file: 4811ceca225fbcf7c42838b145be685c
+      Date checked           : 01OCT26
+      Beginning year         : 1799
+      Ending year            : 2018
+      Principal investigators: Treml, V.
+      Site name              : Šišák
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 50.7563 N
+      Longitude              : 15.6448 E
+      Elevation              : 1320 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.253
+      Avg standard deviation : 0.734
+      Avg autocorrelation    : 0.826
+      Number dated series    : 44
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 2, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 8.51
+
+
+ CORRELATION OF SERIES BY SEGMENTS: czec025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SIS001   1939 2018                                .43 
+   2 SIS002   1936 2018                                .73 
+   3 SIS003   1936 2018                                .73 
+   4 SIS004   1935 2018                                .80 
+   5 SIS005   1935 2018                                .72 
+   6 SIS006   1934 2018                                .07B
+   7 SIS007   1934 2013                                .84 
+   8 SIS008   1933 2018                                .54 
+   9 SIS009   1933 2018                                .50 
+  10 SIS010   1933 2018                                .63 
+  11 SIS011   1929 2010                                .65 
+  12 SIS012   1929 2013                                .62 
+  13 SIS013   1928 2018                                .71 
+  14 SIS014   1928 2008                                .75 
+  15 SIS015   1928 2013                                .70 
+  16 SIS016   1926 2018                                .68 
+  17 SIS017   1926 2018                                .39 
+  18 SIS018   1926 2013                                .49 
+  19 SIS019   1921 2018                           .63  .67 
+  20 SIS020   1920 2018                           .81  .74 
+  21 SIS021   1919 2018                           .57  .67 
+  22 SIS022   1918 2018                           .58  .60 
+  23 SIS023   1914 2013                           .72  .73 
+  24 SIS024   1914 2013                           .67  .77 
+  25 SIS025   1913 2018                           .44  .56 
+  26 SIS026   1913 2013                           .60  .46 
+  27 SIS027   1911 2018                           .58  .66 
+  28 SIS028   1908 2013                           .72  .71 
+  29 SIS029   1908 2013                           .54  .74 
+  30 SIS030   1901 2010                           .78  .80 
+  31 SIS031   1899 2018                           .35  .27B
+  32 SIS032   1894 2014                      .48  .53  .50 
+  33 SIS033   1894 2010                      .48  .64  .42 
+  34 SIS034   1892 2008                      .56  .60  .56 
+  35 SIS035   1890 2013                      .59  .66  .80 
+  36 SIS036   1885 2018                      .48  .62  .73 
+  37 SIS037   1884 2013                      .46  .62  .78 
+  38 SIS038   1877 2010                      .78  .67  .78 
+  39 SIS039   1874 2018                 .46  .68  .65  .59 
+  40 SIS040   1868 2013                 .71  .67  .68  .78 
+  41 SIS041   1867 2013                 .70  .71  .63  .66 
+  42 SIS042   1847 2018            .21B .08B .10B .31A .22A
+  43 SIS043   1804 2013       .71  .60  .68  .61  .28B .34 
+  44 SIS044   1799 2013       .70  .51  .70  .56  .41  .48 
+ Av segment correlation       .70  .44  .56  .55  .59  .61 
+
+ FLAGGED SEGMENTS: czec025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 SIS006   1950 1999     B     .073        10      .336   .263
+  31 SIS031   1950 1999     B     .270         1      .313   .043  weak at every lag
+  42 SIS042   1850 1899     B     .206         1      .329   .124
+  42 SIS042   1875 1924     B     .079         4      .276   .197  weak at every lag
+  42 SIS042   1900 1949     B     .098         4      .239   .141  weak at every lag
+  42 SIS042   1925 1974     A     .306         0
+  42 SIS042   1950 1999     A     .221         0
+  43 SIS043   1925 1974     B     .283         7      .301   .019  weak at every lag
+
+ DESCRIPTIVE STATISTICS: czec025
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SIS001   1939 2018     80      1      0    .414   1.98   3.66   .906   .880   .248   1.51   .223   .095   1
+   2 SIS002   1936 2018     83      1      0    .630   2.73   7.46  1.587   .881   .229   1.73   .223  -.002   1
+   3 SIS003   1936 2018     83      1      0    .628   1.50   3.20   .592   .809   .199   1.62   .185   .021   3
+   4 SIS004   1935 2018     84      1      0    .736   1.11   4.17   .884   .911   .292   1.87   .289   .005   3
+   5 SIS005   1935 2018     84      1      0    .696   1.55   3.37   .712   .886   .189   1.47   .184   .031   1
+   6 SIS006   1934 2018     85      1      1    .089    .84   4.33   .744   .907   .257   1.73   .267   .031   1
+   7 SIS007   1934 2013     80      1      0    .780   2.04   4.85  1.189   .896   .210   1.49   .235  -.029   1
+   8 SIS008   1933 2018     86      1      0    .546   1.52   3.54   .922   .889   .240   1.69   .229   .017   1
+   9 SIS009   1933 2018     86      1      0    .503   1.16   3.40   .913   .935   .306   2.03   .306   .020   1
+  10 SIS010   1933 2018     86      1      0    .523    .97   3.67   .635   .844   .263   1.87   .264  -.015   1
+  11 SIS011   1929 2010     82      1      0    .575   2.62   5.14   .998   .814   .204   1.50   .191  -.044   1
+  12 SIS012   1929 2013     85      1      0    .548   1.10   2.30   .538   .833   .263   1.55   .259   .063   1
+  13 SIS013   1928 2018     91      1      0    .687   2.08   4.17   .782   .827   .190   1.51   .190  -.028   1
+  14 SIS014   1928 2008     81      1      0    .698   1.67   3.96   .739   .748   .302   1.77   .289  -.048   1
+  15 SIS015   1928 2013     86      1      0    .399   1.56   4.84   .787   .592   .250   2.45   .312   .100   1
+  16 SIS016   1926 2018     93      1      0    .663   1.02   4.16   .805   .906   .233   1.64   .235   .027   1
+  17 SIS017   1926 2018     93      1      0    .337   1.03   2.54   .688   .857   .294   2.64   .348   .106   1
+  18 SIS018   1926 2013     88      1      0    .506   1.45   5.43   .899   .764   .278   2.28   .331  -.027   1
+  19 SIS019   1921 2018     98      2      0    .671   1.60   4.34  1.070   .920   .233   1.76   .236   .074   1
+  20 SIS020   1920 2018     99      2      0    .666   1.26   2.84   .748   .919   .238   1.53   .241  -.015   3
+  21 SIS021   1919 2018    100      2      0    .613    .86   2.87   .559   .902   .235   1.73   .248  -.012   2
+  22 SIS022   1918 2018    101      2      0    .525    .76   2.30   .573   .921   .294   2.20   .302  -.021   3
+  23 SIS023   1914 2013    100      2      0    .680   1.49   4.17   .925   .876   .287   1.64   .259   .017   1
+  24 SIS024   1914 2013    100      2      0    .742   1.42   4.70   .978   .919   .214   1.63   .210  -.034   1
+  25 SIS025   1913 2018    106      2      0    .447   1.65   4.75  1.002   .847   .313   2.09   .300  -.020   2
+  26 SIS026   1913 2013    101      2      0    .451    .72   2.38   .456   .877   .290   2.00   .322  -.028   3
+  27 SIS027   1911 2018    108      2      0    .446   1.59   4.21   .766   .774   .244   1.97   .289   .014   2
+  28 SIS028   1908 2013    106      2      0    .621   1.57   5.43   .896   .801   .292   1.70   .256  -.026   1
+  29 SIS029   1908 2013    106      2      0    .689   1.14   2.96   .568   .876   .235   1.72   .231  -.030   3
+  30 SIS030   1901 2010    110      2      0    .720   2.20   6.19  1.035   .853   .220   1.57   .195   .132   0
+  31 SIS031   1899 2018    120      2      1    .360    .69   1.84   .364   .854   .244   1.58   .238  -.007   2
+  32 SIS032   1894 2014    121      3      0    .461    .94   3.36   .843   .921   .211   1.72   .215   .025   2
+  33 SIS033   1894 2010    117      3      0    .430   2.14   9.10  1.974   .808   .293   2.14   .283   .001   1
+  34 SIS034   1892 2008    117      3      0    .545    .80   1.58   .364   .792   .260   1.55   .237   .005   2
+  35 SIS035   1890 2013    124      3      0    .577    .96   2.31   .449   .862   .205   1.72   .214  -.040   1
+  36 SIS036   1885 2018    134      3      0    .622   1.46   4.08   .907   .868   .215   1.49   .213   .027   2
+  37 SIS037   1884 2013    130      3      0    .568   1.03   2.19   .417   .829   .216   1.65   .221   .009   1
+  38 SIS038   1877 2010    134      3      0    .741   1.51   3.80   .779   .885   .203   1.61   .190  -.020   1
+  39 SIS039   1874 2018    145      4      0    .484    .71   1.92   .486   .896   .256   2.19   .299   .019   1
+  40 SIS040   1868 2013    146      4      0    .670   1.26   2.88   .510   .803   .223   1.69   .220   .021   1
+  41 SIS041   1867 2013    147      4      0    .581    .90   3.02   .398   .691   .256   2.31   .264   .056   1
+  42 SIS042   1847 2018    172      5      5    .200    .64   2.59   .435   .901   .232   1.66   .232   .004   1
+  43 SIS043   1804 2013    210      6      1    .583    .62   2.38   .344   .653   .331   2.33   .358   .012   1
+  44 SIS044   1799 2013    215      6      0    .620    .67   7.56   .597   .484   .326   2.38   .356   .106   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4803     94      8    .558   1.26   9.10   .734   .826   .253   2.64   .258   .015
+
+ DATA CHECKS (rwl.check): czec025
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/czec025.rwl
+ 44 series, 4803 measurements, 1799-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 11 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     SIS006: correlates with the rest of the collection at r = -0.018 where the collection median is 0.604 (4.8 MAD below it); it does not fit the collection it is in
+ 11 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file czec025.rwl, MD5 4811ceca225fbcf7c42838b145be685c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

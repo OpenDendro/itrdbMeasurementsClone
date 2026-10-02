@@ -1,0 +1,129 @@
+
+ COFECHA-style crossdating report: az504
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az504.rwl
+      MD5 of measurement file: 786f7a3721b15da4ad8204cc734b5bfe
+      Date checked           : 01OCT26
+      Beginning year         : 1645
+      Ending year            : 1966
+      Principal investigators: Stokes, M.A.; Harlan, T.P.; Fellows, P.L.
+      Site name              : Santa Rita Mountains High (Florida Canyon)
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 31.7200 N
+      Longitude              : 110.8500 W
+      Elevation              : 2438 m
+
+      Series intercorrelation: 0.724
+      Avg mean sensitivity   : 0.347
+      Avg standard deviation : 0.658
+      Avg autocorrelation    : 0.773
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 0.86
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az504
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 179011   1751 1966                 .79  .76  .73  .68  .76  .78 
+   2 179012   1750 1966            .57  .83  .81  .78  .79  .78  .60 
+   3 179021   1834 1966                                .74  .83  .84 
+   4 179022   1808 1966                           .76  .68  .75  .68 
+   5 179031   1716 1966       .81  .76  .81  .78  .76  .73  .86  .84 
+   6 179032   1766 1966                 .89  .90  .83  .76  .88  .88 
+   7 179041   1645 1966  .80  .80  .76  .85  .80  .62  .26B .53  .77 
+   8 179042   1654 1966  .84  .81  .77  .85  .83  .75  .64  .78  .80 
+   9 179051   1795 1966                      .84  .81  .69  .75  .86 
+  10 179052   1826 1966                                .56  .67  .72 
+  11 179061   1726 1966            .53  .69  .72  .78  .70  .50  .73 
+  12 179062   1785 1966                      .77  .78  .74  .46  .61 
+  13 179071   1716 1966       .79  .71  .76  .78  .75  .67  .66  .75 
+  14 179072   1803 1966                           .76  .64  .63  .83 
+  15 179081   1766 1966                 .85  .83  .71  .54  .81  .85 
+  16 179082   1807 1966                           .71  .65  .82  .92 
+  17 179091   1732 1966            .81  .86  .83  .81  .55  .64  .88 
+  18 179092   1726 1966            .74  .83  .82  .82  .82  .89  .89 
+  19 179101   1821 1966                           .84  .70  .48  .72 
+  20 179102   1821 1966                           .77  .72  .49  .58 
+ Av segment correlation  .82  .80  .71  .82  .81  .76  .66  .70  .78 
+
+ FLAGGED SEGMENTS: az504
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 179041   1850 1899     B     .261        -6      .387   .126
+
+ DESCRIPTIVE STATISTICS: az504
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 179011   1751 1966    216      6      0    .746    .84   2.74   .466   .748   .304   1.81   .291   .009   1
+   2 179012   1750 1966    217      7      0    .533    .83   7.06   .712   .600   .447   3.00   .441   .086   0
+   3 179021   1834 1966    133      3      0    .712    .90   2.83   .514   .697   .361   2.26   .332   .001   1
+   4 179022   1808 1966    159      4      0    .688   1.52   5.89  1.078   .848   .314   1.76   .298   .018   1
+   5 179031   1716 1966    251      8      0    .737   1.07   4.18   .848   .848   .376   2.57   .353  -.012   3
+   6 179032   1766 1966    201      6      0    .845   1.28   3.24   .758   .780   .389   1.80   .345   .003   1
+   7 179041   1645 1966    322      9      1    .666    .77   4.26   .830   .932   .426   2.43   .368   .008   1
+   8 179042   1654 1966    313      9      0    .776    .86   5.13   .891   .921   .343   1.75   .307  -.015   3
+   9 179051   1795 1966    172      5      0    .790   1.31   4.78   .798   .822   .327   1.68   .289  -.022   3
+  10 179052   1826 1966    141      3      0    .688   1.52   4.70   .910   .815   .332   2.53   .317  -.012   2
+  11 179061   1726 1966    241      7      0    .680    .80   3.69   .566   .831   .286   2.15   .298  -.030   3
+  12 179062   1785 1966    182      5      0    .681    .82   2.08   .345   .711   .253   1.76   .245   .011   1
+  13 179071   1716 1966    251      8      0    .695    .85   2.56   .480   .734   .392   2.03   .352  -.014   3
+  14 179072   1803 1966    164      4      0    .749    .83   2.55   .440   .730   .359   1.77   .320  -.016   3
+  15 179081   1766 1966    201      6      0    .749   1.27   2.59   .554   .771   .294   1.88   .280  -.011   2
+  16 179082   1807 1966    160      4      0    .790   1.60   3.58   .836   .809   .317   1.77   .286  -.003   3
+  17 179091   1732 1966    235      7      0    .802    .96   2.61   .488   .698   .326   1.72   .298   .007   3
+  18 179092   1726 1966    241      7      0    .799   1.11   2.53   .510   .602   .345   1.75   .303   .010   3
+  19 179101   1821 1966    146      4      0    .681    .83   2.22   .387   .667   .336   1.78   .299  -.002   1
+  20 179102   1821 1966    146      4      0    .641    .96   4.03   .601   .720   .326   2.11   .314   .015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4092    116      1    .724   1.02   7.06   .658   .773   .347   3.00   .320   .001
+
+ DATA CHECKS (rwl.check): az504
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az504.rwl
+ 20 series, 4092 measurements, 1645-1966, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file az504.rwl, MD5 786f7a3721b15da4ad8204cc734b5bfe.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

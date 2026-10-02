@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: che574
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che574.rwl
+      MD5 of measurement file: 856d1fd66de2177dc59d550184ba9205
+      Date checked           : 01OCT26
+      Beginning year         : 1897
+      Ending year            : 2008
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : OBE
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.4434 N
+      Longitude              : 9.1739 E
+      Elevation              : 565 m
+
+      Series intercorrelation: 0.310
+      Avg mean sensitivity   : 0.316
+      Avg standard deviation : 0.997
+      Avg autocorrelation    : 0.788
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 37.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che574
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 obe05a   1916 2008       .23B .36 
+   2 obe11a   1923 2008       .66  .16B
+   3 obe19a   1919 2008       .43  .36 
+   4 obe23b   1918 2008       .56  .45 
+   5 obe26a   1913 2008       .45  .32B
+   6 obe28a   1919 2008       .44  .22B
+   7 obe29a   1897 2008       .59  .54 
+   8 obe31a   1931 2008            .32A
+   9 obe36b   1945 2008            .31A
+ Av segment correlation       .48  .34 
+
+ FLAGGED SEGMENTS: che574
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 obe05a   1925 1974     B     .234         4      .286   .052  weak at every lag
+   2 obe11a   1950 1999     B     .164        -3      .240   .076  weak at every lag
+   5 obe26a   1950 1999     B     .316         4      .366   .050
+   6 obe28a   1950 1999     B     .218         9      .290   .073  weak at every lag
+   8 obe31a   1950 1999     A     .316         0
+   9 obe36b   1950 1999     A     .311         0
+
+ DESCRIPTIVE STATISTICS: che574
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 obe05a   1916 2008     93      2      1    .256   1.80   4.30   .780   .763   .244   1.63   .256   .051   1
+   2 obe11a   1923 2008     86      2      1    .325   1.77   6.10  1.374   .866   .339   1.72   .336   .050   1
+   3 obe19a   1919 2008     90      2      0    .352   1.47   4.00   .950   .864   .325   1.84   .305  -.045   1
+   4 obe23b   1918 2008     91      2      0    .406   1.51   3.56   .916   .830   .323   1.95   .337   .004   2
+   5 obe26a   1913 2008     96      2      1    .350   1.89   4.38   .931   .664   .306   1.67   .307   .028   3
+   6 obe28a   1919 2008     90      2      1    .222   1.60   4.68  1.227   .867   .428   2.40   .415   .072   3
+   7 obe29a   1897 2008    112      2      0    .411   1.92   4.12   .887   .761   .249   2.15   .265   .008   1
+   8 obe31a   1931 2008     78      1      1    .130   1.16   3.74   .847   .716   .383   2.02   .392   .344   1
+   9 obe36b   1945 2008     64      1      1    .276   2.64   4.78  1.134   .762   .263   1.65   .257  -.081   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            800     16      6    .310   1.74   6.10   .997   .788   .316   2.40   .318   .046
+
+ DATA CHECKS (rwl.check): che574
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che574.rwl
+ 9 series, 800 measurements, 1897-2008, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+   RWL_SERIES_OUTLIER (1)
+     obe36b: correlates with the rest of the collection at r = 0.108 where the collection median is 0.345 (8.9 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file che574.rwl, MD5 856d1fd66de2177dc59d550184ba9205.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

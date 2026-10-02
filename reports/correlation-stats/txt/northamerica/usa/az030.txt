@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: az030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az030.rwl
+      MD5 of measurement file: bb257b35426abebb0b9bf1ae2f3be96d
+      Date checked           : 01OCT26
+      Beginning year         : 1645
+      Ending year            : 1964
+      Principal investigators: Stokes, M.A.; Harlan, T.P.
+      Site name              : June Tank
+      Species information    : PIED Pinus edulis Engelm.
+      Latitude               : 36.5300 N
+      Longitude              : 112.9200 W
+      Elevation              : 1707 m
+
+      Series intercorrelation: 0.724
+      Avg mean sensitivity   : 0.511
+      Avg standard deviation : 0.539
+      Avg autocorrelation    : 0.641
+      Number dated series    : 13
+      Series crossdated      : 7
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 134011   1718 1960       .84  .81  .79  .77  .72  .64  .68  .75 
+   2 134021   1750 1964                 .86  .90  .81  .72  .75  .74 
+   3 134031   1740 1963            .84  .85  .81  .67  .72  .77  .67 
+   4 134041   1804 1963                           .77  .69  .70  .69 
+   5 134051   1800 1964                           .73  .75  .79  .74 
+   6 134061   1700 1964       .78  .77  .84  .87  .73  .67  .74  .80 
+ Av segment correlation       .81  .81  .83  .84  .74  .70  .74  .73 
+
+ FLAGGED SEGMENTS: az030
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: az030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 134011   1718 1960    243      8      0    .728    .74   2.08   .403   .676   .432   1.85   .359  -.007   2
+   2 134021   1750 1964    215      6      0    .768    .57   1.32   .255   .615   .398   1.86   .324  -.003   2
+   3 134031   1740 1963    224      7      0    .757    .79   2.47   .472   .706   .415   2.11   .365  -.016   1
+   4 134041   1804 1963    160      4      0    .644   1.00   2.71   .559   .646   .485   2.44   .406  -.028   1
+   5 134051   1800 1964    165      4      0    .748   1.18   2.63   .620   .654   .443   1.86   .372   .014   1
+   6 134061   1700 1964    265      8      0    .767    .77   2.58   .445   .565   .533   2.18   .427   .004   1
+   7 134201   1645 1947    298                         1.02   4.14   .787   .623   .613                         
+   8 134203   1693 1947    251                          .96   3.03   .612   .591   .585                         
+   9 134206   1727 1947    217                          .87   2.77   .570   .626   .568                         
+  10 134208   1769 1947    170                          .85   3.01   .632   .748   .553                         
+  11 134209   1801 1947    138                          .72   2.27   .592   .752   .529                         
+  12 134210   1843 1947    101                          .82   2.64   .578   .711   .563                         
+  13 134211   1898 1947     50      0      0    .327    .86   1.89   .379   .231   .477   2.37   .409   .067   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2497     37      0    .724    .86   4.14   .539   .641   .511   2.44   .377  -.003
+
+ DATA CHECKS (rwl.check): az030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az030.rwl
+ 13 series, 2497 measurements, 1645-1964, 0.01 mm precision
+ 0 error(s), 7 warning(s), 10 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (6)
+     134201: no measurement for 1847, 1857, 1879-1881, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     134203: no measurement for 1864, 1879-1881, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     134206: no measurement for 1748, 1857, 1879-1880, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     134208: no measurement for 1800, 1805, 1813, 1847, 1857, 1859, 1879-1881, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     134209: no measurement for 1813, 1847, 1857, 1859, 1864, 1879-1882, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     134210: no measurement for 1857, 1879-1881, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+   RWL_SERIES_OUTLIER (1)
+     134211: correlates with the rest of the collection at r = 0.368 where the collection median is 0.74 (6.6 MAD below it); it does not fit the collection it is in
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file az030.rwl, MD5 bb257b35426abebb0b9bf1ae2f3be96d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 134201 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 134203 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 134206 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 134208 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 134209 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 134210 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

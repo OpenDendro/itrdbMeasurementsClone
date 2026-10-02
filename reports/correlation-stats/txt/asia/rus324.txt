@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: rus324
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus324.rwl
+      MD5 of measurement file: 6bcc65d21aefbf1976a836f49fcaba9d
+      Date checked           : 01OCT26
+      Beginning year         : 1694
+      Ending year            : 2011
+      Principal investigators: Solomina, O.; Dolgova, E.
+      Site name              : Cheget Mountain South - CHS
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 43.2380 N
+      Longitude              : 42.5056 E
+      Elevation              : 2470 m
+
+      Series intercorrelation: 0.482
+      Avg mean sensitivity   : 0.139
+      Avg standard deviation : 0.611
+      Avg autocorrelation    : 0.866
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 5, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 8.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus324
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 chs9a    1846 2001                                .36B .20A .34B .45  .56 
+   2 chs9b    1878 2001                                          .51  .49  .57 
+   3 chs10a   1843 2002                                .56  .64  .64  .69  .69 
+   4 chs10b   1840 2002                                .49  .66  .69  .72  .75 
+   5 chs11a   1767 2001                 .35  .39  .57  .43  .53  .62  .47  .38 
+   6 chs11b   1738 2002            .49  .61  .45  .41  .47  .46  .36  .34  .37 
+   7 chs12a   1835 2002                                .37  .60  .77  .64  .54 
+   8 chs12b   1740 2001            .29A .45  .33A .25A .41  .68  .64  .59  .53 
+   9 chs13a   1787 2011                      .52  .21B .15B .56  .55  .58  .63 
+  10 chs13b   1728 2011            .36  .49  .60  .39  .35  .64  .55  .58  .70 
+  11 chs14a   1811 2011                           .56  .41  .60  .60  .66  .73 
+  12 chs14b   1808 2011                           .38  .46  .61  .64  .67  .64 
+  13 chs15a   1870 2011                                     .42  .76  .49  .46 
+  14 chs15b   1836 2011                                .37  .49  .58  .57  .54 
+  15 chs16a   1794 2011                      .62  .62  .43  .67  .68  .55  .56 
+  16 chs17a   1812 2011                           .50  .61  .48  .40  .25B .35 
+  17 chs18a   1780 2011                      .40  .46  .42  .48  .59  .58  .42 
+  18 chs18b   1694 2011            .29A .36  .41  .44  .38  .43  .39  .52  .47 
+ Av segment correlation            .36  .45  .46  .44  .42  .54  .57  .55  .55 
+
+ FLAGGED SEGMENTS: rus324
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 chs9a    1850 1899     B     .361        -7      .445   .085
+   1 chs9a    1875 1924     A     .197         0
+   1 chs9a    1900 1949     B     .338         3      .352   .015
+   8 chs12b   1750 1799     A     .293         0
+   8 chs12b   1800 1849     A     .326         0
+   8 chs12b   1825 1874     A     .248         0
+   9 chs13a   1825 1874     B     .208       -10      .356   .148
+   9 chs13a   1850 1899     B     .145       -10      .256   .111  weak at every lag
+  16 chs17a   1925 1974     B     .253        -3      .324   .071  weak at every lag
+  18 chs18b   1750 1799     A     .287         0
+
+ DESCRIPTIVE STATISTICS: rus324
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 chs9a    1846 2001    156      5      3    .388   1.49   3.33   .601   .861   .140   1.48   .157   .055   1
+   2 chs9b    1878 2001    124      3      0    .482   1.32   2.54   .471   .816   .156   1.48   .176  -.005   2
+   3 chs10a   1843 2002    160      5      0    .620   2.19   4.21   .723   .867   .127   1.34   .127   .003   1
+   4 chs10b   1840 2002    163      5      0    .650   2.11   3.33   .498   .725   .128   1.46   .134   .056   3
+   5 chs11a   1767 2001    235      8      0    .460   1.42   2.91   .495   .855   .133   1.57   .150   .030   1
+   6 chs11b   1738 2002    265      9      0    .439   1.24   3.44   .598   .914   .133   1.42   .135   .004   1
+   7 chs12a   1835 2002    168      5      0    .577   1.50   2.70   .402   .788   .138   1.37   .138   .015   1
+   8 chs12b   1740 2001    262      9      3    .437   1.04   1.49   .212   .726   .120   1.45   .123  -.026   1
+   9 chs13a   1787 2011    225      7      2    .425   1.69   3.22   .580   .886   .128   1.39   .151   .005   2
+  10 chs13b   1728 2011    284      9      0    .491   1.50   3.06   .589   .905   .138   1.47   .147   .003   2
+  11 chs14a   1811 2011    201      6      0    .588   1.95   5.19  1.037   .939   .141   1.37   .145   .029   1
+  12 chs14b   1808 2011    204      6      0    .515   2.08   4.65   .789   .863   .159   1.46   .156  -.007   2
+  13 chs15a   1870 2011    142      4      0    .512   1.88   4.87   .974   .933   .154   1.53   .169   .001   2
+  14 chs15b   1836 2011    176      5      0    .482   2.37   4.42   .959   .910   .140   1.35   .142   .000   2
+  15 chs16a   1794 2011    218      7      0    .562   1.74   3.42   .681   .885   .141   1.41   .143   .014   2
+  16 chs17a   1812 2011    200      6      1    .403   1.41   3.49   .650   .898   .144   1.61   .165  -.005   2
+  17 chs18a   1780 2011    232      7      0    .438   1.09   2.77   .473   .895   .141   1.38   .147   .007   3
+  18 chs18b   1694 2011    318      9      1    .365   1.25   3.43   .538   .888   .150   1.49   .154  -.005   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3733    115     10    .482   1.58   5.19   .611   .866   .139   1.61   .147   .008
+
+ DATA CHECKS (rwl.check): rus324
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus324.rwl
+ 18 series, 3733 measurements, 1694-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file rus324.rwl, MD5 6bcc65d21aefbf1976a836f49fcaba9d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

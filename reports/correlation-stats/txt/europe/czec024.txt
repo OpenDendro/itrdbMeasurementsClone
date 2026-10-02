@@ -1,0 +1,179 @@
+
+ COFECHA-style crossdating report: czec024
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : czec024.rwl
+      MD5 of measurement file: d7ceeb8905fb493a0137528c6d1cf356
+      Date checked           : 01OCT26
+      Beginning year         : 1713
+      Ending year            : 2018
+      Principal investigators: Treml, V.; Mašek, J.; Čada, V.; Mík, M.
+      Site name              : Růžová zahrada
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.8897 N
+      Longitude              : 14.4130 E
+      Elevation              : 425 m
+
+      Series intercorrelation: 0.582
+      Avg mean sensitivity   : 0.316
+      Avg standard deviation : 0.504
+      Avg autocorrelation    : 0.790
+      Number dated series    : 47
+      Series crossdated      : 45
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 4.03
+
+
+ CORRELATION OF SERIES BY SEGMENTS: czec024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 CSRUZ001 1938 2018                                .55 
+   2 CSRUZ002 1865 2018                 .62  .68  .64  .70 
+   3 CSRUZ005 1856 2018                 .63  .66  .64  .45 
+   6 CSRUZ013 1859 2018                 .59  .55  .62  .77 
+   7 CSRUZ014 1849 2018            .66  .45  .26A .41  .60 
+   8 CSRUZ015 1848 2018                 .59  .52  .66  .50 
+   9 CSRUZ016 1874 2018                      .46  .40  .59 
+  10 CSRUZ018 1861 2018                 .58  .55  .57  .70 
+  11 CSRUZ020 1870 2018                 .77  .65  .63  .76 
+  12 CSRUZ021 1847 2018            .66  .60  .54  .53  .64 
+  13 CSRUZ024 1844 2017            .74  .69  .47  .45  .50 
+  14 CSRUZ025 1840 2018            .48  .50  .51  .60  .72 
+  15 CSRUZ029 1863 2018                 .62  .67  .63  .68 
+  16 CSRUZ032 1851 2018                 .57  .56  .62  .68 
+  17 CSRUZ033 1850 2018                 .43  .42  .50  .63 
+  18 CSRUZ034 1883 2018                      .50  .52  .51 
+  19 CSRUZ036 1851 2018                 .66  .58  .60  .74 
+  20 CSRUZ038 1854 2017                 .70  .67  .63  .60 
+  22 CSRUZ044 1863 2018                 .76  .70  .68  .70 
+  25 CSRUZ050 1860 2018                 .68  .74  .71  .63 
+  26 CSRUZ052 1915 2018                           .71  .59 
+  27 CSRUZ055 1884 2018                      .59  .72  .71 
+  28 CSRUZ057 1866 2018                 .71  .65  .60  .62 
+  29 CSRUZ058 1879 2018                      .70  .61  .43 
+  31 CSRUZ064 1901 2018                           .26B .61 
+  33 CSRUZ067 1868 2016                 .70  .64  .58  .70 
+  36 CSRUZ071 1713 2017            .61  .58  .52  .05B .19B
+  41 CSRUZ080 1850 2017                 .71  .55  .53  .59 
+  44 CSRUZ084 1850 1992                 .61  .67  .63      
+  45 CSRUZ088 1842 2018            .62  .58  .63  .64  .48 
+  46 CSRUZ089 1842 2017            .68  .82  .72  .62  .58 
+  47 CSRUZ093 1842 2018            .76  .76  .60  .33B .42 
+ Av segment correlation            .65  .64  .59  .56  .60 
+
+ FLAGGED SEGMENTS: czec024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 CSRUZ014 1900 1949     A     .258         0
+  31 CSRUZ064 1925 1974     B     .257        -1      .266   .009  weak at every lag
+  36 CSRUZ071 1925 1974     B     .051         5      .257   .206  weak at every lag
+  36 CSRUZ071 1950 1999     B     .194         2      .215   .021  weak at every lag
+  47 CSRUZ093 1925 1974     B     .326         9      .380   .053
+
+ DESCRIPTIVE STATISTICS: czec024
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CSRUZ001 1938 2018     81      1      0    .551   1.16   3.04   .599   .727   .340   2.26   .346   .032   1
+   2 CSRUZ002 1865 2018    154      4      0    .669   1.04   3.77   .802   .923   .267   2.07   .268  -.023   3
+   3 CSRUZ005 1856 2018    163      4      0    .517   1.10   4.60   .948   .946   .268   1.82   .290   .039   1
+   4 CSRUZ006 1981 2018     38      0      0    .756   1.81   3.42   .597   .556   .232   1.63   .249   .010   1
+   5 CSRUZ009 1953 2018     66      0      0    .552    .76   4.11   .680   .763   .360   2.48   .414  -.002   1
+   6 CSRUZ013 1859 2018    160      4      0    .648    .61   1.32   .252   .539   .287   2.20   .310   .017   3
+   7 CSRUZ014 1849 2018    170      5      1    .490    .35   1.96   .362   .924   .369   2.36   .370  -.000   1
+   8 CSRUZ015 1848 2018    171      4      0    .573    .59   1.71   .306   .834   .254   2.46   .263  -.034   3
+   9 CSRUZ016 1874 2018    145      3      0    .571    .57   1.50   .251   .607   .285   2.01   .309  -.000   3
+  10 CSRUZ018 1861 2018    158      4      0    .643    .69   2.17   .283   .521   .286   2.89   .315  -.042   3
+  11 CSRUZ020 1870 2018    149      4      0    .727    .57   1.52   .230   .579   .269   2.40   .298  -.005   1
+  12 CSRUZ021 1847 2018    172      5      0    .608    .58   2.02   .354   .813   .351   2.85   .356  -.012   3
+  13 CSRUZ024 1844 2017    174      5      0    .498    .37   1.85   .391   .898   .354   2.65   .340  -.013   3
+  14 CSRUZ025 1840 2018    179      5      0    .604    .83   3.46   .643   .923   .278   2.10   .290  -.015   3
+  15 CSRUZ029 1863 2018    156      4      0    .615    .88   1.75   .335   .647   .267   2.04   .269  -.005   3
+  16 CSRUZ032 1851 2018    168      4      0    .654    .50   2.37   .346   .802   .357   2.04   .338  -.054   3
+  17 CSRUZ033 1850 2018    169      4      0    .550    .58   1.88   .406   .821   .424   2.45   .367  -.007   3
+  18 CSRUZ034 1883 2018    136      3      0    .495    .40   2.26   .336   .775   .427   2.85   .452   .007   1
+  19 CSRUZ036 1851 2018    168      4      0    .597    .61   2.49   .364   .674   .335   2.35   .352   .015   1
+  20 CSRUZ038 1854 2017    164      4      0    .638    .60   2.35   .419   .856   .272   1.93   .275   .023   1
+  21 CSRUZ040 1997 2018     22      0      0    .522   2.27   3.32   .503   .324   .190   1.33   .190  -.019   0
+  22 CSRUZ044 1863 2018    156      4      0    .677    .73   4.48   .681   .874   .329   2.58   .368   .004   1
+  23 CSRUZ046 1981 2018     38      0      0    .650   1.28   2.69   .514   .587   .263   1.82   .297   .010   1
+  24 CSRUZ047 1980 2018     39      0      0    .709   1.68   3.59   .893   .768   .277   1.70   .303  -.054   1
+  25 CSRUZ050 1860 2018    159      4      0    .669    .79   2.31   .494   .788   .367   1.94   .353   .014   1
+  26 CSRUZ052 1915 2018    104      2      0    .552    .42   1.19   .329   .818   .485   2.21   .419   .003   2
+  27 CSRUZ055 1884 2018    135      3      0    .694    .90   3.39   .657   .855   .294   2.06   .288   .032   2
+  28 CSRUZ057 1866 2018    153      4      0    .623    .69   2.67   .480   .825   .330   2.34   .354   .012   1
+  29 CSRUZ058 1879 2018    140      3      0    .558    .67   2.88   .526   .888   .277   1.86   .279  -.005   1
+  30 CSRUZ062 1868 2018    151                          .36   1.36   .356   .929   .290                         
+  31 CSRUZ064 1901 2018    118      2      1    .514    .54   1.30   .247   .608   .343   1.77   .320   .034   1
+  32 CSRUZ066 1986 2018     33      0      0    .642   1.94   3.20   .598   .381   .280   1.54   .286   .227   0
+  33 CSRUZ067 1868 2016    149      4      0    .642    .77   2.43   .489   .875   .252   1.95   .268  -.010   3
+  34 CSRUZ068 1976 2018     43      0      0    .476   1.63   4.34   .890   .645   .409   2.02   .399   .141   1
+  35 CSRUZ070 1989 2018     30      0      0    .658   1.73   3.98   .836   .687   .249   1.63   .281  -.046   2
+  36 CSRUZ071 1713 2017    305      5      2    .375    .58   2.44   .314   .823   .241   1.81   .240  -.024   3
+  37 CSRUZ073 1979 2018     40      0      0    .599    .93   2.56   .470   .402   .367   2.33   .399  -.016   1
+  38 CSRUZ076 1983 2018     36      0      0    .273   1.21   3.07   .508   .362   .326   2.26   .367   .037   1
+  39 CSRUZ077 1979 2018     40      0      0    .770   2.05   3.25   .507   .348   .244   1.60   .221   .019   2
+  40 CSRUZ079 1978 2016     39                          .66   2.30   .586   .782   .432                         
+  41 CSRUZ080 1850 2017    168      4      0    .569    .57   1.98   .391   .839   .366   2.44   .355  -.019   3
+  42 CSRUZ082 1976 2018     43      0      0    .511   1.99   4.02   .821   .508   .341   1.70   .344  -.001   1
+  43 CSRUZ083 1979 2018     40      0      0    .640   1.56   4.11   .861   .711   .293   1.60   .301  -.019   1
+  44 CSRUZ084 1850 1992    143      3      0    .596    .64   3.45   .530   .873   .423   2.26   .398   .033   1
+  45 CSRUZ088 1842 2018    177      5      0    .537   1.00   4.37  1.080   .963   .274   2.08   .282  -.006   2
+  46 CSRUZ089 1842 2017    176      5      0    .628    .85   3.95   .732   .925   .319   2.67   .326  -.003   1
+  47 CSRUZ093 1842 2018    177      5      1    .494    .91   5.99  1.096   .933   .303   2.15   .359   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5795    124      5    .582    .75   5.99   .504   .790   .316   2.89   .322  -.000
+
+ DATA CHECKS (rwl.check): czec024
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/czec024.rwl
+ 47 series, 5795 measurements, 1713-2018, 0.001 mm precision
+ 0 error(s), 0 warning(s), 30 note(s)
+ -------------
+ Nothing to report at this severity.
+ 30 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file czec024.rwl, MD5 d7ceeb8905fb493a0137528c6d1cf356.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series CSRUZ062 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series CSRUZ079 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

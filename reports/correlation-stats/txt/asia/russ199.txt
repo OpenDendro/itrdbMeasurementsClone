@@ -1,0 +1,112 @@
+
+ COFECHA-style crossdating report: russ199
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ199.rwl
+      MD5 of measurement file: fda6b30a8cae5dc8e505f1b9643b4129
+      Date checked           : 01OCT26
+      Beginning year         : 1821
+      Ending year            : 2007
+      Principal investigators: Bunn, A.G.; Lloyd, A.H.; Berner, L.T.
+      Site name              : Tree Line
+      Species information    : LAGM Larix gmelinii (Rupr.) Kuzen.=L.kurulensis(Maxim ex Regel)Pilg.=L.dahuricaTurcz.exTratv=Larix cajanderi Mayr
+      Latitude               : 69.2000 N
+      Longitude              : 161.4333 E
+      Elevation              : 10 m
+
+      Series intercorrelation: 0.641
+      Avg mean sensitivity   : 0.350
+      Avg standard deviation : 0.296
+      Avg autocorrelation    : 0.636
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 5.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ199
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 TRL001A  1888 2007  .67  .66  .72 
+   2 TRL001B  1878 2007  .53  .74  .77 
+   3 TRL002B  1821 2007  .29A .47  .67 
+   4 TRL003A  1936 2007            .70 
+   5 TRL003B  1920 2007       .61  .77 
+   7 TRL004B  1940 2007            .61 
+  10 TRL006A  1859 2007  .57  .67  .69 
+  11 TRL006B  1874 2007  .51  .70  .72 
+  12 TRL007B  1946 2007            .69 
+ Av segment correlation  .51  .64  .70 
+
+ FLAGGED SEGMENTS: russ199
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 TRL002B  1900 1949     A     .292         0
+
+ DESCRIPTIVE STATISTICS: russ199
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TRL001A  1888 2007    120      3      0    .703    .36    .88   .177   .616   .348   2.03   .341  -.027   1
+   2 TRL001B  1878 2007    130      3      0    .552    .39   1.23   .189   .622   .323   2.05   .328  -.026   1
+   3 TRL002B  1821 2007    187      3      1    .506    .61   2.70   .389   .684   .386   2.15   .374   .006   1
+   4 TRL003A  1936 2007     72      1      0    .731    .68   1.70   .396   .747   .353   1.95   .339   .135   0
+   5 TRL003B  1920 2007     88      2      0    .720    .77   2.19   .485   .763   .332   2.11   .321  -.057   1
+   6 TRL004A  1962 2007     46      0      0    .696    .67   1.73   .304   .184   .432   2.28   .377  -.148   0
+   7 TRL004B  1940 2007     68      1      0    .567    .48   1.09   .265   .592   .351   2.11   .391  -.043   1
+   8 TRL005A  1961 2007     47      0      0    .775    .61   1.27   .260   .436   .358   1.73   .316   .155   0
+   9 TRL005B  1959 2007     49      0      0    .666    .64   1.49   .289   .716   .263   1.55   .277   .084   1
+  10 TRL006A  1859 2007    149      3      0    .653    .46   1.28   .241   .713   .317   2.05   .303   .006   1
+  11 TRL006B  1874 2007    134      3      0    .673    .43   1.05   .193   .587   .328   1.96   .303  -.002   2
+  12 TRL007B  1946 2007     62      1      0    .717    .78   2.29   .502   .635   .454   1.89   .401  -.050   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1152     20      1    .641    .54   2.70   .296   .636   .350   2.28   .338  -.001
+
+ DATA CHECKS (rwl.check): russ199
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ199.rwl
+ 12 series, 1152 measurements, 1821-2007, 0.001 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1835-2007 but the measurements cover 1821-2007
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file russ199.rwl, MD5 fda6b30a8cae5dc8e505f1b9643b4129.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

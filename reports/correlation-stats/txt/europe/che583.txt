@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: che583
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che583.rwl
+      MD5 of measurement file: 866e78043f6173051d3489106c9525ee
+      Date checked           : 01OCT26
+      Beginning year         : 1926
+      Ending year            : 2007
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : BEI
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.2347 N
+      Longitude              : 8.2011 E
+      Elevation              : 580 m
+
+      Series intercorrelation: 0.497
+      Avg mean sensitivity   : 0.273
+      Avg standard deviation : 1.111
+      Avg autocorrelation    : 0.701
+      Number dated series    : 9
+      Segment length tested  : 40
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che583
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  40-year dated segments, lagged  20 years
+ Flags:  A = correlation under   .3665 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1989 
+ --- -------- ---------  ---- 
+   1 BEI02a   1933 2007  .73 
+   2 BEI03a   1938 2007  .72 
+   3 BEI04a   1940 2007  .60 
+   4 BEI05a   1937 2007  .50 
+   5 BEI06b   1927 2007  .61 
+   6 BEI07b   1946 2007  .59 
+   7 BEI08b   1930 2007  .66 
+   8 BEI09a   1926 2007  .57 
+   9 BEI10a   1937 2007  .48 
+ Av segment correlation  .61 
+
+ FLAGGED SEGMENTS: che583
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che583
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BEI02a   1933 2007     75      1      0    .615   1.86   3.27   .715   .643   .291   1.50   .264   .056   1
+   2 BEI03a   1938 2007     70      1      0    .580   3.60   6.12  1.110   .657   .231   1.44   .219  -.038   2
+   3 BEI04a   1940 2007     68      1      0    .517   2.99   6.37  1.468   .794   .274   1.75   .270   .087   3
+   4 BEI05a   1937 2007     71      1      0    .531   2.83   8.40  1.724   .752   .290   2.05   .337   .189   1
+   5 BEI06b   1927 2007     81      1      0    .315   1.87   4.69   .904   .736   .251   1.69   .272   .139   1
+   6 BEI07b   1946 2007     62      1      0    .641   2.80   4.89   .841   .663   .218   1.55   .221   .044   1
+   7 BEI08b   1930 2007     78      1      0    .344   2.52   5.45  1.296   .782   .297   1.52   .271   .017   2
+   8 BEI09a   1926 2007     82      1      0    .532   2.32   4.48   .923   .564   .318   1.62   .302  -.023   3
+   9 BEI10a   1937 2007     71      1      0    .440   2.28   4.99  1.058   .728   .270   1.74   .278   .016   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            658      9      0    .497   2.54   8.40  1.111   .701   .273   2.05   .272   .054
+
+ DATA CHECKS (rwl.check): che583
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che583.rwl
+ 9 series, 658 measurements, 1926-2007, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file che583.rwl, MD5 866e78043f6173051d3489106c9525ee.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3665 for 40-year segments.
+ Segments: 40 years, lagged 20, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 40 years: the record is only 82 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

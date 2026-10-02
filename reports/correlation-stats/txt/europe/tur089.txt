@@ -1,0 +1,180 @@
+
+ COFECHA-style crossdating report: tur089
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : tur089.rwl
+      MD5 of measurement file: f8d7746cd03be11f54ceafc09cb7e3a8
+      Date checked           : 01OCT26
+      Beginning year         : 1856
+      Ending year            : 2010
+      Principal investigators: Touchan, R.
+      Site name              : Uçak Düştü Tepe
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 39.4100 N
+      Longitude              : 27.1800 E
+      Elevation              : 830 m
+
+      Series intercorrelation: 0.520
+      Avg mean sensitivity   : 0.267
+      Avg standard deviation : 1.112
+      Avg autocorrelation    : 0.786
+      Number dated series    : 40
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 3, B 7; 2 of the B weak at every lag)
+      Pct problem segments   : 11.49
+
+
+ CORRELATION OF SERIES BY SEGMENTS: tur089
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 UDT01A   1900 2010       .54  .54 
+   2 UDT01B   1901 2010       .55  .54 
+   3 UDT02A   1902 2010       .57  .38B
+   4 UDT02B   1906 2010       .51  .55 
+   5 UDT03A   1924 2010            .48 
+   6 UDT03B   1937 2010            .42 
+   7 UDT04A   1865 2010  .45  .35  .31A
+   8 UDT04B   1890 2010  .63  .37  .18B
+   9 UDT05A   1896 2010  .64  .73  .53 
+  10 UDT05B   1896 2010  .68  .64  .51 
+  11 UDT05C   1910 2010       .42  .46 
+  12 UDT06A   1893 2010  .40  .58  .67 
+  13 UDT06B   1909 2010       .50  .39 
+  14 UDT07A   1908 2010       .70  .59 
+  15 UDT07B   1914 2010       .46  .33 
+  16 UDT08A   1863 2010  .40  .38B .31B
+  17 UDT08B   1856 2010  .60  .32A .31B
+  18 UDT09B   1872 2010  .56  .40  .36 
+  19 UDT10A   1900 2010       .61  .62 
+  20 UDT10B   1908 2010       .39  .46 
+  21 UDT11A   1910 2010       .64  .51 
+  22 UDT11B   1917 2010       .74  .68 
+  23 UDT12A   1876 2010  .66  .69  .61 
+  24 UDT12B   1914 2010       .61  .32A
+  25 UDT13A   1926 2010            .58 
+  26 UDT13B   1918 2010       .53  .43 
+  27 UDT14A   1918 2010       .57  .66 
+  28 UDT14B   1920 2010       .60  .62 
+  29 UDT15A   1887 2007  .66  .69  .39 
+  30 UDT15B   1880 2009  .57  .70  .65 
+  31 UDT16A   1913 2010       .53  .62 
+  32 UDT16B   1905 2010       .54  .52 
+  33 UDT17A   1913 2010       .62  .53 
+  34 UDT17B   1905 2010       .73  .73 
+  35 UDT18A   1919 2010       .38  .43 
+  36 UDT18B   1929 2010            .22B
+  37 UDT19A   1901 2010       .58  .59 
+  38 UDT19B   1921 2010       .59  .26B
+  39 UDT20A   1923 2010       .49  .48 
+  40 UDT20B   1905 2010       .73  .51 
+ Av segment correlation  .57  .55  .48 
+
+ FLAGGED SEGMENTS: tur089
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 UDT02A   1950 1999     B     .384        10      .471   .087
+   7 UDT04A   1950 1999     A     .312         0
+   8 UDT04B   1950 1999     B     .180         1      .320   .140  weak at every lag
+  16 UDT08A   1925 1974     B     .380        10      .444   .064
+  16 UDT08A   1950 1999     B     .306        10      .516   .210
+  17 UDT08B   1925 1974     A     .315         0
+  17 UDT08B   1950 1999     B     .311        -7      .383   .072
+  24 UDT12B   1950 1999     A     .318         0
+  36 UDT18B   1950 1999     B     .221         4      .312   .091  weak at every lag
+  38 UDT19B   1950 1999     B     .259       -10      .494   .236
+
+ DESCRIPTIVE STATISTICS: tur089
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 UDT01A   1900 2010    111      2      0    .575   2.21   9.32  1.805   .848   .293   1.72   .271  -.001   2
+   2 UDT01B   1901 2010    110      2      0    .598   2.53   9.19  1.706   .838   .251   2.17   .272  -.001   1
+   3 UDT02A   1902 2010    109      2      1    .439   2.29   5.57  1.341   .821   .245   1.51   .236   .010   1
+   4 UDT02B   1906 2010    105      2      0    .530   2.21   5.95  1.422   .852   .226   1.59   .229   .015   1
+   5 UDT03A   1924 2010     87      1      0    .490   1.85   5.23   .910   .666   .293   1.73   .261  -.016   3
+   6 UDT03B   1937 2010     74      1      0    .502   1.48   3.67   .682   .618   .293   1.81   .247  -.048   2
+   7 UDT04A   1865 2010    146      3      1    .356   1.58   6.26  1.215   .881   .270   1.67   .253   .026   1
+   8 UDT04B   1890 2010    121      3      1    .513   1.60   5.42   .914   .806   .250   1.61   .247   .020   1
+   9 UDT05A   1896 2010    115      3      0    .576   1.73   3.99   .854   .786   .260   1.63   .243   .062   1
+  10 UDT05B   1896 2010    115      3      0    .533   1.53   5.16   .887   .845   .216   1.57   .235   .013   1
+  11 UDT05C   1910 2010    101      2      0    .489   1.63   6.44  1.204   .732   .332   2.19   .318  -.013   2
+  12 UDT06A   1893 2010    118      3      0    .419   1.40   5.60  1.030   .781   .278   1.64   .282   .014   1
+  13 UDT06B   1909 2010    102      2      0    .475   1.09   3.00   .668   .767   .290   1.69   .268   .037   1
+  14 UDT07A   1908 2010    103      2      0    .629   2.03   6.69  1.040   .734   .250   1.91   .242   .026   1
+  15 UDT07B   1914 2010     97      2      0    .508   2.04   4.72   .869   .749   .200   1.70   .218   .052   1
+  16 UDT08A   1863 2010    148      3      2    .433   1.01   6.81  1.142   .936   .259   1.70   .256  -.007   1
+  17 UDT08B   1856 2010    155      3      2    .457   1.94   8.91  2.151   .965   .236   2.19   .250   .022   1
+  18 UDT09B   1872 2010    139      3      0    .478   1.64   4.89  1.050   .849   .268   1.88   .262   .012   1
+  19 UDT10A   1900 2010    111      2      0    .643   2.00   7.71  1.265   .801   .253   1.80   .266  -.015   1
+  20 UDT10B   1908 2010    103      2      0    .488   2.31   5.54   .954   .713   .233   1.64   .221  -.029   3
+  21 UDT11A   1910 2010    101      2      0    .685   1.78   8.58  1.394   .818   .272   1.63   .270  -.043   3
+  22 UDT11B   1917 2010     94      2      0    .656   1.61   5.11  1.017   .850   .254   1.84   .256   .024   1
+  23 UDT12A   1876 2010    135      3      0    .609   1.14   6.02  1.012   .920   .273   1.90   .253   .017   0
+  24 UDT12B   1914 2010     97      2      1    .426    .89   3.59   .443   .387   .340   1.89   .275  -.024   3
+  25 UDT13A   1926 2010     85      1      0    .566   1.08   2.98   .674   .784   .323   1.75   .298   .005   2
+  26 UDT13B   1918 2010     93      2      0    .512   1.92   5.30   .979   .694   .346   1.60   .269   .015   2
+  27 UDT14A   1918 2010     93      2      0    .603   1.04   5.09   .796   .841   .276   1.88   .276   .050   1
+  28 UDT14B   1920 2010     91      2      0    .605   1.54   4.50   .710   .724   .271   1.86   .267  -.004   2
+  29 UDT15A   1887 2007    121      3      0    .491   1.65   6.88  1.406   .897   .290   1.95   .322   .073   1
+  30 UDT15B   1880 2009    130      3      0    .571   1.17   7.22  1.172   .867   .334   2.14   .316  -.011   1
+  31 UDT16A   1913 2010     98      2      0    .456   1.95   6.33  1.445   .868   .323   1.83   .296   .019   1
+  32 UDT16B   1905 2010    106      2      0    .436   2.11   7.16  1.377   .835   .260   1.70   .255   .026   3
+  33 UDT17A   1913 2010     98      2      0    .599   1.14   5.21   .886   .876   .232   1.86   .242  -.012   1
+  34 UDT17B   1905 2010    106      2      0    .666   1.55   5.92  1.307   .840   .288   1.78   .280   .004   2
+  35 UDT18A   1919 2010     92      2      0    .485   2.27   5.18  1.030   .809   .230   1.54   .222   .008   1
+  36 UDT18B   1929 2010     82      1      1    .365   3.55   5.25   .850   .282   .237   1.40   .220   .145   0
+  37 UDT19A   1901 2010    110      2      0    .516   2.12   6.49  1.072   .774   .261   2.01   .278   .037   1
+  38 UDT19B   1921 2010     90      2      1    .505   2.76   4.93   .977   .664   .237   1.66   .240   .021   2
+  39 UDT20A   1923 2010     88      2      0    .543   2.37   4.82   .637   .555   .196   1.67   .191   .019   1
+  40 UDT20B   1905 2010    106      2      0    .475   2.02   5.91  1.030   .598   .260   1.47   .232   .031   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4286     87     10    .520   1.77   9.32  1.112   .786   .267   2.19   .259   .015
+
+ DATA CHECKS (rwl.check): tur089
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/tur089.rwl
+ 40 series, 4286 measurements, 1856-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     8 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file tur089.rwl, MD5 f8d7746cd03be11f54ceafc09cb7e3a8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

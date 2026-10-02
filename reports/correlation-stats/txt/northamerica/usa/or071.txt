@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: or071
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or071.rwl
+      MD5 of measurement file: c52bf2b320a543b7df1777c1a3c9fd73
+      Date checked           : 01OCT26
+      Beginning year         : 1605
+      Ending year            : 1993
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Sheridan Mountain Medium
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 43.8300 N
+      Longitude              : 121.6700 W
+      Elevation              : 1920 m
+
+      Series intercorrelation: 0.595
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 0.307
+      Avg autocorrelation    : 0.707
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.27
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or071
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 HMSM01B  1775 1993                      .66  .55  .64  .71  .51  .57 
+   2 HMSM02B  1804 1993                           .53  .62  .71  .66  .62 
+   3 HMSM03A  1775 1993                      .48  .62  .73  .68  .55  .58 
+   4 HMSM04B  1671 1993  .45  .67  .44  .71  .78  .71  .80  .76  .68  .72 
+   5 HMSM05B  1676 1993  .69  .77  .73  .71  .71  .70  .87  .62  .36  .47 
+   6 HMSM06A  1674 1993  .59  .73  .71  .72  .79  .64  .75  .68  .51  .62 
+   7 HMSM07A  1655 1993  .80  .81  .78  .79  .70  .64  .76  .79  .74  .59 
+   8 HMSM08B  1610 1993  .74  .69  .65  .68  .68  .65  .68  .67  .59  .54 
+   9 HMSM09A  1720 1993       .71  .65  .69  .75  .58  .73  .82  .76  .73 
+  10 HMSM11A  1727 1993            .50  .56  .59  .60  .65  .63  .50  .45 
+  11 HMSM12A  1743 1993            .35  .61  .66  .68  .77  .85  .75  .61 
+  12 HMSM13A  1680 1993  .67  .74  .68  .75  .78  .75  .79  .83  .71  .59 
+  13 HMSM14A  1627 1993  .64  .60  .44  .34  .48  .44  .61  .79  .55  .42 
+  14 HMSM15B  1753 1993                 .60  .61  .62  .69  .69  .58  .43 
+  15 HMSM16B  1725 1993            .33A .67  .80  .68  .74  .77  .62  .65 
+  16 HMSM17A  1693 1993  .43  .68  .59  .54  .64  .48  .69  .73  .66  .62 
+  17 HMSM18A  1783 1993                      .54  .44  .71  .65  .43  .55 
+  18 HMSM19B  1820 1993                           .48  .80  .82  .71  .80 
+  19 HMSM20B  1605 1993  .65  .40  .16B .52  .77  .64  .67  .77  .73  .59 
+ Av segment correlation  .63  .68  .54  .64  .67  .60  .72  .74  .61  .59 
+
+ FLAGGED SEGMENTS: or071
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 HMSM16B  1750 1799     A     .327         0
+  19 HMSM20B  1750 1799     B     .165         5      .317   .152  weak at every lag
+
+ DESCRIPTIVE STATISTICS: or071
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HMSM01B  1775 1993    219      6      0    .589   1.15   2.30   .319   .497   .219   1.53   .204   .002   1
+   2 HMSM02B  1804 1993    190      5      0    .631    .75   1.31   .251   .583   .250   1.62   .236  -.001   1
+   3 HMSM03A  1775 1993    219      6      0    .550    .48   1.49   .268   .781   .288   1.96   .277   .007   2
+   4 HMSM04B  1671 1993    323     10      0    .632    .61   1.39   .220   .671   .232   1.75   .224  -.004   3
+   5 HMSM05B  1676 1993    318     10      0    .621    .61   1.38   .232   .717   .208   1.93   .214   .016   1
+   6 HMSM06A  1674 1993    320     10      0    .646    .77   1.96   .378   .866   .197   1.45   .187  -.009   1
+   7 HMSM07A  1655 1993    339     10      0    .680    .54   1.51   .233   .646   .273   2.29   .278  -.009   1
+   8 HMSM08B  1610 1993    384     10      0    .548    .55   1.56   .307   .813   .272   1.83   .258   .015   1
+   9 HMSM09A  1720 1993    274      9      0    .689    .78   1.72   .206   .492   .209   1.75   .201   .011   1
+  10 HMSM11A  1727 1993    267      8      0    .547    .69   1.73   .400   .904   .221   1.74   .218  -.006   3
+  11 HMSM12A  1743 1993    251      8      0    .593    .85   3.11   .405   .708   .285   2.43   .282  -.006   2
+  12 HMSM13A  1680 1993    314     10      0    .700    .70   1.53   .260   .694   .219   1.84   .223   .010   1
+  13 HMSM14A  1627 1993    367     10      0    .486    .72   2.44   .391   .798   .241   2.16   .268  -.010   1
+  14 HMSM15B  1753 1993    241      7      0    .574    .98   2.05   .335   .624   .241   1.86   .239   .019   1
+  15 HMSM16B  1725 1993    269      8      1    .581    .56   1.77   .277   .701   .290   2.15   .296  -.001   2
+  16 HMSM17A  1693 1993    301     10      0    .599    .73   1.56   .360   .823   .247   1.84   .244  -.004   2
+  17 HMSM18A  1783 1993    211      6      0    .533    .94   2.06   .342   .577   .250   1.91   .258   .003   2
+  18 HMSM19B  1820 1993    174      5      0    .679    .77   1.19   .206   .497   .211   1.51   .195  -.023   1
+  19 HMSM20B  1605 1993    389     10      1    .483    .72   1.96   .386   .747   .293   3.17   .317   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5370    158      2    .595    .72   3.11   .307   .707   .245   3.17   .245   .001
+
+ DATA CHECKS (rwl.check): or071
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or071.rwl
+ 19 series, 5370 measurements, 1605-1993, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file or071.rwl, MD5 c52bf2b320a543b7df1777c1a3c9fd73.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

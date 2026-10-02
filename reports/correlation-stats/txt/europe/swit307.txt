@@ -1,0 +1,120 @@
+
+ COFECHA-style crossdating report: swit307
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit307.rwl
+      MD5 of measurement file: bc79c6909b0c0beb0cf0686ad31124ff
+      Date checked           : 01OCT26
+      Beginning year         : 1735
+      Ending year            : 1990
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Hasliwald
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.8083 N
+      Longitude              : 7.5972 E
+      Elevation              : 575 m
+
+      Series intercorrelation: 0.466
+      Avg mean sensitivity   : 0.212
+      Avg standard deviation : 0.826
+      Avg autocorrelation    : 0.834
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 4.88
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit307
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 OP0017T1 1819 1990       .56  .52  .59  .61  .63 
+   2 OP0018T1 1912 1990                           .67 
+   3 OP0047T1 1910 1990                           .65 
+   4 OP0069T1 1916 1990                           .61 
+   6 OP0232T1 1828 1990            .28A .47  .75  .83 
+   7 OP0263T1 1880 1990                      .71  .58 
+   8 OP0404T1 1924 1990                           .49 
+   9 OP2168T1 1867 1990                 .38  .60  .74 
+  10 OP2239T1 1908 1990                           .62 
+  11 OP2350T1 1881 1990                      .64  .68 
+  12 OP2558T1 1739 1990  .44  .29A .33  .53  .55  .54 
+  13 OP2791T1 1896 1990                      .51  .47 
+  14 OP5012T1 1899 1990                      .55  .66 
+  15 OP5058T1 1842 1990            .42  .34  .41  .45 
+  16 OP5240T1 1735 1990  .47  .59  .61  .46  .66  .63 
+ Av segment correlation  .45  .48  .43  .46  .60  .62 
+
+ FLAGGED SEGMENTS: swit307
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 OP0232T1 1850 1899     A     .281         0
+  12 OP2558T1 1825 1874     A     .292         0
+
+ DESCRIPTIVE STATISTICS: swit307
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OP0017T1 1819 1990    172      5      0    .563   1.71   5.59   .789   .836   .201   2.01   .209   .028   2
+   2 OP0018T1 1912 1990     79      1      0    .596   1.65   3.96   .819   .864   .193   1.70   .198  -.006   1
+   3 OP0047T1 1910 1990     81      1      0    .619   1.22   3.05   .646   .831   .221   1.51   .208   .007   1
+   4 OP0069T1 1916 1990     75      1      0    .590   2.34   4.71   .713   .814   .142   1.27   .137  -.014   1
+   5 OP0225T1 1925 1990     66      0      0    .512   2.97   5.41  1.056   .824   .168   1.67   .171  -.048   1
+   6 OP0232T1 1828 1990    163      4      1    .429   1.37   3.45   .852   .900   .224   1.97   .234   .002   2
+   7 OP0263T1 1880 1990    111      2      0    .589   1.98   3.64   .772   .893   .159   1.46   .153  -.018   1
+   8 OP0404T1 1924 1990     67      1      0    .533   2.02   5.15  1.081   .909   .191   1.46   .175  -.020   0
+   9 OP2168T1 1867 1990    124      3      0    .553   1.57   4.65  1.107   .957   .158   1.40   .166  -.045   1
+  10 OP2239T1 1908 1990     83      1      0    .526   2.16   4.27   .872   .711   .241   1.65   .257  -.002   1
+  11 OP2350T1 1881 1990    110      2      0    .614   1.75   3.90   .648   .740   .213   1.88   .230   .017   1
+  12 OP2558T1 1739 1990    252      6      1    .249   1.14   5.59   .923   .869   .266   3.03   .317  -.009   1
+  13 OP2791T1 1896 1990     95      2      0    .543   2.07   3.89   .725   .718   .212   1.59   .213   .014   1
+  14 OP5012T1 1899 1990     92      2      0    .547   2.04   3.68   .740   .776   .210   1.57   .210  -.029   1
+  15 OP5058T1 1842 1990    149      4      0    .417   2.52   5.27   .859   .664   .225   1.60   .227  -.000   1
+  16 OP5240T1 1735 1990    256      6      0    .273   1.17   3.15   .702   .892   .233   1.70   .239  -.040   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1975     41      2    .466   1.72   5.59   .826   .834   .212   3.03   .222  -.010
+
+ DATA CHECKS (rwl.check): swit307
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit307.rwl
+ 16 series, 1975 measurements, 1735-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit307.rwl, MD5 bc79c6909b0c0beb0cf0686ad31124ff.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

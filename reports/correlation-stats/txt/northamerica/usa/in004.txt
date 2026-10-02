@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: in004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in004.rwl
+      MD5 of measurement file: 4a29e79b4c21930b7d607986541dd0d5
+      Date checked           : 01OCT26
+      Beginning year         : 1717
+      Ending year            : 2012
+      Principal investigators: Maxwell, J.T.; Harley, G.L.; Matheus, T.J.; Holt, D.H.
+      Site name              : Pioneer Mothers Memorial Forest
+      Species information    : LITU Liriodendron tulipifera L.
+      Latitude               : 38.5360 N
+      Longitude              : 86.4550 W
+      Elevation              : 221 m
+
+      Series intercorrelation: 0.585
+      Avg mean sensitivity   : 0.323
+      Avg standard deviation : 1.190
+      Avg autocorrelation    : 0.654
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.30
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 PMT01    1717 2012  .44  .47  .69  .39  .18B .33B .65 
+   2 PMT02    1803 2012       .41  .57  .63  .51  .43  .61 
+   3 PMT03    1784 2012  .31A .36  .48  .32A .44  .66  .64 
+   4 PMT04    1782 2012  .42  .40  .64  .79  .76  .72  .73 
+   5 PMT05    1794 2012  .35  .49  .50  .64  .64  .60  .71 
+   6 PMT06    1787 2012  .63  .53  .45  .66  .78  .79  .69 
+   7 PMT07    1822 2012       .46  .42  .56  .59  .65  .71 
+   8 PMT08    1900 2012                           .57  .65 
+   9 PMT09    1896 2012                      .42  .52  .55 
+  10 PMT10    1950 2012                                .60 
+  12 PMT12    1925 2012                                .71 
+  13 PMT13    1929 2012                                .66 
+  14 PMT14    1929 2012                                .66 
+  15 PMT20    1809 2012       .38  .61  .78  .68  .65  .66 
+  16 PMT21    1816 2012       .52  .70  .73  .75  .75  .66 
+  17 PMT22    1868 2012                 .51  .72  .74  .78 
+  18 PMT22b   1899 2012                      .73  .68  .76 
+  19 PMT23    1877 2012                      .44  .42  .54 
+  20 PMT26a   1860 2012                 .62  .67  .56  .68 
+  21 PMT26b   1836 2012            .54  .75  .75  .75  .77 
+  22 PMT28    1811 2012       .45  .63  .75  .71  .73  .74 
+ Av segment correlation  .43  .45  .57  .63  .61  .62  .67 
+
+ FLAGGED SEGMENTS: in004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 PMT01    1900 1949     B     .181         1      .290   .109  weak at every lag
+   1 PMT01    1925 1974     B     .333         1      .413   .080
+   3 PMT03    1800 1849     A     .310         0
+   3 PMT03    1875 1924     A     .325         0
+
+ DESCRIPTIVE STATISTICS: in004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PMT01    1717 2012    296      7      2    .466   1.98   7.46  1.395   .827   .334   2.88   .348  -.007   3
+   2 PMT02    1803 2012    210      6      0    .514   2.12  10.32  1.491   .766   .295   2.05   .299   .026   1
+   3 PMT03    1784 2012    229      7      2    .462   2.14   6.62  1.027   .654   .349   2.32   .324   .001   3
+   4 PMT04    1782 2012    231      7      0    .585   1.63   6.37   .888   .816   .262   2.22   .278   .018   1
+   5 PMT05    1794 2012    219      7      0    .565   1.60   4.15   .747   .547   .316   2.25   .336   .026   1
+   6 PMT06    1787 2012    226      7      0    .650   1.99   4.64   .796   .531   .314   1.74   .295   .005   3
+   7 PMT07    1822 2012    191      6      0    .597   1.34   4.00   .780   .679   .345   2.43   .374  -.032   1
+   8 PMT08    1900 2012    113      2      0    .497   3.62  19.24  2.973   .758   .308   1.93   .294   .003   2
+   9 PMT09    1896 2012    117      3      0    .467   3.21   6.33  1.273   .459   .347   1.74   .318  -.001   2
+  10 PMT10    1950 2012     63      1      0    .653   5.99  15.37  3.438   .778   .361   1.94   .338   .141   0
+  11 PMT11    1949 2012     64      0      0    .459   4.95  14.89  3.011   .723   .415   1.88   .375   .031   3
+  12 PMT12    1925 2012     88      1      0    .651   3.66  13.21  2.575   .821   .281   1.67   .283   .027   1
+  13 PMT13    1929 2012     84      1      0    .532   3.72   8.64  1.651   .671   .304   1.84   .301   .007   1
+  14 PMT14    1929 2012     84      1      0    .601   4.32   9.12  1.789   .543   .309   1.68   .290  -.017   1
+  15 PMT20    1809 2012    204      6      0    .633   1.75   3.91   .703   .588   .277   1.88   .275   .008   1
+  16 PMT21    1816 2012    197      6      0    .675   1.99   6.14  1.161   .781   .308   1.92   .302   .005   1
+  17 PMT22    1868 2012    145      4      0    .636   1.50   4.34   .754   .501   .352   2.17   .356   .031   1
+  18 PMT22b   1899 2012    114      3      0    .747   1.93   5.96   .804   .283   .361   2.38   .357   .103   0
+  19 PMT23    1877 2012    136      3      0    .493   1.86   4.95   .823   .558   .323   1.94   .317   .001   2
+  20 PMT26a   1860 2012    153      4      0    .664   1.08   4.72   .825   .787   .307   2.19   .328   .033   1
+  21 PMT26b   1836 2012    177      5      0    .694   1.40   3.67   .713   .637   .321   1.96   .327  -.005   3
+  22 PMT28    1811 2012    202      6      0    .668   2.02   5.88  1.034   .533   .387   2.35   .385   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3543     93      4    .585   2.17  19.24  1.190   .654   .323   2.88   .323   .013
+
+ DATA CHECKS (rwl.check): in004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in004.rwl
+ 22 series, 3543 measurements, 1717-2012, 0.001 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file in004.rwl, MD5 4a29e79b4c21930b7d607986541dd0d5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

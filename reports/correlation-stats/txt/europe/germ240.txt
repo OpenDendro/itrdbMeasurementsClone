@@ -1,0 +1,175 @@
+
+ COFECHA-style crossdating report: germ240
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ240.rwl
+      MD5 of measurement file: 2c35a3c7d097ba9de3360c55fc04c6df
+      Date checked           : 01OCT26
+      Beginning year         : 1938
+      Ending year            : 2010
+      Principal investigators: Esper, J.; Kochbeck, M.
+      Site name              : Homburg
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 49.2958 N
+      Longitude              : 7.3247 E
+      Elevation              : 340 m
+
+      Series intercorrelation: 0.548
+      Avg mean sensitivity   : 0.321
+      Avg standard deviation : 1.072
+      Avg autocorrelation    : 0.707
+      Number dated series    : 40
+      Segment length tested  : 36
+
+      Number problem segments: 7  (A 3, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 11.48
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  36-year dated segments, lagged  18 years
+ Flags:  A = correlation under   .3862 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1968 
+                        1985 2003 
+ --- -------- ---------  ---- ---- 
+   1 EDS0101a 1938 2010  .64  .59 
+   2 EDS0104a 1939 2010  .71  .65 
+   3 EDS0104c 1950 2010       .71 
+   4 EDS0106b 1945 2010  .38B .48 
+   5 EDS0107a 1952 2010       .58 
+   6 EDS0107b 1947 2010  .68  .59 
+   7 EDS0108a 1943 2010  .64  .54 
+   8 EDS0108b 1940 2010  .74  .49 
+   9 EDS0109b 1952 2010       .37A
+  10 EDS0110b 1960 2010       .45 
+  11 EDS0112a 1955 2010       .39 
+  12 EDS0113a 1952 2010       .51 
+  13 EDS0113b 1949 2010       .55 
+  14 EDS0114b 1960 2010       .41 
+  15 EDS0115a 1940 2010  .43  .53 
+  16 EDS0115b 1966 2010       .43 
+  17 EDS0118a 1950 2010       .61 
+  18 EDS0118b 1948 2010  .52  .66 
+  19 EDS0119a 1950 2010       .60 
+  20 EDS0119b 1940 2010  .61  .51 
+  21 EDS0120a 1945 2010  .45  .50 
+  23 EDS0122a 1947 2010  .40  .57 
+  24 EDS0122b 1943 2010  .64  .34B
+  25 EDS0123b 1946 2010  .63  .44B
+  26 EDS0124a 1953 2010       .52 
+  27 EDS0124b 1952 2010       .36A
+  28 EDS0125a 1950 2010  .60  .30B
+  29 EDS0126a 1940 2010  .77  .48 
+  30 EDS0126b 1951 2010       .58 
+  31 EDS0127b 1941 2010  .55  .38A
+  32 EDS0131a 1942 2010  .59  .58 
+  34 EDS0134a 1948 2010  .67  .47 
+  35 EDS0134b 1943 2010  .82  .73 
+  36 EDS0139a 1942 2010  .72  .59 
+  37 EDS0139b 1944 2010  .64  .65 
+  38 EDS0140a 1945 2010  .71  .56 
+  39 EDS0140b 1942 2010  .39  .59 
+  40 EDS0144a 1953 2010       .59 
+ Av segment correlation  .61  .52 
+
+ FLAGGED SEGMENTS: germ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 EDS0106b 1950 1985     B     .384        -5      .418   .034
+   9 EDS0109b 1968 2003     A     .374         0
+  24 EDS0122b 1968 2003     B     .344         1      .391   .048
+  25 EDS0123b 1968 2003     B     .443         2      .501   .058
+  27 EDS0124b 1968 2003     A     .362         0
+  28 EDS0125a 1968 2003     B     .304        -1      .364   .060  weak at every lag
+  31 EDS0127b 1968 2003     A     .376         0
+
+ DESCRIPTIVE STATISTICS: germ240
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EDS0101a 1938 2010     73      2      0    .569   2.60   8.72  1.929   .768   .342   2.16   .343  -.057   3
+   2 EDS0104a 1939 2010     72      2      0    .583   1.67   4.61   .977   .739   .319   1.77   .310   .011   1
+   3 EDS0104c 1950 2010     61      1      0    .662   1.99   4.07   .772   .467   .342   1.68   .303  -.018   1
+   4 EDS0106b 1945 2010     66      2      1    .436   1.79   4.26   .826   .611   .289   1.86   .301   .011   1
+   5 EDS0107a 1952 2010     59      1      0    .610   1.51   4.60  1.074   .701   .464   2.56   .497   .053   1
+   6 EDS0107b 1947 2010     64      2      0    .626   1.58   3.08   .661   .683   .295   1.51   .250   .029   2
+   7 EDS0108a 1943 2010     68      2      0    .608   1.18   3.80   .712   .793   .351   2.04   .326  -.019   1
+   8 EDS0108b 1940 2010     71      2      0    .553   1.68   4.51  1.072   .741   .386   1.97   .398   .010   1
+   9 EDS0109b 1952 2010     59      1      1    .446   2.38   6.60  1.412   .761   .303   1.69   .313   .039   1
+  10 EDS0110b 1960 2010     51      1      0    .503   3.34  12.60  2.161   .781   .243   1.77   .271   .040   2
+  11 EDS0112a 1955 2010     56      1      0    .341   1.27   5.03  1.291   .883   .389   1.96   .371   .003   2
+  12 EDS0113a 1952 2010     59      1      0    .540   5.76   9.82  1.888   .735   .199   1.59   .179   .002   0
+  13 EDS0113b 1949 2010     62      1      0    .582   4.47   7.86  1.431   .634   .219   1.43   .212  -.056   3
+  14 EDS0114b 1960 2010     51      1      0    .427    .96   3.48   .696   .623   .379   2.71   .457   .007   1
+  15 EDS0115a 1940 2010     71      2      0    .488   1.08   3.86   .711   .844   .295   1.68   .270  -.043   1
+  16 EDS0115b 1966 2010     45      1      0    .500   1.57   4.48  1.080   .892   .269   1.60   .277   .011   1
+  17 EDS0118a 1950 2010     61      1      0    .631   4.25   8.30  1.477   .674   .236   1.93   .235  -.048   1
+  18 EDS0118b 1948 2010     63      2      0    .552   3.07   8.05  1.506   .802   .214   1.62   .246   .105   1
+  19 EDS0119a 1950 2010     61      1      0    .697   1.35   3.49   .916   .866   .247   1.48   .247  -.043   1
+  20 EDS0119b 1940 2010     71      2      0    .600   2.02   5.16  1.052   .723   .267   1.85   .295  -.022   1
+  21 EDS0120a 1945 2010     66      2      0    .447   2.41   6.22  1.355   .744   .264   2.28   .317   .049   1
+  22 EDS0121b 1972 2010     39      0      0    .695   1.29   2.57   .576   .458   .410   1.54   .347   .001   1
+  23 EDS0122a 1947 2010     64      2      0    .373   1.47   4.22   .752   .604   .303   1.84   .301   .014   1
+  24 EDS0122b 1943 2010     68      2      1    .447   2.04   4.90   .890   .673   .278   1.66   .289  -.042   3
+  25 EDS0123b 1946 2010     65      2      1    .504   2.18   5.45  1.140   .615   .444   1.88   .359  -.057   3
+  26 EDS0124a 1953 2010     58      1      0    .592   1.54   4.62  1.052   .691   .399   2.49   .455  -.010   2
+  27 EDS0124b 1952 2010     59      1      1    .418   1.16   3.52   .962   .891   .323   1.66   .302   .001   3
+  28 EDS0125a 1950 2010     61      2      1    .406   1.80   4.57  1.065   .442   .556   2.48   .492   .120   0
+  29 EDS0126a 1940 2010     71      2      0    .555   2.42   4.46  1.117   .756   .319   1.66   .277   .008   1
+  30 EDS0126b 1951 2010     60      1      0    .640   2.39   5.40  1.414   .822   .291   1.95   .284  -.009   1
+  31 EDS0127b 1941 2010     70      2      1    .541   1.45   5.21  1.025   .875   .289   1.61   .298   .047   1
+  32 EDS0131a 1942 2010     69      2      0    .547   2.10   4.10   .699   .605   .224   1.48   .225   .034   1
+  33 EDS0131b 1975 2010     36      0      0    .429   2.20   4.19   .953   .575   .358   1.71   .348   .004   2
+  34 EDS0134a 1948 2010     63      2      0    .598   2.26   5.34  1.039   .639   .366   1.68   .311   .014   1
+  35 EDS0134b 1943 2010     68      2      0    .769   1.81   4.36  1.054   .750   .388   1.75   .319  -.062   3
+  36 EDS0139a 1942 2010     69      2      0    .613   1.86   3.72   .897   .759   .350   1.79   .329  -.015   2
+  37 EDS0139b 1944 2010     67      2      0    .619   2.06   4.70  1.071   .681   .418   2.05   .370  -.066   3
+  38 EDS0140a 1945 2010     66      2      0    .568   1.94   3.98   .765   .592   .286   1.89   .293  -.040   1
+  39 EDS0140b 1942 2010     69      2      0    .457   1.53   4.03   .736   .720   .283   2.05   .302   .143   1
+  40 EDS0144a 1953 2010     58      1      0    .677   2.00   4.19   .743   .516   .282   1.84   .286   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2490     61      7    .548   2.08  12.60  1.072   .707   .321   2.71   .314   .004
+
+ DATA CHECKS (rwl.check): germ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ240.rwl
+ 40 series, 2490 measurements, 1938-2010, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file germ240.rwl, MD5 2c35a3c7d097ba9de3360c55fc04c6df.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3862 for 36-year segments.
+ Segments: 36 years, lagged 18, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 36 years: the record is only 73 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: pa
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pa.rwl
+      MD5 of measurement file: a9c0a08737dbcdf4deca274bbc6d3012
+      Date checked           : 01OCT26
+      Beginning year         : 1891
+      Ending year            : 1972
+      Principal investigators: Swain, A.M.
+      Site name              : Ely Lake
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 41.7700 N
+      Longitude              : 75.8300 W
+      Elevation              : 424 m
+
+      Series intercorrelation: 0.742
+      Avg mean sensitivity   : 0.246
+      Avg standard deviation : 0.671
+      Avg autocorrelation    : 0.768
+      Number dated series    : 22
+      Segment length tested  : 40
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 3.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pa
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  40-year dated segments, lagged  20 years
+ Flags:  A = correlation under   .3665 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1920 
+                        1939 1959 
+ --- -------- ---------  ---- ---- 
+   1 120106   1911 1972       .82 
+   2 120104   1903 1972       .87 
+   5 120404   1902 1972       .84 
+   6 120406   1896 1972  .67  .78 
+   7 120506   1899 1972  .84  .78 
+   8 120508   1902 1972       .83 
+   9 120604   1904 1972       .86 
+  10 120606   1893 1972  .78  .78 
+  11 120704   1893 1972  .38B .68 
+  12 120706   1895 1972  .58  .59 
+  13 120804   1891 1972  .79  .82 
+  14 120806   1897 1972  .74  .75 
+  15 120904   1915 1972       .81 
+  16 120906   1915 1972       .75 
+  17 121006   1899 1972  .75  .73 
+  18 121004   1905 1972       .80 
+  19 121104   1902 1972       .89 
+  20 121106   1899 1972  .86  .87 
+  21 121204   1893 1972  .88  .74 
+  22 121206   1903 1972       .75 
+ Av segment correlation  .73  .79 
+
+ FLAGGED SEGMENTS: pa
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 120704   1900 1939     B     .379        -3      .403   .024
+
+ DESCRIPTIVE STATISTICS: pa
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 120106   1911 1972     62      1      0    .751   1.26   3.22   .611   .698   .252   1.61   .257   .103   0
+   2 120104   1903 1972     70      1      0    .838   1.78   3.20   .778   .744   .228   1.49   .240  -.020   1
+   3 120302   1927 1972     46      0      0    .648   1.24   2.98   .528   .777   .211   1.58   .217   .039   1
+   4 120308   1929 1972     44      0      0    .695   1.47   2.88   .462   .379   .242   1.62   .254   .187   0
+   5 120404   1902 1972     71      1      0    .786   1.44   3.91   .837   .783   .257   1.53   .251  -.004   1
+   6 120406   1896 1972     77      2      0    .692   1.45   3.31   .800   .789   .274   1.77   .271   .003   1
+   7 120506   1899 1972     74      2      0    .824   1.20   3.65   .722   .840   .252   1.91   .257  -.009   1
+   8 120508   1902 1972     71      1      0    .823   1.10   3.33   .539   .801   .238   1.74   .248   .024   1
+   9 120604   1904 1972     69      1      0    .800   1.56   3.59   .639   .625   .287   1.83   .278   .043   1
+  10 120606   1893 1972     80      2      0    .752   1.30   3.60   .862   .783   .290   1.68   .264  -.076   0
+  11 120704   1893 1972     80      2      1    .508   1.05   2.95   .619   .830   .271   1.70   .271   .030   1
+  12 120706   1895 1972     78      2      0    .629   1.02   3.02   .613   .911   .227   1.51   .219  -.009   1
+  13 120804   1891 1972     82      2      0    .758   1.31   3.36   .607   .751   .267   1.72   .259  -.013   1
+  14 120806   1897 1972     76      2      0    .702   1.10   2.51   .502   .733   .247   1.85   .285  -.015   1
+  15 120904   1915 1972     58      1      0    .767   1.87   3.60   .748   .718   .186   1.59   .212   .039   1
+  16 120906   1915 1972     58      1      0    .747   1.66   3.73   .881   .879   .199   1.58   .220   .063   1
+  17 121006   1899 1972     74      2      0    .700   1.22   3.72   .702   .841   .211   1.69   .221  -.005   1
+  18 121004   1905 1972     68      1      0    .744   1.43   2.88   .796   .859   .219   1.47   .201   .032   0
+  19 121104   1902 1972     71      1      0    .879   1.43   2.88   .621   .652   .288   1.71   .279   .142   0
+  20 121106   1899 1972     74      2      0    .836   1.26   2.74   .489   .712   .233   1.60   .236  -.019   1
+  21 121204   1893 1972     80      2      0    .713   1.01   2.82   .535   .742   .275   1.58   .279   .013   1
+  22 121206   1903 1972     70      1      0    .739   1.12   3.58   .813   .878   .211   1.55   .227   .003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1533     30      1    .742   1.32   3.91   .671   .768   .246   1.91   .249   .020
+
+ DATA CHECKS (rwl.check): pa
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/pa.rwl
+ 22 series, 1533 measurements, 1891-1972, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1891-1973 but the measurements cover 1891-1972
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file pa.rwl, MD5 a9c0a08737dbcdf4deca274bbc6d3012.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3665 for 40-year segments.
+ Segments: 40 years, lagged 20, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 40 years: the record is only 82 years long.

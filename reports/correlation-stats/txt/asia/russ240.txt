@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: russ240
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ240.rwl
+      MD5 of measurement file: cf5c96b62d80c934c9fdf8ddec5dbbae
+      Date checked           : 01OCT26
+      Beginning year         : 1603
+      Ending year            : 2013
+      Principal investigators: Buyantuyev, V.; Oskolkov, V.A.; Moritz, R.S.; Voronin, V.I.
+      Site name              : Shuthulay River
+      Species information    : LASI Larix sibirica Ledeb. = Larix russica (Endl.) Sabine ex Trautv.
+      Latitude               : 52.4823 N
+      Longitude              : 98.9687 E
+      Elevation              : 2170 m
+
+      Series intercorrelation: 0.673
+      Avg mean sensitivity   : 0.350
+      Avg standard deviation : 0.258
+      Avg autocorrelation    : 0.762
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 0, B 9; 1 of the B weak at every lag)
+      Pct problem segments   : 11.39
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 shut1    1686 1946  .64  .74  .75  .81  .84  .85  .87  .82                
+   2 shut24   1785 2013                      .74  .67  .70  .71  .72  .65  .70 
+   3 shut25   1661 2013  .73  .78  .85  .84  .82  .64  .63  .75  .76  .86  .80 
+   4 shut26-2 1711 2013       .70  .65  .69  .76  .78  .78  .76  .77  .67  .65 
+   5 shut26   1655 2013  .74  .66  .74  .89  .90  .84  .80  .86  .83  .79  .80 
+   6 shut27   1715 2013       .15B-.12B-.16B-.02B .14B .32B .64  .74  .59  .66 
+   7 shut28   1691 2013  .14B .57  .83  .87  .85  .84  .80  .80  .77  .78  .83 
+   8 shut29   1603 2013  .65  .24B .47  .86  .80  .48  .35B .58  .54  .47  .66 
+ Av segment correlation  .58  .55  .60  .68  .71  .66  .66  .74  .73  .69  .73 
+
+ FLAGGED SEGMENTS: russ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 shut27   1725 1774     B     .146        -5      .755   .609
+   6 shut27   1750 1799     B    -.118        -5      .632   .750
+   6 shut27   1775 1824     B    -.164        -5      .426   .590
+   6 shut27   1800 1849     B    -.017        -3      .729   .746
+   6 shut27   1825 1874     B     .139         1      .422   .284
+   6 shut27   1850 1899     B     .325        -1      .448   .123
+   7 shut28   1700 1749     B     .140         5      .283   .143  weak at every lag
+   8 shut29   1725 1774     B     .243         5      .520   .277
+   8 shut29   1850 1899     B     .351         1      .469   .118
+
+ DESCRIPTIVE STATISTICS: russ240
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 shut1    1686 1946    261      8      0    .745    .65   1.44   .281   .684   .299   1.94   .285   .036   1
+   2 shut24   1785 2013    229      7      0    .697    .47   1.12   .208   .671   .305   1.78   .282  -.008   3
+   3 shut25   1661 2013    353     11      0    .772    .48   1.57   .257   .734   .368   2.07   .329   .019   1
+   4 shut26-2 1711 2013    303     10      0    .716    .33    .77   .152   .696   .320   2.20   .303   .006   3
+   5 shut26   1655 2013    359     11      0    .786    .41   1.36   .238   .864   .264   1.76   .256   .028   1
+   6 shut27   1715 2013    299     10      6    .338    .47   2.34   .412   .794   .518   2.42   .462   .010   2
+   7 shut28   1691 2013    323     11      1    .742    .50   1.43   .278   .783   .324   1.73   .297   .009   1
+   8 shut29   1603 2013    411     11      2    .588    .32   1.64   .241   .807   .387   2.51   .375   .002   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2538     79      9    .673    .44   2.34   .258   .762   .350   2.51   .326   .013
+
+ DATA CHECKS (rwl.check): russ240
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ240.rwl
+ 8 series, 2538 measurements, 1603-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     shut27: correlates with the rest of the collection at r = 0.327 where the collection median is 0.722 (8.3 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file russ240.rwl, MD5 cf5c96b62d80c934c9fdf8ddec5dbbae.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

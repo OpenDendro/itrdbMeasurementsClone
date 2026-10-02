@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: ny011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ny011.rwl
+      MD5 of measurement file: 76d044a8c5273faff289d218bc4efc1c
+      Date checked           : 01OCT26
+      Beginning year         : 1658
+      Ending year            : 1986
+      Principal investigators: Cook, E.R.
+      Site name              : Rock Rift Road Mohonk Lake
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 41.7700 N
+      Longitude              : 74.1700 W
+      Elevation              : 200 m
+
+      Series intercorrelation: 0.645
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.534
+      Avg autocorrelation    : 0.828
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 1.49
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ny011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 RR0021   1695 1986  .63  .60  .26B .04B .48  .62  .59  .42  .38B .61 
+   2 RR0032   1734 1986            .51  .40  .51  .54  .57  .71  .78  .59 
+   3 RR0041   1675 1986  .63  .68  .64  .69  .65  .62  .67  .69  .73  .78 
+   4 RR0042   1716 1986       .59  .60  .63  .66  .68  .62  .60  .66  .68 
+   5 RR0062   1710 1984       .80  .73  .76  .88  .84  .71  .74  .79  .84 
+   6 RR0071   1677 1986  .61  .75  .70  .75  .77  .74  .73  .79  .75  .76 
+   7 RR0082   1728 1984            .73  .79  .80  .64  .53  .60  .69  .78 
+   8 RR0091   1761 1986                 .75  .78  .73  .71  .73  .72  .76 
+   9 RR0092   1695 1986  .63  .57  .60  .56  .54  .55  .58  .52  .52  .72 
+  10 RR0101   1781 1986                      .78  .72  .64  .65  .72  .84 
+  11 RR0102   1725 1986            .64  .58  .72  .68  .64  .65  .69  .80 
+  12 RR0111   1710 1986       .53  .67  .77  .78  .71  .67  .57  .56  .66 
+  13 RR0112   1658 1986  .37  .58  .67  .70  .64  .51  .58  .71  .54  .53 
+  14 RR0122   1786 1969                      .62  .65  .57  .68  .74      
+  15 RR0132   1722 1986       .68  .70  .70  .76  .70  .63  .64  .73  .80 
+  16 RR0141   1700 1986       .54  .58  .65  .78  .75  .61  .65  .66  .66 
+  17 RR0142   1791 1986                      .74  .75  .71  .72  .69  .69 
+  18 RR0151   1772 1986                 .70  .84  .72  .51  .67  .84  .69 
+  19 RR0161   1796 1986                      .70  .77  .68  .71  .69  .72 
+  20 RR0171   1691 1986  .37  .48  .52  .68  .78  .69  .71  .76  .69  .69 
+  21 RR0172   1776 1986                      .52  .62  .82  .79  .73  .71 
+  22 RR0182   1799 1986                      .42  .59  .71  .69  .69  .72 
+  23 RR0192   1679 1986  .36  .58  .72  .83  .86  .86  .77  .68  .76  .72 
+  24 RR0191   1764 1986                 .59  .81  .80  .67  .59  .73  .80 
+  25 RR0201   1768 1986                 .83  .71  .64  .63  .68  .84  .84 
+ Av segment correlation  .52  .61  .62  .65  .70  .68  .65  .67  .69  .72 
+
+ FLAGGED SEGMENTS: ny011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 RR0021   1750 1799     B     .256        -5      .269   .013  weak at every lag
+   1 RR0021   1775 1824     B     .036         8      .381   .345
+   1 RR0021   1900 1949     B     .377        -8      .443   .066
+
+ DESCRIPTIVE STATISTICS: ny011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RR0021   1695 1986    292     10      3    .464   1.05   3.34   .784   .870   .281   1.96   .288   .006   3
+   2 RR0032   1734 1986    253      8      0    .575   1.11   2.80   .456   .741   .215   2.20   .239   .014   1
+   3 RR0041   1675 1986    312     10      0    .622    .81   1.89   .319   .801   .190   1.70   .192  -.003   3
+   4 RR0042   1716 1986    271      9      0    .632    .90   2.57   .381   .819   .192   1.75   .204   .002   3
+   5 RR0062   1710 1984    275      9      0    .752   1.03   2.81   .630   .917   .223   1.72   .231   .014   1
+   6 RR0071   1677 1986    310     10      0    .721    .77   1.85   .326   .788   .211   1.84   .226  -.003   1
+   7 RR0082   1728 1984    257      8      0    .692    .89   2.54   .504   .839   .237   2.21   .259  -.008   1
+   8 RR0091   1761 1986    226      7      0    .719    .73   2.32   .337   .804   .200   1.70   .214   .035   1
+   9 RR0092   1695 1986    292     10      0    .577    .55   2.07   .423   .924   .203   1.91   .211  -.003   3
+  10 RR0101   1781 1986    206      6      0    .729   1.47   3.75   .491   .653   .218   1.81   .218  -.017   3
+  11 RR0102   1725 1986    262      8      0    .693   1.47   3.53   .506   .683   .235   1.67   .222  -.009   3
+  12 RR0111   1710 1986    277      9      0    .635    .41   2.73   .372   .883   .285   1.99   .281   .003   3
+  13 RR0112   1658 1986    329     10      0    .561    .46   1.62   .318   .894   .280   1.77   .269  -.020   3
+  14 RR0122   1786 1969    184      5      0    .613   1.16   2.83   .693   .855   .268   1.96   .290  -.015   3
+  15 RR0132   1722 1986    265      9      0    .712   1.15   3.63   .671   .825   .243   1.64   .237   .003   3
+  16 RR0141   1700 1986    287      9      0    .635    .85   2.65   .577   .877   .236   1.97   .265   .032   1
+  17 RR0142   1791 1986    196      6      0    .714   1.42   4.53   .888   .853   .249   1.70   .252   .033   1
+  18 RR0151   1772 1986    215      7      0    .581   1.39   3.46   .689   .815   .226   2.49   .248  -.003   2
+  19 RR0161   1796 1986    191      6      0    .702   1.11   4.64   .701   .802   .243   1.91   .248   .004   1
+  20 RR0171   1691 1986    296     10      0    .596    .85   3.65   .728   .913   .252   1.86   .252   .041   2
+  21 RR0172   1776 1986    211      6      0    .692   1.14   3.41   .709   .906   .215   1.82   .208  -.001   1
+  22 RR0182   1799 1986    188      6      0    .589   1.24   4.16   .575   .733   .235   1.87   .260   .041   1
+  23 RR0192   1679 1986    308     10      0    .629    .84   2.77   .448   .765   .269   2.30   .284  -.001   2
+  24 RR0191   1764 1986    223      7      0    .655    .81   2.58   .586   .826   .285   2.14   .286  -.002   1
+  25 RR0201   1768 1986    219      7      0    .744   1.11   3.22   .576   .822   .245   1.88   .252   .012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           6345    202      3    .645    .96   4.64   .534   .828   .237   2.49   .245   .006
+
+ DATA CHECKS (rwl.check): ny011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ny011.rwl
+ 25 series, 6345 measurements, 1658-1986, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ny011.rwl, MD5 76d044a8c5273faff289d218bc4efc1c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

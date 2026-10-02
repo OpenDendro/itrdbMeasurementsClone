@@ -1,0 +1,153 @@
+
+ COFECHA-style crossdating report: cana248
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana248.rwl
+      MD5 of measurement file: 41ae632f0805d8cefc186fa02601e6c8
+      Date checked           : 01OCT26
+      Beginning year         : 1796
+      Ending year            : 2003
+      Principal investigators: St. George, S.
+      Site name              : Eva Lake
+      Species information    : PIST Pinus strobus L.
+      Latitude               : 48.7200 N
+      Longitude              : 91.1700 W
+      Elevation              : 424 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.201
+      Avg standard deviation : 0.586
+      Avg autocorrelation    : 0.733
+      Number dated series    : 29
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 2, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 7.87
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana248
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 a0401a   1896 2003                      .60  .65  .54 
+   2 a0401b   1887 2003                      .58  .64  .61 
+   3 a0402a   1914 2003                           .75  .71 
+   4 a0402b   1898 2003                      .76  .74  .60 
+   5 a0403a   1931 2003                                .50 
+   6 a0403b   1931 2003                                .25A
+   7 a0404a   1943 2003                                .50 
+   8 a0404b   1943 2003                                .48 
+   9 a0405a   1850 2003                 .52  .64  .67  .74 
+  10 a0406a   1893 2003                      .70  .67  .53 
+  11 a0406b   1875 2003                      .44  .57  .46 
+  12 a0407a   1865 2003                 .42  .60  .62  .69 
+  13 a0407b   1860 2003                 .43  .68  .63  .56 
+  14 a0408a   1835 2003            .48  .57  .61  .66  .52 
+  15 a0408b   1835 2003            .61  .69  .70  .68  .69 
+  16 a0409a   1929 2003                                .62 
+  17 a0409b   1906 2003                           .59  .57 
+  18 a0410a   1937 2003                                .64 
+  19 a0410b   1937 2003                                .67 
+  20 a0412a   1872 2003                 .39  .55  .52  .51 
+  21 a0412b   1904 2003                           .54  .63 
+  22 a0413a   1796 2003       .57  .53  .66  .68  .56  .46 
+  23 a0416a   1869 2003                 .05B .19B .53  .45 
+  24 a0416b   1816 2003       .23A .26B .16B .31B .48  .35 
+  25 a0417a   1879 2003                      .58  .53  .68 
+  26 a0417b   1880 2003                      .54  .60  .72 
+  27 a0418a   1866 2003                 .43  .42  .49  .53 
+  28 a0418b   1886 2003                      .47  .40  .48 
+  29 a0419a   1822 2003       .49  .52  .63  .57  .57  .64 
+ Av segment correlation       .43  .48  .45  .56  .60  .56 
+
+ FLAGGED SEGMENTS: cana248
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 a0403b   1950 1999     A     .250         0
+  23 a0416a   1875 1924     B     .052         8      .272   .219  weak at every lag
+  23 a0416a   1900 1949     B     .188        -3      .330   .141
+  24 a0416b   1825 1874     A     .230         0
+  24 a0416b   1850 1899     B     .262         3      .374   .111
+  24 a0416b   1875 1924     B     .156        -1      .300   .144  weak at every lag
+  24 a0416b   1900 1949     B     .307        -3      .343   .036
+
+ DESCRIPTIVE STATISTICS: cana248
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 a0401a   1896 2003    108      3      0    .566   2.18   3.84   .726   .766   .187   1.47   .187   .049   1
+   2 a0401b   1887 2003    117      3      0    .583   1.58   3.24   .593   .730   .224   1.46   .220   .039   2
+   3 a0402a   1914 2003     90      2      0    .737   2.83   5.46  1.080   .832   .187   1.39   .175   .046   1
+   4 a0402b   1898 2003    106      3      0    .695   1.88   3.70   .671   .850   .145   1.37   .148   .010   2
+   5 a0403a   1931 2003     73      1      0    .493   2.93   4.78   .962   .752   .193   1.53   .177  -.016   3
+   6 a0403b   1931 2003     73      1      1    .299   2.08   4.76   .786   .759   .220   1.59   .221   .016   2
+   7 a0404a   1943 2003     61      1      0    .425   3.23   5.39   .993   .753   .166   1.54   .178  -.008   1
+   8 a0404b   1943 2003     61      1      0    .454   2.08   4.22   .925   .773   .216   1.93   .254   .034   3
+   9 a0405a   1850 2003    154      4      0    .558   2.00   5.79   .936   .866   .186   1.61   .186  -.013   1
+  10 a0406a   1893 2003    111      3      0    .600   1.94   3.49   .590   .774   .156   1.54   .172   .030   1
+  11 a0406b   1875 2003    129      3      0    .419   1.73   2.96   .502   .791   .142   1.52   .153  -.013   3
+  12 a0407a   1865 2003    139      4      0    .533   2.12   4.43   .686   .677   .210   1.54   .213   .012   1
+  13 a0407b   1860 2003    144      4      0    .368   1.38   2.98   .554   .730   .222   1.65   .234  -.004   1
+  14 a0408a   1835 2003    169      5      0    .570   1.01   1.67   .226   .548   .183   1.47   .168  -.007   1
+  15 a0408b   1835 2003    169      5      0    .661   1.05   1.85   .305   .646   .199   1.49   .193  -.016   1
+  16 a0409a   1929 2003     75      1      0    .624   1.36   2.11   .311   .536   .161   1.43   .172   .029   2
+  17 a0409b   1906 2003     98      2      0    .621   1.04   1.62   .250   .604   .168   1.43   .155   .141   0
+  18 a0410a   1937 2003     67      1      0    .587   2.74   4.01   .536   .392   .174   1.34   .172   .065   1
+  19 a0410b   1937 2003     67      1      0    .630   2.30   4.03   .609   .651   .182   1.44   .178   .063   1
+  20 a0412a   1872 2003    132      4      0    .455   1.69   5.32   .981   .909   .196   1.91   .212  -.014   2
+  21 a0412b   1904 2003    100      2      0    .578   1.99   3.95   .697   .765   .184   1.93   .206  -.020   2
+  22 a0413a   1796 2003    208      6      0    .522   1.08   2.56   .461   .823   .187   1.49   .180  -.020   3
+  23 a0416a   1869 2003    135      4      2    .278   1.01   2.28   .363   .724   .199   1.46   .187   .025   2
+  24 a0416b   1816 2003    188      6      4    .232    .85   2.25   .482   .829   .235   1.95   .256   .008   2
+  25 a0417a   1879 2003    125      3      0    .566   1.11   2.71   .484   .778   .223   1.64   .232   .070   1
+  26 a0417b   1880 2003    124      3      0    .524   1.61   4.00   .732   .731   .270   2.07   .277  -.006   1
+  27 a0418a   1866 2003    138      4      0    .464   1.61   4.04   .663   .656   .228   1.58   .222  -.021   3
+  28 a0418b   1886 2003    118      3      0    .470   1.18   2.17   .373   .423   .251   1.86   .257   .010   2
+  29 a0419a   1822 2003    182      6      0    .566    .65   2.05   .454   .880   .245   1.91   .269   .002   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3461     89      7    .514   1.58   5.79   .586   .733   .201   2.07   .205   .012
+
+ DATA CHECKS (rwl.check): cana248
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana248.rwl
+ 29 series, 3461 measurements, 1796-2003, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file cana248.rwl, MD5 41ae632f0805d8cefc186fa02601e6c8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

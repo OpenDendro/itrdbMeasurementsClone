@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: cana015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana015.rwl
+      MD5 of measurement file: e6cd0e7d2c53c17966583c4d3607a6d2
+      Date checked           : 01OCT26
+      Beginning year         : 1576
+      Ending year            : 1965
+      Principal investigators: Fritts, H.C.
+      Site name              : Kamloops
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 50.7500 N
+      Longitude              : 120.5500 W
+      Elevation              : 822 m
+
+      Series intercorrelation: 0.661
+      Avg mean sensitivity   : 0.364
+      Avg standard deviation : 0.504
+      Avg autocorrelation    : 0.745
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 9, B 5; 4 of the B weak at every lag)
+      Pct problem segments   : 8.28
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 070011   1660 1965                 .82  .90  .91  .83  .78  .83  .80  .81  .84  .81 
+   2 070012   1660 1965                 .89  .91  .82  .71  .75  .81  .76  .81  .82  .82 
+   3 070021   1590 1965  .76  .74  .66  .80  .81  .79  .70  .70  .75  .70  .76  .84  .76 
+   4 070022   1576 1965  .82  .79  .74  .77  .78  .77  .74  .79  .80  .77  .82  .76  .76 
+   5 070031   1730 1965                                .74  .68  .65  .68  .68  .71  .67 
+   6 070032   1730 1965                                .76  .66  .75  .71  .66  .69  .69 
+   7 070041   1690 1965                      .76  .76  .75  .71  .66  .67  .72  .77  .76 
+   8 070042   1690 1965                      .65  .71  .76  .77  .54  .47  .67  .76  .77 
+   9 070051   1630 1965            .39  .20B .23B .27A .27A .38  .14B .32A .34  .25B .41 
+  10 070052   1650 1965                 .30A .40  .40  .32A .32A .20B .33A .27A .29A .42 
+  11 070061   1740 1965                                .80  .75  .58  .60  .66  .79  .79 
+  12 070062   1740 1965                                .69  .67  .72  .74  .76  .78  .75 
+  13 070071   1690 1965                      .84  .84  .82  .62  .56  .71  .78  .79  .74 
+  14 070072   1810 1965                                               .77  .74  .82  .85 
+  15 070081   1790 1965                                          .44  .51  .50  .37  .40 
+  16 070082   1810 1965                                               .41  .43  .53  .53 
+  17 070091   1670 1965                 .83  .91  .89  .79  .70  .59  .62  .70  .76  .78 
+  18 070092   1670 1965                 .75  .81  .83  .79  .69  .67  .73  .76  .81  .75 
+  19 070101   1730 1965                                .67  .74  .43  .52  .68  .65  .64 
+  20 070102   1730 1965                                .82  .76  .54  .55  .65  .61  .61 
+ Av segment correlation  .79  .76  .60  .67  .73  .72  .70  .68  .59  .62  .66  .68  .68 
+
+ FLAGGED SEGMENTS: cana015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 070051   1675 1724     B     .201        10      .226   .025  weak at every lag
+   9 070051   1700 1749     B     .235        10      .246   .012  weak at every lag
+   9 070051   1725 1774     A     .267         0
+   9 070051   1750 1799     A     .269         0
+   9 070051   1800 1849     B     .143        -9      .275   .132  weak at every lag
+   9 070051   1825 1874     A     .320         0
+   9 070051   1875 1924     B     .255        -1      .401   .146
+  10 070052   1675 1724     A     .295         0
+  10 070052   1750 1799     A     .324         0
+  10 070052   1775 1824     A     .317         0
+  10 070052   1800 1849     B     .200        -6      .236   .036  weak at every lag
+  10 070052   1825 1874     A     .326         0
+  10 070052   1850 1899     A     .267         0
+  10 070052   1875 1924     A     .290         0
+
+ DESCRIPTIVE STATISTICS: cana015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 070011   1660 1965    306     10      0    .822    .80   3.13   .506   .584   .470   2.20   .405   .003   1
+   2 070012   1660 1965    306     10      0    .807    .79   3.00   .509   .609   .484   2.29   .410   .071   0
+   3 070021   1590 1965    376     13      0    .736    .46   2.69   .386   .804   .460   2.00   .387  -.003   3
+   4 070022   1576 1965    390     13      0    .753    .69   2.53   .491   .768   .417   2.10   .355  -.007   3
+   5 070031   1730 1965    236      7      0    .675    .73   2.24   .381   .744   .292   1.68   .262   .001   3
+   6 070032   1730 1965    236      7      0    .689    .82   2.22   .370   .714   .283   1.76   .248   .056   0
+   7 070041   1690 1965    276      9      0    .737    .65   1.93   .313   .669   .337   2.05   .316   .007   2
+   8 070042   1690 1965    276      9      0    .678    .78   2.52   .471   .733   .374   2.50   .355  -.018   1
+   9 070051   1630 1965    336     11      7    .283    .98   4.03   .762   .919   .239   1.74   .232  -.002   1
+  10 070052   1650 1965    316     10      7    .322    .88   3.06   .634   .907   .224   1.52   .208   .007   3
+  11 070061   1740 1965    226      7      0    .701    .93   2.83   .514   .799   .274   1.72   .252   .008   1
+  12 070062   1740 1965    226      7      0    .717   1.07   3.09   .632   .848   .280   1.72   .256  -.003   1
+  13 070071   1690 1965    276      9      0    .745    .86   2.62   .535   .695   .432   2.00   .358   .003   1
+  14 070072   1810 1965    156      4      0    .784    .84   1.81   .372   .600   .358   1.81   .318   .016   1
+  15 070081   1790 1965    176      5      0    .467   1.60   4.28   .755   .695   .285   1.70   .277   .005   2
+  16 070082   1810 1965    156      4      0    .440   1.81   4.09   .743   .630   .283   1.71   .282   .039   1
+  17 070091   1670 1965    296     10      0    .737    .56   2.62   .540   .841   .455   2.20   .385  -.006   2
+  18 070092   1670 1965    296     10      0    .725    .64   2.33   .471   .801   .424   2.01   .367   .054   0
+  19 070101   1730 1965    236      7      0    .646    .61   2.21   .376   .662   .390   2.12   .332   .061   0
+  20 070102   1730 1965    236      7      0    .693    .62   2.32   .388   .681   .346   1.96   .304   .017   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5334    169     14    .661    .81   4.28   .504   .745   .364   2.50   .321   .014
+
+ DATA CHECKS (rwl.check): cana015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana015.rwl
+ 20 series, 5334 measurements, 1576-1965, 0.01 mm precision
+ 0 error(s), 3 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1590-1965 but the measurements cover 1576-1965
+   RWL_SERIES_OUTLIER (2)
+     070051: correlates with the rest of the collection at r = 0.316 where the collection median is 0.715 (6 MAD below it); it does not fit the collection it is in
+     070052: correlates with the rest of the collection at r = 0.335 where the collection median is 0.715 (5.7 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file cana015.rwl, MD5 e6cd0e7d2c53c17966583c4d3607a6d2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: or125
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or125.rwl
+      MD5 of measurement file: b8c085be1b88aeb153c0c439e5aabc3d
+      Date checked           : 01OCT26
+      Beginning year         : 1437
+      Ending year            : 1750
+      Principal investigators: Black, B.A.; Struble, W.T.; Wetherell, L.; Roering, J.J.
+      Site name              : Klickitat
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 44.4800 N
+      Longitude              : 123.6590 W
+      Elevation              : 369 m
+
+      Series intercorrelation: 0.646
+      Avg mean sensitivity   : 0.179
+      Avg standard deviation : 0.869
+      Avg autocorrelation    : 0.841
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 1.92
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or125
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 1625 1650 1675 1700 
+                        1549 1574 1599 1624 1649 1674 1699 1724 1749 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 KLT02A   1508 1747       .70  .78  .73  .72  .72  .69  .69      
+   2 KLT02B   1508 1745       .67  .71  .70  .70  .71  .72  .77      
+   3 KLT03A   1517 1750       .56  .76  .79  .81  .74  .61  .59  .59 
+   4 KLT03B   1517 1749       .54  .80  .78  .76  .72  .67  .58  .57 
+   5 KLT04A   1589 1749                      .76  .58  .68  .51  .32A
+   6 KLT04B   1587 1749                      .74  .49  .58  .54  .43 
+   7 KLT06A   1437 1690  .82  .71  .73  .65  .59  .65                
+   8 KLT06B   1438 1684  .74  .61  .67  .72  .60  .53                
+ Av segment correlation  .78  .63  .74  .73  .71  .64  .66  .61  .48 
+
+ FLAGGED SEGMENTS: or125
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 KLT04A   1700 1749     A     .324         0
+
+ DESCRIPTIVE STATISTICS: or125
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KLT02A   1508 1747    240      7      0    .705   1.81   3.79   .609   .788   .167   1.51   .186  -.013   3
+   2 KLT02B   1508 1745    238      7      0    .691   1.79   4.31   .627   .786   .174   1.52   .189  -.021   3
+   3 KLT03A   1517 1750    234      8      0    .671   1.40   4.40   .635   .798   .210   1.80   .224   .000   2
+   4 KLT03B   1517 1749    233      8      0    .662   1.49   4.41   .603   .766   .212   1.65   .214  -.001   2
+   5 KLT04A   1589 1749    161      5      1    .566   1.65   3.55   .679   .830   .169   1.65   .186  -.015   2
+   6 KLT04B   1587 1749    163      5      0    .585   1.74   4.73   .795   .866   .161   1.67   .180  -.012   2
+   7 KLT06A   1437 1690    254      6      0    .628   1.54  11.88  1.436   .943   .171   1.53   .183  -.001   1
+   8 KLT06B   1438 1684    247      6      0    .616   1.54  11.82  1.417   .947   .167   1.60   .183   .035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1770     52      1    .646   1.61  11.88   .869   .841   .179   1.80   .194  -.002
+
+ DATA CHECKS (rwl.check): or125
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or125.rwl
+ 8 series, 1770 measurements, 1437-1750, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file or125.rwl, MD5 b8c085be1b88aeb153c0c439e5aabc3d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

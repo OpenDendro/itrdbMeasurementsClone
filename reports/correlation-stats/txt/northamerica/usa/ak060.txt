@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: ak060
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak060.rwl
+      MD5 of measurement file: c8cb641cd95312c466ea21d3988eb41e
+      Date checked           : 01OCT26
+      Beginning year         : 1621
+      Ending year            : 2002
+      Principal investigators: D'Arrigo, R.D.; Mashig, E.; Frank, D.C.; Wilson, R.J.S.; Jacoby, G.C.
+      Site name              : Burnt Over
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 65.2200 N
+      Longitude              : 162.2500 W
+      Elevation              : 259 m
+
+      Series intercorrelation: 0.602
+      Avg mean sensitivity   : 0.221
+      Avg standard deviation : 0.203
+      Avg autocorrelation    : 0.776
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 2.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 BO01a    1724 1980            .51  .67  .68  .59  .49  .54  .56  .48      
+   2 BO01b    1642 1983  .63  .66  .75  .83  .68  .61  .68  .59  .62  .58      
+   3 BO02a    1877 1990                                          .62  .60      
+   4 BO02b    1877 1992                                          .62  .64      
+   5 BO03a    1633 1997  .57  .60  .43  .48  .64  .58  .49  .47  .56  .56      
+   6 BO04a    1884 2002                                          .75  .74  .66 
+   7 BO04b    1849 2002                                .60  .79  .76  .74  .73 
+   8 BO05a    1621 1939  .66  .69  .73  .61  .34B .38  .63  .73                
+   9 BO05b    1665 1939  .52  .74  .68  .61  .54  .48  .67  .77                
+  10 BO06a    1815 1962                           .23B .48  .65  .55           
+  11 BO07a    1670 2002  .78  .75  .68  .75  .53  .48  .69  .61  .60  .68  .63 
+  12 BO07b    1711 2002       .71  .72  .71  .67  .74  .63  .72  .77  .49  .38 
+  13 BO07c    1709 2002       .75  .74  .72  .60  .59  .64  .70  .73  .72  .80 
+  14 BO10a    1696 2002  .58  .73  .72  .63  .45  .54  .69  .69  .59  .53  .63 
+  15 BO10b    1665 2002  .57  .69  .69  .55  .28A .33B .49  .60  .73  .66  .65 
+  16 BO21a    1728 2002            .77  .76  .71  .57  .63  .84  .90  .77  .68 
+  17 BO21b    1705 2002       .73  .72  .80  .66  .58  .72  .77  .74  .70  .71 
+  18 BO22a    1773 2002                 .62  .82  .79  .74  .78  .84  .71  .68 
+  19 BO22b    1808 2002                           .71  .74  .71  .77  .75  .67 
+  20 BO25a    1627 2002  .69  .77  .72  .66  .55  .54  .66  .72  .73  .55  .46 
+  21 BO25b    1696 2002  .72  .77  .72  .70  .70  .63  .63  .76  .74  .36  .43 
+  22 BO26a    1750 2002                 .72  .76  .74  .85  .79  .72  .74  .72 
+  23 BO26b    1768 2002                 .68  .75  .66  .69  .73  .66  .67  .69 
+  24 BO27b    1827 2002                                .60  .80  .82  .73  .71 
+ Av segment correlation  .64  .72  .68  .68  .61  .57  .64  .70  .70  .64  .64 
+
+ FLAGGED SEGMENTS: ak060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 BO05a    1800 1849     B     .336        -6      .364   .028
+  10 BO06a    1825 1874     B     .227         8      .290   .062  weak at every lag
+  15 BO10b    1800 1849     A     .284         0
+  15 BO10b    1825 1874     B     .328       -10      .397   .068
+
+ DESCRIPTIVE STATISTICS: ak060
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BO01a    1724 1980    257      8      0    .536    .33   1.57   .249   .816   .251   1.59   .247   .025   3
+   2 BO01b    1642 1983    342     10      0    .431    .37   1.73   .250   .816   .242   3.29   .280  -.003   2
+   3 BO02a    1877 1990    114      2      0    .544    .66   1.34   .210   .607   .202   1.46   .207   .012   1
+   4 BO02b    1877 1992    116      2      0    .461    .86   1.71   .214   .460   .198   1.61   .190   .010   2
+   5 BO03a    1633 1997    365     10      0    .459    .43    .98   .149   .674   .222   1.80   .216   .003   1
+   6 BO04a    1884 2002    119      3      0    .699    .27    .56   .120   .772   .271   1.73   .248  -.011   1
+   7 BO04b    1849 2002    154      5      0    .702    .31    .75   .115   .671   .244   1.64   .218  -.015   0
+   8 BO05a    1621 1939    319      8      1    .479    .55   1.61   .308   .904   .190   1.55   .182  -.002   3
+   9 BO05b    1665 1939    275      8      0    .592    .64   1.77   .343   .904   .168   1.65   .169  -.021   3
+  10 BO06a    1815 1962    148      4      1    .476    .57   1.78   .279   .844   .188   1.54   .199  -.001   3
+  11 BO07a    1670 2002    333     11      0    .623    .36   1.02   .208   .886   .204   1.64   .196   .009   2
+  12 BO07b    1711 2002    292     10      0    .646    .30    .86   .172   .896   .208   1.59   .198  -.001   2
+  13 BO07c    1709 2002    294     10      0    .707    .39   1.10   .209   .860   .213   1.74   .206  -.001   2
+  14 BO10a    1696 2002    307     11      0    .615    .32    .92   .168   .868   .200   1.54   .191  -.012   1
+  15 BO10b    1665 2002    338     11      2    .542    .36    .91   .178   .829   .220   2.51   .224   .005   1
+  16 BO21a    1728 2002    275      9      0    .746    .41   1.49   .231   .795   .240   2.09   .231  -.010   1
+  17 BO21b    1705 2002    298     10      0    .720    .43   1.43   .222   .768   .241   2.27   .245  -.000   1
+  18 BO22a    1773 2002    230      8      0    .713    .66   1.44   .194   .495   .227   2.08   .201  -.004   0
+  19 BO22b    1808 2002    195      6      0    .717    .67   1.25   .194   .610   .202   1.60   .181  -.022   0
+  20 BO25a    1627 2002    376     11      0    .487    .27    .82   .154   .846   .255   1.86   .246  -.003   1
+  21 BO25b    1696 2002    307     11      0    .645    .30    .81   .169   .860   .238   2.30   .244   .018   1
+  22 BO26a    1750 2002    253      8      0    .726    .45   1.09   .175   .680   .222   1.58   .217   .007   1
+  23 BO26b    1768 2002    235      8      0    .660    .43   1.05   .175   .705   .229   1.63   .211   .049   0
+  24 BO27b    1827 2002    176      5      0    .669    .59    .98   .148   .438   .211   1.50   .206  -.030   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           6118    189      4    .602    .43   1.78   .203   .776   .221   3.29   .217   .001
+
+ DATA CHECKS (rwl.check): ak060
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak060.rwl
+ 24 series, 6118 measurements, 1621-2002, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file ak060.rwl, MD5 c8cb641cd95312c466ea21d3988eb41e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

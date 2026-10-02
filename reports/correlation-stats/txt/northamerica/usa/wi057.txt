@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: wi057
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi057.rwl
+      MD5 of measurement file: 6db3375b224bda1e35e1c1cc02471ae3
+      Date checked           : 01OCT26
+      Beginning year         : 1730
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Wisnefske
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 42.6950 N
+      Longitude              : 89.8100 W
+      Elevation              : 270 m
+
+      Series intercorrelation: 0.531
+      Avg mean sensitivity   : 0.180
+      Avg standard deviation : 0.469
+      Avg autocorrelation    : 0.650
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 6.10
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi057
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 WSN001A  1935 2014                                .63 
+   2 WSN001B  1906 2014                           .47  .36 
+   3 WSN002A  1786 2014  .51  .75  .83  .68  .60  .44  .49 
+   4 WSN002B  1816 2014       .70  .70  .42  .32A .17B .28A
+   5 WSN003A  1760 2014  .39  .67  .60  .29B .32B .45  .51 
+   6 WSN003B  1730 2014  .35  .68  .76  .60  .46  .52  .59 
+   7 WSN004A  1801 2014       .45  .70  .42  .54  .67  .70 
+   9 WSN005A  1870 2014                 .60  .56  .70  .47 
+  10 WSN005B  1933 2014                                .57 
+  11 WSN006A  1782 2014  .52  .56  .67  .63  .59  .43  .50 
+  12 WSN006B  1796 2014  .49  .56  .64  .63  .55  .52  .63 
+  13 WSN007A  1784 2014  .46  .59  .71  .66  .46  .54  .42 
+  14 WSN007B  1835 2014            .68  .61  .66  .60  .43 
+  15 WSN008A  1884 2014                      .70  .63  .62 
+  16 WSN008B  1929 2014                                .53 
+  17 WSN009A  1891 2014                      .78  .74  .73 
+  18 WSN009B  1899 2014                      .57  .64  .70 
+  19 WSN010A  1894 2014                      .53  .64  .69 
+  20 WSN010   1922 2014                           .58  .64 
+ Av segment correlation  .45  .62  .70  .55  .55  .54  .55 
+
+ FLAGGED SEGMENTS: wi057
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 WSN002B  1900 1949     A     .317         0
+   4 WSN002B  1925 1974     B     .169         8      .310   .140  weak at every lag
+   4 WSN002B  1950 1999     A     .282         0
+   5 WSN003A  1875 1924     B     .295        -4      .309   .014  weak at every lag
+   5 WSN003A  1900 1949     B     .318         5      .381   .063
+
+ DESCRIPTIVE STATISTICS: wi057
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WSN001A  1935 2014     80      1      0    .623   3.44   4.97   .699  -.052   .243   1.42   .179  -.027   1
+   2 WSN001B  1906 2014    109      2      0    .362   2.54   5.09   .813   .780   .154   1.44   .159   .006   1
+   3 WSN002A  1786 2014    229      7      0    .639    .81   1.49   .209   .741   .149   1.57   .158   .005   1
+   4 WSN002B  1816 2014    199      6      3    .394    .76   2.43   .290   .586   .174   2.56   .260   .002   2
+   5 WSN003A  1760 2014    255      7      2    .468    .63   1.19   .207   .843   .146   1.52   .151  -.004   1
+   6 WSN003B  1730 2014    285      7      0    .534    .68   1.39   .217   .736   .166   1.60   .179  -.017   1
+   7 WSN004A  1801 2014    214      6      0    .494   1.32   3.16   .407   .562   .200   1.77   .208  -.014   1
+   8 WSN004B  1980 2014     35      0      0    .476   1.33   2.21   .324  -.086   .249   1.55   .235  -.130   0
+   9 WSN005A  1870 2014    145      4      0    .419   1.79   3.55   .561   .648   .211   2.24   .212  -.012   2
+  10 WSN005B  1933 2014     82      1      0    .301   2.91  22.63  2.892   .598   .221   2.19   .254   .062   0
+  11 WSN006A  1782 2014    233      7      0    .564   1.01   1.78   .331   .810   .153   1.55   .159  -.002   2
+  12 WSN006B  1796 2014    219      7      0    .566   1.04   2.24   .344   .805   .162   1.45   .158  -.007   3
+  13 WSN007A  1784 2014    231      7      0    .522    .75   1.76   .195   .555   .171   1.99   .179  -.007   1
+  14 WSN007B  1835 2014    180      5      0    .535   1.01   2.27   .356   .728   .183   1.80   .195   .005   1
+  15 WSN008A  1884 2014    131      3      0    .628   1.40   2.45   .372   .634   .178   1.40   .148  -.079   0
+  16 WSN008B  1929 2014     86      1      0    .464   1.38   7.39  1.225   .878   .163   1.62   .157  -.003   1
+  17 WSN009A  1891 2014    124      3      0    .720   1.97   3.35   .459   .492   .183   1.48   .173  -.023   3
+  18 WSN009B  1899 2014    116      3      0    .633   2.30   3.99   .670   .470   .225   1.79   .225   .101   0
+  19 WSN010A  1894 2014    121      3      0    .608   2.04   4.11   .625   .483   .242   1.62   .216   .053   0
+  20 WSN010   1922 2014     93      2      0    .632   2.44   4.98   .835   .548   .242   1.76   .213  -.012   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3167     82      5    .531   1.32  22.63   .469   .650   .180   2.56   .186  -.003
+
+ DATA CHECKS (rwl.check): wi057
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi057.rwl
+ 20 series, 3167 measurements, 1730-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wi057.rwl, MD5 6db3375b224bda1e35e1c1cc02471ae3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

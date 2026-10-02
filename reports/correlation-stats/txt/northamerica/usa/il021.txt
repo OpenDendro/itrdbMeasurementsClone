@@ -1,0 +1,174 @@
+
+ COFECHA-style crossdating report: il021
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : il021.rwl
+      MD5 of measurement file: 38821e7c7593bb02c99a15ecb47ba5e6
+      Date checked           : 01OCT26
+      Beginning year         : 1851
+      Ending year            : 2014
+      Principal investigators: Therrell, M.D.; Meko, D.M.; Maxwell, J.T.; Matheus, T.J.
+      Site name              : Round Bluff
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 37.5287 N
+      Longitude              : 89.9774 W
+      Elevation              : 213 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.266
+      Avg standard deviation : 0.773
+      Avg autocorrelation    : 0.621
+      Number dated series    : 41
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.58
+
+
+ CORRELATION OF SERIES BY SEGMENTS: il021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 RBO01A   1915 2014       .56  .51 
+   2 RBO01B   1909 2014       .63  .68 
+   3 RBO02A   1950 2014            .74 
+   5 RBO03A   1912 2014       .44  .40 
+   6 RBO03B   1912 2014       .65  .58 
+   7 RBO04A   1930 2014            .59 
+   8 RBO04B   1930 2014            .42 
+  10 RBO05A   1933 2014            .69 
+  11 RBO05B   1914 2014       .62  .74 
+  12 RBO06A   1905 2014       .53  .61 
+  13 RBO06B   1914 2014       .42  .62 
+  14 RBO07A   1929 2014            .58 
+  15 RBO07B   1929 2014            .50 
+  16 RBO08A   1876 2014  .42  .32A .66 
+  17 RBO08B   1886 2014  .72  .71  .71 
+  19 RBO10A   1891 2014  .59  .47  .52 
+  20 RBO10B   1903 2014       .79  .72 
+  21 RBO11A   1942 2014            .68 
+  22 RBO11B   1935 2014            .76 
+  23 RBO12A   1851 2014  .60  .68  .77 
+  24 RBO12B   1861 2014  .53  .68  .79 
+  25 RBO13A   1946 2014            .58 
+  26 RBO13B   1934 2014            .64 
+  27 RBO14A   1900 2014  .43  .49  .44 
+  28 RBO14B   1948 2014            .65 
+  29 RBO15A   1880 2014  .69  .80  .83 
+  30 RBO15B   1897 2014  .58  .72  .61 
+  31 RBO16A   1921 2014       .27B .84 
+  32 RBO17A   1880 2014  .60  .65  .64 
+  33 RBO17B   1888 2014  .59  .71  .75 
+  34 RBO18A   1892 2014  .35  .36  .50 
+  35 RBO19A   1873 2014  .38  .47  .53 
+  36 RBO19B   1907 2014       .32A .58 
+  37 RBO20A   1950 2014            .55 
+  38 RBO20B   1913 2014       .41  .58 
+  39 RBO18B   1923 2014       .32A .19B
+  40 RBO21A   1927 2014            .56 
+  41 RBO21B   1879 2014  .59  .78  .73 
+ Av segment correlation  .54  .55  .62 
+
+ FLAGGED SEGMENTS: il021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 RBO08A   1925 1974     A     .321         0
+  31 RBO16A   1925 1974     B     .275         1      .352   .078
+  36 RBO19B   1925 1974     A     .323         0
+  39 RBO18B   1925 1974     A     .325         0
+  39 RBO18B   1950 1999     B     .190        -6      .209   .019  weak at every lag
+
+ DESCRIPTIVE STATISTICS: il021
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RBO01A   1915 2014    100      2      0    .560   2.49   5.41   .789   .394   .270   2.10   .269   .008   1
+   2 RBO01B   1909 2014    106      2      0    .671   2.32   9.39  1.426   .592   .269   1.76   .259   .011   3
+   3 RBO02A   1950 2014     65      1      0    .681   1.19   4.03   .805   .634   .398   2.00   .368   .051   0
+   4 RBO02B   1956 2014     59      0      0    .732   1.67   5.26  1.035   .589   .343   2.21   .364   .180   0
+   5 RBO03A   1912 2014    103      2      0    .421    .95   3.04   .537   .661   .313   2.09   .344   .072   2
+   6 RBO03B   1912 2014    103      2      0    .587    .90   2.79   .494   .529   .309   2.52   .372  -.041   1
+   7 RBO04A   1930 2014     85      1      0    .591   1.62   8.62  1.286   .789   .214   1.76   .211  -.005   1
+   8 RBO04B   1930 2014     85      1      0    .446   1.50   7.16   .974   .763   .202   1.70   .193   .037   0
+   9 RBO04C   1970 2014     45      0      0    .483   2.18  14.28  2.551   .901   .260   1.58   .260  -.014   1
+  10 RBO05A   1933 2014     82      1      0    .673   2.33   5.11  1.165   .695   .247   1.64   .230   .070   0
+  11 RBO05B   1914 2014    101      2      0    .616   2.41   8.98  1.406   .677   .238   1.99   .241   .074   0
+  12 RBO06A   1905 2014    110      2      0    .579    .93   3.07   .539   .571   .350   2.13   .381   .047   1
+  13 RBO06B   1914 2014    101      2      0    .530   1.02   3.02   .492   .649   .276   2.13   .324  -.019   2
+  14 RBO07A   1929 2014     86      1      0    .595   1.99   6.46  1.095   .693   .221   1.48   .165   .024   2
+  15 RBO07B   1929 2014     86      1      0    .554   2.27   5.74   .958   .736   .170   1.43   .158   .025   0
+  16 RBO08A   1876 2014    139      3      1    .413   1.31   3.57   .614   .608   .275   2.22   .302  -.014   1
+  17 RBO08B   1886 2014    129      3      0    .625   1.41   3.48   .573   .493   .306   2.24   .294   .064   0
+  18 RBO09A   1956 2014     59      0      0    .659   2.21   3.99   .656   .549   .221   1.50   .206   .038   0
+  19 RBO10A   1891 2014    124      3      0    .554   1.13   5.54   .777   .581   .291   2.19   .303  -.026   2
+  20 RBO10B   1903 2014    112      2      0    .661   1.47   3.03   .492   .410   .257   1.83   .262  -.008   2
+  21 RBO11A   1942 2014     73      1      0    .580   1.91   5.62   .824   .506   .265   1.55   .258   .064   1
+  22 RBO11B   1935 2014     80      1      0    .660   1.83   4.91   .624   .225   .280   2.10   .279   .098   0
+  23 RBO12A   1851 2014    164      3      0    .543   1.74   5.04   .865   .747   .256   1.96   .254  -.019   3
+  24 RBO12B   1861 2014    154      3      0    .519   1.44   5.16   .652   .756   .216   1.65   .216   .018   3
+  25 RBO13A   1946 2014     69      1      0    .576   2.60  14.97  2.155   .879   .231   1.44   .207   .009   1
+  26 RBO13B   1934 2014     81      1      0    .644   2.09   3.98   .662   .308   .301   1.74   .265  -.007   0
+  27 RBO14A   1900 2014    115      3      0    .423    .70   1.95   .317   .656   .249   1.95   .233   .080   0
+  28 RBO14B   1948 2014     67      1      0    .649    .88   2.10   .372   .715   .218   1.67   .226   .011   1
+  29 RBO15A   1880 2014    135      3      0    .646   1.28   3.67   .598   .643   .295   1.81   .263  -.006   2
+  30 RBO15B   1897 2014    118      3      0    .558   1.28   3.46   .637   .632   .263   2.17   .278   .104   1
+  31 RBO16A   1921 2014     94      2      1    .363   1.89   3.78   .776   .450   .305   2.33   .349  -.003   1
+  32 RBO17A   1880 2014    135      3      0    .626   1.36   4.84   .656   .586   .278   1.96   .263   .031   3
+  33 RBO17B   1888 2014    127      3      0    .618   1.60   4.44   .645   .559   .267   1.93   .258   .021   1
+  34 RBO18A   1892 2014    123      3      0    .350   1.09  10.68  1.207   .939   .214   1.72   .211   .030   0
+  35 RBO19A   1873 2014    142      3      0    .385   1.26   3.24   .602   .591   .291   2.69   .328   .009   2
+  36 RBO19B   1907 2014    108      2      1    .260   1.51   3.63   .751   .778   .268   1.91   .264  -.004   2
+  37 RBO20A   1950 2014     65      1      0    .566   1.80   2.60   .419   .336   .205   1.43   .194  -.000   0
+  38 RBO20B   1913 2014    102      2      0    .497   1.33   2.92   .544   .692   .212   1.78   .214   .119   0
+  39 RBO18B   1923 2014     92      2      2    .212    .91   2.01   .293   .663   .164   1.58   .152  -.048   0
+  40 RBO21A   1927 2014     88      1      0    .549   1.11   3.48   .606   .475   .362   2.65   .378   .030   1
+  41 RBO21B   1879 2014    136      3      0    .543   1.00   3.97   .605   .687   .300   2.15   .318  -.009   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4148     76      5    .539   1.51  14.97   .773   .621   .266   2.69   .268   .024
+
+ DATA CHECKS (rwl.check): il021
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/il021.rwl
+ 41 series, 4148 measurements, 1851-2014, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     RBO18B: correlates with the rest of the collection at r = 0.154 where the collection median is 0.563 (4.6 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file il021.rwl, MD5 38821e7c7593bb02c99a15ecb47ba5e6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

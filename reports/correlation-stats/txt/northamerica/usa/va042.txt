@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: va042
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : va042.rwl
+      MD5 of measurement file: 909736f39215e02b5c55a111129a8d9e
+      Date checked           : 01OCT26
+      Beginning year         : 1921
+      Ending year            : 2020
+      Principal investigators: Hedrick, N.G.; Copenheaver, C.A.
+      Site name              : Price Mountain 2
+      Species information    : PIPU Pinus pungens Lamb.
+      Latitude               : 37.1872 N
+      Longitude              : 80.4831 W
+      Elevation              : 675 m
+
+      Series intercorrelation: 0.539
+      Avg mean sensitivity   : 0.349
+      Avg standard deviation : 0.816
+      Avg autocorrelation    : 0.779
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 10.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: va042
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 FBTM11B  1934 2020  .79 
+   2 FBTM02B  1925 2020  .40 
+   3 FBTM17A  1932 2020  .69 
+   4 FBTM10A  1928 2020  .65 
+   5 FBTM23A  1935 2020  .23B
+   6 FBTM20A  1933 2020  .68 
+   7 FBTM01A  1943 2019  .64 
+   8 FBTM14A  1921 2020  .52 
+   9 FBTM15B  1939 2020  .63 
+  10 FBTM19A  1925 2018  .64 
+  11 FBTM18B  1921 2020  .19B
+  12 FBTM08A  1931 2019  .56 
+  13 FBTM04A  1921 2020  .74 
+  14 FBTM03B  1924 2020  .49 
+  15 FBTM05B  1929 2020  .51 
+  16 FBTM22B  1921 2020  .33 
+  17 FBTM12B  1924 2018  .40 
+  19 FBTM07B  1922 2020  .64 
+  20 FBTM09B  1925 2020  .45 
+ Av segment correlation  .54 
+
+ FLAGGED SEGMENTS: va042
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 FBTM23A  1950 1999     B     .232         4      .267   .035  weak at every lag
+  11 FBTM18B  1950 1999     B     .192         2      .231   .039  weak at every lag
+
+ DESCRIPTIVE STATISTICS: va042
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FBTM11B  1934 2020     87      1      0    .807   1.50   3.31   .731   .613   .409   2.04   .370  -.034   3
+   2 FBTM02B  1925 2020     96      1      0    .362   1.86   4.88  1.017   .787   .260   1.86   .298   .048   3
+   3 FBTM17A  1932 2020     89      1      0    .723   1.59   3.25   .569   .577   .262   1.71   .261  -.020   2
+   4 FBTM10A  1928 2020     93      1      0    .664   1.25   4.47   .889   .728   .471   2.35   .442  -.019   2
+   5 FBTM23A  1935 2020     86      1      1    .340   1.19   3.12   .717   .824   .308   1.97   .333   .014   3
+   6 FBTM20A  1933 2020     88      1      0    .676   1.16   2.38   .498   .669   .293   1.66   .271  -.021   3
+   7 FBTM01A  1943 2019     77      1      0    .540   1.37   3.99   .662   .710   .267   1.90   .312   .077   1
+   8 FBTM14A  1921 2020    100      1      0    .592   1.35   3.96   .828   .766   .387   2.32   .362  -.014   3
+   9 FBTM15B  1939 2020     82      1      0    .640   1.10   4.10   .700   .706   .345   2.12   .369   .045   1
+  10 FBTM19A  1925 2018     94      1      0    .501   1.40   3.32   .750   .810   .295   2.06   .290  -.077   3
+  11 FBTM18B  1921 2020    100      1      1    .393   1.21   6.42  1.313   .909   .428   1.90   .389  -.003   3
+  12 FBTM08A  1931 2019     89      1      0    .450   1.44   2.81   .632   .773   .236   1.77   .261  -.034   3
+  13 FBTM04A  1921 2020    100      1      0    .738   1.41   4.64  1.037   .825   .393   2.26   .392  -.060   3
+  14 FBTM03B  1924 2020     97      1      0    .537   1.53   4.43  1.173   .892   .414   2.18   .369   .046   1
+  15 FBTM05B  1929 2020     92      1      0    .558    .92   4.57   .794   .837   .376   1.82   .336   .001   1
+  16 FBTM22B  1921 2020    100      1      0    .451    .94   3.06   .744   .829   .414   2.39   .409   .001   1
+  17 FBTM12B  1924 2018     95      1      0    .412    .88   3.86   .779   .845   .355   2.44   .372  -.004   2
+  18 FBTM13B  1924 1992     69      0      0    .285   1.14   2.26   .556   .770   .276   1.74   .269   .054   1
+  19 FBTM07B  1922 2020     99      1      0    .595   1.06   4.37   .822   .774   .370   2.33   .366  -.031   3
+  20 FBTM09B  1925 2020     96      1      0    .478   1.08   3.99   .882   .857   .362   1.94   .332  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1829     19      2    .539   1.27   6.42   .816   .779   .349   2.44   .342  -.004
+
+ DATA CHECKS (rwl.check): va042
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/va042.rwl
+ 20 series, 1829 measurements, 1921-2020, 0.002 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file va042.rwl, MD5 909736f39215e02b5c55a111129a8d9e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

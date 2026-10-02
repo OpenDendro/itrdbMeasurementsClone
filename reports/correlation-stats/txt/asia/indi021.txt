@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: indi021
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indi021.rwl
+      MD5 of measurement file: 4c67cf1f94c3779b3fb2623af6452003
+      Date checked           : 01OCT26
+      Beginning year         : 1657
+      Ending year            : 1990
+      Principal investigators: Borgaonkar, H.P.; Pant, G.B.; Rupa Kumar, K.
+      Site name              : Jageswar
+      Species information    : CDDE Cedrus deodara (D. Don) G. Don
+      Latitude               : 29.7700 N
+      Longitude              : 79.1700 E
+      Elevation              : 2000 m
+
+      Series intercorrelation: 0.501
+      Avg mean sensitivity   : 0.353
+      Avg standard deviation : 1.090
+      Avg autocorrelation    : 0.811
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 6, B 8; 5 of the B weak at every lag)
+      Pct problem segments   : 14.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indi021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 jagcd65a 1733 1990            .29B .47  .57  .66  .77  .71  .73  .72 
+   2 jagcd66a 1827 1990                                .76  .58  .36  .54 
+   3 jagcd66b 1772 1987                 .34  .38  .45  .52  .38  .50  .70 
+   4 jagcd67a 1788 1990                      .37  .35B .45  .39  .40  .40B
+   5 jagcd68a 1795 1989                      .48  .56  .71  .64  .64  .73 
+   6 jagcd68b 1778 1989                      .46  .58  .42  .43  .72  .79 
+   7 jagcd69a 1767 1990                 .39  .46  .29B .53  .66  .55  .53 
+   8 jagcd70a 1744 1989            .47  .57  .46  .53  .76  .62  .62  .64 
+   9 jagcd71a 1714 1988       .37  .45  .34  .28B .49  .54  .35  .48  .64 
+  10 jagcd71b 1685 1986  .39  .41  .34  .30A .26B .40  .53  .44  .53  .57 
+  11 jagcd72a 1657 1989  .57  .58  .53  .60  .62  .69  .89  .81  .64  .67 
+  12 jagcd73a 1719 1990       .31A .32A .29A .33A .41  .36  .21B .25A .51 
+  13 jagcd74a 1701 1987       .36  .35  .51  .36  .25B .56  .48  .54  .75 
+ Av segment correlation  .48  .41  .39  .42  .42  .47  .60  .51  .54  .63 
+
+ FLAGGED SEGMENTS: indi021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 jagcd65a 1750 1799     B     .289        -5      .294   .005  weak at every lag
+   4 jagcd67a 1825 1874     B     .345         9      .358   .012
+   4 jagcd67a 1925 1974     B     .396        -9      .399   .003
+   7 jagcd69a 1825 1874     B     .293         9      .346   .053
+   9 jagcd71a 1800 1849     B     .283         8      .289   .005  weak at every lag
+  10 jagcd71b 1775 1824     A     .300         0
+  10 jagcd71b 1800 1849     B     .263         7      .288   .026  weak at every lag
+  12 jagcd73a 1725 1774     A     .308         0
+  12 jagcd73a 1750 1799     A     .322         0
+  12 jagcd73a 1775 1824     A     .294         0
+  12 jagcd73a 1800 1849     A     .327         0
+  12 jagcd73a 1875 1924     B     .211        -2      .250   .039  weak at every lag
+  12 jagcd73a 1900 1949     A     .254         0
+  13 jagcd74a 1825 1874     B     .250         3      .286   .036  weak at every lag
+
+ DESCRIPTIVE STATISTICS: indi021
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 jagcd65a 1733 1990    258      8      1    .592   1.67   5.50   .875   .725   .291   1.82   .285   .027   1
+   2 jagcd66a 1827 1990    164      4      0    .566   1.46   4.16   .718   .579   .370   2.08   .352  -.000   1
+   3 jagcd66b 1772 1987    216      7      0    .469   1.35   3.38   .674   .665   .357   1.88   .332   .001   1
+   4 jagcd67a 1788 1990    203      6      2    .400   1.85   6.40  1.261   .859   .290   2.63   .322   .002   1
+   5 jagcd68a 1795 1989    195      6      0    .648   2.26   9.90  1.952   .913   .364   1.72   .338  -.023   3
+   6 jagcd68b 1778 1989    212      6      0    .527   2.02   8.33  1.927   .922   .348   2.69   .401  -.052   2
+   7 jagcd69a 1767 1990    224      7      1    .512   1.77   4.87   .953   .848   .271   1.80   .235   .004   2
+   8 jagcd70a 1744 1989    246      8      0    .559   1.23   4.59  1.006   .915   .291   1.80   .278  -.000   2
+   9 jagcd71a 1714 1988    275      9      1    .414   1.01   6.15   .877   .840   .331   2.34   .368  -.030   1
+  10 jagcd71b 1685 1986    302     10      2    .395   1.10   6.30  1.243   .909   .320   2.32   .350  -.004   3
+  11 jagcd72a 1657 1989    333     10      0    .646   1.04   7.88  1.311   .934   .389   2.51   .363  -.013   1
+  12 jagcd73a 1719 1990    272      9      6    .333    .68   4.87   .773   .807   .425   2.44   .388  -.006   3
+  13 jagcd74a 1701 1987    287      9      1    .485   1.02   5.53   .754   .562   .498   2.78   .517  -.023   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3187     99     14    .501   1.36   9.90  1.090   .811   .353   2.78   .352  -.009
+
+ DATA CHECKS (rwl.check): indi021
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indi021.rwl
+ 13 series, 3187 measurements, 1657-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file indi021.rwl, MD5 4c67cf1f94c3779b3fb2623af6452003.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

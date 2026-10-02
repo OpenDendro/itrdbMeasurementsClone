@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: ca598
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca598.rwl
+      MD5 of measurement file: b05e4a90a70ec3453eb503ca5e0a8eab
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 1995
+      Principal investigators: Biondi, F.
+      Site name              : Santa Lucia Mountains
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.0700 N
+      Longitude              : 121.5700 W
+      Elevation              : 625 m
+
+      Series intercorrelation: 0.584
+      Avg mean sensitivity   : 0.321
+      Avg standard deviation : 1.634
+      Avg autocorrelation    : 0.803
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 1, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 11.54
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca598
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 SLM01A   1853 1983  .65  .46 
+   2 SLM01B   1860 1995  .40  .46 
+   3 SLM02A   1870 1995  .45  .69 
+   4 SLM02B   1858 1995  .70  .46 
+   5 SLM03A   1855 1995  .52  .48 
+   6 SLM04A   1847 1995  .63  .54 
+   7 SLM04B   1847 1995  .55  .33 
+   8 SLM05B   1859 1995  .53  .58 
+   9 SLM07A   1859 1995  .59  .64 
+  10 SLM07B   1853 1995  .76  .63 
+  11 SLM08A   1859 1995  .52  .61 
+  12 SLM08B   1853 1995  .44  .53 
+  13 SLM09A   1841 1995  .17B .33 
+  14 SLM09B   1836 1995  .20B .39 
+  15 SLM23A   1847 1995  .44  .30B
+  16 SLM23B   1862 1995  .39B .28A
+  17 SLM24C   1850 1995  .63  .52 
+  18 SLM25A   1870 1995  .50  .48 
+  19 SLM25B   1896 1995  .53  .52 
+  20 SLM26A   1849 1995  .64  .76 
+  21 SLM26B   1864 1995  .63  .61 
+  22 SLM27B   1859 1984  .52  .52 
+  23 SLM28A   1869 1995  .64  .56 
+  24 SLM28B   1860 1995  .72  .69 
+  25 SLM29A   1834 1995  .58  .38 
+  26 SLM29B   1830 1995  .24B .49 
+ Av segment correlation  .52  .51 
+
+ FLAGGED SEGMENTS: ca598
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 SLM09A   1900 1949     B     .175         8      .293   .119  weak at every lag
+  14 SLM09B   1900 1949     B     .198        -8      .344   .147
+  15 SLM23A   1925 1974     B     .296        -3      .346   .050
+  16 SLM23B   1900 1949     B     .392         4      .400   .008
+  16 SLM23B   1925 1974     A     .278         0
+  26 SLM29B   1900 1949     B     .243        -9      .307   .064  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ca598
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SLM01A   1853 1983    131      2      0    .585   2.93   6.57  1.236   .712   .225   2.35   .258   .000   3
+   2 SLM01B   1860 1995    136      2      0    .587   3.02   8.13  1.361   .664   .253   2.31   .254  -.032   0
+   3 SLM02A   1870 1995    126      2      0    .540   2.06   6.35  1.078   .719   .326   1.78   .284   .019   3
+   4 SLM02B   1858 1995    138      2      0    .683   2.12   6.33  1.376   .878   .253   2.11   .239  -.006   3
+   5 SLM03A   1855 1995    141      2      0    .553   1.95   7.04  1.644   .905   .304   2.25   .304   .047   1
+   6 SLM04A   1847 1995    149      2      0    .576   2.25   9.18  1.874   .937   .206   1.59   .216   .028   1
+   7 SLM04B   1847 1995    149      2      0    .507   2.16   9.33  1.866   .914   .205   2.08   .217  -.002   1
+   8 SLM05B   1859 1995    137      2      0    .625   2.43   6.37  1.186   .747   .251   2.19   .256   .048   0
+   9 SLM07A   1859 1995    137      2      0    .647   2.10   8.05  1.658   .798   .387   2.17   .359   .113   0
+  10 SLM07B   1853 1995    143      2      0    .731   2.59   8.54  1.904   .879   .295   2.02   .304   .020   1
+  11 SLM08A   1859 1995    137      2      0    .622   1.71   7.01  1.392   .761   .343   1.99   .330   .004   3
+  12 SLM08B   1853 1995    143      2      0    .618   1.96  14.66  1.931   .763   .332   1.67   .300   .041   1
+  13 SLM09A   1841 1995    155      2      1    .478   1.93   9.28  1.610   .717   .539   2.69   .465   .019   1
+  14 SLM09B   1836 1995    160      2      1    .432   2.11  12.03  2.158   .814   .583   2.10   .456   .034   3
+  15 SLM23A   1847 1995    149      2      1    .514   2.60  10.74  2.071   .778   .333   1.90   .322   .021   1
+  16 SLM23B   1862 1995    134      2      2    .529   2.08   6.44  1.443   .821   .350   2.01   .357   .036   1
+  17 SLM24C   1850 1995    146      2      0    .692   2.40   8.36  1.345   .627   .354   2.11   .333   .030   0
+  18 SLM25A   1870 1995    126      2      0    .586   1.36   3.76   .734   .760   .320   1.74   .280   .030   1
+  19 SLM25B   1896 1995    100      2      0    .583   1.48   3.94   .833   .767   .306   1.79   .303   .046   1
+  20 SLM26A   1849 1995    147      2      0    .680   2.73  11.02  2.187   .831   .416   2.45   .388  -.008   2
+  21 SLM26B   1864 1995    132      2      0    .670   2.49   8.28  1.736   .840   .303   1.62   .263   .008   2
+  22 SLM27B   1859 1984    126      2      0    .594   2.47   9.29  1.506   .832   .259   1.92   .253   .024   1
+  23 SLM28A   1869 1995    127      2      0    .639   2.90   9.69  1.546   .706   .272   2.36   .281   .034   1
+  24 SLM28B   1860 1995    136      2      0    .601   2.69   7.64  1.361   .801   .239   1.85   .234   .032   1
+  25 SLM29A   1834 1995    162      2      0    .503   2.40  11.32  2.199   .918   .269   1.68   .257   .021   1
+  26 SLM29B   1830 1995    166      2      1    .471   2.37  10.99  2.400   .912   .345   2.10   .323  -.011   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3633     52      6    .584   2.29  14.66  1.634   .803   .321   2.69   .303   .022
+
+ DATA CHECKS (rwl.check): ca598
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca598.rwl
+ 26 series, 3633 measurements, 1830-1995, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ca598.rwl, MD5 b05e4a90a70ec3453eb503ca5e0a8eab.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

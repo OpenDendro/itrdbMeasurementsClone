@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: che515
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che515.rwl
+      MD5 of measurement file: a4d2c3c8132cdd66329f3e4518af66a4
+      Date checked           : 01OCT26
+      Beginning year         : 1840
+      Ending year            : 2010
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : SCW
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0168 N
+      Longitude              : 8.6145 E
+      Elevation              : 712 m
+
+      Series intercorrelation: 0.567
+      Avg mean sensitivity   : 0.286
+      Avg standard deviation : 0.620
+      Avg autocorrelation    : 0.703
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che515
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SCW01a   1863 2010  .57  .33  .42 
+   2 SCW03a   1853 2010  .59  .49  .47 
+   3 SCW05a   1852 2010  .42  .66  .63 
+   4 SCW06a   1872 2010  .66  .66  .71 
+   5 SCW08a   1849 2010  .75  .69  .76 
+   6 SCW09a   1840 2010  .56  .70  .70 
+   7 SCW11a   1865 2010  .70  .66  .69 
+   8 SCW12a   1881 2010  .65  .43  .36 
+   9 SCW13a   1846 2010  .25B .07B .39 
+  10 SCW14a   1862 2010  .60  .53  .64 
+ Av segment correlation  .58  .52  .58 
+
+ FLAGGED SEGMENTS: che515
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 SCW13a   1900 1949     B     .250        -7      .360   .110
+   9 SCW13a   1925 1974     B     .066         8      .315   .248  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che515
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SCW01a   1863 2010    148      3      0    .531   1.16   2.62   .417   .683   .229   1.66   .233   .004   1
+   2 SCW03a   1853 2010    158      3      0    .562   1.26   3.84   .739   .705   .300   2.33   .318  -.007   3
+   3 SCW05a   1852 2010    159      3      0    .522   1.25   3.08   .559   .800   .208   1.49   .209  -.005   3
+   4 SCW06a   1872 2010    139      3      0    .646   1.17   3.02   .543   .544   .334   2.48   .368   .015   1
+   5 SCW08a   1849 2010    162      3      0    .685   1.67   3.84   .797   .707   .271   2.18   .301   .033   1
+   6 SCW09a   1840 2010    171      3      0    .535   1.49   3.97   .614   .706   .238   1.73   .241   .020   3
+   7 SCW11a   1865 2010    146      3      0    .717   1.13   3.25   .620   .590   .359   2.52   .410  -.010   2
+   8 SCW12a   1881 2010    130      3      0    .483    .83   3.23   .609   .729   .343   2.06   .328   .021   1
+   9 SCW13a   1846 2010    165      3      2    .384    .84   3.11   .734   .908   .267   1.65   .248   .011   1
+  10 SCW14a   1862 2010    149      3      0    .616   1.07   2.62   .529   .622   .332   2.41   .354   .032   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1527     30      2    .567   1.20   3.97   .620   .703   .286   2.52   .298   .011
+
+ DATA CHECKS (rwl.check): che515
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che515.rwl
+ 10 series, 1527 measurements, 1840-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file che515.rwl, MD5 a4d2c3c8132cdd66329f3e4518af66a4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

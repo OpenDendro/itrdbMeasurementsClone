@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: co039
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co039.rwl
+      MD5 of measurement file: 7f4581b32385c3ffe82b5791190f164b
+      Date checked           : 01OCT26
+      Beginning year         : 1580
+      Ending year            : 1964
+      Principal investigators: Fritts, H.C.; Holmes, R.L.
+      Site name              : Horsetooth Summit
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 40.5700 N
+      Longitude              : 105.2000 W
+      Elevation              : 2073 m
+
+      Series intercorrelation: 0.692
+      Avg mean sensitivity   : 0.347
+      Avg standard deviation : 0.345
+      Avg autocorrelation    : 0.699
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 0.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 522011   1610 1964       .65  .77  .85  .83  .82  .78  .68  .72  .81  .75  .57  .64 
+   2 522012   1600 1964       .62  .65  .79  .81  .75  .71  .62  .64  .76  .75  .62  .69 
+   3 522051   1850 1964                                                         .66  .83 
+   4 522052   1850 1964                                                         .44  .45 
+   5 522091   1850 1964                                                         .65  .78 
+   6 522092   1850 1964                                                    .66  .69  .73 
+   7 522111   1640 1964            .69  .69  .72  .60  .63  .79  .87  .89  .80  .59  .67 
+   8 522112   1720 1964                           .60  .54  .77  .53  .57  .83  .75  .69 
+   9 522121   1780 1964                                          .72  .71  .66  .57  .59 
+  10 522122   1780 1964                                          .87  .71  .61  .36  .40 
+  11 522131   1640 1963            .85  .79  .74  .79  .87  .83  .80  .86  .79  .46  .64 
+  12 522132   1640 1964            .78  .78  .79  .76  .79  .81  .82  .81  .74  .44  .52 
+  13 522141   1830 1964                                                    .82  .38  .17B
+  14 522142   1820 1964                                               .81  .90  .72  .65 
+  15 522151   1820 1964                                               .78  .78  .67  .77 
+  16 522152   1840 1964                                                    .80  .66  .73 
+  17 522171   1660 1964                 .84  .83  .75  .72  .77  .86  .78  .68  .72  .83 
+  18 522172   1660 1964                 .71  .69  .64  .68  .79  .88  .84  .76  .70  .80 
+  19 522181   1610 1964       .64  .81  .81  .66  .61  .72  .63  .56  .54  .46  .52  .66 
+  20 522182   1580 1964       .66  .62  .65  .69  .56  .47  .52  .67  .64  .63  .70  .74 
+ Av segment correlation       .64  .74  .77  .75  .69  .69  .72  .74  .75  .73  .59  .65 
+
+ FLAGGED SEGMENTS: co039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 522141   1900 1949     B     .165        -9      .246   .081  weak at every lag
+
+ DESCRIPTIVE STATISTICS: co039
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 522011   1610 1964    355     12      0    .739    .37   1.24   .218   .596   .417   2.46   .379  -.008   1
+   2 522012   1600 1964    365     12      0    .678    .37   1.41   .224   .590   .429   2.39   .420  -.017   1
+   3 522051   1850 1964    115      2      0    .762   1.16   3.00   .574   .536   .381   2.14   .332  -.033   3
+   4 522052   1850 1964    115      2      0    .566   1.20   3.01   .512   .339   .356   2.15   .347   .003   3
+   5 522091   1850 1964    115      2      0    .757    .90   2.11   .423   .621   .321   1.69   .282   .005   1
+   6 522092   1850 1964    115      3      0    .708   1.02   2.63   .476   .619   .297   1.89   .270   .107   0
+   7 522111   1640 1964    325     11      0    .698    .45   1.87   .283   .701   .371   2.27   .342  -.006   1
+   8 522112   1720 1964    245      8      0    .647    .58   2.01   .234   .332   .322   2.57   .315   .042   0
+   9 522121   1780 1964    185      5      0    .652    .59   2.92   .526   .821   .365   2.00   .350  -.021   1
+  10 522122   1780 1964    185      5      0    .640    .69   2.52   .461   .786   .306   1.87   .298  -.008   3
+  11 522131   1640 1963    324     11      0    .758    .45   2.68   .332   .861   .301   1.94   .291   .009   1
+  12 522132   1640 1964    325     11      0    .728    .46   2.62   .347   .862   .307   1.98   .297   .001   1
+  13 522141   1830 1964    135      3      1    .506    .82   2.77   .520   .753   .315   2.10   .364  -.051   1
+  14 522142   1820 1964    145      4      0    .726    .95   2.89   .554   .684   .324   2.24   .331   .010   1
+  15 522151   1820 1964    145      4      0    .739    .86   2.14   .418   .688   .296   1.86   .282  -.003   1
+  16 522152   1840 1964    125      3      0    .779    .84   1.99   .363   .590   .321   1.95   .308   .024   3
+  17 522171   1660 1964    305     10      0    .777    .50   2.42   .392   .812   .351   2.52   .324   .027   0
+  18 522172   1660 1964    305     10      0    .737    .56   2.49   .427   .790   .334   2.08   .313  -.009   1
+  19 522181   1610 1964    355     12      0    .622    .24    .95   .136   .668   .344   1.77   .288   .009   0
+  20 522182   1580 1964    385     12      0    .599    .33   1.76   .305   .846   .352   2.11   .293  -.067   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4669    142      1    .692    .55   3.01   .345   .699   .347   2.57   .324  -.003
+
+ DATA CHECKS (rwl.check): co039
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co039.rwl
+ 20 series, 4669 measurements, 1580-1964, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     522141: correlates with the rest of the collection at r = 0.347 where the collection median is 0.696 (4.1 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file co039.rwl, MD5 7f4581b32385c3ffe82b5791190f164b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

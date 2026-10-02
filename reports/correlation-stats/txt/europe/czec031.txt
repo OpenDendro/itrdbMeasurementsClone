@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: czec031
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : czec031.rwl
+      MD5 of measurement file: 001055d8118ae52dd24ba89598ba39bf
+      Date checked           : 01OCT26
+      Beginning year         : 1823
+      Ending year            : 2015
+      Principal investigators: Tumajer, J.
+      Site name              : Roudnice 2
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 50.4470 N
+      Longitude              : 14.2930 E
+      Elevation              : 160 m
+
+      Series intercorrelation: 0.543
+      Avg mean sensitivity   : 0.233
+      Avg standard deviation : 0.926
+      Avg autocorrelation    : 0.715
+      Number dated series    : 27
+      Segment length tested  : 50
+
+      Number problem segments: 13  (A 3, B 10; 2 of the B weak at every lag)
+      Pct problem segments   : 17.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: czec031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 r2_01    1919 2015       .31A .23B
+   2 r2_02    1911 2015       .32A .32A
+   3 r2_03    1883 2015  .60  .51  .46 
+   4 r2_04    1868 2015  .56  .37B .34 
+   5 r2_06    1868 2015  .66  .57  .48 
+   6 r2_07    1831 2015  .71  .73  .56 
+   7 r2_09    1870 2015  .64  .44  .45 
+   8 r2_11    1866 2015  .75  .69  .46 
+   9 r2_17    1824 2015  .66  .57  .48 
+  10 r2_20    1844 2015  .37  .47  .45 
+  11 r2_23    1849 2015  .59  .61  .47 
+  12 r2_25    1927 2015            .14B
+  13 r2_26    1861 2015  .68  .63  .50 
+  14 r2_27    1925 2015            .55 
+  15 0r2_05   1834 2015  .31B .12B-.07B
+  16 0r2_08   1852 2015  .72  .63  .59 
+  17 0r2_10   1855 2015  .71  .63  .57 
+  18 0r2_12   1903 2015       .51  .45 
+  19 0r2_13   1908 2015       .69  .61 
+  20 0r2_14   1849 2015  .60  .56  .53 
+  21 0r2_15   1864 2015  .21B-.03B-.11B
+  22 0r2_16   1867 2015  .74  .65  .67 
+  23 0r2_18   1823 2015  .55  .62  .09B
+  24 0r2_19   1846 2015  .46  .67  .68 
+  25 0r2_21   1878 2015  .79  .72  .69 
+  26 0r2_22   1874 2015  .75  .75  .71 
+  27 0r2_24   1870 2015  .60  .52  .48 
+ Av segment correlation  .60  .53  .44 
+
+ FLAGGED SEGMENTS: czec031
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 r2_01    1925 1974     A     .310         0
+   1 r2_01    1950 1999     B     .227         9      .243   .015  weak at every lag
+   2 r2_02    1925 1974     A     .320         0
+   2 r2_02    1950 1999     A     .324         0
+   4 r2_04    1925 1974     B     .372        -1      .390   .017
+  12 r2_25    1950 1999     B     .143         3      .417   .274
+  15 0r2_05   1900 1949     B     .310        -7      .668   .358
+  15 0r2_05   1925 1974     B     .119        -7      .507   .388
+  15 0r2_05   1950 1999     B    -.072         2      .335   .406
+  21 0r2_15   1900 1949     B     .211        -7      .742   .530
+  21 0r2_15   1925 1974     B    -.027        -7      .714   .742
+  21 0r2_15   1950 1999     B    -.112        -7      .480   .592
+  23 0r2_18   1950 1999     B     .095        -9      .264   .169  weak at every lag
+
+ DESCRIPTIVE STATISTICS: czec031
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 r2_01    1919 2015     97      2      2    .110   1.48   4.33   .974   .718   .364   2.32   .418   .104   1
+   2 r2_02    1911 2015    105      2      2    .242   1.44   4.08   .876   .768   .270   2.30   .289   .003   2
+   3 r2_03    1883 2015    133      3      0    .524   1.61   5.60   .844   .811   .211   1.79   .210  -.008   1
+   4 r2_04    1868 2015    148      3      1    .508   1.28   5.03   .727   .834   .178   1.62   .178   .028   1
+   5 r2_06    1868 2015    148      3      0    .608   2.07   6.19   .908   .739   .220   1.93   .222  -.020   3
+   6 r2_07    1831 2015    185      3      0    .686   1.67   7.58  1.052   .670   .293   2.25   .276   .015   2
+   7 r2_09    1870 2015    146      3      0    .618   2.15   5.25   .809   .709   .216   1.84   .213   .015   1
+   8 r2_11    1866 2015    150      3      0    .676   1.97   5.28   .878   .656   .231   1.72   .237   .016   1
+   9 r2_17    1824 2015    192      3      0    .657   1.48   3.94   .618   .601   .235   2.15   .268  -.025   1
+  10 r2_20    1844 2015    172      3      0    .395   1.79   5.03   .748   .681   .252   2.10   .250  -.009   1
+  11 r2_23    1849 2015    167      3      0    .541   1.71   4.90   .912   .861   .190   1.60   .192   .003   1
+  12 r2_25    1927 2015     89      1      1    .423   1.20   2.17   .267   .145   .194   1.94   .203  -.010   0
+  13 r2_26    1861 2015    155      3      0    .599   1.90   6.11  1.037   .783   .224   1.61   .233  -.021   1
+  14 r2_27    1925 2015     91      1      0    .550   2.66   5.97   .813   .545   .201   1.71   .182   .031   2
+  15 0r2_05   1834 2015    182      3      3    .109   1.83   6.85  1.082   .785   .242   2.26   .260  -.010   2
+  16 0r2_08   1852 2015    164      3      0    .736   1.93   6.72  1.001   .708   .217   1.86   .223  -.008   1
+  17 0r2_10   1855 2015    161      3      0    .655   1.98   6.95  1.092   .680   .276   2.22   .274  -.018   0
+  18 0r2_12   1903 2015    113      2      0    .574   2.76   6.67   .934   .652   .211   1.67   .202  -.022   2
+  19 0r2_13   1908 2015    108      2      0    .681   2.99   7.05  1.487   .745   .266   1.64   .253   .026   1
+  20 0r2_14   1849 2015    167      3      0    .611   2.02   6.40  1.012   .826   .199   1.56   .189  -.012   3
+  21 0r2_15   1864 2015    152      3      3    .090   2.06   8.70  1.358   .782   .244   1.80   .232   .091   0
+  22 0r2_16   1867 2015    149      3      0    .709   2.32   5.45   .743   .646   .215   1.55   .199   .008   1
+  23 0r2_18   1823 2015    193      3      1    .527   1.61   6.16  1.113   .800   .279   1.79   .285   .009   3
+  24 0r2_19   1846 2015    170      3      0    .664   1.89   4.86   .825   .674   .240   1.70   .244   .005   1
+  25 0r2_21   1878 2015    138      3      0    .750   2.32   5.20   .775   .552   .230   2.07   .246   .010   1
+  26 0r2_22   1874 2015    142      3      0    .658   2.23   4.70  1.050   .855   .202   1.53   .192   .008   1
+  27 0r2_24   1870 2015    146      3      0    .562   2.29   5.34   .872   .779   .190   1.65   .194   .003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3963     73     13    .543   1.93   8.70   .926   .715   .233   2.32   .236   .006
+
+ DATA CHECKS (rwl.check): czec031
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/czec031.rwl
+ 27 series, 3963 measurements, 1823-2015, 0.01 mm precision
+ 0 error(s), 3 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (3)
+     0r2_05: correlates with the rest of the collection at r = 0.109 where the collection median is 0.577 (4.1 MAD below it); it does not fit the collection it is in
+     0r2_15: correlates with the rest of the collection at r = 0.075 where the collection median is 0.577 (4.4 MAD below it); it does not fit the collection it is in
+     r2_01: correlates with the rest of the collection at r = 0.093 where the collection median is 0.577 (4.3 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file czec031.rwl, MD5 001055d8118ae52dd24ba89598ba39bf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

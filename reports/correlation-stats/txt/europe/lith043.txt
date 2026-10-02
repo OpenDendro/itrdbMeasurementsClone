@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: lith043
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : lith043.rwl
+      MD5 of measurement file: 889d21cdb71d2e278ff7080dffefb802
+      Date checked           : 01OCT26
+      Beginning year         : 1862
+      Ending year            : 1996
+      Principal investigators: Kairaitis, J.; Vitas, A.; Sohar, K.
+      Site name              : Subartonys
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 54.1950 N
+      Longitude              : 24.1850 E
+      Elevation              : 112 m
+
+      Series intercorrelation: 0.634
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 0.845
+      Avg autocorrelation    : 0.720
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: lith043
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 sub-01a  1862 1996  .61  .71 
+   2 sub-02a  1877 1996  .44  .53 
+   3 sub-03a  1876 1996  .56  .60 
+   4 sub-05a  1900 1996       .69 
+   5 sub-07a  1881 1996  .62  .65 
+   6 sub-06a  1913 1996       .60 
+   7 sub-08a  1880 1996  .55  .61 
+   8 sub-09a  1891 1996  .49  .55 
+   9 sub-10a  1881 1996  .62  .74 
+  10 sub-11a  1896 1996  .68  .78 
+ Av segment correlation  .57  .65 
+
+ FLAGGED SEGMENTS: lith043
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: lith043
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 sub-01a  1862 1996    135      2      0    .646   1.82   3.60   .724   .762   .223   1.53   .219   .014   1
+   2 sub-02a  1877 1996    120      2      0    .542   1.69   4.86  1.134   .859   .241   1.73   .256  -.020   1
+   3 sub-03a  1876 1996    121      2      0    .637   1.42   3.51   .725   .785   .229   2.09   .239   .035   1
+   4 sub-05a  1900 1996     97      1      0    .703   2.23   5.40   .795   .630   .248   1.65   .216   .003   2
+   5 sub-07a  1881 1996    116      2      0    .636   2.15   5.62  1.093   .787   .229   1.58   .228  -.014   2
+   6 sub-06a  1913 1996     84      1      0    .658   2.23   5.34   .909   .786   .186   1.63   .193  -.015   2
+   7 sub-08a  1880 1996    117      2      0    .638   2.15   4.09   .640   .629   .206   1.64   .205   .038   1
+   8 sub-09a  1891 1996    106      2      0    .535   1.99   3.95   .625   .601   .223   1.71   .224   .011   1
+   9 sub-10a  1881 1996    116      2      0    .668   1.64   4.95   .928   .589   .355   2.37   .372   .001   1
+  10 sub-11a  1896 1996    101      2      0    .695   2.42   6.02   .895   .757   .191   1.50   .192  -.033   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1113     18      0    .634   1.95   6.02   .845   .720   .235   2.37   .236   .003
+
+ DATA CHECKS (rwl.check): lith043
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/lith043.rwl
+ 10 series, 1113 measurements, 1862-1996, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file lith043.rwl, MD5 889d21cdb71d2e278ff7080dffefb802.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

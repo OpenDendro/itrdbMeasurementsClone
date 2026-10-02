@@ -1,0 +1,185 @@
+
+ COFECHA-style crossdating report: in046
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in046.rwl
+      MD5 of measurement file: ab3953ca1e26625c2496eb367ed6ed9d
+      Date checked           : 01OCT26
+      Beginning year         : 1954
+      Ending year            : 2021
+      Principal investigators: Li, H.; Thapa, I.
+      Site name              : Dobbs Park
+      Species information    : PIST Pinus strobus L.
+      Latitude               : 39.4650 N
+      Longitude              : 87.3380 W
+      Elevation              : 20 m
+
+      Series intercorrelation: 0.530
+      Avg mean sensitivity   : 0.239
+      Avg standard deviation : 1.773
+      Avg autocorrelation    : 0.764
+      Number dated series    : 39
+      Segment length tested  : 34
+
+      Number problem segments: 18  (A 11, B 7; 4 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in046
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  34-year dated segments, lagged  17 years
+ Flags:  A = correlation under   .3972 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1977 
+                        1993 2010 
+ --- -------- ---------  ---- ---- 
+   1 HLP01A   1963 2021       .64 
+   2 HLP01B   1954 2021  .30B .42B
+   3 HLP02A   1959 2021  .38A .68 
+   4 HLP02B   1970 2021       .49 
+   5 HLP03A   1961 2021       .52 
+   6 HLP03C   1971 2021       .61 
+   7 HLP04A   1957 2021  .42  .39A
+   8 HLP04B   1963 2021       .46 
+   9 HLP05A   1957 2021  .26B .71 
+  10 HLP05B   1962 2021       .59 
+  11 HLP05C   1956 2021  .36A .58 
+  12 HLP06A   1957 2021  .74  .56 
+  14 HLP07A   1962 2021       .77 
+  15 HLP07B   1957 2021  .57  .59 
+  16 HLP08A   1956 2021  .51  .69 
+  17 HLP08B   1965 2021       .50 
+  18 HLP08C   1968 2021       .53 
+  19 HLP09B   1960 2021  .28A .41 
+  20 HLP10A   1959 2019  .28A .51 
+  21 HLP10B   1956 2021  .63  .43 
+  22 HLP10C   1959 2012  .47  .34A
+  23 HLP11A   1964 2021       .63 
+  24 HLP11B   1961 2021       .65 
+  25 HLP12A   1959 2021  .19B .38A
+  26 HLP12B   1966 2020       .64 
+  27 HLP12C   1965 2021       .55 
+  28 HLP13B   1969 2021       .31B
+  29 HLP15A   1962 2020       .38A
+  30 HLP16B   1961 2021       .52 
+  31 HLP17A   1960 2021  .32A .48 
+  32 HLP17C   1965 2021       .36B
+  33 HLP18A   1959 2021  .31A .53 
+  34 HLP18B   1977 2021       .44 
+  35 HLP18C   1968 2021       .40A
+  36 HLP19A   1962 2020       .69 
+  37 HLP19B   1959 2021       .50 
+  38 HLP20A   1971 2020       .36B
+  39 HLP21B   1957 2021  .61  .68 
+ Av segment correlation  .41  .52 
+
+ FLAGGED SEGMENTS: in046
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 HLP01B   1960 1993     B     .303         6      .329   .027  weak at every lag
+   2 HLP01B   1977 2010     B     .416         6      .507   .091
+   3 HLP02A   1960 1993     A     .377         0
+   7 HLP04A   1977 2010     A     .390         0
+   9 HLP05A   1960 1993     B     .264         3      .301   .036  weak at every lag
+  11 HLP05C   1960 1993     A     .357         0
+  19 HLP09B   1960 1993     A     .281         0
+  20 HLP10A   1960 1993     A     .284         0
+  22 HLP10C   1977 2010     A     .342         0
+  25 HLP12A   1960 1993     B     .187         3      .291   .105  weak at every lag
+  25 HLP12A   1977 2010     A     .376         0
+  28 HLP13B   1977 2010     B     .309       -10      .518   .209
+  29 HLP15A   1977 2010     A     .380         0
+  31 HLP17A   1960 1993     A     .320         0
+  32 HLP17C   1977 2010     B     .362        10      .468   .106
+  33 HLP18A   1960 1993     A     .313         0
+  35 HLP18C   1977 2010     A     .397         0
+  38 HLP20A   1977 2010     B     .364         7      .370   .006  weak at every lag
+
+ DESCRIPTIVE STATISTICS: in046
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HLP01A   1963 2021     59      1      0    .626   2.72   5.16   .861   .714   .177   1.45   .192  -.024   1
+   2 HLP01B   1954 2021     68      2      2    .386   3.12   7.90  1.365   .817   .188   1.67   .209   .045   1
+   3 HLP02A   1959 2021     63      2      1    .554   3.93   9.36  1.628   .656   .243   1.81   .260   .079   1
+   4 HLP02B   1970 2021     52      1      0    .451   4.66   8.98  1.620   .353   .289   2.10   .282  -.041   3
+   5 HLP03A   1961 2021     61      1      0    .427   2.88   4.96  1.005   .691   .220   1.46   .209   .104   0
+   6 HLP03C   1971 2021     51      1      0    .553   3.62   6.66  1.547   .749   .241   1.56   .224  -.048   2
+   7 HLP04A   1957 2021     65      2      1    .478   3.56   9.26  2.157   .931   .198   1.46   .212   .033   2
+   8 HLP04B   1963 2021     59      1      0    .515   3.98   7.21  1.620   .732   .243   2.12   .262   .046   0
+   9 HLP05A   1957 2021     65      2      1    .583   3.91   6.67  1.385   .689   .243   1.60   .227  -.000   2
+  10 HLP05B   1962 2021     60      1      0    .576   3.93   6.37  1.215   .666   .212   1.73   .212   .044   1
+  11 HLP05C   1956 2021     66      2      1    .642   3.02   6.75  1.321   .801   .225   1.62   .228   .002   2
+  12 HLP06A   1957 2021     65      2      0    .673   3.57   8.03  1.110   .502   .233   1.78   .220  -.010   2
+  13 HLP06B   1979 2021     43      0      0    .437   3.69   8.40  1.593   .673   .246   1.58   .250  -.047   3
+  14 HLP07A   1962 2021     60      1      0    .742   3.46   9.19  2.244   .937   .232   1.45   .215   .028   3
+  15 HLP07B   1957 2021     65      2      0    .669   4.29  11.33  2.670   .862   .240   1.68   .254   .002   1
+  16 HLP08A   1956 2021     66      2      0    .599   3.91   9.88  1.905   .824   .244   1.62   .208   .108   3
+  17 HLP08B   1965 2021     57      1      0    .582   3.45   9.70  1.837   .765   .248   1.51   .222   .080   0
+  18 HLP08C   1968 2021     54      1      0    .559   4.73  11.04  2.718   .857   .259   1.49   .234   .178   0
+  19 HLP09B   1960 2021     62      2      1    .330   3.37   7.32  1.457   .753   .197   2.07   .232   .130   0
+  20 HLP10A   1959 2019     61      2      1    .530   2.56   5.53  1.607   .883   .275   4.55   .554   .346   1
+  21 HLP10B   1956 2021     66      2      0    .342   3.41   8.86  1.456   .718   .226   1.62   .270   .085   1
+  22 HLP10C   1959 2012     54      2      1    .318   2.79   6.85  1.988   .924   .233   1.88   .260   .017   1
+  23 HLP11A   1964 2021     58      1      0    .654   4.78   9.62  2.123   .818   .221   1.47   .215   .068   2
+  24 HLP11B   1961 2021     61      1      0    .640   4.25  10.20  2.058   .798   .224   1.48   .207   .011   2
+  25 HLP12A   1959 2021     63      2      2    .343   4.10  10.76  2.373   .824   .214   1.60   .218   .003   1
+  26 HLP12B   1966 2020     55      1      0    .663   3.24   8.98  1.937   .900   .209   1.62   .207  -.019   1
+  27 HLP12C   1965 2021     57      1      0    .550   3.42  10.22  2.059   .832   .212   1.58   .222   .011   1
+  28 HLP13B   1969 2021     53      1      1    .335   2.59   5.90  1.316   .697   .332   1.66   .315   .011   2
+  29 HLP15A   1962 2020     59      1      1    .451   4.54  12.70  2.095   .551   .319   2.03   .309   .099   0
+  30 HLP16B   1961 2021     61      1      0    .595   4.79  12.05  2.606   .849   .262   1.73   .269   .125   0
+  31 HLP17A   1960 2021     62      2      1    .458   2.77   7.36  1.920   .895   .288   1.77   .253   .057   0
+  32 HLP17C   1965 2021     57      1      1    .440   2.85   8.19  1.861   .850   .334   2.45   .332   .170   0
+  33 HLP18A   1959 2021     63      2      1    .538   3.27   5.94   .814   .458   .200   1.62   .195   .147   0
+  34 HLP18B   1977 2021     45      1      0    .594   3.05   4.61   .732   .605   .190   1.38   .172   .121   0
+  35 HLP18C   1968 2021     54      1      1    .455   4.14   7.79  1.425   .578   .254   1.52   .232   .015   1
+  36 HLP19A   1962 2020     59      1      0    .691   4.44   9.91  2.377   .892   .233   1.45   .196  -.179   0
+  37 HLP19B   1959 2021     63      1      0    .607   3.96   9.44  2.375   .916   .252   1.42   .189   .036   2
+  38 HLP20A   1971 2020     50      1      1    .442   3.51  10.14  1.892   .788   .269   1.52   .228   .051   3
+  39 HLP21B   1957 2021     65      2      0    .591   3.80  10.46  2.612   .926   .220   1.45   .185   .017   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2307     54     18    .530   3.64  12.70  1.773   .764   .239   4.55   .240   .050
+
+ DATA CHECKS (rwl.check): in046
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in046.rwl
+ 39 series, 2307 measurements, 1954-2021, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file in046.rwl, MD5 ab3953ca1e26625c2496eb367ed6ed9d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3972 for 34-year segments.
+ Segments: 34 years, lagged 17, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 34 years: the record is only 68 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

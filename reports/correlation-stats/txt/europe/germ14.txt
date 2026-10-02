@@ -1,0 +1,155 @@
+
+ COFECHA-style crossdating report: germ14
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ14.rwl
+      MD5 of measurement file: 07dcf46243f2e774da17a74a24ba7b0c
+      Date checked           : 01OCT26
+      Beginning year         : 1622
+      Ending year            : 1953
+      Principal investigators: Becker, B.
+      Site name              : Bayerischer Wald
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 48.7500 N
+      Longitude              : 13.0000 E
+      Elevation              : 940 m
+
+      Series intercorrelation: 0.416
+      Avg mean sensitivity   : 0.174
+      Avg standard deviation : 0.930
+      Avg autocorrelation    : 0.888
+      Number dated series    : 21
+      Series crossdated      : 20
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 2, B 12; 3 of the B weak at every lag)
+      Pct problem segments   : 13.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ14
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 887011   1622 1953  .28B .47  .52  .55  .52  .42  .41  .38  .59 
+   2 887021   1796 1951                      .48  .23B .47  .52  .57 
+   3 887031   1791 1951                      .22B .46  .60  .44  .44 
+   4 887041   1841 1951                                .57  .56  .55 
+   5 887051   1640 1951  .06B .21B .35  .35  .41  .36  .59  .50  .49 
+   6 887061   1783 1951                      .50  .49  .60  .56  .40 
+   7 887071   1803 1951                          -.10B .03B .06B .06B
+   8 887081   1825 1951                                .59  .47  .56 
+   9 887091   1825 1951                                .74  .73  .76 
+  10 887101   1845 1951                                .43  .33A .46 
+  11 887111   1790 1951                      .48  .67  .67  .63  .50 
+  12 887121   1824 1951                           .55  .63  .59  .75 
+  13 887131   1803 1951                           .65  .64  .60  .67 
+  14 887141   1701 1951       .45  .36  .56  .44  .38  .50  .30A .44 
+  15 887151   1715 1951       .48  .53  .63  .60  .52  .57  .45  .64 
+  16 887161   1643 1951  .40  .57  .49  .54  .49  .38  .40  .38  .66 
+  18 887181   1796 1951                      .68  .36  .43  .52  .35 
+  19 887191   1793 1951                      .61  .45  .42  .46  .66 
+  20 887201   1785 1951                      .60  .42  .41  .51  .50B
+  21 887211   1780 1951                      .58  .51  .53  .26B .07B
+ Av segment correlation  .25  .44  .45  .52  .51  .42  .51  .46  .51 
+
+ FLAGGED SEGMENTS: germ14
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 887011   1700 1749     B     .278        -1      .456   .179
+   2 887021   1825 1874     B     .232        -6      .316   .084  weak at every lag
+   3 887031   1800 1849     B     .221         9      .292   .071  weak at every lag
+   5 887051   1700 1749     B     .059         3      .358   .299
+   5 887051   1725 1774     B     .213         3      .434   .222
+   7 887071   1825 1874     B    -.099        -1      .676   .775
+   7 887071   1850 1899     B     .025        -1      .777   .751
+   7 887071   1875 1924     B     .060        -1      .625   .565
+   7 887071   1900 1949     B     .060        -1      .768   .708
+  10 887101   1875 1924     A     .326         0
+  14 887141   1875 1924     A     .297         0
+  20 887201   1900 1949     B     .498        -6      .538   .040
+  21 887211   1875 1924     B     .261        -5      .344   .084
+  21 887211   1900 1949     B     .069        -5      .273   .204  weak at every lag
+
+ DESCRIPTIVE STATISTICS: germ14
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 887011   1622 1953    332      9      1    .278   1.22   2.35   .337   .800   .134   1.45   .138  -.001   1
+   2 887021   1796 1951    156      5      1    .517   2.44   4.52   .864   .843   .173   1.57   .179   .039   1
+   3 887031   1791 1951    161      5      1    .393   1.57   4.74   .778   .894   .182   1.51   .175   .004   2
+   4 887041   1841 1951    111      3      0    .523   1.79   2.87   .534   .710   .182   1.53   .189   .002   1
+   5 887051   1640 1951    312      9      2    .212   1.27   3.45   .789   .868   .240   1.90   .258   .042   2
+   6 887061   1783 1951    169      5      0    .465   1.85   4.52   .710   .844   .179   1.61   .184   .034   1
+   7 887071   1803 1951    149      4      4   -.025   2.33   6.58  1.261   .886   .179   1.41   .181   .021   1
+   8 887081   1825 1951    127      3      0    .586   1.59   3.45   .679   .846   .205   1.46   .205  -.019   3
+   9 887091   1825 1951    127      3      0    .736   2.21   5.65   .972   .901   .148   1.49   .160   .012   2
+  10 887101   1845 1951    107      3      1    .431   2.36   7.45  1.569   .922   .163   1.44   .160   .031   1
+  11 887111   1790 1951    162      5      0    .509   1.83   5.87  1.399   .956   .164   1.47   .171   .089   1
+  12 887121   1824 1951    128      4      0    .626   2.04   5.58   .984   .892   .164   1.48   .166   .034   1
+  13 887131   1803 1951    149      4      0    .617   2.27   6.68  1.306   .923   .162   1.34   .153   .002   1
+  14 887141   1701 1951    251      8      1    .410   1.25   2.81   .696   .952   .157   1.63   .169  -.005   3
+  15 887151   1715 1951    237      8      0    .534   1.34   3.94   .776   .928   .169   1.78   .180   .012   3
+  16 887161   1643 1951    309      9      0    .314   1.30   3.32   .618   .876   .182   3.12   .225   .002   2
+  17 887171   1742 1951    209                         1.91   5.94  1.399   .924   .219                         
+  18 887181   1796 1951    156      5      0    .424   2.17   8.71  1.691   .877   .149   2.50   .206  -.038   1
+  19 887191   1793 1951    159      5      0    .517   1.33   4.77  1.156   .958   .157   1.46   .155   .013   3
+  20 887201   1785 1951    167      5      1    .484   1.75   6.39  1.335   .959   .153   1.41   .158   .062   1
+  21 887211   1780 1951    172      5      2    .320   1.87   4.68   .918   .900   .166   1.62   .179  -.041   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3850    107     14    .416   1.69   8.71   .930   .888   .174   3.12   .183   .014
+
+ DATA CHECKS (rwl.check): germ14
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ14.rwl
+ 21 series, 3850 measurements, 1622-1953, 0.01 mm precision
+ 1 error(s), 2 warning(s), 2 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     887071: correlates best with the master at lag -1 (r = 0.668 against r = 0.227 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1622-1951 but the measurements cover 1622-1953
+   RWL_INTERNAL_NA (1)
+     887171: no measurement for 1843, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file germ14.rwl, MD5 07dcf46243f2e774da17a74a24ba7b0c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 887171 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

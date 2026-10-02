@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: mong037
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mong037.rwl
+      MD5 of measurement file: 1beb854faf93d96fed6eda02e6569b10
+      Date checked           : 01OCT26
+      Beginning year         : 1731
+      Ending year            : 2008
+      Principal investigators: Pederson, N.; Saladyga, T.; Suran, B.; McGraw, K.; Aria, U.; Nachin, B.
+      Site name              : Tujyin Nars
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.1514 N
+      Longitude              : 106.3735 E
+      Elevation              : 650 m
+
+      Series intercorrelation: 0.596
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 0.576
+      Avg autocorrelation    : 0.845
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 1.87
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mong037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 TNC01a   1875 2008                      .49  .57  .67 
+   2 TNC02b   1841 2008            .55  .54  .40  .40  .67 
+   3 TNC03a   1784 2008  .75  .69  .72  .70  .75  .84  .82 
+   4 TNC03b   1771 2008  .79  .72  .72  .76  .76  .73  .79 
+   5 TNC04a   1833 2008            .60  .58  .62  .64  .69 
+   6 TNC04b   1835 2008            .61  .67  .70  .64  .59 
+   7 TNC05a   1744 2005  .56  .51  .60  .51  .59  .74  .49 
+   8 TNC05b   1731 2007  .55  .62  .77  .73  .68  .76  .67 
+   9 TNC06a   1822 2008       .76  .71  .65  .67  .73  .79 
+  10 TNC06b   1798 2008       .48  .58  .64  .61  .68  .74 
+  11 TNC07a   1840 2008            .67  .64  .69  .76  .78 
+  12 TNC07b   1790 2008  .60  .56  .51  .48  .68  .72  .43 
+  13 TNC08a   1873 2008                 .26B .28B .51  .56 
+  14 TNC08b   1876 2008                      .43  .59  .77 
+  15 TNC09a   1830 2008            .46  .44  .53  .57  .61 
+  16 TNC09b   1855 2008                 .51  .65  .79  .81 
+  17 TNC10a   1732 2008  .68  .76  .70  .61  .53  .50  .64 
+  18 TNC10b   1747 2008  .67  .67  .69  .55  .49  .58  .36 
+  19 TNC12a   1887 2008                      .76  .69  .58 
+  20 TNC13a   1856 2008                 .60  .58  .59  .68 
+ Av segment correlation  .66  .64  .63  .58  .60  .65  .66 
+
+ FLAGGED SEGMENTS: mong037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 TNC08a   1875 1924     B     .260         1      .274   .014  weak at every lag
+  13 TNC08a   1900 1949     B     .283         8      .338   .056
+
+ DESCRIPTIVE STATISTICS: mong037
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TNC01a   1875 2008    134      3      0    .549   1.45   2.96   .547   .641   .252   1.71   .236   .000   2
+   2 TNC02b   1841 2008    168      5      0    .577   1.05   3.24   .473   .740   .245   1.63   .259  -.016   1
+   3 TNC03a   1784 2008    225      7      0    .654    .77   2.02   .408   .894   .194   1.79   .197   .024   1
+   4 TNC03b   1771 2008    238      7      0    .712    .84   1.89   .438   .881   .216   1.62   .201  -.009   1
+   5 TNC04a   1833 2008    176      5      0    .619    .92   2.58   .466   .734   .254   1.87   .256  -.023   1
+   6 TNC04b   1835 2008    174      5      0    .588    .96   2.38   .475   .794   .242   1.88   .240   .012   1
+   7 TNC05a   1744 2005    262      7      0    .517    .49   2.39   .456   .935   .231   1.88   .231  -.014   1
+   8 TNC05b   1731 2007    277      7      0    .597    .57   2.87   .489   .909   .293   2.15   .291  -.007   1
+   9 TNC06a   1822 2008    187      6      0    .739    .84   2.15   .440   .807   .257   1.70   .256   .002   2
+  10 TNC06b   1798 2008    211      6      0    .649    .87   2.32   .474   .840   .249   1.70   .238  -.015   3
+  11 TNC07a   1840 2008    169      5      0    .722   1.14   3.45   .743   .926   .206   1.46   .202  -.008   2
+  12 TNC07b   1790 2008    219      7      0    .502    .88   2.47   .553   .876   .276   1.80   .264  -.011   3
+  13 TNC08a   1873 2008    136      4      2    .471   1.27   3.26   .823   .902   .273   1.80   .285   .030   1
+  14 TNC08b   1876 2008    133      3      0    .557   1.47   3.31   .642   .790   .240   1.57   .235   .034   1
+  15 TNC09a   1830 2008    179      5      0    .522   1.27   3.11   .661   .867   .203   1.81   .199  -.021   3
+  16 TNC09b   1855 2008    154      4      0    .667   1.39   3.70   .753   .825   .251   1.64   .241  -.008   1
+  17 TNC10a   1732 2008    277      7      0    .612    .69   2.40   .502   .852   .299   1.75   .285  -.035   1
+  18 TNC10b   1747 2008    262      7      0    .472    .61   2.13   .414   .838   .285   2.57   .273   .018   2
+  19 TNC12a   1887 2008    122      3      0    .640   1.99   6.13  1.431   .894   .299   1.74   .299  -.006   1
+  20 TNC13a   1856 2008    153      4      0    .560   1.67   4.46  1.105   .810   .329   1.79   .307   .009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3856    107      2    .596    .97   6.13   .576   .845   .255   2.57   .249  -.004
+
+ DATA CHECKS (rwl.check): mong037
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/mong037.rwl
+ 20 series, 3856 measurements, 1731-2008, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file mong037.rwl, MD5 1beb854faf93d96fed6eda02e6569b10.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

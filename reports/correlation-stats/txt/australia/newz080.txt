@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: newz080
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz080.rwl
+      MD5 of measurement file: 29da7175b3940eced9df9135389ed9e7
+      Date checked           : 01OCT26
+      Beginning year         : 1628
+      Ending year            : 1903
+      Principal investigators: Palmer, J.G.; Xiong, L.
+      Site name              : Waipoua Forest Dead Trees
+      Species information    : AGAU Agathis australis (D. Don) Loudon
+      Latitude               : 35.6500 S
+      Longitude              : 173.5700 E
+      Elevation              : 180 m
+
+      Series intercorrelation: 0.516
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 0.817
+      Avg autocorrelation    : 0.674
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 5.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz080
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 
+                        1749 1774 1799 1824 1849 1874 1899 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 WFD0541  1736 1848            .63  .38                
+   2 WFD0542  1727 1813            .64                     
+   3 WFD0551  1628 1849  .47  .64  .72  .69  .57           
+   4 WFD0552  1639 1858  .59  .72  .68  .62  .63           
+   5 WFD0553  1695 1844  .68  .59  .58  .65                
+   6 WFD0554  1698 1865  .47  .57  .59  .53  .64           
+   7 WFD0561  1729 1829            .47  .45                
+   8 WFD0562  1726 1887            .31B .64  .75  .79      
+   9 WFD0563  1700 1881       .48  .66  .60  .66  .72      
+  10 WFD0564  1687 1872  .50  .61  .68  .66  .60           
+  11 WFD0571  1648 1824  .33B .48  .50  .28A               
+  12 WFD0573  1653 1796  .53  .45                          
+  13 WFD0581  1786 1886                      .59  .65      
+  14 WFD0582  1658 1859  .44  .63  .59  .52  .62           
+  15 WFD0591  1756 1872                 .59  .59           
+  16 WFD0592  1726 1903            .65  .62  .47  .46      
+ Av segment correlation  .50  .58  .59  .56  .61  .65      
+
+ FLAGGED SEGMENTS: newz080
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 WFD0562  1750 1799     B     .311        -2      .383   .072
+  11 WFD0571  1700 1749     B     .329        -8      .371   .042
+  11 WFD0571  1775 1824     A     .281         0
+
+ DESCRIPTIVE STATISTICS: newz080
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WFD0541  1736 1848    113      2      0    .437   2.53   4.69   .803   .645   .255   1.43   .210  -.043   3
+   2 WFD0542  1727 1813     87      1      0    .586   2.82   4.03   .626   .521   .184   1.44   .181  -.048   3
+   3 WFD0551  1628 1849    222      5      0    .545   1.78   3.21   .679   .718   .240   1.79   .220   .009   1
+   4 WFD0552  1639 1858    220      5      0    .594   1.74   3.51   .550   .602   .230   1.68   .229  -.017   3
+   5 WFD0553  1695 1844    150      4      0    .562   1.78   3.15   .530   .509   .245   1.57   .212   .055   0
+   6 WFD0554  1698 1865    168      5      0    .544   1.77   3.63   .595   .479   .282   1.88   .254   .088   0
+   7 WFD0561  1729 1829    101      2      0    .539   1.74   3.64   .786   .778   .254   1.65   .244  -.010   1
+   8 WFD0562  1726 1887    162      4      1    .546   2.02  11.74  1.442   .865   .238   2.30   .254  -.023   1
+   9 WFD0563  1700 1881    182      5      0    .557   1.80   7.01  1.154   .829   .226   1.81   .226   .017   1
+  10 WFD0564  1687 1872    186      5      0    .624   2.07   5.21  1.070   .866   .229   1.58   .212  -.014   2
+  11 WFD0571  1648 1824    177      4      2    .313   1.93   3.86   .642   .646   .217   1.85   .229   .009   3
+  12 WFD0573  1653 1796    144      2      0    .405   1.81   3.81   .652   .723   .209   1.69   .218   .033   2
+  13 WFD0581  1786 1886    101      2      0    .529   2.79   4.86   .934   .640   .226   1.48   .222  -.035   3
+  14 WFD0582  1658 1859    202      5      0    .511   2.06   5.17   .936   .712   .303   1.70   .280   .014   2
+  15 WFD0591  1756 1872    117      2      0    .474   2.06   4.27   .721   .404   .332   1.90   .295   .012   1
+  16 WFD0592  1726 1903    178      4      0    .457   1.83   4.69   .886   .670   .388   2.13   .337  -.005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2510     57      3    .516   1.97  11.74   .817   .674   .255   2.30   .241   .006
+
+ DATA CHECKS (rwl.check): newz080
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz080.rwl
+ 16 series, 2510 measurements, 1628-1903, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file newz080.rwl, MD5 29da7175b3940eced9df9135389ed9e7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

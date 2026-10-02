@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: ak11
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak11.rwl
+      MD5 of measurement file: 39d42629a32fd892d597deca3df9c238
+      Date checked           : 01OCT26
+      Beginning year         : 1932
+      Ending year            : 1985
+      Principal investigators: Kaiser, K.F.
+      Site name              : Russelfjord Southern End C
+      Species information    : PCSI Picea sitchensis (Bong.) Carrière
+      Latitude               : 59.6000 N
+      Longitude              : 139.3700 W
+      Elevation              : 1 m
+
+      Series intercorrelation: 0.494
+      Avg mean sensitivity   : 0.233
+      Avg standard deviation : 0.244
+      Avg autocorrelation    : 0.721
+      Number dated series    : 14
+      Series crossdated      : 13
+      Segment length tested  : 26
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 30.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  26-year dated segments, lagged  13 years
+ Flags:  A = correlation under   .4534 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1975 
+ --- -------- ---------  ---- 
+   2 RUFI1020 1938 1985  .53 
+   3 RUFI1030 1940 1985  .23B
+   4 RUFI1040 1936 1985  .46 
+   6 RUFI1060 1939 1985  .60 
+   9 RUFI1090 1934 1985  .45A
+  10 RUFI1100 1935 1985  .51 
+  11 RUFI1110 1932 1985  .43A
+  12 RUFI1120 1934 1985  .79 
+  13 RUFI1130 1934 1984  .57 
+  14 RUFJ1ACH 1932 1985  .95 
+ Av segment correlation  .55 
+
+ FLAGGED SEGMENTS: ak11
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 RUFI1030 1950 1975     B     .228        -5      .359   .132  weak at every lag
+   9 RUFI1090 1950 1975     A     .449         0
+  11 RUFI1110 1950 1975     A     .430         0
+
+ DESCRIPTIVE STATISTICS: ak11
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RUFI1010 1960 1985     26      0      0    .536    .85   1.19   .154   .488   .151   1.36   .138   .203   0
+   2 RUFI1020 1938 1985     48      1      0    .498    .53   1.10   .188   .333   .295   1.82   .290   .153   0
+   3 RUFI1030 1940 1985     46      1      1    .118    .41   1.50   .400   .943   .220   1.73   .260   .063   1
+   4 RUFI1040 1936 1985     50      1      0    .497    .57   1.42   .256   .728   .227   1.68   .261   .110   1
+   5 RUFI1050 1936 1985     50                          .70   1.27   .327   .845   .218                         
+   6 RUFI1060 1939 1985     47      1      0    .520    .29    .97   .228   .877   .334   1.69   .298   .023   2
+   7 RUFI1070 1954 1985     32      0      0    .264    .47   1.08   .217   .593   .288   1.77   .290   .091   1
+   8 RUFI1080 1950 1985     36      0      0    .375    .64   1.00   .145   .411   .221   1.45   .202   .065   1
+   9 RUFI1090 1934 1985     52      1      1    .523    .65   1.09   .255   .871   .148   1.33   .141  -.028   2
+  10 RUFI1100 1935 1985     51      1      0    .535    .52   1.41   .291   .834   .252   1.87   .274   .175   1
+  11 RUFI1110 1932 1985     54      1      1    .563    .51   1.42   .305   .870   .243   1.82   .268   .076   1
+  12 RUFI1120 1934 1985     52      1      0    .682    .69   1.66   .309   .624   .290   1.99   .314   .055   1
+  13 RUFI1130 1934 1984     51      1      0    .301    .35    .65   .152   .792   .218   2.07   .272   .079   2
+  14 RUFJ1ACH 1932 1985     54      1      0    .842    .56    .89   .125   .639   .154   1.38   .149   .053   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            649     10      3    .494    .54   1.66   .244   .721   .233   2.07   .246   .081
+
+ DATA CHECKS (rwl.check): ak11
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak11.rwl
+ 14 series, 649 measurements, 1932-1985, 0.01 mm precision
+ 0 error(s), 1 warning(s), 8 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (1)
+     RUFJ1ACH: site code differs from the rufi used by 13 of 14 series
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ak11.rwl, MD5 39d42629a32fd892d597deca3df9c238.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4534 for 26-year segments.
+ Segments: 26 years, lagged 13, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series RUFI1050 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 26 years: the record is only 54 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

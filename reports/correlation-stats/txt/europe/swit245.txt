@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: swit245
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit245.rwl
+      MD5 of measurement file: a4866a69ec767996740915120b2f6ae7
+      Date checked           : 01OCT26
+      Beginning year         : 1956
+      Ending year            : 1998
+      Principal investigators: Fonti, P.; García-González, I.
+      Site name              : Gerra CASA
+      Species information    : CASA Castanea sativa Mill.
+      Latitude               : 46.1214 N
+      Longitude              : 8.7967 E
+      Elevation              : 660 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.278
+      Avg standard deviation : 1.396
+      Avg autocorrelation    : 0.750
+      Number dated series    : 20
+      Segment length tested  : 20
+
+      Number problem segments: 10  (A 2, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 25.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit245
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  20-year dated segments, lagged  10 years
+ Flags:  A = correlation under   .5155 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1970 
+                        1979 1989 
+ --- -------- ---------  ---- ---- 
+   1 G0-1074  1956 1998  .67  .54 
+   2 G0-1234  1956 1998  .58  .83 
+   3 G0-337   1956 1998  .64  .14B
+   4 G0-432   1956 1998  .65  .70 
+   5 G0-476   1956 1998  .80  .09B
+   6 G0-512   1956 1998  .64  .54 
+   7 G0-645   1956 1998  .63  .71 
+   8 G0-674   1956 1998  .46A .55B
+   9 G0-681   1956 1998  .56  .62B
+  10 G1-196   1956 1998  .74  .58 
+  11 G1-414   1956 1998  .52  .05B
+  12 G1-641   1956 1998  .35B .48B
+  13 G1-646   1956 1998  .80  .71 
+  14 G1-649   1956 1998  .62  .47B
+  15 G1-655   1956 1998  .65  .67 
+  16 G1-705   1956 1998  .84  .79 
+  17 G1-711   1956 1998  .56  .48A
+  18 G1-804   1956 1998  .63  .66 
+  19 G1-859   1956 1998  .68  .62 
+  20 G0-692   1956 1998  .78  .71 
+ Av segment correlation  .64  .55 
+
+ FLAGGED SEGMENTS: swit245
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 G0-337   1970 1989     B     .141        -2      .483   .342  weak at every lag
+   5 G0-476   1970 1989     B     .093        -4      .329   .236  weak at every lag
+   8 G0-674   1960 1979     A     .458         0
+   8 G0-674   1970 1989     B     .549         1      .550   .000
+   9 G0-681   1970 1989     B     .624        -1      .631   .006
+  11 G1-414   1970 1989     B     .053         7      .434   .382  weak at every lag
+  12 G1-641   1960 1979     B     .353        10      .580   .226
+  12 G1-641   1970 1989     B     .478        -1      .484   .007  weak at every lag
+  14 G1-649   1970 1989     B     .467         2      .620   .153
+  17 G1-711   1970 1989     A     .485         0
+
+ DESCRIPTIVE STATISTICS: swit245
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 G0-1074  1956 1998     43      2      0    .534   2.50   6.89  1.359   .699   .239   2.36   .310   .076   1
+   2 G0-1234  1956 1998     43      2      0    .656   2.08   4.85  1.014   .775   .262   1.62   .268   .316   1
+   3 G0-337   1956 1998     43      2      1    .388   2.48   5.89  1.437   .739   .324   1.57   .301   .195   1
+   4 G0-432   1956 1998     43      2      0    .562   1.98   3.75   .711   .734   .197   1.48   .203   .100   1
+   5 G0-476   1956 1998     43      2      1    .313   1.37   2.60   .609   .778   .278   1.68   .269   .086   1
+   6 G0-512   1956 1998     43      2      0    .556   2.32   7.18  1.726   .830   .292   2.04   .309   .055   3
+   7 G0-645   1956 1998     43      2      0    .649   2.94   5.46  1.231   .761   .224   1.49   .223  -.023   2
+   8 G0-674   1956 1998     43      2      2    .542   2.67   9.88  1.966   .700   .337   2.12   .389   .105   2
+   9 G0-681   1956 1998     43      2      1    .563   2.01   5.07  1.177   .764   .231   2.28   .317   .101   2
+  10 G1-196   1956 1998     43      2      0    .532   1.36   3.78   .922   .796   .248   2.84   .357   .036   1
+  11 G1-414   1956 1998     43      2      1    .239   2.55   6.50  1.844   .872   .283   1.65   .276  -.001   1
+  12 G1-641   1956 1998     43      2      2    .465   2.37   5.73  1.331   .668   .368   1.77   .371   .018   3
+  13 G1-646   1956 1998     43      2      0    .680   2.42   6.87  1.318   .679   .316   2.30   .335   .195   1
+  14 G1-649   1956 1998     43      2      1    .520   4.22  11.90  2.278   .795   .219   1.87   .250  -.020   3
+  15 G1-655   1956 1998     43      2      0    .602   2.85   8.18  1.876   .823   .324   1.76   .316   .287   1
+  16 G1-705   1956 1998     43      2      0    .771   1.94   3.42   .779   .790   .204   1.54   .213   .031   2
+  17 G1-711   1956 1998     43      2      1    .466   2.89   4.77  1.147   .607   .333   1.52   .278   .188   1
+  18 G1-804   1956 1998     43      2      0    .637   4.05   7.21  1.793   .796   .258   1.87   .280   .058   1
+  19 G1-859   1956 1998     43      2      0    .582   2.69   7.59  1.825   .672   .310   2.42   .391   .046   1
+  20 G0-692   1956 1998     43      2      0    .716   2.49   6.02  1.572   .733   .318   2.06   .394  -.034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            860     40     10    .549   2.51  11.90  1.396   .750   .278   2.84   .302   .091
+
+ DATA CHECKS (rwl.check): swit245
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit245.rwl
+ 20 series, 860 measurements, 1956-1998, 0.01 mm precision
+ 0 error(s), 0 warning(s), 28 note(s)
+ -------------
+ Nothing to report at this severity.
+ 28 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file swit245.rwl, MD5 a4866a69ec767996740915120b2f6ae7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5155 for 20-year segments.
+ Segments: 20 years, lagged 10, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 20 years: the record is only 43 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

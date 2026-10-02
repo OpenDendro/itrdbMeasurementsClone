@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: va027
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : va027.rwl
+      MD5 of measurement file: 2cca1fdf439bf2905388fcff6d261c70
+      Date checked           : 01OCT26
+      Beginning year         : 1749
+      Ending year            : 1998
+      Principal investigators: Lawrence, D.M.; Stephenson, S.; Adams, H.S.
+      Site name              : Sweet Briar College Old-Growth White Oak
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 37.5500 N
+      Longitude              : 79.0700 W
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.547
+      Avg mean sensitivity   : 0.164
+      Avg standard deviation : 0.385
+      Avg autocorrelation    : 0.703
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 4.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: va027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   2 001012   1766 1998  .56  .47  .57  .72  .52  .48 
+   3 001021   1832 1998            .66  .72  .67  .70 
+   4 001022   1797 1998  .37  .34  .62  .77  .75  .71 
+   5 001031   1824 1998            .59  .60  .56  .45 
+   6 001032   1764 1998  .69  .64  .69  .70  .48  .51 
+   7 001041   1781 1998  .32A .27B .51  .70  .65  .55 
+   8 001042   1867 1998                 .57  .55  .66 
+   9 001051   1783 1989  .73  .64  .34  .44  .60  .58 
+  10 001052   1782 1998  .40  .39  .27B .44  .58  .54 
+  11 001061   1903 1998                           .60 
+  12 001062   1852 1998                 .45  .43  .62 
+  13 001072   1907 1998                           .56 
+  14 001081   1855 1998                 .61  .63  .52 
+  15 001082   1799 1998  .41  .62  .59  .76  .81  .65 
+  16 001091   1781 1991  .57  .58  .66  .70  .61  .35 
+  17 001092   1749 1998  .54  .45  .54  .66  .66  .43 
+ Av segment correlation  .51  .49  .55  .63  .61  .56 
+
+ FLAGGED SEGMENTS: va027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 001041   1800 1849     A     .316         0
+   7 001041   1825 1874     B     .266        -6      .318   .052  weak at every lag
+  10 001052   1850 1899     B     .267         8      .297   .030  weak at every lag
+
+ DESCRIPTIVE STATISTICS: va027
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 001011   1930 1998     69      0      0    .441    .84   1.47   .260   .777   .149   1.49   .156  -.044   1
+   2 001012   1766 1998    233      6      0    .614   1.01   1.86   .255   .664   .165   1.63   .165  -.002   1
+   3 001021   1832 1998    167      4      0    .664   1.50   2.41   .278   .603   .126   1.39   .122   .010   1
+   4 001022   1797 1998    202      6      0    .586   1.42   2.31   .369   .777   .132   1.42   .125  -.009   2
+   5 001031   1824 1998    175      4      0    .607   1.49   2.37   .275   .423   .151   1.45   .150  -.012   3
+   6 001032   1764 1998    235      6      0    .619   1.18   1.85   .240   .491   .160   1.44   .158   .019   3
+   7 001041   1781 1998    218      6      2    .492   1.34   3.23   .584   .849   .174   1.65   .178   .004   2
+   8 001042   1867 1998    132      3      0    .530   1.73   3.72   .541   .787   .151   1.45   .154  -.003   1
+   9 001051   1783 1989    207      6      0    .588    .89   1.89   .314   .802   .169   1.53   .162   .072   2
+  10 001052   1782 1998    217      6      1    .435    .68   1.52   .223   .768   .174   1.95   .180  -.013   3
+  11 001061   1903 1998     96      1      0    .613   1.40   2.82   .322   .392   .203   1.75   .199   .015   1
+  12 001062   1852 1998    147      3      0    .530   1.46   3.21   .646   .777   .240   1.57   .220   .049   3
+  13 001072   1907 1998     92      1      0    .303   1.70   3.66   .760   .791   .202   2.29   .224   .058   0
+  14 001081   1855 1998    144      3      0    .528   1.82   3.00   .425   .573   .165   1.44   .157   .121   0
+  15 001082   1799 1998    200      6      0    .557   1.42   2.75   .467   .808   .151   1.39   .149  -.015   1
+  16 001091   1781 1991    211      6      0    .471   1.36   3.02   .515   .845   .161   1.45   .150  -.001   1
+  17 001092   1749 1998    250      6      0    .560   1.18   1.97   .314   .725   .154   1.36   .154   .005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2995     73      3    .547   1.29   3.72   .385   .703   .164   2.29   .162   .014
+
+ DATA CHECKS (rwl.check): va027
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/va027.rwl
+ 17 series, 2995 measurements, 1749-1998, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file va027.rwl, MD5 2cca1fdf439bf2905388fcff6d261c70.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

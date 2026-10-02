@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: cod005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cod005.rwl
+      MD5 of measurement file: 464e9cc78b323d3fc0f95cf82874a33e
+      Date checked           : 01OCT26
+      Beginning year         : 1971
+      Ending year            : 2006
+      Principal investigators: Couralet, C.
+      Site name              : Luki
+      Species information    : TESU Terminalia superba Engl. & Diels
+      Latitude               : 5.6000 S
+      Longitude              : 13.1500 E
+      Elevation              : 292 m
+
+      Series intercorrelation: 0.368
+      Avg mean sensitivity   : 0.490
+      Avg standard deviation : 6.913
+      Avg autocorrelation    : 0.754
+      Number dated series    : 14
+      Segment length tested  : 18
+
+      Number problem segments: 18  (A 2, B 16; 15 of the B weak at every lag)
+      Pct problem segments   : 81.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cod005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  18-year dated segments, lagged   9 years
+ Flags:  A = correlation under   .5425 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1980 1989 
+                        1997 2006 
+ --- -------- ---------  ---- ---- 
+   1 TW5880   1982 2006       .70 
+   2 TW5881   1982 2006       .66 
+   3 TW5882   1982 2006       .73 
+   4 TW5883   1985 2006       .24B
+   5 TW5884   1985 2006       .28B
+   6 TW5885   1980 2006  .28B .39A
+   7 TW5886   1980 2006       .43B
+   8 TW5887   1980 2006  .37B .48A
+   9 TW5888   1975 2006  .55  .41B
+  10 TW5889   1975 2006  .24B .24B
+  11 TW588A   1975 2006 -.10B .09B
+  12 TW588B   1971 2006  .37B .13B
+  13 TW588C   1971 2006  .37B .26B
+  14 TW588D   1971 2006  .20B .11B
+ Av segment correlation  .29  .37 
+
+ FLAGGED SEGMENTS: cod005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 TW5883   1989 2006     B     .243       -10      .459   .216  weak at every lag
+   5 TW5884   1989 2006     B     .279       -10      .459   .179  weak at every lag
+   6 TW5885   1980 1997     B     .282        -6      .395   .113  weak at every lag
+   6 TW5885   1989 2006     A     .392         0
+   7 TW5886   1989 2006     B     .428        -8      .533   .104  weak at every lag
+   8 TW5887   1980 1997     B     .372        -1      .663   .291
+   8 TW5887   1989 2006     A     .479         0
+   9 TW5888   1989 2006     B     .409        -2      .415   .006  weak at every lag
+  10 TW5889   1980 1997     B     .240         8      .369   .129  weak at every lag
+  10 TW5889   1989 2006     B     .235       -10      .449   .214  weak at every lag
+  11 TW588A   1980 1997     B    -.098         4      .467   .565  weak at every lag
+  11 TW588A   1989 2006     B     .094       -10      .220   .126  weak at every lag
+  12 TW588B   1980 1997     B     .375         1      .499   .124  weak at every lag
+  12 TW588B   1989 2006     B     .126        -7      .159   .032  weak at every lag
+  13 TW588C   1980 1997     B     .373         2      .526   .153  weak at every lag
+  13 TW588C   1989 2006     B     .265        -6      .484   .219  weak at every lag
+  14 TW588D   1980 1997     B     .203         1      .491   .288  weak at every lag
+  14 TW588D   1989 2006     B     .114        -8      .283   .169  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cod005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TW5880   1982 2006     25      1      0    .710   9.82  27.16  7.352   .652   .614   1.69   .399  -.146   2
+   2 TW5881   1982 2006     25      1      0    .558   9.36  25.21  7.197   .599   .718   1.90   .559   .151   0
+   3 TW5882   1982 2006     25      1      0    .544   7.41  24.48  6.031   .638   .655   1.92   .522   .209   0
+   4 TW5883   1985 2006     22      1      1    .229   9.39  31.27  8.535   .919   .437  10.34  2.041   .602   0
+   5 TW5884   1985 2006     22      1      1    .267   8.69  30.29  8.460   .958   .375   3.99   .763   .624   1
+   6 TW5885   1980 2006     27      2      2    .371   7.44  25.40  6.064   .853   .379   2.04   .395   .118   0
+   7 TW5886   1980 2006     27      1      1    .473   9.18  27.56  6.586   .866   .354   1.79   .362  -.001   1
+   8 TW5887   1980 2006     27      2      2    .464   7.93  26.66  6.095   .788   .419   2.16   .444   .128   0
+   9 TW5888   1975 2006     32      2      1    .455   7.00  49.65  8.511   .867   .435   2.00   .418   .048   1
+  10 TW5889   1975 2006     32      2      2    .286   6.03  44.72  8.327   .709   .583   3.52   .709   .149   1
+  11 TW588A   1975 2006     32      2      2    .117   6.32  57.61 10.091   .888   .475   2.54   .501   .063   1
+  12 TW588B   1971 2006     36      2      2    .260   8.25  29.51  5.717   .526   .411   1.96   .373   .054   3
+  13 TW588C   1971 2006     36      2      2    .318   6.27  19.43  4.321   .731   .464   2.38   .407  -.059   2
+  14 TW588D   1971 2006     36      2      2    .246   5.80  22.86  4.866   .672   .553   2.35   .462  -.064   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            404     22     18    .368   7.61  57.61  6.913   .754   .490  10.34   .564   .111
+
+ DATA CHECKS (rwl.check): cod005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/cod005.rwl
+ 14 series, 404 measurements, 1971-2006, 0.01 mm precision
+ 0 error(s), 0 warning(s), 18 note(s)
+ -------------
+ Nothing to report at this severity.
+ 18 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cod005.rwl, MD5 464e9cc78b323d3fc0f95cf82874a33e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5425 for 18-year segments.
+ Segments: 18 years, lagged 9, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 18 years: the record is only 36 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

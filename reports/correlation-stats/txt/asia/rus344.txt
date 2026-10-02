@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: rus344
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus344.rwl
+      MD5 of measurement file: 2e989a7f177cc6d87dfd24d37c02ad1a
+      Date checked           : 01OCT26
+      Beginning year         : 1849
+      Ending year            : 2014
+      Principal investigators: Solomina, O.
+      Site name              : Kiverichi - L10S
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 57.3458 N
+      Longitude              : 36.6186 E
+      Elevation              : 155 m
+
+      Series intercorrelation: 0.536
+      Avg mean sensitivity   : 0.241
+      Avg standard deviation : 1.135
+      Avg autocorrelation    : 0.893
+      Number dated series    : 24
+      Series crossdated      : 23
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 5.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus344
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 L10S1a   1866 2014  .57  .76  .74 
+   2 L10S1b   1852 1997  .52  .71      
+   3 L10S2a   1855 2014  .59  .64  .68 
+   5 L10S3a   1852 2014  .56  .47  .53 
+   6 L10S3b   1857 2014  .64  .45  .45 
+   7 L10S4a   1853 2014  .36  .61  .76 
+   8 L10S4b   1859 2014  .48  .61  .63 
+   9 L10S5a   1851 2014  .42  .72  .72 
+  10 L10S5b   1852 2014  .57  .65  .62 
+  11 L10S6a   1854 2014  .17B .30A .53 
+  12 L10S6b   1850 1952  .47           
+  13 L10S7a   1854 2014  .60  .63  .68 
+  14 L10S7b   1849 2014  .64  .65  .65 
+  15 L10S8a   1853 2014  .61  .57  .62 
+  16 L10S8b   1859 2014  .63  .65  .57 
+  17 L10S9a   1927 2014            .56 
+  18 L10S9b   1882 2014  .57  .66  .68 
+  19 L10S10a  1860 2014  .67  .45  .24B
+  20 L10S10b  1859 2014  .62  .62  .41 
+  22 L10S11b  1923 2014       .59  .59 
+  23 L10S12a  1861 2014  .45  .61  .56 
+  24 L10S12b  1867 2014  .37  .60  .67 
+ Av segment correlation  .53  .60  .59 
+
+ FLAGGED SEGMENTS: rus344
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 L10S6a   1900 1949     B     .175        -4      .332   .157
+  11 L10S6a   1925 1974     A     .301         0
+  19 L10S10a  1950 1999     B     .245        -4      .328   .083  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus344
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 L10S1a   1866 2014    149      3      0    .615   1.20   2.61   .509   .785   .263   1.89   .265   .033   1
+   2 L10S1b   1852 1997    146      2      0    .545   1.45   8.40  1.178   .893   .243   1.66   .236   .020   2
+   3 L10S2a   1855 2014    160      3      0    .584   1.43   5.49   .934   .906   .240   1.73   .236  -.001   2
+   4 L10S2b   1863 2014    149                         1.34   7.01   .922   .879   .265                         
+   5 L10S3a   1852 2014    163      3      0    .503   1.46   7.61  1.147   .913   .280   1.90   .268   .003   3
+   6 L10S3b   1857 2014    158      3      0    .500   1.50   4.41   .701   .797   .263   1.81   .261   .014   2
+   7 L10S4a   1853 2014    162      3      0    .579   1.43   5.39  1.156   .951   .230   1.75   .231   .043   1
+   8 L10S4b   1859 2014    156      3      0    .544   1.28   4.17   .861   .943   .256   1.79   .246  -.005   2
+   9 L10S5a   1851 2014    164      3      0    .566   1.29   6.89  1.073   .944   .242   1.57   .247  -.012   1
+  10 L10S5b   1852 2014    163      3      0    .590   1.71   5.60   .775   .787   .243   1.73   .242   .027   1
+  11 L10S6a   1854 2014    161      3      2    .330   1.54  10.40  2.082   .968   .274   2.44   .284   .027   3
+  12 L10S6b   1850 1952    103      1      0    .339   2.38   9.90  2.259   .921   .277   1.67   .271   .011   2
+  13 L10S7a   1854 2014    161      3      0    .638   1.48   8.82  1.268   .937   .214   1.60   .221   .004   1
+  14 L10S7b   1849 2014    166      3      0    .595   1.87  10.50  1.715   .926   .204   1.76   .217  -.001   1
+  15 L10S8a   1853 2014    162      3      0    .553   1.35   6.52  1.121   .922   .197   1.94   .215  -.012   1
+  16 L10S8b   1859 2014    156      3      0    .552   1.77   6.69   .886   .844   .179   1.51   .194   .032   1
+  17 L10S9a   1927 2014     88      1      0    .583   1.16   2.59   .634   .876   .241   1.73   .241   .120   1
+  18 L10S9b   1882 2014    133      3      0    .611   1.04   2.80   .473   .768   .248   1.73   .256   .047   1
+  19 L10S10a  1860 2014    155      3      1    .387   1.76   8.94  1.355   .936   .225   2.21   .240  -.020   1
+  20 L10S10b  1859 2014    156      3      0    .497   1.85  12.27  1.820   .944   .236   1.81   .243  -.001   1
+  21 L10S11a  1970 2014     45      0      0    .568   1.09   2.45   .468   .568   .285   1.90   .304   .060   1
+  22 L10S11b  1923 2014     92      2      0    .550   1.25   4.48  1.040   .911   .327   1.83   .297   .001   1
+  23 L10S12a  1861 2014    154      3      0    .529   1.69   7.22  1.408   .963   .205   1.93   .228   .022   1
+  24 L10S12b  1867 2014    148      3      0    .567   1.32   5.02   .922   .902   .236   1.76   .242  -.009   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3450     60      3    .536   1.50  12.27  1.135   .893   .241   2.44   .244   .014
+
+ DATA CHECKS (rwl.check): rus344
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus344.rwl
+ 24 series, 3450 measurements, 1849-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 9 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     L10S2b: no measurement for 1937-1939, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file rus344.rwl, MD5 2e989a7f177cc6d87dfd24d37c02ad1a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series L10S2b has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

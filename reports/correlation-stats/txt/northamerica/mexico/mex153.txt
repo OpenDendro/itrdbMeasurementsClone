@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: mex153
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex153.rwl
+      MD5 of measurement file: 4104e7b30ab12078a57f21f0210998d0
+      Date checked           : 01OCT26
+      Beginning year         : 1867
+      Ending year            : 2019
+      Principal investigators: Cerano Paredes, J.; López-Hernández, M.I.; Cervantes-Martínez, R.
+      Site name              : Tolán, Chiapas (TOL)
+      Species information    : PIOO Pinus oocarpa Schiede
+      Latitude               : 16.4630 N
+      Longitude              : 94.0271 W
+      Elevation              : 952 m
+
+      Series intercorrelation: 0.386
+      Avg mean sensitivity   : 0.372
+      Avg standard deviation : 1.433
+      Avg autocorrelation    : 0.628
+      Number dated series    : 42
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 4, B 6; 2 of the B weak at every lag)
+      Pct problem segments   : 40.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex153
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 TOL01A   1945 2010            .43 
+   4 TOL03B   1946 2010            .20B
+   6 TOL05B   1924 2018       .44  .65 
+   7 TOL06A   1921 1980       .32A     
+   9 TOLO8B   1924 2019            .63 
+  12 TOL11A   1920 2018       .32A .44 
+  13 TOL11B   1937 2018            .62 
+  14 TOL12A   1926 2019            .53 
+  16 TOL14A   1896 1980  .24B .41      
+  18 TOL16B   1915 2019       .36  .29A
+  24 TOL19B   1917 2019       .14B .35B
+  27 TOL21A   1911 2019       .44 -.04B
+  28 TOL22B   1922 2018       .32A .53 
+  30 TOL24A   1918 1980       .40      
+  31 TOL25A   1948 2017            .51 
+  40 TOL30B   1911 2018       .08B .37 
+  42 TOL32A   1913 1980       .35      
+ Av segment correlation  .24  .33  .42 
+
+ FLAGGED SEGMENTS: mex153
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 TOL03B   1950 1999     B     .197        -3      .345   .148
+   7 TOL06A   1925 1974     A     .316         0
+  12 TOL11A   1925 1974     A     .324         0
+  16 TOL14A   1900 1949     B     .241        -9      .272   .031  weak at every lag
+  18 TOL16B   1950 1999     A     .295         0
+  24 TOL19B   1925 1974     B     .139        -4      .346   .207
+  24 TOL19B   1950 1999     B     .346        -5      .387   .041
+  27 TOL21A   1950 1999     B    -.036        -7      .405   .441
+  28 TOL22B   1925 1974     A     .318         0
+  40 TOL30B   1925 1974     B     .081        -5      .234   .152  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mex153
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TOL01A   1945 2010     66      1      0    .409   2.03   5.74  1.152   .869   .276   1.67   .292   .017   1
+   2 TOL01B   1880 1929     50      0      0    .148   1.85  10.70  2.066   .721   .501   3.31   .708   .003   1
+   3 TOL02B   1905 1970     66      0      0    .360   1.98   3.60   .867   .573   .391   1.62   .312   .040   2
+   4 TOL03B   1946 2010     65      1      1    .220   3.42   9.61  2.293   .781   .393   2.74   .426   .042   1
+   5 TOL04A   1936 1950     15      0      0    .741   6.29  11.28  2.479   .567   .298   1.48   .316   .343   0
+   6 TOL05B   1924 2018     95      2      0    .557   2.11   9.37  1.745   .862   .347   1.88   .294   .058   0
+   7 TOL06A   1921 1980     60      1      1    .388   2.32  11.06  2.166   .837   .480   1.87   .408   .003   1
+   8 TOL07B   1987 2019     33      0      0    .439   3.69   8.44  2.096   .515   .473   2.05   .432   .004   2
+   9 TOLO8B   1924 2019     96      1      0    .424   1.36   7.10   .946   .633   .378   2.23   .335  -.013   3
+  10 TOL09B   1955 2019     65      0      0    .432   1.19   2.36   .470   .298   .381   1.86   .312   .043   2
+  11 TOL10B   1953 2015     63      0      0    .238   2.45   6.18  1.085   .701   .265   1.85   .269  -.026   3
+  12 TOL11A   1920 2018     99      2      1    .412   2.61   6.68  1.168   .366   .356   2.57   .335   .073   3
+  13 TOL11B   1937 2018     82      1      0    .642   2.48   9.02  1.352   .419   .450   2.23   .375  -.018   3
+  14 TOL12A   1926 2019     94      1      0    .474   3.02   8.54  1.455   .745   .269   1.76   .273  -.001   2
+  15 TOL13A   1938 1980     43      0      0    .291   1.14   2.92   .691   .532   .491   1.67   .393   .032   0
+  16 TOL14A   1896 1980     85      2      1    .229   1.70   6.60   .899   .546   .407   1.82   .333  -.030   2
+  17 TOL15B   1950 2017     68      0      0    .445   3.60   8.35  2.034   .743   .331   2.18   .335   .045   1
+  18 TOL16B   1915 2019    105      2      1    .279   1.65   5.50  1.370   .882   .468   2.05   .407  -.036   1
+  19 TOL17A   1969 2018     50      0      0    .354   3.74   7.82  1.652   .359   .344   1.65   .281  -.018   2
+  20 TOL17B   1974 2019     46      0      0    .619   5.79  12.71  2.534   .508   .331   1.70   .306   .028   1
+  21 TOL18A   1978 2019     42      0      0    .385   5.33  15.38  3.066   .681   .338   1.77   .281  -.022   0
+  22 TOL18B   1975 2019     45      0      0    .488   5.42  11.01  2.314   .566   .291   1.83   .271   .128   0
+  23 TOL19A   1917 1970     54      0      0    .059   1.89   3.91   .776   .380   .361   1.76   .343   .180   0
+  24 TOL19B   1917 2019    103      2      2    .279   1.93   5.43  1.244   .700   .450   2.12   .417  -.023   3
+  25 TOL20A   1970 2019     50      0      0    .376   1.43   3.19   .601   .374   .347   2.17   .366  -.016   2
+  26 TOL20B   1980 2019     40      0      0    .369   1.98   3.78   .807   .509   .305   1.80   .328  -.021   1
+  27 TOL21A   1911 2019    109      2      1    .200   3.07   6.80  1.298   .707   .291   2.01   .294   .035   3
+  28 TOL22B   1922 2018     97      2      1    .497   1.90   5.97  1.330   .762   .416   2.29   .425  -.048   3
+  29 TOL23A   1928 1980     53      0      0    .459   1.95   5.14  1.180   .688   .396   1.75   .363   .021   1
+  30 TOL24A   1918 1980     63      1      0    .412   4.54   9.51  2.476   .800   .321   1.86   .333   .058   1
+  31 TOL25A   1948 2017     70      1      0    .407   3.19   7.53  1.655   .619   .337   2.33   .352   .143   0
+  32 TOL25B   1950 2017     68      0      0    .445   3.60   8.35  2.034   .743   .331   2.18   .335   .045   1
+  33 TOL26A   1984 2019     36      0      0    .533   3.29   7.20  1.364   .087   .400   1.72   .332  -.027   0
+  34 TOL26B   1984 2019     36      0      0    .461   4.23  12.33  2.600   .632   .402   2.01   .392  -.085   2
+  35 TOL27A   1967 2019     53      0      0    .635   2.88   9.22  1.913   .400   .466   2.17   .440  -.044   0
+  36 TOL27B   1960 2019     60      0      0    .327   1.63   5.92   .990   .590   .331   1.94   .358   .164   0
+  37 TOL28A   1869 1930     62      0      0    .291   1.87   5.71  1.218   .682   .403   2.08   .377   .101   0
+  38 TOL28B   1867 1920     54      0      0    .534   1.37   3.00   .584   .265   .421   1.87   .352  -.033   0
+  39 TOL29A   1986 2019     34      0      0    .374   2.84   5.58  1.003   .266   .304   1.73   .326   .259   0
+  40 TOL30B   1911 2018    108      2      1    .348   1.89   5.05  1.163   .797   .311   1.77   .306   .017   1
+  41 TOL31B   1970 2019     50      0      0    .375   3.11   6.29  1.664   .671   .378   1.61   .360   .049   1
+  42 TOL32A   1913 1980     68      1      0    .293   1.76   4.78  1.197   .786   .414   1.89   .387   .145   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2701     25     10    .386   2.55  15.38  1.433   .628   .372   3.31   .352   .030
+
+ DATA CHECKS (rwl.check): mex153
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex153.rwl
+ 42 series, 2701 measurements, 1867-2019, 0.001 mm precision
+ 3 error(s), 2 warning(s), 13 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     TOL20A: correlates best with the master at lag -4 (r = 0.415 against r = 0.313 as dated); the series may be misdated by 4 year(s), most likely a missing ring
+     TOL21A: correlates best with the master at lag -1 (r = 0.399 against r = 0.215 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+   RWL_DUP_SERIES (1)
+     TOL15B: identical measurements in TOL15B, TOL25B; one core may be archived twice
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1856-2018 but the measurements cover 1867-2019
+   RWL_NON_ASCII (1)
+     8 byte(s) outside printable ASCII
+ 13 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file mex153.rwl, MD5 4104e7b30ab12078a57f21f0210998d0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

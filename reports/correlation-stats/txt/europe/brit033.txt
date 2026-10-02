@@ -1,0 +1,100 @@
+
+ COFECHA-style crossdating report: brit033
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit033.rwl
+      MD5 of measurement file: 356f694b06a13b7c876c3c7b2c57d261
+      Date checked           : 01OCT26
+      Beginning year         : 1818
+      Ending year            : 1987
+      Principal investigators: Hillam, J.
+      Site name              : Porter Brook
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 53.5000 N
+      Longitude              : 1.5000 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.352
+      Avg mean sensitivity   : 0.246
+      Avg standard deviation : 0.979
+      Avg autocorrelation    : 0.869
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 50.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 PB04.D   1838 1987  .06B .36 
+   3 PB08.D   1840 1987  .29A .18B
+   4 PB09.D   1854 1987  .41  .39 
+ Av segment correlation  .25  .31 
+
+ FLAGGED SEGMENTS: brit033
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 PB04.D   1900 1949     B     .064        -4      .238   .173  weak at every lag
+   3 PB08.D   1900 1949     A     .291         0
+   3 PB08.D   1925 1974     B     .178        -5      .226   .048  weak at every lag
+
+ DESCRIPTIVE STATISTICS: brit033
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PB04.D   1838 1987    150      2      1    .253   1.10   5.82  1.112   .900   .290   1.81   .276   .089   0
+   2 PB07.D   1840 1931     92      0      0    .451   1.09   3.36   .782   .906   .227   1.60   .232   .063   1
+   3 PB08.D   1840 1987    148      2      2    .388   1.18   4.04   .849   .886   .203   1.81   .215  -.003   3
+   4 PB09.D   1854 1987    134      2      0    .382   1.28   3.54   .653   .795   .227   1.63   .225   .030   1
+   5 PB3A.D   1818 1907     90      0      0    .292   1.84   6.90  1.773   .912   .273   1.76   .253   .025   2
+   6 PB5A.D   1854 1923     70      0      0    .382   1.43   3.70   .833   .801   .270   2.65   .347   .079   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            684      6      3    .352   1.28   6.90   .979   .869   .246   2.65   .251   .044
+
+ DATA CHECKS (rwl.check): brit033
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit033.rwl
+ 6 series, 684 measurements, 1818-1987, 0.02 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file brit033.rwl, MD5 356f694b06a13b7c876c3c7b2c57d261.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

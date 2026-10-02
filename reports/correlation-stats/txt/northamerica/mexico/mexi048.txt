@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: mexi048
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi048.rwl
+      MD5 of measurement file: 7af74598ee6c0ef78667c0d06cdad76a
+      Date checked           : 01OCT26
+      Beginning year         : 1780
+      Ending year            : 2004
+      Principal investigators: Villanueva-Díaz, J.
+      Site name              : Salto de los Salado
+      Species information    : TAMU Taxodium mucronatum Ten.
+      Latitude               : 21.7520 N
+      Longitude              : 102.3670 W
+      Elevation              : 1690 m
+
+      Series intercorrelation: 0.552
+      Avg mean sensitivity   : 0.352
+      Avg standard deviation : 1.451
+      Avg autocorrelation    : 0.742
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.28
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SAS07A   1871 2004                 .55  .61  .76  .68 
+   2 SAS07B   1882 2004                      .68  .68  .68 
+   3 SAS09A   1864 2004                 .49  .58  .56  .55 
+   4 SAS09B   1875 2004                      .50  .36  .26A
+   5 SAS10A   1793 2004  .40  .63  .67  .64  .58  .62  .57 
+   6 SAS10B   1856 2004                 .66  .61  .75  .71 
+   7 SAS10C   1780 2004  .57  .52  .45  .58  .70  .64  .45 
+   8 SAS11A   1845 2004            .55  .69  .74  .68  .55 
+   9 SAS11B   1798 2004       .51  .63  .76  .81  .77  .67 
+  10 SAS16B   1900 2004                           .71  .60 
+  12 SAS19B   1870 1950                 .59  .71           
+  13 SAS19D   1861 1950                 .59  .74           
+  14 SAS20A   1884 1963                      .66           
+  15 SAS33B   1798 1850  .22B                              
+  17 SAS42A   1880 2004                      .57  .58  .41 
+  18 SAS42B   1838 2004            .67  .68  .64  .61  .55 
+  19 SAS44B   1850 1958                 .46  .46           
+ Av segment correlation  .39  .55  .60  .61  .64  .64  .56 
+
+ FLAGGED SEGMENTS: mexi048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 SAS09B   1950 1999     A     .262         0
+  15 SAS33B   1800 1849     B     .216         3      .305   .089  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mexi048
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SAS07A   1871 2004    134      4      0    .593   1.41  10.19  1.269   .765   .407   2.15   .399   .029   1
+   2 SAS07B   1882 2004    123      3      0    .671   1.73  21.00  2.464   .906   .391   3.10   .493  -.013   1
+   3 SAS09A   1864 2004    141      4      0    .472   2.17  13.88  2.324   .894   .404   2.13   .386  -.010   1
+   4 SAS09B   1875 2004    130      3      1    .422   2.02   5.38  1.001   .619   .347   2.10   .329  -.030   3
+   5 SAS10A   1793 2004    212      7      0    .531   2.10   6.81  1.155   .693   .310   2.01   .308   .060   1
+   6 SAS10B   1856 2004    149      4      0    .658   2.38  12.34  1.696   .897   .262   1.82   .263   .006   1
+   7 SAS10C   1780 2004    225      7      0    .514   1.81   7.01  1.067   .707   .344   3.18   .386   .013   1
+   8 SAS11A   1845 2004    160      5      0    .570   2.12   8.32  1.596   .851   .353   2.97   .384   .075   1
+   9 SAS11B   1798 2004    207      6      0    .623   1.26   3.94   .713   .602   .369   2.28   .379  -.018   3
+  10 SAS16B   1900 2004    105      2      0    .677   1.63   3.56   .834   .729   .345   1.98   .331  -.024   3
+  11 SAS16C   1836 1892     57      0      0    .559   5.11  15.51  3.487   .925   .278   1.82   .298   .036   1
+  12 SAS19B   1870 1950     81      2      0    .594   2.42   6.84  1.779   .737   .423   2.94   .474   .007   1
+  13 SAS19D   1861 1950     90      2      0    .558   2.26   6.57  1.641   .701   .464   3.49   .538   .052   1
+  14 SAS20A   1884 1963     80      1      0    .673   2.02   5.92  1.461   .809   .308   1.72   .326  -.010   3
+  15 SAS33B   1798 1850     53      1      1    .218   4.46   9.33  1.787   .273   .436   1.96   .345  -.014   1
+  16 SAS36A   1780 1823     44      0      0    .330   1.14   3.71   .683   .544   .368   1.95   .354   .170   0
+  17 SAS42A   1880 2004    125      3      0    .514   2.37   6.96  1.342   .758   .330   2.33   .321   .075   3
+  18 SAS42B   1838 2004    167      5      0    .568   2.20   9.79  1.939   .817   .350   2.16   .368  -.030   1
+  19 SAS44B   1850 1958    109      2      0    .463   1.92   4.60   .801   .616   .283   1.75   .291   .019   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2392     61      2    .552   2.07  21.00  1.451   .742   .352   3.49   .366   .016
+
+ DATA CHECKS (rwl.check): mexi048
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi048.rwl
+ 19 series, 2392 measurements, 1780-2004, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mexi048.rwl, MD5 7af74598ee6c0ef78667c0d06cdad76a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

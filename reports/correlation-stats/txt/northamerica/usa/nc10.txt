@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: nc10
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc10.rwl
+      MD5 of measurement file: af406a82b561ad3bf46f49d8acf1bb7f
+      Date checked           : 01OCT26
+      Beginning year         : 1795
+      Ending year            : 1985
+      Principal investigators: Barefoot, A.C.
+      Site name              : Union Camp Big Woods
+      Species information    : PITA Pinus taeda L.
+      Latitude               : 36.4700 N
+      Longitude              : 76.9700 W
+      Elevation              : 2 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 1.319
+      Avg autocorrelation    : 0.889
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 6.60
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc10
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 UC01-1   1882 1985                      .31A .33 
+   2 UC01-2   1862 1985                 .40  .23B .09B
+   3 UC02-1   1847 1985            .47  .63  .64  .68 
+   4 UC02-2   1847 1985            .54  .60  .45  .59 
+   5 UC03-1   1899 1985                      .62  .69 
+   6 UC03-2   1875 1985                      .50  .51 
+   7 UC04-1   1812 1985       .54  .60  .60  .56  .54 
+   8 UC04-2   1795 1985       .59  .61  .52  .41  .47 
+   9 UC05-1   1815 1985       .63  .72  .70  .53  .63 
+  10 UC05-2   1819 1985       .59  .70  .69  .47  .61 
+  11 UC06-1   1817 1985       .73  .73  .49  .51  .77 
+  12 UC06-2   1812 1985       .62  .63  .39  .47  .54 
+  13 UC07-1   1812 1985       .56  .44  .49  .44  .57 
+  14 UC07-2   1823 1985       .16B .42  .60  .52  .39 
+  15 UC08-1   1810 1985       .58  .60  .55  .60  .62 
+  16 UC08-2   1818 1985       .40  .53  .50  .41  .58 
+  17 UC09-1   1817 1985       .62  .67  .42  .40  .61 
+  18 UC09-2   1808 1985       .70  .71  .54  .46  .52 
+  19 UC10-1   1813 1985       .45  .41  .43  .40  .30B
+  20 UC10-2   1814 1985       .49  .16B .16B .39  .45 
+  21 UC11-1   1815 1985       .62  .55  .50  .59  .68 
+  22 UC11-2   1814 1985       .56  .71  .70  .56  .39 
+  23 UC12-1   1812 1985       .37  .42  .57  .56  .69 
+  24 UC12-2   1835 1985            .37  .58  .55  .59 
+ Av segment correlation       .54  .55  .53  .48  .54 
+
+ FLAGGED SEGMENTS: nc10
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 UC01-1   1900 1949     A     .308         0
+   2 UC01-2   1900 1949     B     .231        -9      .288   .057  weak at every lag
+   2 UC01-2   1925 1974     B     .090        -7      .209   .119  weak at every lag
+  14 UC07-2   1825 1874     B     .156        -2      .218   .062  weak at every lag
+  19 UC10-1   1925 1974     B     .305         7      .330   .025
+  20 UC10-2   1850 1899     B     .161        -3      .405   .245
+  20 UC10-2   1875 1924     B     .160        -3      .295   .135  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nc10
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 UC01-1   1882 1985    104      2      1    .391   1.51   4.51   .843   .850   .249   1.61   .259   .039   1
+   2 UC01-2   1862 1985    124      3      2    .267   1.20   3.88   .917   .923   .236   1.84   .259   .058   1
+   3 UC02-1   1847 1985    139      4      0    .567   2.20   6.72  1.407   .916   .208   2.06   .224   .016   3
+   4 UC02-2   1847 1985    139      4      0    .482   2.16   5.18  1.020   .858   .192   1.81   .214   .008   1
+   5 UC03-1   1899 1985     87      2      0    .652   3.12   5.86  1.158   .816   .191   1.69   .195   .043   1
+   6 UC03-2   1875 1985    111      2      0    .463   2.67   4.67   .913   .744   .201   1.56   .193   .008   2
+   7 UC04-1   1812 1985    174      5      0    .543   2.00   6.77  1.546   .948   .220   1.62   .209   .003   1
+   8 UC04-2   1795 1985    191      5      0    .501   1.66   7.39  1.442   .933   .243   1.67   .249  -.036   1
+   9 UC05-1   1815 1985    171      5      0    .629   1.57  10.70  1.383   .936   .220   1.66   .212   .014   1
+  10 UC05-2   1819 1985    167      5      0    .613   2.07   8.66  1.478   .937   .202   1.46   .181   .007   2
+  11 UC06-1   1817 1985    169      5      0    .673   1.56   6.62   .784   .709   .277   1.89   .270  -.008   1
+  12 UC06-2   1812 1985    174      5      0    .542   1.68  10.34  1.484   .919   .258   1.71   .263  -.006   1
+  13 UC07-1   1812 1985    174      5      0    .516   1.23   9.36  1.423   .937   .287   2.33   .309   .000   1
+  14 UC07-2   1823 1985    163      5      1    .296   1.81   6.12  1.563   .871   .318   1.96   .321  -.009   1
+  15 UC08-1   1810 1985    176      5      0    .525   1.75  13.51  2.124   .956   .251   2.08   .253   .023   1
+  16 UC08-2   1818 1985    168      5      0    .503   1.97   6.12  1.268   .897   .254   2.19   .261  -.026   2
+  17 UC09-1   1817 1985    169      5      0    .536   1.91   9.13  2.064   .970   .228   1.85   .237  -.038   1
+  18 UC09-2   1808 1985    178      5      0    .580   1.48   7.50  1.566   .932   .290   2.01   .312  -.023   3
+  19 UC10-1   1813 1985    173      5      1    .387   1.39   9.25  1.459   .970   .203   1.84   .219  -.009   3
+  20 UC10-2   1814 1985    172      5      2    .415   1.71   9.77  1.483   .926   .236   2.24   .250  -.042   3
+  21 UC11-1   1815 1985    171      5      0    .624   1.37   5.67   .626   .780   .231   1.70   .235   .008   1
+  22 UC11-2   1814 1985    172      5      0    .501   1.34   9.38  1.238   .941   .267   1.81   .266   .009   1
+  23 UC12-1   1812 1985    174      5      0    .568   1.97   8.41  1.124   .880   .202   2.14   .207  -.014   1
+  24 UC12-2   1835 1985    151      4      0    .499   2.29   4.98   .671   .660   .178   1.57   .173   .005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3791    106      7    .514   1.78  13.51  1.319   .889   .237   2.33   .242  -.002
+
+ DATA CHECKS (rwl.check): nc10
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc10.rwl
+ 24 series, 3791 measurements, 1795-1985, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file nc10.rwl, MD5 af406a82b561ad3bf46f49d8acf1bb7f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

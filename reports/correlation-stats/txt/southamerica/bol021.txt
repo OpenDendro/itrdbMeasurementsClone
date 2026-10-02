@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: bol021
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bol021.rwl
+      MD5 of measurement file: 155a468a99f05afdbf2fa0eda4942492
+      Date checked           : 01OCT26
+      Beginning year         : 1872
+      Ending year            : 2010
+      Principal investigators: Chaparro, H.A.; Camarero, J.J.
+      Site name              : INPA Parket ltda. Concession
+      Species information    : ZETU Zeyheria tuberculosa (Vell.) Bureau ex Verl.
+      Latitude               : 16.1200 S
+      Longitude              : 61.7200 W
+      Elevation              : 380 m
+
+      Series intercorrelation: 0.466
+      Avg mean sensitivity   : 0.787
+      Avg standard deviation : 1.590
+      Avg autocorrelation    : 0.509
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 2, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 16.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bol021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 INZT001A 1933 2010            .40 
+   2 INZT001B 1933 2010            .53 
+   3 INZT001C 1933 2010            .25A
+   4 INZT002A 1944 2010            .70 
+   5 INZT002B 1944 2010            .76 
+   6 INZT002C 1944 2010            .69 
+   7 INZT004A 1872 2010  .33  .54  .56 
+   8 INZT004B 1876 2010  .29A .49  .56 
+   9 INZT005A 1888 2010  .54  .72  .75 
+  10 INZT005B 1888 2010  .54  .67  .84 
+  11 INZT005C 1888 2010  .36  .67  .75 
+  12 INZT008A 1876 2010  .60  .61  .68 
+  13 INZT008B 1876 2010  .57  .59  .50 
+  14 INZT008C 1876 2010  .60  .59B .64 
+  15 INZT009A 1886 2010  .08B .28B .41 
+  16 INZT009B 1886 2010  .23B .36B .41 
+  17 INZT009C 1886 2010  .29B .33  .50 
+  18 INZT010A 1885 2010  .38  .46  .41 
+  19 INZT010B 1885 2010  .41  .56  .50 
+  20 INZT010C 1885 2010  .41  .60  .56 
+ Av segment correlation  .40  .53  .57 
+
+ FLAGGED SEGMENTS: bol021
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 INZT001C 1950 1999     A     .253         0
+   8 INZT004B 1900 1949     A     .293         0
+  14 INZT008C 1925 1974     B     .592        -1      .615   .023
+  15 INZT009A 1900 1949     B     .078         2      .251   .172  weak at every lag
+  15 INZT009A 1925 1974     B     .277        -3      .330   .053
+  16 INZT009B 1900 1949     B     .235        -8      .312   .077  weak at every lag
+  16 INZT009B 1925 1974     B     .362        -3      .406   .045
+  17 INZT009C 1900 1949     B     .290       -10      .328   .038  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bol021
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 INZT001A 1933 2010     78      1      0    .272   1.95   6.40  1.506   .501   .663   2.97   .632   .052   1
+   2 INZT001B 1933 2010     78      1      0    .397   2.22   7.36  1.882   .556   .653   3.49   .657   .019   2
+   3 INZT001C 1933 2010     78      1      1    .150   1.33   5.58  1.340   .476   .852   3.50   .783  -.016   2
+   4 INZT002A 1944 2010     67      1      0    .677   1.64   4.17  1.242   .330   .956   2.63   .673   .156   0
+   5 INZT002B 1944 2010     67      1      0    .667   2.36   7.12  1.802   .355   .757   3.24   .679   .107   0
+   6 INZT002C 1944 2010     67      1      0    .566   2.23   8.62  1.904   .579   .750   2.31   .642  -.015   1
+   7 INZT004A 1872 2010    139      3      0    .509   1.72   8.51  1.854   .590   .766   3.72   .706   .035   2
+   8 INZT004B 1876 2010    135      3      1    .456   1.29   6.36  1.393   .516   .844   3.30   .720  -.001   1
+   9 INZT005A 1888 2010    123      3      0    .662   2.72  12.62  2.135   .434   .753   3.31   .674   .009   1
+  10 INZT005B 1888 2010    123      3      0    .683   1.80   7.98  1.631   .487   .857   4.29   .766   .070   0
+  11 INZT005C 1888 2010    123      3      0    .578   1.16   6.69  1.198   .517   .949   4.13   .794   .017   0
+  12 INZT008A 1876 2010    135      3      0    .521   2.36   8.27  1.754   .500   .693   2.61   .589   .025   1
+  13 INZT008B 1876 2010    135      3      0    .414   1.92  10.72  1.810   .674   .836   3.06   .700   .006   1
+  14 INZT008C 1876 2010    135      3      1    .305   1.46   8.22  1.439   .520   .885   9.20  1.053   .162   0
+  15 INZT009A 1886 2010    125      3      2    .333   1.77   8.76  1.667   .395   .810   3.38   .761   .008   1
+  16 INZT009B 1886 2010    125      3      2    .353   1.28   8.50  1.423   .359   .833   3.98   .790  -.024   1
+  17 INZT009C 1886 2010    125      3      1    .396   1.51   7.53  1.666   .528   .713   6.87   .974   .030   1
+  18 INZT010A 1885 2010    126      3      0    .446   1.57   5.76  1.277   .516   .736   3.03   .660   .018   1
+  19 INZT010B 1885 2010    126      3      0    .452   2.24   7.53  1.685   .605   .658   2.52   .548  -.005   2
+  20 INZT010C 1885 2010    126      3      0    .526   1.44   5.90  1.236   .601   .752   2.59   .637  -.024   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2236     48      8    .466   1.77  12.62  1.590   .509   .787   9.20   .729   .028
+
+ DATA CHECKS (rwl.check): bol021
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bol021.rwl
+ 20 series, 2236 measurements, 1872-2010, 0.01 mm precision
+ 1 error(s), 2 warning(s), 0 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     INZT008C: correlates best with the master at lag -1 (r = 0.449 against r = 0.384 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_REPEATED_VALUE (2)
+     INZT009B: 0.01 repeated in 13 consecutive rings, 1889-1901; a constant stretch is a placeholder, not a measurement
+     INZT009C: 0.01 repeated in 23 consecutive rings, 1912-1934; a constant stretch is a placeholder, not a measurement
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file bol021.rwl, MD5 155a468a99f05afdbf2fa0eda4942492.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

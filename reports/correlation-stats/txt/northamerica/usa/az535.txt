@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: az535
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az535.rwl
+      MD5 of measurement file: 43358d69bb88e8c229f96b170aa1b5f4
+      Date checked           : 01OCT26
+      Beginning year         : 1763
+      Ending year            : 1987
+      Principal investigators: Graybill, D.A.
+      Site name              : San Francisco Peaks B
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 35.3200 N
+      Longitude              : 111.7200 W
+      Elevation              : 2682 m
+
+      Series intercorrelation: 0.672
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 0.729
+      Avg autocorrelation    : 0.811
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.90
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az535
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 PDF011   1851 1986                 .76  .79  .86 
+   2 PDF012   1824 1986       .68  .68  .65  .61  .68 
+   3 PDF021   1829 1986            .72  .63  .53  .44 
+   4 PDF022   1831 1986            .70  .70  .54  .64 
+   5 PDF031   1785 1986  .61  .57  .62  .72  .64  .73 
+   6 PDF032   1812 1986       .64  .74  .77  .61  .78 
+   7 PDF041   1819 1986       .69  .79  .61  .52  .72 
+   8 PDF042   1822 1987       .72  .80  .75  .66  .67 
+   9 PDF051   1790 1986  .56  .62  .76  .76  .66  .68 
+  10 PDF052   1796 1986  .60  .62  .68  .73  .67  .66 
+  11 PDF061   1842 1986            .59  .70  .57  .69 
+  12 PDF062   1780 1986  .20B .23A .45  .61  .65  .71 
+  13 PDF071   1763 1986  .56  .62  .75  .72  .56  .73 
+  14 PDF072   1779 1986  .58  .63  .82  .73  .54  .67 
+  15 PDF081   1837 1986            .80  .83  .80  .87 
+  16 PDF091   1832 1986            .49  .70  .66  .67 
+  17 PDF092   1876 1987                      .77  .72 
+  18 PDF101   1835 1986            .68  .72  .65  .74 
+  19 PDF102   1846 1986            .69  .82  .74  .77 
+  20 PDF111   1870 1987                 .74  .68  .68 
+  21 PDF112   1855 1987                 .80  .84  .91 
+  22 PDF121   1863 1987                 .48  .57  .66 
+  23 PDF122   1889 1987                      .65  .75 
+  24 PDF131   1862 1987                 .70  .63  .73 
+  25 PDF132   1876 1987                      .66  .75 
+ Av segment correlation  .52  .60  .69  .71  .65  .72 
+
+ FLAGGED SEGMENTS: az535
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 PDF062   1800 1849     B     .197        -9      .270   .073  weak at every lag
+  12 PDF062   1825 1874     A     .228         0
+
+ DESCRIPTIVE STATISTICS: az535
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PDF011   1851 1986    136      3      0    .784   1.14   2.45   .479   .782   .250   1.71   .243  -.017   1
+   2 PDF012   1824 1986    163      5      0    .677   1.47   3.18   .738   .788   .278   1.59   .266   .018   1
+   3 PDF021   1829 1986    158      4      0    .548    .91   2.79   .555   .859   .263   1.79   .263   .016   1
+   4 PDF022   1831 1986    156      4      0    .675   1.27   2.67   .531   .801   .227   1.74   .228   .004   1
+   5 PDF031   1785 1986    202      6      0    .680   1.73   4.51   .811   .822   .228   1.84   .221   .016   1
+   6 PDF032   1812 1986    175      5      0    .730   1.79   4.66   .989   .869   .255   1.65   .250   .037   1
+   7 PDF041   1819 1986    168      5      0    .641   1.12   3.02   .813   .895   .275   1.76   .269  -.001   1
+   8 PDF042   1822 1987    166      5      0    .710   1.10   4.05   .919   .929   .269   1.62   .261  -.014   1
+   9 PDF051   1790 1986    197      6      0    .636   1.10   2.36   .473   .847   .198   1.49   .200   .004   1
+  10 PDF052   1796 1986    191      6      0    .645   1.02   2.51   .587   .888   .306   2.25   .323  -.010   1
+  11 PDF061   1842 1986    145      4      0    .637   1.85   3.82   .985   .908   .206   1.62   .199   .015   1
+  12 PDF062   1780 1986    207      6      2    .452   1.97   3.92   .798   .807   .210   1.74   .218   .006   1
+  13 PDF071   1763 1986    224      6      0    .656   1.26   2.09   .347   .691   .185   1.47   .185   .037   1
+  14 PDF072   1779 1986    208      6      0    .655   1.54   3.28   .526   .758   .193   1.60   .198   .024   1
+  15 PDF081   1837 1986    150      4      0    .830   1.21   3.54   .681   .788   .328   1.79   .291   .003   3
+  16 PDF091   1832 1986    155      4      0    .630   1.10   4.17   .946   .936   .222   1.70   .225   .027   1
+  17 PDF092   1876 1987    112      2      0    .735   2.99   6.36  1.186   .752   .228   1.54   .210   .010   2
+  18 PDF101   1835 1986    152      4      0    .689   2.29   5.17   .950   .730   .263   1.86   .237   .092   0
+  19 PDF102   1846 1986    141      4      0    .733   2.27   4.46   .894   .787   .232   1.55   .210   .016   3
+  20 PDF111   1870 1987    118      3      0    .700   1.10   2.98   .481   .778   .232   1.56   .219  -.011   1
+  21 PDF112   1855 1987    133      3      0    .837   1.11   2.44   .444   .581   .314   1.96   .297   .011   1
+  22 PDF121   1863 1987    125      3      0    .566   2.28   6.00  1.360   .859   .291   2.12   .294   .024   1
+  23 PDF122   1889 1987     99      2      0    .692   1.42   3.81   .771   .839   .268   1.61   .246   .106   0
+  24 PDF131   1862 1987    126      3      0    .703   1.52   3.45   .653   .749   .238   1.53   .226   .103   0
+  25 PDF132   1876 1987    112      2      0    .733   1.58   3.21   .682   .794   .240   1.68   .229   .014   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3919    105      2    .672   1.50   6.36   .729   .811   .245   2.25   .239   .020
+
+ DATA CHECKS (rwl.check): az535
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az535.rwl
+ 25 series, 3919 measurements, 1763-1987, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1770-1987 but the measurements cover 1763-1987
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file az535.rwl, MD5 43358d69bb88e8c229f96b170aa1b5f4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

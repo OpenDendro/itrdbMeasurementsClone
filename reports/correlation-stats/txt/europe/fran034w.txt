@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: fran034w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fran034w.rwl
+      MD5 of measurement file: 25acfabd85e4b6a4977eba886d0ed579
+      Date checked           : 01OCT26
+      Beginning year         : 1891
+      Ending year            : 1975
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Lac de Bourget
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 45.8800 N
+      Longitude              : 5.7300 E
+      Elevation              : 1340 m
+
+      Series intercorrelation: 0.763
+      Avg mean sensitivity   : 0.216
+      Avg standard deviation : 1.007
+      Avg autocorrelation    : 0.688
+      Number dated series    : 7
+      Segment length tested  : 42
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fran034w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1921 
+                        1941 1962 
+ --- -------- ---------  ---- ---- 
+   1 263080   1893 1975  .82  .82 
+   2 263100   1909 1975       .84 
+   3 263110   1891 1956  .68      
+   4 263120   1894 1975  .82  .87 
+   5 263130   1904 1975       .82 
+   6 263140   1900 1975       .81 
+   7 263150   1901 1975       .72 
+ Av segment correlation  .78  .81 
+
+ FLAGGED SEGMENTS: fran034w
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: fran034w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 263080   1893 1975     83      2      0    .808   2.76   7.31  1.026   .610   .248   1.88   .257   .023   1
+   2 263100   1909 1975     67      1      0    .759   2.00   4.92   .733   .563   .229   1.59   .213   .035   3
+   3 263110   1891 1956     66      1      0    .703   2.89   6.58  1.495   .906   .185   1.68   .201   .039   1
+   4 263120   1894 1975     82      2      0    .816   2.58   5.90  1.255   .884   .201   1.83   .212   .063   1
+   5 263130   1904 1975     72      1      0    .769   2.24   5.54   .860   .555   .272   1.77   .267  -.025   2
+   6 263140   1900 1975     76      1      0    .740   2.78   6.20  1.066   .711   .217   1.86   .244   .020   1
+   7 263150   1901 1975     75      1      0    .732   2.90   4.62   .611   .581   .157   1.35   .162   .050   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            521      9      0    .763   2.60   7.31  1.007   .688   .216   1.88   .223   .030
+
+ DATA CHECKS (rwl.check): fran034w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fran034w.rwl
+ 7 series, 521 measurements, 1891-1975, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file fran034w.rwl, MD5 25acfabd85e4b6a4977eba886d0ed579.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 42 years: the record is only 85 years long.

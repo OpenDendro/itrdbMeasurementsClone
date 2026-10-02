@@ -1,0 +1,161 @@
+
+ COFECHA-style crossdating report: germ228
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ228.rwl
+      MD5 of measurement file: a544f926e8d6f34f1567465e38ed8b15
+      Date checked           : 01OCT26
+      Beginning year         : 1893
+      Ending year            : 2009
+      Principal investigators: Esper, J.
+      Site name              : Donnersberg
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.6253 N
+      Longitude              : 7.9147 E
+      Elevation              : 676 m
+
+      Series intercorrelation: 0.502
+      Avg mean sensitivity   : 0.250
+      Avg standard deviation : 0.974
+      Avg autocorrelation    : 0.757
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6)
+      Pct problem segments   : 16.28
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ228
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 EDD0109a 1917 2008       .43  .42 
+   2 EDD0109b 1917 2008       .47B .59 
+   3 EDD0110a 1919 2009       .60  .52 
+   4 EDD0110b 1919 2008       .69  .55 
+   5 EDD0111a 1927 2009            .66 
+   6 EDD0111b 1928 2009            .24A
+   7 EDD0112a 1926 2009            .30B
+   8 EDD0112b 1930 2009            .41 
+   9 EDD0113z 1938 2009            .10B
+  10 EDD0114a 1924 2009       .37  .39 
+  11 EDD0114b 1924 2009            .48 
+  12 EDD0115a 1925 2009            .38 
+  13 EDD0115b 1926 2009            .34B
+  14 EDD0117a 1939 2009            .49 
+  15 EDD0117b 1927 2009            .46 
+  16 EDD0118a 1927 2009            .47 
+  17 EDD0118b 1926 2009            .43 
+  20 EDD0120z 1937 2009            .53 
+  21 EDD0121a 1921 2009       .69  .61 
+  22 EDD0121b 1920 2009       .65  .56 
+  23 EDD0122a 1925 2009            .50 
+  24 EDD0122b 1925 2009            .37 
+  25 EDD0123z 1926 2009            .54 
+  26 EDD0124a 1932 2009            .57 
+  27 EDD0124b 1932 2009            .61 
+  28 EDD0127a 1925 2009            .50 
+  29 EDD0127b 1926 2009            .70 
+  32 EDD0133a 1923 2009       .74  .64 
+  33 EDD0133b 1923 2009            .34 
+  34 EDD0134a 1893 2009  .52  .21B .54 
+  35 EDD0134b 1893 2009  .50  .16B .41 
+ Av segment correlation  .51  .50  .47 
+
+ FLAGGED SEGMENTS: germ228
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 EDD0109b 1925 1974     B     .468         1      .476   .008
+   6 EDD0111b 1950 1999     A     .236         0
+   7 EDD0112a 1950 1999     B     .296         2      .504   .208
+   9 EDD0113z 1950 1999     B     .102         2      .386   .284
+  13 EDD0115b 1950 1999     B     .338        -4      .521   .183
+  34 EDD0134a 1925 1974     B     .215         1      .362   .147
+  35 EDD0134b 1925 1974     B     .157        -1      .425   .268
+
+ DESCRIPTIVE STATISTICS: germ228
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EDD0109a 1917 2008     92      2      0    .441   1.80   5.25  1.052   .765   .304   2.61   .357  -.026   2
+   2 EDD0109b 1917 2008     92      2      1    .483   1.40   4.37   .852   .796   .302   2.41   .344  -.028   2
+   3 EDD0110a 1919 2009     91      2      0    .603   2.19   5.18   .880   .641   .247   1.68   .243   .007   1
+   4 EDD0110b 1919 2008     90      2      0    .629   1.83   4.50   .812   .812   .233   1.68   .246  -.008   1
+   5 EDD0111a 1927 2009     83      1      0    .686   2.48   5.81  1.241   .689   .301   1.89   .307   .008   2
+   6 EDD0111b 1928 2009     82      1      1    .427   1.81   4.45   .756   .694   .225   1.82   .254   .030   1
+   7 EDD0112a 1926 2009     84      1      1    .294   2.20   5.00   .985   .890   .159   1.42   .178  -.001   3
+   8 EDD0112b 1930 2009     80      1      0    .541   1.72   4.24   .930   .803   .251   1.61   .246  -.010   2
+   9 EDD0113z 1938 2009     72      1      1    .129   2.31   4.83   .824   .268   .328   2.12   .299   .024   0
+  10 EDD0114a 1924 2009     86      2      0    .440   3.20   6.91  1.153   .716   .177   1.74   .218   .071   1
+  11 EDD0114b 1924 2009     86      1      0    .546   1.89   4.47   .780   .844   .183   1.39   .176  -.012   2
+  12 EDD0115a 1925 2009     85      1      0    .424   2.22   4.74   .690   .639   .202   1.68   .214  -.023   2
+  13 EDD0115b 1926 2009     84      1      1    .397   1.36   3.52   .459   .687   .188   1.52   .196   .020   2
+  14 EDD0117a 1939 2009     71      1      0    .527   1.97   4.08   .929   .688   .293   1.96   .299   .014   3
+  15 EDD0117b 1927 2009     83      1      0    .479   1.30   4.76  1.000   .928   .282   1.88   .282   .074   1
+  16 EDD0118a 1927 2009     83      1      0    .504   3.11  10.00  1.516   .805   .222   1.47   .233   .059   1
+  17 EDD0118b 1926 2009     84      1      0    .492   1.97   7.57  1.244   .862   .238   1.56   .241  -.006   2
+  18 EDD0119a 1999 2009     11      0      0    .365   1.71   2.41   .438   .310   .287   1.34   .240   .066   0
+  19 EDD0119b 1999 2009     11      0      0    .069   1.19   1.75   .315   .557   .190   1.18   .141  -.350   0
+  20 EDD0120z 1937 2009     73      1      0    .554   1.97   7.96  1.606   .833   .275   1.72   .270   .005   1
+  21 EDD0121a 1921 2009     89      2      0    .648   2.12   4.34   .905   .808   .204   1.62   .209   .053   1
+  22 EDD0121b 1920 2009     90      2      0    .609   1.42   3.97   .917   .884   .255   1.61   .252   .016   2
+  23 EDD0122a 1925 2009     85      1      0    .513   1.82   5.21   .961   .818   .296   1.74   .294   .022   2
+  24 EDD0122b 1925 2009     85      1      0    .393   1.47   4.02   .918   .858   .326   1.88   .334   .019   2
+  25 EDD0123z 1926 2009     84      1      0    .519   2.11   7.30  1.229   .638   .336   1.80   .307  -.001   2
+  26 EDD0124a 1932 2009     78      1      0    .528   1.36   3.42   .640   .771   .205   1.60   .223  -.021   3
+  27 EDD0124b 1932 2009     78      1      0    .624   1.03   3.46   .756   .835   .322   2.07   .350   .068   1
+  28 EDD0127a 1925 2009     85      1      0    .577   2.47   5.56   .942   .590   .226   1.89   .279  -.020   2
+  29 EDD0127b 1926 2009     84      1      0    .705   1.76   5.05   .747   .790   .217   1.49   .222   .045   3
+  30 EDD0130a 1996 2009     14      0      0    .708   1.64   2.55   .506   .176   .368   1.50   .296   .052   0
+  31 EDD0130b 1996 2009     14      0      0    .426   2.54   4.26   .864   .472   .293   1.32   .211  -.171   0
+  32 EDD0133a 1923 2009     87      2      0    .632   1.91   6.81  1.276   .910   .183   1.67   .190   .005   2
+  33 EDD0133b 1923 2009     87      1      0    .216   1.36   6.03  1.314   .937   .211   1.60   .228  -.041   3
+  34 EDD0134a 1893 2009    117      3      1    .528   1.97   5.39   .933   .756   .232   1.74   .274  -.022   3
+  35 EDD0134b 1893 2009    117      3      1    .475   2.20   6.93  1.178   .684   .312   2.16   .353  -.029   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2717     43      7    .502   1.93  10.00   .974   .757   .250   2.61   .262   .006
+
+ DATA CHECKS (rwl.check): germ228
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ228.rwl
+ 35 series, 2717 measurements, 1893-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file germ228.rwl, MD5 a544f926e8d6f34f1567465e38ed8b15.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

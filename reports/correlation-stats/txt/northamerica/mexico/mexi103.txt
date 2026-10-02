@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: mexi103
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi103.rwl
+      MD5 of measurement file: 320e6706a17cdf305286ce022566b3a2
+      Date checked           : 01OCT26
+      Beginning year         : 1546
+      Ending year            : 2009
+      Principal investigators: Villanueva-Díaz, J.
+      Site name              : Parque Pico de Orizaba
+      Species information    : PIHR Pinus hartwegii Lindl.
+      Latitude               : 19.0010 N
+      Longitude              : 97.3180 W
+      Elevation              : 1890 m
+
+      Series intercorrelation: 0.468
+      Avg mean sensitivity   : 0.260
+      Avg standard deviation : 0.548
+      Avg autocorrelation    : 0.765
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 13, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 19.19
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi103
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PPO03A   1900 2009                                                                   .40  .56 
+   2 PPO04A   1662 2009                 .55  .31A .35  .35  .55  .49  .48  .55  .56  .48  .52  .56 
+   3 PPO04B   1870 2009                                                         .58  .46  .53  .56 
+   4 PPO04D   1672 2009                 .48  .42  .42  .39  .52  .51  .54  .55  .44  .41  .50  .56 
+   5 PPO04E   1654 2009                 .45  .10B .19B .48  .63  .34  .38  .57  .52  .42  .57  .55 
+   6 PPO06A   1820 2009                                               .28A .41  .45  .55  .51  .36 
+   7 PPO07A   1800 2009                                               .27B .29A .24B .39  .44  .52 
+   8 PPO07B   1800 2009                                               .16A .21A .28A .43  .44  .38 
+   9 PPO09B   1900 2009                                                                   .51  .54 
+  10 PPO10C   1547 1825  .91  .85  .61  .28A .27A .44  .42  .40                                    
+  11 PPO10D   1546 1825  .91  .81  .60  .24A .23A .40  .41  .34B                                   
+  12 PPO13B   1920 2000                                                                   .33  .30A
+  13 PPO14A   1829 2009                                                    .49  .50  .30A .42  .60 
+  14 PPO14B   1850 2009                                                         .41  .51  .54  .50 
+  15 PPO17A   1850 2009                                                         .26A .20B .39  .43 
+  16 PPO17B   1920 2009                                                                   .34  .49 
+  17 PPO18A   1850 1980                                                         .38  .60  .50      
+  18 PPO21B   1930 2009                                                                        .37 
+ Av segment correlation  .91  .83  .61  .40  .27  .36  .41  .49  .45  .35  .44  .42  .43  .46  .49 
+
+ FLAGGED SEGMENTS: mexi103
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 PPO04A   1700 1749     A     .308         0
+   5 PPO04E   1700 1749     B     .102        -3      .170   .068  weak at every lag
+   5 PPO04E   1725 1774     B     .191         1      .214   .023  weak at every lag
+   6 PPO06A   1825 1874     A     .278         0
+   7 PPO07A   1825 1874     B     .268        -2      .346   .077
+   7 PPO07A   1850 1899     A     .290         0
+   7 PPO07A   1875 1924     B     .236         1      .291   .054  weak at every lag
+   8 PPO07B   1825 1874     A     .163         0
+   8 PPO07B   1850 1899     A     .212         0
+   8 PPO07B   1875 1924     A     .282         0
+  10 PPO10C   1675 1724     A     .281         0
+  10 PPO10C   1700 1749     A     .273         0
+  11 PPO10D   1675 1724     A     .235         0
+  11 PPO10D   1700 1749     A     .230         0
+  11 PPO10D   1775 1824     B     .343         6      .378   .035
+  12 PPO13B   1950 1999     A     .296         0
+  13 PPO14A   1900 1949     A     .299         0
+  15 PPO17A   1875 1924     A     .255         0
+  15 PPO17A   1900 1949     B     .201        -5      .321   .121  weak at every lag
+
+ DESCRIPTIVE STATISTICS: mexi103
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PPO03A   1900 2009    110      2      0    .471    .46    .95   .195   .783   .221   1.66   .205   .011   2
+   2 PPO04A   1662 2009    348     12      1    .471   1.01   2.41   .348   .764   .190   1.83   .201   .013   1
+   3 PPO04B   1870 2009    140      4      0    .515    .80   1.51   .238   .677   .208   1.55   .198   .109   1
+   4 PPO04D   1672 2009    338     12      0    .464    .98   2.91   .383   .809   .195   1.58   .198   .033   1
+   5 PPO04E   1654 2009    356     12      2    .454   1.02   2.85   .411   .819   .179   1.65   .186  -.001   2
+   6 PPO06A   1820 2009    190      6      1    .346   1.67   3.88   .817   .864   .224   2.12   .238   .068   2
+   7 PPO07A   1800 2009    210      6      3    .395   1.17   2.80   .565   .773   .272   1.79   .276  -.004   2
+   8 PPO07B   1800 2009    210      6      3    .335   1.38   4.15   .695   .754   .288   2.05   .307  -.010   2
+   9 PPO09B   1900 2009    110      2      0    .511    .76   1.99   .290   .618   .269   1.61   .250   .014   3
+  10 PPO10C   1547 1825    279      8      2    .648    .96   4.90   .751   .818   .366   2.29   .342  -.003   3
+  11 PPO10D   1546 1825    280      8      3    .652    .98   4.56   .704   .788   .365   2.16   .334  -.000   3
+  12 PPO13B   1920 2000     81      2      1    .286    .37    .95   .166   .240   .454   2.28   .420   .013   2
+  13 PPO14A   1829 2009    181      5      1    .455   2.20   6.33  1.090   .822   .260   2.13   .279  -.001   2
+  14 PPO14B   1850 2009    160      4      0    .479   1.67   5.07  1.016   .818   .315   2.10   .309  -.011   2
+  15 PPO17A   1850 2009    160      4      2    .359    .81   2.78   .658   .935   .258   1.80   .255  -.004   2
+  16 PPO17B   1920 2009     90      2      0    .439    .68   1.19   .176   .398   .211   1.89   .225   .007   3
+  17 PPO18A   1850 1980    131      3      0    .428    .95   2.21   .406   .699   .276   1.85   .252  -.034   3
+  18 PPO21B   1930 2009     80      1      0    .464   1.06   2.15   .432   .659   .298   1.78   .292   .103   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3454     99     19    .468   1.10   6.33   .548   .765   .260   2.29   .257   .013
+
+ DATA CHECKS (rwl.check): mexi103
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi103.rwl
+ 18 series, 3454 measurements, 1546-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file mexi103.rwl, MD5 320e6706a17cdf305286ce022566b3a2.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,138 @@
+
+ COFECHA-style crossdating report: deu396
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu396.rwl
+      MD5 of measurement file: 208cb36c4dd3183b3bbbfca1ccf78f88
+      Date checked           : 01OCT26
+      Beginning year         : 1845
+      Ending year            : 2010
+      Principal investigators: Hartl, C.; Dittmar, C.; Zang, C.; Rothe, A.
+      Site name              : Schliersee, Hinterlapberg außen
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.6100 N
+      Longitude              : 11.8120 E
+      Elevation              : 1060 m
+
+      Series intercorrelation: 0.494
+      Avg mean sensitivity   : 0.166
+      Avg standard deviation : 0.629
+      Avg autocorrelation    : 0.862
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7; 4 of the B weak at every lag)
+      Pct problem segments   : 15.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu396
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SLHB101C 1850 2010  .36  .41  .60 
+   2 SLHB101O 1851 2010  .61  .61  .42 
+   3 SLHB102C 1848 2010  .56  .59  .56 
+   4 SLHB102O 1855 2010  .63  .74  .66 
+   5 SLHB103C 1859 2010  .50  .49  .41 
+   6 SLHB103O 1849 2010  .51  .51  .57 
+   7 SLHB104C 1845 2010  .56  .53  .65 
+   8 SLHB104O 1851 2010  .30A .35  .74 
+   9 SLHB108C 1892 2010  .22B .10B .55 
+  10 SLHB108O 1891 2010  .40  .33  .48 
+  11 SLHB109C 1865 2010  .48  .27B .34 
+  12 SLHB109O 1864 2010  .55  .43  .45 
+  13 SLHB111C 1899 2010  .49  .42  .62 
+  14 SLHB111O 1863 2010  .27A .22B .61 
+  15 SLHB113C 1854 2010  .37B .31B .52 
+  16 SLHB113O 1855 2010  .54  .52  .56 
+  17 SLHB114C 1852 2010  .63  .61  .50 
+  18 SLHB114O 1852 2010  .46  .52  .57 
+  19 SLHB115C 1885 2010  .41  .33B .35 
+  20 SLHB115O 1879 2010  .60  .62  .47 
+ Av segment correlation  .47  .45  .53 
+
+ FLAGGED SEGMENTS: deu396
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 SLHB104O 1900 1949     A     .303         0
+   9 SLHB108C 1900 1949     B     .223         2      .315   .092  weak at every lag
+   9 SLHB108C 1925 1974     B     .100        -6      .239   .139  weak at every lag
+  11 SLHB109C 1925 1974     B     .265        -6      .365   .100
+  14 SLHB111O 1900 1949     A     .269         0
+  14 SLHB111O 1925 1974     B     .222        -6      .246   .023  weak at every lag
+  15 SLHB113C 1900 1949     B     .366         2      .398   .032
+  15 SLHB113C 1925 1974     B     .312         2      .313   .001  weak at every lag
+  19 SLHB115C 1925 1974     B     .329        -6      .362   .033
+
+ DESCRIPTIVE STATISTICS: deu396
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SLHB101C 1850 2010    161      3      0    .451   1.18   4.74   .833   .930   .175   1.50   .177   .016   2
+   2 SLHB101O 1851 2010    160      3      0    .501   1.23   4.33   .743   .894   .190   1.64   .181   .005   2
+   3 SLHB102C 1848 2010    163      3      0    .508   1.10   4.32   .879   .959   .151   1.44   .153   .004   1
+   4 SLHB102O 1855 2010    156      3      0    .638   1.16   4.05   .644   .904   .169   1.70   .195  -.014   1
+   5 SLHB103C 1859 2010    152      3      0    .517   1.11   3.83   .806   .955   .134   1.36   .132  -.003   2
+   6 SLHB103O 1849 2010    162      3      0    .568   1.18   4.32   .790   .934   .158   1.62   .156   .003   3
+   7 SLHB104C 1845 2010    166      3      0    .565   1.22   4.14   .673   .901   .144   1.37   .144  -.011   3
+   8 SLHB104O 1851 2010    160      3      1    .466   1.13   4.29   .576   .896   .151   1.83   .180  -.014   3
+   9 SLHB108C 1892 2010    119      3      2    .376   1.87   3.98   .558   .808   .145   1.39   .149  -.036   1
+  10 SLHB108O 1891 2010    120      3      0    .451   1.62   3.05   .440   .779   .130   1.48   .146   .027   1
+  11 SLHB109C 1865 2010    146      3      1    .428   1.31   2.98   .446   .761   .170   1.79   .183  -.026   3
+  12 SLHB109O 1864 2010    147      3      0    .487   1.32   2.66   .298   .669   .136   1.32   .132  -.024   3
+  13 SLHB111C 1899 2010    112      3      0    .534   1.79   3.14   .753   .899   .173   1.40   .166   .013   1
+  14 SLHB111O 1863 2010    148      3      2    .375   1.29   3.64   .650   .897   .188   1.62   .196   .050   1
+  15 SLHB113C 1854 2010    157      3      2    .465   1.08   2.35   .551   .858   .194   1.62   .207  -.014   3
+  16 SLHB113O 1855 2010    156      3      0    .511   1.14   2.54   .636   .884   .196   1.56   .194   .006   3
+  17 SLHB114C 1852 2010    159      3      0    .529   1.08   3.29   .710   .955   .153   1.52   .162  -.044   1
+  18 SLHB114O 1852 2010    159      3      0    .490    .86   3.16   .640   .950   .166   1.44   .176   .003   1
+  19 SLHB115C 1885 2010    126      3      1    .418   1.50   2.86   .464   .536   .223   1.79   .234   .016   1
+  20 SLHB115O 1879 2010    132      3      0    .552    .98   2.12   .342   .729   .182   1.60   .186   .026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2961     60      9    .494   1.24   4.74   .629   .862   .166   1.83   .172  -.001
+
+ DATA CHECKS (rwl.check): deu396
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu396.rwl
+ 20 series, 2961 measurements, 1845-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file deu396.rwl, MD5 208cb36c4dd3183b3bbbfca1ccf78f88.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

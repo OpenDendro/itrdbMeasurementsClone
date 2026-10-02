@@ -1,0 +1,161 @@
+
+ COFECHA-style crossdating report: aus117
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aus117.rwl
+      MD5 of measurement file: a09d3a9a0139c27ad6da3b77cee053dd
+      Date checked           : 01OCT26
+      Beginning year         : 1717
+      Ending year            : 2001
+      Principal investigators: Heinrich, I.
+      Site name              : Lamington
+      Species information    : TOCI Toona ciliata
+      Latitude               : 28.2500 S
+      Longitude              : 153.1333 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.534
+      Avg mean sensitivity   : 0.583
+      Avg standard deviation : 2.094
+      Avg autocorrelation    : 0.320
+      Number dated series    : 38
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 7.04
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aus117
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 haq1a    1855 1999                 .53  .66  .65  .65 
+   2 haq1c    1911 1999                           .66  .65 
+   3 haq2a    1941 1999                                .61 
+   4 haq3a    1912 1999                           .74  .65 
+   5 haq3b    1916 1999                           .63  .65 
+   6 haq3c    1897 1999                      .66  .55  .62 
+   7 haq10a   1949 2001                                .53 
+   9 haq12a   1892 2001                      .62  .66  .73 
+  10 haq12b   1856 2001                 .64  .64  .56  .55 
+  11 haq14a   1910 2001                           .50  .45 
+  12 haq15b   1761 2001  .50  .37  .46  .43  .44  .50  .34 
+  13 haq16a   1839 2001            .46  .50  .38  .34  .42 
+  15 haq16c   1886 2001                      .66  .71  .66 
+  19 haq19a   1932 2001                                .56 
+  20 haq19b   1926 2001                                .58 
+  21 haq20a   1907 2001                           .43  .44 
+  22 haq20b   1924 2001                           .43  .30A
+  23 haq20d   1898 2001                      .48  .49  .54 
+  24 haq21a   1908 2001                           .48  .58 
+  25 haq21b   1895 2001                      .52  .53  .52 
+  26 haq22a   1921 2001                           .63  .64 
+  27 haq22b   1910 2001                           .57  .74 
+  28 haq23a   1915 2001                           .50  .63 
+  29 haq23b   1912 2001                           .57  .52 
+  30 haq24a   1947 2001                                .71 
+  31 haq24b   1936 2001                                .70 
+  33 haq29a   1927 2001                                .36 
+  34 haq29d   1717 2001  .45  .19B .22B .31B .43  .48  .20B
+ Av segment correlation  .48  .28  .38  .48  .55  .55  .55 
+
+ FLAGGED SEGMENTS: aus117
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  22 haq20b   1950 1999     A     .297         0
+  34 haq29d   1825 1874     B     .192        -4      .230   .038  weak at every lag
+  34 haq29d   1850 1899     B     .224         8      .520   .296
+  34 haq29d   1875 1924     B     .313         8      .384   .071
+  34 haq29d   1950 1999     B     .203        -4      .213   .010  weak at every lag
+
+ DESCRIPTIVE STATISTICS: aus117
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 haq1a    1855 1999    145      4      0    .548   1.20   4.43   .821   .064   .641   2.78   .566  -.095   0
+   2 haq1c    1911 1999     89      2      0    .671   1.95   5.65  1.319   .311   .582   2.77   .520   .043   0
+   3 haq2a    1941 1999     59      1      0    .623   3.50  10.00  2.494   .278   .639   3.21   .580   .065   0
+   4 haq3a    1912 1999     88      2      0    .691   2.22   6.66  1.590   .313   .682   2.47   .613  -.000   1
+   5 haq3b    1916 1999     84      2      0    .639   2.15   6.06  1.465   .267   .671   2.42   .561  -.017   3
+   6 haq3c    1897 1999    103      3      0    .632   1.88   7.82  1.668   .447   .640   4.07   .675   .059   0
+   7 haq10a   1949 2001     53      1      0    .494   6.71  21.49  4.433   .600   .472   2.02   .441   .012   1
+   8 haq11a   1959 2001     43      0      0    .637   2.54   5.99  1.612   .198   .633   3.31   .613  -.118   0
+   9 haq12a   1892 2001    110      3      0    .686   1.65   6.09  1.079   .208   .597   2.47   .506  -.094   0
+  10 haq12b   1856 2001    146      4      0    .589   1.22   5.83   .820   .040   .627   3.72   .590  -.010   2
+  11 haq14a   1910 2001     92      2      0    .505    .80   4.14   .575   .094   .592   3.84   .629   .021   0
+  12 haq15b   1761 2001    241      7      0    .418   2.32   7.15  1.462   .386   .501   3.29   .498  -.011   3
+  13 haq16a   1839 2001    163      5      0    .412   3.70  12.33  2.772   .416   .588   3.31   .574   .000   1
+  14 haq16b   1957 2001     45      0      0    .496   3.74  10.65  2.812   .544   .549   2.05   .521   .195   0
+  15 haq16c   1886 2001    116      3      0    .636   4.24  12.58  2.883   .261   .651   2.79   .570  -.006   0
+  16 haq17A   1954 2001     48      0      0    .499   6.84  14.70  3.933   .450   .540   2.19   .478   .060   2
+  17 haq17B   1962 2001     40      0      0    .724   4.88  15.59  3.862   .281   .698   2.50   .619  -.018   3
+  18 haq17c   1960 2001     42      0      0    .673   6.57  16.68  3.093   .169   .470   2.04   .417   .078   0
+  19 haq19a   1932 2001     70      1      0    .527   4.05  12.90  2.759   .276   .636   2.93   .644   .039   1
+  20 haq19b   1926 2001     76      1      0    .506   2.90   8.05  2.029   .329   .638   2.93   .639   .012   1
+  21 haq20a   1907 2001     95      2      0    .451   2.99  10.06  1.924   .030   .618   2.78   .553  -.132   0
+  22 haq20b   1924 2001     78      2      1    .381   2.79   7.93  1.681   .235   .536   2.91   .514   .043   0
+  23 haq20d   1898 2001    104      3      0    .509   2.40   6.82  1.549   .349   .548   2.53   .490   .009   1
+  24 haq21a   1908 2001     94      2      0    .551   3.75  12.14  2.246   .230   .532   2.39   .507   .076   0
+  25 haq21b   1895 2001    107      3      0    .518   3.02   9.56  1.994   .117   .622   2.91   .544  -.120   0
+  26 haq22a   1921 2001     81      2      0    .591   2.82  10.29  2.431   .684   .528   2.31   .504   .121   0
+  27 haq22b   1910 2001     92      2      0    .646   3.38  12.32  2.546   .349   .667   2.82   .572   .107   0
+  28 haq23a   1915 2001     87      2      0    .540   3.24  17.83  3.153   .703   .514   2.48   .446  -.015   0
+  29 haq23b   1912 2001     90      2      0    .523   5.34  16.15  3.911   .550   .470   2.37   .443   .005   0
+  30 haq24a   1947 2001     55      1      0    .693   4.09  14.54  2.751  -.117   .806   3.08   .612  -.005   1
+  31 haq24b   1936 2001     66      1      0    .685   4.20  10.25  2.508   .337   .597   2.31   .549  -.041   1
+  32 haq28a   1966 2001     36      0      0    .829   2.06   5.80  1.377   .427   .564   2.22   .534   .082   0
+  33 haq29a   1927 2001     75      1      0    .426   3.39  11.43  2.628   .312   .609   3.62   .676   .039   0
+  34 haq29d   1717 2001    285      7      4    .319   2.46  11.75  1.797   .504   .492   2.89   .520   .012   1
+  35 haq32a   1957 2001     45      0      0    .493   5.86  11.42  2.977   .435   .503   2.14   .413   .089   2
+  36 haq32b   1962 2001     40      0      0    .434   5.51  11.57  3.389   .488   .585   2.37   .530   .020   1
+  37 haq33a   1969 2001     33      0      0    .614   5.47  13.64  3.478   .190   .626   2.99   .620   .199   0
+  38 haq33b   1969 2001     33      0      0    .684   3.90  12.25  2.927   .377   .584   2.17   .495   .019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3349     71      5    .534   3.05  21.49  2.094   .320   .583   4.07   .547   .007
+
+ DATA CHECKS (rwl.check): aus117
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/aus117.rwl
+ 38 series, 3349 measurements, 1717-2001, 0.01 mm precision
+ 0 error(s), 1 warning(s), 17 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 773 carriage return(s) against 388 line feed(s); mixed endings can defeat a reader
+ 17 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file aus117.rwl, MD5 a09d3a9a0139c27ad6da3b77cee053dd.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

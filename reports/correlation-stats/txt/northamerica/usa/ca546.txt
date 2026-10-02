@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: ca546
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca546.rwl
+      MD5 of measurement file: 7fbf7c16d5f4fc50db07e278e91d4596
+      Date checked           : 01OCT26
+      Beginning year         : 1741
+      Ending year            : 1988
+      Principal investigators: Peterson, D.L.
+      Site name              : San Bernardino Mountains K
+      Species information    : PSMA Pseudotsuga macrocarpa (Vasey) Mayr
+      Latitude               : 34.1700 N
+      Longitude              : 117.0700 W
+      Elevation              : 1400 m
+
+      Series intercorrelation: 0.697
+      Avg mean sensitivity   : 0.371
+      Avg standard deviation : 0.506
+      Avg autocorrelation    : 0.718
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 3.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca546
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BC2501A  1847 1988            .76  .66  .70  .83 
+   2 BC2502A  1798 1988  .59  .68  .78  .79  .67  .70 
+   3 BC2503B  1856 1988                 .71  .56  .76 
+   4 BC2504B  1799 1988  .77  .82  .81  .71  .62  .72 
+   5 BC2505B  1870 1988                 .75  .66  .68 
+   6 BC2506B  1887 1988                      .47  .77 
+   7 BC2507B  1806 1988       .69  .76  .68  .61  .70 
+   8 BC2508A  1770 1988  .66  .63  .61  .61  .67  .65 
+   9 BC2509A  1800 1988       .70  .60  .35  .33A .49 
+  10 BC2510B  1800 1988       .84  .71  .45  .51  .70 
+  11 BC2511B  1795 1988  .49  .64  .59  .40  .23B .52 
+  12 BC2512A  1741 1988  .77  .83  .79  .69  .82  .82 
+  13 BC2513B  1793 1988  .74  .69  .46  .32A .70  .80 
+  14 BC2514A  1800 1988       .79  .82  .80  .79  .87 
+  15 BC2515A  1801 1988       .79  .82  .70  .58  .81 
+  16 BC2516B  1791 1988  .62  .64  .74  .55  .46  .76 
+  17 BC2517A  1873 1988                 .80  .73  .85 
+  18 BC2518A  1808 1988       .72  .80  .87  .67  .68 
+  19 BC2519A  1810 1988       .56  .65  .70  .76  .80 
+  20 BC2520A  1843 1988            .85  .78  .66  .71 
+ Av segment correlation  .66  .72  .72  .65  .61  .73 
+
+ FLAGGED SEGMENTS: ca546
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 BC2509A  1900 1949     A     .328         0
+  11 BC2511B  1900 1949     B     .225         2      .335   .109
+  13 BC2513B  1875 1924     A     .318         0
+
+ DESCRIPTIVE STATISTICS: ca546
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BC2501A  1847 1988    142      4      0    .773   1.23   2.98   .629   .731   .333   1.93   .343  -.041   1
+   2 BC2502A  1798 1988    191      6      0    .711   1.07   2.72   .611   .800   .352   2.35   .386  -.037   1
+   3 BC2503B  1856 1988    133      3      0    .683    .99   2.63   .526   .784   .360   2.34   .370  -.008   1
+   4 BC2504B  1799 1988    190      6      0    .768    .71   1.75   .356   .657   .398   2.05   .368  -.025   1
+   5 BC2505B  1870 1988    119      3      0    .724    .83   4.50   .636   .543   .443   3.68   .481  -.010   1
+   6 BC2506B  1887 1988    102      2      0    .763   2.24   6.61  1.387   .666   .414   2.38   .387  -.021   1
+   7 BC2507B  1806 1988    183      5      0    .734   1.43   4.52   .883   .886   .276   2.32   .297  -.016   3
+   8 BC2508A  1770 1988    219      6      0    .631    .56   3.78   .573   .820   .401   2.48   .406   .011   2
+   9 BC2509A  1800 1988    189      5      1    .356    .42   1.33   .241   .713   .337   2.12   .314  -.008   2
+  10 BC2510B  1800 1988    189      5      0    .729    .59   2.00   .416   .851   .326   2.39   .329   .005   2
+  11 BC2511B  1795 1988    194      6      1    .427    .25    .67   .134   .806   .278   1.70   .275  -.014   3
+  12 BC2512A  1741 1988    248      6      0    .761    .89   3.66   .609   .760   .379   2.71   .381   .008   2
+  13 BC2513B  1793 1988    196      6      1    .692    .27   1.25   .172   .747   .399   2.39   .372  -.013   3
+  14 BC2514A  1800 1988    189      5      0    .829    .56   1.50   .271   .593   .346   2.61   .333  -.011   3
+  15 BC2515A  1801 1988    188      5      0    .756    .65   2.69   .421   .765   .358   1.98   .326  -.013   3
+  16 BC2516B  1791 1988    198      6      0    .715    .23   1.36   .153   .483   .473   2.54   .418  -.008   1
+  17 BC2517A  1873 1988    116      3      0    .792   1.53   7.19   .979   .589   .383   2.33   .361   .030   2
+  18 BC2518A  1808 1988    181      5      0    .728   1.02   3.19   .518   .713   .378   2.18   .319   .009   3
+  19 BC2519A  1810 1988    179      5      0    .749    .89   2.26   .553   .690   .423   3.41   .419   .015   2
+  20 BC2520A  1843 1988    146      4      0    .718   1.35   4.97   .796   .600   .398   3.21   .418  -.000   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3492     96      3    .697    .82   7.19   .506   .718   .371   3.68   .363  -.007
+
+ DATA CHECKS (rwl.check): ca546
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca546.rwl
+ 20 series, 3492 measurements, 1741-1988, 0.01 mm precision
+ 0 error(s), 2 warning(s), 16 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     BC2509A: correlates with the rest of the collection at r = 0.392 where the collection median is 0.719 (8.5 MAD below it); it does not fit the collection it is in
+     BC2511B: correlates with the rest of the collection at r = 0.499 where the collection median is 0.719 (5.7 MAD below it); it does not fit the collection it is in
+ 16 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file ca546.rwl, MD5 7fbf7c16d5f4fc50db07e278e91d4596.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

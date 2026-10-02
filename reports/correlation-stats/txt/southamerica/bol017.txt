@@ -1,0 +1,185 @@
+
+ COFECHA-style crossdating report: bol017
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bol017.rwl
+      MD5 of measurement file: f774e0249ee43856f8dc1d60605f1194
+      Date checked           : 01OCT26
+      Beginning year         : 1900
+      Ending year            : 2010
+      Principal investigators: Chaparro, H.A.; Camarero, J.J.
+      Site name              : INPA Parket ltda. Concession
+      Species information    : CEMC Centrolobium microchaete (Benth.) H.C. Lima
+      Latitude               : 16.1200 S
+      Longitude              : 61.7200 W
+      Elevation              : 380 m
+
+      Series intercorrelation: 0.472
+      Avg mean sensitivity   : 0.607
+      Avg standard deviation : 1.350
+      Avg autocorrelation    : 0.459
+      Number dated series    : 42
+      Series crossdated      : 41
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 3, B 7; 3 of the B weak at every lag)
+      Pct problem segments   : 13.89
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bol017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 INCM001A 1922 2010       .37  .62 
+   2 INCM001B 1922 2010       .35  .51 
+   3 INCM001C 1922 2010       .49  .54 
+   4 INCM002A 1924 2010       .54  .56 
+   5 INCM002B 1924 2010       .52  .59 
+   6 INCM002C 1924 2010       .32A .36 
+   7 INCM005A 1900 2010  .50  .32A .45 
+   8 INCM005B 1900 2010  .52  .28B .41 
+   9 INCM005C 1900 2010  .56  .29A .37 
+  10 INCM053A 1910 2010       .62  .72 
+  11 INCM053B 1910 2010       .59  .65 
+  12 INCM053C 1910 2010       .63  .59 
+  13 INCM060A 1914 2010       .37  .54 
+  14 INCM060B 1914 2010       .44  .51 
+  15 INCM060C 1914 2010       .34  .46 
+  16 INCM061A 1915 2010       .54  .62 
+  17 INCM061B 1915 2010       .53  .64 
+  18 INCM061C 1915 2010       .52  .57 
+  19 INCM062A 1912 2010       .43  .28B
+  20 INCM062B 1912 2010       .39  .40B
+  21 INCM062C 1912 2010       .37  .30B
+  22 INCM063A 1916 2010       .44  .32B
+  23 INCM063B 1916 2010       .53  .50 
+  25 INCM064A 1938 2010            .57 
+  26 INCM064B 1938 2010            .73 
+  27 INCM064C 1938 2010            .80 
+  28 INCM066A 1934 2010            .41 
+  29 INCM066B 1934 2010            .64 
+  30 INCM066C 1934 2010            .45 
+  31 INCM069A 1934 2010            .34 
+  32 INCM069B 1934 2010            .37 
+  33 INCM069C 1934 2010            .43 
+  34 INCM073A 1917 2010       .34  .41 
+  35 INCM073B 1926 2010            .52 
+  36 INCM073C 1917 2010       .23B .23B
+  37 INCM076A 1934 2010            .37 
+  38 INCM076B 1934 2010            .41 
+  39 INCM076C 1934 2010            .38 
+  40 INCM113A 1918 2010       .61  .77 
+  41 INCM113B 1918 2010       .62  .74 
+  42 INCM113C 1918 2010       .52  .57 
+ Av segment correlation  .53  .45  .50 
+
+ FLAGGED SEGMENTS: bol017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 INCM002C 1925 1974     A     .318         0
+   7 INCM005A 1925 1974     A     .322         0
+   8 INCM005B 1925 1974     B     .276        -4      .297   .021  weak at every lag
+   9 INCM005C 1925 1974     A     .293         0
+  19 INCM062A 1950 1999     B     .278         2      .477   .199
+  20 INCM062B 1950 1999     B     .396         2      .516   .121
+  21 INCM062C 1950 1999     B     .296         2      .431   .135
+  22 INCM063A 1950 1999     B     .316        -4      .338   .022
+  36 INCM073C 1925 1974     B     .229        -2      .260   .031  weak at every lag
+  36 INCM073C 1950 1999     B     .228         6      .259   .031  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bol017
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 INCM001A 1922 2010     89      2      0    .477   2.03   4.90  1.386   .530   .644   2.32   .557   .019   1
+   2 INCM001B 1922 2010     89      2      0    .433   1.58   4.69  1.060   .491   .581   2.69   .543   .079   0
+   3 INCM001C 1922 2010     89      2      0    .528   1.01   3.24   .740   .288   .747   3.00   .617   .111   0
+   4 INCM002A 1924 2010     87      2      0    .431   2.76   6.66  1.483   .301   .501   2.45   .451   .064   0
+   5 INCM002B 1924 2010     87      2      0    .423   2.44   6.99  1.612   .330   .622   2.54   .555   .089   0
+   6 INCM002C 1924 2010     87      2      1    .267   1.62   6.21  1.240   .506   .624   2.46   .501   .011   0
+   7 INCM005A 1900 2010    111      3      1    .499   2.32   8.85  1.596   .240   .662   2.76   .560   .040   0
+   8 INCM005B 1900 2010    111      3      1    .489   1.63   7.46  1.536   .435   .612   2.51   .514   .001   0
+   9 INCM005C 1900 2010    111      3      1    .492   1.72   7.52  1.638   .425   .667   2.75   .536   .041   0
+  10 INCM053A 1910 2010    101      2      0    .522   2.50   7.01  1.701   .505   .675   2.48   .524   .061   0
+  11 INCM053B 1910 2010    101      2      0    .484   1.80   5.77  1.398   .277   .825   3.15   .597  -.005   0
+  12 INCM053C 1910 2010    101      2      0    .475   1.53   6.40  1.196   .241   .762   3.38   .612  -.050   0
+  13 INCM060A 1914 2010     97      2      0    .486   2.34   7.05  1.556   .523   .541   1.99   .453   .069   0
+  14 INCM060B 1914 2010     97      2      0    .500   3.53   8.90  2.074   .238   .595   2.71   .519  -.001   0
+  15 INCM060C 1914 2010     97      2      0    .401   2.43   8.34  1.542   .403   .526   2.54   .470   .116   0
+  16 INCM061A 1915 2010     96      2      0    .548   2.21   6.90  1.622   .643   .510   1.85   .424  -.022   1
+  17 INCM061B 1915 2010     96      2      0    .501   2.20   7.81  1.737   .613   .531   1.97   .444  -.001   2
+  18 INCM061C 1915 2010     96      2      0    .547   2.58   8.79  2.229   .708   .462   1.88   .415   .044   3
+  19 INCM062A 1912 2010     99      2      1    .348   2.45   6.72  1.678   .539   .561   2.25   .474  -.022   2
+  20 INCM062B 1912 2010     99      2      1    .330   2.15   8.31  1.684   .410   .613   2.21   .511   .049   0
+  21 INCM062C 1912 2010     99      2      1    .359   1.51   5.73  1.132   .512   .595   2.49   .500  -.008   2
+  22 INCM063A 1916 2010     95      2      1    .361   1.96   6.31  1.589   .614   .507   2.10   .453   .011   1
+  23 INCM063B 1916 2010     95      2      0    .482   1.99   5.86  1.407   .562   .574   2.86   .505   .001   1
+  24 INCM063C 1916 2010     95                         2.81   7.99  2.178   .509   .556                         
+  25 INCM064A 1938 2010     73      1      0    .550   1.58   6.08   .983   .567   .445   2.26   .411  -.007   1
+  26 INCM064B 1938 2010     73      1      0    .708   1.26   3.38   .683   .578   .491   1.96   .409   .134   0
+  27 INCM064C 1938 2010     73      1      0    .766   1.32   3.04   .737   .578   .452   1.93   .389  -.011   1
+  28 INCM066A 1934 2010     77      1      0    .459   1.03   8.01  1.170   .446   .667   2.86   .602   .014   1
+  29 INCM066B 1934 2010     77      1      0    .617   1.45   7.83  1.165   .334   .645   3.04   .553   .076   0
+  30 INCM066C 1934 2010     77      1      0    .463   1.14   6.19  1.101   .434   .700   2.75   .565   .149   0
+  31 INCM069A 1934 2010     77      1      0    .305   1.03   3.73   .735   .376   .658   3.36   .640  -.032   1
+  32 INCM069B 1934 2010     77      1      0    .430   1.30   3.86   .877   .396   .636   2.54   .546   .078   0
+  33 INCM069C 1934 2010     77      1      0    .445   1.18   3.63   .730   .276   .604   2.52   .515   .078   0
+  34 INCM073A 1917 2010     94      2      0    .419   1.27   4.70   .995   .603   .611   2.49   .522   .016   1
+  35 INCM073B 1926 2010     85      1      0    .519   1.21   3.26   .812   .504   .549   2.10   .476   .003   1
+  36 INCM073C 1917 2010     94      2      2    .319    .90   3.38   .693   .510   .689   3.09   .631   .033   1
+  37 INCM076A 1934 2010     77      1      0    .436    .99   3.03   .701   .506   .568   2.84   .509   .024   3
+  38 INCM076B 1934 2010     77      1      0    .480   1.05   3.54   .772   .485   .762   2.62   .608  -.043   1
+  39 INCM076C 1934 2010     77      1      0    .264   1.08   2.83   .726   .563   .680   2.35   .530   .080   3
+  40 INCM113A 1918 2010     93      2      0    .651   2.43   7.05  1.567   .440   .584   2.56   .526  -.006   1
+  41 INCM113B 1918 2010     93      2      0    .645   2.70   8.78  1.858   .467   .610   2.27   .504   .012   1
+  42 INCM113C 1918 2010     93      2      0    .553   2.49   8.95  1.943   .453   .587   2.63   .544  -.006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3789     72     10    .472   1.86   8.95  1.350   .459   .607   3.38   .518   .030
+
+ DATA CHECKS (rwl.check): bol017
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bol017.rwl
+ 42 series, 3789 measurements, 1900-2010, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file bol017.rwl, MD5 f774e0249ee43856f8dc1d60605f1194.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series INCM063C is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

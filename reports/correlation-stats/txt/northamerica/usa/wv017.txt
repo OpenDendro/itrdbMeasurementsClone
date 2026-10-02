@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: wv017
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv017.rwl
+      MD5 of measurement file: cac9dd7f7be2b8cf0c885960f2d0a63f
+      Date checked           : 01OCT26
+      Beginning year         : 1682
+      Ending year            : 1824
+      Principal investigators: de Graauw, K.K.; Hessl, A.E.
+      Site name              : Caraway Barn
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 38.0400 N
+      Longitude              : 80.3100 W
+      Elevation              : 743 m
+
+      Series intercorrelation: 0.568
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.388
+      Avg autocorrelation    : 0.709
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 CBS406A  1720 1823       .60  .67      
+   2 CBN204A  1712 1824       .45  .34  .45 
+   3 CBN305A  1720 1822       .69  .66      
+   5 CBN104A  1708 1823       .51  .63      
+   6 CBN406A  1727 1824            .77  .72 
+   7 CBE306A  1704 1818       .70  .65      
+   8 CBN306A  1701 1824       .73  .74  .76 
+   9 CBS303A  1706 1824       .44  .50  .57 
+  10 CBS103A  1706 1824       .61  .47  .55 
+  11 CBE407A  1693 1824  .47  .70  .70  .65 
+  12 CBW204A  1695 1823  .25B .54  .75      
+  13 CBE303A  1698 1821  .25A .16B .32A     
+  14 CBW104A  1721 1824       .70  .76  .78 
+  15 CBN206A  1682 1824  .19B .46  .44  .36 
+  16 CBN105A  1689 1824  .60  .62  .56  .67 
+  17 CBE408A  1703 1822       .63  .78      
+ Av segment correlation  .35  .57  .61  .61 
+
+ FLAGGED SEGMENTS: wv017
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 CBW204A  1700 1749     B     .252        -1      .325   .072  weak at every lag
+  13 CBE303A  1700 1749     A     .247         0
+  13 CBE303A  1725 1774     B     .161        -8      .218   .056  weak at every lag
+  13 CBE303A  1750 1799     A     .322         0
+  15 CBN206A  1700 1749     B     .190        -3      .225   .036  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wv017
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CBS406A  1720 1823    104      2      0    .619    .78   1.94   .273   .666   .221   1.64   .206   .042   2
+   2 CBN204A  1712 1824    113      3      0    .459   1.09   1.81   .254   .458   .189   1.52   .178   .076   0
+   3 CBN305A  1720 1822    103      2      0    .697    .81   1.83   .344   .656   .251   1.60   .225   .061   0
+   4 CBW304A  1777 1824     48      0      0    .730   1.57   2.62   .428   .520   .209   1.48   .210   .035   1
+   5 CBN104A  1708 1823    116      2      0    .528   1.07   1.76   .281   .690   .166   1.29   .151   .013   2
+   6 CBN406A  1727 1824     98      2      0    .689   1.01   2.57   .413   .800   .195   1.57   .203  -.004   1
+   7 CBE306A  1704 1818    115      2      0    .675    .68   2.14   .243   .596   .212   1.84   .223  -.007   1
+   8 CBN306A  1701 1824    124      3      0    .734    .72   1.46   .205   .487   .207   1.96   .213   .003   1
+   9 CBS303A  1706 1824    119      3      0    .493   1.01   2.07   .320   .854   .126   1.38   .136   .018   1
+  10 CBS103A  1706 1824    119      3      0    .562   1.08   2.70   .407   .834   .155   1.59   .160   .011   1
+  11 CBE407A  1693 1824    132      4      0    .564    .88   2.10   .361   .699   .245   1.70   .242  -.019   3
+  12 CBW204A  1695 1823    129      3      1    .559    .73   1.84   .386   .700   .359   1.96   .341  -.001   2
+  13 CBE303A  1698 1821    124      3      3    .318    .90   2.19   .420   .812   .222   1.62   .211   .099   0
+  14 CBW104A  1721 1824    104      3      0    .738   1.02   4.70   .829   .917   .217   1.62   .204  -.046   3
+  15 CBN206A  1682 1824    143      4      1    .355    .71   4.65   .566   .731   .224   2.08   .250   .059   0
+  16 CBN105A  1689 1824    136      4      0    .610    .81   2.24   .415   .818   .193   1.56   .201   .026   1
+  17 CBE408A  1703 1822    120      2      0    .533    .86   2.79   .466   .695   .304   1.75   .282   .007   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1947     45      5    .568    .90   4.70   .388   .709   .218   2.08   .216   .022
+
+ DATA CHECKS (rwl.check): wv017
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv017.rwl
+ 17 series, 1947 measurements, 1682-1824, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file wv017.rwl, MD5 cac9dd7f7be2b8cf0c885960f2d0a63f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

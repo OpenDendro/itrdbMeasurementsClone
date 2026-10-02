@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: nepa013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa013.rwl
+      MD5 of measurement file: e91aee88286039a4401a4be1c70c2e80
+      Date checked           : 01OCT26
+      Beginning year         : 1689
+      Ending year            : 1998
+      Principal investigators: Krusic, P.J.; Cook, E.R.
+      Site name              : Chardung
+      Species information    : ABSB Abies spectabilis (D. Don) Spach
+      Latitude               : 27.1700 N
+      Longitude              : 86.4200 E
+      Elevation              : 3300 m
+
+      Series intercorrelation: 0.495
+      Avg mean sensitivity   : 0.245
+      Avg standard deviation : 0.712
+      Avg autocorrelation    : 0.802
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 5.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CHAS05B  1830 1998                                .40  .38  .48  .46 
+   2 CHAS19A  1870 1998                                     .47  .46  .33A
+   3 CHAS08A  1865 1998                                     .57  .51  .35 
+   4 CHAS08B  1851 1998                                     .38  .39  .34B
+   5 CHAS02A  1871 1998                                     .73  .68  .49 
+   6 CHAS14B  1850 1998                                     .65  .73  .63 
+   7 CHAS14A  1849 1998                                     .38  .46  .59 
+   8 CHAS01A  1901 1998                                               .64 
+   9 CHAS03A  1817 1998                           .36  .41  .55  .63  .43 
+  10 CHAS01C  1755 1998                 .46  .64  .70  .66  .58  .54  .60 
+  11 CHAS01B  1740 1998            .47  .58  .51  .50  .67  .67  .42  .50 
+  12 CHAS11A  1844 1998                                .43  .45  .53  .41 
+  13 CHAS20B  1800 1982                           .76  .75  .64  .54  .66 
+  14 CHAS20C  1761 1998                 .46  .45  .63  .69  .72  .41  .22B
+  15 CHAS20A  1739 1943            .52  .65  .52  .56  .67  .67           
+  16 CHAS17C  1689 1888       .39  .48  .49  .46  .48                     
+  17 CHAS17A  1900 1998                                               .57 
+  18 CHAS10B  1780 1998                      .16B .38  .49  .54  .60  .69 
+  19 CHAS07A  1700 1998       .47  .71  .58  .38  .36  .46  .51  .43  .45B
+ Av segment correlation       .43  .54  .54  .45  .53  .56  .56  .52  .49 
+
+ FLAGGED SEGMENTS: nepa013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 CHAS19A  1925 1974     A     .328         0
+   4 CHAS08B  1925 1974     B     .344        -6      .346   .002
+  14 CHAS20C  1925 1974     B     .216        -1      .286   .070  weak at every lag
+  18 CHAS10B  1800 1849     B     .157        -6      .335   .178
+  19 CHAS07A  1925 1974     B     .451        -6      .457   .006
+
+ DESCRIPTIVE STATISTICS: nepa013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CHAS05B  1830 1998    169      4      0    .468    .55   1.40   .235   .593   .290   2.66   .311   .022   2
+   2 CHAS19A  1870 1998    129      3      1    .365   2.42   5.93  1.171   .791   .212   1.79   .232  -.017   2
+   3 CHAS08A  1865 1998    134      3      0    .427   1.89   4.12   .779   .738   .217   1.73   .236  -.002   1
+   4 CHAS08B  1851 1998    148      3      1    .327   1.61   3.29   .679   .867   .176   2.25   .217   .052   1
+   5 CHAS02A  1871 1998    128      3      0    .617   1.65   3.89   .752   .699   .279   1.93   .291   .027   2
+   6 CHAS14B  1850 1998    149      3      0    .559   2.50   4.84  1.061   .758   .239   1.79   .256   .047   1
+   7 CHAS14A  1849 1998    150      3      0    .531   2.92   5.46  1.060   .824   .194   1.56   .196   .008   2
+   8 CHAS01A  1901 1998     98      1      0    .611    .94   2.04   .474   .794   .253   1.74   .277   .031   2
+   9 CHAS03A  1817 1998    182      5      0    .494   1.22   3.70   .762   .865   .244   1.83   .255   .033   1
+  10 CHAS01C  1755 1998    244      7      0    .570   1.38   3.35   .547   .751   .192   1.73   .218   .041   1
+  11 CHAS01B  1740 1998    259      8      0    .483   1.13   2.64   .519   .851   .181   1.70   .202  -.006   2
+  12 CHAS11A  1844 1998    155      4      0    .470    .80   2.67   .631   .917   .380   3.11   .378  -.011   2
+  13 CHAS20B  1800 1982    183      5      0    .645   1.21   2.93   .563   .703   .290   2.03   .269   .003   2
+  14 CHAS20C  1761 1998    238      7      1    .495   1.08   2.90   .466   .778   .266   1.95   .247   .020   2
+  15 CHAS20A  1739 1943    205      6      0    .581   1.01   3.12   .515   .825   .253   1.61   .243   .008   2
+  16 CHAS17C  1689 1888    200      5      0    .401   1.55   6.91   .893   .866   .188   2.06   .209  -.011   2
+  17 CHAS17A  1900 1998     99      1      0    .488    .76   1.50   .274   .713   .203   1.78   .210   .034   1
+  18 CHAS10B  1780 1998    219      6      1    .460   1.88   7.17  1.508   .889   .319   2.39   .346   .020   3
+  19 CHAS07A  1700 1998    299      9      1    .440   1.05   3.52   .663   .869   .270   1.89   .281  -.003   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3388     86      5    .495   1.41   7.17   .712   .802   .245   3.11   .257   .014
+
+ DATA CHECKS (rwl.check): nepa013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa013.rwl
+ 19 series, 3388 measurements, 1689-1998, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file nepa013.rwl, MD5 e91aee88286039a4401a4be1c70c2e80.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

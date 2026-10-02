@@ -1,0 +1,193 @@
+
+ COFECHA-style crossdating report: ak103
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak103.rwl
+      MD5 of measurement file: 1ea02077999992c3112651141283362b
+      Date checked           : 01OCT26
+      Beginning year         : 1556
+      Ending year            : 1990
+      Principal investigators: Jacoby, G.C.; D'Arrigo, R.D.; Buckley, B.M.
+      Site name              : Savage River
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 64.7333 N
+      Longitude              : 149.1833 W
+      Elevation              : 930 m
+
+      Series intercorrelation: 0.624
+      Avg mean sensitivity   : 0.198
+      Avg standard deviation : 0.183
+      Avg autocorrelation    : 0.787
+      Number dated series    : 34
+      Series crossdated      : 23
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak103
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   3 SR04SES  1665 1795                 .55  .64  .66                                         
+   4 SR8ES    1746 1898                                .70  .63  .63  .63                     
+   5 SR8WS    1810 1990                                               .71  .60  .75  .76  .72 
+   6 SR9BS    1814 1990                                               .79  .72  .78  .82  .57 
+   7 SR09CS   1770 1990                                     .68  .77  .72  .64  .77  .75  .74 
+  11 SR15AS   1802 1910                                               .55  .59                
+  12 SR17AS   1771 1889                                     .81  .77  .61                     
+  13 SR17ARS  1759 1866                                     .82  .85                          
+  14 SR18NES  1776 1990                                          .80  .78  .73  .69  .64  .69 
+  15 SR23AS   1805 1990                                               .63  .58  .66  .69  .74 
+  16 SR25CS   1714 1990                           .76  .81  .76  .74  .67  .61  .71  .66  .65 
+  17 SR25CRS  1708 1955                           .80  .79  .78  .84  .81  .68  .72  .69      
+  21 SR54EWS  1695 1778                      .59  .63                                         
+  23 TM40BRS  1565 1850  .47  .48  .57  .69  .68  .79  .76  .71  .72                          
+  24 TM41DS   1857 1989                                                         .44  .52  .45 
+  25 TM42CS   1610 1990       .50  .52  .38  .49  .70  .74  .73  .73  .73  .61  .63  .70  .63 
+  27 ESR2ES   1652 1990                 .47  .22A .48  .60  .51  .57  .71  .48  .39  .51  .49 
+  28 ESR2SWS  1727 1916                                .73  .41  .39  .49  .38                
+  29 ESR52WS  1585 1905  .38  .50  .52  .51  .58  .54  .53  .39  .44  .60  .52                
+  30 SAV03SS  1688 1988                      .78  .74  .73  .71  .72  .78  .73  .76  .76  .73 
+  32 SAV04SS  1797 1988                                          .79  .78  .43  .58  .64  .48 
+  33 SAV07NS  1661 1987                 .30B .45  .60  .50  .57  .75  .76  .64  .60  .64  .55 
+  34 SAV07SS  1669 1956                 .55  .58  .69  .49  .56  .72  .69  .63  .40  .38      
+ Av segment correlation  .43  .49  .53  .49  .56  .67  .67  .65  .70  .69  .60  .63  .66  .62 
+
+ FLAGGED SEGMENTS: ak103
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  27 ESR2ES   1700 1749     A     .225         0
+  33 SAV07NS  1675 1724     B     .301        10      .313   .012  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ak103
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SR01WS   1746 1986    240                          .24    .64   .085   .709   .204                         
+   2 SR4SES   1707 1938    229                          .29    .62   .096   .730   .178                         
+   3 SR04SES  1665 1795    131      3      0    .595    .36    .76   .149   .827   .179   1.57   .187  -.016   1
+   4 SR8ES    1746 1898    153      4      0    .652    .30   1.18   .192   .896   .196   1.68   .198   .001   1
+   5 SR8WS    1810 1990    181      5      0    .735    .41   1.02   .174   .805   .190   1.70   .190   .000   1
+   6 SR9BS    1814 1990    177      5      0    .722    .34    .84   .157   .715   .270   1.83   .278  -.044   1
+   7 SR09CS   1770 1990    221      7      0    .711    .38    .87   .145   .670   .219   1.80   .233  -.006   1
+   8 SR13BS   1610 1917    302                          .44    .94   .125   .429   .225                         
+   9 SR13CS   1595 1990    395                          .45   1.10   .147   .607   .215                         
+  10 SR14WS   1750 1966    216                          .55   1.27   .204   .839   .159                         
+  11 SR15AS   1802 1910    109      2      0    .633    .61   1.08   .180   .548   .218   1.47   .206  -.008   2
+  12 SR17AS   1771 1889    119      3      0    .700    .93   1.97   .431   .869   .193   1.62   .190   .003   1
+  13 SR17ARS  1759 1866    108      2      0    .786   1.02   2.85   .476   .852   .187   1.52   .184   .003   1
+  14 SR18NES  1776 1990    215      6      0    .701    .47   1.36   .210   .709   .257   1.65   .243  -.018   1
+  15 SR23AS   1805 1990    186      5      0    .654    .82   1.84   .349   .860   .191   1.54   .192   .015   1
+  16 SR25CS   1714 1990    277      9      0    .703    .50   1.84   .310   .894   .185   1.60   .185  -.000   1
+  17 SR25CRS  1708 1955    248      8      0    .739    .49   1.86   .249   .832   .187   1.86   .212  -.029   1
+  18 SR50NWS  1773 1936    163                          .60   1.38   .213   .685   .209                         
+  19 SR51NS   1834 1989    154                          .28    .58   .128   .753   .241                         
+  20 SR54NS   1749 1980    230                          .38    .95   .147   .730   .226                         
+  21 SR54EWS  1695 1778     84      2      0    .569    .62   1.77   .270   .731   .228   1.79   .228   .012   1
+  22 TM40BS   1591 1941    350                          .44   1.19   .234   .900   .190                         
+  23 TM40BRS  1565 1850    286      9      0    .601    .24   1.29   .170   .926   .221   1.78   .225  -.000   1
+  24 TM41DS   1857 1989    133      3      0    .532    .27    .48   .079   .862   .125   1.25   .119  -.010   2
+  25 TM42CS   1610 1990    381     13      0    .601    .25    .64   .118   .793   .239   1.71   .213  -.002   3
+  26 TM43BS   1556 1990    434                          .36   1.47   .214   .924   .165                         
+  27 ESR2ES   1652 1990    339     11      1    .515    .36    .85   .136   .869   .146   1.52   .146  -.002   1
+  28 ESR2SWS  1727 1916    190      5      0    .481    .26    .66   .111   .881   .167   1.44   .172   .013   1
+  29 ESR52WS  1585 1905    321     11      0    .461    .37   1.57   .285   .935   .176   1.55   .177  -.004   1
+  30 SAV03SS  1688 1988    301     10      0    .750    .30    .84   .126   .710   .212   2.07   .213  -.000   3
+  31 SAV04ES  1791 1988    197                          .38    .96   .168   .835   .177                         
+  32 SAV04SS  1797 1988    192      6      0    .622    .37    .98   .155   .759   .192   1.70   .187   .002   2
+  33 SAV07NS  1661 1987    327     11      1    .549    .28    .69   .095   .772   .170   1.65   .172  -.018   3
+  34 SAV07SS  1669 1956    288     10      0    .557    .37   1.21   .193   .795   .208   1.61   .208   .000   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           7877    150      2    .624    .40   2.85   .183   .787   .198   2.07   .198  -.005
+
+ DATA CHECKS (rwl.check): ak103
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak103.rwl
+ 34 series, 7877 measurements, 1556-1990, 0.001 mm precision
+ 0 error(s), 11 warning(s), 11 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (11)
+     SAV04ES: no measurement for 1943, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR01WS: no measurement for 1918, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR13BS: no measurement for 1726-1731, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR13CS: no measurement for 1809, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR14WS: no measurement for 1824, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR4SES: no measurement for 1865-1867, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR50NWS: no measurement for 1825, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR51NS: no measurement for 1874-1875, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     SR54NS: no measurement for 1903-1904, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     TM40BS: no measurement for 1921, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ... and 1 more; see as.data.frame()
+ 11 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ak103.rwl, MD5 1ea02077999992c3112651141283362b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series SR01WS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR4SES has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR13BS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR13CS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR14WS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR50NWS has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series SR51NS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SR54NS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series TM40BS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series TM43BS has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series SAV04ES has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

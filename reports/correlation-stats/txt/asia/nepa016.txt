@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: nepa016
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa016.rwl
+      MD5 of measurement file: 9e7150d3f1524664302fd3f894d97dca
+      Date checked           : 01OCT26
+      Beginning year         : 1727
+      Ending year            : 1997
+      Principal investigators: Krusic, P.J.; Cook, E.R.
+      Site name              : Deorali La
+      Species information    : TSDU Tsuga dumosa (D. Don) Eichler
+      Latitude               : 28.2300 N
+      Longitude              : 83.4200 E
+      Elevation              : 1830 m
+
+      Series intercorrelation: 0.503
+      Avg mean sensitivity   : 0.276
+      Avg standard deviation : 0.828
+      Avg autocorrelation    : 0.800
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 5.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 DLTD09A  1817 1997       .47  .56  .65  .65  .70 
+   2 DLTD09B  1750 1997  .24A .44  .60  .64  .68  .67 
+   3 DLTD09C  1800 1997       .45  .44  .46  .47  .56 
+   4 DLTD01A  1760 1997  .50  .53  .59  .66  .66  .62 
+   5 DLTD07A  1730 1997  .73  .56  .45  .37  .50  .75 
+   6 DLTD07B  1760 1997  .66  .52  .52  .49  .60  .62 
+   7 DLTD08A  1844 1997            .49  .47  .36  .48 
+   8 DLTD08B  1849 1997                 .36B .41  .64 
+   9 DLTD04B  1778 1997  .42  .26B .41  .57  .48  .42 
+  10 DLTD06A  1800 1997       .56  .56  .55  .53  .54 
+  11 DLTD05A  1741 1997  .61  .50  .49  .56  .63  .63 
+  12 DLTD09D  1800 1996       .33B .59  .58  .44  .55 
+  13 DLTD12A  1727 1996  .51  .51  .62  .58  .55  .58 
+  14 DLTD12B  1727 1937  .52  .43  .45  .61           
+  15 DLTD06B  1797 1988  .25A .44  .32B .34  .51  .50 
+  16 DLTD05D  1789 1996  .51  .49  .43  .47  .46  .42 
+  17 DLTD05B  1819 1996       .34  .19A .37  .56  .50 
+  18 DLTD05C  1824 1996       .47  .38  .50  .66  .49 
+  19 DLTD03B  1827 1996            .57  .52  .46  .57 
+  20 DLTD02A  1826 1996            .48  .52  .63  .63 
+  21 DLTD13B  1822 1996       .42  .52  .42  .51  .73 
+  22 DLTD10B  1887 1996                      .42  .46 
+  23 DLTD10A  1888 1996                      .55  .56 
+  24 DLTD13A  1872 1996                 .50  .60  .61 
+  25 DLTD03A  1875 1996                      .58  .63 
+  26 DLTD01B  1838 1996            .62  .65  .64  .59 
+ Av segment correlation  .49  .46  .49  .52  .54  .58 
+
+ FLAGGED SEGMENTS: nepa016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 DLTD09B  1800 1849     A     .242         0
+   8 DLTD08B  1875 1924     B     .361        -3      .432   .071
+   9 DLTD04B  1825 1874     B     .262        -6      .264   .002  weak at every lag
+  12 DLTD09D  1825 1874     B     .335       -10      .362   .027
+  15 DLTD06B  1800 1849     A     .250         0
+  15 DLTD06B  1850 1899     B     .322        10      .469   .148
+  17 DLTD05B  1850 1899     A     .195         0
+
+ DESCRIPTIVE STATISTICS: nepa016
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DLTD09A  1817 1997    181      5      0    .594   2.36   6.88  1.437   .830   .297   2.08   .303  -.008   2
+   2 DLTD09B  1750 1997    248      6      1    .466   1.26   3.49   .721   .886   .220   1.69   .227   .004   2
+   3 DLTD09C  1800 1997    198      5      0    .510   1.12   2.88   .610   .865   .222   1.71   .225   .021   2
+   4 DLTD01A  1760 1997    238      6      0    .578   1.30   3.68   .672   .790   .274   1.84   .272   .038   2
+   5 DLTD07A  1730 1997    268      6      0    .450    .73   2.57   .371   .765   .256   1.93   .262  -.001   2
+   6 DLTD07B  1760 1997    238      6      0    .538    .69   2.77   .381   .737   .275   2.49   .287   .073   3
+   7 DLTD08A  1844 1997    154      4      0    .479   2.20   4.91   .932   .761   .231   1.62   .229   .004   2
+   8 DLTD08B  1849 1997    149      3      1    .475   2.32   5.06   .903   .718   .217   1.66   .226   .013   2
+   9 DLTD04B  1778 1997    220      6      1    .433   1.45   4.33   .876   .846   .268   1.70   .277   .034   2
+  10 DLTD06A  1800 1997    198      5      0    .582   1.69   4.93   .974   .832   .263   1.89   .275   .012   3
+  11 DLTD05A  1741 1997    257      6      0    .508   1.35   4.06   .852   .859   .268   1.94   .277   .012   2
+  12 DLTD09D  1800 1996    197      5      1    .515    .49   1.70   .255   .693   .334   2.03   .320   .000   2
+  13 DLTD12A  1727 1996    270      6      0    .484    .86   5.50   .880   .885   .361   2.29   .348  -.011   2
+  14 DLTD12B  1727 1937    211      4      0    .438   1.02   4.83   .762   .856   .293   2.28   .301   .014   2
+  15 DLTD06B  1797 1988    192      6      2    .376   1.01   4.65   .809   .823   .329   2.62   .374   .015   3
+  16 DLTD05D  1789 1996    208      6      0    .445    .96   2.75   .480   .695   .291   2.45   .303  -.000   2
+  17 DLTD05B  1819 1996    178      5      1    .441    .99   4.47   .697   .762   .344   2.44   .339   .001   2
+  18 DLTD05C  1824 1996    173      5      0    .505    .99   4.24   .711   .734   .384   2.34   .350   .025   1
+  19 DLTD03B  1827 1996    170      4      0    .535   1.71   4.42   .788   .757   .270   1.91   .277   .064   2
+  20 DLTD02A  1826 1996    171      4      0    .528   2.49   7.28  1.411   .842   .242   1.85   .256   .001   2
+  21 DLTD13B  1822 1996    175      5      0    .545   2.27   6.07  1.196   .774   .299   1.76   .289  -.016   2
+  22 DLTD10B  1887 1996    110      2      0    .453   2.51   4.88  1.083   .846   .201   1.75   .237   .071   1
+  23 DLTD10A  1888 1996    109      2      0    .500   2.76   6.44  1.225   .808   .219   1.77   .247   .038   1
+  24 DLTD13A  1872 1996    125      3      0    .575   2.72   5.75  1.080   .731   .241   1.79   .238  -.006   2
+  25 DLTD03A  1875 1996    122      2      0    .621   2.75   5.48  1.118   .682   .265   1.98   .272   .091   2
+  26 DLTD01B  1838 1996    159      4      0    .584   2.56   7.38  1.393   .907   .212   1.65   .215   .049   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4919    121      7    .503   1.50   7.38   .828   .800   .276   2.62   .281   .019
+
+ DATA CHECKS (rwl.check): nepa016
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa016.rwl
+ 26 series, 4919 measurements, 1727-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file nepa016.rwl, MD5 9e7150d3f1524664302fd3f894d97dca.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

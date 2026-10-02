@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: brit008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit008.rwl
+      MD5 of measurement file: 42b2eace66351cb11c7dbbb7d6fdfa11
+      Date checked           : 01OCT26
+      Beginning year         : 1652
+      Ending year            : 1975
+      Principal investigators: Baillie, M.G.L.
+      Site name              : Lockwood
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 55.2700 N
+      Longitude              : 3.4300 W
+      Elevation              : 175 m
+
+      Series intercorrelation: 0.464
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 0.744
+      Avg autocorrelation    : 0.728
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 4, B 7; 2 of the B weak at every lag)
+      Pct problem segments   : 11.83
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 Q2564    1652 1970  .62  .72  .62  .54  .20B .23B .63  .54  .52      
+   2 Q2558    1694 1961  .53  .41  .45  .68  .64  .63  .50  .45  .49      
+   3 Q2562    1694 1972  .58  .56  .51  .49  .37  .42  .29A .13B .34      
+   4 Q2559    1716 1972       .42  .30A .45  .55  .61  .59  .59  .66      
+   5 Q2555    1717 1972       .45  .29B .49  .51  .39  .33  .38  .43      
+   6 Q1973    1723 1964       .35  .48  .63  .57  .57  .67  .72  .65      
+   7 Q2553    1743 1958            .37  .44  .40  .44  .66  .72  .63      
+   8 Q1978    1743 1973            .51  .50  .52  .61  .45  .55  .64      
+   9 Q2557    1780 1973                      .09B .17B .41  .63  .60      
+  10 Q1981    1784 1973                      .49  .49  .58  .63  .46      
+  11 Q1976    1805 1940                           .32A .47  .30A          
+  12 Q2546N   1824 1975                           .48  .47  .41  .40  .43 
+  13 Q2547S   1832 1975                                .43  .33B .36  .45 
+  14 Q2545N   1841 1975                                .57  .67  .37  .40 
+  15 Q2544S   1881 1975                                          .46  .34 
+ Av segment correlation  .58  .48  .44  .53  .43  .45  .50  .50  .50  .40 
+
+ FLAGGED SEGMENTS: brit008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 Q2564    1800 1849     B     .202        -1      .444   .242
+   1 Q2564    1825 1874     B     .234        -5      .307   .072  weak at every lag
+   3 Q2562    1850 1899     A     .286         0
+   3 Q2562    1875 1924     B     .132        -1      .334   .202
+   4 Q2559    1750 1799     A     .301         0
+   5 Q2555    1750 1799     B     .289       -10      .320   .031  weak at every lag
+   9 Q2557    1800 1849     B     .090         1      .500   .410
+   9 Q2557    1825 1874     B     .171         1      .505   .334
+  11 Q1976    1825 1874     A     .324         0
+  11 Q1976    1875 1924     A     .302         0
+  13 Q2547S   1875 1924     B     .331         2      .494   .163
+
+ DESCRIPTIVE STATISTICS: brit008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Q2564    1652 1970    319      9      2    .510   1.56   3.90   .517   .694   .189   1.66   .182  -.001   1
+   2 Q2558    1694 1961    268      9      0    .502   2.05   4.20   .734   .798   .175   1.72   .182   .005   3
+   3 Q2562    1694 1972    279      9      2    .415   2.09   5.70   .834   .836   .172   1.68   .183   .040   1
+   4 Q2559    1716 1972    257      8      1    .507   1.48   4.50   .623   .760   .222   1.72   .224   .002   2
+   5 Q2555    1717 1972    256      8      1    .407   1.97   8.00   .999   .752   .195   1.91   .210   .026   1
+   6 Q1973    1723 1964    242      8      0    .546   1.29   4.00   .741   .740   .325   1.82   .316   .007   1
+   7 Q2553    1743 1958    216      7      0    .500   1.89   3.90   .726   .790   .193   1.51   .189  -.021   3
+   8 Q1978    1743 1973    231      7      0    .515   1.57   3.90   .637   .646   .260   1.81   .273   .003   3
+   9 Q2557    1780 1973    194      5      2    .364   2.79   6.00  1.000   .743   .206   1.64   .208  -.009   3
+  10 Q1981    1784 1973    190      5      0    .408   1.34   3.20   .635   .776   .285   1.68   .256  -.009   3
+  11 Q1976    1805 1940    136      3      2    .363   2.34   8.30  1.440   .809   .297   1.82   .320  -.007   3
+  12 Q2546N   1824 1975    152      5      0    .438   1.49   2.90   .411   .529   .199   1.65   .203   .009   1
+  13 Q2547S   1832 1975    144      4      1    .417   1.65   4.50   .682   .813   .196   1.70   .214   .046   1
+  14 Q2545N   1841 1975    135      4      0    .451   1.32   2.80   .388   .451   .232   1.76   .216   .067   0
+  15 Q2544S   1881 1975     95      2      0    .549   2.93   6.20  1.064   .532   .246   1.93   .276   .037   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3114     93     11    .464   1.81   8.30   .744   .728   .222   1.93   .225   .011
+
+ DATA CHECKS (rwl.check): brit008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit008.rwl
+ 15 series, 3114 measurements, 1652-1975, 0.1 mm precision
+ 0 error(s), 1 warning(s), 6 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1571-1975 but the measurements cover 1652-1975
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit008.rwl, MD5 42b2eace66351cb11c7dbbb7d6fdfa11.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

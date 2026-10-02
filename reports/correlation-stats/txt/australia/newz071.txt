@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: newz071
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz071.rwl
+      MD5 of measurement file: 4e175a6017fe1885d8b86b0476ae87a7
+      Date checked           : 01OCT26
+      Beginning year         : 1626
+      Ending year            : 1990
+      Principal investigators: Xiong, L.; Palmer, J.G.
+      Site name              : Stratford Side East Egmont
+      Species information    : LIBI Libocedrus bidwillii Hook. f.
+      Latitude               : 39.3200 S
+      Longitude              : 174.1200 E
+      Elevation              : 860 m
+
+      Series intercorrelation: 0.461
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 0.380
+      Avg autocorrelation    : 0.798
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 15  (A 7, B 8; 4 of the B weak at every lag)
+      Pct problem segments   : 19.48
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz071
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 str1.1   1626 1956  .53  .49  .59  .62  .50  .25B .32B .50  .14B     
+   2 str1.2   1657 1959  .57  .55  .69  .65  .56  .47  .43  .27B .42      
+   3 STR2.2   1815 1990                           .50  .30A .31A .41  .32B
+   4 STR3.1   1686 1959  .72  .76  .55  .59  .76  .70  .55  .46  .31A     
+   5 STR3.2   1710 1954       .65  .36  .50  .67  .70  .64  .71  .61      
+   6 STR4.2   1697 1879  .68  .62  .40  .46  .56  .44                     
+   7 STR4.3   1663 1960  .32B .25B .46  .59  .65  .63  .36  .29A .31A     
+   8 STR5.1   1801 1990                           .43  .35  .32A .54  .45 
+   9 STR5.2   1740 1950            .11B .51  .67  .58  .48  .60  .62      
+  10 STR6.1   1670 1849  .76  .68  .24A .47  .48                          
+  11 STR7.1   1815 1990                           .61  .59  .61  .66  .41 
+ Av segment correlation  .60  .57  .42  .55  .61  .53  .45  .45  .45  .40 
+
+ FLAGGED SEGMENTS: newz071
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 str1.1   1825 1874     B     .247        -7      .250   .002  weak at every lag
+   1 str1.1   1850 1899     B     .323        -5      .371   .048
+   1 str1.1   1900 1949     B     .140         1      .258   .118  weak at every lag
+   2 str1.2   1875 1924     B     .273        -1      .274   .002  weak at every lag
+   3 STR2.2   1850 1899     A     .304         0
+   3 STR2.2   1875 1924     A     .306         0
+   3 STR2.2   1925 1974     B     .320        10      .364   .045
+   4 STR3.1   1900 1949     A     .313         0
+   7 STR4.3   1700 1749     B     .321        -2      .582   .261
+   7 STR4.3   1725 1774     B     .250        -2      .506   .256
+   7 STR4.3   1875 1924     A     .286         0
+   7 STR4.3   1900 1949     A     .312         0
+   8 STR5.1   1875 1924     A     .316         0
+   9 STR5.2   1750 1799     B     .109        10      .232   .123  weak at every lag
+  10 STR6.1   1750 1799     A     .243         0
+
+ DESCRIPTIVE STATISTICS: newz071
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 str1.1   1626 1956    331      9      3    .341    .92   1.99   .388   .837   .187   1.74   .201  -.002   1
+   2 str1.2   1657 1959    303      9      1    .465    .93   1.94   .316   .751   .188   1.65   .198  -.015   1
+   3 STR2.2   1815 1990    176      5      3    .347   1.02   1.93   .315   .669   .192   1.45   .196   .039   3
+   4 STR3.1   1686 1959    274      9      1    .529    .78   2.45   .409   .876   .245   1.80   .245  -.010   3
+   5 STR3.2   1710 1954    245      8      0    .629    .82   1.77   .386   .827   .235   1.56   .250  -.026   1
+   6 STR4.2   1697 1879    183      6      0    .488    .85   1.67   .278   .663   .223   1.64   .229  -.006   1
+   7 STR4.3   1663 1960    298      9      4    .338   1.01   2.10   .423   .852   .196   1.84   .227  -.017   1
+   8 STR5.1   1801 1990    190      5      1    .432    .41   1.26   .281   .871   .330   1.93   .333  -.017   3
+   9 STR5.2   1740 1950    211      7      1    .526   1.12   2.54   .487   .837   .207   1.78   .223   .036   1
+  10 STR6.1   1670 1849    180      5      1    .545   1.07   2.39   .345   .753   .193   1.65   .193  -.019   1
+  11 STR7.1   1815 1990    176      5      0    .504   1.58   3.15   .531   .741   .177   1.60   .189   .011   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2567     77     15    .461    .94   3.15   .380   .798   .214   1.93   .225  -.004
+
+ DATA CHECKS (rwl.check): newz071
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz071.rwl
+ 11 series, 2567 measurements, 1626-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file newz071.rwl, MD5 4e175a6017fe1885d8b86b0476ae87a7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

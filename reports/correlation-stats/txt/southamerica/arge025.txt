@@ -1,0 +1,105 @@
+
+ COFECHA-style crossdating report: arge025
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge025.rwl
+      MD5 of measurement file: 7bdd0b34cbf85f0a33b47cef757fe69f
+      Date checked           : 01OCT26
+      Beginning year         : 1831
+      Ending year            : 1985
+      Principal investigators: Roig, F.A.
+      Site name              : Bonilla
+      Latitude               : 32.6800 S
+      Longitude              : 69.1200 W
+      Elevation              : 2800 m
+
+      Series intercorrelation: 0.658
+      Avg mean sensitivity   : 0.354
+      Avg standard deviation : 0.367
+      Avg autocorrelation    : 0.562
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 ABAD01   1836 1984  .53  .78 
+   2 ABAD02   1881 1984  .63  .88 
+   5 ABAD15   1843 1951  .52      
+   6 ABAD16   1831 1984  .64  .76 
+   7 ABAD20   1917 1985       .59 
+  12 ABAD31   1922 1985       .90 
+ Av segment correlation  .58  .78 
+
+ FLAGGED SEGMENTS: arge025
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: arge025
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ABAD01   1836 1984    149      2      0    .556    .86   1.79   .369   .622   .289   2.52   .332   .029   1
+   2 ABAD02   1881 1984    104      2      0    .739    .75   1.62   .368   .459   .409   2.23   .434  -.021   1
+   3 ABAD09   1941 1984     44      0      0    .694   1.37   2.84   .573   .474   .384   1.65   .336   .178   0
+   4 ABAD11   1930 1967     38      0      0    .765    .62   1.05   .266   .141   .456   1.71   .415   .108   0
+   5 ABAD15   1843 1951    109      1      0    .599    .51   1.56   .294   .764   .331   2.20   .348  -.003   1
+   6 ABAD16   1831 1984    154      2      0    .647    .42    .98   .230   .733   .314   1.98   .330   .020   1
+   7 ABAD20   1917 1985     69      1      0    .611   1.19   2.78   .642   .630   .319   1.95   .353   .050   1
+   8 ABAD21   1939 1985     47      0      0    .867    .87   2.40   .522   .563   .374   2.25   .424   .043   1
+   9 ABAD24   1930 1985     56      0      0    .827    .83   1.78   .433   .613   .418   2.13   .414   .014   1
+  10 ABAD26   1937 1985     49      0      0    .701    .87   1.51   .284   .440   .297   1.62   .278  -.050   1
+  11 ABAD27   1942 1985     44      0      0    .687    .97   1.89   .442   .332   .421   2.20   .388  -.054   0
+  12 ABAD31   1922 1985     64      1      0    .833    .76   1.82   .408   .563   .441   1.79   .377   .166   0
+  13 ABAD33   1881 1947     67      0      0    .340    .58   1.21   .249   .295   .353   2.31   .379   .035   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            994      9      0    .658    .76   2.84   .367   .562   .354   2.52   .364   .032
+
+ DATA CHECKS (rwl.check): arge025
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge025.rwl
+ 13 series, 994 measurements, 1831-1985, 0.01 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file arge025.rwl, MD5 7bdd0b34cbf85f0a33b47cef757fe69f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

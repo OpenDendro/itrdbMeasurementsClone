@@ -1,0 +1,61 @@
+
+ COFECHA-style crossdating report: germ063
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ063.rwl
+      MD5 of measurement file: 1bc65ea93c12334d152e2ced5f3a15e8
+      Date checked           : 01OCT26
+      Beginning year         : 1605
+      Ending year            : 1805
+      Principal investigators: Ratcliff, P.
+      Site name              : Mittenwald Neuner School Violin 2
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.4300 N
+      Longitude              : 11.2500 E
+      Elevation              : 925 m
+
+      Avg mean sensitivity   : 0.156
+      Avg standard deviation : 0.331
+      Avg autocorrelation    : 0.834
+      Number dated series    : 1
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: germ063
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MITT2    1605 1805    201                          .87   2.16   .331   .834   .156                        0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            201                          .87   2.16   .331   .834   .156                     
+
+ DATA CHECKS (rwl.check): germ063
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ063.rwl
+ 1 series, 201 measurements, 1605-1805, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file germ063.rwl, MD5 1bc65ea93c12334d152e2ced5f3a15e8.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 1 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

@@ -1,0 +1,142 @@
+
+ COFECHA-style crossdating report: swit223
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit223.rwl
+      MD5 of measurement file: 5303ec1ce3f019766acf2f9bf3cec5b4
+      Date checked           : 01OCT26
+      Beginning year         : 1768
+      Ending year            : 1998
+      Principal investigators: Cherubini, P.
+      Site name              : Engadin
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.5000 N
+      Longitude              : 9.8833 E
+      Elevation              : 1871 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.189
+      Avg standard deviation : 0.334
+      Avg autocorrelation    : 0.789
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 4.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit223
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 pc01a    1770 1998  .63  .48  .54  .57  .53  .60 
+   2 pc01b    1770 1998  .70  .77  .65  .33A .37  .42 
+   3 pc02a    1855 1998                 .62  .72  .70 
+   4 pc02b    1860 1998                 .61  .67  .46 
+   5 pc03a    1825 1998            .63  .41  .36  .43 
+   6 pc03b    1835 1998            .62  .51  .51  .54 
+   7 pc04a    1828 1998            .80  .66  .70  .73 
+   8 pc04b    1823 1998            .75  .66  .66  .62 
+   9 pc05a    1793 1997  .11B .33A .45  .39  .44  .40 
+  10 pc05b    1867 1998                 .58  .73  .74 
+  11 pc06a    1802 1998       .55  .43  .57  .67  .51 
+  12 pc06b    1785 1998  .60  .66  .66  .67  .75  .62 
+  13 pc07a    1791 1998  .42  .62  .66  .33  .35  .57 
+  14 pc07b    1803 1998       .68  .63  .41  .32B .42B
+  15 pc08a    1844 1998            .53  .58  .71  .69 
+  16 pc08b    1854 1998                 .69  .73  .62 
+  17 pc09a    1823 1998            .60  .50  .55  .65 
+  18 pc09b    1777 1998  .50  .44  .39  .61  .67  .64 
+  19 pc10a    1768 1998  .55  .56  .63  .56  .55  .51 
+  20 pc10b    1790 1998  .36  .39  .58  .48  .39  .40 
+  21 pc11a    1868 1998                 .71  .69  .56 
+  22 pc11b    1873 1998                      .72  .63 
+  23 pc12a    1796 1998  .50  .62  .64  .51  .58  .48 
+  24 pc12b    1795 1998  .36  .70  .67  .59  .67  .66 
+ Av segment correlation  .47  .56  .60  .54  .59  .57 
+
+ FLAGGED SEGMENTS: swit223
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 pc01b    1875 1924     A     .325         0
+   9 pc05a    1800 1849     B     .109         6      .314   .205  weak at every lag
+   9 pc05a    1825 1874     A     .326         0
+  14 pc07b    1900 1949     B     .321         4      .365   .044
+  14 pc07b    1925 1974     B     .421        10      .508   .087
+
+ DESCRIPTIVE STATISTICS: swit223
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 pc01a    1770 1998    229      6      0    .565    .85   2.30   .292   .728   .182   1.82   .204   .024   1
+   2 pc01b    1770 1998    229      6      1    .542    .82   1.65   .264   .776   .164   1.61   .174  -.013   1
+   3 pc02a    1855 1998    144      3      0    .622   1.12   2.78   .424   .835   .165   1.51   .175   .058   1
+   4 pc02b    1860 1998    139      3      0    .485    .90   1.84   .303   .758   .170   1.76   .198  -.005   1
+   5 pc03a    1825 1998    174      4      0    .500    .79   2.21   .468   .810   .261   2.46   .293   .001   2
+   6 pc03b    1835 1998    164      4      0    .512    .96   2.34   .484   .846   .207   1.59   .215  -.002   2
+   7 pc04a    1828 1998    171      4      0    .699    .95   1.68   .274   .623   .199   1.61   .204   .014   1
+   8 pc04b    1823 1998    176      4      0    .651    .95   1.92   .270   .610   .200   1.71   .205  -.003   3
+   9 pc05a    1793 1997    205      6      2    .264    .56   1.67   .281   .846   .202   1.61   .210   .057   1
+  10 pc05b    1867 1998    132      3      0    .662    .93   1.94   .351   .762   .195   1.85   .207  -.024   3
+  11 pc06a    1802 1998    197      5      0    .549    .85   2.69   .338   .742   .198   1.65   .211   .040   1
+  12 pc06b    1785 1998    214      6      0    .629    .74   2.67   .363   .811   .190   2.07   .213   .005   3
+  13 pc07a    1791 1998    208      6      0    .534    .60   1.32   .274   .876   .183   1.52   .191   .003   2
+  14 pc07b    1803 1998    196      5      2    .523    .54   1.54   .257   .845   .195   1.69   .209  -.006   2
+  15 pc08a    1844 1998    155      4      0    .640    .94   1.80   .282   .738   .180   1.47   .172  -.019   2
+  16 pc08b    1854 1998    145      3      0    .700    .84   1.52   .213   .546   .185   1.51   .181   .001   3
+  17 pc09a    1823 1998    176      4      0    .514    .81   3.49   .434   .830   .210   1.90   .230  -.020   3
+  18 pc09b    1777 1998    222      6      0    .529    .94   2.31   .408   .806   .207   1.71   .223   .030   1
+  19 pc10a    1768 1998    231      6      0    .513    .77   2.02   .341   .814   .183   1.76   .202   .008   3
+  20 pc10b    1790 1998    209      6      0    .430    .74   1.76   .310   .880   .166   1.49   .179   .024   1
+  21 pc11a    1868 1998    131      3      0    .664    .93   1.93   .272   .755   .154   1.44   .162   .014   1
+  22 pc11b    1873 1998    126      2      0    .601    .98   2.42   .287   .707   .153   1.74   .176  -.007   3
+  23 pc12a    1796 1998    203      6      0    .484    .56   1.55   .360   .947   .187   1.46   .185  -.001   1
+  24 pc12b    1795 1998    204      6      0    .559    .67   2.80   .440   .875   .176   1.89   .194  -.007   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4380    111      5    .549    .81   3.49   .334   .789   .189   2.46   .201   .008
+
+ DATA CHECKS (rwl.check): swit223
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit223.rwl
+ 24 series, 4380 measurements, 1768-1998, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 1 carriage return(s) against 453 line feed(s); mixed endings can defeat a reader
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit223.rwl, MD5 5303ec1ce3f019766acf2f9bf3cec5b4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

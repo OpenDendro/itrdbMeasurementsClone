@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: wi012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi012.rwl
+      MD5 of measurement file: e83961277c76e5f949fa081582125ac4
+      Date checked           : 01OCT26
+      Beginning year         : 1638
+      Ending year            : 1871
+      Principal investigators: Stambaugh, M.C.; Guyette, R.P.; Marschall, J.M.
+      Site name              : Waubee Lake
+      Species information    : PIRE Pinus resinosa Aiton
+      Latitude               : 45.3500 N
+      Longitude              : 88.4333 W
+      Elevation              : 387 m
+
+      Series intercorrelation: 0.359
+      Avg mean sensitivity   : 0.216
+      Avg standard deviation : 1.100
+      Avg autocorrelation    : 0.811
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 8, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 31.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 
+                        1749 1774 1799 1824 1849 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 WBE011   1727 1862            .43  .49  .33 
+   3 WBE01A   1761 1871                 .27A .14B
+   4 WBE006   1709 1827       .54  .30A .08B     
+   5 WBE015   1706 1830       .51  .51  .40      
+   6 WBE002   1736 1862            .40  .32A .32A
+   7 WBE007   1680 1772  .47                     
+   8 WBE008   1742 1862            .32A .42  .32A
+   9 WBE013   1711 1810       .60  .58           
+  10 WBE016   1689 1848  .57  .59  .45  .36      
+  11 WBE09A   1694 1832  .44  .53  .55  .34      
+  12 WBE09B   1678 1822  .32A .39  .37           
+  13 WBE014   1746 1818            .40           
+  14 WBE14B   1746 1816            .59           
+  15 WBE12A   1721 1823       .17B .41B          
+  16 WBE12B   1750 1833                 .34      
+  17 WBE05A   1700 1791       .53                
+  18 WBE05B   1638 1826  .40  .51  .47  .25A     
+  19 WBE04B   1683 1815  .33B .45  .24B          
+ Av segment correlation  .42  .48  .43  .33  .28 
+
+ FLAGGED SEGMENTS: wi012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 WBE01A   1775 1824     A     .270         0
+   3 WBE01A   1800 1849     B     .139        -3      .181   .043  weak at every lag
+   4 WBE006   1750 1799     A     .297         0
+   4 WBE006   1775 1824     B     .082         4      .285   .203  weak at every lag
+   6 WBE002   1775 1824     A     .320         0
+   6 WBE002   1800 1849     A     .318         0
+   8 WBE008   1750 1799     A     .319         0
+   8 WBE008   1800 1849     A     .317         0
+  12 WBE09B   1700 1749     A     .320         0
+  15 WBE12A   1725 1774     B     .175         7      .278   .103  weak at every lag
+  15 WBE12A   1750 1799     B     .408        -8      .492   .084
+  18 WBE05B   1775 1824     A     .254         0
+  19 WBE04B   1700 1749     B     .334         1      .419   .084
+  19 WBE04B   1750 1799     B     .239         4      .330   .092
+
+ DESCRIPTIVE STATISTICS: wi012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WBE011   1727 1862    136      3      0    .357   1.29   4.57   .782   .824   .256   1.72   .292   .071   1
+   2 WBE03A   1778 1842     65      0      0    .333   3.32   6.01  1.086   .608   .237   1.59   .245   .061   1
+   3 WBE01A   1761 1871    111      2      2    .316   1.56   3.14   .628   .740   .234   1.98   .247   .003   1
+   4 WBE006   1709 1827    119      3      2    .295   1.66   4.86   .966   .870   .207   1.71   .227  -.005   2
+   5 WBE015   1706 1830    125      3      0    .452   1.36   4.08   .592   .778   .197   1.93   .220   .005   1
+   6 WBE002   1736 1862    127      3      2    .295   1.61   4.35   .980   .848   .240   1.70   .251  -.025   3
+   7 WBE007   1680 1772     93      1      0    .480   2.90  10.23  2.074   .880   .243   1.71   .234   .023   1
+   8 WBE008   1742 1862    121      3      2    .336   1.67   5.09   .902   .873   .208   1.61   .239   .051   1
+   9 WBE013   1711 1810    100      2      0    .416   3.37   7.52  1.203   .746   .199   1.53   .206   .014   1
+  10 WBE016   1689 1848    160      4      0    .459   1.64   4.80   .862   .848   .225   2.02   .232  -.007   1
+  11 WBE09A   1694 1832    139      4      0    .447   2.75   7.28  1.652   .906   .191   1.54   .206   .032   1
+  12 WBE09B   1678 1822    145      3      1    .316   3.24  11.72  2.290   .853   .259   2.21   .278   .027   1
+  13 WBE014   1746 1818     73      1      0    .285   2.55   4.11   .760   .503   .227   1.55   .236   .048   1
+  14 WBE14B   1746 1816     71      1      0    .423   1.99   3.28   .454   .345   .204   1.53   .207   .044   1
+  15 WBE12A   1721 1823    103      2      2    .225   1.63   6.07  1.368   .886   .235   1.58   .262  -.034   3
+  16 WBE12B   1750 1833     84      1      0    .415   1.48   3.54   .749   .794   .253   1.94   .258   .053   2
+  17 WBE05A   1700 1791     92      1      0    .454   2.15   5.43   .915   .809   .172   1.71   .183   .009   1
+  18 WBE05B   1638 1826    189      4      1    .341   1.96   5.89  1.032   .892   .174   1.66   .194   .008   1
+  19 WBE04B   1683 1815    133      3      2    .205   1.96   4.98  1.148   .916   .181   1.95   .213   .011   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2186     44     14    .359   2.06  11.72  1.100   .811   .216   2.21   .233   .018
+
+ DATA CHECKS (rwl.check): wi012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi012.rwl
+ 19 series, 2186 measurements, 1638-1871, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file wi012.rwl, MD5 e83961277c76e5f949fa081582125ac4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

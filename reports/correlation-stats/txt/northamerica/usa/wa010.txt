@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: wa010
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa010.rwl
+      MD5 of measurement file: 3198f62fe6ddccfa1b4ea13301089113
+      Date checked           : 01OCT26
+      Beginning year         : 1653
+      Ending year            : 1975
+      Principal investigators: Brubaker, L.B.
+      Site name              : Lucky Point
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 48.5000 N
+      Longitude              : 118.8000 W
+      Elevation              : 765 m
+
+      Series intercorrelation: 0.554
+      Avg mean sensitivity   : 0.270
+      Avg standard deviation : 0.713
+      Avg autocorrelation    : 0.819
+      Number dated series    : 20
+      Series crossdated      : 19
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 2, B 7)
+      Pct problem segments   : 6.16
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 513011   1722 1975       .49  .55  .45  .35  .37  .47  .52  .61  .61 
+   2 513012   1737 1975            .61  .52  .56  .65  .54  .50  .56  .60 
+   3 513021   1792 1975                      .62  .67  .74  .74  .74  .71 
+   4 513022   1763 1975                 .58  .65  .64  .60  .58  .58  .48 
+   5 513031   1800 1975                           .66  .67  .67  .59  .71 
+   6 513032   1801 1975                           .61  .65  .64  .53  .54 
+   7 513041   1662 1975  .70  .75  .67  .50  .44  .56  .65  .60  .42  .39 
+   8 513042   1653 1975  .50  .51  .63  .66  .67  .65  .72  .76  .77  .75 
+   9 513051   1815 1975                           .49  .59  .61  .63  .69 
+  10 513052   1822 1975                           .64  .65  .71  .67  .66 
+  11 513061   1756 1975                 .59  .57  .49  .47  .53  .44  .51 
+  13 513071   1751 1975                 .65  .60  .63  .74  .78  .66  .51 
+  14 513072   1708 1975       .54  .65  .58  .57  .52  .50  .61  .66  .75 
+  15 513081   1723 1975       .64  .66  .52  .57  .54  .58  .80  .77  .59 
+  16 513082   1694 1975 -.21B-.10B .06B .05B .02B-.05B .42  .50  .56  .72 
+  17 513091   1720 1975       .50  .46  .50  .48  .33A .58  .69  .46  .46 
+  18 513092   1744 1975            .40  .43  .48  .33  .64  .70  .45  .39 
+  19 513101   1709 1975       .27A .33  .54  .62  .51  .48  .53  .51  .46 
+  20 513102   1742 1975            .50  .55  .48  .26B .40  .57  .58  .45 
+ Av segment correlation  .33  .45  .50  .51  .51  .50  .58  .63  .59  .58 
+
+ FLAGGED SEGMENTS: wa010
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 513082   1700 1749     B    -.212        -3      .629   .841
+  16 513082   1725 1774     B    -.104        -3      .600   .704
+  16 513082   1750 1799     B     .061        -3      .561   .500
+  16 513082   1775 1824     B     .054        -3      .568   .514
+  16 513082   1800 1849     B     .016        -3      .656   .639
+  16 513082   1825 1874     B    -.045        -3      .424   .469
+  17 513091   1825 1874     A     .327         0
+  19 513101   1725 1774     A     .273         0
+  20 513102   1825 1874     B     .258         1      .329   .071
+
+ DESCRIPTIVE STATISTICS: wa010
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 513011   1722 1975    254      9      0    .511   1.15   3.92   .688   .876   .228   1.75   .214   .011   1
+   2 513012   1737 1975    239      8      0    .585   1.32   3.97   .909   .858   .252   1.78   .236   .046   0
+   3 513021   1792 1975    184      6      0    .686   1.34   3.28   .580   .719   .249   1.66   .227   .053   0
+   4 513022   1763 1975    213      7      0    .536   1.23   4.45   .955   .919   .242   1.76   .261   .047   3
+   5 513031   1800 1975    176      5      0    .644   1.85   4.90  1.002   .844   .245   1.71   .219   .014   3
+   6 513032   1801 1975    175      5      0    .612   1.95   6.35  1.128   .847   .234   1.61   .209   .014   3
+   7 513041   1662 1975    314     10      0    .566    .85   3.62   .706   .895   .313   1.76   .294   .003   1
+   8 513042   1653 1975    323     10      0    .655    .99   3.92   .834   .880   .338   1.77   .306   .023   1
+   9 513051   1815 1975    161      5      0    .578   1.39   2.90   .510   .615   .252   1.87   .238   .012   1
+  10 513052   1822 1975    154      5      0    .654   1.77   4.27   .872   .768   .242   1.87   .267  -.046   1
+  11 513061   1756 1975    220      7      0    .544    .92   2.35   .412   .722   .302   1.76   .284   .027   1
+  12 513062   1703 1975    273                         1.08   3.73   .781   .864   .347                         
+  13 513071   1751 1975    225      7      0    .663   1.13   2.72   .395   .586   .240   1.79   .230  -.002   1
+  14 513072   1708 1975    268      9      0    .602   1.11   2.90   .498   .733   .248   1.75   .245   .004   3
+  15 513081   1723 1975    253      9      0    .639   1.13   4.35   .885   .857   .312   1.93   .309   .015   1
+  16 513082   1694 1975    282     10      6    .248    .96   4.40   .799   .855   .329   2.52   .345   .025   1
+  17 513091   1720 1975    256      9      1    .512   1.10   2.53   .456   .800   .196   1.75   .214  -.018   1
+  18 513092   1744 1975    232      8      0    .499   1.29   4.17   .859   .894   .223   1.79   .227   .012   1
+  19 513101   1709 1975    267      9      1    .450   1.03   4.66   .657   .834   .268   1.85   .270  -.000   2
+  20 513102   1742 1975    234      8      1    .474    .81   2.65   .445   .854   .241   1.72   .248  -.000   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4703    146      9    .554   1.17   6.35   .713   .819   .270   2.52   .259   .013
+
+ DATA CHECKS (rwl.check): wa010
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa010.rwl
+ 20 series, 4703 measurements, 1653-1975, 0.01 mm precision
+ 1 error(s), 1 warning(s), 2 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     513082: correlates best with the master at lag -3 (r = 0.424 against r = 0.315 as dated); the series may be misdated by 3 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     513082: correlates with the rest of the collection at r = 0.315 where the collection median is 0.585 (4.5 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa010.rwl, MD5 3198f62fe6ddccfa1b4ea13301089113.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 513062 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

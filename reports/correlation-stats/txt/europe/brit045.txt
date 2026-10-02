@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: brit045
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit045.rwl
+      MD5 of measurement file: ef1fd0cb7328e04d72863828d9d235aa
+      Date checked           : 01OCT26
+      Beginning year         : 936
+      Ending year            : 1240
+      Principal investigators: Brown, D.M.
+      Site name              : Abbey Street  Kilkenny
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 52.6500 N
+      Longitude              : 7.2500 W
+      Elevation              : 50 m
+
+      Series intercorrelation: 0.513
+      Avg mean sensitivity   : 0.238
+      Avg standard deviation : 0.210
+      Avg autocorrelation    : 0.720
+      Number dated series    : 5
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 7.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit045
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1000 1025 1050 1075 1100 1125 1150 1175 
+                        1049 1074 1099 1124 1149 1174 1199 1224 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 Q 9730    983 1168  .42  .45  .72  .82  .74                
+   2 Q 9731    936 1185  .48  .45  .51  .62  .65  .56           
+   3 Q 9732    972 1157  .62  .66  .74  .74  .76                
+   4 Q 9733    996 1165  .46  .58  .53  .65  .61                
+   5 Q 9734    947 1240  .43  .40  .53  .47  .27A .22B          
+ Av segment correlation  .48  .51  .61  .66  .61  .39           
+
+ FLAGGED SEGMENTS: brit045
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 Q 9734   1100 1149     A     .272         0
+   5 Q 9734   1125 1174     B     .217        -7      .377   .161
+
+ DESCRIPTIVE STATISTICS: brit045
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Q 9730    983 1168    186      5      0    .612    .59   1.45   .249   .748   .231   1.65   .230   .018   3
+   2 Q 9731    936 1185    250      6      0    .472    .43   1.11   .168   .740   .223   1.75   .233  -.016   1
+   3 Q 9732    972 1157    186      5      0    .680    .60   1.28   .199   .629   .224   1.63   .214   .013   1
+   4 Q 9733    996 1165    170      5      0    .531    .62   1.63   .227   .585   .250   1.85   .235  -.003   1
+   5 Q 9734    947 1240    294      6      2    .370    .34   1.18   .219   .823   .257   2.55   .282   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1086     27      2    .513    .49   1.63   .210   .720   .238   2.55   .243   .003
+
+ DATA CHECKS (rwl.check): brit045
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit045.rwl
+ 5 series, 1086 measurements, 936-1240, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 344 carriage return(s) against 116 line feed(s); mixed endings can defeat a reader
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit045.rwl, MD5 ef1fd0cb7328e04d72863828d9d235aa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: wi028
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi028.rwl
+      MD5 of measurement file: 1ba20d7bc78de65339b6df73a031f505
+      Date checked           : 01OCT26
+      Beginning year         : 1747
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Duck Egg County Forest
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.5920 N
+      Longitude              : 91.0170 W
+      Elevation              : 339 m
+
+      Series intercorrelation: 0.484
+      Avg mean sensitivity   : 0.176
+      Avg standard deviation : 0.246
+      Avg autocorrelation    : 0.622
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 11.86
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi028
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 DEG001A  1838 2014            .61  .82  .60  .55  .62 
+   2 DEG001B  1864 2014                 .68  .57  .53  .63 
+   3 DEG002A  1826 2014            .75  .82  .77  .68  .76 
+   4 DEG002B  1843 2014            .77  .83  .70  .54  .48 
+   5 DEG003A  1850 2014                 .68  .61  .45  .53 
+   6 DEG003B  1860 2014                 .50  .44  .38  .43 
+   7 DEG004A  1917 2014                           .58  .67 
+   8 DEG004B  1865 2014                 .35  .55  .67  .57 
+   9 DEG005A  1912 2014                           .49  .30A
+  10 DEG005B  1850 2014                 .74  .76  .62  .54 
+  11 DEG006A  1901 2014                           .32A .35 
+  12 DEG006B  1856 2014                 .07B .46  .42  .54 
+  13 DEG007A  1757 2014  .06B .25B .41  .49  .65  .79  .66 
+  14 DEG007B  1747 2014  .14B .43  .48  .30A .39  .74  .65 
+ Av segment correlation  .10  .34  .61  .57  .59  .55  .55 
+
+ FLAGGED SEGMENTS: wi028
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 DEG005A  1950 1999     A     .299         0
+  11 DEG006A  1925 1974     A     .324         0
+  12 DEG006B  1875 1924     B     .074        -9      .236   .163  weak at every lag
+  13 DEG007A  1800 1849     B     .056         7      .329   .273
+  13 DEG007A  1825 1874     B     .251         7      .410   .160
+  14 DEG007B  1800 1849     B     .143        -1      .324   .181  weak at every lag
+  14 DEG007B  1875 1924     A     .303         0
+
+ DESCRIPTIVE STATISTICS: wi028
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DEG001A  1838 2014    177      5      0    .582    .85   1.78   .237   .575   .191   1.63   .185  -.004   1
+   2 DEG001B  1864 2014    151      4      0    .573    .92   2.83   .315   .689   .179   1.49   .159  -.002   2
+   3 DEG002A  1826 2014    189      5      0    .682    .94   2.04   .295   .591   .219   1.75   .205  -.005   1
+   4 DEG002B  1843 2014    172      5      0    .675    .98   1.94   .293   .571   .203   1.67   .203   .017   1
+   5 DEG003A  1850 2014    165      4      0    .541    .75   1.73   .254   .801   .153   1.43   .154   .014   1
+   6 DEG003B  1860 2014    155      4      0    .478    .69   1.77   .229   .802   .156   1.72   .165   .005   1
+   7 DEG004A  1917 2014     98      2      0    .469   1.49   4.81   .478   .590   .164   1.66   .171   .120   0
+   8 DEG004B  1865 2014    150      4      0    .432   1.51   2.74   .371   .489   .191   1.81   .205   .046   1
+   9 DEG005A  1912 2014    103      2      1    .475    .59    .95   .127   .493   .167   1.49   .159   .024   0
+  10 DEG005B  1850 2014    165      4      0    .560    .64   1.26   .155   .516   .169   1.62   .168   .001   1
+  11 DEG006A  1901 2014    114      2      1    .400    .70   1.00   .110   .520   .121   1.30   .111   .040   0
+  12 DEG006B  1856 2014    159      4      1    .287    .63   1.02   .128   .604   .146   1.61   .140   .086   0
+  13 DEG007A  1757 2014    258      7      2    .366    .65   2.74   .269   .587   .186   2.69   .220  -.024   3
+  14 DEG007B  1747 2014    268      7      2    .334    .62   1.26   .204   .747   .174   1.65   .178   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2324     59      7    .484    .82   4.81   .246   .622   .176   2.69   .177   .017
+
+ DATA CHECKS (rwl.check): wi028
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi028.rwl
+ 14 series, 2324 measurements, 1747-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wi028.rwl, MD5 1ba20d7bc78de65339b6df73a031f505.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

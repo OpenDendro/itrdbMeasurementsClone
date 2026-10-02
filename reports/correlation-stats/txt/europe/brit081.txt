@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: brit081
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit081.rwl
+      MD5 of measurement file: d74266962d3687f726985dfe4ae54ae3
+      Date checked           : 01OCT26
+      Beginning year         : 891
+      Ending year            : 1090
+      Principal investigators: Arnold, A.J.; Howard, R.E.; Litton, C.D.
+      Site name              : Ely Cathedral
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 52.3989 N
+      Longitude              : 0.2627 E
+      Elevation              : 11 m
+
+      Series intercorrelation: 0.545
+      Avg mean sensitivity   : 0.205
+      Avg standard deviation : 0.516
+      Avg autocorrelation    : 0.708
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 6.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit081
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   900  925  950  975 1000 1025 
+                         949  974  999 1024 1049 1074 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ELY003A   966 1062                 .33  .41      
+   2 ELY003B   968 1065                 .48  .50      
+   3 ELY047A   904 1001       .38  .11B               
+   4 ELY047B   904 1001       .41  .19B               
+   5 ELY088A   908 1023       .62  .53                
+   6 ELY088B   933 1033            .54  .48           
+   7 ELY109A   911 1066       .61  .54  .43  .43      
+   8 ELY109B   920 1035       .56  .52  .43           
+   9 ELY133A   906 1090       .75  .52  .41  .34      
+  10 ELY133B   911 1041       .67  .56  .40           
+  11 ELY135A   894 1009  .60  .64  .61                
+  12 ELY135B   894 1009  .55  .61  .65                
+  13 ELY303A   924 1013       .76  .57                
+  14 ELY303B   924 1013       .78  .59                
+  15 ELY304A   891 1038  .69  .68  .47  .44           
+  16 ELY304B   897 1045  .69  .66  .27B .43           
+  17 ELY533A   919  982       .68                     
+  18 ELY533B   919  982       .64                     
+ Av segment correlation  .63  .63  .48  .42  .42      
+
+ FLAGGED SEGMENTS: brit081
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 ELY047A   950  999     B     .112         8      .306   .194  weak at every lag
+   4 ELY047B   950  999     B     .193        -8      .330   .137
+  16 ELY304B   950  999     B     .270        -2      .364   .094
+
+ DESCRIPTIVE STATISTICS: brit081
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ELY003A   966 1062     97      2      0    .432   1.71   3.82   .638   .627   .216   1.94   .243  -.020   2
+   2 ELY003B   968 1065     98      2      0    .560   1.98   4.37   .659   .663   .209   1.67   .221  -.064   1
+   3 ELY047A   904 1001     98      2      1    .405   1.05   2.01   .283   .486   .205   1.68   .208  -.036   3
+   4 ELY047B   904 1001     98      2      1    .420   1.10   2.13   .292   .456   .191   1.67   .210  -.038   3
+   5 ELY088A   908 1023    116      2      0    .567   1.31   2.51   .538   .789   .189   1.51   .214  -.002   3
+   6 ELY088B   933 1033    101      2      0    .590   1.11   2.61   .529   .817   .238   1.59   .227  -.032   3
+   7 ELY109A   911 1066    156      4      0    .492   1.42   3.57   .592   .752   .222   1.72   .236   .035   1
+   8 ELY109B   920 1035    116      3      0    .480   1.45   2.53   .476   .562   .247   1.48   .247  -.072   3
+   9 ELY133A   906 1090    185      4      0    .507   1.03   2.79   .413   .740   .208   1.81   .220  -.059   3
+  10 ELY133B   911 1041    131      3      0    .507   1.22   2.42   .388   .537   .206   2.29   .252  -.011   1
+  11 ELY135A   894 1009    116      3      0    .591   1.20   2.22   .329   .663   .173   1.43   .162   .071   3
+  12 ELY135B   894 1009    116      3      0    .568   1.20   2.12   .325   .695   .174   1.37   .163   .032   3
+  13 ELY303A   924 1013     90      2      0    .687   1.26   2.67   .580   .857   .202   1.50   .211   .102   1
+  14 ELY303B   924 1013     90      2      0    .706   1.27   2.96   .587   .846   .207   1.52   .214   .098   1
+  15 ELY304A   891 1038    148      4      0    .573   1.54   4.02   .805   .887   .183   1.62   .190  -.020   3
+  16 ELY304B   897 1045    149      4      1    .576   1.55   3.87   .780   .823   .210   1.90   .214  -.026   3
+  17 ELY533A   919  982     64      1      0    .662   1.16   2.44   .466   .683   .203   1.59   .217  -.087   3
+  18 ELY533B   919  982     64      1      0    .630   1.16   2.41   .452   .764   .204   1.54   .209  -.034   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2033     46      3    .545   1.32   4.37   .516   .708   .205   2.29   .215  -.009
+
+ DATA CHECKS (rwl.check): brit081
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit081.rwl
+ 18 series, 2033 measurements, 891-1090, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file brit081.rwl, MD5 d74266962d3687f726985dfe4ae54ae3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

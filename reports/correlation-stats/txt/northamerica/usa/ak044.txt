@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: ak044
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak044.rwl
+      MD5 of measurement file: e9eb8c97917b5a23174226a64fd2bb21
+      Date checked           : 01OCT26
+      Beginning year         : 1784
+      Ending year            : 1996
+      Principal investigators: Lloyd, A.H.
+      Site name              : Usibelli below treeline
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 63.9000 N
+      Longitude              : 148.6700 W
+      Elevation              : 762 m
+
+      Series intercorrelation: 0.437
+      Avg mean sensitivity   : 0.259
+      Avg standard deviation : 0.113
+      Avg autocorrelation    : 0.771
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 17  (A 2, B 15; 12 of the B weak at every lag)
+      Pct problem segments   : 25.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 U-1B     1857 1996                 .64  .75  .81 
+   2 U-2A     1866 1996                 .49  .46  .43 
+   3 U-3      1842 1996            .36  .58  .69  .73 
+   4 U-4A     1853 1996                 .58  .66  .55 
+   5 U-5A     1859 1996                 .37  .37  .47 
+   6 U-6      1800 1996       .46  .19B .47  .64  .70 
+   7 U-7      1829 1996            .10B .24B .11B .02B
+   8 U-8      1794 1996  .12B .31A .34B .38  .52  .66 
+   9 U-9A     1792 1996  .21B .11B .03B .45  .58  .57 
+  10 U-10     1806 1996       .36  .33  .41  .51  .67 
+  11 U-11     1838 1996            .31B .51  .64  .64 
+  12 U-12     1789 1996  .11B .34  .40  .60  .52  .41 
+  13 U-13A    1832 1996            .13B .53  .63  .58 
+  14 U-14     1784 1996  .27B .26A .39  .69  .68  .63 
+  15 U-15     1844 1996            .17B .34  .49  .60 
+ Av segment correlation  .18  .31  .25  .49  .55  .56 
+
+ FLAGGED SEGMENTS: ak044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 U-6      1850 1899     B     .191         2      .494   .303
+   7 U-7      1850 1899     B     .100        -4      .302   .202  weak at every lag
+   7 U-7      1875 1924     B     .238        -8      .281   .043  weak at every lag
+   7 U-7      1900 1949     B     .110         9      .320   .210  weak at every lag
+   7 U-7      1925 1974     B     .019        -3      .269   .250  weak at every lag
+   8 U-8      1800 1849     B     .119         3      .122   .003  weak at every lag
+   8 U-8      1825 1874     A     .306         0
+   8 U-8      1850 1899     B     .339         7      .383   .044
+   9 U-9A     1800 1849     B     .212       -10      .310   .098  weak at every lag
+   9 U-9A     1825 1874     B     .108         1      .285   .177  weak at every lag
+   9 U-9A     1850 1899     B     .034         1      .264   .231  weak at every lag
+  11 U-11     1850 1899     B     .310         2      .345   .035
+  12 U-12     1800 1849     B     .110         8      .186   .076  weak at every lag
+  13 U-13A    1850 1899     B     .127        -2      .192   .065  weak at every lag
+  14 U-14     1800 1849     B     .266        10      .277   .011  weak at every lag
+  14 U-14     1825 1874     A     .263         0
+  15 U-15     1850 1899     B     .170         7      .249   .080  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ak044
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 U-1B     1857 1996    140      3      0    .660    .33   1.26   .205   .821   .277   1.90   .299  -.063   1
+   2 U-2A     1866 1996    131      3      0    .453    .26    .68   .107   .579   .280   1.97   .273   .097   0
+   3 U-3      1842 1996    155      4      0    .565    .28    .64   .144   .809   .234   1.62   .227   .026   1
+   4 U-4A     1853 1996    144      3      0    .606    .21    .56   .115   .799   .265   1.75   .263   .023   1
+   5 U-5A     1859 1996    138      3      0    .460    .26    .71   .115   .722   .238   1.59   .235  -.026   2
+   6 U-6      1800 1996    197      5      1    .458    .28    .75   .138   .800   .247   1.86   .268  -.015   1
+   7 U-7      1829 1996    168      4      4    .156    .17    .48   .094   .836   .265   1.67   .263   .013   1
+   8 U-8      1794 1996    203      6      3    .389    .15    .49   .091   .782   .252   1.88   .271   .018   1
+   9 U-9A     1792 1996    205      6      3    .333    .16    .48   .092   .827   .284   1.77   .279   .031   1
+  10 U-10     1806 1996    191      5      0    .413    .24    .52   .139   .871   .240   1.70   .240   .029   2
+  11 U-11     1838 1996    159      4      1    .528    .18    .52   .111   .861   .274   1.73   .278   .016   1
+  12 U-12     1789 1996    208      6      1    .333    .19    .46   .068   .665   .244   1.91   .246  -.019   3
+  13 U-13A    1832 1996    165      4      1    .458    .28    .69   .109   .679   .263   1.56   .245   .043   2
+  14 U-14     1784 1996    213      6      2    .473    .19    .48   .100   .766   .272   1.74   .268  -.014   1
+  15 U-15     1844 1996    153      4      1    .390    .25    .60   .098   .704   .252   1.89   .262   .009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2570     66     17    .437    .22   1.26   .113   .771   .259   1.97   .261   .010
+
+ DATA CHECKS (rwl.check): ak044
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak044.rwl
+ 15 series, 2570 measurements, 1784-1996, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ak044.rwl, MD5 e9eb8c97917b5a23174226a64fd2bb21.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

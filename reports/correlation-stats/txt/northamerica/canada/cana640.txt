@@ -1,0 +1,139 @@
+
+ COFECHA-style crossdating report: cana640
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana640.rwl
+      MD5 of measurement file: 250dc58b14cb3fa9907462bcc9c13ec1
+      Date checked           : 01OCT26
+      Beginning year         : 1695
+      Ending year            : 2018
+      Principal investigators: Coulthard, B.L.; Brice, R.L.; Homfeld, I.K.; Dye, L.A.; Anchukaitis, K.J.
+      Site name              : Upper Joffre
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 50.3554 N
+      Longitude              : 122.4852 W
+      Elevation              : 1463 m
+
+      Series intercorrelation: 0.569
+      Avg mean sensitivity   : 0.234
+      Avg standard deviation : 0.295
+      Avg autocorrelation    : 0.710
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 5, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 7.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana640
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 JOF01A   1940 2018                                                    .66 
+   2 JOF01B   1896 2018                                          .43  .56  .75 
+   3 JOF02A   1770 2018                 .68  .76  .65  .74  .64  .50  .65  .50 
+   4 JOF02B   1730 2018            .69  .71  .67  .56  .40  .23B .31A .77  .84 
+   5 JOF03A   1727 2018            .67  .72  .60  .61  .73  .50  .34B .73  .81 
+   6 JOF03B   1719 2018       .47  .76  .66  .62  .70  .77  .60  .46  .61  .66 
+   7 JOF04A   1759 2018                 .77  .79  .85  .82  .56  .41  .82  .85 
+   8 JOF04B   1759 2018                 .77  .79  .85  .82  .56  .41  .82  .85 
+   9 JOF05A   1736 2018            .82  .79  .70  .68  .52  .30B .25B .35  .64 
+  10 JOF05B   1695 2018       .76  .78  .69  .77  .76  .16B .06B .32A .42  .80 
+  11 JOF06A   1748 2018                 .66  .68  .64  .78  .77  .61  .52  .61 
+  12 JOF06B   1731 2018            .52  .59  .52  .64  .78  .73  .51  .32A .41 
+  13 JOF07A   1768 2018                 .74  .69  .69  .45  .35  .41  .61  .88 
+  14 JOF07B   1753 2018                 .40  .51  .45  .69  .67  .67  .66  .70 
+  15 JOF08A   1752 2001                 .78  .67  .72  .86  .72  .60  .65  .78 
+  16 JOF08B   1706 2018       .53  .67  .62  .58  .75  .81  .63  .47  .72  .75 
+  17 JOF09A   1736 2018            .28A .51  .61  .56  .68  .52  .25A .42  .51 
+  18 JOF11B   1900 2018                                               .63  .79 
+  19 JOF11C   1723 1890            .71  .55  .47  .55                          
+ Av segment correlation       .59  .66  .67  .65  .67  .67  .52  .43  .60  .71 
+
+ FLAGGED SEGMENTS: cana640
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 JOF02B   1875 1924     B     .227        -2      .407   .181
+   4 JOF02B   1900 1949     A     .305         0
+   5 JOF03A   1900 1949     B     .341        -8      .346   .005
+   9 JOF05A   1875 1924     B     .304        -7      .416   .112
+   9 JOF05A   1900 1949     B     .250        -7      .362   .111
+  10 JOF05B   1850 1899     B     .162        -5      .297   .134  weak at every lag
+  10 JOF05B   1875 1924     B     .064        -5      .421   .357
+  10 JOF05B   1900 1949     A     .317         0
+  12 JOF06B   1925 1974     A     .318         0
+  17 JOF09A   1750 1799     A     .277         0
+  17 JOF09A   1900 1949     A     .251         0
+
+ DESCRIPTIVE STATISTICS: cana640
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 JOF01A   1940 2018     79      1      0    .608    .96   1.66   .246   .356   .207   1.57   .211   .014   3
+   2 JOF01B   1896 2018    123      3      0    .575   1.16   2.76   .344   .594   .193   1.72   .200   .020   1
+   3 JOF02A   1770 2018    249      8      0    .599    .70   1.35   .222   .742   .175   1.59   .180  -.013   3
+   4 JOF02B   1730 2018    289      9      2    .563    .58   1.13   .228   .797   .216   1.73   .219  -.024   1
+   5 JOF03A   1727 2018    292      9      1    .575    .61   1.53   .286   .837   .231   2.47   .253  -.025   3
+   6 JOF03B   1719 2018    300     10      0    .614    .59   1.21   .205   .735   .199   1.93   .204   .002   1
+   7 JOF04A   1759 2018    260      8      0    .744    .80   2.19   .346   .734   .239   1.80   .235  -.011   1
+   8 JOF04B   1759 2018    260      8      0    .744    .80   2.19   .346   .734   .239   1.80   .235  -.011   1
+   9 JOF05A   1736 2018    283      9      2    .417    .50   1.74   .419   .924   .226   3.50   .302  -.006   3
+  10 JOF05B   1695 2018    324     10      3    .421    .39   1.59   .322   .919   .237   3.84   .318  -.015   3
+  11 JOF06A   1748 2018    271      8      0    .623    .57   1.47   .219   .673   .277   2.18   .274  -.017   3
+  12 JOF06B   1731 2018    288      9      1    .528    .53   1.29   .232   .735   .249   1.93   .255  -.001   1
+  13 JOF07A   1768 2018    251      8      0    .578    .68   1.42   .270   .775   .219   1.75   .232  -.020   1
+  14 JOF07B   1753 2018    266      8      0    .587    .65   1.75   .296   .721   .259   2.02   .254  -.012   3
+  15 JOF08A   1752 2001    250      8      0    .727    .58   1.16   .184   .692   .205   1.70   .207  -.012   1
+  16 JOF08B   1706 2018    313     10      0    .612    .44   1.25   .148   .651   .230   1.72   .229  -.008   1
+  17 JOF09A   1736 2018    283      9      2    .264    .58   8.57   .768   .055   .312   5.24   .550   .007   3
+  18 JOF11B   1900 2018    119      2      0    .602    .37    .74   .133   .687   .218   1.46   .221  -.022   1
+  19 JOF11C   1723 1890    168      4      0    .530    .57   1.62   .281   .808   .263   1.71   .259  -.025   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4668    141     11    .569    .61   8.57   .295   .710   .234   5.24   .261  -.011
+
+ DATA CHECKS (rwl.check): cana640
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana640.rwl
+ 19 series, 4668 measurements, 1695-2018, 0.01 mm precision
+ 1 error(s), 0 warning(s), 2 note(s)
+ -------------
+ ERROR
+   RWL_DUP_SERIES (1)
+     JOF04A: identical measurements in JOF04A, JOF04B; one core may be archived twice
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file cana640.rwl, MD5 250dc58b14cb3fa9907462bcc9c13ec1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

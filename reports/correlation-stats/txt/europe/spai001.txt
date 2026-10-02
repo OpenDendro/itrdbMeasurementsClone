@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: spai001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai001.rwl
+      MD5 of measurement file: 75b77136a817f4621dd48a4ba26c3472
+      Date checked           : 01OCT26
+      Beginning year         : 1609
+      Ending year            : 1977
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Turbon Ordessa
+      Species information    : PIMU Pinus mughus Scop. = Pinus mugo Turra
+      Latitude               : 42.6700 N
+      Longitude              : 0.1200 W
+      Elevation              : 1870 m
+
+      Series intercorrelation: 0.534
+      Avg mean sensitivity   : 0.173
+      Avg standard deviation : 0.415
+      Avg autocorrelation    : 0.868
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.30
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   2 487012   1921 1977                                               .37 
+   3 487021   1889 1977                                          .52  .54 
+   4 487022   1896 1977                                          .46  .55 
+   5 487031   1861 1977                                     .71  .66  .65 
+   6 487032   1868 1977                                     .64  .47  .47 
+   7 487051   1858 1977                                     .65  .62  .65 
+   8 487052   1857 1977                                     .49  .51  .58 
+   9 487071   1817 1977                           .80  .82  .74  .61  .58 
+  10 487072   1817 1977                           .69  .76  .66  .62  .67 
+  11 487081   1664 1977  .64  .55  .33  .35  .48  .70  .54  .37  .54  .48 
+  12 487082   1671 1977  .58  .52  .28A .42  .71  .67  .45  .32A .31A .46 
+  13 487091   1771 1977                 .72  .70  .52  .49  .59  .57  .50 
+  14 487092   1748 1977            .46  .72  .65  .40  .41  .44  .38  .54 
+  15 487111   1793 1977                      .58  .69  .62  .43  .55  .63 
+  16 487112   1784 1977                      .69  .68  .66  .60  .50  .59 
+  17 487121   1655 1961  .65  .49  .36  .52  .64  .59  .58  .54  .17B     
+  18 487122   1609 1977  .60  .51  .36  .52  .63  .70  .63  .52  .34  .45 
+ Av segment correlation  .62  .52  .36  .54  .64  .64  .59  .55  .49  .54 
+
+ FLAGGED SEGMENTS: spai001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 487082   1750 1799     A     .281         0
+  12 487082   1875 1924     A     .317         0
+  12 487082   1900 1949     A     .311         0
+  17 487121   1900 1949     B     .166        -7      .234   .068  weak at every lag
+
+ DESCRIPTIVE STATISTICS: spai001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 487011   1933 1977     45      0      0    .375   1.75   3.02   .598   .840   .132   1.36   .154   .033   1
+   2 487012   1921 1977     57      1      0    .334   2.33   3.73   .547   .640   .168   1.38   .155   .019   1
+   3 487021   1889 1977     89      2      0    .523   1.62   3.85   .662   .826   .180   1.58   .192   .029   1
+   4 487022   1896 1977     82      2      0    .544   1.61   3.07   .545   .777   .187   1.39   .191  -.010   1
+   5 487031   1861 1977    117      3      0    .698   1.19   3.82   .649   .891   .163   1.71   .159  -.034   1
+   6 487032   1868 1977    110      3      0    .571   1.32   4.78   .694   .849   .211   1.56   .205  -.020   1
+   7 487051   1858 1977    120      3      0    .612    .93   2.78   .483   .878   .196   1.41   .183   .015   1
+   8 487052   1857 1977    121      3      0    .526   1.47   3.40   .603   .864   .172   1.63   .177   .007   1
+   9 487071   1817 1977    161      5      0    .691    .78   3.18   .571   .924   .209   1.72   .215   .001   1
+  10 487072   1817 1977    161      5      0    .642    .74   2.64   .619   .957   .208   1.87   .225   .012   1
+  11 487081   1664 1977    314     10      0    .479    .94   2.05   .335   .852   .154   1.58   .160  -.007   3
+  12 487082   1671 1977    307     10      3    .479    .78   2.57   .347   .859   .165   1.56   .176  -.015   3
+  13 487091   1771 1977    207      7      0    .564    .71   1.91   .339   .921   .151   1.47   .157   .006   1
+  14 487092   1748 1977    230      8      0    .469    .78   2.02   .422   .926   .165   1.55   .169   .011   1
+  15 487111   1793 1977    185      6      0    .589    .68   1.50   .264   .803   .193   1.58   .191  -.026   1
+  16 487112   1784 1977    194      6      0    .624    .72   2.31   .238   .654   .192   1.57   .191   .002   1
+  17 487121   1655 1961    307      9      1    .476    .67   1.99   .339   .929   .152   1.51   .155  -.003   2
+  18 487122   1609 1977    369     10      0    .477    .58   1.86   .279   .920   .164   1.56   .164  -.010   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3176     93      4    .534    .90   4.78   .415   .868   .173   1.87   .176  -.003
+
+ DATA CHECKS (rwl.check): spai001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai001.rwl
+ 18 series, 3176 measurements, 1609-1977, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file spai001.rwl, MD5 75b77136a817f4621dd48a4ba26c3472.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

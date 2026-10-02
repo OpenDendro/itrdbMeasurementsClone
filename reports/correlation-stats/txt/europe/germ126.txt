@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: germ126
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ126.rwl
+      MD5 of measurement file: 8491b872863817be76ee5893a22fa554
+      Date checked           : 01OCT26
+      Beginning year         : 1651
+      Ending year            : 1782
+      Principal investigators: Wilson, R.J.S.
+      Site name              : Mitterfels Schloss 1 Historical Timbers
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 48.9667 N
+      Longitude              : 12.6833 E
+      Elevation              : 407 m
+
+      Series intercorrelation: 0.700
+      Avg mean sensitivity   : 0.223
+      Avg standard deviation : 1.112
+      Avg autocorrelation    : 0.873
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ126
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 
+                        1749 1774 
+ --- -------- ---------  ---- ---- 
+   8 MSF05A   1678 1782  .75  .71 
+   9 MSF05B   1651 1767  .66      
+  11 MSF05C   1673 1776  .68  .68 
+ Av segment correlation  .70  .69 
+
+ FLAGGED SEGMENTS: germ126
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ126
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MSX01A   1743 1782     40      0      0    .686   1.60   3.62   .762   .788   .222   1.48   .205   .028   0
+   2 MSX02A   1736 1781     46      0      0    .662   2.06   5.54  1.203   .897   .230   1.51   .237   .104   1
+   3 MSX03A   1736 1781     46      0      0    .538   2.38   5.71  1.200   .892   .198   1.51   .208  -.002   1
+   4 MSX05A   1735 1782     48      0      0    .649   1.59   5.37  1.174   .877   .250   1.51   .261   .034   1
+   5 MSX06A   1746 1782     37      0      0    .672   2.34   4.99  1.097   .659   .254   1.45   .218  -.147   0
+   6 MSF03A   1739 1782     44      0      0    .775   3.98   6.82  1.353   .706   .239   1.51   .227  -.006   1
+   7 MSF03B   1735 1782     48      0      0    .670   3.60   8.27  1.898   .837   .285   1.78   .296   .047   1
+   8 MSF05A   1678 1782    105      2      0    .756   1.17   3.06   .771   .911   .199   1.61   .225   .038   2
+   9 MSF05B   1651 1767    117      1      0    .720   1.11   3.40   .689   .903   .221   1.61   .224  -.027   3
+  10 MSF05B'  1651 1695     45      0      0    .766   1.38   3.22   .825   .888   .229   1.46   .210  -.074   3
+  11 MSF05C   1673 1776    104      2      0    .713   1.44   5.82  1.049   .894   .208   1.56   .226  -.035   3
+  12 MSF06A   1737 1782     46      0      0    .771   1.94   7.70  1.677   .931   .211   1.41   .225   .022   1
+  13 MSF06B   1736 1782     47      0      0    .771   2.02   7.34  1.684   .936   .244   1.46   .236  -.019   1
+  14 MSV01A   1740 1779     40      0      0    .498   2.26   5.32  1.283   .927   .176   1.54   .193  -.034   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            813      5      0    .700   1.87   8.27  1.112   .873   .223   1.78   .228  -.004
+
+ DATA CHECKS (rwl.check): germ126
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ126.rwl
+ 14 series, 813 measurements, 1651-1782, 0.001 mm precision
+ 0 error(s), 0 warning(s), 12 note(s)
+ -------------
+ Nothing to report at this severity.
+ 12 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file germ126.rwl, MD5 8491b872863817be76ee5893a22fa554.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

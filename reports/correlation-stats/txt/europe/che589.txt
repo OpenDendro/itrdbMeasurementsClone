@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: che589
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che589.rwl
+      MD5 of measurement file: 29c2893313680a0de5ce7218a2862b9f
+      Date checked           : 01OCT26
+      Beginning year         : 1823
+      Ending year            : 2012
+      Principal investigators: Häfelfinger, T.; Rigling, A.
+      Site name              : Felsberg Mitte
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.8585 N
+      Longitude              : 9.4721 E
+      Elevation              : 1330 m
+
+      Series intercorrelation: 0.513
+      Avg mean sensitivity   : 0.274
+      Avg standard deviation : 0.606
+      Avg autocorrelation    : 0.799
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 9.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che589
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 FMB01A   1867 2012  .36  .25A .32B
+   2 FMB03A1  1869 2012  .65  .73  .69 
+   3 FMB04B1  1851 2012  .44  .34  .56 
+   4 FMB05B   1854 2012  .45  .34  .56 
+   5 FMB06A1  1850 2012  .46  .40  .58 
+   6 FMB07A   1867 2012  .54  .47  .72 
+   7 FMB08A1  1823 2012  .64  .62  .67 
+   8 FMB09B   1825 2012  .67  .48  .34 
+   9 FMB10A   1923 2012       .19B .53 
+  10 FMB11A   1924 2012            .45 
+  11 FMB12An  1854 2012  .66  .64  .59 
+  12 FMB13B   1855 2012  .60  .64  .54 
+  13 FMB14B   1832 2012  .63  .62  .66 
+  14 FMB15B   1890 2012  .41  .36  .61 
+  15 FMB16B   1843 2012  .49  .60  .67 
+  16 FMB17a1  1826 2012  .59  .60  .59 
+  17 FMB18a1  1829 2012  .69  .49  .48 
+  18 FMB19A   1829 2012  .66  .44  .52 
+  19 FMB20B   1849 2012  .11B .49  .37B
+ Av segment correlation  .53  .48  .55 
+
+ FLAGGED SEGMENTS: che589
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 FMB01A   1925 1974     A     .251         0
+   1 FMB01A   1950 1999     B     .322        -3      .381   .059
+   9 FMB10A   1925 1974     B     .190        -3      .275   .086  weak at every lag
+  19 FMB20B   1900 1949     B     .112        10      .260   .147  weak at every lag
+  19 FMB20B   1950 1999     B     .372         5      .375   .003
+
+ DESCRIPTIVE STATISTICS: che589
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FMB01A   1867 2012    146      3      2    .397   1.11   2.72   .630   .854   .244   1.56   .252   .044   1
+   2 FMB03A1  1869 2012    144      3      0    .608   1.62   6.79   .952   .798   .297   1.97   .303   .020   2
+   3 FMB04B1  1851 2012    162      3      0    .623   1.14   3.69   .816   .885   .253   1.58   .236   .021   1
+   4 FMB05B   1854 2012    159      3      0    .491    .71   2.48   .606   .903   .275   1.91   .279  -.001   1
+   5 FMB06A1  1850 2012    163      3      0    .516    .92   2.69   .460   .704   .295   2.03   .291   .011   1
+   6 FMB07A   1867 2012    146      3      0    .592   1.01   2.02   .353   .611   .258   1.74   .241   .002   1
+   7 FMB08A1  1823 2012    190      3      0    .588   1.15   5.39  1.014   .929   .279   1.85   .288   .016   2
+   8 FMB09B   1825 2012    188      3      0    .508    .89   3.21   .464   .661   .301   2.11   .298   .013   1
+   9 FMB10A   1923 2012     90      2      1    .380   2.01   5.33  1.203   .796   .269   1.95   .293   .029   1
+  10 FMB11A   1924 2012     89      1      0    .507   1.02   3.32   .758   .763   .313   2.05   .342  -.017   3
+  11 FMB12An  1854 2012    159      3      0    .557    .64   2.20   .447   .802   .256   2.40   .299   .002   1
+  12 FMB13B   1855 2012    158      3      0    .532   1.02   3.36   .632   .753   .274   1.97   .304  -.003   1
+  13 FMB14B   1832 2012    181      3      0    .579   1.02   3.22   .649   .858   .258   1.62   .243  -.008   1
+  14 FMB15B   1890 2012    123      3      0    .478   1.15   2.77   .537   .808   .227   2.11   .250   .001   1
+  15 FMB16B   1843 2012    170      3      0    .610   1.16   3.18   .550   .750   .267   1.91   .270   .023   1
+  16 FMB17a1  1826 2012    187      3      0    .566    .92   2.55   .489   .856   .260   2.07   .254   .056   1
+  17 FMB18a1  1829 2012    184      3      0    .498    .74   3.21   .464   .772   .320   2.02   .312  -.002   1
+  18 FMB19A   1829 2012    184      3      0    .452    .75   2.42   .376   .813   .238   1.79   .251  -.011   3
+  19 FMB20B   1849 2012    164      3      2    .179    .64   2.60   .461   .821   .326   2.39   .310   .094   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2987     54      5    .513   1.00   6.79   .606   .799   .274   2.40   .278   .016
+
+ DATA CHECKS (rwl.check): che589
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che589.rwl
+ 19 series, 2987 measurements, 1823-2012, 0.01 mm precision
+ 0 error(s), 1 warning(s), 8 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che589.rwl, MD5 29c2893313680a0de5ce7218a2862b9f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

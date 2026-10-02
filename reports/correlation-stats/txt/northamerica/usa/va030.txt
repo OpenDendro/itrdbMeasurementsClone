@@ -1,0 +1,168 @@
+
+ COFECHA-style crossdating report: va030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : va030.rwl
+      MD5 of measurement file: a7a55cc1e2fe6954204bcc2c1e87e8af
+      Date checked           : 01OCT26
+      Beginning year         : 1858
+      Ending year            : 2004
+      Principal investigators: Copenheaver, C.A.
+      Site name              : Zoar State Forest (terrace)
+      Species information    : FAGR Fagus grandifolia Ehrh.
+      Latitude               : 37.7833 N
+      Longitude              : 77.1000 W
+      Elevation              : 14 m
+
+      Series intercorrelation: 0.592
+      Avg mean sensitivity   : 0.355
+      Avg standard deviation : 0.812
+      Avg autocorrelation    : 0.675
+      Number dated series    : 35
+      Series crossdated      : 34
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4)
+      Pct problem segments   : 6.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: va030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 zhbe01a  1888 2004  .82  .91  .86 
+   2 zhbe04b  1885 2003  .72  .77  .68 
+   3 zhbe18a  1909 2004       .41B .76 
+   4 zhbe06a  1931 2003            .68 
+   5 zhbe03b  1858 2000  .52  .39  .36B
+   6 zhbe10b  1907 2003       .51  .84 
+   7 zhbe02a  1891 2004  .72  .63  .59 
+   8 zhbe02b  1918 2000       .62  .79 
+   9 zhbe04a  1901 2004       .67  .75 
+  10 zhbe08a  1901 2004       .81  .74 
+  11 zhbe12b  1888 2004  .49  .76  .82 
+  12 zhbe13a  1880 2004  .37  .50  .53 
+  13 zhbe13b  1881 2004  .66  .80  .72 
+  14 zhbe14a  1892 2004  .72  .83  .81 
+  15 zhbe14b  1890 2004  .84  .83  .81 
+  17 zube15b  1925 2003            .66 
+  18 zhbe16b  1936 2004            .32A
+  19 zhbe07a  1899 2004       .35  .49 
+  20 zhbe06b  1880 2000  .15B .55  .67 
+  21 zhbe15a  1944 2004            .65 
+  22 zhbe18b  1943 2004            .79 
+  23 zhbe17b  1905 2004       .74  .75 
+  24 zhbe17a  1891 2004  .16B .55  .75 
+  25 zhbe09b  1903 2004       .71  .87 
+  26 zhbe10a  1918 2001       .66  .75 
+  27 zhbe20a  1900 2004       .51  .73 
+  28 zhbe08b  1914 2004       .73  .75 
+  29 zhbe09a  1889 2003  .39  .71  .57 
+  30 zhbe07b  1910 2004       .61  .78 
+  31 zhbe03a  1870 2004  .38  .53  .67 
+  32 zhbe05a  1890 2004  .81  .83  .62 
+  33 zhbe05b  1907 2004       .79  .81 
+  34 zhbe01b  1891 2004  .73  .87  .80 
+  35 zhbe19b  1911 2004       .81  .79 
+ Av segment correlation  .57  .67  .70 
+
+ FLAGGED SEGMENTS: va030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 zhbe18a  1925 1974     B     .412        -1      .644   .233
+   5 zhbe03b  1950 1999     B     .361        -1      .372   .011
+  18 zhbe16b  1950 1999     A     .319         0
+  20 zhbe06b  1900 1949     B     .149         1      .509   .360
+  24 zhbe17a  1900 1949     B     .160        -1      .360   .199
+
+ DESCRIPTIVE STATISTICS: va030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 zhbe01a  1888 2004    117      3      0    .792   1.10   2.99   .541   .659   .319   1.92   .302   .008   1
+   2 zhbe04b  1885 2003    119      3      0    .663   1.33   4.31   .719   .712   .294   2.13   .293   .117   0
+   3 zhbe18a  1909 2004     96      2      1    .454   1.78   6.83  1.290   .766   .371   1.87   .345  -.009   1
+   4 zhbe06a  1931 2003     73      1      0    .554   1.87   5.72   .924   .478   .375   2.33   .393   .160   0
+   5 zhbe03b  1858 2000    143      3      1    .410    .94   2.60   .471   .637   .328   2.32   .348  -.016   3
+   6 zhbe10b  1907 2003     97      2      0    .526   1.36   4.28   .909   .693   .414   2.23   .379   .020   1
+   7 zhbe02a  1891 2004    114      3      0    .652   1.26   3.40   .622   .502   .371   1.83   .329   .077   0
+   8 zhbe02b  1918 2000     83      2      0    .578   1.85   6.18  1.216   .754   .359   2.20   .343   .042   2
+   9 zhbe04a  1901 2004    104      2      0    .599   1.36   3.90   .734   .775   .270   1.96   .263   .009   1
+  10 zhbe08a  1901 2004    104      2      0    .714   1.52   4.10   .773   .562   .398   1.99   .350   .084   0
+  11 zhbe12b  1888 2004    117      3      0    .626   1.08   4.54   .678   .763   .295   2.20   .305   .028   1
+  12 zhbe13a  1880 2004    125      3      0    .373   1.06   2.96   .486   .560   .327   2.39   .318   .055   0
+  13 zhbe13b  1881 2004    124      3      0    .641   1.41   3.32   .759   .753   .322   1.99   .298  -.007   2
+  14 zhbe14a  1892 2004    113      3      0    .741   1.29   5.71   .925   .703   .369   2.28   .367   .017   1
+  15 zhbe14b  1890 2004    115      3      0    .782    .93   4.50   .784   .794   .395   2.02   .367   .017   1
+  16 zhbe16a  1930 2004     75                         1.70   4.21   .991   .638   .418                         
+  17 zube15b  1925 2003     79      1      0    .679   2.09   5.72  1.251   .703   .366   2.68   .376   .050   1
+  18 zhbe16b  1936 2004     69      1      1    .282   1.69   5.96  1.130   .740   .399   2.02   .336   .013   3
+  19 zhbe07a  1899 2004    106      2      0    .341   1.07   4.85   .830   .786   .375   3.68   .493   .014   3
+  20 zhbe06b  1880 2000    121      3      1    .392   1.69   6.26   .861   .600   .374   2.31   .371   .012   1
+  21 zhbe15a  1944 2004     61      1      0    .689   2.24   5.61   .990   .411   .350   2.20   .361  -.017   1
+  22 zhbe18b  1943 2004     62      1      0    .757   2.50   7.29  1.532   .685   .384   1.74   .338   .172   0
+  23 zhbe17b  1905 2004    100      2      0    .578   1.42   3.71   .783   .737   .323   1.74   .305   .002   1
+  24 zhbe17a  1891 2004    114      3      1    .449   1.24   4.59   .693   .643   .362   1.85   .323  -.016   3
+  25 zhbe09b  1903 2004    102      2      0    .619   1.59   4.64  1.015   .740   .378   1.91   .338   .088   0
+  26 zhbe10a  1918 2001     84      2      0    .681   1.29   3.97   .813   .609   .437   2.30   .419   .024   1
+  27 zhbe20a  1900 2004    105      2      0    .500   1.22   5.45   .928   .829   .314   1.63   .316   .038   1
+  28 zhbe08b  1914 2004     91      2      0    .687   2.24   6.54  1.175   .668   .394   1.95   .331   .079   0
+  29 zhbe09a  1889 2003    115      3      0    .499   1.31   4.68   .920   .605   .457   2.63   .415   .034   0
+  30 zhbe07b  1910 2004     95      2      0    .591   1.16   3.11   .689   .759   .367   2.27   .340  -.001   1
+  31 zhbe03a  1870 2004    135      3      0    .538    .81   2.15   .395   .586   .319   2.06   .313   .011   1
+  32 zhbe05a  1890 2004    115      3      0    .696   1.06   3.60   .609   .689   .321   2.47   .338   .043   1
+  33 zhbe05b  1907 2004     98      2      0    .704   1.26   4.25   .817   .673   .395   2.28   .376  -.013   1
+  34 zhbe01b  1891 2004    114      3      0    .715   1.19   3.33   .593   .668   .316   1.88   .295   .001   1
+  35 zhbe19b  1911 2004     94      2      0    .763   1.59   5.11   .846   .688   .281   1.95   .299  -.004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3579     78      5    .592   1.38   7.29   .812   .675   .355   3.68   .342   .030
+
+ DATA CHECKS (rwl.check): va030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/va030.rwl
+ 35 series, 3579 measurements, 1858-2004, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (1)
+     zube15b: site code differs from the zhbe used by 34 of 35 series
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file va030.rwl, MD5 a7a55cc1e2fe6954204bcc2c1e87e8af.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series zhbe16a is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

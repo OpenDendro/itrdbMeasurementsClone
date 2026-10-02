@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: mar052
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mar052.rwl
+      MD5 of measurement file: cb665a24d85c1ded4cb8834771925f36
+      Date checked           : 01OCT26
+      Beginning year         : 1835
+      Ending year            : 2009
+      Principal investigators: Esper, J.
+      Site name              : Tazzeka MTAZ
+      Species information    : CDAT Cedrus atlantica (Endl.) Manetti ex Carrière
+      Latitude               : 34.0833 N
+      Longitude              : 4.1833 E
+      Elevation              : 1800 m
+
+      Series intercorrelation: 0.532
+      Avg mean sensitivity   : 0.225
+      Avg standard deviation : 1.227
+      Avg autocorrelation    : 0.826
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 13.46
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mar052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 mtaz01a1 1888 2009  .52  .22B .06B
+   2 mtaz01b1 1882 2009  .56  .48  .37 
+   3 mtaz02a1 1894 2009  .17B .25B .56 
+   4 mtaz02b1 1852 2009  .64  .63  .62 
+   5 mtaz03a1 1847 2009  .66  .28A .21A
+   6 mtaz03b1 1873 2009  .74  .70  .65 
+   7 mtaz03c1 1875 2009  .69  .61  .44 
+   8 mtaz04a1 1883 2009  .33A .77  .67 
+   9 mtaz04b1 1945 2009            .45 
+  10 mtaz05a1 1861 2009  .42  .37  .52 
+  11 mtaz05b1 1861 2009  .36  .39  .61 
+  14 mtaz07a1 1835 2009  .66  .57  .61 
+  15 mtaz07b1 1846 2009  .61  .50  .57 
+  16 mtaz08a1 1870 2009  .68  .46  .48 
+  17 mtaz08b1 1861 2009  .50  .60  .71 
+  18 mtaz09a1 1878 2009  .69  .66  .56 
+  19 mtaz09b1 1898 2009  .47  .67  .59 
+  20 mtaz10a1 1928 2009            .48 
+  21 mtaz10b1 1906 2009       .44  .62 
+ Av segment correlation  .54  .51  .52 
+
+ FLAGGED SEGMENTS: mar052
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 mtaz01a1 1925 1974     B     .218        -7      .318   .100  weak at every lag
+   1 mtaz01a1 1950 1999     B     .059         6      .289   .231  weak at every lag
+   3 mtaz02a1 1900 1949     B     .167        -8      .328   .161  weak at every lag
+   3 mtaz02a1 1925 1974     B     .251        -8      .261   .010  weak at every lag
+   5 mtaz03a1 1925 1974     A     .276         0
+   5 mtaz03a1 1950 1999     A     .209         0
+   8 mtaz04a1 1900 1949     A     .327         0
+
+ DESCRIPTIVE STATISTICS: mar052
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 mtaz01a1 1888 2009    122      3      2    .313   3.39   8.53  1.894   .896   .226   1.68   .214  -.034   1
+   2 mtaz01b1 1882 2009    128      3      0    .510   3.52   9.90  1.950   .929   .153   1.47   .164  -.016   1
+   3 mtaz02a1 1894 2009    116      3      2    .356   3.66   7.90  1.236   .850   .131   1.32   .137  -.019   1
+   4 mtaz02b1 1852 2009    158      3      0    .564   2.48   7.01  1.623   .960   .131   1.32   .133   .040   1
+   5 mtaz03a1 1847 2009    163      3      2    .357    .62   2.16   .401   .809   .338   2.16   .331   .002   2
+   6 mtaz03b1 1873 2009    137      3      0    .649   1.77   3.53   .756   .815   .224   1.60   .225  -.025   3
+   7 mtaz03c1 1875 2009    135      3      0    .603   1.44   4.44   .878   .869   .242   1.59   .242   .028   3
+   8 mtaz04a1 1883 2009    127      3      1    .474   1.99   6.29  1.197   .871   .246   1.66   .266   .049   1
+   9 mtaz04b1 1945 2009     65      1      0    .518   2.36   4.85   .790   .726   .211   1.80   .207  -.052   3
+  10 mtaz05a1 1861 2009    149      3      0    .493   3.22   8.38  1.569   .926   .163   1.49   .166  -.032   3
+  11 mtaz05b1 1861 2009    149      3      0    .463   2.76   8.25  1.418   .888   .185   1.40   .188  -.017   2
+  12 mtaz06a1 1967 2009     43      0      0    .549   3.24   5.21   .813   .631   .175   1.28   .158   .111   0
+  13 mtaz06b1 1959 2009     51      0      0    .633   2.76   6.29   .948   .532   .264   1.70   .235  -.003   0
+  14 mtaz07a1 1835 2009    175      3      0    .660   2.08   6.51  1.165   .742   .251   1.78   .244  -.011   3
+  15 mtaz07b1 1846 2009    164      3      0    .650   2.15   6.21  1.093   .781   .240   1.77   .238   .031   2
+  16 mtaz08a1 1870 2009    140      3      0    .630   2.61   7.50  1.235   .729   .250   1.73   .250  -.010   2
+  17 mtaz08b1 1861 2009    149      3      0    .626   2.93   7.66  1.563   .829   .267   1.82   .265   .056   1
+  18 mtaz09a1 1878 2009    132      3      0    .612   1.89   4.88   .913   .817   .253   1.67   .267   .001   1
+  19 mtaz09b1 1898 2009    112      3      0    .513   2.44   7.04  1.414   .891   .227   1.69   .255  -.014   1
+  20 mtaz10a1 1928 2009     82      1      0    .378   2.41   5.80  1.197   .786   .251   1.72   .249   .065   1
+  21 mtaz10b1 1906 2009    104      2      0    .537   2.77   5.59  1.217   .688   .264   2.13   .274  -.051   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2601     52      7    .532   2.43   9.90  1.227   .826   .225   2.16   .226   .003
+
+ DATA CHECKS (rwl.check): mar052
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/mar052.rwl
+ 21 series, 2601 measurements, 1835-2009, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1846-2009 but the measurements cover 1835-2009
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file mar052.rwl, MD5 cb665a24d85c1ded4cb8834771925f36.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

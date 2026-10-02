@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: cana104
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana104.rwl
+      MD5 of measurement file: 914819b20b308dffda103a1d268c65b0
+      Date checked           : 01OCT26
+      Beginning year         : 1698
+      Ending year            : 1970
+      Principal investigators: Knowles, T.; Stockton, C.W.; Fritts, H.C.
+      Site name              : Peace River 2
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 58.9800 N
+      Longitude              : 111.5000 W
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.694
+      Avg mean sensitivity   : 0.244
+      Avg standard deviation : 0.405
+      Avg autocorrelation    : 0.753
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.27
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana104
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 209021   1769 1970                 .68  .58  .59  .63  .67  .81 
+   2 209022   1775 1970                      .62  .65  .78  .80  .89 
+   3 209031   1756 1970                 .58  .74  .72  .75  .79  .88 
+   4 209032   1760 1970                 .71  .69  .64  .66  .69  .78 
+   5 209041   1698 1970            .72  .63  .56  .64  .57  .53  .73 
+   6 209042   1832 1970                                .67  .66  .83 
+   7 209043   1860 1970                                     .82  .87 
+   8 209061   1803 1970                           .56  .66  .67  .81 
+   9 209062   1788 1970                      .82  .73  .59  .56  .69 
+  10 209071   1733 1970            .72  .77  .75  .81  .82  .79  .87 
+  11 209072   1739 1970            .81  .75  .76  .83  .76  .74  .88 
+  12 209081   1819 1970                           .77  .60  .72  .83 
+  13 209082   1788 1970                      .73  .80  .71  .74  .83 
+  14 209101   1875 1970                                          .65 
+  15 209102   1825 1970                                .74  .71  .79 
+  16 209111   1837 1970                                .53  .55  .67 
+  17 209112   1793 1970                      .18B .41  .59  .62  .79 
+ Av segment correlation            .75  .69  .64  .68  .67  .69  .80 
+
+ FLAGGED SEGMENTS: cana104
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 209112   1800 1849     B     .183         1      .285   .102  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana104
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 209021   1769 1970    202      6      0    .693    .91   1.80   .317   .735   .221   1.71   .221  -.012   3
+   2 209022   1775 1970    196      5      0    .747    .93   2.10   .318   .622   .255   1.83   .245   .038   1
+   3 209031   1756 1970    215      6      0    .730    .92   2.46   .342   .750   .226   1.46   .215   .019   1
+   4 209032   1760 1970    211      6      0    .653    .72   1.37   .287   .779   .237   1.60   .227  -.012   1
+   5 209041   1698 1970    273      7      0    .615    .79   1.79   .436   .909   .215   1.99   .222   .015   1
+   6 209042   1832 1970    139      3      0    .752   1.04   2.09   .432   .808   .237   1.70   .239   .063   1
+   7 209043   1860 1970    111      2      0    .824   1.10   2.40   .448   .767   .248   1.57   .237   .057   1
+   8 209061   1803 1970    168      4      0    .667    .94   2.35   .388   .688   .266   1.75   .270  -.011   2
+   9 209062   1788 1970    183      5      0    .690   1.10   1.92   .335   .681   .211   2.00   .221   .060   1
+  10 209071   1733 1970    238      7      0    .743    .97   2.46   .447   .829   .234   1.83   .238   .009   1
+  11 209072   1739 1970    232      7      0    .793    .95   2.30   .377   .773   .228   1.74   .229   .011   2
+  12 209081   1819 1970    152      4      0    .726    .89   1.81   .359   .708   .280   1.87   .275   .049   1
+  13 209082   1788 1970    183      5      0    .712    .92   2.02   .353   .656   .298   1.97   .283   .001   1
+  14 209101   1875 1970     96      1      0    .634   1.38   2.87   .593   .737   .259   1.97   .267  -.001   3
+  15 209102   1825 1970    146      3      0    .705   1.67   3.16   .549   .673   .221   1.60   .221   .050   1
+  16 209111   1837 1970    134      3      0    .623   1.22   3.48   .652   .767   .298   2.02   .303   .021   2
+  17 209112   1793 1970    178      5      1    .511    .98   2.42   .469   .800   .268   1.83   .269   .036   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3057     79      1    .694    .99   3.48   .405   .753   .244   2.02   .243   .021
+
+ DATA CHECKS (rwl.check): cana104
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana104.rwl
+ 17 series, 3057 measurements, 1698-1970, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file cana104.rwl, MD5 914819b20b308dffda103a1d268c65b0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

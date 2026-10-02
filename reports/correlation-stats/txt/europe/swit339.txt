@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: swit339
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit339.rwl
+      MD5 of measurement file: 7a680e8c1ad5a7dfecc9fdcc9ec8ed3d
+      Date checked           : 01OCT26
+      Beginning year         : 1770
+      Ending year            : 1996
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Rabins
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.4408 N
+      Longitude              : 9.7878 E
+      Elevation              : 1800 m
+
+      Avg mean sensitivity   : 0.154
+      Avg standard deviation : 0.469
+      Avg autocorrelation    : 0.962
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: swit339
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SMA1763G 1770 1996    227                          .57   2.78   .478   .968   .147                        3
+   2 SMA1763P 1770 1994    225                          .70   2.59   .461   .955   .162                        3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            452                          .63   2.78   .469   .962   .154                     
+
+ DATA CHECKS (rwl.check): swit339
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit339.rwl
+ 2 series, 452 measurements, 1770-1996, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit339.rwl, MD5 7a680e8c1ad5a7dfecc9fdcc9ec8ed3d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

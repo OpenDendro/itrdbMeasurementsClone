@@ -1,0 +1,153 @@
+
+ COFECHA-style crossdating report: swit376
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit376.rwl
+      MD5 of measurement file: 08948881c65ddbce63ddaa1064436e70
+      Date checked           : 01OCT26
+      Beginning year         : 1878
+      Ending year            : 2014
+      Principal investigators: Gut, U.
+      Site name              : Glarus-Haltenwald
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0316 N
+      Longitude              : 9.0611 E
+      Elevation              : 627 m
+
+      Series intercorrelation: 0.614
+      Avg mean sensitivity   : 0.165
+      Avg standard deviation : 0.685
+      Avg autocorrelation    : 0.846
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit376
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 31       1885 2014  .44  .46  .66 
+   2 32       1885 2014  .61  .65  .68 
+   3 33       1890 2014  .42  .55  .66 
+   4 34       1888 2014  .33A .45  .69 
+   5 35       1885 2014  .53  .42  .55 
+   6 36       1889 2014  .65  .66  .67 
+   7 37       1885 2014  .58  .68  .70 
+   8 38       1884 2014  .56  .58  .68 
+   9 39       1878 2014  .60  .68  .71 
+  10 40       1889 2014  .51  .60  .60 
+  11 41       1880 2014  .61  .63  .65 
+  12 42       1885 2014  .55  .57  .68 
+  13 43       1889 2014  .19B .33B .59 
+  14 44       1881 2014  .42  .39  .59 
+  15 45       1889 2014  .45  .58  .73 
+  16 46       1882 2014  .68  .68  .78 
+  17 47       1879 2014  .51  .48  .67 
+  18 48       1881 2014  .53  .57  .64 
+  19 49       1885 2010  .55  .50  .60 
+  20 50       1884 2014  .68  .60  .68 
+  21 51       1887 2014  .54  .62  .75 
+  22 52       1885 2014  .33A .55  .79 
+  23 53       1882 2014  .62  .66  .73 
+  24 54       1882 2014  .49  .66  .75 
+  25 55       1883 2014  .39  .38  .43 
+  26 56       1884 2014  .48  .65  .69 
+  27 57       1887 2014  .66  .63  .75 
+  28 58       1886 2014  .56  .59  .67 
+  29 59       1883 2014  .25A .32A .51 
+  30 60       1887 2014  .55  .57  .56 
+ Av segment correlation  .51  .56  .66 
+
+ FLAGGED SEGMENTS: swit376
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 34       1900 1949     A     .325         0
+  13 43       1900 1949     B     .189        -3      .200   .011  weak at every lag
+  13 43       1925 1974     B     .326         6      .341   .016
+  22 52       1900 1949     A     .327         0
+  29 59       1900 1949     A     .245         0
+  29 59       1925 1974     A     .324         0
+
+ DESCRIPTIVE STATISTICS: swit376
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 31       1885 2014    130      3      0    .552   1.98   4.14   .714   .832   .162   1.68   .183   .007   2
+   2 32       1885 2014    130      3      0    .682   1.45   4.08   .721   .921   .154   1.41   .156  -.024   3
+   3 33       1890 2014    125      3      0    .632   1.60   3.51   .523   .764   .172   1.71   .174  -.035   3
+   4 34       1888 2014    127      3      1    .578   1.57   5.18  1.125   .943   .154   1.48   .162   .069   1
+   5 35       1885 2014    130      3      0    .488   1.78   3.67   .636   .822   .155   1.54   .162  -.007   2
+   6 36       1889 2014    126      3      0    .640   1.55   2.97   .575   .864   .145   1.48   .158   .005   1
+   7 37       1885 2014    130      3      0    .667   1.21   3.07   .742   .966   .141   1.35   .146   .038   1
+   8 38       1884 2014    131      3      0    .663   1.45   3.42   .580   .861   .148   1.32   .134   .057   2
+   9 39       1878 2014    137      3      0    .692   1.70   3.26   .519   .794   .151   1.39   .152   .048   1
+  10 40       1889 2014    126      3      0    .611   1.34   4.39   .766   .904   .226   1.69   .229   .005   1
+  11 41       1880 2014    135      3      0    .622   1.60   4.19  1.021   .947   .196   1.52   .204   .026   1
+  12 42       1885 2014    130      3      0    .621   2.01   5.77   .726   .750   .170   1.56   .170   .030   2
+  13 43       1889 2014    126      3      2    .527   2.78   5.36   .739   .667   .167   1.47   .171   .019   1
+  14 44       1881 2014    134      3      0    .576   1.81   5.07   .698   .776   .179   1.51   .180   .007   2
+  15 45       1889 2014    126      3      0    .646   1.64   4.20   .752   .834   .183   1.65   .198   .015   1
+  16 46       1882 2014    133      3      0    .723   1.66   3.88   .663   .907   .133   1.49   .147   .026   1
+  17 47       1879 2014    136      3      0    .630   1.35   2.91   .458   .832   .159   1.37   .153   .049   1
+  18 48       1881 2014    134      3      0    .531   1.68   4.22   .933   .901   .183   1.84   .214   .025   1
+  19 49       1885 2010    126      3      0    .529   1.81   3.80   .700   .869   .152   1.31   .158  -.025   1
+  20 50       1884 2014    131      3      0    .652   1.33   4.00   .603   .923   .145   1.43   .139  -.015   3
+  21 51       1887 2014    128      3      0    .689   1.86   4.24   .669   .867   .164   1.41   .166   .023   1
+  22 52       1885 2014    130      3      1    .658   2.22   4.17   .727   .856   .148   1.64   .155   .032   1
+  23 53       1882 2014    133      3      0    .697   1.67   3.68   .860   .925   .202   1.63   .197  -.017   3
+  24 54       1882 2014    133      3      0    .663   1.71   3.74   .584   .779   .164   1.52   .170   .122   1
+  25 55       1883 2014    132      3      0    .398   1.54   2.96   .474   .806   .141   1.57   .149   .012   1
+  26 56       1884 2014    131      3      0    .666   1.85   3.09   .512   .741   .162   1.49   .176  -.008   1
+  27 57       1887 2014    128      3      0    .732   1.87   3.28   .564   .740   .165   1.88   .192   .051   3
+  28 58       1886 2014    129      3      0    .607   1.26   3.76   .765   .894   .194   1.47   .195  -.015   1
+  29 59       1883 2014    132      3      2    .492   1.58   3.49   .595   .850   .147   1.37   .133  -.050   3
+  30 60       1887 2014    128      3      0    .564   1.30   3.36   .615   .849   .177   1.59   .174   .026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3907     90      6    .614   1.67   5.77   .685   .846   .165   1.88   .170   .017
+
+ DATA CHECKS (rwl.check): swit376
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit376.rwl
+ 30 series, 3907 measurements, 1878-2014, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file swit376.rwl, MD5 08948881c65ddbce63ddaa1064436e70.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

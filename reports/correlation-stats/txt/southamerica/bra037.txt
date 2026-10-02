@@ -1,0 +1,157 @@
+
+ COFECHA-style crossdating report: bra037
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra037.rwl
+      MD5 of measurement file: 6cb8e1601468ee0761ac2e8428b855fc
+      Date checked           : 01OCT26
+      Beginning year         : 1957
+      Ending year            : 2017
+      Principal investigators: Lisi, C.; Pagotto, M.; Anholetto Jr., C.; de Carvalho Nogueira Jr., F.; Santos, H.; Costa, C.; Menezes, Í.; Roig, F.A.; Tomazello-Filho, M.
+      Site name              : Caatinga, Sergipe
+      Species information    : CEOD Cedrela odorata L.
+      Latitude               : 10.1339 S
+      Longitude              : 37.0565 W
+      Elevation              : 200 m
+
+      Series intercorrelation: 0.693
+      Avg mean sensitivity   : 0.687
+      Avg standard deviation : 2.044
+      Avg autocorrelation    : 0.257
+      Number dated series    : 31
+      Segment length tested  : 30
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 6.25
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  30-year dated segments, lagged  15 years
+ Flags:  A = correlation under   .4226 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1960 1975 
+                        1989 2004 
+ --- -------- ---------  ---- ---- 
+   1 cedro0   1971 2017       .80 
+   2 cedro1   1973 2017       .72 
+   3 cedro3   1970 2017       .80 
+   5 cedro5   1964 2017       .75 
+   6 cedro6   1964 2017       .65 
+   7 cedro7   1961 2017       .59 
+   8 cedro8   1961 2017       .49 
+   9 cedro9   1960 2012 -.00B .15B
+  10 cedroA   1967 2017       .89 
+  11 cedroB   1968 2017       .89 
+  12 cedroC   1960 2017       .77 
+  13 cedroD   1960 2017  .78  .86 
+  15 cedroE   1960 2017  .71  .86 
+  16 cedroF   1966 2017       .84 
+  17 cedroG   1969 2017       .66 
+  18 ced011   1957 2009  .74  .81 
+  19 ced012   1957 2017  .56  .76 
+  20 cedEma   1964 2017       .79 
+  22 ced021   1965 2017       .56 
+  23 ced030   1963 2012       .73 
+  24 ced031   1963 2017       .74 
+  25 ced040   1960 2017       .71 
+  26 ced041   1960 2017  .50  .81 
+  27 ced090   1965 2017       .88 
+  28 ced091   1965 2017       .90 
+  30 ced010   1962 2017       .83 
+ Av segment correlation  .55  .74 
+
+ FLAGGED SEGMENTS: bra037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 cedro9   1960 1989     B    -.002        -2      .372   .375  weak at every lag
+   9 cedro9   1975 2004     B     .149        10      .287   .138  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bra037
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 cedro0   1971 2017     47      1      0    .822   3.61  10.48  2.765   .309   .755   2.73   .645  -.026   2
+   2 cedro1   1973 2017     45      1      0    .725   4.64  12.93  3.607   .297   .687   2.30   .574  -.007   2
+   3 cedro3   1970 2017     48      1      0    .767   3.67   8.20  2.238   .032   .755   2.12   .584  -.062   0
+   4 cedro4   1981 2015     35      0      0    .581   4.62  12.26  2.956   .528   .537   2.11   .496  -.018   2
+   5 cedro5   1964 2017     54      1      0    .727   2.73   8.67  2.335   .192   .768   2.87   .735   .025   0
+   6 cedro6   1964 2017     54      1      0    .662   1.99   6.71  1.745   .145   .754   3.02   .704  -.017   0
+   7 cedro7   1961 2017     57      1      0    .674   2.36   6.89  1.745   .368   .641   2.09   .514  -.010   2
+   8 cedro8   1961 2017     57      1      0    .569   2.41   6.33  1.772   .350   .650   2.78   .596  -.018   2
+   9 cedro9   1960 2012     53      2      2    .166   2.52   7.28  1.555   .242   .652   2.77   .565  -.021   0
+  10 cedroA   1967 2017     51      1      0    .875   3.33   7.04  2.058   .224   .695   2.00   .560   .027   2
+  11 cedroB   1968 2017     50      1      0    .873   2.81   5.99  1.695   .233   .679   2.08   .548   .024   2
+  12 cedroC   1960 2017     58      1      0    .772   3.06   7.70  2.194   .283   .735   2.32   .628  -.022   2
+  13 cedroD   1960 2017     58      2      0    .823   3.37   7.49  2.118   .116   .693   2.21   .570   .073   0
+  14 cedro2   1978 2017     40      0      0    .746   3.10   9.29  2.443   .436   .694   2.61   .593  -.022   3
+  15 cedroE   1960 2017     58      2      0    .749   2.40   7.34  1.880   .252   .665   3.13   .711   .092   0
+  16 cedroF   1966 2017     52      1      0    .793   2.48   8.78  1.872   .135   .670   2.64   .629   .014   2
+  17 cedroG   1969 2017     49      1      0    .684   4.30   9.84  2.797   .197   .632   2.12   .581   .076   0
+  18 ced011   1957 2009     53      2      0    .712   3.11  10.84  2.565   .322   .712   2.30   .650   .037   2
+  19 ced012   1957 2017     61      2      0    .659   2.84   9.07  2.154   .391   .667   2.31   .565   .086   0
+  20 cedEma   1964 2017     54      1      0    .692   1.35   4.11  1.043   .244   .743   2.39   .666  -.035   2
+  21 ced020   1976 2017     42      0      0    .510   1.85   6.24  1.260   .098   .757   3.24   .662   .069   0
+  22 ced021   1965 2017     53      1      0    .485   2.34   7.23  1.587   .082   .722   2.35   .606  -.090   0
+  23 ced030   1963 2012     50      1      0    .689   3.09   8.17  1.885   .365   .593   2.33   .507   .028   2
+  24 ced031   1963 2017     55      1      0    .655   3.29   7.71  1.980   .253   .648   2.14   .569   .185   0
+  25 ced040   1960 2017     58      1      0    .628   2.62  11.24  2.270   .197   .811   2.83   .657   .001   2
+  26 ced041   1960 2017     58      2      0    .671   1.82   7.06  1.592   .221   .728   3.15   .754   .108   0
+  27 ced090   1965 2017     53      1      0    .836   2.23   5.48  1.573   .238   .703   2.14   .627  -.038   2
+  28 ced091   1965 2017     53      1      0    .879   3.35   8.42  2.400   .274   .715   2.36   .623   .002   2
+  29 ced05A   1976 2017     42      0      0    .633   2.71   6.70  1.819   .357   .573   2.27   .553  -.023   2
+  30 ced010   1962 2017     56      1      0    .760   2.94   8.75  2.203   .343   .603   2.93   .615   .174   0
+  31 ced06A   1976 2017     42      0      0    .633   2.71   6.70  1.819   .357   .573   2.27   .553  -.023   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1596     32      2    .693   2.85  12.93  2.044   .257   .687   3.24   .611   .021
+
+ DATA CHECKS (rwl.check): bra037
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra037.rwl
+ 31 series, 1596 measurements, 1957-2017, 0.01 mm precision
+ 1 error(s), 2 warning(s), 9 note(s)
+ -------------
+ ERROR
+   RWL_DUP_SERIES (1)
+     ced05A: identical measurements in ced05A, ced06A; one core may be archived twice
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 361 carriage return(s) against 182 line feed(s); mixed endings can defeat a reader
+   RWL_SERIES_OUTLIER (1)
+     cedro9: correlates with the rest of the collection at r = 0.17 where the collection median is 0.735 (8.1 MAD below it); it does not fit the collection it is in
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file bra037.rwl, MD5 6cb8e1601468ee0761ac2e8428b855fc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4226 for 30-year segments.
+ Segments: 30 years, lagged 15, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 30 years: the record is only 61 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

@@ -1,0 +1,156 @@
+
+ COFECHA-style crossdating report: wa029
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa029.rwl
+      MD5 of measurement file: 39eabc3e1a7db504f5003f230bd61aa9
+      Date checked           : 01OCT26
+      Beginning year         : 1653
+      Ending year            : 1976
+      Principal investigators: Brubaker, L.B.
+      Site name              : Butte Camp
+      Species information    : ABPR Abies procera Rehder
+      Latitude               : 46.1700 N
+      Longitude              : 122.2000 W
+      Elevation              : 1300 m
+
+      Series intercorrelation: 0.554
+      Avg mean sensitivity   : 0.207
+      Avg standard deviation : 0.692
+      Avg autocorrelation    : 0.822
+      Number dated series    : 28
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 3, B 8; 6 of the B weak at every lag)
+      Pct problem segments   : 7.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 757011   1812 1976                           .37  .58  .57  .51  .53 
+   2 757012   1760 1976                 .58  .60  .61  .60  .58  .51  .52 
+   3 757021   1756 1976                 .51  .63  .64  .64  .68  .60  .34 
+   4 757022   1756 1976                 .70  .73  .68  .68  .72  .76  .72 
+   5 757031   1852 1976                                     .48  .55  .43 
+   6 757032   1817 1976                           .28B .52  .61  .67  .56 
+   7 757041   1858 1976                                     .48  .64  .59 
+   8 757042   1861 1976                                     .44  .47  .45 
+   9 757051   1836 1976                                .55  .33A .35  .46 
+  10 757052   1792 1976                      .57  .53  .29A .08B .25B .47 
+  11 757061   1824 1976                                .51  .52  .47  .56 
+  12 757062   1773 1976                 .43  .46  .43  .57  .71  .44  .43 
+  13 757071   1775 1976                      .60  .53  .63  .72  .63  .77 
+  14 757072   1873 1976                                    -.01B-.08B-.12B
+  15 757081   1793 1976                      .66  .67  .65  .57  .63  .74 
+  16 757082   1870 1976                                     .50  .49  .72 
+  17 757091   1655 1976  .62  .87  .77  .75  .73  .79  .84  .60  .47  .67 
+  18 757092   1653 1976  .62  .87  .76  .76  .77  .83  .88  .56  .36B .63 
+  19 757101   1837 1976                                .58  .58  .49  .55 
+  20 757102   1841 1976                                .59  .46  .40  .49 
+  21 757111   1748 1976            .75  .73  .72  .79  .76  .79  .84  .80 
+  22 757112   1754 1976                 .72  .74  .81  .85  .86  .76  .73 
+  23 757121   1798 1976                      .83  .80  .74  .69  .56  .69 
+  24 757122   1844 1976                                .65  .61  .54  .71 
+  25 757131   1824 1976                           .32A .79  .73  .52  .42 
+  26 757132   1838 1976                                .48  .68  .70  .58 
+  27 757141   1816 1976                           .56  .59  .64  .49  .34B
+  28 757142   1830 1976                                .64  .80  .83  .75 
+ Av segment correlation  .62  .87  .76  .65  .67  .60  .64  .57  .53  .56 
+
+ FLAGGED SEGMENTS: wa029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 757032   1825 1874     B     .277        -2      .306   .029  weak at every lag
+   9 757051   1875 1924     A     .326         0
+  10 757052   1850 1899     A     .289         0
+  10 757052   1875 1924     B     .076        -2      .276   .200  weak at every lag
+  10 757052   1900 1949     B     .245        -3      .246   .001  weak at every lag
+  14 757072   1875 1924     B    -.013         5      .296   .308  weak at every lag
+  14 757072   1900 1949     B    -.083         1      .213   .296  weak at every lag
+  14 757072   1925 1974     B    -.118        -2      .176   .294  weak at every lag
+  18 757092   1900 1949     B     .365        -5      .414   .049
+  25 757131   1825 1874     A     .320         0
+  27 757141   1925 1974     B     .341       -10      .371   .030
+
+ DESCRIPTIVE STATISTICS: wa029
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 757011   1812 1976    165      5      0    .514   1.03   3.65   .820   .934   .212   2.20   .262  -.008   1
+   2 757012   1760 1976    217      7      0    .537   1.00   2.47   .501   .804   .247   1.69   .259  -.021   2
+   3 757021   1756 1976    221      7      0    .572   1.38   4.60   .931   .929   .173   1.68   .175   .016   2
+   4 757022   1756 1976    221      7      0    .709   1.35   4.75   .847   .905   .184   1.50   .176   .003   1
+   5 757031   1852 1976    125      3      0    .448   1.54   5.50   .853   .787   .211   2.25   .264  -.049   1
+   6 757032   1817 1976    160      5      1    .485   1.10   4.45   .588   .797   .202   2.17   .239   .042   1
+   7 757041   1858 1976    119      3      0    .508   2.39   4.70   .723   .731   .158   1.49   .180  -.041   3
+   8 757042   1861 1976    116      3      0    .290   2.42   5.64  1.059   .837   .198   2.64   .263   .198   1
+   9 757051   1836 1976    141      4      1    .433   1.97   4.07   .835   .719   .231   1.76   .252   .031   1
+  10 757052   1792 1976    185      6      3    .314   1.33   7.93  1.389   .908   .308   3.69   .433   .018   2
+  11 757061   1824 1976    153      4      0    .530   1.42   2.67   .621   .903   .162   1.47   .158  -.025   3
+  12 757062   1773 1976    204      7      0    .489    .98   2.43   .613   .938   .199   1.60   .208   .002   1
+  13 757071   1775 1976    202      6      0    .594   1.43   3.65   .495   .707   .199   1.55   .202   .008   2
+  14 757072   1873 1976    104      3      3   -.061   1.92   3.89   .664   .804   .164   1.45   .155   .118   0
+  15 757081   1793 1976    184      6      0    .672   1.61   5.00   .889   .895   .174   1.49   .178  -.026   1
+  16 757082   1870 1976    107      3      0    .601   2.56   5.66   .893   .797   .168   1.55   .179   .056   1
+  17 757091   1655 1976    322     10      0    .569    .87   4.53   .668   .903   .216   1.76   .226   .035   1
+  18 757092   1653 1976    324     10      1    .564    .88   7.47   .705   .836   .218   2.29   .223   .012   1
+  19 757101   1837 1976    140      4      0    .502   2.26   5.71  1.117   .903   .193   1.56   .195  -.014   1
+  20 757102   1841 1976    136      4      0    .512   2.13   4.39   .754   .751   .204   1.49   .208   .004   1
+  21 757111   1748 1976    229      8      0    .768   1.26   2.42   .472   .789   .187   1.56   .195  -.011   1
+  22 757112   1754 1976    223      7      0    .767   1.00   2.09   .364   .740   .208   1.61   .210   .023   1
+  23 757121   1798 1976    179      6      0    .704   1.15   3.13   .551   .771   .251   2.07   .275   .052   1
+  24 757122   1844 1976    133      4      0    .661   1.69   4.05   .721   .727   .257   1.97   .273   .062   1
+  25 757131   1824 1976    153      5      1    .485   1.01   2.46   .387   .665   .198   1.89   .242   .007   1
+  26 757132   1838 1976    139      4      0    .587   1.65   3.20   .603   .639   .232   1.74   .241   .002   2
+  27 757141   1816 1976    161      5      1    .503    .73   1.62   .347   .867   .189   1.48   .188   .012   1
+  28 757142   1830 1976    147      4      0    .706    .66   1.69   .298   .788   .210   1.68   .216   .031   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4910    150     11    .554   1.35   7.93   .692   .822   .207   3.69   .224   .016
+
+ DATA CHECKS (rwl.check): wa029
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa029.rwl
+ 28 series, 4910 measurements, 1653-1976, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     757072: correlates with the rest of the collection at r = -0.007 where the collection median is 0.516 (4.1 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa029.rwl, MD5 39eabc3e1a7db504f5003f230bd61aa9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

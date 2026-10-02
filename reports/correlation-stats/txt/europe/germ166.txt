@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: germ166
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ166.rwl
+      MD5 of measurement file: 1d6cd1c28478fd8ec3dfb930eb9e1ec3
+      Date checked           : 01OCT26
+      Beginning year         : 1868
+      Ending year            : 2004
+      Principal investigators: Fischer, S.
+      Site name              : Nordrhein-Westfalen/Siebengebirge drb07
+      Species information    : QUPE Quercus petraea (Matt.) Liebl. = Quercus sessiliflora Salisb.
+      Latitude               : 50.6667 N
+      Longitude              : 7.2333 E
+      Elevation              : 375 m
+
+      Series intercorrelation: 0.668
+      Avg mean sensitivity   : 0.253
+      Avg standard deviation : 0.620
+      Avg autocorrelation    : 0.676
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4)
+      Pct problem segments   : 11.63
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ166
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 drb0716m 1883 2004  .86  .88  .89 
+   2 drb0715m 1899 2004  .76  .75  .80 
+   3 drb0714m 1913 2004       .13B .25A
+   4 drb0713m 1868 1955  .81           
+   5 drb0712m 1891 2004  .68  .64  .59 
+   6 drb0711m 1888 2004  .88  .89  .81 
+   7 drb0710m 1889 2004  .75  .70  .63 
+   8 drb0709m 1912 2004       .88  .79 
+   9 drb0708m 1894 2004  .59  .72  .61 
+  10 drb0707m 1889 2004  .72  .66  .63 
+  11 drb0706m 1886 2004  .83  .81  .81 
+  12 drb0705m 1923 2004       .83  .84 
+  13 drb0704m 1887 2004  .78  .69  .67 
+  14 drb0703m 1888 2004  .84  .84  .78 
+  15 drb0702m 1881 2004  .11B .22B .05B
+  16 drb0701m 1885 2004  .70  .79  .79 
+ Av segment correlation  .72  .69  .66 
+
+ FLAGGED SEGMENTS: germ166
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 drb0714m 1925 1974     B     .129        -3      .494   .365
+   3 drb0714m 1950 1999     A     .254         0
+  15 drb0702m 1900 1949     B     .112        -1      .703   .591
+  15 drb0702m 1925 1974     B     .218        -1      .806   .588
+  15 drb0702m 1950 1999     B     .049        -1      .773   .724
+
+ DESCRIPTIVE STATISTICS: germ166
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 drb0716m 1883 2004    122      3      0    .815   1.40   6.25   .851   .726   .278   2.02   .295  -.005   1
+   2 drb0715m 1899 2004    106      3      0    .781   1.88   3.98   .804   .646   .313   1.72   .301   .046   1
+   3 drb0714m 1913 2004     92      2      2    .275    .72   3.28   .703   .887   .321   2.40   .326   .029   1
+   4 drb0713m 1868 1955     88      1      0    .774   1.27   2.60   .473   .613   .255   1.76   .268  -.048   1
+   5 drb0712m 1891 2004    114      3      0    .655   1.65   3.64   .587   .808   .173   1.42   .184   .041   2
+   6 drb0711m 1888 2004    117      3      0    .839   1.69   3.46   .656   .613   .275   1.67   .275   .010   1
+   7 drb0710m 1889 2004    116      3      0    .671   1.23   2.43   .440   .779   .192   1.59   .204   .022   2
+   8 drb0709m 1912 2004     93      2      0    .798   1.74   3.48   .677   .528   .305   1.88   .297   .035   1
+   9 drb0708m 1894 2004    111      3      0    .589   1.39   2.49   .437   .711   .181   1.59   .191  -.024   3
+  10 drb0707m 1889 2004    116      3      0    .658   1.77   2.98   .628   .737   .221   1.57   .220  -.015   2
+  11 drb0706m 1886 2004    119      3      0    .778   1.50   6.48   .811   .750   .248   1.75   .258   .060   1
+  12 drb0705m 1923 2004     82      2      0    .844   1.90   3.21   .588   .342   .295   1.63   .281   .034   1
+  13 drb0704m 1887 2004    118      3      0    .713   1.37   3.34   .552   .647   .277   1.71   .271  -.017   1
+  14 drb0703m 1888 2004    117      3      0    .790   1.47   3.08   .528   .618   .235   1.78   .247   .003   1
+  15 drb0702m 1881 2004    124      3      3    .075   1.59   3.63   .636   .644   .272   1.71   .280   .017   1
+  16 drb0701m 1885 2004    120      3      0    .692   1.45   2.86   .535   .669   .246   1.63   .240   .002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1755     43      5    .668   1.50   6.48   .620   .676   .253   2.40   .257   .012
+
+ DATA CHECKS (rwl.check): germ166
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ166.rwl
+ 16 series, 1755 measurements, 1868-2004, 0.01 mm precision
+ 3 error(s), 2 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (3)
+     drb0702m: correlates best with the master at lag -1 (r = 0.72 against r = 0.304 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+     drb0710m: correlates best with the master at lag -1 (r = 0.747 against r = 0.69 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+     drb0714m: correlates best with the master at lag -3 (r = 0.372 against r = 0.22 as dated); the series may be misdated by 3 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (2)
+     drb0702m: correlates with the rest of the collection at r = 0.304 where the collection median is 0.774 (7 MAD below it); it does not fit the collection it is in
+     drb0714m: correlates with the rest of the collection at r = 0.22 where the collection median is 0.774 (8.3 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file germ166.rwl, MD5 1d6cd1c28478fd8ec3dfb930eb9e1ec3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

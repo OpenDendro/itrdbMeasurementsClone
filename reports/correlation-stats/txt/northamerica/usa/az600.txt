@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: az600
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az600.rwl
+      MD5 of measurement file: d6f01de4e2ee31de604383e68acad8c0
+      Date checked           : 01OCT26
+      Beginning year         : 1833
+      Ending year            : 2013
+      Principal investigators: Marquardt, P.E.; Miranda, B.R.; Telewski, F.W.
+      Site name              : Mt. Bigelow
+      Species information    : PIAZ Pinus arizonica Engelm.
+      Latitude               : 32.4138 N
+      Longitude              : 110.7150 W
+      Elevation              : 2534 m
+
+      Series intercorrelation: 0.632
+      Avg mean sensitivity   : 0.334
+      Avg standard deviation : 0.498
+      Avg autocorrelation    : 0.762
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.12
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az600
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BIG026A  1932 2009            .51 
+   2 BIG026B  1932 2009            .50 
+   3 BIG035A  1857 2009  .77  .80  .75 
+   4 BIG035B  1857 2009  .70  .65  .56 
+   5 BIG041E  1869 2011  .70  .76  .65 
+   6 BIG041W  1869 2013  .71  .70  .63 
+   7 BIG047NE 1922 2012       .50  .54 
+   8 BIG047SW 1922 2012       .55  .63 
+   9 BIG050A  1932 2009            .21B
+  10 BIG050B  1932 2009            .45 
+  11 BIG052A  1833 2009  .56  .71  .73 
+  12 BIG052B  1833 2009  .70  .79  .78 
+  13 BIG055A  1896 2010  .77  .87  .87 
+  14 BIG055B  1894 2010  .75  .84  .79 
+ Av segment correlation  .71  .72  .61 
+
+ FLAGGED SEGMENTS: az600
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 BIG050A  1950 1999     B     .213         2      .224   .011  weak at every lag
+
+ DESCRIPTIVE STATISTICS: az600
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BIG026A  1932 2009     78      1      0    .549   1.66   4.55   .934   .768   .332   1.70   .320   .058   1
+   2 BIG026B  1932 2009     78      1      0    .554   1.53   3.54   .742   .781   .303   1.82   .279   .030   1
+   3 BIG035A  1857 2009    153      3      0    .753    .43   1.44   .317   .821   .324   2.50   .353  -.011   1
+   4 BIG035B  1857 2009    153      3      0    .639    .85   3.00   .704   .885   .311   2.03   .317   .014   2
+   5 BIG041E  1869 2011    143      3      0    .636    .72   1.88   .488   .833   .347   1.68   .318  -.015   1
+   6 BIG041W  1869 2013    145      3      0    .624    .75   2.47   .627   .909   .372   1.87   .317   .019   0
+   7 BIG047NE 1922 2012     91      2      0    .534   1.31   2.63   .529   .680   .270   1.68   .273   .020   1
+   8 BIG047SW 1922 2012     91      2      0    .634   1.27   2.77   .613   .639   .331   1.92   .329   .049   1
+   9 BIG050A  1932 2009     78      1      1    .310    .51   2.13   .448   .881   .455   2.13   .380   .016   2
+  10 BIG050B  1932 2009     78      1      0    .512    .51   1.94   .390   .788   .412   2.44   .391   .012   0
+  11 BIG052A  1833 2009    177      3      0    .608    .62   2.22   .274   .501   .327   2.15   .321  -.000   2
+  12 BIG052B  1833 2009    177      3      0    .642    .80   2.90   .541   .836   .315   1.78   .305   .002   2
+  13 BIG055A  1896 2010    115      3      0    .832    .60   1.66   .285   .668   .309   1.91   .308  -.010   1
+  14 BIG055B  1894 2010    117      3      0    .763    .74   1.63   .346   .671   .312   1.67   .286  -.008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1674     32      1    .632    .82   4.55   .498   .762   .334   2.50   .320   .009
+
+ DATA CHECKS (rwl.check): az600
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az600.rwl
+ 14 series, 1674 measurements, 1833-2013, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file az600.rwl, MD5 d6f01de4e2ee31de604383e68acad8c0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

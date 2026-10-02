@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: wa035
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa035.rwl
+      MD5 of measurement file: 7385009d2b80720342cc29183b6bb763
+      Date checked           : 01OCT26
+      Beginning year         : 1788
+      Ending year            : 1976
+      Principal investigators: Brubaker, L.B.
+      Site name              : Deer Park
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 47.8500 N
+      Longitude              : 123.2800 W
+      Elevation              : 1860 m
+
+      Series intercorrelation: 0.520
+      Avg mean sensitivity   : 0.231
+      Avg standard deviation : 0.427
+      Avg autocorrelation    : 0.740
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 6, B 6; 5 of the B weak at every lag)
+      Pct problem segments   : 12.37
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 808011   1842 1976            .66  .64  .55  .69 
+   2 808012   1805 1976       .59  .70  .74  .69  .65 
+   3 808021   1827 1976            .36  .40  .43  .32A
+   4 808022   1862 1976                 .32A .27B .47 
+   5 808031   1803 1976       .58  .64  .71  .70  .66 
+   6 808032   1800 1976       .67  .66  .62  .65  .65 
+   7 808041   1852 1976                 .63  .69  .68 
+   8 808042   1810 1976       .65  .72  .80  .76  .72 
+   9 808051   1845 1976            .29B .41  .54  .57 
+  10 808052   1838 1976           -.05B .16B .51  .63 
+  11 808061   1804 1976       .50  .28A .45  .66  .53 
+  12 808062   1788 1976  .47  .54  .54  .60  .66  .51 
+  13 808071   1862 1976                 .52  .52  .52 
+  14 808072   1855 1976                 .50  .41  .17A
+  15 808081   1793 1976  .26A .18B .22B .55  .68  .57 
+  16 808082   1807 1976       .51  .38  .45  .60  .47 
+  17 808091   1844 1976            .58  .51  .52  .64 
+  18 808092   1825 1976            .67  .54  .64  .74 
+  19 808101   1877 1976                      .45  .49 
+  20 808102   1867 1976                 .67  .69  .67 
+  21 808111   1869 1976                 .54  .71  .71 
+  22 808112   1822 1976       .51  .53  .62  .69  .75 
+  23 808121   1849 1976            .75  .75  .63  .46 
+  24 808122   1886 1976                      .63  .29A
+ Av segment correlation  .36  .53  .50  .55  .59  .56 
+
+ FLAGGED SEGMENTS: wa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 808021   1925 1974     A     .318         0
+   4 808022   1875 1924     A     .321         0
+   4 808022   1900 1949     B     .275         7      .308   .033  weak at every lag
+   9 808051   1850 1899     B     .294        -9      .395   .101
+  10 808052   1850 1899     B    -.050        -9      .310   .360  weak at every lag
+  10 808052   1875 1924     B     .164         3      .291   .127  weak at every lag
+  11 808061   1850 1899     A     .279         0
+  14 808072   1925 1974     A     .170         0
+  15 808081   1800 1849     A     .256         0
+  15 808081   1825 1874     B     .184        -5      .324   .140  weak at every lag
+  15 808081   1850 1899     B     .219        -6      .260   .041  weak at every lag
+  24 808122   1925 1974     A     .287         0
+
+ DESCRIPTIVE STATISTICS: wa035
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 808011   1842 1976    135      4      0    .596   1.04   1.85   .336   .652   .213   1.67   .206   .010   1
+   2 808012   1805 1976    172      5      0    .565    .69   1.46   .313   .789   .242   1.64   .240   .006   1
+   3 808021   1827 1976    150      4      1    .400   1.24   3.35   .773   .883   .254   1.55   .244  -.008   3
+   4 808022   1862 1976    115      3      2    .382   1.45   3.38   .875   .886   .255   1.61   .243   .071   3
+   5 808031   1803 1976    174      5      0    .590   1.06   2.46   .422   .658   .236   1.87   .247   .023   1
+   6 808032   1800 1976    177      5      0    .586    .74   1.57   .261   .670   .239   1.57   .236   .006   1
+   7 808041   1852 1976    125      3      0    .565    .75   1.62   .283   .740   .226   1.65   .212  -.024   1
+   8 808042   1810 1976    167      5      0    .681    .63   1.36   .224   .628   .233   1.72   .237   .055   1
+   9 808051   1845 1976    132      4      1    .445    .84   2.25   .456   .882   .220   1.59   .215   .001   1
+  10 808052   1838 1976    139      4      2    .211   1.41   3.46   .732   .868   .191   1.70   .196   .023   1
+  11 808061   1804 1976    173      5      1    .504    .86   2.49   .459   .859   .203   1.85   .210   .015   1
+  12 808062   1788 1976    189      6      0    .513    .85   2.16   .413   .803   .223   1.74   .237   .012   1
+  13 808071   1862 1976    115      3      0    .506   1.72   3.12   .557   .630   .206   1.50   .186   .020   0
+  14 808072   1855 1976    122      3      1    .355   1.37   3.17   .648   .815   .209   1.50   .195   .123   0
+  15 808081   1793 1976    184      6      3    .387    .80   2.48   .521   .884   .233   1.86   .236  -.031   1
+  16 808082   1807 1976    170      5      0    .493    .61   1.62   .304   .805   .227   2.04   .241  -.017   3
+  17 808091   1844 1976    133      4      0    .586    .63   1.96   .394   .841   .237   1.77   .238  -.011   1
+  18 808092   1825 1976    152      4      0    .604    .89   1.95   .310   .567   .244   1.94   .259   .024   1
+  19 808101   1877 1976    100      2      0    .509   2.11   3.61   .583   .625   .181   1.82   .196   .004   1
+  20 808102   1867 1976    110      3      0    .662    .64   1.09   .180   .490   .242   1.83   .225   .026   1
+  21 808111   1869 1976    108      3      0    .620    .50   1.09   .149   .629   .182   1.45   .183   .026   2
+  22 808112   1822 1976    155      5      0    .610    .52   1.74   .273   .741   .277   2.01   .278   .024   1
+  23 808121   1849 1976    128      4      0    .607   1.09   2.52   .446   .626   .270   1.74   .260  -.005   1
+  24 808122   1886 1976     91      2      1    .479   1.34   2.76   .511   .592   .272   1.82   .273  -.010   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3416     97     12    .520    .95   3.61   .427   .740   .231   2.04   .230   .014
+
+ DATA CHECKS (rwl.check): wa035
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa035.rwl
+ 24 series, 3416 measurements, 1788-1976, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa035.rwl, MD5 7385009d2b80720342cc29183b6bb763.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

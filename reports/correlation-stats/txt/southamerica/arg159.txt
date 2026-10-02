@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: arg159
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arg159.rwl
+      MD5 of measurement file: f39252427edb173cec4464f475bce43c
+      Date checked           : 01OCT26
+      Beginning year         : 1930
+      Ending year            : 2006
+      Principal investigators: Ferrero, M.E.; Villalba, R.
+      Site name              : Pampichuela - PAM
+      Species information    : JGAU Juglans australis Griseb.
+      Latitude               : 23.5333 S
+      Longitude              : 65.0167 W
+      Elevation              : 1843 m
+
+      Series intercorrelation: 0.410
+      Avg mean sensitivity   : 0.618
+      Avg standard deviation : 0.769
+      Avg autocorrelation    : 0.413
+      Number dated series    : 6
+      Segment length tested  : 38
+
+      Number problem segments: 5  (A 2, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 41.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arg159
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  38-year dated segments, lagged  19 years
+ Flags:  A = correlation under   .3760 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1969 
+                        1987 2006 
+ --- -------- ---------  ---- ---- 
+   1 pam08b   1930 2006  .09B .60 
+   2 pam08c   1930 2006  .06B .58 
+   3 pam13a   1930 2006 -.07B .63 
+   4 pam15b   1930 2006  .35A .78 
+   5 pam16b   1930 2006  .44  .60 
+   6 pam32a   1930 2006  .32A .47 
+ Av segment correlation  .20  .61 
+
+ FLAGGED SEGMENTS: arg159
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 pam08b   1950 1987     B     .093         2      .408   .315
+   2 pam08c   1950 1987     B     .062         1      .402   .340
+   3 pam13a   1950 1987     B    -.071        -3      .360   .431  weak at every lag
+   4 pam15b   1950 1987     A     .348         0
+   6 pam32a   1950 1987     A     .320         0
+
+ DESCRIPTIVE STATISTICS: arg159
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 pam08b   1930 2006     77      2      1    .460   1.00   3.02   .669   .286   .642   2.46   .597  -.016   1
+   2 pam08c   1930 2006     77      2      1    .435    .87   3.15   .674   .347   .654   2.73   .637   .122   0
+   3 pam13a   1930 2006     77      2      1    .373   1.52   5.36  1.332   .502   .654   2.82   .642   .042   1
+   4 pam15b   1930 2006     77      2      1    .516    .60   1.96   .386   .266   .691   2.38   .578  -.070   0
+   5 pam16b   1930 2006     77      2      0    .327    .54   1.80   .386   .507   .613   2.25   .479   .044   2
+   6 pam32a   1930 2006     77      2      1    .347   1.95   6.34  1.168   .573   .451   2.25   .388   .161   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            462     12      5    .410   1.08   6.34   .769   .413   .618   2.82   .553   .047
+
+ DATA CHECKS (rwl.check): arg159
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arg159.rwl
+ 6 series, 462 measurements, 1930-2006, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 99 carriage return(s) against 51 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file arg159.rwl, MD5 f39252427edb173cec4464f475bce43c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3760 for 38-year segments.
+ Segments: 38 years, lagged 19, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 38 years: the record is only 77 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

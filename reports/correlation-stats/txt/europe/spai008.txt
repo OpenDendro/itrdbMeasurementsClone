@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: spai008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai008.rwl
+      MD5 of measurement file: 7631baba45369bbc34a4fcf360249c2b
+      Date checked           : 01OCT26
+      Beginning year         : 1610
+      Ending year            : 1988
+      Principal investigators: Génova Fuster, M.; Fernández Cancio, A.; Perez Antelo, A.
+      Site name              : Tajo
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 40.8700 N
+      Longitude              : 2.1300 W
+      Elevation              : 1750 m
+
+      Series intercorrelation: 0.597
+      Avg mean sensitivity   : 0.249
+      Avg standard deviation : 0.544
+      Avg autocorrelation    : 0.740
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3)
+      Pct problem segments   : 3.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 SC434NPN 1706 1988       .70  .67  .52B .47B .50  .60  .74  .86  .82 
+   2 SC434SPN 1762 1988                 .56  .54  .55  .38  .53  .78  .75 
+   3 SC435EPN 1757 1988                 .73  .67  .45  .44  .71  .78  .61 
+   4 SC435OPN 1718 1988       .57  .67  .60  .52  .41  .52  .71  .71  .50 
+   5 SC438EPN 1838 1988                                .68  .84  .78  .75 
+   6 SC438OPN 1841 1988                                .66  .77  .65  .64 
+   7 SC439SPN 1863 1988                                     .54  .55  .68 
+   8 SC441NPN 1826 1988                                .72  .72  .71  .73 
+   9 SC441SPN 1827 1988                                .68  .64  .54  .51 
+  10 SC442NPN 1827 1988                                .57  .58  .60  .66 
+  11 SC442SPN 1836 1988                                .51  .48  .67  .65 
+  12 SC443XPX 1823 1988                           .42  .55  .71  .68  .61 
+  13 SC444NPN 1633 1988  .65  .56  .53  .58  .54  .36  .47  .62  .68  .69 
+  14 SC444SPN 1610 1988  .60  .59  .56  .53  .43B .36  .53  .54  .51  .53 
+  15 SC445NPN 1832 1988                                .62  .68  .62  .51 
+  16 SC445SPN 1846 1988                                .54  .68  .64  .48 
+ Av segment correlation  .63  .61  .61  .58  .53  .44  .56  .66  .67  .63 
+
+ FLAGGED SEGMENTS: spai008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 SC434NPN 1775 1824     B     .516         1      .597   .081
+   1 SC434NPN 1800 1849     B     .474         1      .614   .140
+  14 SC444SPN 1800 1849     B     .432        -1      .514   .082
+
+ DESCRIPTIVE STATISTICS: spai008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SC434NPN 1706 1988    283      9      2    .644    .78   2.53   .400   .734   .294   1.78   .290   .000   2
+   2 SC434SPN 1762 1988    227      7      0    .595    .83   2.05   .389   .698   .284   1.94   .291   .033   1
+   3 SC435EPN 1757 1988    232      7      0    .603    .98   3.08   .442   .644   .299   1.83   .298  -.005   2
+   4 SC435OPN 1718 1988    271      9      0    .565    .89   4.16   .726   .849   .289   2.16   .316  -.006   3
+   5 SC438EPN 1838 1988    151      4      0    .734   1.52   5.57   .951   .751   .307   2.05   .324   .006   2
+   6 SC438OPN 1841 1988    148      4      0    .654   1.16   3.50   .556   .754   .250   1.87   .264  -.004   3
+   7 SC439SPN 1863 1988    126      3      0    .616   1.68   5.07   .694   .779   .215   1.57   .214   .038   1
+   8 SC441NPN 1826 1988    163      4      0    .682   1.24   3.16   .722   .828   .231   1.73   .221   .073   0
+   9 SC441SPN 1827 1988    162      4      0    .582   1.22   4.21   .661   .858   .194   1.63   .192   .012   1
+  10 SC442NPN 1827 1988    162      4      0    .588   1.32   2.74   .528   .731   .227   1.72   .241  -.032   2
+  11 SC442SPN 1836 1988    153      4      0    .591   1.63   3.35   .613   .707   .228   1.71   .219   .010   2
+  12 SC443XPX 1823 1988    166      5      0    .601   1.25   4.75   .756   .888   .202   1.74   .203   .024   1
+  13 SC444NPN 1633 1988    356     10      0    .578    .69   1.53   .243   .600   .255   1.73   .255   .010   1
+  14 SC444SPN 1610 1988    379     10      1    .530    .83   2.27   .309   .693   .224   1.71   .217   .003   1
+  15 SC445NPN 1832 1988    157      4      0    .547   1.76   3.83   .818   .815   .208   1.41   .184   .023   2
+  16 SC445SPN 1846 1988    143      4      0    .557   2.00   4.30   .761   .729   .196   1.70   .195   .013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3279     92      3    .597   1.12   5.57   .544   .740   .249   2.16   .250   .010
+
+ DATA CHECKS (rwl.check): spai008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai008.rwl
+ 16 series, 3279 measurements, 1610-1988, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file spai008.rwl, MD5 7631baba45369bbc34a4fcf360249c2b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

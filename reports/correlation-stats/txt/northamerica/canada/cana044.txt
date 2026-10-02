@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: cana044
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana044.rwl
+      MD5 of measurement file: 42a2da87b194e98ef4ec05183b55f380
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 1988
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Willow Lake
+      Species information    : PCMA Picea mariana (Mill.) Britton, Sterns, & Poggenb.
+      Latitude               : 62.1700 N
+      Longitude              : 119.1300 W
+      Elevation              : 620 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.190
+      Avg standard deviation : 0.302
+      Avg autocorrelation    : 0.773
+      Number dated series    : 23
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 811411   1890 1988  .70  .74 
+   2 811412   1898 1988  .63  .50 
+   6 811442   1830 1987  .65  .70 
+   7 811451   1857 1987  .65  .51 
+   9 811481   1870 1958  .66      
+  10 811482   1869 1986  .58  .63 
+  12 811492   1921 1988       .72 
+  14 811511   1878 1988  .59  .66 
+  15 811512   1877 1988  .58  .57 
+  16 811521   1853 1988  .54  .39B
+  17 811522   1895 1988  .09B .15B
+  18 811531   1875 1988  .55  .53 
+  19 811532   1886 1969  .57      
+  20 811541   1919 1988       .59 
+  21 811542   1923 1988       .46 
+  22 811551   1901 1988       .72 
+  23 811552   1910 1988       .66 
+ Av segment correlation  .57  .57 
+
+ FLAGGED SEGMENTS: cana044
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 811521   1925 1974     B     .388        -3      .440   .052
+  17 811522   1900 1949     B     .092        -8      .200   .108  weak at every lag
+  17 811522   1925 1974     B     .154         2      .210   .056  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana044
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 811411   1890 1988     99      2      0    .607    .84   1.78   .403   .870   .195   1.50   .182  -.004   1
+   2 811412   1898 1988     91      2      0    .515    .93   1.50   .267   .690   .179   1.56   .187   .028   1
+   3 811421   1950 1988     39      0      0    .456   1.55   2.41   .357   .660   .151   1.25   .157   .069   1
+   4 811422   1951 1988     38      0      0    .377   1.93   2.88   .457   .615   .158   1.69   .178   .044   1
+   5 811441   1830 1987    157                          .60   1.99   .334   .848   .201                         
+   6 811442   1830 1987    158      2      0    .617    .57   1.96   .370   .890   .215   1.66   .221   .024   1
+   7 811451   1857 1987    131      2      0    .607    .73   1.60   .298   .677   .225   1.84   .237  -.006   2
+   8 811452   1864 1942     79      0      0    .698    .65   1.35   .187   .454   .217   1.47   .200   .103   0
+   9 811481   1870 1958     89      1      0    .586    .51   1.00   .148   .683   .191   1.54   .190   .012   1
+  10 811482   1869 1986    118      2      0    .497    .41   1.28   .254   .826   .193   1.81   .211   .038   2
+  11 811491   1911 1988     77                          .88   1.82   .308   .515   .256                         
+  12 811492   1921 1988     68      1      0    .766    .70   1.85   .398   .889   .206   1.45   .208   .041   1
+  13 811501   1932 1988     57      0      0    .654    .73   1.38   .280   .693   .229   1.51   .210   .029   1
+  14 811511   1878 1988    111      2      0    .605    .69   1.59   .277   .869   .148   1.39   .150  -.025   1
+  15 811512   1877 1988    112      2      0    .576    .69   1.63   .421   .942   .151   1.34   .140   .006   1
+  16 811521   1853 1988    136      2      1    .424    .48   1.43   .371   .962   .195   1.59   .197   .004   1
+  17 811522   1895 1988     94      2      2    .135    .56   1.24   .333   .954   .150   1.37   .138   .019   1
+  18 811531   1875 1988    114      2      0    .462    .48   1.70   .341   .945   .158   1.72   .172  -.021   1
+  19 811532   1886 1969     84      1      0    .513    .46   1.08   .213   .880   .169   1.40   .141  -.085   0
+  20 811541   1919 1988     70      1      0    .607    .87   1.54   .270   .573   .224   1.57   .216   .005   2
+  21 811542   1923 1988     66      1      0    .425    .61   1.13   .164   .517   .218   1.58   .195   .126   0
+  22 811551   1901 1988     88      1      0    .705    .96   1.67   .254   .631   .167   1.59   .186   .039   1
+  23 811552   1910 1988     79      1      0    .674    .81   1.24   .157   .477   .146   1.30   .149   .117   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2155     27      3    .549    .69   2.88   .302   .773   .190   1.84   .186   .021
+
+ DATA CHECKS (rwl.check): cana044
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana044.rwl
+ 23 series, 2155 measurements, 1830-1988, 0.01 mm precision
+ 0 error(s), 2 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     811441: no measurement for 1884, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     811491: no measurement for 1958, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana044.rwl, MD5 42a2da87b194e98ef4ec05183b55f380.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 811441 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 811491 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

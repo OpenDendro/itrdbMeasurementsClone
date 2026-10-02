@@ -1,0 +1,156 @@
+
+ COFECHA-style crossdating report: rus346
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus346.rwl
+      MD5 of measurement file: a571753964cd509273fb8e9f0afe8f5b
+      Date checked           : 01OCT26
+      Beginning year         : 1864
+      Ending year            : 2014
+      Principal investigators: Solomina, O.
+      Site name              : Spas-Klepiki - M10S
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 55.2372 N
+      Longitude              : 40.0368 E
+      Elevation              : 125 m
+
+      Series intercorrelation: 0.478
+      Avg mean sensitivity   : 0.231
+      Avg standard deviation : 1.154
+      Avg autocorrelation    : 0.819
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 7.06
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus346
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 M10S1a   1876 2014  .39  .44  .45 
+   2 M10S1b   1878 2014  .59  .57  .52 
+   3 M10S2a   1883 2014  .54  .53  .67 
+   4 M10S2b   1896 2014  .30B .34  .56 
+   5 M10S3a   1896 2014  .38  .51  .52 
+   6 M10S3b   1892 2014  .37  .37  .54 
+   7 M10S4a   1874 2014  .47  .44  .52 
+   8 M10S4b   1864 2014  .54  .45  .56 
+   9 M10S5a   1890 2014  .56  .46  .53 
+  10 M10S5b   1902 2014       .35  .51 
+  11 M10S6a   1880 2011  .38  .43  .42 
+  12 M10S6b   1885 2014  .59  .77  .64 
+  13 M10S7a   1887 2014  .48  .59  .66 
+  14 M10S7b   1890 2014  .43  .47  .50 
+  15 M10S8a   1892 2014  .35  .39B .39 
+  16 M10S8b   1889 2014  .60  .58  .51 
+  17 M10S9a   1887 2014  .47  .48  .46 
+  18 M10S9b   1899 2014       .46  .42 
+  19 M10S10a  1893 2014  .57  .58  .53 
+  20 M10S10b  1896 2014  .45  .56  .53 
+  21 M10S11a  1894 2014  .35  .54  .26A
+  22 M10S11b  1902 2014       .31A .32A
+  23 M10S12a  1892 2014  .57  .53  .51 
+  24 M10S12b  1885 2014  .52  .53  .52 
+  25 M10S13a  1889 2014  .41  .62  .71 
+  26 M10S13b  1891 2014  .51  .63  .59 
+  27 M10S14a  1907 2014       .28A .34 
+  28 M10S14b  1903 2014       .43  .52 
+  29 M10S15a  1875 2014  .48  .53  .59 
+  30 M10S15b  1894 2014  .50  .55  .65 
+ Av segment correlation  .47  .49  .51 
+
+ FLAGGED SEGMENTS: rus346
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 M10S2b   1900 1949     B     .302         6      .315   .013  weak at every lag
+  15 M10S8a   1925 1974     B     .386        -6      .448   .062
+  21 M10S11a  1950 1999     A     .256         0
+  22 M10S11b  1925 1974     A     .308         0
+  22 M10S11b  1950 1999     A     .316         0
+  27 M10S14a  1925 1974     A     .277         0
+
+ DESCRIPTIVE STATISTICS: rus346
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 M10S1a   1876 2014    139      3      0    .405   1.96  10.53  1.740   .931   .211   1.82   .225   .017   1
+   2 M10S1b   1878 2014    137      3      0    .572   2.13   7.60  1.487   .906   .177   1.52   .176   .004   2
+   3 M10S2a   1883 2014    132      3      0    .561   1.65   7.48  1.502   .888   .237   1.84   .228  -.005   1
+   4 M10S2b   1896 2014    119      3      1    .449   1.59   7.04   .964   .773   .206   1.70   .217   .008   1
+   5 M10S3a   1896 2014    119      3      0    .457   2.62   7.09  1.214   .839   .205   1.67   .210  -.040   3
+   6 M10S3b   1892 2014    123      3      0    .486   1.83   7.65  1.107   .886   .207   1.53   .220   .045   1
+   7 M10S4a   1874 2014    141      3      0    .538   1.54   5.53  1.003   .897   .210   1.50   .199  -.003   2
+   8 M10S4b   1864 2014    151      3      0    .451   1.46   4.81   .938   .839   .265   1.70   .272   .026   1
+   9 M10S5a   1890 2014    125      3      0    .528   2.01   7.29  1.071   .862   .182   1.54   .197   .018   2
+  10 M10S5b   1902 2014    113      2      0    .468   1.80   5.84  1.210   .934   .188   1.55   .204   .002   3
+  11 M10S6a   1880 2011    132      3      0    .393   1.60   4.32   .815   .727   .262   1.67   .265   .080   2
+  12 M10S6b   1885 2014    130      3      0    .582   1.94   5.14   .956   .788   .252   1.61   .247   .021   1
+  13 M10S7a   1887 2014    128      3      0    .582   1.75   3.80   .657   .766   .207   1.50   .221   .050   1
+  14 M10S7b   1890 2014    125      3      0    .489   1.84   4.24   .736   .770   .209   1.57   .218   .019   1
+  15 M10S8a   1892 2014    123      3      1    .387   2.11   8.20  1.327   .877   .241   2.16   .272  -.012   1
+  16 M10S8b   1889 2014    126      3      0    .530   2.18   9.35  1.289   .890   .197   1.66   .214   .021   1
+  17 M10S9a   1887 2014    128      3      0    .488   1.98   6.89  1.000   .789   .225   1.56   .241  -.018   1
+  18 M10S9b   1899 2014    116      2      0    .373   2.46   6.32  1.246   .878   .192   1.58   .204   .011   2
+  19 M10S10a  1893 2014    122      3      0    .532   2.29   8.51  1.473   .882   .252   1.67   .229  -.000   3
+  20 M10S10b  1896 2014    119      3      0    .492   2.28  10.60  1.599   .896   .255   1.66   .251   .015   2
+  21 M10S11a  1894 2014    121      3      1    .322   3.21   9.07  1.344   .510   .275   2.24   .304  -.034   3
+  22 M10S11b  1902 2014    113      2      2    .372   2.57   6.73   .982   .557   .261   1.94   .281   .051   3
+  23 M10S12a  1892 2014    123      3      0    .533   1.72   5.65   .980   .748   .252   1.68   .256   .038   1
+  24 M10S12b  1885 2014    130      3      0    .431   2.22   9.83  1.723   .906   .255   1.68   .272  -.002   1
+  25 M10S13a  1889 2014    126      3      0    .549   1.52   5.13   .993   .799   .253   2.04   .261  -.017   1
+  26 M10S13b  1891 2014    124      3      0    .514   1.70   7.41  1.218   .843   .251   1.67   .252   .006   2
+  27 M10S14a  1907 2014    108      2      1    .345   2.71  10.72  1.725   .778   .260   2.55   .308   .032   2
+  28 M10S14b  1903 2014    112      2      0    .477   1.45   4.68  1.052   .922   .231   1.66   .254   .032   1
+  29 M10S15a  1875 2014    140      3      0    .450   1.11   3.17   .551   .695   .276   1.82   .301   .013   3
+  30 M10S15b  1894 2014    121      3      0    .548   1.75   4.31   .847   .751   .247   2.01   .281   .057   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3766     85      6    .478   1.95  10.72  1.154   .819   .231   2.55   .242   .014
+
+ DATA CHECKS (rwl.check): rus346
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus346.rwl
+ 30 series, 3766 measurements, 1864-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 13 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 3 carriage return(s) against 408 line feed(s); mixed endings can defeat a reader
+ 13 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file rus346.rwl, MD5 a571753964cd509273fb8e9f0afe8f5b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,161 @@
+
+ COFECHA-style crossdating report: me027
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : me027.rwl
+      MD5 of measurement file: 410b6a40dbd50e63037baac6e07e7938
+      Date checked           : 01OCT26
+      Beginning year         : 1872
+      Ending year            : 1994
+      Principal investigators: Hager, A.E.S.
+      Site name              : Portage
+      Species information    : FRNI Fraxinus nigra Marsh.
+      Latitude               : 46.7300 N
+      Longitude              : 68.4700 W
+      Elevation              : 250 m
+
+      Series intercorrelation: 0.621
+      Avg mean sensitivity   : 0.302
+      Avg standard deviation : 0.448
+      Avg autocorrelation    : 0.715
+      Number dated series    : 36
+      Series crossdated      : 35
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 11.76
+
+
+ CORRELATION OF SERIES BY SEGMENTS: me027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 02-01A   1906 1994       .74 
+   2 02-01B   1905 1994       .72 
+   3 02-02A   1901 1994       .64 
+   4 02-02B   1903 1994       .64 
+   5 02-03A   1915 1994       .58 
+   6 02-03B   1914 1994       .82 
+   7 02-04A   1908 1994       .78 
+   8 02-04B   1908 1994       .75 
+   9 02-05A   1901 1994       .73 
+  10 02-06A   1912 1994       .66 
+  12 02-08B   1912 1994       .58 
+  13 02-09A   1916 1994       .86 
+  14 02-09B   1922 1994       .76 
+  15 02-10A   1910 1994       .69 
+  16 02-11A   1916 1994       .18B
+  17 02-11B   1913 1994       .26B
+  20 02-13A   1873 1994  .57  .33B
+  21 02-13B   1872 1994  .59  .30B
+  22 02-14A   1881 1994  .58  .49 
+  23 02-14D   1922 1994       .40 
+  24 02-15A   1881 1994  .77  .35 
+  26 02-16A   1918 1994       .74 
+  27 02-16B   1910 1994       .75 
+  28 02-17A   1923 1994       .49 
+  29 02-17B   1919 1994       .56 
+  31 02-19B   1921 1994       .72 
+  32 02-20A   1913 1994       .78 
+  34 02-20D   1897 1994  .60  .76 
+  36 02-21C   1918 1994       .49 
+ Av segment correlation  .62  .60 
+
+ FLAGGED SEGMENTS: me027
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 02-11A   1925 1974     B     .180         4      .325   .145  weak at every lag
+  17 02-11B   1925 1974     B     .258         2      .259   .001  weak at every lag
+  20 02-13A   1925 1974     B     .326        -5      .406   .079
+  21 02-13B   1925 1974     B     .302        -5      .302   .000  weak at every lag
+
+ DESCRIPTIVE STATISTICS: me027
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 02-01A   1906 1994     89      1      0    .787    .94   2.42   .565   .793   .246   1.67   .262  -.022   1
+   2 02-01B   1905 1994     90      1      0    .738   1.01   2.30   .547   .776   .276   1.65   .257   .031   1
+   3 02-02A   1901 1994     94      1      0    .641    .51   1.47   .285   .584   .347   2.10   .393   .051   1
+   4 02-02B   1903 1994     92      1      0    .664    .44   1.18   .243   .697   .331   1.85   .339   .035   2
+   5 02-03A   1915 1994     80      1      0    .638    .68   1.76   .322   .608   .298   2.74   .325   .028   1
+   6 02-03B   1914 1994     81      1      0    .798    .70   1.40   .277   .650   .266   1.66   .260  -.007   1
+   7 02-04A   1908 1994     87      1      0    .842   1.70   4.00   .961   .746   .273   1.66   .297   .027   1
+   8 02-04B   1908 1994     87      1      0    .750   1.26   3.14   .781   .724   .308   1.91   .333   .067   1
+   9 02-05A   1901 1994     94      1      0    .614    .68   1.87   .378   .654   .309   2.44   .340  -.015   1
+  10 02-06A   1912 1994     83      1      0    .655    .91   2.30   .496   .788   .245   2.03   .262   .034   1
+  11 02-08A   1926 1994     69      0      0    .490    .72   2.51   .429   .493   .381   2.44   .468   .022   2
+  12 02-08B   1912 1994     83      1      0    .563    .56   1.63   .364   .565   .386   2.25   .450   .047   1
+  13 02-09A   1916 1994     79      1      0    .734    .66   1.89   .434   .651   .384   1.84   .371   .030   1
+  14 02-09B   1922 1994     73      1      0    .731    .64   1.70   .351   .640   .314   1.93   .308   .047   1
+  15 02-10A   1910 1994     85      1      0    .589    .60   2.29   .470   .787   .362   2.27   .388  -.015   1
+  16 02-11A   1916 1994     79      1      1    .304    .74   2.37   .548   .862   .252   2.38   .293  -.000   3
+  17 02-11B   1913 1994     82      1      1    .348    .73   2.73   .568   .793   .290   1.90   .331   .014   3
+  18 02-12A   1933 1994     62      0      0    .180   1.23   2.94   .704   .732   .325  21.13  2.585   .503   0
+  19 02-12B   1927 1994     68                          .82   1.84   .469   .655   .345                         
+  20 02-13A   1873 1994    122      2      1    .660    .63   2.86   .464   .759   .319   1.93   .313   .005   3
+  21 02-13B   1872 1994    123      2      1    .654    .50   2.10   .368   .745   .320   2.10   .338   .032   1
+  22 02-14A   1881 1994    114      2      0    .606    .46   1.93   .271   .655   .318   2.09   .342   .021   1
+  23 02-14D   1922 1994     73      1      0    .445    .41   1.25   .219   .560   .286   3.14   .391   .077   1
+  24 02-15A   1881 1994    114      2      0    .597    .80   2.00   .470   .763   .315   1.86   .303  -.042   3
+  25 02-15B   1948 1994     47      0      0    .280   1.39   3.34   .737   .778   .253   4.55   .611   .335   0
+  26 02-16A   1918 1994     77      1      0    .700    .96   2.19   .492   .854   .226   1.69   .235  -.016   1
+  27 02-16B   1910 1994     85      1      0    .715    .96   2.63   .504   .832   .236   1.57   .254  -.034   1
+  28 02-17A   1923 1994     72      1      0    .499    .66   1.81   .348   .598   .347   1.90   .323  -.044   2
+  29 02-17B   1919 1994     76      1      0    .648    .63   1.45   .317   .647   .311   1.95   .322   .031   1
+  30 02-19A   1926 1994     69      0      0    .615   1.18   2.89   .604   .754   .278   1.72   .294   .116   1
+  31 02-19B   1921 1994     74      1      0    .708   1.03   2.41   .515   .713   .295   1.93   .335   .091   1
+  32 02-20A   1913 1994     82      1      0    .769    .74   1.87   .379   .757   .282   1.72   .309   .062   1
+  33 02-20B   1927 1994     68      0      0    .741    .82   1.72   .418   .806   .260   1.60   .257   .070   1
+  34 02-20D   1897 1994     98      2      0    .557    .76   2.04   .475   .802   .325   2.04   .381   .048   1
+  35 02-21A   1957 1994     38      0      0    .613    .53   1.02   .251   .754   .223   2.07   .279  -.027   3
+  36 02-21C   1918 1994     77      1      0    .535    .49   1.04   .207   .723   .253   1.90   .261   .035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2966     34      4    .621    .78   4.00   .448   .715   .302  21.13   .376   .039
+
+ DATA CHECKS (rwl.check): me027
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/me027.rwl
+ 36 series, 2966 measurements, 1872-1994, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file me027.rwl, MD5 410b6a40dbd50e63037baac6e07e7938.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 02-12B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

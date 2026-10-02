@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: bra049
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra049.rwl
+      MD5 of measurement file: c80a1281d9e102d87fa1dbf732084d5c
+      Date checked           : 01OCT26
+      Beginning year         : 1971
+      Ending year            : 2011
+      Principal investigators: Adenesky-Filho, E.; Esemann-Quadros, K.; Maia, T.
+      Site name              : São Bento do Sul - SC
+      Species information    : CEFI Cedrela fissilis Vell.
+      Latitude               : 26.2520 S
+      Longitude              : 49.4068 W
+      Elevation              : 900 m
+
+      Series intercorrelation: 0.281
+      Avg mean sensitivity   : 0.532
+      Avg standard deviation : 1.768
+      Avg autocorrelation    : 0.410
+      Number dated series    : 14
+      Segment length tested  : 20
+
+      Number problem segments: 16  (A 4, B 12; 8 of the B weak at every lag)
+      Pct problem segments   : 88.89
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra049
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  20-year dated segments, lagged  10 years
+ Flags:  A = correlation under   .5155 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1980 1990 
+                        1999 2009 
+ --- -------- ---------  ---- ---- 
+   1 C1R1     1989 2011       .69 
+   2 C1R2     1981 2011       .62 
+   3 C2R1     1977 2011  .45B .19B
+   4 C2R2     1971 2011  .42B .41B
+   5 C3R1     1971 2011  .12B .33A
+   6 C3R2     1971 2011  .03B .22A
+   7 C4R2     1972 2011 -.03B .14B
+   9 C6R1     1974 2011  .14B .24B
+  10 C6R2     1975 2011 -.23B-.03B
+  13 C8R1     1982 2011       .42A
+  14 C8R2     1982 2011       .31A
+ Av segment correlation  .13  .32 
+
+ FLAGGED SEGMENTS: bra049
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 C2R1     1980 1999     B     .453        -1      .560   .107
+   3 C2R1     1990 2009     B     .194        -4      .495   .301  weak at every lag
+   4 C2R2     1980 1999     B     .424        -1      .673   .250
+   4 C2R2     1990 2009     B     .408        -1      .492   .084  weak at every lag
+   5 C3R1     1980 1999     B     .124         4      .403   .279  weak at every lag
+   5 C3R1     1990 2009     A     .332         0
+   6 C3R2     1980 1999     B     .028         3      .258   .230  weak at every lag
+   6 C3R2     1990 2009     A     .223         0
+   7 C4R2     1980 1999     B    -.029         1      .485   .514  weak at every lag
+   7 C4R2     1990 2009     B     .145         1      .658   .513
+   9 C6R1     1980 1999     B     .136        -6      .377   .241  weak at every lag
+   9 C6R1     1990 2009     B     .244       -10      .488   .244  weak at every lag
+  10 C6R2     1980 1999     B    -.227        -6      .390   .617  weak at every lag
+  10 C6R2     1990 2009     B    -.028        -7      .673   .701
+  13 C8R1     1990 2009     A     .417         0
+  14 C8R2     1990 2009     A     .314         0
+
+ DESCRIPTIVE STATISTICS: bra049
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 C1R1     1989 2011     23      1      0    .642   2.82   5.20  1.451   .222   .584   1.74   .463   .138   0
+   2 C1R2     1981 2011     31      1      0    .459   3.16   8.10  2.025   .423   .561   2.12   .549   .213   0
+   3 C2R1     1977 2011     35      2      2    .233   2.28   6.40  1.545   .514   .562   2.29   .546   .067   1
+   4 C2R2     1971 2011     41      2      2    .347   2.15   6.30  1.302   .422   .529   2.48   .485   .034   2
+   5 C3R1     1971 2011     41      2      2    .339   2.75  10.00  2.193   .518   .546   3.11   .547  -.001   1
+   6 C3R2     1971 2011     41      2      2    .300   2.86   8.70  1.880   .570   .499   1.92   .403   .104   2
+   7 C4R2     1972 2011     40      2      2    .091   3.15   9.40  1.996   .504   .464   2.11   .456   .169   0
+   8 C5R1     1994 2011     18      0      0    .158   3.52   7.00  1.840   .311   .556   1.92   .470  -.036   0
+   9 C6R1     1974 2011     38      2      2    .183   2.87   7.00  1.692   .455   .539   1.99   .442  -.027   1
+  10 C6R2     1975 2011     37      2      2    .018   2.98   7.80  1.945   .474   .593   2.40   .538   .211   0
+  11 C7R1     1996 2011     16      0      0    .318   2.78   5.90  1.720   .542   .562   1.68   .407   .012   2
+  12 C7R2     1995 2011     17      0      0    .173   3.06   7.40  1.880   .233   .654   1.73   .437  -.136   1
+  13 C8R1     1982 2011     30      1      1    .469   3.89   6.30  1.478  -.129   .483   1.64   .377  -.148   0
+  14 C8R2     1982 2011     30      1      1    .303   3.87   7.00  1.693   .401   .410   1.54   .304  -.133   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            438     18     16    .281   2.96  10.00  1.768   .410   .532   3.11   .464   .046
+
+ DATA CHECKS (rwl.check): bra049
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra049.rwl
+ 14 series, 438 measurements, 1971-2011, 0.1 mm precision
+ 0 error(s), 1 warning(s), 15 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file bra049.rwl, MD5 c80a1281d9e102d87fa1dbf732084d5c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5155 for 20-year segments.
+ Segments: 20 years, lagged 10, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 20 years: the record is only 41 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

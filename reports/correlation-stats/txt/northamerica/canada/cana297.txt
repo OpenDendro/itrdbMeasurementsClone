@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: cana297
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana297.rwl
+      MD5 of measurement file: 3842a9b4f216118d4e79e752e29a7bdf
+      Date checked           : 01OCT26
+      Beginning year         : 1816
+      Ending year            : 2008
+      Principal investigators: Bunn, A.G.; Lloyd, A.H.; Berner, L.T.
+      Site name              : Falls
+      Species information    : PIBA Pinus balfouriana Balf.
+      Latitude               : 61.2000 N
+      Longitude              : 120.0000 W
+      Elevation              : 270 m
+
+      Series intercorrelation: 0.627
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 0.434
+      Avg autocorrelation    : 0.885
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 6.52
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana297
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 FAL001A  1893 2008  .59  .57  .62 
+   2 FAL001B  1900 2008       .46  .43 
+   3 FAL004A  1897 2008  .56  .75  .60 
+   4 FAL004B  1897 2008  .74  .66  .66 
+   5 FAL005A  1907 2008       .71  .59 
+   6 FAL005B  1915 2008       .66  .58 
+   7 FAL006A  1910 2008       .80  .68 
+   8 FAL006B  1905 2008       .51  .31A
+   9 FAL014A  1933 2008            .72 
+  10 FAL014B  1932 2008            .73 
+  11 FAL016A  1890 2008  .74  .67  .57 
+  12 FAL016B  1890 2008  .66  .31A .36B
+  13 FAL019A  1893 2008  .81  .78  .68 
+  14 FAL019B  1893 2008  .74  .75  .70 
+  15 FAL021A  1817 2008  .49  .46  .58 
+  16 FAL021B  1816 2008  .52  .55  .61 
+  17 FAL022A  1940 2008            .66 
+  18 FAL022B  1940 2008            .69 
+  19 FAL024A  1894 2008  .66  .46  .51 
+  20 FAL024B  1900 2008       .73  .60 
+ Av segment correlation  .65  .62  .59 
+
+ FLAGGED SEGMENTS: cana297
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 FAL006B  1950 1999     A     .312         0
+  12 FAL016B  1925 1974     A     .315         0
+  12 FAL016B  1950 1999     B     .358       -10      .375   .017
+
+ DESCRIPTIVE STATISTICS: cana297
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FAL001A  1893 2008    116      3      0    .579    .90   2.93   .691   .879   .217   1.75   .229   .006   2
+   2 FAL001B  1900 2008    109      2      0    .489    .88   3.18   .684   .880   .215   1.89   .232  -.002   3
+   3 FAL004A  1897 2008    112      3      0    .568    .73   1.99   .507   .929   .199   1.46   .196  -.003   1
+   4 FAL004B  1897 2008    112      3      0    .687    .77   2.37   .460   .906   .200   1.56   .198   .067   1
+   5 FAL005A  1907 2008    102      2      0    .683    .82   2.58   .613   .909   .205   1.55   .204   .060   1
+   6 FAL005B  1915 2008     94      2      0    .610    .77   2.50   .530   .848   .203   1.48   .193  -.011   2
+   7 FAL006A  1910 2008     99      2      0    .748    .80   2.50   .440   .844   .198   1.51   .200   .003   2
+   8 FAL006B  1905 2008    104      2      1    .496    .99   2.62   .525   .814   .265   1.79   .267   .022   2
+   9 FAL014A  1933 2008     76      1      0    .707    .69   1.80   .286   .713   .258   1.64   .241  -.011   3
+  10 FAL014B  1932 2008     77      1      0    .731    .66   2.10   .406   .900   .215   1.50   .212  -.012   3
+  11 FAL016A  1890 2008    119      3      0    .631    .52   1.93   .329   .922   .180   1.59   .190  -.017   3
+  12 FAL016B  1890 2008    119      3      2    .522    .51   1.51   .340   .927   .171   1.65   .185   .059   1
+  13 FAL019A  1893 2008    116      3      0    .746    .52   1.82   .356   .906   .229   1.70   .254   .077   1
+  14 FAL019B  1893 2008    116      3      0    .700    .53   1.72   .361   .915   .234   1.53   .238   .014   2
+  15 FAL021A  1817 2008    192      3      0    .582    .39   2.75   .518   .959   .253   1.77   .251   .000   2
+  16 FAL021B  1816 2008    193      3      0    .617    .39   2.78   .491   .964   .243   1.75   .224  -.024   2
+  17 FAL022A  1940 2008     69      1      0    .628    .19    .41   .084   .690   .281   1.77   .293   .051   1
+  18 FAL022B  1940 2008     69      1      0    .635    .15    .30   .065   .770   .268   1.45   .247   .007   2
+  19 FAL024A  1894 2008    115      3      0    .604    .61   1.67   .334   .886   .199   1.50   .204   .004   2
+  20 FAL024B  1900 2008    109      2      0    .690    .58   1.27   .274   .841   .223   1.74   .221   .028   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2218     46      3    .627    .61   3.18   .434   .885   .222   1.89   .223   .014
+
+ DATA CHECKS (rwl.check): cana297
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana297.rwl
+ 20 series, 2218 measurements, 1816-2008, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file cana297.rwl, MD5 3842a9b4f216118d4e79e752e29a7bdf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

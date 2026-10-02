@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: spai018
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai018.rwl
+      MD5 of measurement file: e88163c293ffecb63907acd54e7b8278
+      Date checked           : 01OCT26
+      Beginning year         : 1687
+      Ending year            : 1989
+      Principal investigators: Génova Fuster, M.
+      Site name              : Andrinal
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 40.4300 N
+      Longitude              : 4.9300 W
+      Elevation              : 1500 m
+
+      Series intercorrelation: 0.567
+      Avg mean sensitivity   : 0.299
+      Avg standard deviation : 0.720
+      Avg autocorrelation    : 0.787
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 3.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai018
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 GR402NPN 1820 1989                           .49  .53  .66  .71  .72 
+   2 GR402SPN 1846 1989                                .68  .73  .69  .68 
+   3 GR403NPN 1687 1989  .52  .40  .50  .40  .58  .57  .56  .58  .57  .53 
+   4 GR403SPN 1690 1989  .63  .58  .59  .51  .75  .73  .68  .60  .55  .41 
+   5 GR404NPN 1762 1989                 .71  .64  .47  .59  .67  .64  .70 
+   6 GR404SPN 1792 1989                      .53  .44B .58  .69  .63  .69 
+   7 GR406NPN 1718 1989       .41  .57  .61  .54  .38  .51  .46  .40  .33 
+   8 GR406SPN 1751 1989                 .54  .37  .34  .56  .42  .34  .54 
+   9 GR407NPN 1787 1989                      .55  .59  .64  .56  .56  .57 
+  10 GR407SPN 1718 1989       .55  .66  .53  .53  .59  .77  .56  .47  .59 
+  11 GR409EPN 1824 1989                                .30A .35  .52  .61 
+  12 GR409OPN 1828 1989                                .31A .36  .56  .68 
+ Av segment correlation  .58  .48  .58  .55  .56  .51  .56  .55  .55  .59 
+
+ FLAGGED SEGMENTS: spai018
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 GR404SPN 1825 1874     B     .443        -1      .474   .032
+  11 GR409EPN 1850 1899     A     .300         0
+  12 GR409OPN 1850 1899     A     .311         0
+
+ DESCRIPTIVE STATISTICS: spai018
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GR402NPN 1820 1989    170      5      0    .633   1.64   6.41  1.074   .821   .311   2.02   .290  -.019   2
+   2 GR402SPN 1846 1989    144      4      0    .706   2.17   8.11  1.303   .747   .322   2.22   .329   .050   1
+   3 GR403NPN 1687 1989    303     10      0    .531    .83   3.85   .567   .826   .293   1.77   .291   .034   1
+   4 GR403SPN 1690 1989    300     10      0    .593    .82   4.38   .651   .794   .362   2.15   .356   .023   1
+   5 GR404NPN 1762 1989    228      7      0    .652   1.26   4.76  1.008   .874   .291   2.02   .303  -.005   3
+   6 GR404SPN 1792 1989    198      6      1    .596    .99   5.15   .766   .816   .308   1.93   .319  -.001   3
+   7 GR406NPN 1718 1989    272      9      0    .465   1.04   5.46   .656   .832   .214   1.63   .213   .010   2
+   8 GR406SPN 1751 1989    239      7      0    .490    .90   3.23   .438   .735   .258   1.91   .267   .028   1
+   9 GR407NPN 1787 1989    203      6      0    .597    .71   2.36   .351   .726   .299   1.88   .284  -.013   2
+  10 GR407SPN 1718 1989    272      9      0    .575   1.26   3.70   .642   .761   .271   2.32   .264   .008   3
+  11 GR409EPN 1824 1989    166      4      1    .511   1.29   4.30   .843   .692   .372   2.01   .368   .002   2
+  12 GR409OPN 1828 1989    162      4      1    .522   1.25   4.47   .772   .756   .332   1.93   .322  -.005   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2657     81      3    .567   1.12   8.11   .720   .787   .299   2.32   .297   .011
+
+ DATA CHECKS (rwl.check): spai018
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai018.rwl
+ 12 series, 2657 measurements, 1687-1989, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1689-1989 but the measurements cover 1687-1989
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file spai018.rwl, MD5 e88163c293ffecb63907acd54e7b8278.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

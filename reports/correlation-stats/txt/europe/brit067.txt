@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: brit067
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit067.rwl
+      MD5 of measurement file: 4421ae56ca80a06ddbb205ff35286116
+      Date checked           : 01OCT26
+      Beginning year         : 1797
+      Ending year            : 2009
+      Principal investigators: Cooper, R.J.; Melvin, T.M.; Osborn, T.J.
+      Site name              : Foxley Wood
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 52.7500 N
+      Longitude              : 1.0400 E
+      Elevation              : 39 m
+
+      Series intercorrelation: 0.566
+      Avg mean sensitivity   : 0.243
+      Avg standard deviation : 1.123
+      Avg autocorrelation    : 0.693
+      Number dated series    : 29
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 2.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit067
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 Fox01    1931 2009                                .65 
+   2 Fox02    1926 2009                                .60 
+   4 Fox04    1926 2009                                .55 
+   5 Fox05    1917 2009                           .63  .53 
+   6 Fox06    1828 2009            .69  .71  .69  .70  .78 
+   7 Fox07    1842 2009            .46  .61  .75  .58  .47 
+   8 Fox08    1821 2009       .44  .29B .36  .65  .80  .85 
+   9 Fox09    1797 2009       .63  .50  .45  .53  .59  .52 
+  10 Fox10    1912 2009                           .66  .75 
+  11 Fox12    1931 2009                                .42 
+  12 Fox13    1825 2009            .70  .57  .56  .54  .54 
+  13 Fox14    1939 2009                                .48 
+  14 Fox15    1928 2009                                .55 
+  16 Fox17    1903 2009                           .70  .64 
+  17 Fox18    1919 2009                           .71  .72 
+  18 Fox19    1871 2009                 .33A .45  .49  .49 
+  19 Fox20    1854 2009                 .65  .42  .40  .47 
+  20 Fox21    1875 2009                      .42  .48  .62 
+  21 Fox22    1866 2009                 .63  .38  .46  .59 
+  22 Fox23    1842 2009            .64  .61  .64  .60  .39 
+  23 Fox24    1876 2009                      .52  .60  .73 
+  24 Fox25    1827 2009            .58  .73  .66  .56  .51 
+  25 Fox26    1860 2009                 .71  .71  .59  .55 
+  26 Fox27    1859 2009                 .56  .57  .59  .57 
+  27 Fox28    1930 2009                                .47 
+  28 Fox29    1862 2009                 .56  .57  .55  .59 
+  29 Fox30    1933 2009                                .66 
+ Av segment correlation       .53  .55  .57  .57  .59  .58 
+
+ FLAGGED SEGMENTS: brit067
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 Fox08    1850 1899     B     .294        -2      .374   .080
+  18 Fox19    1875 1924     A     .326         0
+
+ DESCRIPTIVE STATISTICS: brit067
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Fox01    1931 2009     79      1      0    .534   3.45   5.76  1.019   .561   .212   1.77   .222   .054   1
+   2 Fox02    1926 2009     84      1      0    .670   3.26   7.46  1.468   .649   .291   1.79   .297  -.070   3
+   3 Fox03    1961 2009     49      0      0    .649   6.90  11.23  1.869   .549   .204   1.39   .188  -.052   3
+   4 Fox04    1926 2009     84      1      0    .550   2.90   6.11  1.364   .781   .254   1.59   .255  -.048   3
+   5 Fox05    1917 2009     93      2      0    .525   2.92   5.33   .732   .197   .236   1.99   .229  -.008   0
+   6 Fox06    1828 2009    182      5      0    .662   1.82   4.75   .867   .593   .310   1.97   .315   .017   1
+   7 Fox07    1842 2009    168      5      0    .542   1.94   5.12   .829   .674   .243   1.96   .252   .024   1
+   8 Fox08    1821 2009    189      6      1    .550   1.64   4.50   .954   .801   .254   2.04   .268  -.018   3
+   9 Fox09    1797 2009    213      6      0    .554   1.51   5.13   .859   .779   .266   1.83   .273  -.030   1
+  10 Fox10    1912 2009     98      2      0    .686   3.44   7.47  1.652   .646   .302   1.74   .296  -.001   1
+  11 Fox12    1931 2009     79      1      0    .413   3.69   7.46  1.259   .607   .212   1.60   .210   .001   1
+  12 Fox13    1825 2009    185      5      0    .587   1.91   7.55  1.218   .724   .300   2.89   .336   .008   2
+  13 Fox14    1939 2009     71      1      0    .524   3.36   9.48  1.606   .835   .190   1.56   .187  -.019   1
+  14 Fox15    1928 2009     82      1      0    .469   3.19   7.41  1.319   .817   .178   1.71   .192   .017   1
+  15 Fox16    1955 2009     55      0      0    .607   5.08  10.16  1.670   .580   .238   1.50   .224   .039   2
+  16 Fox17    1903 2009    107      2      0    .651   3.26   7.23  1.409   .761   .258   1.74   .252   .055   1
+  17 Fox18    1919 2009     91      2      0    .683   3.11   5.92  1.100   .688   .217   1.70   .229   .009   1
+  18 Fox19    1871 2009    139      4      1    .422   1.90   5.32  1.071   .827   .245   1.82   .251   .021   1
+  19 Fox20    1854 2009    156      4      0    .462   2.42   7.95  1.838   .897   .227   1.71   .213   .015   1
+  20 Fox21    1875 2009    135      3      0    .505   2.75   7.60  1.472   .864   .226   1.81   .239   .005   3
+  21 Fox22    1866 2009    144      4      0    .505   2.40   5.19  1.034   .712   .233   1.90   .262   .008   1
+  22 Fox23    1842 2009    168      5      0    .557   2.13   8.55  1.186   .838   .195   1.69   .205   .037   1
+  23 Fox24    1876 2009    134      3      0    .641   2.47   4.75   .790   .517   .259   1.60   .238  -.005   1
+  24 Fox25    1827 2009    183      5      0    .590   2.09   4.52   .846   .681   .235   1.88   .241  -.004   1
+  25 Fox26    1860 2009    150      4      0    .592   2.71   5.76  1.040   .612   .232   1.85   .249  -.050   3
+  26 Fox27    1859 2009    151      4      0    .594   2.13   4.27   .691   .642   .219   1.89   .233  -.021   1
+  27 Fox28    1930 2009     80      1      0    .526   3.66   7.73  1.387   .695   .211   1.50   .215   .025   2
+  28 Fox29    1862 2009    148      4      0    .574   1.96   5.08   .718   .629   .238   1.55   .218  -.033   3
+  29 Fox30    1933 2009     77      1      0    .644   4.55   8.62  1.321   .451   .236   1.55   .230  -.027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3574     83      2    .566   2.57  11.23  1.123   .693   .243   2.89   .249  -.001
+
+ DATA CHECKS (rwl.check): brit067
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit067.rwl
+ 29 series, 3574 measurements, 1797-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit067.rwl, MD5 4421ae56ca80a06ddbb205ff35286116.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

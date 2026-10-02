@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: me020
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : me020.rwl
+      MD5 of measurement file: 7f31567f69729b1e0b68ed447409d214
+      Date checked           : 01OCT26
+      Beginning year         : 1686
+      Ending year            : 1981
+      Principal investigators: Cook, E.R.
+      Site name              : Number Three Pond
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 45.3200 N
+      Longitude              : 68.2500 W
+      Elevation              : 100 m
+
+      Series intercorrelation: 0.582
+      Avg mean sensitivity   : 0.248
+      Avg standard deviation : 0.348
+      Avg autocorrelation    : 0.847
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 2, B 8; 2 of the B weak at every lag)
+      Pct problem segments   : 6.37
+
+
+ CORRELATION OF SERIES BY SEGMENTS: me020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 063041   1730 1981            .74  .77  .74  .54  .27B .44  .50  .52 
+   2 063071   1709 1981       .56  .54  .67  .56  .32B .17B .17B .12B .30A
+   3 063072   1739 1981            .56  .63  .80  .66  .46  .65  .68  .68 
+   4 063081   1695 1981  .73  .59  .63  .79  .72  .66  .66  .66  .70  .79 
+   5 063082   1691 1981  .38  .40  .60  .78  .75  .53  .47  .72  .78  .71 
+   6 063091   1690 1981  .69  .50  .51  .60  .71  .67  .51  .69  .75  .71 
+   7 063092   1710 1981       .69  .72  .68  .75  .74  .51  .73  .67  .55 
+   8 063101   1692 1981  .61  .60  .56  .50  .57  .66  .56  .46  .43  .42 
+   9 063102   1690 1981  .65  .72  .66  .61  .71  .77  .40  .53  .73  .68 
+  10 063111   1732 1981            .77  .67  .68  .67  .29A .51  .73  .78 
+  11 063112   1741 1981            .60  .52  .61  .49  .36  .62  .68  .77 
+  12 063121   1705 1981       .53  .68  .71  .68  .57  .27B .38  .53  .61 
+  13 063131   1689 1981  .57  .59  .59  .74  .74  .57  .44  .63  .68  .71 
+  14 063132   1686 1805  .61  .62  .62                                    
+  15 063141   1704 1981       .70  .59  .60  .75  .65  .39  .43  .52  .65 
+  16 063171   1770 1981                 .55  .59  .36  .33  .50  .40  .37 
+  17 063172   1788 1981                      .53  .49  .50  .67  .49  .42 
+  18 063181   1688 1800  .78  .77  .58                                    
+  19 063201   1695 1981  .73  .59  .14B .31B .65  .58  .49  .60  .52  .54 
+ Av segment correlation  .64  .60  .59  .63  .68  .58  .42  .55  .58  .60 
+
+ FLAGGED SEGMENTS: me020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 063041   1850 1899     B     .274        -2      .280   .007  weak at every lag
+   2 063071   1825 1874     B     .318        -2      .366   .048
+   2 063071   1850 1899     B     .167        -2      .605   .438
+   2 063071   1875 1924     B     .169        -2      .540   .371
+   2 063071   1900 1949     B     .123        -2      .454   .331
+   2 063071   1925 1974     A     .300         0
+  10 063111   1850 1899     A     .287         0
+  12 063121   1850 1899     B     .265         6      .270   .005  weak at every lag
+  19 063201   1750 1799     B     .136         9      .356   .220
+  19 063201   1775 1824     B     .314         1      .339   .026
+
+ DESCRIPTIVE STATISTICS: me020
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 063041   1730 1981    252      8      1    .577    .48   1.06   .194   .788   .237   1.88   .237  -.005   2
+   2 063071   1709 1981    273      9      5    .398    .53   2.24   .288   .836   .259   1.73   .246  -.021   3
+   3 063072   1739 1981    243      8      0    .609    .88   2.40   .353   .685   .237   1.67   .244   .004   3
+   4 063081   1695 1981    287     10      0    .696    .60   2.06   .376   .852   .256   1.79   .259   .036   1
+   5 063082   1691 1981    291     10      0    .572    .73   1.96   .387   .816   .249   1.91   .245   .003   3
+   6 063091   1690 1981    292     10      0    .608    .62   2.41   .381   .863   .259   2.50   .313  -.004   2
+   7 063092   1710 1981    272      9      0    .680    .70   1.82   .321   .847   .228   1.69   .229  -.017   3
+   8 063101   1692 1981    290     10      0    .544    .44   2.28   .319   .880   .312   2.06   .295  -.001   3
+   9 063102   1690 1981    292     10      0    .644    .53   1.79   .356   .906   .259   2.16   .270  -.015   3
+  10 063111   1732 1981    250      8      1    .650    .67   1.61   .295   .825   .221   1.70   .225  -.015   3
+  11 063112   1741 1981    241      8      0    .569    .52   1.22   .239   .787   .266   2.11   .262   .051   1
+  12 063121   1705 1981    277      9      1    .569    .69   2.43   .387   .871   .203   1.82   .206  -.008   3
+  13 063131   1689 1981    293     10      0    .615    .55   2.86   .454   .914   .236   1.75   .251   .014   1
+  14 063132   1686 1805    120      3      0    .558    .36   1.44   .255   .905   .281   1.81   .265  -.021   3
+  15 063141   1704 1981    278      9      0    .600    .55   1.55   .255   .771   .249   1.84   .243   .014   1
+  16 063171   1770 1981    212      7      0    .458    .71   1.93   .408   .905   .204   1.54   .211  -.000   3
+  17 063172   1788 1981    194      6      0    .518    .98   3.25   .625   .938   .199   1.53   .203   .023   2
+  18 063181   1688 1800    113      3      0    .687    .29    .88   .169   .781   .259   2.61   .316  -.016   1
+  19 063201   1695 1981    287     10      2    .513    .55   2.46   .446   .913   .285   1.99   .282   .019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4757    157     10    .582    .61   3.25   .348   .847   .248   2.61   .252   .003
+
+ DATA CHECKS (rwl.check): me020
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/me020.rwl
+ 19 series, 4757 measurements, 1686-1981, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file me020.rwl, MD5 7f31567f69729b1e0b68ed447409d214.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

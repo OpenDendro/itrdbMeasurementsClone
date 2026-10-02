@@ -1,0 +1,150 @@
+
+ COFECHA-style crossdating report: cze039
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze039.rwl
+      MD5 of measurement file: 542368b3db4cdbd0643cf1acf5668b1c
+      Date checked           : 01OCT26
+      Beginning year         : 1852
+      Ending year            : 2020
+      Principal investigators: Mašek, J.; Hofman, M.; Fišer, P.
+      Site name              : 04PL Kokořínsko
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.5692 N
+      Longitude              : 14.4404 E
+      Elevation              : 384 m
+
+      Series intercorrelation: 0.560
+      Avg mean sensitivity   : 0.256
+      Avg standard deviation : 0.504
+      Avg autocorrelation    : 0.728
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 0, B 7; 1 of the B weak at every lag)
+      Pct problem segments   : 10.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   2 04PL25   1887 2019  .64  .71  .71 
+   3 04PL14   1856 2019  .66  .51  .52 
+   4 04PL17   1899 2018       .63  .38B
+   5 04PL05   1879 2018  .69  .77  .28B
+   6 04PL16   1907 2019       .57  .72 
+   7 04PL06   1852 2019  .67  .60  .62 
+   8 04PL07   1859 2018  .46  .69  .66 
+  10 04PL04   1884 2019 -.12B .04B .19B
+  11 04PL26   1871 2019  .76  .67  .71 
+  12 04PL09   1880 2020  .53  .56  .66 
+  13 04PL15   1875 2019  .71  .65  .68 
+  14 04PL10   1885 2019  .73  .76  .73 
+  15 04PL11   1864 2019  .79  .83  .82 
+  16 04PL13   1893 2015  .69  .72  .14B
+  17 04PL18   1888 2019  .60  .46  .62 
+  18 04PL19   1856 2019  .57  .45  .71 
+  19 04PL21   1906 2016       .48  .24B
+  20 04PL01   1879 2019  .54  .74  .64 
+  21 04PL02   1877 2019  .79  .78  .79 
+  22 04PL12   1864 2019  .55  .49  .58 
+  24 04PL24   1917 2019       .57  .42 
+  25 04PL08   1873 2019  .67  .75  .67 
+  26 04PL03   1880 2019  .63  .54  .60 
+ Av segment correlation  .61  .61  .57 
+
+ FLAGGED SEGMENTS: cze039
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 04PL17   1950 1999     B     .380         1      .552   .172
+   5 04PL05   1950 1999     B     .276         1      .624   .348
+  10 04PL04   1900 1949     B    -.122        -1      .653   .775
+  10 04PL04   1925 1974     B     .040        -1      .717   .677
+  10 04PL04   1950 1999     B     .195        -1      .472   .277
+  16 04PL13   1950 1999     B     .141         1      .634   .494
+  19 04PL21   1950 1999     B     .245        -9      .292   .047  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cze039
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 04PL23   1980 2019     40      0      0    .568   1.54   2.90   .615   .593   .315   1.64   .306  -.056   1
+   2 04PL25   1887 2019    133      3      0    .650    .59   1.44   .217   .589   .248   2.39   .271   .005   1
+   3 04PL14   1856 2019    164      3      0    .481    .82   2.24   .437   .691   .284   2.05   .296  -.029   3
+   4 04PL17   1899 2018    120      2      1    .422   1.02   2.40   .455   .656   .291   2.32   .327  -.006   3
+   5 04PL05   1879 2018    140      3      1    .501   1.16   3.53   .549   .762   .238   2.03   .265  -.002   3
+   6 04PL16   1907 2019    113      2      0    .664   1.14   2.72   .625   .817   .241   1.81   .257   .001   3
+   7 04PL06   1852 2019    168      3      0    .615    .78   2.16   .463   .771   .283   2.82   .315   .031   1
+   8 04PL07   1859 2018    160      3      0    .501    .68   2.77   .394   .829   .268   2.14   .271   .001   1
+   9 04PL20   1980 2019     40      0      0    .579   1.94   4.02   .720   .360   .347   1.91   .311  -.015   1
+  10 04PL04   1884 2019    136      3      3    .089    .87   2.38   .503   .830   .279   1.92   .300  -.025   3
+  11 04PL26   1871 2019    149      3      0    .707   1.29   3.28   .569   .716   .242   1.94   .258   .015   2
+  12 04PL09   1880 2020    141      3      0    .532    .87   2.42   .435   .780   .253   1.89   .255  -.048   3
+  13 04PL15   1875 2019    145      3      0    .688   1.04   2.46   .396   .732   .212   1.57   .222   .035   1
+  14 04PL10   1885 2019    135      3      0    .708   1.03   4.43   .654   .841   .253   2.07   .276   .050   1
+  15 04PL11   1864 2019    156      3      0    .718    .99   1.93   .317   .586   .216   1.83   .235  -.011   3
+  16 04PL13   1893 2015    123      3      1    .397   1.03   2.47   .403   .527   .271   2.06   .299   .023   2
+  17 04PL18   1888 2019    132      3      0    .585   1.16   2.70   .582   .753   .272   2.09   .293  -.030   3
+  18 04PL19   1856 2019    164      3      0    .656    .79   2.34   .379   .657   .276   2.06   .299   .018   2
+  19 04PL21   1906 2016    111      2      1    .309    .95   2.06   .433   .625   .303   2.08   .340   .058   1
+  20 04PL01   1879 2019    141      3      0    .619    .93   2.08   .387   .611   .276   1.85   .285  -.014   3
+  21 04PL02   1877 2019    143      3      0    .755   1.11   2.60   .430   .659   .232   1.93   .258  -.036   3
+  22 04PL12   1864 2019    156      3      0    .563    .83   4.56   .844   .954   .221   2.04   .231   .012   1
+  23 04PL22   1982 2018     37      0      0    .020   2.65   4.51   .800   .474   .242   1.49   .248   .057   1
+  24 04PL24   1917 2019    103      2      0    .479    .94   2.46   .506   .803   .268   1.62   .259   .029   1
+  25 04PL08   1873 2019    147      3      0    .631   1.14   6.27   .972   .918   .202   1.75   .225   .018   1
+  26 04PL03   1880 2019    140      3      0    .598    .86   2.61   .476   .817   .237   2.18   .272   .003   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3337     65      7    .560    .99   6.27   .504   .728   .256   2.82   .274   .003
+
+ DATA CHECKS (rwl.check): cze039
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze039.rwl
+ 26 series, 3337 measurements, 1852-2020, 0.01 mm precision
+ 1 error(s), 1 warning(s), 4 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     04PL04: correlates best with the master at lag -1 (r = 0.577 against r = 0.287 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     12 byte(s) outside printable ASCII
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cze039.rwl, MD5 542368b3db4cdbd0643cf1acf5668b1c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

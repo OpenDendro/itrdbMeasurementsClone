@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: che508
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che508.rwl
+      MD5 of measurement file: 1b025382cd9fc54647ceb273be0ca6b6
+      Date checked           : 01OCT26
+      Beginning year         : 1884
+      Ending year            : 2011
+      Principal investigators: Zumbrunn, C.; Rigling, A.
+      Site name              : Domat-Ems mitte
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.8049 N
+      Longitude              : 9.4354 E
+      Elevation              : 1230 m
+
+      Series intercorrelation: 0.511
+      Avg mean sensitivity   : 0.166
+      Avg standard deviation : 1.168
+      Avg autocorrelation    : 0.856
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 17.86
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che508
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 DMS01A   1941 2011            .45 
+   2 DMS02A   1926 2011            .54 
+   3 DMS04A   1907 2011       .56  .54 
+   4 DMS05A   1884 2011  .07B .04B .07B
+   5 DMS09A   1923 2011       .50  .65 
+   6 DMS10A   1919 2011       .57  .56 
+   7 DMS11A   1927 2011            .69 
+   8 DMS12A   1920 2011       .60  .44 
+   9 DMS14A   1920 2011       .71  .75 
+  10 DMS20A   1919 2011       .47  .53 
+  11 DMS23A   1911 2011       .31B .55 
+  12 DMS24A   1917 2011       .47  .47 
+  13 DMS25A   1928 2011            .75 
+  14 DMS26A   1894 2011  .31A .43  .64 
+  15 DMS27A   1907 2011       .42  .55 
+ Av segment correlation  .19  .46  .54 
+
+ FLAGGED SEGMENTS: che508
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 DMS05A   1900 1949     B     .075        -3      .262   .187  weak at every lag
+   4 DMS05A   1925 1974     B     .037        -3      .609   .572
+   4 DMS05A   1950 1999     B     .069        -7      .209   .140  weak at every lag
+  11 DMS23A   1925 1974     B     .310         3      .321   .011  weak at every lag
+  14 DMS26A   1900 1949     A     .311         0
+
+ DESCRIPTIVE STATISTICS: che508
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DMS01A   1941 2011     71      1      0    .508   4.01   6.98  1.083   .747   .144   1.46   .166   .085   1
+   2 DMS02A   1926 2011     86      1      0    .519   2.73   6.56  1.458   .929   .157   1.40   .151  -.146   2
+   3 DMS04A   1907 2011    105      2      0    .532   2.87   4.90   .779   .784   .142   1.39   .149  -.034   3
+   4 DMS05A   1884 2011    128      3      3    .068   1.76   3.83  1.073   .949   .193   1.68   .190   .033   3
+   5 DMS09A   1923 2011     89      2      0    .621   3.04   5.73  1.238   .884   .164   1.53   .163   .013   1
+   6 DMS10A   1919 2011     93      2      0    .564   2.99   8.13  1.618   .850   .218   1.78   .218  -.087   3
+   7 DMS11A   1927 2011     85      1      0    .769   2.54   4.53   .880   .835   .156   1.75   .177   .023   2
+   8 DMS12A   1920 2011     92      2      0    .494   3.16   7.05  1.222   .791   .214   1.59   .216  -.016   1
+   9 DMS14A   1920 2011     92      2      0    .616   2.59   4.19   .763   .752   .182   1.41   .182   .000   1
+  10 DMS20A   1919 2011     93      2      0    .566   2.86   9.34  1.513   .891   .163   1.56   .178   .006   2
+  11 DMS23A   1911 2011    101      2      1    .483   3.53   6.29  1.020   .814   .158   1.42   .159  -.014   1
+  12 DMS24A   1917 2011     95      2      0    .446   2.99   5.48  1.142   .866   .162   1.52   .182  -.021   3
+  13 DMS25A   1928 2011     84      1      0    .655   3.35   5.92   .881   .766   .150   1.37   .147   .054   1
+  14 DMS26A   1894 2011    118      3      1    .468   2.74   6.31  1.573   .960   .139   1.62   .163   .042   1
+  15 DMS27A   1907 2011    105      2      0    .577   2.51   5.49  1.207   .936   .151   1.41   .153   .000   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1437     28      5    .511   2.86   9.34  1.168   .856   .166   1.78   .173  -.004
+
+ DATA CHECKS (rwl.check): che508
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che508.rwl
+ 15 series, 1437 measurements, 1884-2011, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     DMS05A: correlates with the rest of the collection at r = -0.001 where the collection median is 0.58 (4.7 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che508.rwl, MD5 1b025382cd9fc54647ceb273be0ca6b6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: wi047
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi047.rwl
+      MD5 of measurement file: 103a02f28f6508aaab62b47ed787947d
+      Date checked           : 01OCT26
+      Beginning year         : 1909
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Pavick
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 43.5160 N
+      Longitude              : 90.4350 W
+      Elevation              : 343 m
+
+      Series intercorrelation: 0.606
+      Avg mean sensitivity   : 0.255
+      Avg standard deviation : 1.032
+      Avg autocorrelation    : 0.738
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi047
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 PVK001A  1909 2014  .78 
+   2 PVK001B  1926 2014  .69 
+   3 PVK002A  1944 2014  .55 
+   4 PVK002B  1919 2014  .61 
+   5 PVK003A  1909 2014  .68 
+   6 PVK004A  1914 2014  .69 
+ Av segment correlation  .67 
+
+ FLAGGED SEGMENTS: wi047
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: wi047
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PVK001A  1909 2014    106      1      0    .512   2.17   5.82  1.346   .853   .240   1.57   .239   .050   1
+   2 PVK001B  1926 2014     89      1      0    .651   2.29   5.49  1.166   .735   .280   1.85   .293   .031   1
+   3 PVK002A  1944 2014     71      1      0    .657   3.00   5.27  1.105   .711   .248   1.39   .226  -.017   2
+   4 PVK002B  1919 2014     96      1      0    .565   2.05   4.94  1.074   .756   .255   1.80   .277  -.041   1
+   5 PVK003A  1909 2014    106      1      0    .624   1.56   4.82   .741   .696   .271   1.84   .249   .103   0
+   6 PVK004A  1914 2014    101      1      0    .649   1.88   6.38   .799   .665   .235   1.57   .224   .024   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            569      6      0    .606   2.11   6.38  1.032   .738   .255   1.85   .251   .028
+
+ DATA CHECKS (rwl.check): wi047
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi047.rwl
+ 6 series, 569 measurements, 1909-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wi047.rwl, MD5 103a02f28f6508aaab62b47ed787947d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

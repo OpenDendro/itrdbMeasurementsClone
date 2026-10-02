@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: fran037
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fran037.rwl
+      MD5 of measurement file: 60674c37db1da2e912f8819bd080f85b
+      Date checked           : 01OCT26
+      Beginning year         : 1754
+      Ending year            : 2000
+      Principal investigators: Meijer, F.; Wils, T.H.G.
+      Site name              : Lac Sainte Anne
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 44.6300 N
+      Longitude              : 6.8000 E
+      Elevation              : 2300 m
+
+      Series intercorrelation: 0.452
+      Avg mean sensitivity   : 0.259
+      Avg standard deviation : 0.447
+      Avg autocorrelation    : 0.682
+      Number dated series    : 5
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 23.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fran037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 LSA01A   1841 2000            .61  .64  .71  .76  .72 
+   2 LSA01B   1830 2000            .79  .72  .74  .68  .67 
+   3 LSA01C   1776 2000  .48  .59  .58  .54  .74  .63  .59 
+   4 LSA04A   1818 2000       .15B .17B-.06B-.16B-.17B-.20B
+   5 LSA04B   1754 2000  .32A .52  .54  .46  .51  .45  .43 
+ Av segment correlation  .40  .42  .54  .46  .51  .47  .44 
+
+ FLAGGED SEGMENTS: fran037
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 LSA04A   1825 1874     B     .153        -4      .678   .525
+   4 LSA04A   1850 1899     B     .171        -4      .608   .437
+   4 LSA04A   1875 1924     B    -.059        -4      .366   .425
+   4 LSA04A   1900 1949     B    -.159        -2      .336   .496
+   4 LSA04A   1925 1974     B    -.169        -1      .275   .444  weak at every lag
+   4 LSA04A   1950 1999     B    -.200        -1      .577   .777
+   5 LSA04B   1800 1849     A     .324         0
+
+ DESCRIPTIVE STATISTICS: fran037
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LSA01A   1841 2000    160      5      0    .655   1.34   3.35   .521   .715   .241   1.68   .246  -.015   1
+   2 LSA01B   1830 2000    171      5      0    .736   1.38   3.08   .503   .761   .188   1.98   .207   .004   2
+   3 LSA01C   1776 2000    225      7      0    .512   1.16   3.63   .522   .759   .252   1.92   .258   .004   3
+   4 LSA04A   1818 2000    183      6      6    .019    .91   3.46   .438   .697   .287   2.10   .272  -.003   1
+   5 LSA04B   1754 2000    247      7      1    .391    .81   2.05   .298   .526   .305   1.78   .269  -.007   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            986     30      7    .452   1.10   3.63   .447   .682   .259   2.10   .252  -.003
+
+ DATA CHECKS (rwl.check): fran037
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fran037.rwl
+ 5 series, 986 measurements, 1754-2000, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 107 carriage return(s) against 108 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file fran037.rwl, MD5 60674c37db1da2e912f8819bd080f85b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

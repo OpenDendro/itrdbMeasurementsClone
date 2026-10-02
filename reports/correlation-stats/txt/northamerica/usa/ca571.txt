@@ -1,0 +1,159 @@
+
+ COFECHA-style crossdating report: ca571
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca571.rwl
+      MD5 of measurement file: 9bc7db8e6cdb07ee53a269931586c6dc
+      Date checked           : 01OCT26
+      Beginning year         : 1880
+      Ending year            : 1990
+      Principal investigators: King, J.C.; Graumlich, L.J.
+      Site name              : Employees Cabin Sequoia National Park
+      Species information    : CADE Calocedrus decurrens (Torr.) Florin = Libocedrus decurrens Torr.
+      Latitude               : 36.5700 N
+      Longitude              : 118.7500 W
+      Elevation              : 2013 m
+
+      Series intercorrelation: 0.622
+      Avg mean sensitivity   : 0.213
+      Avg standard deviation : 0.481
+      Avg autocorrelation    : 0.727
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.43
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca571
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 EIC01A   1880 1990  .49  .61 
+   2 EIC01B   1880 1990  .49  .55 
+   3 EIC02A   1880 1990  .50  .62 
+   4 EIC02B   1880 1990  .44  .51 
+   5 EIC03A   1880 1990  .70  .74 
+   6 EIC03B   1880 1990  .56  .76 
+   7 EIC04A   1880 1990  .47  .73 
+   8 EIC04B   1880 1990  .56  .77 
+   9 EIC05A   1880 1990  .63  .64 
+  10 EIC05B   1880 1990  .60  .59 
+  11 EIC06A   1880 1990  .63  .54 
+  12 EIC06B   1880 1990  .62  .66 
+  13 EIC07B   1880 1990  .48  .46 
+  14 EIC09A   1880 1990  .69  .71 
+  15 EIC09B   1880 1990  .59  .66 
+  16 EIC10A   1880 1990  .56  .56 
+  17 EIC10B   1880 1990  .46  .53 
+  18 EIC11A   1880 1990  .68  .56 
+  19 EIC11B   1880 1990  .81  .74 
+  20 EIC12A   1880 1990  .77  .80 
+  21 EIC12B   1880 1990  .62  .64 
+  22 EIC13A   1880 1990  .67  .75 
+  23 EIC13B   1880 1987  .70  .67 
+  24 EIC14A   1880 1990  .70  .75 
+  25 EIC14B   1880 1990  .68  .71 
+  26 EIC15A   1880 1990  .51  .47 
+  27 EIC15B   1880 1990  .62  .58 
+  28 EIC16A   1880 1990  .73  .68 
+  29 EIC16B   1880 1990  .64  .61 
+  30 EIC17A   1880 1987  .53  .61 
+  31 EIC17B   1880 1990  .55  .63 
+  32 EIC18A   1880 1990  .21B .34 
+  33 EIC18B   1880 1990  .45  .55 
+  34 EIC20A   1880 1989  .50  .63 
+  35 EIC20B   1880 1990  .34  .39 
+ Av segment correlation  .58  .62 
+
+ FLAGGED SEGMENTS: ca571
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  32 EIC18A   1900 1949     B     .208        -5      .322   .114  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ca571
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EIC01A   1880 1990    111      2      0    .612   1.84   3.03   .456   .665   .168   1.41   .165   .052   1
+   2 EIC01B   1880 1990    111      2      0    .554   1.53   2.36   .266   .484   .135   1.38   .137   .033   1
+   3 EIC02A   1880 1990    111      2      0    .657   1.58   2.82   .447   .853   .130   1.32   .125  -.023   2
+   4 EIC02B   1880 1990    111      2      0    .619   1.92   3.38   .389   .450   .165   1.57   .163   .088   0
+   5 EIC03A   1880 1990    111      2      0    .714   2.21   4.68   .628   .759   .154   1.40   .150  -.009   1
+   6 EIC03B   1880 1990    111      2      0    .672   2.29   7.86  1.222   .897   .168   1.48   .161   .013   1
+   7 EIC04A   1880 1990    111      2      0    .615    .91   1.99   .511   .915   .182   1.42   .171   .030   1
+   8 EIC04B   1880 1990    111      2      0    .666    .98   2.53   .296   .654   .186   1.79   .185   .032   1
+   9 EIC05A   1880 1990    111      2      0    .599   2.22   4.46   .682   .790   .165   1.53   .169   .020   1
+  10 EIC05B   1880 1990    111      2      0    .581   2.29   4.58   .787   .825   .168   1.56   .177   .018   1
+  11 EIC06A   1880 1990    111      2      0    .545   1.32   2.56   .395   .675   .189   1.56   .198  -.014   1
+  12 EIC06B   1880 1990    111      2      0    .660   1.89   4.95   .690   .760   .160   1.59   .169   .036   1
+  13 EIC07B   1880 1990    111      2      0    .397    .47   1.13   .190   .639   .274   1.74   .257  -.017   1
+  14 EIC09A   1880 1990    111      2      0    .596    .92   2.22   .459   .845   .242   1.80   .249   .007   1
+  15 EIC09B   1880 1990    111      2      0    .689   1.07   4.22   .771   .883   .232   1.63   .237   .030   2
+  16 EIC10A   1880 1990    111      2      0    .588    .55   2.13   .362   .864   .250   1.59   .242  -.047   3
+  17 EIC10B   1880 1990    111      2      0    .532    .64   2.61   .436   .807   .263   2.19   .292  -.003   1
+  18 EIC11A   1880 1990    111      2      0    .663   1.28   2.59   .376   .607   .211   1.60   .209   .006   3
+  19 EIC11B   1880 1990    111      2      0    .771   1.45   2.78   .421   .569   .226   1.49   .220   .046   1
+  20 EIC12A   1880 1990    111      2      0    .762   1.34   2.87   .449   .752   .199   1.54   .201  -.010   1
+  21 EIC12B   1880 1990    111      2      0    .715    .58   1.34   .251   .792   .222   1.38   .215  -.012   1
+  22 EIC13A   1880 1990    111      2      0    .681    .49   1.52   .294   .813   .352   1.87   .330   .038   0
+  23 EIC13B   1880 1987    108      2      0    .622    .40    .99   .177   .618   .345   1.91   .316   .104   0
+  24 EIC14A   1880 1990    111      2      0    .747    .69   1.27   .262   .734   .234   1.88   .241   .005   1
+  25 EIC14B   1880 1990    111      2      0    .729   1.28   3.36   .666   .806   .263   1.75   .262   .028   1
+  26 EIC15A   1880 1990    111      2      0    .536   1.32   2.45   .418   .773   .176   1.74   .181   .040   1
+  27 EIC15B   1880 1990    111      2      0    .566   1.55   2.67   .488   .752   .189   1.75   .207   .002   1
+  28 EIC16A   1880 1990    111      2      0    .695    .67   1.35   .215   .597   .223   1.92   .237   .022   1
+  29 EIC16B   1880 1990    111      2      0    .595    .56    .95   .155   .416   .247   1.65   .245   .042   1
+  30 EIC17A   1880 1987    108      2      0    .599   1.77   4.48   .640   .621   .235   1.59   .225  -.034   3
+  31 EIC17B   1880 1990    111      2      0    .655   1.38   3.47   .545   .780   .216   1.54   .215  -.082   3
+  32 EIC18A   1880 1990    111      2      1    .446   1.27   3.28   .481   .735   .194   1.53   .206   .021   1
+  33 EIC18B   1880 1990    111      2      0    .611   1.59   4.00   .780   .784   .250   1.58   .249   .019   1
+  34 EIC20A   1880 1989    110      2      0    .643    .88   2.01   .396   .859   .181   1.66   .197   .030   2
+  35 EIC20B   1880 1990    111      2      0    .444   2.02   5.09   .835   .677   .258   2.26   .285   .049   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3878     70      1    .622   1.29   7.86   .481   .727   .213   2.26   .214   .016
+
+ DATA CHECKS (rwl.check): ca571
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca571.rwl
+ 35 series, 3878 measurements, 1880-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file ca571.rwl, MD5 9bc7db8e6cdb07ee53a269931586c6dc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

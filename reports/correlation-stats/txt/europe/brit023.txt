@@ -1,0 +1,99 @@
+
+ COFECHA-style crossdating report: brit023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit023.rwl
+      MD5 of measurement file: e45bb91a5a1df470c1ac7e45cd79205d
+      Date checked           : 01OCT26
+      Beginning year         : 1846
+      Ending year            : 1976
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Mar Lodge
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 56.9800 N
+      Longitude              : 3.5000 W
+      Elevation              : 400 m
+
+      Series intercorrelation: 0.557
+      Avg mean sensitivity   : 0.262
+      Avg standard deviation : 1.027
+      Avg autocorrelation    : 0.819
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 384011   1847 1976  .61  .48 
+   2 384012   1879 1976  .54  .45 
+   3 384021   1846 1976  .38  .40 
+   4 384022   1860 1976  .46  .41 
+   5 384051   1871 1975  .68  .76 
+   6 384052   1878 1975  .65  .76 
+ Av segment correlation  .55  .55 
+
+ FLAGGED SEGMENTS: brit023
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: brit023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 384011   1847 1976    130      2      0    .539   1.20   4.81   .885   .897   .281   1.83   .272   .006   3
+   2 384012   1879 1976     98      2      0    .519   2.15   5.22   .900   .770   .215   1.69   .238   .068   1
+   3 384021   1846 1976    131      2      0    .458   1.55   5.84  1.215   .902   .293   1.99   .272   .021   3
+   4 384022   1860 1976    117      2      0    .466   1.99   5.53   .832   .781   .223   1.55   .209  -.003   3
+   5 384051   1871 1975    105      2      0    .718   2.42   5.74  1.247   .816   .272   1.57   .272   .004   1
+   6 384052   1878 1975     98      2      0    .688   2.61   5.06  1.088   .701   .279   1.67   .269   .012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            679     12      0    .557   1.93   5.84  1.027   .819   .262   1.99   .256   .017
+
+ DATA CHECKS (rwl.check): brit023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit023.rwl
+ 6 series, 679 measurements, 1846-1976, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file brit023.rwl, MD5 e45bb91a5a1df470c1ac7e45cd79205d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

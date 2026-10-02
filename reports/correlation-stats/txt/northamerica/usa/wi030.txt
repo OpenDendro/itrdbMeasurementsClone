@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: wi030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi030.rwl
+      MD5 of measurement file: 3bf850bcb6a87ab9c322110b614ee188
+      Date checked           : 01OCT26
+      Beginning year         : 1734
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Festge County Park
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.1210 N
+      Longitude              : 89.6880 W
+      Elevation              : 293 m
+
+      Series intercorrelation: 0.461
+      Avg mean sensitivity   : 0.166
+      Avg standard deviation : 0.471
+      Avg autocorrelation    : 0.800
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 5, B 6; 3 of the B weak at every lag)
+      Pct problem segments   : 10.48
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 FST001A  1750 2014  .34  .55  .77  .81  .72  .59  .52 
+   2 FST001B  1796 2014  .30A .40  .73  .77  .81  .67  .49 
+   3 FST002A  1769 2014  .50  .48  .52  .23B .38  .45  .45 
+   4 FST002B  1744 2014  .62  .55  .58  .30A .32A .50  .50 
+   5 FST003A  1764 2014  .50  .41  .52  .43  .51  .42  .34 
+   6 FST003B  1740 2014  .31A .34  .57  .44  .26B .29B .39 
+   7 FST004A  1734 2014  .37  .56  .63  .70  .66  .56  .51 
+   8 FST004B  1846 2014            .53  .66  .73  .64  .52 
+   9 FST005A  1747 2014  .51  .53  .67  .69  .68  .63  .35 
+  10 FST005B  1769 2014  .47  .52  .64  .65  .65  .62  .53 
+  11 FST006A  1778 2014  .67  .61  .65  .68  .58  .58  .67 
+  12 FST006B  1768 2014  .67  .68  .74  .76  .70  .59  .58 
+  13 FST008   1861 2014                 .71  .61  .60  .38 
+  14 FST008B  1800 2014       .26B .71  .68  .64  .62  .48 
+  15 FST009A  1929 2014                                .46 
+  16 FST009B  1874 2014                      .68  .55  .39B
+  17 FST010A  1874 2014                 .48  .59  .57  .38 
+  18 FST010B  1837 2014            .32A .42  .62  .64  .38B
+ Av segment correlation  .48  .49  .61  .59  .60  .56  .46 
+
+ FLAGGED SEGMENTS: wi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 FST001B  1800 1849     A     .299         0
+   3 FST002A  1875 1924     B     .233         8      .377   .144
+   4 FST002B  1875 1924     A     .305         0
+   4 FST002B  1900 1949     A     .324         0
+   6 FST003B  1800 1849     A     .309         0
+   6 FST003B  1900 1949     B     .257        -5      .276   .020  weak at every lag
+   6 FST003B  1925 1974     B     .289         5      .296   .008  weak at every lag
+  14 FST008B  1825 1874     B     .256        10      .310   .053  weak at every lag
+  16 FST009B  1950 1999     B     .390         5      .463   .073
+  18 FST010B  1850 1899     A     .320         0
+  18 FST010B  1950 1999     B     .377        -5      .396   .019
+
+ DESCRIPTIVE STATISTICS: wi030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FST001A  1750 2014    265      7      0    .416   1.00   1.76   .274   .807   .129   1.41   .133   .005   1
+   2 FST001B  1796 2014    219      7      1    .547   1.63   3.45   .431   .671   .153   1.83   .166  -.024   1
+   3 FST002A  1769 2014    246      7      1    .494    .99   2.20   .357   .815   .151   2.01   .171   .021   1
+   4 FST002B  1744 2014    271      7      2    .459    .92   2.31   .275   .726   .155   1.81   .183   .005   1
+   5 FST003A  1764 2014    251      7      0    .520    .78   3.09   .348   .859   .161   1.51   .166  -.014   1
+   6 FST003B  1740 2014    275      7      3    .339    .84   3.41   .583   .856   .197   2.38   .200   .016   1
+   7 FST004A  1734 2014    281      7      0    .412   1.07   5.02   .692   .891   .156   2.29   .189  -.008   2
+   8 FST004B  1846 2014    169      5      0    .542   1.06   2.31   .386   .801   .164   1.57   .158  -.020   3
+   9 FST005A  1747 2014    268      7      0    .288   1.03   4.04   .505   .798   .191   1.82   .198   .005   1
+  10 FST005B  1769 2014    246      7      0    .529    .91   3.23   .342   .789   .157   1.55   .164  -.008   1
+  11 FST006A  1778 2014    237      7      0    .633   1.34   3.39   .484   .799   .172   1.64   .169   .003   1
+  12 FST006B  1768 2014    247      7      0    .483   1.40   4.17   .618   .810   .190   2.66   .221  -.002   1
+  13 FST008   1861 2014    154      4      0    .543   1.12   2.35   .345   .776   .143   1.83   .146   .043   0
+  14 FST008B  1800 2014    215      6      1    .312    .84   1.74   .305   .861   .153   2.10   .166   .001   2
+  15 FST009A  1929 2014     86      1      0    .494   1.75   3.47   .568   .522   .238   1.65   .227  -.011   2
+  16 FST009B  1874 2014    141      3      1    .502   2.21   6.67  1.183   .698   .265   2.10   .267  -.020   3
+  17 FST010A  1874 2014    141      4      0    .461   1.36   4.32   .605   .850   .121   1.52   .125  -.020   1
+  18 FST010B  1837 2014    178      5      2    .444   1.33   2.73   .490   .858   .139   1.50   .142   .018   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3890    105     11    .461   1.14   6.67   .471   .800   .166   2.66   .176   .000
+
+ DATA CHECKS (rwl.check): wi030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi030.rwl
+ 18 series, 3890 measurements, 1734-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wi030.rwl, MD5 3bf850bcb6a87ab9c322110b614ee188.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

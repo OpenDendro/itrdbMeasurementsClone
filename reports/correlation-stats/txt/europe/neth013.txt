@@ -1,0 +1,103 @@
+
+ COFECHA-style crossdating report: neth013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : neth013.rwl
+      MD5 of measurement file: e85d2491383e7da517834f9277645704
+      Date checked           : 01OCT26
+      Beginning year         : -103
+      Ending year            : 123
+      Principal investigators: Jansma, E.; Van Rijn, P.
+      Site name              : Valkenburg Z.H. Roman Road  2nd Building Phase
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 52.1700 N
+      Longitude              : 4.4300 E
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.479
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 0.336
+      Avg autocorrelation    : 0.606
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 13.04
+
+
+ CORRELATION OF SERIES BY SEGMENTS: neth013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  -100  -75  -50  -25    0   25   50 
+                         -51  -26   -1   24   49   74   99 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 VNW011   -103   94       .54  .51  .24B .55  .70      
+   2 VNW021    -84  123       .44  .38  .42  .48  .55  .57 
+   3 VNW031    -39  123                 .39  .50  .62  .51 
+   4 VNW041    -91  123       .43  .32A .30B .39  .47  .51 
+   5 VNW051     33  123                                .64 
+   6 VNW061     47  123                                .59 
+ Av segment correlation       .47  .40  .34  .48  .59  .56 
+
+ FLAGGED SEGMENTS: neth013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 VNW011    -25   24     B     .241        -5      .357   .116
+   4 VNW041    -50   -1     A     .315         0
+   4 VNW041    -25   24     B     .302        -6      .313   .012  weak at every lag
+
+ DESCRIPTIVE STATISTICS: neth013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 VNW011   -103   94    198      5      1    .506   1.02   3.30   .401   .715   .194   1.76   .208  -.050   3
+   2 VNW021    -84  123    208      6      0    .457    .79   2.72   .333   .545   .260   2.21   .266   .004   1
+   3 VNW031    -39  123    163      4      0    .514    .84   1.63   .226   .506   .209   1.61   .191   .096   0
+   4 VNW041    -91  123    215      6      2    .392    .87   1.90   .221   .558   .183   1.75   .172   .014   2
+   5 VNW051     33  123     91      1      0    .579   1.23   2.44   .407   .647   .200   1.66   .208   .011   2
+   6 VNW061     47  123     77      1      0    .517   1.60   3.21   .650   .786   .249   1.65   .230   .036   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            952     23      3    .479    .97   3.30   .336   .606   .214   2.21   .211   .014
+
+ DATA CHECKS (rwl.check): neth013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/neth013.rwl
+ 6 series, 952 measurements, -103-123, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file neth013.rwl, MD5 e85d2491383e7da517834f9277645704.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

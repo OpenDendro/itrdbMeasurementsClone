@@ -1,0 +1,152 @@
+
+ COFECHA-style crossdating report: mex127
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mex127.rwl
+      MD5 of measurement file: 2ee5b25f5bfe694673b0322590a59a6f
+      Date checked           : 01OCT26
+      Beginning year         : 1853
+      Ending year            : 2015
+      Principal investigators: Villanueva-Díaz, J.; Centeno-Erguera, L.
+      Site name              : Quintana Roo
+      Species information    : SISA Simira salvadorensis (Standl.) Steyerm.
+      Latitude               : 19.1090 N
+      Longitude              : 88.3980 W
+      Elevation              : 33 m
+
+      Series intercorrelation: 0.588
+      Avg mean sensitivity   : 0.336
+      Avg standard deviation : 1.142
+      Avg autocorrelation    : 0.687
+      Number dated series    : 40
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 5, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mex127
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+  33 NOH230   1856 2015  .73  .34  .23A
+  34 NOH231   1856 2015  .74  .33  .23A
+  35 NOH232   1856 2015  .72  .48  .32A
+  36 NOH233   1856 2015  .61  .28A .24B
+  37 NOH240   1853 2015  .21B .45  .54 
+  38 NOH241   1853 2015  .03B .39  .51 
+  39 NOH242   1853 2015  .41  .41  .32A
+  40 NOH243   1853 2015  .41  .42  .33 
+ Av segment correlation  .48  .39  .34 
+
+ FLAGGED SEGMENTS: mex127
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  33 NOH230   1950 1999     A     .225         0
+  34 NOH231   1950 1999     A     .230         0
+  35 NOH232   1950 1999     A     .325         0
+  36 NOH233   1925 1974     A     .282         0
+  36 NOH233   1950 1999     B     .236         1      .273   .037  weak at every lag
+  37 NOH240   1900 1949     B     .207        -7      .297   .091  weak at every lag
+  38 NOH241   1900 1949     B     .028        -2      .357   .329
+  39 NOH242   1950 1999     A     .324         0
+
+ DESCRIPTIVE STATISTICS: mex127
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NOH010   2010 2014      5      0      0    .278    .42    .61   .138  -.621   .439   1.19   .234  -.555   0
+   2 NOH011   1990 2014     25      0      0    .630   1.32   2.59   .746   .653   .365   2.10   .430   .251   0
+   3 NOH020   1980 2014     35      0      0    .775   2.58   5.64  1.614   .731   .376   3.45   .524   .263   0
+   4 NOH021   1980 2014     35      0      0    .792   2.49   5.64  1.535   .696   .393   3.50   .542   .107   0
+   5 NOH030   1963 2014     52      0      0    .775   1.94   4.90  1.040   .548   .377   2.45   .427   .124   1
+   6 NOH031   1963 2014     52      0      0    .648   2.05   5.98  1.101   .462   .435   3.54   .519   .008   0
+   7 NOH040   1957 2014     58      0      0    .499   2.84   7.74  1.599   .704   .341   2.11   .349  -.010   1
+   8 NOH041   1957 2014     58      0      0    .466   2.85   7.60  1.632   .702   .296   2.28   .352  -.030   1
+   9 NOH060   1965 2014     50      0      0    .564   2.31   5.85  1.317   .654   .366   1.88   .362  -.009   1
+  10 NOH061   1965 2014     50      0      0    .515   2.17   5.64  1.201   .644   .342   1.88   .354   .020   1
+  11 NOH070   1958 2014     57      0      0    .697   2.25   6.44  1.370   .695   .353   2.14   .391   .199   0
+  12 NOH071   1958 2014     57      0      0    .697   2.25   6.44  1.370   .695   .353   2.14   .391   .199   0
+  13 NOH080   1959 2014     56      0      0    .823   2.56   5.31  1.238   .535   .356   2.12   .369   .081   0
+  14 NOH081   1959 2014     56      0      0    .822   2.59   6.32  1.312   .570   .368   1.96   .368   .087   0
+  15 NOH090   1957 2014     58      0      0    .450   2.61   7.78  1.510   .645   .363   2.12   .383   .183   0
+  16 NOH091   1957 2014     58      0      0    .413   2.67   7.40  1.514   .649   .374   2.00   .364   .010   1
+  17 NOH100   1959 2014     56      0      0    .855   2.33   6.37  1.348   .589   .357   3.17   .491   .196   1
+  18 NOH101   1959 2014     56      0      0    .813   2.33   6.00  1.355   .596   .379   2.44   .451   .162   1
+  19 NOH110   1958 2014     57      0      0    .906   2.43   6.06  1.369   .611   .400   3.11   .459   .070   0
+  20 NOH111   1958 2014     57      0      0    .818   2.36   5.27  1.198   .621   .335   2.59   .363   .031   0
+  21 NOH120   1958 2014     57      0      0    .814   2.46   5.97  1.462   .568   .421   5.25   .699   .156   0
+  22 NOH121   1958 2014     57      0      0    .850   2.46   6.12  1.446   .630   .383   5.18   .676   .114   0
+  23 NOH140   1958 2014     57      0      0    .887   2.44   6.30  1.429   .544   .378   2.43   .414   .161   0
+  24 NOH141   1958 2014     57      0      0    .832   2.60   6.26  1.561   .608   .380   3.15   .468   .117   0
+  25 NOH150   1957 2014     58      0      0    .805   2.20   8.37  1.684   .755   .424   3.78   .556   .183   0
+  26 NOH151   1957 2014     58      0      0    .810   2.19   8.37  1.687   .761   .417   3.78   .557   .203   0
+  27 NOH160   1958 2014     57      0      0    .791   3.22   6.68  1.502   .591   .336   2.39   .374   .105   1
+  28 NOH161   1958 2014     57      0      0    .881   2.98   7.12  1.562   .595   .371   3.93   .517   .122   0
+  29 NOH170   1958 2014     57      0      0    .839   2.46   6.29  1.332   .617   .352   2.21   .365   .036   2
+  30 NOH171   1958 2014     57      0      0    .865   2.45   5.95  1.331   .579   .400   2.41   .391   .087   0
+  31 NOH180   1957 2014     58      0      0    .810   3.03   8.24  1.898   .704   .397   4.12   .563   .262   1
+  32 NOH181   1957 2014     58      0      0    .828   2.98   8.14  1.866   .713   .359   4.05   .542   .282   1
+  33 NOH230   1856 2015    160      3      1    .454   1.32   3.88   .747   .742   .291   1.87   .299  -.008   2
+  34 NOH231   1856 2015    160      3      1    .485   1.32   4.07   .762   .779   .278   1.80   .294  -.005   2
+  35 NOH232   1856 2015    160      3      1    .493   1.28   3.94   .753   .780   .286   1.81   .300  -.002   2
+  36 NOH233   1856 2015    160      3      2    .438   1.28   4.50   .789   .719   .309   1.80   .313  -.002   2
+  37 NOH240   1853 2015    163      3      1    .278   1.27   4.16   .731   .747   .287   1.90   .282  -.026   3
+  38 NOH241   1853 2015    163      3      1    .230   1.28   4.45   .751   .770   .282   1.93   .282  -.011   3
+  39 NOH242   1853 2015    163      3      1    .376   1.37   4.18   .777   .779   .286   1.89   .273   .040   3
+  40 NOH243   1853 2015    163      3      0    .369   1.36   4.15   .794   .773   .283   1.90   .275   .004   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2968     24      8    .588   1.97   8.37  1.142   .687   .336   5.25   .380   .065
+
+ DATA CHECKS (rwl.check): mex127
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mex127.rwl
+ 40 series, 2968 measurements, 1853-2015, 0.01 mm precision
+ 1 error(s), 2 warning(s), 4 note(s)
+ -------------
+ ERROR
+   RWL_DUP_SERIES (1)
+     NOH070: identical measurements in NOH070, NOH071; one core may be archived twice
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 683 carriage return(s) against 343 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mex127.rwl, MD5 2ee5b25f5bfe694673b0322590a59a6f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

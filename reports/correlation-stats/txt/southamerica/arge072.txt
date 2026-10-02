@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: arge072
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge072.rwl
+      MD5 of measurement file: b0955a91800658e6c6e90e512bc1a168
+      Date checked           : 01OCT26
+      Beginning year         : 1700
+      Ending year            : 1992
+      Principal investigators: Villalba, R.
+      Site name              : Futaleufú
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 43.1800 S
+      Longitude              : 71.7000 W
+      Elevation              : 470 m
+
+      Series intercorrelation: 0.657
+      Avg mean sensitivity   : 0.293
+      Avg standard deviation : 0.495
+      Avg autocorrelation    : 0.834
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 1.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge072
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 FUT01A   1903 1992                                               .64 
+   2 FUT02A   1894 1992                                          .61  .62 
+   3 FUT02X   1759 1888                 .63  .67  .77                     
+   4 FUT02Z   1757 1992                 .64  .74  .83  .79  .68  .71  .75 
+   5 FUT04A   1876 1992                                          .69  .61 
+   6 FUT05B   1790 1992                      .62  .81  .77  .76  .72  .72 
+   7 FUT08B   1883 1992                                          .61  .63 
+   8 FUT04B   1861 1992                                     .58  .58  .50 
+   9 FUT05A   1802 1992                           .83  .71  .74  .82  .83 
+  10 FUT17B   1739 1992            .80  .65  .75  .91  .84  .66  .69  .71 
+  11 FUT01B   1741 1992            .73  .76  .83  .86  .83  .84  .85  .63 
+  12 FUT02D   1700 1992            .81  .80  .85  .92  .74  .50  .58  .63 
+  13 FUT03B   1763 1992                 .79  .72  .38  .31A .61  .82  .77 
+  14 FUT07A   1726 1992            .77  .61  .77  .91  .71  .43  .63  .64 
+  15 FUT02B   1738 1992            .79  .80  .84  .86  .78  .75  .75  .64 
+  16 FUT02C   1885 1992                                          .65  .59 
+  17 FUT05G   1756 1946                 .38  .64  .62  .46  .45           
+  19 FUT08C   1887 1992                                          .64  .58 
+ Av segment correlation            .78  .67  .74  .79  .69  .63  .69  .66 
+
+ FLAGGED SEGMENTS: arge072
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 FUT03B   1850 1899     A     .308         0
+
+ DESCRIPTIVE STATISTICS: arge072
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 FUT01A   1903 1992     90      1      0    .513   1.13   3.34   .750   .832   .298   1.80   .275   .028   0
+   2 FUT02A   1894 1992     99      2      0    .680    .56   1.32   .245   .666   .301   1.74   .252  -.076   0
+   3 FUT02X   1759 1888    130      3      0    .704   1.05   1.98   .327   .542   .239   1.79   .238   .010   1
+   4 FUT02Z   1757 1992    236      7      0    .721    .39   1.72   .368   .877   .379   2.19   .321  -.010   3
+   5 FUT04A   1876 1992    117      2      0    .573   1.28   2.95   .609   .797   .235   1.54   .235  -.013   1
+   6 FUT05B   1790 1992    203      6      0    .724   1.21   4.51   .802   .868   .243   1.69   .245  -.027   3
+   7 FUT08B   1883 1992    110      2      0    .399   1.34   3.52   .591   .762   .192   1.85   .226   .054   1
+   8 FUT04B   1861 1992    132      3      0    .567    .84   2.78   .672   .873   .265   1.71   .257   .015   1
+   9 FUT05A   1802 1992    191      5      0    .754   1.17   4.01   .780   .883   .276   1.61   .257  -.041   3
+  10 FUT17B   1739 1992    254      8      0    .757    .39   1.86   .391   .874   .403   2.37   .367   .012   2
+  11 FUT01B   1741 1992    252      8      0    .756    .51   1.90   .340   .811   .328   1.76   .288   .005   2
+  12 FUT02D   1700 1992    293      8      0    .685    .59   1.88   .377   .870   .280   2.03   .266  -.013   3
+  13 FUT03B   1763 1992    230      7      1    .591    .69   2.28   .418   .827   .307   1.71   .258   .012   2
+  14 FUT07A   1726 1992    267      8      0    .654    .60   2.22   .443   .897   .294   2.28   .284  -.014   3
+  15 FUT02B   1738 1992    255      8      0    .775    .53   1.93   .393   .881   .301   2.12   .285   .008   2
+  16 FUT02C   1885 1992    108      2      0    .534    .57   1.89   .383   .851   .287   1.71   .301   .006   1
+  17 FUT05G   1756 1946    191      5      0    .503    .95   2.20   .489   .755   .279   1.94   .277   .017   1
+  18 FUT07B   1925 1992     68      0      0    .658   1.06   3.74   .721   .868   .236   1.45   .232   .019   1
+  19 FUT08C   1887 1992    106      2      0    .451   1.81   3.79   .913   .888   .190   1.52   .204   .003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3332     87      1    .657    .79   4.51   .495   .834   .293   2.37   .275  -.002
+
+ DATA CHECKS (rwl.check): arge072
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge072.rwl
+ 19 series, 3332 measurements, 1700-1992, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 710 carriage return(s) against 357 line feed(s); mixed endings can defeat a reader
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file arge072.rwl, MD5 b0955a91800658e6c6e90e512bc1a168.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

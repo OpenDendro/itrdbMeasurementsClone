@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: in015
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in015.rwl
+      MD5 of measurement file: 938dda48087ceaee8b5a5bc855aad025
+      Date checked           : 01OCT26
+      Beginning year         : 1845
+      Ending year            : 2015
+      Principal investigators: Maxwell, J.T.; Strange, B.M.
+      Site name              : Latimer Woods
+      Species information    : ACSH Acer saccharum Marsh.
+      Latitude               : 39.1583 N
+      Longitude              : 86.4934 W
+      Elevation              : 277 m
+
+      Series intercorrelation: 0.467
+      Avg mean sensitivity   : 0.305
+      Avg standard deviation : 1.014
+      Avg autocorrelation    : 0.657
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 8.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 LWM01A   1908 2015       .44  .20B
+   2 LWM02A   1847 2015  .49  .49  .55 
+   3 LWM02B   1869 2015  .64  .61  .54 
+   4 LWM03A   1890 2015  .56  .65  .46 
+   5 LWM03B   1905 2011       .54  .61 
+   6 LWM04B   1896 2015  .27B .44  .47 
+   7 LWM05A   1922 2015       .35  .37 
+   8 LWM05B   1908 2013       .70  .55 
+   9 LWM06A   1924 2015       .56  .45 
+  11 LWM07A   1845 2015  .47  .63  .56 
+ Av segment correlation  .49  .54  .48 
+
+ FLAGGED SEGMENTS: in015
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 LWM01A   1950 1999     B     .204        -6      .268   .064  weak at every lag
+   6 LWM04B   1900 1949     B     .267        -1      .298   .031  weak at every lag
+
+ DESCRIPTIVE STATISTICS: in015
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LWM01A   1908 2015    108      2      1    .393   1.34   3.31   .754   .737   .293   1.72   .292  -.019   2
+   2 LWM02A   1847 2015    169      3      0    .408   1.72   6.34  1.059   .760   .292   2.02   .304   .025   1
+   3 LWM02B   1869 2015    147      3      0    .632   1.95   5.23  1.046   .674   .357   2.33   .343  -.028   2
+   4 LWM03A   1890 2015    126      3      0    .554   2.56   6.23  1.097   .519   .322   2.11   .308  -.010   2
+   5 LWM03B   1905 2011    107      2      0    .461   2.24   5.08   .981   .675   .282   1.87   .294   .044   1
+   6 LWM04B   1896 2015    120      3      1    .354   2.87   5.51  1.001   .547   .272   1.64   .254  -.006   3
+   7 LWM05A   1922 2015     94      2      0    .357   1.23   4.18   .676   .703   .322   1.73   .310   .010   2
+   8 LWM05B   1908 2013    106      2      0    .581   2.00   4.66   .969   .673   .298   2.00   .309   .014   1
+   9 LWM06A   1924 2015     92      2      0    .612   2.95   5.61  1.276   .731   .267   1.63   .264   .077   1
+  10 LWM06B   1953 2015     63      0      0    .568   3.59   8.57  2.056   .793   .290   1.56   .273   .041   1
+  11 LWM07A   1845 2015    171      3      0    .322   1.81   4.49   .762   .534   .330   1.95   .327   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1303     25      2    .467   2.12   8.57  1.014   .657   .305   2.33   .302   .011
+
+ DATA CHECKS (rwl.check): in015
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in015.rwl
+ 11 series, 1303 measurements, 1845-2015, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file in015.rwl, MD5 938dda48087ceaee8b5a5bc855aad025.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

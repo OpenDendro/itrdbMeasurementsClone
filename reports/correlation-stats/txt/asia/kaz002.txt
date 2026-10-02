@@ -1,0 +1,166 @@
+
+ COFECHA-style crossdating report: kaz002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : kaz002.rwl
+      MD5 of measurement file: ce4705953e3ddb13f4b24e6f17b52fdf
+      Date checked           : 01OCT26
+      Beginning year         : 1860
+      Ending year            : 2022
+      Principal investigators: Miramont, C.
+      Site name              : Kaindy Lake
+      Species information    : PCSH Picea schrenkiana Fisch. & C.A. Mey.
+      Latitude               : 42.9860 N
+      Longitude              : 78.4650 E
+      Elevation              : 1860 m
+
+      Series intercorrelation: 0.633
+      Avg mean sensitivity   : 0.223
+      Avg standard deviation : 1.110
+      Avg autocorrelation    : 0.779
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.35
+
+
+ CORRELATION OF SERIES BY SEGMENTS: kaz002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 KV03     1942 2022            .50 
+   4 KV04     1939 2022            .74 
+   5 KV05     1911 2022       .63  .64 
+   6 KV06     1933 2022            .75 
+   7 KV07     1894 2022  .48  .83  .85 
+   8 KV08     1931 2022            .80 
+   9 KV12015  1918 2015       .76  .84 
+  10 KV11     1917 2022       .68  .78 
+  11 KV13     1917 2022       .61  .75 
+  12 KV15     1942 2008            .62 
+  13 KV17     1942 2022            .78 
+  14 KV19     1922 2022       .53  .71 
+  15 KV22015  1920 2015       .68  .77 
+  16 KV21     1935 2022            .63 
+  17 KV23     1947 2022            .53 
+  18 KV25     1928 2022            .27B
+  19 KV26     1931 2022            .77 
+  20 KV27     1932 2022            .72 
+  21 KV28     1926 2022            .82 
+  23 KV32015  1926 2015            .84 
+  24 KV31     1931 2022            .36 
+  25 KV42015  1935 2015            .39 
+  26 KV52015  1860 2015  .26A .40  .43 
+  27 KV9      1915 2022       .75  .75 
+  28 X01      1947 2022            .42 
+  29 X02      1943 2022            .78 
+  30 X03      1922 2022       .65  .78 
+  31 x04      1913 2022       .52  .81 
+  32 X05      1925 2022       .39  .80 
+  33 X06      1929 2022            .72 
+  34 X07      1933 2022            .83 
+  35 X08      1932 2022            .50 
+ Av segment correlation  .37  .62  .68 
+
+ FLAGGED SEGMENTS: kaz002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  18 KV25     1950 1999     B     .268        10      .284   .016  weak at every lag
+  26 KV52015  1900 1949     A     .262         0
+
+ DESCRIPTIVE STATISTICS: kaz002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 KV01     1973 2022     50      0      0    .582   3.03   7.37  1.748   .871   .201   1.46   .200   .021   1
+   2 KV02     1958 2022     65      0      0    .819   4.64   7.07  1.406   .544   .244   1.37   .219   .170   0
+   3 KV03     1942 2022     81      1      0    .443   1.64   3.34   .584   .647   .268   1.57   .252   .158   0
+   4 KV04     1939 2022     84      1      0    .717   3.16   5.50  1.122   .737   .195   1.41   .185   .016   1
+   5 KV05     1911 2022    112      2      0    .674   1.21   2.49   .515   .652   .319   1.79   .291  -.037   3
+   6 KV06     1933 2022     90      1      0    .724   3.05  14.56  2.307   .842   .229   1.56   .204   .052   3
+   7 KV07     1894 2022    129      3      0    .697   2.23   7.17  1.317   .807   .313   1.72   .280  -.022   3
+   8 KV08     1931 2022     92      1      0    .664   2.67   6.57  1.248   .856   .164   1.54   .160  -.001   1
+   9 KV12015  1918 2015     98      2      0    .771   2.28   4.38  1.079   .920   .176   1.52   .173   .014   1
+  10 KV11     1917 2022    106      2      0    .756   1.81   4.42   .934   .869   .253   1.53   .233  -.025   3
+  11 KV13     1917 2022    106      2      0    .691   2.29   4.44   .692   .736   .184   1.46   .180   .034   1
+  12 KV15     1942 2008     67      1      0    .547   2.68   5.85  1.201   .760   .210   2.15   .223   .003   0
+  13 KV17     1942 2022     81      1      0    .738   3.33  16.41  2.868   .890   .259   1.65   .240   .030   1
+  14 KV19     1922 2022    101      2      0    .656   2.90   6.52  1.395   .581   .316   1.62   .265  -.057   0
+  15 KV22015  1920 2015     96      2      0    .765   2.34   4.64  1.222   .861   .255   1.71   .230   .024   0
+  16 KV21     1935 2022     88      1      0    .529   2.84   4.61   .803   .855   .121   1.32   .117   .018   1
+  17 KV23     1947 2022     76      1      0    .564   2.46   4.70   .917   .870   .142   1.38   .122  -.026   0
+  18 KV25     1928 2022     95      1      1    .185   2.93   5.76   .955   .828   .142   1.54   .152   .003   1
+  19 KV26     1931 2022     92      1      0    .744   2.54   5.85  1.130   .678   .282   1.61   .260  -.028   1
+  20 KV27     1932 2022     91      1      0    .658   2.27   5.09  1.089   .783   .263   1.74   .230   .104   0
+  21 KV28     1926 2022     97      1      0    .787   2.33   5.30   .896   .622   .281   1.46   .237  -.001   0
+  22 KV29     1950 2022     73      0      0    .792   2.13   5.17  1.097   .551   .398   1.73   .356   .014   1
+  23 KV32015  1926 2015     90      1      0    .802   2.20   4.46   .939   .787   .247   1.54   .221   .122   0
+  24 KV31     1931 2022     92      1      0    .322   3.97   6.96  1.460   .806   .171   1.53   .178   .026   1
+  25 KV42015  1935 2015     81      1      0    .363   3.68   6.16  1.303   .697   .209   1.84   .233   .004   1
+  26 KV52015  1860 2015    156      3      1    .302   1.19   3.64   .870   .921   .215   1.69   .213  -.019   3
+  27 KV9      1915 2022    108      2      0    .685   2.11   6.28  1.472   .871   .248   1.73   .225  -.059   0
+  28 X01      1947 2022     76      1      0    .534   1.76   3.87   .871   .851   .183   1.53   .177  -.007   2
+  29 X02      1943 2022     80      1      0    .769   2.17   4.27   .626   .669   .182   1.26   .166  -.061   3
+  30 X03      1922 2022    101      2      0    .741   1.77   4.25   .997   .881   .235   1.64   .217  -.000   1
+  31 x04      1913 2022    110      2      0    .694   2.70   4.71   .926   .643   .239   1.48   .201  -.053   0
+  32 X05      1925 2022     98      2      0    .635   2.47   4.73   .844   .759   .190   1.75   .175  -.154   0
+  33 X06      1929 2022     94      1      0    .671   2.53   6.02  1.146   .880   .158   1.43   .149   .081   0
+  34 X07      1933 2022     90      1      0    .788   2.87   5.61  1.182   .885   .153   1.32   .142   .118   0
+  35 X08      1932 2022     91      1      0    .475   2.26   3.48   .411   .692   .107   1.24   .101   .034   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3237     46      2    .633   2.46  16.41  1.110   .779   .223   2.15   .207   .010
+
+ DATA CHECKS (rwl.check): kaz002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/kaz002.rwl
+ 35 series, 3237 measurements, 1860-2022, 0.01 mm precision
+ 0 error(s), 8 warning(s), 16 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (8)
+     X01: site code differs from the kv used by 27 of 35 series
+     X02: site code differs from the kv used by 27 of 35 series
+     X03: site code differs from the kv used by 27 of 35 series
+     x04: site code differs from the kv used by 27 of 35 series
+     X05: site code differs from the kv used by 27 of 35 series
+     X06: site code differs from the kv used by 27 of 35 series
+     X07: site code differs from the kv used by 27 of 35 series
+     X08: site code differs from the kv used by 27 of 35 series
+ 16 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file kaz002.rwl, MD5 ce4705953e3ddb13f4b24e6f17b52fdf.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

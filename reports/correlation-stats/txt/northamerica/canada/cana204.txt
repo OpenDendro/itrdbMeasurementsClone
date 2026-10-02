@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: cana204
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana204.rwl
+      MD5 of measurement file: 2e91536239f0a00eada33187dfeeff36
+      Date checked           : 01OCT26
+      Beginning year         : 1854
+      Ending year            : 2002
+      Principal investigators: Beriault, A.; Sauchyn, D.J.; Stroich, J.
+      Site name              : MacIntyre Lake
+      Species information    : PIBN Pinus banksiana Lamb.
+      Latitude               : 57.4200 N
+      Longitude              : 106.1300 W
+      Elevation              : 500 m
+
+      Series intercorrelation: 0.470
+      Avg mean sensitivity   : 0.209
+      Avg standard deviation : 0.640
+      Avg autocorrelation    : 0.923
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 4, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 13.04
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana204
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 ML01A    1858 2002  .52  .54  .49 
+   2 ML02A    1861 2002  .49  .61  .58 
+   3 ML02B    1883 2002  .46  .70  .46 
+   4 ML03A    1854 2001  .31A .51  .55 
+   5 ML03B    1854 2002  .49  .56  .51 
+   6 ML05A    1882 2001  .54  .64  .60 
+   7 ML06B    1880 2002  .45  .52  .48 
+   8 ML07A    1874 2002  .33A .32B .35 
+   9 ML07B    1874 2002  .59  .40  .31A
+  10 ML08A    1875 1999  .57  .59  .36 
+  11 ML09A    1909 2002       .65  .47 
+  12 ML11A    1882 2002  .21B .63  .70 
+  13 ML11B    1883 2002  .40  .59  .63 
+  14 ML12A    1878 2002  .56  .47  .37 
+  15 ML12B    1880 2002  .78  .69  .53 
+  16 ML13B    1880 2002  .37B .21B .33A
+  17 ML14A    1873 2002  .55  .65  .57 
+  18 ML14B    1873 2002  .52  .58  .53 
+  19 ML15A    1880 2002  .56  .51  .47 
+  20 ML15B    1879 2002  .64  .59  .40 
+  21 ML16A    1877 2002  .53  .53  .38 
+  22 ML16B    1876 2001  .55  .49  .33B
+  23 ML17A    1876 1949  .50           
+  24 ML17B    1876 2002  .43  .49  .50 
+ Av segment correlation  .49  .54  .47 
+
+ FLAGGED SEGMENTS: cana204
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 ML03A    1900 1949     A     .314         0
+   8 ML07A    1900 1949     A     .326         0
+   8 ML07A    1925 1974     B     .318         6      .389   .070
+   9 ML07B    1950 1999     A     .311         0
+  12 ML11A    1900 1949     B     .208        -4      .282   .074  weak at every lag
+  16 ML13B    1900 1949     B     .373        -4      .383   .010
+  16 ML13B    1925 1974     B     .212         5      .306   .094  weak at every lag
+  16 ML13B    1950 1999     A     .328         0
+  22 ML16B    1950 1999     B     .326         1      .342   .016
+
+ DESCRIPTIVE STATISTICS: cana204
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ML01A    1858 2002    145      3      0    .428    .88   2.19   .446   .875   .196   1.55   .197   .034   1
+   2 ML02A    1861 2002    142      3      0    .487    .63   1.61   .249   .839   .176   1.42   .182  -.021   3
+   3 ML02B    1883 2002    120      3      0    .498    .75   1.90   .397   .871   .203   1.46   .201  -.001   3
+   4 ML03A    1854 2001    148      3      1    .418    .76   2.43   .530   .917   .206   1.59   .207   .038   1
+   5 ML03B    1854 2002    149      3      0    .394    .75   3.10   .631   .929   .265   1.66   .248  -.008   2
+   6 ML05A    1882 2001    120      3      0    .518    .60   1.67   .399   .915   .203   1.50   .204   .013   2
+   7 ML06B    1880 2002    123      3      0    .474    .79   2.86   .547   .944   .202   1.49   .200   .003   2
+   8 ML07A    1874 2002    129      3      2    .407    .94   3.94   .799   .905   .233   2.04   .217   .101   0
+   9 ML07B    1874 2002    129      3      1    .460    .99   3.69   .917   .898   .249   2.73   .271   .013   1
+  10 ML08A    1875 1999    125      3      0    .428    .77   4.08   .780   .955   .223   1.77   .238   .018   3
+  11 ML09A    1909 2002     94      2      0    .463   1.11   2.38   .521   .856   .194   1.59   .194   .028   1
+  12 ML11A    1882 2002    121      3      1    .500    .81   2.59   .577   .963   .157   1.45   .160   .022   1
+  13 ML11B    1883 2002    120      3      0    .518    .74   2.17   .443   .897   .215   1.52   .207   .009   3
+  14 ML12A    1878 2002    125      3      0    .431    .91   3.83   .888   .955   .213   2.24   .232   .028   1
+  15 ML12B    1880 2002    123      3      0    .601    .80   3.67   .767   .959   .237   1.82   .237   .016   1
+  16 ML13B    1880 2002    123      3      3    .358    .95   3.00   .631   .929   .175   1.94   .207  -.022   2
+  17 ML14A    1873 2002    130      3      0    .559    .82   3.73   .687   .899   .249   1.69   .241   .003   2
+  18 ML14B    1873 2002    130      3      0    .540    .73   3.81   .632   .931   .211   1.67   .206  -.010   3
+  19 ML15A    1880 2002    123      3      0    .526    .89   4.14   .780   .955   .219   1.82   .236  -.006   2
+  20 ML15B    1879 2002    124      3      0    .526    .76   3.80   .639   .963   .198   1.44   .192   .003   2
+  21 ML16A    1877 2002    126      3      0    .412    .72   3.34   .786   .958   .200   1.92   .217   .044   1
+  22 ML16B    1876 2001    126      3      1    .433    .70   2.90   .706   .967   .173   1.42   .177  -.017   1
+  23 ML17A    1876 1949     74      1      0    .481   1.36   3.34   .770   .942   .185   1.41   .173   .030   1
+  24 ML17B    1876 2002    127      3      0    .454   1.00   4.48   .929   .933   .218   2.24   .234   .033   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2996     69      9    .470    .83   4.48   .640   .923   .209   2.73   .213   .014
+
+ DATA CHECKS (rwl.check): cana204
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana204.rwl
+ 24 series, 2996 measurements, 1854-2002, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file cana204.rwl, MD5 2e91536239f0a00eada33187dfeeff36.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

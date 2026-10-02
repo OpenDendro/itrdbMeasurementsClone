@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: ak143
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak143.rwl
+      MD5 of measurement file: f5ba063cdd9cf8d216bcc5ed6f9f8730
+      Date checked           : 01OCT26
+      Beginning year         : 1453
+      Ending year            : 1996
+      Principal investigators: Kaiser, K.F.
+      Site name              : Yakutat Outer Terminal Moraine
+      Species information    : TSHE Tsuga heterophylla (Raf.) Sarg.
+      Latitude               : 59.5525 N
+      Longitude              : 139.2894 W
+      Elevation              : 60 m
+
+      Series intercorrelation: 0.468
+      Avg mean sensitivity   : 0.201
+      Avg standard deviation : 0.278
+      Avg autocorrelation    : 0.852
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 17  (A 4, B 13; 6 of the B weak at every lag)
+      Pct problem segments   : 13.93
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak143
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1549 1574 1599 1624 1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 OTMO0030 1522 1996       .28B .37  .26B .51  .48  .65  .80  .67  .63  .47  .41  .49  .51  .57  .57  .54  .53 
+   2 OTMO0040 1527 1996            .64  .54  .50  .46B .54  .55  .53  .72  .74  .62  .62  .62  .74  .74  .50  .30A
+   3 OTMO0070 1700 1996                                               .68  .70  .57  .53  .52  .56  .58  .48  .27A
+   4 OTMO0080 1753 1996                                                         .52  .60  .47  .53  .73  .43  .19B
+   5 OTMO0090 1453 1996       .03B .18B .50  .56  .47  .68  .71  .55  .63  .62  .36  .54  .66  .48  .41  .57  .38 
+   6 OTMO0100 1598 1996                           .00B .41  .64  .55  .68  .72  .67  .72  .75  .63  .64  .64  .60 
+   7 OTMO0110 1583 1996                      .52  .71  .65  .59  .54  .63  .61  .68  .60  .42  .46  .55  .52  .49 
+   8 OTMO0120 1560 1996                -.37B .05B .14B .25B .61  .69  .70  .50  .43  .54  .43  .50  .62  .49  .45 
+   9 OTMO0130 1588 1996                      .48  .40  .55  .55  .43  .55  .45  .14B .32A .46  .54  .52  .32A .21B
+ Av segment correlation       .16  .40  .23  .44  .38  .53  .63  .57  .65  .60  .49  .55  .54  .56  .60  .50  .38 
+
+ FLAGGED SEGMENTS: ak143
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 OTMO0030 1525 1574     B     .280        10      .361   .081
+   1 OTMO0030 1575 1624     B     .258         5      .363   .105
+   2 OTMO0040 1625 1674     B     .465         2      .508   .044
+   2 OTMO0040 1925 1974     A     .295         0
+   3 OTMO0070 1925 1974     A     .268         0
+   4 OTMO0080 1925 1974     B     .194         3      .291   .097  weak at every lag
+   5 OTMO0090 1525 1574     B     .034        10      .158   .125  weak at every lag
+   5 OTMO0090 1550 1599     B     .184        -1      .269   .085  weak at every lag
+   6 OTMO0100 1625 1674     B     .000         6      .301   .301  weak at every lag
+   8 OTMO0120 1575 1624     B    -.374        -2      .589   .963
+   8 OTMO0120 1600 1649     B     .052        -2      .702   .649
+   8 OTMO0120 1625 1674     B     .139        -2      .464   .325
+   8 OTMO0120 1650 1699     B     .250        -8      .345   .095
+   9 OTMO0130 1775 1824     B     .137         1      .218   .081  weak at every lag
+   9 OTMO0130 1800 1849     A     .318         0
+   9 OTMO0130 1900 1949     A     .325         0
+   9 OTMO0130 1925 1974     B     .212        -1      .305   .093  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ak143
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OTMO0030 1522 1996    475     17      2    .486    .50   1.37   .268   .860   .202   1.71   .208   .009   1
+   2 OTMO0040 1527 1996    470     16      2    .528    .47   1.75   .305   .911   .222   1.94   .229  -.014   3
+   3 OTMO0070 1700 1996    297      9      1    .503    .89   2.25   .416   .923   .151   1.53   .154  -.004   3
+   4 OTMO0080 1753 1996    244      7      1    .506    .80   1.36   .180   .548   .169   1.60   .181  -.017   3
+   5 OTMO0090 1453 1996    544     17      2    .432    .40   1.31   .223   .895   .188   1.67   .190  -.007   3
+   6 OTMO0100 1598 1996    399     13      1    .512    .45   1.48   .261   .913   .193   1.64   .209   .013   3
+   7 OTMO0110 1583 1996    414     14      0    .496    .95   2.40   .407   .796   .216   1.93   .227  -.013   2
+   8 OTMO0120 1560 1996    437     15      4    .358    .53   1.37   .268   .858   .230   1.95   .244   .006   3
+   9 OTMO0130 1588 1996    409     14      4    .422    .38   1.12   .184   .835   .208   1.76   .213  -.015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3689    122     17    .468    .57   2.40   .278   .852   .201   1.95   .209  -.004
+
+ DATA CHECKS (rwl.check): ak143
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak143.rwl
+ 9 series, 3689 measurements, 1453-1996, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file ak143.rwl, MD5 f5ba063cdd9cf8d216bcc5ed6f9f8730.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

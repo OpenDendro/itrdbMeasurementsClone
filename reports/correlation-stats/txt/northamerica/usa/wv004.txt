@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: wv004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv004.rwl
+      MD5 of measurement file: 5069c7b518057d5927661fbe33cbf3a4
+      Date checked           : 01OCT26
+      Beginning year         : 1830
+      Ending year            : 2005
+      Principal investigators: Maxwell, R.S.; Hicks Jr., R.R.
+      Site name              : New River Gorge National River
+      Species information    : PIVI Pinus virginiana Mill.
+      Latitude               : 38.0500 N
+      Longitude              : 81.0500 W
+      Elevation              : 580 m
+
+      Series intercorrelation: 0.661
+      Avg mean sensitivity   : 0.333
+      Avg standard deviation : 0.738
+      Avg autocorrelation    : 0.644
+      Number dated series    : 31
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 2.27
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 NERI002A 1909 2005       .78  .71 
+   4 NERI002B 1919 2005       .70  .78 
+   5 NERI003A 1946 2005            .72 
+   7 NERI004A 1903 2005       .78  .69 
+   8 NERI004B 1905 2005       .65  .72 
+   9 NERI005A 1914 2005       .74  .65 
+  10 NERI005B 1905 2005       .70  .68 
+  11 NERI006A 1906 2005       .75  .77 
+  12 NERI006B 1915 2005       .74  .79 
+  13 NERI007A 1947 2005            .70 
+  15 NERI008A 1840 2005  .65  .68  .76 
+  16 NERI008B 1830 2005  .59  .63  .58 
+  17 NERI010A 1867 2005  .60  .57  .56 
+  18 NERI010B 1866 2005  .60  .57  .47 
+  19 NERI011A 1922 2005       .71  .60 
+  20 NERI011B 1913 2005       .67  .68 
+  21 NERI012A 1919 2005       .63  .59 
+  22 NERI012B 1904 2005       .67  .60 
+  24 NERI014B 1947 2005            .81 
+  26 NERI015B 1945 2005            .83 
+  27 NERI016A 1949 2005            .59 
+  28 NERI016B 1947 2005            .28B
+  31 NERI021B 1907 2005       .60  .51 
+ Av segment correlation  .61  .68  .66 
+
+ FLAGGED SEGMENTS: wv004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  28 NERI016B 1950 1999     B     .280         2      .414   .134
+
+ DESCRIPTIVE STATISTICS: wv004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NERI001A 1963 2005     43      0      0    .593    .77   2.44   .538   .780   .384   1.94   .355  -.061   3
+   2 NERI001B 1963 2005     43      0      0    .610   1.19   3.54   .813   .823   .381   2.10   .351   .065   3
+   3 NERI002A 1909 2005     97      2      0    .732    .97   3.92   .817   .820   .386   2.12   .367  -.001   1
+   4 NERI002B 1919 2005     87      2      0    .717    .90   4.16   .669   .721   .402   2.18   .351   .002   3
+   5 NERI003A 1946 2005     60      1      0    .672   1.23   2.71   .574   .623   .354   2.12   .335  -.008   3
+   6 NERI003B 1955 2005     51      0      0    .711   1.27   2.71   .583   .539   .396   2.04   .373  -.046   1
+   7 NERI004A 1903 2005    103      2      0    .752   1.27   2.67   .572   .530   .339   1.86   .304  -.027   2
+   8 NERI004B 1905 2005    101      2      0    .702   1.17   2.91   .522   .528   .321   1.86   .295   .084   1
+   9 NERI005A 1914 2005     92      2      0    .675   1.48   4.46   .881   .704   .289   2.10   .319  -.015   3
+  10 NERI005B 1905 2005    101      2      0    .662   1.43   4.54   .874   .659   .334   2.00   .325   .062   3
+  11 NERI006A 1906 2005    100      2      0    .702   1.22   3.64   .675   .709   .260   1.65   .270  -.071   2
+  12 NERI006B 1915 2005     91      2      0    .702   1.47   3.81   .881   .852   .246   1.62   .263  -.018   2
+  13 NERI007A 1947 2005     59      1      0    .692   1.52   5.82  1.093   .829   .335   1.68   .325  -.074   1
+  14 NERI007B 1953 2005     53      0      0    .750   1.36   3.43   .595   .634   .318   1.81   .289  -.015   3
+  15 NERI008A 1840 2005    166      3      0    .693   1.16   5.02   .785   .595   .414   2.30   .381   .002   3
+  16 NERI008B 1830 2005    176      3      0    .678   1.09   5.14  1.036   .776   .394   2.97   .418  -.001   1
+  17 NERI010A 1867 2005    139      3      0    .662   1.49   5.77   .847   .585   .342   2.08   .333  -.014   1
+  18 NERI010B 1866 2005    140      3      0    .515   1.11   5.95   .877   .505   .366   2.79   .408   .013   1
+  19 NERI011A 1922 2005     84      2      0    .678   1.30   3.31   .522   .588   .247   1.71   .235   .036   1
+  20 NERI011B 1913 2005     93      2      0    .704   1.33   2.91   .577   .676   .268   1.79   .274   .037   1
+  21 NERI012A 1919 2005     87      2      0    .597    .81   2.27   .452   .583   .419   1.87   .385  -.014   3
+  22 NERI012B 1904 2005    102      2      0    .617   1.14   3.42   .604   .684   .321   1.94   .323   .016   1
+  23 NERI014A 1951 2005     55      0      0    .551   1.39   3.24   .552   .570   .281   1.57   .241  -.044   3
+  24 NERI014B 1947 2005     59      1      0    .813   1.72   3.45   .599   .542   .293   1.85   .257  -.058   3
+  25 NERI015A 1953 2005     53      0      0    .646   1.40   4.16   .655   .377   .346   1.77   .311  -.112   3
+  26 NERI015B 1945 2005     61      1      0    .810   1.68   3.25   .582   .423   .284   1.71   .285   .011   1
+  27 NERI016A 1949 2005     57      1      0    .449   1.09   2.91   .762   .875   .266   2.12   .296   .067   1
+  28 NERI016B 1947 2005     59      1      1    .275   1.01   3.11   .867   .912   .282   2.29   .358   .061   1
+  29 NERI017A 1952 2005     54      0      0    .803   1.73   3.02   .422   .232   .242   1.50   .203  -.028   3
+  30 NERI017B 1949 2005     57      0      0    .780   1.95   4.66   .772   .634   .267   1.75   .254  -.052   3
+  31 NERI021B 1907 2005     99      2      0    .525   1.92   4.54  1.040   .612   .345   1.71   .320  -.020   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2622     44      1    .661   1.29   5.95   .738   .644   .333   2.97   .326  -.003
+
+ DATA CHECKS (rwl.check): wv004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv004.rwl
+ 31 series, 2622 measurements, 1830-2005, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file wv004.rwl, MD5 5069c7b518057d5927661fbe33cbf3a4.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

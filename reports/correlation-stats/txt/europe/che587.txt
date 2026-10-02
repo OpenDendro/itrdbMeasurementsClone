@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: che587
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che587.rwl
+      MD5 of measurement file: b269081bfe94eca67318fb6c981ed77e
+      Date checked           : 01OCT26
+      Beginning year         : 1886
+      Ending year            : 2009
+      Principal investigators: Rohner, B.
+      Site name              : Adenberg
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.6139 N
+      Longitude              : 8.5611 E
+      Elevation              : 510 m
+
+      Series intercorrelation: 0.490
+      Avg mean sensitivity   : 0.306
+      Avg standard deviation : 0.757
+      Avg autocorrelation    : 0.684
+      Number dated series    : 19
+      Series crossdated      : 17
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 2.78
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che587
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 AdB002   1908 2009       .74  .70 
+   2 AdB004   1886 2009  .40  .51  .48 
+   3 AdB007   1918 2009       .34  .43 
+   4 AdB010c  1906 2009       .65  .69 
+   6 AdB012b  1891 2009  .41  .75  .61 
+   7 AdB013b  1896 2009  .69  .62  .51 
+   8 AdB014   1899 2009       .56  .56 
+   9 AdB015b  1925 2008       .69  .57 
+  10 AdB016   1907 2009       .61  .65 
+  12 AdB018   1933 2009            .46 
+  13 AdB019   1915 2009       .45  .50 
+  14 AdB021   1906 2009       .51  .70 
+  15 AdB024   1917 2009       .41  .52 
+  16 AdB025   1909 2009       .42  .54 
+  17 AdB026   1912 2009       .38  .37 
+  18 AdB029   1909 2009       .40B .53 
+  19 AdB030   1916 2009       .64  .73 
+ Av segment correlation  .50  .54  .56 
+
+ FLAGGED SEGMENTS: che587
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  18 AdB029   1925 1974     B     .399        -6      .426   .027
+
+ DESCRIPTIVE STATISTICS: che587
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AdB002   1908 2009    102      2      0    .551    .86   2.18   .460   .698   .340   1.90   .331  -.007   3
+   2 AdB004   1886 2009    124      3      0    .419    .74   2.19   .441   .659   .422   2.41   .412   .008   2
+   3 AdB007   1918 2009     92      2      0    .402   2.39   4.30   .926   .663   .258   1.59   .235   .086   0
+   4 AdB010c  1906 2009    104      2      0    .563    .72   2.38   .490   .765   .400   2.09   .381   .034   1
+   5 AdB011   1936 2009     74                         1.22   3.30   .725   .820   .285                         
+   6 AdB012b  1891 2009    119      3      0    .460   1.51   3.60   .833   .786   .314   1.73   .304   .036   1
+   7 AdB013b  1896 2009    114      3      0    .569   1.94   5.29   .924   .602   .321   2.29   .334   .117   0
+   8 AdB014   1899 2009    111      2      0    .449   1.88   5.52  1.280   .804   .373   1.98   .368   .009   3
+   9 AdB015b  1925 2008     84      2      0    .499   1.84   4.57  1.363   .865   .371   1.82   .330   .147   0
+  10 AdB016   1907 2009    103      2      0    .480   1.82   4.34   .754   .690   .274   1.66   .267   .043   1
+  11 AdB017b  1905 2009    105                         1.17   2.72   .666   .755   .369                         
+  12 AdB018   1933 2009     77      1      0    .467   2.92   4.26   .640   .396   .203   1.33   .178   .057   0
+  13 AdB019   1915 2009     95      2      0    .471   1.58   3.04   .557   .684   .226   1.58   .223   .023   1
+  14 AdB021   1906 2009    104      2      0    .537   1.13   2.77   .541   .742   .278   1.76   .262  -.001   1
+  15 AdB024   1917 2009     93      2      0    .472   1.98   4.01   .963   .771   .316   2.18   .292  -.017   2
+  16 AdB025   1909 2009    101      2      0    .490   2.85   5.72   .961   .612   .225   1.67   .240  -.006   1
+  17 AdB026   1912 2009     98      2      0    .406   1.35   2.61   .516   .535   .296   2.15   .311   .142   0
+  18 AdB029   1909 2009    101      2      1    .451   3.07   4.99   .807   .581   .178   1.46   .172   .015   0
+  19 AdB030   1916 2009     94      2      0    .653   1.69   3.69   .613   .527   .288   1.79   .288   .070   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1895     36      1    .490   1.69   5.72   .757   .684   .306   2.41   .294   .043
+
+ DATA CHECKS (rwl.check): che587
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che587.rwl
+ 19 series, 1895 measurements, 1886-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 7 note(s)
+ -------------
+ Nothing to report at this severity.
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file che587.rwl, MD5 b269081bfe94eca67318fb6c981ed77e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series AdB011 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: the 'nyrs' spline for series AdB017b is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

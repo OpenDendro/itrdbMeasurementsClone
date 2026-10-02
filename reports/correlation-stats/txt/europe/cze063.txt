@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: cze063
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze063.rwl
+      MD5 of measurement file: 0e2e626a35eca7323b7a9b0b39691a87
+      Date checked           : 01OCT26
+      Beginning year         : 1897
+      Ending year            : 2021
+      Principal investigators: Mašek, J.
+      Site name              : 30PL Šumava
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 49.1835 N
+      Longitude              : 13.2568 E
+      Elevation              : 1152 m
+
+      Series intercorrelation: 0.576
+      Avg mean sensitivity   : 0.191
+      Avg standard deviation : 0.567
+      Avg autocorrelation    : 0.807
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 5.88
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze063
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 30PL25   1903 2021       .67  .75 
+   2 30PL08   1908 2021       .72  .77 
+   3 30PL20   1900 2021       .61  .74 
+   4 30PL04   1908 2021       .70  .69 
+   6 30PL26   1902 2021       .48  .53 
+   7 30PL24   1897 2021  .48  .54  .61 
+   8 30PL11   1912 2021       .55  .70 
+   9 30PL10   1919 2021       .79  .76 
+  10 30PL18   1904 2021       .72  .68 
+  11 30PL15   1900 2018       .09B .29B
+  12 30PL14   1900 2020       .64  .27A
+  13 30PL13   1902 2021       .60  .51 
+  14 30PL09   1919 2021       .73  .62 
+  15 30PL07   1904 2021       .78  .76 
+  16 30PL06   1909 2021       .67  .67 
+  17 30PL05   1898 2021  .73  .72  .61 
+  18 30PL17   1908 2021       .45  .66 
+  19 30PL12   1899 2021  .76  .74  .65 
+  20 30PL21   1899 2021  .42  .63  .76 
+  21 30PL02   1922 2021       .53  .60 
+  22 30PL01   1901 2021       .65  .77 
+  23 30PL19   1927 2021            .59 
+  24 30PL03   1915 2021       .68  .75 
+  25 30PL16   1907 2020       .51  .37 
+ Av segment correlation  .59  .62  .63 
+
+ FLAGGED SEGMENTS: cze063
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 30PL15   1925 1974     B     .090         2      .739   .650
+  11 30PL15   1950 1999     B     .291         2      .350   .059
+  12 30PL14   1950 1999     A     .267         0
+
+ DESCRIPTIVE STATISTICS: cze063
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 30PL25   1903 2021    119      2      0    .617   1.37   3.13   .404   .671   .181   1.71   .201  -.035   3
+   2 30PL08   1908 2021    114      2      0    .742   1.54   2.76   .453   .727   .168   1.44   .167   .044   1
+   3 30PL20   1900 2021    122      2      0    .592    .91   2.26   .501   .901   .189   1.53   .188   .022   1
+   4 30PL04   1908 2021    114      2      0    .685   1.00   1.82   .315   .738   .186   1.37   .185   .039   1
+   5 30PL23   1952 2021     70      0      0    .583   1.79   3.01   .492   .705   .164   1.44   .169   .055   1
+   6 30PL26   1902 2021    120      2      0    .529    .91   2.96   .737   .941   .256   1.76   .269   .016   2
+   7 30PL24   1897 2021    125      3      0    .490    .91   2.58   .579   .903   .224   1.62   .222   .038   1
+   8 30PL11   1912 2021    110      2      0    .570   1.23   2.73   .426   .691   .194   1.57   .191   .007   3
+   9 30PL10   1919 2021    103      2      0    .720   1.88   4.14   .778   .818   .196   1.74   .221  -.000   1
+  10 30PL18   1904 2021    118      2      0    .710   1.67   4.43   .875   .868   .200   1.55   .204   .007   1
+  11 30PL15   1900 2018    119      2      2    .179    .87   4.08   .727   .953   .201   1.57   .202   .001   2
+  12 30PL14   1900 2020    121      2      1    .328   1.44   3.41   .561   .809   .200   1.47   .200   .024   1
+  13 30PL13   1902 2021    120      2      0    .517   1.40   2.87   .412   .690   .174   1.42   .167  -.013   1
+  14 30PL09   1919 2021    103      2      0    .598   1.79   5.00  1.030   .906   .196   1.53   .206   .052   1
+  15 30PL07   1904 2021    118      2      0    .692    .81   3.77   .485   .868   .203   1.78   .206   .028   1
+  16 30PL06   1909 2021    113      2      0    .627   1.43   2.88   .427   .688   .185   1.73   .196  -.010   2
+  17 30PL05   1898 2021    124      3      0    .597   1.14   3.80   .679   .866   .224   2.03   .242   .015   1
+  18 30PL17   1908 2021    114      2      0    .497   1.18   1.92   .289   .651   .171   1.43   .159  -.002   3
+  19 30PL12   1899 2021    123      3      0    .647   1.49   4.96   .612   .790   .205   1.44   .193  -.001   1
+  20 30PL21   1899 2021    123      3      0    .611   1.35   3.69   .589   .799   .194   1.99   .203  -.018   1
+  21 30PL02   1922 2021    100      2      0    .602   1.58   3.47   .545   .752   .184   1.72   .179  -.003   1
+  22 30PL01   1901 2021    121      2      0    .670   1.45   3.31   .540   .834   .167   1.39   .158  -.003   1
+  23 30PL19   1927 2021     95      1      0    .567   2.11   3.88   .768   .818   .164   1.71   .185   .087   1
+  24 30PL03   1915 2021    107      2      0    .693   1.07   2.56   .472   .905   .147   1.38   .158   .033   3
+  25 30PL16   1907 2020    114      2      0    .391   1.31   3.17   .515   .822   .185   1.63   .188  -.033   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2830     51      3    .576   1.32   5.00   .567   .807   .191   2.03   .195   .013
+
+ DATA CHECKS (rwl.check): cze063
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze063.rwl
+ 25 series, 2830 measurements, 1897-2021, 0.01 mm precision
+ 0 error(s), 2 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 633 carriage return(s) against 318 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     8 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file cze063.rwl, MD5 0e2e626a35eca7323b7a9b0b39691a87.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

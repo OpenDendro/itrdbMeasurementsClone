@@ -1,0 +1,175 @@
+
+ COFECHA-style crossdating report: sd011
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sd011.rwl
+      MD5 of measurement file: 34cf4d3fa63ad781c09640632430f70a
+      Date checked           : 01OCT26
+      Beginning year         : 1767
+      Ending year            : 1991
+      Principal investigators: Meko, D.M.; Sieg, C.H.
+      Site name              : Grace Coolidge
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.7500 N
+      Longitude              : 103.3500 W
+      Elevation              : 1234 m
+
+      Series intercorrelation: 0.615
+      Avg mean sensitivity   : 0.258
+      Avg standard deviation : 0.353
+      Avg autocorrelation    : 0.687
+      Number dated series    : 41
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 3, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 4.96
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sd011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 GCE03A   1789 1990  .75  .71  .64  .63  .50  .26A
+   2 GCE03B   1849 1990            .64  .55  .33  .23B
+   3 GCE04A   1853 1990                 .72  .76  .59 
+   4 GCE04B   1893 1990                      .63  .61 
+   5 GCE06A   1870 1990                 .80  .79  .70 
+   8 GCE07A   1900 1990                           .75 
+   9 GCE07B   1768 1990  .63  .53  .51  .56  .67  .65 
+  10 GCE07C   1767 1876  .52  .50                     
+  11 GCE07E   1775 1990  .48  .42  .38  .31A .47  .64 
+  12 GCE09A   1887 1990                      .73  .71 
+  13 GCE09B   1873 1990                 .79  .84  .83 
+  14 GCE10A   1917 1990                           .75 
+  15 GCE10B   1917 1990                           .84 
+  16 GCE13A   1806 1990       .65  .70  .73  .77  .67 
+  17 GCE13B   1822 1990       .64  .69  .77  .83  .75 
+  18 GCE13C   1900 1990                      .77  .69 
+  19 GCE16A   1908 1990                           .77 
+  20 GCE16B   1920 1990                           .70 
+  21 GCE18A   1812 1989       .65  .40  .20B .45  .75 
+  22 GCE18B   1829 1988            .83  .70  .70  .46 
+  23 GCE18C   1870 1990                 .68  .80  .81 
+  24 GCE19A   1817 1990       .55  .53  .55  .56  .47 
+  25 GCE19B   1801 1990       .66  .62  .73  .73  .63 
+  26 GCE19C   1818 1990       .66  .64  .66  .73  .59 
+  27 GCE22A   1889 1990                      .74  .72 
+  28 GCE22B   1908 1990                           .67 
+  29 GCE23A   1892 1990                      .74  .52 
+  30 GCE23B   1887 1991                      .80  .68 
+  31 GCE24A   1890 1991                      .79  .64 
+  32 GCE24B   1894 1990                      .70  .60 
+  34 GCE25A   1892 1990                      .71  .84 
+  35 GCE29A   1802 1986       .65  .76  .72  .54  .35 
+  36 GCE29B   1818 1991       .32A .49  .65  .50  .39 
+  37 GCE30A   1883 1990                      .74  .78 
+  38 GCE30B   1883 1990                      .76  .77 
+  39 GCE3B    1850 1990                 .58  .36  .23B
+  40 GCEA21   1801 1990       .71  .74  .65  .61  .40 
+  41 GCEA29   1801 1990       .71  .74  .65  .61  .40 
+ Av segment correlation  .60  .60  .62  .63  .67  .62 
+
+ FLAGGED SEGMENTS: sd011
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 GCE03A   1925 1974     A     .265         0
+   2 GCE03B   1925 1974     B     .233        -9      .274   .040  weak at every lag
+  11 GCE07E   1875 1924     A     .308         0
+  21 GCE18A   1875 1924     B     .196        -3      .312   .116  weak at every lag
+  36 GCE29B   1825 1874     A     .316         0
+  39 GCE3B    1925 1974     B     .228       -10      .268   .040  weak at every lag
+
+ DESCRIPTIVE STATISTICS: sd011
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GCE03A   1789 1990    202      6      1    .594    .82   2.55   .400   .807   .179   2.38   .203  -.005   2
+   2 GCE03B   1849 1990    142      4      1    .432    .62   1.06   .135   .501   .171   1.43   .161   .010   1
+   3 GCE04A   1853 1990    138      3      0    .632    .56   1.71   .283   .843   .185   1.47   .177  -.003   1
+   4 GCE04B   1893 1990     98      2      0    .610    .56   1.55   .214   .762   .183   1.78   .199   .011   1
+   5 GCE06A   1870 1990    121      3      0    .711    .84   2.16   .414   .686   .273   1.85   .289  -.008   2
+   6 GCE06B   1903 1955     53      0      0    .763   1.11   2.36   .467   .615   .289   1.71   .289  -.008   1
+   7 GCE06C   1926 1990     65      0      0    .705    .96   2.81   .489   .727   .239   1.72   .245  -.010   1
+   8 GCE07A   1900 1990     91      1      0    .607    .49   1.16   .193   .776   .187   1.61   .196   .062   1
+   9 GCE07B   1768 1990    223      6      0    .566    .56   2.18   .305   .866   .186   1.66   .187   .002   3
+  10 GCE07C   1767 1876    110      2      0    .426    .66   2.89   .429   .860   .218   1.50   .190  -.030   3
+  11 GCE07E   1775 1990    216      6      1    .433    .54   3.01   .357   .703   .256   2.40   .284   .030   1
+  12 GCE09A   1887 1990    104      2      0    .713    .94   3.04   .519   .752   .261   1.79   .279   .001   2
+  13 GCE09B   1873 1990    118      3      0    .796    .92   2.64   .489   .754   .286   1.72   .289   .040   1
+  14 GCE10A   1917 1990     74      1      0    .757   1.35   3.85   .693   .813   .232   1.62   .227   .061   1
+  15 GCE10B   1917 1990     74      1      0    .816   1.44   4.06   .908   .848   .264   1.55   .265   .030   1
+  16 GCE13A   1806 1990    185      5      0    .648    .65   1.42   .229   .539   .249   1.83   .245   .005   2
+  17 GCE13B   1822 1990    169      5      0    .687    .52   1.11   .167   .389   .282   1.72   .258   .093   0
+  18 GCE13C   1900 1990     91      2      0    .693    .70   1.84   .308   .597   .297   1.76   .262   .008   0
+  19 GCE16A   1908 1990     83      1      0    .754    .76   2.59   .547   .779   .389   1.97   .379   .031   2
+  20 GCE16B   1920 1990     71      1      0    .717   1.04   3.81   .773   .809   .376   1.90   .368  -.008   2
+  21 GCE18A   1812 1989    178      5      1    .508    .65   2.24   .387   .641   .316   3.19   .359  -.006   1
+  22 GCE18B   1829 1988    160      4      0    .583    .61   1.98   .301   .707   .292   1.95   .288  -.001   1
+  23 GCE18C   1870 1990    121      3      0    .695    .68   1.45   .283   .494   .318   1.79   .280   .005   0
+  24 GCE19A   1817 1990    174      5      0    .554    .58   1.86   .299   .767   .238   1.74   .246  -.013   1
+  25 GCE19B   1801 1990    190      5      0    .536    .76   2.16   .398   .732   .238   2.29   .278   .013   1
+  26 GCE19C   1818 1990    173      5      0    .660    .76   1.83   .374   .767   .231   1.88   .245   .005   1
+  27 GCE22A   1889 1990    102      2      0    .724    .91   3.17   .569   .773   .258   1.96   .289  -.007   1
+  28 GCE22B   1908 1990     83      1      0    .590    .56   1.80   .331   .794   .235   2.05   .272   .036   1
+  29 GCE23A   1892 1990     99      2      0    .664    .78   2.89   .613   .817   .287   1.94   .288  -.001   1
+  30 GCE23B   1887 1991    105      2      0    .666    .71   2.50   .471   .781   .316   2.11   .315   .003   1
+  31 GCE24A   1890 1991    102      2      0    .705    .70   2.04   .498   .800   .284   1.79   .280  -.005   1
+  32 GCE24B   1894 1990     97      2      0    .698    .72   1.67   .342   .633   .272   1.65   .268   .006   1
+  33 GCE24E   1894 1937     44      0      0    .759    .94   1.59   .325   .249   .340   1.56   .299   .029   0
+  34 GCE25A   1892 1990     99      2      0    .714   1.11   2.79   .555   .690   .302   1.81   .302   .033   1
+  35 GCE29A   1802 1986    185      5      0    .598    .46   1.00   .170   .600   .255   2.13   .239  -.004   2
+  36 GCE29B   1818 1991    174      5      1    .473    .43   1.20   .204   .582   .306   1.99   .287  -.005   3
+  37 GCE30A   1883 1990    108      2      0    .732   1.05   2.41   .419   .665   .251   1.73   .254  -.006   1
+  38 GCE30B   1883 1990    108      2      0    .754   1.03   2.44   .488   .687   .330   1.73   .313   .004   1
+  39 GCE3B    1850 1990    141      3      1    .396    .60   1.01   .142   .447   .194   1.47   .183   .008   1
+  40 GCEA21   1801 1990    190      5      0    .575    .45   1.02   .179   .615   .274   1.99   .261   .004   2
+  41 GCEA29   1801 1990    190      5      0    .575    .45   1.02   .179   .615   .274   1.99   .261   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5251    121      6    .615    .70   4.06   .353   .687   .258   3.19   .259   .009
+
+ DATA CHECKS (rwl.check): sd011
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sd011.rwl
+ 41 series, 5251 measurements, 1767-1991, 0.01 mm precision
+ 1 error(s), 0 warning(s), 4 note(s)
+ -------------
+ ERROR
+   RWL_DUP_SERIES (1)
+     GCEA21: identical measurements in GCEA21, GCEA29; one core may be archived twice
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file sd011.rwl, MD5 34cf4d3fa63ad781c09640632430f70a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: cana488
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana488.rwl
+      MD5 of measurement file: fd8733b02e5ed243aab3adbf7fe96a3d
+      Date checked           : 01OCT26
+      Beginning year         : 1629
+      Ending year            : 2000
+      Principal investigators: Smith, D.J.; Coulthard, B.L.; Larocque, S.J.
+      Site name              : Ragnarok Glacier
+      Species information    : ABLA Abies lasiocarpa (Hook.) Nutt.
+      Latitude               : 51.6100 N
+      Longitude              : 125.3100 W
+      Elevation              : 2119 m
+
+      Series intercorrelation: 0.569
+      Avg mean sensitivity   : 0.183
+      Avg standard deviation : 0.274
+      Avg autocorrelation    : 0.770
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 2, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 5.88
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana488
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 01I417a  1849 2000                                     .51  .64  .69  .71 
+   2 01I417b  1880 2000                                          .55  .74  .85 
+   3 01I418a  1799 2000                      .53  .53  .53  .63  .60  .56  .62 
+   4 01I418b  1850 2000                                .58  .69  .63  .62  .67 
+   5 01I420a  1828 1998                                .70  .69  .64  .66      
+   6 01I420b  1839 2000                                .56  .64  .65  .72  .81 
+   7 01I421a  1629 2000       .17B .09B .30A .50  .78  .78  .68  .75  .75  .79 
+   8 01I421b  1698 2000       .47  .15B-.02B .44  .75  .71  .63  .74  .64  .61 
+   9 01I422a  1751 2000                 .60  .76  .57  .41  .40  .54  .74  .63 
+  10 01I422b  1768 2000                 .58  .72  .71  .61  .58  .66  .69  .68 
+  11 01I425a  1830 2000                                .54  .52  .54  .57  .73 
+  12 01I425b  1749 2000            .34  .39  .23A .52  .67  .66  .52  .60  .74 
+  13 01I426a  1856 2000                                     .60  .56  .56  .60 
+  14 01I426b  1805 2000                           .57  .64  .51  .52  .50  .46 
+  15 01I428a  1793 2000                      .53  .74  .68  .51  .64  .67  .72 
+  16 01I428b  1795 2000                      .36  .64  .77  .64  .64  .75  .74 
+ Av segment correlation       .32  .19  .37  .51  .64  .63  .59  .61  .65  .69 
+
+ FLAGGED SEGMENTS: cana488
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 01I421a  1725 1774     B     .168         9      .356   .188
+   7 01I421a  1750 1799     B     .091         9      .397   .306
+   7 01I421a  1775 1824     A     .296         0
+   8 01I421b  1750 1799     B     .145        -9      .217   .072  weak at every lag
+   8 01I421b  1775 1824     B    -.018        -9      .292   .310  weak at every lag
+  12 01I425b  1800 1849     A     .227         0
+
+ DESCRIPTIVE STATISTICS: cana488
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01I417a  1849 2000    152      4      0    .635   1.41   2.28   .365   .798   .138   1.38   .127   .008   2
+   2 01I417b  1880 2000    121      3      0    .743   1.28   2.28   .439   .871   .145   1.39   .143  -.027   1
+   3 01I418a  1799 2000    202      7      0    .557    .65   1.30   .136   .528   .153   1.43   .152   .016   1
+   4 01I418b  1850 2000    151      5      0    .618    .71   1.02   .126   .243   .169   1.42   .154  -.023   0
+   5 01I420a  1828 1998    171      4      0    .570    .99   1.67   .273   .676   .180   1.54   .166  -.010   0
+   6 01I420b  1839 2000    162      5      0    .685   1.16   2.01   .267   .565   .176   1.46   .165   .005   1
+   7 01I421a  1629 2000    372     10      3    .478    .39   1.03   .215   .819   .268   2.09   .275   .005   3
+   8 01I421b  1698 2000    303     10      2    .519    .60   1.54   .323   .873   .214   1.91   .210   .012   3
+   9 01I422a  1751 2000    250      8      0    .509    .74   1.59   .304   .845   .178   1.51   .184   .021   1
+  10 01I422b  1768 2000    233      8      0    .612    .84   1.73   .322   .815   .179   1.51   .181   .016   1
+  11 01I425a  1830 2000    171      5      0    .557    .63   1.42   .244   .782   .180   1.79   .187   .002   1
+  12 01I425b  1749 2000    252      9      1    .509    .61   1.54   .274   .858   .184   1.66   .193   .022   1
+  13 01I426a  1856 2000    145      4      0    .585    .81   1.41   .288   .869   .156   1.43   .160  -.004   2
+  14 01I426b  1805 2000    196      6      0    .473    .75   1.71   .370   .915   .173   1.88   .186   .006   2
+  15 01I428a  1793 2000    208      7      0    .654    .73   1.37   .221   .814   .149   1.46   .149  -.003   3
+  16 01I428b  1795 2000    206      7      0    .638    .91   1.65   .280   .798   .156   1.45   .144   .001   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3295    102      6    .569    .77   2.28   .274   .770   .183   2.09   .182   .005
+
+ DATA CHECKS (rwl.check): cana488
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana488.rwl
+ 16 series, 3295 measurements, 1629-2000, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file cana488.rwl, MD5 fd8733b02e5ed243aab3adbf7fe96a3d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

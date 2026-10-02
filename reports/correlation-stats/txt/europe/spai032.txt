@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: spai032
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : spai032.rwl
+      MD5 of measurement file: 4e52041f21cd72bf94f8319928b55f1f
+      Date checked           : 01OCT26
+      Beginning year         : 1794
+      Ending year            : 1983
+      Principal investigators: Richter, K.
+      Site name              : Cuenca Vega de Cordono
+      Species information    : PINI Pinus nigra J.F. Arnold
+      Latitude               : 40.4300 N
+      Longitude              : 1.9000 W
+      Elevation              : 1440 m
+
+      Series intercorrelation: 0.485
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 0.980
+      Avg autocorrelation    : 0.912
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: spai032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 E160504A 1846 1983            .38  .40B .49  .74 
+   2 E160505A 1845 1956            .38  .59  .62      
+   3 E160506A 1845 1983            .55  .58  .72  .69 
+   4 E160507A 1841 1983            .65  .60  .58  .49 
+   5 E160508A 1845 1983            .45  .26A .33  .33 
+   6 E160509A 1834 1983            .60  .69  .62  .44 
+   7 E160504B 1863 1983                 .26B .53  .68 
+   8 E160505B 1836 1983            .41  .55  .63  .48 
+   9 E160506B 1846 1983            .75  .62  .65  .70 
+  10 E160507B 1852 1983                 .46  .56  .53 
+  11 E160508B 1794 1983            .54  .38  .48  .48 
+  12 E160509B 1850 1983                 .48  .58  .52 
+ Av segment correlation            .52  .49  .57  .55 
+
+ FLAGGED SEGMENTS: spai032
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 E160504A 1875 1924     B     .404         4      .425   .022
+   5 E160508A 1875 1924     A     .256         0
+   7 E160504B 1875 1924     B     .264         9      .289   .025  weak at every lag
+
+ DESCRIPTIVE STATISTICS: spai032
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 E160504A 1846 1983    138      4      1    .480   1.77   6.66  1.211   .868   .255   2.23   .278  -.043   1
+   2 E160505A 1845 1956    112      3      0    .535    .76   2.55   .706   .934   .320   1.93   .292  -.033   0
+   3 E160506A 1845 1983    139      4      0    .624   1.67   5.01  1.210   .950   .193   1.68   .201  -.018   1
+   4 E160507A 1841 1983    143      4      0    .518   1.49   4.29  1.100   .943   .202   1.50   .208  -.004   1
+   5 E160508A 1845 1983    139      4      1    .275    .85   2.93   .478   .897   .191   1.61   .200  -.012   1
+   6 E160509A 1834 1983    150      4      0    .510   1.45   6.26  1.334   .954   .185   1.47   .180   .005   1
+   7 E160504B 1863 1983    121      3      1    .503   1.77   6.00  1.224   .870   .294   1.65   .272  -.013   1
+   8 E160505B 1836 1983    148      4      0    .414    .61   2.37   .449   .889   .294   2.10   .294   .008   1
+   9 E160506B 1846 1983    138      4      0    .642   1.58   4.36  1.089   .941   .194   1.85   .214  -.021   1
+  10 E160507B 1852 1983    132      3      0    .465   1.58   5.69  1.326   .936   .255   1.51   .231   .098   0
+  11 E160508B 1794 1983    190      4      0    .404   1.18   3.53   .698   .849   .238   1.69   .239   .028   1
+  12 E160509B 1850 1983    134      3      0    .493    .99   4.63  1.040   .932   .228   1.75   .225   .011   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1684     44      3    .485   1.31   6.66   .980   .912   .235   2.23   .235   .002
+
+ DATA CHECKS (rwl.check): spai032
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/spai032.rwl
+ 12 series, 1684 measurements, 1794-1983, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file spai032.rwl, MD5 4e52041f21cd72bf94f8319928b55f1f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

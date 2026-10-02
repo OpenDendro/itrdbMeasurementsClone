@@ -1,0 +1,151 @@
+
+ COFECHA-style crossdating report: kore003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : kore003.rwl
+      MD5 of measurement file: aec1fac0e52718128e072b59cd6ec75d
+      Date checked           : 01OCT26
+      Beginning year         : 1961
+      Ending year            : 2018
+      Principal investigators: Kim, M.-S.; Zhang, P.; Woo, S.-H.; Koh, Y.; Linderholm, H.W.; Jeong, J.-H.
+      Site name              : Wolchul Mountain
+      Species information    : PIDE Pinus densiflora Siebold & Zucc.
+      Latitude               : 34.7530 N
+      Longitude              : 126.6790 E
+      Elevation              : 809 m
+
+      Series intercorrelation: 0.559
+      Avg mean sensitivity   : 0.251
+      Avg standard deviation : 1.580
+      Avg autocorrelation    : 0.839
+      Number dated series    : 27
+      Segment length tested  : 28
+
+      Number problem segments: 6  (A 2, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 15.38
+
+
+ CORRELATION OF SERIES BY SEGMENTS: kore003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  28-year dated segments, lagged  14 years
+ Flags:  A = correlation under   .4372 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1984 
+                        1997 2011 
+ --- -------- ---------  ---- ---- 
+   1 WC01     1969 2018  .72  .60 
+   2 WC02     1974 2018       .64 
+   3 WC03     1968 2018  .84  .79 
+   4 WC04     1965 2018  .68  .76 
+   5 WC05     1964 2018  .61  .53 
+   6 WC06     1968 2018  .73  .70 
+   7 WC07     1970 2018       .74 
+   8 WC08     1969 2018  .65  .59 
+   9 WC09     1963 2018  .64  .64 
+  10 WC10     1969 2018  .73  .57 
+  11 WC11     1967 2018  .75  .63 
+  12 WC12     1974 2018       .53 
+  13 WC13     1962 2018  .75  .67 
+  14 WC15     1965 2018  .68  .67 
+  15 WC16     1961 2018  .71  .67 
+  16 WC17     1963 2018  .64  .48 
+  17 WC18     1968 2018       .57 
+  18 WC19     1969 2018       .20B
+  20 WC22     1977 2018       .73 
+  21 WC26     1981 2018       .38A
+  22 WC28     1974 2018       .44 
+  23 WC32     1982 2018       .37B
+  24 WC35     1980 2018       .30B
+  25 WC37     1973 2018       .18B
+  26 WC39     1977 2018       .59 
+  27 WC40     1976 2018       .39A
+ Av segment correlation  .70  .55 
+
+ FLAGGED SEGMENTS: kore003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  18 WC19     1984 2011     B     .202        -4      .499   .298
+  21 WC26     1984 2011     A     .384         0
+  23 WC32     1984 2011     B     .371        -3      .382   .011  weak at every lag
+  24 WC35     1984 2011     B     .296         5      .354   .058  weak at every lag
+  25 WC37     1984 2011     B     .178        -3      .429   .252  weak at every lag
+  27 WC40     1984 2011     A     .389         0
+
+ DESCRIPTIVE STATISTICS: kore003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WC01     1969 2018     50      2      0    .659   2.65   7.07  1.462   .890   .187   1.44   .197   .087   1
+   2 WC02     1974 2018     45      1      0    .675   2.29   4.96  1.144   .835   .244   1.35   .218   .165   0
+   3 WC03     1968 2018     51      2      0    .709   2.63   6.20  1.824   .917   .253   1.39   .230  -.004   1
+   4 WC04     1965 2018     54      2      0    .693   2.94   6.00  1.146   .810   .186   1.52   .186   .002   1
+   5 WC05     1964 2018     55      2      0    .565   4.08  10.40  1.990   .726   .242   1.54   .210  -.053   2
+   6 WC06     1968 2018     51      2      0    .705   3.42  10.44  2.358   .860   .292   1.54   .265   .029   1
+   7 WC07     1970 2018     49      1      0    .739   2.07   4.52  1.072   .810   .313   1.73   .280   .011   1
+   8 WC08     1969 2018     50      2      0    .648   3.01  15.94  2.247   .834   .197   1.86   .230   .218   0
+   9 WC09     1963 2018     56      2      0    .576   3.61  10.56  2.117   .794   .248   1.76   .231  -.079   1
+  10 WC10     1969 2018     50      2      0    .602   3.02   9.27  1.923   .835   .302   1.52   .281  -.031   1
+  11 WC11     1967 2018     52      2      0    .643   3.14  10.21  2.585   .941   .274   1.53   .244  -.024   1
+  12 WC12     1974 2018     45      1      0    .479   3.53   5.96  1.166   .613   .235   1.42   .232  -.034   2
+  13 WC13     1962 2018     57      2      0    .629   2.55   5.91  1.301   .855   .274   1.72   .270   .001   1
+  14 WC15     1965 2018     54      2      0    .626   1.84   7.32  1.337   .874   .221   1.47   .227   .170   1
+  15 WC16     1961 2018     58      2      0    .542   1.18   4.14   .970   .923   .316   1.80   .299   .013   1
+  16 WC17     1963 2018     56      2      0    .493   1.50   4.20   .774   .706   .309   1.55   .264   .069   0
+  17 WC18     1968 2018     51      1      0    .502   1.56   4.90  1.197   .934   .251   1.45   .219  -.004   3
+  18 WC19     1969 2018     50      1      1    .402   2.13   6.34  1.595   .916   .290   1.46   .231   .022   2
+  19 WC21     1989 2018     30      0      0    .562   3.45   6.28  1.066   .751   .172   1.42   .164   .165   0
+  20 WC22     1977 2018     42      1      0    .668   3.95   8.22  1.703   .805   .243   1.50   .207  -.114   3
+  21 WC26     1981 2018     38      1      1    .414   3.48   7.25  1.477   .808   .185   1.51   .187   .001   2
+  22 WC28     1974 2018     45      1      0    .298   3.37   7.19  2.426   .939   .323   1.75   .295   .047   2
+  23 WC32     1982 2018     37      1      1    .417   2.81   7.98  2.023   .936   .271   1.34   .227  -.010   2
+  24 WC35     1980 2018     39      1      1    .324   3.13   6.66  1.299   .879   .166   1.41   .163  -.011   1
+  25 WC37     1973 2018     46      1      1    .420   2.91   7.31  1.072   .604   .176   1.32   .169   .131   3
+  26 WC39     1977 2018     42      1      0    .545   2.48   6.50  1.724   .937   .289   1.69   .274  -.071   1
+  27 WC40     1976 2018     43      1      1    .374   2.53   6.67  1.597   .908   .236   1.60   .247   .012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1296     39      6    .559   2.75  15.94  1.580   .839   .251   1.86   .234   .025
+
+ DATA CHECKS (rwl.check): kore003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/kore003.rwl
+ 27 series, 1296 measurements, 1961-2018, 0.001 mm precision
+ 1 error(s), 0 warning(s), 12 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     WC19: correlates best with the master at lag -4 (r = 0.527 against r = 0.296 as dated); the series may be misdated by 4 year(s), most likely a missing ring
+ 12 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file kore003.rwl, MD5 aec1fac0e52718128e072b59cd6ec75d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4372 for 28-year segments.
+ Segments: 28 years, lagged 14, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 28 years: the record is only 58 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

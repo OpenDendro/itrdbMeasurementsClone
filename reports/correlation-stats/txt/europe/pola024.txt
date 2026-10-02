@@ -1,0 +1,177 @@
+
+ COFECHA-style crossdating report: pola024
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : pola024.rwl
+      MD5 of measurement file: 802fe4b8b67b54d257c4edb4c9a08a73
+      Date checked           : 01OCT26
+      Beginning year         : 1810
+      Ending year            : 2004
+      Principal investigators: Büntgen, U.; Kaszka, R.; Esper, J.; Frank, D.C.; Verstege, A.
+      Site name              : DolinaChoch
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 49.2833 N
+      Longitude              : 19.0833 E
+      Elevation              : 1000 m
+
+      Series intercorrelation: 0.512
+      Avg mean sensitivity   : 0.201
+      Avg standard deviation : 0.595
+      Avg autocorrelation    : 0.833
+      Number dated series    : 42
+      Series crossdated      : 41
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 7, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 9.18
+
+
+ CORRELATION OF SERIES BY SEGMENTS: pola024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 01a      1867 2004  .64  .55  .47 
+   2 01b      1874 2004  .72  .72  .60 
+   3 03a      1856 2004  .65  .61  .32A
+   4 03b      1858 2004  .61  .38  .23B
+   5 04a      1868 2004  .52  .43  .26A
+   6 04b      1866 2004  .42  .41  .37 
+   7 05a      1890 2004  .77  .71  .50 
+   8 05b      1861 2004  .74  .69  .40 
+   9 06a      1847 2004  .69  .53  .28A
+  10 06b      1841 2004  .75  .72  .47 
+  11 07a      1820 2004  .73  .73  .66 
+  13 09a      1881 2004  .72  .67  .40 
+  14 09b      1879 2004  .66  .69  .45 
+  15 10z      1870 2004  .67  .58  .43 
+  16 11a      1845 2004  .63  .71  .54 
+  17 11b      1852 2004  .59  .58  .50 
+  18 13a      1849 2004  .49  .64  .55 
+  19 13b      1847 2004  .72  .53  .35 
+  20 14a      1871 2004  .72  .62  .54 
+  21 14b      1875 2004  .64  .60  .64 
+  22 15z      1938 2004            .43 
+  23 16a      1849 2004  .64  .48  .37 
+  24 16b      1855 2004  .41  .37B .61 
+  25 17a      1903 2004       .67  .31A
+  26 17b      1852 2004  .67  .74  .38 
+  27 19a      1919 2004       .53  .42 
+  28 19b      1850 2004  .53  .49  .60 
+  29 20a      1819 2004  .48  .52  .38 
+  30 20b      1810 2004  .70  .66  .52 
+  31 21a      1855 2004  .71  .72  .59 
+  32 21b      1869 2004  .49  .45  .50 
+  33 24a      1860 2004  .57  .41  .32A
+  34 24b      1850 2004  .51  .49  .32A
+  35 25a      1850 2004  .68  .52  .32A
+ Av segment correlation  .63  .58  .44 
+
+ FLAGGED SEGMENTS: pola024
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 03a      1950 1999     A     .318         0
+   4 03b      1950 1999     B     .231         2      .278   .047  weak at every lag
+   5 04a      1950 1999     A     .264         0
+   9 06a      1950 1999     A     .276         0
+  24 16b      1925 1974     B     .369        10      .421   .051
+  25 17a      1950 1999     A     .309         0
+  33 24a      1950 1999     A     .320         0
+  34 24b      1950 1999     A     .321         0
+  35 25a      1950 1999     A     .322         0
+
+ DESCRIPTIVE STATISTICS: pola024
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01a      1867 2004    138      3      0    .504   1.73   2.97   .471   .389   .247   1.44   .217   .084   0
+   2 01b      1874 2004    131      3      0    .567   1.37   3.43   .444   .584   .218   1.54   .221  -.018   1
+   3 03a      1856 2004    149      3      1    .514   1.36   2.96   .626   .898   .172   1.55   .188   .078   1
+   4 03b      1858 2004    147      3      1    .449   1.14   2.83   .443   .782   .175   2.28   .211  -.009   2
+   5 04a      1868 2004    137      3      1    .396   1.64   2.85   .593   .842   .170   1.79   .195   .065   1
+   6 04b      1866 2004    139      3      0    .415   1.03   2.44   .419   .850   .177   1.48   .174  -.017   3
+   7 05a      1890 2004    115      3      0    .635   1.55   2.98   .484   .626   .221   1.48   .205   .015   1
+   8 05b      1861 2004    144      3      0    .538   1.36   3.42   .574   .785   .218   1.78   .234   .022   1
+   9 06a      1847 2004    158      3      1    .481   1.26   2.78   .478   .746   .197   1.92   .223   .011   1
+  10 06b      1841 2004    164      3      0    .427   1.14   2.41   .468   .746   .221   1.91   .236   .016   1
+  11 07a      1820 2004    185      3      0    .604   1.06   2.69   .569   .877   .198   1.61   .215   .016   2
+  12 07b      1830 2004    175                         1.20   2.97   .777   .901   .219                         
+  13 09a      1881 2004    124      3      0    .473   1.03   2.25   .608   .891   .256   2.07   .250  -.023   1
+  14 09b      1879 2004    126      3      0    .593   1.15   2.46   .570   .842   .210   1.46   .192  -.037   3
+  15 10z      1870 2004    135      3      0    .554   1.05   2.71   .408   .794   .180   2.15   .210  -.016   2
+  16 11a      1845 2004    160      3      0    .612    .97   2.68   .500   .897   .191   1.45   .198   .033   1
+  17 11b      1852 2004    153      3      0    .551    .85   2.78   .551   .931   .187   1.57   .196   .012   1
+  18 13a      1849 2004    156      3      0    .564    .84   2.51   .543   .922   .204   1.68   .210   .000   2
+  19 13b      1847 2004    158      3      0    .489    .68   3.33   .689   .914   .296   2.81   .327   .060   1
+  20 14a      1871 2004    134      3      0    .644   1.65   2.98   .602   .753   .212   1.53   .185  -.003   1
+  21 14b      1875 2004    130      3      0    .631   1.27   2.30   .485   .776   .227   1.61   .214  -.003   1
+  22 15z      1938 2004     67      1      0    .395    .52   1.16   .207   .829   .175   1.54   .193  -.008   1
+  23 16a      1849 2004    156      3      0    .541   1.07   4.95   .858   .965   .166   1.36   .162  -.003   3
+  24 16b      1855 2004    150      3      1    .469   1.10   4.24   .572   .918   .166   1.65   .179   .003   1
+  25 17a      1903 2004    102      2      1    .504   1.74   3.46   .894   .881   .187   1.81   .199   .010   2
+  26 17b      1852 2004    153      3      0    .454   1.81   4.04   .855   .870   .194   1.80   .208  -.004   3
+  27 19a      1919 2004     86      2      0    .464    .88   1.69   .242   .701   .166   1.38   .170   .002   2
+  28 19b      1850 2004    155      3      0    .533   1.06   3.93   .704   .956   .147   1.38   .146  -.001   2
+  29 20a      1819 2004    186      3      0    .472   1.04   6.15   .835   .908   .210   2.05   .218   .024   1
+  30 20b      1810 2004    195      3      0    .614   1.13   5.82   .847   .904   .203   1.70   .211  -.003   1
+  31 21a      1855 2004    150      3      0    .675    .95   3.51   .654   .962   .160   1.60   .163  -.017   3
+  32 21b      1869 2004    136      3      0    .469   1.01   1.97   .402   .805   .199   1.67   .209  -.000   3
+  33 24a      1860 2004    145      3      1    .449   1.49   3.84   .736   .838   .210   1.74   .219  -.037   3
+  34 24b      1850 2004    155      3      1    .364   1.45   3.01   .665   .854   .184   1.56   .197  -.054   3
+  35 25a      1850 2004    155      3      1    .492   1.11   3.06   .736   .945   .177   1.77   .204   .037   1
+  36 22a      1970 2004     35      0      0    .466    .84   1.92   .497   .771   .415   1.89   .339   .152   1
+  37 23a      1970 2004     35      0      0    .362    .84   1.61   .357   .753   .267   1.79   .249   .068   1
+  38 23b      1970 2004     35      0      0    .288    .92   2.16   .553   .872   .207   1.43   .224   .032   1
+  39 26a      1983 2004     22      0      0    .444   1.14   1.78   .284   .303   .235   1.49   .214   .129   0
+  40 26b      1983 2004     22      0      0    .176   1.36   2.07   .471   .793   .180   1.32   .188   .007   1
+  41 27a      1973 2004     32      0      0    .312    .93   2.17   .428   .792   .201   1.39   .204  -.033   2
+  42 27b      1979 2004     26      0      0    .454    .97   1.56   .354   .575   .253   2.04   .318   .225   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5256     98      9    .512   1.18   6.15   .595   .833   .201   2.81   .208   .011
+
+ DATA CHECKS (rwl.check): pola024
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/pola024.rwl
+ 42 series, 5256 measurements, 1810-2004, 0.01 mm precision
+ 0 error(s), 0 warning(s), 8 note(s)
+ -------------
+ Nothing to report at this severity.
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file pola024.rwl, MD5 802fe4b8b67b54d257c4edb4c9a08a73.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 07b is not all positive, so dividing
+   by it would give negative or infinite indices. Remove the series, or detrend the data
+   yourself with detrend() and pass the indices with 'nyrs = NULL'

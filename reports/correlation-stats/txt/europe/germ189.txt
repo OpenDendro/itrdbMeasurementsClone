@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: germ189
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ189.rwl
+      MD5 of measurement file: 4722ce0f8db83ec184ce187a89c3799d
+      Date checked           : 01OCT26
+      Beginning year         : 1877
+      Ending year            : 2005
+      Principal investigators: Fischer, S.
+      Site name              : Nordrhein-Westfalen/Haiger-Siegerland drh01
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 50.7167 N
+      Longitude              : 8.1000 E
+      Elevation              : 520 m
+
+      Series intercorrelation: 0.666
+      Avg mean sensitivity   : 0.262
+      Avg standard deviation : 0.877
+      Avg autocorrelation    : 0.728
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 4.65
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ189
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 drh0116B 1889 2005  .54  .69  .77 
+   2 drh0101b 1886 2005  .77  .84  .82 
+   3 drh0102a 1895 2005  .53  .51  .56 
+   5 drh0104b 1892 2005  .68  .74  .75 
+   6 drh0105b 1896 2005  .76  .64  .45 
+   7 drh0106b 1906 2005       .72  .73 
+   8 drh0107z 1907 2005       .03B .31A
+   9 drh0108a 1895 2005  .78  .79  .68 
+  10 drh0109a 1890 2005  .69  .68  .84 
+  11 drh0110b 1883 2005  .71  .74  .80 
+  12 drh0111b 1885 2005  .82  .83  .80 
+  13 drh0112b 1888 2005  .81  .73  .71 
+  14 drh0113b 1892 2005  .75  .75  .68 
+  15 drh0114a 1877 2005  .81  .77  .81 
+  16 drh0115a 1880 2005  .64  .69  .66 
+ Av segment correlation  .71  .68  .69 
+
+ FLAGGED SEGMENTS: germ189
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 drh0107z 1925 1974     B     .031        -9      .372   .341
+   8 drh0107z 1950 1999     A     .312         0
+
+ DESCRIPTIVE STATISTICS: germ189
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 drh0116B 1889 2005    117      3      0    .652   2.54   4.55   .832   .513   .276   1.60   .256  -.041   3
+   2 drh0101b 1886 2005    120      3      0    .767   1.91   3.98   .835   .725   .265   1.62   .254   .030   1
+   3 drh0102a 1895 2005    111      3      0    .545   1.77   3.69   .711   .799   .205   1.46   .206  -.020   3
+   4 drh0103z 1951 2005     55      0      0    .453   2.12   4.99  1.076   .755   .290   1.91   .297   .045   2
+   5 drh0104b 1892 2005    114      3      0    .731   2.03   4.31   .804   .636   .278   1.53   .254  -.000   3
+   6 drh0105b 1896 2005    110      3      0    .564   1.81   4.82  1.110   .866   .312   2.09   .323   .013   1
+   7 drh0106b 1906 2005    100      2      0    .753   2.42   5.18  1.006   .709   .261   1.54   .232  -.011   2
+   8 drh0107z 1907 2005     99      2      2    .120   1.30   3.50   .831   .811   .304   1.71   .297   .029   1
+   9 drh0108a 1895 2005    111      3      0    .728   1.73   3.64   .663   .726   .249   1.60   .222   .022   1
+  10 drh0109a 1890 2005    116      3      0    .734   2.20   4.33   .879   .790   .226   1.60   .228  -.022   2
+  11 drh0110b 1883 2005    123      3      0    .735   2.43   5.20  1.133   .808   .245   1.93   .242   .002   1
+  12 drh0111b 1885 2005    121      3      0    .822   1.88   3.70   .725   .736   .240   1.74   .245   .066   1
+  13 drh0112b 1888 2005    118      3      0    .749   1.84   4.48   .840   .757   .300   1.61   .283   .034   1
+  14 drh0113b 1892 2005    114      3      0    .710   1.91   4.21   .928   .839   .255   2.00   .262   .036   1
+  15 drh0114a 1877 2005    129      3      0    .755   2.17   5.95   .973   .738   .261   1.66   .242   .008   1
+  16 drh0115a 1880 2005    126      3      0    .631   2.54   5.68   .795   .495   .242   1.89   .239   .031   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1784     43      2    .666   2.04   5.95   .877   .728   .262   2.09   .253   .013
+
+ DATA CHECKS (rwl.check): germ189
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ189.rwl
+ 16 series, 1784 measurements, 1877-2005, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     drh0107z: correlates with the rest of the collection at r = 0.102 where the collection median is 0.707 (5.7 MAD below it); it does not fit the collection it is in
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file germ189.rwl, MD5 4722ce0f8db83ec184ce187a89c3799d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

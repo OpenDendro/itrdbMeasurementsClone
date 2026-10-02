@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: wv016
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv016.rwl
+      MD5 of measurement file: 92206aecce449708186a556114395687
+      Date checked           : 01OCT26
+      Beginning year         : 1698
+      Ending year            : 1877
+      Principal investigators: de Graauw, K.K.; Hessl, A.E.
+      Site name              : The Barracks Addition
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 37.8000 N
+      Longitude              : 80.4400 W
+      Elevation              : 628 m
+
+      Series intercorrelation: 0.530
+      Avg mean sensitivity   : 0.229
+      Avg standard deviation : 0.219
+      Avg autocorrelation    : 0.605
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 7.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 
+                        1749 1774 1799 1824 1849 1874 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 BAR202A  1749 1805            .19B               
+   2 BAE101A  1728 1876            .78  .74  .70  .64 
+   3 BAE102A  1732 1876            .60  .74  .56  .48 
+   4 BAE104A  1783 1873                      .73      
+   5 BAE106A  1698 1877       .63  .55  .38  .17B .06B
+   6 BAR105B  1708 1863       .61  .64  .52  .46      
+   7 BAR103A  1729 1844            .54  .49           
+   8 BAR204A  1760 1852                 .56  .45      
+   9 BAR205A  1713 1860       .52  .61  .58  .65      
+  10 BAR107A  1759 1875                 .66  .57  .41 
+  11 BAR106A  1762 1877                 .76  .61  .54 
+  12 BAE107A  1707 1877       .59  .66  .62  .68  .62 
+  13 BAR206A  1731 1874            .57  .78  .74  .53 
+ Av segment correlation       .59  .57  .62  .58  .47 
+
+ FLAGGED SEGMENTS: wv016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 BAR202A  1750 1799     B     .186         6      .327   .141  weak at every lag
+   5 BAE106A  1800 1849     B     .166        -8      .194   .028  weak at every lag
+   5 BAE106A  1825 1874     B     .060        -8      .175   .116  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wv016
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BAR202A  1749 1805     57      1      1    .213    .82   1.57   .286   .654   .213   1.50   .217  -.005   1
+   2 BAE101A  1728 1876    149      4      0    .731    .87   1.31   .194   .395   .197   1.52   .182   .077   0
+   3 BAE102A  1732 1876    145      4      0    .588    .71   1.87   .246   .752   .161   1.92   .169   .015   1
+   4 BAE104A  1783 1873     91      1      0    .595    .74   1.14   .187   .617   .178   1.30   .161  -.007   3
+   5 BAE106A  1698 1877    180      5      2    .324    .48   1.63   .284   .751   .299   2.64   .298  -.048   3
+   6 BAR105B  1708 1863    156      4      0    .470    .57   1.85   .308   .851   .224   1.69   .209   .014   1
+   7 BAR103A  1729 1844    116      2      0    .522    .50   1.36   .211   .840   .187   1.77   .188  -.001   1
+   8 BAR204A  1760 1852     93      2      0    .451    .59   1.35   .189   .591   .218   1.74   .203   .001   0
+   9 BAR205A  1713 1860    148      4      0    .491    .51   1.15   .203   .811   .205   1.70   .190   .105   0
+  10 BAR107A  1759 1875    117      3      0    .558    .52   1.06   .164   .374   .289   1.64   .238  -.087   0
+  11 BAR106A  1762 1877    116      3      0    .613    .50   1.28   .154   .223   .258   1.97   .238  -.061   3
+  12 BAE107A  1707 1877    171      5      0    .569    .65   1.82   .216   .481   .252   1.94   .231   .075   0
+  13 BAR206A  1731 1874    144      4      0    .627    .54   1.28   .174   .451   .258   1.56   .224   .004   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1683     42      3    .530    .60   1.87   .219   .605   .229   2.64   .214   .011
+
+ DATA CHECKS (rwl.check): wv016
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv016.rwl
+ 13 series, 1683 measurements, 1698-1877, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:59 PDT.
+ Measurement file wv016.rwl, MD5 92206aecce449708186a556114395687.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

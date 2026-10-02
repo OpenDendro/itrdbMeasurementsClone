@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: indi008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : indi008.rwl
+      MD5 of measurement file: 280734976c56996b2a9565c2ab0f14fb
+      Date checked           : 01OCT26
+      Beginning year         : 1609
+      Ending year            : 1982
+      Principal investigators: Pant, G.B.
+      Site name              : Pahalgam
+      Species information    : ABPI Abies pindrow (Royle ex D. Don) Royle
+      Latitude               : 34.0300 N
+      Longitude              : 75.7000 E
+      Elevation              : 2900 m
+
+      Series intercorrelation: 0.500
+      Avg mean sensitivity   : 0.172
+      Avg standard deviation : 0.584
+      Avg autocorrelation    : 0.898
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 4, B 6; 2 of the B weak at every lag)
+      Pct problem segments   : 12.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: indi008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 PHAP01   1647 1981  .55  .72  .63  .68  .69  .43  .38  .62  .45  .41 
+   2 PHAP02   1662 1981  .56  .52  .62  .67  .49  .36  .40  .41  .45  .48 
+   3 PHAP03   1657 1982  .68  .72  .70  .69  .71  .68  .67  .80  .86  .70 
+   4 PHAP04   1676 1981  .41  .41  .46  .46B .43  .34  .31A .48  .51  .45 
+   5 PHAP05   1609 1981  .31A .42  .38  .44  .43  .16B .33  .46  .45  .54 
+   6 PHAP08   1636 1980  .72  .75  .69  .68  .56  .31A .46  .73  .62  .60 
+   7 PHAP21   1620 1981  .26B .30A .31B .42  .36  .29B .27B .43  .56  .47 
+   8 PHAP22   1632 1982  .67  .69  .71  .70  .69  .69  .70  .81  .81  .66 
+ Av segment correlation  .52  .57  .56  .59  .54  .41  .44  .59  .59  .54 
+
+ FLAGGED SEGMENTS: indi008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 PHAP04   1775 1824     B     .462        -8      .474   .012
+   4 PHAP04   1850 1899     A     .314         0
+   5 PHAP05   1700 1749     A     .306         0
+   5 PHAP05   1825 1874     B     .162         7      .273   .112  weak at every lag
+   6 PHAP08   1825 1874     A     .315         0
+   7 PHAP21   1700 1749     B     .255        -4      .376   .121
+   7 PHAP21   1725 1774     A     .299         0
+   7 PHAP21   1750 1799     B     .312         3      .387   .075
+   7 PHAP21   1825 1874     B     .292        -4      .343   .051
+   7 PHAP21   1850 1899     B     .265         4      .288   .023  weak at every lag
+
+ DESCRIPTIVE STATISTICS: indi008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PHAP01   1647 1981    335     10      0    .527   1.10   3.83   .699   .925   .172   1.93   .187   .021   1
+   2 PHAP02   1662 1981    320     10      0    .465   1.02   2.81   .387   .888   .147   1.39   .154   .018   1
+   3 PHAP03   1657 1982    326     10      0    .702    .79   2.83   .526   .948   .172   1.72   .185   .035   1
+   4 PHAP04   1676 1981    306     10      2    .415   1.61   6.01  1.039   .949   .160   1.61   .168   .015   1
+   5 PHAP05   1609 1981    373     10      2    .373    .69   3.18   .383   .846   .207   1.94   .208   .029   1
+   6 PHAP08   1636 1980    345     10      1    .601    .89   2.96   .670   .943   .184   1.88   .196  -.003   1
+   7 PHAP21   1620 1981    362     10      5    .356   1.02   2.31   .421   .768   .193   1.98   .212   .005   3
+   8 PHAP22   1632 1982    351     10      0    .579   1.09   3.28   .606   .932   .131   1.55   .143  -.030   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2718     80     10    .500   1.02   6.01   .584   .898   .172   1.98   .182   .011
+
+ DATA CHECKS (rwl.check): indi008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/indi008.rwl
+ 8 series, 2718 measurements, 1609-1982, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file indi008.rwl, MD5 280734976c56996b2a9565c2ab0f14fb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

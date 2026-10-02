@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: wa130
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa130.rwl
+      MD5 of measurement file: c82c71480161f68ec868b4c14a207a40
+      Date checked           : 01OCT26
+      Beginning year         : 1305
+      Ending year            : 1680
+      Principal investigators: Yamaguchi, D.K.
+      Site name              : Copalis River snags
+      Species information    : THPL Thuja plicata Donn ex D. Don
+      Latitude               : 47.1300 N
+      Longitude              : 124.1800 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.390
+      Avg mean sensitivity   : 0.158
+      Avg standard deviation : 0.492
+      Avg autocorrelation    : 0.831
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 2, B 9; 4 of the B weak at every lag)
+      Pct problem segments   : 18.64
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa130
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1400 1425 1450 1475 1500 1525 1550 1575 1600 1625 
+                        1449 1474 1499 1524 1549 1574 1599 1624 1649 1674 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 CP7892   1330 1677  .15B .47  .56  .41  .35  .36  .48  .55  .50  .38 
+   2 CP790    1305 1632  .29A .39  .48  .40  .33B .28B .52  .58           
+   3 CP791    1396 1680  .06B .51  .54  .43  .26B .34  .57  .49  .39  .46 
+   4 CP793    1337 1664  .14B .37  .58  .48  .41  .43  .35  .42  .56      
+   5 CP794    1326 1599  .10B .22B .57  .58  .37  .42  .39                
+   6 CPGF2A   1482 1648                      .60  .66  .61  .65           
+   7 CPGF2B   1515 1619                           .58  .63                
+   8 CPGF2NW  1419 1675       .46  .50  .42  .44  .54  .40  .31B .32A .36 
+ Av segment correlation  .15  .40  .54  .45  .40  .45  .49  .50  .44  .40 
+
+ FLAGGED SEGMENTS: wa130
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 CP7892   1400 1449     B     .145         7      .275   .129  weak at every lag
+   2 CP790    1400 1449     A     .285         0
+   2 CP790    1500 1549     B     .335         9      .336   .001
+   2 CP790    1525 1574     B     .282         2      .358   .076
+   3 CP791    1400 1449     B     .058        -7      .312   .255  weak at every lag
+   3 CP791    1500 1549     B     .258         1      .330   .072
+   4 CP793    1400 1449     B     .140         8      .165   .024  weak at every lag
+   5 CP794    1400 1449     B     .100         7      .452   .352
+   5 CP794    1425 1474     B     .222        -3      .255   .034  weak at every lag
+   8 CPGF2NW  1575 1624     B     .312         1      .356   .044
+   8 CPGF2NW  1600 1649     A     .322         0
+
+ DESCRIPTIVE STATISTICS: wa130
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CP7892   1330 1677    348     10      1    .381   1.30   3.43   .581   .865   .164   1.51   .181  -.035   3
+   2 CP790    1305 1632    328      8      3    .305    .90   2.91   .451   .907   .145   3.09   .187   .000   3
+   3 CP791    1396 1680    285     10      2    .351   1.02   1.92   .289   .852   .122   1.32   .129   .006   2
+   4 CP793    1337 1664    328      9      1    .408   1.33   3.61   .516   .839   .173   1.57   .176   .003   1
+   5 CP794    1326 1599    274      7      2    .292   1.88   4.07   .769   .790   .183   1.60   .190   .002   1
+   6 CPGF2A   1482 1648    167      4      0    .576    .98   1.95   .458   .865   .179   1.53   .190  -.042   1
+   7 CPGF2B   1515 1619    105      2      0    .628   1.12   2.13   .407   .830   .162   1.44   .171   .019   1
+   8 CPGF2NW  1419 1675    257      9      2    .415   1.65   2.56   .378   .675   .148   1.48   .160  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2092     59     11    .390   1.29   4.07   .492   .831   .158   3.09   .173  -.007
+
+ DATA CHECKS (rwl.check): wa130
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa130.rwl
+ 8 series, 2092 measurements, 1305-1680, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_PRECISION (1)
+     the file declares more than one precision (0.001 and 0.01 mm). That is legal and rare, and easy to miss: series measured at different precisions sit in one object
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file wa130.rwl, MD5 c82c71480161f68ec868b4c14a207a40.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

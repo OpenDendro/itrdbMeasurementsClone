@@ -1,0 +1,135 @@
+
+ COFECHA-style crossdating report: az619
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az619.rwl
+      MD5 of measurement file: e3aad28d31813e19e5813e4b47242649
+      Date checked           : 01OCT26
+      Beginning year         : 1663
+      Ending year            : 2018
+      Principal investigators: O'Neill, L.; Fulé, P.Z.
+      Site name              : Dog Canyon
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 36.4370 N
+      Longitude              : 112.0920 W
+      Elevation              : 2675 m
+
+      Series intercorrelation: 0.543
+      Avg mean sensitivity   : 0.259
+      Avg standard deviation : 0.663
+      Avg autocorrelation    : 0.817
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 6, B 5; 1 of the B weak at every lag)
+      Pct problem segments   : 7.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az619
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 DG-002   1721 2018       .54  .62  .61  .64  .76  .70  .65  .64  .37B .43 
+   2 DG-003   1784 2018                      .54  .48  .53  .62  .65  .41  .30A
+   3 DG-005   1718 2018       .38  .31B .40  .47  .60  .66  .64  .48  .33A .43 
+   4 DG-006   1682 1959  .53  .68  .54  .59  .57  .71  .68  .59  .47           
+   5 DG-007   1800 2018                           .70  .70  .65  .59  .48  .50 
+   6 DG-008   1718 2018       .71  .36  .36  .48  .48  .49  .48  .44  .23B .45 
+   7 DG-009   1780 2018                      .43  .49  .57  .56  .56  .45  .60 
+   8 DG-010   1762 2018                 .54  .51  .62  .74  .74  .64  .32A .34 
+   9 DG-012   1752 2018                 .50  .55  .70  .78  .76  .63  .53  .62 
+  10 DG-013   1783 2018                      .32A .21B .42  .59  .64  .40  .46 
+  11 DG-014   1663 2018  .54  .55  .66  .65  .38  .57  .80  .67  .45B .36  .33 
+  12 DG-015   1684 1982  .66  .48  .51  .68  .55  .43  .66  .70  .43  .35      
+  13 DG-016   1731 1930            .57  .57  .52  .70  .68  .62                
+  14 DG-017   1684 2018  .61  .47  .50  .51  .40  .22A .32A .51  .55  .67  .70 
+  15 DG-018   1863 2018                                     .54  .61  .66  .63 
+  16 DG-019   1761 2018                 .47  .44  .62  .80  .80  .62  .61  .52 
+  17 DG-020   1728 2018            .58  .53  .41  .63  .74  .74  .62  .58  .62 
+ Av segment correlation  .59  .54  .52  .53  .48  .56  .64  .64  .56  .45  .50 
+
+ FLAGGED SEGMENTS: az619
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 DG-002   1925 1974     B     .370         1      .411   .041
+   2 DG-003   1950 1999     A     .299         0
+   3 DG-005   1750 1799     B     .314         8      .400   .086
+   3 DG-005   1925 1974     A     .325         0
+   6 DG-008   1925 1974     B     .228        -1      .359   .131
+   8 DG-010   1925 1974     A     .323         0
+  10 DG-013   1800 1849     A     .316         0
+  10 DG-013   1825 1874     B     .207        -8      .264   .057  weak at every lag
+  11 DG-014   1900 1949     B     .453         2      .467   .013
+  14 DG-017   1825 1874     A     .218         0
+  14 DG-017   1850 1899     A     .320         0
+
+ DESCRIPTIVE STATISTICS: az619
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DG-002   1721 2018    298     10      1    .587   1.09   3.94   .633   .876   .234   1.65   .226  -.004   1
+   2 DG-003   1784 2018    235      7      1    .472   1.09   3.41   .462   .758   .211   1.47   .193   .020   1
+   3 DG-005   1718 2018    301     10      2    .460    .79   2.44   .395   .770   .238   1.51   .214   .010   3
+   4 DG-006   1682 1959    278      9      0    .562   1.06   4.07   .821   .885   .289   1.77   .271  -.007   1
+   5 DG-007   1800 2018    219      6      0    .577    .82   5.28   .647   .840   .303   2.00   .286   .008   2
+   6 DG-008   1718 2018    301     10      1    .482   1.40   4.11  1.055   .908   .301   1.76   .260   .007   2
+   7 DG-009   1780 2018    239      7      0    .503    .89   3.31   .583   .836   .254   1.59   .221   .021   2
+   8 DG-010   1762 2018    257      8      1    .530   1.17   3.16   .586   .876   .188   1.86   .192  -.003   1
+   9 DG-012   1752 2018    267      8      0    .649   1.38   4.73   .899   .924   .199   1.58   .200  -.015   1
+  10 DG-013   1783 2018    236      7      2    .493   1.28   4.51   .854   .906   .210   1.72   .192  -.006   2
+  11 DG-014   1663 2018    356     11      1    .514    .94   2.75   .561   .853   .252   1.88   .246  -.009   1
+  12 DG-015   1684 1982    299     10      0    .546   1.34   3.96   .735   .867   .231   1.68   .209   .032   0
+  13 DG-016   1731 1930    200      6      0    .580   1.37   3.83   .578   .872   .171   1.41   .156  -.012   2
+  14 DG-017   1684 2018    335     11      2    .527    .96   3.56   .717   .894   .277   2.06   .252  -.007   3
+  15 DG-018   1863 2018    156      4      0    .612   1.93   4.21   .820   .583   .344   1.71   .299  -.026   1
+  16 DG-019   1761 2018    258      8      0    .601   1.08   2.62   .552   .597   .406   2.13   .349  -.004   2
+  17 DG-020   1728 2018    291      9      0    .578   1.06   2.54   .406   .544   .304   1.74   .286   .004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4526    141     11    .543   1.13   5.28   .663   .817   .259   2.13   .239   .001
+
+ DATA CHECKS (rwl.check): az619
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az619.rwl
+ 17 series, 4526 measurements, 1663-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file az619.rwl, MD5 e3aad28d31813e19e5813e4b47242649.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: can717
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : can717.rwl
+      MD5 of measurement file: d5a8bb2db69cb095ff18878ef66d1d37
+      Date checked           : 01OCT26
+      Beginning year         : 1787
+      Ending year            : 2023
+      Principal investigators: Clyde, L.; Harvey, J.
+      Site name              : Baldface, West Kootneys
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 49.5872 N
+      Longitude              : 117.4003 W
+      Elevation              : 1727 m
+
+      Series intercorrelation: 0.532
+      Avg mean sensitivity   : 0.156
+      Avg standard deviation : 0.455
+      Avg autocorrelation    : 0.868
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 3.74
+
+
+ CORRELATION OF SERIES BY SEGMENTS: can717
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 bfc01a   1835 2023            .50  .39  .56  .53  .40 
+   2 bfc01b   1822 2023       .43  .43  .43  .42  .45  .57 
+   3 bfc02a   1801 2016       .46  .32A .32A .41  .54  .59 
+   4 bfc02b   1787 2023  .47  .55  .51  .52  .63  .64  .65 
+   5 bfc03a   1824 2009            .66  .54  .58  .75  .56 
+   6 bfc03b   1813 2023       .64  .60  .61  .62  .69  .75 
+   7 bfc04a   1813 2023       .65  .71  .78  .61  .58  .72 
+   8 bfc04b   1796 2023  .22B .67  .59  .72  .71  .59  .74 
+   9 bfc05a   1818 2023       .37B .43  .64  .73  .71  .71 
+  10 bfc05b   1839 2023            .38  .62  .69  .69  .65 
+  11 bfc06a   1828 2019            .37  .66  .67  .69  .60 
+  12 bfc06b   1868 2023                 .74  .70  .66  .59 
+  13 bfc07a   1835 2023            .53  .65  .64  .71  .80 
+  14 bfc07b   1834 2023            .48  .44  .56  .65  .56 
+  15 bfc08a   1899 2023                           .61  .69 
+  16 bfc08b   1895 2023                      .63  .62  .62 
+  17 bfc09a   1814 2023       .66  .70  .70  .72  .75  .76 
+  18 bfc09b   1808 2023       .65  .57  .53  .58  .73  .78 
+  19 bfc10a   1821 2023       .36  .44  .61  .67  .53  .62 
+  20 bfc10b   1806 2023       .54  .57  .71  .76  .76  .79 
+ Av segment correlation  .35  .54  .52  .59  .63  .64  .66 
+
+ FLAGGED SEGMENTS: can717
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 bfc02a   1850 1899     A     .317         0
+   3 bfc02a   1875 1924     A     .324         0
+   8 bfc04b   1800 1849     B     .221         5      .222   .001  weak at every lag
+   9 bfc05a   1825 1874     B     .367         6      .414   .047
+
+ DESCRIPTIVE STATISTICS: can717
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 bfc01a   1835 2023    189      5      0    .460   1.23   2.08   .415   .899   .128   1.60   .132   .008   1
+   2 bfc01b   1822 2023    202      6      0    .476   1.08   2.24   .355   .869   .124   1.38   .129  -.017   1
+   3 bfc02a   1801 2016    216      6      2    .399    .62   1.88   .340   .880   .221   1.91   .217  -.003   1
+   4 bfc02b   1787 2023    237      7      0    .510    .69   2.41   .375   .848   .165   1.46   .164   .045   2
+   5 bfc03a   1824 2009    186      5      0    .540   1.18   2.86   .556   .942   .134   1.35   .133   .014   2
+   6 bfc03b   1813 2023    211      6      0    .623   1.24   3.01   .627   .934   .145   1.65   .127   .002   2
+   7 bfc04a   1813 2023    211      6      0    .584   1.10   1.85   .342   .774   .161   1.60   .148   .024   2
+   8 bfc04b   1796 2023    228      7      1    .469    .96   2.04   .336   .805   .161   1.38   .146   .013   2
+   9 bfc05a   1818 2023    206      6      1    .407   1.03   2.51   .421   .881   .166   1.50   .167  -.004   2
+  10 bfc05b   1839 2023    185      5      0    .561   1.54   4.06   .564   .877   .125   1.41   .119  -.000   3
+  11 bfc06a   1828 2019    192      5      0    .404   1.26   2.82   .388   .728   .150   1.55   .156   .052   1
+  12 bfc06b   1868 2023    156      4      0    .452   1.05   2.18   .413   .872   .150   1.71   .168   .047   1
+  13 bfc07a   1835 2023    189      5      0    .660   1.18   3.05   .490   .905   .133   1.37   .138   .002   1
+  14 bfc07b   1834 2023    190      5      0    .523   1.15   2.75   .404   .803   .147   1.42   .139   .038   3
+  15 bfc08a   1899 2023    125      2      0    .644    .84   1.72   .353   .840   .216   1.49   .200   .028   2
+  16 bfc08b   1895 2023    129      3      0    .589   1.07   2.50   .427   .852   .172   1.49   .173   .102   1
+  17 bfc09a   1814 2023    210      6      0    .644   1.11   2.96   .578   .910   .164   1.69   .168   .029   3
+  18 bfc09b   1808 2023    216      6      0    .617   1.05   2.99   .577   .920   .173   1.54   .173   .037   2
+  19 bfc10a   1821 2023    203      6      0    .555   1.17   3.60   .589   .908   .149   1.74   .162   .043   3
+  20 bfc10b   1806 2023    218      6      0    .568   1.11   2.73   .517   .902   .146   1.75   .155  -.002   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3899    107      4    .532   1.08   4.06   .455   .868   .156   1.91   .155   .021
+
+ DATA CHECKS (rwl.check): can717
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/can717.rwl
+ 20 series, 3899 measurements, 1787-2023, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file can717.rwl, MD5 d5a8bb2db69cb095ff18878ef66d1d37.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

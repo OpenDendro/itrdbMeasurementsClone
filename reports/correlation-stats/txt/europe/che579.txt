@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: che579
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che579.rwl
+      MD5 of measurement file: d4791a25ce073f1d5063a4e15155d90d
+      Date checked           : 01OCT26
+      Beginning year         : 1898
+      Ending year            : 2007
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : DAG
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.2318 N
+      Longitude              : 7.9857 E
+      Elevation              : 590 m
+
+      Series intercorrelation: 0.617
+      Avg mean sensitivity   : 0.260
+      Avg standard deviation : 0.932
+      Avg autocorrelation    : 0.815
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 5.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che579
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 DAG02a   1908 2007       .67  .70 
+   2 DAG05a   1913 2007       .63  .65 
+   3 DAG07a   1905 2007       .75  .78 
+   4 DAG10a   1913 2007       .32A .66 
+   5 DAG12a   1935 2007            .76 
+   6 DAG14a   1907 2007       .59  .46 
+   7 DAG17b   1910 2007       .79  .74 
+   8 DAG19a   1898 2007       .79  .71 
+   9 DAG21a   1906 2007       .77  .69 
+  10 DAG22a   1900 2007       .76  .72 
+ Av segment correlation       .67  .69 
+
+ FLAGGED SEGMENTS: che579
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 DAG10a   1925 1974     A     .321         0
+
+ DESCRIPTIVE STATISTICS: che579
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DAG02a   1908 2007    100      2      0    .680   1.35   4.33   .640   .684   .304   1.79   .304   .014   2
+   2 DAG05a   1913 2007     95      2      0    .527   1.14   2.61   .583   .814   .261   1.75   .266  -.012   1
+   3 DAG07a   1905 2007    103      2      0    .687   1.21   4.75   .870   .850   .296   1.85   .311   .031   2
+   4 DAG10a   1913 2007     95      2      1    .381    .99   2.75   .442   .591   .321   1.91   .322   .068   1
+   5 DAG12a   1935 2007     73      1      0    .709   2.22   8.96  1.660   .803   .288   1.83   .303   .011   1
+   6 DAG14a   1907 2007    101      2      0    .536   1.42   5.37  1.046   .903   .212   2.32   .249   .014   3
+   7 DAG17b   1910 2007     98      2      0    .650   1.68   4.06   .592   .808   .160   1.35   .166  -.027   1
+   8 DAG19a   1898 2007    110      2      0    .639   1.15   5.36   .999   .905   .265   1.57   .263  -.023   1
+   9 DAG21a   1906 2007    102      2      0    .717   1.64   6.17  1.122   .854   .266   2.32   .278  -.013   2
+  10 DAG22a   1900 2007    108      2      0    .647   1.83   8.84  1.459   .906   .239   1.95   .262   .046   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            985     19      1    .617   1.44   8.96   .932   .815   .260   2.32   .271   .011
+
+ DATA CHECKS (rwl.check): che579
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che579.rwl
+ 10 series, 985 measurements, 1898-2007, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che579.rwl, MD5 d4791a25ce073f1d5063a4e15155d90d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

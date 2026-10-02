@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: russ020w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ020w.rwl
+      MD5 of measurement file: 14781094878730178a28530ee7f21b49
+      Date checked           : 01OCT26
+      Beginning year         : 1890
+      Ending year            : 1978
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Baikalsee, Irkutsk
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 53.6000 N
+      Longitude              : 105.0000 E
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.626
+      Avg mean sensitivity   : 0.186
+      Avg standard deviation : 0.763
+      Avg autocorrelation    : 0.773
+      Number dated series    : 12
+      Segment length tested  : 44
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ020w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  44-year dated segments, lagged  22 years
+ Flags:  A = correlation under   .3496 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1922 
+                        1943 1965 
+ --- -------- ---------  ---- ---- 
+   2 520012   1895 1978  .65  .70 
+   3 520021   1897 1978  .59  .61 
+   4 520022   1890 1978  .56  .60 
+   5 520031   1896 1978  .76  .70 
+   6 520032   1896 1978  .82  .75 
+   7 520041   1892 1978  .65  .65 
+   8 520042   1891 1978  .45  .46 
+   9 520051   1898 1978       .62 
+  10 520052   1896 1978  .69  .57 
+  11 520061   1891 1978  .70  .65 
+  12 520062   1897 1978  .77  .79 
+ Av segment correlation  .66  .65 
+
+ FLAGGED SEGMENTS: russ020w
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: russ020w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 520011   1928 1978     51      0      0    .401   2.44   3.65   .419   .456   .135   1.37   .143   .002   1
+   2 520012   1895 1978     84      2      0    .709   2.34   3.91   .779   .766   .201   1.42   .200  -.009   1
+   3 520021   1897 1978     82      2      0    .658   2.37   6.61  1.136   .835   .176   1.50   .184   .029   1
+   4 520022   1890 1978     89      2      0    .632   1.83   3.71   .634   .749   .201   1.48   .193   .012   1
+   5 520031   1896 1978     83      2      0    .658   1.97   3.88   .683   .885   .149   1.39   .159   .034   1
+   6 520032   1896 1978     83      2      0    .714   2.25   4.27   .677   .836   .152   1.37   .152   .005   2
+   7 520041   1892 1978     87      2      0    .616   1.83   4.31   .756   .856   .188   1.42   .183   .018   1
+   8 520042   1891 1978     88      2      0    .500   2.36   4.62   .705   .717   .177   1.46   .173   .004   1
+   9 520051   1898 1978     81      1      0    .605   1.80   3.07   .588   .625   .215   1.50   .240   .003   3
+  10 520052   1896 1978     83      2      0    .627   2.09   5.27   .743   .678   .203   1.51   .218   .035   2
+  11 520061   1891 1978     88      2      0    .599   1.98   4.21   .855   .856   .205   1.53   .219   .046   1
+  12 520062   1897 1978     82      2      0    .714   1.98   5.18  1.063   .890   .205   1.44   .210   .029   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            981     21      0    .626   2.09   6.61   .763   .773   .186   1.53   .191   .018
+
+ DATA CHECKS (rwl.check): russ020w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ020w.rwl
+ 12 series, 981 measurements, 1890-1978, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file russ020w.rwl, MD5 14781094878730178a28530ee7f21b49.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3496 for 44-year segments.
+ Segments: 44 years, lagged 22, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 44 years: the record is only 89 years long.

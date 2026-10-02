@@ -1,0 +1,126 @@
+
+ COFECHA-style crossdating report: ok048
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ok048.rwl
+      MD5 of measurement file: d526d2d932c8f7108babb8612bd8bc01
+      Date checked           : 01OCT26
+      Beginning year         : 1870
+      Ending year            : 2017
+      Principal investigators: King, C.; Jones, Z.
+      Site name              : Washita River
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 35.4930 N
+      Longitude              : 99.0520 W
+      Elevation              : 466 m
+
+      Series intercorrelation: 0.575
+      Avg mean sensitivity   : 0.247
+      Avg standard deviation : 1.081
+      Avg autocorrelation    : 0.730
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 4.17
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ok048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 WBOT1J   1908 2017       .65  .41 
+   2 WBOT2E   1925 2017            .76 
+   3 WBO099   1933 2016            .61 
+   5 WBOT2B   1938 2017            .73 
+   6 WBOT2C   1924 2016            .82 
+   7 WBOT1I   1924 2017       .64  .71 
+   9 WBOT2F   1926 2017            .66 
+  10 WBOT1C   1938 2017            .76 
+  11 WBO098   1915 2016       .75  .72 
+  12 WBOT2G   1922 2017       .70  .80 
+  13 WBOT3A   1936 2016            .71 
+  14 WBOT1A   1932 2017            .77 
+  16 WBOT3C   1941 2017            .58 
+  17 WBOT1B   1926 2017            .68 
+  18 WBOT1E   1909 2017       .43  .42 
+  19 WBOT1F   1907 2017       .54  .58 
+  20 WBOT2A   1870 2017       .21B .34 
+ Av segment correlation       .56  .65 
+
+ FLAGGED SEGMENTS: ok048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 WBOT2A   1925 1974     B     .214         1      .239   .025  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ok048
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WBOT1J   1908 2017    110      2      0    .511   2.05   5.77   .940   .721   .241   1.66   .233  -.025   1
+   2 WBOT2E   1925 2017     93      1      0    .625   2.20   4.96  1.104   .741   .273   1.60   .288   .081   1
+   3 WBO099   1933 2016     84      1      0    .543   3.14   6.07  1.082   .760   .207   1.48   .211   .077   1
+   4 WBOT2D   1963 2017     55      0      0    .479   2.11   4.74  1.047   .714   .257   1.62   .259   .016   3
+   5 WBOT2B   1938 2017     80      1      0    .683   4.30   6.44  1.124   .408   .243   1.44   .211   .067   0
+   6 WBOT2C   1924 2016     93      1      0    .728   1.55   5.57   .802   .671   .295   2.09   .291   .011   2
+   7 WBOT1I   1924 2017     94      2      0    .626   3.31   5.53  1.005   .757   .171   1.38   .165   .036   1
+   8 WBOT1D   1968 2017     50      0      0    .523   1.39   6.95  1.098   .881   .273   1.61   .237  -.042   3
+   9 WBOT2F   1926 2017     92      1      0    .571   3.40   7.24  1.308   .839   .181   1.41   .191   .044   1
+  10 WBOT1C   1938 2017     80      1      0    .645   3.11   6.44  1.200   .723   .238   1.93   .255   .045   1
+  11 WBO098   1915 2016    102      2      0    .673   2.66   6.63  1.276   .638   .311   2.23   .309   .036   1
+  12 WBOT2G   1922 2017     96      2      0    .770   2.45   6.87  1.274   .743   .289   1.96   .297   .006   1
+  13 WBOT3A   1936 2016     81      1      0    .641   2.34   5.02   .942   .669   .274   1.73   .276   .071   1
+  14 WBOT1A   1932 2017     86      1      0    .648   2.64   7.44  1.427   .826   .253   1.75   .237   .009   1
+  15 WBOT2J   1953 2017     65      0      0    .599   4.39   7.47  1.262   .630   .183   1.55   .194   .061   1
+  16 WBOT3C   1941 2017     77      1      0    .435   3.75   7.46  1.631   .808   .247   1.94   .253   .023   1
+  17 WBOT1B   1926 2017     92      1      0    .597   1.58   5.29   .750   .641   .262   2.00   .297   .049   1
+  18 WBOT1E   1909 2017    109      2      0    .466   1.93   5.36   .974   .703   .292   1.71   .286   .008   2
+  19 WBOT1F   1907 2017    111      2      0    .483   1.52   3.41   .682   .751   .242   1.70   .261   .035   1
+  20 WBOT2A   1870 2017    148      2      1    .370   1.38   4.13  1.007   .891   .206   2.08   .229   .015   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1798     24      1    .575   2.48   7.47  1.081   .730   .247   2.23   .250   .031
+
+ DATA CHECKS (rwl.check): ok048
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ok048.rwl
+ 20 series, 1798 measurements, 1870-2017, 0.001 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ok048.rwl, MD5 d526d2d932c8f7108babb8612bd8bc01.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,166 @@
+
+ COFECHA-style crossdating report: id025
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : id025.rwl
+      MD5 of measurement file: 9d33afd88a2f33af1d4d6071c9a0da78
+      Date checked           : 01OCT26
+      Beginning year         : 1859
+      Ending year            : 2020
+      Principal investigators: Andrus, R.A.; Peach, L.R.; Cinquini, A.R.; Mills, B.; Yusi, J.T.; Buhl, C.; Fischer, M.; Goodrich, B.A.; Hulbert, J.M.; Holz, A.; Meddens, A.J.H.; Moffett, K.B.; Ramirez, A.; Adams, H.D.
+      Site name              : McCroskey Park
+      Species information    : THPL Thuja plicata Donn ex D. Don
+      Latitude               : 47.0650 N
+      Longitude              : 116.8985 W
+      Elevation              : 1034 m
+
+      Series intercorrelation: 0.464
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.800
+      Avg autocorrelation    : 0.773
+      Number dated series    : 39
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 12.07
+
+
+ CORRELATION OF SERIES BY SEGMENTS: id025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 MP10A    1892 2020  .47  .54  .34 
+   2 MP10B    1896 2020  .25B .65  .55 
+   4 MP11B    1934 2020            .63 
+   5 MP12A    1912 2019       .54  .60 
+   6 MP12B    1906 2020       .26B .46 
+   7 MP13A    1932 2020            .68 
+   8 MP13B    1915 2020       .38  .49 
+   9 MP14A    1938 2020            .36 
+  10 MP14B    1925 2020            .39 
+  11 MP15A    1932 2020            .66 
+  12 MP15B    1929 2020            .65 
+  13 MP16A    1911 2020       .27A .56 
+  14 MP16B    1927 2020            .53 
+  15 MP17A    1928 2020            .52 
+  17 MP18A    1906 2020       .70  .62 
+  18 MP18B    1906 2020       .76  .48 
+  19 MP19A    1916 2020       .61  .51 
+  20 MP19B    1916 2020       .61  .61 
+  21 MP1A     1891 2020  .53  .54  .61 
+  22 MP1B     1901 2020       .35  .59 
+  25 MP3A     1920 2020       .18B .63 
+  26 MP3B     1911 2020       .54  .77 
+  27 MP4A     1905 2020       .36  .52 
+  28 MP4B     1908 2020       .35  .71 
+  31 MP6A     1859 2020  .51  .68  .32A
+  32 MP6B     1899 2020       .76  .61 
+  33 MP7A     1933 2020            .36 
+  35 MP8A     1937 2016            .35 
+  36 MP9A     1918 2020       .36  .42 
+  37 MP9B     1931 2020            .36 
+  38 MP20A    1920 2020       .30A .24B
+  39 MP20B    1894 2020  .49  .54  .46 
+ Av segment correlation  .45  .49  .52 
+
+ FLAGGED SEGMENTS: id025
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 MP10B    1900 1949     B     .245        -1      .395   .149
+   6 MP12B    1925 1974     B     .258         8      .400   .142
+  13 MP16A    1925 1974     A     .272         0
+  25 MP3A     1925 1974     B     .177        10      .260   .083  weak at every lag
+  31 MP6A     1950 1999     A     .321         0
+  38 MP20A    1925 1974     A     .301         0
+  38 MP20A    1950 1999     B     .239        -6      .314   .075  weak at every lag
+
+ DESCRIPTIVE STATISTICS: id025
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MP10A    1892 2020    129      3      0    .418   2.75   5.79  1.050   .821   .186   1.43   .191  -.030   3
+   2 MP10B    1896 2020    125      3      1    .310   2.24   4.99  1.188   .910   .196   1.49   .200   .042   1
+   3 MP11A    1959 2020     62      0      0    .540   3.15   7.64  1.373   .630   .309   2.68   .345  -.012   0
+   4 MP11B    1934 2020     87      1      0    .558   3.40   5.79  1.054   .710   .207   1.43   .200   .115   1
+   5 MP12A    1912 2019    108      2      0    .532   1.68   3.40   .656   .787   .220   1.69   .216   .040   2
+   6 MP12B    1906 2020    115      2      1    .516   2.26   5.44   .835   .711   .213   1.73   .194   .024   3
+   7 MP13A    1932 2020     89      1      0    .649   2.25   3.55   .593   .678   .162   1.35   .154   .114   0
+   8 MP13B    1915 2020    106      2      0    .448   1.72   2.84   .633   .797   .160   1.69   .194   .043   1
+   9 MP14A    1938 2020     83      1      0    .463   1.84   5.27  1.364   .864   .258   1.86   .259   .086   3
+  10 MP14B    1925 2020     96      1      0    .434   2.16   6.35  1.181   .820   .199   1.50   .216   .026   1
+  11 MP15A    1932 2020     89      1      0    .644   2.25   3.60   .602   .662   .167   1.34   .153   .004   3
+  12 MP15B    1929 2020     92      1      0    .568   1.93   3.06   .573   .713   .172   1.31   .164  -.038   3
+  13 MP16A    1911 2020    110      2      1    .482   1.78   3.69   .821   .905   .138   1.61   .156  -.021   1
+  14 MP16B    1927 2020     94      1      0    .416   1.48   2.94   .425   .761   .135   1.55   .155   .017   1
+  15 MP17A    1928 2020     93      1      0    .549   1.95   3.39   .647   .644   .251   1.89   .257   .064   2
+  16 MP17B    1954 2020     67      0      0    .266   2.01   3.07   .670   .749   .203   1.36   .195  -.017   1
+  17 MP18A    1906 2020    115      2      0    .351   1.87   3.70   .565   .819   .171   1.59   .161   .118   0
+  18 MP18B    1906 2020    115      2      0    .443   1.76   3.38   .570   .816   .153   1.53   .164  -.039   3
+  19 MP19A    1916 2020    105      2      0    .563   2.04   3.27   .650   .858   .137   1.55   .136   .127   0
+  20 MP19B    1916 2020    105      2      0    .595   2.07   3.42   .554   .780   .137   1.30   .125   .072   0
+  21 MP1A     1891 2020    130      3      0    .573   1.59   4.26   .969   .922   .201   1.57   .207  -.034   3
+  22 MP1B     1901 2020    120      2      0    .489   2.60   6.31  1.082   .760   .215   1.68   .216  -.033   3
+  23 MP2A     1959 2016     58      0      0    .470   2.90   6.15  1.137   .782   .205   1.58   .218   .078   1
+  24 MP2B     1955 2016     62      0      0    .553   2.52   4.68   .877   .572   .252   1.54   .238  -.065   3
+  25 MP3A     1920 2020    101      2      1    .379   3.67   7.84  1.401   .689   .228   1.78   .215  -.019   1
+  26 MP3B     1911 2020    110      2      0    .657   2.78   5.39  1.130   .790   .228   1.64   .220   .005   3
+  27 MP4A     1905 2020    116      2      0    .347   1.84   3.54   .657   .783   .174   1.58   .168  -.024   1
+  28 MP4B     1908 2020    113      2      0    .519   2.04   5.48   .739   .606   .211   2.17   .218   .007   1
+  29 MP5A     1956 2020     65      0      0    .458   2.35   3.70   .666   .581   .216   1.66   .197   .026   3
+  30 MP5B     1956 2020     65      0      0    .519   1.96   3.27   .632   .567   .259   1.57   .244  -.058   3
+  31 MP6A     1859 2020    162      3      1    .423   2.07   4.97  1.236   .846   .256   1.71   .257   .028   1
+  32 MP6B     1899 2020    122      2      0    .529   1.37   2.81   .548   .788   .209   1.55   .218  -.050   3
+  33 MP7A     1933 2020     88      1      0    .421   1.16   2.41   .448   .835   .192   1.69   .211   .021   1
+  34 MP7B     1949 2020     72      0      0    .281   2.27   4.52   .984   .745   .192   1.39   .194   .055   2
+  35 MP8A     1937 2016     80      1      0    .179   2.23   3.98   .697   .827   .147   1.47   .157  -.008   1
+  36 MP9A     1918 2020    103      2      0    .344   1.36   2.28   .500   .792   .218   1.58   .210  -.104   3
+  37 MP9B     1931 2020     90      1      0    .428   1.64   4.68   .685   .793   .201   1.55   .221   .040   1
+  38 MP20A    1920 2020    101      2      2    .380   1.03   2.33   .456   .834   .200   1.46   .181  -.044   3
+  39 MP20B    1894 2020    127      3      0    .402    .74   1.95   .344   .782   .245   1.82   .240  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3870     58      7    .464   2.03   7.84   .800   .773   .199   2.68   .200   .013
+
+ DATA CHECKS (rwl.check): id025
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/id025.rwl
+ 39 series, 3870 measurements, 1859-2020, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file id025.rwl, MD5 9d33afd88a2f33af1d4d6071c9a0da78.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

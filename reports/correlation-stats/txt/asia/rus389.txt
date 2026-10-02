@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: rus389
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus389.rwl
+      MD5 of measurement file: be550207e15632a5247701860be94467
+      Date checked           : 01OCT26
+      Beginning year         : 1404
+      Ending year            : 1521
+      Principal investigators: Kolchin, B.A.; Chernykh, N.B.; Karpukhin, A.A.; Matskovsky, V.V.; Solovyeva, L.N.
+      Site name              : Murom Monastery the Сhurch of the Resurrection of Lazarus of Murom
+      Species information    : PISP Pinus spp. L.
+      Latitude               : 61.4855 N
+      Longitude              : 36.2515 E
+      Elevation              : 27 m
+
+      Series intercorrelation: 0.509
+      Avg mean sensitivity   : 0.187
+      Avg standard deviation : 0.606
+      Avg autocorrelation    : 0.919
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 10.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus389
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1450 
+                        1499 
+ --- -------- ---------  ---- 
+   1 kigl02A  1404 1521  .57 
+   2 kigl02B  1404 1518  .43 
+   3 kigl03A  1426 1521  .47 
+   4 kigl03B  1420 1521  .53 
+   5 kigl04A  1413 1521  .64 
+   6 kigl04B  1413 1521  .54 
+   7 kigl10A  1416 1521  .68 
+   8 kigl10B  1416 1521  .64 
+   9 kigl11A  1419 1521  .27B
+  10 kigl11B  1419 1521  .47 
+ Av segment correlation  .53 
+
+ FLAGGED SEGMENTS: rus389
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 kigl11A  1450 1499     B     .269        -9      .303   .034  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus389
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 kigl02A  1404 1521    118      1      0    .516    .96   3.15   .577   .881   .218   1.51   .237  -.009   2
+   2 kigl02B  1404 1518    115      1      0    .350   1.12   3.50   .719   .892   .226   1.71   .240  -.017   2
+   3 kigl03A  1426 1521     96      1      0    .500    .84   2.80   .601   .964   .181   1.72   .195   .143   1
+   4 kigl03B  1420 1521    102      1      0    .508   1.18   3.50   .734   .941   .167   1.44   .172   .002   2
+   5 kigl04A  1413 1521    109      1      0    .668   1.00   2.50   .524   .891   .201   2.20   .242   .110   1
+   6 kigl04B  1413 1521    109      1      0    .604   1.00   2.65   .511   .885   .217   2.06   .232  -.001   3
+   7 kigl10A  1416 1521    106      1      0    .667    .91   2.90   .523   .946   .154   1.42   .155   .073   1
+   8 kigl10B  1416 1521    106      1      0    .420    .91   2.80   .551   .920   .174   1.52   .188   .021   1
+   9 kigl11A  1419 1521    103      1      1    .344   1.12   3.00   .677   .946   .173   1.41   .184   .073   1
+  10 kigl11B  1419 1521    103      1      0    .515   1.12   3.65   .651   .938   .150   1.51   .169   .130   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1067     10      1    .509   1.02   3.65   .606   .919   .187   2.20   .203   .050
+
+ DATA CHECKS (rwl.check): rus389
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus389.rwl
+ 10 series, 1067 measurements, 1404-1521, 0.05 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     5 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file rus389.rwl, MD5 be550207e15632a5247701860be94467.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

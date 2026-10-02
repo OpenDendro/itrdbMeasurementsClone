@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: lith003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : lith003.rwl
+      MD5 of measurement file: 86ee4844d3f2194cef951bfe3a3767c0
+      Date checked           : 01OCT26
+      Beginning year         : 1885
+      Ending year            : 1997
+      Principal investigators: Vitas, A.
+      Site name              : Juodkrante
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 55.5500 N
+      Longitude              : 21.1200 E
+      Elevation              : 10 m
+
+      Series intercorrelation: 0.589
+      Avg mean sensitivity   : 0.291
+      Avg standard deviation : 1.083
+      Avg autocorrelation    : 0.666
+      Number dated series    : 29
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 3.23
+
+
+ CORRELATION OF SERIES BY SEGMENTS: lith003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 JUEM01   1885 1995  .68  .65 
+   2 JUEM02   1888 1995  .72  .59 
+   3 JUEM03   1886 1995  .62  .72 
+   4 JUEM05   1891 1995  .74  .74 
+   5 JUEM06   1890 1995  .52  .23B
+   6 JUEM07   1885 1995  .71  .61 
+   7 JUEM11   1902 1995       .71 
+   8 JUEM12   1905 1995       .63 
+   9 JUEM13   1908 1995       .48 
+  10 JUEM14   1909 1995       .78 
+  11 JUEM15   1914 1995       .66 
+  12 JUEM16   1915 1995       .55 
+  13 JUEM18   1919 1995       .71 
+  14 JUEM19   1921 1995       .71 
+  23 JUEM31   1893 1997  .62  .48 
+  24 JUEM32   1892 1997  .39  .61 
+  25 JUEM34   1903 1997       .59 
+  26 JUEM35   1902 1997       .72 
+  27 JUEM36   1900 1997       .61 
+  28 JUEM37   1885 1997  .63  .56 
+  29 JUEM38   1891 1997  .53  .79 
+ Av segment correlation  .62  .63 
+
+ FLAGGED SEGMENTS: lith003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 JUEM06   1925 1974     B     .229        -3      .319   .090  weak at every lag
+
+ DESCRIPTIVE STATISTICS: lith003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 JUEM01   1885 1995    111      2      0    .588   1.75   4.10   .767   .709   .276   1.87   .276   .008   3
+   2 JUEM02   1888 1995    108      2      0    .509   1.86   5.90  1.199   .677   .332   2.22   .359   .015   1
+   3 JUEM03   1886 1995    110      2      0    .545   1.61   3.60   .693   .646   .298   1.62   .279  -.028   1
+   4 JUEM05   1891 1995    105      2      0    .725   1.97   4.20   .797   .644   .265   1.81   .272  -.005   1
+   5 JUEM06   1890 1995    106      2      1    .191   1.54   4.50   .650   .448   .313   1.96   .310   .095   0
+   6 JUEM07   1885 1995    111      2      0    .565   2.03   5.70   .901   .621   .278   2.27   .308   .088   1
+   7 JUEM11   1902 1995     94      1      0    .736   2.46   5.70  1.261   .773   .260   1.93   .280   .040   1
+   8 JUEM12   1905 1995     91      1      0    .562   2.42   6.50  1.168   .765   .285   1.53   .272   .027   2
+   9 JUEM13   1908 1995     88      1      0    .483   1.99   4.90   .984   .629   .332   2.14   .340  -.006   1
+  10 JUEM14   1909 1995     87      1      0    .698   2.54   4.80   .923   .656   .258   1.58   .270   .027   1
+  11 JUEM15   1914 1995     82      1      0    .735   2.49   7.50  1.417   .681   .275   1.99   .310  -.045   1
+  12 JUEM16   1915 1995     81      1      0    .449   2.42   5.80  1.145   .712   .273   1.70   .259   .069   1
+  13 JUEM18   1919 1995     77      1      0    .694   2.61   6.20  1.232   .830   .213   1.73   .240  -.034   2
+  14 JUEM19   1921 1995     75      1      0    .652   1.37   3.30   .596   .696   .271   1.68   .306   .004   1
+  15 JUEM20   1925 1995     71      0      0    .658   2.28   4.80   .911   .643   .298   1.65   .277   .046   1
+  16 JUEM22   1930 1995     66      0      0    .774   3.23   7.90  1.307   .592   .286   1.94   .296   .010   1
+  17 JUEM24   1931 1995     65      0      0    .589   1.61  10.20  1.503   .735   .340   2.93   .408   .015   2
+  18 JUEM25   1931 1995     65      0      0    .645   2.30   4.60   .939   .528   .317   1.61   .311  -.055   1
+  19 JUEM26   1932 1995     64      0      0    .672   3.10   6.60  1.295   .697   .266   2.06   .283   .056   1
+  20 JUEM28   1937 1995     59      0      0    .498   3.63  11.40  1.961   .646   .315   2.33   .392   .069   1
+  21 JUEM29   1937 1995     59      0      0    .454   2.67   7.70  1.934   .805   .391   1.72   .383   .043   1
+  22 JUEM30   1951 1995     45      0      0    .602   3.63   6.40  1.276   .557   .283   1.43   .243   .132   0
+  23 JUEM31   1893 1997    105      2      0    .576   2.51   5.70  1.122   .701   .279   1.86   .276  -.015   1
+  24 JUEM32   1892 1997    106      2      0    .573   2.28   5.30  1.088   .651   .306   2.03   .304   .055   1
+  25 JUEM34   1903 1997     95      1      0    .543   2.19   5.90  1.222   .777   .267   1.58   .262  -.006   1
+  26 JUEM35   1902 1997     96      1      0    .727   2.67   8.40  1.461   .784   .260   1.94   .262   .007   1
+  27 JUEM36   1900 1997     98      1      0    .532   2.40   5.60   .921   .462   .316   2.04   .311   .019   1
+  28 JUEM37   1885 1997    113      2      0    .614   2.29   5.10   .948   .630   .293   1.91   .316   .061   1
+  29 JUEM38   1891 1997    107      2      0    .605   1.80   4.80   .932   .667   .317   2.17   .346   .001   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2540     31      1    .589   2.26  11.40  1.083   .666   .291   2.93   .300   .022
+
+ DATA CHECKS (rwl.check): lith003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/lith003.rwl
+ 29 series, 2540 measurements, 1885-1997, 0.05 mm precision
+ 0 error(s), 2 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1885-1996 but the measurements cover 1885-1997
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 276 carriage return(s) against 278 line feed(s); mixed endings can defeat a reader
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file lith003.rwl, MD5 86ee4844d3f2194cef951bfe3a3767c0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

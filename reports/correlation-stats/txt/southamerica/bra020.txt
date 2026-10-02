@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: bra020
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra020.rwl
+      MD5 of measurement file: 9d81722cb292847be8166a2d8e70e9a7
+      Date checked           : 01OCT26
+      Beginning year         : 1930
+      Ending year            : 2014
+      Principal investigators: Venegas-González, A.; Tomazello-Filho, M.
+      Site name              : Carlos Botelho
+      Species information    : CEOD Cedrela odorata L.
+      Latitude               : 24.1127 S
+      Longitude              : 47.9782 W
+      Elevation              : 408 m
+
+      Series intercorrelation: 0.310
+      Avg mean sensitivity   : 0.624
+      Avg standard deviation : 1.703
+      Avg autocorrelation    : 0.532
+      Number dated series    : 24
+      Series crossdated      : 23
+      Segment length tested  : 42
+
+      Number problem segments: 4  (A 1, B 3; 3 of the B weak at every lag)
+      Pct problem segments   : 40.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1971 
+                        1991 2012 
+ --- -------- ---------  ---- ---- 
+   2 CAB24A   1960 2014       .36 
+   7 CAB28B   1942 2014  .44  .24B
+   8 CAB01A   1949 2013  .32A .26B
+   9 CAB22B   1967 2012       .36 
+  10 CAB27B   1930 2008  .44      
+  16 CAB18B   1971 2014       .46 
+  21 CAB05A   1959 2014       .38 
+  23 CAB03A   1966 2014       .05B
+ Av segment correlation  .40  .30 
+
+ FLAGGED SEGMENTS: bra020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 CAB28B   1971 2012     B     .243        -9      .326   .083  weak at every lag
+   8 CAB01A   1950 1991     A     .324         0
+   8 CAB01A   1971 2012     B     .258       -10      .295   .037  weak at every lag
+  23 CAB03A   1971 2012     B     .054        -3      .189   .135  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bra020
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CAB24C   1969 2014     46      0      0    .374   2.30   8.68  2.179   .584   .488   2.72   .599   .028   3
+   2 CAB24A   1960 2014     55      1      0    .354   2.20   9.18  1.731   .612   .526   2.45   .476   .033   1
+   3 CAB21C   1977 2014     38      0      0    .465   2.80   6.26  1.566   .481   .458   2.07   .471  -.002   1
+   4 CAB21B   1973 2014     42      0      0    .441   2.94   7.41  2.264   .609   .692   2.64   .662   .059   1
+   5 CAB12A   1973 2012     40      0      0    .097   2.03   5.80  1.374   .132   .618   2.82   .536   .006   3
+   6 CAB12B   1977 2006     30                         1.37   5.07  1.428   .418   .845                         
+   7 CAB28B   1942 2014     73      2      1    .384   1.40   8.31  1.518   .815   .462   2.68   .498   .035   1
+   8 CAB01A   1949 2013     65      2      2    .253   2.56   7.20  1.602   .554   .415   3.85   .510   .070   1
+   9 CAB22B   1967 2012     46      1      0    .383   2.11   7.94  2.182   .720   .628   3.37   .729   .136   1
+  10 CAB27B   1930 2008     79      1      0    .200   1.69   6.54  1.711   .678   .793   5.42  1.036   .114   0
+  11 CAB30A   1976 2011     36      0      0    .327   2.77  14.95  3.484   .822   .652   3.70  1.004   .002   1
+  12 CAB23A   1980 2014     35      0      0    .372   1.34   3.70  1.001   .509   .510   2.37   .614   .050   1
+  13 CAB20A   1960 2006     47      0      0    .347   1.60   4.94  1.204   .491   .692   2.74   .675  -.033   1
+  14 CAB20B   1960 2004     45      0      0    .046   2.24   6.04  1.234   .295   .581   1.95   .449  -.089   0
+  15 CAB19B   1974 2014     41      0      0    .511   2.32   6.70  1.673   .319   .585   2.78   .635   .106   3
+  16 CAB18B   1971 2014     44      1      0    .464   1.32   5.52  1.493   .225  1.157   4.14  1.096   .201   0
+  17 CAB17A   1980 2009     30      0      0    .517   1.25   3.64  1.078   .554   .717   2.85   .776  -.152   3
+  18 CAB16B   1952 2008     57      0      0    .226   1.56   4.91   .910   .074   .645   2.91   .538  -.014   0
+  19 CAB10A   1978 2012     35      0      0    .357   2.81   8.78  2.391   .556   .631   4.36   .933   .198   0
+  20 CAB09B   1959 2000     42      0      0    .188   1.15   4.47  1.301   .595   .871   4.29   .994   .069   1
+  21 CAB05A   1959 2014     56      1      0    .299   1.63   5.00  1.382   .714   .499   1.88   .432   .053   1
+  22 CAB04B   1977 2014     38      0      0    .378   2.88  10.54  3.026   .801   .447   5.39   .912   .303   1
+  23 CAB03A   1966 2014     49      1      1    .095   2.76   6.27  1.399   .526   .510   1.82   .349  -.069   3
+  24 CAB02B   1968 2010     43      0      0    .274   2.84  10.48  2.441   .432   .738   5.34   .907  -.067   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1112     10      4    .310   2.05  14.95  1.703   .532   .624   5.42   .677   .046
+
+ DATA CHECKS (rwl.check): bra020
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra020.rwl
+ 24 series, 1112 measurements, 1930-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 46 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 46 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file bra020.rwl, MD5 9d81722cb292847be8166a2d8e70e9a7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series CAB12B is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Segment length reduced from 50 to 42 years: the record is only 85 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

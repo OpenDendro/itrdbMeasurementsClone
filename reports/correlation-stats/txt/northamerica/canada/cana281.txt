@@ -1,0 +1,102 @@
+
+ COFECHA-style crossdating report: cana281
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana281.rwl
+      MD5 of measurement file: d13af65d1f0d8d68a10ccaaa4b9f90de
+      Date checked           : 01OCT26
+      Beginning year         : 1927
+      Ending year            : 2003
+      Principal investigators: Mamet, S.D.; Kershaw, G.P.
+      Site name              : TUND, Wapusk National Park, Manitoba
+      Species information    : LALA Larix laricina (Du Roi) K. Koch
+      Latitude               : 57.9500 N
+      Longitude              : 93.2200 W
+      Elevation              : 27 m
+
+      Series intercorrelation: 0.612
+      Avg mean sensitivity   : 0.301
+      Avg standard deviation : 0.432
+      Avg autocorrelation    : 0.656
+      Number dated series    : 9
+      Segment length tested  : 38
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana281
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  38-year dated segments, lagged  19 years
+ Flags:  A = correlation under   .3760 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1987 
+ --- -------- ---------  ---- 
+   3 09511a   1927 2003  .69 
+   4 09511b   1927 2003  .78 
+   5 09512a   1930 2003  .70 
+   6 09512b   1930 2003  .69 
+ Av segment correlation  .71 
+
+ FLAGGED SEGMENTS: cana281
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: cana281
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 09501a   1974 2003     30      0      0    .456   2.05   3.47   .650   .721   .210   1.50   .203  -.103   1
+   2 09501b   1979 2003     25      0      0    .559   3.12   5.19   .717   .356   .199   1.50   .194   .147   0
+   3 09511a   1927 2003     77      1      0    .708    .71   1.58   .356   .649   .351   2.31   .371   .120   0
+   4 09511b   1927 2003     77      1      0    .586    .66   2.05   .403   .818   .312   1.81   .300   .023   3
+   5 09512a   1930 2003     74      1      0    .640    .68   2.14   .371   .665   .304   2.23   .322   .011   1
+   6 09512b   1930 2003     74      1      0    .702    .66   1.71   .344   .737   .287   1.77   .292  -.004   3
+   7 10651a   1964 2003     40      0      0    .535   1.43   2.50   .532   .386   .357   1.62   .313   .100   0
+   8 10651b   1964 2003     40      0      0    .500   1.11   2.54   .488   .678   .310   1.75   .310   .072   1
+   9 10652b   1964 2003     40      0      0    .600   1.17   2.50   .418   .581   .264   1.54   .252  -.054   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            477      4      0    .612   1.03   5.19   .432   .656   .301   2.31   .300   .035
+
+ DATA CHECKS (rwl.check): cana281
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana281.rwl
+ 9 series, 477 measurements, 1927-2003, 0.001 mm precision
+ 0 error(s), 0 warning(s), 5 note(s)
+ -------------
+ Nothing to report at this severity.
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana281.rwl, MD5 d13af65d1f0d8d68a10ccaaa4b9f90de.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3760 for 38-year segments.
+ Segments: 38 years, lagged 19, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 38 years: the record is only 77 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

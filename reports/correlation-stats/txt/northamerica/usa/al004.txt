@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: al004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : al004.rwl
+      MD5 of measurement file: 944a40b34fe80489dc4b0242295b0338
+      Date checked           : 01OCT26
+      Beginning year         : 1925
+      Ending year            : 2018
+      Principal investigators: Therrell, M.D.; Therrell, N.D.
+      Site name              : Hinds Road Outcrop
+      Species information    : QUBN Quercus boyntonii Beadle
+      Latitude               : 34.0667 N
+      Longitude              : 86.0500 W
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.497
+      Avg mean sensitivity   : 0.343
+      Avg standard deviation : 0.461
+      Avg autocorrelation    : 0.620
+      Number dated series    : 10
+      Segment length tested  : 46
+
+      Number problem segments: 2  (A 2, B 0)
+      Pct problem segments   : 40.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: al004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1973 
+                        1995 2018 
+ --- -------- ---------  ---- ---- 
+   1 HRO01A   1957 2018       .25A
+   3 HRO03    1963 2018       .49 
+   6 HRO19A   1940 2007  .50      
+   7 HRO21    1939 1997  .32A     
+   8 HRO22    1925 1999  .55      
+ Av segment correlation  .46  .37 
+
+ FLAGGED SEGMENTS: al004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 HRO01A   1973 2018     A     .254         0
+   7 HRO21    1950 1995     A     .323         0
+
+ DESCRIPTIVE STATISTICS: al004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HRO01A   1957 2018     62      1      1    .364   1.15   2.79   .527   .565   .343   2.09   .341   .026   1
+   2 HRO02A   1957 2005     49      0      0    .459    .68   2.27   .523   .541   .360   2.23   .397   .045   0
+   3 HRO03    1963 2018     56      1      0    .474    .89   2.16   .453   .694   .323   1.73   .305  -.038   2
+   4 HRO12A   1959 2016     58      0      0    .580    .91   2.31   .529   .748   .308   1.64   .287  -.004   1
+   5 HRO18B   1950 1994     45      0      0    .370    .39   1.02   .201   .355   .422   2.34   .435   .068   2
+   6 HRO19A   1940 2007     68      1      0    .531    .69   3.37   .529   .702   .276   1.77   .266   .010   1
+   7 HRO21    1939 1997     59      1      1    .501    .55   1.68   .339   .345   .446   2.02   .376  -.115   0
+   8 HRO22    1925 1999     75      1      0    .571    .75   2.32   .453   .714   .313   1.81   .286   .089   0
+   9 HRO23    1955 1999     45      0      0    .523    .92   2.14   .578   .684   .358   1.65   .318   .082   0
+  10 HRO24    1956 2009     54      0      0    .548    .71   1.67   .443   .775   .321   1.52   .294  -.047   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            571      5      2    .497    .77   3.37   .461   .620   .343   2.34   .325   .011
+
+ DATA CHECKS (rwl.check): al004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/al004.rwl
+ 10 series, 571 measurements, 1925-2018, 0.01 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file al004.rwl, MD5 944a40b34fe80489dc4b0242295b0338.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 46 years: the record is only 94 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

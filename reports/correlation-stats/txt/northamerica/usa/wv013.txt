@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: wv013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv013.rwl
+      MD5 of measurement file: ddf3b6d8df3f23e39a85f9e30935deae
+      Date checked           : 01OCT26
+      Beginning year         : 1815
+      Ending year            : 2012
+      Principal investigators: Saladyga, T.; Stockton, S.
+      Site name              : Twin Falls Resort State Park
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 37.6400 N
+      Longitude              : 81.4400 W
+      Elevation              : 630 m
+
+      Series intercorrelation: 0.526
+      Avg mean sensitivity   : 0.262
+      Avg standard deviation : 0.830
+      Avg autocorrelation    : 0.794
+      Number dated series    : 27
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.69
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 01426B   1902 2012       .68  .56 
+   2 01429A   1922 2009       .43  .44 
+   3 01433B   1934 2011            .64 
+   4 01436A   1884 2009  .74  .68  .46 
+   5 01472A   1899 2012  .43  .57  .66 
+   6 01472B   1903 2012       .58  .43 
+   7 01478B   1920 2012       .42  .58 
+   8 01X1A    1914 2008       .43  .56 
+   9 01X1B    1815 2012  .57  .60  .59 
+  10 01X2A    1836 2012  .64  .70  .60 
+  11 01X2B    1841 2012  .49  .51  .64 
+  12 03437A   1819 2011  .56  .67  .66 
+  13 04680A   1924 2012       .75  .65 
+  14 04680B   1924 2012       .70  .55 
+  15 04694B   1921 2012       .63  .49 
+  16 04697A   1856 2012  .53  .56  .48 
+  17 05631B   1924 2012       .25B .61 
+  18 05635A   1911 2012       .50  .41 
+  19 05638A   1907 2012       .63  .56 
+  20 06X1A    1908 2011       .49  .48 
+  21 06X2A    1907 2012       .73  .69 
+  22 06X2B    1898 2012  .73  .71  .60 
+  23 05638B   1904 2012       .74  .70 
+  24 05639A   1912 2005       .52  .34 
+  25 05639B   1930 2012            .53 
+  26 05641A   1916 2011       .67  .45 
+  27 05641B   1929 2011            .62 
+ Av segment correlation  .59  .59  .56 
+
+ FLAGGED SEGMENTS: wv013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 05631B   1925 1974     B     .253        -4      .260   .007  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wv013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 01426B   1902 2012    111      2      0    .585   1.61   4.66   .942   .784   .273   2.09   .291   .023   1
+   2 01429A   1922 2009     88      2      0    .445    .96   4.49   .772   .646   .334   2.46   .354  -.010   1
+   3 01433B   1934 2011     78      1      0    .532   1.41   3.71   .742   .732   .280   1.81   .305   .077   1
+   4 01436A   1884 2009    126      3      0    .514    .89   4.23   .805   .848   .313   1.68   .305   .010   1
+   5 01472A   1899 2012    114      3      0    .568    .97   2.60   .509   .797   .244   2.08   .271   .042   1
+   6 01472B   1903 2012    110      2      0    .551    .97   3.11   .634   .803   .275   1.71   .277   .003   3
+   7 01478B   1920 2012     93      2      0    .537   2.28   5.14  1.024   .688   .260   1.82   .272  -.027   1
+   8 01X1A    1914 2008     95      2      0    .497    .97   1.88   .326   .466   .265   1.72   .273  -.004   3
+   9 01X1B    1815 2012    198      3      0    .446    .87   3.76   .687   .821   .275   2.12   .293  -.002   1
+  10 01X2A    1836 2012    177      3      0    .511    .95   4.69   .652   .802   .288   2.89   .354  -.008   3
+  11 01X2B    1841 2012    172      3      0    .502    .99   4.43   .871   .922   .283   2.67   .349   .059   1
+  12 03437A   1819 2011    193      3      0    .477    .94   5.36   .900   .852   .258   2.10   .299   .003   1
+  13 04680A   1924 2012     89      2      0    .724   1.98   6.20  1.346   .807   .282   1.81   .304  -.074   1
+  14 04680B   1924 2012     89      2      0    .633   2.15   8.52  1.496   .783   .260   1.90   .274  -.049   1
+  15 04694B   1921 2012     92      2      0    .571   1.56   3.90   .689   .774   .234   1.57   .232   .007   1
+  16 04697A   1856 2012    157      3      0    .493   1.01   3.62   .658   .829   .216   1.82   .237   .056   1
+  17 05631B   1924 2012     89      2      1    .331    .97   2.06   .421   .785   .245   1.75   .248  -.022   1
+  18 05635A   1911 2012    102      2      0    .474   1.43   4.72  1.000   .822   .279   2.28   .306  -.004   1
+  19 05638A   1907 2012    106      2      0    .580    .91   1.96   .361   .770   .196   1.83   .218  -.012   1
+  20 06X1A    1908 2011    104      2      0    .364   1.03   2.75   .543   .647   .347   2.28   .368   .017   1
+  21 06X2A    1907 2012    106      2      0    .669    .96   2.02   .474   .807   .244   1.94   .251   .031   1
+  22 06X2B    1898 2012    115      3      0    .642   1.00   3.02   .485   .728   .205   2.00   .248  -.032   1
+  23 05638B   1904 2012    109      2      0    .696   2.02   7.80  1.043   .725   .246   2.50   .292   .077   1
+  24 05639A   1912 2005     94      2      0    .528   1.21   7.33  1.464   .904   .236   1.86   .303  -.009   2
+  25 05639B   1930 2012     83      1      0    .464   1.40   6.74  1.265   .933   .231   1.69   .247   .049   1
+  26 05641A   1916 2011     96      2      0    .488   1.47   6.85  1.347   .833   .256   2.24   .290   .006   1
+  27 05641B   1929 2011     83      1      0    .495   1.94   7.35  1.706   .950   .241   1.79   .264   .082   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3069     59      1    .526   1.23   8.52   .830   .794   .262   2.89   .289   .012
+
+ DATA CHECKS (rwl.check): wv013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv013.rwl
+ 27 series, 3069 measurements, 1815-2012, 0.01 mm precision
+ 0 error(s), 1 warning(s), 7 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     05631B: correlates with the rest of the collection at r = 0.067 where the collection median is 0.479 (4.1 MAD below it); it does not fit the collection it is in
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file wv013.rwl, MD5 ddf3b6d8df3f23e39a85f9e30935deae.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

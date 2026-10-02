@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: cana614
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana614.rwl
+      MD5 of measurement file: 761140782bf7b2b7593d412c8a2157ef
+      Date checked           : 01OCT26
+      Beginning year         : 1881
+      Ending year            : 2014
+      Principal investigators: Sniderhan, A.E.; Baltzer, J.L.
+      Site name              : Trail Valley Creek
+      Species information    : PCMA Picea mariana (Mill.) Britton, Sterns, & Poggenb.
+      Latitude               : 68.7317 N
+      Longitude              : 133.4917 W
+      Elevation              : 70 m
+
+      Series intercorrelation: 0.517
+      Avg mean sensitivity   : 0.250
+      Avg standard deviation : 0.143
+      Avg autocorrelation    : 0.632
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 9.68
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana614
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 TVPM03A  1908 2014       .54  .43 
+   4 TVPM03B  1909 2014       .57  .52 
+   5 TVPM04A  1931 2014            .54 
+   6 TVPM04B  1930 2014            .34 
+   7 TVPM05A  1940 2014            .27A
+   8 TVPM05B  1940 2014            .51 
+   9 TVPM06A  1911 2014       .62  .62 
+  10 TVPM06B  1911 2014       .62  .50 
+  11 TVPM07A  1930 2014            .57 
+  12 TVPM07B  1929 2014            .40 
+  13 TVPM08A  1945 2014            .51 
+  14 TVPM08B  1945 2014            .52 
+  15 TVPM09A  1881 2014  .19B .14B .50 
+  16 TVPM09B  1881 2014  .45  .37  .38 
+  17 TVPM10A  1941 2014            .58 
+  18 TVPM10B  1942 2014            .71 
+  19 TVPM11A  1916 2014       .47  .64 
+  20 TVPM11B  1915 2014       .62  .55 
+  25 TVPM14A  1928 2014            .47 
+  26 TVPM14B  1928 2014            .60 
+  31 TVPM17A  1925 2014            .61 
+ Av segment correlation  .32  .49  .51 
+
+ FLAGGED SEGMENTS: cana614
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 TVPM05A  1950 1999     A     .269         0
+  15 TVPM09A  1900 1949     B     .190        -7      .207   .018  weak at every lag
+  15 TVPM09A  1925 1974     B     .140        -7      .309   .170  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana614
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TVPM01A  1951 2014     64      0      0    .483    .34    .69   .104   .261   .260   1.70   .249   .029   0
+   2 TVPM01B  1951 2014     64      0      0    .599    .38    .65   .126   .552   .250   1.47   .236  -.024   1
+   3 TVPM03A  1908 2014    107      2      0    .458    .35   1.06   .247   .861   .265   2.03   .282   .013   1
+   4 TVPM03B  1909 2014    106      2      0    .578    .38   1.02   .279   .922   .203   1.59   .197   .124   0
+   5 TVPM04A  1931 2014     84      1      0    .506    .40    .82   .139   .778   .170   1.43   .172  -.028   1
+   6 TVPM04B  1930 2014     85      1      0    .476    .34   1.09   .167   .600   .222   1.95   .270  -.007   3
+   7 TVPM05A  1940 2014     75      1      1    .382    .44   1.61   .254   .716   .212   2.23   .279   .076   1
+   8 TVPM05B  1940 2014     75      1      0    .489    .45   1.03   .185   .731   .219   1.87   .242  -.018   1
+   9 TVPM06A  1911 2014    104      2      0    .681    .31    .86   .129   .659   .233   1.96   .234  -.010   1
+  10 TVPM06B  1911 2014    104      2      0    .625    .27    .55   .088   .606   .233   1.63   .210   .083   0
+  11 TVPM07A  1930 2014     85      1      0    .548    .37    .99   .193   .793   .247   1.69   .240   .014   2
+  12 TVPM07B  1929 2014     86      1      0    .388    .32    .88   .148   .673   .252   1.91   .294   .037   1
+  13 TVPM08A  1945 2014     70      1      0    .420    .30    .96   .225   .881   .267   2.31   .304  -.003   1
+  14 TVPM08B  1945 2014     70      1      0    .646    .34   1.29   .230   .852   .220   1.56   .220   .009   1
+  15 TVPM09A  1881 2014    134      3      2    .320    .17    .91   .099   .258   .366   5.72   .549   .003   1
+  16 TVPM09B  1881 2014    134      3      0    .521    .20    .49   .082   .445   .297   2.30   .313   .009   1
+  17 TVPM10A  1941 2014     74      1      0    .563    .25    .68   .098   .508   .288   1.81   .252   .012   0
+  18 TVPM10B  1942 2014     73      1      0    .634    .21    .38   .076   .297   .302   2.13   .275  -.139   0
+  19 TVPM11A  1916 2014     99      2      0    .428    .16    .56   .116   .841   .258   1.50   .233   .071   0
+  20 TVPM11B  1915 2014    100      2      0    .561    .20    .58   .098   .736   .241   1.60   .237  -.019   1
+  21 TVPM12A  1968 2014     47      0      0    .521    .42    .72   .114   .365   .231   1.61   .215   .035   0
+  22 TVPM12B  1968 2014     47      0      0    .434    .44    .70   .127   .495   .225   1.38   .183  -.142   0
+  23 TVPM13A  1962 2014     53      0      0    .460    .35    .54   .082   .270   .215   1.50   .211   .111   0
+  24 TVPM13B  1963 2013     51      0      0    .466    .34    .70   .089   .088   .248   1.75   .216  -.168   0
+  25 TVPM14A  1928 2014     87      1      0    .551    .23    .45   .077   .754   .177   1.43   .167   .018   2
+  26 TVPM14B  1928 2014     87      1      0    .507    .24    .61   .106   .775   .193   1.68   .211   .044   1
+  27 TVPM15A  1965 2014     50      0      0    .611    .33    .66   .108   .568   .239   1.33   .198   .068   0
+  28 TVPM15B  1965 2014     50      0      0    .509    .33    .58   .104   .691   .208   1.38   .182   .095   0
+  29 TVPM16A  1954 2014     61      0      0    .692    .28    .93   .164   .757   .293   1.63   .252  -.003   0
+  30 TVPM16B  1953 2014     62      0      0    .582    .27    .84   .171   .843   .263   1.49   .214  -.014   0
+  31 TVPM17A  1925 2014     90      1      0    .650    .34   1.02   .195   .753   .252   1.53   .205   .058   1
+  32 TVPM18A  1984 2014     31      0      0    .701    .47    .94   .191   .590   .297   1.53   .285   .022   1
+  33 TVPM18B  1985 2014     30      0      0    .254    .40    .67   .144   .427   .340   1.49   .281   .006   0
+  34 TVPM21A  1955 2014     60      0      0    .357    .30    .62   .117   .428   .292   1.70   .299   .159   0
+  35 TVPM21B  1955 2014     60      0      0    .492    .23    .58   .128   .792   .247   1.60   .247   .076   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2659     31      3    .517    .30   1.61   .143   .632   .250   5.72   .255   .019
+
+ DATA CHECKS (rwl.check): cana614
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana614.rwl
+ 35 series, 2659 measurements, 1881-2014, 0.01 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana614.rwl, MD5 761140782bf7b2b7593d412c8a2157ef.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

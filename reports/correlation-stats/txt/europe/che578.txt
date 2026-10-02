@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: che578
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che578.rwl
+      MD5 of measurement file: ebe83cc365a68dea209fdbe4232c7733
+      Date checked           : 01OCT26
+      Beginning year         : 1884
+      Ending year            : 2008
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : MAN
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.5589 N
+      Longitude              : 8.1916 E
+      Elevation              : 455 m
+
+      Series intercorrelation: 0.530
+      Avg mean sensitivity   : 0.312
+      Avg standard deviation : 0.627
+      Avg autocorrelation    : 0.609
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che578
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 MAN02a   1903 2008       .76  .82 
+   2 MAN11b   1901 2008       .57  .69 
+   3 MAN13a   1934 2008            .65 
+   4 MAN14a   1884 2008  .49  .57  .44 
+   5 MAN15a   1903 2006       .48  .54 
+   6 MAN17a   1894 2008  .67  .60  .47 
+   7 MAN20a   1889 2008  .57  .64  .47 
+   9 MAN25a   1932 2008            .60 
+  10 MAN26a   1932 2008            .86 
+ Av segment correlation  .57  .60  .62 
+
+ FLAGGED SEGMENTS: che578
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che578
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MAN02a   1903 2008    106      2      0    .706   1.21   3.66   .773   .782   .314   1.90   .312   .020   1
+   2 MAN11b   1901 2008    108      2      0    .488   1.83   5.33   .841   .641   .302   2.13   .299   .011   1
+   3 MAN13a   1934 2008     75      1      0    .615   1.79   4.56   .970   .587   .409   2.17   .362  -.063   3
+   4 MAN14a   1884 2008    125      3      0    .292   1.08   4.16   .626   .725   .349   2.32   .349   .067   1
+   5 MAN15a   1903 2006    104      2      0    .467   1.23   2.84   .564   .694   .294   1.77   .301   .067   1
+   6 MAN17a   1894 2008    115      3      0    .539   1.04   2.58   .407   .657   .259   1.81   .241   .019   2
+   7 MAN20a   1889 2008    120      3      0    .369   1.36   2.63   .473   .642   .237   1.63   .238   .031   1
+   8 MAN24a   1951 2008     58      0      0    .671   1.27   3.18   .458   .306   .318   1.99   .285   .071   0
+   9 MAN25a   1932 2008     77      1      0    .591   1.09   2.73   .537   .333   .405   2.06   .379   .090   0
+  10 MAN26a   1932 2008     77      1      0    .802   1.86   3.15   .662   .429   .298   1.58   .256  -.034   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            965     18      0    .530   1.36   5.33   .627   .609   .312   2.32   .300   .029
+
+ DATA CHECKS (rwl.check): che578
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che578.rwl
+ 10 series, 965 measurements, 1884-2008, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file che578.rwl, MD5 ebe83cc365a68dea209fdbe4232c7733.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,129 @@
+
+ COFECHA-style crossdating report: rus331
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus331.rwl
+      MD5 of measurement file: 03f5fb1389a4b81deaad8e1291c00955
+      Date checked           : 01OCT26
+      Beginning year         : 1735
+      Ending year            : 2012
+      Principal investigators: Solomina, O.; Matskovsky, V.V.; Dolgikh, A.V.
+      Site name              : Pinega Preserve Sychevo - I11S
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 64.5631 N
+      Longitude              : 43.1616 E
+      Elevation              : 90 m
+
+      Series intercorrelation: 0.521
+      Avg mean sensitivity   : 0.205
+      Avg standard deviation : 0.331
+      Avg autocorrelation    : 0.730
+      Number dated series    : 17
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 1, B 4; 4 of the B weak at every lag)
+      Pct problem segments   : 8.06
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus331
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 I11S1a   1891 2012                      .56  .62  .63 
+   2 i11s1b   1893 2012                      .50  .47  .48 
+   3 I11S2a   1883 2012                      .57  .67  .60 
+   4 i11s2b   1885 2012                      .51  .65  .70 
+   5 I11S3a   1903 2010                           .77  .69 
+   6 i11s3b   1903 2012                           .71  .61 
+   7 i11s4a   1886 2012                      .74  .73  .64 
+   8 I11s5a   1891 2011                      .62  .70  .57 
+   9 i11s5b   1891 2012                      .62  .78  .73 
+  10 i11s6a   1750 2012  .56  .53  .53  .63  .72  .72  .51 
+  11 i11s6b   1750 2012  .43  .45  .49  .50  .65  .64  .56 
+  12 i11s7a   1735 2012  .54  .38  .36  .37  .66  .52  .48 
+  13 i11s8a   1881 2012                      .24B .42  .62 
+  14 i11s8b   1877 2012                      .50  .78  .70 
+  15 i11s9a   1896 2011                      .51  .74  .74 
+  16 i11s9b   1898 2012                      .55  .77  .78 
+  17 i11s10b  1868 2012                 .21B .16B .27A .16B
+ Av segment correlation  .51  .45  .46  .43  .54  .65  .60 
+
+ FLAGGED SEGMENTS: rus331
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  13 i11s8a   1900 1949     B     .236        -3      .312   .076  weak at every lag
+  17 i11s10b  1875 1924     B     .215        -8      .314   .099  weak at every lag
+  17 i11s10b  1900 1949     B     .163        -3      .261   .098  weak at every lag
+  17 i11s10b  1925 1974     A     .270         0
+  17 i11s10b  1950 1999     B     .159        -4      .243   .085  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus331
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 I11S1a   1891 2012    122      3      0    .575    .91   1.74   .237   .577   .198   1.51   .180   .033   3
+   2 i11s1b   1893 2012    120      3      0    .488   1.08   2.49   .415   .704   .199   1.78   .218  -.016   2
+   3 I11S2a   1883 2012    130      3      0    .583   1.13   2.07   .382   .771   .175   1.46   .184   .025   1
+   4 i11s2b   1885 2012    128      3      0    .591   1.05   1.74   .270   .631   .172   1.48   .163  -.037   3
+   5 I11S3a   1903 2010    108      2      0    .654   1.09   1.85   .363   .765   .192   1.53   .195  -.002   1
+   6 i11s3b   1903 2012    110      2      0    .523   1.09   1.73   .313   .632   .192   1.72   .204   .018   1
+   7 i11s4a   1886 2012    127      3      0    .650    .75   1.76   .396   .888   .171   1.43   .181  -.009   3
+   8 I11s5a   1891 2011    121      3      0    .552    .99   1.86   .343   .668   .215   1.61   .195   .001   0
+   9 i11s5b   1891 2012    122      3      0    .649   1.08   1.98   .351   .700   .203   1.51   .192   .017   1
+  10 i11s6a   1750 2012    263      7      0    .509    .79   2.04   .352   .825   .205   1.98   .217  -.015   1
+  11 i11s6b   1750 2012    263      7      0    .424    .65   1.72   .270   .758   .225   1.89   .237  -.012   3
+  12 i11s7a   1735 2012    278      7      0    .404    .67   1.49   .265   .697   .240   2.03   .254   .000   2
+  13 i11s8a   1881 2012    132      3      1    .435    .85   1.92   .363   .867   .198   1.46   .205   .030   1
+  14 i11s8b   1877 2012    136      3      0    .598    .81   1.86   .297   .742   .208   1.52   .204  -.009   1
+  15 i11s9a   1896 2011    116      3      0    .643   1.24   2.49   .337   .551   .196   1.62   .194   .013   1
+  16 i11s9b   1898 2012    115      3      0    .684   1.13   2.19   .415   .765   .219   1.49   .204   .018   1
+  17 i11s10b  1868 2012    145      4      4    .237    .82   2.64   .378   .733   .219   1.52   .204   .066   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2536     62      5    .521    .90   2.64   .331   .730   .205   2.03   .208   .005
+
+ DATA CHECKS (rwl.check): rus331
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus331.rwl
+ 17 series, 2536 measurements, 1735-2012, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     i11s10b: correlates with the rest of the collection at r = 0.231 where the collection median is 0.558 (4.1 MAD below it); it does not fit the collection it is in
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file rus331.rwl, MD5 03f5fb1389a4b81deaad8e1291c00955.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

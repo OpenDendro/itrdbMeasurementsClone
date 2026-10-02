@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: arge086
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge086.rwl
+      MD5 of measurement file: 0c714742b0b9385f52f36f8263b10d73
+      Date checked           : 01OCT26
+      Beginning year         : 1679
+      Ending year            : 1991
+      Principal investigators: Villalba, R.
+      Site name              : Paso del Viento
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 40.7000 S
+      Longitude              : 71.1300 W
+      Elevation              : 910 m
+
+      Series intercorrelation: 0.551
+      Avg mean sensitivity   : 0.217
+      Avg standard deviation : 0.414
+      Avg autocorrelation    : 0.877
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 4.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge086
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 VIE01B   1779 1991                      .62  .60  .62  .62  .69  .68 
+   2 VIE02A   1679 1991  .48  .32A .40  .59  .66  .74  .59  .53  .59  .62 
+   3 VIE02B   1703 1991       .47  .50  .70  .70  .71  .60  .51  .58  .58 
+   4 VIE06C   1790 1991                      .61  .42  .35  .69  .67  .67 
+   5 VIE06D   1790 1991                      .65  .58  .39  .71  .72  .60 
+   6 VIE08B   1788 1991                      .63  .61  .57  .56  .55  .44 
+   7 VIE08C   1801 1991                           .69  .60  .65  .56  .39 
+   8 VIE09A   1793 1991                      .64  .67  .62  .48  .61  .66 
+   9 VIE09B   1694 1991  .40  .32A .37  .63  .61  .61  .58  .49  .54  .67 
+  10 VIE09C   1790 1991                      .55  .43  .62  .45B .51  .64 
+  11 VIE10A   1784 1991                      .75  .54  .43  .68  .76  .58 
+  12 VIE10B   1721 1991       .20B .38  .65  .64  .56  .53  .60  .71  .67 
+  13 VIE10C   1730 1991            .33A .55  .68  .61  .43  .51  .66  .62 
+  14 VIE14A   1775 1991                      .48  .52  .45  .44  .45  .43 
+  15 VIE10X   1696 1772  .54                                              
+  16 VIE13B   1835 1988                                .46  .66  .61  .47 
+ Av segment correlation  .47  .33  .40  .62  .63  .59  .52  .57  .61  .58 
+
+ FLAGGED SEGMENTS: arge086
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 VIE02A   1725 1774     A     .315         0
+   9 VIE09B   1725 1774     A     .322         0
+  10 VIE09C   1875 1924     B     .449         3      .481   .032
+  12 VIE10B   1725 1774     B     .203        -3      .240   .037  weak at every lag
+  13 VIE10C   1750 1799     A     .327         0
+
+ DESCRIPTIVE STATISTICS: arge086
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 VIE01B   1779 1991    213      6      0    .586    .55   1.81   .337   .843   .250   1.99   .258   .014   1
+   2 VIE02A   1679 1991    313     10      1    .537    .38   1.95   .243   .830   .261   1.87   .262  -.019   3
+   3 VIE02B   1703 1991    289      9      0    .578    .34   1.12   .204   .826   .288   1.93   .285   .009   2
+   4 VIE06C   1790 1991    202      6      0    .590    .78   2.22   .505   .894   .227   1.86   .242   .002   2
+   5 VIE06D   1790 1991    202      6      0    .614    .62   2.71   .485   .907   .186   2.00   .210  -.009   2
+   6 VIE08B   1788 1991    204      6      0    .535   1.08   3.31   .658   .931   .152   1.53   .160  -.012   3
+   7 VIE08C   1801 1991    191      5      0    .516   1.07   3.54   .621   .925   .168   1.43   .172   .004   3
+   8 VIE09A   1793 1991    199      6      0    .612    .61   1.57   .295   .858   .190   1.59   .202   .030   1
+   9 VIE09B   1694 1991    298     10      1    .513    .75   3.80   .660   .936   .262   1.86   .270   .012   1
+  10 VIE09C   1790 1991    202      6      1    .552    .67   2.26   .371   .853   .180   2.16   .208  -.001   2
+  11 VIE10A   1784 1991    208      6      0    .614    .61   2.36   .365   .876   .211   1.57   .223  -.015   2
+  12 VIE10B   1721 1991    271      9      1    .538    .63   2.08   .424   .933   .203   1.99   .210  -.011   2
+  13 VIE10C   1730 1991    262      8      1    .569    .75   2.43   .418   .885   .201   1.70   .219  -.008   2
+  14 VIE14A   1775 1991    217      6      0    .455    .36    .94   .179   .808   .251   1.70   .233   .006   1
+  15 VIE10X   1696 1772     77      1      0    .434   1.35   2.36   .411   .792   .166   1.38   .163   .036   1
+  16 VIE13B   1835 1988    154      4      0    .508   1.24   3.54   .573   .886   .144   1.46   .160  -.037   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3502    104      5    .551    .68   3.80   .414   .877   .217   2.16   .225  -.001
+
+ DATA CHECKS (rwl.check): arge086
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge086.rwl
+ 16 series, 3502 measurements, 1679-1991, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 738 carriage return(s) against 371 line feed(s); mixed endings can defeat a reader
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file arge086.rwl, MD5 0c714742b0b9385f52f36f8263b10d73.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

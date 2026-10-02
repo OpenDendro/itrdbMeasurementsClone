@@ -1,0 +1,156 @@
+
+ COFECHA-style crossdating report: russ109w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ109w.rwl
+      MD5 of measurement file: 7b1c384018650948704682047db32b7d
+      Date checked           : 01OCT26
+      Beginning year         : 1714
+      Ending year            : 1991
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Baraii River
+      Species information    : PCOB Picea obovata Ledeb. = Picea abies (L.) H. Karst. subsp. obovata (Ledeb.) Hultén
+      Latitude               : 63.6500 N
+      Longitude              : 133.7800 E
+      Elevation              : 200 m
+
+      Series intercorrelation: 0.609
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 0.325
+      Avg autocorrelation    : 0.845
+      Number dated series    : 30
+      Series crossdated      : 29
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 2.68
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ109w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 976031   1900 1991                           .72 
+   2 976032   1901 1991                           .73 
+   3 976041   1717 1991  .66  .61  .72  .80  .74  .62 
+   4 976042   1716 1991  .73  .73  .78  .78  .78  .64 
+   5 976051   1714 1991  .49  .42  .53  .61  .63  .63 
+   6 976052   1726 1991  .52  .57  .73  .70  .61  .61 
+   7 976061   1911 1991                           .52 
+   8 976062   1885 1991                      .35  .43 
+   9 976071   1831 1991            .50  .60  .64  .61 
+  10 976072   1867 1991                 .58  .42  .34 
+  11 976081   1824 1991       .25B .51  .58  .59  .51 
+  12 976082   1848 1991            .50  .65  .62  .43 
+  13 976091   1873 1991                 .82  .58  .23A
+  14 976092   1886 1991                      .56  .41 
+  15 976101   1877 1991                      .35  .24B
+  16 976102   1900 1991                           .34 
+  17 976111   1730 1991  .75  .75  .69  .78  .76  .59 
+  18 976112   1717 1991  .81  .65  .54  .66  .75  .77 
+  20 976122   1746 1991  .80  .76  .73  .79  .84  .73 
+  21 976131   1737 1991  .64  .64  .53  .68  .86  .80 
+  22 976132   1742 1991  .68  .71  .79  .84  .85  .85 
+  23 976141   1797 1991  .63  .60  .64  .79  .75  .63 
+  24 976142   1776 1991  .77  .76  .72  .75  .72  .55 
+  25 976151   1788 1991  .61  .70  .69  .66  .65  .73 
+  26 976152   1850 1991                 .68  .72  .71 
+  27 976211   1907 1991                           .59 
+  28 976212   1905 1991                           .69 
+  29 976221   1851 1991                 .53  .51  .55 
+  30 976222   1863 1991                 .58  .63  .62 
+ Av segment correlation  .68  .63  .64  .69  .65  .58 
+
+ FLAGGED SEGMENTS: russ109w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  11 976081   1825 1874     B     .252         1      .287   .035  weak at every lag
+  13 976091   1925 1974     A     .226         0
+  15 976101   1925 1974     B     .241         5      .328   .086  weak at every lag
+
+ DESCRIPTIVE STATISTICS: russ109w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 976031   1900 1991     92      1      0    .626   1.13   2.59   .573   .898   .191   1.45   .197  -.038   3
+   2 976032   1901 1991     91      1      0    .645   1.15   2.73   .584   .890   .196   1.46   .196  -.037   3
+   3 976041   1717 1991    275      6      0    .671    .60   1.23   .268   .845   .225   1.72   .227  -.026   3
+   4 976042   1716 1991    276      6      0    .672    .56   1.34   .242   .837   .208   1.59   .223  -.024   3
+   5 976051   1714 1991    278      6      0    .619    .27   1.36   .223   .927   .284   2.04   .271   .006   2
+   6 976052   1726 1991    266      6      0    .649    .33   1.42   .221   .846   .278   2.19   .278  -.002   3
+   7 976061   1911 1991     81      1      0    .458   1.88   3.28   .602   .798   .171   1.44   .163   .006   1
+   8 976062   1885 1991    107      2      0    .322   1.41   2.92   .598   .891   .160   1.46   .164  -.004   3
+   9 976071   1831 1991    161      4      0    .575    .93   2.44   .499   .947   .152   1.63   .165   .004   2
+  10 976072   1867 1991    125      3      0    .490   1.00   2.30   .422   .895   .169   1.52   .175   .028   1
+  11 976081   1824 1991    168      5      1    .417    .69   1.56   .355   .902   .205   1.65   .222  -.031   1
+  12 976082   1848 1991    144      4      0    .556    .79   1.61   .325   .887   .172   1.50   .179   .057   1
+  13 976091   1873 1991    119      3      1    .500    .97   2.01   .309   .652   .191   1.90   .199   .010   1
+  14 976092   1886 1991    106      2      0    .463    .77   1.64   .353   .844   .199   1.79   .203   .015   2
+  15 976101   1877 1991    115      2      1    .344   1.23   2.14   .379   .773   .173   1.40   .170  -.015   2
+  16 976102   1900 1991     92      1      0    .278   1.35   2.55   .436   .785   .171   1.34   .164   .020   2
+  17 976111   1730 1991    262      6      0    .681    .59   1.63   .261   .823   .231   1.64   .227  -.003   1
+  18 976112   1717 1991    275      6      0    .707    .40   1.63   .263   .906   .251   1.91   .244   .007   1
+  19 976121   1734 1991    256                          .61   1.60   .319   .873   .232                         
+  20 976122   1746 1991    246      6      0    .747    .62   1.67   .346   .864   .255   1.91   .262  -.019   1
+  21 976131   1737 1991    255      6      0    .644    .56   1.36   .277   .872   .207   1.83   .219  -.013   3
+  22 976132   1742 1991    250      6      0    .705    .55   1.51   .264   .836   .228   1.70   .233  -.009   1
+  23 976141   1797 1991    195      6      0    .663    .66   1.58   .276   .777   .197   1.71   .211  -.005   1
+  24 976142   1776 1991    216      6      0    .678    .55   1.60   .302   .862   .219   1.67   .220  -.005   3
+  25 976151   1788 1991    204      6      0    .607    .79   2.12   .374   .823   .229   1.84   .240   .020   3
+  26 976152   1850 1991    142      3      0    .661    .76   2.06   .398   .854   .226   1.70   .234   .020   2
+  27 976211   1907 1991     85      1      0    .585   1.39   2.27   .307   .506   .174   1.35   .166   .013   2
+  28 976212   1905 1991     87      1      0    .616    .79   1.35   .209   .681   .162   1.66   .178   .064   1
+  29 976221   1851 1991    141      3      0    .585    .99   1.86   .300   .802   .156   1.39   .153  -.016   3
+  30 976222   1863 1991    129      3      0    .619    .90   1.75   .339   .881   .159   1.37   .157  -.001   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5239    112      3    .609    .72   3.28   .325   .845   .214   2.19   .216  -.002
+
+ DATA CHECKS (rwl.check): russ109w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ109w.rwl
+ 30 series, 5239 measurements, 1714-1991, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     976121: no measurement for 1811-1812, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file russ109w.rwl, MD5 7b1c384018650948704682047db32b7d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 976121 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

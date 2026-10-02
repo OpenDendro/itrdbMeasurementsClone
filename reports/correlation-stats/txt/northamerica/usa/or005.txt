@@ -1,0 +1,143 @@
+
+ COFECHA-style crossdating report: or005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or005.rwl
+      MD5 of measurement file: 118831d88ffff713077d8301404ac9c7
+      Date checked           : 01OCT26
+      Beginning year         : 1591
+      Ending year            : 1965
+      Principal investigators: Parker, M.L.
+      Site name              : Paulina
+      Species information    : PIPO Pinus ponderosa Douglas ex C. Lawson
+      Latitude               : 44.2700 N
+      Longitude              : 119.8800 W
+      Elevation              : 1311 m
+
+      Series intercorrelation: 0.600
+      Avg mean sensitivity   : 0.304
+      Avg standard deviation : 0.729
+      Avg autocorrelation    : 0.809
+      Number dated series    : 20
+      Series crossdated      : 17
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 1.60
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   2 037012   1606 1965  .57  .64  .70  .73  .73  .59  .60  .62  .41 
+   3 037021   1650 1965  .54  .69  .73  .76  .72  .65  .81  .73  .45 
+   4 037022   1623 1965  .53  .66  .61  .35  .46  .42  .55  .59  .34 
+   5 037041   1700 1965       .79  .82  .74  .67  .56  .46  .53  .68 
+   6 037042   1707 1965       .79  .70  .62  .61  .43  .42  .60  .72 
+   7 037051   1657 1965  .49  .71  .77  .70  .73  .65  .67  .74  .71 
+   8 037052   1700 1965       .64  .71  .64  .73  .65  .69  .71  .70 
+   9 037061   1780 1965                      .59  .54  .64  .77  .77 
+  10 037062   1770 1965                 .56  .64  .64  .14B .06B .57 
+  11 037091   1780 1965                      .65  .55  .60  .50  .46 
+  12 037092   1780 1965                      .51  .55  .61  .53  .57 
+  15 037121   1672 1965  .52  .67  .67  .57  .59  .65  .72  .66  .54 
+  16 037122   1680 1965  .55  .65  .64  .68  .71  .73  .74  .69  .63 
+  17 037131   1629 1965  .60  .62  .67  .59  .61  .60  .70  .77  .72 
+  18 037132   1772 1965                 .60  .59  .73  .81  .80  .73 
+  19 037141   1770 1965                 .61  .66  .49  .64  .73  .48 
+  20 037142   1780 1965                      .67  .58  .70  .71  .58 
+ Av segment correlation  .54  .69  .70  .63  .64  .59  .62  .63  .59 
+
+ FLAGGED SEGMENTS: or005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 037062   1850 1899     B     .140         1      .579   .438
+  10 037062   1875 1924     B     .057         1      .567   .510
+
+ DESCRIPTIVE STATISTICS: or005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 037011   1591 1965    374                          .88   2.79   .613   .854   .323                         
+   2 037012   1606 1965    360      9      0    .561    .88   3.35   .595   .844   .308   1.84   .287  -.006   1
+   3 037021   1650 1965    316      9      0    .570    .93   3.20   .555   .776   .310   1.66   .276  -.013   2
+   4 037022   1623 1965    343      9      0    .492    .95   2.81   .534   .763   .291   1.97   .269   .005   2
+   5 037041   1700 1965    266      8      0    .661    .95   3.31   .593   .817   .279   2.12   .277  -.017   1
+   6 037042   1707 1965    259      8      0    .628   1.31   4.34   .819   .857   .265   1.73   .253  -.007   1
+   7 037051   1657 1965    309      9      0    .631   1.11   3.28   .545   .696   .314   2.05   .293  -.004   1
+   8 037052   1700 1965    266      8      0    .677   1.28   3.46   .522   .658   .254   1.73   .243   .008   1
+   9 037061   1780 1965    186      5      0    .640   1.09   3.42   .788   .884   .268   1.72   .239   .026   0
+  10 037062   1770 1965    196      6      2    .493   1.42   4.11   .826   .781   .255   1.81   .243   .075   0
+  11 037091   1780 1965    186      5      0    .570   1.71   4.99   .941   .856   .247   1.78   .236  -.010   3
+  12 037092   1780 1965    186      5      0    .549   1.83   5.40  1.001   .853   .231   1.48   .219   .021   1
+  13 037101   1703 1965    261                         1.31   6.34  1.239   .887   .350                         
+  14 037102   1707 1965    255                         1.42   5.65  1.257   .865   .361                         
+  15 037121   1672 1965    294      9      0    .589   1.15   4.47   .864   .900   .292   1.67   .258  -.000   1
+  16 037122   1680 1965    286      9      0    .638   1.14   4.48   .716   .843   .243   1.67   .235   .021   3
+  17 037131   1629 1965    337      9      0    .646    .98   3.47   .683   .722   .402   1.98   .354  -.012   1
+  18 037132   1772 1965    194      6      0    .698    .72   2.97   .477   .809   .366   1.74   .300  -.002   2
+  19 037141   1770 1965    196      6      0    .562   1.00   4.01   .621   .751   .300   1.59   .250  -.067   0
+  20 037142   1780 1965    186      5      0    .605   1.10   4.15   .716   .810   .360   1.77   .304   .016   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5256    125      2    .600   1.13   6.34   .729   .809   .304   2.12   .270   .001
+
+ DATA CHECKS (rwl.check): or005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or005.rwl
+ 20 series, 5256 measurements, 1591-1965, 0.01 mm precision
+ 0 error(s), 4 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_ALL_NA_YEAR (1)
+     no series is measured in 1599; years with no data at all break several dplR functions
+   RWL_INTERNAL_NA (3)
+     037011: no measurement for 1599, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     037101: no measurement for 1929, 1934, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     037102: no measurement for 1929, 1934-1935, 1962, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file or005.rwl, MD5 118831d88ffff713077d8301404ac9c7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 037011 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 037101 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 037102 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

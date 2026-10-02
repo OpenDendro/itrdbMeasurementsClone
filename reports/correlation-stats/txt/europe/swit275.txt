@@ -1,0 +1,137 @@
+
+ COFECHA-style crossdating report: swit275
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit275.rwl
+      MD5 of measurement file: 6d24c11559d136fc08a6d25f1a5763e1
+      Date checked           : 01OCT26
+      Beginning year         : 1700
+      Ending year            : 2011
+      Principal investigators: Bigler, C.; Clalüna, A.
+      Site name              : Sils-Maria GR Resgia
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.4333 N
+      Longitude              : 9.7833 E
+      Elevation              : 1850 m
+
+      Series intercorrelation: 0.495
+      Avg mean sensitivity   : 0.183
+      Avg standard deviation : 0.346
+      Avg autocorrelation    : 0.840
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 4, B 7; 5 of the B weak at every lag)
+      Pct problem segments   : 7.97
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit275
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 Su.A01   1835 2011                                .63  .62  .57  .67  .66 
+   2 Su.A02c  1793 2011                      .44  .36  .45  .54  .54  .61  .58 
+   3 Su.A03   1769 2011                 .38  .41  .44  .67  .63  .59  .66  .63 
+   4 Su.A04   1761 2011                 .16B .24A .41  .50  .51  .60  .61  .57 
+   5 Su.A05a  1763 2011                 .60  .69  .63  .51  .55  .43  .56  .60 
+   6 Su.A06   1700 2011       .19B .21B .46  .40  .30A .43  .42  .40  .53  .57 
+   7 Su.A07   1700 2011       .45  .51  .57  .63  .48  .31B .38  .44  .53  .54 
+   8 Su.A08   1730 2011            .49  .56  .50  .35  .26A .40  .65  .66  .58 
+   9 Su.A09   1721 2011       .12B .38  .50  .63  .58  .47  .52  .63  .78  .74 
+  10 Su.A10   1735 2011            .50  .46  .42  .33A .45  .44  .56  .61  .43 
+  11 Su.A11   1719 2011       .45  .75  .71  .61  .54  .51  .59  .53  .57  .50 
+  12 Su.A12   1750 2011                 .46  .49  .45  .46  .56  .56  .51  .45 
+  13 Su.A14   1909 2011                                               .58  .56 
+  14 Su.A15   1876 2011                                          .66  .74  .70 
+  15 Su.A16   1800 2011                           .39  .33  .21B .29B .51  .48 
+  16 Su.A17   1749 2011                 .57  .54  .49  .58  .53  .50  .74  .66 
+  17 Su.A18   1894 2011                                          .59  .68  .59 
+  18 Su.A19   1810 2011                           .49  .48  .65  .66  .58  .54 
+  19 Su.A20   1750 2011                 .60  .51  .46  .56  .42  .41  .74  .73 
+ Av segment correlation       .30  .47  .50  .50  .45  .48  .50  .53  .62  .59 
+
+ FLAGGED SEGMENTS: swit275
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 Su.A04   1775 1824     B     .159         8      .231   .072  weak at every lag
+   4 Su.A04   1800 1849     A     .240         0
+   6 Su.A06   1725 1774     B     .189         2      .287   .098  weak at every lag
+   6 Su.A06   1750 1799     B     .206         6      .317   .112  weak at every lag
+   6 Su.A06   1825 1874     A     .299         0
+   7 Su.A07   1850 1899     B     .309         7      .330   .020
+   8 Su.A08   1850 1899     A     .259         0
+   9 Su.A09   1725 1774     B     .122        10      .339   .217
+  10 Su.A10   1825 1874     A     .326         0
+  15 Su.A16   1875 1924     B     .214         8      .226   .012  weak at every lag
+  15 Su.A16   1900 1949     B     .289         9      .303   .015  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit275
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Su.A01   1835 2011    177      5      0    .620    .97   1.86   .233   .652   .149   1.55   .166  -.052   1
+   2 Su.A02c  1793 2011    219      7      0    .471   1.00   3.10   .613   .922   .207   1.80   .222   .015   1
+   3 Su.A03   1769 2011    243      8      0    .539    .52   1.09   .192   .834   .176   1.50   .174  -.011   1
+   4 Su.A04   1761 2011    251      8      2    .448    .82   2.71   .444   .842   .203   1.99   .238  -.027   3
+   5 Su.A05a  1763 2011    249      8      0    .564    .56   1.12   .179   .686   .179   2.35   .200  -.027   1
+   6 Su.A06   1700 2011    312     10      3    .406    .40   1.38   .194   .900   .175   1.75   .186   .016   1
+   7 Su.A07   1700 2011    312     10      1    .444    .49   1.14   .206   .828   .197   1.63   .196   .003   2
+   8 Su.A08   1730 2011    282      9      1    .471    .48   1.20   .195   .853   .166   1.61   .173  -.027   1
+   9 Su.A09   1721 2011    291     10      1    .501    .53   1.68   .250   .792   .232   1.74   .233  -.019   3
+  10 Su.A10   1735 2011    277      9      1    .446    .56   2.02   .304   .910   .166   1.68   .169  -.006   3
+  11 Su.A11   1719 2011    293     10      0    .537   1.05   3.06   .469   .836   .191   1.67   .204   .028   1
+  12 Su.A12   1750 2011    262      8      0    .427    .50   1.60   .231   .820   .190   1.81   .199  -.008   1
+  13 Su.A14   1909 2011    103      2      0    .494   1.77   3.73   .760   .867   .187   1.44   .187  -.036   3
+  14 Su.A15   1876 2011    136      3      0    .634   1.58   3.27   .608   .833   .183   1.68   .198  -.009   1
+  15 Su.A16   1800 2011    212      6      2    .339   1.01   2.30   .436   .854   .184   1.47   .186   .013   2
+  16 Su.A17   1749 2011    263      8      0    .564    .85   1.93   .368   .893   .158   1.56   .165   .006   2
+  17 Su.A18   1894 2011    118      3      0    .564   1.47   3.46   .726   .891   .163   1.51   .177   .045   1
+  18 Su.A19   1810 2011    202      6      0    .514   1.12   4.60   .642   .833   .216   2.01   .253   .041   1
+  19 Su.A20   1750 2011    262      8      0    .575    .63   1.61   .254   .894   .150   1.61   .161   .009   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4464    138     11    .495    .77   4.60   .346   .840   .183   2.35   .194  -.002
+
+ DATA CHECKS (rwl.check): swit275
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit275.rwl
+ 19 series, 4464 measurements, 1700-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit275.rwl, MD5 6d24c11559d136fc08a6d25f1a5763e1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

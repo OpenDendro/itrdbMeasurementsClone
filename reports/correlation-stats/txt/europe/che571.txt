@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: che571
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che571.rwl
+      MD5 of measurement file: 35335606f04c60fa7631583278b82262
+      Date checked           : 01OCT26
+      Beginning year         : 1911
+      Ending year            : 2008
+      Principal investigators: Weber, P.; Lévesque, M.; Walthert, L.; Heiri, C.; Trotsiuk, V.; Sanders, T.
+      Site name              : REI
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.1496 N
+      Longitude              : 7.8427 E
+      Elevation              : 680 m
+
+      Series intercorrelation: 0.510
+      Avg mean sensitivity   : 0.280
+      Avg standard deviation : 0.881
+      Avg autocorrelation    : 0.750
+      Number dated series    : 10
+      Segment length tested  : 48
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che571
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  48-year dated segments, lagged  24 years
+ Flags:  A = correlation under   .3348 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1997 
+ --- -------- ---------  ---- 
+   1 rei03a   1925 2008  .61 
+   2 rei05a   1911 2008  .53 
+   3 rei10a   1921 2008  .64 
+   4 rei11a   1924 2008  .60 
+   5 rei15a   1911 2008  .72 
+   6 rei20a   1946 2008  .52 
+   7 rei22a   1911 2008  .55 
+   8 rei25a   1912 2008  .41 
+   9 rei26a   1925 2008  .43 
+  10 rei30a   1932 2008  .61 
+ Av segment correlation  .56 
+
+ FLAGGED SEGMENTS: che571
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che571
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 rei03a   1925 2008     84      1      0    .588   1.69   5.58   .999   .661   .350   2.20   .371   .052   1
+   2 rei05a   1911 2008     98      1      0    .557   2.59   5.16   .983   .811   .211   1.45   .208  -.048   1
+   3 rei10a   1921 2008     88      1      0    .640   1.47   4.78   .835   .726   .319   2.05   .332   .073   1
+   4 rei11a   1924 2008     85      1      0    .619   1.92   3.77   .826   .694   .268   1.62   .267   .034   1
+   5 rei15a   1911 2008     98      1      0    .496   1.56   4.06   .950   .823   .299   1.48   .267   .054   1
+   6 rei20a   1946 2008     63      1      0    .473   2.07   4.78  1.109   .889   .284   1.46   .266  -.025   2
+   7 rei22a   1911 2008     98      1      0    .508   1.54   3.10   .593   .772   .205   1.56   .214   .074   1
+   8 rei25a   1912 2008     97      1      0    .402   1.88   3.77   .761   .668   .276   1.69   .259   .001   1
+   9 rei26a   1925 2008     84      1      0    .402   2.40   5.71   .978   .735   .243   1.57   .234   .024   1
+  10 rei30a   1932 2008     77      1      0    .405   1.35   5.06   .871   .745   .375   2.43   .404   .041   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            872     10      0    .510   1.85   5.71   .881   .750   .280   2.43   .279   .029
+
+ DATA CHECKS (rwl.check): che571
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che571.rwl
+ 10 series, 872 measurements, 1911-2008, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che571.rwl, MD5 35335606f04c60fa7631583278b82262.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3348 for 48-year segments.
+ Segments: 48 years, lagged 24, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 48 years: the record is only 98 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

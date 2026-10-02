@@ -1,0 +1,103 @@
+
+ COFECHA-style crossdating report: swit140w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit140w.rwl
+      MD5 of measurement file: a98c678b9a3a20e15cac101ec4e1bb92
+      Date checked           : 01OCT26
+      Beginning year         : 1792
+      Ending year            : 1974
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Riederalp Vs Aletschwald
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.4000 N
+      Longitude              : 8.0200 E
+      Elevation              : 2000 m
+
+      Series intercorrelation: 0.689
+      Avg mean sensitivity   : 0.236
+      Avg standard deviation : 0.388
+      Avg autocorrelation    : 0.622
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit140w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 226015   1813 1974       .65  .58  .81  .81  .79 
+   2 226016   1846 1974            .54  .75  .80  .77 
+   3 226017   1792 1974       .61  .44  .52  .64  .61 
+   4 226020   1866 1974                 .78  .81  .82 
+   5 226039   1859 1974                 .62  .63  .69 
+   6 226041   1849 1974                 .63  .79  .83 
+   7 226043   1849 1974            .46  .71  .81  .85 
+   8 226045   1832 1974            .56  .79  .80  .80 
+ Av segment correlation       .63  .52  .70  .76  .77 
+
+ FLAGGED SEGMENTS: swit140w
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swit140w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 226015   1813 1974    162      5      0    .701    .88   1.67   .274   .528   .250   1.49   .229   .041   1
+   2 226016   1846 1974    129      4      0    .735   1.35   2.39   .413   .618   .208   1.60   .223   .009   2
+   3 226017   1792 1974    183      5      0    .576    .99   2.62   .481   .704   .299   1.94   .311   .008   2
+   4 226020   1866 1974    109      3      0    .768   1.24   2.03   .325   .578   .190   1.49   .200  -.012   2
+   5 226039   1859 1974    116      3      0    .642   1.22   2.50   .418   .591   .249   1.66   .252   .048   1
+   6 226041   1849 1974    126      3      0    .694   1.08   1.75   .296   .570   .210   1.44   .210   .005   2
+   7 226043   1849 1974    126      4      0    .730   1.52   3.04   .435   .621   .202   1.47   .207   .021   1
+   8 226045   1832 1974    143      4      0    .712   1.08   2.70   .437   .731   .242   1.74   .238  -.008   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1094     31      0    .689   1.15   3.04   .388   .622   .236   1.94   .238   .014
+
+ DATA CHECKS (rwl.check): swit140w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit140w.rwl
+ 8 series, 1094 measurements, 1792-1974, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file swit140w.rwl, MD5 a98c678b9a3a20e15cac101ec4e1bb92.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

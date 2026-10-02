@@ -1,0 +1,101 @@
+
+ COFECHA-style crossdating report: brit098
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit098.rwl
+      MD5 of measurement file: 1981fe3e561b9e54b3b765d117dbf64d
+      Date checked           : 01OCT26
+      Beginning year         : 1473
+      Ending year            : 1629
+      Principal investigators: Bayliss, A.; Dee, M.W.; Howard, R.E.; Miles, D.W.H.; Tyers, C.; Wacker, L.
+      Site name              : Great Tower at St Mary Magdalen College, Oxford
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 51.7513 N
+      Longitude              : 1.2467 W
+      Elevation              : 63 m
+
+      Series intercorrelation: 0.655
+      Avg mean sensitivity   : 0.217
+      Avg standard deviation : 0.666
+      Avg autocorrelation    : 0.745
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit098
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 
+                        1549 1574 1599 1624 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 DMMCO61  1476 1613  .53  .43  .45      
+   2 DMMCO62  1474 1625  .70  .70  .73  .56 
+   3 DMMCO63  1487 1629  .79  .79  .79  .58 
+   4 DMMCO64  1480 1614  .75  .60  .66      
+   5 DMMCO65  1473 1608  .65  .70  .74      
+   6 MAGC63A  1488 1605  .79  .74  .77      
+   7 MAGC63B  1488 1605  .81  .73  .76      
+ Av segment correlation  .72  .67  .70  .57 
+
+ FLAGGED SEGMENTS: brit098
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: brit098
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DMMCO61  1476 1613    138      3      0    .509   1.65   3.85   .657   .715   .247   1.62   .216  -.021   3
+   2 DMMCO62  1474 1625    152      4      0    .656   1.74   3.62   .720   .703   .246   1.60   .238  -.008   1
+   3 DMMCO63  1487 1629    143      4      0    .686   1.44   3.84   .696   .890   .174   1.80   .197   .011   3
+   4 DMMCO64  1480 1614    135      3      0    .580   1.82   5.33   .717   .748   .170   1.86   .192   .008   3
+   5 DMMCO65  1473 1608    136      3      0    .712   1.75   3.82   .671   .676   .249   1.71   .226  -.022   3
+   6 MAGC63A  1488 1605    118      3      0    .725   1.61   3.35   .585   .747   .214   1.49   .198  -.018   3
+   7 MAGC63B  1488 1605    118      3      0    .738   1.61   3.49   .587   .732   .214   1.59   .204  -.041   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            940     23      0    .655   1.66   5.33   .666   .745   .217   1.86   .211  -.012
+
+ DATA CHECKS (rwl.check): brit098
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit098.rwl
+ 7 series, 940 measurements, 1473-1629, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit098.rwl, MD5 1981fe3e561b9e54b3b765d117dbf64d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

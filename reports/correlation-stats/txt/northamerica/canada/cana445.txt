@@ -1,0 +1,141 @@
+
+ COFECHA-style crossdating report: cana445
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana445.rwl
+      MD5 of measurement file: 7bb8dfb9e293a29e43600e4a26058e25
+      Date checked           : 01OCT26
+      Beginning year         : 760
+      Ending year            : 1326
+      Principal investigators: Luckman, B.H.; Reynolds, J.; St. George, S.
+      Site name              : Peyto Glacier
+      Species information    : PCEN Picea engelmannii Parry ex Engelm.
+      Latitude               : 51.7000 N
+      Longitude              : 116.5167 W
+      Elevation              : 1850 m
+
+      Series intercorrelation: 0.514
+      Avg mean sensitivity   : 0.172
+      Avg standard deviation : 0.090
+      Avg autocorrelation    : 0.816
+      Number dated series    : 15
+      Series crossdated      : 13
+      Segment length tested  : 50
+
+      Number problem segments: 15  (A 3, B 12; 5 of the B weak at every lag)
+      Pct problem segments   : 11.72
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana445
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   800  825  850  875  900  925  950  975 1000 1025 1050 1075 1100 1125 1150 1175 1200 1225 1250 1275 
+                         849  874  899  924  949  974  999 1024 1049 1074 1099 1124 1149 1174 1199 1224 1249 1274 1299 1324 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 Y91011R   918 1326                           .58  .29B .31A .49  .60  .52  .45  .42  .34  .41  .49  .35  .25A .08B .17B
+   2 Y91012R   904 1229                           .52  .30B .31B .52  .59  .63  .46  .50  .52  .45  .34                     
+   3 Y91431R   982 1320                                          .66  .71  .74  .72  .69  .68  .70  .68  .29B .33  .64      
+   6 Y91442R   902 1243                           .54  .73  .75  .70  .75  .77  .74  .73  .76  .74  .52                     
+   7 P01A      903 1240                           .66  .37B .53  .69  .66  .67  .45  .38  .43  .47  .69                     
+   8 P01B      903 1286                           .44  .42  .59  .60  .51  .39  .38  .45  .47  .52  .49  .25B .17B          
+   9 P43A      760 1324  .45  .48  .65  .62  .50  .57  .47  .38B .53  .72  .76  .70  .67  .65  .54  .53  .31A .34  .54  .45 
+  10 P43B2     765  903  .45  .48  .65                                                                                      
+  11 P43B      911 1184                           .37  .43  .45B .66  .68  .45  .35B .58  .64                               
+  12 P43C     1094 1183                                                              .59  .64                               
+  13 P43D      992 1092                                          .69  .65                                                   
+  14 P44A      899 1246                           .39  .40  .68  .71  .72  .71  .50  .55  .68  .65  .68                     
+  15 P44B      900 1183                           .55  .35  .54  .50  .57  .74  .81  .64  .55                               
+ Av segment correlation  .45  .48  .65  .62  .50  .51  .42  .51  .61  .65  .64  .56  .57  .58  .56  .55  .30  .27  .42  .31 
+
+ FLAGGED SEGMENTS: cana445
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 Y91011R   950  999     B     .291         4      .417   .127
+   1 Y91011R   975 1024     A     .313         0
+   1 Y91011R  1225 1274     A     .250         0
+   1 Y91011R  1250 1299     B     .083       -10      .275   .193  weak at every lag
+   1 Y91011R  1275 1324     B     .168        -8      .223   .056  weak at every lag
+   2 Y91012R   950  999     B     .297         4      .364   .068
+   2 Y91012R   975 1024     B     .310         4      .342   .032
+   3 Y91431R  1200 1249     B     .287         9      .308   .021  weak at every lag
+   7 P01A      950  999     B     .372         4      .461   .089
+   8 P01B     1200 1249     B     .254        -9      .289   .035  weak at every lag
+   8 P01B     1225 1274     B     .170        -9      .293   .123  weak at every lag
+   9 P43A      975 1024     B     .377        -2      .527   .150
+   9 P43A     1200 1249     A     .310         0
+  11 P43B      975 1024     B     .454        -2      .530   .077
+  11 P43B     1075 1124     B     .353        -1      .402   .049
+
+ DESCRIPTIVE STATISTICS: cana445
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Y91011R   918 1326    409     15      5    .375    .26    .59   .114   .923   .143   1.64   .152  -.006   3
+   2 Y91012R   904 1229    326     11      2    .444    .26    .71   .110   .910   .138   1.57   .148   .010   2
+   3 Y91431R   982 1320    339     11      1    .596    .30    .73   .094   .787   .158   1.49   .163  -.031   3
+   4 Y91432R   990 1266    261                          .30    .55   .085   .698   .169                         
+   5 Y91441R   899 1221    288                          .18    .55   .060   .771   .160                         
+   6 Y91442R   902 1243    342     11      0    .644    .18    .35   .052   .770   .153   1.66   .169   .002   1
+   7 P01A      903 1240    338     11      1    .578    .21    .53   .082   .906   .148   1.70   .152  -.013   3
+   8 P01B      903 1286    384     13      2    .382    .22    .54   .096   .915   .149   1.67   .154  -.012   1
+   9 P43A      760 1324    565     20      2    .492    .26    .77   .120   .817   .215   2.68   .242   .014   1
+  10 P43B2     765  903    139      3      0    .477    .11    .21   .043   .602   .283   1.75   .279   .026   1
+  11 P43B      911 1184    274      9      2    .480    .27    .70   .135   .873   .216   1.80   .223   .003   2
+  12 P43C     1094 1183     90      2      0    .600    .42    .76   .110   .707   .160   1.48   .152  -.002   1
+  13 P43D      992 1092    101      2      0    .679    .28    .44   .069   .621   .168   1.44   .172  -.001   3
+  14 P44A      899 1246    348     11      0    .553    .19    .54   .062   .743   .184   1.61   .186  -.003   3
+  15 P44B      900 1183    284      9      0    .599    .21    .45   .071   .791   .173   1.79   .176  -.003   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4488    128     15    .514    .24    .77   .090   .816   .172   2.68   .182  -.002
+
+ DATA CHECKS (rwl.check): cana445
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana445.rwl
+ 15 series, 4488 measurements, 760-1326, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     Y91432R: no measurement for 1092-1107, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     Y91441R: no measurement for 1040-1074, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cana445.rwl, MD5 7bb8dfb9e293a29e43600e4a26058e25.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series Y91432R has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series Y91441R has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

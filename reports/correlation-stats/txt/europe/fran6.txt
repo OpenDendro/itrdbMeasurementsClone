@@ -1,0 +1,207 @@
+
+ COFECHA-style crossdating report: fran6
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : fran6.rwl
+      MD5 of measurement file: a389ce6acb4b1211992142316a7b5077
+      Date checked           : 01OCT26
+      Beginning year         : 1836
+      Ending year            : 1982
+      Principal investigators: Tessier, L.
+      Site name              : Ste. Baume (forest)
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 43.3200 N
+      Longitude              : 5.7300 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.574
+      Avg mean sensitivity   : 0.287
+      Avg standard deviation : 0.897
+      Avg autocorrelation    : 0.805
+      Number dated series    : 51
+      Series crossdated      : 49
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 1, B 6; 1 of the B weak at every lag)
+      Pct problem segments   : 8.97
+
+
+ CORRELATION OF SERIES BY SEGMENTS: fran6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 215411   1836 1982  .72  .79 
+   2 215412   1836 1981  .05B-.02B
+   3 215413   1881 1982  .66  .56 
+   4 215421   1845 1982  .70  .67 
+   5 215422   1838 1982  .71  .68 
+   6 215423   1837 1982  .66  .63 
+   7 215431   1888 1982  .66  .75 
+   8 215432   1890 1982  .73  .80 
+  10 215441   1865 1982  .60  .76 
+  11 215442   1883 1982  .67  .68 
+  13 215451   1839 1982  .62  .80 
+  14 215452   1839 1969  .57      
+  15 215453   1843 1969  .67      
+  16 215461   1877 1982  .65  .75 
+  18 215463   1916 1982       .64 
+  19 215471   1865 1969  .64      
+  20 215472   1842 1977  .57  .77 
+  21 215473   1850 1977  .61  .70 
+  22 215481   1863 1982  .59  .68 
+  23 215482   1857 1982  .57  .63 
+  24 215483   1855 1982  .58  .70 
+  25 215491   1840 1969  .50      
+  26 215492   1840 1969  .65      
+  27 215493   1837 1969  .62      
+  28 215501   1920 1982       .57 
+  29 215502   1915 1982       .53 
+  30 215503   1912 1982       .44 
+  31 215511   1913 1982       .70 
+  32 215512   1917 1982       .74 
+  33 215513   1924 1982       .78 
+  34 215521   1850 1982  .64  .71 
+  35 215522   1841 1982  .70  .75 
+  36 215523   1898 1982  .64  .68 
+  37 215531   1919 1982       .77 
+  38 215532   1915 1982       .83 
+  39 215533   1922 1982       .80 
+  40 215541   1906 1982       .64 
+  41 215542   1905 1982       .51 
+  42 215543   1879 1982  .53  .53 
+  43 215551   1865 1982  .66  .52 
+  44 215552   1881 1982  .63  .57 
+  45 215553   1868 1982  .32A .58 
+  46 215561   1870 1982  .43  .63 
+  47 215562   1870 1982  .23B .64 
+  48 215563   1860 1982  .34  .60 
+  49 215571   1860 1982  .35B .59 
+  50 215572   1867 1982  .38B .46 
+  51 215573   1872 1982  .41B .61 
+ Av segment correlation  .56  .65 
+
+ FLAGGED SEGMENTS: fran6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 215412   1900 1949     B     .053         1      .762   .709
+   2 215412   1925 1974     B    -.017         1      .753   .770
+  45 215553   1900 1949     A     .319         0
+  47 215562   1900 1949     B     .232        -1      .268   .036  weak at every lag
+  49 215571   1900 1949     B     .353        -8      .444   .091
+  50 215572   1900 1949     B     .377        -8      .469   .092
+  51 215573   1900 1949     B     .412        -8      .467   .056
+
+ DESCRIPTIVE STATISTICS: fran6
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 215411   1836 1982    147      2      0    .594   1.13   3.14   .562   .724   .326   1.95   .308   .019   2
+   2 215412   1836 1981    146      2      2   -.134   1.43   4.91   .795   .763   .292   2.30   .306   .024   2
+   3 215413   1881 1982    102      2      0    .551   1.49   3.61   .628   .733   .251   1.72   .227   .011   3
+   4 215421   1845 1982    138      2      0    .627   1.07   5.79   .975   .822   .406   2.33   .396   .023   1
+   5 215422   1838 1982    145      2      0    .654   1.08   4.23   .846   .788   .411   2.44   .410   .037   1
+   6 215423   1837 1982    146      2      0    .587   1.04   4.56   .819   .767   .383   2.11   .364   .036   1
+   7 215431   1888 1982     95      2      0    .683   1.74   5.87  1.228   .875   .318   1.95   .347   .077   1
+   8 215432   1890 1982     93      2      0    .727   1.33   3.78   .792   .819   .323   1.89   .341   .006   2
+   9 215433   1890 1982     91                         1.35   3.94   .928   .849   .346                         
+  10 215441   1865 1982    118      2      0    .680   1.66   3.44   .779   .734   .339   2.44   .326   .002   2
+  11 215442   1883 1982    100      2      0    .633   1.37   3.28   .612   .667   .339   1.79   .303   .015   1
+  12 215443   1867 1982    116                         1.51   3.05   .714   .776   .313                         
+  13 215451   1839 1982    144      2      0    .706   1.15   4.70   .952   .895   .332   2.89   .397   .088   2
+  14 215452   1839 1969    131      1      0    .566   1.14   3.74   .795   .871   .302   1.89   .275   .009   3
+  15 215453   1843 1969    127      1      0    .658   1.24   3.76   .719   .811   .280   1.69   .276   .011   2
+  16 215461   1877 1982    106      2      0    .598   1.38   2.99   .783   .747   .336   3.77   .438   .152   1
+  17 215462   1915 1972     58      0      0    .702   2.10   4.30  1.015   .741   .322   1.84   .313   .050   1
+  18 215463   1916 1982     67      1      0    .599   2.85   5.74  1.272   .812   .203   1.98   .264   .232   1
+  19 215471   1865 1969    105      1      0    .636   1.18   4.09   .833   .738   .366   2.31   .387   .010   2
+  20 215472   1842 1977    136      2      0    .631   1.70   4.38   .981   .841   .296   2.10   .312   .039   1
+  21 215473   1850 1977    128      2      0    .625   1.17   3.20   .656   .797   .342   2.15   .300   .003   2
+  22 215481   1863 1982    120      2      0    .617   1.36   3.37   .719   .812   .257   1.93   .257   .055   1
+  23 215482   1857 1982    126      2      0    .599   1.51   4.44  1.060   .916   .284   1.82   .283   .003   3
+  24 215483   1855 1982    128      2      0    .614   1.41   4.24   .813   .820   .286   1.91   .287   .024   1
+  25 215491   1840 1969    130      1      0    .544   1.45   5.77   .997   .832   .237   2.01   .255   .036   3
+  26 215492   1840 1969    130      1      0    .634   1.35   4.01   .686   .797   .247   1.75   .251  -.005   1
+  27 215493   1837 1969    133      1      0    .561   1.31   4.92   .686   .759   .241   1.92   .266  -.026   1
+  28 215501   1920 1982     63      1      0    .593   2.29   6.35  1.308   .830   .244   1.79   .257   .073   1
+  29 215502   1915 1982     68      1      0    .411   3.06   7.88  1.642   .838   .234   1.48   .213   .004   2
+  30 215503   1912 1982     71      1      0    .374   2.31   6.20  1.452   .864   .244   1.62   .239   .115   1
+  31 215511   1913 1982     70      1      0    .646   2.60   6.21  1.569   .893   .218   1.66   .235  -.019   3
+  32 215512   1917 1982     66      1      0    .729   1.90   6.10  1.456   .858   .300   2.06   .313   .043   1
+  33 215513   1924 1982     59      1      0    .738   2.30   5.84  1.439   .845   .235   1.87   .266   .046   1
+  34 215521   1850 1982    133      2      0    .636   1.34   3.36   .658   .712   .298   2.20   .349   .088   1
+  35 215522   1841 1982    142      2      0    .612   1.04   2.71   .486   .660   .318   1.70   .294   .033   1
+  36 215523   1898 1982     85      2      0    .587   1.52   3.54   .837   .835   .244   1.71   .224   .045   2
+  37 215531   1919 1982     64      1      0    .763   3.15   9.97  2.416   .833   .341   2.11   .386   .091   1
+  38 215532   1915 1982     68      1      0    .784   2.53   6.82  1.526   .840   .280   1.59   .278   .062   1
+  39 215533   1922 1982     61      1      0    .811   3.00   7.76  1.736   .832   .248   1.94   .292   .089   1
+  40 215541   1906 1982     77      1      0    .613   2.26   5.71  1.316   .871   .238   1.54   .235  -.036   3
+  41 215542   1905 1982     78      1      0    .457   2.15   3.99   .821   .815   .197   1.62   .194   .019   2
+  42 215543   1879 1982    104      2      0    .453   2.10   5.99  1.050   .840   .239   1.63   .223   .021   2
+  43 215551   1865 1982    118      2      0    .464   1.30   3.99   .739   .836   .258   1.60   .250   .023   2
+  44 215552   1881 1982    102      2      0    .593   1.51   3.43   .659   .841   .195   1.48   .209   .003   2
+  45 215553   1868 1982    115      2      1    .436   1.53   4.23   .806   .860   .228   1.53   .240   .022   1
+  46 215561   1870 1982    113      2      0    .535   1.25   3.39   .768   .838   .276   2.37   .318   .140   1
+  47 215562   1870 1982    113      2      1    .420   1.22   2.44   .456   .714   .212   2.85   .297   .149   1
+  48 215563   1860 1982    123      2      0    .515   1.70   3.40   .769   .851   .206   2.33   .266   .284   1
+  49 215571   1860 1982    123      2      1    .534   1.66   6.02  1.174   .872   .259   1.91   .266   .007   1
+  50 215572   1867 1982    116      2      1    .450   1.34   4.01   .744   .807   .254   1.82   .256  -.001   2
+  51 215573   1872 1982    111      2      1    .564   1.52   3.56   .663   .743   .244   1.52   .238  -.005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5449     78      7    .574   1.55   9.97   .897   .805   .287   3.77   .295   .043
+
+ DATA CHECKS (rwl.check): fran6
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/fran6.rwl
+ 51 series, 5449 measurements, 1836-1982, 0.01 mm precision
+ 1 error(s), 1 warning(s), 10 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     215412: correlates best with the master at lag 1 (r = 0.568 against r = 0.244 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     215433: no measurement for 1938-1939, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file fran6.rwl, MD5 a389ce6acb4b1211992142316a7b5077.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 215433 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: the 'nyrs' spline for series 215443 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

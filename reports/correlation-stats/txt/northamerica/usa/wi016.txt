@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: wi016
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi016.rwl
+      MD5 of measurement file: 0409c053c5f3dffd510a22887e3e5a02
+      Date checked           : 01OCT26
+      Beginning year         : 1859
+      Ending year            : 2014
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : LeBudde
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 43.2300 N
+      Longitude              : 90.0810 W
+      Elevation              : 280 m
+
+      Series intercorrelation: 0.520
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.914
+      Avg autocorrelation    : 0.681
+      Number dated series    : 22
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 6.25
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wi016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 BDE001A  1859 2014  .68  .72  .58 
+   2 BDE001B  1905 2014       .65  .66 
+   3 BDE002A  1920 2014       .68  .45 
+   4 BDE002B  1892 2014  .62  .62  .50 
+   5 BDE003A  1902 2014       .66  .66 
+   6 BDE003B  1876 2014  .62  .58  .51 
+   7 BDE004A  1914 2014       .34  .34 
+   8 BDE004B  1915 2014       .43  .49 
+   9 BDE005A  1907 2014       .46  .49 
+  10 BDE005B  1918 2014       .60  .68 
+  11 BDE006A  1867 2014  .66  .59  .49 
+  12 BDE006B  1867 2014  .70  .69  .67 
+  13 BDE007A  1927 2014            .59 
+  14 BDE007B  1912 2014       .45  .47 
+  15 BDE008A  1933 2014            .66 
+  16 BDE008B  1929 2014            .67 
+  17 BDE009A  1943 2014            .71 
+  18 BDE009B  1914 2014       .51  .70 
+  19 BDE010A  1866 2014  .45  .50  .31B
+  20 BDE010B  1897 2014  .25A .54  .38 
+  21 BDE011A  1900 2014       .42  .34 
+  22 BDE011B  1881 2014  .60  .57  .17B
+ Av segment correlation  .57  .56  .52 
+
+ FLAGGED SEGMENTS: wi016
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  19 BDE010A  1950 1999     B     .310         9      .368   .058
+  20 BDE010B  1900 1949     A     .253         0
+  22 BDE011B  1950 1999     B     .167       -10      .278   .111  weak at every lag
+
+ DESCRIPTIVE STATISTICS: wi016
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BDE001A  1859 2014    156      3      0    .493   2.08   4.91   .830   .584   .252   1.75   .242  -.014   1
+   2 BDE001B  1905 2014    110      2      0    .630   2.71   9.38  1.430   .546   .296   2.17   .298   .095   0
+   3 BDE002A  1920 2014     95      2      0    .595   3.37   9.27  2.104   .781   .215   1.67   .208   .003   0
+   4 BDE002B  1892 2014    123      3      0    .583   2.63   5.86  1.360   .764   .256   1.73   .252  -.057   1
+   5 BDE003A  1902 2014    113      2      0    .669   2.58   5.42   .969   .680   .226   1.59   .210   .060   0
+   6 BDE003B  1876 2014    139      3      0    .457   2.15   5.69   .862   .662   .218   2.15   .234  -.063   3
+   7 BDE004A  1914 2014    101      2      0    .355   2.86   5.45  1.020   .769   .195   1.46   .178   .129   0
+   8 BDE004B  1915 2014    100      2      0    .419   2.72   6.55  1.472   .869   .191   1.59   .174   .088   0
+   9 BDE005A  1907 2014    108      2      0    .473   2.25   4.05   .735   .565   .220   2.17   .235   .010   1
+  10 BDE005B  1918 2014     97      2      0    .647   2.87   5.47   .985   .602   .229   1.58   .221   .143   0
+  11 BDE006A  1867 2014    148      3      0    .526   1.43   4.33   .785   .809   .187   1.59   .198  -.001   1
+  12 BDE006B  1867 2014    148      3      0    .645   1.41   4.10   .653   .783   .204   1.69   .186   .038   0
+  13 BDE007A  1927 2014     88      1      0    .574   3.19   6.92   .997   .461   .256   1.75   .248   .017   1
+  14 BDE007B  1912 2014    103      2      0    .491   2.67   5.70   .840   .325   .275   1.72   .233   .027   3
+  15 BDE008A  1933 2014     82      1      0    .586   2.85   7.20  1.293   .747   .250   1.64   .246   .125   0
+  16 BDE008B  1929 2014     86      1      0    .709   1.54   3.57   .607   .657   .233   1.91   .227  -.019   1
+  17 BDE009A  1943 2014     72      1      0    .740   3.48   6.78  1.012   .519   .215   1.59   .214  -.010   1
+  18 BDE009B  1914 2014    101      2      0    .640   2.61   9.27  1.160   .652   .254   1.90   .241  -.018   1
+  19 BDE010A  1866 2014    149      3      1    .330   1.33   3.31   .492   .797   .161   1.78   .173   .013   1
+  20 BDE010B  1897 2014    118      3      1    .347   1.26   2.18   .347   .625   .176   1.67   .186   .019   1
+  21 BDE011A  1900 2014    115      2      0    .396   1.12   2.12   .427   .864   .148   1.41   .151   .010   3
+  22 BDE011B  1881 2014    134      3      1    .379   1.32   2.63   .494   .735   .188   1.71   .191   .020   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2486     48      3    .520   2.19   9.38   .914   .681   .218   2.17   .214   .024
+
+ DATA CHECKS (rwl.check): wi016
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi016.rwl
+ 22 series, 2486 measurements, 1859-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file wi016.rwl, MD5 0409c053c5f3dffd510a22887e3e5a02.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

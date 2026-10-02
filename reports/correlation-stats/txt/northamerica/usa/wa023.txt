@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: wa023
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa023.rwl
+      MD5 of measurement file: a1841f9b9a95cd40dd19ebc615b76dcc
+      Date checked           : 01OCT26
+      Beginning year         : 1748
+      Ending year            : 1976
+      Principal investigators: Brubaker, L.B.
+      Site name              : Rainy Pass 2
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 48.4800 N
+      Longitude              : 120.7300 W
+      Elevation              : 1468 m
+
+      Series intercorrelation: 0.675
+      Avg mean sensitivity   : 0.199
+      Avg standard deviation : 0.549
+      Avg autocorrelation    : 0.840
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 2.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 671011   1790 1976  .80  .73  .57  .51  .69  .74 
+   2 671012   1802 1976       .62  .52  .45  .64  .77 
+   3 671021   1767 1976  .62  .72  .54  .45  .69  .72 
+   4 671022   1778 1976  .55  .58  .60  .53  .68  .70 
+   5 671031   1781 1976  .74  .76  .69  .53  .67  .78 
+   6 671032   1775 1976  .67  .64  .68  .62  .76  .79 
+   7 671041   1772 1976  .70  .73  .65  .78  .80  .79 
+   8 671042   1776 1976  .71  .69  .62  .44  .29A .46 
+   9 671061   1778 1976  .71  .75  .74  .65  .59  .62 
+  10 671062   1769 1976  .71  .73  .70  .52  .59  .71 
+  11 671071   1754 1976  .72  .77  .76  .73  .77  .68 
+  12 671072   1754 1976  .75  .82  .85  .74  .69  .72 
+  13 671081   1788 1976  .69  .68  .33A .14B .55  .61 
+  14 671082   1787 1976  .71  .77  .59  .50  .58  .60 
+  15 671091   1770 1976  .68  .69  .55  .55  .65  .69 
+  16 671092   1760 1976  .79  .84  .74  .67  .78  .75 
+  17 671101   1760 1976  .68  .57  .52  .80  .75  .65 
+  18 671102   1748 1976  .44  .56  .74  .67  .57  .55 
+ Av segment correlation  .69  .70  .63  .57  .65  .68 
+
+ FLAGGED SEGMENTS: wa023
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 671042   1900 1949     A     .293         0
+  13 671081   1850 1899     A     .325         0
+  13 671081   1875 1924     B     .145         5      .347   .202
+
+ DESCRIPTIVE STATISTICS: wa023
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 671011   1790 1976    187      6      0    .710    .74   1.72   .300   .840   .187   1.41   .185   .029   1
+   2 671012   1802 1976    175      5      0    .659    .84   1.56   .267   .688   .204   1.71   .211   .014   1
+   3 671021   1767 1976    210      6      0    .649   1.03   2.20   .469   .818   .220   1.74   .212   .017   3
+   4 671022   1778 1976    199      6      0    .634   1.02   2.22   .454   .827   .207   1.57   .197   .090   0
+   5 671031   1781 1976    196      6      0    .728   1.37   2.88   .490   .744   .193   1.67   .203   .016   1
+   6 671032   1775 1976    202      6      0    .715   1.21   2.57   .530   .845   .197   1.59   .199   .066   1
+   7 671041   1772 1976    205      6      0    .745   1.29   2.96   .475   .733   .220   1.49   .221   .012   1
+   8 671042   1776 1976    201      6      1    .558   1.17   3.27   .688   .858   .246   2.31   .291   .039   1
+   9 671061   1778 1976    199      6      0    .660   1.02   3.65   .545   .899   .187   1.77   .184   .024   1
+  10 671062   1769 1976    208      6      0    .667   1.06   3.94   .680   .891   .188   1.67   .203   .020   2
+  11 671071   1754 1976    223      6      0    .725   1.08   3.59   .718   .927   .195   1.54   .198   .036   1
+  12 671072   1754 1976    223      6      0    .767   1.16   3.36   .753   .919   .205   1.56   .210   .046   1
+  13 671081   1788 1976    189      6      2    .564   1.09   3.21   .597   .889   .221   1.78   .233   .008   1
+  14 671082   1787 1976    190      6      0    .665   1.27   3.43   .521   .804   .208   1.59   .226   .006   1
+  15 671091   1770 1976    207      6      0    .651   1.14   2.66   .409   .731   .199   1.67   .213   .015   3
+  16 671092   1760 1976    217      6      0    .719   1.13   2.04   .363   .813   .152   1.48   .168   .014   1
+  17 671101   1760 1976    217      6      0    .673   1.16   3.47   .743   .907   .179   1.66   .196   .019   1
+  18 671102   1748 1976    229      6      0    .638   1.08   3.90   .765   .930   .177   1.59   .185   .037   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3677    107      3    .675   1.11   3.94   .549   .840   .199   2.31   .207   .028
+
+ DATA CHECKS (rwl.check): wa023
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa023.rwl
+ 18 series, 3677 measurements, 1748-1976, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa023.rwl, MD5 a1841f9b9a95cd40dd19ebc615b76dcc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

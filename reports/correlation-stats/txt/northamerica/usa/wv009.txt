@@ -1,0 +1,232 @@
+
+ COFECHA-style crossdating report: wv009
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wv009.rwl
+      MD5 of measurement file: f18d727b6281107d0d7a9564806df4a9
+      Date checked           : 01OCT26
+      Beginning year         : 1828
+      Ending year            : 2014
+      Principal investigators: Saladyga, T.; Raso, C.; Hatfield, T.
+      Site name              : Babcock State Park
+      Species information    : PIRI Pinus rigida Mill.
+      Latitude               : 37.9667 N
+      Longitude              : 80.9333 W
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.566
+      Avg mean sensitivity   : 0.326
+      Avg standard deviation : 0.588
+      Avg autocorrelation    : 0.642
+      Number dated series    : 55
+      Series crossdated      : 45
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2)
+      Pct problem segments   : 2.73
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wv009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 PIRI01A  1894 2004  .55  .67  .62 
+   2 PIRI01B  1885 2014  .53  .57  .47 
+   3 PIRI02A  1897 1998  .56  .69      
+   4 PIRI03A  1902 2014       .59  .61 
+   5 PIRI04A  1911 2014       .66  .27A
+   6 PIRI06A  1890 2014  .72  .82  .64 
+   7 PIRI06B  1853 2014  .60  .62  .42 
+   8 PIRI07A  1894 2014  .73  .75  .66 
+   9 PIRI07B  1887 1986  .72  .59      
+  10 PIRI08A  1912 2014       .66  .52 
+  11 PIRI08B  1908 2014       .69  .63 
+  12 PIRI08C  1913 2014       .68  .59 
+  13 PIRI09A  1847 2014  .67  .73  .50 
+  14 PIRI09B  1862 2014  .70  .77  .67 
+  15 PIRI10A  1917 1997       .46      
+  16 PIRI10B  1890 2001  .60  .64  .55 
+  17 PIRI12A  1948 2014            .58 
+  18 PIRI13A  1883 2012  .62  .59  .49 
+  19 PIRI13B  1883 1985  .65  .61      
+  21 PIRI14B  1854 1960  .65           
+  22 PIRI15A  1868 1977  .59  .70      
+  23 PIRI15B  1867 1958  .59           
+  26 PIRI19A  1866 2014  .69  .75  .68 
+  27 PIRI20A  1858 2014  .47  .36B .28B
+  29 PIRI24A  1893 2014  .71  .72  .59 
+  30 PIRI25B  1901 2014       .55  .58 
+  31 PIRI27A  1912 2014       .71  .67 
+  32 PIRI27B  1886 2014  .76  .84  .80 
+  34 PIRI29B  1876 2014  .62  .69  .68 
+  35 PIRI30A  1843 1984  .46  .63      
+  36 PIRI30B  1843 1982  .67  .64      
+  37 PIRI31B  1850 1972  .67           
+  38 PIRI32A  1897 2014  .58  .74  .76 
+  39 PIRI32B  1877 2014  .64  .78  .69 
+  40 PIRI33B  1835 1967  .47           
+  41 PIRI34A  1895 2014  .60  .62  .75 
+  42 PIRI34B  1868 2014  .46  .48  .63 
+  44 PIRI35B  1833 2014  .59  .59  .69 
+  45 PIRI36A  1867 2014  .72  .69  .60 
+  46 PIRI36B  1874 2014  .67  .62  .55 
+  50 PIRI39A  1848 2014  .58  .58  .56 
+  51 PIRI39B  1848 2014  .44  .41  .37 
+  52 PIRI40A  1885 2014  .44  .51  .59 
+  53 PIRI40B  1893 2014  .49  .53  .50 
+  55 PIRI41B  1843 2014  .59  .63  .70 
+ Av segment correlation  .61  .64  .59 
+
+ FLAGGED SEGMENTS: wv009
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 PIRI04A  1950 1999     A     .267         0
+  27 PIRI20A  1925 1974     B     .357         9      .415   .058
+  27 PIRI20A  1950 1999     B     .282        -7      .405   .123
+
+ DESCRIPTIVE STATISTICS: wv009
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PIRI01A  1894 2004    111      3      0    .537    .99   1.54   .235   .358   .225   1.55   .218   .041   1
+   2 PIRI01B  1885 2014    130      3      0    .457   1.00   1.83   .242   .312   .225   1.85   .229  -.003   1
+   3 PIRI02A  1897 1998    102      2      0    .461   1.43   4.34  1.043   .816   .340   1.83   .324  -.012   3
+   4 PIRI03A  1902 2014    113      2      0    .477   1.71   4.46   .993   .864   .235   1.60   .220  -.049   3
+   5 PIRI04A  1911 2014    104      2      1    .491   1.90   4.25   .564   .526   .224   1.64   .216  -.006   3
+   6 PIRI06A  1890 2014    125      3      0    .595   1.41   3.37   .702   .809   .249   1.54   .236  -.015   3
+   7 PIRI06B  1853 2014    162      3      0    .513    .60   2.20   .366   .766   .299   2.38   .313  -.003   1
+   8 PIRI07A  1894 2014    121      3      0    .647   1.45   4.63   .928   .821   .329   2.06   .330  -.013   3
+   9 PIRI07B  1887 1986    100      2      0    .546    .91   2.37   .430   .794   .262   1.90   .250  -.030   3
+  10 PIRI08A  1912 2014    103      2      0    .605    .84   2.63   .560   .669   .340   2.38   .378   .003   2
+  11 PIRI08B  1908 2014    107      2      0    .646    .67   2.02   .393   .709   .341   1.88   .323   .029   3
+  12 PIRI08C  1913 2014    102      2      0    .626    .76   1.97   .433   .769   .302   1.95   .307   .010   1
+  13 PIRI09A  1847 2014    168      3      0    .498    .91   3.15   .672   .730   .342   2.02   .338  -.029   3
+  14 PIRI09B  1862 2014    153      3      0    .652    .85   2.83   .558   .654   .324   2.06   .337   .089   0
+  15 PIRI10A  1917 1997     81      1      0    .473   1.16   4.26   .879   .831   .319   1.84   .329   .003   1
+  16 PIRI10B  1890 2001    112      3      0    .522    .80   2.98   .599   .749   .300   1.91   .336   .014   1
+  17 PIRI12A  1948 2014     67      1      0    .591   2.10   4.81   .914   .657   .282   1.62   .253  -.085   2
+  18 PIRI13A  1883 2012    130      3      0    .484   1.09   3.91   .796   .745   .377   2.34   .394   .024   1
+  19 PIRI13B  1883 1985    103      2      0    .420   1.32   5.01   .786   .550   .370   2.16   .376  -.002   1
+  20 PIRI14A  1856 1960    105                         1.73   5.44  1.112   .543   .407                         
+  21 PIRI14B  1854 1960    107      1      0    .518   1.34   3.66   .786   .650   .350   2.40   .394  -.017   1
+  22 PIRI15A  1868 1977    110      2      0    .569    .99   1.85   .269   .155   .267   1.82   .249  -.016   3
+  23 PIRI15B  1867 1958     92      1      0    .621   1.67   3.98   .668   .564   .310   1.71   .295  -.046   3
+  24 PIRI16A  1903 2014    111                          .55   1.89   .364   .744   .435                         
+  25 PIRI16B  1892 2014    122                          .64   2.51   .480   .826   .359                         
+  26 PIRI19A  1866 2014    149      3      0    .689    .98   2.00   .284   .282   .263   2.12   .265  -.058   3
+  27 PIRI20A  1858 2014    157      3      2    .474    .97   1.95   .372   .422   .359   1.74   .319  -.012   3
+  28 PIRI21B  1855 2014    158                         1.05   4.18   .627   .614   .370                         
+  29 PIRI24A  1893 2014    122      3      0    .598   1.40   4.11   .837   .728   .314   1.93   .299   .003   2
+  30 PIRI25B  1901 2014    114      2      0    .570   1.33   5.67  1.229   .854   .324   2.11   .325   .012   3
+  31 PIRI27A  1912 2014    103      2      0    .653    .83   3.08   .521   .728   .374   1.98   .340   .018   1
+  32 PIRI27B  1886 2014    129      3      0    .751   1.68   5.73  1.089   .783   .297   2.01   .294  -.005   3
+  33 PIRI29A  1861 2014    153                         1.00   1.88   .293   .285   .291                         
+  34 PIRI29B  1876 2014    139      3      0    .633   1.23   3.72   .789   .827   .316   1.76   .295  -.006   3
+  35 PIRI30A  1843 1984    142      2      0    .513    .95   5.40  1.088   .913   .384   2.05   .373  -.015   3
+  36 PIRI30B  1843 1982    140      2      0    .574   1.17   4.83  1.026   .920   .335   1.82   .320  -.043   3
+  37 PIRI31B  1850 1972    123      1      0    .638   1.73   4.93  1.101   .807   .346   1.93   .337   .005   3
+  38 PIRI32A  1897 2014    118      3      0    .658    .79   1.68   .339   .655   .284   1.83   .287   .199   1
+  39 PIRI32B  1877 2014    138      3      0    .589    .90   2.04   .339   .439   .295   2.10   .299   .004   3
+  40 PIRI33B  1835 1967    133      1      0    .464    .94   4.12   .479   .456   .379   3.32   .374  -.007   3
+  41 PIRI34A  1895 2014    120      3      0    .672   1.02   2.82   .519   .777   .262   1.71   .264  -.023   3
+  42 PIRI34B  1868 2014    147      3      0    .552   1.22   3.44   .765   .812   .287   1.76   .266  -.020   3
+  43 PIRI35A  1853 2014    160                         1.00   2.04   .336   .354   .330                         
+  44 PIRI35B  1833 2014    182      3      0    .534    .99   1.94   .344   .182   .373   1.88   .320  -.021   3
+  45 PIRI36A  1867 2014    148      3      0    .683   1.08   2.89   .452   .489   .347   2.34   .305  -.007   3
+  46 PIRI36B  1874 2014    141      3      0    .636   1.20   3.02   .627   .651   .346   2.37   .337  -.013   3
+  47 PIRI37B  1895 2014    118                          .99   3.94   .742   .777   .380                         
+  48 PIRI38A  1872 2014    141                          .74   2.06   .397   .668   .339                         
+  49 PIRI38B  1870 2014    144                          .83   2.15   .393   .677   .316                         
+  50 PIRI39A  1848 2014    167      3      0    .602    .85   2.29   .467   .666   .351   2.06   .335  -.001   1
+  51 PIRI39B  1848 2014    167      3      0    .442    .54   2.17   .344   .742   .382   1.92   .345  -.019   3
+  52 PIRI40A  1885 2014    130      3      0    .465    .70   2.02   .405   .719   .351   2.63   .365  -.014   3
+  53 PIRI40B  1893 2014    122      3      0    .443    .50   1.34   .275   .774   .326   1.92   .308  -.002   3
+  54 PIRI41A  1828 2014    183                          .74   3.34   .618   .802   .352                         
+  55 PIRI41B  1843 2014    172      3      0    .655    .99   2.05   .371   .357   .329   2.05   .331  -.035   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           7101    110      3    .566   1.05   5.73   .588   .642   .326   3.32   .312  -.004
+
+ DATA CHECKS (rwl.check): wv009
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wv009.rwl
+ 55 series, 7101 measurements, 1828-2014, 0.01 mm precision
+ 0 error(s), 9 warning(s), 10 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (9)
+     PIRI16A: no measurement for 1979, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI16B: no measurement for 1979, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI21B: no measurement for 1936, 1964, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI29A: no measurement for 1948, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI35A: no measurement for 1877, 1958, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI37B: no measurement for 1944, 1972, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI38A: no measurement for 1944, 1967, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI38B: no measurement for 1967, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     PIRI41A: no measurement for 1898-1899, 1944, 1967, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 10 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file wv009.rwl, MD5 f18d727b6281107d0d7a9564806df4a9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series PIRI14A is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'
+ Left out of the crossdating: series PIRI16A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI16B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI21B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI29A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI35A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI37B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI38A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI38B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series PIRI41A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

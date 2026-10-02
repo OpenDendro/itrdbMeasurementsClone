@@ -1,0 +1,245 @@
+
+ COFECHA-style crossdating report: deu463
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu463.rwl
+      MD5 of measurement file: 79ac7b36a79ad2543f7cc5edeeeeee42
+      Date checked           : 01OCT26
+      Beginning year         : 1856
+      Ending year            : 2017
+      Principal investigators: Esper, J.
+      Site name              : Runkel, Westerwald EDW12
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.4550 N
+      Longitude              : 8.2167 E
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.541
+      Avg mean sensitivity   : 0.267
+      Avg standard deviation : 0.732
+      Avg autocorrelation    : 0.752
+      Number dated series    : 54
+      Series crossdated      : 39
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 1, B 5; 1 of the B weak at every lag)
+      Pct problem segments   : 5.66
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu463
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 EDW1201A 1863 2017  .42  .61  .59 
+   2 EDW1201B 1903 2017       .68  .75 
+   3 EDW1202a 1872 2017  .38  .69  .69 
+   4 EDW1202B 1864 2017  .50  .30B .35B
+   6 EDW1204A 1863 2017  .60  .51  .50 
+   8 EDW1205A 1864 1991  .57  .56      
+   9 EDW1205B 1862 1996  .62  .51      
+  10 EDW1206a 1937 2016            .65 
+  11 EDW1206B 1866 2017  .52  .52  .53 
+  12 EDW1207a 1866 2017  .64  .47  .49 
+  16 EDW1209A 1901 2017       .61  .62 
+  18 EDW1212A 1863 2017  .67  .73  .54 
+  19 EDW1212B 1875 2017  .66  .71  .62 
+  20 EDW1213A 1866 2017  .58  .79  .78 
+  21 EDW1213B 1866 2017  .54  .77  .61 
+  23 EDW1214B 1876 2017  .68  .72  .74 
+  24 EDW1215A 1894 2017  .69  .77  .76 
+  26 EDW1216A 1879 2017  .71  .53  .50 
+  27 EDW1216B 1864 2015  .72  .63  .20B
+  28 EDW1217A 1889 2017  .72  .71  .75 
+  29 EDW1217B 1869 2017  .54  .64  .61 
+  30 EDW1218A 1872 2016  .37  .46  .35 
+  31 EDW1218B 1866 2017  .59  .51  .35 
+  34 EDW1220A 1872 2007  .63  .60  .32B
+  36 EDW1221a 1882 2017  .68  .73  .59 
+  38 EDW1223A 1856 2017  .65  .64  .55 
+  39 EDW1223B 1866 2017  .51  .65  .65 
+  40 EDW1224A 1894 2017  .38  .67  .58 
+  41 EDW1224B 1883 2017  .41  .65  .56 
+  42 EDW1225A 1892 2017  .42  .70  .65 
+  43 EDW1225B 1947 2017            .46 
+  46 EDW1227A 1874 2017  .60  .66  .65 
+  47 EDW1227B 1877 2017  .63  .74  .64 
+  49 EDW1228B 1868 1953  .62           
+  50 EDW1229B 1870 2017  .56  .29B .31A
+  51 EDW1230A 1880 2017  .73  .74  .69 
+  52 EDW1230B 1900 2017       .62  .57 
+  53 EDW1231A 1868 2017  .58  .58  .55 
+  54 EDW1231B 1885 2017  .39  .60  .59 
+ Av segment correlation  .57  .62  .56 
+
+ FLAGGED SEGMENTS: deu463
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 EDW1202B 1925 1974     B     .298       -10      .343   .045
+   4 EDW1202B 1950 1999     B     .348         8      .359   .011
+  27 EDW1216B 1950 1999     B     .199        -4      .273   .074  weak at every lag
+  34 EDW1220A 1950 1999     B     .322         1      .347   .024
+  50 EDW1229B 1925 1974     B     .289         5      .415   .126
+  50 EDW1229B 1950 1999     A     .314         0
+
+ DESCRIPTIVE STATISTICS: deu463
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EDW1201A 1863 2017    155      3      0    .468   1.19   3.07   .496   .752   .244   2.01   .244   .008   1
+   2 EDW1201B 1903 2017    115      2      0    .667   1.84   3.92   .626   .636   .235   1.50   .229   .024   2
+   3 EDW1202a 1872 2017    146      3      0    .546   1.09   2.59   .439   .747   .239   1.86   .255   .018   2
+   4 EDW1202B 1864 2017    154      3      2    .472   1.25   6.00   .974   .820   .263   2.47   .307   .022   2
+   5 EDW1203B 1868 2017    147                         1.43   6.66   .850   .714   .302                         
+   6 EDW1204A 1863 2017    155      3      0    .482   1.41   2.99   .427   .506   .233   1.88   .230  -.020   1
+   7 EDW1204b 1879 2017    136                         1.18   2.41   .459   .732   .232                         
+   8 EDW1205A 1864 1991    128      2      0    .519   1.60   5.39  1.116   .863   .280   2.03   .289  -.012   1
+   9 EDW1205B 1862 1996    135      2      0    .486   1.19   4.77   .912   .869   .345   2.75   .357   .007   1
+  10 EDW1206a 1937 2016     80      1      0    .640   1.60   3.53   .755   .677   .304   1.72   .324   .000   1
+  11 EDW1206B 1866 2017    152      3      0    .537   1.13   5.03   .612   .714   .292   1.91   .299   .016   1
+  12 EDW1207a 1866 2017    152      3      0    .562   1.58   5.95  1.229   .900   .260   1.93   .271   .003   2
+  13 EDW1207B 1868 2017    148                         1.11   2.92   .534   .741   .257                         
+  14 EDW1208A 1857 1996    138                         1.57   3.84   .845   .802   .254                         
+  15 EDW1208B 1883 2017    132                         1.50   4.41  1.102   .903   .267                         
+  16 EDW1209A 1901 2017    117      2      0    .577   1.34   3.21   .525   .725   .229   1.77   .241   .019   1
+  17 EDW1209B 1901 2017    116                          .79   1.81   .411   .794   .275                         
+  18 EDW1212A 1863 2017    155      3      0    .626   1.47   5.52   .662   .552   .260   2.50   .282  -.040   2
+  19 EDW1212B 1875 2017    143      3      0    .652   1.66   3.18   .481   .478   .243   1.58   .246   .040   1
+  20 EDW1213A 1866 2017    152      3      0    .649   1.32   5.75   .683   .725   .265   2.75   .294   .078   1
+  21 EDW1213B 1866 2017    152      3      0    .583   1.47   4.61   .762   .705   .273   2.19   .321  -.015   3
+  22 EDW1214A 1900 2017    115                         1.56   2.66   .461   .581   .232                         
+  23 EDW1214B 1876 2017    142      3      0    .693   1.26   2.54   .501   .743   .263   1.72   .267  -.014   1
+  24 EDW1215A 1894 2017    124      3      0    .707   1.50   3.01   .562   .750   .243   1.60   .231  -.021   3
+  25 EDW1215B 1878 2017    139                          .87   2.38   .427   .754   .292                         
+  26 EDW1216A 1879 2017    139      3      0    .561   1.39   3.20   .820   .897   .274   1.90   .259  -.002   3
+  27 EDW1216B 1864 2015    152      3      1    .399   1.09   3.22   .534   .710   .270   2.12   .278  -.007   2
+  28 EDW1217A 1889 2017    129      3      0    .720   1.53   2.92   .507   .742   .200   1.36   .201  -.020   1
+  29 EDW1217B 1869 2017    149      3      0    .549   1.37   2.72   .444   .678   .202   1.59   .205   .005   1
+  30 EDW1218A 1872 2016    145      3      0    .368   1.56   4.12   .981   .869   .245   1.90   .260   .043   1
+  31 EDW1218B 1866 2017    152      3      0    .375   1.18   3.14   .802   .916   .278   2.03   .292  -.022   1
+  32 EDW1219A 1868 2017    143                          .93   2.39   .428   .693   .272                         
+  33 EDW1219B 1886 2017    129                         1.58   3.73   .939   .848   .279                         
+  34 EDW1220A 1872 2007    136      3      1    .412   1.35   3.44   .874   .903   .253   2.09   .301   .059   1
+  35 EDW1220b 1863 2013    148                         1.39   5.98   .935   .812   .313                         
+  36 EDW1221a 1882 2017    136      3      0    .625   1.99   3.86   .849   .826   .237   1.72   .246  -.022   1
+  37 EDW1221b 1884 2017    131                          .96   1.89   .284   .305   .264                         
+  38 EDW1223A 1856 2017    162      3      0    .566   1.43   4.86   .836   .754   .262   2.15   .293   .034   2
+  39 EDW1223B 1866 2017    152      3      0    .551   1.54   6.92  1.129   .914   .270   1.96   .293   .063   1
+  40 EDW1224A 1894 2017    124      3      0    .483   1.96   8.71  1.522   .813   .264   1.86   .277  -.031   1
+  41 EDW1224B 1883 2017    135      3      0    .442   1.45   3.28   .629   .796   .245   1.81   .252  -.005   2
+  42 EDW1225A 1892 2017    126      3      0    .551   1.27   3.63   .578   .738   .265   1.80   .279  -.025   3
+  43 EDW1225B 1947 2017     71      1      0    .464   1.30   3.17   .667   .790   .295   1.60   .293   .035   3
+  44 EDW1226A 1870 2017    143                         1.46   5.37  1.003   .811   .304                         
+  45 EDW1226B 1863 2017    151                          .95   5.58   .896   .884   .328                         
+  46 EDW1227A 1874 2017    144      3      0    .607   1.49   4.48   .669   .514   .325   2.62   .340   .010   3
+  47 EDW1227B 1877 2017    141      3      0    .556   1.63   4.59   .952   .832   .290   2.15   .304   .012   2
+  48 EDW1228A 1870 1968     97                         1.40   3.23   .730   .837   .283                         
+  49 EDW1228B 1868 1953     86      1      0    .563   1.66   3.09   .622   .645   .245   1.94   .268  -.016   1
+  50 EDW1229B 1870 2017    148      3      2    .383    .94   2.17   .484   .853   .263   2.21   .270   .012   1
+  51 EDW1230A 1880 2017    138      3      0    .687   1.85   4.38   .764   .700   .259   1.80   .242   .066   3
+  52 EDW1230B 1900 2017    118      2      0    .568   1.49   5.53  1.186   .892   .297   2.03   .305   .026   3
+  53 EDW1231A 1868 2017    150      3      0    .520   1.89   4.10   .880   .796   .286   1.67   .281   .041   1
+  54 EDW1231B 1885 2017    133      3      0    .379   1.51   3.68   .626   .594   .264   1.88   .296   .038   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           7336    106      6    .541   1.39   8.71   .732   .752   .267   2.75   .275   .011
+
+ DATA CHECKS (rwl.check): deu463
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu463.rwl
+ 54 series, 7336 measurements, 1856-2017, 0.01 mm precision
+ 0 error(s), 15 warning(s), 15 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (15)
+     EDW1203B: no measurement for 1959, 1966-1967, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1204b: no measurement for 1967-1969, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1207B: no measurement for 1929, 1969, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1208A: no measurement for 1860, 1976, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1208B: no measurement for 1976-1977, 1996, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1209B: no measurement for 1926, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1214A: no measurement for 1953, 1993-1994, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1215B: no measurement for 1983, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1219A: no measurement for 1892, 1899-1900, 1904, 1922-1923, 1959, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDW1219B: no measurement for 1963-1965, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ... and 5 more; see as.data.frame()
+ 15 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file deu463.rwl, MD5 79ac7b36a79ad2543f7cc5edeeeeee42.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series EDW1203B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1204b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1207B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1208A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1208B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1209B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1214A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1215B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1219A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1219B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1220b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1221b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1226A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1226B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDW1228A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

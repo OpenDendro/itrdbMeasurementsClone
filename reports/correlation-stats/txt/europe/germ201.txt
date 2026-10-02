@@ -1,0 +1,110 @@
+
+ COFECHA-style crossdating report: germ201
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ201.rwl
+      MD5 of measurement file: 34210dbcaf807cc18e05a8e89c0af156
+      Date checked           : 01OCT26
+      Beginning year         : 1857
+      Ending year            : 2005
+      Principal investigators: Neuwirth, B.
+      Site name              : Nordrhein-Westfalen/Oberbergisches Land drl03
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 50.9667 N
+      Longitude              : 7.7167 E
+      Elevation              : 260 m
+
+      Series intercorrelation: 0.723
+      Avg mean sensitivity   : 0.266
+      Avg standard deviation : 0.834
+      Avg autocorrelation    : 0.741
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ201
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 drl0301m 1865 2005  .72  .69  .65 
+   2 drl0302m 1857 2005  .67  .76  .80 
+   3 drl0303m 1860 2005  .69  .72  .81 
+   4 drl0304m 1868 2005  .72  .76  .75 
+   5 drl0305m 1870 2005  .67  .71  .83 
+   6 drl0306m 1871 2005  .68  .77  .59 
+   7 drl0307m 1877 2005  .54  .59  .64 
+   8 drl0308m 1884 2005  .70  .75  .67 
+   9 drl0309m 1867 2005  .71  .66  .70 
+  10 drl0310m 1860 2005  .79  .84  .83 
+  11 drl0311m 1864 2005  .61  .72  .71 
+  12 drl0312m 1871 2005  .43  .69  .75 
+ Av segment correlation  .66  .72  .73 
+
+ FLAGGED SEGMENTS: germ201
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: germ201
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 drl0301m 1865 2005    141      3      0    .720   1.91   3.96   .871   .741   .316   1.97   .318   .023   3
+   2 drl0302m 1857 2005    149      3      0    .779   1.61   3.14   .655   .739   .285   1.67   .263   .042   3
+   3 drl0303m 1860 2005    146      3      0    .796   2.04   4.12   .796   .641   .299   1.72   .287  -.012   3
+   4 drl0304m 1868 2005    138      3      0    .659   2.02   4.24   .739   .647   .269   1.53   .253  -.007   2
+   5 drl0305m 1870 2005    136      3      0    .755   2.13   4.36   .766   .714   .223   1.51   .219   .042   1
+   6 drl0306m 1871 2005    135      3      0    .661   1.67   4.14   .823   .747   .291   1.85   .303   .032   1
+   7 drl0307m 1877 2005    129      3      0    .648   1.85   4.34   .914   .840   .209   1.74   .224   .026   1
+   8 drl0308m 1884 2005    122      3      0    .698   2.14   4.66   .713   .706   .197   1.69   .202   .045   1
+   9 drl0309m 1867 2005    139      3      0    .748   2.41   5.57  1.046   .720   .283   1.70   .284   .023   1
+  10 drl0310m 1860 2005    146      3      0    .796   1.58   3.68   .740   .792   .259   1.90   .271   .038   1
+  11 drl0311m 1864 2005    142      3      0    .734   1.85   7.19  1.064   .801   .283   2.03   .276  -.023   2
+  12 drl0312m 1871 2005    135      3      0    .661   1.99   3.91   .887   .806   .262   1.61   .258  -.013   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1658     36      0    .723   1.93   7.19   .834   .741   .266   2.03   .264   .018
+
+ DATA CHECKS (rwl.check): germ201
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ201.rwl
+ 12 series, 1658 measurements, 1857-2005, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file germ201.rwl, MD5 34210dbcaf807cc18e05a8e89c0af156.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

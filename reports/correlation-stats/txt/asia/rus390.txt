@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: rus390
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus390.rwl
+      MD5 of measurement file: 0d919bb3936b6f8f92a6a5c85109ff94
+      Date checked           : 01OCT26
+      Beginning year         : 1609
+      Ending year            : 1767
+      Principal investigators: Chernykh, N.B.; Sargeeva, N.F.; Karpukhin, A.A.; Matskovsky, V.V.; Solovyeva, L.N.
+      Site name              : Church of the Assumption of the Most Holy Theotokos of Kondopoga
+      Species information    : PISP Pinus spp. L.
+      Latitude               : 62.1756 N
+      Longitude              : 34.2865 E
+      Elevation              : 42 m
+
+      Series intercorrelation: 0.530
+      Avg mean sensitivity   : 0.186
+      Avg standard deviation : 0.841
+      Avg autocorrelation    : 0.909
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus390
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 
+                        1749 
+ --- -------- ---------  ---- 
+   1 kond01A  1626 1765  .68 
+   3 kond02A  1656 1758  .59 
+   5 kond05A  1628 1767  .67 
+  10 kond08B  1615 1761  .37 
+ Av segment correlation  .58 
+
+ FLAGGED SEGMENTS: rus390
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: rus390
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 kond01A  1626 1765    140      1      0    .640   1.10   3.90   .807   .909   .212   1.50   .215   .043   1
+   2 kond01B  1626 1732    107      0      0    .588   1.15   3.50   .638   .834   .221   1.58   .218  -.090   3
+   3 kond02A  1656 1758    103      1      0    .453   1.47   5.00   .802   .818   .202   1.67   .212   .015   1
+   4 kond02B  1656 1748     93      0      0    .405   1.29   5.00   .853   .873   .176   1.75   .190   .057   3
+   5 kond05A  1628 1767    140      1      0    .652   1.05   3.70   .775   .913   .209   1.49   .209   .002   1
+   6 kond05B  1628 1738    111      0      0    .619   1.05   3.30   .581   .865   .216   1.48   .205  -.034   1
+   7 kond06A  1621 1730    110      0      0    .557   1.49   5.29  1.230   .952   .183   1.59   .168  -.026   2
+   8 kond06B  1621 1731    111      0      0    .532   1.41   5.81  1.245   .967   .180   1.38   .160   .026   3
+   9 kond08A  1615 1739    125      0      0    .483   1.36   3.68   .682   .888   .173   1.44   .175   .017   1
+  10 kond08B  1615 1761    147      1      0    .412   1.17   3.57   .818   .919   .180   1.72   .186  -.015   2
+  11 kond11A  1609 1744    136      0      0    .517   1.08   4.26   .852   .968   .143   1.47   .143  -.046   3
+  12 kond11B  1609 1741    133      0      0    .477   1.15   4.32   .855   .962   .148   1.54   .157   .027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1456      4      0    .530   1.22   5.81   .841   .909   .186   1.75   .186  -.002
+
+ DATA CHECKS (rwl.check): rus390
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus390.rwl
+ 12 series, 1456 measurements, 1609-1767, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     3 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file rus390.rwl, MD5 0d919bb3936b6f8f92a6a5c85109ff94.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

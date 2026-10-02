@@ -1,0 +1,127 @@
+
+ COFECHA-style crossdating report: arge102
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : arge102.rwl
+      MD5 of measurement file: 4c8c060eccf82f5c272409914198490a
+      Date checked           : 01OCT26
+      Beginning year         : 1890
+      Ending year            : 1991
+      Principal investigators: Villalba, R.
+      Site name              : Castaño Overo 2
+      Species information    : NOPU Nothofagus pumilio (Poepp. & Endl.) Reiche
+      Latitude               : 41.1500 S
+      Longitude              : 71.8000 W
+      Elevation              : 1670 m
+
+      Series intercorrelation: 0.481
+      Avg mean sensitivity   : 0.401
+      Avg standard deviation : 0.357
+      Avg autocorrelation    : 0.674
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1)
+      Pct problem segments   : 23.08
+
+
+ CORRELATION OF SERIES BY SEGMENTS: arge102
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 ME101A   1890 1991       .61 
+   8 ME108A   1909 1991       .31A
+   9 ME108D   1920 1991       .48 
+  10 ME109B   1904 1991       .47 
+  11 ME110A   1901 1991       .32A
+  12 ME111B   1922 1986       .56 
+  13 ME111C   1922 1991       .46 
+  16 ME113A   1917 1990       .58 
+  17 ME113B   1917 1991       .71 
+  18 ME114B   1902 1974       .64 
+  19 ME115A   1917 1991       .55 
+  20 ME115B   1914 1991       .60 
+  21 ME119A   1908 1991       .28B
+ Av segment correlation       .51 
+
+ FLAGGED SEGMENTS: arge102
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   8 ME108A   1925 1974     A     .312         0
+  11 ME110A   1925 1974     A     .321         0
+  21 ME119A   1925 1974     B     .282         2      .475   .193
+
+ DESCRIPTIVE STATISTICS: arge102
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ME101A   1890 1991    102      1      0    .609    .43   1.31   .283   .607   .441   2.17   .408  -.026   3
+   2 ME101B   1925 1991     67      0      0    .626    .55   1.20   .280   .584   .417   2.44   .390  -.002   3
+   3 ME102A   1931 1991     61      0      0    .427    .48   1.23   .267   .557   .454   1.94   .403  -.017   2
+   4 ME102B   1942 1991     50      0      0    .313    .55   1.45   .316   .666   .375   2.21   .403   .055   2
+   5 ME105B   1945 1991     47      0      0    .437    .90   1.83   .376   .719   .262   1.56   .260   .024   1
+   6 ME106B   1932 1991     60      0      0    .479    .62   2.13   .413   .735   .382   1.90   .387   .012   1
+   7 ME107A   1929 1991     63      0      0    .347    .84   2.35   .514   .619   .463   1.80   .431  -.019   1
+   8 ME108A   1909 1991     83      1      1    .382    .32    .71   .164   .519   .450   2.07   .410   .004   2
+   9 ME108D   1920 1991     72      1      0    .485    .41   1.17   .305   .751   .482   2.37   .516   .159   1
+  10 ME109B   1904 1991     88      1      0    .395    .48   1.69   .354   .764   .441   2.47   .437  -.000   2
+  11 ME110A   1901 1991     91      1      1    .283    .72   2.69   .565   .755   .479   2.06   .431   .045   1
+  12 ME111B   1922 1986     65      1      0    .581    .46   1.05   .236   .407   .462   2.20   .428   .023   3
+  13 ME111C   1922 1991     70      1      0    .492    .85   2.18   .494   .698   .397   2.13   .387   .156   0
+  14 ME112A   1926 1991     66      0      0    .646    .66   2.02   .370   .678   .336   2.11   .353  -.034   1
+  15 ME112B   1926 1991     66      0      0    .607    .69   1.42   .287   .457   .361   1.70   .351  -.039   1
+  16 ME113A   1917 1990     74      1      0    .544    .99   2.76   .547   .811   .304   2.53   .324   .054   1
+  17 ME113B   1917 1991     75      1      0    .636    .60   1.56   .319   .741   .315   1.87   .327   .010   1
+  18 ME114B   1902 1974     73      1      0    .602    .62   1.72   .423   .708   .418   2.06   .415   .009   1
+  19 ME115A   1917 1991     75      1      0    .470    .63   1.60   .311   .762   .256   1.67   .276   .038   1
+  20 ME115B   1914 1991     78      1      0    .531    .73   1.77   .411   .795   .313   1.86   .289   .049   3
+  21 ME119A   1908 1991     84      1      1    .233    .32   1.16   .273   .748   .513   2.84   .477   .051   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1510     13      3    .481    .60   2.76   .357   .674   .401   2.84   .389   .026
+
+ DATA CHECKS (rwl.check): arge102
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/arge102.rwl
+ 21 series, 1510 measurements, 1890-1991, 0.01 mm precision
+ 1 error(s), 0 warning(s), 4 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     ME119A: correlates best with the master at lag 2 (r = 0.515 against r = 0.445 as dated); the series may be misdated by 2 year(s), most likely a false ring or a ring measured twice
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file arge102.rwl, MD5 4c8c060eccf82f5c272409914198490a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

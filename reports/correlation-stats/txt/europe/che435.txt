@@ -1,0 +1,114 @@
+
+ COFECHA-style crossdating report: che435
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che435.rwl
+      MD5 of measurement file: 2a02c0c0e878cfe92d23956bb5c15490
+      Date checked           : 01OCT26
+      Beginning year         : 1875
+      Ending year            : 2013
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Tariche Haute Côte
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 47.3356 N
+      Longitude              : 7.1619 E
+      Elevation              : 750 m
+
+      Series intercorrelation: 0.650
+      Avg mean sensitivity   : 0.254
+      Avg standard deviation : 1.083
+      Avg autocorrelation    : 0.852
+      Number dated series    : 11
+      Series crossdated      : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che435
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 22270    1882 1968  .53           
+   2 22271    1895 2013  .37  .52  .60 
+   3 22273    1903 2013       .47  .54 
+   4 22274    1878 2013  .68  .72  .67 
+   5 22275    1894 2013  .74  .67  .71 
+   7 22277    1888 2013  .86  .80  .81 
+   8 22278    1883 2013  .53  .66  .66 
+   9 22279    1881 2013  .53  .64  .64 
+  10 22280    1879 2013  .77  .68  .61 
+  11 22281    1875 2013  .60  .67  .68 
+ Av segment correlation  .62  .65  .66 
+
+ FLAGGED SEGMENTS: che435
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che435
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 22270    1882 1968     87      1      0    .537   3.13   6.94  1.489   .869   .218   1.58   .224  -.018   1
+   2 22271    1895 2013    119      3      0    .573   1.19   2.97   .611   .792   .284   2.05   .273   .016   2
+   3 22273    1903 2013    111      2      0    .532   1.75   3.57   .581   .621   .237   1.58   .221   .018   1
+   4 22274    1878 2013    136      3      0    .655   2.05   5.75  1.079   .880   .216   1.99   .230  -.042   1
+   5 22275    1894 2013    120      3      0    .739   2.01   4.89  1.294   .880   .249   2.08   .262  -.005   1
+   6 22276    1876 1985    110                         2.45   5.57  1.436   .854   .302                         
+   7 22277    1888 2013    126      3      0    .804   1.90   4.97   .975   .891   .199   1.80   .207  -.029   1
+   8 22278    1883 2013    131      3      0    .623   1.82   4.17   .948   .843   .228   1.52   .214   .011   1
+   9 22279    1881 2013    133      3      0    .641   1.54   4.43  1.154   .907   .311   2.17   .313   .005   1
+  10 22280    1879 2013    135      3      0    .677   1.57   4.08  1.246   .928   .310   1.97   .305   .005   2
+  11 22281    1875 2013    139      3      0    .666   1.80   4.92  1.171   .875   .236   1.70   .240   .012   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1347     27      0    .650   1.89   6.94  1.083   .852   .254   2.17   .250  -.002
+
+ DATA CHECKS (rwl.check): che435
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che435.rwl
+ 11 series, 1347 measurements, 1875-2013, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     4 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file che435.rwl, MD5 2a02c0c0e878cfe92d23956bb5c15490.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: the 'nyrs' spline for series 22276 is not all positive, so
+   dividing by it would give negative or infinite indices. Remove the series, or detrend the
+   data yourself with detrend() and pass the indices with 'nyrs = NULL'

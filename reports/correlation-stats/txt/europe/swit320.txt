@@ -1,0 +1,150 @@
+
+ COFECHA-style crossdating report: swit320
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit320.rwl
+      MD5 of measurement file: eb06784b50c669958da74612aa7900d5
+      Date checked           : 01OCT26
+      Beginning year         : 1877
+      Ending year            : 2005
+      Principal investigators: Büntgen, U.; Esper, J.; Frank, D.C.; Nievergelt, D.; Affolter, P.
+      Site name              : Riddes
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.1500 N
+      Longitude              : 7.2167 E
+      Elevation              : 860 m
+
+      Series intercorrelation: 0.691
+      Avg mean sensitivity   : 0.388
+      Avg standard deviation : 1.129
+      Avg autocorrelation    : 0.835
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4)
+      Pct problem segments   : 5.88
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit320
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 1RD01A   1905 2005       .73  .80 
+   2 1RD01B   1899 2005       .72  .74 
+   3 1RD02A   1890 2005  .73  .60  .41 
+   4 1RD02B   1892 2005  .67  .64  .55 
+   5 1RD03A   1897 2005  .82  .78  .42 
+   6 1RD04A   1895 2005  .77  .55  .47 
+   7 1RD04B   1897 2005  .79  .65  .64 
+   8 1RD05A   1902 2005       .81  .79 
+   9 1RD05B   1905 2005       .81  .78 
+  10 1RD06A   1887 2005  .85  .84  .82 
+  13 1RD08A   1892 1999  .77  .69  .66 
+  14 1RD08B   1890 2005  .78  .71  .73 
+  15 1RD09A   1892 2005  .89  .53  .42 
+  16 1RD09B   1890 2005  .87  .83  .68 
+  17 1RD10A   1892 2005  .78  .76  .52 
+  18 1RD10B   1892 2005  .72  .69  .51 
+  19 1RD21A   1896 2005  .75  .76  .81 
+  20 1RD21B   1897 2005  .76  .73  .78 
+  21 1RD24A   1906 2005       .29B .31B
+  22 1RD24B   1906 2005       .41B .23B
+  23 1RD25A   1903 2005       .84  .83 
+  24 1RD25B   1905 2005       .83  .83 
+  25 1RD26A   1941 2005            .45 
+  26 1RD26B   1946 2005            .59 
+  27 1RD27A   1906 2005       .80  .87 
+  28 1RD27B   1913 2005       .78  .79 
+  29 1RD30A   1920 2005       .67  .77 
+  30 1RD30B   1920 2005       .58  .76 
+ Av segment correlation  .78  .69  .64 
+
+ FLAGGED SEGMENTS: swit320
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  21 1RD24A   1925 1974     B     .291         1      .339   .048
+  21 1RD24A   1950 1999     B     .307        -2      .331   .024
+  22 1RD24B   1925 1974     B     .414        -3      .441   .027
+  22 1RD24B   1950 1999     B     .227        -2      .367   .140
+
+ DESCRIPTIVE STATISTICS: swit320
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 1RD01A   1905 2005    101      2      0    .780   2.08   6.51  1.216   .862   .268   1.62   .243   .033   1
+   2 1RD01B   1899 2005    107      2      0    .735   1.42   5.56  1.115   .847   .351   1.63   .286   .033   2
+   3 1RD02A   1890 2005    116      3      0    .618   1.34   5.70  1.308   .820   .417   1.90   .358   .029   1
+   4 1RD02B   1892 2005    114      3      0    .623   1.15   6.24  1.345   .906   .468   2.04   .363   .099   0
+   5 1RD03A   1897 2005    109      3      0    .632   1.26   7.73  1.450   .923   .408   2.25   .367  -.014   3
+   6 1RD04A   1895 2005    111      3      0    .625   1.42   7.63  1.584   .912   .484   2.10   .399  -.027   0
+   7 1RD04B   1897 2005    109      3      0    .701   1.47   7.76  1.430   .875   .442   2.17   .392   .041   0
+   8 1RD05A   1902 2005    104      2      0    .799   1.16   4.96   .921   .786   .459   2.69   .456   .016   2
+   9 1RD05B   1905 2005    101      2      0    .717   1.02   5.05   .891   .692   .506   2.73   .440   .122   0
+  10 1RD06A   1887 2005    119      3      0    .830   1.71   7.40  1.698   .910   .307   1.97   .307   .051   1
+  11 1RD06B   1961 2005     45      0      0    .632    .96   2.43   .625   .644   .415   2.57   .468  -.029   2
+  12 1RD06C   1877 1934     58      0      0    .791   2.77   6.09  1.473   .797   .327   1.63   .298   .016   2
+  13 1RD08A   1892 1999    108      3      0    .700   1.07   6.13  1.148   .865   .425   2.00   .383  -.014   3
+  14 1RD08B   1890 2005    116      3      0    .746   1.04   4.83  1.005   .894   .397   2.28   .375  -.001   3
+  15 1RD09A   1892 2005    114      3      0    .649   1.23   5.50  1.290   .938   .328   1.84   .297   .007   1
+  16 1RD09B   1890 2005    116      3      0    .800   1.22   5.77  1.212   .918   .315   1.71   .283  -.037   1
+  17 1RD10A   1892 2005    114      3      0    .664   1.15   7.79  1.592   .934   .465   1.78   .388   .005   2
+  18 1RD10B   1892 2005    114      3      0    .634   1.37   7.62  1.458   .891   .413   1.99   .374  -.028   1
+  19 1RD21A   1896 2005    110      3      0    .765   1.10   7.66  1.344   .946   .307   1.82   .304  -.038   1
+  20 1RD21B   1897 2005    109      3      0    .745   1.45   7.82  1.036   .828   .336   1.75   .312   .029   1
+  21 1RD24A   1906 2005    100      2      2    .412    .61   2.74   .564   .873   .319   1.68   .289   .044   2
+  22 1RD24B   1906 2005    100      2      2    .415    .81   2.85   .566   .856   .320   1.73   .292  -.034   3
+  23 1RD25A   1903 2005    103      2      0    .835   1.56   6.06  1.192   .794   .374   2.50   .370  -.010   1
+  24 1RD25B   1905 2005    101      2      0    .826   1.64   6.41  1.266   .849   .367   2.54   .372   .011   1
+  25 1RD26A   1941 2005     65      1      0    .503    .96   3.25   .726   .698   .518   3.87   .536   .100   1
+  26 1RD26B   1946 2005     60      1      0    .585    .67   1.66   .325   .716   .389   1.82   .307   .009   1
+  27 1RD27A   1906 2005    100      2      0    .764   1.40   4.79   .756   .589   .418   2.19   .372   .022   3
+  28 1RD27B   1913 2005     93      2      0    .676   1.35   7.43  1.056   .649   .361   2.49   .378   .071   1
+  29 1RD30A   1920 2005     86      2      0    .725    .95   2.79   .580   .754   .401   2.06   .333   .138   3
+  30 1RD30B   1920 2005     86      2      0    .678   1.12   2.58   .547   .712   .361   1.65   .284   .111   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2989     68      4    .691   1.28   7.82  1.129   .835   .388   3.87   .351   .024
+
+ DATA CHECKS (rwl.check): swit320
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit320.rwl
+ 30 series, 2989 measurements, 1877-2005, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit320.rwl, MD5 eb06784b50c669958da74612aa7900d5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

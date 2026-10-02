@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: in030
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : in030.rwl
+      MD5 of measurement file: 98dfbae2ed3570202c80d3541d071093
+      Date checked           : 01OCT26
+      Beginning year         : 1676
+      Ending year            : 2013
+      Principal investigators: Maxwell, J.T.; Au, T.F.; Harley, G.L.; Matheus, T.J.; Van Aken, K.
+      Site name              : Donaldson Woods
+      Species information    : CYOV Carya ovata (Mill.) K. Koch
+      Latitude               : 38.7270 N
+      Longitude              : 86.4085 W
+      Elevation              : 195 m
+
+      Series intercorrelation: 0.603
+      Avg mean sensitivity   : 0.272
+      Avg standard deviation : 0.447
+      Avg autocorrelation    : 0.597
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 1, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 5.61
+
+
+ CORRELATION OF SERIES BY SEGMENTS: in030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 DWO02A   1768 2013                 .35  .51  .74  .67  .78  .84  .70  .72 
+   2 DWO02B   1726 2013            .26B .25A .57  .74  .66  .51  .54  .67  .66 
+   3 DWO04A   1719 2012       .31B .29B .56  .64  .51  .66  .79  .72  .69  .45 
+   4 DWO04B   1742 1964            .21B .61  .76  .61  .69  .79  .73           
+   5 DWO05A   1741 1920            .03B .34  .62  .67  .68                     
+   6 DWO05B   1750 2013                 .39  .66  .74  .75  .73  .67  .64  .58 
+   8 DWO06A   1822 1891                           .53                          
+   9 DWO06B   1910 2013                                               .74  .82 
+  10 DWO07A   1777 2013                      .64  .67  .54  .58  .71  .79  .84 
+  11 DWO07B   1781 2010                      .63  .68  .69  .70  .73  .63  .59 
+  12 DWO08A   1783 2013                      .68  .67  .61  .73  .75  .69  .68 
+  13 DWO08B   1787 2013                      .72  .71  .73  .84  .80  .77  .83 
+  14 DWO09A   1676 2013       .48  .62  .77  .63  .50  .59  .45  .58  .79  .71 
+  15 DWO09B   1745 2013            .51  .67  .65  .56  .57  .75  .83  .87  .88 
+  16 DWO10A   1921 2013                                               .63  .66 
+  17 DWO10B   1941 2013                                                    .63 
+  18 DWO11A   1782 1920                      .79  .71  .55                     
+  20 DWO11C   1813 1904                           .76  .73                     
+  21 DWO11D   1924 2013                                               .67  .79 
+ Av segment correlation       .39  .32  .49  .65  .65  .65  .70  .72  .71  .70 
+
+ FLAGGED SEGMENTS: in030
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 DWO02B   1750 1799     B     .256        -1      .337   .081
+   2 DWO02B   1775 1824     A     .249         0
+   3 DWO04A   1725 1774     B     .306        -1      .377   .070
+   3 DWO04A   1750 1799     B     .293        -4      .337   .044
+   4 DWO04B   1750 1799     B     .208        -4      .268   .060  weak at every lag
+   5 DWO05A   1750 1799     B     .027         4      .268   .241  weak at every lag
+
+ DESCRIPTIVE STATISTICS: in030
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DWO02A   1768 2013    246      8      0    .565    .97   3.43   .454   .436   .291   2.35   .284  -.036   0
+   2 DWO02B   1726 2013    288      9      2    .510    .93   3.10   .388   .536   .286   2.37   .279  -.012   3
+   3 DWO04A   1719 2012    294     10      2    .495    .88   2.29   .440   .669   .287   1.82   .291  -.011   3
+   4 DWO04B   1742 1964    223      7      1    .595    .73   2.00   .384   .727   .282   1.85   .291  -.010   3
+   5 DWO05A   1741 1920    180      5      1    .419    .62   3.10   .324   .737   .256   2.24   .279   .042   1
+   6 DWO05B   1750 2013    264      8      0    .534    .82   2.76   .353   .664   .256   2.01   .259   .002   2
+   7 DWO05c   1955 2013     59      0      0    .679    .80   1.69   .261   .623   .212   1.50   .211   .002   1
+   8 DWO06A   1822 1891     70      1      0    .567   1.03   2.19   .416   .595   .313   1.66   .297  -.012   2
+   9 DWO06B   1910 2013    104      2      0    .753   1.96   4.45   .733   .063   .365   2.12   .338  -.105   0
+  10 DWO07A   1777 2013    237      7      0    .629   1.04   2.48   .451   .659   .252   1.73   .246  -.004   1
+  11 DWO07B   1781 2010    230      7      0    .624    .93   2.34   .418   .598   .277   2.57   .287   .009   1
+  12 DWO08A   1783 2013    231      7      0    .664   1.06   2.57   .474   .774   .219   1.69   .214   .004   2
+  13 DWO08B   1787 2013    227      7      0    .758   1.31   3.25   .501   .611   .236   1.93   .241   .012   1
+  14 DWO09A   1676 2013    338     10      0    .564    .81   2.44   .402   .698   .260   1.73   .251   .013   1
+  15 DWO09B   1745 2013    269      9      0    .701   1.03   2.72   .375   .512   .264   1.95   .279   .011   1
+  16 DWO10A   1921 2013     93      2      0    .617   1.76   3.79   .755   .681   .277   1.64   .264   .121   0
+  17 DWO10B   1941 2013     73      1      0    .607   1.87   4.03   .876   .685   .293   1.91   .324   .052   1
+  18 DWO11A   1782 1920    139      3      0    .642   1.05   2.66   .429   .559   .284   1.61   .246   .004   3
+  19 DWO11B   1960 1995     36      0      0    .779   1.24   3.84   .654   .245   .325   2.72   .402   .043   0
+  20 DWO11C   1813 1904     92      2      0    .717   1.01   2.19   .400   .522   .299   1.62   .255   .036   3
+  21 DWO11D   1924 2013     90      2      0    .685   1.80   4.38   .699   .126   .346   2.17   .333  -.052   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3783    107      6    .603   1.03   4.45   .447   .597   .272   2.72   .271   .002
+
+ DATA CHECKS (rwl.check): in030
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/in030.rwl
+ 21 series, 3783 measurements, 1676-2013, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file in030.rwl, MD5 98dfbae2ed3570202c80d3541d071093.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

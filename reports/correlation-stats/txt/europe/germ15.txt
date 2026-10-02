@@ -1,0 +1,109 @@
+
+ COFECHA-style crossdating report: germ15
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ15.rwl
+      MD5 of measurement file: e9c921a989fbe1f2f51f668d411bb687
+      Date checked           : 01OCT26
+      Beginning year         : 1684
+      Ending year            : 1949
+      Principal investigators: Becker, B.
+      Site name              : Rohrbrunn
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 49.8800 N
+      Longitude              : 9.4000 E
+      Elevation              : 450 m
+
+      Series intercorrelation: 0.570
+      Avg mean sensitivity   : 0.275
+      Avg standard deviation : 0.821
+      Avg autocorrelation    : 0.739
+      Number dated series    : 7
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 3, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 11.63
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ15
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 876011   1711 1949       .49  .50  .29B .45  .75  .75  .63  .62 
+   2 876021   1684 1949  .65  .70  .73  .51  .61  .71  .65  .76  .80 
+   3 876031   1697 1949  .63  .69  .72  .31A .37  .58  .57  .70  .80 
+   4 876041   1810 1949                           .55  .51  .68  .70 
+   5 876051   1832 1949                                .55  .64  .71 
+   6 876061   1832 1949                                .44  .63  .53 
+   7 876071   1725 1949            .31A .08B .31A .55  .61  .60  .68 
+ Av segment correlation  .64  .63  .57  .30  .43  .63  .58  .66  .69 
+
+ FLAGGED SEGMENTS: germ15
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 876011   1775 1824     B     .289        -1      .304   .015  weak at every lag
+   3 876031   1775 1824     A     .306         0
+   7 876071   1750 1799     A     .314         0
+   7 876071   1775 1824     B     .080         1      .222   .142  weak at every lag
+   7 876071   1800 1849     A     .307         0
+
+ DESCRIPTIVE STATISTICS: germ15
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 876011   1711 1949    239      8      1    .536   1.66   2.94   .512   .626   .228   1.59   .227  -.018   2
+   2 876021   1684 1949    266      9      0    .656   1.58   3.90   .787   .775   .286   1.89   .280   .001   1
+   3 876031   1697 1949    253      9      1    .627   1.31   3.26   .588   .659   .302   1.88   .286  -.004   1
+   4 876041   1810 1949    140      4      0    .573   2.09   5.81  1.092   .856   .237   1.72   .234  -.003   1
+   5 876051   1832 1949    118      3      0    .620   1.80   4.26   .809   .769   .251   1.69   .266   .036   1
+   6 876061   1832 1949    118      3      0    .513   2.04   4.94  1.053   .819   .324   1.73   .298   .001   1
+   7 876071   1725 1949    225      7      3    .440   2.57   6.16  1.168   .778   .289   1.71   .273   .006   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1359     43      5    .570   1.82   6.16   .821   .739   .275   1.89   .266   .000
+
+ DATA CHECKS (rwl.check): germ15
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ15.rwl
+ 7 series, 1359 measurements, 1684-1949, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1684-1962 but the measurements cover 1684-1949
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file germ15.rwl, MD5 e9c921a989fbe1f2f51f668d411bb687.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

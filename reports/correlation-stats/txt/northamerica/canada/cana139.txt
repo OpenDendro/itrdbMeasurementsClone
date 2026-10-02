@@ -1,0 +1,113 @@
+
+ COFECHA-style crossdating report: cana139
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana139.rwl
+      MD5 of measurement file: ae65a1eb83be3fca29a3fb4bcb6f5b1e
+      Date checked           : 01OCT26
+      Beginning year         : 1768
+      Ending year            : 1995
+      Principal investigators: Krause, C.; Gionest, F.
+      Site name              : St-Marguerite
+      Species information    : PIST Pinus strobus L.
+      Latitude               : 48.0300 N
+      Longitude              : 70.0000 W
+      Elevation              : 150 m
+
+      Series intercorrelation: 0.459
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 0.373
+      Avg autocorrelation    : 0.758
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 5.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana139
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 SM0900PB 1846 1995            .56  .47  .56  .56 
+   2 SM1500PB 1850 1995                 .55  .59  .57 
+   3 SM1800PB 1783 1995  .54  .26A .36  .54  .49  .51 
+   4 SM2100PB 1768 1850  .61                          
+   5 SM2500PB 1825 1995            .41  .57  .60  .53 
+   6 SM1700PB 1871 1995                 .42  .51  .36 
+   7 SM2200PB 1857 1995                 .43  .47  .40 
+   9 SM2600PB 1889 1995                      .63  .44 
+  10 SM2800PB 1870 1995                 .59  .44  .20B
+  11 SM1100PB 1838 1995            .41  .58  .49  .50 
+  12 SM1900PB 1875 1994                      .71  .68 
+ Av segment correlation  .58  .26  .43  .52  .55  .48 
+
+ FLAGGED SEGMENTS: cana139
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 SM1800PB 1825 1874     A     .262         0
+  10 SM2800PB 1925 1974     B     .203         3      .207   .005  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana139
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SM0900PB 1846 1995    150      4      0    .501    .36    .86   .166   .689   .313   1.81   .270   .032   0
+   2 SM1500PB 1850 1995    146      3      0    .562    .37    .89   .178   .694   .300   1.74   .306  -.027   1
+   3 SM1800PB 1783 1995    213      6      1    .432    .84   2.39   .419   .787   .295   2.05   .278  -.004   3
+   4 SM2100PB 1768 1850     83      1      0    .528    .90   1.75   .366   .701   .250   1.70   .260   .046   1
+   5 SM2500PB 1825 1995    171      4      0    .416    .95   2.25   .382   .815   .186   1.57   .190   .020   2
+   6 SM1700PB 1871 1995    125      3      0    .376   1.79   3.53   .703   .751   .217   1.55   .207   .034   1
+   7 SM2200PB 1857 1995    139      3      0    .380    .84   1.66   .363   .834   .234   1.50   .212  -.057   2
+   8 SM2300PB 1937 1995     59      0      0    .413   2.58   4.09   .567   .614   .156   1.30   .136   .090   2
+   9 SM2600PB 1889 1995    107      2      0    .419    .94   1.95   .337   .858   .140   1.33   .143   .054   1
+  10 SM2800PB 1870 1995    126      3      1    .474   1.27   2.80   .700   .917   .164   1.39   .164   .021   3
+  11 SM1100PB 1838 1995    158      4      0    .441    .56   1.34   .233   .658   .256   1.75   .272  -.009   1
+  12 SM1900PB 1875 1994    120      2      0    .587    .64   1.58   .225   .690   .197   1.60   .211   .011   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1597     35      2    .459    .90   4.09   .373   .758   .235   2.05   .229   .011
+
+ DATA CHECKS (rwl.check): cana139
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana139.rwl
+ 12 series, 1597 measurements, 1768-1995, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cana139.rwl, MD5 ae65a1eb83be3fca29a3fb4bcb6f5b1e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

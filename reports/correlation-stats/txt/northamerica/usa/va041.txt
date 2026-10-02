@@ -1,0 +1,125 @@
+
+ COFECHA-style crossdating report: va041
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : va041.rwl
+      MD5 of measurement file: 81cd70937e852abfb5645c5766ca3c84
+      Date checked           : 01OCT26
+      Beginning year         : 1675
+      Ending year            : 1840
+      Principal investigators: de Graauw, K.K.; Hessl, A.E.
+      Site name              : Rimer Cabin
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 38.4500 N
+      Longitude              : 79.5300 W
+      Elevation              : 788 m
+
+      Series intercorrelation: 0.507
+      Avg mean sensitivity   : 0.185
+      Avg standard deviation : 0.269
+      Avg autocorrelation    : 0.676
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 0, B 6; 4 of the B weak at every lag)
+      Pct problem segments   : 10.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: va041
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 RCW104A  1694 1840  .58  .47  .45  .43 
+   2 RCE210A  1691 1839  .40  .41  .38  .11B
+   3 RCE106A  1679 1840  .69  .76  .76  .68 
+   4 RCW210A  1695 1840  .55  .62  .58  .40 
+   5 RCE103A  1704 1840       .64  .69  .65 
+   6 RCS210A  1675 1840  .30B .38  .49  .13B
+   7 RCE209A  1758 1840                 .62 
+   8 RCS105A  1712 1840       .50  .44  .16B
+   9 RCS103A  1707 1840       .51  .41B .24B
+  10 RCN104A  1679 1840  .77  .67  .57  .55 
+  11 RCE104A  1708 1840       .57  .49  .53 
+  12 RCN211A  1713 1840       .67  .58  .44 
+  13 RCS209A  1687 1840  .48  .50  .57  .54 
+  14 RCN105A  1685 1840  .55  .65  .69  .66 
+  15 RCN209A  1687 1840  .65  .66  .61  .46 
+  16 RCW208A  1699 1840  .68  .67  .68  .57 
+ Av segment correlation  .56  .58  .56  .45 
+
+ FLAGGED SEGMENTS: va041
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 RCE210A  1775 1824     B     .108        10      .250   .142  weak at every lag
+   6 RCS210A  1700 1749     B     .297         9      .408   .111
+   6 RCS210A  1775 1824     B     .134        -5      .219   .085  weak at every lag
+   8 RCS105A  1775 1824     B     .157         4      .299   .142  weak at every lag
+   9 RCS103A  1750 1799     B     .406         6      .500   .093
+   9 RCS103A  1775 1824     B     .236        -7      .276   .041  weak at every lag
+
+ DESCRIPTIVE STATISTICS: va041
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RCW104A  1694 1840    147      4      0    .464    .82   2.27   .317   .802   .150   1.75   .181  -.045   1
+   2 RCE210A  1691 1839    149      4      1    .200    .66   2.40   .292   .656   .180   3.48   .260   .007   1
+   3 RCE106A  1679 1840    162      4      0    .640    .78   1.53   .228   .644   .183   1.55   .169  -.022   3
+   4 RCW210A  1695 1840    146      4      0    .492    .74   1.49   .258   .806   .165   1.62   .161   .008   1
+   5 RCE103A  1704 1840    137      3      0    .658    .84   1.46   .226   .686   .171   1.53   .164   .012   1
+   6 RCS210A  1675 1840    166      4      2    .340    .78   2.06   .275   .735   .190   1.84   .183  -.001   1
+   7 RCE209A  1758 1840     83      1      0    .353   1.12   2.50   .342   .607   .184   2.34   .224   .045   1
+   8 RCS105A  1712 1840    129      3      1    .366    .76   1.66   .265   .639   .213   2.21   .227  -.006   1
+   9 RCS103A  1707 1840    134      3      2    .447    .86   1.83   .347   .844   .171   1.78   .172  -.011   1
+  10 RCN104A  1679 1840    162      4      0    .627    .83   1.94   .334   .686   .240   1.86   .223   .097   0
+  11 RCE104A  1708 1840    133      3      0    .563   1.07   1.81   .282   .723   .155   1.33   .142   .009   1
+  12 RCN211A  1713 1840    128      3      0    .589    .84   2.10   .358   .780   .205   1.75   .221   .040   1
+  13 RCS209A  1687 1840    154      4      0    .507    .76   1.37   .156   .429   .171   1.76   .169   .105   0
+  14 RCN105A  1685 1840    156      4      0    .596    .84   1.73   .236   .697   .163   1.59   .158  -.004   3
+  15 RCN209A  1687 1840    154      4      0    .566    .80   1.68   .233   .586   .208   1.60   .194   .029   2
+  16 RCW208A  1699 1840    142      4      0    .636    .82   1.57   .204   .493   .203   1.47   .181   .083   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2282     56      6    .507    .82   2.50   .269   .676   .185   3.48   .188   .021
+
+ DATA CHECKS (rwl.check): va041
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/va041.rwl
+ 16 series, 2282 measurements, 1675-1840, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file va041.rwl, MD5 81cd70937e852abfb5645c5766ca3c84.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,111 @@
+
+ COFECHA-style crossdating report: che447
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che447.rwl
+      MD5 of measurement file: eaeffca95b33572f816914081d7880ea
+      Date checked           : 01OCT26
+      Beginning year         : 1911
+      Ending year            : 2014
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Girstel
+      Species information    : FREX Fraxinus excelsior L.
+      Latitude               : 47.3122 N
+      Longitude              : 8.5019 E
+      Elevation              : 700 m
+
+      Series intercorrelation: 0.482
+      Avg mean sensitivity   : 0.185
+      Avg standard deviation : 0.737
+      Avg autocorrelation    : 0.780
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 10.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che447
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1999 
+ --- -------- ---------  ---- 
+   1 80770    1931 2014  .40 
+   2 80771    1932 2014  .64 
+   3 80772    1916 2014  .32A
+   4 80773    1949 2014  .45 
+   5 80774    1939 2014  .53 
+   6 80777    1945 2014  .47 
+   7 80778    1911 2014  .58 
+   8 80779    1915 2014  .44 
+   9 80780    1927 2014  .62 
+  10 80781    1926 2014  .68 
+ Av segment correlation  .51 
+
+ FLAGGED SEGMENTS: che447
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 80772    1950 1999     A     .317         0
+
+ DESCRIPTIVE STATISTICS: che447
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 80770    1931 2014     84      1      0    .400   2.12   3.78   .817   .839   .175   1.70   .172   .026   1
+   2 80771    1932 2014     83      1      0    .551   2.02   3.38   .513   .601   .183   1.43   .173   .023   2
+   3 80772    1916 2014     99      1      1    .406   1.38   3.14   .652   .870   .158   1.36   .166   .057   1
+   4 80773    1949 2014     66      1      0    .462   2.29   5.58   .998   .795   .206   1.58   .222   .063   1
+   5 80774    1939 2014     76      1      0    .451   1.60   2.56   .419   .589   .194   1.43   .189  -.011   1
+   6 80777    1945 2014     70      1      0    .460   2.00   5.91  1.296   .861   .216   2.16   .246   .087   1
+   7 80778    1911 2014    104      1      0    .470   1.72   3.60   .606   .813   .181   1.38   .183  -.030   1
+   8 80779    1915 2014    100      1      0    .470   1.40   3.70   .561   .736   .193   1.86   .226   .059   1
+   9 80780    1927 2014     88      1      0    .526   1.94   3.51   .643   .790   .171   1.39   .177   .012   2
+  10 80781    1926 2014     89      1      0    .623   1.96   4.31  1.044   .881   .187   1.83   .207   .035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            859     10      1    .482   1.81   5.91   .737   .780   .185   2.16   .195   .030
+
+ DATA CHECKS (rwl.check): che447
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che447.rwl
+ 10 series, 859 measurements, 1911-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che447.rwl, MD5 eaeffca95b33572f816914081d7880ea.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

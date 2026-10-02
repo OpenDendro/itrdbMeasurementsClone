@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: swit221
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit221.rwl
+      MD5 of measurement file: d350392ee078937f50e48f62e397fda1
+      Date checked           : 01OCT26
+      Beginning year         : 1843
+      Ending year            : 1996
+      Principal investigators: Cherubini, P.
+      Site name              : Chironico
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 46.4500 N
+      Longitude              : 8.8167 E
+      Elevation              : 1357 m
+
+      Series intercorrelation: 0.535
+      Avg mean sensitivity   : 0.151
+      Avg standard deviation : 0.718
+      Avg autocorrelation    : 0.857
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 8.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit221
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 aa01b    1911 1996       .61 
+   2 aa02a    1912 1996       .49 
+   3 aa02c    1909 1994       .61 
+   4 aa03b    1917 1988       .55 
+   5 aa03c    1917 1996       .63 
+   6 aa04a    1870 1996  .68  .71 
+   7 aa04b    1890 1996  .54  .63 
+   8 aa05a    1853 1996  .55  .48 
+   9 aa05b    1843 1996  .48  .51 
+  10 aa06a    1862 1996  .50  .55 
+  11 aa06b    1873 1996  .59  .52 
+  12 aa07a    1899 1996  .48  .40 
+  13 aa07b    1870 1996  .50  .46 
+  14 aa08a    1851 1996  .58  .65 
+  15 aa08b    1855 1996  .46  .73 
+  17 aa09b    1883 1996  .54  .56 
+  18 aa10a    1863 1996  .63  .68 
+  19 aa10b    1864 1996  .64  .73 
+  20 aa11a    1868 1996  .24B .25A
+  21 aa11b    1880 1996  .19B .39 
+ Av segment correlation  .51  .56 
+
+ FLAGGED SEGMENTS: swit221
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  20 aa11a    1900 1949     B     .237        -2      .322   .085  weak at every lag
+  20 aa11a    1925 1974     A     .246         0
+  21 aa11b    1900 1949     B     .188        -2      .268   .080  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit221
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 aa01b    1911 1996     86      1      0    .603   2.55   4.07   .654   .836   .121   1.31   .121   .020   3
+   2 aa02a    1912 1996     85      1      0    .495   2.84   6.32  1.280   .950   .113   1.32   .117  -.005   3
+   3 aa02c    1909 1994     86      1      0    .451   2.46   5.42   .994   .905   .126   1.42   .135   .007   1
+   4 aa03b    1917 1988     72      1      0    .508   3.08   4.44   .719   .799   .122   1.28   .122  -.138   1
+   5 aa03c    1917 1996     80      1      0    .635   3.17   5.50   .977   .857   .134   1.22   .118  -.047   3
+   6 aa04a    1870 1996    127      2      0    .679   2.75   4.96   .708   .814   .128   1.29   .137  -.022   1
+   7 aa04b    1890 1996    107      2      0    .556   2.31   3.66   .570   .791   .121   1.42   .123   .020   1
+   8 aa05a    1853 1996    144      2      0    .539   1.55   4.16  1.006   .960   .165   1.51   .174   .003   2
+   9 aa05b    1843 1996    154      2      0    .459   1.23   4.20   .830   .935   .183   1.68   .211  -.022   1
+  10 aa06a    1862 1996    135      2      0    .483   1.24   2.88   .535   .893   .159   1.54   .173   .019   2
+  11 aa06b    1873 1996    124      2      0    .581   2.16   4.82   .732   .817   .163   1.64   .167   .020   2
+  12 aa07a    1899 1996     98      2      0    .519   2.45   4.12   .773   .847   .140   1.49   .151  -.003   1
+  13 aa07b    1870 1996    127      2      0    .483   2.02   3.94   .710   .869   .149   1.40   .157  -.030   1
+  14 aa08a    1851 1996    146      2      0    .623   1.55   2.76   .508   .817   .161   1.36   .161   .004   3
+  15 aa08b    1855 1996    142      2      0    .492   1.60   3.11   .553   .821   .161   1.35   .165  -.044   3
+  16 aa09a    1935 1996     62      0      0    .658   1.78   2.99   .537   .844   .134   1.32   .146   .003   1
+  17 aa09b    1883 1996    114      2      0    .638   1.78   3.64   .677   .897   .138   1.48   .139   .029   2
+  18 aa10a    1863 1996    134      2      0    .628   1.54   3.67   .620   .877   .150   1.55   .159  -.035   1
+  19 aa10b    1864 1996    133      2      0    .545   1.48   3.76   .714   .914   .151   1.53   .161  -.026   1
+  20 aa11a    1868 1996    129      2      2    .389   1.73   4.19   .596   .761   .168   1.45   .183   .027   1
+  21 aa11b    1880 1996    117      2      1    .350   1.36   3.51   .637   .751   .204   1.85   .238  -.002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2402     35      3    .535   1.93   6.32   .718   .857   .151   1.85   .159  -.009
+
+ DATA CHECKS (rwl.check): swit221
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit221.rwl
+ 21 series, 2402 measurements, 1843-1996, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 1 carriage return(s) against 257 line feed(s); mixed endings can defeat a reader
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file swit221.rwl, MD5 d350392ee078937f50e48f62e397fda1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

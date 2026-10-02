@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: swit237
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit237.rwl
+      MD5 of measurement file: 368eba8cb0f3f1ac0ff73abc49e433e9
+      Date checked           : 01OCT26
+      Beginning year         : 1924
+      Ending year            : 1987
+      Principal investigators: Zgraggen, S.; Schweingruber, F.H.; Büntgen, U.
+      Site name              : Faido
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 46.2800 N
+      Longitude              : 8.4900 E
+      Elevation              : 930 m
+
+      Series intercorrelation: 0.528
+      Avg mean sensitivity   : 0.194
+      Avg standard deviation : 1.096
+      Avg autocorrelation    : 0.734
+      Number dated series    : 24
+      Segment length tested  : 32
+
+      Number problem segments: 4  (A 1, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 18.18
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit237
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  32-year dated segments, lagged  16 years
+ Flags:  A = correlation under   .4093 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1981 
+ --- -------- ---------  ---- 
+   1 788011   1939 1987  .27B
+   2 788012   1939 1987  .46 
+   3 788021   1944 1987  .46 
+   4 788022   1941 1987  .39A
+   5 788031   1941 1987  .71 
+   6 788032   1942 1987  .50 
+   7 788041   1928 1987  .54 
+   8 788042   1937 1987  .03B
+   9 788051   1925 1987  .70 
+  10 788052   1924 1987  .46 
+  11 788061   1939 1987  .69 
+  12 788062   1928 1987  .53 
+  13 788071   1933 1987  .62 
+  14 788072   1939 1987  .66 
+  17 788091   1930 1987  .71 
+  18 788092   1931 1987  .44B
+  19 788101   1924 1987  .52 
+  20 788102   1924 1987  .44 
+  21 788111   1943 1987  .76 
+  22 788112   1925 1987  .65 
+  23 788121   1926 1987  .71 
+  24 788122   1936 1987  .65 
+ Av segment correlation  .54 
+
+ FLAGGED SEGMENTS: swit237
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 788011   1950 1981     B     .266         6      .329   .063  weak at every lag
+   4 788022   1950 1981     A     .394         0
+   8 788042   1950 1981     B     .028        -9      .320   .292  weak at every lag
+  18 788092   1950 1981     B     .442        -1      .482   .040
+
+ DESCRIPTIVE STATISTICS: swit237
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 788011   1939 1987     49      1      1    .349   4.10   7.14  1.117   .682   .190   1.43   .194   .189   1
+   2 788012   1939 1987     49      1      0    .394   4.11   6.65   .979   .590   .167   1.41   .177  -.012   1
+   3 788021   1944 1987     44      1      0    .475   2.07   3.91   .810   .795   .183   1.44   .205   .067   1
+   4 788022   1941 1987     47      1      1    .347   1.92   5.28   .962   .820   .214   1.50   .220   .106   1
+   5 788031   1941 1987     47      1      0    .729   3.39   7.38  1.597   .800   .259   1.60   .279   .152   1
+   6 788032   1942 1987     46      1      0    .427   3.21   6.45  1.491   .773   .245   2.01   .294   .133   1
+   7 788041   1928 1987     60      1      0    .537   3.31   5.62   .922   .790   .145   1.46   .147   .034   1
+   8 788042   1937 1987     51      1      1    .357   3.37   6.00   .738   .418   .172   1.64   .174   .095   0
+   9 788051   1925 1987     63      1      0    .474   2.23   3.89   .659   .620   .196   1.93   .230   .051   1
+  10 788052   1924 1987     64      1      0    .306   2.56   4.10   .652   .611   .177   1.30   .172   .027   3
+  11 788061   1939 1987     49      1      0    .662   3.39   5.98  1.321   .870   .184   1.44   .197   .006   1
+  12 788062   1928 1987     60      1      0    .627   2.82   4.63   .957   .739   .201   1.50   .219   .045   1
+  13 788071   1933 1987     55      1      0    .669   2.52   4.01   .532   .610   .143   1.40   .156   .069   1
+  14 788072   1939 1987     49      1      0    .730   3.09   5.00   .782   .659   .167   1.34   .182   .034   1
+  15 788081   1950 1987     38      0      0    .503   4.39   8.09  1.413   .748   .155   1.42   .180  -.068   1
+  16 788082   1953 1987     35      0      0    .657   4.32   8.48  1.873   .847   .173   1.53   .211   .054   2
+  17 788091   1930 1987     58      1      0    .416   2.46   9.30  2.050   .896   .223   2.10   .264   .029   2
+  18 788092   1931 1987     57      1      1    .535   1.88   5.46  1.265   .885   .175   1.98   .250   .020   2
+  19 788101   1924 1987     64      1      0    .491   2.22   4.85   .824   .594   .260   2.12   .277   .033   1
+  20 788102   1924 1987     64      1      0    .476   2.51   4.23   .901   .574   .289   1.71   .280   .031   3
+  21 788111   1943 1987     45      1      0    .738   3.02   5.84  1.132   .837   .178   1.52   .185   .041   3
+  22 788112   1925 1987     63      1      0    .563   2.57   5.22   .855   .834   .162   1.41   .167   .036   1
+  23 788121   1926 1987     62      1      0    .636   3.67   7.18  1.461   .849   .186   1.48   .197   .109   1
+  24 788122   1936 1987     52      1      0    .666   3.32   7.19  1.625   .884   .190   1.74   .213   .106   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1271     22      4    .528   2.96   9.30  1.096   .734   .194   2.12   .212   .057
+
+ DATA CHECKS (rwl.check): swit237
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit237.rwl
+ 24 series, 1271 measurements, 1924-1987, 0.01 mm precision
+ 0 error(s), 0 warning(s), 11 note(s)
+ -------------
+ Nothing to report at this severity.
+ 11 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file swit237.rwl, MD5 368eba8cb0f3f1ac0ff73abc49e433e9.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4093 for 32-year segments.
+ Segments: 32 years, lagged 16, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 32 years: the record is only 64 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

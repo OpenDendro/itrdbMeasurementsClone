@@ -1,0 +1,140 @@
+
+ COFECHA-style crossdating report: nc014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc014.rwl
+      MD5 of measurement file: f9390291d75236a005ea575d2ee9e060
+      Date checked           : 01OCT26
+      Beginning year         : 1771
+      Ending year            : 1997
+      Principal investigators: Stahle, D.W.; Therrell, M.D.
+      Site name              : Shot Beech Ridge
+      Species information    : QURU Quercus rubra L.
+      Latitude               : 35.6000 N
+      Longitude              : 83.4200 W
+      Elevation              : 1372 m
+
+      Series intercorrelation: 0.605
+      Avg mean sensitivity   : 0.168
+      Avg standard deviation : 0.770
+      Avg autocorrelation    : 0.750
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 2.67
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 SBR01A   1868 1997                 .48  .61  .72 
+   2 SBR01B   1914 1997                           .73 
+   3 SBR02A   1876 1997                      .53  .70 
+   5 SBR04A   1781 1964  .70  .63  .72  .66  .60      
+   6 SBR04B   1771 1962  .71  .55  .55  .53  .51      
+   7 SBR06A   1819 1997       .71  .70  .65  .62  .71 
+   8 SBR06B   1815 1997       .69  .65  .60  .63  .76 
+   9 SBR07A   1852 1997                 .49  .58  .63 
+  10 SBR07B   1821 1997       .64  .48  .29B .34  .67 
+  11 SBR08A   1870 1997                 .50  .43  .55 
+  12 SBR08B   1880 1997                      .46  .61 
+  13 SBR09A   1856 1997                 .59  .51  .74 
+  14 SBR10A   1832 1997            .67  .68  .51  .57 
+  15 SBR10B   1827 1997            .67  .63  .50  .65 
+  16 SBR11A   1919 1997                           .60 
+  17 SBR12A   1911 1997                           .51 
+  18 SBR13A   1909 1997                           .86 
+  19 SBR14A   1885 1997                      .75  .82 
+  20 SBR15A   1845 1949            .54  .45  .44      
+  21 SBR16A   1849 1997            .34B .56  .68  .71 
+  22 SBR17A   1793 1997  .69  .67  .61  .62  .74  .77 
+  23 SBR18A   1887 1997                      .72  .87 
+  24 SBR19A   1866 1997                 .54  .60  .62 
+  25 SBR20A   1893 1997                      .70  .65 
+ Av segment correlation  .70  .65  .59  .55  .57  .69 
+
+ FLAGGED SEGMENTS: nc014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  10 SBR07B   1875 1924     B     .285        -3      .300   .015  weak at every lag
+  21 SBR16A   1850 1899     B     .339         3      .352   .013
+
+ DESCRIPTIVE STATISTICS: nc014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SBR01A   1868 1997    130      3      0    .571   1.91   3.64   .606   .718   .163   1.44   .157   .068   0
+   2 SBR01B   1914 1997     84      1      0    .691   2.47   5.29   .851   .686   .192   1.65   .186   .023   1
+   3 SBR02A   1876 1997    122      2      0    .566   1.40   3.70   .600   .707   .226   1.99   .237   .003   1
+   4 SBR03A   1931 1997     67      0      0    .421   4.14   9.16  2.901   .925   .204   1.63   .195   .158   0
+   5 SBR04A   1781 1964    184      5      0    .681   1.85   3.89   .464   .748   .130   1.35   .129   .044   2
+   6 SBR04B   1771 1962    192      5      0    .601   1.89   3.45   .446   .763   .123   1.34   .125  -.004   2
+   7 SBR06A   1819 1997    179      5      0    .685   1.83   3.04   .452   .612   .168   1.51   .171   .011   2
+   8 SBR06B   1815 1997    183      5      0    .659   1.91   2.98   .457   .615   .164   1.80   .177   .007   2
+   9 SBR07A   1852 1997    146      3      0    .554   2.04   3.56   .597   .739   .170   1.38   .158   .008   1
+  10 SBR07B   1821 1997    177      5      1    .523   1.83   2.98   .489   .685   .174   1.46   .179  -.029   1
+  11 SBR08A   1870 1997    128      3      0    .545   1.51   3.38   .649   .869   .141   1.54   .158   .017   1
+  12 SBR08B   1880 1997    118      2      0    .504   1.08   2.04   .290   .715   .147   1.71   .168   .005   1
+  13 SBR09A   1856 1997    142      3      0    .647   2.29   4.32   .738   .767   .163   1.49   .164  -.003   3
+  14 SBR10A   1832 1997    166      4      0    .569   1.62   7.66  1.545   .966   .205   1.57   .215   .012   1
+  15 SBR10B   1827 1997    171      4      0    .587   1.50   5.44   .850   .890   .188   1.60   .200   .003   2
+  16 SBR11A   1919 1997     79      1      0    .618   2.96   5.90  1.258   .863   .171   1.38   .171  -.001   1
+  17 SBR12A   1911 1997     87      1      0    .532   3.02   7.43  1.405   .814   .181   1.64   .180   .043   1
+  18 SBR13A   1909 1997     89      1      0    .787   2.85   5.27   .750   .762   .136   1.45   .145   .008   1
+  19 SBR14A   1885 1997    113      2      0    .706   2.43   5.71   .976   .778   .202   1.62   .206   .046   1
+  20 SBR15A   1845 1949    105      3      0    .464   1.40   2.06   .239   .419   .138   1.34   .135   .118   0
+  21 SBR16A   1849 1997    149      4      1    .462   2.02   7.62   .839   .672   .183   2.68   .233   .024   1
+  22 SBR17A   1793 1997    205      6      0    .673   1.76   4.50   .487   .699   .159   1.59   .165  -.007   2
+  23 SBR18A   1887 1997    111      2      0    .720   2.41   4.77   .916   .749   .192   1.54   .197   .045   1
+  24 SBR19A   1866 1997    132      3      0    .569   1.97   3.98   .811   .841   .175   1.53   .170  -.009   1
+  25 SBR20A   1893 1997    105      2      0    .626   2.38   4.23   .866   .833   .157   1.36   .176   .057   1
+  26 SBR21A   1930 1997     68      0      0    .771   3.82   9.55  2.132   .889   .173   1.44   .181  -.002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3432     75      2    .605   2.02   9.55   .770   .750   .168   2.68   .175   .019
+
+ DATA CHECKS (rwl.check): nc014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc014.rwl
+ 26 series, 3432 measurements, 1771-1997, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file nc014.rwl, MD5 f9390291d75236a005ea575d2ee9e060.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: co684
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co684.rwl
+      MD5 of measurement file: 62d0bc406095f7418b964be500101f01
+      Date checked           : 01OCT26
+      Beginning year         : 1890
+      Ending year            : 2016
+      Principal investigators: Peltier, D.M.P.; Yocom, L.L.; Nguyen, P.; Bangs, M.; Wilson, M.
+      Site name              : Southwest Ecological Memory Project Site A7
+      Species information    : PPTR Populus tremuloides Michx.
+      Latitude               : 38.3000 N
+      Longitude              : 108.1000 W
+      Elevation              : 2915 m
+
+      Series intercorrelation: 0.511
+      Avg mean sensitivity   : 0.304
+      Avg standard deviation : 0.901
+      Avg autocorrelation    : 0.752
+      Number dated series    : 30
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 3, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 23.53
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co684
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+  15 COA0708A 1895 2016  .35  .22B .21A
+  16 COA0708B 1901 2016       .30A .29A
+  19 COA0710A 1890 2016  .56  .66  .53 
+  20 COA0710B 1890 2016  .45  .57  .50 
+  29 COA0715A 1896 2016  .57  .58  .39 
+  30 COA0715B 1899 2016  .54  .60  .35 
+ Av segment correlation  .49  .49  .38 
+
+ FLAGGED SEGMENTS: co684
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 COA0708A 1925 1974     B     .222        10      .255   .032  weak at every lag
+  15 COA0708A 1950 1999     A     .215         0
+  16 COA0708B 1925 1974     A     .302         0
+  16 COA0708B 1950 1999     A     .293         0
+
+ DESCRIPTIVE STATISTICS: co684
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 COA0701B 1987 2016     30      0      0    .564   1.70   2.87   .764   .668   .363   1.47   .291  -.114   3
+   2 COA0701C 1983 2016     34      0      0    .480   2.23   3.49   .924   .618   .319   1.53   .276  -.041   3
+   3 COA0702A 1984 2016     33      0      0    .656   2.05   4.40  1.228   .777   .441   1.68   .414   .083   1
+   4 COA0702C 1980 2016     37      0      0    .544   2.51   5.52  1.458   .753   .434   1.63   .371   .089   1
+   5 COA0703B 1977 2016     40      0      0    .729   1.42   2.66   .657   .495   .447   1.67   .373  -.054   3
+   6 COA0703C 1977 2016     40      0      0    .698   1.50   3.15   .727   .517   .438   1.69   .372  -.024   3
+   7 COA0704B 1975 2016     42      0      0    .517   2.24   4.45   .870   .636   .267   1.54   .230   .008   3
+   8 COA0704C 1974 2016     43      0      0    .660   2.35   4.52  1.033   .663   .280   1.79   .268  -.029   2
+   9 COA0705A 1980 2016     37      0      0    .668   3.67   7.32  1.559   .781   .241   1.56   .238   .245   0
+  10 COA0705B 1978 2016     39      0      0    .741   3.76   7.27  1.558   .844   .196   1.37   .197   .026   1
+  11 COA0706A 1983 2016     34      0      0    .460   3.59   7.94  2.288   .936   .261   1.64   .260   .118   3
+  12 COA0706B 1981 2016     36      0      0    .642   2.43   5.91  1.603   .945   .195   2.18   .275   .004   2
+  13 COA0707A 1988 2016     29      0      0    .651   2.19   4.44  1.142   .745   .367   1.55   .333   .144   1
+  14 COA0707B 1989 2016     28      0      0    .498   1.69   3.92   .918   .692   .390   1.55   .345   .241   0
+  15 COA0708A 1895 2016    122      3      2    .359   1.00   3.19   .512   .628   .327   2.51   .363   .008   1
+  16 COA0708B 1901 2016    116      2      2    .451    .88   4.06   .518   .575   .338   3.02   .380   .007   1
+  17 COA0709A 1978 2016     39      0      0    .460   1.80   3.86   .861   .749   .275   1.40   .215  -.128   0
+  18 COA0709B 1982 2016     35      0      0    .569   1.97   4.61  1.203   .886   .298   1.58   .269  -.010   0
+  19 COA0710A 1890 2016    127      3      0    .486    .73   3.64   .682   .898   .316   2.25   .339   .066   1
+  20 COA0710B 1890 2016    127      3      0    .428    .77   3.62   .728   .901   .316   2.00   .328  -.017   2
+  21 COA0711A 1973 2016     44      0      0    .599   1.80   5.49  1.275   .749   .345   1.91   .355   .023   1
+  22 COA0711B 1973 2016     44      0      0    .660   1.57   3.87   .984   .824   .312   1.91   .298  -.049   3
+  23 COA0712A 1971 2016     46      0      0    .481   2.30   4.37  1.041   .850   .244   1.39   .220   .028   2
+  24 COA0712B 1970 2016     47      0      0    .361   2.04   3.52   .912   .793   .285   1.75   .240  -.021   0
+  25 COA0713A 1981 2016     36      0      0    .458   2.63   6.77  1.581   .919   .195   1.34   .184   .101   1
+  26 COA0713B 1972 2016     45      0      0    .228   2.78   5.56  1.431   .900   .177   1.72   .193   .150   1
+  27 COA0714A 1977 2016     40      0      0    .524   1.76   3.80   .823   .743   .293   1.57   .299   .060   1
+  28 COA0714B 1981 2016     36      0      0    .710   1.87   4.02  1.065   .861   .248   1.97   .253  -.120   0
+  29 COA0715A 1896 2016    121      3      0    .495   1.05   3.12   .528   .710   .291   1.75   .300   .023   1
+  30 COA0715B 1899 2016    118      3      0    .475   1.16   2.91   .518   .679   .263   1.96   .289   .048   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1645     17      4    .511   1.66   7.94   .901   .752   .304   3.02   .303   .025
+
+ DATA CHECKS (rwl.check): co684
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co684.rwl
+ 30 series, 1645 measurements, 1890-2016, 0.001 mm precision
+ 0 error(s), 0 warning(s), 24 note(s)
+ -------------
+ Nothing to report at this severity.
+ 24 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file co684.rwl, MD5 62d0bc406095f7418b964be500101f01.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

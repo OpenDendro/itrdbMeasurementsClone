@@ -1,0 +1,178 @@
+
+ COFECHA-style crossdating report: germ012
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : germ012.rwl
+      MD5 of measurement file: 201594f472ec25d1caf678faa739311f
+      Date checked           : 01OCT26
+      Beginning year         : 1800
+      Ending year            : 1969
+      Principal investigators: Eckstein, D.
+      Site name              : Schleswig
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 54.5000 N
+      Longitude              : 9.5000 E
+      Elevation              : 30 m
+
+      Series intercorrelation: 0.583
+      Avg mean sensitivity   : 0.259
+      Avg standard deviation : 0.765
+      Avg autocorrelation    : 0.651
+      Number dated series    : 44
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 2.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: germ012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 
+                        1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 110113   1861 1967                 .30B .36 
+   2 110123   1860 1967                 .56  .61 
+   3 110213   1862 1967                 .63  .53 
+   4 110223   1861 1967                 .65  .47 
+   5 110313   1873 1966                 .60  .55 
+   6 110323   1862 1967                 .56  .57 
+   7 110413   1864 1967                 .58  .53 
+   8 110423   1864 1967                 .50  .46 
+   9 110513   1855 1967                 .75  .72 
+  10 110523   1851 1967                 .67  .50 
+  11 110613   1870 1966                 .66  .61 
+  12 110623   1866 1967                 .75  .69 
+  13 110713   1856 1967                 .65  .49 
+  14 110723   1858 1967                 .60  .48 
+  15 110813   1854 1967                 .75  .51 
+  16 110823   1869 1967                 .70  .55 
+  17 110913   1864 1967                 .69  .47 
+  18 110923   1866 1967                 .68  .58 
+  19 111013   1870 1967                 .59  .63 
+  20 111023   1855 1967                 .37  .61 
+  21 111113   1854 1967                 .78  .58 
+  22 111123   1867 1967                 .69  .52 
+  23 120113   1825 1966            .52  .65  .44 
+  24 120123   1830 1968            .51  .64  .46 
+  25 120213   1849 1968                 .58  .57 
+  26 120223   1824 1962            .39  .50  .38 
+  27 120313   1835 1961            .44  .58  .53 
+  28 120323   1831 1969            .49  .61  .47 
+  29 130113   1834 1964            .41  .53  .43 
+  30 130123   1804 1964       .65  .58  .56  .53 
+  31 130213   1818 1964       .46  .53  .58  .49 
+  32 130223   1800 1964       .24B .44  .45  .28A
+  33 140113   1850 1963                 .64  .53 
+  34 140123   1849 1944            .56  .54      
+  35 140213   1858 1964                 .73  .64 
+  36 140223   1828 1962            .59  .61  .37 
+  37 140313   1818 1964       .63  .60  .54  .42 
+  38 140323   1817 1949       .73  .66  .55  .52 
+  39 150113   1810 1913       .71  .40           
+  40 150123   1805 1968       .76  .55  .59  .67 
+  41 150213   1807 1966       .65  .64  .61  .52 
+  42 150223   1860 1945                 .69      
+  43 150313   1824 1968            .67  .63  .51 
+  44 150323   1812 1968       .63  .62  .48  .38 
+ Av segment correlation       .61  .53  .60  .52 
+
+ FLAGGED SEGMENTS: germ012
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 110113   1875 1924     B     .298        10      .319   .021  weak at every lag
+  32 130223   1825 1874     B     .243         7      .318   .075  weak at every lag
+  32 130223   1900 1949     A     .281         0
+
+ DESCRIPTIVE STATISTICS: germ012
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 110113   1861 1967    107      2      1    .529   2.06   4.77   .707   .758   .195   1.50   .185   .009   3
+   2 110123   1860 1967    108      2      0    .662   2.06   6.58  1.024   .878   .207   1.72   .200   .003   3
+   3 110213   1862 1967    106      2      0    .632   1.56   5.98   .778   .846   .207   1.47   .188   .111   0
+   4 110223   1861 1967    107      2      0    .622   1.96   5.34   .786   .773   .201   1.43   .195   .016   1
+   5 110313   1873 1966     94      2      0    .646   2.41   5.26   .861   .581   .252   1.73   .262   .008   1
+   6 110323   1862 1967    106      2      0    .563   2.02   3.85   .780   .668   .255   1.67   .256  -.013   1
+   7 110413   1864 1967    104      2      0    .634   2.00   4.31   .755   .836   .169   1.39   .170  -.012   1
+   8 110423   1864 1967    104      2      0    .621   1.54   3.54   .516   .757   .170   1.66   .171   .018   1
+   9 110513   1855 1967    113      2      0    .794   2.00   5.23   .967   .702   .269   1.69   .255   .004   3
+  10 110523   1851 1967    117      2      0    .629   1.93   5.49   .941   .687   .293   1.61   .286   .007   2
+  11 110613   1870 1966     97      2      0    .689   1.94   5.69   .952   .693   .301   1.86   .288   .020   1
+  12 110623   1866 1967    102      2      0    .690   2.40   6.76  1.203   .726   .300   1.86   .304  -.005   3
+  13 110713   1856 1967    112      2      0    .624   2.47   5.64   .964   .691   .210   1.42   .198   .011   3
+  14 110723   1858 1967    110      2      0    .586   1.77   3.93   .614   .560   .243   1.60   .229  -.011   1
+  15 110813   1854 1967    114      2      0    .700   2.34   5.85  1.019   .680   .240   1.98   .245  -.001   1
+  16 110823   1869 1967     99      2      0    .691   2.07   4.13   .779   .785   .226   1.61   .211   .017   3
+  17 110913   1864 1967    104      2      0    .649   1.68   4.14   .853   .725   .297   1.95   .314  -.027   1
+  18 110923   1866 1967    102      2      0    .685   2.10   5.99  1.194   .797   .285   1.90   .304  -.015   1
+  19 111013   1870 1967     98      2      0    .668   1.32   4.04   .749   .715   .305   1.87   .297  -.026   3
+  20 111023   1855 1967    113      2      0    .587   1.88   6.45  1.156   .719   .311   1.89   .326   .002   3
+  21 111113   1854 1967    114      2      0    .735   2.49   7.06  1.025   .748   .201   1.54   .197   .013   1
+  22 111123   1867 1967    101      2      0    .687   1.90   4.40   .630   .640   .236   1.46   .202  -.009   3
+  23 120113   1825 1966    142      3      0    .520   2.64   5.60  1.304   .738   .304   1.64   .285  -.003   2
+  24 120123   1830 1968    139      3      0    .512   2.01   3.92   .739   .582   .303   1.59   .265   .025   3
+  25 120213   1849 1968    120      2      0    .446   2.10   4.06   .819   .451   .332   1.59   .290   .024   2
+  26 120223   1824 1962    139      3      0    .445   2.20   4.03   .677   .209   .343   1.71   .283   .015   2
+  27 120313   1835 1961    127      3      0    .538   1.85   3.72   .534   .429   .235   1.76   .234   .047   1
+  28 120323   1831 1969    139      3      0    .454   2.01   5.03   .728   .640   .233   1.66   .238  -.014   1
+  29 130113   1834 1964    131      3      0    .539   1.26   2.32   .337   .540   .209   1.44   .196   .006   2
+  30 130123   1804 1964    161      4      0    .596   1.69   3.89   .639   .592   .263   1.87   .260  -.000   1
+  31 130213   1818 1964    147      4      0    .524   1.29   3.84   .477   .755   .196   1.47   .181   .024   3
+  32 130223   1800 1964    165      4      2    .417   1.62   4.20   .548   .667   .188   1.39   .170   .027   0
+  33 140113   1850 1963    114      2      0    .507   1.41   4.46   .639   .654   .266   1.97   .261   .040   2
+  34 140123   1849 1944     96      2      0    .434   1.04   2.88   .528   .704   .288   1.74   .302   .018   1
+  35 140213   1858 1964    107      2      0    .658   2.21   4.26   .897   .396   .379   1.74   .333   .006   3
+  36 140223   1828 1962    135      3      0    .417   1.41   5.42   .865   .589   .387   2.62   .394   .018   1
+  37 140313   1818 1964    147      4      0    .557   1.67   4.57   .975   .808   .256   1.83   .257  -.011   3
+  38 140323   1817 1949    133      4      0    .624    .84   3.19   .544   .817   .273   1.76   .287   .020   2
+  39 150113   1810 1913    104      2      0    .504   1.18   2.25   .420   .679   .230   1.57   .224  -.027   2
+  40 150123   1805 1968    164      4      0    .637   1.62   4.07   .576   .708   .214   1.65   .214   .038   1
+  41 150213   1807 1966    160      4      0    .608   2.04   4.48   .761   .568   .288   1.72   .283   .014   1
+  42 150223   1860 1945     86      1      0    .589   2.55   4.39   .699   .319   .263   1.53   .241   .006   1
+  43 150313   1824 1968    145      3      0    .571   1.33   2.53   .421   .377   .280   1.82   .259  -.006   2
+  44 150323   1812 1968    157      4      0    .539   1.72   4.10   .717   .657   .268   1.60   .259   .039   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5290    111      3    .583   1.84   7.06   .765   .651   .259   2.62   .250   .010
+
+ DATA CHECKS (rwl.check): germ012
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/germ012.rwl
+ 44 series, 5290 measurements, 1800-1969, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file germ012.rwl, MD5 201594f472ec25d1caf678faa739311f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

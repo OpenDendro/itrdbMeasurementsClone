@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: ak040
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak040.rwl
+      MD5 of measurement file: d9c740219e508ee8e681d1af3820ad2d
+      Date checked           : 01OCT26
+      Beginning year         : 1785
+      Ending year            : 1999
+      Principal investigators: Lloyd, A.H.
+      Site name              : Nome Creek below treeline
+      Species information    : PCGL Picea glauca (Moench) Voss
+      Latitude               : 65.3700 N
+      Longitude              : 146.6200 W
+      Elevation              : 884 m
+
+      Series intercorrelation: 0.552
+      Avg mean sensitivity   : 0.252
+      Avg standard deviation : 0.348
+      Avg autocorrelation    : 0.742
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 6.15
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak040
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 NCB006   1877 1998                      .53  .63      
+   2 NCB038   1874 1998                      .64  .69      
+   3 NC003    1900 1999                           .55  .38 
+   4 NCB 004  1845 1998            .37  .60  .53  .37      
+   5 NCB 009  1854 1998                 .59  .67  .52      
+   6 NCB 012  1899 1998                           .34      
+   7 NCB 013  1852 1998                 .50  .65  .80      
+   8 NCB 015  1890 1998                      .49  .65      
+   9 NCB 016B 1877 1998                      .61  .71      
+  10 NCB 017B 1847 1998            .51  .65  .62  .75      
+  11 NCB 022  1873 1998                 .50  .65  .69      
+  12 NCB 023  1863 1999                 .59  .67  .63  .54 
+  13 NCB 024  1886 1998                      .43  .59      
+  14 NCB 025B 1849 1998                 .60  .80  .83      
+  15 NCB 027B 1859 1998                 .65  .71  .70      
+  16 NCB 029  1785 1998       .31B .35  .76  .84  .65      
+  17 NCB 030  1853 1998                 .64  .69  .82      
+  18 NCB 032  1805 1998       .36  .53  .76  .57  .55      
+  19 NCB 036  1815 1998       .26A .13B .50  .47  .54      
+  20 NCB 037A 1888 1998                      .31A .40      
+  21 NCB002   1843 1999            .46  .59  .72  .74  .74 
+ Av segment correlation       .31  .39  .61  .61  .63  .55 
+
+ FLAGGED SEGMENTS: ak040
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  16 NCB 029  1825 1874     B     .309         1      .324   .015  weak at every lag
+  19 NCB 036  1825 1874     A     .257         0
+  19 NCB 036  1850 1899     B     .131         6      .289   .158  weak at every lag
+  20 NCB 037A 1900 1949     A     .315         0
+
+ DESCRIPTIVE STATISTICS: ak040
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NCB006   1877 1998    122      2      0    .555    .58   1.91   .275   .668   .282   2.14   .291  -.008   2
+   2 NCB038   1874 1998    125      2      0    .630   1.00   2.62   .479   .705   .267   2.02   .267  -.015   3
+   3 NC003    1900 1999    100      2      0    .534    .82   1.50   .245   .463   .248   1.63   .252  -.028   1
+   4 NCB 004  1845 1998    154      4      0    .438    .43   1.27   .215   .723   .309   1.99   .301  -.021   2
+   5 NCB 009  1854 1998    145      3      0    .534    .97   2.10   .393   .739   .230   1.85   .248  -.011   1
+   6 NCB 012  1899 1998    100      1      0    .400    .77   3.01   .362   .576   .267   3.06   .328  -.010   2
+   7 NCB 013  1852 1998    147      3      0    .624    .44   1.05   .221   .767   .265   1.62   .269  -.020   1
+   8 NCB 015  1890 1998    109      2      0    .541    .63   1.58   .284   .750   .242   2.05   .258  -.012   2
+   9 NCB 016B 1877 1998    122      2      0    .588   1.27   2.80   .549   .744   .230   1.65   .239   .022   1
+  10 NCB 017B 1847 1998    152      4      0    .605    .70   2.73   .413   .782   .271   2.16   .273  -.003   1
+  11 NCB 022  1873 1998    126      3      0    .605    .55   2.04   .227   .746   .203   1.63   .200   .015   2
+  12 NCB 023  1863 1999    137      4      0    .579    .88   2.05   .457   .839   .222   1.65   .221  -.000   1
+  13 NCB 024  1886 1998    113      2      0    .537   1.25   3.67   .766   .808   .271   2.06   .284  -.013   1
+  14 NCB 025B 1849 1998    150      3      0    .684    .76   1.70   .377   .780   .262   1.59   .260  -.016   2
+  15 NCB 027B 1859 1998    140      3      0    .657    .49   1.35   .264   .787   .274   1.68   .272  -.041   1
+  16 NCB 029  1785 1998    214      5      1    .552    .49   1.20   .215   .761   .234   1.79   .236  -.009   3
+  17 NCB 030  1853 1998    146      3      0    .566    .89   2.25   .512   .768   .325   1.76   .308   .234   1
+  18 NCB 032  1805 1998    194      5      0    .522    .55   1.59   .220   .719   .215   1.71   .208   .003   3
+  19 NCB 036  1815 1998    184      5      2    .453    .39   1.30   .226   .832   .229   1.84   .244   .000   1
+  20 NCB 037A 1888 1998    111      2      1    .354   1.05   2.26   .381   .678   .234   1.47   .219   .000   2
+  21 NCB002   1843 1999    157      5      0    .600   1.02   2.42   .436   .764   .225   1.62   .233   .008   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2948     65      4    .552    .73   3.67   .348   .742   .252   3.06   .256   .004
+
+ DATA CHECKS (rwl.check): ak040
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak040.rwl
+ 21 series, 2948 measurements, 1785-1999, 0.002 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file ak040.rwl, MD5 d9c740219e508ee8e681d1af3820ad2d.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: che496
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che496.rwl
+      MD5 of measurement file: 881309d9c0ba2b5796735a023e64231c
+      Date checked           : 01OCT26
+      Beginning year         : 1919
+      Ending year            : 2010
+      Principal investigators: Lévesque, M.; Rigling, A.; Bugmann, H.; Weber, P.; Brang, P.; Saurer, M.; Siegwolf, R.W.T.; Eilmann, B.
+      Site name              : Pfafers
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 46.9747 N
+      Longitude              : 9.4921 E
+      Elevation              : 980 m
+
+      Series intercorrelation: 0.602
+      Avg mean sensitivity   : 0.168
+      Avg standard deviation : 1.113
+      Avg autocorrelation    : 0.790
+      Number dated series    : 15
+      Segment length tested  : 46
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 20.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che496
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1995 
+ --- -------- ---------  ---- 
+   1 PP01     1946 2010  .20B
+   2 PP02     1935 2010  .58 
+   3 PP03     1935 2010  .31A
+   4 PP04     1929 2010  .53 
+   5 PP05     1934 2010  .74 
+   6 PP06     1919 2010  .65 
+   7 PP07     1940 2010  .66 
+   8 PP08     1932 2010  .71 
+   9 PP09     1938 2010  .48 
+  10 PP10     1927 2010  .50 
+  11 PP11     1932 2010  .41 
+  12 PP12     1927 2010  .66 
+  13 PP13     1940 2010  .51 
+  14 PP14     1926 2010  .50 
+  15 PP15     1934 2010  .23B
+ Av segment correlation  .51 
+
+ FLAGGED SEGMENTS: che496
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 PP01     1950 1995     B     .197         6      .349   .152
+   3 PP03     1950 1995     A     .310         0
+  15 PP15     1950 1995     B     .233         3      .270   .037  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che496
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PP01     1946 2010     65      1      1    .335   3.83   7.71  1.698   .847   .187   1.55   .193   .162   1
+   2 PP02     1935 2010     76      1      0    .617   2.88   6.80  1.089   .697   .194   2.07   .229   .010   2
+   3 PP03     1935 2010     76      1      1    .522   3.05   4.91   .848   .652   .192   1.60   .184   .035   3
+   4 PP04     1929 2010     82      1      0    .661   2.95   5.45   .950   .713   .204   1.48   .213   .027   1
+   5 PP05     1934 2010     77      1      0    .760   4.11   6.77  1.286   .773   .160   1.45   .170  -.024   1
+   6 PP06     1919 2010     92      1      0    .720   2.83   4.34   .858   .838   .154   1.52   .166   .014   3
+   7 PP07     1940 2010     71      1      0    .722   3.22   5.45   .987   .776   .157   1.57   .183   .011   1
+   8 PP08     1932 2010     79      1      0    .777   3.01   5.40   .773   .743   .148   1.56   .162   .028   1
+   9 PP09     1938 2010     73      1      0    .574   2.73   4.19   .758   .774   .150   1.56   .163   .029   1
+  10 PP10     1927 2010     84      1      0    .585   2.47   4.09   .579   .513   .172   1.63   .180  -.003   1
+  11 PP11     1932 2010     79      1      0    .600   2.50   6.52  1.307   .934   .147   1.46   .166   .023   2
+  12 PP12     1927 2010     84      1      0    .641   3.23   6.95  1.530   .914   .171   1.37   .181   .055   1
+  13 PP13     1940 2010     71      1      0    .570   3.67   6.19  1.457   .862   .174   1.42   .182  -.056   3
+  14 PP14     1926 2010     85      1      0    .494   2.62   6.37  1.255   .893   .163   1.44   .161   .019   1
+  15 PP15     1934 2010     77      1      1    .400   2.20   7.31  1.461   .937   .156   1.58   .178   .052   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1171     15      3    .602   3.00   7.71  1.113   .790   .168   2.07   .181   .024
+
+ DATA CHECKS (rwl.check): che496
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che496.rwl
+ 15 series, 1171 measurements, 1919-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che496.rwl, MD5 881309d9c0ba2b5796735a023e64231c.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 46 years: the record is only 92 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

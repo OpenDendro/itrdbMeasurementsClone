@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: swit276
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit276.rwl
+      MD5 of measurement file: c45a01908fa0f11b1b54948ca439cf36
+      Date checked           : 01OCT26
+      Beginning year         : 1863
+      Ending year            : 2009
+      Principal investigators: Bigler, C.; Vanoni, M.
+      Site name              : Untervaz GR Satz
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 46.9000 N
+      Longitude              : 9.5333 E
+      Elevation              : 560 m
+
+      Series intercorrelation: 0.599
+      Avg mean sensitivity   : 0.261
+      Avg standard deviation : 1.360
+      Avg autocorrelation    : 0.852
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.86
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit276
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 US.W05   1881 2009  .26B .48  .59 
+   4 US.W06   1867 2008  .60  .48  .40 
+   5 US.W07   1863 2009  .48  .60  .62 
+   6 US.W08A  1872 2009  .56  .57  .63 
+   7 US.W11   1893 2009  .69  .77  .76 
+  10 US.W14   1905 2009       .58  .80 
+  11 US.W15   1912 2009       .59  .66 
+  12 US.W16   1895 2008  .65  .63  .65 
+  13 US.W17   1895 2008  .66  .66  .63 
+  14 US.W18B  1918 2009       .72  .60 
+  15 US.W19   1890 2009  .75  .63  .61 
+  16 US.W20   1903 2009       .77  .77 
+  17 US.W21   1929 2009            .69 
+  18 US.W22   1912 2009       .66  .76 
+ Av segment correlation  .58  .63  .66 
+
+ FLAGGED SEGMENTS: swit276
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 US.W05   1900 1949     B     .262        -4      .311   .049  weak at every lag
+
+ DESCRIPTIVE STATISTICS: swit276
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 US.W01   1960 2009     50      0      0    .462   3.96   7.96  1.927   .875   .214   1.54   .237  -.090   3
+   2 US.W02   1965 2009     45      0      0    .498   3.05   8.46  1.882   .902   .239   1.41   .225   .049   1
+   3 US.W05   1881 2009    129      3      1    .471   1.78   5.52  1.313   .918   .209   1.58   .204   .014   1
+   4 US.W06   1867 2008    142      3      0    .408   2.29  10.87  1.861   .927   .204   1.71   .212   .014   2
+   5 US.W07   1863 2009    147      3      0    .565   1.73   8.56  1.520   .901   .242   1.73   .243   .005   2
+   6 US.W08A  1872 2009    138      3      0    .609   2.07   7.21  1.356   .914   .224   1.72   .227   .017   2
+   7 US.W11   1893 2009    117      3      0    .705   2.47   7.55  1.529   .856   .304   2.05   .314  -.009   2
+   8 US.W12   1962 2009     48      0      0    .533   3.28   6.17  1.338   .799   .214   1.50   .222  -.026   3
+   9 US.W13   1963 2009     47      0      0    .558   2.56   9.29  1.872   .713   .399   1.96   .393   .040   1
+  10 US.W14   1905 2009    105      2      0    .657   2.71   6.40  1.748   .934   .218   1.54   .225   .023   1
+  11 US.W15   1912 2009     98      2      0    .629   2.65   5.12  1.230   .831   .230   1.65   .240  -.036   3
+  12 US.W16   1895 2008    114      3      0    .633   1.42   4.95  1.366   .947   .268   1.72   .271   .042   1
+  13 US.W17   1895 2008    114      3      0    .661   1.54   6.49  1.245   .833   .334   1.97   .331  -.005   1
+  14 US.W18B  1918 2009     92      2      0    .624   1.52   3.53   .641   .545   .330   2.04   .320   .067   1
+  15 US.W19   1890 2009    120      3      0    .625   1.10   5.07  1.025   .913   .318   1.75   .310  -.001   3
+  16 US.W20   1903 2009    107      2      0    .767   2.40   4.75   .875   .682   .262   1.64   .245  -.015   1
+  17 US.W21   1929 2009     81      1      0    .697   1.90   5.07  1.023   .823   .253   1.57   .243  -.015   1
+  18 US.W22   1912 2009     98      2      0    .610   2.28   5.41  1.232   .811   .290   1.91   .284   .052   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1792     35      1    .599   2.11  10.87  1.360   .852   .261   2.05   .261   .009
+
+ DATA CHECKS (rwl.check): swit276
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit276.rwl
+ 18 series, 1792 measurements, 1863-2009, 0.01 mm precision
+ 0 error(s), 1 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     US.W06: correlates with the rest of the collection at r = 0.42 where the collection median is 0.62 (4.8 MAD below it); it does not fit the collection it is in
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit276.rwl, MD5 c45a01908fa0f11b1b54948ca439cf36.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

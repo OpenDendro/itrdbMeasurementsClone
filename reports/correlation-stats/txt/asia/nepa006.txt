@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: nepa006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa006.rwl
+      MD5 of measurement file: 35d25a796abff7da67d2d159892e9eac
+      Date checked           : 01OCT26
+      Beginning year         : 1824
+      Ending year            : 1994
+      Principal investigators: Krusic, P.J.
+      Site name              : Bagarchap
+      Species information    : PPCI Populus ciliata Wall. ex Royle
+      Latitude               : 28.3000 N
+      Longitude              : 84.1800 E
+      Elevation              : 2270 m
+
+      Series intercorrelation: 0.549
+      Avg mean sensitivity   : 0.345
+      Avg standard deviation : 1.292
+      Avg autocorrelation    : 0.693
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 8.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   2 BCPC05A  1856 1994  .69  .71 
+   3 BCPC05C  1835 1994  .52  .27B
+   4 BCPC01A  1856 1994  .58  .64 
+   5 BCPC01E  1846 1988  .64  .63 
+   6 BCPC01C  1832 1994  .75  .68 
+   7 BCPC01B  1868 1994  .69  .56 
+   8 BCPC02B  1882 1994  .47  .37 
+   9 BCPC03B  1833 1994  .38  .28A
+  10 BCPC03A  1840 1994  .66  .62 
+  11 BCPC06A  1824 1994  .61  .60 
+  13 BCPC06B  1831 1994  .59  .43 
+  14 BCPC04B  1838 1994  .68  .62 
+ Av segment correlation  .61  .54 
+
+ FLAGGED SEGMENTS: nepa006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 BCPC05C  1925 1974     B     .272        -7      .296   .023  weak at every lag
+   9 BCPC03B  1925 1974     A     .276         0
+
+ DESCRIPTIVE STATISTICS: nepa006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BCPC00A  1829 1919     91      0      0    .592   1.89   7.03  1.604   .914   .363   2.22   .378  -.008   2
+   2 BCPC05A  1856 1994    139      2      0    .675   1.74   3.68   .762   .554   .341   2.22   .335   .013   2
+   3 BCPC05C  1835 1994    160      2      1    .477   1.79   5.80  1.092   .797   .274   1.96   .290  -.001   1
+   4 BCPC01A  1856 1994    139      2      0    .552   2.35   8.00  1.616   .664   .482   2.61   .496   .002   1
+   5 BCPC01E  1846 1988    143      2      0    .588   2.85   6.52  1.387   .739   .288   1.96   .308  -.010   2
+   6 BCPC01C  1832 1994    163      2      0    .712   1.48   7.24  1.087   .790   .366   2.19   .386   .004   1
+   7 BCPC01B  1868 1994    127      2      0    .635   1.61   4.44   .877   .693   .342   2.18   .343  -.005   2
+   8 BCPC02B  1882 1994    113      2      0    .504   2.11   4.82   .817   .245   .345   2.04   .321  -.048   3
+   9 BCPC03B  1833 1994    162      2      1    .427   2.67   8.39  1.736   .795   .380   2.36   .362  -.029   3
+  10 BCPC03A  1840 1994    155      2      0    .543   2.29   7.16  1.549   .804   .374   2.09   .348  -.009   2
+  11 BCPC06A  1824 1994    171      2      0    .503   2.39   6.78  1.312   .724   .316   2.20   .321  -.005   2
+  12 BCPC04Z  1937 1994     58      0      0    .506   1.90   5.10   .994   .766   .296   1.99   .290   .047   1
+  13 BCPC06B  1831 1994    164      2      0    .510   1.95   5.95  1.333   .817   .329   1.78   .309  -.010   1
+  14 BCPC04B  1838 1994    157      2      0    .475   1.85  18.19  1.641   .381   .326   3.70   .372   .004   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1942     24      2    .549   2.08  18.19  1.292   .693   .345   3.70   .348  -.006
+
+ DATA CHECKS (rwl.check): nepa006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa006.rwl
+ 14 series, 1942 measurements, 1824-1994, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file nepa006.rwl, MD5 35d25a796abff7da67d2d159892e9eac.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

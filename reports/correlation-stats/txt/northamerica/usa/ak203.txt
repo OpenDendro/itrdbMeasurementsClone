@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: ak203
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak203.rwl
+      MD5 of measurement file: 356f7f983be5b0dd56cfce6e0df06f74
+      Date checked           : 01OCT26
+      Beginning year         : 1636
+      Ending year            : 1991
+      Principal investigators: Wiles, G.
+      Site name              : Ellsworth Glacier
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 60.0800 N
+      Longitude              : 148.9700 W
+      Elevation              : 480 m
+
+      Series intercorrelation: 0.642
+      Avg mean sensitivity   : 0.351
+      Avg standard deviation : 0.311
+      Avg autocorrelation    : 0.677
+      Number dated series    : 18
+      Series crossdated      : 13
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3)
+      Pct problem segments   : 3.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak203
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 ELG003SW 1742 1990            .42  .76  .68  .63  .25B .16B .48  .67 
+   2 ELG018NW 1780 1990                      .56  .76  .86  .83  .78  .86 
+   3 ELG01NE  1636 1990  .59  .59  .55  .55  .63  .76  .62  .57  .73  .83 
+   4 ELG024SW 1787 1990                      .71  .79  .88  .87  .88  .84 
+   5 ELG026S  1685 1990  .55  .48  .50  .57  .66  .82  .87  .81  .80  .76 
+   6 ELG028NE 1771 1991                 .58  .73  .79  .73  .70  .69  .66 
+   8 ELG036NE 1782 1990                      .59  .67  .69  .74  .76  .69 
+   9 ELG040NW 1921 1990                                               .27B
+  10 ELG044S  1750 1990                 .76  .67  .48  .58  .64  .58  .62 
+  11 ELG050NW 1686 1990  .48  .58  .65  .74  .74  .74  .83  .75  .60  .71 
+  12 ELG10SW  1772 1991                 .67  .55  .60  .57  .56  .66  .56 
+  14 ELG20SNE 1780 1969                      .65  .64  .70  .73  .70      
+  18 ELG46SE  1905 1990                                               .81 
+ Av segment correlation  .54  .55  .53  .66  .65  .70  .69  .67  .70  .69 
+
+ FLAGGED SEGMENTS: ak203
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 ELG003SW 1850 1899     B     .250        -3      .332   .082
+   1 ELG003SW 1875 1924     B     .160        -3      .364   .204
+   9 ELG040NW 1925 1974     B     .275        -9      .365   .090
+
+ DESCRIPTIVE STATISTICS: ak203
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ELG003SW 1742 1990    249      8      2    .479    .48   1.25   .252   .529   .448   2.35   .377   .061   0
+   2 ELG018NW 1780 1990    211      6      0    .674    .63   2.23   .314   .667   .357   2.17   .333  -.035   3
+   3 ELG01NE  1636 1990    355     10      0    .635    .45   1.19   .233   .683   .380   2.29   .359  -.019   3
+   4 ELG024SW 1787 1990    204      6      0    .816    .52   1.36   .230   .747   .254   1.91   .262  -.023   3
+   5 ELG026S  1685 1990    306     10      0    .684    .53   1.25   .219   .716   .258   2.23   .261  -.025   3
+   6 ELG028NE 1771 1991    221      7      0    .664    .52   1.56   .238   .509   .383   2.01   .351   .004   2
+   7 ELG032NE 1773 1990    217                          .66   2.05   .479   .808   .403                         
+   8 ELG036NE 1782 1990    209      6      0    .600    .94   2.27   .445   .674   .334   2.66   .355   .019   1
+   9 ELG040NW 1921 1990     70      1      1    .357    .30   1.06   .184   .588   .440   2.50   .420  -.019   1
+  10 ELG044S  1750 1990    241      7      0    .607    .38    .93   .132   .561   .259   1.62   .251  -.022   3
+  11 ELG050NW 1686 1990    305     10      0    .685    .50   1.11   .200   .553   .310   2.02   .305  -.011   1
+  12 ELG10SW  1772 1991    220      7      0    .595    .70   2.49   .503   .762   .358   1.98   .359  -.030   1
+  13 ELG16N   1760 1990    224                          .55   2.50   .485   .832   .403                         
+  14 ELG20SNE 1780 1969    190      5      0    .679    .73   2.23   .476   .832   .310   2.45   .323   .020   3
+  15 ELG22S   1755 1986    229                          .62   1.80   .299   .703   .304                         
+  16 ELG34N   1807 1990    179                          .43    .96   .229   .624   .386                         
+  17 ELG42ne  1790 1990    192                          .60   2.81   .530   .776   .453                         
+  18 ELG46SE  1905 1990     86      1      0    .775    .32    .77   .167   .586   .416   1.77   .359  -.027   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3908     84      3    .642    .56   2.81   .311   .677   .351   2.66   .325  -.007
+
+ DATA CHECKS (rwl.check): ak203
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak203.rwl
+ 18 series, 3908 measurements, 1636-1991, 0.001 mm precision
+ 0 error(s), 5 warning(s), 6 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (5)
+     ELG032NE: no measurement for 1888, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ELG16N: no measurement for 1825, 1834, 1837, 1847, 1849, 1907, 1951, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ELG22S: no measurement for 1806-1808, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ELG34N: no measurement for 1894-1895, 1898, 1945-1946, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ELG42ne: no measurement for 1817-1819, 1835, 1840-1841, 1896, 1908-1909, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ak203.rwl, MD5 356f7f983be5b0dd56cfce6e0df06f74.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series ELG032NE has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series ELG16N has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series ELG22S has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series ELG34N has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series ELG42ne has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

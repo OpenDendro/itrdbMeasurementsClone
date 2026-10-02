@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: chil001
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : chil001.rwl
+      MD5 of measurement file: abe2e90666d160ee4b40d1320b5ef393
+      Date checked           : 01OCT26
+      Beginning year         : 1796
+      Ending year            : 1975
+      Principal investigators: Holmes, R.L.; Gallinato, J.M.
+      Site name              : Alto de las Mesas
+      Species information    : AUCH Austrocedrus chilensis (D. Don) Pic. Serm. & Bizzarri
+      Latitude               : 34.9200 S
+      Longitude              : 70.7000 W
+      Elevation              : 1020 m
+
+      Series intercorrelation: 0.538
+      Avg mean sensitivity   : 0.232
+      Avg standard deviation : 1.039
+      Avg autocorrelation    : 0.842
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 7.50
+
+
+ CORRELATION OF SERIES BY SEGMENTS: chil001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   2 MES813   1855 1975                 .17B .46  .62 
+   4 MES821   1859 1975                 .76  .46  .58 
+   6 MES823   1858 1943                 .65           
+   7 MES824   1834 1975            .85  .86  .51  .57 
+   8 MES825   1840 1909            .80                
+  10 MES827   1834 1940            .76  .69           
+  11 MES861   1796 1975            .51  .50  .31B .38 
+  12 MES871   1829 1975            .44  .39  .50  .29A
+  13 MES872   1823 1975            .64  .61  .43  .44 
+  14 MES873   1825 1975            .70  .64  .56  .47 
+  16 MES881   1846 1925            .71  .56           
+  17 MES882   1850 1975                 .68  .40  .53 
+  18 MES883   1858 1975                 .61  .35  .46 
+  19 MES884   1849 1952                 .73  .59      
+ Av segment correlation            .68  .60  .46  .48 
+
+ FLAGGED SEGMENTS: chil001
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 MES813   1875 1924     B     .167        -1      .576   .408
+  11 MES861   1900 1949     B     .311        -1      .316   .005  weak at every lag
+  12 MES871   1925 1974     A     .289         0
+
+ DESCRIPTIVE STATISTICS: chil001
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MES812   1930 1975     46      0      0    .441   1.37   5.32  1.178   .868   .303   1.51   .288   .008   1
+   2 MES813   1855 1975    121      3      1    .359   2.66   6.75  1.461   .856   .237   1.64   .236   .001   2
+   3 MES814   1935 1975     41      0      0    .563   1.28   2.82   .676   .677   .427   1.75   .359   .041   0
+   4 MES821   1859 1975    117      3      0    .599   1.74   4.44  1.101   .867   .284   3.34   .371   .013   2
+   5 MES822   1840 1887     48      0      0    .652   2.45   4.85  1.147   .877   .208   1.62   .213   .112   1
+   6 MES823   1858 1943     86      1      0    .485   1.54   3.69  1.058   .918   .272   2.03   .297   .062   1
+   7 MES824   1834 1975    142      4      0    .655   1.62   4.94   .926   .879   .256   2.26   .279   .051   1
+   8 MES825   1840 1909     70      1      0    .762   1.94   3.28   .657   .704   .237   1.67   .223   .071   3
+   9 MES826   1858 1897     40      0      0    .839   1.78   2.88   .549   .656   .227   1.72   .223   .067   1
+  10 MES827   1834 1940    107      2      0    .486   1.37   3.78   .865   .913   .238   1.86   .263   .017   2
+  11 MES861   1796 1975    180      4      1    .301   1.42   4.30  1.033   .864   .275   1.76   .271  -.014   2
+  12 MES871   1829 1975    147      4      1    .393   1.25   5.03  1.380   .950   .300   2.44   .303  -.026   2
+  13 MES872   1823 1975    153      4      0    .518   1.63   5.24  1.337   .953   .186   1.54   .194  -.026   3
+  14 MES873   1825 1975    151      4      0    .581   1.83   5.45  1.238   .919   .201   1.56   .192   .022   2
+  15 MES874   1829 1865     37      0      0    .701   3.72   5.35   .673   .324   .166   1.41   .164   .205   0
+  16 MES881   1846 1925     80      2      0    .617   2.59   4.50   .822   .766   .145   1.38   .154   .036   2
+  17 MES882   1850 1975    126      3      0    .635   2.46   5.24   .826   .718   .179   1.53   .176  -.021   3
+  18 MES883   1858 1975    118      3      0    .527   2.22   4.52   .783   .809   .171   1.56   .185  -.041   3
+  19 MES884   1849 1952    104      2      0    .688   2.41   5.20   .916   .774   .164   1.61   .172   .012   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1914     40      3    .538   1.89   6.75  1.039   .842   .232   3.34   .240   .015
+
+ DATA CHECKS (rwl.check): chil001
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/chil001.rwl
+ 19 series, 1914 measurements, 1796-1975, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file chil001.rwl, MD5 abe2e90666d160ee4b40d1320b5ef393.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

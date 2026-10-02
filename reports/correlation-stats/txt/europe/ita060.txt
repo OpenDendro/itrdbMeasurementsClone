@@ -1,0 +1,117 @@
+
+ COFECHA-style crossdating report: ita060
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ita060.rwl
+      MD5 of measurement file: b2c699e7410879da5e4c4ed75b9dcf57
+      Date checked           : 01OCT26
+      Beginning year         : 1716
+      Ending year            : 2017
+      Principal investigators: Vacchiano, G.
+      Site name              : Alpe Laresin
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.3000 N
+      Longitude              : 9.7500 E
+      Elevation              : 1800 m
+
+      Series intercorrelation: 0.659
+      Avg mean sensitivity   : 0.246
+      Avg standard deviation : 1.229
+      Avg autocorrelation    : 0.775
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.72
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ita060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 LARE001  1815 2017       .58  .55  .61  .64  .78  .80 
+   2 LARE002X 1918 2017                           .56  .55 
+   3 LARE003X 1885 2017                      .62  .76  .61 
+   4 LARE004  1874 2017                      .64  .57  .57 
+   5 LARE005  1716 2017       .40  .36B .58  .64  .63  .63 
+   6 LARE006  1856 2017                 .69  .79  .74  .67 
+   7 LARE007  1897 2017                      .64  .72  .63 
+   8 LARE008  1831 2017            .49  .57  .64  .59  .57 
+   9 LARE009  1841 2017            .70  .79  .82  .76  .75 
+  10 LARE010  1821 2017       .45  .52  .75  .86  .78  .64 
+  11 LARE011  1855 2017                 .55  .65  .76  .82 
+  12 LARE012  1835 2017            .57  .77  .89  .88  .81 
+  13 LARE013  1816 2017       .64  .62  .74  .82  .74  .71 
+ Av segment correlation       .52  .54  .67  .72  .71  .67 
+
+ FLAGGED SEGMENTS: ita060
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 LARE005  1850 1899     B     .358         6      .367   .010
+
+ DESCRIPTIVE STATISTICS: ita060
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 LARE001  1815 2017    203      6      0    .668   1.68   6.69  1.090   .872   .222   1.92   .238  -.019   3
+   2 LARE002X 1918 2017    100      2      0    .621   1.70   6.57  1.175   .873   .239   1.99   .256   .004   2
+   3 LARE003X 1885 2017    133      3      0    .518   1.39  59.83  5.126   .053   .329   3.66   .596   .177   1
+   4 LARE004  1874 2017    144      3      0    .616   2.28   4.76   .914   .744   .230   1.63   .239  -.002   3
+   5 LARE005  1716 2017    302      6      1    .575    .86   3.42   .470   .811   .248   1.69   .240  -.022   3
+   6 LARE006  1856 2017    162      4      0    .697   1.84   4.54   .945   .757   .285   2.02   .274  -.007   3
+   7 LARE007  1897 2017    121      3      0    .654   1.95   6.54   .942   .764   .265   1.60   .254  -.008   3
+   8 LARE008  1831 2017    187      5      0    .623   1.91   5.38  1.004   .776   .261   1.66   .256  -.015   3
+   9 LARE009  1841 2017    177      5      0    .738   1.57   7.36  1.718   .952   .222   1.71   .227  -.033   3
+  10 LARE010  1821 2017    197      6      0    .655   2.05   6.22  1.449   .896   .242   1.65   .240  -.017   3
+  11 LARE011  1855 2017    163      4      0    .671   2.16   5.04   .953   .839   .208   1.51   .223  -.030   2
+  12 LARE012  1835 2017    183      5      0    .794   1.35   2.94   .489   .720   .227   1.55   .226  -.033   3
+  13 LARE013  1816 2017    202      6      0    .723   1.84   6.46  1.046   .815   .245   1.78   .252  -.006   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2274     58      1    .659   1.68  59.83  1.229   .775   .246   3.66   .264  -.006
+
+ DATA CHECKS (rwl.check): ita060
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ita060.rwl
+ 13 series, 2274 measurements, 1716-2017, 0.01 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (1)
+     LARE003X: correlates with the rest of the collection at r = 0.315 where the collection median is 0.66 (6.1 MAD below it); it does not fit the collection it is in
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file ita060.rwl, MD5 b2c699e7410879da5e4c4ed75b9dcf57.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

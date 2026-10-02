@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: wa156
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa156.rwl
+      MD5 of measurement file: 889e0e1831b89df7fbbebd00133b60fc
+      Date checked           : 01OCT26
+      Beginning year         : 561
+      Ending year            : 923
+      Principal investigators: Black, B.A.; Pringle, P.T.; Logan, R.L.; Schuster, R.L.
+      Site name              : Dry Bed Lake
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 47.3180 N
+      Longitude              : 123.3910 W
+      Elevation              : 367 m
+
+      Avg mean sensitivity   : 0.189
+      Avg standard deviation : 0.844
+      Avg autocorrelation    : 0.956
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: wa156
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 DBL01A    561  923    363                         1.12   4.40   .848   .957   .192                        3
+   2 DBL01B    561  923    363                         1.12   4.35   .841   .956   .186                        2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            726                         1.12   4.40   .844   .956   .189                     
+
+ DATA CHECKS (rwl.check): wa156
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa156.rwl
+ 2 series, 726 measurements, 561-923, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa156.rwl, MD5 889e0e1831b89df7fbbebd00133b60fc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

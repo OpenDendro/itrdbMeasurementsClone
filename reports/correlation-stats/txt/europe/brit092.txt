@@ -1,0 +1,97 @@
+
+ COFECHA-style crossdating report: brit092
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit092.rwl
+      MD5 of measurement file: 7867387629acdf6d154ea3a810d58bd1
+      Date checked           : 01OCT26
+      Beginning year         : 1019
+      Ending year            : 1133
+      Principal investigators: Arnold, A.J.; Howard, R.E.
+      Site name              : Church of St Mary Stockport
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 53.4112 N
+      Longitude              : 2.1552 W
+      Elevation              : 72 m
+
+      Series intercorrelation: 0.753
+      Avg mean sensitivity   : 0.174
+      Avg standard deviation : 0.340
+      Avg autocorrelation    : 0.466
+      Number dated series    : 6
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit092
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1050 1075 
+                        1099 1124 
+ --- -------- ---------  ---- ---- 
+   3 STKC09A  1039 1109  .66      
+   4 STKC09B  1039 1109  .68      
+   5 STKC10A  1049 1133  .69  .82 
+   6 STKC10B  1049 1133  .69  .81 
+ Av segment correlation  .68  .82 
+
+ FLAGGED SEGMENTS: brit092
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: brit092
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 STKC08A  1019 1088     70      0      0    .777   1.79   3.25   .400   .582   .158   1.79   .170  -.018   1
+   2 STKC08B  1019 1088     70      0      0    .776   1.79   3.30   .407   .551   .168   1.80   .176  -.007   1
+   3 STKC09A  1039 1109     71      1      0    .668   1.55   2.36   .342   .453   .176   1.53   .166   .035   0
+   4 STKC09B  1039 1109     71      1      0    .680   1.56   2.34   .336   .472   .175   1.58   .164   .057   0
+   5 STKC10A  1049 1133     85      2      0    .805   1.42   2.14   .287   .377   .182   1.45   .160   .023   0
+   6 STKC10B  1049 1133     85      2      0    .797   1.43   2.35   .291   .395   .179   1.47   .161   .049   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            452      6      0    .753   1.58   3.30   .340   .466   .174   1.80   .166   .024
+
+ DATA CHECKS (rwl.check): brit092
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit092.rwl
+ 6 series, 452 measurements, 1019-1133, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit092.rwl, MD5 7867387629acdf6d154ea3a810d58bd1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

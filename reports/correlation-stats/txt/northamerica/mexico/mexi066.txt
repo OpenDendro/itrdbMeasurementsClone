@@ -1,0 +1,145 @@
+
+ COFECHA-style crossdating report: mexi066
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mexi066.rwl
+      MD5 of measurement file: 5b8ff6702c37224cbe63e392767e5cd5
+      Date checked           : 01OCT26
+      Beginning year         : 1805
+      Ending year            : 2007
+      Principal investigators: Villanueva-Díaz, J.
+      Site name              : Viga Pino Culminicola
+      Species information    : PICU Pinus culminicola Andresen et Beaman
+      Latitude               : 25.3620 N
+      Longitude              : 100.5490 W
+      Elevation              : 3570 m
+
+      Series intercorrelation: 0.453
+      Avg mean sensitivity   : 0.300
+      Avg standard deviation : 0.385
+      Avg autocorrelation    : 0.676
+      Number dated series    : 25
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 6, B 2)
+      Pct problem segments   : 18.60
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mexi066
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 VPC01A   1915 2005       .57  .48 
+   2 VPC05A   1844 1989  .73  .57      
+   3 VPC08A   1896 2007  .62  .63  .27A
+   4 VPC09A   1893 1989  .68  .62      
+   6 VPC14A   1900 2007       .47  .46 
+   7 PVC19A   1883 1995  .43  .56      
+   8 VPC25A   1805 2007  .48  .56  .65 
+   9 VPC25C   1857 2007  .41  .44  .46 
+  11 VPC27A   1940 1999            .33A
+  12 VPC29A   1940 2007            .45 
+  13 VPC32A   1870 2007  .57  .43  .48 
+  14 VPC32B   1867 2007  .44  .26A .42 
+  15 VPC34A   1915 2007       .43  .32A
+  16 VPC34B   1915 2007       .38B .29A
+  17 VPC39A   1906 1987       .32A     
+  18 VPC44A   1940 2001            .42 
+  20 VPC49A   1947 2007            .51 
+  21 VPC52A   1883 1990  .63  .50      
+  22 VPC53A   1916 1999       .36  .49 
+  23 VPC55A   1917 2007       .53  .55 
+  24 VPC56A   1940 2007            .54 
+  25 VPC57A   1908 2007       .24B .48 
+ Av segment correlation  .55  .46  .45 
+
+ FLAGGED SEGMENTS: mexi066
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 VPC08A   1950 1999     A     .274         0
+  11 VPC27A   1950 1999     A     .328         0
+  14 VPC32B   1925 1974     A     .258         0
+  15 VPC34A   1950 1999     A     .325         0
+  16 VPC34B   1925 1974     B     .377        -4      .382   .005
+  16 VPC34B   1950 1999     A     .290         0
+  17 VPC39A   1925 1974     A     .325         0
+  25 VPC57A   1925 1974     B     .237        -5      .345   .108
+
+ DESCRIPTIVE STATISTICS: mexi066
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 VPC01A   1915 2005     91      2      0    .441    .53   1.21   .252   .671   .313   2.08   .313   .122   0
+   2 VPC05A   1844 1989    146      2      0    .488    .47   1.66   .233   .658   .318   2.39   .340   .032   1
+   3 VPC08A   1896 2007    112      3      1    .436    .77   1.44   .346   .756   .292   2.17   .302   .009   1
+   4 VPC09A   1893 1989     97      2      0    .522    .93   2.32   .459   .657   .317   2.24   .320  -.022   1
+   5 VPC11A   1952 2007     56      0      0    .547    .59   1.61   .259   .485   .341   2.16   .358  -.032   3
+   6 VPC14A   1900 2007    108      2      0    .453    .40   1.05   .226   .449   .399   2.94   .469   .014   1
+   7 PVC19A   1883 1995    113      2      0    .443    .69   1.88   .461   .806   .357   2.15   .370   .003   1
+   8 VPC25A   1805 2007    203      3      0    .468    .61   1.65   .375   .731   .386   2.41   .375   .025   1
+   9 VPC25C   1857 2007    151      3      0    .482    .76   1.95   .352   .692   .260   1.95   .300  -.002   1
+  10 vpC26A   1940 1998     59      0      0    .366    .98   2.32   .542   .770   .247   2.78   .341   .010   1
+  11 VPC27A   1940 1999     60      1      1    .347    .96   1.75   .368   .391   .324   2.14   .303  -.025   2
+  12 VPC29A   1940 2007     68      1      0    .385   1.04   1.62   .263   .624   .172   1.31   .165   .013   1
+  13 VPC32A   1870 2007    138      3      0    .532    .81   2.16   .409   .813   .250   1.66   .254   .015   1
+  14 VPC32B   1867 2007    141      3      1    .379    .73   1.92   .389   .842   .254   1.71   .262   .034   1
+  15 VPC34A   1915 2007     93      2      1    .360    .46   1.11   .196   .643   .254   2.03   .272   .006   2
+  16 VPC34B   1915 2007     93      2      2    .368    .48   1.00   .196   .602   .281   1.89   .282   .000   2
+  17 VPC39A   1906 1987     82      1      1    .458   1.14   2.47   .495   .664   .247   2.42   .299   .029   1
+  18 VPC44A   1940 2001     62      1      0    .414    .64   1.46   .350   .829   .269   3.13   .457   .399   2
+  19 VPC46A   1935 1988     54      0      0    .426    .91   1.74   .374   .744   .239   1.71   .256   .189   0
+  20 VPC49A   1947 2007     61      1      0    .353   1.99   8.38  1.101   .286   .312   2.37   .325   .098   0
+  21 VPC52A   1883 1990    108      2      0    .454    .78   1.98   .359   .617   .315   1.83   .304   .001   2
+  22 VPC53A   1916 1999     84      2      0    .489   1.19   2.78   .587   .867   .251   1.59   .264   .014   1
+  23 VPC55A   1917 2007     91      2      0    .579   1.13   2.12   .382   .371   .299   1.98   .300   .093   0
+  24 VPC56A   1940 2007     68      1      0    .480   1.04   2.56   .548   .846   .249   1.51   .222  -.026   2
+  25 VPC57A   1908 2007    100      2      1    .508    .76   2.22   .484   .705   .403   2.13   .392   .042   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2439     43      8    .453    .78   8.38   .385   .676   .300   3.13   .317   .034
+
+ DATA CHECKS (rwl.check): mexi066
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/mexico/mexi066.rwl
+ 25 series, 2439 measurements, 1805-2007, 0.001 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (1)
+     PVC19A: site code differs from the vpc used by 24 of 25 series
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file mexi066.rwl, MD5 5b8ff6702c37224cbe63e392767e5cd5.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

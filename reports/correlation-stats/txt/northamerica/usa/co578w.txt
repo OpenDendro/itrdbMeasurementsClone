@@ -1,0 +1,93 @@
+
+ COFECHA-style crossdating report: co578w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co578w.rwl
+      MD5 of measurement file: c2399d351d3acfe3b3684ec8d46cf31f
+      Date checked           : 01OCT26
+      Beginning year         : 1867
+      Ending year            : 1982
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Boulder Creek Colorado
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 40.0000 N
+      Longitude              : 105.3700 W
+      Elevation              : 1900 m
+
+      Avg mean sensitivity   : 0.319
+      Avg standard deviation : 0.791
+      Avg autocorrelation    : 0.726
+      Number dated series    : 13
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: co578w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 670101   1898 1982     85                         1.43   4.24   .698   .473   .337                        3
+   2 670102   1900 1982     83                         1.98   4.00   .751   .606   .263                        1
+   3 670103   1913 1982     69                         1.29   3.16   .548   .674   .284                         
+   4 670104   1897 1982     85                         2.05   6.22  1.483   .924   .258                         
+   5 670105   1917 1982     66                          .97   1.90   .361   .483   .299                        1
+   6 670106   1921 1982     62                         1.54   3.91   .626   .251   .388                        0
+   7 670107   1900 1982     83                         1.58   5.37  1.298   .928   .247                        1
+   8 670108   1873 1982    109                         1.24   2.77   .593   .643   .371                         
+   9 670109   1870 1982    112                         1.01   3.06   .774   .850   .378                         
+  10 670110   1867 1982    115                          .98   2.95   .731   .872   .322                         
+  11 670111   1898 1982     85                         1.32   3.86   .913   .837   .363                        0
+  12 670112   1904 1982     79                          .93   2.41   .604   .849   .333                        1
+  13 670113   1899 1982     84                         1.42   3.51   .796   .802   .268                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1117                         1.35   6.22   .791   .726   .319                     
+
+ DATA CHECKS (rwl.check): co578w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co578w.rwl
+ 13 series, 1117 measurements, 1867-1982, 0.01 mm precision
+ 0 error(s), 5 warning(s), 5 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (5)
+     670103: no measurement for 1954, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     670104: no measurement for 1953, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     670108: no measurement for 1947, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     670109: no measurement for 1962, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     670110: no measurement for 1954, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 5 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file co578w.rwl, MD5 c2399d351d3acfe3b3684ec8d46cf31f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 670103 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 670104 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 670108 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 670109 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 670110 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ No segment could be tested: 'seg.length' can be at most 1/2 the number of years in 'rwl'.

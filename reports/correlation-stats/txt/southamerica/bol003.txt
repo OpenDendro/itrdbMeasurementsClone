@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: bol003
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bol003.rwl
+      MD5 of measurement file: 848bb386269a7926a6e18dd5a5bbd3cb
+      Date checked           : 01OCT26
+      Beginning year         : 1798
+      Ending year            : 2010
+      Principal investigators: López, L.; Villalba, R.
+      Site name              : Purubi
+      Species information    : CEMC Centrolobium microchaete (Benth.) H.C. Lima
+      Latitude               : 16.3290 S
+      Longitude              : 61.6140 W
+      Elevation              : 446 m
+
+      Series intercorrelation: 0.533
+      Avg mean sensitivity   : 0.447
+      Avg standard deviation : 0.941
+      Avg autocorrelation    : 0.466
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 7, B 7; 3 of the B weak at every lag)
+      Pct problem segments   : 21.21
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bol003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 pur194b  1798 1974       .63  .36  .54  .70  .68      
+   2 puru815b 1886 2010                      .62  .59  .64 
+   3 pur31    1809 1974       .63  .35  .55  .72  .72      
+   4 pur746b  1802 1949       .82  .74  .75  .76           
+   5 puru361  1843 1924            .33A .39                
+   7 puru122b 1839 1949            .25A .27A .36           
+   8 puru353a 1831 2010            .37  .27A .09B .43  .73 
+   9 puru815  1829 2010            .47  .39  .36B .43B .56 
+  10 puru314b 1894 2010                      .25A .28B .49 
+  11 puru698a 1858 1924                 .51                
+  12 pu363b   1840 2010            .33  .32A .31B .52  .47 
+  13 puru122  1875 1949                 .42  .29B          
+  14 pur363b  1875 2010                      .28A .45  .67 
+  15 pur 002  1829 2010            .76  .84  .72  .63B .71 
+  16 pur553b  1825 2010            .70  .84  .74  .66  .61 
+  17 pur194a  1817 2010       .74  .62  .71  .76  .79  .64 
+  18 pur12c   1808 1949       .77  .54  .57  .56           
+ Av segment correlation       .72  .48  .53  .50  .56  .61 
+
+ FLAGGED SEGMENTS: bol003
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 puru361  1850 1899     A     .327         0
+   7 puru122b 1850 1899     A     .249         0
+   7 puru122b 1875 1924     A     .275         0
+   8 puru353a 1875 1924     A     .269         0
+   8 puru353a 1900 1949     B     .088        -2      .225   .136  weak at every lag
+   9 puru815  1900 1949     B     .359         3      .492   .133
+   9 puru815  1925 1974     B     .435         3      .484   .049
+  10 puru314b 1900 1949     A     .250         0
+  10 puru314b 1925 1974     B     .276         1      .290   .014  weak at every lag
+  12 pu363b   1875 1924     A     .322         0
+  12 pu363b   1900 1949     B     .307         7      .343   .035
+  13 puru122  1900 1949     B     .287         9      .290   .004  weak at every lag
+  14 pur363b  1900 1949     A     .277         0
+  15 pur 002  1925 1974     B     .631        -1      .640   .009
+
+ DESCRIPTIVE STATISTICS: bol003
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 pur194b  1798 1974    177      5      0    .658   1.36   3.67   .772   .367   .516   3.01   .474  -.007   1
+   2 puru815b 1886 2010    125      3      0    .614   2.12   5.05  1.218   .542   .452   2.30   .448   .026   1
+   3 pur31    1809 1974    166      5      0    .644   1.39   3.67   .762   .361   .512   2.17   .447   .089   0
+   4 pur746b  1802 1949    148      4      0    .760   1.82   5.45  1.034   .292   .549   2.59   .460  -.019   3
+   5 puru361  1843 1924     82      2      1    .397   2.58   9.00  1.756   .582   .467   2.26   .485   .041   1
+   6 puru361c 1950 2010     61      0      0    .436    .91   2.11   .448   .540   .324   2.39   .350  -.003   1
+   7 puru122b 1839 1949    111      3      2    .310   2.18   5.55  1.223   .498   .412   2.35   .436  -.047   3
+   8 puru353a 1831 2010    180      5      2    .380   1.43   5.36  1.120   .619   .410   2.30   .450  -.010   3
+   9 puru815  1829 2010    182      5      2    .459   1.84   7.00  1.216   .447   .538   2.48   .519   .014   1
+  10 puru314b 1894 2010    117      3      2    .355   1.19   3.62   .690   .135   .529   2.27   .469  -.109   0
+  11 puru698a 1858 1924     67      1      0    .506   2.38   6.19  1.533   .290   .584   2.60   .512  -.005   2
+  12 pu363b   1840 2010    171      5      2    .355   1.31   5.55  1.110   .637   .457   2.38   .467  -.003   1
+  13 puru122  1875 1949     75      2      1    .379   2.17   6.00  1.207   .245   .481   2.40   .434  -.082   0
+  14 pur363b  1875 2010    136      3      1    .424    .93   2.77   .517   .331   .434   2.37   .441   .019   1
+  15 pur 002  1829 2010    182      5      1    .741   1.69   4.05   .767   .488   .330   2.05   .308   .072   0
+  16 pur553b  1825 2010    186      5      0    .575   1.53   4.30   .764   .521   .414   2.28   .382   .008   1
+  17 pur194a  1817 2010    194      6      0    .615   1.41   3.32   .578   .735   .260   2.01   .277   .036   1
+  18 pur12c   1808 1949    142      4      0    .655   1.67   4.13   .895   .458   .475   2.52   .432   .011   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2502     66     14    .533   1.61   9.00   .941   .466   .447   3.01   .428   .008
+
+ DATA CHECKS (rwl.check): bol003
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bol003.rwl
+ 18 series, 2502 measurements, 1798-2010, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file bol003.rwl, MD5 848bb386269a7926a6e18dd5a5bbd3cb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

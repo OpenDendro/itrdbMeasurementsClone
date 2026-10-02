@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: nam002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nam002.rwl
+      MD5 of measurement file: a856477807a9d56b93c554241819fadc
+      Date checked           : 01OCT26
+      Beginning year         : 1876
+      Ending year            : 2000
+      Principal investigators: Trouet, V.; Fichtler, E.
+      Site name              : Ondangwa
+      Species information    : PTAN Pterocarpus angolensis DC.
+      Latitude               : 17.3900 S
+      Longitude              : 15.9800 E
+      Elevation              : 1128 m
+
+      Series intercorrelation: 0.084
+      Avg mean sensitivity   : 0.461
+      Avg standard deviation : 2.134
+      Avg autocorrelation    : 0.249
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 18  (A 0, B 18; 14 of the B weak at every lag)
+      Pct problem segments   : 100.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nam002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 OPA01    1876 2000  .04B .11B .09B
+   2 OPA02    1886 2000  .20B .15B .25B
+   3 OPA03    1888 2000 -.01B-.07B-.13B
+   4 OPA04    1892 2000  .09B .20B .17B
+   5 OPA05    1893 2000  .08B-.30B-.27B
+   6 OPA06    1922 2000      -.08B-.16B
+   7 OPA07    1937 2000            .02B
+ Av segment correlation  .08  .00 -.00 
+
+ FLAGGED SEGMENTS: nam002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 OPA01    1900 1949     B     .039        -5      .199   .160  weak at every lag
+   1 OPA01    1925 1974     B     .108        -5      .185   .077  weak at every lag
+   1 OPA01    1950 1999     B     .088        -6      .174   .086  weak at every lag
+   2 OPA02    1900 1949     B     .201        -5      .378   .177
+   2 OPA02    1925 1974     B     .148        -2      .335   .188
+   2 OPA02    1950 1999     B     .250        -7      .277   .027  weak at every lag
+   3 OPA03    1900 1949     B    -.009         5      .290   .300  weak at every lag
+   3 OPA03    1925 1974     B    -.072         2      .322   .394  weak at every lag
+   3 OPA03    1950 1999     B    -.135        -2      .290   .424  weak at every lag
+   4 OPA04    1900 1949     B     .087         1      .183   .096  weak at every lag
+   4 OPA04    1925 1974     B     .204         2      .393   .189
+   4 OPA04    1950 1999     B     .171        -5      .234   .063  weak at every lag
+   5 OPA05    1900 1949     B     .083         2      .175   .092  weak at every lag
+   5 OPA05    1925 1974     B    -.299         3      .475   .774
+   5 OPA05    1950 1999     B    -.268        -4      .164   .431  weak at every lag
+   6 OPA06    1925 1974     B    -.080        -8      .311   .391  weak at every lag
+   6 OPA06    1950 1999     B    -.163        -6      .327   .490  weak at every lag
+   7 OPA07    1950 1999     B     .023        -8      .161   .137  weak at every lag
+
+ DESCRIPTIVE STATISTICS: nam002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 OPA01    1876 2000    125      3      3    .144   4.86  15.78  2.882   .445   .460   2.58   .429   .044   0
+   2 OPA02    1886 2000    115      3      3    .183   3.36   9.90  1.867   .200   .477   2.11   .428  -.041   0
+   3 OPA03    1888 2000    113      3      3   -.046   4.69  14.54  2.891   .335   .530   2.38   .484   .037   0
+   4 OPA04    1892 2000    109      3      3    .193   2.64   7.07  1.349   .316   .414   2.01   .365  -.003   2
+   5 OPA05    1893 2000    108      3      3   -.075   3.29   7.94  1.527   .088   .439   2.11   .397  -.053   0
+   6 OPA06    1922 2000     79      2      2   -.069   4.94  12.58  2.492   .096   .517   2.37   .461  -.008   0
+   7 OPA07    1937 2000     64      1      1    .050   3.42   8.22  1.479  -.004   .447   2.09   .383  -.129   0
+   8 OPA08    1957 2000     44      0      0    .146   5.07  13.17  2.596   .301   .418   2.08   .375   .005   2
+   9 OPA09    1973 2000     28      0      0    .540   4.04   9.02  1.999   .513   .335   1.68   .329   .068   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            785     18     18    .084   3.96  15.78  2.134   .249   .461   2.58   .416  -.010
+
+ DATA CHECKS (rwl.check): nam002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/nam002.rwl
+ 9 series, 785 measurements, 1876-2000, 0.01 mm precision
+ 0 error(s), 0 warning(s), 4 note(s)
+ -------------
+ Nothing to report at this severity.
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file nam002.rwl, MD5 a856477807a9d56b93c554241819fadc.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

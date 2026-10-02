@@ -1,0 +1,186 @@
+
+ COFECHA-style crossdating report: brit078
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit078.rwl
+      MD5 of measurement file: ee6b40de8ec44fa66224a64d20d664ee
+      Date checked           : 01OCT26
+      Beginning year         : 1381
+      Ending year            : 1559
+      Principal investigators: Arnold, A.J.; Howard, R.E.
+      Site name              : Codnor Castle
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 53.0444 N
+      Longitude              : 1.3546 W
+      Elevation              : 107 m
+
+      Series intercorrelation: 0.562
+      Avg mean sensitivity   : 0.204
+      Avg standard deviation : 0.892
+      Avg autocorrelation    : 0.781
+      Number dated series    : 50
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 3.45
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit078
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1400 1425 1450 1475 1500 
+                        1449 1474 1499 1524 1549 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 CODC01A  1426 1536            .63  .59      
+   2 CODC01B  1426 1536            .58  .60      
+   3 CODC02A  1440 1535            .59  .66      
+   4 CODC02B  1440 1535            .59  .62      
+   5 CODC03A  1439 1559            .64  .52  .23B
+   6 CODC03B  1439 1559            .65  .49  .19B
+   7 CODC04A  1415 1501       .63  .49           
+   8 CODC04B  1415 1503       .61  .51           
+  11 CODC06A  1440 1538            .34  .38      
+  12 CODC06B  1440 1538            .38  .39      
+  13 CODC07A  1454 1538                 .47      
+  14 CODC07B  1454 1538                 .54      
+  15 CODC08A  1381 1530  .57  .54  .61  .71      
+  16 CODC08B  1381 1530  .52  .54  .62  .65      
+  17 CODC09A  1468 1542                 .73      
+  18 CODC09B  1468 1542                 .68      
+  19 CODC10A  1444 1541            .53  .53      
+  20 CODC10B  1444 1541            .53  .57      
+  21 CODC11A  1437 1514            .60           
+  22 CODC11B  1437 1514            .62           
+  23 CODC14A  1396 1494  .65  .64                
+  24 CODC14B  1396 1494  .67  .64                
+  25 CODC15A  1415 1508       .61  .66           
+  26 CODC15B  1415 1508       .60  .67           
+  27 CODC16A  1411 1530       .65  .72  .73      
+  28 CODC16B  1411 1530       .59  .69  .74      
+  29 CODC18A  1438 1547            .63  .66      
+  30 CODC18B  1438 1547            .61  .64      
+  31 CODC20A  1431 1547            .56  .57      
+  32 CODC20B  1431 1547            .55  .58      
+  33 CODC21A  1426 1545            .65  .60      
+  34 CODC21B  1426 1545            .65  .59      
+  35 CODC22A  1460 1540                 .59      
+  36 CODC22B  1460 1540                 .61      
+  37 CODC23A  1406 1516       .47  .52           
+  38 CODC23B  1406 1516       .49  .55           
+  39 CODC24A  1403 1483       .50                
+  40 CODC24B  1403 1483       .46                
+  43 CODC35A  1468 1540                 .64      
+  44 CODC35B  1468 1540                 .66      
+  45 CODC36A  1422 1492       .44                
+  46 CODC36B  1469 1552                 .41  .30A
+  47 CODC37A  1421 1493       .52                
+  48 CODC37B  1421 1493       .49                
+  49 CODC38A  1412 1544       .55  .56  .45      
+  50 CODC38B  1412 1544       .53  .53  .45      
+ Av segment correlation  .60  .55  .58  .58  .24 
+
+ FLAGGED SEGMENTS: brit078
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   5 CODC03A  1500 1549     B     .225         5      .297   .072  weak at every lag
+   6 CODC03B  1500 1549     B     .188        -1      .323   .136  weak at every lag
+  46 CODC36B  1500 1549     A     .302         0
+
+ DESCRIPTIVE STATISTICS: brit078
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CODC01A  1426 1536    111      2      0    .598   1.60   5.83   .877   .805   .213   1.56   .234   .017   1
+   2 CODC01B  1426 1536    111      2      0    .564   1.61   5.89   .886   .818   .194   1.50   .224   .059   1
+   3 CODC02A  1440 1535     96      2      0    .629   1.74   2.94   .458   .538   .206   1.60   .204   .011   3
+   4 CODC02B  1440 1535     96      2      0    .610   1.76   3.01   .463   .560   .197   1.67   .201   .028   3
+   5 CODC03A  1439 1559    121      3      1    .485   1.54   3.34   .764   .864   .177   1.45   .184  -.013   1
+   6 CODC03B  1439 1559    121      3      1    .458   1.53   3.34   .754   .867   .187   1.46   .186   .013   1
+   7 CODC04A  1415 1501     87      2      0    .551   1.90   3.00   .560   .708   .187   1.40   .199   .021   1
+   8 CODC04B  1415 1503     89      2      0    .526   1.86   2.79   .574   .732   .171   1.41   .188   .034   1
+   9 CODC05A  1460 1522     63      0      0    .595   2.51   9.94  2.068   .833   .269   2.13   .324   .010   2
+  10 CODC05B  1460 1522     63      0      0    .604   2.54   9.89  2.059   .829   .274   2.19   .315   .027   2
+  11 CODC06A  1440 1538     99      2      0    .414   2.08   5.13  1.044   .788   .254   1.83   .280  -.006   2
+  12 CODC06B  1440 1538     99      2      0    .426   2.08   5.16  1.064   .801   .243   1.89   .278  -.002   2
+  13 CODC07A  1454 1538     85      1      0    .441   2.16   4.68   .955   .783   .226   1.66   .239  -.005   2
+  14 CODC07B  1454 1538     85      1      0    .501   2.12   5.66   .965   .756   .227   1.86   .262   .067   1
+  15 CODC08A  1381 1530    150      4      0    .537   1.37   2.91   .559   .898   .152   1.45   .162   .003   2
+  16 CODC08B  1381 1530    150      4      0    .524   1.37   2.84   .555   .883   .165   1.42   .170   .008   2
+  17 CODC09A  1468 1542     75      1      0    .704   1.83   3.99   .709   .815   .169   1.51   .187   .065   1
+  18 CODC09B  1468 1542     75      1      0    .643   1.80   3.87   .697   .822   .172   1.51   .196   .085   1
+  19 CODC10A  1444 1541     98      2      0    .461   1.56   4.03   .716   .785   .213   1.52   .222   .048   1
+  20 CODC10B  1444 1541     98      2      0    .521   1.54   3.86   .698   .814   .187   1.51   .206   .067   1
+  21 CODC11A  1437 1514     78      1      0    .648   2.36   4.41   .740   .818   .150   1.28   .138   .134   0
+  22 CODC11B  1437 1514     78      1      0    .647   2.36   4.36   .733   .818   .149   1.27   .136   .100   0
+  23 CODC14A  1396 1494     99      2      0    .557   3.23   9.07  1.871   .870   .224   1.95   .251   .102   1
+  24 CODC14B  1396 1494     99      2      0    .576   3.24   8.66  1.873   .890   .213   1.74   .229   .108   1
+  25 CODC15A  1415 1508     94      2      0    .689   2.05   3.53   .721   .714   .201   1.51   .203   .006   1
+  26 CODC15B  1415 1508     94      2      0    .682   2.05   3.57   .714   .712   .197   1.52   .203   .001   1
+  27 CODC16A  1411 1530    120      3      0    .702   2.21   5.91  1.124   .863   .187   1.53   .177  -.011   1
+  28 CODC16B  1411 1530    120      3      0    .683   2.21   6.13  1.130   .849   .174   1.54   .172  -.007   1
+  29 CODC18A  1438 1547    110      2      0    .628   1.95   3.86   .651   .803   .162   1.42   .161   .022   1
+  30 CODC18B  1438 1547    110      2      0    .599   1.92   3.78   .631   .794   .164   1.43   .162   .018   1
+  31 CODC20A  1431 1547    117      2      0    .545   1.78   3.89   .658   .725   .191   1.95   .194  -.019   2
+  32 CODC20B  1431 1547    117      2      0    .527   1.77   3.97   .659   .675   .194   2.09   .204   .019   3
+  33 CODC21A  1426 1545    120      2      0    .652   1.66   3.62   .612   .744   .184   1.66   .214   .050   1
+  34 CODC21B  1426 1545    120      2      0    .640   1.63   3.52   .576   .723   .187   1.65   .214   .044   1
+  35 CODC22A  1460 1540     81      1      0    .560   1.98   5.11  1.089   .807   .196   1.64   .285  -.010   2
+  36 CODC22B  1460 1540     81      1      0    .568   1.98   4.80  1.086   .808   .200   1.63   .278   .003   2
+  37 CODC23A  1406 1516    111      2      0    .512   1.67   5.91  1.040   .808   .269   2.08   .312  -.022   3
+  38 CODC23B  1406 1516    111      2      0    .546   1.67   5.94  1.035   .803   .271   2.03   .311  -.027   3
+  39 CODC24A  1403 1483     81      1      0    .596   2.18   7.23  1.263   .835   .255   1.75   .315   .078   1
+  40 CODC24B  1403 1483     81      1      0    .566   2.13   7.09  1.233   .832   .250   1.73   .309  -.003   2
+  41 CODC34A  1455 1523     69      0      0    .607   1.84   4.49   .739   .715   .209   1.72   .236   .021   1
+  42 CODC34B  1455 1523     69      0      0    .600   1.84   4.51   .732   .715   .209   1.71   .231   .018   1
+  43 CODC35A  1468 1540     73      1      0    .552   2.68   6.80  1.858   .850   .249   1.71   .280   .023   1
+  44 CODC35B  1468 1540     73      1      0    .541   2.69   6.89  1.872   .850   .246   1.72   .276   .046   1
+  45 CODC36A  1422 1492     71      1      0    .548   2.00   4.10   .647   .580   .205   1.52   .205  -.033   3
+  46 CODC36B  1469 1552     84      2      1    .334   1.18   4.10   .787   .890   .193   1.56   .207   .043   1
+  47 CODC37A  1421 1493     73      1      0    .634   1.98   3.50   .536   .499   .194   1.74   .211   .010   1
+  48 CODC37B  1421 1493     73      1      0    .603   1.98   3.57   .540   .479   .199   1.69   .216   .006   1
+  49 CODC38A  1412 1544    133      3      0    .487   1.63   3.98   .785   .786   .236   1.69   .238  -.012   2
+  50 CODC38B  1412 1544    133      3      0    .461   1.62   3.92   .778   .789   .238   1.65   .243  -.013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4845     87      3    .562   1.92   9.94   .892   .781   .204   2.19   .222   .022
+
+ DATA CHECKS (rwl.check): brit078
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit078.rwl
+ 50 series, 4845 measurements, 1381-1559, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit078.rwl, MD5 ee6b40de8ec44fa66224a64d20d664ee.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

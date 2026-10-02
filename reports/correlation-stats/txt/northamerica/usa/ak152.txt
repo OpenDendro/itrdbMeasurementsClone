@@ -1,0 +1,120 @@
+
+ COFECHA-style crossdating report: ak152
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak152.rwl
+      MD5 of measurement file: 766858cc8449115dd16abefc73337662
+      Date checked           : 01OCT26
+      Beginning year         : 1965
+      Ending year            : 2015
+      Principal investigators: Ackerman, D.; Griffin, R.D.; Hobbie, S.E.; Finlay, J.C.
+      Site name              : Kuparuk Upland
+      Species information    : SAPC Salix pulchra Cham.
+      Latitude               : 68.6620 N
+      Longitude              : 149.4280 W
+      Elevation              : 720 m
+
+      Series intercorrelation: 0.520
+      Avg mean sensitivity   : 0.369
+      Avg standard deviation : 0.114
+      Avg autocorrelation    : 0.673
+      Number dated series    : 20
+      Segment length tested  : 24
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 33.33
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak152
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  24-year dated segments, lagged  12 years
+ Flags:  A = correlation under   .4716 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1970 1982 
+                        1993 2005 
+ --- -------- ---------  ---- ---- 
+   1 kup35    1978 2015       .52 
+   2 kup02    1980 2015       .12B
+   5 kup09    1977 2015       .50 
+   8 kup15    1981 2015       .53 
+  12 kup23    1972 2015       .44B
+  13 kup25    1966 2015  .29A .56 
+  15 kup27    1965 2015  .51  .58 
+ Av segment correlation  .40  .46 
+
+ FLAGGED SEGMENTS: ak152
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 kup02    1982 2005     B     .118        -7      .416   .298  weak at every lag
+  12 kup23    1982 2005     B     .441        -6      .449   .008  weak at every lag
+  13 kup25    1970 1993     A     .295         0
+
+ DESCRIPTIVE STATISTICS: ak152
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 kup35    1978 2015     38      1      0    .512    .19    .39   .085   .613   .286   1.78   .296   .016   2
+   2 kup02    1980 2015     36      1      1    .347    .14    .29   .063   .790   .184   1.44   .214  -.043   1
+   3 kup03    1989 2015     27      0      0    .574    .14    .37   .091   .509   .539   2.20   .520   .017   1
+   4 kup07    1994 2015     22      0      0    .151    .18    .56   .137   .730   .458  10.66  2.097  -.294   0
+   5 kup09    1977 2015     39      1      0    .463    .22    .52   .106   .389   .433   1.91   .402   .221   0
+   6 kup10    1990 2015     26      0      0    .512    .14    .57   .125   .904   .359   1.86   .354   .283   0
+   7 kup12    1993 2015     23      0      0    .635    .18    .57   .128   .427   .538   1.97   .452  -.153   0
+   8 kup15    1981 2015     35      1      0    .544    .13    .45   .079   .755   .331   1.60   .308   .016   1
+   9 kup17    1993 2015     23      0      0    .419    .24    .70   .180   .689   .493   2.06   .463   .004   1
+  10 kup20    1997 2015     19      0      0    .363    .37    .65   .183   .678   .309   1.87   .345   .135   1
+  11 kup21    1984 2015     32      0      0    .670    .13    .39   .090   .725   .475   2.04   .435   .048   0
+  12 kup23    1972 2015     44      1      1    .552    .18    .49   .101   .647   .371   1.98   .365   .019   1
+  13 kup25    1966 2015     50      2      1    .604    .20    .56   .107   .700   .323   1.83   .328   .017   1
+  14 kup26    2000 2015     16      0      0    .499    .33    .70   .150   .810   .203   1.35   .182  -.061   0
+  15 kup27    1965 2015     51      2      0    .602    .16    .41   .075   .529   .333   2.05   .322   .028   1
+  16 kup34    1986 2015     30      0      0    .604    .13    .54   .089   .538   .403   2.41   .448   .278   0
+  17 kup38    1995 2015     21      0      0    .577    .27    .52   .145   .890   .262   1.35   .256   .059   2
+  18 kup39    1999 2015     17      0      0    .561    .20    .82   .184   .754   .481   2.85   .582   .078   2
+  19 kup40    1990 2015     26      0      0    .446    .22    .79   .190   .913   .296   1.97   .321  -.059   1
+  20 kup13    1991 2015     25      0      0    .552    .19    .64   .154   .837   .431   1.60   .349   .050   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            600      9      3    .520    .19    .82   .114   .673   .369  10.66   .423   .038
+
+ DATA CHECKS (rwl.check): ak152
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak152.rwl
+ 20 series, 600 measurements, 1965-2015, 0.01 mm precision
+ 0 error(s), 0 warning(s), 19 note(s)
+ -------------
+ Nothing to report at this severity.
+ 19 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file ak152.rwl, MD5 766858cc8449115dd16abefc73337662.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4716 for 24-year segments.
+ Segments: 24 years, lagged 12, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 24 years: the record is only 51 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

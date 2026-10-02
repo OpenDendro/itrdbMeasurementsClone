@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: che441
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che441.rwl
+      MD5 of measurement file: 1f51230a58dd77ffe6be3c6c94e8aafd
+      Date checked           : 01OCT26
+      Beginning year         : 1610
+      Ending year            : 2014
+      Principal investigators: Vanoni, M.; Nötzli, M.; Bigler, C.
+      Site name              : Aletschwald
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.3892 N
+      Longitude              : 8.0236 E
+      Elevation              : 2000 m
+
+      Series intercorrelation: 0.473
+      Avg mean sensitivity   : 0.178
+      Avg standard deviation : 0.456
+      Avg autocorrelation    : 0.834
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 7  (A 3, B 4; 1 of the B weak at every lag)
+      Pct problem segments   : 10.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che441
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 50170    1826 2014                                .36  .47  .53  .61  .55 
+   2 50171    1838 2014                                .31B .37B .47  .68  .64 
+   3 50172    1850 2014                                     .64  .74  .71  .53 
+   4 50173    1904 2014                                               .60  .51 
+   5 50174    1835 2014                                .55  .58  .65  .70  .55 
+   6 50175    1610 2014            .24A .49  .48  .27A .42  .41  .40  .51  .47 
+   7 50177    1748 2014            .36  .50  .48  .39  .53  .61  .68  .55  .52 
+   8 50178    1857 2014                                     .43  .47  .55  .45 
+   9 50179    1787 2014                      .36  .34  .30A .29B .59  .72  .73 
+  10 50180    1823 2014                           .18B .56  .64  .62  .70  .71 
+  11 50182    1743 2014            .35  .63  .62  .41  .53  .59  .58  .59  .54 
+ Av segment correlation            .32  .54  .48  .32  .44  .50  .57  .63  .56 
+
+ FLAGGED SEGMENTS: che441
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 50171    1850 1899     B     .306         4      .372   .066
+   2 50171    1875 1924     B     .368         6      .372   .004
+   6 50175    1750 1799     A     .241         0
+   6 50175    1825 1874     A     .272         0
+   9 50179    1850 1899     A     .302         0
+   9 50179    1875 1924     B     .291         9      .341   .050
+  10 50180    1825 1874     B     .176         6      .296   .120  weak at every lag
+
+ DESCRIPTIVE STATISTICS: che441
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 50170    1826 2014    189      5      0    .449   1.30   2.28   .473   .771   .201   1.74   .198   .008   1
+   2 50171    1838 2014    177      5      2    .437   1.26   2.76   .431   .787   .152   1.46   .163  -.025   1
+   3 50172    1850 2014    165      4      0    .549   1.46   3.04   .638   .897   .163   1.45   .168   .043   1
+   4 50173    1904 2014    111      2      0    .495   2.44   4.43   .658   .785   .146   1.37   .143  -.007   3
+   5 50174    1835 2014    180      5      0    .572   1.59   2.84   .447   .705   .172   1.63   .174  -.005   1
+   6 50175    1610 2014    405      9      2    .422    .64   2.05   .398   .904   .229   1.66   .219   .002   2
+   7 50177    1748 2014    267      9      0    .468   1.12   2.42   .420   .851   .163   1.43   .158  -.021   1
+   8 50178    1857 2014    158      4      0    .399   1.40   2.51   .362   .761   .144   1.44   .150   .002   1
+   9 50179    1787 2014    228      7      2    .417   1.31   2.90   .452   .815   .164   1.59   .180   .041   1
+  10 50180    1823 2014    192      6      1    .525   1.29   3.26   .649   .905   .171   1.51   .177  -.004   1
+  11 50182    1743 2014    272      9      0    .530    .57   1.80   .314   .863   .177   1.67   .187  -.002   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2344     65      7    .473   1.17   4.43   .456   .834   .178   1.74   .180   .003
+
+ DATA CHECKS (rwl.check): che441
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che441.rwl
+ 11 series, 2344 measurements, 1610-2014, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file che441.rwl, MD5 1f51230a58dd77ffe6be3c6c94e8aafd.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

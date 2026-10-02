@@ -1,0 +1,105 @@
+
+ COFECHA-style crossdating report: mi013
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 17:00 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : mi013.rwl
+      MD5 of measurement file: ef43b652e40c2c9f17ff163f919f9ee1
+      Date checked           : 02OCT26
+      Beginning year         : 1872
+      Ending year            : 2002
+      Principal investigators: Wyse, T.C.; Goebel, P.C.
+      Site name              : Good Harbor Plains
+      Species information    : QURU Quercus rubra L.
+      Latitude               : 44.9300 N
+      Longitude              : 85.8500 W
+      Elevation              : 188 m
+
+      Series intercorrelation: 0.529
+      Avg mean sensitivity   : 0.262
+      Avg standard deviation : 0.879
+      Avg autocorrelation    : 0.759
+      Number dated series    : 9
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 1, B 0)
+      Pct problem segments   : 7.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: mi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 81-2     1872 2002  .57  .63  .73 
+   2 94-2     1913 2002       .25A .64 
+   3 87-1     1895 2002  .64  .74  .71 
+   4 96       1933 2002            .56 
+   6 89-2     1907 2002       .67  .63 
+   7 84-2     1904 2002       .65  .63 
+   9 96-3     1942 2002            .38 
+ Av segment correlation  .60  .59  .61 
+
+ FLAGGED SEGMENTS: mi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 94-2     1925 1974     A     .253         0
+
+ DESCRIPTIVE STATISTICS: mi013
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 81-2     1872 2002    131      3      0    .600   1.67   6.16   .720   .646   .216   2.28   .245  -.013   3
+   2 94-2     1913 2002     90      2      1    .454   1.84   6.03  1.336   .891   .261   1.96   .304   .056   1
+   3 87-1     1895 2002    108      3      0    .587   1.32   3.24   .744   .756   .297   2.09   .342   .011   3
+   4 96       1933 2002     70      1      0    .527   1.66   4.70  1.008   .865   .239   1.67   .231   .001   1
+   5 60-2     1957 2002     46      0      0    .473   2.76   6.73  1.729   .821   .271   1.63   .263  -.191   1
+   6 89-2     1907 2002     96      2      0    .549   1.95   4.12   .798   .732   .236   2.15   .242   .010   1
+   7 84-2     1904 2002     99      2      0    .532   1.18   3.30   .734   .804   .310   2.28   .308   .004   3
+   8 71-3     1970 2002     33      0      0    .519   1.88   4.06   .961   .836   .251   1.44   .224  -.083   2
+   9 96-3     1942 2002     61      1      0    .402    .79   1.38   .313   .575   .294   1.78   .303  -.014   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            734     14      1    .529   1.61   6.73   .879   .759   .262   2.28   .278  -.009
+
+ DATA CHECKS (rwl.check): mi013
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/mi013.rwl
+ 9 series, 734 measurements, 1872-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 17:00 PDT.
+ Measurement file mi013.rwl, MD5 ef43b652e40c2c9f17ff163f919f9ee1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

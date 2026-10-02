@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: sd018
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : sd018.rwl
+      MD5 of measurement file: d896f4a77184fadf7665093921c9b9c1
+      Date checked           : 01OCT26
+      Beginning year         : 1717
+      Ending year            : 1990
+      Principal investigators: Meko, D.M.; Sieg, C.H.
+      Site name              : Rockerville
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 43.9300 N
+      Longitude              : 103.3700 W
+      Elevation              : 1370 m
+
+      Series intercorrelation: 0.585
+      Avg mean sensitivity   : 0.218
+      Avg standard deviation : 0.419
+      Avg autocorrelation    : 0.711
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: sd018
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 ROC01A   1902 1990                           .41 
+   2 ROC01B   1897 1990                      .47  .39 
+   3 ROC03A   1899 1990                      .58  .68 
+   4 ROC03B   1909 1990                           .66 
+   5 ROC04A   1747 1990  .54  .64  .63  .35  .43  .54 
+   6 ROC04B   1717 1990  .82  .68  .57  .59  .57  .56 
+   7 ROC05A   1745 1990  .53  .55  .63  .59  .54  .60 
+   8 ROC05B   1727 1990  .61  .59  .59  .50  .42  .52 
+   9 ROC06A   1807 1990       .65  .60  .65  .76  .75 
+  10 ROC06B   1780 1990  .60  .65  .65  .67  .51  .43 
+ Av segment correlation  .62  .63  .61  .56  .53  .56 
+
+ FLAGGED SEGMENTS: sd018
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: sd018
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 ROC01A   1902 1990     89      1      0    .485   1.38   5.61   .830   .780   .262   1.81   .271   .019   3
+   2 ROC01B   1897 1990     94      2      0    .409   1.28   4.83   .782   .781   .271   1.71   .289   .066   1
+   3 ROC03A   1899 1990     92      2      0    .657   1.95   3.72   .666   .561   .249   1.95   .262  -.033   1
+   4 ROC03B   1909 1990     82      1      0    .677   2.00   4.07   .704   .453   .274   1.76   .270   .007   1
+   5 ROC04A   1747 1990    244      6      0    .606    .61   1.44   .198   .717   .171   1.89   .176  -.017   3
+   6 ROC04B   1717 1990    274      6      0    .589    .72   1.50   .204   .638   .179   1.82   .195   .014   1
+   7 ROC05A   1745 1990    246      6      0    .602    .71   1.65   .326   .754   .237   2.06   .244   .017   1
+   8 ROC05B   1727 1990    264      6      0    .547    .62   1.37   .222   .707   .209   1.68   .212  -.011   3
+   9 ROC06A   1807 1990    184      5      0    .675   1.39   2.89   .604   .818   .204   1.68   .220   .017   1
+  10 ROC06B   1780 1990    211      6      0    .560   1.31   3.21   .599   .769   .250   1.73   .268   .035   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1780     41      0    .585   1.01   5.61   .419   .711   .218   2.06   .229   .009
+
+ DATA CHECKS (rwl.check): sd018
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/sd018.rwl
+ 10 series, 1780 measurements, 1717-1990, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file sd018.rwl, MD5 d896f4a77184fadf7665093921c9b9c1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

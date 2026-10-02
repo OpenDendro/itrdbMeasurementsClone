@@ -1,0 +1,133 @@
+
+ COFECHA-style crossdating report: deu328
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu328.rwl
+      MD5 of measurement file: 230f43c36be8612c00051f62561d6c76
+      Date checked           : 01OCT26
+      Beginning year         : 1797
+      Ending year            : 2008
+      Principal investigators: Hartl, C.; Dittmar, C.; Zang, C.; Rothe, A.
+      Site name              : Berchtesgaden, Wachterlsteig
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.6320 N
+      Longitude              : 12.8520 E
+      Elevation              : 1040 m
+
+      Series intercorrelation: 0.615
+      Avg mean sensitivity   : 0.247
+      Avg standard deviation : 0.455
+      Avg autocorrelation    : 0.784
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 1, B 5; 4 of the B weak at every lag)
+      Pct problem segments   : 6.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu328
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 BGGP501G 1824 2008       .53  .81  .79  .76  .67  .73 
+   2 BGGP501K 1811 2008       .46  .69  .64  .74  .71  .63 
+   3 BGGP502G 1812 2008       .73  .79  .73  .74  .74  .67 
+   4 BGGP502K 1814 2008       .75  .62  .54  .76  .81  .74 
+   5 BGGP503G 1809 2008       .74  .83  .68  .63  .60  .69 
+   6 BGGP503K 1811 2008       .77  .83  .74  .71  .69  .79 
+   7 BGGP504G 1864 2008                 .65  .66  .64  .60 
+   8 BGGP504K 1871 2008                 .59  .54  .52  .57 
+   9 BGGP505G 1824 2008       .63  .55  .48  .71  .80  .70 
+  10 BGGP505K 1823 2008       .49  .69  .84  .87  .68  .55 
+  11 BGGP508G 1800 2008       .76  .73  .69  .51  .48  .69 
+  12 BGGP508K 1797 2008       .71  .74  .64  .35  .40  .78 
+  13 BGGP509G 1852 2008                 .66  .76  .78  .76 
+  14 BGGP509K 1862 2008                 .72  .76  .74  .78 
+  15 BGGP510G 1875 2008                      .42B .11B .56 
+  16 BGGP510K 1895 2008                      .37  .07B .50 
+  17 BGGP511G 1888 2008                      .53  .47  .65 
+  18 BGGP511K 1891 2008                      .43  .45  .58 
+  19 BGGP512G 1815 2008       .29B .59  .69  .50  .19B .37 
+  20 BGGP512K 1820 2008       .41  .56  .65  .53  .30A .47 
+ Av segment correlation       .61  .70  .67  .61  .54  .64 
+
+ FLAGGED SEGMENTS: deu328
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 BGGP510G 1900 1949     B     .420         8      .444   .025
+  15 BGGP510G 1925 1974     B     .106        -8      .304   .198  weak at every lag
+  16 BGGP510K 1925 1974     B     .073        10      .272   .199  weak at every lag
+  19 BGGP512G 1825 1874     B     .294         8      .302   .008  weak at every lag
+  19 BGGP512G 1925 1974     B     .188        -8      .227   .039  weak at every lag
+  20 BGGP512K 1925 1974     A     .304         0
+
+ DESCRIPTIVE STATISTICS: deu328
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BGGP501G 1824 2008    185      6      0    .719    .97   2.16   .371   .751   .231   1.67   .229   .005   1
+   2 BGGP501K 1811 2008    198      6      0    .619    .94   2.40   .443   .863   .211   1.59   .221  -.013   3
+   3 BGGP502G 1812 2008    197      6      0    .693    .76   1.99   .376   .836   .257   1.63   .244  -.008   2
+   4 BGGP502K 1814 2008    195      6      0    .673    .87   2.12   .425   .868   .215   1.74   .208   .013   1
+   5 BGGP503G 1809 2008    200      6      0    .657    .72   2.10   .353   .778   .251   2.04   .264   .003   1
+   6 BGGP503K 1811 2008    198      6      0    .735    .83   1.67   .363   .797   .260   1.66   .248   .032   1
+   7 BGGP504G 1864 2008    145      4      0    .632   1.09   5.01   .864   .909   .277   1.77   .270   .028   1
+   8 BGGP504K 1871 2008    138      4      0    .579   1.01   4.44   .758   .862   .299   2.07   .303   .010   1
+   9 BGGP505G 1824 2008    185      6      0    .654    .85   1.72   .305   .654   .244   1.83   .240  -.014   1
+  10 BGGP505K 1823 2008    186      6      0    .671    .87   1.87   .352   .703   .259   1.88   .258   .009   2
+  11 BGGP508G 1800 2008    209      6      0    .640    .77   2.50   .420   .807   .304   1.83   .282  -.002   1
+  12 BGGP508K 1797 2008    212      6      0    .616    .88   2.18   .378   .720   .293   1.80   .286   .037   1
+  13 BGGP509G 1852 2008    157      4      0    .709   1.01   1.90   .327   .718   .209   1.74   .215  -.040   3
+  14 BGGP509K 1862 2008    147      4      0    .704   1.11   2.66   .463   .775   .216   1.74   .235   .033   1
+  15 BGGP510G 1875 2008    134      3      2    .496   1.65   3.89   .724   .867   .200   1.53   .205  -.076   3
+  16 BGGP510K 1895 2008    114      3      1    .419   1.55   3.28   .708   .907   .163   1.40   .166  -.041   3
+  17 BGGP511G 1888 2008    121      3      0    .586   1.35   3.00   .557   .853   .168   1.50   .189  -.013   3
+  18 BGGP511K 1891 2008    118      3      0    .478   1.33   2.56   .511   .815   .204   1.39   .199   .043   2
+  19 BGGP512G 1815 2008    194      6      2    .369    .78   2.44   .338   .578   .306   2.04   .307   .033   1
+  20 BGGP512K 1820 2008    189      6      1    .495    .88   3.04   .480   .765   .276   2.02   .283   .040   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3422    100      6    .615    .97   5.01   .455   .784   .247   2.07   .247   .006
+
+ DATA CHECKS (rwl.check): deu328
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu328.rwl
+ 20 series, 3422 measurements, 1797-2008, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu328.rwl, MD5 230f43c36be8612c00051f62561d6c76.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

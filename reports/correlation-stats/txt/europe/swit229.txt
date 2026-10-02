@@ -1,0 +1,105 @@
+
+ COFECHA-style crossdating report: swit229
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit229.rwl
+      MD5 of measurement file: 799e6cd9a2f0f0da0e97d38fbf80ec5f
+      Date checked           : 01OCT26
+      Beginning year         : 1901
+      Ending year            : 1995
+      Principal investigators: Bräker, O.U.; Zingg, A.
+      Site name              : Paturage de l'Envers
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.2700 N
+      Longitude              : 7.4556 E
+      Elevation              : 790 m
+
+      Series intercorrelation: 0.550
+      Avg mean sensitivity   : 0.186
+      Avg standard deviation : 1.745
+      Avg autocorrelation    : 0.731
+      Number dated series    : 12
+      Segment length tested  : 46
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit229
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1995 
+ --- -------- ---------  ---- 
+   1 CREF0311 1905 1995  .61 
+   2 CREF0321 1901 1995  .63 
+   3 CREF0331 1912 1995  .58 
+   6 CREF0361 1936 1995  .60 
+ Av segment correlation  .60 
+
+ FLAGGED SEGMENTS: swit229
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swit229
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 CREF0311 1905 1995     91      1      0    .610   3.87   6.97  1.188   .762   .166   1.44   .168   .025   3
+   2 CREF0321 1901 1995     95      1      0    .638   3.47   8.13  1.782   .860   .209   1.78   .222   .013   2
+   3 CREF0331 1912 1995     84      1      0    .563   4.14   7.99  1.679   .827   .163   1.51   .172   .048   1
+   4 CREF0341 1955 1995     41      0      0    .578   5.04   6.70  1.224   .457   .202   1.52   .205   .148   0
+   5 CREF0351 1958 1995     38      0      0    .617   4.80  12.21  1.546   .365   .188   1.37   .192   .332   1
+   6 CREF0361 1936 1995     60      1      0    .548   4.60  12.85  2.767   .910   .195   1.50   .199  -.009   1
+   7 CREF0371 1961 1995     35      0      0    .542   4.77   7.19  1.159   .726   .131   1.18   .118   .123   2
+   8 CREF0381 1961 1995     35      0      0    .572   5.82   9.43  1.788   .538   .210   1.62   .232   .222   1
+   9 CREF0391 1951 1995     45      0      0    .634   5.23   9.50  1.938   .808   .178   1.48   .161  -.079   1
+  10 CREF0401 1951 1995     45      0      0    .488   4.80   9.98  2.278   .784   .217   1.46   .205  -.017   1
+  11 CREF0411 1959 1995     37      0      0    .187   5.69  10.97  2.789   .699   .246   1.45   .213   .179   3
+  12 CREF0421 1951 1995     45      0      0    .404   5.07   7.45  1.034   .592   .143   1.30   .141   .178   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            651      4      0    .550   4.54  12.85  1.745   .731   .186   1.78   .187   .074
+
+ DATA CHECKS (rwl.check): swit229
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit229.rwl
+ 12 series, 651 measurements, 1901-1995, 0.01 mm precision
+ 0 error(s), 0 warning(s), 8 note(s)
+ -------------
+ Nothing to report at this severity.
+ 8 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit229.rwl, MD5 799e6cd9a2f0f0da0e97d38fbf80ec5f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 46 years: the record is only 95 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

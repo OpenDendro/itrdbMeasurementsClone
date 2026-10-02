@@ -1,0 +1,188 @@
+
+ COFECHA-style crossdating report: che422
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che422.rwl
+      MD5 of measurement file: b147c4f1101db017bb8a383170a04cfe
+      Date checked           : 01OCT26
+      Beginning year         : 1878
+      Ending year            : 2011
+      Principal investigators: Hartl, C.; Kuhl, E.; Esper, J.; Riechelmann, D.F.C.
+      Site name              : Simplon RCS09
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 46.1960 N
+      Longitude              : 8.0450 E
+      Elevation              : 1712 m
+
+      Series intercorrelation: 0.614
+      Avg mean sensitivity   : 0.241
+      Avg standard deviation : 0.600
+      Avg autocorrelation    : 0.822
+      Number dated series    : 24
+      Series crossdated      : 4
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che422
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+  16 RCS0922b 1927 2011            .53 
+  18 RCS0923B 1913 2011       .74  .68 
+  19 RCS0925A 1878 2011       .71  .59 
+  24 RCS0930b 1900 2011       .72  .66 
+ Av segment correlation       .72  .61 
+
+ FLAGGED SEGMENTS: che422
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: che422
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RCS0902a 1898 2011    108                          .77   3.38   .542   .883   .253                         
+   2 RCS0902b 1892 2005    110                          .70   2.48   .438   .819   .299                         
+   3 RCS0903a 1889 2011    120                         1.53   4.73   .964   .904   .279                         
+   4 RCS0903b 1881 2011    121                         1.06   3.06   .641   .899   .247                         
+   5 RCS0906a 1923 2011     81                          .69   2.27   .439   .848   .258                         
+   6 RCS0906b 1914 2006     92                          .65   2.36   .492   .863   .269                         
+   7 RCS0909a 1923 2011     79                         1.00   1.81   .310   .741   .212                         
+   8 RCS0909b 1917 2011     93                         1.05   2.57   .428   .752   .247                         
+   9 RCS0911a 1902 2009     75                         1.30   2.70   .446   .752   .217                         
+  10 RCS0911b 1922 2011     76                         1.71   3.37   .683   .784   .215                         
+  11 RCS0919a 1910 2011    101                         1.91   3.69   .692   .698   .256                         
+  12 RCS0919b 1911 2011     94                         1.29   3.52   .854   .920   .239                         
+  13 RCS0920a 1907 2011    101                         1.25   3.50   .872   .919   .258                         
+  14 RCS0920b 1908 2011    102                          .80   3.50   .692   .900   .274                         
+  15 RCS0922a 1924 2011     84                         1.04   1.75   .314   .632   .228                         
+  16 RCS0922b 1927 2011     85      1      0    .497   1.00   2.14   .298   .697   .201   1.39   .197  -.055   3
+  17 RCS0923A 1912 2011     99                         1.17   3.67   .857   .886   .251                         
+  18 RCS0923B 1913 2011     99      2      0    .617   1.08   3.40   .754   .897   .247   1.48   .231   .009   3
+  19 RCS0925A 1878 2011    134      2      0    .634   1.48   3.58   .721   .785   .240   1.72   .250  -.003   3
+  20 RCS0925b 1895 2011    113                         1.14   2.61   .452   .774   .211                         
+  21 RCS0929a 1898 1996     98                          .97   5.04   .663   .845   .241                         
+  22 RCS0929b 1901 2011    105                         1.23   3.72   .604   .834   .232                         
+  23 RCS0930a 1906 2011    105                         1.11   2.05   .412   .789   .197                         
+  24 RCS0930b 1900 2011    112      2      0    .675   1.65   2.73   .565   .810   .186   1.45   .193  -.005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2387      7      0    .614   1.16   5.04   .600   .822   .241   1.72   .220  -.011
+
+ DATA CHECKS (rwl.check): che422
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che422.rwl
+ 24 series, 2387 measurements, 1878-2011, 0.01 mm precision
+ 0 error(s), 20 warning(s), 20 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (20)
+     RCS0902a: no measurement for 1955-1957, 1963, 1971, 1981, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0902b: no measurement for 1955-1957, 1971, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0903a: no measurement for 1902, 1955-1956, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0903b: no measurement for 1888-1889, 1908-1910, 1925, 1955-1957, 1963, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0906a: no measurement for 1931-1932, 1971-1976, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0906b: no measurement for 1924, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0909a: no measurement for 1947, 1954-1958, 1971-1974, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0909b: no measurement for 1926-1927, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0911a: no measurement for 1921, 1936-1964, 1967-1968, 1971, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     RCS0911b: no measurement for 1927, 1931-1934, 1937-1938, 1943, 1960-1963, 1969, 2001, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     ... and 10 more; see as.data.frame()
+ 20 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file che422.rwl, MD5 b147c4f1101db017bb8a383170a04cfe.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series RCS0902a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0902b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0903a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0903b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0906a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0906b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0909a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0909b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0911a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0911b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0919a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0919b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0920a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0920b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0922a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0923A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0925b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0929a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0929b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series RCS0930a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: russ267
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ267.rwl
+      MD5 of measurement file: f5d2df94678253e90e5f98286b432429
+      Date checked           : 01OCT26
+      Beginning year         : 1841
+      Ending year            : 2014
+      Principal investigators: Deck, C.; Wiles, G.; Frederick, S.E.; Matsovsky, V.; Kuderina, T.; D'Arrigo, R.D.; Solomina, O.; Wiesenberg, N.
+      Site name              : Malkee
+      Species information    : BEER
+      Latitude               : 53.3223 N
+      Longitude              : 157.5471 E
+      Elevation              : 278 m
+
+      Series intercorrelation: 0.626
+      Avg mean sensitivity   : 0.368
+      Avg standard deviation : 0.494
+      Avg autocorrelation    : 0.596
+      Number dated series    : 23
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2)
+      Pct problem segments   : 3.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ267
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 MK01A    1899 2010  .57  .58  .62 
+   2 MK01B    1900 2014       .65  .69 
+   3 MK02A    1877 2011  .64  .64  .36B
+   4 MK03A    1878 2014  .76  .71  .80 
+   5 MK04     1882 2014  .78  .68  .61 
+   6 MK05A    1864 2014  .61  .67  .78 
+   7 MK05B    1841 2012  .58  .66  .77 
+   8 MK06A    1885 2013  .67  .61  .73 
+   9 MK06B    1903 2014       .80  .74 
+  10 MK07A    1925 2014            .51 
+  11 MK07B    1940 2014            .31B
+  12 MK08A    1902 2014       .61  .67 
+  13 MK08B    1888 2014  .59  .59  .73 
+  14 MK09     1925 2014       .48  .58 
+  15 MK10     1915 2014       .43  .57 
+  16 MK11     1905 2014       .57  .73 
+  17 MK12A    1893 1974  .69  .72      
+  18 MK12B    1881 1974  .63  .56      
+  19 MK13A    1897 2014  .72  .68  .75 
+  20 MK13B    1904 2014       .81  .77 
+  21 MK14     1880 2014  .69  .56  .64 
+  22 MK15A    1872 2014  .70  .73  .79 
+  23 MK15B    1863 2014  .59  .54  .68 
+ Av segment correlation  .66  .63  .66 
+
+ FLAGGED SEGMENTS: russ267
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 MK02A    1950 1999     B     .361         1      .443   .082
+  11 MK07B    1950 1999     B     .309         5      .352   .044
+
+ DESCRIPTIVE STATISTICS: russ267
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 MK01A    1899 2010    112      3      0    .620   1.14   2.79   .502   .592   .356   2.29   .331   .006   1
+   2 MK01B    1900 2014    115      2      0    .593    .81   4.63   .530   .570   .372   3.18   .382   .011   2
+   3 MK02A    1877 2011    135      3      1    .483    .55   1.20   .253   .396   .451   2.31   .372   .055   0
+   4 MK03A    1878 2014    137      3      0    .769   1.01   3.19   .548   .703   .358   2.15   .347   .034   1
+   5 MK04     1882 2014    133      3      0    .682   1.28   2.67   .571   .488   .397   1.93   .366   .002   1
+   6 MK05A    1864 2014    151      3      0    .567   1.15   5.14   .646   .501   .444   2.53   .402  -.009   3
+   7 MK05B    1841 2012    172      3      0    .646    .86   3.14   .645   .791   .446   2.23   .401   .024   2
+   8 MK06A    1885 2013    129      3      0    .645    .56   1.25   .233   .657   .289   1.72   .259   .001   3
+   9 MK06B    1903 2014    112      2      0    .741    .70   1.28   .230   .409   .317   1.59   .269  -.027   2
+  10 MK07A    1925 2014     90      1      0    .504   1.75   3.90   .750   .816   .224   1.66   .230   .074   1
+  11 MK07B    1940 2014     75      1      1    .350   1.42   2.56   .636   .763   .270   1.99   .279  -.019   1
+  12 MK08A    1902 2014    113      2      0    .595   1.45   2.87   .616   .700   .336   2.27   .307   .046   3
+  13 MK08B    1888 2014    127      3      0    .616   1.76   3.86   .863   .720   .384   2.32   .357  -.015   0
+  14 MK09     1925 2014     90      2      0    .593    .49   1.28   .237   .192   .474   2.36   .453   .117   0
+  15 MK10     1915 2014    100      2      0    .559   1.10   2.53   .530   .658   .348   2.02   .313   .021   2
+  16 MK11     1905 2014    110      2      0    .678   1.22   2.71   .543   .545   .370   2.27   .333  -.031   2
+  17 MK12A    1893 1974     82      2      0    .722    .68   2.35   .484   .859   .362   1.88   .348   .013   2
+  18 MK12B    1881 1974     94      2      0    .550    .45   1.26   .268   .640   .393   2.38   .375  -.031   3
+  19 MK13A    1897 2014    118      3      0    .722   1.09   3.61   .553   .348   .433   2.44   .409   .003   1
+  20 MK13B    1904 2014    111      2      0    .635   1.07   2.57   .458   .307   .376   2.51   .370   .039   1
+  21 MK14     1880 2014    135      3      0    .611    .56   1.88   .331   .440   .489   2.35   .419   .014   0
+  22 MK15A    1872 2014    143      3      0    .754   1.01   2.41   .485   .823   .248   1.90   .257   .026   1
+  23 MK15B    1863 2014    152      3      0    .605    .96   2.43   .413   .750   .254   1.69   .244  -.024   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2736     56      2    .626   1.00   5.14   .494   .596   .368   3.18   .342   .013
+
+ DATA CHECKS (rwl.check): russ267
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ267.rwl
+ 23 series, 2736 measurements, 1841-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:49 PDT.
+ Measurement file russ267.rwl, MD5 f5d2df94678253e90e5f98286b432429.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

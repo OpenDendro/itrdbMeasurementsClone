@@ -1,0 +1,156 @@
+
+ COFECHA-style crossdating report: nc6
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nc6.rwl
+      MD5 of measurement file: 54abea5f10bf20e6b0bbd88a46e1c8b1
+      Date checked           : 01OCT26
+      Beginning year         : 1891
+      Ending year            : 1994
+      Principal investigators: Barefoot, A.C.
+      Site name              : New Hill Beaver Tree Farm
+      Species information    : PITA Pinus taeda L.
+      Latitude               : 35.6500 N
+      Longitude              : 78.8800 W
+      Elevation              : 88 m
+
+      Series intercorrelation: 0.499
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 1.937
+      Avg autocorrelation    : 0.839
+      Number dated series    : 35
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 2, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 10.81
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nc6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 NHLOB031 1901 1979       .61 
+   2 NHLOB032 1900 1979       .61 
+   3 NHLOB071 1898 1979  .58  .66 
+   4 NHLOB072 1901 1979       .27A
+   5 NHLOB081 1901 1979       .71 
+   6 NHLOB082 1899 1977  .51  .28B
+   7 NHLOB111 1901 1979       .67 
+   8 NHLOB112 1897 1979  .58  .56 
+   9 NHLOB141 1899 1979  .71  .72 
+  10 NHLOB142 1899 1979  .59  .57 
+  11 NHLOB161 1922 1979       .39 
+  12 NHLOB162 1921 1979       .42 
+  13 NHLOB211 1908 1979       .14B
+  14 NHLOB212 1910 1979       .57 
+  15 NHLOB241 1923 1979       .57 
+  17 NHLOB271 1923 1979       .46 
+  18 NHLOB272 1922 1979       .33A
+  19 NHLOB301 1909 1979       .55 
+  20 NHLOB302 1912 1979       .50 
+  25 NHLOB331 1891 1994  .44  .43 
+  26 NHLOB332 1891 1994  .41  .42 
+  27 NHLOB341 1894 1994  .52  .64 
+  28 NHLOB342 1894 1994  .45  .63 
+  29 NHLOB351 1899 1994       .64 
+  30 NHLOB352 1897 1994  .63  .73 
+  35 NHLOBAVE 1891 1994  .79  .95 
+ Av segment correlation  .57  .54 
+
+ FLAGGED SEGMENTS: nc6
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 NHLOB072 1925 1974     A     .270         0
+   6 NHLOB082 1925 1974     B     .280        -2      .395   .116
+  13 NHLOB211 1925 1974     B     .141         4      .269   .128  weak at every lag
+  18 NHLOB272 1925 1974     A     .328         0
+
+ DESCRIPTIVE STATISTICS: nc6
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NHLOB031 1901 1979     79      1      0    .417   3.31  15.21  2.165   .663   .183   2.46   .267  -.044   1
+   2 NHLOB032 1900 1979     80      1      0    .437   3.14  14.67  2.658   .877   .186   1.81   .222  -.013   1
+   3 NHLOB071 1898 1979     82      2      0    .593   2.12  12.97  2.490   .938   .199   1.62   .214  -.002   1
+   4 NHLOB072 1901 1979     79      1      1    .367   1.07  10.34  1.325   .882   .227   1.89   .259   .127   1
+   5 NHLOB081 1901 1979     79      1      0    .634   2.83  14.09  1.756   .650   .244   1.58   .216   .058   2
+   6 NHLOB082 1899 1977     79      2      1    .376   2.89   9.82  1.478   .794   .222   1.48   .201  -.024   1
+   7 NHLOB111 1901 1979     79      1      0    .635   2.78  12.85  1.837   .803   .209   1.56   .214   .160   1
+   8 NHLOB112 1897 1979     83      2      0    .558   2.64  12.87  1.761   .754   .202   1.81   .220  -.008   1
+   9 NHLOB141 1899 1979     81      2      0    .683   2.94  14.38  2.025   .890   .165   1.45   .188   .133   1
+  10 NHLOB142 1899 1979     81      2      0    .584   3.00  11.50  2.041   .884   .244   1.55   .241   .013   1
+  11 NHLOB161 1922 1979     58      1      0    .396   3.54  10.89  1.909   .838   .196   1.49   .205   .030   1
+  12 NHLOB162 1921 1979     59      1      0    .447   4.17  14.79  2.524   .841   .206   1.38   .208   .042   2
+  13 NHLOB211 1908 1979     72      1      1    .157   3.25   9.98  1.696   .803   .179   1.61   .195   .266   1
+  14 NHLOB212 1910 1979     70      1      0    .519   2.86   8.37  1.211   .880   .165   1.48   .157   .011   1
+  15 NHLOB241 1923 1979     57      1      0    .553   4.02  12.90  2.512   .884   .172   1.45   .181   .070   1
+  16 NHLOB242 1924 1979     56      0      0    .503   4.87  23.33  3.375   .531   .260   2.36   .305   .031   3
+  17 NHLOB271 1923 1979     57      1      0    .378   4.10  21.36  2.894   .845   .226   1.57   .223   .056   1
+  18 NHLOB272 1922 1979     58      1      1    .328   4.40  16.80  2.696   .942   .183   1.34   .170  -.043   1
+  19 NHLOB301 1909 1979     71      1      0    .518   4.38  16.55  2.547   .839   .173   1.51   .187   .035   3
+  20 NHLOB302 1912 1979     68      1      0    .467   3.73  16.47  2.108   .898   .171   1.36   .165   .043   1
+  21 NHLOB311 1929 1993     65      0      0    .511   4.71  11.50  2.606   .840   .205   1.40   .203   .043   1
+  22 NHLOB312 1932 1993     62      0      0    .517   4.92  10.66  2.357   .848   .204   1.44   .201   .017   1
+  23 NHLOB321 1928 1979     52      0      0    .260   3.46  17.11  3.561   .895   .233   1.75   .230   .001   1
+  24 NHLOB322 1928 1979     52      0      0    .221   2.71  17.91  2.967   .922   .246   1.51   .201   .115   3
+  25 NHLOB331 1891 1994    104      2      0    .493   1.59   6.78  1.326   .925   .262   2.00   .273  -.011   3
+  26 NHLOB332 1891 1994    104      2      0    .458   1.65   7.30  1.325   .900   .312   2.35   .320  -.013   2
+  27 NHLOB341 1894 1994    101      2      0    .509   1.82   4.79  1.062   .873   .223   1.82   .253  -.008   1
+  28 NHLOB342 1894 1994    101      2      0    .439   1.87   4.46  1.116   .903   .221   1.99   .251   .021   2
+  29 NHLOB351 1899 1994     96      1      0    .567   2.08   4.72   .841   .741   .230   1.55   .234  -.000   3
+  30 NHLOB352 1897 1994     98      2      0    .644   1.65   6.38   .973   .786   .269   1.98   .278   .057   1
+  31 NHLOB361 1925 1992     68      0      0    .536   3.22  10.15  2.166   .850   .314   1.97   .318   .001   1
+  32 NHLOB364 1928 1993     66      0      0    .541   3.20  12.56  2.828   .903   .330   2.16   .387  -.021   2
+  33 NHLOB371 1934 1993     60      0      0    .462   3.09   9.16  2.243   .871   .283   1.73   .282   .146   0
+  34 NHLOB372 1934 1993     60      0      0    .532   4.32  11.33  2.429   .847   .248   1.59   .245   .178   0
+  35 NHLOBAVE 1891 1994    104      2      0    .811   3.13   6.91  1.173   .832   .153   1.41   .161   .021   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2621     37      4    .499   2.97  23.33  1.937   .839   .222   2.46   .233   .039
+
+ DATA CHECKS (rwl.check): nc6
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/nc6.rwl
+ 35 series, 2621 measurements, 1891-1994, 0.01 mm precision
+ 2 error(s), 0 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     NHLOB211: correlates best with the master at lag 3 (r = 0.391 against r = 0.131 as dated); the series may be misdated by 3 year(s), most likely a false ring or a ring measured twice
+     NHLOB272: correlates best with the master at lag 5 (r = 0.352 against r = 0.282 as dated); the series may be misdated by 5 year(s), most likely a false ring or a ring measured twice
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file nc6.rwl, MD5 54abea5f10bf20e6b0bbd88a46e1c8b1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

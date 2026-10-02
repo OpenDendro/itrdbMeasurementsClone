@@ -1,0 +1,169 @@
+
+ COFECHA-style crossdating report: bol002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bol002.rwl
+      MD5 of measurement file: 392f805c7a3807e9c8ccde779995134e
+      Date checked           : 01OCT26
+      Beginning year         : 1924
+      Ending year            : 2008
+      Principal investigators: López, L.; Villalba, R.
+      Site name              : Palestina
+      Species information    : CEMC Centrolobium microchaete (Benth.) H.C. Lima
+      Latitude               : 15.6392 S
+      Longitude              : 62.4108 W
+      Elevation              : 296 m
+
+      Series intercorrelation: 0.568
+      Avg mean sensitivity   : 0.359
+      Avg standard deviation : 1.969
+      Avg autocorrelation    : 0.628
+      Number dated series    : 40
+      Segment length tested  : 42
+
+      Number problem segments: 5  (A 3, B 2)
+      Pct problem segments   : 14.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bol002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1991 
+ --- -------- ---------  ---- 
+   1 pa437a   1928 2008  .59 
+   2 pa437b   1930 2008  .54 
+   3 pa1246a  1936 2008  .33B
+   4 pa1246b  1936 2008  .29A
+   5 pa308b   1930 2008  .58 
+   6 pa930a   1925 2008  .50 
+   7 pl1211a  1931 2008  .67 
+   8 pl874b   1932 2007  .64 
+   9 pl813b   1927 2008  .47 
+  10 pl783b   1927 2008  .54 
+  11 pl783a   1927 2008  .40B
+  12 p435a    1925 2008  .60 
+  13 p435b    1925 2008  .66 
+  14 pl1010a  1948 2006  .61 
+  15 pl1010b  1948 2006  .76 
+  16 pa813a   1926 2008  .59 
+  17 pl894b   1930 2008  .84 
+  18 pl198a   1924 2008  .30A
+  19 pl1238a  1934 2008  .66 
+  20 pl198b   1924 2008  .41 
+  21 pl880    1933 2008  .44 
+  22 pl868a   1933 2008  .80 
+  25 pl776a   1934 2008  .55 
+  26 pl1238b  1933 2008  .53 
+  29 pl874a   1932 2008  .66 
+  30 pl776b   1934 2008  .46 
+  32 pa901a   1927 2006  .60 
+  33 pa901b   1934 2006  .63 
+  35 pa308a   1931 2008  .71 
+  36 pa822a   1929 2005  .35A
+  37 pa822b   1930 2005  .63 
+  38 pl813a   1934 2008  .57 
+  39 pl894a   1930 2008  .71 
+  40 pla868b  1933 2008  .49 
+ Av segment correlation  .56 
+
+ FLAGGED SEGMENTS: bol002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 pa1246a  1950 1991     B     .326        -1      .400   .074
+   4 pa1246b  1950 1991     A     .288         0
+  11 pl783a   1950 1991     B     .401        -4      .491   .090
+  18 pl198a   1950 1991     A     .304         0
+  36 pa822a   1950 1991     A     .345         0
+
+ DESCRIPTIVE STATISTICS: bol002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 pa437a   1928 2008     81      1      0    .616   2.99   5.90  1.267   .650   .309   1.72   .283   .016   2
+   2 pa437b   1930 2008     79      1      0    .579   3.03   6.68  1.286   .556   .332   1.84   .301   .002   2
+   3 pa1246a  1936 2008     73      1      1    .371   3.38   7.25  1.272   .441   .304   2.16   .297  -.021   2
+   4 pa1246b  1936 2008     73      1      1    .348   3.51   8.02  1.475   .318   .360   2.13   .316  -.052   2
+   5 pa308b   1930 2008     79      1      0    .573   3.53   8.82  2.043   .812   .269   1.89   .303  -.058   1
+   6 pa930a   1925 2008     84      1      0    .539   3.19   7.53  1.423   .634   .280   1.69   .253   .046   2
+   7 pl1211a  1931 2008     78      1      0    .649   5.45  13.64  3.190   .759   .309   1.50   .263  -.045   3
+   8 pl874b   1932 2007     76      1      0    .493   3.52   6.69  1.409   .422   .351   1.78   .306   .065   0
+   9 pl813b   1927 2008     82      1      0    .476   3.18  11.79  2.045   .510   .355   2.48   .399  -.022   1
+  10 pl783b   1927 2008     82      1      0    .561   3.98   9.46  1.819   .582   .342   1.73   .307  -.014   2
+  11 pl783a   1927 2008     82      1      1    .416   3.39  10.57  1.867   .392   .395   2.02   .371   .080   0
+  12 p435a    1925 2008     84      1      0    .643   3.35   7.19  1.571   .702   .299   1.65   .263   .045   0
+  13 p435b    1925 2008     84      1      0    .637   2.58   6.90  1.532   .775   .298   1.76   .251  -.009   0
+  14 pl1010a  1948 2006     59      1      0    .619   3.04   7.37  1.732   .800   .331   2.36   .383   .125   0
+  15 pl1010b  1948 2006     59      1      0    .704   3.17   6.42  1.650   .757   .388   1.97   .366   .167   0
+  16 pa813a   1926 2008     83      1      0    .602   4.07   9.69  2.121   .610   .372   2.00   .350   .144   0
+  17 pl894b   1930 2008     79      1      0    .705   3.29   9.05  1.704   .587   .416   1.99   .362   .033   1
+  18 pl198a   1924 2008     85      1      1    .439   2.90   9.31  1.903   .522   .406   3.99   .511   .123   0
+  19 pl1238a  1934 2008     75      1      0    .477   2.97   8.64  1.544   .651   .342   2.18   .342   .005   2
+  20 pl198b   1924 2008     85      1      0    .490   3.38  10.23  2.107   .518   .464   2.79   .468   .008   1
+  21 pl880    1933 2008     76      1      0    .438   2.86   8.95  2.055   .789   .379   1.81   .337  -.029   1
+  22 pl868a   1933 2008     76      1      0    .785   3.84   9.61  2.543   .753   .390   1.86   .362  -.030   3
+  23 pl1185   1933 1986     54      0      0    .772   3.77  11.73  2.510   .786   .333   1.71   .277   .023   0
+  24 pl1185b  1933 1983     51      0      0    .578   5.81  15.10  3.310   .762   .287   1.77   .246   .028   0
+  25 pl776a   1934 2008     75      1      0    .627   3.32   7.57  1.683   .687   .353   1.88   .323   .066   0
+  26 pl1238b  1933 2008     76      1      0    .559   2.64   5.73  1.111   .535   .324   1.81   .303   .058   1
+  27 pl1183b  1925 1971     47      0      0    .389   4.48  12.40  2.882   .781   .414   2.48   .401   .119   0
+  28 pl1183a  1925 1975     51      0      0    .512   5.00  13.32  2.930   .627   .410   2.20   .361   .026   0
+  29 pl874a   1932 2008     77      1      0    .641   2.90  12.34  1.650   .568   .345   1.71   .303   .038   0
+  30 pl776b   1934 2008     75      1      0    .573   2.61   7.65  1.432   .691   .367   1.81   .327   .070   0
+  31 pa608a   1930 1985     56      0      0    .717   3.29   7.93  1.739   .376   .525   2.07   .408  -.021   0
+  32 pa901a   1927 2006     80      1      0    .518   2.94   8.76  1.772   .657   .343   2.10   .311  -.040   3
+  33 pa901b   1934 2006     73      1      0    .709   6.47  15.44  3.173   .585   .378   2.05   .352   .025   1
+  34 pa868b   1928 1986     59      0      0    .712   3.32   8.09  1.761   .388   .514   2.06   .409   .023   0
+  35 pa308a   1931 2008     78      1      0    .612   3.65   8.22  1.999   .745   .315   1.85   .317   .024   2
+  36 pa822a   1929 2005     77      1      1    .380   3.12  10.13  2.422   .813   .371   2.03   .338  -.050   3
+  37 pa822b   1930 2005     76      1      0    .616   3.29   7.25  1.884   .744   .334   1.80   .323  -.010   1
+  38 pl813a   1934 2008     75      1      0    .535   3.66  35.01  4.523   .582   .320   2.31   .350   .134   0
+  39 pl894a   1930 2008     79      1      0    .651   2.41  10.33  1.931   .726   .374   1.94   .368   .030   1
+  40 pla868b  1933 2008     76      1      0    .547   2.69   6.98  1.746   .600   .448   2.18   .440  -.015   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2949     34      5    .568   3.45  35.01  1.969   .628   .359   3.99   .338   .026
+
+ DATA CHECKS (rwl.check): bol002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bol002.rwl
+ 40 series, 2949 measurements, 1924-2008, 0.001 mm precision
+ 0 error(s), 0 warning(s), 16 note(s)
+ -------------
+ Nothing to report at this severity.
+ 16 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file bol002.rwl, MD5 392f805c7a3807e9c8ccde779995134e.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 42 years: the record is only 85 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

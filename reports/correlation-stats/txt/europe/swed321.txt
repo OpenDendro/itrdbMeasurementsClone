@@ -1,0 +1,108 @@
+
+ COFECHA-style crossdating report: swed321
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swed321.rwl
+      MD5 of measurement file: fd1264f9cc3bff0122d71b7b900e7154
+      Date checked           : 01OCT26
+      Beginning year         : 1844
+      Ending year            : 1996
+      Principal investigators: Linderholm, H.W.
+      Site name              : Gullhult
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 57.8500 N
+      Longitude              : 14.6500 E
+      Elevation              : 305 m
+
+      Series intercorrelation: 0.572
+      Avg mean sensitivity   : 0.202
+      Avg standard deviation : 0.715
+      Avg autocorrelation    : 0.850
+      Number dated series    : 11
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swed321
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   2 GHHT0039 1880 1996  .60  .56 
+   3 GHHT0049 1860 1996  .51  .70 
+   4 GHHT0059 1855 1996  .64  .71 
+   5 GHHT0069 1859 1996  .69  .73 
+   6 GHHT0079 1857 1996  .63  .57 
+   7 GHHT0089 1868 1996  .61  .61 
+   8 GHHT0099 1858 1996  .60  .68 
+   9 GHHT0109 1844 1996  .73  .82 
+  10 GHHT0119 1912 1996       .51 
+  11 GHHT0129 1909 1996       .66 
+ Av segment correlation  .63  .65 
+
+ FLAGGED SEGMENTS: swed321
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swed321
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GHHT0029 1926 1996     71      0      0    .600   2.10   7.22  1.427   .911   .230   1.65   .243  -.019   2
+   2 GHHT0039 1880 1996    117      2      0    .522   1.25   5.73  1.310   .926   .219   1.81   .238   .039   1
+   3 GHHT0049 1860 1996    137      2      0    .559   1.11   3.96   .760   .905   .207   1.65   .215   .004   1
+   4 GHHT0059 1855 1996    142      2      0    .508   1.07   2.86   .544   .864   .183   1.63   .200   .022   1
+   5 GHHT0069 1859 1996    138      2      0    .574    .95   3.58   .623   .837   .215   1.73   .230   .004   2
+   6 GHHT0079 1857 1996    140      2      0    .585   1.04   2.97   .419   .713   .217   2.02   .251   .044   1
+   7 GHHT0089 1868 1996    129      2      0    .649   1.02   5.35  1.149   .951   .169   1.48   .181  -.006   3
+   8 GHHT0099 1858 1996    139      2      0    .545   1.21   3.08   .552   .793   .206   1.49   .200  -.029   3
+   9 GHHT0109 1844 1996    153      2      0    .592    .78   2.02   .334   .849   .175   1.71   .191  -.009   3
+  10 GHHT0119 1912 1996     85      1      0    .534   1.18   2.51   .475   .767   .213   1.57   .222   .008   2
+  11 GHHT0129 1909 1996     88      1      0    .652   1.29   3.10   .686   .850   .214   1.49   .217  -.015   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1339     18      0    .572   1.13   7.22   .715   .850   .202   2.02   .215   .005
+
+ DATA CHECKS (rwl.check): swed321
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swed321.rwl
+ 11 series, 1339 measurements, 1844-1996, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file swed321.rwl, MD5 fd1264f9cc3bff0122d71b7b900e7154.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

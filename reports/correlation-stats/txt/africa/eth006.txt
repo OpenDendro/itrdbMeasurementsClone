@@ -1,0 +1,104 @@
+
+ COFECHA-style crossdating report: eth006
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : eth006.rwl
+      MD5 of measurement file: f03e399f9d6cbe9c39f8efa5caaaf625
+      Date checked           : 01OCT26
+      Beginning year         : 1852
+      Ending year            : 2006
+      Principal investigators: Wils, T.H.G.; Robertson, I.
+      Site name              : Woken-Woybila-Mariam
+      Species information    : JUPC Juniperus procera Hochst. ex Endl.
+      Latitude               : 13.0167 N
+      Longitude              : 37.7667 E
+      Elevation              : 2481 m
+
+      Series intercorrelation: 0.423
+      Avg mean sensitivity   : 0.399
+      Avg standard deviation : 1.361
+      Avg autocorrelation    : 0.645
+      Number dated series    : 10
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: eth006
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 W26A     1852 2006  .35  .44  .53 
+   2 W26B     1874 2006  .52  .54  .51 
+   3 W26C     1912 2006       .43  .56 
+   4 W27B     1928 2006            .36 
+   5 W27C     1941 2006            .57 
+   6 W28B     1865 2006  .51  .46  .41 
+   9 W29B     1896 2006  .34  .40  .51 
+ Av segment correlation  .43  .45  .49 
+
+ FLAGGED SEGMENTS: eth006
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: eth006
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 W26A     1852 2006    155      3      0    .425   1.86   5.42  1.143   .742   .428   2.10   .388   .017   2
+   2 W26B     1874 2006    133      3      0    .474   2.08   5.42  1.304   .756   .380   1.99   .358   .020   1
+   3 W26C     1912 2006     95      2      0    .463   3.46  13.31  1.449   .386   .288   2.36   .283   .094   0
+   4 W27B     1928 2006     79      1      0    .329   2.89  12.21  2.864   .654   .544   3.03   .578   .121   0
+   5 W27C     1941 2006     66      1      0    .491   3.08  10.12  1.941   .410   .455   2.75   .480   .031   1
+   6 W28B     1865 2006    142      3      0    .393   1.28   7.56  1.065   .637   .421   2.88   .429   .014   1
+   7 W28C     1966 2006     41      0      0    .510   1.65   3.36   .642   .664   .264   1.78   .272   .053   1
+   8 W29A     1978 1999     22      0      0    .631    .78   1.99   .494   .844   .329   1.74   .329   .097   1
+   9 W29B     1896 2006    111      3      0    .341   1.66   6.68  1.225   .707   .396   3.06   .466   .069   1
+  10 W29C     1967 2000     34      0      0    .343   1.77   3.77   .822   .604   .342   2.00   .346   .144   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            878     16      0    .423   2.09  13.31  1.361   .645   .399   3.06   .404   .051
+
+ DATA CHECKS (rwl.check): eth006
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/africa/eth006.rwl
+ 10 series, 878 measurements, 1852-2006, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file eth006.rwl, MD5 f03e399f9d6cbe9c39f8efa5caaaf625.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

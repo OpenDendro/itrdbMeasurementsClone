@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: ca608
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ca608.rwl
+      MD5 of measurement file: 0e597a47887cb835e0410541b8f81430
+      Date checked           : 01OCT26
+      Beginning year         : 1760
+      Ending year            : 1997
+      Principal investigators: Brown, P.M.
+      Site name              : Point Reyes  Bear Valley
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 38.0200 N
+      Longitude              : 122.8000 W
+      Elevation              : 120 m
+
+      Series intercorrelation: 0.487
+      Avg mean sensitivity   : 0.246
+      Avg standard deviation : 2.120
+      Avg autocorrelation    : 0.861
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 6, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 20.41
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ca608
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 5BR5A    1807 1997       .70  .64  .39  .26A .47 
+   2 BEV3A    1816 1997       .53  .59  .58  .49  .54 
+   3 MT0204   1889 1997                      .44  .49 
+   4 MW0201   1872 1997                 .30A .43  .56 
+   5 MW0209   1883 1997                      .61  .46 
+   6 MW0303   1909 1997                           .53 
+   7 OP0210   1906 1997                           .45 
+   8 VEN01    1760 1997  .64  .59  .49  .33  .26B .41 
+   9 5BR5B    1803 1997       .49  .53  .48  .25A .30A
+  10 BEV5C    1776 1994  .34  .29B .47  .48  .37  .41 
+  11 BT0204   1861 1997                 .52  .58  .50 
+  14 MT0102   1875 1997                      .62  .57 
+  15 MT0108   1914 1997                           .18B
+  16 MT0205   1893 1997                      .57  .62 
+  17 MW0203   1878 1997                      .23A .46 
+  18 MW0305   1885 1997                      .21B .31A
+  19 OP0408   1905 1997                           .47 
+ Av segment correlation  .49  .52  .54  .44  .41  .45 
+
+ FLAGGED SEGMENTS: ca608
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 5BR5A    1900 1949     A     .260         0
+   4 MW0201   1875 1924     A     .304         0
+   8 VEN01    1900 1949     B     .261         8      .341   .080
+   9 5BR5B    1900 1949     A     .246         0
+   9 5BR5B    1925 1974     A     .299         0
+  10 BEV5C    1825 1874     B     .291        -3      .316   .025  weak at every lag
+  15 MT0108   1925 1974     B     .178         6      .274   .096  weak at every lag
+  17 MW0203   1900 1949     A     .230         0
+  18 MW0305   1900 1949     B     .211         9      .399   .188
+  18 MW0305   1925 1974     A     .307         0
+
+ DESCRIPTIVE STATISTICS: ca608
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 5BR5A    1807 1997    191      5      1    .570   2.27  11.21  2.061   .889   .262   2.10   .268   .007   1
+   2 BEV3A    1816 1997    182      5      0    .545   2.07  11.35  1.484   .770   .235   2.85   .266  -.004   2
+   3 MT0204   1889 1997    109      2      0    .524   4.01  17.07  3.372   .827   .286   2.38   .309   .046   0
+   4 MW0201   1872 1997    126      3      1    .522   3.15  12.73  2.154   .890   .245   1.86   .257   .027   1
+   5 MW0209   1883 1997    115      2      0    .501   3.35  10.18  2.007   .829   .244   1.85   .264  -.026   2
+   6 MW0303   1909 1997     89      1      0    .383   3.47  14.05  2.966   .913   .255   1.79   .261   .009   1
+   7 OP0210   1906 1997     92      1      0    .437   4.01  18.30  4.495   .962   .274   1.83   .274   .013   3
+   8 VEN01    1760 1997    238      6      1    .491   1.82   5.73   .906   .807   .216   2.05   .245  -.008   3
+   9 5BR5B    1803 1997    195      5      2    .428   1.91   7.31  1.477   .919   .224   1.69   .221   .010   1
+  10 BEV5C    1776 1994    219      6      1    .411   1.73  10.63  2.039   .917   .270   1.85   .255  -.018   3
+  11 BT0204   1861 1997    137      3      0    .505   2.75  16.15  2.972   .898   .268   1.97   .270  -.021   3
+  12 LR0203   1946 1997     52      0      0    .702   7.03  12.82  3.027   .783   .266   1.56   .260  -.071   2
+  13 LR0206   1927 1993     67      0      0    .456   5.63  13.59  2.636   .871   .195   1.45   .195   .031   1
+  14 MT0102   1875 1997    123      2      0    .606   1.47   4.34   .760   .632   .357   2.50   .368   .029   1
+  15 MT0108   1914 1997     84      1      1    .357   3.36   7.19  1.609   .799   .227   1.81   .224   .023   1
+  16 MT0205   1893 1997    105      2      0    .600   3.82  14.54  3.800   .915   .236   1.98   .254   .015   1
+  17 MW0203   1878 1997    120      2      1    .478   3.01   8.93  1.535   .868   .214   1.58   .222   .013   1
+  18 MW0305   1885 1997    113      2      2    .312   2.63   9.65  2.324   .950   .180   1.70   .188   .007   3
+  19 OP0408   1905 1997     93      1      0    .475   3.95  10.55  2.345   .919   .208   1.62   .201   .005   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2450     49     10    .487   2.82  18.30  2.120   .861   .246   2.85   .254   .004
+
+ DATA CHECKS (rwl.check): ca608
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ca608.rwl
+ 19 series, 2450 measurements, 1760-1997, 0.01 mm precision
+ 0 error(s), 0 warning(s), 6 note(s)
+ -------------
+ Nothing to report at this severity.
+ 6 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ca608.rwl, MD5 0e597a47887cb835e0410541b8f81430.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

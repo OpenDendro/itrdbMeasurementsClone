@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: ga014
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ga014.rwl
+      MD5 of measurement file: d7b16352ae15a38c5c0805cdb9ec5821
+      Date checked           : 01OCT26
+      Beginning year         : 1689
+      Ending year            : 2009
+      Principal investigators: Pederson, N.; Blozan, W.; Brice, A.; Catron, B.; Leland, C.; Scheff, J.; Malcomb, N.; Tackett, K.
+      Site name              : Frick Creek
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 34.7600 N
+      Longitude              : 84.3000 W
+      Elevation              : 777 m
+
+      Series intercorrelation: 0.558
+      Avg mean sensitivity   : 0.226
+      Avg standard deviation : 0.630
+      Avg autocorrelation    : 0.759
+      Number dated series    : 24
+      Segment length tested  : 50
+
+      Number problem segments: 11  (A 7, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 6.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ga014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 fct02a   1754 2008                 .44  .26A .45  .64  .72  .55  .45  .60 
+   2 fct03a   1800 2009                           .68  .59  .62  .64  .56  .67 
+   3 fct03b   1787 2009                      .47  .42  .52  .57  .58  .65  .62 
+   4 fct04a   1776 2007                      .46  .56  .62  .46  .44  .51  .45 
+   5 fct04b   1699 2009       .45  .44  .47  .52  .69  .55  .49  .35  .35  .51 
+   6 fct05a   1745 2009            .57  .70  .74  .75  .77  .75  .80  .75  .60 
+   7 fct05b   1752 2009                 .66  .67  .67  .74  .74  .74  .72  .69 
+   8 fct06a   1843 2009                                .31B .45  .61  .59  .46 
+   9 fct06b   1874 2009                                     .54  .64  .57  .59 
+  10 fct07a   1850 2009                                     .64  .67  .57  .65 
+  11 FCT07b   1796 2009                      .32A .59  .70  .67  .70  .68  .65 
+  12 fct08a   1708 2009       .68  .65  .69  .53  .57  .56  .59  .52  .47  .50 
+  13 fct09a   1717 2009       .59  .55  .48  .47  .28B .13B .45  .59  .62  .36 
+  14 fct09b   1689 2009       .61  .35  .34  .56  .40  .33  .47  .56  .47  .44 
+  15 fct12a   1917 2009                                               .62  .62 
+  16 fct12b   1842 2009                                .63  .64  .60  .51  .49 
+  17 fct13a   1744 2009            .56  .51  .60  .67  .58  .32A .39  .72  .60 
+  18 fct13b   1722 2009       .72  .65  .64  .67  .68  .65  .65  .75  .71  .62 
+  19 fct14a   1787 2009                      .52  .43  .55  .54  .60  .75  .71 
+  20 fct15a   1720 2009       .58  .55  .63  .31A .26B .47  .53  .47  .41  .43 
+  21 fct15b   1710 2009       .72  .67  .58  .29A .29A .36  .39  .36  .38  .58 
+  22 fct16a   1709 2009       .60  .58  .56  .72  .75  .68  .69  .70  .65  .46 
+  23 fct16b   1728 2009            .56  .54  .62  .41  .23A .54  .62  .55  .54 
+  24 fct17a   1878 2009                                          .73  .66  .66 
+ Av segment correlation       .62  .56  .56  .51  .53  .53  .57  .59  .58  .56 
+
+ FLAGGED SEGMENTS: ga014
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 fct02a   1800 1849     A     .258         0
+   8 fct06a   1850 1899     B     .313         7      .325   .013  weak at every lag
+  11 FCT07b   1800 1849     A     .324         0
+  13 fct09a   1825 1874     B     .279       -10      .461   .182
+  13 fct09a   1850 1899     B     .130       -10      .320   .190  weak at every lag
+  17 fct13a   1875 1924     A     .321         0
+  20 fct15a   1800 1849     A     .312         0
+  20 fct15a   1825 1874     B     .256       -10      .309   .053  weak at every lag
+  21 fct15b   1800 1849     A     .285         0
+  21 fct15b   1825 1874     A     .293         0
+  23 fct16b   1850 1899     A     .234         0
+
+ DESCRIPTIVE STATISTICS: ga014
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 fct02a   1754 2008    255      8      1    .530   1.42   4.11   .771   .870   .185   1.90   .196   .029   1
+   2 fct03a   1800 2009    210      6      0    .623   1.45   3.78   .587   .763   .185   1.84   .197   .029   1
+   3 fct03b   1787 2009    223      7      0    .542   1.26   2.23   .338   .592   .186   1.58   .184  -.014   3
+   4 fct04a   1776 2007    232      7      0    .495   1.30   6.87   .923   .865   .233   2.30   .280   .042   1
+   5 fct04b   1699 2009    311     10      0    .449    .91   3.02   .461   .769   .228   2.52   .278   .005   3
+   6 fct05a   1745 2009    265      9      0    .709   1.00   1.95   .298   .639   .196   1.51   .190  -.007   3
+   7 fct05b   1752 2009    258      8      0    .690   1.28   4.23   .742   .860   .207   1.61   .208   .008   1
+   8 fct06a   1843 2009    167      5      1    .491   1.88   3.93   .695   .665   .213   1.77   .221   .031   1
+   9 fct06b   1874 2009    136      4      0    .559   2.38   5.06  1.057   .819   .207   1.96   .229  -.025   1
+  10 fct07a   1850 2009    160      4      0    .621   2.24   7.18  1.261   .719   .309   2.07   .294  -.017   3
+  11 FCT07b   1796 2009    214      7      1    .618   1.39   3.75   .565   .547   .273   1.99   .287  -.024   1
+  12 fct08a   1708 2009    302     10      0    .577    .85   2.06   .316   .741   .201   2.04   .219  -.008   3
+  13 fct09a   1717 2009    293     10      2    .472   1.06   3.27   .511   .798   .198   2.06   .224  -.003   3
+  14 fct09b   1689 2009    321     10      0    .492    .97   3.93   .544   .823   .222   2.61   .242  -.001   2
+  15 fct12a   1917 2009     93      2      0    .620    .99   2.78   .558   .790   .236   2.20   .260   .033   1
+  16 fct12b   1842 2009    168      5      0    .583   1.32   5.90   .926   .851   .254   1.80   .275   .004   3
+  17 fct13a   1744 2009    266      9      1    .530   1.30   5.07   .665   .691   .256   2.18   .263  -.006   3
+  18 fct13b   1722 2009    288     10      0    .645   1.22   2.79   .432   .603   .223   2.10   .229   .009   1
+  19 fct14a   1787 2009    223      7      0    .596   1.04   3.36   .593   .754   .271   3.08   .307  -.021   3
+  20 fct15a   1720 2009    290     10      2    .473   1.19   4.39   .721   .863   .233   2.16   .247   .001   3
+  21 fct15b   1710 2009    300     10      2    .470   1.06   3.61   .667   .888   .227   1.76   .234   .008   3
+  22 fct16a   1709 2009    301     10      0    .592    .94   4.70   .713   .774   .264   2.48   .292   .001   1
+  23 fct16b   1728 2009    282      9      1    .545   1.09   5.33   .689   .835   .220   1.77   .222  -.007   3
+  24 fct17a   1878 2009    132      3      0    .648   2.24   4.45   .762   .549   .252   1.84   .253   .026   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           5690    180     11    .558   1.25   7.18   .630   .759   .226   3.08   .241   .003
+
+ DATA CHECKS (rwl.check): ga014
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ga014.rwl
+ 24 series, 5690 measurements, 1689-2009, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file ga014.rwl, MD5 d7b16352ae15a38c5c0805cdb9ec5821.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

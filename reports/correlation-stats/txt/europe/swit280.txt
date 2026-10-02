@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: swit280
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit280.rwl
+      MD5 of measurement file: 66ccebeec59b329c44ade8ac121b1d58
+      Date checked           : 01OCT26
+      Beginning year         : 1546
+      Ending year            : 2011
+      Principal investigators: Bigler, C.; Etter, S.
+      Site name              : Grindelwald BE Arvengarten
+      Species information    : PICE Pinus cembra L.
+      Latitude               : 46.5900 N
+      Longitude              : 7.9700 E
+      Elevation              : 1900 m
+
+      Series intercorrelation: 0.498
+      Avg mean sensitivity   : 0.212
+      Avg standard deviation : 0.382
+      Avg autocorrelation    : 0.830
+      Number dated series    : 19
+      Segment length tested  : 50
+
+      Number problem segments: 9  (A 4, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 6.57
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit280
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 GArPC01  1670 2011                 .55  .52  .53  .55  .67  .65  .65  .54  .58  .15B .06B .32A
+   2 GArPC02  1651 2011                 .38B .44  .33A .34  .47  .62  .49  .45  .70  .76  .75  .62 
+   3 GArPC03B 1808 2011                                               .60  .59  .63  .70  .61  .57 
+   5 GArPC05  1884 2011                                                              .50  .44  .36 
+   6 GArPC06  1898 2011                                                              .53  .63  .47 
+   7 GArPC07  1793 2011                                          .43  .47  .42  .55  .61  .56  .59 
+   8 GArPC08A 1805 2011                                               .52  .60  .77  .82  .73  .60 
+   9 GArPC08c 1661 1754                 .60  .63                                                   
+  10 GArPC09  1667 2011                 .57  .60  .72  .68  .70  .55  .45  .69  .73  .67  .46  .34 
+  11 GArPC11  1792 2011                                          .49  .58  .54  .40  .49  .56  .49 
+  12 GArPC12  1681 2002                      .59  .44  .35  .60  .72  .76  .63  .69  .70  .59  .70 
+  13 GArPC13A 1880 2011                                                              .44  .52  .55 
+  14 GArPC15  1806 2011                                               .53  .60  .48  .45  .32A .28A
+  15 GArPC16  1584 2011  .51  .35  .62  .59  .43  .47  .40  .53  .53  .49  .50  .01B .01B .53  .51 
+  16 GArPC17A 1546 2011  .51  .36  .53  .54  .59  .55  .49  .57  .54  .56  .62  .59  .61  .55  .51 
+  17 GArPC18  1828 2011                                                    .55  .59  .62  .60  .58 
+  18 GArPC19B 1912 2011                                                                   .78  .76 
+  19 GArPC21  1710 2011                           .50  .53  .66  .66  .61  .62  .62  .66  .77  .66 
+ Av segment correlation  .51  .36  .58  .54  .54  .50  .48  .60  .58  .56  .57  .57  .54  .56  .52 
+
+ FLAGGED SEGMENTS: swit280
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 GArPC01  1900 1949     B     .151        -4      .254   .103  weak at every lag
+   1 GArPC01  1925 1974     B     .059       -10      .224   .165  weak at every lag
+   1 GArPC01  1950 1999     A     .322         0
+   2 GArPC02  1675 1724     B     .380         1      .390   .010
+   2 GArPC02  1725 1774     A     .327         0
+  14 GArPC15  1925 1974     A     .320         0
+  14 GArPC15  1950 1999     A     .279         0
+  15 GArPC16  1875 1924     B     .009         1      .395   .386
+  15 GArPC16  1900 1949     B     .013         1      .336   .323
+
+ DESCRIPTIVE STATISTICS: swit280
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GArPC01  1670 2011    342     12      3    .324    .80   4.91   .616   .726   .226   5.99   .369  -.004   1
+   2 GArPC02  1651 2011    361     12      2    .476    .39   2.17   .306   .936   .219   1.76   .220   .008   2
+   3 GArPC03B 1808 2011    204      6      0    .584    .56   2.64   .379   .850   .222   1.94   .239   .031   1
+   4 GArPC04  1962 2011     50      0      0    .413   3.16   4.96   .801   .729   .141   1.46   .153   .099   1
+   5 GArPC05  1884 2011    128      3      0    .402   1.12   4.08   .797   .741   .312   2.08   .349  -.002   2
+   6 GArPC06  1898 2011    114      3      0    .503   1.03   2.14   .395   .721   .201   1.92   .236   .005   1
+   7 GArPC07  1793 2011    219      7      0    .489    .88   2.74   .520   .879   .221   2.28   .250  -.001   1
+   8 GArPC08A 1805 2011    207      6      0    .625    .58   1.63   .298   .807   .239   1.97   .241   .007   1
+   9 GArPC08c 1661 1754     94      2      0    .615    .75   1.74   .314   .760   .223   1.61   .233  -.002   1
+  10 GArPC09  1667 2011    345     12      0    .589    .71   2.57   .422   .874   .223   1.74   .222   .011   1
+  11 GArPC11  1792 2011    220      7      0    .476    .38   1.60   .242   .897   .210   1.88   .224  -.034   3
+  12 GArPC12  1681 2002    322     11      0    .582    .90   2.26   .423   .869   .177   1.62   .193   .001   3
+  13 GArPC13A 1880 2011    132      3      0    .422    .53   2.19   .411   .930   .227   1.76   .241   .022   1
+  14 GArPC15  1806 2011    206      6      2    .393    .52   1.51   .320   .858   .250   1.69   .254   .001   2
+  15 GArPC16  1584 2011    428     15      2    .318    .58   4.46   .331   .685   .192   4.42   .265  -.003   3
+  16 GArPC17A 1546 2011    466     15      0    .532    .31   1.14   .168   .893   .198   1.93   .192   .004   1
+  17 GArPC18  1828 2011    184      5      0    .601    .72   1.48   .235   .746   .185   1.55   .175  -.004   1
+  18 GArPC19B 1912 2011    100      2      0    .664   1.08   1.80   .285   .722   .159   1.38   .162  -.012   1
+  19 GArPC21  1710 2011    302     10      0    .613    .82   2.75   .500   .896   .207   1.91   .220  -.027   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4424    137      9    .498    .68   4.96   .382   .830   .212   5.99   .237   .001
+
+ DATA CHECKS (rwl.check): swit280
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit280.rwl
+ 19 series, 4424 measurements, 1546-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 7 note(s)
+ -------------
+ Nothing to report at this severity.
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file swit280.rwl, MD5 66ccebeec59b329c44ade8ac121b1d58.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

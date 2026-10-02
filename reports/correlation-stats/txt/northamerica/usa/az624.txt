@@ -1,0 +1,107 @@
+
+ COFECHA-style crossdating report: az624
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : az624.rwl
+      MD5 of measurement file: 69cb3fdea08d944c7a70b2f4a6317c89
+      Date checked           : 01OCT26
+      Beginning year         : 1850
+      Ending year            : 2018
+      Principal investigators: O'Neill, L.; Fulé, P.Z.
+      Site name              : South Canyon
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 36.3520 N
+      Longitude              : 112.1010 W
+      Elevation              : 2775 m
+
+      Series intercorrelation: 0.566
+      Avg mean sensitivity   : 0.219
+      Avg standard deviation : 0.503
+      Avg autocorrelation    : 0.853
+      Number dated series    : 8
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 8.70
+
+
+ CORRELATION OF SERIES BY SEGMENTS: az624
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 SC-002   1881 2018  .66  .42  .43 
+   2 SC-003   1851 2018  .54  .33A .21B
+   3 SC-004   1850 2018  .74  .67  .62 
+   4 SC-005   1907 2018       .56  .64 
+   5 SC-006   1851 2018  .71  .53  .56 
+   6 SC-007   1851 2018  .62  .56  .44 
+   7 SC-008   1851 2018  .76  .73  .70 
+   8 SC-009   1851 2018  .62  .60  .56 
+ Av segment correlation  .66  .55  .52 
+
+ FLAGGED SEGMENTS: az624
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 SC-003   1925 1974     A     .326         0
+   2 SC-003   1950 1999     B     .215        -4      .254   .039  weak at every lag
+
+ DESCRIPTIVE STATISTICS: az624
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SC-002   1881 2018    138      3      0    .473   1.16   2.69   .741   .910   .240   1.96   .256   .014   2
+   2 SC-003   1851 2018    168      3      2    .422    .82   2.31   .573   .913   .228   1.76   .245   .010   2
+   3 SC-004   1850 2018    169      3      0    .652    .96   3.41   .496   .752   .220   2.32   .257   .008   1
+   4 SC-005   1907 2018    112      2      0    .595    .55   2.79   .564   .945   .249   1.90   .265  -.008   1
+   5 SC-006   1851 2018    168      3      0    .619    .72   2.30   .465   .868   .235   1.68   .245  -.019   1
+   6 SC-007   1851 2018    168      3      0    .581    .73   2.09   .411   .835   .197   2.05   .215   .029   1
+   7 SC-008   1851 2018    168      3      0    .577   1.12   2.79   .486   .798   .217   1.93   .242   .072   1
+   8 SC-009   1851 2018    168      3      0    .600    .91   1.79   .355   .849   .180   1.46   .180  -.003   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1259     23      2    .566    .88   3.41   .503   .853   .219   2.32   .237   .014
+
+ DATA CHECKS (rwl.check): az624
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/az624.rwl
+ 8 series, 1259 measurements, 1850-2018, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file az624.rwl, MD5 69cb3fdea08d944c7a70b2f4a6317c89.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,113 @@
+
+ COFECHA-style crossdating report: bra029
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bra029.rwl
+      MD5 of measurement file: 1ed9e6909b7ad4257af8459bdd172667
+      Date checked           : 01OCT26
+      Beginning year         : 1980
+      Ending year            : 2015
+      Principal investigators: Aragão, J.; Lisi, C.
+      Site name              : Monumento Natural Grota do Angico
+      Species information    : TAAU Tabebuia aurea (Silva Manso) Benth. & Hook.f. ex S.Moore
+      Latitude               : 9.6591 S
+      Longitude              : 37.6802 W
+      Elevation              : 128 m
+
+      Series intercorrelation: 0.875
+      Avg mean sensitivity   : 0.548
+      Avg standard deviation : 1.191
+      Avg autocorrelation    : -0.039
+      Number dated series    : 12
+      Segment length tested  : 18
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bra029
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  18-year dated segments, lagged   9 years
+ Flags:  A = correlation under   .5425 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1980 1989 1998 
+                        1997 2006 2015 
+ --- -------- ---------  ---- ---- ---- 
+   1 TAM01a   1987 2013       .87      
+   2 TAM01b   1987 2015       .88  .84 
+   4 TAM02b   1980 2013       .94      
+   7 TAM08a   1991 2015            .87 
+   9 TAM10a   1981 2014       .91      
+  10 TAM10b   1985 2014       .84      
+  11 TAM11a   1992 2015            .80 
+  12 TAM11b   1989 2013       .92      
+ Av segment correlation       .89  .83 
+
+ FLAGGED SEGMENTS: bra029
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: bra029
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 TAM01a   1987 2013     27      1      0    .842   2.08   4.15   .943  -.129   .504   1.79   .374  -.022   2
+   2 TAM01b   1987 2015     29      2      0    .842   1.82   3.92   .882  -.093   .549   2.00   .412  -.033   2
+   3 TAM02a   1995 2013     19      0      0    .957   1.90   4.41   .926   .093   .532   2.21   .466   .044   0
+   4 TAM02b   1980 2013     34      1      0    .924   2.01   5.21  1.004   .073   .527   2.43   .484   .028   0
+   5 TAM03a   1992 2012     21      0      0    .890   2.01   3.63   .979  -.181   .613   1.85   .479  -.156   0
+   6 TAM03b   1997 2010     14      0      0    .931   2.19   4.44  1.043   .071   .454   1.78   .434   .135   0
+   7 TAM08a   1991 2015     25      1      0    .870   3.34   8.96  2.028   .190   .529   2.54   .562   .136   0
+   8 TAM08b   1996 2012     17      0      0    .946   2.58   5.40  1.191  -.076   .559   1.99   .442  -.159   0
+   9 TAM10a   1981 2014     34      1      0    .872   3.42   6.79  1.595   .019   .532   2.00   .448  -.032   0
+  10 TAM10b   1985 2014     30      1      0    .796   3.01   6.24  1.321  -.101   .519   2.04   .415  -.156   0
+  11 TAM11a   1992 2015     24      1      0    .810   2.26   4.57  1.031  -.179   .553   1.97   .449  -.190   0
+  12 TAM11b   1989 2013     25      1      0    .893   2.03   4.73  1.147  -.151   .691   2.25   .539  -.202   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            299      9      0    .875   2.42   8.96  1.191  -.039   .548   2.54   .458  -.053
+
+ DATA CHECKS (rwl.check): bra029
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/southamerica/bra029.rwl
+ 12 series, 299 measurements, 1980-2015, 0.01 mm precision
+ 0 error(s), 2 warning(s), 12 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 87 carriage return(s) against 45 line feed(s); mixed endings can defeat a reader
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 12 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:47 PDT.
+ Measurement file bra029.rwl, MD5 1ed9e6909b7ad4257af8459bdd172667.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.5425 for 18-year segments.
+ Segments: 18 years, lagged 9, first segment floored to 10. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 18 years: the record is only 36 years long.
+ First segment floored to 10 years, not 100: at 100 no segment could be tested.

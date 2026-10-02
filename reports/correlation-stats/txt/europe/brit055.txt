@@ -1,0 +1,144 @@
+
+ COFECHA-style crossdating report: brit055
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit055.rwl
+      MD5 of measurement file: 35ce0ecc92cc2c6279ad4c755ec77ed7
+      Date checked           : 01OCT26
+      Beginning year         : 1642
+      Ending year            : 2004
+      Principal investigators: Brown, D.M.
+      Site name              : Belvoir Park Forest
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 54.5500 N
+      Longitude              : 5.9333 W
+      Elevation              : 25 m
+
+      Series intercorrelation: 0.405
+      Avg mean sensitivity   : 0.263
+      Avg standard deviation : 1.017
+      Avg autocorrelation    : 0.739
+      Number dated series    : 18
+      Segment length tested  : 50
+
+      Number problem segments: 20  (A 11, B 9; 6 of the B weak at every lag)
+      Pct problem segments   : 21.98
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit055
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 Q10373M  1642 1940  .41  .51  .66  .52  .31A .36  .40  .26A               
+   2 Q10633   1700 1970       .19B .11B .28A .48  .32A .40  .46  .45           
+   3 Q10372M  1722 1968       .17B .34  .41  .39  .48  .64  .59  .31A          
+   4 Q10636   1753 1997                 .60  .46  .38  .50  .49  .50  .52      
+   5 Q10374M  1662 1897  .31A .22A .49  .56  .46  .38                          
+   6 Q10713   1780 2004                      .54  .39  .53  .62  .50  .55  .45 
+   7 Q10715   1818 2004                           .47  .61  .59  .48  .48  .34 
+   8 Q10712   1826 2004                                .57  .61  .66  .68  .49 
+   9 Q10714   1834 2004                                .54  .42B .21B .29B .41 
+  10 Q10637   1782 1933                      .52  .48  .29A-.04B               
+  11 Q10634   1862 2004                                     .63  .51  .33  .30B
+  12 Q10371M  1798 1934                      .48  .60  .69  .61                
+  13 Q10631   1869 2004                                     .57  .66  .56  .36 
+  14 Q10635   1872 2004                                    -.06B .26A .33A .33 
+  15 Q10369M  1815 1935                           .50  .66  .60                
+  16 Q10370   1794 1911                      .33A .68  .77                     
+  17 Q10638   1714 1827       .39  .47  .45                                    
+  18 Q10640M  1686 1784  .53  .37                                              
+ Av segment correlation  .41  .31  .42  .47  .44  .46  .55  .45  .45  .47  .38 
+
+ FLAGGED SEGMENTS: brit055
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 Q10373M  1800 1849     A     .307         0
+   1 Q10373M  1875 1924     A     .259         0
+   2 Q10633   1725 1774     B     .192        10      .325   .133  weak at every lag
+   2 Q10633   1750 1799     B     .110         4      .161   .051  weak at every lag
+   2 Q10633   1775 1824     A     .284         0
+   2 Q10633   1825 1874     A     .319         0
+   3 Q10372M  1725 1774     B     .166        -9      .310   .144  weak at every lag
+   3 Q10372M  1900 1949     A     .306         0
+   5 Q10374M  1700 1749     A     .309         0
+   5 Q10374M  1725 1774     A     .216         0
+   9 Q10714   1875 1924     B     .420         8      .484   .064
+   9 Q10714   1900 1949     B     .209       -10      .301   .092  weak at every lag
+   9 Q10714   1925 1974     B     .293        10      .296   .003  weak at every lag
+  10 Q10637   1850 1899     A     .285         0
+  10 Q10637   1875 1924     B    -.039       -10      .289   .328  weak at every lag
+  11 Q10634   1950 1999     B     .303        -7      .395   .092
+  14 Q10635   1875 1924     B    -.057        -5      .436   .493
+  14 Q10635   1900 1949     A     .257         0
+  14 Q10635   1925 1974     A     .326         0
+  16 Q10370   1800 1849     A     .325         0
+
+ DESCRIPTIVE STATISTICS: brit055
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 Q10373M  1642 1940    299      8      2    .293   2.12   7.33  1.421   .776   .324   2.40   .340  -.000   3
+   2 Q10633   1700 1970    271      8      4    .305   2.45   6.30  1.346   .793   .273   2.10   .280  -.024   3
+   3 Q10372M  1722 1968    247      8      2    .359   1.77   6.68  1.135   .878   .227   2.00   .253   .016   3
+   4 Q10636   1753 1997    245      7      0    .456   1.33   3.12   .567   .780   .219   1.77   .221  -.001   2
+   5 Q10374M  1662 1897    236      6      2    .269   1.36   5.20   .969   .734   .398   2.27   .372  -.009   1
+   6 Q10713   1780 2004    225      7      0    .489   1.41   4.38   .679   .654   .293   1.79   .279   .003   1
+   7 Q10715   1818 2004    187      6      0    .464   2.20   3.70   .615   .661   .184   1.41   .181  -.014   1
+   8 Q10712   1826 2004    179      5      0    .499   2.18   4.80   .691   .651   .214   1.57   .195   .025   3
+   9 Q10714   1834 2004    171      5      3    .394   2.24   4.55   .703   .598   .193   1.79   .205   .014   1
+  10 Q10637   1782 1933    152      4      2    .321   2.66   6.03   .986   .705   .217   1.55   .217   .004   1
+  11 Q10634   1862 2004    143      4      1    .506   2.31   5.93  1.393   .843   .281   1.65   .281  -.031   1
+  12 Q10371M  1798 1934    137      4      0    .526   2.65   4.80  1.091   .780   .228   1.72   .240  -.005   1
+  13 Q10631   1869 2004    136      4      0    .552   2.54   5.86   .997   .697   .237   1.72   .250  -.024   1
+  14 Q10635   1872 2004    133      4      3    .167   2.13   7.47  1.550   .865   .302   1.81   .297  -.028   1
+  15 Q10369M  1815 1935    121      3      0    .525   2.40   5.44   .849   .732   .205   1.45   .209  -.012   3
+  16 Q10370   1794 1911    118      3      1    .546   2.45   5.61   .886   .500   .296   1.89   .284   .006   1
+  17 Q10638   1714 1827    114      3      0    .442   2.54   6.82  1.478   .784   .315   2.19   .317   .025   1
+  18 Q10640M  1686 1784     99      2      0    .453   2.23   5.27  1.021   .762   .269   2.12   .276  -.002   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3213     91     20    .405   2.09   7.47  1.017   .739   .263   2.40   .265  -.003
+
+ DATA CHECKS (rwl.check): brit055
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit055.rwl
+ 18 series, 3213 measurements, 1642-2004, 0.01 mm precision
+ 0 error(s), 0 warning(s), 7 note(s)
+ -------------
+ Nothing to report at this severity.
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit055.rwl, MD5 35ce0ecc92cc2c6279ad4c755ec77ed7.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

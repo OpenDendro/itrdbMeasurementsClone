@@ -1,0 +1,138 @@
+
+ COFECHA-style crossdating report: ital008
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ital008.rwl
+      MD5 of measurement file: 754b04a54dbb4edfebbbcf28337b5102
+      Date checked           : 01OCT26
+      Beginning year         : 1827
+      Ending year            : 1980
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Mount Falterona
+      Species information    : ABAL Abies alba Mill.
+      Latitude               : 43.8700 N
+      Longitude              : 11.6700 E
+      Elevation              : 1450 m
+
+      Series intercorrelation: 0.623
+      Avg mean sensitivity   : 0.183
+      Avg standard deviation : 1.009
+      Avg autocorrelation    : 0.874
+      Number dated series    : 22
+      Series crossdated      : 21
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 2.44
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ital008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   2 614012   1873 1980  .58  .66 
+   3 614021   1875 1980  .68  .66 
+   4 614022   1866 1980  .61  .62 
+   5 614031   1888 1980  .62  .65 
+   6 614033   1894 1980  .34B .55 
+   7 614041   1885 1980  .58  .70 
+   8 614042   1875 1980  .64  .63 
+   9 614052   1868 1980  .70  .68 
+  10 614061   1869 1980  .66  .60 
+  11 614062   1869 1980  .77  .64 
+  12 614071   1827 1980  .71  .75 
+  13 614072   1888 1978  .57  .55 
+  14 614081   1894 1980  .74  .69 
+  15 614082   1886 1980  .75  .80 
+  16 614091   1885 1980  .50  .61 
+  17 614101   1877 1980  .62  .57 
+  18 614102   1875 1980  .75  .49 
+  19 614111   1892 1980  .71  .74 
+  20 614112   1883 1980  .83  .77 
+  21 614121   1902 1980       .70 
+  22 614122   1879 1980  .82  .84 
+ Av segment correlation  .66  .66 
+
+ FLAGGED SEGMENTS: ital008
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   6 614033   1900 1949     B     .344        -2      .367   .024
+
+ DESCRIPTIVE STATISTICS: ital008
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 614011   1862 1980    118                         1.97   4.56  1.033   .886   .178                         
+   2 614012   1873 1980    108      2      0    .627   2.09   4.57  1.067   .881   .194   1.58   .197   .088   1
+   3 614021   1875 1980    106      2      0    .598   2.18   3.95   .714   .741   .189   1.52   .206   .023   2
+   4 614022   1866 1980    115      2      0    .502   2.39   5.00   .891   .734   .193   1.80   .202   .037   1
+   5 614031   1888 1980     93      2      0    .656   1.87   4.09  1.182   .921   .200   1.56   .202  -.038   1
+   6 614033   1894 1980     87      2      1    .521   2.77   6.45  1.398   .915   .179   1.41   .179   .003   3
+   7 614041   1885 1980     96      2      0    .597   2.18   4.69  1.077   .891   .178   1.62   .193   .066   1
+   8 614042   1875 1980    106      2      0    .597   2.55   5.86  1.323   .776   .190   1.52   .189   .321   2
+   9 614052   1868 1980    113      2      0    .691   1.86   3.63   .702   .824   .185   1.48   .191   .060   1
+  10 614061   1869 1980    112      2      0    .584   1.39   4.11   .837   .938   .193   1.57   .182   .004   2
+  11 614062   1869 1980    112      2      0    .685   1.92   5.10  1.074   .935   .163   1.41   .170   .096   1
+  12 614071   1827 1980    154      2      0    .581   2.12   4.66   .960   .854   .189   1.67   .211  -.010   1
+  13 614072   1888 1978     91      2      0    .347   2.60   5.82  1.182   .904   .161   1.66   .185   .125   1
+  14 614081   1894 1980     87      2      0    .687   1.95   3.89   .924   .889   .200   1.78   .207  -.009   3
+  15 614082   1886 1980     95      2      0    .728   1.88   3.77   .780   .869   .191   1.54   .189   .015   2
+  16 614091   1885 1980     96      2      0    .629   2.45   6.70  1.032   .875   .158   1.40   .168   .023   2
+  17 614101   1877 1980    104      2      0    .555   1.44   3.99   .924   .945   .211   1.57   .212   .043   1
+  18 614102   1875 1980    106      2      0    .539   1.85   4.28  1.013   .953   .168   1.54   .180   .007   1
+  19 614111   1892 1980     89      2      0    .727   3.37   5.59  1.167   .886   .133   1.50   .147   .037   1
+  20 614112   1883 1980     98      2      0    .740   3.01   5.57  1.281   .917   .151   1.57   .161   .045   1
+  21 614121   1902 1980     79      1      0    .697   2.17   6.03  1.147   .911   .190   1.39   .185  -.020   2
+  22 614122   1879 1980    102      2      0    .840   1.73   3.25   .701   .835   .215   1.45   .206   .020   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2267     41      1    .623   2.15   6.70  1.009   .874   .183   1.80   .190   .045
+
+ DATA CHECKS (rwl.check): ital008
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/ital008.rwl
+ 22 series, 2267 measurements, 1827-1980, 0.01 mm precision
+ 0 error(s), 1 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (1)
+     614011: no measurement for 1953, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file ital008.rwl, MD5 754b04a54dbb4edfebbbcf28337b5102.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 614011 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

@@ -1,0 +1,150 @@
+
+ COFECHA-style crossdating report: nepa020
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : nepa020.rwl
+      MD5 of measurement file: e5184f58732fc28687b38848fbdee5aa
+      Date checked           : 01OCT26
+      Beginning year         : 1695
+      Ending year            : 1979
+      Principal investigators: Krusic, P.J.; Zuber, R.
+      Site name              : GhurchiLehk
+      Species information    : ABSB Abies spectabilis (D. Don) Spach
+      Latitude               : 29.3000 N
+      Longitude              : 82.0500 E
+      Elevation              : 3450 m
+
+      Series intercorrelation: 0.482
+      Avg mean sensitivity   : 0.154
+      Avg standard deviation : 0.449
+      Avg autocorrelation    : 0.851
+      Number dated series    : 23
+      Segment length tested  : 50
+
+      Number problem segments: 14  (A 4, B 10; 6 of the B weak at every lag)
+      Pct problem segments   : 9.93
+
+
+ CORRELATION OF SERIES BY SEGMENTS: nepa020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 GLAS05B  1810 1959                           .56  .43  .35  .22B     
+   2 GLAS06A  1753 1979                 .35  .25B .29B .46  .57  .49  .33 
+   3 GLAS14A  1741 1979            .63  .64  .56  .57  .57  .45  .27B .38 
+   4 GLAS14B  1695 1979            .62  .47  .46  .64  .62  .42  .12B .28A
+   5 GLAS15A  1749 1979                 .21B .27B .51  .37B .42  .54  .70 
+   6 GLAS02B  1749 1959                 .53  .53  .52  .64  .49  .27B     
+   7 GLAS07A  1759 1979                 .52  .52  .59  .39  .32A .54  .59 
+   8 GLAS07B  1751 1979                 .51  .58  .49  .40  .39  .55  .47 
+   9 GLAS09A  1793 1979                      .46  .39  .45  .28A .32A .53 
+  10 GLAS13A  1782 1973                      .45  .44  .44  .43  .52      
+  11 GLAS10A  1781 1979                      .43  .40  .33B .33  .62  .58 
+  12 GLAS11B  1832 1979                                .42  .45  .40  .40 
+  13 GLAS15B  1765 1979                 .66  .64  .51  .60  .55  .65  .70 
+  14 GLAS10B  1767 1979                 .41  .57  .39  .58  .67  .60  .55 
+  15 GLAS01A  1784 1979                      .62  .37  .59  .78  .64  .35 
+  16 GLAS01B  1803 1979                           .35  .48  .56  .47  .45 
+  17 GLAS09B  1830 1979                                .45  .59  .51  .57 
+  18 GLAS05A  1751 1979                 .42  .42  .47  .62  .70  .60  .55 
+  19 GLAS13B  1770 1979                 .51  .58  .59  .56  .52  .63  .64 
+  20 GLAS08A  1833 1979                                .38  .43  .45  .49 
+  21 GLAS08B  1781 1979                      .57  .49  .56  .56  .35  .47 
+  22 GLAS12A  1755 1979                 .56  .56  .48  .45  .60  .58  .49 
+  23 GLAS12B  1774 1979                      .57  .49  .38  .55  .63  .63 
+ Av segment correlation            .63  .48  .50  .48  .49  .50  .48  .51 
+
+ FLAGGED SEGMENTS: nepa020
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 GLAS05B  1900 1949     B     .224         3      .429   .206
+   2 GLAS06A  1800 1849     B     .247         6      .379   .133
+   2 GLAS06A  1825 1874     B     .291         6      .291   .000  weak at every lag
+   3 GLAS14A  1900 1949     B     .266        -6      .276   .009  weak at every lag
+   4 GLAS14B  1900 1949     B     .122         9      .215   .093  weak at every lag
+   4 GLAS14B  1925 1974     A     .278         0
+   5 GLAS15A  1775 1824     B     .208         1      .236   .028  weak at every lag
+   5 GLAS15A  1800 1849     B     .272         1      .310   .038  weak at every lag
+   5 GLAS15A  1850 1899     B     .373         8      .391   .018
+   6 GLAS02B  1900 1949     B     .268        -8      .321   .052  weak at every lag
+   7 GLAS07A  1875 1924     A     .321         0
+   9 GLAS09A  1875 1924     A     .276         0
+   9 GLAS09A  1900 1949     A     .324         0
+  11 GLAS10A  1850 1899     B     .334        10      .359   .025
+
+ DESCRIPTIVE STATISTICS: nepa020
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 GLAS05B  1810 1959    150      4      1    .401    .63   1.30   .215   .822   .168   1.45   .164  -.010   2
+   2 GLAS06A  1753 1979    227      7      2    .405   1.13   2.80   .443   .814   .181   1.54   .192  -.008   1
+   3 GLAS14A  1741 1979    239      8      1    .506    .57   1.10   .151   .827   .128   1.41   .133   .032   1
+   4 GLAS14B  1695 1979    285      8      2    .462    .70   1.51   .249   .889   .117   1.63   .127   .005   2
+   5 GLAS15A  1749 1979    231      7      3    .482    .89   2.64   .409   .856   .165   1.72   .175  -.018   3
+   6 GLAS02B  1749 1959    211      6      1    .447   1.03   1.95   .309   .755   .171   1.53   .178  -.016   3
+   7 GLAS07A  1759 1979    221      7      1    .482    .66   1.56   .266   .834   .169   1.68   .193  -.015   3
+   8 GLAS07B  1751 1979    229      7      0    .465    .77   2.37   .289   .835   .164   1.64   .183  -.016   3
+   9 GLAS09A  1793 1979    187      6      2    .444   1.77   4.23   .962   .952   .124   1.49   .134   .006   2
+  10 GLAS13A  1782 1973    192      5      0    .469   1.72   3.85   .606   .836   .149   1.55   .158   .042   1
+  11 GLAS10A  1781 1979    199      6      1    .368   1.16   2.80   .431   .665   .185   2.93   .260   .010   2
+  12 GLAS11B  1832 1979    148      4      0    .385   1.11   4.37   .565   .900   .150   1.66   .166  -.010   3
+  13 GLAS15B  1765 1979    215      7      0    .611    .83   1.69   .320   .894   .141   1.47   .147  -.005   3
+  14 GLAS10B  1767 1979    213      7      0    .515   1.23   2.86   .451   .878   .140   1.45   .148   .002   2
+  15 GLAS01A  1784 1979    196      6      0    .442   1.50   3.56   .662   .826   .192   2.34   .252   .012   2
+  16 GLAS01B  1803 1979    177      5      0    .472   1.90   3.70   .632   .857   .145   1.49   .155  -.013   2
+  17 GLAS09B  1830 1979    150      4      0    .497   1.51   4.03   .851   .945   .135   1.70   .146   .008   3
+  18 GLAS05A  1751 1979    229      7      0    .519    .76   1.68   .217   .760   .148   1.72   .162  -.024   3
+  19 GLAS13B  1770 1979    210      7      0    .578   1.46   4.37   .703   .851   .190   1.58   .202   .041   2
+  20 GLAS08A  1833 1979    147      4      0    .457    .54   1.06   .197   .892   .139   1.43   .148  -.019   2
+  21 GLAS08B  1781 1979    199      6      0    .549    .98   2.46   .508   .922   .140   1.46   .153  -.009   2
+  22 GLAS12A  1755 1979    225      7      0    .519    .94   3.22   .500   .906   .149   1.74   .172   .026   1
+  23 GLAS12B  1774 1979    206      6      0    .557   1.13   3.60   .683   .912   .158   1.72   .168   .004   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4686    141     14    .482   1.06   4.37   .449   .851   .154   2.93   .170   .001
+
+ DATA CHECKS (rwl.check): nepa020
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/nepa020.rwl
+ 23 series, 4686 measurements, 1695-1979, 0.001 mm precision
+ 0 error(s), 1 warning(s), 3 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1741-1979 but the measurements cover 1695-1979
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file nepa020.rwl, MD5 e5184f58732fc28687b38848fbdee5aa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

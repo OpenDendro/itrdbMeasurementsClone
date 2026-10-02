@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: newz083
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz083.rwl
+      MD5 of measurement file: 3211216e57920d489abcda9b1665ecca
+      Date checked           : 01OCT26
+      Beginning year         : 1679
+      Ending year            : 2002
+      Principal investigators: Ogden, J.G.; Boswijk, G.
+      Site name              : Hidden Valley NZ
+      Species information    : AGAU Agathis australis (D. Don) Loudon
+      Latitude               : 36.2000 S
+      Longitude              : 175.4300 E
+      Elevation              : 220 m
+
+      Series intercorrelation: 0.615
+      Avg mean sensitivity   : 0.302
+      Avg standard deviation : 0.757
+      Avg autocorrelation    : 0.798
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 3.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: newz083
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 HID001A  1743 1997            .57  .62  .73  .74  .50  .54  .76  .80      
+   2 HID001B  1718 1997       .65  .67  .51  .60  .72  .45  .44  .58  .73      
+   3 HID001C  1743 2002            .52  .57  .68  .62  .45  .59  .76  .67  .61 
+   4 HID002A  1685 1980  .68  .66  .69  .78  .69  .62  .70  .70  .73  .80      
+   5 HID002B  1706 1997       .72  .76  .65  .41  .54  .74  .76  .80  .85      
+   6 HID002C  1682 1912  .72  .73  .78  .64  .39  .42  .52                     
+   7 HID003A  1726 1997            .74  .64  .57  .72  .64  .70  .78  .82      
+   8 HID003B  1704 1997       .76  .75  .70  .59  .71  .72  .71  .73  .75      
+   9 HID003C  1696 2002  .77  .80  .83  .68  .56  .72  .68  .73  .83  .83  .79 
+  10 HID004A  1679 1905  .71  .71  .64  .52  .65  .73  .56                     
+  11 HID004B  1763 1901                 .40  .50  .60  .53                     
+  12 HID004C  1710 2002       .72  .65  .64  .60  .72  .72  .71  .67  .69  .71 
+  13 HID005A  1733 1997            .38  .49  .53  .61  .66  .41  .40  .66      
+  14 HID005B  1753 1997                 .25B .28A .38  .48  .62  .56  .61      
+  15 HID005C  1720 1908       .36  .42  .36  .42  .52  .50                     
+  16 HID006A  1748 2002            .45  .45  .58  .66  .25A .29A .61  .66  .83 
+  17 HID006B  1790 2002                      .44  .59  .49  .58  .76  .69  .67 
+  18 HID007A  1691 1900  .63  .72  .66  .57  .58  .69  .58                     
+  19 HID008A  1765 2002                 .49  .59  .38  .28A .42  .53  .69  .57 
+  20 HID008B  1694 1885  .26B .44  .74  .58  .56  .57                          
+ Av segment correlation  .63  .66  .64  .55  .55  .61  .55  .59  .68  .73  .70 
+
+ FLAGGED SEGMENTS: newz083
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  14 HID005B  1775 1824     B     .253         9      .347   .094
+  14 HID005B  1800 1849     A     .284         0
+  16 HID006A  1850 1899     A     .249         0
+  16 HID006A  1875 1924     A     .286         0
+  19 HID008A  1850 1899     A     .280         0
+  20 HID008B  1700 1749     B     .260        -9      .298   .038  weak at every lag
+
+ DESCRIPTIVE STATISTICS: newz083
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HID001A  1743 1997    255      8      0    .665   1.30   3.60   .837   .833   .313   1.88   .291  -.022   3
+   2 HID001B  1718 1997    280      9      0    .602   1.25   3.62   .793   .809   .347   2.26   .299  -.015   3
+   3 HID001C  1743 2002    260      9      0    .605   1.31   3.91   .854   .826   .342   2.12   .311   .009   2
+   4 HID002A  1685 1980    296     10      0    .678   1.19   3.09   .545   .686   .311   1.88   .288  -.012   3
+   5 HID002B  1706 1997    292      9      0    .699   1.23   3.72   .614   .790   .247   1.81   .245  -.011   3
+   6 HID002C  1682 1912    231      7      0    .637   1.25   4.21   .647   .770   .332   2.39   .292   .004   3
+   7 HID003A  1726 1997    272      8      0    .725   1.26   3.03   .710   .778   .355   2.28   .324  -.020   3
+   8 HID003B  1704 1997    294      9      0    .725   1.23   3.57   .667   .777   .322   1.95   .294  -.025   3
+   9 HID003C  1696 2002    307     11      0    .765   1.17   3.12   .642   .791   .297   1.73   .269  -.025   3
+  10 HID004A  1679 1905    227      7      0    .633   1.31   2.73   .486   .780   .198   1.85   .216  -.016   3
+  11 HID004B  1763 1901    139      4      0    .500   1.70   4.89  1.204   .941   .238   2.13   .254   .018   2
+  12 HID004C  1710 2002    293     10      0    .668   1.18   3.64   .732   .871   .276   1.89   .278  -.007   3
+  13 HID005A  1733 1997    265      8      0    .479   1.36   3.42   .737   .870   .234   3.80   .295   .000   3
+  14 HID005B  1753 1997    245      7      2    .515   1.43   4.52   .966   .924   .230   2.23   .248   .000   1
+  15 HID005C  1720 1908    189      6      0    .492   1.65   4.21   .834   .883   .205   2.06   .213   .030   1
+  16 HID006A  1748 2002    255      9      2    .535   1.31   3.89   .875   .684   .456   2.07   .386   .012   2
+  17 HID006B  1790 2002    213      7      0    .595   1.59   7.18  1.430   .904   .312   2.40   .312   .004   2
+  18 HID007A  1691 1900    210      7      0    .563   1.37   4.34   .737   .779   .266   2.20   .274  -.008   1
+  19 HID008A  1765 2002    238      8      1    .508   1.31   3.84   .666   .693   .352   2.00   .328  -.003   3
+  20 HID008B  1694 1885    192      6      1    .506    .98   2.52   .490   .647   .340   2.09   .328  -.006   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4953    159      6    .615   1.30   7.18   .757   .798   .302   3.80   .288  -.006
+
+ DATA CHECKS (rwl.check): newz083
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz083.rwl
+ 20 series, 4953 measurements, 1679-2002, 0.01 mm precision
+ 0 error(s), 0 warning(s), 3 note(s)
+ -------------
+ Nothing to report at this severity.
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file newz083.rwl, MD5 3211216e57920d489abcda9b1665ecca.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

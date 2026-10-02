@@ -1,0 +1,121 @@
+
+ COFECHA-style crossdating report: cana2
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana2.rwl
+      MD5 of measurement file: 348f3299bfb4057f44b7a9b457c8ab05
+      Date checked           : 01OCT26
+      Beginning year         : 1750
+      Ending year            : 1969
+      Principal investigators: Parker, M.L.
+      Site name              : Annie Lake
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 60.3300 N
+      Longitude              : 134.8000 W
+      Elevation              : 805 m
+
+      Series intercorrelation: 0.502
+      Avg mean sensitivity   : 0.182
+      Avg standard deviation : 0.411
+      Avg autocorrelation    : 0.804
+      Number dated series    : 21
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 1, B 2; 2 of the B weak at every lag)
+      Pct problem segments   : 15.79
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 
+                        1849 1874 1899 1924 1949 
+ --- -------- ---------  ---- ---- ---- ---- ---- 
+   1 AL1011   1750 1969  .46  .51  .50  .50  .49 
+   2 AL1012   1760 1969  .47  .55  .35  .29A .34 
+   6 AL1032   1900 1969                      .34 
+   8 AL1042   1840 1969            .15B .13B .37 
+  10 AL1052   1890 1969                      .62 
+  15 AL1081   1870 1969                 .55  .62 
+  16 AL1082   1870 1969                 .59  .52 
+ Av segment correlation  .46  .53  .33  .41  .47 
+
+ FLAGGED SEGMENTS: cana2
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 AL1012   1875 1924     A     .287         0
+   8 AL1042   1850 1899     B     .148         2      .201   .052  weak at every lag
+   8 AL1042   1875 1924     B     .129         1      .187   .058  weak at every lag
+
+ DESCRIPTIVE STATISTICS: cana2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 AL1011   1750 1969    220      5      0    .486    .62   1.32   .260   .846   .170   1.55   .175  -.016   1
+   2 AL1012   1760 1969    210      5      1    .424    .65   1.49   .359   .935   .170   1.52   .179   .007   1
+   3 AL1021   1900 1969     70      0      0    .629   1.63   3.45   .948   .934   .156   1.56   .177  -.006   1
+   4 AL1022   1900 1969     70      0      0    .686   2.08   4.14   .897   .874   .164   1.43   .162   .019   1
+   5 AL1031   1920 1969     50      0      0    .352    .38    .55   .069   .133   .187   1.35   .167   .013   0
+   6 AL1032   1900 1969     70      1      0    .403    .58   1.03   .161   .728   .149   1.46   .141   .073   0
+   7 AL1041   1920 1969     50      0      0    .510    .51    .92   .134   .599   .189   1.36   .180  -.069   1
+   8 AL1042   1840 1969    130      3      2    .266   1.07   2.52   .523   .889   .167   1.60   .178  -.002   2
+   9 AL1051   1920 1969     50      0      0    .458    .34    .64   .135   .768   .196   1.64   .177  -.173   0
+  10 AL1052   1890 1969     80      1      0    .602    .85   3.21   .563   .883   .186   1.34   .165   .037   3
+  11 AL1061   1910 1969     60      0      0    .407    .96   2.24   .501   .936   .156   1.31   .149   .040   1
+  12 AL1062   1900 1969     70      0      0    .576   1.40   2.47   .539   .879   .151   1.41   .157   .053   1
+  13 AL1071   1920 1969     50      0      0    .671   2.11   3.80   .826   .896   .135   1.28   .122   .063   0
+  14 AL1072   1920 1969     50      0      0    .706   2.17   3.88   .690   .888   .132   1.41   .130   .043   1
+  15 AL1081   1870 1969    100      2      0    .558    .82   1.91   .399   .806   .213   1.49   .218   .006   1
+  16 AL1082   1870 1969    100      2      0    .469    .50   1.27   .269   .853   .224   1.58   .224   .043   1
+  17 AL1091   1920 1969     50      0      0    .569    .48    .90   .151   .576   .246   1.71   .235  -.141   3
+  18 AL1092   1920 1969     50      0      0    .743    .68   1.13   .176   .484   .214   1.43   .177  -.052   3
+  19 AL1101   1900 1969     70      0      0    .423    .52    .97   .149   .448   .235   1.59   .226   .056   1
+  20 AL1111   1900 1969     70      0      0    .546   1.00   2.45   .567   .870   .248   1.71   .256   .010   3
+  21 AL1121   1920 1969     50      0      0    .591   1.30   2.67   .539   .882   .169   1.65   .189   .096   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1720     19      3    .502    .91   4.14   .411   .804   .182   1.71   .182   .006
+
+ DATA CHECKS (rwl.check): cana2
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana2.rwl
+ 21 series, 1720 measurements, 1750-1969, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1750-1975 but the measurements cover 1750-1969
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file cana2.rwl, MD5 348f3299bfb4057f44b7a9b457c8ab05.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

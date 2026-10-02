@@ -1,0 +1,130 @@
+
+ COFECHA-style crossdating report: cze048
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze048.rwl
+      MD5 of measurement file: a080ecf2b3175281b1d559a8614402aa
+      Date checked           : 01OCT26
+      Beginning year         : 1856
+      Ending year            : 2019
+      Principal investigators: Mašek, J.; Hofman, M.; Fišer, P.
+      Site name              : 15SS Kokořínsko
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.5833 N
+      Longitude              : 14.4473 E
+      Elevation              : 361 m
+
+      Series intercorrelation: 0.529
+      Avg mean sensitivity   : 0.242
+      Avg standard deviation : 0.763
+      Avg autocorrelation    : 0.780
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 14.29
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 15JS08   1950 2019            .53 
+   2 15JS11   1884 2019  .70  .51  .61 
+   3 15JS20   1862 2019  .37  .07B .13B
+   4 15JS17   1856 2019  .59  .59  .64 
+   5 15JS18   1861 2019  .68  .57  .50 
+  14 15JS14   1856 2019  .72  .69  .69 
+  20 15JS15   1865 2018  .51B .62  .61 
+  21 15JS16   1875 2019  .52  .57  .61 
+  22 15JS19   1861 2019  .12B .39  .62 
+  23 15JS21   1862 2019  .73  .68  .65 
+ Av segment correlation  .55  .52  .56 
+
+ FLAGGED SEGMENTS: cze048
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   3 15JS20   1925 1974     B     .069         7      .246   .177  weak at every lag
+   3 15JS20   1950 1999     B     .130         7      .225   .095  weak at every lag
+  20 15JS15   1900 1949     B     .509        -1      .596   .087
+  22 15JS19   1900 1949     B     .122        -1      .387   .266
+
+ DESCRIPTIVE STATISTICS: cze048
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 15JS08   1950 2019     70      1      0    .561   2.80   4.45   .686   .612   .180   1.41   .178   .167   0
+   2 15JS11   1884 2019    136      3      0    .648   1.26   3.42   .705   .843   .273   1.94   .266   .041   1
+   3 15JS20   1862 2019    158      3      2    .274    .54   4.23   .559   .851   .371   2.20   .362  -.005   3
+   4 15JS17   1856 2019    164      3      0    .608    .88   4.88   .959   .951   .275   1.99   .290  -.007   2
+   5 15JS18   1861 2019    159      3      0    .526   1.10   5.16   .670   .871   .219   1.66   .233  -.029   1
+   6 15JS09   1950 2019     70      0      0    .521   2.41   3.94   .630   .345   .233   1.46   .196  -.044   3
+   7 15JS13   1951 2019     69      0      0    .464   2.41   4.03   .718   .728   .178   1.71   .204   .177   1
+   8 15JS03   1952 2019     68      0      0    .447   2.33   5.42   .866   .796   .186   1.36   .169   .114   0
+   9 15JS04   1955 2019     65      0      0    .544   2.95   4.27   .670   .677   .154   1.26   .140  -.020   1
+  10 15JS10   1967 2019     53      0      0    .691   3.17   5.42   .929   .531   .231   1.52   .211  -.018   1
+  11 15JS12   1953 2019     67      0      0    .531   1.63   2.78   .465   .600   .218   1.47   .218  -.010   1
+  12 15JS22   1956 2019     64      0      0    .620   2.39   4.16   .971   .856   .179   1.36   .180  -.004   2
+  13 15JS23   1965 2019     55      0      0    .600   2.76   4.93   .809   .700   .202   1.41   .191   .022   1
+  14 15JS14   1856 2019    164      3      0    .635   1.50   5.91  1.097   .918   .233   1.71   .240  -.017   3
+  15 15JS25   1956 2019     64      0      0    .448   1.83   4.73   .745   .815   .178   1.38   .163   .052   1
+  16 15JS24   1976 2019     44      0      0    .570   3.28   5.68   .904   .535   .196   1.61   .223   .096   1
+  17 15JS26   1951 2019     69      0      0    .456   1.80   4.62  1.147   .898   .221   1.73   .240   .036   1
+  18 15JS05   1950 2019     70      0      0    .636   2.12   4.73   .740   .775   .177   1.41   .176  -.018   3
+  19 15JS06   1957 2019     63      0      0    .634   2.46   4.62  1.016   .724   .249   1.60   .237  -.006   1
+  20 15JS15   1865 2018    154      3      1    .477   1.08   4.65   .879   .921   .253   2.16   .271   .045   1
+  21 15JS16   1875 2019    145      3      0    .533    .81   2.27   .398   .773   .249   1.85   .267   .036   1
+  22 15JS19   1861 2019    159      3      1    .295    .87   3.10   .654   .862   .289   2.15   .301  -.016   1
+  23 15JS21   1862 2019    158      3      0    .694   1.09   2.74   .524   .758   .270   1.99   .275  -.038   3
+  24 15JS01   1950 2019     70      0      0    .613   1.85   7.36  1.272   .867   .191   1.62   .212  -.022   1
+  25 15JS02   1963 2019     57      0      0    .592   2.39   4.20   .584   .377   .210   1.44   .185  -.000   0
+  26 15JS07   1978 2019     42      0      0    .190   2.06   3.79   .762   .363   .355   1.63   .270  -.075   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2457     28      4    .529   1.60   7.36   .763   .780   .242   2.20   .244   .012
+
+ DATA CHECKS (rwl.check): cze048
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze048.rwl
+ 26 series, 2457 measurements, 1856-2019, 0.01 mm precision
+ 0 error(s), 1 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     12 byte(s) outside printable ASCII
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file cze048.rwl, MD5 a080ecf2b3175281b1d559a8614402aa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

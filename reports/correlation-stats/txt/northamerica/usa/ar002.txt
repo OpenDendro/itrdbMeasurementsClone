@@ -1,0 +1,149 @@
+
+ COFECHA-style crossdating report: ar002
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ar002.rwl
+      MD5 of measurement file: e2bc9de36490266a23851432146b6711
+      Date checked           : 01OCT26
+      Beginning year         : 1624
+      Ending year            : 1842
+      Principal investigators: Stahle, D.W.
+      Site name              : Dutch Mills Ruin
+      Species information    : QUAL Quercus alba L.
+      Latitude               : 35.8700 N
+      Longitude              : 94.5000 W
+      Elevation              : 315 m
+
+      Series intercorrelation: 0.617
+      Avg mean sensitivity   : 0.227
+      Avg standard deviation : 0.287
+      Avg autocorrelation    : 0.652
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 10  (A 6, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 9.80
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ar002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 
+                        1749 1774 1799 1824 
+ --- -------- ---------  ---- ---- ---- ---- 
+   1 659011   1655 1842  .71  .61  .30A .35 
+   2 659012   1655 1831  .66  .71  .54  .52 
+   3 659021   1654 1841  .70  .63  .50  .49 
+   4 659022   1654 1836  .80  .67  .45  .46 
+   5 659031   1629 1841  .63  .67  .47  .30A
+   6 659032   1629 1817  .70  .67  .62      
+   7 659041   1651 1838  .76  .73  .60  .60 
+   8 659042   1651 1829  .82  .77  .66  .70 
+   9 659051   1660 1842  .69  .76  .65  .56 
+  10 659052   1663 1837  .68  .70  .51  .28B
+  11 659061   1649 1842  .78  .79  .71  .68 
+  12 659062   1649 1842  .76  .84  .71  .65 
+  13 659071   1648 1839  .72  .71  .62  .62 
+  14 659072   1648 1842  .66  .67  .66  .60 
+  15 659081   1654 1842  .71  .49  .27A .34 
+  16 659082   1654 1836  .80  .64  .29A .33A
+  17 659091   1664 1832  .63  .70  .62  .61 
+  18 659092   1666 1832  .75  .72  .61  .34 
+  19 659101   1675 1841  .66  .65  .44  .53 
+  20 659102   1675 1842  .77  .73  .52  .32A
+  21 659111   1668 1835  .68  .71  .60  .60 
+  22 659112   1668 1821  .59  .39  .46      
+  23 659121   1657 1841  .74  .74  .70  .67 
+  24 659122   1657 1842  .39  .76  .77  .78 
+  25 659141   1624 1842  .59  .51  .16B .39 
+  26 659142   1624 1842  .50  .29B .17B .39 
+ Av segment correlation  .69  .66  .52  .51 
+
+ FLAGGED SEGMENTS: ar002
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 659011   1750 1799     A     .304         0
+   5 659031   1775 1824     A     .297         0
+  10 659052   1775 1824     B     .280         5      .295   .015  weak at every lag
+  15 659081   1750 1799     A     .265         0
+  16 659082   1750 1799     A     .294         0
+  16 659082   1775 1824     A     .327         0
+  20 659102   1775 1824     A     .325         0
+  25 659141   1750 1799     B     .158         5      .337   .179
+  26 659142   1725 1774     B     .286        -1      .398   .112
+  26 659142   1750 1799     B     .167        -1      .236   .069  weak at every lag
+
+ DESCRIPTIVE STATISTICS: ar002
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 659011   1655 1842    188      4      1    .589    .70   1.87   .239   .622   .224   1.53   .202  -.019   2
+   2 659012   1655 1831    177      4      0    .660    .71   2.08   .298   .689   .208   1.76   .209  -.018   3
+   3 659021   1654 1841    188      4      0    .615    .62   2.96   .307   .664   .259   2.11   .281   .061   1
+   4 659022   1654 1836    183      4      0    .657    .79   3.36   .442   .659   .279   2.02   .300   .035   2
+   5 659031   1629 1841    213      4      1    .528    .70   3.35   .407   .800   .218   1.92   .225   .015   1
+   6 659032   1629 1817    189      3      0    .552    .71   1.80   .322   .837   .183   1.65   .183   .022   1
+   7 659041   1651 1838    188      4      0    .701    .78   2.69   .341   .523   .257   2.04   .253   .106   0
+   8 659042   1651 1829    179      4      0    .651    .73   3.31   .331   .476   .237   1.58   .234   .122   1
+   9 659051   1660 1842    183      4      0    .666    .69   1.60   .297   .632   .265   2.02   .280   .007   2
+  10 659052   1663 1837    175      4      1    .625    .50   1.34   .228   .723   .228   1.93   .233   .022   1
+  11 659061   1649 1842    194      4      0    .742    .83   2.05   .332   .685   .234   1.60   .228   .003   1
+  12 659062   1649 1842    194      4      0    .698    .61   1.83   .224   .570   .245   1.97   .248   .023   1
+  13 659071   1648 1839    192      4      0    .589    .68   2.08   .299   .690   .240   1.85   .243  -.007   2
+  14 659072   1648 1842    195      4      0    .620    .67   2.42   .344   .747   .245   1.86   .226  -.015   3
+  15 659081   1654 1842    189      4      1    .603    .71   2.12   .316   .662   .248   2.35   .269  -.004   1
+  16 659082   1654 1836    183      4      2    .691    .63   1.59   .275   .706   .230   1.80   .227  -.003   1
+  17 659091   1664 1832    169      4      0    .595    .82   1.53   .220   .309   .249   1.59   .224   .014   2
+  18 659092   1666 1832    167      4      0    .692    .59   1.38   .222   .719   .199   2.03   .210  -.004   2
+  19 659101   1675 1841    167      4      0    .620    .67   1.63   .256   .675   .194   1.64   .184   .040   0
+  20 659102   1675 1842    168      4      1    .649    .53   1.73   .237   .654   .213   1.67   .206   .007   2
+  21 659111   1668 1835    168      4      0    .627    .83   2.07   .329   .682   .220   1.78   .211  -.027   2
+  22 659112   1668 1821    154      3      0    .567    .82   2.12   .310   .730   .183   1.70   .184  -.004   1
+  23 659121   1657 1841    185      4      0    .639    .64   1.52   .200   .595   .217   1.68   .205   .079   0
+  24 659122   1657 1842    186      4      0    .604    .71   1.79   .233   .520   .223   2.12   .225   .018   1
+  25 659141   1624 1842    219      4      1    .467    .64   2.08   .224   .571   .177   1.83   .186  -.007   3
+  26 659142   1624 1842    219      4      2    .468    .45   1.93   .230   .764   .221   1.98   .224  -.010   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4812    102     10    .617    .68   3.36   .287   .652   .227   2.35   .227   .017
+
+ DATA CHECKS (rwl.check): ar002
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ar002.rwl
+ 26 series, 4812 measurements, 1624-1842, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file ar002.rwl, MD5 e2bc9de36490266a23851432146b6711.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

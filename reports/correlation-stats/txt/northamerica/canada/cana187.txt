@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: cana187
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cana187.rwl
+      MD5 of measurement file: 33bf82dec0fcf8eed842769d01698232
+      Date checked           : 01OCT26
+      Beginning year         : 1907
+      Ending year            : 1999
+      Principal investigators: St. George, S.
+      Site name              : Shay
+      Species information    : QUMA Quercus macrocarpa Michx.
+      Latitude               : 49.6500 N
+      Longitude              : 97.1200 W
+      Elevation              : 230 m
+
+      Series intercorrelation: 0.687
+      Avg mean sensitivity   : 0.226
+      Avg standard deviation : 0.762
+      Avg autocorrelation    : 0.753
+      Number dated series    : 14
+      Segment length tested  : 46
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cana187
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  46-year dated segments, lagged  23 years
+ Flags:  A = correlation under   .3420 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 
+                        1995 
+ --- -------- ---------  ---- 
+   1 s0001a   1913 1999  .84 
+   2 s0002a   1919 1999  .80 
+   3 s0003a   1925 1999  .75 
+   4 s0004a   1923 1999  .74 
+   5 s0005a   1913 1999  .91 
+   6 s0006a   1907 1999  .84 
+   7 s0007a   1932 1999  .75 
+   8 s0008a   1908 1999  .87 
+   9 s0009a   1909 1999  .78 
+  10 s0010a   1929 1998  .89 
+  11 s0011a   1907 1999  .82 
+  12 s0012a   1920 1999  .75 
+  13 s0013a   1908 1999  .86 
+  14 s0014a   1907 1999  .76 
+ Av segment correlation  .81 
+
+ FLAGGED SEGMENTS: cana187
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: cana187
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 s0001a   1913 1999     87      1      0    .706   1.29   2.94   .517   .733   .214   1.75   .219   .035   2
+   2 s0002a   1919 1999     81      1      0    .782   1.81   5.71  1.198   .895   .215   1.55   .215   .015   1
+   3 s0003a   1925 1999     75      1      0    .725   2.95   6.69  1.216   .767   .212   1.64   .216   .010   1
+   4 s0004a   1923 1999     77      1      0    .483   2.20   4.30   .946   .884   .178   1.46   .180  -.141   1
+   5 s0005a   1913 1999     87      1      0    .768   1.85   3.89   .895   .818   .245   2.00   .256  -.102   1
+   6 s0006a   1907 1999     93      1      0    .747   1.51   3.29   .754   .814   .243   1.92   .253  -.011   1
+   7 s0007a   1932 1999     68      1      0    .746   1.86   3.04   .511   .648   .195   1.34   .192   .056   1
+   8 s0008a   1908 1999     92      1      0    .732   1.72   4.17   .780   .737   .259   1.61   .243   .025   1
+   9 s0009a   1909 1999     91      1      0    .569   1.68   3.91   .846   .819   .260   1.65   .251  -.024   1
+  10 s0010a   1929 1998     70      1      0    .867   2.04   3.40   .562   .591   .205   1.45   .197   .042   1
+  11 s0011a   1907 1999     93      1      0    .574   1.33   3.59   .653   .618   .250   2.46   .300   .018   2
+  12 s0012a   1920 1999     80      1      0    .750   1.57   2.39   .452   .623   .200   1.40   .185   .085   0
+  13 s0013a   1908 1999     92      1      0    .481   1.66   3.47   .770   .771   .269   1.60   .274   .026   1
+  14 s0014a   1907 1999     93      1      0    .749   1.42   3.17   .583   .787   .186   1.71   .202  -.044   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1179     14      0    .687   1.75   6.69   .762   .753   .226   2.46   .230  -.002
+
+ DATA CHECKS (rwl.check): cana187
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/canada/cana187.rwl
+ 14 series, 1179 measurements, 1907-1999, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file cana187.rwl, MD5 33bf82dec0fcf8eed842769d01698232.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3420 for 46-year segments.
+ Segments: 46 years, lagged 23, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 46 years: the record is only 93 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

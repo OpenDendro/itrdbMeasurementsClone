@@ -1,0 +1,62 @@
+
+ COFECHA-style crossdating report: wi022
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wi022.rwl
+      MD5 of measurement file: 8057c13cde6d612837655dfb33ba97cb
+      Date checked           : 01OCT26
+      Beginning year         : 1842
+      Ending year            : 1934
+      Principal investigators: Larson, E.R.; Allen, S.A.; Underwood, C.A.
+      Site name              : Barry's Tavern
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 42.5380 N
+      Longitude              : 90.2410 W
+      Elevation              : 352 m
+
+      Avg mean sensitivity   : 0.184
+      Avg standard deviation : 0.447
+      Avg autocorrelation    : 0.812
+      Number dated series    : 2
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: wi022
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 BYT001   1842 1934     93                          .90   2.02   .444   .905   .179                        1
+   2 BYT002   1889 1927     39                         1.57   2.74   .456   .590   .197                        2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            132                         1.10   2.74   .447   .812   .184                     
+
+ DATA CHECKS (rwl.check): wi022
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wi022.rwl
+ 2 series, 132 measurements, 1842-1934, 0.001 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file wi022.rwl, MD5 8057c13cde6d612837655dfb33ba97cb.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 2 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

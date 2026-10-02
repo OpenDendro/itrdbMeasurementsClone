@@ -1,0 +1,115 @@
+
+ COFECHA-style crossdating report: swit104
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit104.rwl
+      MD5 of measurement file: ff1850bfe08e254f253622e5df43687f
+      Date checked           : 01OCT26
+      Beginning year         : 1805
+      Ending year            : 1975
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Rigi Klosterli SZ
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0300 N
+      Longitude              : 8.4800 E
+      Elevation              : 1400 m
+
+      Series intercorrelation: 0.554
+      Avg mean sensitivity   : 0.170
+      Avg standard deviation : 0.760
+      Avg autocorrelation    : 0.880
+      Number dated series    : 14
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit104
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 
+                        1949 1974 
+ --- -------- ---------  ---- ---- 
+   1 219015   1884 1975  .58  .56 
+   2 220017   1873 1975  .69  .53 
+   3 220018   1866 1975  .69  .54 
+   4 220019   1885 1975  .76  .75 
+   5 220020   1865 1975  .76  .68 
+   6 220021   1855 1975  .71  .66 
+   7 220024   1805 1975  .51  .57 
+   8 220025   1829 1975  .36  .48 
+   9 220026   1854 1975  .55  .64 
+  10 220027   1862 1975  .74  .65 
+  11 220028   1866 1975  .38  .41 
+  12 220029   1871 1975  .57  .55 
+  13 220030   1875 1975  .59  .54 
+  14 220031   1858 1975  .72  .69 
+ Av segment correlation  .61  .59 
+
+ FLAGGED SEGMENTS: swit104
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: swit104
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 219015   1884 1975     92      2      0    .540   2.26   4.83   .921   .879   .126   1.34   .122   .107   0
+   2 220017   1873 1975    103      2      0    .589   1.55   3.74   .599   .890   .133   1.35   .137  -.026   1
+   3 220018   1866 1975    110      2      0    .610   1.82   4.21   .748   .873   .146   1.45   .152  -.008   3
+   4 220019   1885 1975     91      2      0    .746   1.84   3.34   .608   .825   .149   1.30   .137   .010   1
+   5 220020   1865 1975    111      2      0    .679   1.66   3.79   .616   .879   .125   1.39   .131  -.013   3
+   6 220021   1855 1975    121      2      0    .587   1.75   4.66   .799   .895   .166   1.44   .166   .007   1
+   7 220024   1805 1975    171      2      0    .415   1.06   3.84   .891   .962   .210   1.83   .200  -.002   2
+   8 220025   1829 1975    147      2      0    .348    .93   1.71   .305   .764   .175   1.48   .170   .030   2
+   9 220026   1854 1975    122      2      0    .538   1.73   3.53   .605   .827   .162   1.36   .162  -.040   3
+  10 220027   1862 1975    114      2      0    .635   1.68   4.41   .857   .901   .179   1.40   .168   .059   0
+  11 220028   1866 1975    110      2      0    .393   1.30   3.70   .812   .881   .237   1.66   .239  -.043   1
+  12 220029   1871 1975    105      2      0    .586   1.99   5.06   .979   .914   .166   1.37   .159  -.011   1
+  13 220030   1875 1975    101      2      0    .600   1.97   4.05   .931   .885   .180   1.44   .177   .115   0
+  14 220031   1858 1975    118      2      0    .660   1.65   4.86  1.049   .926   .187   1.71   .179   .065   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1616     28      0    .554   1.61   5.06   .760   .880   .170   1.83   .167   .016
+
+ DATA CHECKS (rwl.check): swit104
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit104.rwl
+ 14 series, 1616 measurements, 1805-1975, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file swit104.rwl, MD5 ff1850bfe08e254f253622e5df43687f.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

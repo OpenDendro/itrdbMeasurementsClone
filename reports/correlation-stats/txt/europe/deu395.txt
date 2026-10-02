@@ -1,0 +1,131 @@
+
+ COFECHA-style crossdating report: deu395
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu395.rwl
+      MD5 of measurement file: 6b7f38cc0bb9c1b89e89d7e5d2ca4727
+      Date checked           : 01OCT26
+      Beginning year         : 1794
+      Ending year            : 2008
+      Principal investigators: Hartl, C.; Dittmar, C.; Rothe, A.
+      Site name              : Saalforste, Mittergwänd
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 47.5100 N
+      Longitude              : 12.7840 E
+      Elevation              : 1250 m
+
+      Series intercorrelation: 0.598
+      Avg mean sensitivity   : 0.249
+      Avg standard deviation : 0.813
+      Avg autocorrelation    : 0.883
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 0, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 1.82
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu395
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 SAMG901A 1815 2008       .52  .43  .50  .52  .46  .48 
+   2 SAMG901E 1806 2008       .56  .60  .57  .58  .51  .48 
+   3 SAMG902A 1799 2008  .46  .78  .72  .67  .73  .67  .70 
+   4 SAMG902E 1801 2008       .79  .74  .53  .58  .54  .58 
+   5 SAMG903A 1834 2008            .56  .45  .53  .59  .70 
+   6 SAMG903E 1824 2008            .57  .60  .63  .53  .54 
+   7 SAMG904A 1845 2008            .46  .65  .64  .62  .71 
+   8 SAMG904E 1846 2008            .36  .51  .49  .53  .74 
+   9 SAMG905A 1794 2008  .45  .65  .66  .62  .65  .59  .64 
+  10 SAMG905E 1803 2008       .67  .72  .58  .54  .58  .73 
+  11 SAMG906A 1843 2008            .62  .57  .55  .55  .70 
+  12 SAMG906E 1846 2008            .57  .49  .46  .41  .65 
+  13 SAMG911A 1805 2008       .39  .60  .65  .68  .70  .79 
+  14 SAMG911E 1803 2008       .63  .60  .68  .74  .69  .78 
+  15 SAMG912A 1840 2008            .72  .73  .66  .50  .55 
+  16 SAMG912E 1853 2008                 .71  .65  .59  .63 
+  17 SAMG913A 1824 2008       .31B .48  .56  .69  .77  .78 
+  18 SAMG913E 1799 2008  .28B .51  .67  .60  .54  .60  .72 
+  19 SAMG914A 1861 2008                 .66  .72  .65  .61 
+  20 SAMG914E 1868 2008                 .54  .72  .75  .57 
+ Av segment correlation  .39  .58  .59  .59  .61  .59  .65 
+
+ FLAGGED SEGMENTS: deu395
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  17 SAMG913A 1825 1874     B     .313         1      .319   .006  weak at every lag
+  18 SAMG913E 1800 1849     B     .282        10      .355   .073
+
+ DESCRIPTIVE STATISTICS: deu395
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SAMG901A 1815 2008    194      6      0    .490   1.32   3.91   .807   .824   .266   2.54   .311   .014   2
+   2 SAMG901E 1806 2008    203      6      0    .541    .91   3.58   .863   .954   .243   1.81   .263   .004   2
+   3 SAMG902A 1799 2008    210      7      0    .642   1.26   4.66   .986   .889   .244   2.38   .281   .029   1
+   4 SAMG902E 1801 2008    208      6      0    .587   1.15   4.12   .943   .918   .227   2.13   .255   .038   1
+   5 SAMG903A 1834 2008    175      5      0    .608   1.11   3.48   .756   .907   .216   1.63   .234   .001   1
+   6 SAMG903E 1824 2008    185      5      0    .528   1.24   3.73   .915   .912   .259   2.35   .278  -.008   3
+   7 SAMG904A 1845 2008    164      5      0    .620   1.08   3.30   .682   .836   .268   1.86   .287  -.001   3
+   8 SAMG904E 1846 2008    163      5      0    .536   1.33   4.36   .822   .811   .287   1.81   .294   .035   3
+   9 SAMG905A 1794 2008    215      7      0    .611    .89   3.18   .559   .886   .244   1.87   .256   .028   2
+  10 SAMG905E 1803 2008    206      6      0    .636   1.09   3.79   .881   .926   .259   1.80   .267  -.019   1
+  11 SAMG906A 1843 2008    166      5      0    .601   1.13   3.21   .547   .798   .263   1.52   .240   .031   2
+  12 SAMG906E 1846 2008    163      5      0    .553   1.29   3.01   .600   .785   .265   1.71   .263   .003   1
+  13 SAMG911A 1805 2008    204      6      0    .653    .92   3.54   .871   .956   .262   1.65   .245   .011   2
+  14 SAMG911E 1803 2008    206      6      0    .700   1.45   5.67  1.153   .925   .264   1.68   .258   .007   1
+  15 SAMG912A 1840 2008    169      5      0    .616   1.01   3.44   .729   .918   .271   1.79   .263  -.014   1
+  16 SAMG912E 1853 2008    156      4      0    .641   1.27   4.36   .908   .900   .285   1.69   .275  -.001   2
+  17 SAMG913A 1824 2008    185      6      1    .600   1.08   3.42   .821   .930   .236   1.65   .251   .026   1
+  18 SAMG913E 1799 2008    210      7      1    .565   1.35   4.01   .789   .872   .233   1.89   .236  -.009   1
+  19 SAMG914A 1861 2008    148      4      0    .621   1.48   4.00   .762   .887   .186   1.45   .191  -.009   3
+  20 SAMG914E 1868 2008    141      4      0    .591   2.04   4.02   .714   .750   .199   1.43   .201   .026   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3671    110      2    .598   1.20   5.67   .813   .883   .249   2.54   .258   .010
+
+ DATA CHECKS (rwl.check): deu395
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu395.rwl
+ 20 series, 3671 measurements, 1794-2008, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu395.rwl, MD5 6b7f38cc0bb9c1b89e89d7e5d2ca4727.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

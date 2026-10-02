@@ -1,0 +1,167 @@
+
+ COFECHA-style crossdating report: rus382
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : rus382.rwl
+      MD5 of measurement file: 0df9d6e5c6252d54ef0d7ed709c4a335
+      Date checked           : 01OCT26
+      Beginning year         : 1811
+      Ending year            : 2014
+      Principal investigators: Solomina, O.
+      Site name              : Selivanovo Krapivnenskiy Dendrariy - W01D
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 53.9884 N
+      Longitude              : 37.2554 E
+      Elevation              : 175 m
+
+      Series intercorrelation: 0.570
+      Avg mean sensitivity   : 0.214
+      Avg standard deviation : 0.854
+      Avg autocorrelation    : 0.711
+      Number dated series    : 27
+      Series crossdated      : 20
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.13
+
+
+ CORRELATION OF SERIES BY SEGMENTS: rus382
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 W01D1A   1904 2014       .63  .51 
+   2 W01D1B   1908 2014       .34  .61 
+   3 W01D2A   1940 2014            .48 
+   4 W01D3A   1854 2014  .70  .71  .75 
+   5 W01D4    1930 2014            .61 
+   6 W01D5A   1812 2014  .67  .65  .63 
+   8 W01D6A   1833 2014  .54  .61  .51 
+   9 W01D6B   1856 2014  .57  .61  .67 
+  11 W01D7B   1825 2014  .73  .74  .81 
+  12 W01D8A   1852 2014  .75  .67  .45 
+  13 W01D8B   1858 2014  .84  .73  .60 
+  18 W01D10B  1853 2014  .54  .54  .62 
+  19 W01D11   1927 2014            .44 
+  20 W01D12A  1879 2014  .62  .65  .74 
+  21 W01D12B  1925 2014            .66 
+  22 W01D13A  1875 2014  .67  .69  .67 
+  23 W01D13B  1874 2014  .58  .55  .68 
+  24 W01D14A  1828 2014  .47  .49  .56 
+  27 W01D15B  1830 2014  .36  .27B .52 
+ Av segment correlation  .62  .59  .61 
+
+ FLAGGED SEGMENTS: rus382
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  27 W01D15B  1925 1974     B     .273        -9      .275   .002  weak at every lag
+
+ DESCRIPTIVE STATISTICS: rus382
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 W01D1A   1904 2014    111      2      0    .624   3.49   5.53   .893   .379   .220   1.59   .211   .023   2
+   2 W01D1B   1908 2014    107      2      0    .537   2.18   4.46   .767   .629   .217   1.58   .217   .009   1
+   3 W01D2A   1940 2014     75      1      0    .494   1.98   3.67   .651   .635   .210   1.74   .213   .029   1
+   4 W01D3A   1854 2014    161      3      0    .708   1.53   2.68   .417   .525   .193   1.62   .199   .013   1
+   5 W01D4    1930 2014     85      1      0    .555   1.98   4.51   .592   .482   .176   2.04   .221  -.010   2
+   6 W01D5A   1812 2014    203      3      0    .548   1.56   4.64   .739   .810   .211   2.19   .224   .001   2
+   7 W01D5B   1822 2014    189                         2.00   4.07   .666   .760   .189                         
+   8 W01D6A   1833 2014    182      3      0    .391   1.52   4.21   .710   .801   .220   1.56   .217  -.011   2
+   9 W01D6B   1856 2014    159      3      0    .586   1.48   3.22   .657   .745   .210   2.26   .240   .010   2
+  10 W01D7A   1846 2014    158                         1.98   5.22   .901   .581   .309                         
+  11 W01D7B   1825 2014    190      3      0    .648   2.03   6.86  1.200   .845   .238   1.89   .257  -.007   3
+  12 W01D8A   1852 2014    163      3      0    .603   2.57   5.85   .903   .800   .176   1.54   .172  -.008   2
+  13 W01D8B   1858 2014    157      3      0    .723   2.45   5.44   .914   .808   .182   1.40   .169   .009   3
+  14 W01D8C   1847 2014    164                         1.81   7.35   .836   .852   .195                         
+  15 W01D9A   1950 2014     65      0      0    .653   2.33   5.67   .726   .666   .166   1.45   .170  -.055   2
+  16 W01D9B   1906 2014    102                         2.24   4.42   .709   .698   .187                         
+  17 W01D10A  1857 2014    151                         2.74   9.01  1.397   .756   .204                         
+  18 W01D10B  1853 2014    162      3      0    .481   2.64   6.43  1.261   .711   .249   1.92   .255   .024   2
+  19 W01D11   1927 2014     88      1      0    .507   2.05   5.49   .783   .507   .221   1.89   .245   .086   0
+  20 W01D12A  1879 2014    136      3      0    .654   2.04   4.69   .829   .692   .260   1.75   .253   .030   1
+  21 W01D12B  1925 2014     90      1      0    .600   1.97   4.55   .737   .449   .265   3.21   .341  -.008   3
+  22 W01D13A  1875 2014    140      3      0    .652   2.58   5.02   .802   .672   .197   1.48   .192  -.008   2
+  23 W01D13B  1874 2014    141      3      0    .599   1.87   3.74   .619   .651   .211   1.53   .197   .018   1
+  24 W01D14A  1828 2014    187      3      0    .489   1.70   4.81   .665   .781   .166   1.88   .190   .001   3
+  25 W01D14B  1811 2014    203                         1.77   3.48   .609   .686   .190                         
+  26 W01D15A  1829 2014    184                         2.06   6.76  1.271   .832   .252                         
+  27 W01D15B  1830 2014    185      3      1    .418   2.20   6.56  1.322   .801   .250   2.20   .269  -.018   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3938     47      1    .570   2.07   9.01   .854   .711   .214   3.21   .222   .005
+
+ DATA CHECKS (rwl.check): rus382
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/rus382.rwl
+ 27 series, 3938 measurements, 1811-2014, 0.01 mm precision
+ 0 error(s), 8 warning(s), 7 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1809-2014 but the measurements cover 1811-2014
+   RWL_INTERNAL_NA (7)
+     W01D10A: no measurement for 1947-1953, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D14B: no measurement for 1959, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D15A: no measurement for 1989-1990, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D5B: no measurement for 1947-1950, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D7A: no measurement for 1938-1948, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D8C: no measurement for 1947-1950, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     W01D9B: no measurement for 1947-1953, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:53 PDT.
+ Measurement file rus382.rwl, MD5 0df9d6e5c6252d54ef0d7ed709c4a335.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series W01D5B has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series W01D7A has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series W01D8C has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series W01D9B has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series W01D10A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series W01D14B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series W01D15A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

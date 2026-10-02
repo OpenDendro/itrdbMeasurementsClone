@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: brit5
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : brit5.rwl
+      MD5 of measurement file: d4018cfc8b2d5563b3cb2dcbb9bbf614
+      Date checked           : 01OCT26
+      Beginning year         : 1025
+      Ending year            : 1214
+      Principal investigators: Barefoot, A.C.
+      Site name              : King Arthur's Round Table  Winchester Castle
+      Species information    : QURO Quercus robur L. = Quercus pendunculata Ehrl.
+      Latitude               : 51.0500 N
+      Longitude              : 1.3200 W
+      Elevation              : 91 m
+
+      Series intercorrelation: 0.580
+      Avg mean sensitivity   : 0.228
+      Avg standard deviation : 0.752
+      Avg autocorrelation    : 0.552
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 2 of the B weak at every lag)
+      Pct problem segments   : 10.42
+
+
+ CORRELATION OF SERIES BY SEGMENTS: brit5
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1100 1125 1150 
+                        1149 1174 1199 
+ --- -------- ---------  ---- ---- ---- 
+   1 WRU8     1049 1191  .46  .17B     
+   2 WRU9     1080 1205  .53  .56  .56 
+   3 WRU13    1075 1206  .53  .53  .53 
+   5 WRU18    1087 1201  .61  .61  .59 
+   6 WRU20    1116 1193       .53      
+   7 WRU21    1047 1156  .64           
+   8 WRU22    1072 1211  .64  .61  .61 
+   9 WRU23    1083 1214  .61  .28A .22B
+  10 WRU24    1097 1198  .50  .33A     
+  11 WRU25    1084 1154  .78           
+  12 WRU26    1060 1160  .73           
+  13 WRU27    1025 1165  .67           
+  14 WRU28    1038 1158  .69           
+  15 WRU29    1045 1161  .65           
+  16 WRU30    1048 1178  .80  .71      
+  17 WRU31    1048 1194  .83  .64      
+  18 WRU32    1105 1185       .63      
+  19 WRU33    1044 1168  .77           
+  20 WRU34    1058 1177  .88  .82      
+  21 WRU35    1057 1176  .88  .87      
+  22 WRU36    1087 1197  .46  .09B     
+  23 WRU39    1049 1203  .57  .52  .57 
+  24 WRU40    1085 1180  .64  .72      
+  25 WRU44    1050 1180  .68  .60      
+  26 WRUBAVE  1025 1214  .98  .96  .95 
+ Av segment correlation  .68  .57  .57 
+
+ FLAGGED SEGMENTS: brit5
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 WRU8     1125 1174     B     .171        -8      .327   .156  weak at every lag
+   9 WRU23    1125 1174     A     .280         0
+   9 WRU23    1150 1199     B     .218        -5      .264   .047  weak at every lag
+  10 WRU24    1125 1174     A     .328         0
+  22 WRU36    1125 1174     B     .089         1      .724   .634
+
+ DESCRIPTIVE STATISTICS: brit5
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WRU8     1049 1191    143      2      1    .363   2.41   4.74   .700   .525   .211   1.74   .212   .008   1
+   2 WRU9     1080 1205    126      3      0    .516   2.52   4.50   .570   .388   .192   1.52   .170   .026   0
+   3 WRU13    1075 1206    132      3      0    .517   2.50   4.42   .637   .364   .226   1.48   .211   .074   0
+   4 WRU15    1045 1147    103      0      0    .285   2.02   4.58   .703   .550   .246   1.73   .236   .025   1
+   5 WRU18    1087 1201    115      3      0    .565   2.49   5.57   .768   .567   .216   1.83   .224   .020   1
+   6 WRU20    1116 1193     78      1      0    .499   2.19   4.02   .579   .568   .185   1.45   .185   .026   1
+   7 WRU21    1047 1156    110      1      0    .529   2.11   4.00   .619   .549   .224   1.65   .220  -.017   3
+   8 WRU22    1072 1211    140      3      0    .609   2.59   5.34   .882   .582   .243   1.59   .233  -.005   2
+   9 WRU23    1083 1214    132      3      2    .476   2.23   4.21   .646   .542   .208   1.54   .195  -.015   1
+  10 WRU24    1097 1198    102      2      1    .505   2.00   3.48   .448   .380   .203   1.51   .191  -.011   1
+  11 WRU25    1084 1154     71      1      0    .747   2.49   6.67  1.170   .738   .271   1.72   .282  -.040   2
+  12 WRU26    1060 1160    101      1      0    .620   2.51   5.81   .813   .501   .245   1.92   .256   .030   1
+  13 WRU27    1025 1165    141      1      0    .520   2.29   5.60   .784   .673   .216   1.75   .230  -.011   2
+  14 WRU28    1038 1158    121      1      0    .546   2.11   5.35  1.058   .761   .229   2.16   .266  -.010   1
+  15 WRU29    1045 1161    117      1      0    .536   2.33   6.43   .891   .617   .270   1.76   .253   .032   3
+  16 WRU30    1048 1178    131      2      0    .701   2.37   5.05   .911   .690   .219   1.77   .230   .019   1
+  17 WRU31    1048 1194    147      2      0    .654   2.15   5.12   .733   .573   .260   1.93   .242   .011   1
+  18 WRU32    1105 1185     81      1      0    .735   2.74   6.67   .866   .309   .259   2.14   .271   .020   1
+  19 WRU33    1044 1168    125      1      0    .563   2.54   6.24  1.096   .636   .271   1.73   .263   .026   1
+  20 WRU34    1058 1177    120      2      0    .822   2.66   5.78   .929   .541   .254   1.84   .260  -.002   2
+  21 WRU35    1057 1176    120      2      0    .806   2.62   6.51   .989   .543   .267   2.04   .278   .053   1
+  22 WRU36    1087 1197    111      2      1    .384   2.12   4.71   .608   .317   .245   1.89   .247   .006   1
+  23 WRU39    1049 1203    155      3      0    .455   2.15   4.45   .583   .440   .226   1.65   .195   .029   0
+  24 WRU40    1085 1180     96      2      0    .622   2.49   4.19   .679   .526   .218   1.62   .199   .004   2
+  25 WRU44    1050 1180    131      2      0    .591   1.51   3.24   .509   .536   .244   2.08   .252   .016   1
+  26 WRUBAVE  1025 1214    190      3      0    .861   2.10   4.17   .592   .782   .142   1.58   .151  -.025   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3139     48      5    .580   2.31   6.67   .752   .552   .228   2.16   .226   .011
+
+ DATA CHECKS (rwl.check): brit5
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/brit5.rwl
+ 26 series, 3139 measurements, 1025-1214, 0.01 mm precision
+ 1 error(s), 0 warning(s), 3 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (1)
+     WRU36: correlates best with the master at lag 1 (r = 0.557 against r = 0.444 as dated); the series may be misdated by 1 year(s), most likely a false ring or a ring measured twice
+ 3 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file brit5.rwl, MD5 d4018cfc8b2d5563b3cb2dcbb9bbf614.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,116 @@
+
+ COFECHA-style crossdating report: ma004
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ma004.rwl
+      MD5 of measurement file: e4d422afccaea4aae13d076095bed254
+      Date checked           : 01OCT26
+      Beginning year         : 1527
+      Ending year            : 1712
+      Principal investigators: Miles, D.W.H.
+      Site name              : Coffin House Newbury
+      Species information    : QUSP Quercus spp. L.
+      Latitude               : 42.7700 N
+      Longitude              : 70.8500 W
+      Elevation              : 12 m
+
+      Series intercorrelation: 0.533
+      Avg mean sensitivity   : 0.224
+      Avg standard deviation : 0.442
+      Avg autocorrelation    : 0.731
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 2  (A 1, B 1)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ma004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 
+                        1649 1674 1699 
+ --- -------- ---------  ---- ---- ---- 
+   1 chn1a    1580 1653  .50           
+   2 chn1b    1592 1669  .72           
+   3 chn1c    1591 1676  .75  .83      
+   4 chn3     1584 1676  .30A .55      
+   5 chn4a    1562 1668  .58           
+   7 chn4c    1562 1677  .65  .68      
+   8 chn5     1560 1676  .74  .52      
+   9 chn6a    1560 1671  .71           
+  11 chn11a   1603 1712       .73  .64 
+  12 chn11b   1630 1712            .67 
+  13 chn13    1527 1712  .22B .46  .35 
+ Av segment correlation  .57  .63  .55 
+
+ FLAGGED SEGMENTS: ma004
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 chn3     1600 1649     A     .298         0
+  13 chn13    1600 1649     B     .221         1      .345   .124
+
+ DESCRIPTIVE STATISTICS: ma004
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 chn1a    1580 1653     74      1      0    .495   1.57   3.68   .634   .574   .282   2.06   .306   .064   1
+   2 chn1b    1592 1669     78      1      0    .782   1.55   3.47   .624   .580   .305   2.05   .317   .138   1
+   3 chn1c    1591 1676     86      2      0    .788   1.51   2.78   .554   .544   .292   1.71   .278   .025   3
+   4 chn3     1584 1676     93      2      1    .470   1.40   3.19   .533   .753   .183   1.55   .183  -.022   1
+   5 chn4a    1562 1668    107      1      0    .581    .95   2.05   .417   .814   .216   1.76   .229   .023   1
+   6 chn4b    1602 1668     67      0      0    .698   1.09   2.30   .557   .852   .209   2.03   .270   .095   1
+   7 chn4c    1562 1677    116      2      0    .598    .89   2.06   .419   .766   .242   1.91   .260  -.034   1
+   8 chn5     1560 1676    117      2      0    .440    .98   2.10   .407   .702   .228   2.43   .261   .011   1
+   9 chn6a    1560 1671    112      1      0    .470   1.05   2.05   .492   .733   .239   1.50   .234  -.024   3
+  10 chn6b    1653 1676     24      0      0    .558    .73   1.19   .205   .587   .214   1.29   .187   .201   0
+  11 chn11a   1603 1712    110      2      0    .618   1.06   1.89   .281   .693   .160   1.57   .175  -.023   1
+  12 chn11b   1630 1712     83      1      0    .707   1.09   1.84   .279   .740   .139   1.37   .147  -.057   1
+  13 chn13    1527 1712    186      3      1    .198    .68   1.75   .367   .877   .221   1.94   .220   .011   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1253     18      2    .533   1.08   3.68   .442   .731   .224   2.43   .235   .015
+
+ DATA CHECKS (rwl.check): ma004
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ma004.rwl
+ 13 series, 1253 measurements, 1527-1712, 0.01 mm precision
+ 0 error(s), 1 warning(s), 7 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1527-1677 but the measurements cover 1527-1712
+ 7 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file ma004.rwl, MD5 e4d422afccaea4aae13d076095bed254.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

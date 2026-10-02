@@ -1,0 +1,128 @@
+
+ COFECHA-style crossdating report: ak172
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak172.rwl
+      MD5 of measurement file: f794cb613f4079e992081a454d658b1b
+      Date checked           : 01OCT26
+      Beginning year         : 235
+      Ending year            : 599
+      Principal investigators: Barclay, D.; Yager, E.M.; Graves, J.; Kloczko, M.
+      Site name              : Copper River Delta
+      Species information    : PCSI Picea sitchensis (Bong.) Carrière
+      Latitude               : 60.5450 N
+      Longitude              : 145.2500 W
+      Elevation              : 60 m
+
+      Series intercorrelation: 0.573
+      Avg mean sensitivity   : 0.172
+      Avg standard deviation : 0.419
+      Avg autocorrelation    : 0.895
+      Number dated series    : 16
+      Segment length tested  : 50
+
+      Number problem segments: 8  (A 3, B 5; 2 of the B weak at every lag)
+      Pct problem segments   : 9.30
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak172
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   300  325  350  375  400  425  450  475  500  525  550 
+                         349  374  399  424  449  474  499  524  549  574  599 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 SH52B     297  599  .62  .70  .58  .54  .54  .52  .54  .65  .75  .66  .59 
+   2 SH55C1    270  559  .51  .39  .28A .52  .54  .53  .41  .43  .64           
+   3 SH55C2    292  558  .59  .53  .27A .35  .53  .50  .58  .75  .67           
+   4 SH55M1    235  537  .57  .51  .30B .32A .45  .55  .58  .62                
+   5 SH55M2    472  599                                     .54  .46  .51B .64 
+   6 SH71A     346  574            .53  .70  .66  .64  .79  .73  .68  .64      
+   7 SH71B     316  510       .55  .59  .64  .62  .50  .40B                    
+   8 SH81A1    443  553                                .24B .50  .67           
+   9 SH81A2    473  564                                     .65  .72           
+  10 SH81B     387  506                      .69  .67  .64                     
+  11 SH81C1    459  569                                     .77  .83           
+  12 SH81C2    391  569                      .20B .43  .71  .76  .78           
+  13 SH81D     394  557                      .66  .78  .79  .81  .83           
+  14 SH81E     349  558                 .62  .71  .80  .85  .82  .83           
+  15 SH81G     458  565                                     .68  .68           
+  16 SH81I     424  539                           .33  .63  .68                
+ Av segment correlation  .57  .54  .42  .53  .56  .57  .60  .67  .71  .60  .61 
+
+ FLAGGED SEGMENTS: ak172
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 SH55C1    350  399     A     .278         0
+   3 SH55C2    350  399     A     .268         0
+   4 SH55M1    350  399     B     .304       -10      .325   .021  weak at every lag
+   4 SH55M1    375  424     A     .315         0
+   5 SH55M2    525  574     B     .508         2      .604   .095
+   7 SH71B     450  499     B     .397         9      .413   .016
+   8 SH81A1    450  499     B     .244         1      .308   .064  weak at every lag
+  12 SH81C2    400  449     B     .201         5      .400   .199
+
+ DESCRIPTIVE STATISTICS: ak172
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SH52B     297  599    303     11      0    .609    .50   1.36   .255   .912   .172   1.60   .175  -.013   3
+   2 SH55C1    270  559    290      9      1    .447    .46   1.70   .237   .924   .147   1.54   .156  -.005   3
+   3 SH55C2    292  558    267      9      1    .541    .62   1.51   .319   .923   .141   1.57   .159   .014   1
+   4 SH55M1    235  537    303      8      2    .496    .75   3.43   .492   .911   .189   1.74   .210  -.008   3
+   5 SH55M2    472  599    128      4      1    .523    .71   2.31   .385   .894   .162   1.54   .182  -.016   3
+   6 SH71A     346  574    229      8      0    .664    .83   2.12   .407   .935   .141   1.38   .140   .004   2
+   7 SH71B     316  510    195      6      1    .515    .79   1.91   .374   .815   .230   1.79   .237  -.020   1
+   8 SH81A1    443  553    111      3      1    .481   1.42   3.73   .573   .794   .190   1.58   .207  -.002   1
+   9 SH81A2    473  564     92      2      0    .606   1.15   2.44   .604   .898   .199   1.63   .213   .078   1
+  10 SH81B     387  506    120      3      0    .614   1.05   2.34   .590   .941   .146   1.42   .154  -.010   3
+  11 SH81C1    459  569    111      2      0    .722    .68   1.46   .303   .863   .178   1.41   .180   .002   1
+  12 SH81C2    391  569    179      5      1    .572    .79   1.78   .341   .843   .185   1.61   .196   .023   1
+  13 SH81D     394  557    164      5      0    .737    .98   2.44   .549   .889   .189   1.49   .188  -.013   3
+  14 SH81E     349  558    210      6      0    .645   1.15   2.69   .513   .853   .189   1.53   .198  -.011   3
+  15 SH81G     458  565    108      2      0    .604   1.01   2.78   .603   .935   .152   1.42   .151  -.035   3
+  16 SH81I     424  539    116      3      0    .526   1.03   3.41   .705   .932   .172   1.47   .164   .037   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2926     86      8    .573    .80   3.73   .419   .895   .172   1.79   .181  -.001
+
+ DATA CHECKS (rwl.check): ak172
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak172.rwl
+ 16 series, 2926 measurements, 235-599, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ak172.rwl, MD5 f794cb613f4079e992081a454d658b1b.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

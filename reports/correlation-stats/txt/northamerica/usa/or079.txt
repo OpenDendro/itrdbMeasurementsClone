@@ -1,0 +1,134 @@
+
+ COFECHA-style crossdating report: or079
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : or079.rwl
+      MD5 of measurement file: baec95c29884b09ce5ceaec33fc861aa
+      Date checked           : 01OCT26
+      Beginning year         : 1577
+      Ending year            : 1992
+      Principal investigators: Peterson, D.W.; Peterson, D.L.
+      Site name              : Wizard Island
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 43.0000 N
+      Longitude              : 122.1700 W
+      Elevation              : 2215 m
+
+      Series intercorrelation: 0.441
+      Avg mean sensitivity   : 0.272
+      Avg standard deviation : 0.403
+      Avg autocorrelation    : 0.632
+      Number dated series    : 13
+      Segment length tested  : 50
+
+      Number problem segments: 19  (A 2, B 17; 14 of the B weak at every lag)
+      Pct problem segments   : 17.59
+
+
+ CORRELATION OF SERIES BY SEGMENTS: or079
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 HICL03B  1582 1992  .23B .51  .53  .45  .28A .34  .50  .56  .64  .66  .57  .53  .52  .53 
+   2 HICL04A  1741 1992                                .11B .42  .61  .74  .68  .66  .72  .85 
+   3 HICL05A  1577 1992  .23B .57  .45  .36  .53  .41  .45  .57  .59  .67  .73  .69  .50  .53 
+   4 HICL07A  1653 1992                 .15B .20B .19A .24B .63  .67  .47  .55  .69  .60  .74 
+   5 HICL10B  1797 1992                                          .17B .51  .62  .70  .69  .78 
+   6 HICL11B  1856 1990                                                         .46  .51  .61 
+   7 HICL13A  1771 1992                                     .55  .58  .69  .77  .73  .12B .12B
+   8 HICL14B  1777 1992                                          .25B .51  .52  .67  .59  .57 
+   9 HICL15B  1720 1992                          -.18B .24B .59  .68  .78  .78  .69  .46  .56 
+  10 HICL16B  1688 1992                      .45  .01B .05B .46  .59  .59  .59  .68  .67  .56 
+  11 HICL17B  1737 1992                               -.06B-.12B .04B .52  .72  .80  .70  .74 
+  12 HICL19A  1775 1992                                          .68  .76  .78  .79  .68  .47 
+  13 HICL20A  1781 1992                                          .73  .70  .73  .75  .60  .59 
+ Av segment correlation  .23  .54  .49  .32  .36  .15  .22  .46  .52  .63  .67  .68  .57  .59 
+
+ FLAGGED SEGMENTS: or079
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 HICL03B  1600 1649     B     .235        -2      .430   .196
+   1 HICL03B  1700 1749     A     .276         0
+   2 HICL04A  1750 1799     B     .110         8      .229   .120  weak at every lag
+   3 HICL05A  1600 1649     B     .235         2      .357   .123
+   4 HICL07A  1675 1724     B     .148        -6      .291   .143  weak at every lag
+   4 HICL07A  1700 1749     B     .197        -5      .228   .031  weak at every lag
+   4 HICL07A  1725 1774     A     .192         0
+   4 HICL07A  1750 1799     B     .238         2      .320   .082  weak at every lag
+   5 HICL10B  1800 1849     B     .170        -5      .226   .056  weak at every lag
+   7 HICL13A  1900 1949     B     .122         4      .349   .227
+   7 HICL13A  1925 1974     B     .116         4      .294   .178  weak at every lag
+   8 HICL14B  1800 1849     B     .253        -3      .264   .011  weak at every lag
+   9 HICL15B  1725 1774     B    -.183         1      .288   .471  weak at every lag
+   9 HICL15B  1750 1799     B     .244        -2      .318   .075  weak at every lag
+  10 HICL16B  1725 1774     B     .007         4      .238   .231  weak at every lag
+  10 HICL16B  1750 1799     B     .046        -8      .295   .249  weak at every lag
+  11 HICL17B  1750 1799     B    -.056        -6      .287   .343  weak at every lag
+  11 HICL17B  1775 1824     B    -.117        -7      .247   .364  weak at every lag
+  11 HICL17B  1800 1849     B     .042       -10      .304   .262  weak at every lag
+
+ DESCRIPTIVE STATISTICS: or079
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 HICL03B  1582 1992    411     14      2    .388    .63   1.69   .252   .653   .241   1.88   .258  -.001   2
+   2 HICL04A  1741 1992    252      8      1    .514    .96   4.01   .505   .617   .326   3.11   .334  -.010   1
+   3 HICL05A  1577 1992    416     14      1    .414    .71   1.59   .207   .471   .232   1.67   .216   .005   3
+   4 HICL07A  1653 1992    340     11      4    .437    .69   2.01   .295   .683   .262   1.85   .261  -.016   3
+   5 HICL10B  1797 1992    196      6      1    .454    .84   2.28   .451   .675   .312   1.99   .311  -.002   2
+   6 HICL11B  1856 1990    135      3      0    .463   1.40   3.49   .744   .810   .291   2.18   .282  -.007   2
+   7 HICL13A  1771 1992    222      7      2    .335   1.53  10.44   .830   .211   .267   5.74   .417   .005   0
+   8 HICL14B  1777 1992    216      6      1    .404    .98   2.65   .579   .854   .238   1.76   .242  -.011   2
+   9 HICL15B  1720 1992    273      9      2    .375    .63   4.66   .468   .731   .295   2.49   .310  -.027   1
+  10 HICL16B  1688 1992    305     10      2    .464    .78   1.86   .330   .679   .257   1.83   .257  -.015   3
+  11 HICL17B  1737 1992    256      8      3    .286    .94   2.67   .441   .595   .341   2.98   .356  -.003   3
+  12 HICL19A  1775 1992    218      6      0    .637    .72   2.64   .385   .631   .310   2.30   .305  -.007   2
+  13 HICL20A  1781 1992    212      6      0    .675    .60   1.67   .242   .747   .229   1.63   .230   .028   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3452    108     19    .441    .83  10.44   .403   .632   .272   5.74   .284  -.005
+
+ DATA CHECKS (rwl.check): or079
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/or079.rwl
+ 13 series, 3452 measurements, 1577-1992, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_HEADER_SPAN (1)
+     the header declares 1653-1992 but the measurements cover 1577-1992
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:55 PDT.
+ Measurement file or079.rwl, MD5 baec95c29884b09ce5ceaec33fc861aa.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

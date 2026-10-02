@@ -1,0 +1,245 @@
+
+ COFECHA-style crossdating report: deu434
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu434.rwl
+      MD5 of measurement file: 0ed10ac459441d051f7037bee66f9c48
+      Date checked           : 01OCT26
+      Beginning year         : 1878
+      Ending year            : 2016
+      Principal investigators: Esper, J.
+      Site name              : Hanau, Main-Kinzig EDK01
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.1183 N
+      Longitude              : 9.0143 E
+      Elevation              : 118 m
+
+      Series intercorrelation: 0.642
+      Avg mean sensitivity   : 0.287
+      Avg standard deviation : 0.895
+      Avg autocorrelation    : 0.730
+      Number dated series    : 94
+      Series crossdated      : 85
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 1.47
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu434
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   3 EDK0102A 1887 2016  .50  .62  .67 
+   4 EDK0102b 1908 2016       .59  .64 
+   5 EDK0103a 1908 2016       .63  .54 
+   6 EDK0103B 1903 2016       .44  .57 
+   8 EDK0104b 1889 2016  .69  .75  .60 
+   9 EDK0105a 1886 2016  .66  .60  .48 
+  10 EDK0105b 1878 2016  .70  .72  .64 
+  11 EDK0106A 1887 2016  .89  .81  .69 
+  13 EDK0107a 1899 2016  .56  .52  .66 
+  14 EDK0107b 1894 2016  .66  .60  .58 
+  15 EDK0108A 1907 2016       .51  .69 
+  16 EDK0108B 1891 2016  .71  .49  .56 
+  17 EDK0109A 1882 2016  .81  .72  .59 
+  18 EDK0109b 1887 2016  .70  .70  .63 
+  19 EDK0110a 1884 2016  .86  .68  .50 
+  20 EDK0110b 1888 2016  .87  .75  .58 
+  21 EDK0111a 1886 2016  .62  .64  .63 
+  22 EDK0111b 1891 2016  .70  .61  .58 
+  25 EDK0113a 1883 2015  .71  .68  .56 
+  26 EDK0113b 1888 2016  .73  .65  .55 
+  27 EDK0114a 1888 2016  .71  .72  .71 
+  28 EDK0114b 1889 2016  .79  .84  .66 
+  29 EDK0115a 1886 2016  .68  .44  .22B
+  30 EDK0115b 1887 2016  .66  .40  .35 
+ Av segment correlation  .71  .63  .58 
+
+ FLAGGED SEGMENTS: deu434
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  29 EDK0115a 1950 1999     B     .222         5      .258   .036  weak at every lag
+
+ DESCRIPTIVE STATISTICS: deu434
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 EDK0101A 1897 2016    119                         1.65   3.51   .780   .732   .295                         
+   2 EDK0101B 1887 2016    129                         1.40   3.55   .624   .744   .265                         
+   3 EDK0102A 1887 2016    130      3      0    .641   1.47   3.36   .445   .363   .268   1.79   .249   .011   1
+   4 EDK0102b 1908 2016    109      2      0    .642   2.11   4.18   .761   .760   .218   1.77   .221  -.042   3
+   5 EDK0103a 1908 2016    109      2      0    .594    .78   2.04   .469   .779   .331   1.86   .302   .003   3
+   6 EDK0103B 1903 2016    114      2      0    .574   1.59   3.84   .977   .810   .337   1.78   .308  -.038   3
+   7 EDK0104a 1891 2016    125                         1.74   4.11   .639   .619   .251                         
+   8 EDK0104b 1889 2016    128      3      0    .631   1.38   7.45   .896   .807   .279   1.75   .269   .009   1
+   9 EDK0105a 1886 2016    131      3      0    .613   1.67   4.01   .907   .735   .325   2.09   .310   .006   1
+  10 EDK0105b 1878 2016    139      3      0    .602   1.19   4.92   .898   .900   .284   1.94   .293  -.002   1
+  11 EDK0106A 1887 2016    130      3      0    .768   1.71   4.39   .977   .780   .277   1.72   .273   .017   1
+  12 EDK0106B 1891 2016    125                         1.24   3.96   .751   .829   .296                         
+  13 EDK0107a 1899 2016    118      3      0    .615   1.58   3.85   .548   .551   .275   1.89   .262   .001   1
+  14 EDK0107b 1894 2016    123      3      0    .607   1.28   4.16   .503   .490   .297   1.77   .275  -.036   1
+  15 EDK0108A 1907 2016    110      2      0    .650   1.75   3.24   .609   .584   .276   2.06   .268  -.031   3
+  16 EDK0108B 1891 2016    126      3      0    .658   1.07   2.43   .343   .673   .210   1.50   .203  -.009   1
+  17 EDK0109A 1882 2016    135      3      0    .740   1.61   6.66  1.275   .887   .294   1.72   .277  -.057   3
+  18 EDK0109b 1887 2016    130      3      0    .679   1.35   6.45   .939   .837   .310   1.63   .284  -.044   3
+  19 EDK0110a 1884 2016    133      3      0    .694   1.00   3.37   .557   .788   .295   2.01   .293   .003   2
+  20 EDK0110b 1888 2016    129      3      0    .706   1.83   4.48   .966   .798   .275   1.57   .263  -.001   1
+  21 EDK0111a 1886 2016    131      3      0    .662   1.42   2.57   .435   .603   .223   1.55   .212  -.056   3
+  22 EDK0111b 1891 2016    126      3      0    .669   1.56   5.19   .807   .755   .262   1.85   .261  -.002   1
+  23 EDK0112a 1887 2016    129                         1.08   4.36   .837   .892   .309                         
+  24 EDK0112B 1896 2013    117                          .86   2.79   .600   .865   .315                         
+  25 EDK0113a 1883 2015    133      3      0    .531   1.36   5.48   .837   .732   .316   1.76   .314   .025   1
+  26 EDK0113b 1888 2016    129      3      0    .596   1.36   3.95   .762   .758   .295   2.06   .281   .013   1
+  27 EDK0114a 1888 2016    129      3      0    .683   1.35   4.81   .665   .787   .253   1.60   .243  -.010   3
+  28 EDK0114b 1889 2016    128      3      0    .663   1.55   3.66   .773   .876   .219   1.91   .232  -.000   1
+  29 EDK0115a 1886 2016    131      3      1    .465   1.19   5.98  1.004   .897   .309   1.89   .315  -.010   1
+  30 EDK0115b 1887 2016    130      3      0    .512   1.27   5.11   .766   .815   .293   2.25   .304   .014   1
+  31 EDK0116a 1965 2016     52      0      0    .663   1.99   4.36  1.051   .821   .267   1.49   .245   .155   0
+  32 EDK0116b 1964 2016     53      0      0    .621   2.66   5.81  1.243   .691   .293   1.88   .297   .089   1
+  33 EDK0118a 1961 2015     53                         1.31   5.45  1.106   .814   .353                         
+  34 EDK0118b 1961 2013     52                         1.04   4.17   .935   .749   .419                         
+  35 EDK0119a 1963 2016     54      0      0    .596   1.37   3.51   .821   .722   .343   1.58   .291  -.067   0
+  36 EDK0119b 1963 2016     54      0      0    .679   1.54   4.12   .849   .661   .338   1.63   .279   .039   0
+  37 EDK0120a 1960 2015     56      0      0    .664   1.50   4.41   .928   .776   .356   1.65   .284  -.107   0
+  38 EDK0120b 1960 2016     57      0      0    .645   1.61   4.97  1.230   .858   .339   1.71   .297   .015   1
+  39 EDK0121a 1963 2016     54      0      0    .625   2.05   5.80   .967   .670   .290   1.73   .249  -.147   3
+  40 EDK0121b 1965 2016     52      0      0    .671   2.23   4.53   .811   .584   .287   1.46   .255  -.011   1
+  41 EDK0122a 1962 2016     55      0      0    .618   2.00   3.68   .846   .694   .300   1.59   .254   .139   0
+  42 EDK0122b 1962 2016     55      0      0    .625   2.56   6.41  1.422   .707   .337   2.12   .338   .047   1
+  43 EDK0123a 1965 2016     52      0      0    .705   2.16   6.00  1.068   .732   .289   1.48   .257   .007   1
+  44 EDK0123b 1965 2016     52      0      0    .763   2.05   4.87   .817   .604   .279   1.62   .267   .010   1
+  45 EDK0125a 1961 2016     56      0      0    .545   2.97   5.42   .957   .646   .207   1.42   .197   .042   1
+  46 EDK0125b 1961 2016     56      0      0    .482   3.96   6.48  1.123   .573   .213   1.38   .188  -.090   3
+  47 EDK0126a 1964 2016     53      0      0    .615   1.96   3.23   .558   .406   .244   1.62   .241   .186   0
+  48 EDK0126b 1964 2014     51      0      0    .654   1.93   3.48   .631   .500   .263   1.62   .256   .076   1
+  49 EDK0127a 1962 2016     55      0      0    .610   1.83   4.42  1.015   .797   .248   1.52   .234  -.033   1
+  50 EDK0127b 1962 2016     55      0      0    .658   2.34   5.71  1.215   .795   .254   1.67   .248   .055   1
+  51 EDK0128a 1967 2016     50      0      0    .669   2.15   5.18   .952   .753   .249   1.39   .216   .099   0
+  52 EDK0128b 1967 2016     50      0      0    .692   1.99   5.39  1.032   .744   .341   1.71   .255  -.165   0
+  53 EDK0129a 1962 2016     54                         1.20   2.81   .504   .408   .343                         
+  54 EDK0129b 1965 2016     52      0      0    .586    .97   4.97   .947   .891   .302   1.66   .300  -.007   1
+  55 EDK0130a 1960 2016     57      0      0    .730   1.81   5.27  1.029   .656   .329   1.61   .267   .047   0
+  56 EDK0130b 1960 2016     57      0      0    .646   2.23   8.02  1.233   .325   .342   1.94   .302  -.194   0
+  57 EDK0131a 1964 2016     53      0      0    .804   1.62   5.68  1.042   .784   .280   1.44   .209  -.178   0
+  58 EDK0131b 1963 2016     54      0      0    .557   1.77   5.42  1.034   .807   .268   1.81   .263   .074   1
+  59 EDK0132a 1962 2016     55      0      0    .706   1.72   5.19  1.189   .866   .281   1.68   .262  -.027   3
+  60 EDK0132b 1962 2016     55      0      0    .767   1.81   4.83  1.023   .864   .257   1.64   .242  -.025   3
+  61 EDK0133a 1966 2016     51      0      0    .725   1.57   6.64  1.092   .879   .229   1.51   .209   .181   0
+  62 EDK0133b 1966 2016     51      0      0    .709   1.71   5.45   .963   .851   .237   1.42   .213   .120   0
+  63 EDK0134a 1963 2016     54      0      0    .640   2.13   9.24  1.403   .769   .321   1.61   .278   .133   0
+  64 EDK0134b 1963 2016     54      0      0    .772   2.21   6.33  1.220   .719   .280   1.55   .250   .035   1
+  65 EDK0135a 1959 2016     58      0      0    .622   2.22   6.83  1.717   .808   .362   1.74   .318   .052   1
+  66 EDK0135b 1959 2016     58      0      0    .691   1.78   5.63  1.240   .748   .317   1.59   .294   .006   3
+  67 EDK0136a 1963 2016     54      0      0    .737   1.80   7.15  1.357   .838   .340   1.78   .316   .034   1
+  68 EDK0136b 1964 2016     53      0      0    .501   1.60   6.23  1.271   .856   .351   2.24   .344   .109   0
+  69 EDK0137a 1960 2016     57      0      0    .612   2.35   5.67  1.185   .823   .227   1.41   .211   .131   0
+  70 EDK0137b 1960 2016     57      0      0    .769   2.69   6.14  1.465   .834   .242   1.53   .218   .053   1
+  71 EDK0138a 1966 2016     51      0      0    .642   2.04   6.26   .885   .669   .269   1.54   .219  -.044   3
+  72 EDK0138b 1967 2016     50      0      0    .488   2.08   7.98   .968   .356   .231   2.07   .260   .088   0
+  73 EDK0139a 1960 2016     57      0      0    .649   2.05   4.18   .896   .602   .318   1.77   .317   .018   1
+  74 EDK0139b 1960 2016     57      0      0    .755   2.28   5.25   .934   .605   .266   1.66   .259   .049   1
+  75 EDK0140a 1963 2016     54      0      0    .672   2.35   5.42   .793   .417   .257   1.42   .230   .132   1
+  76 EDK0140b 1963 2016     54      0      0    .575   2.94   7.42  1.148   .380   .282   2.06   .296   .162   0
+  77 EDK0141a 1962 2016     55      0      0    .727   2.00   5.43  1.095   .733   .312   1.50   .290  -.019   1
+  78 EDK0141b 1962 2016     55      0      0    .729   2.00   3.96   .751   .507   .308   1.54   .275  -.022   1
+  79 EDK0142a 1963 2016     54      0      0    .740   2.04   5.63  1.024   .622   .294   1.67   .252  -.098   0
+  80 EDK0142b 1963 2016     54      0      0    .743   1.85   4.61   .768   .527   .300   1.58   .256   .113   0
+  81 EDK0143a 1960 2016     57      0      0    .656   1.66   7.81  1.254   .782   .282   1.66   .266   .007   1
+  82 EDK0143b 1961 2016     56      0      0    .602   1.56  10.40  1.668   .907   .293   1.57   .257   .011   2
+  83 EDK0144a 1960 2016     57      0      0    .668   1.88   6.21  1.124   .773   .306   1.51   .244   .020   0
+  84 EDK0144b 1960 2016     57      0      0    .644   2.19   6.10  1.069   .699   .293   1.48   .242  -.007   0
+  85 EDK0145a 1962 2016     55      0      0    .622   2.21   5.20  1.215   .778   .315   1.98   .286   .114   0
+  86 EDK0145b 1962 2014     53      0      0    .696   2.77   6.35  1.137   .588   .293   1.58   .256   .152   0
+  87 EDK0146A 1966 2015     50      0      0    .581   2.41   5.88   .877   .560   .241   1.44   .220   .023   1
+  88 EDK0146b 1966 2016     51      0      0    .524   2.04   6.31   .848   .517   .249   1.45   .224   .108   1
+  89 EDK0147a 1963 2012     50      0      0    .705   1.53   5.56  1.252   .899   .352   1.73   .304   .061   0
+  90 EDK0147b 1963 2012     50      0      0    .672   1.56   5.60  1.316   .940   .339   1.71   .337  -.001   2
+  91 EDK0149a 1963 2016     54      0      0    .585   1.31   3.52   .781   .860   .262   1.56   .239   .187   0
+  92 EDK0149b 1963 2016     54      0      0    .628   1.19   4.02   .855   .849   .305   1.63   .292  -.011   1
+  93 EDK0150a 1966 2016     51      0      0    .556   1.80   5.07  1.267   .880   .311   2.24   .324   .016   1
+  94 EDK0150b 1967 2016     50      0      0    .429   1.51   4.45   .948   .821   .283   1.62   .244  -.052   0
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           7222     68      1    .642   1.68  10.40   .895   .730   .287   2.25   .267   .011
+
+ DATA CHECKS (rwl.check): deu434
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu434.rwl
+ 94 series, 7222 measurements, 1878-2016, 0.01 mm precision
+ 0 error(s), 9 warning(s), 9 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (9)
+     EDK0101A: no measurement for 1927, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0101B: no measurement for 1927, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0104a: no measurement for 1927, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0106B: no measurement for 1921, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0112a: no measurement for 2004, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0112B: no measurement for 1976, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0118a: no measurement for 1976, 2001, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0118b: no measurement for 1993, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     EDK0129a: no measurement for 2011, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file deu434.rwl, MD5 0ed10ac459441d051f7037bee66f9c48.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series EDK0101A has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0101B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0104a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0106B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0112a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0112B has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0118a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0118b has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'
+ Left out of the crossdating: series EDK0129a has internal NA values, and the 'nyrs' spline
+   needs an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n'
+   instead of 'nyrs'

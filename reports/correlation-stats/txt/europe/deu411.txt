@@ -1,0 +1,136 @@
+
+ COFECHA-style crossdating report: deu411
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : deu411.rwl
+      MD5 of measurement file: 31bbef5b1caab3b21e67bd03ecdbba95
+      Date checked           : 01OCT26
+      Beginning year         : 1947
+      Ending year            : 2009
+      Principal investigators: Hartl, C.; Rothe, A.
+      Site name              : Schliersee, Hausberg-Alm oben
+      Species information    : LADE Larix decidua Mill.
+      Latitude               : 47.6310 N
+      Longitude              : 11.9910 E
+      Elevation              : 1110 m
+
+      Series intercorrelation: 0.696
+      Avg mean sensitivity   : 0.253
+      Avg standard deviation : 1.156
+      Avg autocorrelation    : 0.739
+      Number dated series    : 20
+      Segment length tested  : 30
+
+      Number problem segments: 6  (A 5, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 12.77
+
+
+ CORRELATION OF SERIES BY SEGMENTS: deu411
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  30-year dated segments, lagged  15 years
+ Flags:  A = correlation under   .4226 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1965 1980 
+                        1979 1994 2009 
+ --- -------- ---------  ---- ---- ---- 
+   1 SSHO902C 1960 2009       .54  .54 
+   2 SSHO902O 1960 2009       .55  .73 
+   3 SSHO903C 1949 2009  .64  .82  .50 
+   4 SSHO903O 1948 2009  .86  .72  .58 
+   5 SSHO904C 1947 2009  .91  .86  .57 
+   6 SSHO904O 1954 2009       .81  .65 
+   7 SSHO905C 1952 2009       .82  .53 
+   8 SSHO905O 1947 2009  .90  .80  .53 
+   9 SSHO906C 1947 2009  .82  .85  .46 
+  10 SSHO906O 1950 2009       .66  .46 
+  11 SSHO907C 1948 2009       .72  .47 
+  12 SSHO907O 1950 2009       .69  .32A
+  13 SSHO909C 1947 2009  .83  .77  .60 
+  14 SSHO909O 1948 2009  .92  .86  .28B
+  15 SSHO911C 1957 2009       .80  .64 
+  16 SSHO911O 1962 2009       .65  .30A
+  17 SSHO912C 1951 2009       .79  .33A
+  18 SSHO912O 1952 2009       .79  .30A
+  19 SSHO914C 1950 2009       .47  .48 
+  20 SSHO914O 1960 2009       .50  .34A
+ Av segment correlation  .84  .72  .48 
+
+ FLAGGED SEGMENTS: deu411
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  12 SSHO907O 1980 2009     A     .322         0
+  14 SSHO909O 1980 2009     B     .275        -1      .408   .133  weak at every lag
+  16 SSHO911O 1980 2009     A     .295         0
+  17 SSHO912C 1980 2009     A     .333         0
+  18 SSHO912O 1980 2009     A     .300         0
+  20 SSHO914O 1980 2009     A     .343         0
+
+ DESCRIPTIVE STATISTICS: deu411
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SSHO902C 1960 2009     50      2      0    .545   4.00   6.54  1.191   .727   .184   1.46   .194   .025   1
+   2 SSHO902O 1960 2009     50      2      0    .542   3.41   5.71  1.068   .818   .184   1.27   .171   .010   1
+   3 SSHO903C 1949 2009     61      3      0    .616   2.29   4.50   .857   .568   .278   1.51   .279   .047   1
+   4 SSHO903O 1948 2009     62      3      0    .721   2.01   5.99  1.079   .703   .324   1.93   .310  -.012   1
+   5 SSHO904C 1947 2009     63      3      0    .826   3.06   6.12  1.138   .569   .260   1.41   .233   .036   3
+   6 SSHO904O 1954 2009     56      2      0    .757   2.49   6.64  1.051   .618   .297   1.58   .248  -.063   3
+   7 SSHO905C 1952 2009     58      2      0    .749   2.66   5.72  1.097   .725   .238   1.46   .234  -.023   1
+   8 SSHO905O 1947 2009     63      3      0    .794   2.77   5.52  1.026   .698   .240   1.44   .241  -.022   1
+   9 SSHO906C 1947 2009     63      3      0    .710   2.64   5.17  1.369   .808   .254   1.48   .242  -.044   3
+  10 SSHO906O 1950 2009     60      2      0    .725   2.41   5.88  1.424   .830   .267   1.61   .235  -.009   3
+  11 SSHO907C 1948 2009     62      2      0    .683   1.96   8.10  1.498   .842   .282   1.51   .244  -.026   3
+  12 SSHO907O 1950 2009     60      2      1    .669   2.10   5.27  1.551   .811   .293   1.56   .246  -.004   3
+  13 SSHO909C 1947 2009     63      3      0    .790   2.66   5.25  1.121   .720   .241   1.50   .221  -.037   3
+  14 SSHO909O 1948 2009     62      3      1    .785   2.78   6.88  1.164   .732   .252   1.42   .234   .044   1
+  15 SSHO911C 1957 2009     53      2      0    .717   2.47   6.32  1.385   .759   .264   1.39   .191   .028   3
+  16 SSHO911O 1962 2009     48      2      1    .496   3.28   5.94  1.337   .857   .184   1.42   .193   .074   1
+  17 SSHO912C 1951 2009     59      2      1    .749   2.10   3.76   .796   .728   .266   1.37   .230  -.045   3
+  18 SSHO912O 1952 2009     58      2      1    .761   1.78   3.33   .744   .678   .302   1.48   .253   .007   3
+  19 SSHO914C 1950 2009     60      2      0    .660   2.82   5.48  1.114   .812   .183   1.44   .197   .014   1
+  20 SSHO914O 1960 2009     50      2      1    .493   2.35   5.44  1.120   .835   .218   1.43   .215  -.005   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1161     47      6    .696   2.58   8.10  1.156   .739   .253   1.93   .232  -.001
+
+ DATA CHECKS (rwl.check): deu411
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/deu411.rwl
+ 20 series, 1161 measurements, 1947-2009, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file deu411.rwl, MD5 31bbef5b1caab3b21e67bd03ecdbba95.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.4226 for 30-year segments.
+ Segments: 30 years, lagged 15, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 30 years: the record is only 63 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

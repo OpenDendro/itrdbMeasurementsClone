@@ -1,0 +1,132 @@
+
+ COFECHA-style crossdating report: aut145
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : aut145.rwl
+      MD5 of measurement file: b7ab87a0249a06c95e2917227c4433f3
+      Date checked           : 01OCT26
+      Beginning year         : 1793
+      Ending year            : 2010
+      Principal investigators: Hartl, C.; Rothe, A.
+      Site name              : Nationalpark Kalkalpen, Zöbelboden Nord
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.8400 N
+      Longitude              : 14.4380 E
+      Elevation              : 901 m
+
+      Series intercorrelation: 0.626
+      Avg mean sensitivity   : 0.229
+      Avg standard deviation : 0.417
+      Avg autocorrelation    : 0.754
+      Number dated series    : 20
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 0, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 2.54
+
+
+ CORRELATION OF SERIES BY SEGMENTS: aut145
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 NKZN501G 1820 2010       .43  .60  .58  .47  .59  .78 
+   2 NKZN501K 1823 2010            .60  .51  .41  .36  .66 
+   3 NKZN502G 1833 2010            .66  .56  .54  .47  .61 
+   4 NKZN502K 1855 2010                 .52  .32B .34B .54 
+   5 NKZN505G 1831 2010            .73  .65  .65  .65  .79 
+   6 NKZN505K 1816 2010       .63  .67  .61  .60  .69  .80 
+   7 NKZN507G 1809 2010       .52  .63  .67  .63  .59  .75 
+   8 NKZN507K 1813 2010       .62  .66  .55  .57  .69  .72 
+   9 NKZN508G 1820 2010       .44  .56  .62  .57  .47  .51 
+  10 NKZN508K 1846 2010            .66  .71  .57  .49  .61 
+  11 NKZN509G 1815 2010       .60  .75  .73  .67  .62  .74 
+  12 NKZN509K 1858 2010                 .61  .61  .63  .60 
+  13 NKZN510G 1798 2010  .48  .66  .84  .79  .65  .50  .62 
+  14 NKZN510K 1805 2010       .58  .74  .74  .66  .61  .76 
+  15 NKZN511G 1796 2010  .34  .65  .81  .82  .69  .63  .75 
+  16 NKZN511K 1798 2010  .58  .67  .81  .84  .70  .58  .74 
+  17 NKZN512G 1797 2010  .61  .67  .74  .71  .62  .50  .66 
+  18 NKZN512K 1815 2010       .69  .75  .73  .70  .53  .63 
+  19 NKZN514G 1797 2010  .46  .65  .73  .67  .64  .60  .60 
+  20 NKZN514K 1793 2010  .61  .61  .67  .68  .70  .53  .25B
+ Av segment correlation  .51  .60  .70  .67  .60  .55  .66 
+
+ FLAGGED SEGMENTS: aut145
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 NKZN502K 1900 1949     B     .320        -5      .342   .022
+   4 NKZN502K 1925 1974     B     .342        -5      .351   .009
+  20 NKZN514K 1950 1999     B     .249         7      .252   .003  weak at every lag
+
+ DESCRIPTIVE STATISTICS: aut145
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NKZN501G 1820 2010    191      6      0    .593    .78   1.80   .313   .692   .233   1.79   .242  -.035   1
+   2 NKZN501K 1823 2010    188      5      0    .534    .83   2.12   .318   .683   .241   1.87   .243  -.014   3
+   3 NKZN502G 1833 2010    178      5      0    .576   1.31   2.82   .374   .635   .204   1.48   .197  -.015   1
+   4 NKZN502K 1855 2010    156      4      2    .499   1.17   2.57   .440   .778   .199   1.71   .210   .007   2
+   5 NKZN505G 1831 2010    180      5      0    .704   1.20   2.32   .358   .682   .188   1.64   .195  -.020   3
+   6 NKZN505K 1816 2010    195      6      0    .667   1.19   2.17   .322   .706   .165   1.56   .172   .029   1
+   7 NKZN507G 1809 2010    202      6      0    .644   1.03   2.23   .404   .651   .270   1.82   .271   .008   3
+   8 NKZN507K 1813 2010    198      6      0    .646   1.03   2.33   .424   .741   .261   1.79   .252  -.009   2
+   9 NKZN508G 1820 2010    191      6      0    .545   1.03   2.78   .569   .815   .326   1.73   .299   .011   2
+  10 NKZN508K 1846 2010    165      5      0    .621   1.22   3.10   .649   .788   .303   1.69   .296   .003   2
+  11 NKZN509G 1815 2010    196      6      0    .685   1.19   3.08   .512   .798   .196   1.69   .205   .011   1
+  12 NKZN509K 1858 2010    153      4      0    .672   1.59   3.26   .553   .735   .205   1.49   .198  -.019   3
+  13 NKZN510G 1798 2010    213      7      0    .619    .84   2.51   .329   .806   .216   1.84   .224  -.006   2
+  14 NKZN510K 1805 2010    206      6      0    .702    .80   1.44   .236   .692   .194   1.52   .203   .030   1
+  15 NKZN511G 1796 2010    215      7      0    .658    .85   2.02   .367   .719   .279   1.62   .264  -.008   2
+  16 NKZN511K 1798 2010    213      7      0    .711    .94   2.46   .420   .749   .261   1.58   .252   .039   1
+  17 NKZN512G 1797 2010    214      7      0    .655    .72   2.02   .336   .802   .226   1.65   .228   .002   1
+  18 NKZN512K 1815 2010    196      6      0    .679    .85   1.80   .333   .768   .216   1.64   .214   .005   1
+  19 NKZN514G 1797 2010    214      7      0    .575    .74   3.42   .585   .906   .190   1.73   .201  -.012   1
+  20 NKZN514K 1793 2010    218      7      1    .522    .76   3.55   .550   .900   .196   1.65   .200   .021   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3882    118      3    .626    .99   3.55   .417   .754   .229   1.87   .229   .002
+
+ DATA CHECKS (rwl.check): aut145
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/aut145.rwl
+ 20 series, 3882 measurements, 1793-2010, 0.01 mm precision
+ 0 error(s), 1 warning(s), 0 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:50 PDT.
+ Measurement file aut145.rwl, MD5 b7ab87a0249a06c95e2917227c4433f3.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

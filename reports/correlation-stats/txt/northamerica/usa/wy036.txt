@@ -1,0 +1,184 @@
+
+ COFECHA-style crossdating report: wy036
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wy036.rwl
+      MD5 of measurement file: 6535899765a382c56fc790f8b52cd381
+      Date checked           : 01OCT26
+      Beginning year         : 1734
+      Ending year            : 2009
+      Principal investigators: King, J.C.; Tercek, M.T.
+      Site name              : Kretec Vale
+      Species information    : PICO Pinus contorta Douglas ex Loudon
+      Latitude               : 44.6000 N
+      Longitude              : 110.4000 W
+      Elevation              : 2378 m
+
+      Series intercorrelation: 0.531
+      Avg mean sensitivity   : 0.180
+      Avg standard deviation : 0.461
+      Avg autocorrelation    : 0.865
+      Number dated series    : 47
+      Segment length tested  : 50
+
+      Number problem segments: 5  (A 2, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 5.95
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wy036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 1950 
+                        1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- 
+   1 big101a  1905 2008                           .70  .53 
+   2 big102b  1776 1880  .51  .37                          
+   3 big103a  1831 1934            .45  .51                
+   5 big105d  1930 2008                                .48 
+   6 big106b  1927 2008                                .35 
+   7 big107b  1758 2008  .52  .29B .35  .39B .27A .31A .34 
+   8 big108c  1745 1916  .45  .35  .51                     
+   9 big109d  1945 2008                                .66 
+  10 big110   1778 1920  .40B .36  .35                     
+  15 big114a  1948 2008                                .64 
+  16 big114b  1948 2008                                .59 
+  17 big115a  1927 2008                                .53 
+  18 big115b  1929 2008                                .53 
+  19 big116a  1792 1940  .66  .56  .59  .43                
+  20 big116b  1792 1950  .68  .63  .64  .50  .52           
+  21 big117a  1921 2008                           .50  .52 
+  22 big117b  1923 2008                           .59  .63 
+  23 big118a  1882 1982                      .77  .68      
+  24 big118b  1880 1980                      .76  .73      
+  25 big119a  1803 2008       .52  .42  .40  .40  .38  .46 
+  26 big119b  1795 2008  .74  .58  .43  .56  .66  .62  .47 
+  27 big121a  1800 1939       .53  .63  .55                
+  28 big121b  1796 1939  .62  .57  .59  .45                
+  29 big122a  1908 2008                           .56  .47 
+  30 big122b  1913 2008                           .69  .57 
+  31 big123a  1878 1978                      .56  .55      
+  32 big123b  1877 1977                      .68  .65      
+  33 big124a  1918 2008                           .61  .62 
+  34 big124b  1923 2008                           .63  .57 
+  35 big125a  1751 1851  .65                               
+  40 med106   1789 2009  .54  .52  .59  .39  .45  .43  .40 
+  42 sml104   1943 2009                                .68 
+ Av segment correlation  .58  .48  .50  .47  .56  .57  .53 
+
+ FLAGGED SEGMENTS: wy036
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   7 big107b  1825 1874     B     .293         4      .307   .014  weak at every lag
+   7 big107b  1875 1924     B     .391        -2      .397   .006
+   7 big107b  1900 1949     A     .272         0
+   7 big107b  1925 1974     A     .315         0
+  10 big110   1800 1849     B     .399         4      .412   .014
+
+ DESCRIPTIVE STATISTICS: wy036
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 big101a  1905 2008    104      2      0    .605   1.02   2.28   .338   .755   .175   1.56   .186  -.001   3
+   2 big102b  1776 1880    105      2      0    .356   1.11   2.94   .694   .945   .158   1.50   .176   .047   1
+   3 big103a  1831 1934    104      2      0    .421   1.43   2.77   .790   .952   .152   1.58   .166   .018   1
+   4 big104c  1967 2008     42      0      0    .611   1.25   1.84   .387   .838   .150   1.37   .155   .083   2
+   5 big105d  1930 2008     79      1      0    .457   1.04   2.08   .467   .831   .216   1.56   .225   .098   1
+   6 big106b  1927 2008     82      1      0    .445   1.26   2.38   .397   .774   .156   1.41   .171   .076   1
+   7 big107b  1758 2008    251      7      4    .359    .35   1.11   .249   .918   .212   1.79   .230   .006   3
+   8 big108c  1745 1916    172      3      0    .393    .91   2.73   .595   .962   .144   1.39   .152  -.013   3
+   9 big109d  1945 2008     64      1      0    .590    .92   1.98   .384   .768   .224   1.49   .227   .183   1
+  10 big110   1778 1920    143      3      1    .364    .82   1.35   .213   .737   .156   1.43   .153  -.003   1
+  11 big111a  1963 2008     46      0      0    .673   1.97   4.12   .770   .798   .192   1.39   .162   .076   2
+  12 big111b  1963 2008     46      0      0    .686   1.91   3.89   .750   .835   .171   1.31   .145   .073   3
+  13 big113a  1958 2008     51      0      0    .674   1.40   2.48   .512   .836   .183   1.35   .190   .097   1
+  14 big113b  1955 2008     54      0      0    .658   1.43   2.75   .548   .837   .179   1.48   .183   .049   2
+  15 big114a  1948 2008     61      1      0    .656   1.39   2.62   .462   .750   .179   1.59   .192   .036   2
+  16 big114b  1948 2008     61      1      0    .611   1.38   2.46   .476   .736   .193   1.66   .202   .022   2
+  17 big115a  1927 2008     82      1      0    .593    .75   1.99   .449   .860   .223   1.57   .231   .031   3
+  18 big115b  1929 2008     80      1      0    .614    .73   1.91   .415   .853   .218   1.76   .255   .041   1
+  19 big116a  1792 1940    149      4      0    .584    .69   1.56   .408   .937   .165   1.67   .172   .058   1
+  20 big116b  1792 1950    159      5      0    .591    .64   1.49   .398   .943   .168   1.71   .172  -.001   2
+  21 big117a  1921 2008     88      2      0    .424   1.01   2.43   .500   .855   .191   1.52   .203   .068   1
+  22 big117b  1923 2008     86      2      0    .554   1.06   2.53   .531   .853   .196   1.56   .207   .039   1
+  23 big118a  1882 1982    101      2      0    .616    .69   1.95   .437   .925   .185   1.56   .197  -.031   3
+  24 big118b  1880 1980    101      2      0    .629    .71   2.10   .441   .930   .184   1.54   .191  -.012   1
+  25 big119a  1803 2008    206      6      0    .467    .59   1.35   .263   .885   .165   1.39   .175   .021   1
+  26 big119b  1795 2008    214      7      0    .591    .61   1.34   .269   .888   .175   1.48   .177   .042   1
+  27 big121a  1800 1939    140      3      0    .563    .86   1.40   .198   .685   .139   1.47   .153   .015   2
+  28 big121b  1796 1939    144      4      0    .590    .86   1.93   .248   .795   .140   1.37   .147   .029   3
+  29 big122a  1908 2008    101      2      0    .543    .67   1.34   .223   .686   .204   1.61   .218   .063   1
+  30 big122b  1913 2008     96      2      0    .654    .93   2.06   .451   .875   .212   1.54   .227   .027   1
+  31 big123a  1878 1978    101      2      0    .523    .75   1.73   .328   .853   .186   2.05   .207   .042   1
+  32 big123b  1877 1977    101      2      0    .608    .74   1.76   .326   .896   .165   1.44   .166   .020   1
+  33 big124a  1918 2008     91      2      0    .531    .95   4.22   .694   .847   .235   1.83   .265   .018   1
+  34 big124b  1923 2008     86      2      0    .566   1.03   3.27   .655   .868   .228   1.76   .254  -.006   1
+  35 big125a  1751 1851    101      1      0    .612    .85   2.34   .515   .936   .159   1.49   .171   .010   1
+  36 big125b  1734 1848    115      0      0    .536    .95   2.96   .556   .888   .173   1.55   .189   .020   1
+  37 med101c  1968 2008     41      0      0    .523    .88   2.80   .831   .900   .292   1.78   .351   .126   1
+  38 med102a  1979 2008     30      0      0    .710   1.50   3.80   .660   .744   .213   1.35   .215   .504   1
+  39 med105   1959 2009     51      0      0    .520   1.50   3.44   .749   .876   .196   1.45   .201  -.035   2
+  40 med106   1789 2009    221      7      0    .445    .91   2.48   .425   .894   .176   1.54   .185  -.003   1
+  41 sml101a  1972 2008     37      0      0    .666   1.43   4.00   .789   .862   .198   1.56   .209   .082   3
+  42 sml104   1943 2009     67      1      0    .581   1.12   3.04   .760   .925   .210   1.58   .237   .078   1
+  43 sml105   1960 2009     50      0      0    .511   1.48   2.80   .660   .841   .200   1.47   .219   .075   1
+  44 sml106   1959 2009     51      0      0    .476   1.72   3.70   .969   .964   .122   1.26   .136   .080   1
+  45 sml107   1953 2009     57      0      0    .567   1.31   3.17  1.062   .961   .176   1.48   .180  -.003   1
+  46 sml108   1955 2009     55      0      0    .546   1.63   3.18   .723   .938   .125   1.29   .131   .017   2
+  47 sml901d  1964 2008     45      0      0    .506   1.31   3.08   .852   .925   .185   1.40   .201   .013   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4512     84      5    .531    .93   4.22   .461   .865   .180   2.05   .191   .032
+
+ DATA CHECKS (rwl.check): wy036
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wy036.rwl
+ 47 series, 4512 measurements, 1734-2009, 0.001 mm precision
+ 0 error(s), 11 warning(s), 16 note(s)
+ -------------
+ WARNING
+   RWL_SITE_CODE (11)
+     med101c: site code differs from the big used by 36 of 47 series
+     med102a: site code differs from the big used by 36 of 47 series
+     med105: site code differs from the big used by 36 of 47 series
+     med106: site code differs from the big used by 36 of 47 series
+     sml101a: site code differs from the big used by 36 of 47 series
+     sml104: site code differs from the big used by 36 of 47 series
+     sml105: site code differs from the big used by 36 of 47 series
+     sml106: site code differs from the big used by 36 of 47 series
+     sml107: site code differs from the big used by 36 of 47 series
+     sml108: site code differs from the big used by 36 of 47 series
+     ... and 1 more; see as.data.frame()
+ 16 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:51 PDT.
+ Measurement file wy036.rwl, MD5 6535899765a382c56fc790f8b52cd381.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

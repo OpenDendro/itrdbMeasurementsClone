@@ -1,0 +1,166 @@
+
+ COFECHA-style crossdating report: che560
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : che560.rwl
+      MD5 of measurement file: 4c7db0b1bba116b19c1cbc23e5f83576
+      Date checked           : 01OCT26
+      Beginning year         : 1827
+      Ending year            : 2019
+      Principal investigators: Neycken, A.; Scheggia, M.; Bigler, C.; Lévesque, M.
+      Site name              : Vogtacher
+      Species information    : FASY Fagus sylvatica L.
+      Latitude               : 47.5079 N
+      Longitude              : 7.7032 E
+      Elevation              : 468 m
+
+      Series intercorrelation: 0.661
+      Avg mean sensitivity   : 0.264
+      Avg standard deviation : 0.812
+      Avg autocorrelation    : 0.631
+      Number dated series    : 36
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 0, B 4; 2 of the B weak at every lag)
+      Pct problem segments   : 3.85
+
+
+ CORRELATION OF SERIES BY SEGMENTS: che560
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 VA01     1879 2019  .56  .69  .66 
+   2 VA02     1896 2019  .31B .61  .69 
+   3 VA03     1882 2019  .70  .74  .73 
+   4 VA04     1903 2019       .76  .84 
+   5 VA05     1884 2019  .65  .75  .86 
+   6 VA06     1886 2019  .51  .63  .78 
+   7 VA07     1880 2019  .63  .75  .77 
+   8 VA08     1910 2019       .86  .79 
+   9 VA09     1890 2019  .52  .59  .75 
+  10 VA10     1888 2019  .71  .85  .77 
+  11 VA11     1898 2019  .50  .56  .59 
+  12 VA12     1902 2019      -.04B .23B
+  13 VA13     1884 2019  .61  .73  .81 
+  14 VA14     1881 2019  .64  .77  .77 
+  15 VA15     1885 2019  .60  .66  .77 
+  16 VA16     1885 2019  .66  .85  .85 
+  17 VA17     1890 2019  .67  .76  .85 
+  18 VA18     1885 2019  .63  .78  .77 
+  19 VA19     1879 2019  .76  .82  .77 
+  20 VA20     1895 2019  .77  .79  .82 
+  21 VA21     1887 2019  .64  .74  .73 
+  22 VA22     1884 2019  .58  .67  .66 
+  23 VA23     1897 2019  .48  .52  .52 
+  24 VA24     1903 2019       .61  .77 
+  25 VA25     1896 2019  .45  .70  .79 
+  26 VA26     1892 2019  .81  .83  .85 
+  27 VA27     1883 2019  .48  .63  .84 
+  28 VA28     1884 2019  .68  .77  .77 
+  29 VA29     1881 2019  .51  .55  .67 
+  30 VA30     1883 2019  .82  .72  .69 
+  31 VA31     1892 2019  .58  .67  .83 
+  32 VA32     1884 2019  .68  .71  .72 
+  33 VA33     1879 2019  .44B .38  .52 
+  34 VA34     1887 2019  .72  .84  .88 
+  35 VA36     1827 2019  .46  .56  .75 
+  36 VA37     1853 2019  .49  .55  .77 
+ Av segment correlation  .60  .68  .74 
+
+ FLAGGED SEGMENTS: che560
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   2 VA02     1900 1949     B     .309         1      .348   .039
+  12 VA12     1925 1974     B    -.038        -9      .235   .273  weak at every lag
+  12 VA12     1950 1999     B     .226         8      .265   .038  weak at every lag
+  33 VA33     1900 1949     B     .441        -3      .480   .039
+
+ DESCRIPTIVE STATISTICS: che560
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 VA01     1879 2019    141      3      0    .603   2.06   4.16   .712   .669   .243   1.69   .238   .005   2
+   2 VA02     1896 2019    124      3      1    .579   2.43   5.01   .812   .599   .276   1.57   .257   .044   2
+   3 VA03     1882 2019    138      3      0    .764   2.27   4.19   .908   .709   .275   2.11   .282   .014   2
+   4 VA04     1903 2019    117      2      0    .798   2.74   5.52   .871   .583   .250   1.88   .241   .021   2
+   5 VA05     1884 2019    136      3      0    .704   1.61   3.00   .565   .619   .258   1.79   .252   .006   3
+   6 VA06     1886 2019    134      3      0    .604   2.20   4.55   .779   .688   .224   1.68   .215   .017   1
+   7 VA07     1880 2019    140      3      0    .587   1.94   4.24   .832   .700   .272   1.75   .279   .036   2
+   8 VA08     1910 2019    110      2      0    .820   2.25   4.03   .795   .529   .285   1.87   .279  -.008   2
+   9 VA09     1890 2019    130      3      0    .685   2.23   4.76  1.125   .823   .250   1.94   .248   .004   1
+  10 VA10     1888 2019    132      3      0    .738   2.04   4.68   .800   .729   .246   1.64   .238   .011   1
+  11 VA11     1898 2019    122      3      0    .609   2.25   6.86  1.258   .734   .303   2.26   .294  -.008   2
+  12 VA12     1902 2019    118      2      2    .425   1.41   5.98   .904   .632   .306   3.16   .364   .005   2
+  13 VA13     1884 2019    136      3      0    .757   1.78   3.74   .668   .573   .280   2.16   .278  -.002   2
+  14 VA14     1881 2019    139      3      0    .739   1.98   3.70   .764   .649   .285   1.91   .266  -.024   3
+  15 VA15     1885 2019    135      3      0    .565   1.73   3.78   .718   .617   .294   1.99   .309   .049   1
+  16 VA16     1885 2019    135      3      0    .747   1.99   4.69   .842   .469   .349   2.19   .330  -.014   2
+  17 VA17     1890 2019    130      3      0    .794   2.52   4.03   .733   .446   .254   1.57   .244  -.015   2
+  18 VA18     1885 2019    135      3      0    .752   2.31   4.41   .820   .649   .242   1.76   .248  -.020   3
+  19 VA19     1879 2019    141      3      0    .758   2.21   4.70   .803   .580   .281   1.79   .272   .013   2
+  20 VA20     1895 2019    125      3      0    .812   2.06   3.88   .715   .508   .270   1.94   .270   .015   2
+  21 VA21     1887 2019    133      3      0    .648   2.03   3.20   .536   .521   .221   1.74   .213   .030   1
+  22 VA22     1884 2019    136      3      0    .551   2.11   4.90   .686   .624   .227   1.93   .232   .062   1
+  23 VA23     1897 2019    123      3      0    .536   1.90   4.72   .982   .859   .260   1.60   .266   .007   1
+  24 VA24     1903 2019    117      2      0    .637   2.28   4.40   .878   .567   .291   1.68   .280   .128   0
+  25 VA25     1896 2019    124      3      0    .682   2.77   5.94   .934   .705   .198   1.49   .192  -.054   3
+  26 VA26     1892 2019    128      3      0    .737   2.50   5.58   .900   .672   .237   1.56   .226   .010   1
+  27 VA27     1883 2019    137      3      0    .660   2.50   5.09   .807   .550   .236   1.74   .240  -.010   1
+  28 VA28     1884 2019    136      3      0    .606   2.01   3.63   .638   .368   .289   1.75   .266   .059   0
+  29 VA29     1881 2019    139      3      0    .726   1.95   4.77   .808   .731   .241   1.98   .259  -.033   3
+  30 VA30     1883 2019    137      3      0    .677   2.22   7.05  1.187   .679   .341   2.28   .324   .054   2
+  31 VA31     1892 2019    128      3      0    .744   1.87   3.23   .594   .420   .275   2.05   .277   .011   1
+  32 VA32     1884 2019    136      3      0    .734   2.01   3.66   .665   .508   .271   2.10   .272   .030   1
+  33 VA33     1879 2019    141      3      1    .492   1.48   4.58   .760   .765   .248   1.86   .248   .027   1
+  34 VA34     1887 2019    133      3      0    .741   2.03   3.67   .701   .553   .268   1.78   .264   .004   2
+  35 VA36     1827 2019    193      3      0    .456   1.79   4.71   .808   .776   .254   1.70   .239  -.010   2
+  36 VA37     1853 2019    167      3      0    .476   2.12   4.86   .966   .798   .230   1.57   .217  -.008   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4826    104      4    .661   2.09   7.05   .812   .631   .264   3.16   .261   .012
+
+ DATA CHECKS (rwl.check): che560
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/che560.rwl
+ 36 series, 4826 measurements, 1827-2019, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     2 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:57 PDT.
+ Measurement file che560.rwl, MD5 4c7db0b1bba116b19c1cbc23e5f83576.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

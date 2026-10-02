@@ -1,0 +1,123 @@
+
+ COFECHA-style crossdating report: ak158
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak158.rwl
+      MD5 of measurement file: 7dfeb4c3edcb6740cac1cac24b4d07ab
+      Date checked           : 01OCT26
+      Beginning year         : 1700
+      Ending year            : 1995
+      Principal investigators: Beier, C.M.; Sink, S.E.
+      Site name              : Nemo Alaska
+      Species information    : CHNO Chamaecyparis nootkatensis (D. Don) Spach
+      Latitude               : 56.2301 N
+      Longitude              : 131.9479 W
+      Elevation              : 0 m
+
+      Series intercorrelation: 0.462
+      Avg mean sensitivity   : 0.184
+      Avg standard deviation : 0.173
+      Avg autocorrelation    : 0.856
+      Number dated series    : 12
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 8, B 4; 3 of the B weak at every lag)
+      Pct problem segments   : 11.11
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak158
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 nemo02a  1701 1995       .56  .47  .46  .43  .17A .04B .05B .41  .51 
+   2 nemo44a  1700 1995       .36  .34  .46  .45  .53  .52  .55  .55  .53 
+   3 nemo73a  1700 1995       .48  .44  .25A .30A .25A .31A .47  .57  .54 
+   4 nemo74a  1700 1995       .63  .50  .44  .61  .70  .67  .55  .42  .42 
+   5 nemo31a  1700 1995       .21B .34  .66  .70  .69  .58  .48  .56  .36 
+   6 nemo79a  1700 1995       .60  .60  .43  .43  .46  .52  .60  .62  .39 
+   7 nemo47a  1700 1995       .50  .39  .30A .38  .42  .40  .27A .43  .25B
+   8 nemo75a  1700 1995       .68  .56  .50  .54  .60  .71  .63  .59  .61 
+   9 nemo68a  1700 1995       .34  .41  .57  .44  .41  .40  .32A .47  .41 
+  10 nemo76a  1700 1995       .59  .62  .53  .62  .52  .53  .58  .59  .57 
+  11 nemo67a  1700 1995       .72  .69  .67  .58  .50  .52  .55  .40  .46 
+  12 nemo72a  1700 1995       .40  .56  .36  .38  .51  .54  .50  .58  .69 
+ Av segment correlation       .51  .49  .47  .49  .48  .48  .46  .52  .48 
+
+ FLAGGED SEGMENTS: ak158
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 nemo02a  1825 1874     A     .169         0
+   1 nemo02a  1850 1899     B     .040        -8      .338   .298
+   1 nemo02a  1875 1924     B     .051        -8      .305   .254  weak at every lag
+   3 nemo73a  1775 1824     A     .254         0
+   3 nemo73a  1800 1849     A     .303         0
+   3 nemo73a  1825 1874     A     .252         0
+   3 nemo73a  1850 1899     A     .308         0
+   5 nemo31a  1725 1774     B     .206         1      .253   .047  weak at every lag
+   7 nemo47a  1775 1824     A     .303         0
+   7 nemo47a  1875 1924     A     .270         0
+   7 nemo47a  1925 1974     B     .247        -6      .282   .036  weak at every lag
+   9 nemo68a  1875 1924     A     .324         0
+
+ DESCRIPTIVE STATISTICS: ak158
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 nemo02a  1701 1995    295      9      3    .314    .39   1.02   .162   .818   .206   1.71   .218  -.013   3
+   2 nemo44a  1700 1995    296      9      0    .465    .43   1.73   .234   .915   .179   1.55   .197   .033   1
+   3 nemo73a  1700 1995    296      9      4    .393    .59   1.35   .254   .876   .173   1.65   .181   .000   3
+   4 nemo74a  1700 1995    296      9      0    .512    .32    .69   .121   .819   .179   2.07   .201  -.007   3
+   5 nemo31a  1700 1995    296      9      1    .435    .38   1.20   .195   .895   .168   1.98   .179  -.003   3
+   6 nemo79a  1700 1995    296      9      0    .475    .37   1.45   .224   .868   .233   1.87   .245  -.001   2
+   7 nemo47a  1700 1995    296      9      3    .320    .48   1.29   .179   .862   .153   1.50   .164  -.006   3
+   8 nemo75a  1700 1995    296      9      0    .592    .33    .71   .127   .804   .192   1.66   .188  -.007   1
+   9 nemo68a  1700 1995    296      9      1    .412    .36    .78   .153   .865   .180   1.58   .187  -.003   3
+  10 nemo76a  1700 1995    296      9      0    .546    .30    .94   .142   .894   .162   1.50   .168   .005   2
+  11 nemo67a  1700 1995    296      9      0    .553    .43   1.10   .152   .792   .187   1.63   .192  -.029   1
+  12 nemo72a  1700 1995    296      9      0    .527    .29    .66   .130   .867   .199   1.68   .210  -.006   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           3551    108     12    .462    .39   1.73   .173   .856   .184   2.07   .194  -.003
+
+ DATA CHECKS (rwl.check): ak158
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak158.rwl
+ 12 series, 3551 measurements, 1700-1995, 0.001 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file ak158.rwl, MD5 7dfeb4c3edcb6740cac1cac24b4d07ab.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

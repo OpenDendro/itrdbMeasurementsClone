@@ -1,0 +1,100 @@
+
+ COFECHA-style crossdating report: co502
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : co502.rwl
+      MD5 of measurement file: 234f1ff51e4b480d081260bcf7a702a6
+      Date checked           : 01OCT26
+      Beginning year         : 1452
+      Ending year            : 1940
+      Principal investigators: Schulman, E.
+      Site name              : Wagon Wheel Gap
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 37.8000 N
+      Longitude              : 106.8300 W
+      Elevation              : 2743 m
+
+      Series intercorrelation: 0.781
+      Avg mean sensitivity   : 0.700
+      Avg standard deviation : 0.413
+      Avg autocorrelation    : 0.649
+      Number dated series    : 5
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: co502
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1500 1525 1550 1575 1600 1625 1650 1675 1700 1725 1750 1775 1800 1825 1850 1875 
+                        1549 1574 1599 1624 1649 1674 1699 1724 1749 1774 1799 1824 1849 1874 1899 1924 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 426011   1590 1940                      .77  .68  .53  .56  .80  .92  .94  .91  .86  .68  .62  .68 
+   2 426031   1531 1940            .80  .85  .87  .86  .56  .61  .85  .90  .92  .86  .80  .84  .86  .88 
+   3 426041   1619 1940                           .65  .67  .69  .83  .95  .96  .96  .93  .79  .75  .78 
+   4 426051   1452 1940            .64  .75  .87  .83  .68  .73  .87  .93  .91  .90  .90  .76  .78  .84 
+   5 426081   1563 1940                 .72  .66  .57  .59  .78  .85  .81  .81  .80  .76  .67  .75  .79 
+ Av segment correlation            .72  .77  .79  .72  .61  .67  .84  .90  .91  .89  .85  .75  .75  .79 
+
+ FLAGGED SEGMENTS: co502
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: co502
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 426011   1590 1940    351     12      0    .746    .49   1.79   .349   .543   .651   2.48   .519   .010   0
+   2 426031   1531 1940    410     14      0    .813    .40   2.16   .292   .558   .619   2.73   .514   .001   1
+   3 426041   1619 1940    322     11      0    .823    .52   2.10   .409   .678   .632   2.30   .489   .038   0
+   4 426051   1452 1940    489     14      0    .794    .33   3.73   .372   .717   .802   3.06   .595  -.027   0
+   5 426081   1563 1940    378     13      0    .727    .61   3.48   .661   .734   .757   3.35   .635   .003   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           1950     64      0    .781    .46   3.73   .413   .649   .700   3.35   .555   .002
+
+ DATA CHECKS (rwl.check): co502
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/co502.rwl
+ 5 series, 1950 measurements, 1452-1940, 0.01 mm precision
+ 0 error(s), 2 warning(s), 4 note(s)
+ -------------
+ WARNING
+   RWL_ALL_ZERO_YEAR (2)
+     every measured series is zero in 1478
+     every measured series is zero in 1506
+ 4 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file co502.rwl, MD5 234f1ff51e4b480d081260bcf7a702a6.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

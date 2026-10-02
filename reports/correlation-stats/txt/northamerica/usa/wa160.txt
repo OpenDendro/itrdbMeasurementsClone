@@ -1,0 +1,93 @@
+
+ COFECHA-style crossdating report: wa160
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : wa160.rwl
+      MD5 of measurement file: ed06a957fc79797df9059d502d609796
+      Date checked           : 01OCT26
+      Beginning year         : 809
+      Ending year            : 923
+      Principal investigators: Black, B.A.; Atwater, B.F.; Stuiver, M.; Jacoby, G.C.
+      Site name              : West Point
+      Species information    : PSME Pseudotsuga menziesii (Mirb.) Franco
+      Latitude               : 47.6620 N
+      Longitude              : 122.4360 W
+      Elevation              : 1 m
+
+      Series intercorrelation: 0.696
+      Avg mean sensitivity   : 0.275
+      Avg standard deviation : 0.999
+      Avg autocorrelation    : 0.584
+      Number dated series    : 3
+      Segment length tested  : 50
+
+      Number problem segments: 0  (A 0, B 0)
+      Pct problem segments   : 0.00
+
+
+ CORRELATION OF SERIES BY SEGMENTS: wa160
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span   850 
+                         899 
+ --- -------- ---------  ---- 
+   1 WPT01A    809  923  .92 
+   2 WPT01C    809  923  .86 
+   3 WPT01B    829  923  .90 
+ Av segment correlation  .89 
+
+ FLAGGED SEGMENTS: wa160
+-----------------------------------------------------------------------------------------------------------------------------------
+ None.
+
+ DESCRIPTIVE STATISTICS: wa160
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 WPT01A    809  923    115      1      0    .630   2.99   7.80  1.226   .688   .277   1.76   .224  -.034   3
+   2 WPT01C    809  923    115      1      0    .630   2.47   4.52   .716   .406   .268   1.52   .225  -.019   3
+   3 WPT01B    829  923     95      1      0    .856   2.66   5.58  1.068   .673   .282   1.45   .209   .015   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            325      3      0    .696   2.71   7.80   .999   .584   .275   1.76   .220  -.014
+
+ DATA CHECKS (rwl.check): wa160
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/wa160.rwl
+ 3 series, 325 measurements, 809-923, 0.01 mm precision
+ 0 error(s), 0 warning(s), 0 note(s)
+ -------------
+ Nothing to report at this severity.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file wa160.rwl, MD5 ed06a957fc79797df9059d502d609796.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

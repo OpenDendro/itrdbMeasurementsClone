@@ -1,0 +1,147 @@
+
+ COFECHA-style crossdating report: russ051w
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : russ051w.rwl
+      MD5 of measurement file: 96b4a3757491f005cbe55b10979321d1
+      Date checked           : 01OCT26
+      Beginning year         : 1699
+      Ending year            : 1990
+      Principal investigators: Schweingruber, F.H.
+      Site name              : Verhnaja Toima
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 62.1700 N
+      Longitude              : 44.4200 E
+      Elevation              : 60 m
+
+      Series intercorrelation: 0.632
+      Avg mean sensitivity   : 0.224
+      Avg standard deviation : 0.402
+      Avg autocorrelation    : 0.864
+      Number dated series    : 24
+      Series crossdated      : 22
+      Segment length tested  : 50
+
+      Number problem segments: 3  (A 2, B 1; 1 of the B weak at every lag)
+      Pct problem segments   : 2.63
+
+
+ CORRELATION OF SERIES BY SEGMENTS: russ051w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 911011   1796 1990                      .14B .46  .78  .80  .78  .66 
+   2 911012   1801 1990                           .49  .60  .68  .68  .75 
+   4 911022   1842 1990                                .68  .56  .46  .51 
+   5 911031   1700 1961       .82  .66  .59  .52  .53  .66  .61  .60      
+   6 911032   1699 1905       .82  .69  .67  .63  .65  .77                
+   7 911041   1804 1990                           .64  .73  .67  .41  .29A
+   8 911042   1810 1990                           .63  .63  .58  .55  .43 
+   9 911051   1799 1990                           .61  .69  .63  .66  .71 
+  10 911052   1783 1990                      .63  .60  .79  .73  .65  .74 
+  11 911061   1813 1990                           .64  .63  .61  .54  .58 
+  12 911062   1794 1966                      .65  .70  .80  .47  .29A     
+  13 911071   1793 1990                      .77  .63  .80  .78  .65  .70 
+  14 911072   1794 1962                      .82  .75  .83  .85  .76      
+  15 911081   1843 1990                                .59  .55  .38  .41 
+  16 911082   1784 1990                      .58  .60  .83  .81  .67  .70 
+  17 911091   1840 1990                                .66  .72  .71  .72 
+  18 911092   1846 1990                                .66  .72  .80  .79 
+  19 911101   1820 1990                           .48  .56  .47  .64  .73 
+  21 911111   1796 1990                      .75  .64  .77  .76  .71  .60 
+  22 911112   1797 1990                      .57  .60  .76  .79  .73  .64 
+  23 911121   1844 1990                                .69  .70  .67  .54 
+  24 911122   1841 1990                                .66  .70  .67  .59 
+ Av segment correlation       .82  .67  .63  .61  .60  .71  .68  .62  .62 
+
+ FLAGGED SEGMENTS: russ051w
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 911011   1800 1849     B     .140        -9      .230   .090  weak at every lag
+   7 911041   1925 1974     A     .289         0
+  12 911062   1900 1949     A     .286         0
+
+ DESCRIPTIVE STATISTICS: russ051w
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 911011   1796 1990    195      6      1    .509    .79   2.57   .457   .888   .231   2.10   .246   .021   1
+   2 911012   1801 1990    190      5      0    .557    .84   2.36   .499   .894   .201   1.91   .231   .007   2
+   3 911021   1816 1990    141                          .71   2.42   .451   .872   .210                         
+   4 911022   1842 1990    149      4      0    .556    .68   1.62   .285   .775   .220   1.81   .230   .000   3
+   5 911031   1700 1961    262      8      0    .653    .40   1.17   .235   .876   .234   2.18   .258   .010   3
+   6 911032   1699 1905    207      6      0    .732    .55   1.39   .270   .826   .230   2.03   .260   .003   2
+   7 911041   1804 1990    187      5      1    .617    .69   2.94   .537   .897   .229   1.73   .244   .033   2
+   8 911042   1810 1990    181      5      0    .576    .74   2.36   .488   .886   .205   1.57   .219   .010   2
+   9 911051   1799 1990    192      5      0    .660    .63   1.61   .356   .893   .219   1.77   .223   .022   2
+  10 911052   1783 1990    208      6      0    .668    .50   1.25   .254   .853   .241   1.61   .249   .026   1
+  11 911061   1813 1990    178      5      0    .600    .66   1.87   .452   .910   .266   1.90   .259   .019   3
+  12 911062   1794 1966    173      5      1    .552    .82   2.09   .480   .875   .266   1.95   .253   .026   3
+  13 911071   1793 1990    198      6      0    .715    .65   1.61   .355   .865   .220   1.74   .241   .047   1
+  14 911072   1794 1962    169      5      0    .804    .69   1.76   .361   .866   .219   1.54   .227   .042   1
+  15 911081   1843 1990    148      4      0    .521    .93   2.24   .436   .812   .220   1.78   .228   .043   3
+  16 911082   1784 1990    207      6      0    .655    .65   1.53   .341   .874   .207   1.72   .216   .003   3
+  17 911091   1840 1990    151      4      0    .630    .74   2.13   .387   .827   .249   1.68   .249  -.011   3
+  18 911092   1846 1990    145      4      0    .707    .82   2.76   .516   .818   .260   1.57   .259   .023   1
+  19 911101   1820 1990    171      5      0    .577   1.23   3.12   .689   .904   .174   1.60   .188   .005   2
+  20 911102   1816 1949    133                         1.09   2.83   .577   .887   .185                         
+  21 911111   1796 1990    195      6      0    .703    .57   1.76   .341   .876   .228   1.71   .242   .029   1
+  22 911112   1797 1990    194      6      0    .629    .60   2.44   .421   .910   .223   1.74   .221   .024   1
+  23 911121   1844 1990    147      4      0    .634    .73   1.77   .294   .795   .201   1.74   .210   .013   2
+  24 911122   1841 1990    150      4      0    .604    .69   2.18   .349   .794   .209   1.62   .226   .019   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4271    114      3    .632    .71   3.12   .402   .864   .224   2.18   .236   .019
+
+ DATA CHECKS (rwl.check): russ051w
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/russ051w.rwl
+ 24 series, 4271 measurements, 1699-1990, 0.01 mm precision
+ 0 error(s), 2 warning(s), 2 note(s)
+ -------------
+ WARNING
+   RWL_INTERNAL_NA (2)
+     911021: no measurement for 1908-1941, inside the measured span of the series. The file records nothing for those years, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+     911102: no measurement for 1847, inside the measured span of the series. The file records nothing for that year, which is not a fault, but detrend(), chron(), strip.rwl(), rwi.stats() and sss() fail on interior gaps and this series cannot be crossdated. Use fill.internal.NA() to close them deliberately
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:54 PDT.
+ Measurement file russ051w.rwl, MD5 96b4a3757491f005cbe55b10979321d1.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Left out of the crossdating: series 911021 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'
+ Left out of the crossdating: series 911102 has internal NA values, and the 'nyrs' spline needs
+   an unbroken series. Fill them with fill.internal.NA(), remove the series, or use 'n' instead
+   of 'nyrs'

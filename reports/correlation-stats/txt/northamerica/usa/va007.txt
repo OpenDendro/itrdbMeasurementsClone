@@ -1,0 +1,162 @@
+
+ COFECHA-style crossdating report: va007
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : va007.rwl
+      MD5 of measurement file: 5d7971aab2dc43e9c1fb6676708daa24
+      Date checked           : 01OCT26
+      Beginning year         : 1742
+      Ending year            : 1977
+      Principal investigators: Puckett, L.J.; Phipps, R.L.
+      Site name              : Burling Tract
+      Species information    : TSCA Tsuga canadensis (L.) Carr.
+      Latitude               : 38.9700 N
+      Longitude              : 77.2000 W
+      Elevation              : 30 m
+
+      Series intercorrelation: 0.642
+      Avg mean sensitivity   : 0.222
+      Avg standard deviation : 0.491
+      Avg autocorrelation    : 0.792
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 12  (A 3, B 9; 2 of the B weak at every lag)
+      Pct problem segments   : 10.26
+
+
+ CORRELATION OF SERIES BY SEGMENTS: va007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1800 1825 1850 1875 1900 1925 
+                        1849 1874 1899 1924 1949 1974 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- 
+   1 010101   1874 1977                      .59  .71 
+   2 010102   1860 1977                 .75  .71  .76 
+   3 010111   1802 1977       .68  .78  .76  .77  .75 
+   4 010112   1796 1977  .72  .63  .71  .77  .76  .76 
+   5 010141   1800 1977       .80  .74  .70  .74  .81 
+   6 010142   1800 1977       .61  .60  .72  .50  .49 
+   7 010151   1786 1977  .66  .75  .73  .68  .67  .66 
+   8 010152   1790 1977  .80  .79  .76  .74  .71  .78 
+   9 010171   1843 1977            .55  .24B .28A .63 
+  10 010172   1865 1977                 .20B .31A .67 
+  11 010191   1796 1977  .79  .83  .83  .81  .85  .86 
+  12 010192   1800 1977       .64  .63  .74  .77  .76 
+  13 010311   1841 1977            .50  .62  .68  .74 
+  14 010312   1855 1977                 .47  .55  .76 
+  15 010321   1807 1977       .65  .80  .75  .68  .79 
+  16 010322   1742 1977  .62  .62  .74  .73  .74  .76 
+  17 010331   1811 1977       .57  .69  .72  .64  .75 
+  18 010332   1808 1977       .63  .63  .63  .64  .71 
+  19 010341   1820 1977       .59  .55  .62  .77  .82 
+  20 010342   1849 1977            .68  .75  .83  .86 
+  21 010351   1810 1977       .61  .75  .75  .79  .77 
+  22 010352   1849 1977                 .75  .73  .76 
+  23 010371   1864 1977                 .64  .54  .65 
+  24 010372   1840 1977            .60  .52  .49  .68 
+  25 010381   1830 1977           -.12B-.16B .17B .66 
+  26 010382   1800 1977       .06B-.23B .04B .11B .28A
+ Av segment correlation  .72  .63  .60  .60  .62  .72 
+
+ FLAGGED SEGMENTS: va007
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   9 010171   1875 1924     B     .244        -5      .283   .039  weak at every lag
+   9 010171   1900 1949     A     .277         0
+  10 010172   1875 1924     B     .199        -5      .372   .173
+  10 010172   1900 1949     A     .313         0
+  25 010381   1850 1899     B    -.116        -2      .626   .741
+  25 010381   1875 1924     B    -.160        -2      .458   .619
+  25 010381   1900 1949     B     .169        -5      .288   .119  weak at every lag
+  26 010382   1825 1874     B     .064        -1      .544   .480
+  26 010382   1850 1899     B    -.233        -1      .626   .859
+  26 010382   1875 1924     B     .039        -1      .541   .502
+  26 010382   1900 1949     B     .108        -1      .419   .311
+  26 010382   1925 1974     A     .275         0
+
+ DESCRIPTIVE STATISTICS: va007
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 010101   1874 1977    104      2      0    .634   1.75   4.41   .663   .655   .248   2.09   .261  -.076   3
+   2 010102   1860 1977    118      3      0    .706   1.18   3.17   .522   .718   .245   1.68   .235  -.049   3
+   3 010111   1802 1977    176      5      0    .727    .76   1.92   .305   .675   .252   1.99   .279  -.035   3
+   4 010112   1796 1977    182      6      0    .700    .72   2.93   .395   .757   .290   2.05   .291   .003   3
+   5 010141   1800 1977    178      5      0    .755    .85   3.44   .584   .879   .261   1.59   .251   .007   1
+   6 010142   1800 1977    178      5      0    .586    .68   3.55   .515   .861   .266   2.07   .281   .004   1
+   7 010151   1786 1977    192      6      0    .659    .73   3.14   .478   .929   .183   1.40   .185   .002   1
+   8 010152   1790 1977    188      6      0    .780    .62   2.33   .370   .866   .212   1.63   .216  -.013   1
+   9 010171   1843 1977    135      4      2    .411   1.87   4.48   .933   .781   .248   2.36   .283   .079   1
+  10 010172   1865 1977    113      3      2    .499   2.54   5.84  1.237   .706   .274   1.89   .289  -.020   1
+  11 010191   1796 1977    182      6      0    .829    .93   2.69   .476   .882   .184   1.59   .192   .028   1
+  12 010192   1800 1977    178      5      0    .671    .86   2.50   .313   .795   .180   1.46   .182  -.028   3
+  13 010311   1841 1977    137      4      0    .647   1.42   2.76   .552   .770   .204   1.62   .210  -.032   1
+  14 010312   1855 1977    123      3      0    .656   1.66   3.41   .648   .766   .218   1.93   .221  -.007   3
+  15 010321   1807 1977    171      5      0    .745    .95   2.14   .314   .764   .199   1.51   .197  -.024   1
+  16 010322   1742 1977    236      6      0    .684    .87   1.63   .270   .767   .180   1.64   .185  -.019   3
+  17 010331   1811 1977    167      5      0    .712    .93   2.33   .404   .856   .174   1.59   .188  -.014   3
+  18 010332   1808 1977    170      5      0    .662    .91   3.29   .494   .848   .215   1.90   .231  -.030   3
+  19 010341   1820 1977    158      5      0    .684    .86   2.21   .350   .739   .219   1.80   .221  -.006   1
+  20 010342   1849 1977    129      4      0    .770    .92   2.68   .381   .742   .218   2.02   .239  -.009   1
+  21 010351   1810 1977    168      5      0    .724   1.42   2.83   .514   .763   .198   1.61   .214  -.016   3
+  22 010352   1849 1977    129      3      0    .767   1.46   4.26   .580   .750   .215   1.83   .228  -.033   3
+  23 010371   1864 1977    114      3      0    .648   1.46   3.82   .730   .753   .265   1.71   .275   .015   1
+  24 010372   1840 1977    138      4      0    .611    .85   2.64   .448   .763   .264   2.25   .291   .051   1
+  25 010381   1830 1977    148      4      3    .211    .87   3.49   .567   .913   .200   1.58   .204  -.027   3
+  26 010382   1800 1977    178      5      5    .117    .96   2.14   .376   .723   .226   1.84   .239   .017   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           4090    117     12    .642   1.06   5.84   .491   .792   .222   2.36   .231  -.008
+
+ DATA CHECKS (rwl.check): va007
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/va007.rwl
+ 26 series, 4090 measurements, 1742-1977, 0.01 mm precision
+ 2 error(s), 4 warning(s), 1 note(s)
+ -------------
+ ERROR
+   RWL_DATING_LAG (2)
+     010381: correlates best with the master at lag -2 (r = 0.557 against r = 0.264 as dated); the series may be misdated by 2 year(s), most likely a missing ring
+     010382: correlates best with the master at lag -1 (r = 0.483 against r = 0.267 as dated); the series may be misdated by 1 year(s), most likely a missing ring
+ -------------
+ WARNING
+   RWL_SERIES_OUTLIER (4)
+     010171: correlates with the rest of the collection at r = 0.431 where the collection median is 0.701 (4.3 MAD below it); it does not fit the collection it is in
+     010172: correlates with the rest of the collection at r = 0.429 where the collection median is 0.701 (4.4 MAD below it); it does not fit the collection it is in
+     010381: correlates with the rest of the collection at r = 0.264 where the collection median is 0.701 (7 MAD below it); it does not fit the collection it is in
+     010382: correlates with the rest of the collection at r = 0.267 where the collection median is 0.701 (7 MAD below it); it does not fit the collection it is in
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file va007.rwl, MD5 5d7971aab2dc43e9c1fb6676708daa24.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

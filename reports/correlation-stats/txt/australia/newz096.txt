@@ -1,0 +1,61 @@
+
+ COFECHA-style crossdating report: newz096
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : newz096.rwl
+      MD5 of measurement file: 3536d88604e9fbd5f8913672d93d57ff
+      Date checked           : 01OCT26
+      Beginning year         : 1791
+      Ending year            : 1871
+      Principal investigators: Boswijk, G.
+      Site name              : Pitt Street
+      Species information    : AGAU Agathis australis (D. Don) Loudon
+      Latitude               : 36.8500 S
+      Longitude              : 174.7500 E
+      Elevation              : 39 m
+
+      Avg mean sensitivity   : 0.451
+      Avg standard deviation : 0.537
+      Avg autocorrelation    : 0.328
+      Number dated series    : 1
+      Series crossdated      : 0
+
+
+ DESCRIPTIVE STATISTICS: newz096
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 PIT001   1791 1871     81                          .95   2.40   .537   .328   .451                        1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:             81                          .95   2.40   .537   .328   .451                     
+
+ DATA CHECKS (rwl.check): newz096
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/australia/newz096.rwl
+ 1 series, 81 measurements, 1791-1871, 0.01 mm precision
+ 0 error(s), 0 warning(s), 2 note(s)
+ -------------
+ Nothing to report at this severity.
+ 2 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:48 PDT.
+ Measurement file newz096.rwl, MD5 3536d88604e9fbd5f8913672d93d57ff.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Only 1 series could be crossdated, and at least 3 are needed to build a master for each, so
+   there are no segment correlations or flags.

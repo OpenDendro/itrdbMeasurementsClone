@@ -1,0 +1,119 @@
+
+ COFECHA-style crossdating report: swit394
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : swit394.rwl
+      MD5 of measurement file: 699afd0afeea9415ba8d0d711950c5c0
+      Date checked           : 01OCT26
+      Beginning year         : 1629
+      Ending year            : 2011
+      Principal investigators: Vanoni, M.; Frey, H.-U.; Bigler, C.
+      Site name              : Rothenthurm
+      Species information    : PCAB Picea abies (L.) H. Karst.
+      Latitude               : 47.0699 N
+      Longitude              : 8.6779 E
+      Elevation              : 1275 m
+
+      Series intercorrelation: 0.577
+      Avg mean sensitivity   : 0.171
+      Avg standard deviation : 0.646
+      Avg autocorrelation    : 0.873
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 1  (A 0, B 1)
+      Pct problem segments   : 1.27
+
+
+ CORRELATION OF SERIES BY SEGMENTS: swit394
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 RHF01    1795 2011                      .56  .62  .58  .65  .72  .66  .57 
+   2 RHF02    1629 2011                      .49  .48  .47  .52  .58  .58  .59 
+   3 RHF03    1813 2011                           .67  .54  .56  .71  .57  .45 
+   4 RHF04    1810 2011                           .55  .72  .73  .73  .70  .64 
+   5 RHF05    1865 2011                                     .48  .59  .73  .73 
+   6 RHF06    1809 2011                           .49  .56  .63  .65  .57  .66 
+   7 RHF07    1823 2011                           .59  .70  .72  .81  .82  .75 
+   8 RHF08    1874 2011                                          .59  .69  .63 
+   9 RHF09    1810 2011                           .59  .75  .77  .58  .51  .48 
+  10 RHF10    1839 2011                                .49  .65  .80  .66  .55 
+  11 RHF11    1795 2011                      .53  .55  .53  .63  .70  .74  .76 
+  12 RHF12    1801 2011                           .51  .43  .61  .66  .67  .68 
+  13 RHF13    1866 2011                                     .38  .42  .62  .69 
+  14 RHF14    1899 2011                                               .63  .56 
+  15 RHF15    1851 2011                                     .49  .34B .40  .69 
+ Av segment correlation                      .53  .56  .58  .60  .63  .64  .63 
+
+ FLAGGED SEGMENTS: swit394
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+  15 RHF15    1900 1949     B     .340        -9      .388   .048
+
+ DESCRIPTIVE STATISTICS: swit394
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 RHF01    1795 2011    217      7      0    .592   1.40   4.07   .593   .884   .144   1.81   .169  -.024   3
+   2 RHF02    1629 2011    383      7      0    .503    .64   2.40   .459   .943   .219   2.14   .247  -.004   3
+   3 RHF03    1813 2011    199      6      0    .576   1.40   2.76   .468   .817   .152   1.43   .151  -.008   2
+   4 RHF04    1810 2011    202      6      0    .631   1.03   3.64   .602   .913   .196   1.52   .200  -.078   1
+   5 RHF05    1865 2011    147      4      0    .619   1.33   2.47   .372   .789   .137   1.39   .149   .012   1
+   6 RHF06    1809 2011    203      6      0    .573   1.22   4.13   .652   .892   .167   1.59   .177  -.004   1
+   7 RHF07    1823 2011    189      6      0    .693   1.81   4.51   .889   .887   .165   1.48   .187   .004   1
+   8 RHF08    1874 2011    138      3      0    .572   1.80   3.44   .610   .790   .173   1.64   .181  -.014   3
+   9 RHF09    1810 2011    202      6      0    .590   1.21   4.36   .766   .910   .170   1.73   .182   .034   1
+  10 RHF10    1839 2011    173      5      0    .649   1.29   3.47   .418   .774   .165   1.53   .171   .023   1
+  11 RHF11    1795 2011    217      7      0    .608   1.42   3.69   .618   .838   .180   1.73   .201   .025   1
+  12 RHF12    1801 2011    211      6      0    .520   1.17   3.53   .605   .914   .169   1.57   .176  -.002   1
+  13 RHF13    1866 2011    146      4      0    .537   2.35   5.41   .946   .884   .147   1.59   .158  -.004   1
+  14 RHF14    1899 2011    113      2      0    .544   3.44   8.26  1.321   .810   .182   1.62   .191   .017   3
+  15 RHF15    1851 2011    161      4      1    .494   1.93   4.45   .873   .906   .141   1.48   .148   .019   3
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2901     79      1    .577   1.43   8.26   .646   .873   .171   2.14   .185  -.001
+
+ DATA CHECKS (rwl.check): swit394
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/swit394.rwl
+ 15 series, 2901 measurements, 1629-2011, 0.01 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:56 PDT.
+ Measurement file swit394.rwl, MD5 699afd0afeea9415ba8d0d711950c5c0.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

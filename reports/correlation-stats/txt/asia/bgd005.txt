@@ -1,0 +1,122 @@
+
+ COFECHA-style crossdating report: bgd005
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : bgd005.rwl
+      MD5 of measurement file: e58cc3c24d5798b73a72b529aee7a74a
+      Date checked           : 01OCT26
+      Beginning year         : 1929
+      Ending year            : 2012
+      Principal investigators: Maxwell, J.T.; Harley, G.L.
+      Site name              : Sunderbans
+      Species information    : SOAP Sonneratia apetala Banks
+      Latitude               : 22.5629 N
+      Longitude              : 90.2703 E
+      Elevation              : 2 m
+
+      Series intercorrelation: 0.302
+      Avg mean sensitivity   : 0.371
+      Avg standard deviation : 0.898
+      Avg autocorrelation    : 0.403
+      Number dated series    : 18
+      Segment length tested  : 42
+
+      Number problem segments: 6  (A 1, B 5; 3 of the B weak at every lag)
+      Pct problem segments   : 85.71
+
+
+ CORRELATION OF SERIES BY SEGMENTS: bgd005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  42-year dated segments, lagged  21 years
+ Flags:  A = correlation under   .3578 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1950 1971 
+                        1991 2012 
+ --- -------- ---------  ---- ---- 
+   4 SMS06B   1942 2012  .22B .20B
+   5 SMS08A   1935 2006  .22A     
+   6 SMS09A   1929 1999  .25B     
+  12 SMS14B   1945 2010  .58      
+  15 SMS23B   1960 2012       .21B
+  16 SMS25A   1953 2012      -.08B
+ Av segment correlation  .32  .11 
+
+ FLAGGED SEGMENTS: bgd005
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 SMS06B   1950 1991     B     .222        -3      .388   .166
+   4 SMS06B   1971 2012     B     .198        -6      .306   .107  weak at every lag
+   5 SMS08A   1950 1991     A     .218         0
+   6 SMS09A   1950 1991     B     .252        -1      .433   .181
+  15 SMS23B   1971 2012     B     .210        -6      .252   .043  weak at every lag
+  16 SMS25A   1971 2012     B    -.079        -4      .225   .305  weak at every lag
+
+ DESCRIPTIVE STATISTICS: bgd005
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 SMS01    1954 2011     58      0      0    .259   1.85   4.77   .973   .462   .387   2.11   .395   .025   0
+   2 SMS02A   1955 2010     56      0      0    .264   1.57   4.25   .904   .601   .357   1.99   .376  -.090   3
+   3 SMS03A   1951 2001     51      0      0    .512   1.82   4.01   .939   .729   .278   1.61   .270   .016   1
+   4 SMS06B   1942 2012     71      2      2    .137   1.53   3.38   .685   .353   .367   2.05   .331  -.075   3
+   5 SMS08A   1935 2006     72      1      1    .316   1.74   3.56   .662   .322   .343   2.12   .331   .100   0
+   6 SMS09A   1929 1999     71      1      1    .220   1.87   4.23   .903   .427   .437   1.94   .360   .014   0
+   7 SMS11A   1980 2011     32      0      0    .358   2.44   5.00  1.330   .655   .336   1.58   .331  -.004   1
+   8 SMS12A   1957 2005     49      0      0    .361   2.10   4.49   .767   .231   .339   1.78   .304  -.041   2
+   9 SMS12B   1977 2011     35      0      0    .160   2.05   8.45  1.777   .531   .403   2.94   .616   .139   1
+  10 SMS13A   1964 2011     48      0      0    .519   2.17   5.09   .943   .453   .344   1.80   .344   .076   1
+  11 SMS14A   1952 2011     60      0      0    .376   1.37   2.54   .455   .059   .345   1.94   .316  -.006   0
+  12 SMS14B   1945 2010     66      1      0    .405   1.71   3.52   .655   .225   .410   1.67   .329   .026   0
+  13 SMS16B   1963 2010     48      0      0    .168   2.02   6.91  1.338   .556   .427   2.03   .454  -.031   3
+  14 SMS23S   1954 2004     51      0      0    .243   1.46   3.43   .706   .419   .370   2.00   .360   .026   1
+  15 SMS23B   1960 2012     53      1      1    .392   1.63   5.84  1.016   .149   .396   2.37   .434   .049   0
+  16 SMS25A   1953 2012     60      1      1    .202   1.40   2.95   .627   .337   .384   2.20   .391   .058   0
+  17 SMS25B   1960 2008     49      0      0    .307   2.13   5.74  1.186   .527   .345   1.88   .324   .068   2
+  18 SMS26B   1971 2012     42      0      0    .296   1.95   5.24  1.174   .545   .374   1.92   .381  -.033   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:            972      7      6    .302   1.79   8.45   .898   .403   .371   2.94   .364   .016
+
+ DATA CHECKS (rwl.check): bgd005
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/asia/bgd005.rwl
+ 18 series, 972 measurements, 1929-2012, 0.01 mm precision
+ 0 error(s), 1 warning(s), 9 note(s)
+ -------------
+ WARNING
+   RWL_MIXED_EOL (1)
+     line endings are not consistent: 235 carriage return(s) against 119 line feed(s); mixed endings can defeat a reader
+ 9 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file bgd005.rwl, MD5 e58cc3c24d5798b73a72b529aee7a74a.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3578 for 42-year segments.
+ Segments: 42 years, lagged 21, first segment floored to 50. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
+ Segment length reduced from 50 to 42 years: the record is only 84 years long.
+ First segment floored to 50 years, not 100: at 100 no segment could be tested.

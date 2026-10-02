@@ -1,0 +1,146 @@
+
+ COFECHA-style crossdating report: cze050
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : cze050.rwl
+      MD5 of measurement file: 6acf05ea36d2941c973eb8870b72d190
+      Date checked           : 01OCT26
+      Beginning year         : 1888
+      Ending year            : 2019
+      Principal investigators: Mašek, J.; Hofman, M.; Fišer, P.
+      Site name              : 17VA Kokořínsko
+      Species information    : PISY Pinus sylvestris L.
+      Latitude               : 50.5900 N
+      Longitude              : 14.4541 E
+      Elevation              : 365 m
+
+      Series intercorrelation: 0.544
+      Avg mean sensitivity   : 0.237
+      Avg standard deviation : 0.568
+      Avg autocorrelation    : 0.700
+      Number dated series    : 26
+      Segment length tested  : 50
+
+      Number problem segments: 4  (A 1, B 3; 1 of the B weak at every lag)
+      Pct problem segments   : 7.14
+
+
+ CORRELATION OF SERIES BY SEGMENTS: cze050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1900 1925 1950 
+                        1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- 
+   1 17UD01   1920 2018       .54  .33A
+   2 17UD02   1893 2019  .58  .53  .53 
+   3 17UD08   1897 2019  .54  .40  .51 
+   4 17UD10   1905 2019       .43  .72 
+   5 17UD16   1899 2019       .61  .53 
+   6 17UD19   1910 2019       .55  .51 
+   7 17UD09   1895 2019  .45  .49  .52 
+   8 17UD12   1910 2019       .71  .69 
+   9 17UD17   1893 2019  .65  .61  .53 
+  10 17UD23   1934 2019            .49 
+  11 17UD03   1899 2019  .42  .56  .58 
+  12 17UD04   1892 2019  .66  .70  .70 
+  13 17UD13   1908 2019       .61  .72 
+  14 17UD14   1898 2019  .54  .45B .56 
+  15 17UD11   1897 2018  .64  .44  .24B
+  16 17UD21   1944 2019            .70 
+  17 17UD06   1912 2019       .53  .73 
+  18 17UD07   1915 2019       .46  .54 
+  19 17UD18   1903 2019       .65  .50 
+  20 17UD25   1936 2019            .58 
+  21 17UD05   1888 2019  .17B .69  .59 
+  22 17UD22   1942 2017            .64 
+  23 17UD24   1933 2019            .66 
+  24 17UD26   1938 2019            .60 
+  25 17UD15   1900 2019       .52  .73 
+  26 17UD20   1895 2019  .53  .54  .58 
+ Av segment correlation  .52  .55  .58 
+
+ FLAGGED SEGMENTS: cze050
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   1 17UD01   1950 1999     A     .328         0
+  14 17UD14   1925 1974     B     .448        -7      .471   .023
+  15 17UD11   1950 1999     B     .238         1      .255   .017  weak at every lag
+  21 17UD05   1900 1949     B     .169         1      .362   .193
+
+ DESCRIPTIVE STATISTICS: cze050
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 17UD01   1920 2018     99      2      1    .284    .69   1.36   .272   .658   .277   1.73   .273   .010   1
+   2 17UD02   1893 2019    127      3      0    .601   1.35   3.94   .613   .771   .243   1.59   .248   .032   1
+   3 17UD08   1897 2019    123      3      0    .523   1.17   2.66   .456   .734   .223   1.77   .232   .006   1
+   4 17UD10   1905 2019    115      2      0    .530   1.32   5.15   .735   .792   .270   2.13   .284   .029   2
+   5 17UD16   1899 2019    121      2      0    .589   1.68   3.61   .625   .822   .190   1.54   .194   .006   2
+   6 17UD19   1910 2019    110      2      0    .615   1.15   2.31   .443   .679   .281   1.68   .256  -.027   2
+   7 17UD09   1895 2019    125      3      0    .397   1.39   5.60   .661   .606   .245   2.50   .274   .033   1
+   8 17UD12   1910 2019    110      2      0    .604   1.12   2.24   .342   .484   .247   1.71   .226   .007   1
+   9 17UD17   1893 2019    127      3      0    .611   1.47   3.97   .547   .741   .200   1.71   .198  -.007   3
+  10 17UD23   1934 2019     86      1      0    .500   1.91   3.65   .597   .585   .231   1.50   .220   .036   1
+  11 17UD03   1899 2019    121      3      0    .468   1.50   4.18   .567   .683   .215   1.89   .225   .027   1
+  12 17UD04   1892 2019    128      3      0    .647   1.31   4.46   .736   .819   .285   2.14   .290  -.019   1
+  13 17UD13   1908 2019    112      2      0    .541   1.19   3.08   .587   .855   .213   1.89   .221  -.005   2
+  14 17UD14   1898 2019    122      3      1    .594   1.10   3.85   .688   .845   .302   1.74   .275  -.022   2
+  15 17UD11   1897 2018    122      3      1    .244   1.45   6.35   .781   .845   .211   1.62   .222  -.011   3
+  16 17UD21   1944 2019     76      1      0    .664   2.27   3.84   .816   .833   .193   1.81   .194  -.027   2
+  17 17UD06   1912 2019    108      2      0    .626   1.42   2.94   .547   .759   .232   1.62   .225   .001   3
+  18 17UD07   1915 2019    105      2      0    .553   1.27   2.49   .493   .685   .245   2.20   .266   .039   3
+  19 17UD18   1903 2019    117      2      0    .556   1.35   2.71   .410   .617   .198   1.56   .202   .009   1
+  20 17UD25   1936 2019     84      1      0    .616   1.46   3.42   .431   .408   .211   1.59   .220   .212   1
+  21 17UD05   1888 2019    132      3      1    .417   1.82   4.18   .623   .599   .256   2.24   .267   .041   1
+  22 17UD22   1942 2017     76      1      0    .568   1.47   3.06   .402   .426   .207   1.52   .209   .155   0
+  23 17UD24   1933 2019     87      1      0    .602   1.82   4.81   .792   .688   .276   1.52   .237  -.000   2
+  24 17UD26   1938 2019     82      1      0    .547   2.01   3.88   .763   .777   .204   1.55   .206   .044   1
+  25 17UD15   1900 2019    120      2      0    .713   1.16   2.89   .429   .712   .218   1.53   .203  -.049   3
+  26 17UD20   1895 2019    125      3      0    .598   1.20   3.19   .433   .616   .257   1.63   .235   .028   1
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2860     56      4    .544   1.40   6.35   .568   .700   .237   2.50   .236   .017
+
+ DATA CHECKS (rwl.check): cze050
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/europe/cze050.rwl
+ 26 series, 2860 measurements, 1888-2019, 0.01 mm precision
+ 0 error(s), 1 warning(s), 1 note(s)
+ -------------
+ WARNING
+   RWL_NON_ASCII (1)
+     12 byte(s) outside printable ASCII
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:52 PDT.
+ Measurement file cze050.rwl, MD5 6acf05ea36d2941c973eb8870b72d190.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.

@@ -1,0 +1,124 @@
+
+ COFECHA-style crossdating report: ak226
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT
+ Built with dplR's xdate.report(), not COFECHA; see the notes at the end.
+
+
+      Measurement file name  : ak226.rwl
+      MD5 of measurement file: b5434d621a916df5392c6dc537020a27
+      Date checked           : 01OCT26
+      Beginning year         : 1631
+      Ending year            : 2014
+      Principal investigators: Wiles, G.; Wiesenberg, N.
+      Site name              : Nunatak Knoll
+      Species information    : TSME Tsuga mertensiana (Bong.) Carrière
+      Latitude               : 61.0960 N
+      Longitude              : 146.9910 W
+      Elevation              : 270 m
+
+      Series intercorrelation: 0.609
+      Avg mean sensitivity   : 0.235
+      Avg standard deviation : 0.428
+      Avg autocorrelation    : 0.771
+      Number dated series    : 15
+      Segment length tested  : 50
+
+      Number problem segments: 6  (A 4, B 2; 1 of the B weak at every lag)
+      Pct problem segments   : 7.32
+
+
+ CORRELATION OF SERIES BY SEGMENTS: ak226
+-----------------------------------------------------------------------------------------------------------------------------------
+ Correlations of  50-year dated segments, lagged  25 years
+ Flags:  A = correlation under   .3281 but highest as dated;  B = correlation higher at other than dated position
+
+ Seq Series  Time_span  1700 1725 1750 1775 1800 1825 1850 1875 1900 1925 1950 
+                        1749 1774 1799 1824 1849 1874 1899 1924 1949 1974 1999 
+ --- -------- ---------  ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+   1 NK01     1819 2014                           .64  .66  .53  .68  .68  .60 
+   2 NK02     1631 2007  .54  .50  .34  .41  .38  .37  .56  .58  .57  .62  .72 
+   3 NK03     1855 2014                                     .77  .77  .78  .55 
+   4 NK04     1670 2014  .57  .63  .55  .59  .64  .48  .39  .30A .36  .46  .32A
+   5 NK05     1806 2014                           .61  .73  .77  .79  .76  .52 
+   6 NK06     1850 2007                                     .79  .70  .77  .76 
+   7 NK07     1857 2014                                     .79  .75  .84  .75 
+   8 NK08     1702 2014       .34  .31A .38  .40  .29A .49  .57  .15B .34B .52 
+   9 NK09     1836 2014                                .88  .87  .82  .76  .67 
+  10 NK10     1834 2014                                .70  .72  .78  .78  .74 
+  11 NK11     1880 2014                                          .62  .64  .59 
+  12 NK12     1876 2014                                          .51  .56  .60 
+  13 NK13     1914 2014                                               .74  .37 
+  14 NK14     1875 2007                                          .75  .75  .63 
+  15 NK15     1827 1999                                .63  .59  .72  .59  .35 
+ Av segment correlation  .56  .49  .40  .46  .47  .48  .63  .66  .64  .67  .58 
+
+ FLAGGED SEGMENTS: ak226
+-----------------------------------------------------------------------------------------------------------------------------------
+ Seq Series   Segment    Flag  r dated  Best lag  r at lag   Gain  Note
+ --- -------- ---------  ----  -------  --------  --------  -----  -----------------
+   4 NK04     1875 1924     A     .299         0
+   4 NK04     1950 1999     A     .325         0
+   8 NK08     1750 1799     A     .309         0
+   8 NK08     1825 1874     A     .288         0
+   8 NK08     1900 1949     B     .155        -7      .322   .167  weak at every lag
+   8 NK08     1925 1974     B     .341         1      .361   .020
+
+ DESCRIPTIVE STATISTICS: ak226
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                Corr   //-------- Unfiltered --------\\  //-- dplR filtered --\\
+                           No.    No.    No.    with   Mean   Max     Std   Auto   Mean   Max     Std   Auto  AR
+ Seq Series   Interval   Years  Segmt  Flags   Master  msmt   msmt    dev   corr   sens  value    dev   corr  ()
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+   1 NK01     1819 2014    196      6      0    .598   1.05   3.21   .511   .782   .232   1.88   .231  -.013   3
+   2 NK02     1631 2007    377     11      0    .552    .65   1.49   .292   .810   .229   1.78   .235  -.048   3
+   3 NK03     1855 2014    160      4      0    .747   1.57   3.39   .532   .651   .214   1.59   .213  -.012   3
+   4 NK04     1670 2014    345     11      2    .528    .72   2.52   .359   .791   .241   2.08   .255  -.016   3
+   5 NK05     1806 2014    209      6      0    .628   1.21   2.53   .507   .757   .231   1.79   .226  -.030   2
+   6 NK06     1850 2007    158      4      0    .769    .97   2.37   .493   .823   .215   1.50   .203  -.028   3
+   7 NK07     1857 2014    158      4      0    .757   1.40   4.52   .667   .764   .239   1.90   .235  -.033   3
+   8 NK08     1702 2014    313     10      4    .378    .75   2.54   .482   .924   .215   1.70   .214  -.023   3
+   9 NK09     1836 2014    179      5      0    .792    .97   2.19   .411   .783   .263   1.80   .251  -.039   3
+  10 NK10     1834 2014    181      5      0    .712   1.12   2.68   .551   .785   .239   1.65   .228  -.053   3
+  11 NK11     1880 2014    135      3      0    .659    .89   1.59   .216   .640   .159   1.47   .168  -.008   3
+  12 NK12     1876 2014    139      3      0    .614    .73   1.73   .322   .725   .283   1.75   .258  -.080   3
+  13 NK13     1914 2014    101      2      0    .547   1.51   3.50   .541   .511   .242   1.56   .213   .103   3
+  14 NK14     1875 2007    133      3      0    .727    .88   1.75   .293   .682   .210   1.85   .230  -.017   2
+  15 NK15     1827 1999    173      5      0    .489    .67   1.83   .369   .772   .312   2.15   .316  -.014   2
+ --- -------- ---------  -----  -----  -----   ------ -----  -----  -----  -----  -----  -----  -----  -----  --
+ Total or mean:           2957     82      6    .609    .95   4.52   .428   .771   .235   2.15   .234  -.025
+
+ DATA CHECKS (rwl.check): ak226
+-----------------------------------------------------------------------------------------------------------------------------------
+ rwl.check: data_files/treering/measurements/northamerica/usa/ak226.rwl
+ 15 series, 2957 measurements, 1631-2014, 0.001 mm precision
+ 0 error(s), 0 warning(s), 1 note(s)
+ -------------
+ Nothing to report at this severity.
+ 1 note(s) not shown; see rwl.check() or the 'check' element of this report.
+
+ NOTES
+-----------------------------------------------------------------------------------------------------------------------------------
+ Report generated using dplR 1.8.1 (R 4.5.2) on 2026-10-01 16:58 PDT.
+ Measurement file ak226.rwl, MD5 b5434d621a916df5392c6dc537020a27.
+ Filtering: each series divided by a 32-year smoothing spline (caps()), then prewhitened with
+   an AR model (order by AIC, at most 3).
+ Master: biweight robust mean of the other series (leave-one-out).
+ Correlation: Pearson, one-tailed, pcrit = 0.01; critical r = 0.3281 for 50-year segments.
+ Segments: 50 years, lagged 25, first segment floored to 100. Lags searched: +/- 10 years.
+ A segment is tested only where the series and the master cover all of it, at the dated
+   position and at every lag. COFECHA also tests partial segments at the ends of a series, so
+   series here may show fewer segments, and no flags can be raised at the ends of the record.
+ Lags follow COFECHA: negative means rings are probably missing from the series, positive means
+   false rings. A missing ring carries its lag into every segment before it, so look where the
+   lag changes along a series. A B flag is a hypothesis to check on the wood; the gain says how
+   seriously to take it.
+ A B flag marked "weak at every lag" correlates under the critical value even at its best lag:
+   the segment is weak wherever it is placed, and the shift is not evidence of a dating error.
+   Treat it as a low correlation, like an A.
+ Averages in the summary and the totals are weighted by the number of years in each series, as
+   COFECHA's are.
+ Unfiltered block and mean sensitivity: the measurements as read, and sens1().
+ dplR filtered block: the series that was correlated, after filtering. COFECHA's filtered
+   series is defined differently, so these three columns are not COFECHA's numbers.
+ AR: order of the AR model used to prewhiten.
